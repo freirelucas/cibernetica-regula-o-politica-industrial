@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Cibernética Organizacional, Regulação e Política Industrial — Mapeamento Bibliométrico · IPEA/DIEST</title>
+<meta name="description" content="Mapeamento da estrutura intelectual na interseção entre cibernética organizacional, instrumentos de regulação e política industrial. Estudo cienciométrico do IPEA/DIEST-COGIT.">
+<meta name="author" content="Lucas Freire — IPEA/DIEST-COGIT">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+:root{--ink:#0e0e0e;--paper:#f5f2ed;--surface:#ede9e2;--border:rgba(14,14,14,.12);--border-s:rgba(14,14,14,.25);--cyb:#4b3fc2;--cyb-l:#e8e6f8;--reg:#1a7a5e;--reg-l:#e0f2ec;--pi:#b85c10;--pi-l:#faeada;--accent:#c23f3f;--muted:#6b6560;--mono:'JetBrains Mono',monospace;--serif:'Spectral',serif;--sans:'DM Sans',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.65}
+a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
+em{font-style:italic}
+/* Barra de navegação */
+.topbar{position:sticky;top:0;z-index:200;background:rgba(245,242,237,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:4px;padding:.5rem 1.25rem;overflow-x:auto;font-family:var(--mono);font-size:11px}
+.topbar a{color:var(--muted);padding:.35rem .6rem;border-radius:4px;white-space:nowrap}
+.topbar a:hover{color:var(--ink);background:var(--surface);text-decoration:none}
+.topbar .brand{color:var(--ink);font-weight:500;margin-right:.75rem}
+.masthead{border-bottom:1px solid var(--border-s);padding:3.25rem 2.5rem 2.5rem;position:relative;overflow:hidden}
+.masthead::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyb) 0%,var(--reg) 50%,var(--pi) 100%)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.85rem;display:flex;align-items:center;gap:12px}
+.kicker::after{content:'';display:inline-block;width:32px;height:1px;background:var(--border-s)}
+h1{font-family:var(--serif);font-size:2.5rem;font-weight:300;line-height:1.18;letter-spacing:-.02em;max-width:18ch}
+h1 em{font-style:italic;color:var(--muted)}
+.subtitle{font-family:var(--serif);font-size:1.05rem;font-style:italic;color:var(--muted);margin-top:.9rem;max-width:60ch}
+.byline{font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap;margin-top:1.5rem;align-items:center}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.dot-c{background:var(--cyb)}.dot-r{background:var(--reg)}.dot-p{background:var(--pi)}
+.container{max-width:960px;margin:0 auto;padding:0 2rem}
+.section{padding:2.75rem 0 2.25rem;border-bottom:1px solid var(--border)}
+.section:last-child{border-bottom:none}
+.sec-header{display:flex;align-items:baseline;gap:12px;margin-bottom:1.25rem}
+.sec-num{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:28px}
+.sec-title{font-family:var(--serif);font-size:1.5rem;font-weight:400}
+.sec-method{font-family:var(--mono);font-size:10px;color:var(--muted);margin-left:auto;text-align:right}
+.prose{max-width:70ch}
+.prose p{margin-bottom:1rem;font-size:1rem}
+.prose p.lead{font-size:1.12rem;line-height:1.6}
+.prose h3{font-family:var(--serif);font-weight:600;font-size:1.05rem;margin:1.5rem 0 .5rem}
+.prose ul{margin:.5rem 0 1rem 1.3rem}.prose li{margin-bottom:.4rem}
+.prose strong{font-weight:500}
+.term{font-style:italic;color:var(--muted)}
+.stat-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin:1.5rem 0}
+.stat-cell{background:var(--paper);padding:.85rem 1rem}
+.stat-n{font-family:var(--mono);font-size:1.5rem;font-weight:500;display:block;line-height:1;margin-bottom:3px}
+.stat-l{font-size:11px;color:var(--muted);display:block}
+.method-note{font-family:var(--mono);font-size:10.5px;color:var(--muted);border-left:2px solid var(--border-s);padding-left:10px;margin:1rem 0 1.25rem;line-height:1.7;max-width:80ch}
+.chart-wrap{position:relative;width:100%}
+.fig-cap{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:.6rem;line-height:1.6}
+.chart-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
+.chart-legend span{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
+.sw{width:10px;height:10px;border-radius:2px;display:inline-block}
+/* Tabelas */
+.tbl{width:100%;border-collapse:collapse;font-size:.86rem;margin:.5rem 0 1rem}
+.tbl th,.tbl td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--border);vertical-align:top}
+.tbl th{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.tbl td.num,.tbl th.num{font-family:var(--mono);text-align:right;white-space:nowrap}
+.tbl tr:last-child td{border-bottom:none}
+.tbl .ref{font-family:var(--serif)}
+.paper-row{display:grid;grid-template-columns:44px 1fr auto;gap:0 12px;align-items:start;padding:.65rem 0;border-bottom:1px solid var(--border)}
+.paper-row:last-child{border-bottom:none}
+.paper-rank{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+.paper-title{font-family:var(--serif);font-size:.92rem;line-height:1.45}
+.paper-meta{font-size:11px;color:var(--muted);margin-top:2px;font-family:var(--mono)}
+.paper-cit{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap;padding-top:3px;text-align:right}
+.paper-cit strong{color:var(--ink);font-weight:500}
+.tag{display:inline-block;font-family:var(--mono);font-size:9px;letter-spacing:.04em;padding:2px 6px;border-radius:3px;margin-right:3px;font-weight:500}
+.t-cyb{background:var(--cyb-l);color:var(--cyb)}.t-reg{background:var(--reg-l);color:var(--reg)}.t-pi{background:var(--pi-l);color:var(--pi)}.t-all{background:#fce8e8;color:var(--accent)}
+.bridge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.bridge-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem}
+.bridge-card.full{border-left:3px solid var(--accent)}.bridge-card.two{border-left:3px solid var(--muted)}
+.bridge-title{font-family:var(--serif);font-size:.87rem;line-height:1.4;margin-bottom:5px}
+.bridge-meta{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.burst-row{display:grid;grid-template-columns:58px 1fr 80px;gap:10px;align-items:center;padding:.4rem 0;border-bottom:1px solid var(--border)}
+.burst-w{font-family:var(--mono);font-size:12px;font-weight:500}
+.burst-track{height:20px;background:var(--surface);border-radius:2px;overflow:hidden}
+.burst-fill{height:100%;border-radius:2px;display:flex;align-items:center;padding:0 7px}
+.burst-label{font-size:11px;color:var(--paper);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.burst-period{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:right}
+.cluster-row{padding:.75rem 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:160px 1fr;gap:14px;align-items:start}
+.cluster-name{font-family:var(--mono);font-size:11px;font-weight:500;line-height:1.5}
+.cluster-n{font-size:10px;color:var(--muted);display:block;margin-top:2px}
+.cluster-papers{font-size:.82rem;color:var(--muted);line-height:1.6}
+.cluster-papers em{font-style:italic;color:var(--ink)}
+.beauty-row{display:grid;grid-template-columns:72px 1fr 80px;gap:10px;align-items:start;padding:.65rem 0;border-bottom:1px solid var(--border)}
+.beauty-b{font-family:var(--mono);font-size:1.2rem;font-weight:500}
+.beauty-tm{font-family:var(--mono);font-size:9.5px;color:var(--muted);margin-top:2px}
+.beauty-title{font-family:var(--serif);font-size:.87rem;line-height:1.4}
+.beauty-sub{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:2px}
+.beauty-bar{height:5px;border-radius:3px;margin-top:8px}
+.seed-row{display:grid;grid-template-columns:22px 1fr auto;gap:8px;align-items:start;padding:.6rem .8rem;background:var(--surface);border-radius:4px;margin-bottom:5px}
+.seed-ref{font-family:var(--serif);font-size:.9rem}
+.seed-id{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+/* Funil */
+.funnel{display:flex;flex-direction:column;gap:6px;margin:1rem 0 1.25rem}
+.funnel-step{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--cyb);border-radius:5px;padding:.7rem 1rem;display:grid;grid-template-columns:30px 1fr;gap:12px;align-items:baseline}
+.funnel-step .fn{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.funnel-step .ft{font-size:.9rem}
+.funnel-step .fd{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:3px}
+/* Central de downloads */
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;margin:.75rem 0 1rem}
+.dl-btn{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.7rem .9rem;color:var(--ink);transition:border-color .15s}
+.dl-btn:hover{border-color:var(--cyb);text-decoration:none}
+.dl-btn svg{flex-shrink:0;color:var(--cyb)}
+.dl-name{font-family:var(--mono);font-size:11.5px;font-weight:500;display:block}
+.dl-desc{font-size:11px;color:var(--muted);display:block;margin-top:1px}
+/* Glossário e referências */
+.gloss{font-size:.9rem}
+.gloss dt{font-weight:500;margin-top:.7rem}
+.gloss dd{color:var(--muted);margin-left:0;font-size:.86rem}
+.gloss .src{font-style:italic}
+.refs{font-family:var(--serif);font-size:.88rem;line-height:1.6}
+.refs li{margin-bottom:.55rem;list-style:none;padding-left:1.4em;text-indent:-1.4em}
+.callout{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem;margin:1rem 0;font-size:.9rem}
+.callout code{font-family:var(--mono);font-size:.82rem;background:var(--paper);padding:1px 5px;border-radius:3px}
+pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:11.5px;line-height:1.7;padding:1rem 1.1rem;border-radius:6px;overflow-x:auto;margin:.75rem 0}
+.sidenav{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:7px;z-index:100}
+.sidenav a{width:6px;height:6px;border-radius:50%;background:var(--border-s);display:block;transition:transform .15s,background .15s}
+.sidenav a:hover,.sidenav a.active{background:var(--cyb);transform:scale(1.5)}
+@media(max-width:1100px){.sidenav{display:none}}
+.footer{padding:2rem 2.5rem;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.axes-bar{display:flex;gap:2px;height:7px;border-radius:2px;overflow:hidden;margin:1rem 0 .4rem}
+.axes-labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted)}
+/* Impressão A4 / camera-ready */
+@media print{
+  @page{size:A4;margin:18mm 16mm}
+  html{font-size:10.5pt}
+  body{background:#fff;color:#000}
+  .topbar,.sidenav{display:none}
+  .masthead{padding:0 0 1rem}.masthead::before{height:2px}
+  .container{max-width:none;padding:0}
+  .section{padding:1.1rem 0;border-bottom:1px solid #ccc;break-inside:avoid}
+  .chart-wrap{break-inside:avoid}
+  a{color:#000;text-decoration:none}
+  .dl-grid,pre.code{break-inside:avoid}
+  h1{font-size:20pt}.sec-title{font-size:13pt}
+}
+</style>
+</head>
+<body>
+<nav class="topbar" aria-label="Navegação">
+  <span class="brand">IPEA · DIEST</span>
+  <a href="#resumo">Resumo</a>
+  <a href="#teoria">Fundamentação teórica</a>
+  <a href="#metodo">Método</a>
+  <a href="#funil">Funil de coleta</a>
+  <a href="#temporal">Panorama temporal</a>
+  <a href="#pontes">Zonas de intercâmbio</a>
+  <a href="#agrupamentos">Agrupamentos</a>
+  <a href="#rajadas">Rajadas</a>
+  <a href="#adormecidas">Belas adormecidas</a>
+  <a href="#citadas">Mais citadas</a>
+  <a href="#sementes">Obras-semente</a>
+  <a href="#repro">Reprodutibilidade</a>
+  <a href="#dados">Dados</a>
+  <a href="#glossario">Glossário</a>
+  <a href="#referencias">Referências</a>
+</nav>
+
+<nav class="sidenav" aria-label="Seções">
+  <a href="#resumo" title="Resumo"></a>
+  <a href="#teoria" title="Fundamentação teórica"></a>
+  <a href="#metodo" title="Fundamentação metodológica"></a>
+  <a href="#funil" title="Funil de coleta"></a>
+  <a href="#temporal" title="Panorama temporal"></a>
+  <a href="#pontes" title="Zonas de intercâmbio"></a>
+  <a href="#agrupamentos" title="Agrupamentos temáticos"></a>
+  <a href="#rajadas" title="Rajadas de citação"></a>
+  <a href="#adormecidas" title="Belas adormecidas"></a>
+  <a href="#citadas" title="Obras mais citadas"></a>
+  <a href="#sementes" title="Obras-semente"></a>
+  <a href="#repro" title="Reprodutibilidade"></a>
+  <a href="#dados" title="Dados"></a>
+  <a href="#glossario" title="Glossário"></a>
+  <a href="#referencias" title="Referências"></a>
+</nav>
+
+<header class="masthead">
+  <div style="max-width:900px">
+    <div class="kicker">IPEA · DIEST-COGIT · Cienciometria</div>
+    <h1>Cibernética Organizacional, Regulação<br>e <em>Política Industrial</em></h1>
+    <p class="subtitle">Mapeamento da estrutura intelectual de um campo em formação: uma análise cienciométrica das tradições que conectam o controle de sistemas, os instrumentos de governo e a estratégia de desenvolvimento produtivo.</p>
+    <div class="byline">
+      <span><span class="dot dot-c"></span>Cibernética · Beer · Ashby · Espejo</span>
+      <span><span class="dot dot-r"></span>Regulação · Hood · Margetts · Howlett</span>
+      <span><span class="dot dot-p"></span>Política Industrial · Rodrik · Mazzucato</span>
+      <span id="gen-date" style="margin-left:auto"></span>
+    </div>
+  </div>
+</header>
+
+<!-- 00 · RESUMO -->
+<section id="resumo" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">00</span><h2 class="sec-title">Resumo</h2><span class="sec-method">corpus extraído da base OpenAlex</span></div>
+  <div class="prose">
+    <p class="lead">Este estudo mapeia a estrutura intelectual da interseção entre três tradições intelectuais que raramente dialogam de forma explícita: a <strong>cibernética organizacional</strong> (o controle e a viabilidade de sistemas complexos), os <strong>instrumentos de governo e a regulação</strong> (os meios pelos quais o Estado atua sobre a sociedade) e a <strong>política industrial</strong> (a ação deliberada do Estado sobre a estrutura produtiva).</p>
+    <p>A partir de dez obras-semente canônicas, aplicou-se amostragem por bola de neve sobre a base bibliográfica aberta OpenAlex, reunindo um corpus de centenas de trabalhos. Sobre esse corpus, calcularam-se redes de cocitação e de acoplamento bibliográfico, agrupamentos de comunidades, centralidade de intermediação, rajadas de citação e o coeficiente de beleza — um conjunto de medidas que, em conjunto, revela onde o campo se concentra, onde ele se fragmenta e quais obras funcionam como pontos de passagem entre as tradições.</p>
+  </div>
+  <div class="stat-strip" id="stat-strip"></div>
+  <div class="axes-bar" id="axes-bar"></div>
+  <div class="axes-labels" id="axes-labels"></div>
+  <p class="fig-cap">Distribuição relativa da produção entre os três eixos temáticos, computada sobre a série anual do corpus.</p>
+</div></section>
+
+<!-- 01 · FUNDAMENTAÇÃO TEÓRICA -->
+<section id="teoria" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">01</span><h2 class="sec-title">Fundamentação teórica</h2><span class="sec-method">os três eixos e as obras-semente</span></div>
+  <div class="prose">
+    <p>A delimitação do campo parte de uma hipótese: as três tradições compartilham um problema comum — o <em>governo de sistemas complexos sob incerteza</em> — mas desenvolveram vocabulários, métodos e comunidades de citação largamente independentes. Cada eixo é ancorado por obras-semente reconhecidas e verificadas individualmente na base OpenAlex.</p>
+
+    <h3><span class="dot dot-c"></span> Cibernética organizacional</h3>
+    <p>A tradição inaugurada por <strong>W. Ross Ashby</strong> (a lei da variedade requisita) e desenvolvida por <strong>Stafford Beer</strong> (o Modelo de Sistema Viável) trata das condições formais para que um sistema mantenha sua viabilidade num ambiente que o supera em complexidade. Ralph Espejo e Alfonso Reyes estendem o programa para o desenho de organizações. O interesse para a política pública é direto: regular é, em última instância, um problema de variedade e de capacidade de resposta.</p>
+
+    <h3><span class="dot dot-r"></span> Instrumentos de governo e regulação</h3>
+    <p>A tradição de <strong>Christopher Hood</strong> e <strong>Helen Margetts</strong> — dos <em>Tools of Government</em> à redescoberta da nodalidade — classifica os meios de que o Estado dispõe para detectar e atuar sobre a sociedade. A literatura subsequente sobre desenho e composição de instrumentos (Howlett, Salamon, Borrás) constitui o núcleo mais denso e contemporâneo do corpus.</p>
+
+    <h3><span class="dot dot-p"></span> Política industrial</h3>
+    <p>A tradição de <strong>Dani Rodrik</strong> e <strong>Mariana Mazzucato</strong> recoloca o Estado como agente deliberado da transformação produtiva — do desenho institucional da política industrial do século XXI ao Estado empreendedor e às missões. É o eixo mais recente em ascensão e o que mais se aproxima dos outros dois a partir de 2013.</p>
+  </div>
+
+  <p class="fig-cap" style="margin-top:1.5rem">As dez obras-semente, por eixo, com identificadores verificados na base OpenAlex.</p>
+  <table class="tbl">
+    <thead><tr><th>Eixo</th><th>Obra-semente</th><th>Identificador</th></tr></thead>
+    <tbody id="seed-table"></tbody>
+  </table>
+</div></section>
+
+<!-- 02 · FUNDAMENTAÇÃO METODOLÓGICA -->
+<section id="metodo" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">02</span><h2 class="sec-title">Fundamentação metodológica</h2><span class="sec-method">técnicas e parâmetros</span></div>
+  <div class="prose">
+    <p>O desenho metodológico combina uma estratégia de amostragem deliberada com um conjunto de medidas consagradas em cienciometria. Todas as etapas são reprodutíveis e parametrizadas.</p>
+    <h3>Amostragem por bola de neve</h3>
+    <p>Seguindo as diretrizes de <strong>Wohlin (2014)</strong>, partiu-se das obras-semente em duas direções: a bola de neve <em>progressiva</em> (trabalhos que citam as sementes) e a <em>regressiva</em> (trabalhos citados pelas sementes). Um filtro temático por vocabulário controlado, aplicado após a coleta, mantém apenas os trabalhos pertinentes a pelo menos um dos três eixos.</p>
+    <h3>Medidas de estrutura e dinâmica</h3>
+    <ul>
+      <li><strong>Cocitação</strong> <span class="term">(Small, 1973)</span> — duas obras são aproximadas quando citadas juntas por um terceiro trabalho; revela a base intelectual compartilhada.</li>
+      <li><strong>Acoplamento bibliográfico</strong> <span class="term">(Kessler, 1963)</span> — dois trabalhos são aproximados quando citam as mesmas fontes; revela frentes de pesquisa contemporâneas.</li>
+      <li><strong>Força de associação</strong> <span class="term">(van Eck &amp; Waltman, 2009)</span> — normalização das coocorrências que corrige o efeito do volume bruto de citações.</li>
+      <li><strong>Agrupamento de Leiden</strong> <span class="term">(Traag et al., 2019)</span> — detecção de comunidades por padrão de citação compartilhada, não por tópico declarado.</li>
+      <li><strong>Centralidade de intermediação</strong> <span class="term">(Brandes, 2001)</span> — identifica as obras que funcionam como pontos de passagem entre regiões da rede.</li>
+      <li><strong>Detecção de rajadas</strong> <span class="term">(Kleinberg, 2003)</span> — períodos de citação anormalmente intensa, estimados por programação dinâmica (algoritmo de Viterbi).</li>
+      <li><strong>Coeficiente de beleza</strong> <span class="term">(Ke et al., 2015)</span> — mede a hibernação seguida de despertar tardio (as <em>belas adormecidas</em>).</li>
+    </ul>
+  </div>
+  <p class="fig-cap">Parâmetros de execução do funil de coleta e análise.</p>
+  <table class="tbl">
+    <thead><tr><th>Parâmetro</th><th class="num">Valor</th><th>Observação</th></tr></thead>
+    <tbody>
+      <tr><td>Consultas de texto</td><td class="num">9 × 150</td><td>nove buscas temáticas, até 150 resultados cada</td></tr>
+      <tr><td>Bola de neve progressiva</td><td class="num">6 × 10</td><td>seis páginas de citantes por obra-semente</td></tr>
+      <tr><td>Bola de neve regressiva</td><td class="num">60 / 400</td><td>sessenta âncoras, teto de 400 referências novas</td></tr>
+      <tr><td>Agrupamento de Leiden</td><td class="num">CPM + Mod.</td><td>cocitação por CPM; acoplamento por modularidade</td></tr>
+      <tr><td>Detecção de rajadas</td><td class="num">s=2 · γ=1</td><td>razão de estados e custo de transição</td></tr>
+      <tr><td>Coeficiente de beleza</td><td class="num">Eq. 2</td><td>formulação de Ke et al. (2015), PNAS</td></tr>
+    </tbody>
+  </table>
+</div></section>
+
+<!-- 03 · FUNIL DE COLETA -->
+<section id="funil" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">03</span><h2 class="sec-title">Funil de coleta</h2><span class="sec-method">da semente ao corpus analítico</span></div>
+  <div class="prose"><p>A coleta avança por etapas encadeadas, cada uma salva em ponto de verificação para permitir a retomada. Os conjuntos de dados de cada etapa estão disponíveis para download na seção de <a href="#dados">dados</a>.</p></div>
+  <div class="funnel">
+    <div class="funnel-step"><span class="fn">1</span><div><div class="ft"><strong>Consultas de texto</strong></div><div class="fd">nove buscas temáticas cobrindo os três eixos</div></div></div>
+    <div class="funnel-step" style="border-left-color:var(--reg)"><span class="fn">2</span><div><div class="ft"><strong>Bola de neve progressiva</strong></div><div class="fd">trabalhos que citam as obras-semente</div></div></div>
+    <div class="funnel-step" style="border-left-color:var(--pi)"><span class="fn">3</span><div><div class="ft"><strong>Bola de neve regressiva</strong></div><div class="fd">trabalhos citados pelas obras-semente</div></div></div>
+    <div class="funnel-step"><span class="fn">4</span><div><div class="ft"><strong>Enriquecimento de referências</strong></div><div class="fd">recuperação das listas de referências citadas</div></div></div>
+    <div class="funnel-step" style="border-left-color:var(--reg)"><span class="fn">5</span><div><div class="ft"><strong>Redes e agrupamentos</strong></div><div class="fd">cocitação, acoplamento, Leiden e intermediação</div></div></div>
+    <div class="funnel-step" style="border-left-color:var(--pi)"><span class="fn">6</span><div><div class="ft"><strong>Dinâmica temporal</strong></div><div class="fd">rajadas de citação e coeficiente de beleza</div></div></div>
+    <div class="funnel-step"><span class="fn">7</span><div><div class="ft"><strong>Corpus analítico final</strong></div><div class="fd">filtro temático, métricas consolidadas e exportação</div></div></div>
+  </div>
+  <div class="method-note" id="funnel-note"></div>
+</div></section>
+
+<!-- 04 · PANORAMA TEMPORAL -->
+<section id="temporal" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">04</span><h2 class="sec-title">Panorama temporal por eixo</h2><span class="sec-method">1960–2025 · trabalhos por ano</span></div>
+  <div class="prose"><p>A cibernética domina a produção desde os anos 1970. A regulação e a política industrial convergem a partir de 2007 — com a segunda edição de Hood &amp; Margetts — e crescem fortemente entre 2013 e 2019, no rastro do debate sobre o Estado empreendedor e as missões. A aproximação simultânea dos três eixos torna-se visível a partir de 2013.</p></div>
+  <div class="chart-wrap" style="height:300px"><canvas id="chartTemporal" role="img" aria-label="Produção por eixo temático, 1960 a 2025">Gráfico de área da produção anual.</canvas></div>
+  <div class="chart-legend">
+    <span><span class="sw" style="background:var(--cyb)"></span>Cibernética organizacional</span>
+    <span><span class="sw" style="background:var(--reg)"></span>Instrumentos de governo e regulação</span>
+    <span><span class="sw" style="background:var(--pi)"></span>Política industrial</span>
+  </div>
+  <p class="fig-cap">Série anual de trabalhos por eixo. Um mesmo trabalho pode contar para mais de um eixo.</p>
+</div></section>
+
+<!-- 05 · ZONAS DE INTERCÂMBIO -->
+<section id="pontes" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">05</span><h2 class="sec-title">Zonas de intercâmbio · obras-ponte</h2><span class="sec-method">trabalhos com dois ou mais eixos</span></div>
+  <div class="prose"><p>São as obras que tocam explicitamente dois ou mais eixos — as <em>zonas de intercâmbio</em> entre tradições, no sentido de Galison. <span style="border-left:3px solid var(--accent);padding-left:6px">A borda vermelha assinala as obras que tocam os três eixos.</span> Estes são os nós de maior valor estrutural para o argumento de convergência: poucos, mas decisivos.</p></div>
+  <div class="bridge-grid" id="list-bridges"></div>
+  <div style="margin-top:1.5rem">
+    <p class="fig-cap" style="margin-bottom:8px">Dispersão das obras-ponte por ano e número de citações (o raio é proporcional às citações).</p>
+    <div class="chart-wrap" style="height:220px"><canvas id="chartBridges" role="img" aria-label="Dispersão das obras-ponte por ano e citações">Gráfico de dispersão das obras-ponte.</canvas></div>
+  </div>
+</div></section>
+
+<!-- 06 · AGRUPAMENTOS -->
+<section id="agrupamentos" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">06</span><h2 class="sec-title">Agrupamentos temáticos</h2><span class="sec-method">acoplamento bibliográfico · Leiden (modularidade)</span></div>
+  <div class="prose"><p>A rede de acoplamento bibliográfico, normalizada pela força de associação, é particionada pelo algoritmo de Leiden. Cada comunidade reúne trabalhos com padrões de citação semelhantes — uma frente de pesquisa, e não um tópico declarado. As etiquetas derivam dos termos mais distintivos dos títulos de cada agrupamento.</p></div>
+  <div class="chart-wrap" style="height:200px;margin-bottom:1.5rem"><canvas id="chartClusters" role="img" aria-label="Tamanho dos agrupamentos">Gráfico de barras do tamanho dos agrupamentos.</canvas></div>
+  <div id="list-clusters"></div>
+</div></section>
+
+<!-- 07 · RAJADAS -->
+<section id="rajadas" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rajadas de citação</h2><span class="sec-method">Kleinberg (2003) · Viterbi · s=2 · γ=1</span></div>
+  <div class="prose"><p>Períodos de citação anormalmente intensa em relação ao fluxo total do corpus. O peso indica o excesso de citações acumulado no intervalo. <em>Brain of the Firm</em> (1996–2013) registra a rajada histórica mais forte; Espejo &amp; Reyes (a partir de 2022) registra a mais recente — sinal de um reaquecimento contemporâneo da cibernética organizacional.</p></div>
+  <div id="list-bursts"></div>
+</div></section>
+
+<!-- 08 · BELAS ADORMECIDAS -->
+<section id="adormecidas" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">08</span><h2 class="sec-title">Belas adormecidas</h2><span class="sec-method">coeficiente de beleza · Ke et al. (2015)</span></div>
+  <div class="prose"><p>Obras de longa hibernação seguida de despertar abrupto. O coeficiente <em>B</em> mede a intensidade desse despertar; <em>t<sub>m</sub></em> é o número de anos até o pico de citações. <em>Brain of the Firm</em> (Beer, 1972) dormiu 41 anos antes de despertar; a <em>Introdução à Cibernética</em> (Ashby, 1956) esperou quase sete décadas para ser redescoberta pela literatura de governança digital.</p></div>
+  <div id="list-beauties"></div>
+</div></section>
+
+<!-- 09 · MAIS CITADAS -->
+<section id="citadas" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">09</span><h2 class="sec-title">Obras mais citadas (exceto sementes)</h2><span class="sec-method">contagem de citações · ao menos um eixo</span></div>
+  <div class="prose"><p>As vinte obras não-semente mais citadas do corpus. <em>Autopoiesis and Cognition</em> (Maturana &amp; Varela, 1980) lidera pelo eixo da cibernética; a literatura de composição de instrumentos de política (Howlett, Borrás, Rogge) domina o eixo da regulação.</p></div>
+  <div id="list-top20"></div>
+</div></section>
+
+<!-- 10 · OBRAS-SEMENTE -->
+<section id="sementes" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">10</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
+  <div class="prose"><p>As dez obras que ancoram a coleta, cada uma com seu identificador na base OpenAlex (clicável). A escolha privilegia obras de referência inequívoca em cada tradição.</p></div>
+  <div id="list-seeds"></div>
+</div></section>
+
+<!-- 11 · REPRODUTIBILIDADE -->
+<section id="repro" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
+  <div class="prose">
+    <p>Todo o estudo é reprodutível. O caderno de execução, o módulo de relatório e os resultados consolidados acompanham o repositório.</p>
+    <h3>No ambiente Colab (recomendado)</h3>
+    <p>Carregar o caderno <code>scisci_cibernetica_regulacao_PI_v2.ipynb</code> junto com o modelo <code>html_template.html</code> e executar as células em ordem; a célula de verificação inicial deve passar antes de prosseguir. Os pontos de verificação são salvos automaticamente — se a sessão cair, a execução retoma de onde parou.</p>
+    <h3>Localmente</h3>
+  </div>
+  <pre class="code">pip install -r requirements.txt
+jupyter notebook colab/scisci_cibernetica_regulacao_PI_v2.ipynb</pre>
+  <div class="prose">
+    <h3>Regenerar apenas o relatório (sem reexecutar o funil)</h3>
+    <p>A partir dos resultados já consolidados, o relatório pode ser reconstruído em segundos, sem dependências externas além da biblioteca padrão:</p>
+  </div>
+  <pre class="code">python src/report_from_json.py          # relatório do modelo
+python src/build_site.py                # este site (docs/)</pre>
+</div></section>
+
+<!-- 12 · DADOS -->
+<section id="dados" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">12</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
+  <div class="prose"><p>Os conjuntos de dados processados em cada etapa do funil, em formato CSV (codificação UTF-8). O conjunto completo de resultados consolidados também está disponível em formato JSON.</p></div>
+  <div class="dl-grid" id="dl-grid"></div>
+  <p class="fig-cap">Os dados refletem a execução de referência (ver data no rodapé). O corpus bruto completo (com resumos e listas de referência) é reconstituído reexecutando o funil; aqui se disponibilizam os produtos analíticos de cada etapa.</p>
+  <table class="tbl" style="margin-top:1.25rem">
+    <thead><tr><th>Arquivo</th><th>Conteúdo</th></tr></thead>
+    <tbody id="dict-table"></tbody>
+  </table>
+</div></section>
+
+<!-- 13 · LIMITAÇÕES -->
+<section id="limitacoes" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">13</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
+  <div class="prose">
+    <ul>
+      <li><strong>Referências de livros clássicos.</strong> Para várias obras-semente em formato de livro (Beer, Ashby, Hood, 1983), a base OpenAlex não expõe a lista de obras citadas; a bola de neve regressiva dessas sementes é, portanto, nula.</li>
+      <li><strong>Cobertura de resumos.</strong> A disponibilidade de resumos é alta para artigos posteriores a 1996 e menor para trabalhos anteriores e para livros.</li>
+      <li><strong>Viés do filtro de vocabulário.</strong> O filtro temático introduz um viés de confirmação: trabalhos pertinentes, mas redigidos com vocabulário não previsto, são excluídos.</li>
+      <li><strong>Atribuição de autoria.</strong> Alguns registros da base apresentam autoria ou metadados imperfeitos; os valores são reproduzidos como obtidos, sem correção manual.</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- 14 · GLOSSÁRIO -->
+<section id="glossario" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">14</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
+  <dl class="gloss">
+    <dt>Cocitação <span class="src">(co-citation)</span></dt><dd>Relação entre duas obras citadas conjuntamente por um terceiro trabalho.</dd>
+    <dt>Acoplamento bibliográfico <span class="src">(bibliographic coupling)</span></dt><dd>Relação entre dois trabalhos que citam fontes em comum.</dd>
+    <dt>Obras-semente <span class="src">(seeds)</span></dt><dd>Trabalhos canônicos a partir dos quais se inicia a amostragem por bola de neve.</dd>
+    <dt>Bola de neve progressiva / regressiva <span class="src">(forward / backward snowballing)</span></dt><dd>Expansão da amostra pelos trabalhos que citam (progressiva) ou que são citados (regressiva) pelas sementes.</dd>
+    <dt>Zonas de intercâmbio · obras-ponte <span class="src">(trading zones · bridges)</span></dt><dd>Trabalhos que articulam dois ou mais eixos temáticos.</dd>
+    <dt>Agrupamento <span class="src">(cluster)</span></dt><dd>Comunidade de trabalhos detectada por padrão de citação compartilhada.</dd>
+    <dt>Centralidade de intermediação <span class="src">(betweenness centrality)</span></dt><dd>Medida da posição de uma obra como ponto de passagem na rede.</dd>
+    <dt>Rajada de citação <span class="src">(citation burst)</span></dt><dd>Período de citação anormalmente intensa em relação ao fluxo do corpus.</dd>
+    <dt>Bela adormecida · coeficiente de beleza <span class="src">(sleeping beauty · beauty coefficient)</span></dt><dd>Obra de longa hibernação e despertar tardio; o coeficiente mede a intensidade do despertar.</dd>
+    <dt>Funil de coleta <span class="src">(pipeline)</span></dt><dd>Sequência encadeada de etapas de coleta e análise.</dd>
+  </dl>
+</div></section>
+
+<!-- 15 · REFERÊNCIAS -->
+<section id="referencias" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">15</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
+  <ul class="refs">
+    <li>ASHBY, W. R. <em>An Introduction to Cybernetics</em>. London: Chapman &amp; Hall, 1956.</li>
+    <li>BEER, S. <em>Brain of the Firm</em>. London: Allen Lane, 1972.</li>
+    <li>BEER, S. <em>The Heart of Enterprise</em>. Chichester: Wiley, 1979.</li>
+    <li>BEER, S. <em>Diagnosing the System for Organizations</em>. Chichester: Wiley, 1985.</li>
+    <li>BRANDES, U. A faster algorithm for betweenness centrality. <em>Journal of Mathematical Sociology</em>, v. 25, n. 2, p. 163–177, 2001.</li>
+    <li>ESPEJO, R.; REYES, A. <em>Organizational Systems: Managing Complexity with the Viable System Model</em>. Berlin: Springer, 2011.</li>
+    <li>HOOD, C. <em>The Tools of Government</em>. London: Macmillan, 1983.</li>
+    <li>HOOD, C.; MARGETTS, H. <em>The Tools of Government in the Digital Age</em>. Basingstoke: Palgrave Macmillan, 2007.</li>
+    <li>KE, Q.; FERRARA, E.; RADICCHI, F.; FLAMMINI, A. Defining and identifying sleeping beauties in science. <em>PNAS</em>, v. 112, n. 24, p. 7426–7431, 2015.</li>
+    <li>KESSLER, M. M. Bibliographic coupling between scientific papers. <em>American Documentation</em>, v. 14, n. 1, p. 10–25, 1963.</li>
+    <li>KLEINBERG, J. Bursty and hierarchical structure in streams. <em>Data Mining and Knowledge Discovery</em>, v. 7, n. 4, p. 373–397, 2003.</li>
+    <li>MARGETTS, H. Rediscovering nodality, 2024.</li>
+    <li>MAZZUCATO, M. <em>The Entrepreneurial State</em>. London: Anthem Press, 2013.</li>
+    <li>RODRIK, D. <em>Industrial Policy for the Twenty-First Century</em>. KSG Working Paper, 2004.</li>
+    <li>SMALL, H. Co-citation in the scientific literature. <em>Journal of the American Society for Information Science</em>, v. 24, n. 4, p. 265–269, 1973.</li>
+    <li>TRAAG, V. A.; WALTMAN, L.; VAN ECK, N. J. From Louvain to Leiden: guaranteeing well-connected communities. <em>Scientific Reports</em>, v. 9, 5233, 2019.</li>
+    <li>VAN ECK, N. J.; WALTMAN, L. How to normalize cooccurrence data. <em>JASIST</em>, v. 60, n. 8, p. 1635–1651, 2009.</li>
+    <li>WOHLIN, C. Guidelines for snowballing in systematic literature studies. In: <em>EASE '14</em>, 2014.</li>
+    <li>PRIEM, J.; PIWOWAR, H.; ORR, R. <em>OpenAlex</em>: base bibliográfica aberta, 2022. Disponível em: openalex.org.</li>
+  </ul>
+</div></section>
+
+<footer class="footer">
+  <span>IPEA · DIEST-COGIT · Lucas Freire · 2026</span>
+  <span id="footer-stats"></span>
+  <span>Small (1973) · van Eck &amp; Waltman (2009) · Traag et al. (2019) · Kleinberg (2003) · Ke et al. (2015)</span>
+</footer>
+
+<script>
+const STATS={"corpus": 817, "seeds": 10, "axes2": 26, "axes3": 10, "cocit_n": 600, "cocit_e": 11209, "bursts": 760, "bursting_refs": 579, "generated": "2026-05-25 17:33", "clusters": 6};
+const TEMPORAL=[{"year": 1968, "Cyb": 1, "Reg": 0, "PolInd": 0}, {"year": 1970, "Cyb": 1, "Reg": 0, "PolInd": 0}, {"year": 1974, "Cyb": 1, "Reg": 1, "PolInd": 1}, {"year": 1979, "Cyb": 2, "Reg": 0, "PolInd": 0}, {"year": 1980, "Cyb": 2, "Reg": 1, "PolInd": 1}, {"year": 1982, "Cyb": 1, "Reg": 0, "PolInd": 0}, {"year": 1983, "Cyb": 3, "Reg": 1, "PolInd": 1}, {"year": 1984, "Cyb": 2, "Reg": 1, "PolInd": 0}, {"year": 1985, "Cyb": 2, "Reg": 1, "PolInd": 0}, {"year": 1986, "Cyb": 1, "Reg": 1, "PolInd": 0}, {"year": 1987, "Cyb": 1, "Reg": 0, "PolInd": 1}, {"year": 1988, "Cyb": 1, "Reg": 1, "PolInd": 0}, {"year": 1989, "Cyb": 3, "Reg": 1, "PolInd": 0}, {"year": 1990, "Cyb": 7, "Reg": 2, "PolInd": 1}, {"year": 1991, "Cyb": 1, "Reg": 3, "PolInd": 1}, {"year": 1992, "Cyb": 4, "Reg": 1, "PolInd": 0}, {"year": 1993, "Cyb": 10, "Reg": 2, "PolInd": 1}, {"year": 1994, "Cyb": 3, "Reg": 2, "PolInd": 0}, {"year": 1995, "Cyb": 1, "Reg": 1, "PolInd": 0}, {"year": 1996, "Cyb": 2, "Reg": 0, "PolInd": 0}, {"year": 1997, "Cyb": 7, "Reg": 0, "PolInd": 0}, {"year": 1998, "Cyb": 4, "Reg": 2, "PolInd": 0}, {"year": 1999, "Cyb": 8, "Reg": 2, "PolInd": 0}, {"year": 2000, "Cyb": 3, "Reg": 1, "PolInd": 1}, {"year": 2001, "Cyb": 5, "Reg": 3, "PolInd": 0}, {"year": 2002, "Cyb": 6, "Reg": 0, "PolInd": 0}, {"year": 2003, "Cyb": 7, "Reg": 5, "PolInd": 0}, {"year": 2004, "Cyb": 13, "Reg": 4, "PolInd": 2}, {"year": 2005, "Cyb": 7, "Reg": 3, "PolInd": 4}, {"year": 2006, "Cyb": 19, "Reg": 2, "PolInd": 5}, {"year": 2007, "Cyb": 19, "Reg": 6, "PolInd": 7}, {"year": 2008, "Cyb": 8, "Reg": 2, "PolInd": 4}, {"year": 2009, "Cyb": 14, "Reg": 9, "PolInd": 8}, {"year": 2010, "Cyb": 11, "Reg": 8, "PolInd": 3}, {"year": 2011, "Cyb": 30, "Reg": 11, "PolInd": 4}, {"year": 2012, "Cyb": 22, "Reg": 13, "PolInd": 8}, {"year": 2013, "Cyb": 14, "Reg": 9, "PolInd": 13}, {"year": 2014, "Cyb": 23, "Reg": 10, "PolInd": 12}, {"year": 2015, "Cyb": 26, "Reg": 11, "PolInd": 12}, {"year": 2016, "Cyb": 14, "Reg": 10, "PolInd": 7}, {"year": 2017, "Cyb": 15, "Reg": 18, "PolInd": 18}, {"year": 2018, "Cyb": 18, "Reg": 13, "PolInd": 10}, {"year": 2019, "Cyb": 23, "Reg": 19, "PolInd": 16}, {"year": 2020, "Cyb": 14, "Reg": 17, "PolInd": 14}, {"year": 2021, "Cyb": 9, "Reg": 16, "PolInd": 8}, {"year": 2022, "Cyb": 10, "Reg": 5, "PolInd": 4}, {"year": 2023, "Cyb": 8, "Reg": 12, "PolInd": 7}, {"year": 2024, "Cyb": 6, "Reg": 5, "PolInd": 1}, {"year": 2025, "Cyb": 13, "Reg": 6, "PolInd": 1}];
+const TOP20=[{"year": 1980, "cited_by": 4741, "axes": "Cyb", "authors": "Humberto R. Maturana; Francisco J. Varela; Stafford Bee", "title": "Autopoiesis and Cognition: The Realization of the Living"}, {"year": 2018, "cited_by": 1791, "axes": "Reg", "authors": "John Williamson", "title": "What Washington Means by Policy Reform"}, {"year": 2020, "cited_by": 1669, "axes": "Cyb", "authors": "Adil Rasheed; Omer San; Trond Kvamsdal", "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective"}, {"year": 2007, "cited_by": 1381, "axes": "Reg", "authors": "Pierre Lascoumes; Patrick Le Galès", "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of "}, {"year": 2016, "cited_by": 1346, "axes": "Reg", "authors": "Karoline S. Rogge; Kristin Reichardt", "title": "Policy mixes for sustainability transitions: An extended concept and framework for an"}, {"year": 2011, "cited_by": 1072, "axes": "Reg", "authors": "Kieron Flanagan; Elvira Uyarra; Manuel Laranja", "title": "Reconceptualising the ‘policy mix’ for innovation"}, {"year": 2013, "cited_by": 948, "axes": "PolInd", "authors": "Philip McCann; Raquel Ortega‐Argilés", "title": "Smart Specialization, Regional Growth and Applications to European Union Cohesion Pol"}, {"year": 1990, "cited_by": 863, "axes": "Reg", "authors": "Anne L. Schneider; Helen Ingram", "title": "Behavioral Assumptions of Policy Tools"}, {"year": 2013, "cited_by": 857, "axes": "Reg", "authors": "Susana Borrás; Charles Edquist", "title": "The choice of innovation policy instruments"}, {"year": 2018, "cited_by": 776, "axes": "PolInd", "authors": "Pierre‐Alexandre Balland; Ron Boschma; Joan Crespo", "title": "Smart specialization policy in the European Union: relatedness, knowledge complexity "}, {"year": 2019, "cited_by": 727, "axes": "Cyb", "authors": "Jessica Morley; Luciano Floridi; Libby Kinsey", "title": "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods an"}, {"year": 1984, "cited_by": 691, "axes": "Cyb", "authors": "Stafford Beer", "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology"}, {"year": 1997, "cited_by": 690, "axes": "Cyb", "authors": "Umit Bititci; Allan S. Carrie; Liam McDevitt", "title": "Integrated performance measurement systems: a development guide"}, {"year": 2007, "cited_by": 646, "axes": "Reg", "authors": "Michael Howlett; Jeremy Rayner", "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrange"}, {"year": 2009, "cited_by": 612, "axes": "Reg", "authors": "Michael Howlett", "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of"}, {"year": 2010, "cited_by": 584, "axes": "PolInd", "authors": "Ann Harrison; Andrés Rodrı́guez-Clare", "title": "Trade, Foreign Investment, and Industrial Policy for Developing Countries*"}, {"year": 2020, "cited_by": 570, "axes": "Reg", "authors": "Giliberto Capano; Michael Howlett; Darryl S. L. Jarvis", "title": "Mobilizing Policy (In)Capacity to Fight COVID-19: Understanding Variations in State R"}, {"year": 2006, "cited_by": 560, "axes": "PolInd", "authors": "Howard Pack", "title": "Is There a Case for Industrial Policy? A Critical Survey"}, {"year": 2020, "cited_by": 550, "axes": "PolInd", "authors": "Karl Aiginger; Dani Rodrik", "title": "Rebirth of Industrial Policy and an Agenda for the Twenty-First Century"}, {"year": 2019, "cited_by": 497, "axes": "PolInd", "authors": "Chiara Criscuolo; Ralf Martin; Henry G. Overman", "title": "Some Causal Effects of an Industrial Policy"}];
+const BRIDGES=[{"year": 2014, "cited_by": 2314, "axes": "Cyb,Reg,PolInd", "authors": "", "title": "The entrepreneurial state: debunking public vs. private sector myths"}, {"year": 2004, "cited_by": 1526, "axes": "Cyb,Reg,PolInd", "authors": "Dani Rodrik", "title": "Industrial Policy for the Twenty-First Century"}, {"year": 1980, "cited_by": 805, "axes": "Cyb,Reg,PolInd", "authors": "Maurice Snowdon", "title": "The Heart of Enterprise"}, {"year": 1983, "cited_by": 778, "axes": "Cyb,Reg,PolInd", "authors": "Christopher C. Hood", "title": "The Tools of Government"}, {"year": 1974, "cited_by": 296, "axes": "Cyb,Reg,PolInd", "authors": "William L. Casey; Stafford Beer", "title": "Brain of the Firm: The Managerial Cybernetics of Organization"}, {"year": 1985, "cited_by": 293, "axes": "Cyb,Reg,PolInd", "authors": "John R. Beaumont", "title": "Diagnosing the System for Organizations"}, {"year": 2019, "cited_by": 289, "axes": "PolInd,Reg", "authors": "Mariana Mazzucato; Rainer Kattel; Josh Ryan‐C", "title": "Challenge-Driven Innovation Policy: Towards a New Policy Toolkit"}, {"year": 2013, "cited_by": 267, "axes": "PolInd,Reg", "authors": "Philip McCann; Raquel Ortega‐Argilés", "title": "Modern regional innovation policy"}, {"year": 2007, "cited_by": 233, "axes": "Cyb,Reg,PolInd", "authors": "Christopher C. Hood; Helen Margetts", "title": "The Tools of Government in the Digital Age"}, {"year": 2011, "cited_by": 215, "axes": "Cyb,Reg,PolInd", "authors": "Raúl Espejo; Alfonso Reyes", "title": "Organizational Systems"}, {"year": 2023, "cited_by": 133, "axes": "PolInd,Reg", "authors": "Donato Di Carlo; Luuk Schmitz", "title": "Europe first? The rise of EU industrial policy promoting and protecting the sing"}, {"year": 1957, "cited_by": 115, "axes": "Cyb,Reg,PolInd", "authors": "Anna Richards; W. Ross Ashby", "title": "An Introduction to Cybernetics"}, {"year": 2019, "cited_by": 111, "axes": "PolInd,Reg", "authors": "Bernhard Reinsberg; Alexander Kentikelenis; T", "title": "The World System and the Hollowing Out of State Capacity: How Structural Adjustm"}, {"year": 2023, "cited_by": 76, "axes": "PolInd,Reg", "authors": "James Meadowcroft; Daniel Rosenbloom", "title": "Governing the net-zero transition: Strategy, policy, and politics"}, {"year": 2013, "cited_by": 69, "axes": "PolInd,Reg", "authors": "Ha‐Joon Chang; Antonio Andreoni; Ming Leong K", "title": "International Industrial Policy Experiences and the Lessons for the UK"}];
+const BURSTS=[{"begin": 1996, "end": 2013, "weight": 42.6, "title": "Brain of the firm", "authors": "Bo.; Beer"}, {"begin": 2017, "end": 2024, "weight": 29.1, "title": "The entrepreneurial state: debunking public vs. private sector my", "authors": ""}, {"begin": 2022, "end": 2026, "weight": 24.3, "title": "Organizational Systems", "authors": "Espejo; Reyes"}, {"begin": 2011, "end": 2016, "weight": 22.3, "title": "Brain of the Firm: The Managerial Cybernetics of Organization", "authors": "Casey; Beer"}, {"begin": 2011, "end": 2019, "weight": 21.6, "title": "Organizational Systems: Managing Complexity with the Viable Syste", "authors": "Espejo; Reyes"}, {"begin": 2002, "end": 2010, "weight": 16.2, "title": "Diagnosing the System for Organizations", "authors": "Beaumont"}, {"begin": 2013, "end": 2016, "weight": 15.4, "title": "Industrial Policy for the Twenty-First Century", "authors": "Rodrik"}, {"begin": 2014, "end": 2020, "weight": 12.9, "title": "Governance modes, policy regimes and operational plans: A multi-l", "authors": "Howlett"}, {"begin": 2011, "end": 2012, "weight": 12.4, "title": "The Heart of Enterprise", "authors": "Snowdon"}, {"begin": 2010, "end": 2018, "weight": 12.2, "title": "Introduction: Understanding Public Policy through Its Instruments", "authors": "Lascoumes; Galès"}, {"begin": 2009, "end": 2013, "weight": 12.2, "title": "An introduction to cybernetics", "authors": "Ashby"}, {"begin": 2014, "end": 2021, "weight": 11.8, "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘Ne", "authors": "Howlett; Rayner"}, {"begin": 1993, "end": 2010, "weight": 11.7, "title": "Soft Systems Methodology in Action", "authors": "Gough; Checkland"}, {"begin": 2014, "end": 2026, "weight": 11.7, "title": "Complexity management in practice: A Viable System Model interven", "authors": "Espinosa; Walker"}, {"begin": 2014, "end": 2020, "weight": 11.4, "title": "Design and diagnosis for sustainable organizations : the viable s", "authors": "Ríos"}, {"begin": 2014, "end": 2022, "weight": 11.4, "title": "Using the Viable System Model (VSM) to structure information proc", "authors": "Preece; Shaw"}, {"begin": 2017, "end": 2025, "weight": 10.8, "title": "Policy mixes for sustainability transitions: An extended concept ", "authors": "Rogge; Reichardt"}, {"begin": 1994, "end": 2007, "weight": 10.3, "title": "Creative Problem Solving: Total Systems Intervention.", "authors": "Taket"}, {"begin": 1992, "end": 2002, "weight": 10.1, "title": "Systems Thinking, Systems Practice", "authors": "Checkland"}, {"begin": 2001, "end": 2008, "weight": 9.8, "title": "Intelligent organizations: an integrative framework", "authors": "Schwaninger"}];
+const CLUSTERS=[{"id": 0, "label": "design · governance · instruments", "size": 190, "papers": [{"title": "Introduction: Understanding Public Policy through Its Instru", "cited_by": 1381, "year": 2007}, {"title": "Policy mixes for sustainability transitions: An extended con", "cited_by": 1346, "year": 2016}, {"title": "Reconceptualising the ‘policy mix’ for innovation", "cited_by": 1072, "year": 2011}]}, {"id": 1, "label": "industrial · innovation · new", "size": 139, "papers": [{"title": "The entrepreneurial state: debunking public vs. private sect", "cited_by": 2314, "year": 2014}, {"title": "Industrial Policy for the Twenty-First Century", "cited_by": 1526, "year": 2004}, {"title": "Smart Specialization, Regional Growth and Applications to Eu", "cited_by": 948, "year": 2013}]}, {"id": 2, "label": "cybernetics · management · model", "size": 121, "papers": [{"title": "The Viable System Model: Its Provenance, Development, Method", "cited_by": 691, "year": 1984}, {"title": "Integrated performance measurement systems: a development gu", "cited_by": 690, "year": 1997}, {"title": "The Viable System Model: Interpretations and Applications of", "cited_by": 240, "year": 1990}]}, {"id": 3, "label": "governance · management · model", "size": 110, "papers": [{"title": "Organizational Systems", "cited_by": 215, "year": 2011}, {"title": "A Critical Historic Overview of Artificial Intelligence: Iss", "cited_by": 104, "year": 2023}, {"title": "Organizing for sustainability: a cybernetic concept for sust", "cited_by": 60, "year": 2015}]}, {"id": 4, "label": "management · model · perspective", "size": 88, "papers": [{"title": "The Personal Learning Environment and the human condition: f", "cited_by": 139, "year": 2007}, {"title": "Sustainability, complexity and learning: insights from compl", "cited_by": 137, "year": 2011}, {"title": "Evolution of cybernetics: philosophical and methodological a", "cited_by": 112, "year": 2017}]}, {"id": 5, "label": "design · management · model", "size": 73, "papers": [{"title": "Understanding the Innovation Impacts of Public Procurement", "cited_by": 405, "year": 2009}, {"title": "Remembering the Technological Unconscious by Foregrounding K", "cited_by": 299, "year": 2004}, {"title": "A new value stream mapping approach for healthcare environme", "cited_by": 146, "year": 2015}]}];
+const BEAUTIES=[{"year": 1974, "cited_by": 296, "B": 166.0, "t_m": 41, "axes": "", "title": "Brain of the Firm: The Managerial Cybernetics of Organization"}, {"year": 1980, "cited_by": 805, "B": 130.0, "t_m": 31, "axes": "", "title": "The Heart of Enterprise"}, {"year": 1957, "cited_by": 115, "B": 60.0, "t_m": 68, "axes": "", "title": "An Introduction to Cybernetics"}, {"year": 1959, "cited_by": 41, "B": 58.0, "t_m": 59, "axes": "", "title": "What has Cybernetics to do with Operational Research?"}, {"year": 1968, "cited_by": 342, "B": 56.4, "t_m": 46, "axes": "", "title": "Decision and Control: The Meaning of Operational Research and Man"}, {"year": 1983, "cited_by": 778, "B": 54.7, "t_m": 34, "axes": "", "title": "The Tools of Government"}, {"year": 1990, "cited_by": 240, "B": 54.4, "t_m": 19, "axes": "", "title": "The Viable System Model: Interpretations and Applications of Staf"}, {"year": 1984, "cited_by": 691, "B": 51.5, "t_m": 28, "axes": "", "title": "The Viable System Model: Its Provenance, Development, Methodology"}, {"year": 1990, "cited_by": 132, "B": 45.4, "t_m": 22, "axes": "", "title": "The Viable System Model: Interpretations and Applications of Staf"}, {"year": 1985, "cited_by": 293, "B": 43.1, "t_m": 26, "axes": "", "title": "Diagnosing the System for Organizations"}, {"year": 1990, "cited_by": 70, "B": 42.7, "t_m": 21, "axes": "", "title": "The viable system model: interpretations of Stafford Beer's VSM"}, {"year": 1990, "cited_by": 195, "B": 39.4, "t_m": 22, "axes": "", "title": "The Viable System Model"}, {"year": 1990, "cited_by": 20, "B": 36.3, "t_m": 28, "axes": "", "title": "Embodiments of organizational fitness: The Viable System Model (V"}, {"year": 1980, "cited_by": 4741, "B": 36.0, "t_m": 27, "axes": "", "title": "Autopoiesis and Cognition: The Realization of the Living"}, {"year": 1989, "cited_by": 480, "B": 33.9, "t_m": 28, "axes": "", "title": "Instruments of Government: Perceptions and Contexts"}];
+const SEEDS=[{"id": "W2048086870", "ref": "Beer (1972) Brain of the Firm", "axis": "Cyb"}, {"id": "W1566478880", "ref": "Beer (1979) Heart of Enterprise", "axis": "Cyb"}, {"id": "W2154683088", "ref": "Beer (1985) Diagnosing the System", "axis": "Cyb"}, {"id": "W2325487953", "ref": "Ashby (1956) Intro to Cybernetics", "axis": "Cyb"}, {"id": "W4244612406", "ref": "Espejo & Reyes (2011) Org. Systems", "axis": "Cyb"}, {"id": "W1601629960", "ref": "Hood (1983) Tools of Government", "axis": "Reg"}, {"id": "W2126563689", "ref": "Hood & Margetts (2007) Tools Digital Age", "axis": "Reg"}, {"id": "W4386803846", "ref": "Margetts (2024) Rediscovering Nodality", "axis": "Reg"}, {"id": "W3124879925", "ref": "Rodrik (2004) Industrial Policy 21C", "axis": "PolInd"}, {"id": "W1553746973", "ref": "Mazzucato (2013) Entrepreneurial State", "axis": "PolInd"}];
+
+
+const byId = id => document.getElementById(id);
+const fmt = n => Number(n).toLocaleString('pt-BR');
+
+byId('gen-date').textContent = 'Execução de referência · ' + STATS.generated;
+byId('footer-stats').textContent = fmt(STATS.corpus) + ' trabalhos · ' + STATS.generated;
+
+/* Faixa de estatísticas */
+const statDefs = [
+  [fmt(STATS.corpus), 'trabalhos no corpus'],
+  [STATS.seeds,  'obras-semente'],
+  [STATS.axes2,  'obras-ponte (≥2 eixos)'],
+  [STATS.axes3,  'pontes completas (3 eixos)'],
+  [fmt(STATS.cocit_n), 'nós de cocitação'],
+  [(STATS.cocit_e/1000).toFixed(1)+' mil', 'arestas de cocitação'],
+  [STATS.clusters, 'agrupamentos'],
+  [fmt(STATS.bursts), 'rajadas detectadas'],
+];
+byId('stat-strip').innerHTML = statDefs.map(([n,l]) =>
+  `<div class="stat-cell"><span class="stat-n">${n}</span><span class="stat-l">${l}</span></div>`).join('');
+
+byId('funnel-note').textContent =
+  `Corpus final: ${fmt(STATS.corpus)} trabalhos · ${STATS.axes2} obras-ponte (${STATS.axes3} com os três eixos) · `
+  + `rede de cocitação com ${fmt(STATS.cocit_n)} nós e ${fmt(STATS.cocit_e)} arestas · `
+  + `${STATS.clusters} agrupamentos temáticos · ${fmt(STATS.bursts)} rajadas de citação.`;
+
+/* Barra de eixos */
+const cyb = TEMPORAL.reduce((s,d)=>s+d.Cyb,0);
+const reg = TEMPORAL.reduce((s,d)=>s+d.Reg,0);
+const pi  = TEMPORAL.reduce((s,d)=>s+d.PolInd,0);
+const tot = cyb+reg+pi;
+byId('axes-bar').innerHTML =
+  `<div style="background:var(--cyb);width:${(cyb/tot*100).toFixed(1)}%;opacity:.8"></div>
+   <div style="background:var(--reg);width:${(reg/tot*100).toFixed(1)}%;opacity:.8"></div>
+   <div style="background:var(--pi);width:${(pi/tot*100).toFixed(1)}%;opacity:.8"></div>`;
+byId('axes-labels').innerHTML =
+  `<span><span style="color:var(--cyb)">■</span> Cibernética · ${(cyb/tot*100).toFixed(0)}%</span>
+   <span><span style="color:var(--reg)">■</span> Regulação · ${(reg/tot*100).toFixed(0)}%</span>
+   <span><span style="color:var(--pi)">■</span> Política industrial · ${(pi/tot*100).toFixed(0)}%</span>`;
+
+/* Etiquetas de eixo */
+function tags(a){
+  let o=''; const ax=a||'';
+  if(ax.includes('Cyb'))    o+='<span class="tag t-cyb">Cib</span>';
+  if(ax.includes('Reg'))    o+='<span class="tag t-reg">Reg</span>';
+  if(ax.includes('PolInd')) o+='<span class="tag t-pi">PolInd</span>';
+  return o;
+}
+const axisName = a => a==='Cyb'?'Cibernética':a==='Reg'?'Regulação':'Política industrial';
+
+/* Tabela de obras-semente (fundamentação) */
+byId('seed-table').innerHTML = SEEDS.map(s =>
+  `<tr><td>${axisName(s.axis)}</td><td class="ref">${s.ref}</td>
+   <td><a href="https://openalex.org/${s.id}" target="_blank" rel="noopener">${s.id}</a></td></tr>`).join('');
+
+/* Obras mais citadas */
+byId('list-top20').innerHTML = TOP20.map((r,i) =>
+  `<div class="paper-row">
+    <div class="paper-rank">${String(i+1).padStart(2,'0')}</div>
+    <div><div class="paper-title">${r.title}</div>
+    <div class="paper-meta">${r.authors||'—'} · ${r.year} · ${tags(r.axes)}</div></div>
+    <div class="paper-cit"><strong>${fmt(r.cited_by)}</strong><br>cit.</div>
+  </div>`).join('');
+
+/* Obras-ponte */
+byId('list-bridges').innerHTML = BRIDGES.map(r => {
+  const isAll = (r.axes||'').split(',').length >= 3;
+  return `<div class="bridge-card ${isAll?'full':'two'}">
+    <div class="bridge-title">${r.title}</div>
+    <div class="bridge-meta">${r.authors||'—'} · ${r.year} · ${fmt(r.cited_by)} cit.</div>
+    <div style="margin-top:5px">${tags(r.axes)}</div>
+  </div>`;
+}).join('');
+
+/* Rajadas de citação */
+const maxW = Math.max(...BURSTS.map(b=>b.weight));
+const bcols = ['#4b3fc2','#1a7a5e','#b85c10'];
+byId('list-bursts').innerHTML = BURSTS.map((r,i) => {
+  const pct = Math.round(r.weight/maxW*100);
+  const col = bcols[i%bcols.length];
+  return `<div class="burst-row">
+    <div class="burst-w">p=${r.weight}</div>
+    <div class="burst-track"><div class="burst-fill" style="width:${pct}%;background:${col}">
+      <span class="burst-label">${r.title} · <em>${r.authors||'—'}</em></span>
+    </div></div>
+    <div class="burst-period">${r.begin}–${r.end}</div>
+  </div>`;
+}).join('');
+
+/* Agrupamentos */
+byId('list-clusters').innerHTML = CLUSTERS.filter(c=>c.size>=3).map(c =>
+  `<div class="cluster-row">
+    <div><div class="cluster-name">${c.label}</div><span class="cluster-n">${c.size} trabalhos</span></div>
+    <div class="cluster-papers">${c.papers.map(p=>`<em>${p.title}</em> (${fmt(p.cited_by)} cit., ${p.year})`).join('<br>')}</div>
+  </div>`).join('');
+
+/* Belas adormecidas */
+const maxB = Math.max(...BEAUTIES.map(b=>b.B));
+byId('list-beauties').innerHTML = BEAUTIES.map(r => {
+  const bw = Math.round(r.B/maxB*70);
+  const col = r.B>100?'var(--cyb)':r.B>50?'var(--reg)':'var(--pi)';
+  const cls = r.B>100?'clássica':r.B>50?'tardia':'emergente';
+  return `<div class="beauty-row">
+    <div><div class="beauty-b">B=${r.B}</div><div class="beauty-tm">t<sub>m</sub>=${r.t_m} anos</div></div>
+    <div><div class="beauty-title">${r.title}</div>
+    <div class="beauty-sub">${r.year} · ${fmt(r.cited_by)} cit.</div></div>
+    <div><div class="beauty-bar" style="width:${bw}px;background:${col}"></div>
+    <div style="font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:4px">${cls}</div></div>
+  </div>`;
+}).join('');
+
+/* Obras-semente (lista) */
+byId('list-seeds').innerHTML = SEEDS.map(s => {
+  const dotCls = s.axis==='Cyb'?'dot-c':s.axis==='Reg'?'dot-r':'dot-p';
+  const tagCls = s.axis==='Cyb'?'t-cyb':s.axis==='Reg'?'t-reg':'t-pi';
+  const lbl = s.axis==='PolInd'?'PolInd':s.axis==='Cyb'?'Cib':'Reg';
+  return `<div class="seed-row">
+    <span class="dot ${dotCls}" style="margin-top:4px"></span>
+    <div><div class="seed-ref">${s.ref}</div>
+    <div class="seed-id"><a href="https://openalex.org/${s.id}" target="_blank" rel="noopener">${s.id}</a> · ${axisName(s.axis)}</div></div>
+    <span class="tag ${tagCls}">${lbl}</span>
+  </div>`;
+}).join('');
+
+/* Central de downloads + dicionário de dados */
+const dlIcon = `<svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const DADOS = [
+  {f:'dados/00_pipeline_log.csv',       d:'Parâmetros e métricas da execução'},
+  {f:'dados/02_top20_citados.csv',      d:'Vinte obras mais citadas (não-semente)'},
+  {f:'dados/03_bridges_n_axes_gte2.csv',d:'Obras-ponte (dois ou mais eixos)'},
+  {f:'dados/05_kleinberg_bursts.csv',   d:'Rajadas de citação detectadas'},
+  {f:'dados/06_sleeping_beauties.csv',  d:'Coeficiente de beleza por obra'},
+  {f:'dados/07_clusters_top3.csv',      d:'Três obras mais citadas por agrupamento'},
+  {f:'dados/08_seeds.csv',              d:'Obras-semente com identificadores'},
+  {f:'dados/09_temporal.csv',           d:'Produção anual por eixo'},
+  {f:'dados/scisci_results.json',       d:'Resultados consolidados (JSON)'},
+];
+byId('dl-grid').innerHTML = DADOS.map(x => {
+  const name = x.f.split('/').pop();
+  return `<a class="dl-btn" href="${x.f}" download>${dlIcon}<div><span class="dl-name">${name}</span><span class="dl-desc">${x.d}</span></div></a>`;
+}).join('');
+byId('dict-table').innerHTML = DADOS.map(x =>
+  `<tr><td class="ref">${x.f.split('/').pop()}</td><td>${x.d}</td></tr>`).join('');
+
+/* GRÁFICOS */
+const fMono = "'JetBrains Mono'";
+new Chart(byId('chartTemporal'), {
+  type:'line', data:{labels:TEMPORAL.map(d=>d.year),datasets:[
+    {label:'Cibernética',data:TEMPORAL.map(d=>d.Cyb),borderColor:'#4b3fc2',backgroundColor:'rgba(75,63,194,.07)',fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
+    {label:'Regulação',  data:TEMPORAL.map(d=>d.Reg),borderColor:'#1a7a5e',backgroundColor:'rgba(26,122,94,.07)', fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
+    {label:'Pol. industrial',data:TEMPORAL.map(d=>d.PolInd),borderColor:'#b85c10',backgroundColor:'rgba(184,92,16,.07)',fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
+  ]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono}}},
+    scales:{x:{grid:{display:false},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:12,font:{size:10,family:fMono},color:'#6b6560'}},
+            y:{grid:{color:'rgba(14,14,14,.05)'},ticks:{font:{size:10,family:fMono},color:'#6b6560'}}}}
+});
+new Chart(byId('chartBridges'), {
+  type:'bubble', data:{datasets:[{
+    data:BRIDGES.map(b=>({x:b.year||2000,y:b.cited_by,r:Math.max(4,Math.sqrt(b.cited_by)/7)})),
+    backgroundColor:BRIDGES.map(b=>(b.axes||'').split(',').length>=3?'rgba(194,63,63,.55)':'rgba(107,101,96,.4)'),
+    borderColor:BRIDGES.map(b=>(b.axes||'').split(',').length>=3?'#c23f3f':'#6b6560'),borderWidth:1
+  }]},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+    scales:{x:{ticks:{font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}},
+            y:{ticks:{font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}}},
+    layout:{padding:{top:14,right:14}}}
+});
+const clPal = ['#4b3fc2','#b85c10','#1a7a5e','#c23f3f','#185fa5','#d4537e'];
+const clShown = CLUSTERS.filter(c=>c.size>=3);
+new Chart(byId('chartClusters'), {
+  type:'bar',
+  data:{labels:clShown.map(c=>c.label.split('·')[0].trim()),
+        datasets:[{data:clShown.map(c=>c.size),
+          backgroundColor:clPal.map(c=>c+'CC'),borderColor:clPal,borderWidth:1,borderRadius:2}]},
+  options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},
+    scales:{x:{grid:{color:'rgba(14,14,14,.05)'},ticks:{font:{size:10,family:fMono},color:'#6b6560'}},
+            y:{grid:{display:false},ticks:{font:{size:10,family:fMono},color:'#0e0e0e'}}}}
+});
+
+/* Navegação ativa */
+const secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('.sidenav a');
+function onScroll(){let c='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-120)c=s.id});
+  links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+c));}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+</script>
+</body></html>
