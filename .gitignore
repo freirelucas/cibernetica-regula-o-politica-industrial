@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Checkpoints do pipeline (parquet) e saídas geradas
+*.parquet
+ckpt_*.parquet
+
+# CSVs e ZIP de saída gerados pelo pipeline na RAIZ (Célula 11b).
+# Ancorados em "/" para não atingir os dados publicados em docs/dados/.
+/00_pipeline_log.csv
+/0[0-9]_*.csv
+/scisci_ipea_pkg_export*.zip
+/out/
