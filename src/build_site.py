@@ -32,7 +32,7 @@ JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
 DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 
-SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos",
+SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
             "rajadas", "adormecidas", "citadas", "discussao", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 
@@ -130,6 +130,9 @@ def main():
         R = json.load(f)
 
     js = build_js(R) + f"const META={json.dumps(build_meta(R), ensure_ascii=False)};\n"
+    net_src = os.path.join(ROOT, "data", "network.json")
+    net = json.load(open(net_src, encoding="utf-8")) if os.path.exists(net_src) else {"nodes": [], "links": []}
+    js += f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
     html = inject_template(js, TEMPLATE)
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:

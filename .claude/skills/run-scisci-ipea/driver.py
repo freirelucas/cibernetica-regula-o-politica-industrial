@@ -12,7 +12,7 @@ Uso (caminhos relativos à RAIZ do repositório):
     python .claude/skills/run-scisci-ipea/driver.py --shot /tmp/s.png --path /
 
 Saída: STATUS OK (código 0) quando não há erro de página, há 3 gráficos e todas
-as 17 seções estão presentes; PROBLEMA (código 1) caso contrário.
+as 18 seções estão presentes; PROBLEMA (código 1) caso contrário.
 Pré-requisito do caminho do agente:
     pip install playwright && python -m playwright install --with-deps chromium
 """
@@ -28,7 +28,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 DOCS = os.path.join(ROOT, "docs")
 
-SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos",
+SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
             "rajadas", "adormecidas", "citadas", "discussao", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 META_SPANS = ["m-cocit", "m-coupling", "m-clusters", "m-pivotal", "m-pctrefs"]

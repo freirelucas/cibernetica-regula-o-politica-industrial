@@ -25,6 +25,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="vendor/fonts.css">
 <script src="vendor/chart.umd.min.js"></script>
+<script src="vendor/d3.min.js"></script>
 <style>
 :root{--ink:#0e0e0e;--paper:#f5f2ed;--surface:#ede9e2;--border:rgba(14,14,14,.12);--border-s:rgba(14,14,14,.25);--cyb:#4b3fc2;--cyb-l:#e8e6f8;--reg:#1a7a5e;--reg-l:#e0f2ec;--pi:#b85c10;--pi-l:#faeada;--accent:#c23f3f;--muted:#6b6560;--mono:'JetBrains Mono',monospace;--serif:'Spectral',serif;--sans:'DM Sans',sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -99,6 +100,10 @@ h1 em{font-style:italic;color:var(--muted)}
 .chip:focus-visible,.search:focus-visible{outline:2px solid var(--cyb);outline-offset:2px}
 .search{font-family:var(--sans);font-size:12px;padding:.3rem .6rem;border:1px solid var(--border-s);border-radius:6px;background:var(--paper);color:var(--ink);min-width:150px;flex:1}
 .ctl-count{color:var(--muted);margin-left:auto;white-space:nowrap}
+#netcanvas{display:block;width:100%;height:100%;cursor:grab}
+.net-tip{position:absolute;display:none;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:11px;line-height:1.45;padding:6px 9px;border-radius:5px;max-width:240px;z-index:50}
+.net-tip strong{color:#fff;font-family:var(--serif)}
+@media(max-width:640px){#net-wrap{height:380px!important}}
 .sw{width:10px;height:10px;border-radius:2px;display:inline-block}
 /* Tabelas */
 .tbl{width:100%;border-collapse:collapse;font-size:.86rem;margin:.5rem 0 1rem}
@@ -252,6 +257,7 @@ pre.code{max-width:100%}
       <a href="#temporal">Panorama temporal</a>
       <a href="#pontes">Zonas de intercâmbio</a>
       <a href="#agrupamentos">Agrupamentos</a>
+      <a href="#rede">Rede</a>
       <a href="#rajadas">Rajadas</a>
       <a href="#adormecidas">Belas adormecidas</a>
       <a href="#citadas">Mais citadas</a>
@@ -273,6 +279,7 @@ pre.code{max-width:100%}
   <a href="#temporal" title="Panorama temporal"></a>
   <a href="#pontes" title="Zonas de intercâmbio"></a>
   <a href="#agrupamentos" title="Agrupamentos temáticos"></a>
+  <a href="#rede" title="Rede do núcleo intelectual"></a>
   <a href="#rajadas" title="Rajadas de citação"></a>
   <a href="#adormecidas" title="Belas adormecidas"></a>
   <a href="#citadas" title="Obras mais citadas"></a>
@@ -425,9 +432,26 @@ pre.code{max-width:100%}
   <div id="list-clusters"></div>
 </div></section>
 
-<!-- 07 · RAJADAS -->
+<!-- 07 · REDE DO NÚCLEO INTELECTUAL -->
+<section id="rede" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rede do núcleo intelectual</h2><span class="sec-method">citação + acoplamento · OpenAlex</span></div>
+  <div class="prose"><p>Rede das obras mais influentes do campo — as obras-semente, as referências em rajada e o ponto pivotal — ligadas por <strong>citações reais</strong> (linha sólida, uma obra cita a outra) e por <strong>acoplamento bibliográfico</strong> (linha tracejada, referências em comum). A cor indica o eixo; o tamanho do nó, o total de citações. <em>Arraste</em> os nós para reorganizar; <em>clique</em> para abrir a obra no OpenAlex.</p></div>
+  <div style="position:relative">
+    <div class="chart-wrap" id="net-wrap" style="height:520px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><canvas id="netcanvas" role="img" aria-label="Rede de citação e acoplamento do núcleo intelectual do campo">Visualização de rede (requer JavaScript). Os dados estão em dados/network.json.</canvas></div>
+    <div id="net-tip" class="net-tip"></div>
+  </div>
+  <div class="chart-legend" style="margin-top:10px">
+    <span><span class="sw" style="background:var(--cyb)"></span>Cibernética</span>
+    <span><span class="sw" style="background:var(--reg)"></span>Regulação</span>
+    <span><span class="sw" style="background:var(--pi)"></span>Política industrial</span>
+    <span style="color:var(--muted)">○ contorno preto = obra-semente · linha cheia = citação · linha tracejada = acoplamento</span>
+  </div>
+  <p class="fig-cap">Núcleo de <span id="net-n"></span> obras. Livros clássicos sem lista de referências no OpenAlex (Beer, Ashby, Hood 1983) podem aparecer sem conexões — reflexo da limitação de cobertura (ver <a href="#limitacoes">limitações</a>), não de relevância.</p>
+</div></section>
+
+<!-- 08 · RAJADAS -->
 <section id="rajadas" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rajadas de citação</h2><span class="sec-method">Kleinberg (2003) · Viterbi · s=2 · γ=1</span></div>
+  <div class="sec-header"><span class="sec-num">08</span><h2 class="sec-title">Rajadas de citação</h2><span class="sec-method">Kleinberg (2003) · Viterbi · s=2 · γ=1</span></div>
   <div class="prose"><p>Períodos de citação anormalmente intensa em relação ao fluxo total do corpus. O peso indica o excesso de citações acumulado no intervalo. <em>Brain of the Firm</em> (1996–2013) registra a rajada histórica mais forte; Espejo &amp; Reyes (a partir de 2022) registra a mais recente — sinal de um reaquecimento contemporâneo da cibernética organizacional.</p></div>
   <div id="list-bursts"></div>
   <div class="callout" id="pivotal-callout" style="margin-top:1.5rem"></div>
@@ -435,14 +459,14 @@ pre.code{max-width:100%}
 
 <!-- 08 · BELAS ADORMECIDAS -->
 <section id="adormecidas" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">08</span><h2 class="sec-title">Belas adormecidas</h2><span class="sec-method">coeficiente de beleza · Ke et al. (2015)</span></div>
+  <div class="sec-header"><span class="sec-num">09</span><h2 class="sec-title">Belas adormecidas</h2><span class="sec-method">coeficiente de beleza · Ke et al. (2015)</span></div>
   <div class="prose"><p>Obras de longa hibernação seguida de despertar abrupto. O coeficiente <em>B</em> mede a intensidade desse despertar; <em>t<sub>m</sub></em> é o número de anos até o pico de citações. <em>Brain of the Firm</em> (Beer, 1972) dormiu 41 anos antes de despertar; a <em>Introdução à Cibernética</em> (Ashby, 1956) esperou quase sete décadas para ser redescoberta pela literatura de governança digital.</p></div>
   <div id="list-beauties"></div>
 </div></section>
 
 <!-- 09 · MAIS CITADAS -->
 <section id="citadas" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">09</span><h2 class="sec-title">Obras mais citadas (exceto sementes)</h2><span class="sec-method">contagem de citações · ao menos um eixo</span></div>
+  <div class="sec-header"><span class="sec-num">10</span><h2 class="sec-title">Obras mais citadas (exceto sementes)</h2><span class="sec-method">contagem de citações · ao menos um eixo</span></div>
   <div class="prose"><p>As vinte obras não-semente mais citadas do corpus. <em>Autopoiesis and Cognition</em> (Maturana &amp; Varela, 1980) lidera pelo eixo da cibernética; a literatura de composição de instrumentos de política (Howlett, Borrás, Rogge) domina o eixo da regulação.</p></div>
   <div class="controls" id="top20-controls">
     <span class="ctl-label">eixo</span>
@@ -461,7 +485,7 @@ pre.code{max-width:100%}
 
 <!-- 10 · DISCUSSÃO -->
 <section id="discussao" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">10</span><h2 class="sec-title">Implicações para a política industrial</h2><span class="sec-method">síntese e agenda</span></div>
+  <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Implicações para a política industrial</h2><span class="sec-method">síntese e agenda</span></div>
   <div class="prose">
     <p class="lead">A convergência mapeada não é mera curiosidade bibliométrica: aponta para uma síntese ainda incipiente, mas fértil. Cada eixo aporta uma peça de um mesmo problema — governar uma estrutura produtiva complexa sob incerteza.</p>
     <p>A <strong>cibernética organizacional</strong> oferece uma teoria da capacidade: pela lei da variedade requisita (Ashby) e pelo Modelo de Sistema Viável (Beer), um aparato de governo só regula um sistema produtivo se dispuser de variedade interna e de canais de retroalimentação à altura da complexidade que pretende dirigir. A tradição dos <strong>instrumentos de governo</strong> (Hood; Margetts) fornece o inventário operacional dessa capacidade — nodalidade, autoridade, recursos e organização — e a gramática para combiná-los. A <strong>política industrial orientada por missões</strong> (Rodrik; Mazzucato) acrescenta o propósito e o problema de coordenação que mobiliza os dois primeiros.</p>
@@ -472,14 +496,14 @@ pre.code{max-width:100%}
 
 <!-- 11 · OBRAS-SEMENTE -->
 <section id="sementes" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
+  <div class="sec-header"><span class="sec-num">12</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
   <div class="prose"><p>As dez obras que ancoram a coleta, cada uma com seu identificador na base OpenAlex (clicável). A escolha privilegia obras de referência inequívoca em cada tradição.</p></div>
   <div id="list-seeds"></div>
 </div></section>
 
 <!-- 12 · REPRODUTIBILIDADE -->
 <section id="repro" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">12</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
+  <div class="sec-header"><span class="sec-num">13</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
   <div class="prose">
     <p>Todo o estudo é reprodutível. O caderno de execução, o módulo de relatório e os resultados consolidados acompanham o repositório.</p>
     <h3>No ambiente Colab (recomendado)</h3>
@@ -498,7 +522,7 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 13 · DADOS -->
 <section id="dados" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">13</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
+  <div class="sec-header"><span class="sec-num">14</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
   <div class="prose"><p>Os conjuntos de dados processados em cada etapa do funil, em formato CSV (codificação UTF-8). O conjunto completo de resultados consolidados também está disponível em formato JSON.</p></div>
   <div class="dl-grid" id="dl-grid"></div>
   <p class="fig-cap">Os dados refletem a execução de referência (ver data no rodapé). O corpus bruto completo (com resumos e listas de referência) é reconstituído reexecutando o funil; aqui se disponibilizam os produtos analíticos de cada etapa.</p>
@@ -510,7 +534,7 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 14 · LIMITAÇÕES -->
 <section id="limitacoes" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">14</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
+  <div class="sec-header"><span class="sec-num">15</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
   <div class="prose">
     <ul>
       <li><strong>Referências de livros clássicos.</strong> Para várias obras-semente em formato de livro (Beer, Ashby, Hood, 1983), a base OpenAlex não expõe a lista de obras citadas; a bola de neve regressiva dessas sementes é, portanto, nula.</li>
@@ -523,7 +547,7 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 15 · GLOSSÁRIO -->
 <section id="glossario" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">15</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
+  <div class="sec-header"><span class="sec-num">16</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
   <dl class="gloss">
     <dt>Cocitação <span class="src">(co-citation)</span></dt><dd>Relação entre duas obras citadas conjuntamente por um terceiro trabalho.</dd>
     <dt>Acoplamento bibliográfico <span class="src">(bibliographic coupling)</span></dt><dd>Relação entre dois trabalhos que citam fontes em comum.</dd>
@@ -540,7 +564,7 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 16 · REFERÊNCIAS -->
 <section id="referencias" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">16</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
+  <div class="sec-header"><span class="sec-num">17</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
   <div class="callout" id="como-citar"><strong>Como citar.</strong> FREIRE, L. <em>Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual</em>. Brasília: IPEA / DIEST-COGIT, 2026. Documento de trabalho.</div>
   <ul class="refs">
     <li>ASHBY, W. R. <em>An Introduction to Cybernetics</em>. London: Chapman &amp; Hall, 1956.</li>
@@ -806,6 +830,72 @@ new Chart(byId('chartClusters'), {
 });
 }
 (document.fonts && document.fonts.ready) ? document.fonts.ready.then(drawCharts) : drawCharts();
+
+/* Rede do núcleo intelectual — d3-force em canvas */
+(function(){
+  const cv = byId('netcanvas');
+  if (!cv || !window.d3 || !NETWORK.nodes || !NETWORK.nodes.length) return;
+  byId('net-n').textContent = NETWORK.nodes.length;
+  const ctx = cv.getContext('2d');
+  const AXC = {Cyb:'#4b3fc2', Reg:'#1a7a5e', PolInd:'#b85c10', '':'#9a948c'};
+  const nodes = NETWORK.nodes.map(d=>Object.assign({}, d));
+  const links = NETWORK.links.map(d=>Object.assign({}, d));
+  const rad = d => 4 + Math.sqrt(d.cited_by||0)/8;
+  let W=0, H=0;
+  function resize(){
+    const dpr=window.devicePixelRatio||1;
+    W=cv.clientWidth; H=cv.clientHeight;
+    cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  resize();
+  const sim = d3.forceSimulation(nodes)
+    .force('link', d3.forceLink(links).id(d=>d.id).distance(l=>l.tipo==='cita'?60:90).strength(.5))
+    .force('charge', d3.forceManyBody().strength(-110))
+    .force('x', d3.forceX(W/2).strength(.08))
+    .force('y', d3.forceY(H/2).strength(.08))
+    .force('collide', d3.forceCollide().radius(d=>rad(d)+4))
+    .on('tick', draw);
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    links.forEach(l=>{
+      ctx.beginPath(); ctx.moveTo(l.source.x,l.source.y); ctx.lineTo(l.target.x,l.target.y);
+      if (l.tipo==='cita'){ ctx.strokeStyle='rgba(14,14,14,.28)'; ctx.lineWidth=1; ctx.setLineDash([]); }
+      else { ctx.strokeStyle='rgba(184,92,16,.35)'; ctx.lineWidth=1.2; ctx.setLineDash([3,3]); }
+      ctx.stroke();
+    });
+    ctx.setLineDash([]);
+    nodes.forEach(n=>{
+      const r=rad(n);
+      n.x=Math.max(r+2, Math.min(W-r-2, n.x)); n.y=Math.max(r+2, Math.min(H-r-2, n.y));
+      ctx.beginPath(); ctx.arc(n.x,n.y,r,0,2*Math.PI);
+      ctx.globalAlpha = n.seed?1:.85; ctx.fillStyle = AXC[n.axis]||AXC['']; ctx.fill(); ctx.globalAlpha=1;
+      if (n.seed){ ctx.lineWidth=2; ctx.strokeStyle='#0e0e0e'; ctx.stroke(); }
+      if (r>9 || n.seed){
+        ctx.fillStyle='#0e0e0e'; ctx.font="10px 'JetBrains Mono',monospace";
+        const lbl=n.label.slice(0,22);
+        if (n.x > W-100){ ctx.textAlign='right'; ctx.fillText(lbl, n.x-r-3, n.y+3); ctx.textAlign='left'; }
+        else ctx.fillText(lbl, n.x+r+3, n.y+3);
+      }
+    });
+  }
+  function nodeAt(mx,my){ for(let i=nodes.length-1;i>=0;i--){const n=nodes[i],r=rad(n)+4; if((mx-n.x)**2+(my-n.y)**2<=r*r) return n;} return null; }
+  const tip = byId('net-tip');
+  cv.addEventListener('mousemove', ev=>{
+    const b=cv.getBoundingClientRect(), n=nodeAt(ev.clientX-b.left, ev.clientY-b.top);
+    if (n){ cv.style.cursor='pointer'; tip.style.display='block';
+      tip.style.left=(ev.clientX-b.left+12)+'px'; tip.style.top=(ev.clientY-b.top+12)+'px';
+      tip.innerHTML=`<strong>${n.label}</strong><br>${axisName(n.axis)||'sem eixo'} · ${n.year||'s.d.'} · ${fmt(n.cited_by)} cit.`; }
+    else { cv.style.cursor='grab'; tip.style.display='none'; }
+  });
+  cv.addEventListener('mouseleave', ()=>{ tip.style.display='none'; });
+  cv.addEventListener('click', ev=>{ const b=cv.getBoundingClientRect(), n=nodeAt(ev.clientX-b.left, ev.clientY-b.top); if(n) window.open('https://openalex.org/'+n.id,'_blank','noopener'); });
+  d3.select(cv).call(d3.drag().container(cv)
+    .subject(ev=>nodeAt(ev.x,ev.y))
+    .on('start', ev=>{ if(ev.subject){ if(!ev.active) sim.alphaTarget(.3).restart(); ev.subject.fx=ev.subject.x; ev.subject.fy=ev.subject.y; } })
+    .on('drag', ev=>{ if(ev.subject){ ev.subject.fx=ev.x; ev.subject.fy=ev.y; } })
+    .on('end', ev=>{ if(ev.subject){ if(!ev.active) sim.alphaTarget(0); ev.subject.fx=null; ev.subject.fy=null; } }));
+  let rt; window.addEventListener('resize', ()=>{ clearTimeout(rt); rt=setTimeout(()=>{ resize(); sim.force('x', d3.forceX(W/2).strength(.08)); sim.force('y', d3.forceY(H/2).strength(.08)); sim.alpha(.3).restart(); }, 200); });
+})();
 
 /* Navegação ativa */
 const secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('.sidenav a');

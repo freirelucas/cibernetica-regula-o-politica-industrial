@@ -6,7 +6,7 @@ import build_site
 import report_from_json
 from report_template import inject_template
 
-SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos",
+SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
             "rajadas", "adormecidas", "citadas", "discussao", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 
