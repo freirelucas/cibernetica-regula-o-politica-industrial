@@ -8,12 +8,16 @@
 <meta name="author" content="Lucas Freire — IPEA/DIEST-COGIT">
 <meta name="citation_title" content="Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual">
 <meta name="citation_author" content="Freire, Lucas">
+<meta name="citation_author" content="Queiroz, Bruno">
+<meta name="citation_author" content="Faganello, Claudia">
 <meta name="citation_publication_date" content="2026">
 <meta name="citation_technical_report_institution" content="IPEA — Instituto de Pesquisa Econômica Aplicada (DIEST-COGIT)">
 <meta name="citation_keywords" content="cienciometria; cibernética organizacional; instrumentos de governo; política industrial; cocitação; acoplamento bibliográfico">
 <meta name="citation_language" content="pt">
 <meta name="DC.title" content="Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico">
 <meta name="DC.creator" content="Freire, Lucas">
+<meta name="DC.creator" content="Queiroz, Bruno">
+<meta name="DC.creator" content="Faganello, Claudia">
 <meta name="DC.publisher" content="IPEA / DIEST-COGIT">
 <meta name="DC.date" content="2026">
 <meta name="DC.language" content="pt-BR">
@@ -64,6 +68,8 @@ h1 em{font-style:italic;color:var(--muted)}
 .skip{position:absolute;left:-9999px;top:0}
 .skip:focus{left:8px;top:8px;z-index:400;background:var(--ink);color:#fff;padding:.5rem .8rem;border-radius:6px;font-family:var(--mono);font-size:12px}
 .cover{display:none}
+.preliminar{background:repeating-linear-gradient(45deg,#faeada,#faeada 12px,#f3dcc4 12px,#f3dcc4 24px);border-top:2px solid var(--pi);border-bottom:2px solid var(--pi);color:#7a3d08;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;text-align:center;padding:.55rem 1.25rem;line-height:1.5}
+.preliminar strong{text-transform:uppercase;letter-spacing:.08em}
 .section:last-child{border-bottom:none}
 .sec-header{display:flex;align-items:baseline;gap:12px;margin-bottom:1.25rem}
 .sec-num{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:28px}
@@ -197,7 +203,8 @@ pre.code{max-width:100%}
   @page{size:A4;margin:18mm 16mm}
   html{font-size:10.5pt}
   body{background:#fff;color:#000}
-  .topbar,.sidenav,.masthead,.controls,.skip{display:none}
+  .topbar,.sidenav,.masthead,.controls,.skip,.preliminar{display:none}
+  .cover-prelim{font-family:var(--mono);font-size:10pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b85c10;border:1.5px solid #b85c10;display:inline-block;padding:4pt 10pt;border-radius:4pt;margin-bottom:18pt}
   .container{max-width:none;padding:0}
   .section{padding:1.1rem 0;border-bottom:1px solid #ccc;break-inside:avoid}
   .chart-wrap{break-inside:avoid}
@@ -235,9 +242,10 @@ pre.code{max-width:100%}
 </noscript>
 <section class="cover" aria-hidden="true">
   <div class="cover-kicker">IPEA · DIEST-COGIT · Cienciometria · Documento de trabalho</div>
+  <div class="cover-prelim">Material preliminar — sujeito a revisão</div>
   <h1 class="cover-title">Cibernética Organizacional, Regulação e Política Industrial</h1>
   <p class="cover-sub">Mapeamento bibliométrico da estrutura intelectual de um campo em formação</p>
-  <p class="cover-author"><strong>Lucas Freire</strong><br>Instituto de Pesquisa Econômica Aplicada (IPEA) · DIEST-COGIT · Brasília · 2026</p>
+  <p class="cover-author"><strong>Lucas Freire · Bruno Queiroz · Claudia Faganello</strong><br>Instituto de Pesquisa Econômica Aplicada (IPEA) · DIEST-COGIT · Brasília · 2026</p>
   <div class="cover-abstract">
     <h2>Resumo</h2>
     <p>Este estudo mapeia a estrutura intelectual da interseção entre cibernética organizacional, instrumentos de governo e regulação, e política industrial. A partir de dez obras-semente, aplicou-se amostragem por bola de neve sobre a base OpenAlex; redes de cocitação e de acoplamento bibliográfico, agrupamentos de Leiden, centralidade de intermediação, rajadas de citação e o coeficiente de beleza revelam onde o campo se concentra, onde se fragmenta e quais obras articulam as tradições.</p>
@@ -262,6 +270,7 @@ pre.code{max-width:100%}
       <a href="#adormecidas">Belas adormecidas</a>
       <a href="#citadas">Mais citadas</a>
       <a href="#discussao">Discussão</a>
+      <a href="#brasil">Caso brasileiro</a>
       <a href="#sementes">Obras-semente</a>
       <a href="#repro">Reprodutibilidade</a>
       <a href="#dados">Dados</a>
@@ -284,6 +293,7 @@ pre.code{max-width:100%}
   <a href="#adormecidas" title="Belas adormecidas"></a>
   <a href="#citadas" title="Obras mais citadas"></a>
   <a href="#discussao" title="Implicações para a política industrial"></a>
+  <a href="#brasil" title="O caso brasileiro"></a>
   <a href="#sementes" title="Obras-semente"></a>
   <a href="#repro" title="Reprodutibilidade"></a>
   <a href="#dados" title="Dados"></a>
@@ -291,12 +301,14 @@ pre.code{max-width:100%}
   <a href="#referencias" title="Referências"></a>
 </nav>
 
+<div class="preliminar" role="note"><strong>Material preliminar</strong> — versão de trabalho, sujeita a revisão. Não citar como versão final.</div>
+
 <header class="masthead">
   <div style="max-width:900px">
     <div class="kicker">IPEA · DIEST-COGIT · Cienciometria</div>
     <h1>Cibernética Organizacional, Regulação<br>e <em>Política Industrial</em></h1>
     <p class="subtitle">Mapeamento da estrutura intelectual de um campo em formação: uma análise cienciométrica das tradições que conectam o controle de sistemas, os instrumentos de governo e a estratégia de desenvolvimento produtivo.</p>
-    <p class="authorline"><b>Lucas Freire</b> · Instituto de Pesquisa Econômica Aplicada (IPEA) · Diretoria de Estudos e Políticas do Estado, das Instituições e da Democracia (DIEST-COGIT) · Brasília · Documento de trabalho</p>
+    <p class="authorline"><b>Lucas Freire · Bruno Queiroz · Claudia Faganello</b> · Instituto de Pesquisa Econômica Aplicada (IPEA) · Diretoria de Estudos e Políticas do Estado, das Instituições e da Democracia (DIEST-COGIT) · Brasília · Documento de trabalho</p>
     <div class="byline">
       <span><span class="dot dot-c"></span>Cibernética · Beer · Ashby · Espejo</span>
       <span><span class="dot dot-r"></span>Regulação · Hood · Margetts · Howlett</span>
@@ -312,6 +324,7 @@ pre.code{max-width:100%}
   <div class="prose">
     <p class="lead">Este estudo mapeia a estrutura intelectual da interseção entre três tradições intelectuais que raramente dialogam de forma explícita: a <strong>cibernética organizacional</strong> (o controle e a viabilidade de sistemas complexos), os <strong>instrumentos de governo e a regulação</strong> (os meios pelos quais o Estado atua sobre a sociedade) e a <strong>política industrial</strong> (a ação deliberada do Estado sobre a estrutura produtiva).</p>
     <p>A partir de dez obras-semente canônicas, aplicou-se amostragem por bola de neve sobre a base bibliográfica aberta OpenAlex, reunindo um corpus de centenas de trabalhos. Sobre esse corpus, calcularam-se redes de cocitação e de acoplamento bibliográfico, agrupamentos de comunidades, centralidade de intermediação, rajadas de citação e o coeficiente de beleza — um conjunto de medidas que, em conjunto, revela onde o campo se concentra, onde ele se fragmenta e quais obras funcionam como pontos de passagem entre as tradições.</p>
+    <p>Ao mapeamento bibliométrico global soma-se uma <strong>revisão da literatura brasileira</strong> (ver <a href="#brasil">o caso brasileiro</a>), que situa as três tradições na trajetória nacional de regulação, política industrial e governança de tecnologias. Trabalho colaborativo de Lucas Freire, Bruno Queiroz e Claudia Faganello.</p>
     <p class="kw"><b>Palavras-chave:</b> cienciometria; cibernética organizacional; instrumentos de governo; política industrial; análise de cocitação; acoplamento bibliográfico; estrutura intelectual.</p>
     <div class="abstract-en">
       <h3>Abstract</h3>
@@ -494,16 +507,44 @@ pre.code{max-width:100%}
   </div>
 </div></section>
 
-<!-- 11 · OBRAS-SEMENTE -->
+<!-- 12 · O CASO BRASILEIRO -->
+<section id="brasil" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">12</span><h2 class="sec-title">O caso brasileiro</h2><span class="sec-method">revisão da literatura nacional</span></div>
+  <div class="callout" id="brasil-attr"><strong>Autoria desta seção.</strong> Síntese da revisão bibliográfica conduzida por <strong>Claudia Faganello</strong> (abril de 2026) sobre regulação, política industrial e cibernética no Brasil — busca sistemática em SciSpace, Google Scholar e bases de texto completo, com <strong>220 trabalhos</strong> analisados (73 em regulação e política industrial, 71 em cibernética e regulação, 76 em política industrial e cibernética). Complementa, no plano nacional e qualitativo, o mapeamento bibliométrico global (OpenAlex) das demais seções. O texto integral e os dados estão disponíveis ao final.</div>
+  <div class="prose">
+    <p class="lead">Enquanto as demais seções mapeiam a estrutura intelectual <em>global</em> do campo, esta examina sua manifestação <em>brasileira</em> — onde as três tradições têm raízes institucionais profundas, mas raramente dialogam de forma explícita.</p>
+    <h3>Regulação</h3>
+    <p>O arcabouço regulatório moderno do Brasil é recente: nasce das reformas e privatizações dos anos 1990, com as agências independentes — ANATEL, ANEEL, ANP, ANVISA, ANS. A literatura aponta tensão persistente entre autonomia regulatória e prestação de contas democrática, e entre eficiência econômica e objetivos de política industrial (PECI; SOBRAL, 2008; SHADLEN; FONSECA, 2013). Na fronteira digital, a LGPD (2018) e o Marco Civil da Internet (2014) avançaram, mas restam lacunas na regulação de inteligência artificial, algoritmos e Internet das Coisas — o Decreto 9.854/2019 (Plano Nacional de IoT) é apontado como insuficiente (BIONI; LUCIANO, 2019).</p>
+    <h3>Política industrial</h3>
+    <p>Da industrialização por substituição de importações (Vargas, Plano de Metas, II PND) ao ciclo recente de 2003–2014 — <strong>PITCE</strong>, <strong>PDP</strong>, <strong>Plano Brasil Maior</strong> e <strong>Inova Empresa</strong> —, com o BNDES e a Petrobras como principais vetores. A literatura é crítica: falhas de coordenação interinstitucional, ausência de metas de produtividade, cobertura excessivamente ampla e episódios de escolha de campeões (<em>picking winners</em>) comprometeram a efetividade (GUIMARÃES, 2021; ALMEIDA, 2009; ARBIX, 2019). A <strong>Nova Indústria Brasil</strong> (2023) retoma a agenda, articulando transformação digital, transição energética e bioeconomia.</p>
+    <h3>Cibernética</h3>
+    <p>De Wiener, Ashby e Beer ao <strong>Cybersyn</strong> chileno (1971–1973, sob Stafford Beer), a cibernética é referência para a governança baseada em modelos e a regulação adaptativa — instrumentos de retroalimentação, monitoramento contínuo e ajuste dinâmico de regras (MOROZOV; FLORES, 2019; MODEL-BASED GOVERNANCE, 2025). No Brasil, é tradição subexplorada: os processos de homologação e certificação de produtos cibernéticos são fragmentados (BARBALHO et al., 2018), e o ambiente regulatório experimental (<em>sandbox</em>) do Banco Central oferece um precedente para a regulação adaptativa.</p>
+    <h3>Convergência e agenda</h3>
+    <p>A Indústria 4.0 reabre o debate: a cibernética oferece não só tecnologias, mas uma <em>epistemologia de controle e adaptação</em> aplicável ao desenho da política industrial. A revisão identifica lacunas convergentes — mecanismos de coordenação interinstitucional, sistemas nacionais de homologação, evidência empírica de impacto, regulação adaptativa e a dimensão de direitos, segurança e democracia — e conclui que o Brasil dispõe de tradição relevante nos três campos, faltando articulá-los sistematicamente.</p>
+  </div>
+  <figure style="margin:1.5rem 0 0">
+    <img src="material-brasil/mapa_final_34_artigos.png" alt="Mapa de literatura do caso brasileiro — 34 artigos centrais (ResearchRabbit)" style="width:100%;border:1px solid var(--border);border-radius:8px;background:#fff">
+    <figcaption class="fig-cap">Mapa de literatura do núcleo brasileiro (34 artigos), por ResearchRabbit. Fonte: revisão de C. Faganello — método e base distintos do corpus OpenAlex.</figcaption>
+  </figure>
+  <p class="fig-cap" style="margin-top:1.25rem">Material desta seção (download):</p>
+  <div class="dl-grid">
+    <a class="dl-btn" href="material-brasil/revisao_brasil.md" download><svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span class="dl-name">revisao_brasil.md</span><span class="dl-desc">Revisão bibliográfica completa (Faganello)</span></div></a>
+    <a class="dl-btn" href="material-brasil/relatorio_abnt.docx" download><svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span class="dl-name">relatorio_abnt.docx</span><span class="dl-desc">Relatório em formato ABNT</span></div></a>
+    <a class="dl-btn" href="material-brasil/dataset_politica_industrial_brasil.csv" download><svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span class="dl-name">dataset_politica_industrial_brasil.csv</span><span class="dl-desc">Base de 140 trabalhos (Brasil)</span></div></a>
+    <a class="dl-btn" href="material-brasil/referencias_todos.bib" download><svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span class="dl-name">referencias_todos.bib</span><span class="dl-desc">Referências (BibTeX)</span></div></a>
+  </div>
+</div></section>
+
+<!-- 13 · OBRAS-SEMENTE -->
 <section id="sementes" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">12</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
+  <div class="sec-header"><span class="sec-num">13</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
   <div class="prose"><p>As dez obras que ancoram a coleta, cada uma com seu identificador na base OpenAlex (clicável). A escolha privilegia obras de referência inequívoca em cada tradição.</p></div>
   <div id="list-seeds"></div>
 </div></section>
 
 <!-- 12 · REPRODUTIBILIDADE -->
 <section id="repro" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">13</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
+  <div class="sec-header"><span class="sec-num">14</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
   <div class="prose">
     <p>Todo o estudo é reprodutível. O caderno de execução, o módulo de relatório e os resultados consolidados acompanham o repositório.</p>
     <h3>No ambiente Colab (recomendado)</h3>
@@ -522,7 +563,7 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 13 · DADOS -->
 <section id="dados" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">14</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
+  <div class="sec-header"><span class="sec-num">15</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
   <div class="prose"><p>Os conjuntos de dados processados em cada etapa do funil, em formato CSV (codificação UTF-8). O conjunto completo de resultados consolidados também está disponível em formato JSON.</p></div>
   <div class="dl-grid" id="dl-grid"></div>
   <p class="fig-cap">Os dados refletem a execução de referência (ver data no rodapé). O corpus bruto completo (com resumos e listas de referência) é reconstituído reexecutando o funil; aqui se disponibilizam os produtos analíticos de cada etapa.</p>
@@ -534,7 +575,7 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 14 · LIMITAÇÕES -->
 <section id="limitacoes" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">15</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
+  <div class="sec-header"><span class="sec-num">16</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
   <div class="prose">
     <ul>
       <li><strong>Referências de livros clássicos.</strong> Para várias obras-semente em formato de livro (Beer, Ashby, Hood, 1983), a base OpenAlex não expõe a lista de obras citadas; a bola de neve regressiva dessas sementes é, portanto, nula.</li>
@@ -547,7 +588,7 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 15 · GLOSSÁRIO -->
 <section id="glossario" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">16</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
+  <div class="sec-header"><span class="sec-num">17</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
   <dl class="gloss">
     <dt>Cocitação <span class="src">(co-citation)</span></dt><dd>Relação entre duas obras citadas conjuntamente por um terceiro trabalho.</dd>
     <dt>Acoplamento bibliográfico <span class="src">(bibliographic coupling)</span></dt><dd>Relação entre dois trabalhos que citam fontes em comum.</dd>
@@ -564,8 +605,8 @@ python src/build_site.py                # este site (docs/)</pre>
 
 <!-- 16 · REFERÊNCIAS -->
 <section id="referencias" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">17</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
-  <div class="callout" id="como-citar"><strong>Como citar.</strong> FREIRE, L. <em>Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual</em>. Brasília: IPEA / DIEST-COGIT, 2026. Documento de trabalho.</div>
+  <div class="sec-header"><span class="sec-num">18</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
+  <div class="callout" id="como-citar"><strong>Como citar.</strong> FREIRE, L.; QUEIROZ, B.; FAGANELLO, C. <em>Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual</em>. Brasília: IPEA / DIEST-COGIT, 2026. Material preliminar.</div>
   <ul class="refs">
     <li>ASHBY, W. R. <em>An Introduction to Cybernetics</em>. London: Chapman &amp; Hall, 1956.</li>
     <li>BEER, S. <em>Brain of the Firm</em>. London: Allen Lane, 1972.</li>
@@ -590,7 +631,7 @@ python src/build_site.py                # este site (docs/)</pre>
 </div></section>
 
 <footer class="footer">
-  <span>IPEA · DIEST-COGIT · Lucas Freire · 2026</span>
+  <span>IPEA · DIEST-COGIT · Freire · Queiroz · Faganello · 2026</span>
   <span id="footer-stats"></span>
   <span>Small (1973) · van Eck &amp; Waltman (2009) · Traag et al. (2019) · Kleinberg (2003) · Ke et al. (2015)</span>
 </footer>

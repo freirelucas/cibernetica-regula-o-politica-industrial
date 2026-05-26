@@ -24,8 +24,9 @@ construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 │   └── enrich_openalex.py            ← enriquecimento pontual via OpenAlex (uso único)
 ├── docs/                             ← SITE (GitHub Pages)
 │   ├── index.html
-│   ├── vendor/                       ← Chart.js + fontes (sem CDN)
-│   └── dados/                        ← 8 CSV do funil (PT) + scisci_results.json
+│   ├── vendor/                       ← Chart.js, d3 + fontes (sem CDN)
+│   ├── dados/                        ← 8 CSV do funil (PT) + scisci_results.json + DICIONARIO
+│   └── material-brasil/              ← revisão da literatura nacional (Faganello) + dados/mapas
 ├── data/
 │   └── scisci_results.json           ← resultados consolidados (execução maio 2026)
 ├── tests/                            ← suite pytest (build, dados, anglicismos, integridade)
@@ -159,7 +160,12 @@ O smoke headless do site fica em `.claude/skills/run-scisci-ipea/driver.py`.
 
 ---
 
-## Contato
+## Autoria
 
-Lucas Freire · IPEA / DIEST-COGIT · Brasília
-Execução de referência: 2026-05-25 17:33
+**Lucas Freire · Bruno Queiroz · Claudia Faganello** · IPEA / DIEST-COGIT · Brasília.
+Material preliminar, sujeito a revisão. A seção *O caso brasileiro* (site) e os arquivos
+em `docs/material-brasil/` resumem a revisão da literatura nacional conduzida por
+Claudia Faganello (busca em SciSpace/Google Scholar, abril/2026; 220 trabalhos),
+complementando o mapeamento bibliométrico global (OpenAlex) das demais seções.
+
+Execução de referência (corpus OpenAlex): 2026-05-25 17:33.
