@@ -88,6 +88,14 @@ h1 em{font-style:italic;color:var(--muted)}
 .fig-cap{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:.6rem;line-height:1.6}
 .chart-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px}
 .chart-legend span{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--muted)}
+.controls{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:1rem;font-family:var(--mono);font-size:11px}
+.ctl-label{color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.chip{font-family:var(--mono);font-size:11px;color:var(--muted);background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:.25rem .7rem;cursor:pointer}
+.chip:hover{color:var(--ink)}
+.chip.active{background:var(--cyb);color:#fff;border-color:var(--cyb)}
+.chip:focus-visible,.search:focus-visible{outline:2px solid var(--cyb);outline-offset:2px}
+.search{font-family:var(--sans);font-size:12px;padding:.3rem .6rem;border:1px solid var(--border-s);border-radius:6px;background:var(--paper);color:var(--ink);min-width:150px;flex:1}
+.ctl-count{color:var(--muted);margin-left:auto;white-space:nowrap}
 .sw{width:10px;height:10px;border-radius:2px;display:inline-block}
 /* Tabelas */
 .tbl{width:100%;border-collapse:collapse;font-size:.86rem;margin:.5rem 0 1rem}
@@ -363,18 +371,20 @@ pre.code{max-width:100%}
   <div class="sec-header"><span class="sec-num">04</span><h2 class="sec-title">Panorama temporal por eixo</h2><span class="sec-method">1960–2025 · trabalhos por ano</span></div>
   <div class="prose"><p>A cibernética domina a produção desde os anos 1970. A regulação e a política industrial convergem a partir de 2007 — com a segunda edição de Hood &amp; Margetts — e crescem fortemente entre 2013 e 2019, no rastro do debate sobre o Estado empreendedor e as missões. A aproximação simultânea dos três eixos torna-se visível a partir de 2013.</p></div>
   <div class="chart-wrap" style="height:300px"><canvas id="chartTemporal" role="img" aria-label="Produção por eixo temático, 1960 a 2025">Gráfico de área da produção anual.</canvas></div>
-  <div class="chart-legend">
-    <span><span class="sw" style="background:var(--cyb)"></span>Cibernética organizacional</span>
-    <span><span class="sw" style="background:var(--reg)"></span>Instrumentos de governo e regulação</span>
-    <span><span class="sw" style="background:var(--pi)"></span>Política industrial</span>
-  </div>
-  <p class="fig-cap">Série anual de trabalhos por eixo. Um mesmo trabalho pode contar para mais de um eixo.</p>
+  <p class="fig-cap">Série anual de trabalhos por eixo (um mesmo trabalho pode contar para mais de um eixo). Clique na legenda para mostrar ou ocultar um eixo.</p>
 </div></section>
 
 <!-- 05 · ZONAS DE INTERCÂMBIO -->
 <section id="pontes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">05</span><h2 class="sec-title">Zonas de intercâmbio · obras-ponte</h2><span class="sec-method">trabalhos com dois ou mais eixos</span></div>
   <div class="prose"><p>São as obras cujo título ou resumo mobiliza o vocabulário de dois ou mais eixos — uma aproximação <em>lexical</em> das <em>zonas de intercâmbio</em> entre tradições, no sentido de Galison. <span style="border-left:3px solid var(--accent);padding-left:6px">A borda vermelha assinala as que mobilizam os três eixos.</span> Por se apoiarem em coocorrência de termos (e não em citação direta), devem ser lidas como <strong>indícios de convergência a confirmar</strong>, e não como prova: são poucas, mas é nelas que o argumento começa.</p></div>
+  <div class="controls" id="bridges-controls">
+    <span class="ctl-label">eixos</span>
+    <button class="chip active" data-min="0">Todas</button>
+    <button class="chip" data-min="3">Três eixos</button>
+    <input class="search" id="bridges-q" type="search" placeholder="buscar título ou autor…" aria-label="Buscar nas obras-ponte">
+    <span class="ctl-count" id="br-count"></span>
+  </div>
   <div class="bridge-grid" id="list-bridges"></div>
   <div style="margin-top:1.5rem">
     <p class="fig-cap" style="margin-bottom:8px">Dispersão das obras-ponte por ano e número de citações (o raio é proporcional às citações).</p>
@@ -410,6 +420,18 @@ pre.code{max-width:100%}
 <section id="citadas" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">09</span><h2 class="sec-title">Obras mais citadas (exceto sementes)</h2><span class="sec-method">contagem de citações · ao menos um eixo</span></div>
   <div class="prose"><p>As vinte obras não-semente mais citadas do corpus. <em>Autopoiesis and Cognition</em> (Maturana &amp; Varela, 1980) lidera pelo eixo da cibernética; a literatura de composição de instrumentos de política (Howlett, Borrás, Rogge) domina o eixo da regulação.</p></div>
+  <div class="controls" id="top20-controls">
+    <span class="ctl-label">eixo</span>
+    <button class="chip active" data-ax="">Todos</button>
+    <button class="chip" data-ax="Cyb">Cibernética</button>
+    <button class="chip" data-ax="Reg">Regulação</button>
+    <button class="chip" data-ax="PolInd">Pol. industrial</button>
+    <span class="ctl-label" style="margin-left:8px">ordenar</span>
+    <button class="chip active" data-sort="cit">citações</button>
+    <button class="chip" data-sort="ano">ano</button>
+    <input class="search" id="top20-q" type="search" placeholder="buscar título ou autor…" aria-label="Buscar nas obras mais citadas">
+    <span class="ctl-count" id="t20-count"></span>
+  </div>
   <div id="list-top20"></div>
 </div></section>
 
@@ -599,24 +621,54 @@ byId('seed-table').innerHTML = SEEDS.map(s =>
   `<tr><td>${axisName(s.axis)}</td><td class="ref">${s.ref}</td>
    <td><a href="https://openalex.org/${s.id}" target="_blank" rel="noopener">${s.id}</a></td></tr>`).join('');
 
-/* Obras mais citadas */
-byId('list-top20').innerHTML = TOP20.map((r,i) =>
-  `<div class="paper-row">
-    <div class="paper-rank">${String(i+1).padStart(2,'0')}</div>
-    <div><div class="paper-title">${r.title}</div>
-    <div class="paper-meta">${r.authors||'—'} · ${r.year} · ${tags(r.axes)}</div></div>
-    <div class="paper-cit"><strong>${fmt(r.cited_by)}</strong><br>cit.</div>
-  </div>`).join('');
+/* Helper: chips exclusivos por grupo (data-attr) */
+function wireChips(barId, attr, onPick){
+  const bar = byId(barId);
+  bar.querySelectorAll('.chip[data-'+attr+']').forEach(c=>{
+    c.addEventListener('click', ()=>{
+      bar.querySelectorAll('.chip[data-'+attr+']').forEach(x=>x.classList.remove('active'));
+      c.classList.add('active'); onPick(c.getAttribute('data-'+attr));
+    });
+  });
+}
+const matchq = (r,q) => !q || ((r.title||'')+' '+(r.authors||'')).toLowerCase().includes(q);
 
-/* Obras-ponte */
-byId('list-bridges').innerHTML = BRIDGES.map(r => {
-  const isAll = (r.axes||'').split(',').length >= 3;
-  return `<div class="bridge-card ${isAll?'full':'two'}">
-    <div class="bridge-title">${r.title}</div>
-    <div class="bridge-meta">${r.authors||'—'} · ${r.year} · ${fmt(r.cited_by)} cit.</div>
-    <div style="margin-top:5px">${tags(r.axes)}</div>
-  </div>`;
-}).join('');
+/* Obras mais citadas — filtro por eixo + ordenação + busca */
+let t20ax='', t20sort='cit', t20q='';
+function renderTop20(){
+  const rows = TOP20.filter(r => (!t20ax || (r.axes||'').includes(t20ax)) && matchq(r,t20q));
+  rows.sort((a,b)=> t20sort==='ano' ? (b.year||0)-(a.year||0) : b.cited_by-a.cited_by);
+  byId('list-top20').innerHTML = rows.map((r,i)=>
+    `<div class="paper-row">
+      <div class="paper-rank">${String(i+1).padStart(2,'0')}</div>
+      <div><div class="paper-title">${r.title}</div>
+      <div class="paper-meta">${r.authors||'—'} · ${r.year} · ${tags(r.axes)}</div></div>
+      <div class="paper-cit"><strong>${fmt(r.cited_by)}</strong><br>cit.</div>
+    </div>`).join('') || '<p class="fig-cap">Nenhuma obra corresponde ao filtro.</p>';
+  byId('t20-count').textContent = rows.length+' / '+TOP20.length;
+}
+wireChips('top20-controls','ax', v=>{t20ax=v; renderTop20();});
+wireChips('top20-controls','sort', v=>{t20sort=v; renderTop20();});
+byId('top20-q').addEventListener('input', e=>{t20q=e.target.value.toLowerCase().trim(); renderTop20();});
+renderTop20();
+
+/* Obras-ponte — filtro por nº de eixos + busca */
+let brMin=0, brQ='';
+function renderBridges(){
+  const rows = BRIDGES.filter(r => (r.axes||'').split(',').length>=brMin && matchq(r,brQ));
+  byId('list-bridges').innerHTML = rows.map(r=>{
+    const isAll=(r.axes||'').split(',').length>=3;
+    return `<div class="bridge-card ${isAll?'full':'two'}">
+      <div class="bridge-title">${r.title}</div>
+      <div class="bridge-meta">${r.authors||'—'} · ${r.year} · ${fmt(r.cited_by)} cit.</div>
+      <div style="margin-top:5px">${tags(r.axes)}</div>
+    </div>`;
+  }).join('') || '<p class="fig-cap">Nenhuma obra-ponte corresponde ao filtro.</p>';
+  byId('br-count').textContent = rows.length+' / '+BRIDGES.length;
+}
+wireChips('bridges-controls','min', v=>{brMin=+v; renderBridges();});
+byId('bridges-q').addEventListener('input', e=>{brQ=e.target.value.toLowerCase().trim(); renderBridges();});
+renderBridges();
 
 /* Rajadas de citação */
 const maxW = Math.max(...BURSTS.map(b=>b.weight));
@@ -698,7 +750,7 @@ new Chart(byId('chartTemporal'), {
     {label:'Regulação',  data:TEMPORAL.map(d=>d.Reg),borderColor:'#1a7a5e',backgroundColor:'rgba(26,122,94,.07)', fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
     {label:'Pol. industrial',data:TEMPORAL.map(d=>d.PolInd),borderColor:'#b85c10',backgroundColor:'rgba(184,92,16,.07)',fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
   ]},
-  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono}}},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{family:fMono,size:11},color:'#6b6560',boxWidth:12,boxHeight:8,padding:14}},tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono}}},
     scales:{x:{grid:{display:false},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:12,font:{size:10,family:fMono},color:'#6b6560'}},
             y:{grid:{color:'rgba(14,14,14,.05)'},ticks:{font:{size:10,family:fMono},color:'#6b6560'}}}}
 });
@@ -708,7 +760,10 @@ new Chart(byId('chartBridges'), {
     backgroundColor:BRIDGES.map(b=>(b.axes||'').split(',').length>=3?'rgba(194,63,63,.55)':'rgba(107,101,96,.4)'),
     borderColor:BRIDGES.map(b=>(b.axes||'').split(',').length>=3?'#c23f3f':'#6b6560'),borderWidth:1
   }]},
-  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+      tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono},callbacks:{
+        title:(items)=>{const b=BRIDGES[items[0].dataIndex];return b.title;},
+        label:(ctx)=>{const b=BRIDGES[ctx.dataIndex];return `${b.authors||'—'} · ${b.year} · ${fmt(b.cited_by)} cit. · ${b.axes}`;}}}},
     scales:{x:{ticks:{callback:v=>String(v),font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}},
             y:{ticks:{callback:v=>Number(v).toLocaleString('pt-BR'),font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}}},
     layout:{padding:{top:14,right:14}}}
