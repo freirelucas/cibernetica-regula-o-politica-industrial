@@ -1,46 +1,76 @@
-# Science of Science — Cibernética, Regulação e Política Industrial
+# Ciência da Ciência — Cibernética, Regulação e Política Industrial
 ## IPEA / DIEST-COGIT · Pacote de reprodutibilidade
+
+Mapeamento cienciométrico da estrutura intelectual na interseção entre **cibernética
+organizacional**, **instrumentos de governo / regulação** e **política industrial**.
+O entregável canônico é o **site** em `docs/` (publicável no GitHub Pages),
+construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 
 ---
 
-## Conteúdo do pacote
+## Conteúdo do repositório
 
 ```
 .
-├── README.md                          ← este arquivo
-├── requirements.txt                   ← dependências fixadas
+├── README.md
+├── requirements.txt                  ← dependências do funil (Colab/local)
 ├── colab/
-│   ├── scisci_cibernetica_regulacao_PI_v2.ipynb   ← notebook principal
-│   └── html_template.html             ← template do report (carregar junto)
+│   ├── scisci_cibernetica_regulacao_PI_v2.ipynb   ← funil completo (OpenAlex → JSON)
+│   └── html_template.html            ← modelo do relatório simples (report_from_json)
 ├── src/
-│   ├── report_builder.py              ← gera o HTML a partir dos objetos vivos do pipeline
-│   ├── report_template.py             ← resolução/injeção do template (sem dependências)
-│   └── report_from_json.py            ← regenera o report offline a partir do JSON
-├── reports/
-│   ├── scisci_ipea.html               ← report publicação IPEA (contém 8 CSVs embutidos)
-│   ├── scisci_visual.html             ← versão visual exploratória
-│   └── scisci_report.html             ← report do template, regenerável via report_from_json.py
-└── data/
-    └── scisci_results.json            ← resultados da última execução (maio 2026)
+│   ├── build_site.py                 ← gera o site docs/ a partir do JSON (fonte única)
+│   ├── site_template.html            ← modelo do site (prosa + gráficos + downloads)
+│   ├── report_template.py            ← resolução/injeção de modelo (sem dependências)
+│   ├── report_from_json.py           ← reconstrói os consts de gráfico a partir do JSON
+│   └── report_builder.py             ← gera o relatório a partir dos objetos vivos do funil
+├── docs/                             ← SITE (GitHub Pages)
+│   ├── index.html
+│   ├── vendor/                       ← Chart.js + fontes (sem CDN)
+│   └── dados/                        ← 8 CSV do funil (PT) + scisci_results.json
+├── data/
+│   └── scisci_results.json           ← resultados consolidados (execução maio 2026)
+├── tests/                            ← suite pytest (build, dados, anglicismos, integridade)
+└── .claude/skills/run-scisci-ipea/   ← skill: build, serve e dirige o site headless
 ```
 
 ---
 
-## Como reproduzir
+## O site (`docs/`)
+
+Gerar o site a partir dos resultados consolidados (apenas biblioteca padrão, segundos):
+
+```bash
+python src/build_site.py
+```
+
+Servir localmente e abrir no navegador:
+
+```bash
+python3 -m http.server -d docs 8000   # http://127.0.0.1:8000/  · Ctrl-C para parar
+```
+
+Construir + servir + dirigir headless + screenshot (verifica gráficos e seções):
+
+```bash
+python .claude/skills/run-scisci-ipea/driver.py --build --shot /tmp/site.png
+```
+
+**Publicar:** no GitHub, *Settings → Pages → Source: branch + pasta `/docs`*.
+
+---
+
+## Reproduzir o estudo (funil completo)
 
 ### No Google Colab (recomendado)
 
-1. Suba **os dois arquivos** juntos:
-   - `colab/scisci_cibernetica_regulacao_PI_v2.ipynb`
-   - `colab/html_template.html`
-2. Execute célula a célula em ordem
-3. **Célula 3 (SMOKE TEST)** deve passar antes de prosseguir
-4. Checkpoints salvos automaticamente em parquet — se o runtime cair, retome de onde parou
-5. **Célula 11b** gera ZIP com todos os CSVs + HTML report
-6. Tempo estimado total: ~45 min
-
-> **Nota:** a Célula 11 importa `report_builder`, que agora depende de
-> `report_template.py`. No Colab, suba **os dois** módulos de `src/` juntos.
+1. Suba o notebook `colab/scisci_cibernetica_regulacao_PI_v2.ipynb` e o modelo
+   `colab/html_template.html`. Para gerar o site no fim, suba também os módulos de
+   `src/` (`build_site.py`, `report_from_json.py`, `report_template.py`) e `docs/vendor/`.
+2. Execute célula a célula em ordem.
+3. A **Célula 3 (teste de sanidade)** deve passar antes de prosseguir.
+4. Pontos de verificação são salvos em parquet — se a sessão cair, retoma de onde parou.
+5. A **Célula 11b** exporta todos os CSV + ZIP; a **Célula 13** gera o site camera-ready.
+6. Tempo total estimado: ~45 min.
 
 ### Localmente
 
@@ -49,23 +79,9 @@ pip install -r requirements.txt
 jupyter notebook colab/scisci_cibernetica_regulacao_PI_v2.ipynb
 ```
 
-### Regenerar só o report (sem rodar o pipeline)
-
-Os resultados da última execução já estão em `data/scisci_results.json`. Para
-reconstruir o HTML report a partir deles — **sem** as ~45 min de coleta e sem
-nenhuma dependência além da biblioteca padrão:
-
-```bash
-python src/report_from_json.py
-# -> reports/scisci_report.html
-```
-
-Útil para iterar no `html_template.html` ou reproduzir o report em qualquer
-máquina. Não sobrescreve `scisci_ipea.html` nem `scisci_visual.html`.
-
 ---
 
-## Seeds canônicos (IDs OpenAlex verificados em maio 2026)
+## Obras-semente canônicas (IDs OpenAlex verificados em maio 2026)
 
 | Eixo | ID | Referência |
 |------|----|-----------|
@@ -80,52 +96,70 @@ máquina. Não sobrescreve `scisci_ipea.html` nem `scisci_visual.html`.
 | PI  | W3124879925 | Rodrik, D. (2004). Industrial Policy for the 21C |
 | PI  | W1553746973 | Mazzucato, M. (2013). The Entrepreneurial State |
 
+(Os códigos de eixo `Cyb`/`Reg`/`PolInd` são um vocabulário controlado interno.)
+
 ---
 
 ## Referências metodológicas
 
 - **Bola de neve**: Wohlin (2014) *Guidelines for snowballing in systematic literature studies*
-- **Association strength**: Van Eck & Waltman (2009) *How to normalize cooccurrence data* · JASIST
-- **Leiden clustering**: Traag, Waltman & van Eck (2019) *From Louvain to Leiden* · Scientific Reports
-- **Betweenness centrality**: Brandes (2001) *A faster algorithm for betweenness centrality* · Journal of Mathematical Sociology
-- **Burst detection**: Kleinberg (2003) *Bursty and Hierarchical Structure in Streams* · DMKD
-- **Pivotal points**: Chen (2006) *CiteSpace II* · JASIST
-- **Beauty Coefficient**: Ke et al. (2015) *Defining and identifying sleeping beauties in science* · PNAS 112:7426–7431
+- **Força de associação**: Van Eck & Waltman (2009) *How to normalize cooccurrence data* · JASIST
+- **Agrupamento de Leiden**: Traag, Waltman & van Eck (2019) *From Louvain to Leiden* · Scientific Reports
+- **Centralidade de intermediação**: Brandes (2001) *A faster algorithm for betweenness centrality* · J. Math. Sociology
+- **Detecção de rajadas**: Kleinberg (2003) *Bursty and Hierarchical Structure in Streams* · DMKD
+- **Pontos pivotais**: Chen (2006) *CiteSpace II* · JASIST
+- **Coeficiente de beleza**: Ke et al. (2015) *Defining and identifying sleeping beauties in science* · PNAS 112:7426–7431
 
 ---
 
-## Outputs gerados pelo pipeline
+## Exportáveis
+
+Conjuntos canônicos em `docs/dados/` (CSV, UTF-8, cabeçalhos em PT), gerados de
+`scisci_results.json` por `build_site.py`:
 
 | Arquivo | Descrição |
 |---------|-----------|
-| `00_pipeline_log.csv` | Parâmetros e métricas da execução |
-| `02_top20_citados.csv` | Top 20 papers mais citados (não-seed, n_axes≥1) |
-| `03_bridges_n_axes_gte2.csv` | Trading zones (≥ 2 eixos temáticos) |
-| `05_kleinberg_bursts.csv` | Eventos de burst detectados (Kleinberg 2003) |
-| `06_sleeping_beauties.csv` | Beauty Coefficient por paper (Ke et al. 2015) |
-| `07_clusters_top3.csv` | Top-3 papers por cluster Leiden |
-| `08_seeds.csv` | Seeds com IDs OpenAlex |
-| `09_temporal.csv` | Produção anual por eixo temático |
-| `ckpt_phase1.parquet` | Corpus após fase 1 (queries de texto) |
-| `ckpt_phase2.parquet` | Corpus após forward snowball |
-| `ckpt_phase3.parquet` | Corpus após backward snowball |
-| `ckpt_enriched.parquet` | Corpus com referenced_works enriquecidos |
-| `ckpt_analysis.parquet` | Nós co-citation com métricas de rede |
-| `ckpt_metrics.parquet` | Métricas finais: betweenness, burst, beauty |
+| `00_registro_execucao.csv` | Parâmetros e métricas da execução |
+| `02_mais_citados.csv` | Vinte obras mais citadas (não-semente, ≥1 eixo) |
+| `03_obras_ponte.csv` | Obras-ponte (≥ 2 eixos temáticos) |
+| `05_rajadas_kleinberg.csv` | Rajadas de citação detectadas (Kleinberg 2003) |
+| `06_belas_adormecidas.csv` | Coeficiente de beleza por obra (Ke et al. 2015) |
+| `07_agrupamentos.csv` | Três obras mais citadas por agrupamento de Leiden |
+| `08_obras_semente.csv` | Obras-semente com IDs OpenAlex |
+| `09_serie_temporal.csv` | Produção anual por eixo temático |
+
+O funil no Colab (Célula 11b) exporta um superconjunto, incluindo o corpus completo
+e os pontos de verificação em parquet (`ckpt_*.parquet`).
+
+---
+
+## Testes
+
+```bash
+pip install pytest
+pytest -q          # build, integridade do JSON, cabeçalhos dos CSV, varredura de anglicismo
+```
+
+O smoke headless do site fica em `.claude/skills/run-scisci-ipea/driver.py`.
 
 ---
 
 ## Limitações conhecidas
 
-1. **OpenAlex / livros**: `referenced_works = []` para livros clássicos (Beer, Ashby, Hood 1983) — backward snowball desses seeds é nulo na API
-2. **Cobertura de abstracts**: ~95% para artigos pós-1996; menor para pré-1996 e livros
-3. **Campo `concepts` depreciado**: a API usa `topics` desde 2024; o pipeline usa ambos com fallback
-4. **Filtro vocabular**: introduz viés de confirmação — papers relevantes com vocabulário não coberto são excluídos
-5. **n_bridges = 10 é limite inferior**: outros bridges podem existir com vocabulário não previsto
+1. **OpenAlex / livros**: `referenced_works = []` para livros clássicos (Beer, Ashby,
+   Hood 1983) — a bola de neve regressiva dessas sementes é nula na API.
+2. **Cobertura de resumos**: ~95% para artigos pós-1996; menor para anteriores e livros.
+3. **Campo `concepts` depreciado**: a API usa `topics` desde 2024; o funil usa ambos.
+4. **Filtro vocabular**: introduz viés de confirmação — trabalhos pertinentes com
+   vocabulário não coberto são excluídos.
+5. **Obras-ponte são lexicais**: identificadas por coocorrência de vocabulário, não por
+   citação; o total é um limite inferior.
+6. **Autoria do OpenAlex**: alguns registros têm metadados imperfeitos, reproduzidos como
+   obtidos.
 
 ---
 
 ## Contato
 
-Lucas Freire · IPEA / DIEST-COGIT · Brasília  
-Pipeline gerado em: 2026-05-25 17:33
+Lucas Freire · IPEA / DIEST-COGIT · Brasília
+Execução de referência: 2026-05-25 17:33
