@@ -16,10 +16,21 @@ body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weigh
 a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 em{font-style:italic}
 /* Barra de navegação */
-.topbar{position:sticky;top:0;z-index:200;background:rgba(245,242,237,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:4px;padding:.5rem 1.25rem;overflow-x:auto;font-family:var(--mono);font-size:11px}
-.topbar a{color:var(--muted);padding:.35rem .6rem;border-radius:4px;white-space:nowrap}
-.topbar a:hover{color:var(--ink);background:var(--surface);text-decoration:none}
-.topbar .brand{color:var(--ink);font-weight:500;margin-right:.75rem}
+.topbar{position:sticky;top:0;z-index:200;background:rgba(245,242,237,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;padding:.5rem 1.25rem;font-family:var(--mono);font-size:11px}
+.topbar .brand{color:var(--ink);font-weight:500;white-space:nowrap}
+.navmenu{position:relative}
+.navmenu>summary{cursor:pointer;list-style:none;color:var(--ink);padding:.3rem .7rem;border:1px solid var(--border-s);border-radius:4px}
+.navmenu>summary::-webkit-details-marker{display:none}
+.navmenu>summary::after{content:" \25BE";color:var(--muted)}
+.navlist{display:none}
+.navmenu[open]>.navlist{display:flex;flex-direction:column;gap:1px;position:absolute;top:calc(100% + 6px);left:0;min-width:210px;max-height:72vh;overflow-y:auto;background:var(--paper);border:1px solid var(--border-s);border-radius:6px;padding:.4rem;box-shadow:0 8px 24px rgba(14,14,14,.12);z-index:300}
+.navlist a{color:var(--muted);padding:.4rem .6rem;border-radius:4px;white-space:nowrap;display:block}
+.navlist a:hover{color:var(--ink);background:var(--surface);text-decoration:none}
+.navmenu>summary:focus-visible,.navlist a:focus-visible,.dl-btn:focus-visible{outline:2px solid var(--cyb);outline-offset:2px}
+@media(min-width:901px){
+  .navmenu>summary{display:none}
+  .navmenu>.navlist{display:flex!important;flex-wrap:wrap;align-items:center;gap:1px;position:static;border:none;box-shadow:none;padding:0;min-width:0;max-height:none;overflow:visible;background:none}
+}
 .masthead{border-bottom:1px solid var(--border-s);padding:3.25rem 2.5rem 2.5rem;position:relative;overflow:hidden}
 .masthead::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyb) 0%,var(--reg) 50%,var(--pi) 100%)}
 .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.85rem;display:flex;align-items:center;gap:12px}
@@ -129,6 +140,22 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
 .sidenav a{width:6px;height:6px;border-radius:50%;background:var(--border-s);display:block;transition:transform .15s,background .15s}
 .sidenav a:hover,.sidenav a.active{background:var(--cyb);transform:scale(1.5)}
 @media(max-width:1100px){.sidenav{display:none}}
+/* defensivo: nada deve estourar a largura da viewport */
+.tbl td,.tbl th{overflow-wrap:anywhere}
+pre.code{max-width:100%}
+.paper-title,.bridge-title,.beauty-title,.cluster-name,.cluster-papers,.seed-ref,code,.prose a{overflow-wrap:anywhere}
+.paper-row>div,.beauty-row>div,.burst-row>div,.seed-row>div,.cluster-row>div{min-width:0}
+@media(max-width:900px){.stat-strip{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:640px){
+  .masthead{padding:2.25rem 1.25rem 1.75rem}
+  .container{padding:0 1.25rem}
+  h1{font-size:2rem}
+  .stat-strip{grid-template-columns:repeat(2,1fr)}
+  .cluster-row{grid-template-columns:1fr;gap:6px}
+  .sec-header{flex-wrap:wrap}
+  .sec-method{margin-left:0;width:100%;text-align:left;margin-top:3px}
+  .section{scroll-margin-top:3.5rem}
+}
 .footer{padding:2rem 2.5rem;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .axes-bar{display:flex;gap:2px;height:7px;border-radius:2px;overflow:hidden;margin:1rem 0 .4rem}
 .axes-labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted)}
@@ -166,22 +193,27 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
 </noscript>
 <nav class="topbar" aria-label="Navegação">
   <span class="brand">IPEA · DIEST</span>
-  <a href="#resumo">Resumo</a>
-  <a href="#teoria">Fundamentação teórica</a>
-  <a href="#metodo">Método</a>
-  <a href="#funil">Funil de coleta</a>
-  <a href="#temporal">Panorama temporal</a>
-  <a href="#pontes">Zonas de intercâmbio</a>
-  <a href="#agrupamentos">Agrupamentos</a>
-  <a href="#rajadas">Rajadas</a>
-  <a href="#adormecidas">Belas adormecidas</a>
-  <a href="#citadas">Mais citadas</a>
-  <a href="#discussao">Discussão</a>
-  <a href="#sementes">Obras-semente</a>
-  <a href="#repro">Reprodutibilidade</a>
-  <a href="#dados">Dados</a>
-  <a href="#glossario">Glossário</a>
-  <a href="#referencias">Referências</a>
+  <details class="navmenu">
+    <summary>Seções</summary>
+    <div class="navlist">
+      <a href="#resumo">Resumo</a>
+      <a href="#teoria">Fundamentação teórica</a>
+      <a href="#metodo">Método</a>
+      <a href="#funil">Funil de coleta</a>
+      <a href="#temporal">Panorama temporal</a>
+      <a href="#pontes">Zonas de intercâmbio</a>
+      <a href="#agrupamentos">Agrupamentos</a>
+      <a href="#rajadas">Rajadas</a>
+      <a href="#adormecidas">Belas adormecidas</a>
+      <a href="#citadas">Mais citadas</a>
+      <a href="#discussao">Discussão</a>
+      <a href="#sementes">Obras-semente</a>
+      <a href="#repro">Reprodutibilidade</a>
+      <a href="#dados">Dados</a>
+      <a href="#glossario">Glossário</a>
+      <a href="#referencias">Referências</a>
+    </div>
+  </details>
 </nav>
 
 <nav class="sidenav" aria-label="Seções">
