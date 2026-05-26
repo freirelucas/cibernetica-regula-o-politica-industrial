@@ -154,8 +154,9 @@ O smoke headless do site fica em `.claude/skills/run-scisci-ipea/driver.py`.
    vocabulário não coberto são excluídos.
 5. **Obras-ponte são lexicais**: identificadas por coocorrência de vocabulário, não por
    citação; o total é um limite inferior.
-6. **Autoria do OpenAlex**: alguns registros têm metadados imperfeitos, reproduzidos como
-   obtidos.
+6. **Autoria do OpenAlex**: alguns registros têm metadados imperfeitos; a autoria das
+   obras-semente canônicas (Beer, Ashby, Mazzucato) foi normalizada, e as demais são
+   reproduzidas como obtidas.
 
 ---
 
