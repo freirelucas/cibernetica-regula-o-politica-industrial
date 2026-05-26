@@ -15,14 +15,13 @@ construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 ├── README.md
 ├── requirements.txt                  ← dependências do funil (Colab/local)
 ├── colab/
-│   ├── scisci_cibernetica_regulacao_PI_v2.ipynb   ← funil completo (OpenAlex → JSON)
-│   └── html_template.html            ← modelo do relatório simples (report_from_json)
+│   └── scisci_cibernetica_regulacao_PI_v2.ipynb   ← funil completo (OpenAlex → JSON)
 ├── src/
 │   ├── build_site.py                 ← gera o site docs/ a partir do JSON (fonte única)
 │   ├── site_template.html            ← modelo do site (prosa + gráficos + downloads)
-│   ├── report_template.py            ← resolução/injeção de modelo (sem dependências)
 │   ├── report_from_json.py           ← reconstrói os consts de gráfico a partir do JSON
-│   └── report_builder.py             ← gera o relatório a partir dos objetos vivos do funil
+│   ├── report_template.py            ← injeção do modelo (sem dependências)
+│   └── enrich_openalex.py            ← enriquecimento pontual via OpenAlex (uso único)
 ├── docs/                             ← SITE (GitHub Pages)
 │   ├── index.html
 │   ├── vendor/                       ← Chart.js + fontes (sem CDN)
@@ -63,9 +62,9 @@ python .claude/skills/run-scisci-ipea/driver.py --build --shot /tmp/site.png
 
 ### No Google Colab (recomendado)
 
-1. Suba o notebook `colab/scisci_cibernetica_regulacao_PI_v2.ipynb` e o modelo
-   `colab/html_template.html`. Para gerar o site no fim, suba também os módulos de
-   `src/` (`build_site.py`, `report_from_json.py`, `report_template.py`) e `docs/vendor/`.
+1. Suba o notebook `colab/scisci_cibernetica_regulacao_PI_v2.ipynb`. Para gerar o site
+   ao final (Célula 13), suba também os módulos de `src/` (`build_site.py`,
+   `report_from_json.py`, `report_template.py`, `site_template.html`) e `docs/vendor/`.
 2. Execute célula a célula em ordem.
 3. A **Célula 3 (teste de sanidade)** deve passar antes de prosseguir.
 4. Pontos de verificação são salvos em parquet — se a sessão cair, retoma de onde parou.

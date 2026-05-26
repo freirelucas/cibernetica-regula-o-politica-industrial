@@ -1,29 +1,15 @@
 #!/usr/bin/env python3
-"""Regenera o HTML report a partir de ``data/scisci_results.json``, sem rodar o
-pipeline completo (~45 min). Usa apenas a biblioteca padrão.
+"""Mapeia ``data/scisci_results.json`` -> bloco JS consumido pelo modelo do site.
 
-Fecha a lacuna de reprodutibilidade: ``report_builder.build_html_report`` exige
-os objetos DataFrame vivos do pipeline; este módulo reconstrói os mesmos consts
-JS consumidos pelo template a partir dos resultados salvos.
-
-Uso:
-    python src/report_from_json.py
-    python src/report_from_json.py --json data/scisci_results.json \\
-        --template colab/html_template.html --out reports/scisci_report.html
+Biblioteca (sem dependências além da padrão) usada por ``build_site.py``:
+reconstrói os ``const STATS/TEMPORAL/TOP20/...`` a partir dos resultados salvos,
+sem rodar o funil (~45 min).
 """
-import argparse
 import json
-import os
-import sys
-
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from report_template import inject_template  # noqa: E402
-
-SECTIONS = ["resumo", "temporal", "top20", "bridges", "bursts", "clusters", "beauties", "seeds"]
 
 
 def _axis_of(ref):
-    """Deriva o eixo temático do seed a partir do texto da referência."""
+    """Deriva o eixo temático da obra-semente a partir do texto da referência."""
     if any(x in ref for x in ("Beer", "Ashby", "Espejo")):
         return "Cyb"
     if any(x in ref for x in ("Hood", "Margetts")):
@@ -40,7 +26,7 @@ def _j(obj):
 
 
 def build_js(results):
-    """Mapeia scisci_results.json -> bloco JS consumido pelo template."""
+    """Mapeia scisci_results.json -> bloco JS consumido pelo modelo."""
     stats = {
         "corpus":        results.get("corpus_size"),
         "seeds":         results.get("n_seeds"),
@@ -82,34 +68,3 @@ def build_js(results):
             f"const CLUSTERS={_j(clusters)};\n"
             f"const BEAUTIES={_j(beauties)};\n"
             f"const SEEDS={_j(seeds)};\n")
-
-
-def build_report_from_json(json_path, template_path=None):
-    with open(json_path, encoding="utf-8") as f:
-        results = json.load(f)
-    return inject_template(build_js(results), template_path)
-
-
-def main(argv=None):
-    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    ap = argparse.ArgumentParser(description="Regenera o HTML report a partir do JSON de resultados.")
-    ap.add_argument("--json", default=os.path.join(root, "data", "scisci_results.json"))
-    ap.add_argument("--template", default=None, help="html_template.html (autodetecta se omitido)")
-    ap.add_argument("--out", default=os.path.join(root, "reports", "scisci_report.html"))
-    args = ap.parse_args(argv)
-
-    html = build_report_from_json(args.json, args.template)
-    os.makedirs(os.path.dirname(args.out), exist_ok=True)
-    with open(args.out, "w", encoding="utf-8") as f:
-        f.write(html)
-    print(f"HTML report salvo: {args.out}  ({os.path.getsize(args.out) // 1024} KB)")
-
-    # Sanidade: seções presentes (mesma checagem da Célula 11 do notebook)
-    missing = [s for s in SECTIONS if f'id="{s}"' not in html]
-    for s in SECTIONS:
-        print(f"  {'ok' if s not in missing else 'FALTA'}  #{s}")
-    return 1 if missing else 0
-
-
-if __name__ == "__main__":
-    raise SystemExit(main())

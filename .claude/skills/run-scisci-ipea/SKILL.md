@@ -29,12 +29,7 @@ Regenerate `docs/` (HTML + the 8 CSVs in `docs/dados/`) from the JSON:
 python src/build_site.py
 ```
 
-Prints each of the 17 sections as `ok`. To regenerate the simpler template report
-(`reports/scisci_report.html`) instead:
-
-```bash
-python src/report_from_json.py
-```
+Prints each of the 17 sections as `ok` and regenerates `docs/dados/`.
 
 ## Run — agent path (use this)
 
