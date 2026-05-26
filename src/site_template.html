@@ -60,6 +60,9 @@ h1 em{font-style:italic;color:var(--muted)}
 .dot-c{background:var(--cyb)}.dot-r{background:var(--reg)}.dot-p{background:var(--pi)}
 .container{max-width:960px;margin:0 auto;padding:0 2rem}
 .section{padding:2.75rem 0 2.25rem;border-bottom:1px solid var(--border);scroll-margin-top:3.75rem}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:8px;top:8px;z-index:400;background:var(--ink);color:#fff;padding:.5rem .8rem;border-radius:6px;font-family:var(--mono);font-size:12px}
+.cover{display:none}
 .section:last-child{border-bottom:none}
 .sec-header{display:flex;align-items:baseline;gap:12px;margin-bottom:1.25rem}
 .sec-num{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:28px}
@@ -189,18 +192,27 @@ pre.code{max-width:100%}
   @page{size:A4;margin:18mm 16mm}
   html{font-size:10.5pt}
   body{background:#fff;color:#000}
-  .topbar,.sidenav{display:none}
-  .masthead{padding:0 0 1rem}.masthead::before{height:2px}
+  .topbar,.sidenav,.masthead,.controls,.skip{display:none}
   .container{max-width:none;padding:0}
   .section{padding:1.1rem 0;border-bottom:1px solid #ccc;break-inside:avoid}
   .chart-wrap{break-inside:avoid}
   a{color:#000;text-decoration:none}
   .dl-grid,pre.code{break-inside:avoid}
   h1{font-size:20pt}.sec-title{font-size:13pt}
+  /* Capa (folha de rosto) — só na impressão */
+  .cover{display:flex;flex-direction:column;min-height:95vh;page-break-after:always;padding-top:4vh}
+  .cover-kicker{font-family:var(--mono);font-size:9.5pt;letter-spacing:.1em;text-transform:uppercase;color:#555;border-bottom:1px solid #000;padding-bottom:8pt;margin-bottom:26pt}
+  .cover-title{font-family:var(--serif);font-size:27pt;font-weight:400;line-height:1.12;margin-bottom:10pt}
+  .cover-sub{font-family:var(--serif);font-style:italic;font-size:13pt;color:#333;margin-bottom:26pt}
+  .cover-author{font-family:var(--mono);font-size:10.5pt;line-height:1.7;margin-bottom:auto}
+  .cover-abstract h2{font-family:var(--serif);font-size:13pt;font-weight:600;margin:0 0 6pt}
+  .cover-abstract p{font-size:10.5pt;line-height:1.5;margin-bottom:8pt;max-width:none}
+  .cover-cite{font-size:9.5pt;color:#333;border-top:1px solid #ccc;padding-top:8pt;margin-top:18pt}
 }
 </style>
 </head>
 <body>
+<a class="skip" href="#resumo">Pular para o conteúdo</a>
 <noscript>
   <div style="background:var(--pi-l);border-bottom:1px solid var(--border-s);padding:.9rem 2rem;font-family:var(--mono);font-size:12px;line-height:1.7;color:var(--ink)">
     Este relatório é <strong>interativo</strong>: os gráficos e as tabelas são montados com JavaScript.
@@ -216,6 +228,18 @@ pre.code{max-width:100%}
     <a href="dados/scisci_results.json">JSON consolidado</a>.
   </div>
 </noscript>
+<section class="cover" aria-hidden="true">
+  <div class="cover-kicker">IPEA · DIEST-COGIT · Cienciometria · Documento de trabalho</div>
+  <h1 class="cover-title">Cibernética Organizacional, Regulação e Política Industrial</h1>
+  <p class="cover-sub">Mapeamento bibliométrico da estrutura intelectual de um campo em formação</p>
+  <p class="cover-author"><strong>Lucas Freire</strong><br>Instituto de Pesquisa Econômica Aplicada (IPEA) · DIEST-COGIT · Brasília · 2026</p>
+  <div class="cover-abstract">
+    <h2>Resumo</h2>
+    <p>Este estudo mapeia a estrutura intelectual da interseção entre cibernética organizacional, instrumentos de governo e regulação, e política industrial. A partir de dez obras-semente, aplicou-se amostragem por bola de neve sobre a base OpenAlex; redes de cocitação e de acoplamento bibliográfico, agrupamentos de Leiden, centralidade de intermediação, rajadas de citação e o coeficiente de beleza revelam onde o campo se concentra, onde se fragmenta e quais obras articulam as tradições.</p>
+    <p class="cover-kw"><strong>Palavras-chave:</strong> cienciometria; cibernética organizacional; instrumentos de governo; política industrial; cocitação; acoplamento bibliográfico.</p>
+  </div>
+  <p class="cover-cite"><strong>Como citar.</strong> FREIRE, L. <em>Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual</em>. Brasília: IPEA / DIEST-COGIT, 2026.</p>
+</section>
 <nav class="topbar" aria-label="Navegação">
   <span class="brand">IPEA · DIEST</span>
   <details class="navmenu">
@@ -732,6 +756,7 @@ const DADOS = [
   {f:'dados/08_obras_semente.csv',     d:'Obras-semente com identificadores'},
   {f:'dados/09_serie_temporal.csv',    d:'Produção anual por eixo'},
   {f:'dados/scisci_results.json',      d:'Resultados consolidados (JSON)'},
+  {f:'dados/DICIONARIO.csv',           d:'Dicionário de dados (descrição das colunas)'},
 ];
 byId('dl-grid').innerHTML = DADOS.map(x => {
   const name = x.f.split('/').pop();

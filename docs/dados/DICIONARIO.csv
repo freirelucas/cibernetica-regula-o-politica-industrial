@@ -1,0 +1,41 @@
+arquivo,coluna,descricao
+00_registro_execucao.csv,parametro,nome do parâmetro/métrica
+00_registro_execucao.csv,valor,valor
+00_registro_execucao.csv,descricao,descrição do parâmetro
+02_mais_citados.csv,ano,ano de publicação
+02_mais_citados.csv,citacoes,total de citações (OpenAlex)
+02_mais_citados.csv,eixos,eixos temáticos tocados (Cyb/Reg/PolInd)
+02_mais_citados.csv,n_eixos,número de eixos tocados
+02_mais_citados.csv,autores,autores (até 3)
+02_mais_citados.csv,titulo,título da obra
+02_mais_citados.csv,veiculo,veículo/fonte
+03_obras_ponte.csv,ano,ano de publicação
+03_obras_ponte.csv,citacoes,total de citações (OpenAlex)
+03_obras_ponte.csv,eixos,eixos temáticos tocados (Cyb/Reg/PolInd)
+03_obras_ponte.csv,autores,autores (até 3)
+03_obras_ponte.csv,titulo,título da obra
+05_rajadas_kleinberg.csv,id_ref,identificador OpenAlex da referência
+05_rajadas_kleinberg.csv,inicio,ano de início da rajada
+05_rajadas_kleinberg.csv,fim,ano de fim da rajada
+05_rajadas_kleinberg.csv,peso,peso da rajada (excesso de citações acumulado)
+05_rajadas_kleinberg.csv,titulo,título da obra
+05_rajadas_kleinberg.csv,autores,autores (até 3)
+06_belas_adormecidas.csv,ano,ano de publicação
+06_belas_adormecidas.csv,citacoes,total de citações (OpenAlex)
+06_belas_adormecidas.csv,B,coeficiente de beleza (Ke et al. 2015)
+06_belas_adormecidas.csv,t_m,anos até o pico de citações
+06_belas_adormecidas.csv,eixos,eixos temáticos tocados (Cyb/Reg/PolInd)
+06_belas_adormecidas.csv,titulo,título da obra
+07_agrupamentos.csv,id_agrupamento,identificador do agrupamento (Leiden)
+07_agrupamentos.csv,rotulo,termos distintivos do agrupamento
+07_agrupamentos.csv,tamanho,nº de trabalhos no agrupamento
+07_agrupamentos.csv,titulo,título da obra
+07_agrupamentos.csv,citacoes,total de citações (OpenAlex)
+07_agrupamentos.csv,ano,ano de publicação
+08_obras_semente.csv,chave,chave interna da obra-semente
+08_obras_semente.csv,id_openalex,identificador OpenAlex
+08_obras_semente.csv,referencia,referência bibliográfica da obra-semente
+09_serie_temporal.csv,ano,ano de publicação
+09_serie_temporal.csv,Cyb,trabalhos do eixo Cibernética no ano
+09_serie_temporal.csv,Reg,trabalhos do eixo Regulação no ano
+09_serie_temporal.csv,PolInd,trabalhos do eixo Política Industrial no ano

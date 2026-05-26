@@ -79,6 +79,35 @@ def write_csvs(R, out):
     return 8
 
 
+COLDOC = {
+    "parametro": "nome do parâmetro/métrica", "valor": "valor", "descricao": "descrição do parâmetro",
+    "ano": "ano de publicação", "citacoes": "total de citações (OpenAlex)",
+    "eixos": "eixos temáticos tocados (Cyb/Reg/PolInd)", "n_eixos": "número de eixos tocados",
+    "autores": "autores (até 3)", "titulo": "título da obra", "veiculo": "veículo/fonte",
+    "id_ref": "identificador OpenAlex da referência", "inicio": "ano de início da rajada",
+    "fim": "ano de fim da rajada", "peso": "peso da rajada (excesso de citações acumulado)",
+    "B": "coeficiente de beleza (Ke et al. 2015)", "t_m": "anos até o pico de citações",
+    "id_agrupamento": "identificador do agrupamento (Leiden)", "rotulo": "termos distintivos do agrupamento",
+    "tamanho": "nº de trabalhos no agrupamento", "chave": "chave interna da obra-semente",
+    "id_openalex": "identificador OpenAlex", "referencia": "referência bibliográfica da obra-semente",
+    "Cyb": "trabalhos do eixo Cibernética no ano", "Reg": "trabalhos do eixo Regulação no ano",
+    "PolInd": "trabalhos do eixo Política Industrial no ano",
+}
+
+
+def write_dicionario(out):
+    """Gera DICIONARIO.csv (arquivo, coluna, descrição) a partir dos CSV gerados."""
+    import glob
+    rows = []
+    for fp in sorted(glob.glob(os.path.join(out, "0*.csv"))):
+        name = os.path.basename(fp)
+        cols = open(fp, encoding="utf-8").readline().strip().split(",")
+        rows += [(name, c, COLDOC.get(c, "")) for c in cols]
+    with open(os.path.join(out, "DICIONARIO.csv"), "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["arquivo", "coluna", "descricao"]); w.writerows(rows)
+
+
 def build_meta(R):
     """Campos do JSON que não entram nos consts de gráfico, mas alimentam a prosa."""
     piv = (R.get("top_pivotal") or [{}])[0]
@@ -108,6 +137,7 @@ def main():
     print(f"site:  {index}  ({os.path.getsize(index)//1024} KB)")
 
     n = write_csvs(R, DADOS)
+    write_dicionario(DADOS)
     print(f"dados: {n} CSVs gerados a partir do JSON em {DADOS}")
     shutil.copy(JSON_SRC, os.path.join(DADOS, "scisci_results.json"))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
