@@ -81,12 +81,17 @@ def write_csvs(R, out):
 
 def build_meta(R):
     """Campos do JSON que não entram nos consts de gráfico, mas alimentam a prosa."""
+    piv = (R.get("top_pivotal") or [{}])[0]
     return {
         "n_axes_1": R["n_axes_1"],
         "coupling_n": R["coupling_nodes"], "coupling_e": R["coupling_edges"],
         "clusters_cc": R["n_clusters_cc"], "clusters_bc_total": R["n_clusters_bc"],
         "pivotal": R["n_pivotal"], "pct_refs": R["pct_with_refs"],
         "bursting_refs": R["n_bursting_refs"],
+        "pivotal_ref": piv.get("ref_id"), "pivotal_title": piv.get("title"),
+        "pivotal_authors": piv.get("authors"), "pivotal_year": piv.get("year"),
+        "pivotal_betw": round(float(piv.get("betweenness") or 0), 3),
+        "pivotal_cit": piv.get("n_citations"),
     }
 
 

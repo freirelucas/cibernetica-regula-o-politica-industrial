@@ -56,7 +56,7 @@ def build_js(results):
     temporal = results.get("temporal", [])
     top20    = [_pick(r, ("year", "cited_by", "axes", "authors", "title")) for r in results.get("top20_nonfeed", [])]
     bridges  = [_pick(r, ("year", "cited_by", "axes", "authors", "title")) for r in results.get("top_bridges", [])]
-    bursts   = [_pick(r, ("begin", "end", "weight", "title", "authors"))   for r in results.get("top_bursts", [])]
+    bursts   = [_pick(r, ("begin", "end", "weight", "title", "authors", "ref_id")) for r in results.get("top_bursts", [])]
     beauties = [_pick(r, ("year", "cited_by", "B", "t_m", "axes", "title")) for r in results.get("sleeping_beauties", [])]
 
     clusters = []

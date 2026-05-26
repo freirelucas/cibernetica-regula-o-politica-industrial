@@ -6,6 +6,23 @@
 <title>Cibernética Organizacional, Regulação e Política Industrial — Mapeamento Bibliométrico · IPEA/DIEST</title>
 <meta name="description" content="Mapeamento da estrutura intelectual na interseção entre cibernética organizacional, instrumentos de regulação e política industrial. Estudo cienciométrico do IPEA/DIEST-COGIT.">
 <meta name="author" content="Lucas Freire — IPEA/DIEST-COGIT">
+<meta name="citation_title" content="Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual">
+<meta name="citation_author" content="Freire, Lucas">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_technical_report_institution" content="IPEA — Instituto de Pesquisa Econômica Aplicada (DIEST-COGIT)">
+<meta name="citation_keywords" content="cienciometria; cibernética organizacional; instrumentos de governo; política industrial; cocitação; acoplamento bibliográfico">
+<meta name="citation_language" content="pt">
+<meta name="DC.title" content="Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico">
+<meta name="DC.creator" content="Freire, Lucas">
+<meta name="DC.publisher" content="IPEA / DIEST-COGIT">
+<meta name="DC.date" content="2026">
+<meta name="DC.language" content="pt-BR">
+<meta name="DC.type" content="Text">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cibernética Organizacional, Regulação e Política Industrial">
+<meta property="og:description" content="Mapeamento cienciométrico da estrutura intelectual na interseção entre cibernética organizacional, instrumentos de governo e política industrial.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="vendor/fonts.css">
 <script src="vendor/chart.umd.min.js"></script>
 <style>
@@ -379,6 +396,7 @@ pre.code{max-width:100%}
   <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rajadas de citação</h2><span class="sec-method">Kleinberg (2003) · Viterbi · s=2 · γ=1</span></div>
   <div class="prose"><p>Períodos de citação anormalmente intensa em relação ao fluxo total do corpus. O peso indica o excesso de citações acumulado no intervalo. <em>Brain of the Firm</em> (1996–2013) registra a rajada histórica mais forte; Espejo &amp; Reyes (a partir de 2022) registra a mais recente — sinal de um reaquecimento contemporâneo da cibernética organizacional.</p></div>
   <div id="list-bursts"></div>
+  <div class="callout" id="pivotal-callout" style="margin-top:1.5rem"></div>
 </div></section>
 
 <!-- 08 · BELAS ADORMECIDAS -->
@@ -477,6 +495,7 @@ python src/build_site.py                # este site (docs/)</pre>
 <!-- 16 · REFERÊNCIAS -->
 <section id="referencias" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">16</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
+  <div class="callout" id="como-citar"><strong>Como citar.</strong> FREIRE, L. <em>Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual</em>. Brasília: IPEA / DIEST-COGIT, 2026. Documento de trabalho.</div>
   <ul class="refs">
     <li>ASHBY, W. R. <em>An Introduction to Cybernetics</em>. London: Chapman &amp; Hall, 1956.</li>
     <li>BEER, S. <em>Brain of the Firm</em>. London: Allen Lane, 1972.</li>
@@ -541,6 +560,15 @@ byId('m-clusters').textContent = `${META.clusters_cc} comunidades na cocitação
 byId('m-pivotal').textContent  = (META.pivotal === 1 ? 'Uma obra emerge' : `${META.pivotal} obras emergem`)
   + ' como ponto pivotal — concentra intermediação e rajada de citação simultâneas.';
 byId('m-pctrefs').textContent  = String(META.pct_refs).replace('.', ',') + '%';
+
+/* Ponto pivotal — obra de maior centralidade de intermediação */
+const pv = byId('pivotal-callout');
+if (META.pivotal_title) {
+  const aut = META.pivotal_authors ? ` — ${META.pivotal_authors}${META.pivotal_year ? ', ' + META.pivotal_year : ''}` : '';
+  pv.innerHTML = `<strong>Ponto pivotal.</strong> O nó de maior centralidade de intermediação — o que mais conecta regiões distintas da rede, combinando posição-ponte e rajada de citação — é `
+    + `<a href="https://openalex.org/${META.pivotal_ref}" target="_blank" rel="noopener"><em>${META.pivotal_title}</em></a>${aut}. `
+    + `Intermediação ${String(META.pivotal_betw).replace('.', ',')}.`;
+} else { pv.style.display = 'none'; }
 
 /* Barra de eixos */
 const cyb = TEMPORAL.reduce((s,d)=>s+d.Cyb,0);

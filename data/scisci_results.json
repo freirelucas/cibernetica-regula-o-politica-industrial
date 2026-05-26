@@ -362,9 +362,9 @@
    "betweenness": 0.0863,
    "burst_total": 2.2,
    "n_citations": 6,
-   "year": null,
-   "title": "",
-   "authors": ""
+   "year": 2001,
+   "title": "Adaptive policies, policy analysis, and policy-making",
+   "authors": "Warren E. Walker; Saeed Rahman; Jonathan Cave"
   }
  ],
  "top_bursts": [
@@ -381,7 +381,7 @@
    "begin": 2017,
    "end": 2024,
    "weight": 29.1,
-   "title": "The entrepreneurial state: debunking public vs. private sector my",
+   "title": "The entrepreneurial state: debunking public vs. private sector myths",
    "authors": ""
   },
   {
@@ -405,7 +405,7 @@
    "begin": 2011,
    "end": 2019,
    "weight": 21.6,
-   "title": "Organizational Systems: Managing Complexity with the Viable Syste",
+   "title": "Organizational Systems: Managing Complexity with the Viable System Model",
    "authors": "Espejo; Reyes"
   },
   {
@@ -429,7 +429,7 @@
    "begin": 2014,
    "end": 2020,
    "weight": 12.9,
-   "title": "Governance modes, policy regimes and operational plans: A multi-l",
+   "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
    "authors": "Howlett"
   },
   {
@@ -445,7 +445,7 @@
    "begin": 2010,
    "end": 2018,
    "weight": 12.2,
-   "title": "Introduction: Understanding Public Policy through Its Instruments",
+   "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
    "authors": "Lascoumes; Galès"
   },
   {
@@ -461,7 +461,7 @@
    "begin": 2014,
    "end": 2021,
    "weight": 11.8,
-   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘Ne",
+   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
    "authors": "Howlett; Rayner"
   },
   {
@@ -477,7 +477,7 @@
    "begin": 2014,
    "end": 2026,
    "weight": 11.7,
-   "title": "Complexity management in practice: A Viable System Model interven",
+   "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
    "authors": "Espinosa; Walker"
   },
   {
@@ -485,7 +485,7 @@
    "begin": 2014,
    "end": 2020,
    "weight": 11.4,
-   "title": "Design and diagnosis for sustainable organizations : the viable s",
+   "title": "Design and diagnosis for sustainable organizations : the viable system method",
    "authors": "Ríos"
   },
   {
@@ -493,7 +493,7 @@
    "begin": 2014,
    "end": 2022,
    "weight": 11.4,
-   "title": "Using the Viable System Model (VSM) to structure information proc",
+   "title": "Using the Viable System Model (VSM) to structure information processing complexity in disaster response",
    "authors": "Preece; Shaw"
   },
   {
@@ -501,7 +501,7 @@
    "begin": 2017,
    "end": 2025,
    "weight": 10.8,
-   "title": "Policy mixes for sustainability transitions: An extended concept ",
+   "title": "Policy mixes for sustainability transitions: An extended concept and framework for analysis",
    "authors": "Rogge; Reichardt"
   },
   {
