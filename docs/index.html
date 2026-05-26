@@ -6,9 +6,8 @@
 <title>Cibernética Organizacional, Regulação e Política Industrial — Mapeamento Bibliométrico · IPEA/DIEST</title>
 <meta name="description" content="Mapeamento da estrutura intelectual na interseção entre cibernética organizacional, instrumentos de regulação e política industrial. Estudo cienciométrico do IPEA/DIEST-COGIT.">
 <meta name="author" content="Lucas Freire — IPEA/DIEST-COGIT">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<link rel="stylesheet" href="vendor/fonts.css">
+<script src="vendor/chart.umd.min.js"></script>
 <style>
 :root{--ink:#0e0e0e;--paper:#f5f2ed;--surface:#ede9e2;--border:rgba(14,14,14,.12);--border-s:rgba(14,14,14,.25);--cyb:#4b3fc2;--cyb-l:#e8e6f8;--reg:#1a7a5e;--reg-l:#e0f2ec;--pi:#b85c10;--pi-l:#faeada;--accent:#c23f3f;--muted:#6b6560;--mono:'JetBrains Mono',monospace;--serif:'Spectral',serif;--sans:'DM Sans',sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -32,7 +31,7 @@ h1 em{font-style:italic;color:var(--muted)}
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 .dot-c{background:var(--cyb)}.dot-r{background:var(--reg)}.dot-p{background:var(--pi)}
 .container{max-width:960px;margin:0 auto;padding:0 2rem}
-.section{padding:2.75rem 0 2.25rem;border-bottom:1px solid var(--border)}
+.section{padding:2.75rem 0 2.25rem;border-bottom:1px solid var(--border);scroll-margin-top:3.75rem}
 .section:last-child{border-bottom:none}
 .sec-header{display:flex;align-items:baseline;gap:12px;margin-bottom:1.25rem}
 .sec-num{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:28px}
@@ -47,7 +46,7 @@ h1 em{font-style:italic;color:var(--muted)}
 .term{font-style:italic;color:var(--muted)}
 .stat-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin:1.5rem 0}
 .stat-cell{background:var(--paper);padding:.85rem 1rem}
-.stat-n{font-family:var(--mono);font-size:1.5rem;font-weight:500;display:block;line-height:1;margin-bottom:3px}
+.stat-n{font-family:var(--mono);font-size:1.45rem;font-weight:500;display:block;line-height:1;margin-bottom:3px;white-space:nowrap}
 .stat-l{font-size:11px;color:var(--muted);display:block}
 .method-note{font-family:var(--mono);font-size:10.5px;color:var(--muted);border-left:2px solid var(--border-s);padding-left:10px;margin:1rem 0 1.25rem;line-height:1.7;max-width:80ch}
 .chart-wrap{position:relative;width:100%}
@@ -455,7 +454,7 @@ const statDefs = [
   [STATS.axes2,  'obras-ponte (≥2 eixos)'],
   [STATS.axes3,  'pontes completas (3 eixos)'],
   [fmt(STATS.cocit_n), 'nós de cocitação'],
-  [(STATS.cocit_e/1000).toFixed(1)+' mil', 'arestas de cocitação'],
+  [(STATS.cocit_e/1000).toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+' mil', 'arestas de cocitação'],
   [STATS.clusters, 'agrupamentos'],
   [fmt(STATS.bursts), 'rajadas detectadas'],
 ];
@@ -534,7 +533,7 @@ byId('list-bursts').innerHTML = BURSTS.map((r,i) => {
 byId('list-clusters').innerHTML = CLUSTERS.filter(c=>c.size>=3).map(c =>
   `<div class="cluster-row">
     <div><div class="cluster-name">${c.label}</div><span class="cluster-n">${c.size} trabalhos</span></div>
-    <div class="cluster-papers">${c.papers.map(p=>`<em>${p.title}</em> (${fmt(p.cited_by)} cit., ${p.year})`).join('<br>')}</div>
+    <div class="cluster-papers">${c.papers.map(p=>`<em>${p.title}${p.title.length>=59?'…':''}</em> (${fmt(p.cited_by)} cit., ${p.year})`).join('<br>')}</div>
   </div>`).join('');
 
 /* Belas adormecidas */
@@ -585,8 +584,10 @@ byId('dl-grid').innerHTML = DADOS.map(x => {
 byId('dict-table').innerHTML = DADOS.map(x =>
   `<tr><td class="ref">${x.f.split('/').pop()}</td><td>${x.d}</td></tr>`).join('');
 
-/* GRÁFICOS */
+/* GRÁFICOS — desenhados após o carregamento das fontes, para que a medição
+   dos rótulos use a fonte definitiva e não os corte. */
 const fMono = "'JetBrains Mono'";
+function drawCharts(){
 new Chart(byId('chartTemporal'), {
   type:'line', data:{labels:TEMPORAL.map(d=>d.year),datasets:[
     {label:'Cibernética',data:TEMPORAL.map(d=>d.Cyb),borderColor:'#4b3fc2',backgroundColor:'rgba(75,63,194,.07)',fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
@@ -604,21 +605,23 @@ new Chart(byId('chartBridges'), {
     borderColor:BRIDGES.map(b=>(b.axes||'').split(',').length>=3?'#c23f3f':'#6b6560'),borderWidth:1
   }]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},
-    scales:{x:{ticks:{font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}},
-            y:{ticks:{font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}}},
+    scales:{x:{ticks:{callback:v=>String(v),font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}},
+            y:{ticks:{callback:v=>Number(v).toLocaleString('pt-BR'),font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}}},
     layout:{padding:{top:14,right:14}}}
 });
 const clPal = ['#4b3fc2','#b85c10','#1a7a5e','#c23f3f','#185fa5','#d4537e'];
 const clShown = CLUSTERS.filter(c=>c.size>=3);
 new Chart(byId('chartClusters'), {
   type:'bar',
-  data:{labels:clShown.map(c=>c.label.split('·')[0].trim()),
+  data:{labels:clShown.map(c=>c.label.split('·').slice(0,2).map(s=>s.trim()).join(' · ')),
         datasets:[{data:clShown.map(c=>c.size),
           backgroundColor:clPal.map(c=>c+'CC'),borderColor:clPal,borderWidth:1,borderRadius:2}]},
   options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},
     scales:{x:{grid:{color:'rgba(14,14,14,.05)'},ticks:{font:{size:10,family:fMono},color:'#6b6560'}},
             y:{grid:{display:false},ticks:{font:{size:10,family:fMono},color:'#0e0e0e'}}}}
 });
+}
+(document.fonts && document.fonts.ready) ? document.fonts.ready.then(drawCharts) : drawCharts();
 
 /* Navegação ativa */
 const secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('.sidenav a');
