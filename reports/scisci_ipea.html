@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Levantamento Bibliométrico — Cibernética, Regulação e Política Industrial · IPEA/DIEST-COGIT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+/* ── TOKENS ──────────────────────────────────────────────────────── */
+:root {
+  --white: #ffffff;
+  --off:   #f7f5f2;
+  --surface: #eeecea;
+  --border: #dddad6;
+  --border-strong: #c5c1bc;
+  --ink:   #1a1816;
+  --ink2:  #4a4642;
+  --ink3:  #7a7672;
+  --cyb:   #3d52c4;  --cyb-l: #eef0fb;  --cyb-m: #8ea0e8;
+  --reg:   #1a7a5e;  --reg-l: #e5f4ef;  --reg-m: #6bbda5;
+  --pi:    #b85510;  --pi-l:  #fdf0e8;  --pi-m:  #e09060;
+  --ipea:  #005b8e;
+  --red:   #c0392b;
+  --mono:  'IBM Plex Mono', monospace;
+  --serif: 'IBM Plex Serif', Georgia, serif;
+  --sans:  'IBM Plex Sans', sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { background: var(--white); color: var(--ink); font-family: var(--serif); line-height: 1.65; }
+a { color: var(--ipea); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── PRINT ───────────────────────────────────────────────────────── */
+@media print {
+  .no-print { display: none !important; }
+  .section  { break-inside: avoid; }
+  body { font-size: 10pt; }
+}
+
+/* ── SCROLLBAR ───────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--off); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); }
+
+/* ── INSTITUTIONAL HEADER ────────────────────────────────────────── */
+.inst-bar {
+  background: var(--ipea);
+  color: #fff;
+  padding: .4rem 2rem;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .03em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inst-bar a { color: rgba(255,255,255,.75); }
+.inst-bar a:hover { color: #fff; }
+
+/* ── COVER ───────────────────────────────────────────────────────── */
+.cover {
+  padding: 3rem 2rem 2.5rem;
+  border-bottom: 2px solid var(--ipea);
+  max-width: 900px;
+  margin: 0 auto;
+}
+.cover-type {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ipea);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cover-type::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: var(--ipea);
+}
+.cover h1 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -.01em;
+  margin-bottom: .75rem;
+  max-width: 700px;
+}
+.cover-subtitle {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ink2);
+  margin-bottom: 1.5rem;
+}
+.cover-meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink3);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+.cover-meta span { display: flex; align-items: center; gap: 5px; }
+
+/* ── LAYOUT ──────────────────────────────────────────────────────── */
+.page-body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── DATA DOWNLOAD HUB ───────────────────────────────────────────── */
+.download-hub {
+  background: var(--off);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--ipea);
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+.dh-title {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ipea);
+  margin-bottom: 1rem;
+}
+.dh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 6px;
+}
+.dl-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: .5rem .75rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background .12s, border-color .12s;
+  text-align: left;
+}
+.dl-btn:hover { background: var(--cyb-l); border-color: var(--cyb-m); }
+.dl-btn svg { flex-shrink: 0; }
+.dl-btn .dl-name { font-weight: 500; display: block; }
+.dl-btn .dl-desc { color: var(--ink3); font-size: 10px; display: block; margin-top: 1px; }
+.dl-btn-all {
+  grid-column: 1 / -1;
+  background: var(--ipea);
+  color: #fff;
+  border-color: var(--ipea);
+  font-weight: 500;
+  justify-content: center;
+  font-size: 12px;
+  padding: .65rem;
+}
+.dl-btn-all:hover { background: #004a75; }
+.dl-btn-all .dl-name { color: #fff; }
+
+/* ── SECTION ──────────────────────────────────────────────────────── */
+.section {
+  padding: 2.25rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-of-type { border-bottom: none; }
+.sec-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 1.25rem;
+}
+.sec-num {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink3);
+  background: var(--surface);
+  padding: 2px 6px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.sec-title {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+.sec-method {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink3);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.sec-lead {
+  font-size: .9rem;
+  color: var(--ink2);
+  margin-bottom: 1.25rem;
+  max-width: 680px;
+  line-height: 1.7;
+}
+.sec-finding {
+  background: var(--off);
+  border-left: 3px solid var(--border-strong);
+  padding: .75rem 1rem;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink2);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+.sec-finding.alert { border-left-color: var(--red); background: #fdf5f5; }
+.sec-finding strong { color: var(--ink); }
+
+/* ── STAT ROW ─────────────────────────────────────────────────────── */
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+.stat-cell {
+  background: var(--white);
+  padding: .85rem 1rem;
+}
+.stat-n {
+  font-family: var(--sans);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  margin-bottom: 3px;
+}
+.stat-l {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink3);
+  display: block;
+}
+
+/* ── TABLE ────────────────────────────────────────────────────────── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+.data-table th {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--ink3);
+  padding: .5rem .75rem;
+  border-bottom: 1px solid var(--border-strong);
+  text-align: left;
+  background: var(--off);
+  white-space: nowrap;
+}
+.data-table td {
+  padding: .5rem .75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  font-family: var(--serif);
+  font-size: .82rem;
+  line-height: 1.4;
+}
+.data-table tr:hover td { background: var(--off); }
+.data-table .mono { font-family: var(--mono); font-size: .78rem; }
+.data-table .num { font-family: var(--mono); text-align: right; white-space: nowrap; }
+.data-table .muted { color: var(--ink3); }
+
+/* ── AXIS TAGS ────────────────────────────────────────────────────── */
+.tag {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .04em;
+  padding: 1px 5px;
+  border-radius: 2px;
+  margin-right: 3px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.t-c { background: var(--cyb-l); color: var(--cyb); }
+.t-r { background: var(--reg-l); color: var(--reg); }
+.t-p { background: var(--pi-l);  color: var(--pi);  }
+.t-b { background: #fce8e8; color: var(--red); }
+
+/* ── BRIDGE CARDS ─────────────────────────────────────────────────── */
+.bridge-list { display: flex; flex-direction: column; gap: 0; }
+.bridge-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px;
+  gap: 0 1rem;
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.bridge-row.triple { border-left: 2px solid var(--red); padding-left: .5rem; }
+.bridge-year { font-family: var(--mono); font-size: 11px; color: var(--ink3); padding-top: 2px; }
+.bridge-title { font-family: var(--serif); font-size: .85rem; font-weight: 600; line-height: 1.4; }
+.bridge-author { font-family: var(--mono); font-size: 10px; color: var(--ink3); margin-top: 2px; }
+.bridge-cit { font-family: var(--mono); font-size: .85rem; font-weight: 500; text-align: right; white-space: nowrap; }
+
+/* ── CHART WRAPPERS ───────────────────────────────────────────────── */
+.chart-wrap { position: relative; width: 100%; }
+.chart-legend {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: .5rem;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--ink3);
+}
+.chart-legend span { display: flex; align-items: center; gap: 5px; }
+.sw { width: 10px; height: 3px; border-radius: 1px; display: inline-block; }
+
+/* ── BURST BARS ───────────────────────────────────────────────────── */
+.burst-bar-row {
+  display: grid;
+  grid-template-columns: 48px 1fr 60px;
+  gap: 0 10px;
+  align-items: center;
+  padding: .35rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.burst-w { font-family: var(--mono); font-size: 11px; font-weight: 500; text-align: right; color: var(--ink); }
+.burst-track { height: 18px; background: var(--surface); border-radius: 2px; overflow: hidden; }
+.burst-fill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  border-radius: 2px;
+}
+.burst-label { font-size: 10.5px; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.burst-period { font-family: var(--mono); font-size: 10px; color: var(--ink3); }
+
+/* ── BEAUTY ROWS ──────────────────────────────────────────────────── */
+.beauty-list { display: flex; flex-direction: column; gap: 0; }
+.beauty-item {
+  display: grid;
+  grid-template-columns: 70px 1fr 100px;
+  gap: 0 1rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+.beauty-B { font-family: var(--sans); font-size: 1.3rem; font-weight: 600; line-height: 1; }
+.beauty-title { font-family: var(--serif); font-size: .83rem; font-weight: 600; line-height: 1.4; }
+.beauty-meta { font-family: var(--mono); font-size: 10px; color: var(--ink3); margin-top: 3px; }
+.beauty-sleep { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.sleep-track { width: 80px; height: 4px; background: var(--surface); border-radius: 2px; overflow: hidden; }
+.sleep-fill { height: 100%; border-radius: 2px; }
+.sleep-label { font-family: var(--mono); font-size: 9.5px; color: var(--ink3); }
+
+/* ── CLUSTER GRID ─────────────────────────────────────────────────── */
+.cluster-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+}
+.cluster-cell {
+  background: var(--white);
+  padding: 1rem 1.25rem;
+}
+.cluster-head {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  margin-bottom: .4rem;
+}
+.cluster-size {
+  font-family: var(--sans);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.cluster-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink3);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+.cluster-papers {
+  font-size: .78rem;
+  color: var(--ink2);
+  line-height: 1.6;
+}
+.cluster-papers em { font-style: italic; color: var(--ink); }
+
+/* ── METHODOLOGY TABLE ────────────────────────────────────────────── */
+.method-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.method-table td { padding: .5rem .75rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+.method-table tr:last-child td { border-bottom: none; }
+.method-table .label { font-family: var(--mono); font-size: .78rem; color: var(--ink3); width: 200px; white-space: nowrap; }
+.method-table .value { font-family: var(--serif); }
+.method-table .ref { font-family: var(--mono); font-size: .75rem; color: var(--ipea); }
+
+/* ── SEEDS TABLE ──────────────────────────────────────────────────── */
+.seed-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 7px;
+  border-radius: 2px;
+  font-family: var(--mono);
+  font-size: 10px;
+  background: var(--surface);
+  color: var(--ink2);
+  margin-right: 3px;
+}
+.seed-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+
+/* ── FOOTER ───────────────────────────────────────────────────────── */
+.site-footer {
+  background: var(--off);
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--ink3);
+  margin-top: 1rem;
+}
+.site-footer .footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.site-footer a { color: var(--ipea); }
+
+/* ── TOC ──────────────────────────────────────────────────────────── */
+.toc {
+  background: var(--off);
+  border: 1px solid var(--border);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.toc-title {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: .75rem;
+}
+.toc ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+.toc li { display: flex; gap: .5rem; align-items: baseline; }
+.toc-n { font-family: var(--mono); font-size: 10px; color: var(--ink3); width: 20px; flex-shrink: 0; }
+.toc li a { font-family: var(--serif); font-size: .85rem; color: var(--ink); }
+.toc li a:hover { color: var(--ipea); }
+
+@media (max-width: 640px) {
+  .cluster-grid { grid-template-columns: 1fr; }
+  .bridge-row { grid-template-columns: 1fr; gap: .25rem; }
+  .bridge-cit { text-align: left; }
+  .beauty-item { grid-template-columns: 55px 1fr; }
+  .beauty-sleep { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- INSTITUTIONAL BAR -->
+<div class="inst-bar no-print">
+  <span>IPEA · Diretoria de Estudos e Políticas do Estado, das Instituições e da Democracia · DIEST/COGIT</span>
+  <a href="https://www.ipea.gov.br" target="_blank">ipea.gov.br</a>
+</div>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-type">Levantamento Bibliométrico · Science of Science</div>
+  <h1>Cibernética Organizacional, Regulação e Política Industrial:<br>Mapeamento da Estrutura Intelectual do Campo</h1>
+  <p class="cover-subtitle">Análise sistemática via bola de neve OpenAlex — co-citation, bibliographic coupling, Leiden clustering, Kleinberg burst detection e Beauty Coefficient</p>
+  <div class="cover-meta">
+    <span>📅 Gerado em <span id="gen-date"></span></span>
+    <span>📦 817 papers · 10 seeds · OpenAlex API</span>
+    <span>🔗 Dados abertos — 8 CSVs disponíveis abaixo</span>
+    <span>🏛 IPEA · DIEST-COGIT · Coordenação de Governança</span>
+  </div>
+</div>
+
+<!-- PAGE BODY -->
+<div class="page-body">
+
+<!-- TOC -->
+<div class="toc">
+  <div class="toc-title">Sumário</div>
+  <ol>
+    <li><span class="toc-n">§1</span><a href="#s-dados">Dados — downloads diretos (8 CSVs)</a></li>
+    <li><span class="toc-n">§2</span><a href="#s-resumo">Resumo executivo do corpus</a></li>
+    <li><span class="toc-n">§3</span><a href="#s-temporal">Produção temporal por eixo (1960–2025)</a></li>
+    <li><span class="toc-n">§4</span><a href="#s-bridges">Trading zones — papers-ponte entre tradições</a></li>
+    <li><span class="toc-n">§5</span><a href="#s-bursts">Burst detection — Kleinberg (2003)</a></li>
+    <li><span class="toc-n">§6</span><a href="#s-clusters">Clusters — Leiden (Traag 2019)</a></li>
+    <li><span class="toc-n">§7</span><a href="#s-beauties">Sleeping beauties — Ke et al. (2015)</a></li>
+    <li><span class="toc-n">§8</span><a href="#s-top20">Top 20 papers mais citados</a></li>
+    <li><span class="toc-n">§9</span><a href="#s-seeds">Seeds canônicos</a></li>
+    <li><span class="toc-n">§10</span><a href="#s-metodo">Nota metodológica e reprodutibilidade</a></li>
+  </ol>
+</div>
+
+<!-- §1 DATA DOWNLOADS -->
+<section class="section" id="s-dados">
+  <div class="sec-head">
+    <span class="sec-num">§1</span>
+    <h2 class="sec-title">Dados — downloads diretos</h2>
+  </div>
+  <div class="sec-finding">
+    Todos os CSVs estão incorporados neste arquivo HTML. <strong>Um clique por arquivo, sem servidor, sem login, sem dependência externa.</strong>
+    O arquivo HTML é o relatório <em>e</em> o pacote de dados — basta salvá-lo.
+  </div>
+  <div class="download-hub">
+    <div class="dh-title">Baixar datasets</div>
+    <div class="dh-grid" id="dh-grid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- §2 RESUMO -->
+<section class="section" id="s-resumo">
+  <div class="sec-head">
+    <span class="sec-num">§2</span>
+    <h2 class="sec-title">Resumo executivo do corpus</h2>
+    <span class="sec-method">OpenAlex · bola de neve forward+backward</span>
+  </div>
+  <div class="sec-finding alert">
+    <strong>Achado central:</strong> dos 817 papers coletados, apenas <strong>26 (3,2%)</strong> transitam entre dois ou mais eixos temáticos,
+    e apenas <strong>10 (1,2%)</strong> cobrem os três simultaneamente — todos eles obras fundacionais (Beer, Ashby, Hood, Rodrik, Mazzucato),
+    sem equivalente contemporâneo. A literatura dos três campos cresce em paralelo sem se cruzar.
+  </div>
+  <div class="stat-row" id="stat-row"></div>
+  <div class="chart-wrap" style="height:260px; margin-top:1rem">
+    <canvas id="chart-radar" role="img" aria-label="Distribuição do corpus pelos três eixos temáticos"></canvas>
+  </div>
+</section>
+
+<!-- §3 TEMPORAL -->
+<section class="section" id="s-temporal">
+  <div class="sec-head">
+    <span class="sec-num">§3</span>
+    <h2 class="sec-title">Produção temporal por eixo</h2>
+    <span class="sec-method">1960–2025 · papers/ano</span>
+  </div>
+  <div class="sec-finding">
+    Cibernética domina o corpus desde os anos 1970. Regulação e Política Industrial convergem a partir de <strong>2007</strong>
+    (2ª edição de Hood & Margetts) e têm crescimento expressivo a partir de <strong>2013</strong> (Mazzucato, debate sobre
+    políticas orientadas por missão). A <strong>convergência dos três eixos não ocorreu</strong> — cada tradição cresce
+    internamente sem fertilização cruzada.
+  </div>
+  <div class="chart-wrap" style="height:280px">
+    <canvas id="chart-temporal" role="img" aria-label="Linha do tempo da produção por eixo temático, 1960 a 2025"></canvas>
+  </div>
+  <div class="chart-legend" style="margin-top:.75rem">
+    <span><span class="sw" style="background:var(--cyb)"></span>Cibernética Organizacional</span>
+    <span><span class="sw" style="background:var(--reg)"></span>Instrumentos de Governo / Regulação</span>
+    <span><span class="sw" style="background:var(--pi)"></span>Política Industrial</span>
+  </div>
+</section>
+
+<!-- §4 BRIDGES -->
+<section class="section" id="s-bridges">
+  <div class="sec-head">
+    <span class="sec-num">§4</span>
+    <h2 class="sec-title">Trading zones — papers-ponte entre tradições</h2>
+    <span class="sec-method">n_axes ≥ 2 · ordered by cited_by</span>
+  </div>
+  <div class="sec-finding">
+    Marcados com <span class="tag t-b">3-WAY</span> os 9 papers que cobrem os três eixos simultaneamente.
+    Todos são obras fundacionais: nenhum foi publicado após 2011.
+    A literatura <em>sobre</em> esses autores não produz pontes equivalentes.
+  </div>
+  <div class="bridge-list" id="bridge-list"></div>
+</section>
+
+<!-- §5 BURSTS -->
+<section class="section" id="s-bursts">
+  <div class="sec-head">
+    <span class="sec-num">§5</span>
+    <h2 class="sec-title">Burst detection</h2>
+    <span class="sec-method">Kleinberg (2003) · Viterbi DP · s=2 · γ=1</span>
+  </div>
+  <div class="sec-finding">
+    Detectados <strong>760 bursts</strong> em <strong>579 referências</strong>.
+    O <em>Brain of the Firm</em> de Beer sustenta o maior burst histórico (w=42,6 por 17 anos, 1996–2013),
+    com novo burst ativo de <em>Espejo & Reyes (2011)</em> desde 2022, e de <em>Mazzucato (2013)</em> desde 2017.
+    Os três campos têm bursts ativos simultâneos agora — condição para síntese.
+  </div>
+  <div id="burst-list"></div>
+</section>
+
+<!-- §6 CLUSTERS -->
+<section class="section" id="s-clusters">
+  <div class="sec-head">
+    <span class="sec-num">§6</span>
+    <h2 class="sec-title">Clusters temáticos</h2>
+    <span class="sec-method">Bibliographic coupling · Leiden Modularity · 54 clusters · 6 maiores</span>
+  </div>
+  <div class="sec-finding">
+    Leiden detectou <strong>54 clusters</strong> na rede de bibliographic coupling (769 nós, 28.123 arestas após normalização association-strength).
+    Os seis maiores clusters confirmam o diagnóstico de silos: cada um agrupa papers de uma única tradição, com sobreposição mínima.
+    Etiquetas geradas por TF-IDF dos títulos.
+  </div>
+  <div class="cluster-grid" id="cluster-grid"></div>
+</section>
+
+<!-- §7 SLEEPING BEAUTIES -->
+<section class="section" id="s-beauties">
+  <div class="sec-head">
+    <span class="sec-num">§7</span>
+    <h2 class="sec-title">Sleeping beauties</h2>
+    <span class="sec-method">Beauty Coefficient B · Ke et al. (2015) PNAS Eq. 2</span>
+  </div>
+  <div class="sec-finding">
+    B = Σ [(baseline − cit_t) / max(1, cit_t)] sobre o período de hibernação.
+    <strong>Brain of the Firm</strong> (B=166, dormiu 41 anos) e <strong>Heart of Enterprise</strong> (B=130, 31 anos)
+    são os casos mais extremos — obras clássicas do VSM que permaneceram ignoradas até a explosão
+    da literatura de governança digital e sustentabilidade na década de 2010.
+    <strong>An Introduction to Cybernetics</strong> de Ashby (B=60, t_m=68) é o caso de sono mais longo do corpus.
+  </div>
+  <div class="beauty-list" id="beauty-list"></div>
+</section>
+
+<!-- §8 TOP 20 -->
+<section class="section" id="s-top20">
+  <div class="sec-head">
+    <span class="sec-num">§8</span>
+    <h2 class="sec-title">Top 20 papers mais citados (não-seed)</h2>
+    <span class="sec-method">cited_by_count · OpenAlex · n_axes ≥ 1</span>
+  </div>
+  <div class="sec-lead">
+    Exclui as 10 seeds canônicos. Inclui apenas papers com presença temática verificada (n_axes ≥ 1).
+  </div>
+  <div style="overflow-x:auto">
+    <table class="data-table" id="table-top20">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Título</th>
+          <th>Autores</th>
+          <th>Ano</th>
+          <th>Citações</th>
+          <th>Eixos</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- §9 SEEDS -->
+<section class="section" id="s-seeds">
+  <div class="sec-head">
+    <span class="sec-num">§9</span>
+    <h2 class="sec-title">Seeds canônicos</h2>
+    <span class="sec-method">IDs OpenAlex verificados em maio 2026</span>
+  </div>
+  <div class="sec-lead">
+    Os 10 papers-âncora do pipeline de bola de neve. IDs OpenAlex confirméados diretamente via API em maio 2026.
+    Links diretos para o registro bibliográfico.
+  </div>
+  <div style="overflow-x:auto">
+    <table class="data-table" id="table-seeds">
+      <thead>
+        <tr><th>Eixo</th><th>Referência</th><th>OpenAlex ID</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- §10 METHODOLOGY -->
+<section class="section" id="s-metodo">
+  <div class="sec-head">
+    <span class="sec-num">§10</span>
+    <h2 class="sec-title">Nota metodológica e reprodutibilidade</h2>
+  </div>
+
+  <p class="sec-lead">Pipeline inteiramente reprodutível. O notebook Colab (<code>scisci_cibernetica_regulacao_PI_v2.ipynb</code>) executa todas as etapas a partir dos parâmetros abaixo e regenera este relatório.</p>
+
+  <table class="method-table">
+    <tbody>
+      <tr><td class="label">Fonte de dados</td><td class="value">OpenAlex API (polite pool, 100k req/dia, email declarado) · versão recuperada em 25/05/2026</td></tr>
+      <tr><td class="label">Estratégia de coleta</td><td class="value">9 queries de texto × 150 resultados + forward snowball (6 páginas × 10 seeds) + backward snowball (60 âncoras, cap 400 refs novas). Filtro temático vocabular pós-coleta (vocabulário em 3 eixos, documentado no notebook).</td></tr>
+      <tr><td class="label">Normalização de rede</td><td class="value">Association strength: s<sub>ij</sub> = c<sub>ij</sub> / (w<sub>i</sub> · w<sub>j</sub>) <span class="ref">Van Eck & Waltman (2009) JASIST</span></td></tr>
+      <tr><td class="label">Co-citation</td><td class="value">Top-600 referências co-citadas · matrix A<sup>T</sup>A · poda no percentil 65 · Leiden CPM (res=0,015) <span class="ref">Small (1973) JASIS; Kessler (1963)</span></td></tr>
+      <tr><td class="label">Bibliographic coupling</td><td class="value">769 papers com ≥3 refs · matrix BB<sup>T</sup> normalizada · poda no percentil 60 · Leiden Modularity <span class="ref">Traag, Waltman & van Eck (2019) Scientific Reports</span></td></tr>
+      <tr><td class="label">Betweenness centrality</td><td class="value">Algoritmo de Brandes (2001), C backend igraph 0.11.6; normalizado por (n−1)(n−2)/2</td></tr>
+      <tr><td class="label">Burst detection</td><td class="value">Viterbi DP sobre stream binomial: s=2, γ=1, implementação própria (sem deps externas) <span class="ref">Kleinberg (2003) DMKD</span></td></tr>
+      <tr><td class="label">Beauty Coefficient</td><td class="value">B = Σ<sub>t=0</sub><sup>t_m</sup> [(baseline − c_t) / max(1, c_t)] <span class="ref">Ke et al. (2015) PNAS 112:7426–7431, Eq. 2</span></td></tr>
+      <tr><td class="label">Cluster labels</td><td class="value">TF-IDF (sklearn, max_features=5, stop_words='english') sobre títulos do cluster</td></tr>
+      <tr><td class="label">Dependências (versões fixadas)</td><td class="value"><span class="mono">python-igraph==0.11.6 · leidenalg==0.10.2 · pandas≥2.1 · scipy≥1.11 · scikit-learn≥1.3 · numpy≥1.24 · pyarrow≥14 · requests≥2.31</span></td></tr>
+      <tr><td class="label">Checkpoints</td><td class="value">6 checkpoints em parquet (phase1–phase3, enriched, analysis, metrics) — retomada de qualquer ponto sem reexecução</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-finding" style="margin-top:1.5rem">
+    <strong>Limitações conhecidas:</strong>
+    (i) OpenAlex tem cobertura de <em>referenced_works</em> de ~95% para artigos pós-1996, significativamente menor para livros e pré-1996 —
+    os seeds clássicos (Beer, Ashby, Hood 1983) têm <code>referenced_works = []</code> no OpenAlex;
+    (ii) o campo <code>concepts</code> está sendo substituído por <code>topics</code> na API desde 2024 — o pipeline usa ambos com fallback;
+    (iii) o filtro temático vocabular introduz viés de confirmação: papers relevantes com vocabulário não previsto são excluídos;
+    (iv) 10 bridges completos (3 eixos) é um limite inferior — outros podem existir com vocabulário não coberto.
+  </div>
+</section>
+
+</div><!-- /page-body -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span>IPEA · DIEST-COGIT · Lucas Freire · 2026</span>
+    <span id="footer-gen"></span>
+    <span>Small (1973) · Van Eck &amp; Waltman (2009) · Traag (2019) · Kleinberg (2003) · Ke (2015)</span>
+  </div>
+</footer>
+
+<!-- ═══════════════ DATA + SCRIPTS ═══════════════ -->
+<script>
+
+const PIPELINE = {
+  generated: "2026-05-25 17:33",
+  corpus_size: 817,
+  n_seeds: 10,
+  n_axes_1: 790,
+  n_axes_2: 26,
+  n_axes_3: 10,
+  pct_with_refs: 94.9,
+  cocit_nodes: 600,
+  cocit_edges: 11209,
+  coupling_nodes: 769,
+  n_clusters_cc: 158,
+  n_clusters_bc: 54,
+  n_bursts: 760,
+  n_bursting_refs: 579,
+};
+
+const TOP20    = [{"year": 1980, "cited_by": 4741, "axes": "Cyb", "n_axes": 1, "authors": "Humberto R. Maturana; Francisco J. Varela; Stafford Bee", "title": "Autopoiesis and Cognition: The Realization of the Living", "venue": "Medical Entomology and Zoology"}, {"year": 2018, "cited_by": 1791, "axes": "Reg", "n_axes": 1, "authors": "John Williamson", "title": "What Washington Means by Policy Reform", "venue": ""}, {"year": 2020, "cited_by": 1669, "axes": "Cyb", "n_axes": 1, "authors": "Adil Rasheed; Omer San; Trond Kvamsdal", "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective", "venue": "IEEE Access"}, {"year": 2007, "cited_by": 1381, "axes": "Reg", "n_axes": 1, "authors": "Pierre Lascoumes; Patrick Le Galès", "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of ", "venue": "Governance"}, {"year": 2016, "cited_by": 1346, "axes": "Reg", "n_axes": 1, "authors": "Karoline S. Rogge; Kristin Reichardt", "title": "Policy mixes for sustainability transitions: An extended concept and framework for an", "venue": "Research Policy"}, {"year": 2011, "cited_by": 1072, "axes": "Reg", "n_axes": 1, "authors": "Kieron Flanagan; Elvira Uyarra; Manuel Laranja", "title": "Reconceptualising the ‘policy mix’ for innovation", "venue": "Research Policy"}, {"year": 2013, "cited_by": 948, "axes": "PolInd", "n_axes": 1, "authors": "Philip McCann; Raquel Ortega‐Argilés", "title": "Smart Specialization, Regional Growth and Applications to European Union Cohesion Pol", "venue": "Regional Studies"}, {"year": 1990, "cited_by": 863, "axes": "Reg", "n_axes": 1, "authors": "Anne L. Schneider; Helen Ingram", "title": "Behavioral Assumptions of Policy Tools", "venue": "The Journal of Politics"}, {"year": 2013, "cited_by": 857, "axes": "Reg", "n_axes": 1, "authors": "Susana Borrás; Charles Edquist", "title": "The choice of innovation policy instruments", "venue": "Technological Forecasting and Social Change"}, {"year": 2018, "cited_by": 776, "axes": "PolInd", "n_axes": 1, "authors": "Pierre‐Alexandre Balland; Ron Boschma; Joan Crespo", "title": "Smart specialization policy in the European Union: relatedness, knowledge complexity ", "venue": "Regional Studies"}, {"year": 2019, "cited_by": 727, "axes": "Cyb", "n_axes": 1, "authors": "Jessica Morley; Luciano Floridi; Libby Kinsey", "title": "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods an", "venue": "Science and Engineering Ethics"}, {"year": 1984, "cited_by": 691, "axes": "Cyb", "n_axes": 1, "authors": "Stafford Beer", "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology", "venue": "Journal of the Operational Research Society"}, {"year": 1997, "cited_by": 690, "axes": "Cyb", "n_axes": 1, "authors": "Umit Bititci; Allan S. Carrie; Liam McDevitt", "title": "Integrated performance measurement systems: a development guide", "venue": "International Journal of Operations & Product"}, {"year": 2007, "cited_by": 646, "axes": "Reg", "n_axes": 1, "authors": "Michael Howlett; Jeremy Rayner", "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrange", "venue": "Policy and Society"}, {"year": 2009, "cited_by": 612, "axes": "Reg", "n_axes": 1, "authors": "Michael Howlett", "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of", "venue": "Policy Sciences"}, {"year": 2010, "cited_by": 584, "axes": "PolInd", "n_axes": 1, "authors": "Ann Harrison; Andrés Rodrı́guez-Clare", "title": "Trade, Foreign Investment, and Industrial Policy for Developing Countries*", "venue": "Handbook of development economics"}, {"year": 2020, "cited_by": 570, "axes": "Reg", "n_axes": 1, "authors": "Giliberto Capano; Michael Howlett; Darryl S. L. Jarvis", "title": "Mobilizing Policy (In)Capacity to Fight COVID-19: Understanding Variations in State R", "venue": "Policy and Society"}, {"year": 2006, "cited_by": 560, "axes": "PolInd", "n_axes": 1, "authors": "Howard Pack", "title": "Is There a Case for Industrial Policy? A Critical Survey", "venue": "The World Bank Research Observer"}, {"year": 2020, "cited_by": 550, "axes": "PolInd", "n_axes": 1, "authors": "Karl Aiginger; Dani Rodrik", "title": "Rebirth of Industrial Policy and an Agenda for the Twenty-First Century", "venue": "Journal of Industry Competition and Trade"}, {"year": 2019, "cited_by": 497, "axes": "PolInd", "n_axes": 1, "authors": "Chiara Criscuolo; Ralf Martin; Henry G. Overman", "title": "Some Causal Effects of an Industrial Policy", "venue": "American Economic Review"}];
+const BRIDGES  = [{"year": 2014, "cited_by": 2314, "axes": "Cyb,Reg,PolInd", "authors": "", "title": "The entrepreneurial state: debunking public vs. private sector myths"}, {"year": 2004, "cited_by": 1526, "axes": "Cyb,Reg,PolInd", "authors": "Dani Rodrik", "title": "Industrial Policy for the Twenty-First Century"}, {"year": 1980, "cited_by": 805, "axes": "Cyb,Reg,PolInd", "authors": "Maurice Snowdon", "title": "The Heart of Enterprise"}, {"year": 1983, "cited_by": 778, "axes": "Cyb,Reg,PolInd", "authors": "Christopher C. Hood", "title": "The Tools of Government"}, {"year": 1974, "cited_by": 296, "axes": "Cyb,Reg,PolInd", "authors": "William L. Casey; Stafford Beer", "title": "Brain of the Firm: The Managerial Cybernetics of Organization"}, {"year": 1985, "cited_by": 293, "axes": "Cyb,Reg,PolInd", "authors": "John R. Beaumont", "title": "Diagnosing the System for Organizations"}, {"year": 2019, "cited_by": 289, "axes": "PolInd,Reg", "authors": "Mariana Mazzucato; Rainer Kattel; Josh Ryan‐C", "title": "Challenge-Driven Innovation Policy: Towards a New Policy Toolkit"}, {"year": 2013, "cited_by": 267, "axes": "PolInd,Reg", "authors": "Philip McCann; Raquel Ortega‐Argilés", "title": "Modern regional innovation policy"}, {"year": 2007, "cited_by": 233, "axes": "Cyb,Reg,PolInd", "authors": "Christopher C. Hood; Helen Margetts", "title": "The Tools of Government in the Digital Age"}, {"year": 2011, "cited_by": 215, "axes": "Cyb,Reg,PolInd", "authors": "Raúl Espejo; Alfonso Reyes", "title": "Organizational Systems"}, {"year": 2023, "cited_by": 133, "axes": "PolInd,Reg", "authors": "Donato Di Carlo; Luuk Schmitz", "title": "Europe first? The rise of EU industrial policy promoting and protecting the sing"}, {"year": 1957, "cited_by": 115, "axes": "Cyb,Reg,PolInd", "authors": "Anna Richards; W. Ross Ashby", "title": "An Introduction to Cybernetics"}, {"year": 2019, "cited_by": 111, "axes": "PolInd,Reg", "authors": "Bernhard Reinsberg; Alexander Kentikelenis; T", "title": "The World System and the Hollowing Out of State Capacity: How Structural Adjustm"}, {"year": 2023, "cited_by": 76, "axes": "PolInd,Reg", "authors": "James Meadowcroft; Daniel Rosenbloom", "title": "Governing the net-zero transition: Strategy, policy, and politics"}, {"year": 2013, "cited_by": 69, "axes": "PolInd,Reg", "authors": "Ha‐Joon Chang; Antonio Andreoni; Ming Leong K", "title": "International Industrial Policy Experiences and the Lessons for the UK"}];
+const BURSTS   = [{"ref_id": "W2123755784", "begin": 1996, "end": 2013, "weight": 42.6, "title": "Brain of the firm", "authors": "Bo.; Beer"}, {"ref_id": "W1553746973", "begin": 2017, "end": 2024, "weight": 29.1, "title": "The entrepreneurial state: debunking public vs. private sector my", "authors": ""}, {"ref_id": "W4244612406", "begin": 2022, "end": 2026, "weight": 24.3, "title": "Organizational Systems", "authors": "Espejo; Reyes"}, {"ref_id": "W2048086870", "begin": 2011, "end": 2016, "weight": 22.3, "title": "Brain of the Firm: The Managerial Cybernetics of Organization", "authors": "Casey; Beer"}, {"ref_id": "W582908774", "begin": 2011, "end": 2019, "weight": 21.6, "title": "Organizational Systems: Managing Complexity with the Viable Syste", "authors": "Espejo; Reyes"}, {"ref_id": "W2154683088", "begin": 2002, "end": 2010, "weight": 16.2, "title": "Diagnosing the System for Organizations", "authors": "Beaumont"}, {"ref_id": "W3124879925", "begin": 2013, "end": 2016, "weight": 15.4, "title": "Industrial Policy for the Twenty-First Century", "authors": "Rodrik"}, {"ref_id": "W2057748843", "begin": 2014, "end": 2020, "weight": 12.9, "title": "Governance modes, policy regimes and operational plans: A multi-l", "authors": "Howlett"}, {"ref_id": "W1566478880", "begin": 2011, "end": 2012, "weight": 12.4, "title": "The Heart of Enterprise", "authors": "Snowdon"}, {"ref_id": "W2080554996", "begin": 2010, "end": 2018, "weight": 12.2, "title": "Introduction: Understanding Public Policy through Its Instruments", "authors": "Lascoumes; Galès"}, {"ref_id": "W2111030512", "begin": 2009, "end": 2013, "weight": 12.2, "title": "An introduction to cybernetics", "authors": "Ashby"}, {"ref_id": "W2082088739", "begin": 2014, "end": 2021, "weight": 11.8, "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘Ne", "authors": "Howlett; Rayner"}, {"ref_id": "W2026948646", "begin": 1993, "end": 2010, "weight": 11.7, "title": "Soft Systems Methodology in Action", "authors": "Gough; Checkland"}, {"ref_id": "W2165238389", "begin": 2014, "end": 2026, "weight": 11.7, "title": "Complexity management in practice: A Viable System Model interven", "authors": "Espinosa; Walker"}, {"ref_id": "W148613442", "begin": 2014, "end": 2020, "weight": 11.4, "title": "Design and diagnosis for sustainable organizations : the viable s", "authors": "Ríos"}, {"ref_id": "W2132852401", "begin": 2014, "end": 2022, "weight": 11.4, "title": "Using the Viable System Model (VSM) to structure information proc", "authors": "Preece; Shaw"}, {"ref_id": "W2363378650", "begin": 2017, "end": 2025, "weight": 10.8, "title": "Policy mixes for sustainability transitions: An extended concept ", "authors": "Rogge; Reichardt"}, {"ref_id": "W1970428482", "begin": 1994, "end": 2007, "weight": 10.3, "title": "Creative Problem Solving: Total Systems Intervention.", "authors": "Taket"}, {"ref_id": "W1492856410", "begin": 1992, "end": 2002, "weight": 10.1, "title": "Systems Thinking, Systems Practice", "authors": "Checkland"}, {"ref_id": "W1968893806", "begin": 2001, "end": 2008, "weight": 9.8, "title": "Intelligent organizations: an integrative framework", "authors": "Schwaninger"}];
+const BEAUTIES = [{"year": 1974, "cited_by": 296, "B": 166.0, "t_m": 41, "axes": "", "title": "Brain of the Firm: The Managerial Cybernetics of Organization"}, {"year": 1980, "cited_by": 805, "B": 130.0, "t_m": 31, "axes": "", "title": "The Heart of Enterprise"}, {"year": 1957, "cited_by": 115, "B": 60.0, "t_m": 68, "axes": "", "title": "An Introduction to Cybernetics"}, {"year": 1959, "cited_by": 41, "B": 58.0, "t_m": 59, "axes": "", "title": "What has Cybernetics to do with Operational Research?"}, {"year": 1968, "cited_by": 342, "B": 56.4, "t_m": 46, "axes": "", "title": "Decision and Control: The Meaning of Operational Research and Man"}, {"year": 1983, "cited_by": 778, "B": 54.7, "t_m": 34, "axes": "", "title": "The Tools of Government"}, {"year": 1990, "cited_by": 240, "B": 54.4, "t_m": 19, "axes": "", "title": "The Viable System Model: Interpretations and Applications of Staf"}, {"year": 1984, "cited_by": 691, "B": 51.5, "t_m": 28, "axes": "", "title": "The Viable System Model: Its Provenance, Development, Methodology"}, {"year": 1990, "cited_by": 132, "B": 45.4, "t_m": 22, "axes": "", "title": "The Viable System Model: Interpretations and Applications of Staf"}, {"year": 1985, "cited_by": 293, "B": 43.1, "t_m": 26, "axes": "", "title": "Diagnosing the System for Organizations"}, {"year": 1990, "cited_by": 70, "B": 42.7, "t_m": 21, "axes": "", "title": "The viable system model: interpretations of Stafford Beer's VSM"}, {"year": 1990, "cited_by": 195, "B": 39.4, "t_m": 22, "axes": "", "title": "The Viable System Model"}, {"year": 1990, "cited_by": 20, "B": 36.3, "t_m": 28, "axes": "", "title": "Embodiments of organizational fitness: The Viable System Model (V"}, {"year": 1980, "cited_by": 4741, "B": 36.0, "t_m": 27, "axes": "", "title": "Autopoiesis and Cognition: The Realization of the Living"}, {"year": 1989, "cited_by": 480, "B": 33.9, "t_m": 28, "axes": "", "title": "Instruments of Government: Perceptions and Contexts"}];
+const CLUSTERS = [{"cluster_id": 0, "label": "design · governance · instruments", "size": 190, "top_papers": [{"title": "Introduction: Understanding Public Policy through Its Instru", "cited_by": 1381, "year": 2007, "authors": "Pierre Lascoumes; Patrick Le Galès"}, {"title": "Policy mixes for sustainability transitions: An extended con", "cited_by": 1346, "year": 2016, "authors": "Karoline S. Rogge; Kristin Reichard"}, {"title": "Reconceptualising the ‘policy mix’ for innovation", "cited_by": 1072, "year": 2011, "authors": "Kieron Flanagan; Elvira Uyarra; Man"}]}, {"cluster_id": 1, "label": "industrial · innovation · new", "size": 139, "top_papers": [{"title": "The entrepreneurial state: debunking public vs. private sect", "cited_by": 2314, "year": 2014, "authors": ""}, {"title": "Industrial Policy for the Twenty-First Century", "cited_by": 1526, "year": 2004, "authors": "Dani Rodrik"}, {"title": "Smart Specialization, Regional Growth and Applications to Eu", "cited_by": 948, "year": 2013, "authors": "Philip McCann; Raquel Ortega‐Argilé"}]}, {"cluster_id": 2, "label": "cybernetics · management · model", "size": 121, "top_papers": [{"title": "The Viable System Model: Its Provenance, Development, Method", "cited_by": 691, "year": 1984, "authors": "Stafford Beer"}, {"title": "Integrated performance measurement systems: a development gu", "cited_by": 690, "year": 1997, "authors": "Umit Bititci; Allan S. Carrie; Liam"}, {"title": "The Viable System Model: Interpretations and Applications of", "cited_by": 240, "year": 1990, "authors": "Frederick P. Wheeler"}]}, {"cluster_id": 3, "label": "governance · management · model", "size": 110, "top_papers": [{"title": "Organizational Systems", "cited_by": 215, "year": 2011, "authors": "Raúl Espejo; Alfonso Reyes"}, {"title": "A Critical Historic Overview of Artificial Intelligence: Iss", "cited_by": 104, "year": 2023, "authors": "Peter P. Groumpos"}, {"title": "Organizing for sustainability: a cybernetic concept for sust", "cited_by": 60, "year": 2015, "authors": "Markus Schwaninger"}]}, {"cluster_id": 4, "label": "management · model · perspective", "size": 88, "top_papers": [{"title": "The Personal Learning Environment and the human condition: f", "cited_by": 139, "year": 2007, "authors": "Mark Johnson; Oleg Liber"}, {"title": "Sustainability, complexity and learning: insights from compl", "cited_by": 137, "year": 2011, "authors": "Ángela Espinosa; Terry B. Porter"}, {"title": "Evolution of cybernetics: philosophical and methodological a", "cited_by": 112, "year": 2017, "authors": "Vladimir Lepskiy"}]}, {"cluster_id": 5, "label": "design · management · model", "size": 73, "top_papers": [{"title": "Understanding the Innovation Impacts of Public Procurement", "cited_by": 405, "year": 2009, "authors": "Elvira Uyarra; Kieron Flanagan"}, {"title": "Remembering the Technological Unconscious by Foregrounding K", "cited_by": 299, "year": 2004, "authors": "Nigel Thrift"}, {"title": "A new value stream mapping approach for healthcare environme", "cited_by": 146, "year": 2015, "authors": "Daniel Barberato Henrique; Antonio "}]}];
+const TEMPORAL = [{"year": 1968, "Cyb": 1, "Reg": 0, "PolInd": 0}, {"year": 1970, "Cyb": 1, "Reg": 0, "PolInd": 0}, {"year": 1974, "Cyb": 1, "Reg": 1, "PolInd": 1}, {"year": 1979, "Cyb": 2, "Reg": 0, "PolInd": 0}, {"year": 1980, "Cyb": 2, "Reg": 1, "PolInd": 1}, {"year": 1982, "Cyb": 1, "Reg": 0, "PolInd": 0}, {"year": 1983, "Cyb": 3, "Reg": 1, "PolInd": 1}, {"year": 1984, "Cyb": 2, "Reg": 1, "PolInd": 0}, {"year": 1985, "Cyb": 2, "Reg": 1, "PolInd": 0}, {"year": 1986, "Cyb": 1, "Reg": 1, "PolInd": 0}, {"year": 1987, "Cyb": 1, "Reg": 0, "PolInd": 1}, {"year": 1988, "Cyb": 1, "Reg": 1, "PolInd": 0}, {"year": 1989, "Cyb": 3, "Reg": 1, "PolInd": 0}, {"year": 1990, "Cyb": 7, "Reg": 2, "PolInd": 1}, {"year": 1991, "Cyb": 1, "Reg": 3, "PolInd": 1}, {"year": 1992, "Cyb": 4, "Reg": 1, "PolInd": 0}, {"year": 1993, "Cyb": 10, "Reg": 2, "PolInd": 1}, {"year": 1994, "Cyb": 3, "Reg": 2, "PolInd": 0}, {"year": 1995, "Cyb": 1, "Reg": 1, "PolInd": 0}, {"year": 1996, "Cyb": 2, "Reg": 0, "PolInd": 0}, {"year": 1997, "Cyb": 7, "Reg": 0, "PolInd": 0}, {"year": 1998, "Cyb": 4, "Reg": 2, "PolInd": 0}, {"year": 1999, "Cyb": 8, "Reg": 2, "PolInd": 0}, {"year": 2000, "Cyb": 3, "Reg": 1, "PolInd": 1}, {"year": 2001, "Cyb": 5, "Reg": 3, "PolInd": 0}, {"year": 2002, "Cyb": 6, "Reg": 0, "PolInd": 0}, {"year": 2003, "Cyb": 7, "Reg": 5, "PolInd": 0}, {"year": 2004, "Cyb": 13, "Reg": 4, "PolInd": 2}, {"year": 2005, "Cyb": 7, "Reg": 3, "PolInd": 4}, {"year": 2006, "Cyb": 19, "Reg": 2, "PolInd": 5}, {"year": 2007, "Cyb": 19, "Reg": 6, "PolInd": 7}, {"year": 2008, "Cyb": 8, "Reg": 2, "PolInd": 4}, {"year": 2009, "Cyb": 14, "Reg": 9, "PolInd": 8}, {"year": 2010, "Cyb": 11, "Reg": 8, "PolInd": 3}, {"year": 2011, "Cyb": 30, "Reg": 11, "PolInd": 4}, {"year": 2012, "Cyb": 22, "Reg": 13, "PolInd": 8}, {"year": 2013, "Cyb": 14, "Reg": 9, "PolInd": 13}, {"year": 2014, "Cyb": 23, "Reg": 10, "PolInd": 12}, {"year": 2015, "Cyb": 26, "Reg": 11, "PolInd": 12}, {"year": 2016, "Cyb": 14, "Reg": 10, "PolInd": 7}, {"year": 2017, "Cyb": 15, "Reg": 18, "PolInd": 18}, {"year": 2018, "Cyb": 18, "Reg": 13, "PolInd": 10}, {"year": 2019, "Cyb": 23, "Reg": 19, "PolInd": 16}, {"year": 2020, "Cyb": 14, "Reg": 17, "PolInd": 14}, {"year": 2021, "Cyb": 9, "Reg": 16, "PolInd": 8}, {"year": 2022, "Cyb": 10, "Reg": 5, "PolInd": 4}, {"year": 2023, "Cyb": 8, "Reg": 12, "PolInd": 7}, {"year": 2024, "Cyb": 6, "Reg": 5, "PolInd": 1}, {"year": 2025, "Cyb": 13, "Reg": 6, "PolInd": 1}];
+const SEEDS    = [{"key": "Beer_Brain_1972", "id": "W2048086870", "ref": "Beer (1972) Brain of the Firm"}, {"key": "Beer_Heart_1979", "id": "W1566478880", "ref": "Beer (1979) Heart of Enterprise"}, {"key": "Beer_Diagnosing_1985", "id": "W2154683088", "ref": "Beer (1985) Diagnosing the System"}, {"key": "Ashby_1956", "id": "W2325487953", "ref": "Ashby (1956) Intro to Cybernetics"}, {"key": "Espejo_Walker_2011", "id": "W4244612406", "ref": "Espejo & Reyes (2011) Org. Systems"}, {"key": "Hood_1983", "id": "W1601629960", "ref": "Hood (1983) Tools of Government"}, {"key": "Hood_Margetts_2007", "id": "W2126563689", "ref": "Hood & Margetts (2007) Tools Digital Age"}, {"key": "Margetts_2024", "id": "W4386803846", "ref": "Margetts (2024) Rediscovering Nodality"}, {"key": "Rodrik_2004", "id": "W3124879925", "ref": "Rodrik (2004) Industrial Policy 21C"}, {"key": "Mazzucato_2013", "id": "W1553746973", "ref": "Mazzucato (2013) Entrepreneurial State"}];
+
+const CSVS = {
+  top20:    "year,cited_by,axes,n_axes,authors,title,venue\n1980,4741,Cyb,1,Humberto R. Maturana; Francisco J. Varela; Stafford Bee,Autopoiesis and Cognition: The Realization of the Living,Medical Entomology and Zoology\n2018,1791,Reg,1,John Williamson,What Washington Means by Policy Reform,\n2020,1669,Cyb,1,Adil Rasheed; Omer San; Trond Kvamsdal,\"Digital Twin: Values, Challenges and Enablers From a Modeling Perspective\",IEEE Access\n2007,1381,Reg,1,Pierre Lascoumes; Patrick Le Gal\u00e8s,Introduction: Understanding Public Policy through Its Instruments\u2014From the Nature of ,Governance\n2016,1346,Reg,1,Karoline S. Rogge; Kristin Reichardt,Policy mixes for sustainability transitions: An extended concept and framework for an,Research Policy\n2011,1072,Reg,1,Kieron Flanagan; Elvira Uyarra; Manuel Laranja,Reconceptualising the \u2018policy mix\u2019 for innovation,Research Policy\n2013,948,PolInd,1,Philip McCann; Raquel Ortega\u2010Argil\u00e9s,\"Smart Specialization, Regional Growth and Applications to European Union Cohesion Pol\",Regional Studies\n1990,863,Reg,1,Anne L. Schneider; Helen Ingram,Behavioral Assumptions of Policy Tools,The Journal of Politics\n2013,857,Reg,1,Susana Borr\u00e1s; Charles Edquist,The choice of innovation policy instruments,Technological Forecasting and Social Change\n2018,776,PolInd,1,Pierre\u2010Alexandre Balland; Ron Boschma; Joan Crespo,\"Smart specialization policy in the European Union: relatedness, knowledge complexity \",Regional Studies\n2019,727,Cyb,1,Jessica Morley; Luciano Floridi; Libby Kinsey,\"From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods an\",Science and Engineering Ethics\n1984,691,Cyb,1,Stafford Beer,\"The Viable System Model: Its Provenance, Development, Methodology and Pathology\",Journal of the Operational Research Society\n1997,690,Cyb,1,Umit Bititci; Allan S. Carrie; Liam McDevitt,Integrated performance measurement systems: a development guide,International Journal of Operations & Product\n2007,646,Reg,1,Michael Howlett; Jeremy Rayner,Design Principles for Policy Mixes: Cohesion and Coherence in \u2018New Governance Arrange,Policy and Society\n2009,612,Reg,1,Michael Howlett,\"Governance modes, policy regimes and operational plans: A multi-level nested model of\",Policy Sciences\n2010,584,PolInd,1,Ann Harrison; Andr\u00e9s Rodr\u0131\u0301guez-Clare,\"Trade, Foreign Investment, and Industrial Policy for Developing Countries*\",Handbook of development economics\n2020,570,Reg,1,Giliberto Capano; Michael Howlett; Darryl S. L. Jarvis,Mobilizing Policy (In)Capacity to Fight COVID-19: Understanding Variations in State R,Policy and Society\n2006,560,PolInd,1,Howard Pack,Is There a Case for Industrial Policy? A Critical Survey,The World Bank Research Observer\n2020,550,PolInd,1,Karl Aiginger; Dani Rodrik,Rebirth of Industrial Policy and an Agenda for the Twenty-First Century,Journal of Industry Competition and Trade\n2019,497,PolInd,1,Chiara Criscuolo; Ralf Martin; Henry G. Overman,Some Causal Effects of an Industrial Policy,American Economic Review\n",
+  bridges:  "year,cited_by,axes,authors,title\n2014,2314,\"Cyb,Reg,PolInd\",,The entrepreneurial state: debunking public vs. private sector myths\n2004,1526,\"Cyb,Reg,PolInd\",Dani Rodrik,Industrial Policy for the Twenty-First Century\n1980,805,\"Cyb,Reg,PolInd\",Maurice Snowdon,The Heart of Enterprise\n1983,778,\"Cyb,Reg,PolInd\",Christopher C. Hood,The Tools of Government\n1974,296,\"Cyb,Reg,PolInd\",William L. Casey; Stafford Beer,Brain of the Firm: The Managerial Cybernetics of Organization\n1985,293,\"Cyb,Reg,PolInd\",John R. Beaumont,Diagnosing the System for Organizations\n2019,289,\"PolInd,Reg\",Mariana Mazzucato; Rainer Kattel; Josh Ryan\u2010C,Challenge-Driven Innovation Policy: Towards a New Policy Toolkit\n2013,267,\"PolInd,Reg\",Philip McCann; Raquel Ortega\u2010Argil\u00e9s,Modern regional innovation policy\n2007,233,\"Cyb,Reg,PolInd\",Christopher C. Hood; Helen Margetts,The Tools of Government in the Digital Age\n2011,215,\"Cyb,Reg,PolInd\",Ra\u00fal Espejo; Alfonso Reyes,Organizational Systems\n2023,133,\"PolInd,Reg\",Donato Di Carlo; Luuk Schmitz,Europe first? The rise of EU industrial policy promoting and protecting the sing\n1957,115,\"Cyb,Reg,PolInd\",Anna Richards; W. Ross Ashby,An Introduction to Cybernetics\n2019,111,\"PolInd,Reg\",Bernhard Reinsberg; Alexander Kentikelenis; T,The World System and the Hollowing Out of State Capacity: How Structural Adjustm\n2023,76,\"PolInd,Reg\",James Meadowcroft; Daniel Rosenbloom,\"Governing the net-zero transition: Strategy, policy, and politics\"\n2013,69,\"PolInd,Reg\",Ha\u2010Joon Chang; Antonio Andreoni; Ming Leong K,International Industrial Policy Experiences and the Lessons for the UK\n",
+  bursts:   "ref_id,begin,end,weight,title,authors\nW2123755784,1996,2013,42.6,Brain of the firm,Bo.; Beer\nW1553746973,2017,2024,29.1,The entrepreneurial state: debunking public vs. private sector my,\nW4244612406,2022,2026,24.3,Organizational Systems,Espejo; Reyes\nW2048086870,2011,2016,22.3,Brain of the Firm: The Managerial Cybernetics of Organization,Casey; Beer\nW582908774,2011,2019,21.6,Organizational Systems: Managing Complexity with the Viable Syste,Espejo; Reyes\nW2154683088,2002,2010,16.2,Diagnosing the System for Organizations,Beaumont\nW3124879925,2013,2016,15.4,Industrial Policy for the Twenty-First Century,Rodrik\nW2057748843,2014,2020,12.9,\"Governance modes, policy regimes and operational plans: A multi-l\",Howlett\nW1566478880,2011,2012,12.4,The Heart of Enterprise,Snowdon\nW2080554996,2010,2018,12.2,Introduction: Understanding Public Policy through Its Instruments,Lascoumes; Gal\u00e8s\nW2111030512,2009,2013,12.2,An introduction to cybernetics,Ashby\nW2082088739,2014,2021,11.8,Design Principles for Policy Mixes: Cohesion and Coherence in \u2018Ne,Howlett; Rayner\nW2026948646,1993,2010,11.7,Soft Systems Methodology in Action,Gough; Checkland\nW2165238389,2014,2026,11.7,Complexity management in practice: A Viable System Model interven,Espinosa; Walker\nW148613442,2014,2020,11.4,Design and diagnosis for sustainable organizations : the viable s,R\u00edos\nW2132852401,2014,2022,11.4,Using the Viable System Model (VSM) to structure information proc,Preece; Shaw\nW2363378650,2017,2025,10.8,Policy mixes for sustainability transitions: An extended concept ,Rogge; Reichardt\nW1970428482,1994,2007,10.3,Creative Problem Solving: Total Systems Intervention.,Taket\nW1492856410,1992,2002,10.1,\"Systems Thinking, Systems Practice\",Checkland\nW1968893806,2001,2008,9.8,Intelligent organizations: an integrative framework,Schwaninger\n",
+  beauties: "year,cited_by,B,t_m,axes,title\n1974,296,166.0,41,,Brain of the Firm: The Managerial Cybernetics of Organization\n1980,805,130.0,31,,The Heart of Enterprise\n1957,115,60.0,68,,An Introduction to Cybernetics\n1959,41,58.0,59,,What has Cybernetics to do with Operational Research?\n1968,342,56.4,46,,Decision and Control: The Meaning of Operational Research and Man\n1983,778,54.7,34,,The Tools of Government\n1990,240,54.4,19,,The Viable System Model: Interpretations and Applications of Staf\n1984,691,51.5,28,,\"The Viable System Model: Its Provenance, Development, Methodology\"\n1990,132,45.4,22,,The Viable System Model: Interpretations and Applications of Staf\n1985,293,43.1,26,,Diagnosing the System for Organizations\n1990,70,42.7,21,,The viable system model: interpretations of Stafford Beer's VSM\n1990,195,39.4,22,,The Viable System Model\n1990,20,36.3,28,,Embodiments of organizational fitness: The Viable System Model (V\n1980,4741,36.0,27,,Autopoiesis and Cognition: The Realization of the Living\n1989,480,33.9,28,,Instruments of Government: Perceptions and Contexts\n",
+  seeds:    "chave,openalex_id,referencia\nBeer_Brain_1972,W2048086870,Beer (1972) Brain of the Firm\nBeer_Heart_1979,W1566478880,Beer (1979) Heart of Enterprise\nBeer_Diagnosing_1985,W2154683088,Beer (1985) Diagnosing the System\nAshby_1956,W2325487953,Ashby (1956) Intro to Cybernetics\nEspejo_Walker_2011,W4244612406,Espejo & Reyes (2011) Org. Systems\nHood_1983,W1601629960,Hood (1983) Tools of Government\nHood_Margetts_2007,W2126563689,Hood & Margetts (2007) Tools Digital Age\nMargetts_2024,W4386803846,Margetts (2024) Rediscovering Nodality\nRodrik_2004,W3124879925,Rodrik (2004) Industrial Policy 21C\nMazzucato_2013,W1553746973,Mazzucato (2013) Entrepreneurial State\n",
+  clusters: "cluster_id,cluster_label,cluster_size,titulo,citacoes,ano\n0,design \u00b7 governance \u00b7 instruments,190,Introduction: Understanding Public Policy through Its Instru,1381,2007\n0,design \u00b7 governance \u00b7 instruments,190,Policy mixes for sustainability transitions: An extended con,1346,2016\n0,design \u00b7 governance \u00b7 instruments,190,Reconceptualising the \u2018policy mix\u2019 for innovation,1072,2011\n1,industrial \u00b7 innovation \u00b7 new,139,The entrepreneurial state: debunking public vs. private sect,2314,2014\n1,industrial \u00b7 innovation \u00b7 new,139,Industrial Policy for the Twenty-First Century,1526,2004\n1,industrial \u00b7 innovation \u00b7 new,139,\"Smart Specialization, Regional Growth and Applications to Eu\",948,2013\n2,cybernetics \u00b7 management \u00b7 model,121,\"The Viable System Model: Its Provenance, Development, Method\",691,1984\n2,cybernetics \u00b7 management \u00b7 model,121,Integrated performance measurement systems: a development gu,690,1997\n2,cybernetics \u00b7 management \u00b7 model,121,The Viable System Model: Interpretations and Applications of,240,1990\n3,governance \u00b7 management \u00b7 model,110,Organizational Systems,215,2011\n3,governance \u00b7 management \u00b7 model,110,A Critical Historic Overview of Artificial Intelligence: Iss,104,2023\n3,governance \u00b7 management \u00b7 model,110,Organizing for sustainability: a cybernetic concept for sust,60,2015\n4,management \u00b7 model \u00b7 perspective,88,The Personal Learning Environment and the human condition: f,139,2007\n4,management \u00b7 model \u00b7 perspective,88,\"Sustainability, complexity and learning: insights from compl\",137,2011\n4,management \u00b7 model \u00b7 perspective,88,Evolution of cybernetics: philosophical and methodological a,112,2017\n5,design \u00b7 management \u00b7 model,73,Understanding the Innovation Impacts of Public Procurement,405,2009\n5,design \u00b7 management \u00b7 model,73,Remembering the Technological Unconscious by Foregrounding K,299,2004\n5,design \u00b7 management \u00b7 model,73,A new value stream mapping approach for healthcare environme,146,2015\n",
+  temporal: "year,Cyb,Reg,PolInd\n1968,1,0,0\n1970,1,0,0\n1974,1,1,1\n1979,2,0,0\n1980,2,1,1\n1982,1,0,0\n1983,3,1,1\n1984,2,1,0\n1985,2,1,0\n1986,1,1,0\n1987,1,0,1\n1988,1,1,0\n1989,3,1,0\n1990,7,2,1\n1991,1,3,1\n1992,4,1,0\n1993,10,2,1\n1994,3,2,0\n1995,1,1,0\n1996,2,0,0\n1997,7,0,0\n1998,4,2,0\n1999,8,2,0\n2000,3,1,1\n2001,5,3,0\n2002,6,0,0\n2003,7,5,0\n2004,13,4,2\n2005,7,3,4\n2006,19,2,5\n2007,19,6,7\n2008,8,2,4\n2009,14,9,8\n2010,11,8,3\n2011,30,11,4\n2012,22,13,8\n2013,14,9,13\n2014,23,10,12\n2015,26,11,12\n2016,14,10,7\n2017,15,18,18\n2018,18,13,10\n2019,23,19,16\n2020,14,17,14\n2021,9,16,8\n2022,10,5,4\n2023,8,12,7\n2024,6,5,1\n2025,13,6,1\n",
+  log:      "parametro,valor,descricao\ncorpus_size,817,Total de papers no corpus\nn_seeds,10,Seeds do pipeline\nn_axes_1,790,Papers com >=1 eixo tematico\nn_axes_2,26,Papers com >=2 eixos (trading zones)\nn_axes_3,10,Papers com 3 eixos (bridges completos)\ncocit_nodes,600,Nos rede co-citation\ncocit_edges,11209,Arestas rede co-citation\ncoupling_nodes,769,Nos rede bibliographic coupling\nn_clusters_cc,158,Clusters co-citation (Leiden CPM)\nn_clusters_bc,54,Clusters coupling (Leiden Modularity)\nn_bursts,760,Eventos de burst (Kleinberg 2003)\nn_bursting_refs,579,Referencias com burst detectado\npct_with_refs,94.9,Percentual com referenced_works\ngerado_em,2026-05-25 17:33,Timestamp de execucao\n",
+};
+
+
+/* ── INIT ─────────────────────────────────────────────────────── */
+document.getElementById('gen-date').textContent = PIPELINE.generated;
+document.getElementById('footer-gen').textContent = `OpenAlex API · ${PIPELINE.corpus_size} papers · ${PIPELINE.generated}`;
+
+/* ── DOWNLOAD ENGINE ──────────────────────────────────────────── */
+const DOWNLOADS = [
+  {key:'log',      name:'00_pipeline_log.csv',      desc:'Parâmetros e métricas de execução'},
+  {key:'top20',    name:'02_top20_citados.csv',      desc:'Top 20 papers mais citados'},
+  {key:'bridges',  name:'03_bridges_n_axes_gte2.csv',desc:'Trading zones (≥ 2 eixos)'},
+  {key:'bursts',   name:'05_kleinberg_bursts.csv',   desc:'Eventos de burst detectados'},
+  {key:'beauties', name:'06_sleeping_beauties.csv',  desc:'Beauty Coefficient por paper'},
+  {key:'clusters', name:'07_clusters_top3.csv',      desc:'Top-3 papers por cluster'},
+  {key:'seeds',    name:'08_seeds.csv',              desc:'Seeds com IDs OpenAlex'},
+  {key:'temporal', name:'09_temporal.csv',           desc:'Produção anual por eixo'},
+];
+
+function downloadCSV(csvStr, filename) {
+  const blob = new Blob([csvStr], {type:'text/csv;charset=utf-8;'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  setTimeout(()=>URL.revokeObjectURL(url), 2000);
+}
+
+function downloadAll() {
+  DOWNLOADS.forEach((d,i) => {
+    setTimeout(() => downloadCSV(CSVS[d.key], d.name), i * 200);
+  });
+}
+
+// Render download hub
+const dhGrid = document.getElementById('dh-grid');
+const dlIcon = `<svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+  <path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+
+DOWNLOADS.forEach(d => {
+  const btn = document.createElement('button');
+  btn.className = 'dl-btn';
+  btn.innerHTML = `${dlIcon}<div><span class="dl-name">${d.name}</span><span class="dl-desc">${d.desc}</span></div>`;
+  btn.onclick = () => downloadCSV(CSVS[d.key], d.name);
+  dhGrid.appendChild(btn);
+});
+
+const allBtn = document.createElement('button');
+allBtn.className = 'dl-btn dl-btn-all';
+allBtn.innerHTML = `${dlIcon}<div><span class="dl-name">Baixar todos os 8 CSVs</span></div>`;
+allBtn.onclick = downloadAll;
+dhGrid.appendChild(allBtn);
+
+/* ── STAT ROW ────────────────────────────────────────────────── */
+const stats = [
+  [PIPELINE.corpus_size, 'papers no corpus'],
+  [PIPELINE.n_seeds, 'seeds canônicos'],
+  [PIPELINE.n_axes_2, 'trading zones (≥2 eixos)'],
+  [PIPELINE.n_axes_3, 'bridges completos (3 eixos)'],
+  [PIPELINE.cocit_nodes, 'nós co-citation'],
+  [PIPELINE.n_clusters_bc, 'clusters Leiden'],
+  [PIPELINE.n_bursts, 'bursts Kleinberg'],
+  [PIPELINE.n_bursting_refs, 'refs com burst ativo'],
+];
+const statRow = document.getElementById('stat-row');
+stats.forEach(([n,l]) => {
+  statRow.innerHTML += `<div class="stat-cell"><span class="stat-n">${typeof n==='number'?n.toLocaleString('pt-BR'):n}</span><span class="stat-l">${l}</span></div>`;
+});
+
+/* ── CHART: TEMPORAL ──────────────────────────────────────────── */
+new Chart(document.getElementById('chart-temporal'), {
+  type: 'line',
+  data: {
+    labels: TEMPORAL.map(d=>d.year),
+    datasets: [
+      {label:'Cibernética', data:TEMPORAL.map(d=>d.Cyb),
+       borderColor:'#3d52c4', backgroundColor:'rgba(61,82,196,.07)',
+       fill:true, tension:.35, pointRadius:0, borderWidth:1.5},
+      {label:'Regulação', data:TEMPORAL.map(d=>d.Reg),
+       borderColor:'#1a7a5e', backgroundColor:'rgba(26,122,94,.07)',
+       fill:true, tension:.35, pointRadius:0, borderWidth:1.5},
+      {label:'Pol. Industrial', data:TEMPORAL.map(d=>d.PolInd),
+       borderColor:'#b85510', backgroundColor:'rgba(184,85,16,.07)',
+       fill:true, tension:.35, pointRadius:0, borderWidth:1.5},
+    ]
+  },
+  options: {
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{grid:{color:'rgba(0,0,0,.06)'}, ticks:{font:{size:10,family:"'IBM Plex Mono'"},color:'#7a7672',maxRotation:0,maxTicksLimit:10}},
+      y:{grid:{color:'rgba(0,0,0,.06)'}, ticks:{font:{size:10,family:"'IBM Plex Mono'"},color:'#7a7672'}}
+    }
+  }
+});
+
+/* ── CHART: RADAR (corpus breakdown) ─────────────────────────── */
+const cybN  = TEMPORAL.reduce((s,d)=>s+d.Cyb,0);
+const regN  = TEMPORAL.reduce((s,d)=>s+d.Reg,0);
+const piN   = TEMPORAL.reduce((s,d)=>s+d.PolInd,0);
+new Chart(document.getElementById('chart-radar'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Cibernética', 'Regulação', 'Política Industrial', 'Sem eixo claro'],
+    datasets:[{
+      data:[cybN, regN, piN, PIPELINE.corpus_size - PIPELINE.n_axes_1],
+      backgroundColor:['rgba(61,82,196,.7)','rgba(26,122,94,.7)','rgba(184,85,16,.7)','rgba(0,0,0,.1)'],
+      borderColor:['#3d52c4','#1a7a5e','#b85510','#dddad6'],
+      borderWidth:1,
+    }]
+  },
+  options:{
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:{position:'right',labels:{font:{size:11,family:"'IBM Plex Mono'"},color:'#4a4642',boxWidth:12,padding:12}}}
+  }
+});
+
+/* ── BRIDGES ─────────────────────────────────────────────────── */
+function tags(axes) {
+  if(!axes) return '';
+  const m = {Cyb:'t-c',Reg:'t-r',PolInd:'t-p'};
+  return axes.split(',').filter(Boolean)
+    .map(a=>`<span class="tag ${m[a]||'t-b'}">${a==='PolInd'?'PI':a}</span>`).join('');
+}
+const bl = document.getElementById('bridge-list');
+BRIDGES.forEach(b => {
+  const n = (b.axes||'').split(',').filter(Boolean).length;
+  const isTriple = n >= 3;
+  bl.innerHTML += `
+  <div class="bridge-row${isTriple?' triple':''}">
+    <div class="bridge-year">${b.year||'—'}${isTriple?'<br><span class="tag t-b" style="font-size:8px">3-WAY</span>':''}</div>
+    <div>
+      <div class="bridge-title">${b.title}</div>
+      <div class="bridge-author">${b.authors} · ${tags(b.axes)}</div>
+    </div>
+    <div class="bridge-cit">${(b.cited_by||0).toLocaleString('pt-BR')}<br><span style="font-size:9.5px;color:var(--ink3)">citações</span></div>
+  </div>`;
+});
+
+/* ── BURSTS ──────────────────────────────────────────────────── */
+const maxW = Math.max(...BURSTS.map(b=>b.weight));
+const axCol = a => a?.includes('Cyb')?'#3d52c4': a?.includes('Reg')?'#1a7a5e':'#b85510';
+const bl2 = document.getElementById('burst-list');
+BURSTS.forEach(b => {
+  const pct = Math.round((b.weight||0)/maxW*100);
+  const guessAxis = b.title?.toLowerCase().includes('indust')||b.title?.toLowerCase().includes('mazzucato')?'PI':
+                    b.title?.toLowerCase().includes('tool')||b.title?.toLowerCase().includes('policy inst')||b.title?.toLowerCase().includes('howlett')?'Reg':'Cyb';
+  const col = axCol(guessAxis);
+  bl2.innerHTML += `
+  <div class="burst-bar-row">
+    <div class="burst-w">w=${b.weight}</div>
+    <div class="burst-track">
+      <div class="burst-fill" style="width:${pct}%;background:${col}">
+        <span class="burst-label">${b.title||''} · ${b.authors||''}</span>
+      </div>
+    </div>
+    <div class="burst-period">${b.begin}–${b.end}</div>
+  </div>`;
+});
+
+/* ── SLEEPING BEAUTIES ───────────────────────────────────────── */
+const maxB = Math.max(...BEAUTIES.map(b=>b.B));
+const maxTm = Math.max(...BEAUTIES.map(b=>b.t_m));
+const bList = document.getElementById('beauty-list');
+BEAUTIES.forEach(b => {
+  const wB = Math.round(b.B/maxB*80);
+  const wT = Math.round(b.t_m/maxTm*80);
+  const col = b.B>100?'var(--cyb)':b.B>50?'var(--reg)':'var(--pi)';
+  bList.innerHTML += `
+  <div class="beauty-item">
+    <div class="beauty-B" style="color:${col}">B=${b.B}</div>
+    <div>
+      <div class="beauty-title">${b.title}</div>
+      <div class="beauty-meta">${b.year} · ${(b.cited_by||0).toLocaleString('pt-BR')} citações</div>
+    </div>
+    <div class="beauty-sleep">
+      <div class="sleep-track"><div class="sleep-fill" style="width:${wT}px;background:${col}"></div></div>
+      <div class="sleep-label">dormiu ${b.t_m} anos</div>
+    </div>
+  </div>`;
+});
+
+/* ── CLUSTERS ────────────────────────────────────────────────── */
+const cColors = ['#3d52c4','#b85510','#1a7a5e','#6b3da8','#1a6a9a','#8a6a10'];
+const cGrid = document.getElementById('cluster-grid');
+CLUSTERS.forEach((c,i) => {
+  cGrid.innerHTML += `
+  <div class="cluster-cell">
+    <div class="cluster-head">
+      <span class="cluster-size" style="color:${cColors[i%cColors.length]}">${c.size}</span>
+      <span class="cluster-label">${c.label}</span>
+    </div>
+    <div class="cluster-papers">
+      ${(c.top_papers||[]).map(p=>`<em>${p.title}</em> (${(p.cited_by||0).toLocaleString('pt-BR')} cit, ${p.year||'?'})`).join('<br>')}
+    </div>
+  </div>`;
+});
+
+/* ── TOP 20 TABLE ────────────────────────────────────────────── */
+const tbody = document.querySelector('#table-top20 tbody');
+TOP20.forEach((r,i) => {
+  const auth = (r.authors||'').split(';')[0].trim().split(' ').slice(-1)[0];
+  tbody.innerHTML += `<tr>
+    <td class="num muted">${i+1}</td>
+    <td>${r.title}</td>
+    <td class="mono muted">${auth}${(r.authors||'').includes(';')?' et al.':''}</td>
+    <td class="num muted">${r.year||'—'}</td>
+    <td class="num">${(r.cited_by||0).toLocaleString('pt-BR')}</td>
+    <td>${tags(r.axes)}</td>
+  </tr>`;
+});
+
+/* ── SEEDS TABLE ─────────────────────────────────────────────── */
+const dotMap = {Cyb:'var(--cyb)',Reg:'var(--reg)',PolInd:'var(--pi)'};
+const sbody = document.querySelector('#table-seeds tbody');
+SEEDS.forEach(s => {
+  const ax = s.ref?.includes('Beer')||s.ref?.includes('Ashby')||s.ref?.includes('Espejo')?'Cyb':
+             s.ref?.includes('Hood')||s.ref?.includes('Margetts')?'Reg':'PolInd';
+  sbody.innerHTML += `<tr>
+    <td><span class="seed-pill"><span class="seed-dot" style="background:${dotMap[ax]}"></span>${ax==='PolInd'?'Pol. Industrial':ax==='Reg'?'Regulação':'Cibernética'}</span></td>
+    <td>${s.ref}</td>
+    <td class="mono"><a href="https://openalex.org/${s.id}" target="_blank" rel="noopener">${s.id}</a></td>
+  </tr>`;
+});
+
+</script>
+</body>
+</html>
