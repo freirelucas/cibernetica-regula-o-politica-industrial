@@ -44,9 +44,16 @@ h1 em{font-style:italic;color:var(--muted)}
 .prose ul{margin:.5rem 0 1rem 1.3rem}.prose li{margin-bottom:.4rem}
 .prose strong{font-weight:500}
 .term{font-style:italic;color:var(--muted)}
+.authorline{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:1.1rem;line-height:1.7;max-width:72ch}
+.authorline b{color:var(--ink);font-weight:500}
+.kw{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:1rem;line-height:1.7}
+.kw b{color:var(--ink);font-weight:500}
+.abstract-en{border-left:2px solid var(--border-s);padding-left:14px;margin-top:1.5rem;max-width:72ch}
+.abstract-en h3{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .45rem;color:var(--muted)}
+.abstract-en p{font-size:.92rem;font-style:italic;color:var(--muted);margin-bottom:.6rem}
 .stat-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin:1.5rem 0}
 .stat-cell{background:var(--paper);padding:.85rem 1rem}
-.stat-n{font-family:var(--mono);font-size:1.45rem;font-weight:500;display:block;line-height:1;margin-bottom:3px;white-space:nowrap}
+.stat-n{font-family:var(--mono);font-size:1.32rem;font-weight:500;display:block;line-height:1;margin-bottom:3px;white-space:nowrap}
 .stat-l{font-size:11px;color:var(--muted);display:block}
 .method-note{font-family:var(--mono);font-size:10.5px;color:var(--muted);border-left:2px solid var(--border-s);padding-left:10px;margin:1rem 0 1.25rem;line-height:1.7;max-width:80ch}
 .chart-wrap{position:relative;width:100%}
@@ -154,6 +161,7 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
   <a href="#rajadas">Rajadas</a>
   <a href="#adormecidas">Belas adormecidas</a>
   <a href="#citadas">Mais citadas</a>
+  <a href="#discussao">Discussão</a>
   <a href="#sementes">Obras-semente</a>
   <a href="#repro">Reprodutibilidade</a>
   <a href="#dados">Dados</a>
@@ -172,6 +180,7 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
   <a href="#rajadas" title="Rajadas de citação"></a>
   <a href="#adormecidas" title="Belas adormecidas"></a>
   <a href="#citadas" title="Obras mais citadas"></a>
+  <a href="#discussao" title="Implicações para a política industrial"></a>
   <a href="#sementes" title="Obras-semente"></a>
   <a href="#repro" title="Reprodutibilidade"></a>
   <a href="#dados" title="Dados"></a>
@@ -184,6 +193,7 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
     <div class="kicker">IPEA · DIEST-COGIT · Cienciometria</div>
     <h1>Cibernética Organizacional, Regulação<br>e <em>Política Industrial</em></h1>
     <p class="subtitle">Mapeamento da estrutura intelectual de um campo em formação: uma análise cienciométrica das tradições que conectam o controle de sistemas, os instrumentos de governo e a estratégia de desenvolvimento produtivo.</p>
+    <p class="authorline"><b>Lucas Freire</b> · Instituto de Pesquisa Econômica Aplicada (IPEA) · Diretoria de Estudos e Políticas do Estado, das Instituições e da Democracia (DIEST-COGIT) · Brasília · Documento de trabalho</p>
     <div class="byline">
       <span><span class="dot dot-c"></span>Cibernética · Beer · Ashby · Espejo</span>
       <span><span class="dot dot-r"></span>Regulação · Hood · Margetts · Howlett</span>
@@ -199,6 +209,12 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
   <div class="prose">
     <p class="lead">Este estudo mapeia a estrutura intelectual da interseção entre três tradições intelectuais que raramente dialogam de forma explícita: a <strong>cibernética organizacional</strong> (o controle e a viabilidade de sistemas complexos), os <strong>instrumentos de governo e a regulação</strong> (os meios pelos quais o Estado atua sobre a sociedade) e a <strong>política industrial</strong> (a ação deliberada do Estado sobre a estrutura produtiva).</p>
     <p>A partir de dez obras-semente canônicas, aplicou-se amostragem por bola de neve sobre a base bibliográfica aberta OpenAlex, reunindo um corpus de centenas de trabalhos. Sobre esse corpus, calcularam-se redes de cocitação e de acoplamento bibliográfico, agrupamentos de comunidades, centralidade de intermediação, rajadas de citação e o coeficiente de beleza — um conjunto de medidas que, em conjunto, revela onde o campo se concentra, onde ele se fragmenta e quais obras funcionam como pontos de passagem entre as tradições.</p>
+    <p class="kw"><b>Palavras-chave:</b> cienciometria; cibernética organizacional; instrumentos de governo; política industrial; análise de cocitação; acoplamento bibliográfico; estrutura intelectual.</p>
+    <div class="abstract-en">
+      <h3>Abstract</h3>
+      <p>This study maps the intellectual structure of the intersection between three rarely connected traditions: organizational cybernetics (the control and viability of complex systems), the tools of government and regulation (the means by which the state acts upon society), and industrial policy (deliberate state action on the productive structure). Starting from ten canonical seed works, snowball sampling over the open OpenAlex database yielded a corpus of several hundred works. Co-citation and bibliographic-coupling networks, community detection, betweenness centrality, citation-burst detection, and the beauty coefficient jointly reveal where the field concentrates, where it fragments, and which works act as crossing points between traditions.</p>
+      <p><b>Keywords:</b> science of science; organizational cybernetics; tools of government; industrial policy; co-citation analysis; bibliographic coupling; intellectual structure.</p>
+    </div>
   </div>
   <div class="stat-strip" id="stat-strip"></div>
   <div class="axes-bar" id="axes-bar"></div>
@@ -246,6 +262,7 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
       <li><strong>Detecção de rajadas</strong> <span class="term">(Kleinberg, 2003)</span> — períodos de citação anormalmente intensa, estimados por programação dinâmica (algoritmo de Viterbi).</li>
       <li><strong>Coeficiente de beleza</strong> <span class="term">(Ke et al., 2015)</span> — mede a hibernação seguida de despertar tardio (as <em>belas adormecidas</em>).</li>
     </ul>
+    <p>Aplicadas ao corpus, as medidas produzem duas redes complementares: a de cocitação, com <span id="m-cocit"></span>, e a de acoplamento bibliográfico, com <span id="m-coupling"></span>. O particionamento de Leiden identifica <span id="m-clusters"></span>. <span id="m-pivotal"></span> A cobertura de referências citadas alcança <span id="m-pctrefs"></span> do corpus, o que limita a bola de neve regressiva das obras-semente em formato de livro (ver <a href="#limitacoes">limitações</a>).</p>
   </div>
   <p class="fig-cap">Parâmetros de execução do funil de coleta e análise.</p>
   <table class="tbl">
@@ -293,7 +310,7 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
 <!-- 05 · ZONAS DE INTERCÂMBIO -->
 <section id="pontes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">05</span><h2 class="sec-title">Zonas de intercâmbio · obras-ponte</h2><span class="sec-method">trabalhos com dois ou mais eixos</span></div>
-  <div class="prose"><p>São as obras que tocam explicitamente dois ou mais eixos — as <em>zonas de intercâmbio</em> entre tradições, no sentido de Galison. <span style="border-left:3px solid var(--accent);padding-left:6px">A borda vermelha assinala as obras que tocam os três eixos.</span> Estes são os nós de maior valor estrutural para o argumento de convergência: poucos, mas decisivos.</p></div>
+  <div class="prose"><p>São as obras cujo título ou resumo mobiliza o vocabulário de dois ou mais eixos — uma aproximação <em>lexical</em> das <em>zonas de intercâmbio</em> entre tradições, no sentido de Galison. <span style="border-left:3px solid var(--accent);padding-left:6px">A borda vermelha assinala as que mobilizam os três eixos.</span> Por se apoiarem em coocorrência de termos (e não em citação direta), devem ser lidas como <strong>indícios de convergência a confirmar</strong>, e não como prova: são poucas, mas é nelas que o argumento começa.</p></div>
   <div class="bridge-grid" id="list-bridges"></div>
   <div style="margin-top:1.5rem">
     <p class="fig-cap" style="margin-bottom:8px">Dispersão das obras-ponte por ano e número de citações (o raio é proporcional às citações).</p>
@@ -305,7 +322,8 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
 <section id="agrupamentos" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">06</span><h2 class="sec-title">Agrupamentos temáticos</h2><span class="sec-method">acoplamento bibliográfico · Leiden (modularidade)</span></div>
   <div class="prose"><p>A rede de acoplamento bibliográfico, normalizada pela força de associação, é particionada pelo algoritmo de Leiden. Cada comunidade reúne trabalhos com padrões de citação semelhantes — uma frente de pesquisa, e não um tópico declarado. As etiquetas derivam dos termos mais distintivos dos títulos de cada agrupamento.</p></div>
-  <div class="chart-wrap" style="height:200px;margin-bottom:1.5rem"><canvas id="chartClusters" role="img" aria-label="Tamanho dos agrupamentos">Gráfico de barras do tamanho dos agrupamentos.</canvas></div>
+  <div class="chart-wrap" style="height:200px"><canvas id="chartClusters" role="img" aria-label="Tamanho dos agrupamentos">Gráfico de barras do tamanho dos agrupamentos.</canvas></div>
+  <p class="fig-cap" style="margin-bottom:1.25rem">Os seis maiores agrupamentos por número de trabalhos; as etiquetas reúnem os termos mais distintivos de cada comunidade.</p>
   <div id="list-clusters"></div>
 </div></section>
 
@@ -330,16 +348,27 @@ pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:1
   <div id="list-top20"></div>
 </div></section>
 
-<!-- 10 · OBRAS-SEMENTE -->
+<!-- 10 · DISCUSSÃO -->
+<section id="discussao" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">10</span><h2 class="sec-title">Implicações para a política industrial</h2><span class="sec-method">síntese e agenda</span></div>
+  <div class="prose">
+    <p class="lead">A convergência mapeada não é mera curiosidade bibliométrica: aponta para uma síntese ainda incipiente, mas fértil. Cada eixo aporta uma peça de um mesmo problema — governar uma estrutura produtiva complexa sob incerteza.</p>
+    <p>A <strong>cibernética organizacional</strong> oferece uma teoria da capacidade: pela lei da variedade requisita (Ashby) e pelo Modelo de Sistema Viável (Beer), um aparato de governo só regula um sistema produtivo se dispuser de variedade interna e de canais de retroalimentação à altura da complexidade que pretende dirigir. A tradição dos <strong>instrumentos de governo</strong> (Hood; Margetts) fornece o inventário operacional dessa capacidade — nodalidade, autoridade, recursos e organização — e a gramática para combiná-los. A <strong>política industrial orientada por missões</strong> (Rodrik; Mazzucato) acrescenta o propósito e o problema de coordenação que mobiliza os dois primeiros.</p>
+    <p>As poucas obras que articulam os três eixos — o Estado empreendedor, a política industrial para o século XXI — situam-se exatamente nesse ponto de encontro. Lidas em conjunto, sugerem desenhar a política industrial menos como um plano estático e mais como um <em>sistema viável</em>: instrumentos adaptativos, monitoramento contínuo e correção por retroalimentação. O reaquecimento recente da cibernética organizacional — uma bela adormecida que desperta no mesmo período da explosão do debate sobre missões — abre uma janela para um desenho de política industrial centrado em capacidade e variedade, não apenas em incentivos.</p>
+    <p>Para o IPEA, a leitura é uma <strong>agenda, não uma conclusão</strong>: a convergência ainda é tênue — poucas obras-ponte completas, e identificadas por vocabulário, não por citação (ver <a href="#limitacoes">limitações</a>). É justamente aí que há espaço para contribuição original: formular, a partir das três tradições, um arcabouço de capacidade estatal para a política industrial brasileira.</p>
+  </div>
+</div></section>
+
+<!-- 11 · OBRAS-SEMENTE -->
 <section id="sementes" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">10</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
+  <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
   <div class="prose"><p>As dez obras que ancoram a coleta, cada uma com seu identificador na base OpenAlex (clicável). A escolha privilegia obras de referência inequívoca em cada tradição.</p></div>
   <div id="list-seeds"></div>
 </div></section>
 
-<!-- 11 · REPRODUTIBILIDADE -->
+<!-- 12 · REPRODUTIBILIDADE -->
 <section id="repro" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
+  <div class="sec-header"><span class="sec-num">12</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
   <div class="prose">
     <p>Todo o estudo é reprodutível. O caderno de execução, o módulo de relatório e os resultados consolidados acompanham o repositório.</p>
     <h3>No ambiente Colab (recomendado)</h3>
@@ -356,9 +385,9 @@ jupyter notebook colab/scisci_cibernetica_regulacao_PI_v2.ipynb</pre>
 python src/build_site.py                # este site (docs/)</pre>
 </div></section>
 
-<!-- 12 · DADOS -->
+<!-- 13 · DADOS -->
 <section id="dados" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">12</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
+  <div class="sec-header"><span class="sec-num">13</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
   <div class="prose"><p>Os conjuntos de dados processados em cada etapa do funil, em formato CSV (codificação UTF-8). O conjunto completo de resultados consolidados também está disponível em formato JSON.</p></div>
   <div class="dl-grid" id="dl-grid"></div>
   <p class="fig-cap">Os dados refletem a execução de referência (ver data no rodapé). O corpus bruto completo (com resumos e listas de referência) é reconstituído reexecutando o funil; aqui se disponibilizam os produtos analíticos de cada etapa.</p>
@@ -368,9 +397,9 @@ python src/build_site.py                # este site (docs/)</pre>
   </table>
 </div></section>
 
-<!-- 13 · LIMITAÇÕES -->
+<!-- 14 · LIMITAÇÕES -->
 <section id="limitacoes" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">13</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
+  <div class="sec-header"><span class="sec-num">14</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
   <div class="prose">
     <ul>
       <li><strong>Referências de livros clássicos.</strong> Para várias obras-semente em formato de livro (Beer, Ashby, Hood, 1983), a base OpenAlex não expõe a lista de obras citadas; a bola de neve regressiva dessas sementes é, portanto, nula.</li>
@@ -381,9 +410,9 @@ python src/build_site.py                # este site (docs/)</pre>
   </div>
 </div></section>
 
-<!-- 14 · GLOSSÁRIO -->
+<!-- 15 · GLOSSÁRIO -->
 <section id="glossario" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">14</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
+  <div class="sec-header"><span class="sec-num">15</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
   <dl class="gloss">
     <dt>Cocitação <span class="src">(co-citation)</span></dt><dd>Relação entre duas obras citadas conjuntamente por um terceiro trabalho.</dd>
     <dt>Acoplamento bibliográfico <span class="src">(bibliographic coupling)</span></dt><dd>Relação entre dois trabalhos que citam fontes em comum.</dd>
@@ -398,9 +427,9 @@ python src/build_site.py                # este site (docs/)</pre>
   </dl>
 </div></section>
 
-<!-- 15 · REFERÊNCIAS -->
+<!-- 16 · REFERÊNCIAS -->
 <section id="referencias" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">15</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
+  <div class="sec-header"><span class="sec-num">16</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
   <ul class="refs">
     <li>ASHBY, W. R. <em>An Introduction to Cybernetics</em>. London: Chapman &amp; Hall, 1956.</li>
     <li>BEER, S. <em>Brain of the Firm</em>. London: Allen Lane, 1972.</li>
@@ -446,8 +475,8 @@ const statDefs = [
   [STATS.axes2,  'obras-ponte (≥2 eixos)'],
   [STATS.axes3,  'pontes completas (3 eixos)'],
   [fmt(STATS.cocit_n), 'nós de cocitação'],
-  [(STATS.cocit_e/1000).toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFractionDigits:1})+' mil', 'arestas de cocitação'],
-  [STATS.clusters, 'agrupamentos'],
+  [fmt(STATS.cocit_e), 'arestas de cocitação'],
+  [META.clusters_bc_total, 'agrupamentos (acoplamento)'],
   [fmt(STATS.bursts), 'rajadas detectadas'],
 ];
 byId('stat-strip').innerHTML = statDefs.map(([n,l]) =>
@@ -457,6 +486,14 @@ byId('funnel-note').textContent =
   `Corpus final: ${fmt(STATS.corpus)} trabalhos · ${STATS.axes2} obras-ponte (${STATS.axes3} com os três eixos) · `
   + `rede de cocitação com ${fmt(STATS.cocit_n)} nós e ${fmt(STATS.cocit_e)} arestas · `
   + `${STATS.clusters} agrupamentos temáticos · ${fmt(STATS.bursts)} rajadas de citação.`;
+
+/* Spans da metodologia (redes, agrupamentos, ponto pivotal, cobertura) */
+byId('m-cocit').textContent    = `${fmt(STATS.cocit_n)} nós e ${fmt(STATS.cocit_e)} arestas`;
+byId('m-coupling').textContent = `${fmt(META.coupling_n)} nós e ${fmt(META.coupling_e)} arestas`;
+byId('m-clusters').textContent = `${META.clusters_cc} comunidades na cocitação e ${META.clusters_bc_total} no acoplamento`;
+byId('m-pivotal').textContent  = (META.pivotal === 1 ? 'Uma obra emerge' : `${META.pivotal} obras emergem`)
+  + ' como ponto pivotal — concentra intermediação e rajada de citação simultâneas.';
+byId('m-pctrefs').textContent  = String(META.pct_refs).replace('.', ',') + '%';
 
 /* Barra de eixos */
 const cyb = TEMPORAL.reduce((s,d)=>s+d.Cyb,0);

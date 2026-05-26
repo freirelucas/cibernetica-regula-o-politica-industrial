@@ -1,15 +1,16 @@
 parametro,valor,descricao
-corpus_size,817,Total de papers no corpus
-n_seeds,10,Seeds do pipeline
-n_axes_1,790,Papers com >=1 eixo tematico
-n_axes_2,26,Papers com >=2 eixos (trading zones)
-n_axes_3,10,Papers com 3 eixos (bridges completos)
-cocit_nodes,600,Nos rede co-citation
-cocit_edges,11209,Arestas rede co-citation
-coupling_nodes,769,Nos rede bibliographic coupling
-n_clusters_cc,158,Clusters co-citation (Leiden CPM)
-n_clusters_bc,54,Clusters coupling (Leiden Modularity)
-n_bursts,760,Eventos de burst (Kleinberg 2003)
-n_bursting_refs,579,Referencias com burst detectado
-pct_with_refs,94.9,Percentual com referenced_works
-gerado_em,2026-05-25 17:33,Timestamp de execucao
+corpus_size,817,Total de trabalhos no corpus
+n_seeds,10,Obras-semente
+n_axes_1,790,Trabalhos com pelo menos 1 eixo
+n_axes_2,26,Trabalhos com 2 ou mais eixos (obras-ponte)
+n_axes_3,10,Trabalhos com os 3 eixos
+cocit_nodes,600,Nos da rede de cocitacao
+cocit_edges,11209,Arestas da rede de cocitacao
+coupling_nodes,769,Nos da rede de acoplamento bibliografico
+coupling_edges,28123,Arestas da rede de acoplamento bibliografico
+n_clusters_cc,158,Agrupamentos de cocitacao (Leiden CPM)
+n_clusters_bc,54,Agrupamentos de acoplamento (Leiden modularidade)
+n_bursts,760,Rajadas de citacao detectadas (Kleinberg)
+n_bursting_refs,579,Referencias com rajada
+pct_with_refs,94.9,Percentual de trabalhos com referencias
+gerado_em,2026-05-25 17:33,Carimbo de data/hora da execucao
