@@ -605,15 +605,15 @@ byId('list-seeds').innerHTML = SEEDS.map(s => {
 /* Central de downloads + dicionário de dados */
 const dlIcon = `<svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const DADOS = [
-  {f:'dados/00_pipeline_log.csv',       d:'Parâmetros e métricas da execução'},
-  {f:'dados/02_top20_citados.csv',      d:'Vinte obras mais citadas (não-semente)'},
-  {f:'dados/03_bridges_n_axes_gte2.csv',d:'Obras-ponte (dois ou mais eixos)'},
-  {f:'dados/05_kleinberg_bursts.csv',   d:'Rajadas de citação detectadas'},
-  {f:'dados/06_sleeping_beauties.csv',  d:'Coeficiente de beleza por obra'},
-  {f:'dados/07_clusters_top3.csv',      d:'Três obras mais citadas por agrupamento'},
-  {f:'dados/08_seeds.csv',              d:'Obras-semente com identificadores'},
-  {f:'dados/09_temporal.csv',           d:'Produção anual por eixo'},
-  {f:'dados/scisci_results.json',       d:'Resultados consolidados (JSON)'},
+  {f:'dados/00_registro_execucao.csv', d:'Parâmetros e métricas da execução'},
+  {f:'dados/02_mais_citados.csv',      d:'Vinte obras mais citadas (não-semente)'},
+  {f:'dados/03_obras_ponte.csv',       d:'Obras-ponte (dois ou mais eixos)'},
+  {f:'dados/05_rajadas_kleinberg.csv', d:'Rajadas de citação detectadas'},
+  {f:'dados/06_belas_adormecidas.csv', d:'Coeficiente de beleza por obra'},
+  {f:'dados/07_agrupamentos.csv',      d:'Três obras mais citadas por agrupamento'},
+  {f:'dados/08_obras_semente.csv',     d:'Obras-semente com identificadores'},
+  {f:'dados/09_serie_temporal.csv',    d:'Produção anual por eixo'},
+  {f:'dados/scisci_results.json',      d:'Resultados consolidados (JSON)'},
 ];
 byId('dl-grid').innerHTML = DADOS.map(x => {
   const name = x.f.split('/').pop();

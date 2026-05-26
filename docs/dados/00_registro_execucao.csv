@@ -1,0 +1,16 @@
+parametro,valor,descricao
+corpus,817,Total de trabalhos no corpus
+obras_semente,10,Obras-semente
+com_1_eixo,790,Trabalhos com pelo menos 1 eixo
+com_2_eixos,26,Trabalhos com 2 ou mais eixos (obras-ponte)
+com_3_eixos,10,Trabalhos com os 3 eixos
+cocit_nos,600,Nos da rede de cocitacao
+cocit_arestas,11209,Arestas da rede de cocitacao
+acopl_nos,769,Nos da rede de acoplamento bibliografico
+acopl_arestas,28123,Arestas da rede de acoplamento bibliografico
+agrupamentos_cocit,158,Agrupamentos de cocitacao (Leiden CPM)
+agrupamentos_acopl,54,Agrupamentos de acoplamento (Leiden modularidade)
+rajadas,760,Rajadas de citacao detectadas (Kleinberg)
+refs_com_rajada,579,Referencias com rajada
+pct_com_refs,94.9,Percentual de trabalhos com referencias
+gerado_em,2026-05-25 17:33,Carimbo de data/hora da execucao

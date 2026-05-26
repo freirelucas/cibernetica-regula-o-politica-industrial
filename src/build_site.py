@@ -43,38 +43,38 @@ def write_csvs(R, out):
         with open(os.path.join(out, name), "w", encoding="utf-8", newline="") as f:
             cw = csv.writer(f, lineterminator="\n"); cw.writerow(header); cw.writerows(rows)
 
-    w("00_pipeline_log.csv", ["parametro", "valor", "descricao"], [
-        ("corpus_size", R["corpus_size"], "Total de trabalhos no corpus"),
-        ("n_seeds", R["n_seeds"], "Obras-semente"),
-        ("n_axes_1", R["n_axes_1"], "Trabalhos com pelo menos 1 eixo"),
-        ("n_axes_2", R["n_axes_2"], "Trabalhos com 2 ou mais eixos (obras-ponte)"),
-        ("n_axes_3", R["n_axes_3"], "Trabalhos com os 3 eixos"),
-        ("cocit_nodes", R["cocit_nodes"], "Nos da rede de cocitacao"),
-        ("cocit_edges", R["cocit_edges"], "Arestas da rede de cocitacao"),
-        ("coupling_nodes", R["coupling_nodes"], "Nos da rede de acoplamento bibliografico"),
-        ("coupling_edges", R["coupling_edges"], "Arestas da rede de acoplamento bibliografico"),
-        ("n_clusters_cc", R["n_clusters_cc"], "Agrupamentos de cocitacao (Leiden CPM)"),
-        ("n_clusters_bc", R["n_clusters_bc"], "Agrupamentos de acoplamento (Leiden modularidade)"),
-        ("n_bursts", R["n_bursts"], "Rajadas de citacao detectadas (Kleinberg)"),
-        ("n_bursting_refs", R["n_bursting_refs"], "Referencias com rajada"),
-        ("pct_with_refs", R["pct_with_refs"], "Percentual de trabalhos com referencias"),
+    w("00_registro_execucao.csv", ["parametro", "valor", "descricao"], [
+        ("corpus", R["corpus_size"], "Total de trabalhos no corpus"),
+        ("obras_semente", R["n_seeds"], "Obras-semente"),
+        ("com_1_eixo", R["n_axes_1"], "Trabalhos com pelo menos 1 eixo"),
+        ("com_2_eixos", R["n_axes_2"], "Trabalhos com 2 ou mais eixos (obras-ponte)"),
+        ("com_3_eixos", R["n_axes_3"], "Trabalhos com os 3 eixos"),
+        ("cocit_nos", R["cocit_nodes"], "Nos da rede de cocitacao"),
+        ("cocit_arestas", R["cocit_edges"], "Arestas da rede de cocitacao"),
+        ("acopl_nos", R["coupling_nodes"], "Nos da rede de acoplamento bibliografico"),
+        ("acopl_arestas", R["coupling_edges"], "Arestas da rede de acoplamento bibliografico"),
+        ("agrupamentos_cocit", R["n_clusters_cc"], "Agrupamentos de cocitacao (Leiden CPM)"),
+        ("agrupamentos_acopl", R["n_clusters_bc"], "Agrupamentos de acoplamento (Leiden modularidade)"),
+        ("rajadas", R["n_bursts"], "Rajadas de citacao detectadas (Kleinberg)"),
+        ("refs_com_rajada", R["n_bursting_refs"], "Referencias com rajada"),
+        ("pct_com_refs", R["pct_with_refs"], "Percentual de trabalhos com referencias"),
         ("gerado_em", R["generated"], "Carimbo de data/hora da execucao"),
     ])
-    w("02_top20_citados.csv", ["year", "cited_by", "axes", "n_axes", "authors", "title", "venue"],
+    w("02_mais_citados.csv", ["ano", "citacoes", "eixos", "n_eixos", "autores", "titulo", "veiculo"],
       [(r["year"], r["cited_by"], r["axes"], r.get("n_axes", ""), r.get("authors", ""),
         r["title"], r.get("venue", "")) for r in R["top20_nonfeed"]])
-    w("03_bridges_n_axes_gte2.csv", ["year", "cited_by", "axes", "authors", "title"],
+    w("03_obras_ponte.csv", ["ano", "citacoes", "eixos", "autores", "titulo"],
       [(r["year"], r["cited_by"], r["axes"], r.get("authors", ""), r["title"]) for r in R["top_bridges"]])
-    w("05_kleinberg_bursts.csv", ["ref_id", "begin", "end", "weight", "title", "authors"],
+    w("05_rajadas_kleinberg.csv", ["id_ref", "inicio", "fim", "peso", "titulo", "autores"],
       [(r["ref_id"], r["begin"], r["end"], r["weight"], r["title"], r.get("authors", "")) for r in R["top_bursts"]])
-    w("06_sleeping_beauties.csv", ["year", "cited_by", "B", "t_m", "axes", "title"],
+    w("06_belas_adormecidas.csv", ["ano", "citacoes", "B", "t_m", "eixos", "titulo"],
       [(r["year"], r["cited_by"], r["B"], r["t_m"], r.get("axes", ""), r["title"]) for r in R["sleeping_beauties"]])
     rows = [(c["cluster_id"], c["label"], c["size"], p["title"], p["cited_by"], p["year"])
             for c in R["clusters_bc"] for p in c["top_papers"]]
-    w("07_clusters_top3.csv", ["cluster_id", "cluster_label", "cluster_size", "titulo", "citacoes", "ano"], rows)
-    w("08_seeds.csv", ["chave", "openalex_id", "referencia"],
+    w("07_agrupamentos.csv", ["id_agrupamento", "rotulo", "tamanho", "titulo", "citacoes", "ano"], rows)
+    w("08_obras_semente.csv", ["chave", "id_openalex", "referencia"],
       [(s["key"], s["id"], s["ref"]) for s in R["seeds"]])
-    w("09_temporal.csv", ["year", "Cyb", "Reg", "PolInd"],
+    w("09_serie_temporal.csv", ["ano", "Cyb", "Reg", "PolInd"],
       [(t["year"], t["Cyb"], t["Reg"], t["PolInd"]) for t in R["temporal"]])
     return 8
 
