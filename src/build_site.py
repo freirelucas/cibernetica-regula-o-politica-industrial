@@ -271,6 +271,25 @@ def explorer_network():
             ger = any(k in t for k in build_rayyan._GERAL_CYB)
             org = any(k in t for k in build_rayyan._ORG_CYB)
             n["sub"] = "geral" if (ger and not org) else "organizacional"
+
+    # afinidade estrutural por cocitação: resolve os nós "sem eixo" pelo eixo
+    # dominante da vizinhança (inferência, não vocabulário) e marca as PONTES —
+    # nós cuja vizinhança liga ≥2 eixos (conectores de 2ª ordem: por onde as
+    # comunidades epistêmicas se tocam).
+    axis_of = {n["id"]: (n.get("axis") or "") for n in nodes}
+    nbr_axes = {i: {} for i in ids}
+    for l in links:
+        s, t = l.get("source"), l.get("target")
+        if t in nbr_axes and axis_of.get(s):
+            nbr_axes[t][axis_of[s]] = nbr_axes[t].get(axis_of[s], 0) + 1
+        if s in nbr_axes and axis_of.get(t):
+            nbr_axes[s][axis_of[t]] = nbr_axes[s].get(axis_of[t], 0) + 1
+    for n in nodes:
+        d = nbr_axes.get(n["id"], {})
+        n["reach"] = len(d)                       # nº de eixos distintos na vizinhança
+        n["bridge"] = len(d) >= 2                 # liga ≥2 eixos → conector de 2ª ordem
+        if not n.get("axis") and d:               # "sem eixo": eixo estruturalmente inferido
+            n["axis_inf"] = max(d, key=lambda k: d[k])
     return {"nodes": nodes, "links": links}
 
 

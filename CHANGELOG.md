@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (83 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (84 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -10,6 +10,7 @@ Registro de mudanças desta branch, agrupado por tema (83 commits de trabalho). 
 
 ## Triagem e exportação (Rayyan)
 
+- Rayyan: zip determinístico (data fixa na entrada) · `ca94d3c` · 2026-05-27
 - README: declara o Objetivo do projeto (norte: diagnóstico, triagem, agenda) · `e12fc0d` · 2026-05-27
 - Triagem: explicador recolhível do raciocínio + cor do 4º eixo · `3b2617f` · 2026-05-27
 - Triagem: curadoria por tamanho de bloco (30/60/90/120) + badge Colab no README · `016b2ed` · 2026-05-27
