@@ -28,6 +28,7 @@ sys.path.insert(0, HERE)
 from report_from_json import build_js  # noqa: E402  (reúso dos consts de gráfico)
 from report_template import inject_template  # noqa: E402
 import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
+import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
 
 TEMPLATE = os.path.join(HERE, "site_template.html")
 EXPLORER_TPL = os.path.join(HERE, "explorador_template.html")
@@ -185,33 +186,12 @@ def net_stats(net):
             sumk[a] = sumk.get(a, 0) + deg.get(nid, 0)
         Q = within / m - sum((s / (2 * m)) ** 2 for s in sumk.values())
 
-    # comunidades DETECTADAS (propagação de rótulos, sem usar o vocabulário) — para
-    # validar os eixos sem circularidade: Q da partição detectada e concordância (NMI).
-    adj = {nid: [] for nid in nodes}
-    for l in links:
-        adj[l["source"]].append((l["target"], l.get("peso", 1)))
-        adj[l["target"]].append((l["source"], l.get("peso", 1)))
-    comm = {nid: nid for nid in nodes}
-    order = sorted(nodes, key=lambda n: (-deg.get(n, 0), n))
-    for _ in range(40):
-        changed = False
-        for nid in order:
-            wv = {}
-            for o, wt in adj[nid]:
-                wv[comm[o]] = wv.get(comm[o], 0) + wt
-            if wv:
-                best = max(sorted(wv), key=lambda c: wv[c])
-                if best != comm[nid]:
-                    comm[nid] = best; changed = True
-        if not changed:
-            break
-    Qd, nmi, ncomm = 0.0, 0.0, len(set(comm.values()))
-    if m > 0:
-        withinD = sum(l.get("peso", 1) for l in links if comm[l["source"]] == comm[l["target"]])
-        sumkD = {}
-        for nid in nodes:
-            sumkD[comm[nid]] = sumkD.get(comm[nid], 0) + deg.get(nid, 0)
-        Qd = withinD / m - sum((s / (2 * m)) ** 2 for s in sumkD.values())
+    # comunidades DETECTADAS pela modularidade gulosa (Clauset–Newman–Moore, 2004),
+    # SEM usar o vocabulário — valida os eixos sem circularidade: Q detectada e NMI.
+    comm, Qd, ncomm = sfi_methods.cnm_communities(list(nodes), links)
+    nmi = 0.0
+    # ajuste de lei de potência da distribuição de citações (Clauset–Shalizi–Newman, 2009)
+    powerlaw = sfi_methods.powerlaw_fit([nd.get("cited_by", 0) for nd in nodes.values()])
     if N:                                                  # NMI(detectada, eixo)
         import math
         ax = {nid: (nodes[nid].get("axis") or "—") for nid in nodes}
@@ -231,6 +211,7 @@ def net_stats(net):
         "modularidade_detectada": round(Qd, 3),
         "n_comunidades": ncomm,
         "nmi": round(nmi, 3),
+        "powerlaw": powerlaw,
         "classif": classif,
         "intra": same, "inter": cross,
         "pct_intra": round(100 * same / classif) if classif else 0,
@@ -270,6 +251,24 @@ def build_meta(R):
     }
 
 
+def explorer_network():
+    """Rede do explorador: a versão ampliada (network_exploded.json) anotada com a
+    comunidade detectada (CNM), o coeficiente de participação e o papel de Guimerà-Amaral."""
+    src = next((os.path.join(ROOT, "data", f) for f in
+                ("network_4axis.json", "network_exploded.json", "network.json")
+                if os.path.exists(os.path.join(ROOT, "data", f))), os.path.join(ROOT, "data", "network.json"))
+    net = json.load(open(src, encoding="utf-8"))
+    nodes, links = net.get("nodes", []), net.get("links", [])
+    ids = [n["id"] for n in nodes]
+    comm, _, _ = sfi_methods.cnm_communities(ids, links)
+    P, z = sfi_methods.participation_z(ids, links, comm)
+    for n in nodes:
+        n["comm"] = comm.get(n["id"], 0)
+        n["part"] = round(P.get(n["id"], 0), 2)
+        n["role"] = sfi_methods.ga_role(P.get(n["id"], 0), z.get(n["id"], 0))
+    return {"nodes": nodes, "links": links}
+
+
 def main():
     os.makedirs(DADOS, exist_ok=True)
     with open(JSON_SRC, encoding="utf-8") as f:
@@ -278,24 +277,27 @@ def main():
     rayyan = build_rayyan.build(DADOS)
     meta = build_meta(R)
     meta["rayyan_n"] = len(rayyan)
-    js = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
+    base = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
     net_src = os.path.join(ROOT, "data", "network.json")
     net = json.load(open(net_src, encoding="utf-8")) if os.path.exists(net_src) else {"nodes": [], "links": []}
-    js += f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
+    js = base + f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
     js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
-    html = inject_template(js, TEMPLATE)
+    html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"site:  {index}  ({os.path.getsize(index)//1024} KB)")
 
-    if os.path.exists(EXPLORER_TPL):
+    if os.path.exists(EXPLORER_TPL):                 # explorador: rede ampliada com papéis P/z
+        expl_net = explorer_network()
+        expl_js = base + f"const NETWORK={json.dumps(expl_net, ensure_ascii=False)};\n"
+        expl_js += f"const NETMETA={json.dumps(net_stats(expl_net), ensure_ascii=False)};\n"
         with open(EXPLORER_TPL, encoding="utf-8") as f:
-            expl = f.read().replace("__JS_DATA__", js)
+            expl = f.read().replace("__JS_DATA__", expl_js)
         explorer = os.path.join(DOCS, "explorador.html")
         with open(explorer, "w", encoding="utf-8") as f:
             f.write(expl)
-        print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB)")
+        print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB, {len(expl_net['nodes'])} nós)")
 
     if os.path.exists(TRIAGEM_TPL):
         works_js = f"const RAYYAN_WORKS={json.dumps(rayyan_works_js(rayyan), ensure_ascii=False)};"
@@ -314,6 +316,12 @@ def main():
     shutil.copy(JSON_SRC, os.path.join(DADOS, "scisci_results.json"))
     if os.path.exists(net_src):
         shutil.copy(net_src, os.path.join(DADOS, "rede_cocitacao.json"))
+    expl_src = os.path.join(ROOT, "data", "network_exploded.json")
+    if os.path.exists(expl_src):
+        shutil.copy(expl_src, os.path.join(DADOS, "rede_explodida.json"))
+    ax4_src = os.path.join(ROOT, "data", "network_4axis.json")
+    if os.path.exists(ax4_src):
+        shutil.copy(ax4_src, os.path.join(DADOS, "rede_4eixos.json"))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
 
     missing = [s for s in SECTIONS if f'id="{s}"' not in html]

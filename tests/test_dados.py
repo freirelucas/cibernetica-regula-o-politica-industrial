@@ -105,6 +105,19 @@ def test_rayyan_dedup_by_id(tmp_path):
     assert len(ids) == len(set(ids)), "há obras repetidas com o mesmo id OpenAlex"
 
 
+def test_rayyan_cruzamento(tmp_path):
+    """Opção B: o recorte de cruzamento Brasil × núcleo é marcado e exportado."""
+    if not os.path.exists(build_rayyan.CROSS):
+        return
+    works = build_rayyan.build(str(tmp_path))
+    cruz = [w for w in works if build_rayyan.PONTE in w["roles"]]
+    assert cruz, "nenhuma obra-ponte marcada (tag_cross)"
+    for ext in ("ris", "csv", "zip"):
+        assert (tmp_path / f"rayyan_cruzamento.{ext}").exists(), f"falta rayyan_cruzamento.{ext}"
+    ris = (tmp_path / "rayyan_cruzamento.ris").read_text(encoding="utf-8")
+    assert ris.count("TY  - ") == len(cruz)
+
+
 def test_rayyan_abstract_coverage(tmp_path):
     """Guarda contra regressão do enriquecimento: a maioria das obras tem resumo."""
     if not os.path.exists(build_rayyan.ENRICH):

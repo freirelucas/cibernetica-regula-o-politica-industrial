@@ -25,7 +25,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
 BRASIL = os.path.join(ROOT, "docs", "material-brasil", "dataset_politica_industrial_brasil.csv")
 ENRICH = os.path.join(ROOT, "data", "openalex_enrich.json")
+CROSS = os.path.join(ROOT, "data", "cross_brasil.json")
+CPLX = os.path.join(ROOT, "data", "cplx_works.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
+PONTE = "ponte global×Brasil"
+BRASIL_ROLE = "corpus Brasil (Faganello)"
 
 AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Política industrial"}
 
@@ -113,6 +117,14 @@ def consolidate():
                  type=ty.get((r.get("Publication Type") or "").strip(), "GEN"),
                  axes=["Política industrial"], roles=["corpus Brasil (Faganello)"])
 
+    if os.path.exists(CPLX):                       # 4º eixo — economia da complexidade
+        for w in json.load(open(CPLX, encoding="utf-8")):
+            _add(store, w.get("title", ""), authors=w.get("authors") or [],
+                 year=str(w.get("year") or ""), doi=w.get("doi", ""),
+                 url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
+                 abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
+                 axes=["Economia da complexidade"], roles=["complexidade (4º eixo)"])
+
     return [store[k] for k in sorted(store, key=lambda k: (store[k]["year"] or "0"), reverse=True)]
 
 
@@ -142,6 +154,22 @@ def apply_enrich(works):
             e["type"] = d["type"]
         if not e["year"] and d.get("year"):
             e["year"] = d["year"]
+    return works
+
+
+def tag_cross(works):
+    """Marca as obras do cruzamento Brasil × núcleo global (ponte por citação) com um
+    papel próprio — para filtrar na triagem e gerar o recorte rayyan_cruzamento."""
+    if not os.path.exists(CROSS):
+        return works
+    c = json.load(open(CROSS, encoding="utf-8"))
+    gids = set(c.get("global", []))
+    boa = {b["oa_id"] for b in c.get("brasil", []) if b.get("oa_id")}
+    bdois = {b["doi"] for b in c.get("brasil", []) if b.get("doi")}
+    for e in works:
+        oid = e.get("oa_id")
+        if (oid and (oid in gids or oid in boa)) or (e.get("doi") and e["doi"] in bdois):
+            e["roles"].add(PONTE)
     return works
 
 
@@ -272,24 +300,32 @@ def to_csv(works, path):
                         _oneline(e["abstract"]), e["doi"], kw, _note(e)])
 
 
+def emit(works, out, stem):
+    """Escreve um conjunto de obras em todos os formatos (ris/csv/enw/bib) + zip do RIS.
+    O .zip contém só o RIS — o Rayyan importa todos os arquivos do arquivo compactado,
+    e vários formatos gerariam registros duplicados na revisão."""
+    ris = os.path.join(out, stem + ".ris")
+    with open(ris, "w", encoding="utf-8") as f:
+        f.write(to_ris(works))
+    to_csv(works, os.path.join(out, stem + ".csv"))
+    with open(os.path.join(out, stem + ".enw"), "w", encoding="utf-8") as f:
+        f.write(to_enw(works))
+    with open(os.path.join(out, stem + ".bib"), "w", encoding="utf-8") as f:
+        f.write(to_bib(works))
+    with zipfile.ZipFile(os.path.join(out, stem + ".zip"), "w", zipfile.ZIP_DEFLATED) as z:
+        z.write(ris, stem + ".ris")
+
+
 def build(out=DADOS):
-    works = dedup_oaid(apply_enrich(consolidate()))
+    works = tag_cross(dedup_oaid(apply_enrich(consolidate())))
     os.makedirs(out, exist_ok=True)
-    paths = {
-        "rayyan_sintese.ris": to_ris(works),
-        "rayyan_sintese.csv": None,  # escrito pelo to_csv (csv.writer)
-        "rayyan_sintese.enw": to_enw(works),
-        "rayyan_sintese.bib": to_bib(works),
-    }
-    to_csv(works, os.path.join(out, "rayyan_sintese.csv"))
-    for name, text in paths.items():
-        if text is not None:
-            with open(os.path.join(out, name), "w", encoding="utf-8") as f:
-                f.write(text)
-    # contêiner .zip com UM só formato (RIS) — o Rayyan importa todos os arquivos do
-    # arquivo compactado; vários formatos gerariam registros duplicados na revisão.
-    with zipfile.ZipFile(os.path.join(out, "rayyan_sintese.zip"), "w", zipfile.ZIP_DEFLATED) as z:
-        z.write(os.path.join(out, "rayyan_sintese.ris"), "rayyan_sintese.ris")
+    emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
+    cruz = [e for e in works if PONTE in e["roles"]]      # opção B — cruzamento (ponte por citação)
+    if cruz:
+        emit(cruz, out, "rayyan_cruzamento")
+    brasil = [e for e in works if BRASIL_ROLE in e["roles"]]   # só as referências da Claucia
+    if brasil:
+        emit(brasil, out, "rayyan_brasil")
     return works
 
 

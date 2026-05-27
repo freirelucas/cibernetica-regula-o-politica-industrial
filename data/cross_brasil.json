@@ -1,0 +1,111 @@
+{
+ "generated": "2026-05-27",
+ "global": [
+  "W2013386523",
+  "W2120106358",
+  "W2137358449",
+  "W3124879925",
+  "W4285719527"
+ ],
+ "global_labels": {
+  "W2013386523": "The Competitive Advantage of Nations",
+  "W2120106358": "Economic development as self-discovery",
+  "W2137358449": "An Evolutionary Theory of Economic Change.",
+  "W3124879925": "Rodrik · Industrial Policy 21C",
+  "W4285719527": "W4285719527"
+ },
+ "brasil": [
+  {
+   "oa_id": "W2789614065",
+   "doi": "10.1093/cje/bex028",
+   "title": "The case for reindustrialisation in developing countries: towards the connection between the macroeconomic regime and the industrial policy in Brazil",
+   "cita": [
+    "W2120106358",
+    "W3124879925"
+   ]
+  },
+  {
+   "oa_id": "W2153465427",
+   "doi": "10.1017/s0305741011001482",
+   "title": "Fear for Manufacturing? China and the Future of Industry in Brazil and Latin America",
+   "cita": [
+    "W4285719527"
+   ]
+  },
+  {
+   "oa_id": "W2756082066",
+   "doi": "10.1016/j.enpol.2017.08.050",
+   "title": "Regional industrial policy in the wind energy sector: The case of the State of Rio Grande do Sul, Brazil",
+   "cita": [
+    "W2013386523",
+    "W4285719527"
+   ]
+  },
+  {
+   "oa_id": "W2003318188",
+   "doi": "10.1590/s0101-31572006000200001",
+   "title": "Política industrial e desenvolvimento",
+   "cita": [
+    "W2137358449",
+    "W3124879925"
+   ]
+  },
+  {
+   "oa_id": "W3004438298",
+   "doi": "10.1080/10438599.2020.1719629",
+   "title": "Institutions and industrial policy in Brazil after two decades: have we built the needed institutions?",
+   "cita": [
+    "W3124879925"
+   ]
+  },
+  {
+   "oa_id": "W2272963762",
+   "doi": "10.18356/16840348-2006-89-5",
+   "title": "Industrial policy and development",
+   "cita": [
+    "W3124879925"
+   ]
+  },
+  {
+   "oa_id": "W2159305436",
+   "doi": "10.1093/icc/dtt039",
+   "title": "Industrial policy and the creation of new industries: evidence from Brazil's bioethanol industry",
+   "cita": [
+    "W2120106358",
+    "W3124879925"
+   ]
+  },
+  {
+   "oa_id": "W2337187807",
+   "doi": "10.18352/erlacs.10141",
+   "title": "Catching up and Falling behind: An Appraisal of Brazilian Industrial Policy in the Twenty-First Century",
+   "cita": [
+    "W3124879925"
+   ]
+  },
+  {
+   "oa_id": "W2123741655",
+   "doi": "10.1111/j.1470-9856.1999.tb00145.x",
+   "title": "From Industrial Policy to Regional and Local Locational Policy: Experience from Santa Catarina/Brazil",
+   "cita": [
+    "W2013386523"
+   ]
+  },
+  {
+   "oa_id": "W2902795424",
+   "doi": "10.1590/1982-3533.2018v27n3art12",
+   "title": "O Brasil no novo milênio: regulação, progresso técnico e novo desenvolvimentismo",
+   "cita": [
+    "W4285719527"
+   ]
+  },
+  {
+   "oa_id": "W3183746153",
+   "doi": "10.51798/sijis.v2i2.51",
+   "title": "Perspectivas de uma nova agenda de política industrial: os desafios da indústria brasileira no pós-pandemia da Covid-19",
+   "cita": [
+    "W3124879925"
+   ]
+  }
+ ]
+}
