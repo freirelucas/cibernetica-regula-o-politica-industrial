@@ -849,14 +849,6 @@
    "seed": false
   },
   {
-   "id": "W1513281941",
-   "label": "American economic review",
-   "axis": "Reg",
-   "cited_by": 16277,
-   "year": 1992,
-   "seed": false
-  },
-  {
    "id": "W2028436159",
    "label": "A Behavioral Theory of the Firm",
    "axis": "Reg",
@@ -3307,24 +3299,6 @@
    "peso": 5
   },
   {
-   "source": "W1513281941",
-   "target": "W1566172004",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1513281941",
-   "target": "W2060827592",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1513281941",
-   "target": "W2137358449",
-   "tipo": "cocita",
-   "peso": 13
-  },
-  {
    "source": "W1566172004",
    "target": "W1973459906",
    "tipo": "cocita",
@@ -4321,12 +4295,6 @@
    "peso": 8
   },
   {
-   "source": "W1513281941",
-   "target": "W3124536214",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2101946146",
    "target": "W2108795964",
    "tipo": "cocita",
@@ -4381,12 +4349,6 @@
    "peso": 14
   },
   {
-   "source": "W1513281941",
-   "target": "W2108795964",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2108795964",
    "target": "W617038684",
    "tipo": "cocita",
@@ -4411,22 +4373,10 @@
    "peso": 3
   },
   {
-   "source": "W1513281941",
-   "target": "W2118243939",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W2137358449",
    "target": "W3121147769",
    "tipo": "cocita",
    "peso": 30
-  },
-  {
-   "source": "W1513281941",
-   "target": "W2140956556",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2142257426",
@@ -6806,12 +6756,6 @@
   },
   {
    "source": "W1498201492",
-   "target": "W1513281941",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1498201492",
    "target": "W2082503759",
    "tipo": "cocita",
    "peso": 4
@@ -7085,12 +7029,6 @@
    "target": "W2164284962",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W1513281941",
-   "target": "W2164284962",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2015930340",
@@ -9997,12 +9935,6 @@
    "peso": 3
   },
   {
-   "source": "W1513281941",
-   "target": "W2009202666",
-   "tipo": "cocita",
-   "peso": 10
-  },
-  {
    "source": "W1731457293",
    "target": "W2011303397",
    "tipo": "cocita",
@@ -10191,24 +10123,6 @@
   {
    "source": "W1511343964",
    "target": "W1554940969",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1513281941",
-   "target": "W1554940969",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1513281941",
-   "target": "W1576605329",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1513281941",
-   "target": "W1981289805",
    "tipo": "cocita",
    "peso": 3
   },
@@ -11323,20 +11237,8 @@
    "peso": 3
   },
   {
-   "source": "W1513281941",
-   "target": "W1977578104",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1988466436",
    "target": "W2008318777",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1513281941",
-   "target": "W1988466436",
    "tipo": "cocita",
    "peso": 3
   },
@@ -11387,12 +11289,6 @@
    "target": "W2141042444",
    "tipo": "cocita",
    "peso": 7
-  },
-  {
-   "source": "W1513281941",
-   "target": "W2141042444",
-   "tipo": "cocita",
-   "peso": 8
   },
   {
    "source": "W2099670044",

@@ -985,14 +985,6 @@
    "seed": true
   },
   {
-   "id": "W4297081765",
-   "label": "Harvard business review",
-   "axis": "",
-   "cited_by": 46512,
-   "year": 1994,
-   "seed": false
-  },
-  {
    "id": "W2123709218",
    "label": "Dynamic capabilities and strategic management",
    "axis": "",
@@ -2877,12 +2869,6 @@
    "peso": 7
   },
   {
-   "source": "W2048086870",
-   "target": "W4297081765",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
    "source": "W1492856410",
    "target": "W1498488428",
    "tipo": "cocita",
@@ -3910,12 +3896,6 @@
   },
   {
    "source": "W1540626093",
-   "target": "W4297081765",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W1540626093",
    "target": "W2154683088",
    "tipo": "cocita",
    "peso": 101
@@ -3961,12 +3941,6 @@
    "target": "W2489535817",
    "tipo": "cocita",
    "peso": 41
-  },
-  {
-   "source": "W2154683088",
-   "target": "W4297081765",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W2010793828",
@@ -4329,12 +4303,6 @@
    "peso": 22
   },
   {
-   "source": "W1983425281",
-   "target": "W4297081765",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W1540626093",
    "target": "W1994645941",
    "tipo": "cocita",
@@ -4345,12 +4313,6 @@
    "target": "W4244612406",
    "tipo": "cocita",
    "peso": 33
-  },
-  {
-   "source": "W4244612406",
-   "target": "W4297081765",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1517138715",
@@ -16777,12 +16739,6 @@
    "target": "W2113991966",
    "tipo": "cocita",
    "peso": 7
-  },
-  {
-   "source": "W1553746973",
-   "target": "W4297081765",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W1492359653",
