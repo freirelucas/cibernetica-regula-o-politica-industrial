@@ -94,6 +94,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
     <div class="ctl">
       <label class="toggle"><input type="checkbox" id="labels" checked> Mostrar rótulos</label>
       <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="crossOnly"> Só cocitações entre eixos</label>
+      <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="commColor"> Colorir por comunidade detectada</label>
     </div>
 
     <div class="ctl">
@@ -101,6 +102,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
     </div>
 
     <div class="live" id="live"></div>
+    <div class="live" id="commNote" style="margin-top:.5rem;color:var(--cyb)"></div>
   </aside>
 
   <div class="stage">
@@ -147,6 +149,49 @@ __JS_DATA__
   const citThresh = [...allNodes].map(n=>n.cited_by||0).sort((a,b)=>b-a)[15] || 1e9;
   const labelable = d => d.seed || (d.cited_by||0) >= citThresh;  // rotula só sementes e as ~16 mais citadas
 
+  // Detecção de comunidades (propagação de rótulos, determinística por grau) sobre a
+  // rede completa — para ver se a ESTRUTURA recupera os eixos atribuídos por vocabulário.
+  function detectCommunities(){
+    const adj={}; allNodes.forEach(n=>adj[n.id]=[]);
+    allLinks.forEach(l=>{adj[l.source].push([l.target,l.peso]); adj[l.target].push([l.source,l.peso]);});
+    const order=[...allNodes].sort((a,b)=>(str[b.id]-str[a.id])||(a.id<b.id?-1:1)).map(n=>n.id);
+    const lab={}; allNodes.forEach((n,i)=>lab[n.id]=n.id);
+    for(let it=0; it<30; it++){
+      let changed=false;
+      for(const id of order){
+        const w={}; adj[id].forEach(([o,wt])=>{w[lab[o]]=(w[lab[o]]||0)+wt;});
+        let best=lab[id], bw=-1;
+        Object.keys(w).sort().forEach(c=>{ if(w[c]>bw){bw=w[c]; best=c;} });
+        if(best!==lab[id]){lab[id]=best; changed=true;}
+      }
+      if(!changed) break;
+    }
+    // renumera comunidades por tamanho (maiores primeiro)
+    const cnt={}; Object.values(lab).forEach(c=>cnt[c]=(cnt[c]||0)+1);
+    const rank=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);
+    const idx={}; rank.forEach((c,i)=>idx[c]=i);
+    const out={}; for(const id in lab) out[id]=idx[lab[id]];
+    return {comm:out, k:rank.length};
+  }
+  const COMMPAL=['#4b3fc2','#1a7a5e','#b85c10','#c23f3f','#185fa5','#d4537e','#7a6a1a','#5a5550'];
+  const {comm, k:nComm} = detectCommunities();
+  const commColor = id => COMMPAL[(comm[id]||0) % COMMPAL.length];
+  let colorMode='axis';
+  const fillOf = d => colorMode==='comm' ? commColor(d.id) : (AXC[d.axis]||AXC['']);
+
+  // métricas do subgrafo visível (vivas, acompanham os filtros)
+  function metricsOf(ns, ls){
+    let m=0; const dg={};
+    ls.forEach(l=>{const s=l.source.id||l.source,t=l.target.id||l.target; dg[s]=(dg[s]||0)+l.peso; dg[t]=(dg[t]||0)+l.peso; m+=l.peso;});
+    let within=0, cl=0, cross=0;
+    ls.forEach(l=>{const a=byId[l.source.id||l.source].axis, b=byId[l.target.id||l.target].axis;
+      if(a===b) within+=l.peso; if(a&&b){cl++; if(a!==b)cross++;}});
+    const sumk={}; ns.forEach(n=>{sumk[n.axis||'']=(sumk[n.axis||'']||0)+(dg[n.id]||0);});
+    const Q = m ? within/m - Object.values(sumk).reduce((s,kk)=>s+(kk/(2*m))**2,0) : 0;
+    const density = ns.length>1 ? 2*ls.length/(ns.length*(ns.length-1)) : 0;
+    return {Q, crossPct: cl?Math.round(100*cross/cl):0, density};
+  }
+
   const svg = d3.select('#graph');
   const stage = document.querySelector('.stage');
   let W=stage.clientWidth, H=stage.clientHeight;
@@ -186,7 +231,9 @@ __JS_DATA__
 
   function restart(reheat){
     const {ns, ls} = visibleData();
-    document.getElementById('live').textContent = `mostrando ${ns.length} de ${allNodes.length} obras · ${ls.length} cocitações`;
+    const M = metricsOf(ns, ls);
+    document.getElementById('live').innerHTML = `mostrando ${ns.length} de ${allNodes.length} obras · ${ls.length} cocitações`
+      + `<br>Q&nbsp;=&nbsp;${M.Q.toFixed(2)} · ${M.crossPct}% cruzam eixos · densidade ${M.density.toFixed(2)}`;
 
     link = link.data(ls, d=>(d.source.id||d.source)+'-'+(d.target.id||d.target));
     link.exit().remove();
@@ -199,7 +246,7 @@ __JS_DATA__
     node.exit().remove();
     const nEnter = node.enter().append('circle')
       .attr('class', d=>'nd'+(d.seed?' seed':''))
-      .attr('r', rad).attr('fill', d=>AXC[d.axis]||AXC[''])
+      .attr('r', rad).attr('fill', fillOf)
       .on('mouseover', hoverOn).on('mousemove', moveTip).on('mouseout', hoverOff)
       .on('click', (ev,d)=>{ev.stopPropagation(); select(d);})
       .call(d3.drag().on('start',dStart).on('drag',dDrag).on('end',dEnd));
@@ -293,6 +340,15 @@ __JS_DATA__
   wEl.addEventListener('input',e=>{wmin=+e.target.value; wv.textContent=wmin; restart(false);});
   document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; updateLabels();});
   document.getElementById('crossOnly').addEventListener('change',e=>{crossOnly=e.target.checked; restart(true);});
+  document.getElementById('commColor').addEventListener('change',e=>{
+    colorMode = e.target.checked ? 'comm' : 'axis';
+    node.attr('fill', fillOf);
+    document.getElementById('legend').style.opacity = colorMode==='comm' ? .45 : 1;
+    const cm = document.getElementById('commNote');
+    if (cm) cm.textContent = colorMode==='comm'
+      ? `${nComm} comunidades detectadas na estrutura (propagação de rótulos) — compare com as cores dos eixos.`
+      : '';
+  });
   document.getElementById('search').addEventListener('input',e=>{query=e.target.value.trim(); applyQuery();});
   document.getElementById('reset').addEventListener('click',()=>restart(true));
 
