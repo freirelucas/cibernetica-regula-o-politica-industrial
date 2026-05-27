@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (82 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (83 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -28,6 +28,7 @@ Registro de mudanças desta branch, agrupado por tema (82 commits de trabalho). 
 
 ## Explorador e visualizações
 
+- Explorador: realça a estrutura — recua os 'sem eixo', destaca as pontes · `493dfc5` · 2026-05-27
 - Explorador: disposição "por eixo" (silos visíveis) em vez do emaranhado · `a2cc1cf` · 2026-05-27
 - Leva a rede explodida (251 nós, papéis P/z) ao explorador · `87a6a82` · 2026-05-27
 - Exporta subrede do explorador e guarda a cobertura de resumos · `b7e15a4` · 2026-05-27

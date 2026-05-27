@@ -328,16 +328,19 @@ def emit(works, out, stem):
     """Escreve um conjunto de obras em todos os formatos (ris/csv/enw/bib) + zip do RIS.
     O .zip contém só o RIS — o Rayyan importa todos os arquivos do arquivo compactado,
     e vários formatos gerariam registros duplicados na revisão."""
-    ris = os.path.join(out, stem + ".ris")
-    with open(ris, "w", encoding="utf-8") as f:
-        f.write(to_ris(works))
+    ris_text = to_ris(works)
+    with open(os.path.join(out, stem + ".ris"), "w", encoding="utf-8") as f:
+        f.write(ris_text)
     to_csv(works, os.path.join(out, stem + ".csv"))
     with open(os.path.join(out, stem + ".enw"), "w", encoding="utf-8") as f:
         f.write(to_enw(works))
     with open(os.path.join(out, stem + ".bib"), "w", encoding="utf-8") as f:
         f.write(to_bib(works))
+    # zip determinístico: data fixa na entrada, senão o mtime muda os bytes a cada build
     with zipfile.ZipFile(os.path.join(out, stem + ".zip"), "w", zipfile.ZIP_DEFLATED) as z:
-        z.write(ris, stem + ".ris")
+        zi = zipfile.ZipInfo(stem + ".ris", date_time=(2026, 5, 25, 0, 0, 0))
+        zi.compress_type = zipfile.ZIP_DEFLATED
+        z.writestr(zi, ris_text)
 
 
 def build(out=DADOS):
