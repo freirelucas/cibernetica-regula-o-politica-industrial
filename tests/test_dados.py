@@ -69,7 +69,7 @@ def test_network_csv(root, tmp_path):
     nos = (tmp_path / "10_rede_nos.csv").read_text(encoding="utf-8").strip().splitlines()
     arr = (tmp_path / "11_rede_arestas.csv").read_text(encoding="utf-8").strip().splitlines()
     assert nos[0] == "id_openalex,obra,eixo,citacoes,ano,semente"
-    assert arr[0] == "origem,destino,tipo,cocitacoes"
+    assert arr[0] == "origem,destino,tipo,cocitacoes,forca_associacao"
     assert len(nos) - 1 == len(net["nodes"])
     assert len(arr) - 1 == len(net["links"])
 

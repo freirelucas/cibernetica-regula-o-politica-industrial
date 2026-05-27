@@ -49,3 +49,4 @@ arquivo,coluna,descricao
 11_rede_arestas.csv,destino,nó de destino da aresta (id OpenAlex)
 11_rede_arestas.csv,tipo,tipo de ligação (cocita)
 11_rede_arestas.csv,cocitacoes,número de vezes citadas em conjunto (peso da cocitação)
+11_rede_arestas.csv,forca_associacao,cocitação normalizada: peso / raiz(grau_origem · grau_destino)

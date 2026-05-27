@@ -17,6 +17,7 @@ Uso:
 """
 import csv
 import json
+import math
 import os
 import shutil
 import sys
@@ -92,8 +93,17 @@ def write_network_csvs(net, out):
     w("10_rede_nos.csv", ["id_openalex", "obra", "eixo", "citacoes", "ano", "semente"],
       [(n["id"], n.get("label", ""), n.get("axis", ""), n.get("cited_by", 0),
         n.get("year") or "", n.get("seed", False)) for n in nodes])
-    w("11_rede_arestas.csv", ["origem", "destino", "tipo", "cocitacoes"],
-      [(l["source"], l["target"], l.get("tipo", "cocita"), l.get("peso", 1)) for l in links])
+    # força de associação (cocitação normalizada): peso / sqrt(grau_a · grau_b)
+    freq = {}
+    for l in links:
+        freq[l["source"]] = freq.get(l["source"], 0) + l.get("peso", 1)
+        freq[l["target"]] = freq.get(l["target"], 0) + l.get("peso", 1)
+
+    def assoc(l):
+        d = freq.get(l["source"], 0) * freq.get(l["target"], 0)
+        return round(l.get("peso", 1) / math.sqrt(d), 4) if d else 0
+    w("11_rede_arestas.csv", ["origem", "destino", "tipo", "cocitacoes", "forca_associacao"],
+      [(l["source"], l["target"], l.get("tipo", "cocita"), l.get("peso", 1), assoc(l)) for l in links])
     return 2
 
 
@@ -114,6 +124,7 @@ COLDOC = {
     "semente": "indica se é obra-semente (True/False)", "origem": "nó de origem da aresta (id OpenAlex)",
     "destino": "nó de destino da aresta (id OpenAlex)", "tipo": "tipo de ligação (cocita)",
     "cocitacoes": "número de vezes citadas em conjunto (peso da cocitação)",
+    "forca_associacao": "cocitação normalizada: peso / raiz(grau_origem · grau_destino)",
 }
 
 
@@ -156,9 +167,26 @@ def net_stats(net):
                 if "PolInd" in (a, b):
                     polind_cross += 1
     classif = same + cross
+    # modularidade Q da partição por eixo (cocitação ponderada): os eixos são
+    # comunidades reais da estrutura, ou rótulo imposto?
+    deg, m = {}, 0.0
+    for l in links:
+        w = l.get("peso", 1); m += w
+        deg[l["source"]] = deg.get(l["source"], 0) + w
+        deg[l["target"]] = deg.get(l["target"], 0) + w
+    Q = 0.0
+    if m > 0:
+        within = sum(l.get("peso", 1) for l in links
+                     if nodes[l["source"]].get("axis", "") == nodes[l["target"]].get("axis", ""))
+        sumk = {}
+        for nid, nd in nodes.items():
+            a = nd.get("axis") or ""
+            sumk[a] = sumk.get(a, 0) + deg.get(nid, 0)
+        Q = within / m - sum((s / (2 * m)) ** 2 for s in sumk.values())
     return {
         "n": N, "e": E,
         "densidade": round(2 * E / (N * (N - 1)), 3),
+        "modularidade": round(Q, 3),
         "classif": classif,
         "intra": same, "inter": cross,
         "pct_intra": round(100 * same / classif) if classif else 0,

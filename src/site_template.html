@@ -1057,6 +1057,7 @@ new Chart(byId('chartClusters'), {
       + (M.pares && M.pares['Cyb × Reg'] ? ` — e o cruzamento é quase todo entre cibernética e instrumentos de governo.` : '.')
       + ilha
       + ` A separação que se vê no desenho é, portanto, <em>estrutural</em>: a convergência entre as três tradições é uma agenda a construir, não um fato já inscrito na literatura citada. `
+      + (M.modularidade>=0.3 ? `A partição por eixo tem <strong>modularidade Q&nbsp;=&nbsp;${String(M.modularidade).replace('.',',')}</strong> — os eixos correspondem a comunidades reais da estrutura de cocitação, não a um rótulo imposto. ` : (M.modularidade ? `Modularidade da partição por eixo: Q&nbsp;=&nbsp;${String(M.modularidade).replace('.',',')}. ` : ''))
       + `<span style="color:var(--muted)">(densidade ${M.densidade}; eixo atribuído por vocabulário a ${classN} dos ${M.n} nós.)</span>`;
   }
   const ctx = cv.getContext('2d');
