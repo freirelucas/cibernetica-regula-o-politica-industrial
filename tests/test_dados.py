@@ -105,6 +105,15 @@ def test_rayyan_dedup_by_id(tmp_path):
     assert len(ids) == len(set(ids)), "há obras repetidas com o mesmo id OpenAlex"
 
 
+def test_rayyan_abstract_coverage(tmp_path):
+    """Guarda contra regressão do enriquecimento: a maioria das obras tem resumo."""
+    if not os.path.exists(build_rayyan.ENRICH):
+        return
+    works = build_rayyan.build(str(tmp_path))
+    with_ab = sum(1 for w in works if w["abstract"])
+    assert with_ab >= 90, f"cobertura de resumos caiu para {with_ab} (esperado >= 90)"
+
+
 def test_rayyan_ris_wellformed(tmp_path):
     """RIS válido para o Rayyan: toda linha não-vazia é uma tag; cada registro
     começa em TY e termina em ER (sem linha de continuação quebrada)."""

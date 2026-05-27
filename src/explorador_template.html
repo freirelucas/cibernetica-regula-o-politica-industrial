@@ -99,6 +99,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 
     <div class="ctl">
       <button class="btn" id="reset">Reorganizar</button>
+      <button class="btn" id="expSub" title="baixar os nós e arestas visíveis">Baixar subrede (JSON)</button>
     </div>
 
     <div class="live" id="live"></div>
@@ -351,6 +352,14 @@ __JS_DATA__
   });
   document.getElementById('search').addEventListener('input',e=>{query=e.target.value.trim(); applyQuery();});
   document.getElementById('reset').addEventListener('click',()=>restart(true));
+  document.getElementById('expSub').addEventListener('click',()=>{
+    const {ns, ls} = visibleData();
+    const data = {nodes: ns.map(n=>({id:n.id, label:n.label, axis:n.axis, cited_by:n.cited_by, year:n.year, seed:n.seed})),
+      links: ls.map(l=>({source:l.source.id||l.source, target:l.target.id||l.target, peso:l.peso}))};
+    const blob = new Blob([JSON.stringify(data, null, 1)], {type:'application/json'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'subrede.json';
+    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(a.href);
+  });
 
   document.getElementById('legend').innerHTML =
     `<span class="sw" style="background:${AXC.Cyb}"></span>Cibernética &nbsp; `
