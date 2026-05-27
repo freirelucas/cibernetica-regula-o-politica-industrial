@@ -100,3 +100,7 @@ def test_net_stats_consistency(root):
     assert s["n"] == len(net["nodes"]) and s["e"] == len(net["links"])
     assert s["intra"] + s["inter"] == s["classif"]
     assert 99 <= s["pct_intra"] + s["pct_inter"] <= 101
+    # validação não-circular: comunidades detectadas + concordância com os eixos
+    assert 0 <= s["nmi"] <= 1
+    assert s["n_comunidades"] >= 1
+    assert s["modularidade_detectada"] >= s["modularidade"] - 0.01  # detecção maximiza Q

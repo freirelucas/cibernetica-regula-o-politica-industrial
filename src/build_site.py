@@ -184,10 +184,53 @@ def net_stats(net):
             a = nd.get("axis") or ""
             sumk[a] = sumk.get(a, 0) + deg.get(nid, 0)
         Q = within / m - sum((s / (2 * m)) ** 2 for s in sumk.values())
+
+    # comunidades DETECTADAS (propagação de rótulos, sem usar o vocabulário) — para
+    # validar os eixos sem circularidade: Q da partição detectada e concordância (NMI).
+    adj = {nid: [] for nid in nodes}
+    for l in links:
+        adj[l["source"]].append((l["target"], l.get("peso", 1)))
+        adj[l["target"]].append((l["source"], l.get("peso", 1)))
+    comm = {nid: nid for nid in nodes}
+    order = sorted(nodes, key=lambda n: (-deg.get(n, 0), n))
+    for _ in range(40):
+        changed = False
+        for nid in order:
+            wv = {}
+            for o, wt in adj[nid]:
+                wv[comm[o]] = wv.get(comm[o], 0) + wt
+            if wv:
+                best = max(sorted(wv), key=lambda c: wv[c])
+                if best != comm[nid]:
+                    comm[nid] = best; changed = True
+        if not changed:
+            break
+    Qd, nmi, ncomm = 0.0, 0.0, len(set(comm.values()))
+    if m > 0:
+        withinD = sum(l.get("peso", 1) for l in links if comm[l["source"]] == comm[l["target"]])
+        sumkD = {}
+        for nid in nodes:
+            sumkD[comm[nid]] = sumkD.get(comm[nid], 0) + deg.get(nid, 0)
+        Qd = withinD / m - sum((s / (2 * m)) ** 2 for s in sumkD.values())
+    if N:                                                  # NMI(detectada, eixo)
+        import math
+        ax = {nid: (nodes[nid].get("axis") or "—") for nid in nodes}
+        cx, cy, cxy = {}, {}, {}
+        for nid in nodes:
+            cx[comm[nid]] = cx.get(comm[nid], 0) + 1
+            cy[ax[nid]] = cy.get(ax[nid], 0) + 1
+            cxy[(comm[nid], ax[nid])] = cxy.get((comm[nid], ax[nid]), 0) + 1
+        H = lambda c: -sum((v / N) * math.log(v / N) for v in c.values())
+        info = sum((v / N) * math.log((v / N) / ((cx[a] / N) * (cy[b] / N))) for (a, b), v in cxy.items())
+        denom = H(cx) + H(cy)
+        nmi = (2 * info / denom) if denom > 0 else 0.0
     return {
         "n": N, "e": E,
         "densidade": round(2 * E / (N * (N - 1)), 3),
         "modularidade": round(Q, 3),
+        "modularidade_detectada": round(Qd, 3),
+        "n_comunidades": ncomm,
+        "nmi": round(nmi, 3),
         "classif": classif,
         "intra": same, "inter": cross,
         "pct_intra": round(100 * same / classif) if classif else 0,
