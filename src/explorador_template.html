@@ -92,7 +92,8 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
     </div>
 
     <div class="ctl">
-      <label class="toggle"><input type="checkbox" id="labels" checked> Mostrar rótulos</label>
+      <label class="toggle"><input type="checkbox" id="byAxis" checked> Agrupar por eixo (silos)</label>
+      <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="labels" checked> Mostrar rótulos</label>
       <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="crossOnly"> Só cocitações entre eixos</label>
       <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="commColor"> Colorir por comunidade detectada</label>
     </div>
@@ -233,6 +234,22 @@ __JS_DATA__
   const axisOn = {Cyb:true, Reg:true, PolInd:true, Cplx:true, '':true};
   let wmin=6, showLabels=true, query='', selected=null, crossOnly=false;
 
+  // disposição: "por eixo" ancora cada eixo numa região (silos visíveis) × força única
+  const AX_POS = {Cyb:[0.22,0.50], Reg:[0.77,0.27], PolInd:[0.77,0.75], Cplx:[0.27,0.80], '':[0.50,0.50]};
+  let byAxis = true;
+  function applyLayout(){
+    if (byAxis){
+      sim.force('x', d3.forceX(d=>(AX_POS[d.axis||'']||[0.5,0.5])[0]*W).strength(.32));
+      sim.force('y', d3.forceY(d=>(AX_POS[d.axis||'']||[0.5,0.5])[1]*H).strength(.32));
+      sim.force('charge', d3.forceManyBody().strength(-110));
+    } else {
+      sim.force('x', d3.forceX(W/2).strength(.05));
+      sim.force('y', d3.forceY(H/2).strength(.05));
+      sim.force('charge', d3.forceManyBody().strength(-300));
+    }
+    sim.alpha(.6).restart();
+  }
+
   function visibleData(){
     const ns0 = allNodes.filter(n=>axisOn[n.axis||'']);
     const ok = new Set(ns0.map(n=>n.id));
@@ -364,6 +381,7 @@ __JS_DATA__
   wEl.addEventListener('input',e=>{wmin=+e.target.value; wv.textContent=wmin; restart(false);});
   document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; updateLabels();});
   document.getElementById('crossOnly').addEventListener('change',e=>{crossOnly=e.target.checked; restart(true);});
+  document.getElementById('byAxis').addEventListener('change',e=>{byAxis=e.target.checked; applyLayout();});
   document.getElementById('destaque').addEventListener('change',e=>{ hlmode=e.target.value; applyQuery(); });
   document.getElementById('commColor').addEventListener('change',e=>{
     colorMode = e.target.checked ? 'comm' : 'axis';
@@ -394,10 +412,11 @@ __JS_DATA__
 
   window.addEventListener('resize',()=>{
     W=stage.clientWidth; H=stage.clientHeight; svg.attr('viewBox',[0,0,W,H]);
-    sim.force('x',d3.forceX(W/2).strength(.06)).force('y',d3.forceY(H/2).strength(.06)).alpha(.2).restart();
+    applyLayout();
   });
 
   restart(true);
+  applyLayout();
 })();
 </script>
 </body>
