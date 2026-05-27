@@ -72,6 +72,25 @@ def test_explorer_linked_from_site(results):
     assert "explorador.html" in _html(results)
 
 
+def test_triagem_linked_from_site(results):
+    assert "triagem.html" in _html(results)
+
+
+def test_triagem_built():
+    import build_rayyan
+    works = build_rayyan.apply_enrich(build_rayyan.consolidate())
+    works_js = json.dumps(build_site.rayyan_works_js(works), ensure_ascii=False)
+    with open(build_site.TRIAGEM_TPL, encoding="utf-8") as f:
+        html = f.read().replace("__JS_DATA__", f"const RAYYAN_WORKS={works_js};")
+    assert "__JS_DATA__" not in html
+    assert "const RAYYAN_WORKS=" in html
+    assert "vendor/fonts.css" in html and "cdnjs" not in html
+    for ctl in ['id="expRis"', 'id="expCsv"', 'id="statusChips"', 'id="list"']:
+        assert ctl in html, f"controle ausente na triagem: {ctl}"
+    # cada obra tem uid estável e ao menos um eixo ou papel
+    assert all(w["uid"] for w in build_site.rayyan_works_js(works))
+
+
 def test_net_stats_consistency(root):
     net_src = os.path.join(root, "data", "network.json")
     if not os.path.exists(net_src):

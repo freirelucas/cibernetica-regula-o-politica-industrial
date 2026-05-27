@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triagem — inclusão / exclusão · Cibernética × Regulação × Política industrial</title>
+<meta name="description" content="Triagem das obras da síntese: decida incluir, excluir ou talvez, com resumo e eixo à vista, e exporte os incluídos em RIS para o Rayyan. As decisões ficam salvas no navegador.">
+<link rel="stylesheet" href="vendor/fonts.css">
+<style>
+:root{--ink:#0e0e0e;--paper:#f5f2ed;--surface:#ede9e2;--border:rgba(14,14,14,.12);--border-s:rgba(14,14,14,.25);--cyb:#4b3fc2;--reg:#1a7a5e;--pi:#b85c10;--accent:#c23f3f;--ok:#1a7a5e;--muted:#6b6560;--mono:'JetBrains Mono',monospace;--serif:'Spectral',serif;--sans:'DM Sans',sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6}
+a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(245,242,237,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border-s);display:flex;align-items:center;gap:14px;padding:.6rem 1.1rem;font-family:var(--mono);font-size:11px;flex-wrap:wrap}
+.topbar .brand{font-weight:500}
+.topbar .sp{flex:1}
+.btn{font-family:var(--mono);font-size:11px;padding:.42rem .7rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper);color:var(--ink);cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn.primary{border-color:var(--cyb);color:var(--cyb)}.btn.primary:hover{background:var(--cyb);color:#fff}
+.bar2{position:sticky;top:43px;z-index:20;background:var(--surface);border-bottom:1px solid var(--border);padding:.6rem 1.1rem;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:.82rem}
+.prog{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.prog b{color:var(--ink)}
+.prog .pi-ok{color:var(--ok)}.prog .pi-no{color:var(--accent)}.prog .pi-mb{color:var(--pi)}
+.chips{display:flex;gap:5px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:10px;padding:.25rem .55rem;border:1px solid var(--border-s);border-radius:20px;cursor:pointer;user-select:none;background:var(--paper);color:var(--muted)}
+.chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+#q{flex:1;min-width:160px;padding:.42rem .6rem;border:1px solid var(--border-s);border-radius:5px;font-family:var(--sans);font-size:.85rem;background:var(--paper)}
+.wrap{max-width:980px;margin:0 auto;padding:1.2rem 1.1rem 4rem}
+.intro{font-size:.9rem;color:var(--muted);margin:.2rem 0 1.2rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+.card{border:1px solid var(--border);border-left:4px solid var(--border-s);border-radius:8px;background:#fbf9f5;padding:1rem 1.1rem;margin-bottom:.9rem;display:grid;grid-template-columns:1fr 132px;gap:14px}
+.card.inc{border-left-color:var(--ok);background:#f1f7f3}
+.card.exc{border-left-color:var(--accent);opacity:.5}
+.card.may{border-left-color:var(--pi);background:#fbf4ec}
+.card h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin:0 0 .25rem;line-height:1.35}
+.meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:.5rem}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.5rem}
+.tag{font-family:var(--mono);font-size:9.5px;padding:.12rem .45rem;border-radius:20px;color:#fff}
+.tag.role{background:none;color:var(--muted);border:1px solid var(--border-s);padding:.1rem .45rem}
+.abs{font-size:.86rem;color:#2a2722;line-height:1.55;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+.abs.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.abs.empty{color:var(--muted);font-style:italic}
+.more{font-family:var(--mono);font-size:10px;color:var(--cyb);cursor:pointer;background:none;border:none;padding:.2rem 0}
+.links{font-family:var(--mono);font-size:10px;margin-top:.5rem}
+.actions{display:flex;flex-direction:column;gap:6px}
+.actions button{font-family:var(--mono);font-size:11px;padding:.5rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper);color:var(--ink);cursor:pointer}
+.actions button:hover{border-color:var(--ink)}
+.actions button.sel-inc{background:var(--ok);color:#fff;border-color:var(--ok)}
+.actions button.sel-exc{background:var(--accent);color:#fff;border-color:var(--accent)}
+.actions button.sel-may{background:var(--pi);color:#fff;border-color:var(--pi)}
+.empty-list{color:var(--muted);font-family:var(--mono);font-size:12px;padding:2rem 0;text-align:center}
+.hint{font-family:var(--mono);font-size:10px;color:var(--muted)}
+@media (max-width:640px){
+  .card{grid-template-columns:1fr}
+  .actions{flex-direction:row}.actions button{flex:1}
+  .bar2{top:62px}
+}
+</style>
+</head>
+<body>
+<nav class="topbar">
+  <span class="brand">Triagem · inclusão / exclusão</span>
+  <a href="index.html">&larr; estudo</a>
+  <a href="explorador.html">explorador</a>
+  <span class="sp"></span>
+  <button class="btn primary" id="expRis">Exportar incluídos (RIS)</button>
+  <button class="btn" id="expCsv">Exportar decisões (CSV)</button>
+  <button class="btn" id="reset">Limpar</button>
+</nav>
+<div class="bar2">
+  <span class="prog" id="prog"></span>
+  <span class="chips" id="axisChips"></span>
+  <span class="chips" id="roleChips"></span>
+  <span class="chips" id="statusChips"></span>
+  <input id="q" type="text" placeholder="buscar título, autor, resumo…" autocomplete="off">
+</div>
+<main class="wrap">
+  <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> (pronto para o Rayyan) ou baixe todas as decisões em CSV. É uma pré-triagem leve; a triagem colaborativa completa segue no Rayyan.</p>
+  <div id="list"></div>
+  <div class="empty-list" id="emptyMsg" style="display:none">Nenhuma obra corresponde aos filtros.</div>
+</main>
+
+<script>
+__JS_DATA__
+</script>
+<script>
+(function(){
+  const AXC = {Cibernética:'#4b3fc2','Instrumentos de governo':'#1a7a5e','Política industrial':'#b85c10'};
+  const STORE = 'triagem_scisci_v1';
+  const DEC = JSON.parse(localStorage.getItem(STORE) || '{}');
+  const works = (typeof RAYYAN_WORKS !== 'undefined' ? RAYYAN_WORKS : []);
+  const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const oneline = s => (s||'').replace(/\s+/g,' ').trim();
+  const save = () => localStorage.setItem(STORE, JSON.stringify(DEC));
+  document.getElementById('nTotal').textContent = works.length;
+
+  let fAxis=new Set(), fRole=new Set(), fStatus='todos', q='';
+
+  // chips de eixo / papel / status
+  const axes=[...new Set(works.flatMap(w=>w.axes))].sort();
+  const roles=[...new Set(works.flatMap(w=>w.roles))].sort();
+  function mkChips(host, items, set){
+    document.getElementById(host).innerHTML = items.map(x=>`<span class="chip" data-v="${esc(x)}">${esc(x)}</span>`).join('');
+    document.getElementById(host).querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+      const v=c.dataset.v; set.has(v)?set.delete(v):set.add(v); c.classList.toggle('on'); render();
+    });
+  }
+  mkChips('axisChips', axes, fAxis);
+  mkChips('roleChips', roles, fRole);
+  const STATUS=[['todos','todos'],['undec','indecisos'],['inc','incluídos'],['may','talvez'],['exc','excluídos']];
+  document.getElementById('statusChips').innerHTML = STATUS.map(([v,l],i)=>`<span class="chip${i===0?' on':''}" data-s="${v}">${l}</span>`).join('');
+  document.getElementById('statusChips').querySelectorAll('.chip').forEach(c=>c.onclick=()=>{
+    fStatus=c.dataset.s; document.querySelectorAll('#statusChips .chip').forEach(x=>x.classList.toggle('on',x===c)); render();
+  });
+  document.getElementById('q').addEventListener('input', e=>{q=e.target.value.toLowerCase().trim(); render();});
+
+  function visible(){
+    return works.filter(w=>{
+      if(fAxis.size && !w.axes.some(a=>fAxis.has(a))) return false;
+      if(fRole.size && !w.roles.some(r=>fRole.has(r))) return false;
+      const d=DEC[w.uid]||'undec';
+      if(fStatus!=='todos' && (fStatus==='undec'? d!=='undec' : d!==fStatus)) return false;
+      if(q){ const hay=(w.title+' '+(w.authors||[]).join(' ')+' '+(w.abstract||'')+' '+w.axes.join(' ')).toLowerCase(); if(!hay.includes(q)) return false; }
+      return true;
+    });
+  }
+  function progress(){
+    let inc=0,exc=0,may=0; works.forEach(w=>{const d=DEC[w.uid]; if(d==='inc')inc++; else if(d==='exc')exc++; else if(d==='may')may++;});
+    const und=works.length-inc-exc-may;
+    document.getElementById('prog').innerHTML =
+      `<b>${works.length}</b> obras · <span class="pi-ok">${inc} incluídas</span> · <span class="pi-mb">${may} talvez</span> · <span class="pi-no">${exc} excluídas</span> · ${und} indecisas`;
+  }
+  function card(w){
+    const d=DEC[w.uid]||'';
+    const tags = w.axes.map(a=>`<span class="tag" style="background:${AXC[a]||'#9a948c'}">${esc(a)}</span>`).join('')
+      + w.roles.map(r=>`<span class="tag role">${esc(r)}</span>`).join('');
+    const meta = [ (w.authors||[]).slice(0,4).join('; ')||'—', w.year||'s.d.', w.venue ].filter(Boolean).join(' · ');
+    const absHtml = w.abstract
+      ? `<div class="abs clamp" id="abs-${w.uid}">${esc(w.abstract)}</div><button class="more" data-more="${w.uid}">ver resumo completo</button>`
+      : `<div class="abs empty">sem resumo disponível</div>`;
+    const link = w.doi ? `https://doi.org/${w.doi}` : (w.url||'');
+    return `<article class="card ${d}" data-uid="${esc(w.uid)}">
+      <div>
+        <h3>${esc(w.title)}</h3>
+        <div class="meta">${esc(meta)}</div>
+        <div class="tags">${tags}</div>
+        ${absHtml}
+        ${link?`<div class="links"><a href="${esc(link)}" target="_blank" rel="noopener">abrir referência &nearr;</a></div>`:''}
+      </div>
+      <div class="actions">
+        <button data-d="inc" class="${d==='inc'?'sel-inc':''}">Incluir</button>
+        <button data-d="may" class="${d==='may'?'sel-may':''}">Talvez</button>
+        <button data-d="exc" class="${d==='exc'?'sel-exc':''}">Excluir</button>
+      </div>
+    </article>`;
+  }
+  function render(){
+    const vs=visible();
+    document.getElementById('list').innerHTML = vs.map(card).join('');
+    document.getElementById('emptyMsg').style.display = vs.length?'none':'block';
+    progress();
+  }
+  // delegação: decisões, "ver mais"
+  document.getElementById('list').addEventListener('click', e=>{
+    const mb=e.target.closest('[data-more]');
+    if(mb){ const el=document.getElementById('abs-'+mb.dataset.more); el.classList.toggle('clamp'); mb.textContent=el.classList.contains('clamp')?'ver resumo completo':'recolher'; return; }
+    const btn=e.target.closest('.actions button'); if(!btn) return;
+    const art=e.target.closest('.card'), uid=art.dataset.uid, d=btn.dataset.d;
+    if(DEC[uid]===d) delete DEC[uid]; else DEC[uid]=d;   // clicar de novo desfaz
+    save();
+    if(fStatus!=='todos'){ render(); } else {
+      art.className='card '+(DEC[uid]||'');
+      art.querySelectorAll('.actions button').forEach(b=>b.className=DEC[uid]===b.dataset.d?('sel-'+b.dataset.d):'');
+      progress();
+    }
+  });
+
+  // exportações
+  function download(name, text, mime){
+    const b=new Blob([text],{type:mime}); const u=URL.createObjectURL(b);
+    const a=document.createElement('a'); a.href=u; a.download=name; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(u);
+  }
+  function risOf(list){
+    return list.map(e=>{
+      const r=['TY  - GEN','T1  - '+oneline(e.title)];
+      (e.authors||[]).forEach(a=>r.push('AU  - '+oneline(a)));
+      if(e.year) r.push('PY  - '+e.year);
+      if(e.venue) r.push('JO  - '+oneline(e.venue));
+      if(e.doi) r.push('DO  - '+e.doi);
+      if(e.url) r.push('UR  - '+e.url);
+      if(e.abstract) r.push('AB  - '+oneline(e.abstract));
+      (e.axes||[]).forEach(a=>r.push('KW  - eixo: '+a));
+      (e.roles||[]).forEach(x=>r.push('KW  - papel: '+x));
+      r.push('ER  - ');
+      return r.join('\n');
+    }).join('\n\n')+'\n';
+  }
+  document.getElementById('expRis').onclick=()=>{
+    const inc=works.filter(w=>DEC[w.uid]==='inc');
+    if(!inc.length){ alert('Nenhuma obra incluída ainda. Marque "Incluir" em algumas obras.'); return; }
+    download('triagem_incluidos.ris', risOf(inc), 'application/x-research-info-systems');
+  };
+  document.getElementById('expCsv').onclick=()=>{
+    const q=s=>'"'+String(s==null?'':s).replace(/"/g,'""')+'"';
+    const rows=[['uid','titulo','ano','eixos','decisao']];
+    works.forEach(w=>rows.push([w.uid,w.title,w.year||'',w.axes.join('|'),DEC[w.uid]||'indeciso']));
+    download('triagem_decisoes.csv', rows.map(r=>r.map(q).join(',')).join('\n'), 'text/csv');
+  };
+  document.getElementById('reset').onclick=()=>{
+    if(confirm('Apagar todas as decisões de triagem deste navegador?')){ for(const k in DEC) delete DEC[k]; save(); render(); }
+  };
+
+  render();
+})();
+</script>
+</body>
+</html>
