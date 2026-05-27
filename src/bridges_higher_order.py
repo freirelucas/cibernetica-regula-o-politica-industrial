@@ -127,6 +127,20 @@ def main():
     for n, c in sorted(CB.items(), key=lambda kv: -kv[1])[:10]:
         print(f"   bt={c:8.0f} P={P[n]:.2f} {sfi.ga_role(P[n], z[n]):14} | {lab[n][:40]}")
 
+    # MODELO NULO (configuração): a estrutura e os conectores superam o acaso?
+    print("\n== modelo nulo de configuração (preserva o grau) ==")
+    qstats, Pz = sfi.configuration_null(V, links, comm)
+    print(f"   modularidade: Q_obs={qstats['Q_obs']} vs aleatório {qstats['Q_rand']}±{qstats['Q_sd']} "
+          f"→ z={qstats['Q_z']} ({qstats['n_iter']} sorteios)")
+    print("   conectores SIGNIFICATIVOS (P acima do acaso, z≥2):")
+    sig = sorted(((Pz[n]['z'], n) for n in V if Pz[n]['z'] >= 2), reverse=True)
+    for zc, n in sig[:12]:
+        print(f"      z={zc:+.1f} P={Pz[n]['P_obs']} (acaso {Pz[n]['P_rand']}) | {AXN.get(axis[n], '—'):20} | {lab[n][:36]}")
+    print("   hubs provinciais SIGNIFICATIVOS (P abaixo do acaso, z≤-2):")
+    prov = sorted((Pz[n]['z'], n) for n in V if Pz[n]['z'] <= -2)
+    for zc, n in prov[:8]:
+        print(f"      z={zc:+.1f} P={Pz[n]['P_obs']} (acaso {Pz[n]['P_rand']}) | {AXN.get(axis[n], '—'):20} | {lab[n][:36]}")
+
     print("\n== ordem de conexão entre eixos (caminho mais curto de cocitação) ==")
     groups = {a: [n for n in V if axis[n] == a] for a in ("Cyb", "Reg", "PolInd")}
     for a, b in (("Cyb", "Reg"), ("Cyb", "PolInd"), ("Reg", "PolInd")):

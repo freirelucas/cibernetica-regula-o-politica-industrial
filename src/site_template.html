@@ -458,7 +458,13 @@ pre.code{max-width:100%}
     <p class="fig-cap" style="margin-bottom:8px">Dispersão das obras-ponte por ano e número de citações (o raio é proporcional às citações).</p>
     <div class="chart-wrap" style="height:220px"><canvas id="chartBridges" role="img" aria-label="Dispersão das obras-ponte por ano e citações">Gráfico de dispersão das obras-ponte.</canvas></div>
   </div>
-  <div class="callout" style="margin-top:1.5rem"><strong>Pontes epistêmicas — quem realmente conecta as comunidades.</strong> As pontes acima são <em>lexicais</em> e diretas. A questão mais profunda é quem conecta as comunidades por <em>cocitação indireta</em>. A intermediação simples (Brandes) engana, porque confunde ponte com hub: por ela, Hood, Ashby, Beer e Rodrik pareceriam corretores, mas o <strong>coeficiente de participação</strong> (Guimerà &amp; Amaral, 2005) — que mede a dispersão das ligações por comunidades, à parte do grau — os revela como <strong>hubs provinciais</strong> (estrelas <em>dentro</em> do próprio eixo, P&nbsp;&lt;&nbsp;0,2). Os conectores genuínos (alta participação) são, sobretudo, a <strong>economia institucional e evolucionária</strong> — North (<em>Institutions, Institutional Change</em>), DiMaggio &amp; Powell (<em>iron cage</em>), Teece (<em>dynamic capabilities</em>), March (exploração × explotação), Nelson &amp; Winter — somados ao <em>policy mix</em>, a <strong>Lange</strong> e à <strong>Mazzucato</strong> (o único clássico que é, de fato, hub conector). É esse tecido — e não as âncoras de cada eixo — o material para <em>construir</em> a convergência. <span style="color:var(--muted)">Ressalva: obras de método genéricas (p.ex. Yin, <em>Case Study Research</em>) também pontuam alto — a participação não distingue ponte epistêmica de citação metodológica transversal. Análise reproduzível em <code>src/bridges_higher_order.py</code>.</span></div>
+  <div class="callout" style="margin-top:1.5rem"><strong>Pontes epistêmicas — o que sobrevive ao teste de significância.</strong> As pontes acima são <em>lexicais</em>. Para saber quem realmente conecta as comunidades, mede-se o <strong>coeficiente de participação</strong> (Guimerà &amp; Amaral, 2005) — a dispersão das ligações por comunidades, à parte do grau — e testa-se contra um <strong>modelo nulo de configuração</strong> (preserva o grau; Maslov &amp; Sneppen, 2002; 60 sorteios). O resultado é severo e esclarecedor:
+    <ul style="margin:.5rem 0 .3rem 1.1rem">
+      <li>A estrutura de comunidades é <strong>fortíssima</strong>: Q&nbsp;=&nbsp;0,58 contra ≈&nbsp;0 no acaso — <strong>z&nbsp;≈&nbsp;93</strong>. Os três eixos são silos reais.</li>
+      <li>As âncoras (Beer, Ashby, Hood, instrumentos de política, o MSV) são <strong>significativamente provinciais</strong> — participação muito <em>abaixo</em> do acaso (z até −34): fecham-se na própria tradição.</li>
+      <li><strong>Nenhuma obra é um conector significativo</strong> (nenhuma participação acima do acaso). Nem a economia institucional, nem Mazzucato, nem Lange: as menos provinciais apenas <em>não se enclausuram</em> — não chegam a fazer ponte além do esperado ao acaso.</li>
+    </ul>
+    Ou seja: o que é estatisticamente excepcional é a <strong>separação</strong>, não a ponte. A convergência entre cibernética, instrumentos de governo e política industrial <strong>não está latente</strong> na estrutura de citação — precisa ser <em>construída</em>. É o argumento central do trabalho, agora com teste de significância. <span style="color:var(--muted)">Reproduzível em <code>src/bridges_higher_order.py</code>.</span></div>
 </div></section>
 
 <!-- 06 · AGRUPAMENTOS -->
@@ -654,13 +660,13 @@ pre.code{max-width:100%}
       <li><strong>Amsden — Asia's Next Giant (1989)</strong> e <strong>Chang — Kicking Away the Ladder (2002)</strong>: o desenvolvimentismo tardio e a defesa histórica da política industrial.</li>
       <li><strong>Cingolani — The state of state capacity</strong>: revisão de conceitos e medidas de capacidade estatal — a ponte entre "variedade requisita" e o vocabulário da administração pública.</li>
     </ul>
-    <h3>Pontes estruturais <span style="font-weight:400;font-style:italic;color:var(--muted)">(conectores entre comunidades, por coeficiente de participação)</span></h3>
+    <h3>Candidatas a ponte <span style="font-weight:400;font-style:italic;color:var(--muted)">(as obras menos provinciais — material para construir a convergência)</span></h3>
     <ul>
       <li><strong>North — Institutions, Institutional Change and Economic Performance (1990)</strong> e <strong>DiMaggio &amp; Powell — The Iron Cage Revisited (1983)</strong>: a economia/sociologia institucional — o maior tecido conector entre os eixos na rede ampliada.</li>
       <li><strong>Nelson &amp; Winter — An Evolutionary Theory of Economic Change (1982)</strong>, <strong>Teece — Dynamic Capabilities (1997)</strong> e <strong>March — Exploration and Exploitation in Organizational Learning (1991)</strong>: a economia evolucionária e o aprendizado organizacional, alta participação entre comunidades.</li>
       <li><strong>Mazzucato — The Entrepreneurial State (2013)</strong>: o único clássico de eixo que é, ao mesmo tempo, hub e conector entre comunidades.</li>
       <li><strong>Lange — Introduction to Economic Cybernetics (1971)</strong>: além do precedente histórico, um conector estrutural entre cibernética e planejamento.</li>
-      <li><em>Nota:</em> obras de alta intermediação mas baixa participação (Hood, Ashby, Beer, Rodrik) são <strong>hubs provinciais</strong> — centrais no próprio eixo, não pontes.</li>
+      <li><em>Nota metodológica:</em> o modelo nulo (ver <a href="#pontes">zonas de intercâmbio</a>) mostra que nenhuma dessas obras é um conector <em>estatisticamente</em> significativo — são as <strong>menos provinciais</strong>, não pontes comprovadas. Hood, Ashby, Beer e Rodrik, por sua vez, são hubs significativamente provinciais. A ponte é uma agenda a construir.</li>
     </ul>
     <h3>Brasil — essenciais</h3>
     <ul>
@@ -743,6 +749,7 @@ python src/build_site.py                # este site (docs/)</pre>
     <dt>Detecção de comunidades <span class="src">(community detection)</span></dt><dd>Encontra grupos coesos a partir só da estrutura de ligações, sem usar rótulos externos; aqui, por modularidade gulosa (Clauset, Newman &amp; Moore, 2004), valida se os eixos emergem da própria rede. O explorador usa a variante interativa por propagação de rótulos (Raghavan et al., 2007).</dd>
     <dt>Informação mútua normalizada <span class="src">(normalized mutual information, NMI)</span></dt><dd>Concordância entre duas partições (0 a 1): mede o quanto as comunidades detectadas coincidem com os eixos atribuídos por vocabulário (Danon et al., 2005).</dd>
     <dt>Coeficiente de participação <span class="src">(participation coefficient)</span></dt><dd>Mede o quanto as ligações de uma obra se espalham por várias comunidades, à parte do seu grau; alto = <em>conector</em> entre comunidades, distinguindo a ponte do mero hub muito citado dentro de um eixo (Guimerà &amp; Amaral, 2005).</dd>
+    <dt>Modelo nulo de configuração <span class="src">(configuration null model)</span></dt><dd>Grafos aleatórios que preservam o grau de cada nó (por trocas duplas de arestas), usados para testar se uma medida observada supera o acaso. Aqui confirma a significância da modularidade e da provincialidade das obras (Maslov &amp; Sneppen, 2002).</dd>
     <dt>Lei de potência <span class="src">(power law)</span></dt><dd>Distribuição de cauda pesada em que poucos itens concentram quase tudo; a atenção (citações) na ciência segue esse padrão. Ajustada por máxima verossimilhança com seleção de x<sub>mín</sub> por Kolmogorov–Smirnov (Clauset, Shalizi &amp; Newman, 2009).</dd>
     <dt>Densidade da rede <span class="src">(network density)</span></dt><dd>Fração das ligações possíveis que de fato existem entre os nós.</dd>
     <dt>Funil de coleta <span class="src">(pipeline)</span></dt><dd>Sequência encadeada de etapas de coleta e análise.</dd>
@@ -770,6 +777,7 @@ python src/build_site.py                # este site (docs/)</pre>
     <li>KESSLER, M. M. Bibliographic coupling between scientific papers. <em>American Documentation</em>, v. 14, n. 1, p. 10–25, 1963.</li>
     <li>KLEINBERG, J. Bursty and hierarchical structure in streams. <em>Data Mining and Knowledge Discovery</em>, v. 7, n. 4, p. 373–397, 2003.</li>
     <li>MARGETTS, H. Rediscovering nodality, 2024.</li>
+    <li>MASLOV, S.; SNEPPEN, K. Specificity and stability in topology of protein networks. <em>Science</em>, v. 296, n. 5569, p. 910–913, 2002.</li>
     <li>MAZZUCATO, M. <em>The Entrepreneurial State</em>. London: Anthem Press, 2013.</li>
     <li>NEWMAN, M. E. J. Modularity and community structure in networks. <em>PNAS</em>, v. 103, n. 23, p. 8577–8582, 2006.</li>
     <li>RAGHAVAN, U. N.; ALBERT, R.; KUMARA, S. Near linear time algorithm to detect community structures in large-scale networks. <em>Physical Review E</em>, v. 76, 036106, 2007.</li>

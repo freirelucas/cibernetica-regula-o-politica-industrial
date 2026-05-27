@@ -170,6 +170,85 @@ def participation_z(node_ids, links, comm, weight="peso"):
     return P, z
 
 
+def configuration_null(node_ids, links, comm, n_iter=60, swaps_factor=10, seed=1):
+    """Modelo nulo de configuração (preserva o grau) por trocas duplas de arestas.
+
+    Mede a significância da estrutura: compara a modularidade da partição `comm` e o
+    coeficiente de participação de cada nó com o esperado em grafos aleatórios de mesmo
+    grau. Devolve (qstats, Pz): z-score de Q e, por nó, {P_obs, P_rand, z}. z>0 para a
+    participação = conecta entre comunidades MAIS que o acaso (conector real); z<0 =
+    fecha-se no próprio módulo (hub provincial real).
+    """
+    import random
+    import statistics
+    from collections import defaultdict
+    V = list(node_ids)
+    E = set()
+    for l in links:
+        a, b = l["source"], l["target"]
+        if a != b:
+            E.add(frozenset((a, b)))
+    edges0 = [tuple(e) for e in E]
+    m = len(edges0) or 1
+    comms = sorted(set(comm.get(n) for n in V), key=lambda c: (c is None, c))
+
+    def metrics(edge_list):
+        deg = defaultdict(int)
+        kic = defaultdict(lambda: defaultdict(int))
+        ew = defaultdict(int); ends = defaultdict(int)
+        for a, b in edge_list:
+            deg[a] += 1; deg[b] += 1
+            ca, cb = comm.get(a), comm.get(b)
+            kic[a][cb] += 1; kic[b][ca] += 1
+            ends[ca] += 1; ends[cb] += 1
+            if ca == cb:
+                ew[ca] += 1
+        Q = sum(ew[c] / m for c in comms) - sum((ends[c] / (2 * m)) ** 2 for c in comms)
+        P = {}
+        for n in V:
+            d = deg.get(n, 0)
+            P[n] = (1 - sum((v / d) ** 2 for v in kic[n].values())) if d else 0.0
+        return Q, P
+
+    Q_obs, P_obs = metrics(edges0)
+    rnd = random.Random(seed)
+    Qs, Psum, Psq = [], defaultdict(float), defaultdict(float)
+    for _ in range(n_iter):
+        el = list(edges0)
+        eset = set(E)
+        target, att = swaps_factor * m, 0
+        done = 0
+        while done < target and att < target * 4:
+            att += 1
+            i, j = rnd.randrange(m), rnd.randrange(m)
+            if i == j:
+                continue
+            a, b = el[i]; c, d = el[j]
+            if len({a, b, c, d}) < 4:
+                continue
+            e1, e2 = frozenset((a, d)), frozenset((c, b))
+            if e1 in eset or e2 in eset:
+                continue
+            eset.discard(frozenset((a, b))); eset.discard(frozenset((c, d)))
+            eset.add(e1); eset.add(e2)
+            el[i] = (a, d); el[j] = (c, b)
+            done += 1
+        Q, P = metrics(el)
+        Qs.append(Q)
+        for n in V:
+            Psum[n] += P[n]; Psq[n] += P[n] * P[n]
+    qm = statistics.mean(Qs); qsd = statistics.pstdev(Qs) or 1e-9
+    qstats = {"Q_obs": round(Q_obs, 3), "Q_rand": round(qm, 3),
+              "Q_sd": round(qsd, 3), "Q_z": round((Q_obs - qm) / qsd, 1), "n_iter": n_iter}
+    Pz = {}
+    for n in V:
+        mu = Psum[n] / n_iter
+        var = Psq[n] / n_iter - mu * mu
+        sd = var ** 0.5 if var > 1e-12 else 1e-9
+        Pz[n] = {"P_obs": round(P_obs[n], 2), "P_rand": round(mu, 2), "z": round((P_obs[n] - mu) / sd, 1)}
+    return qstats, Pz
+
+
 def ga_role(P, z):  # papéis de Guimerà-Amaral (limiares do artigo)
     if z >= 2.5:
         return "hub conector" if P > 0.30 else "hub provincial"
