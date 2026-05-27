@@ -14,3 +14,6 @@ ckpt_*.parquet
 /0[0-9]_*.csv
 /scisci_ipea_pkg_export*.zip
 /out/
+
+# Checkpoint transitório do resolvedor de capítulos do EECS-II
+data/eecs2_ckpt.json

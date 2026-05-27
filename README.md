@@ -6,6 +6,12 @@ organizacional**, **instrumentos de governo / regulação** e **política indust
 O entregável canônico é o **site** em `docs/` (publicável no GitHub Pages),
 construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 
+**▶ Rodar o funil completo (OpenAlex → dados → site) em 1 clique:**
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/freirelucas/cibernetica-regula-o-politica-industrial/blob/main/colab/scisci_cibernetica_regulacao_PI_v2.ipynb)
+— execute as células em ordem; ao final, a **Célula 13** regenera `docs/` com tudo
+(relatório, explorador, triagem e exportações Rayyan). O notebook produz
+`data/scisci_results.json` + `data/network.json` (a "fonte" que o site consome aqui).
+
 ---
 
 ## Conteúdo do repositório

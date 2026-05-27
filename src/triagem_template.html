@@ -53,6 +53,11 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 .actions button.sel-may{background:var(--pi);color:#fff;border-color:var(--pi)}
 .empty-list{color:var(--muted);font-family:var(--mono);font-size:12px;padding:2rem 0;text-align:center}
 .hint{font-family:var(--mono);font-size:10px;color:var(--muted)}
+details.how{margin:.2rem 0 1.3rem;border:1px solid var(--border);border-radius:8px;background:#fbf9f5}
+details.how>summary{cursor:pointer;padding:.6rem .9rem;font-family:var(--mono);font-size:12px;color:var(--cyb);user-select:none}
+details.how[open]>summary{border-bottom:1px solid var(--border)}
+details.how>div{padding:.3rem .9rem .7rem}
+details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
 @media (max-width:640px){
   .card{grid-template-columns:1fr}
   .actions{flex-direction:row}.actions button{flex:1}
@@ -66,8 +71,15 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
   <a href="index.html">&larr; estudo</a>
   <a href="explorador.html">explorador</a>
   <span class="sp"></span>
-  <button class="btn primary" id="expRis">Exportar incluídos (RIS)</button>
-  <button class="btn" id="expBlock">Exportar bloco filtrado (RIS)</button>
+  <span title="exporta as N obras de maior prioridade de curadoria do bloco filtrado (papel + resumo + recência)" style="display:inline-flex;align-items:center;gap:4px">
+    <span class="hint">curadoria&nbsp;RIS:</span>
+    <button class="btn" data-cur="30">30</button>
+    <button class="btn" data-cur="60">60</button>
+    <button class="btn" data-cur="90">90</button>
+    <button class="btn" data-cur="120">120</button>
+  </span>
+  <button class="btn primary" id="expRis">Incluídos (RIS)</button>
+  <button class="btn" id="expBlock">Bloco filtrado (RIS)</button>
   <button class="btn" id="expCsv">Decisões (CSV)</button>
   <button class="btn" id="expJson">Decisões (JSON)</button>
   <label class="btn" for="impFile" title="combinar com decisões de outro pesquisador">Importar</label>
@@ -99,7 +111,15 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
   </span>
 </div>
 <main class="wrap">
-  <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. É uma pré-triagem leve; a triagem colaborativa completa segue no Rayyan. <span class="hint">Atalhos no teclado: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
+  <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. <span class="hint">Atalhos no teclado: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
+  <details class="how">
+    <summary>Como funciona — e o raciocínio da curadoria</summary>
+    <div>
+      <p><b>De onde vêm as obras.</b> A síntese reúne o <b>núcleo global</b> (mapeamento no OpenAlex: obras-semente, mais citadas, obras-ponte, rajadas de citação, belas adormecidas e a sondagem do 4º eixo) e o <b>corpus brasileiro</b> (revisão de literatura nacional de Claucia Faganello). Cada obra traz seus <b>eixos</b> (cibernética · instrumentos de governo · política industrial · economia da complexidade) e seu <b>papel</b> na análise.</p>
+      <p><b>Por onde começar.</b> Os atalhos acima abrem blocos já recortados — <i>Só Brasil</i> (corpus da Claucia), <i>Cruzamento</i> (obras presentes nas duas frentes, global e Brasil), <i>Cibernética organizacional</i> (o recorte-alvo: a vertente que faz ponte com regulação e política industrial), <i>4º eixo</i> (economia da complexidade) e <i>Indecisas</i> (o que falta decidir). Os chips de eixo, papel e status refinam o bloco; “incluir/excluir bloco” decide tudo de uma vez.</p>
+      <p><b>Curadoria por tamanho (30 / 60 / 90 / 120).</b> Quando não quiser triar tudo à mão, esses botões exportam as <b>N obras de maior prioridade do filtro atual</b>. A prioridade ordena por <b>papel</b> (semente &gt; ponte / mais citada &gt; rajada / bela adormecida &gt; cibernética organizacional / complexidade &gt; corpus Brasil), com bônus leve para obras <b>com resumo</b> (mais trianáveis) e mais <b>recentes</b>. É um ponto de partida transparente, não um veredito — a triagem completa e colaborativa segue no Rayyan.</p>
+    </div>
+  </details>
   <div id="list"></div>
   <div class="empty-list" id="emptyMsg" style="display:none">Nenhuma obra corresponde aos filtros.</div>
 </main>
@@ -109,7 +129,7 @@ __JS_DATA__
 </script>
 <script>
 (function(){
-  const AXC = {Cibernética:'#4b3fc2','Instrumentos de governo':'#1a7a5e','Política industrial':'#b85c10'};
+  const AXC = {Cibernética:'#4b3fc2','Instrumentos de governo':'#1a7a5e','Política industrial':'#b85c10','Economia da complexidade':'#2a9d8f'};
   const STORE = 'triagem_scisci_v1';
   const DEC = JSON.parse(localStorage.getItem(STORE) || '{}');
   const works = (typeof RAYYAN_WORKS !== 'undefined' ? RAYYAN_WORKS : []);
@@ -276,6 +296,23 @@ __JS_DATA__
     if(!inc.length){ alert('Nenhuma obra incluída ainda. Marque "Incluir" em algumas obras.'); return; }
     download('triagem_incluidos.ris', risOf(inc), 'application/x-research-info-systems');
   };
+  // curadoria por tamanho: as N obras de maior prioridade do bloco filtrado
+  // (prioridade = papel mais forte + tem resumo + leve recência)
+  const ROLEW={'obra-semente':6,'obra-ponte':5,'ponte global×Brasil':5,'mais citada':5,
+    'bela adormecida':3,'rajada de citação':3,'cibernética organizacional':2,
+    'complexidade (4º eixo)':2,'corpus Brasil (Faganello)':1};
+  function score(w){
+    let s=(w.roles||[]).reduce((m,r)=>Math.max(m,ROLEW[r]||0),0);
+    if(w.abstract) s+=1;
+    if(w.year) s+=Math.max(0,Math.min(1,(+w.year-1980)/45))*0.5;
+    return s;
+  }
+  function expCuradoria(n){
+    const vs=visible().slice().sort((a,b)=>score(b)-score(a)).slice(0,n);
+    if(!vs.length){ alert('Nenhuma obra no filtro atual.'); return; }
+    download(`triagem_curadoria_${vs.length}.ris`, risOf(vs), 'application/x-research-info-systems');
+  }
+  document.querySelectorAll('[data-cur]').forEach(btn=>btn.onclick=()=>expCuradoria(+btn.dataset.cur));
   // exporta exatamente o bloco conceitual filtrado no momento (eixo/papel/status/busca)
   document.getElementById('expBlock').onclick=()=>{
     const vs=visible();
