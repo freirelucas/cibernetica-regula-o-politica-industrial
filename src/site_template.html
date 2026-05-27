@@ -169,6 +169,8 @@ h1 em{font-style:italic;color:var(--muted)}
 .funnel-step .fd{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:3px}
 /* Central de downloads */
 .dl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;margin:.75rem 0 1rem}
+.dl-group{grid-column:1/-1;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.7rem 0 0;padding-top:.3rem;border-top:1px solid var(--border)}
+.dl-group:first-child{margin-top:0;border-top:none;padding-top:0}
 .dl-btn{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.7rem .9rem;color:var(--ink);transition:border-color .15s}
 .dl-btn:hover{border-color:var(--cyb);text-decoration:none}
 .dl-btn svg{flex-shrink:0;color:var(--cyb)}
@@ -654,7 +656,8 @@ pre.code{max-width:100%}
       <li><strong>Brasil (2008, FGV/EBAPE)</strong> — a aplicação brasileira mais explícita do MSV (auditorias do TCERJ): o elo nacional raro entre cibernética e gestão pública.</li>
     </ul>
     <div class="callout" id="rayyan-callout">
-      <strong>Triagem colaborativa no Rayyan.</strong> Toda a síntese — o núcleo global (obras-semente, mais citadas, obras-ponte, rajadas e belas adormecidas) somado ao corpus brasileiro de Claucia Faganello, <span id="rayyan-n">138</span> obras deduplicadas por título — está exportada para importação direta no <a href="https://rayyan.ai" target="_blank" rel="noopener">Rayyan</a>, em <a href="dados/rayyan_sintese.ris" download>RIS</a> (recomendado), <a href="dados/rayyan_sintese.csv" download>CSV</a> e <a href="dados/rayyan_sintese.zip" download>ZIP</a> (RIS + CSV) — todos entre os <a href="https://help.rayyan.ai/hc/en-us/articles/4406426903825-Supported-File-Formats-for-Importing-into-Rayyan" target="_blank" rel="noopener">formatos aceitos pelo Rayyan</a>, com resumos (essenciais para o ranqueamento por relevância e a extração PICO). Cada referência já vem anotada com seu(s) <em>eixo(s)</em> e <em>papel</em> (semente, ponte, rajada, mais citada, bela adormecida, corpus Brasil) como palavras-chave, para que os três pesquisadores façam a triagem (incluir/excluir, etiquetas) partindo de uma base comum. É o ponto de entrada operacional para a revisão sistemática. Para uma pré-triagem leve, dá para <a href="triagem.html"><strong>decidir inclusão/exclusão aqui mesmo</strong></a> (com resumo e eixo à vista) e exportar os incluídos em RIS.</div>
+      <strong>Triagem colaborativa no Rayyan.</strong> Toda a síntese — o núcleo global (obras-semente, mais citadas, obras-ponte, rajadas e belas adormecidas) somado ao corpus brasileiro de Claucia Faganello, <span id="rayyan-n">138</span> obras deduplicadas por título — está exportada para importação direta no <a href="https://rayyan.ai" target="_blank" rel="noopener">Rayyan</a>, em <a href="dados/rayyan_sintese.ris" download>RIS</a> (recomendado), <a href="dados/rayyan_sintese.csv" download>CSV</a> e <a href="dados/rayyan_sintese.zip" download>ZIP</a> (RIS + CSV) — todos entre os <a href="https://help.rayyan.ai/hc/en-us/articles/4406426903825-Supported-File-Formats-for-Importing-into-Rayyan" target="_blank" rel="noopener">formatos aceitos pelo Rayyan</a>, com resumos (essenciais para o ranqueamento por relevância e a extração PICO). Cada referência já vem anotada com seu(s) <em>eixo(s)</em> e <em>papel</em> (semente, ponte, rajada, mais citada, bela adormecida, corpus Brasil) como palavras-chave, para que os três pesquisadores façam a triagem (incluir/excluir, etiquetas) partindo de uma base comum. É o ponto de entrada operacional para a revisão sistemática. Para uma pré-triagem leve, dá para <a href="triagem.html"><strong>decidir inclusão/exclusão aqui mesmo</strong></a> (com resumo e eixo à vista) e exportar só os incluídos em RIS.
+      <div style="margin-top:.7rem;font-size:.86rem"><strong>Como importar no Rayyan:</strong> <span style="color:var(--muted)">(1) baixe o <a href="dados/rayyan_sintese.ris" download>RIS</a> ou o <a href="dados/rayyan_sintese.zip" download>ZIP</a>; (2) no Rayyan, crie uma revisão (ou abra a <em>My Library</em>, obrigatória para o ZIP) e use <em>Add references → Upload</em>; (3) selecione o arquivo — cada obra entra com eixo e papel nas <em>keywords</em>. Use sempre o registro completo (com resumo) para o ranqueamento por relevância funcionar.</span></div></div>
   </div>
 </div></section>
 
@@ -970,29 +973,33 @@ byId('list-seeds').innerHTML = SEEDS.map(s => {
 /* Central de downloads + dicionário de dados */
 const dlIcon = `<svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 const DADOS = [
-  {f:'dados/00_registro_execucao.csv', d:'Parâmetros e métricas da execução'},
-  {f:'dados/02_mais_citados.csv',      d:'Vinte obras mais citadas (não-semente)'},
-  {f:'dados/03_obras_ponte.csv',       d:'Obras-ponte (dois ou mais eixos)'},
-  {f:'dados/05_rajadas_kleinberg.csv', d:'Rajadas de citação detectadas'},
-  {f:'dados/06_belas_adormecidas.csv', d:'Coeficiente de beleza por obra'},
-  {f:'dados/07_agrupamentos.csv',      d:'Três obras mais citadas por agrupamento'},
-  {f:'dados/08_obras_semente.csv',     d:'Obras-semente com identificadores'},
-  {f:'dados/09_serie_temporal.csv',    d:'Produção anual por eixo'},
-  {f:'dados/10_rede_nos.csv',          d:'Nós da rede de cocitação real (obra, eixo, citações)'},
-  {f:'dados/11_rede_arestas.csv',      d:'Arestas da rede de cocitação real (origem, destino, peso)'},
-  {f:'dados/rede_cocitacao.json',      d:'Rede de cocitação completa (JSON, p/ Gephi/networkx)'},
-  {f:'dados/rayyan_sintese.ris',       d:'Síntese para triagem no Rayyan (RIS — recomendado)'},
-  {f:'dados/rayyan_sintese.csv',       d:'Síntese para triagem no Rayyan (CSV)'},
-  {f:'dados/rayyan_sintese.enw',       d:'Síntese para triagem no Rayyan (EndNote)'},
-  {f:'dados/rayyan_sintese.bib',       d:'Síntese para triagem no Rayyan (BibTeX)'},
-  {f:'dados/rayyan_sintese.zip',       d:'Síntese para triagem no Rayyan (ZIP com o RIS — upload em My Library)'},
-  {f:'dados/scisci_results.json',      d:'Resultados consolidados (JSON)'},
-  {f:'dados/DICIONARIO.csv',           d:'Dicionário de dados (descrição das colunas)'},
+  {g:'Funil — dados processados', f:'dados/00_registro_execucao.csv', d:'Parâmetros e métricas da execução'},
+  {g:'Funil — dados processados', f:'dados/02_mais_citados.csv',      d:'Vinte obras mais citadas (não-semente)'},
+  {g:'Funil — dados processados', f:'dados/03_obras_ponte.csv',       d:'Obras-ponte (dois ou mais eixos)'},
+  {g:'Funil — dados processados', f:'dados/05_rajadas_kleinberg.csv', d:'Rajadas de citação detectadas'},
+  {g:'Funil — dados processados', f:'dados/06_belas_adormecidas.csv', d:'Coeficiente de beleza por obra'},
+  {g:'Funil — dados processados', f:'dados/07_agrupamentos.csv',      d:'Três obras mais citadas por agrupamento'},
+  {g:'Funil — dados processados', f:'dados/08_obras_semente.csv',     d:'Obras-semente com identificadores'},
+  {g:'Funil — dados processados', f:'dados/09_serie_temporal.csv',    d:'Produção anual por eixo'},
+  {g:'Rede de cocitação',         f:'dados/10_rede_nos.csv',          d:'Nós da rede (obra, eixo, citações)'},
+  {g:'Rede de cocitação',         f:'dados/11_rede_arestas.csv',      d:'Arestas da rede (peso e força de associação)'},
+  {g:'Rede de cocitação',         f:'dados/rede_cocitacao.json',      d:'Rede completa (JSON, p/ Gephi/networkx)'},
+  {g:'Triagem · Rayyan',          f:'dados/rayyan_sintese.zip',       d:'ZIP com o RIS — upload em My Library (recomendado)'},
+  {g:'Triagem · Rayyan',          f:'dados/rayyan_sintese.ris',       d:'RIS (RefMan) — importação direta'},
+  {g:'Triagem · Rayyan',          f:'dados/rayyan_sintese.enw',       d:'EndNote (.enw)'},
+  {g:'Triagem · Rayyan',          f:'dados/rayyan_sintese.bib',       d:'BibTeX (.bib)'},
+  {g:'Triagem · Rayyan',          f:'dados/rayyan_sintese.csv',       d:'CSV (planilha)'},
+  {g:'Consolidado',               f:'dados/scisci_results.json',      d:'Resultados consolidados (JSON)'},
+  {g:'Consolidado',               f:'dados/DICIONARIO.csv',           d:'Dicionário de dados (descrição das colunas)'},
 ];
-byId('dl-grid').innerHTML = DADOS.map(x => {
-  const name = x.f.split('/').pop();
-  return `<a class="dl-btn" href="${x.f}" download>${dlIcon}<div><span class="dl-name">${name}</span><span class="dl-desc">${x.d}</span></div></a>`;
-}).join('');
+(function(){
+  const byG = {}; DADOS.forEach(x => (byG[x.g] = byG[x.g] || []).push(x));
+  byId('dl-grid').innerHTML = Object.entries(byG).map(([g, items]) =>
+    `<h4 class="dl-group">${g}</h4>` + items.map(x => {
+      const name = x.f.split('/').pop();
+      return `<a class="dl-btn" href="${x.f}" download>${dlIcon}<div><span class="dl-name">${name}</span><span class="dl-desc">${x.d}</span></div></a>`;
+    }).join('')).join('');
+})();
 byId('dict-table').innerHTML = DADOS.map(x =>
   `<tr><td class="ref">${x.f.split('/').pop()}</td><td>${x.d}</td></tr>`).join('');
 
