@@ -685,6 +685,7 @@ pre.code{max-width:100%}
     <div class="callout" id="rayyan-callout">
       <strong>Triagem colaborativa no Rayyan.</strong> A síntese — núcleo global + corpus brasileiro (Claucia) + o 4º eixo (economia da complexidade), deduplicada por título — está pronta para importação direta no <a href="https://rayyan.ai" target="_blank" rel="noopener">Rayyan</a>. Cada obra já entra com seu(s) <em>eixo(s)</em> e <em>papel</em> (semente, mais citada, ponte, rajada, bela adormecida, corpus Brasil, complexidade) nas <em>keywords</em> — base comum para os três pesquisadores triarem (incluir/excluir, etiquetas). <strong>Escolha o recorte:</strong>
       <div class="rtabs" id="rtabs">
+        <button class="rtab" data-r="organizacional">D · Cibernética organizacional + regulação + PI (alvo)</button>
         <button class="rtab" data-r="sintese">A · Síntese — triar tudo</button>
         <button class="rtab" data-r="cruzamento">B · Cruzamento Brasil × núcleo</button>
         <button class="rtab" data-r="brasil">C · Só as referências da Claucia</button>
@@ -884,12 +885,13 @@ byId('m-pivotal').textContent  = (META.pivotal === 1 ? 'Uma obra emerge' : `${ME
 byId('m-pctrefs').textContent  = String(META.pct_refs).replace('.', ',') + '%';
 /* Seletor de recorte do Rayyan (A/B/C): mostra contagem + downloads do recorte */
 const RECORTES = {
+  organizacional:{n: META.rayyan_org_n, lbl: 'o alvo da convergência: cibernética <em>organizacional</em> (MSV/Beer, sistemas aplicados) + instrumentos de governo + política industrial — exclui a cibernética geral/fundacional (Wiener, Ashby), que não faz fronteira com os eixos de política, e a economia da complexidade', fmt: ['ris','csv','zip','enw','bib']},
   sintese:   {n: META.rayyan_n,        lbl: 'núcleo global (sementes, mais citadas, pontes, rajadas, belas adormecidas) + corpus brasileiro + 4º eixo da complexidade — para triar tudo', fmt: ['ris','csv','zip','enw','bib']},
   cruzamento:{n: META.rayyan_cruz_n,   lbl: 'só as obras onde o corpus brasileiro e o núcleo global se tocam por citação (ver a análise independente)', fmt: ['ris','csv','zip']},
   brasil:    {n: META.rayyan_brasil_n, lbl: 'apenas as referências da Claucia (corpus brasileiro)', fmt: ['ris','csv','zip']},
 };
 function showRecorte(r){
-  const c = RECORTES[r], stem = 'rayyan_' + (r === 'sintese' ? 'sintese' : r);
+  const c = RECORTES[r], stem = 'rayyan_' + r;
   document.querySelectorAll('#rtabs .rtab').forEach(t => t.classList.toggle('on', t.dataset.r === r));
   byId('rdesc').innerHTML =
     `<p style="margin:.5rem 0"><strong>${c.n != null ? c.n : '—'} obras</strong> — ${c.lbl}.</p>`
@@ -899,7 +901,7 @@ function showRecorte(r){
 }
 if (byId('rtabs')) {
   document.querySelectorAll('#rtabs .rtab').forEach(t => t.onclick = () => showRecorte(t.dataset.r));
-  showRecorte('sintese');
+  showRecorte('organizacional');
 }
 
 /* Ponto pivotal — obra de maior centralidade de intermediação */
@@ -1066,6 +1068,9 @@ const DADOS = [
   {g:'Triagem · Rayyan — C · só referências da Claucia (Brasil)', f:'dados/rayyan_brasil.zip', d:'ZIP com o RIS — apenas o corpus brasileiro (Faganello)'},
   {g:'Triagem · Rayyan — C · só referências da Claucia (Brasil)', f:'dados/rayyan_brasil.ris', d:'RIS — apenas as referências da Claucia'},
   {g:'Triagem · Rayyan — C · só referências da Claucia (Brasil)', f:'dados/rayyan_brasil.csv', d:'CSV — apenas as referências da Claucia'},
+  {g:'Triagem · Rayyan — D · alvo: cib. organizacional + regulação + PI', f:'dados/rayyan_organizacional.zip', d:'ZIP com o RIS — cibernética organizacional (sem a geral) + os eixos de política'},
+  {g:'Triagem · Rayyan — D · alvo: cib. organizacional + regulação + PI', f:'dados/rayyan_organizacional.ris', d:'RIS do recorte-alvo'},
+  {g:'Triagem · Rayyan — D · alvo: cib. organizacional + regulação + PI', f:'dados/rayyan_organizacional.csv', d:'CSV do recorte-alvo'},
   {g:'Consolidado',               f:'dados/scisci_results.json',      d:'Resultados consolidados (JSON)'},
   {g:'Consolidado',               f:'dados/DICIONARIO.csv',           d:'Dicionário de dados (descrição das colunas)'},
 ];
