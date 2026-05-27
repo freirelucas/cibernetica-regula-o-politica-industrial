@@ -95,7 +95,15 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
       <label class="toggle"><input type="checkbox" id="labels" checked> Mostrar rótulos</label>
       <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="crossOnly"> Só cocitações entre eixos</label>
       <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="commColor"> Colorir por comunidade detectada</label>
-      <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="connHi"> Destacar conectores (participação)</label>
+    </div>
+    <div class="ctl">
+      <label class="h" for="destaque">Destaque</label>
+      <select id="destaque" style="width:100%;font-family:var(--sans);font-size:.84rem;padding:.4rem .5rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper)">
+        <option value="none">— nenhum</option>
+        <option value="conn">conectores (participação)</option>
+        <option value="orgcib">cibernética organizacional</option>
+        <option value="encr">encruzilhada (toca os 4 eixos)</option>
+      </select>
     </div>
 
     <div class="ctl">
@@ -146,6 +154,9 @@ __JS_DATA__
     nbrs[l.source].push({id:l.target,w:l.peso});nbrs[l.target].push({id:l.source,w:l.peso});
   });
   Object.values(nbrs).forEach(a=>a.sort((x,y)=>y.w-x.w));
+  // nº de eixos distintos que a vizinhança de cada obra alcança (para a "encruzilhada")
+  const axreach = {};
+  allNodes.forEach(n=>{ const s=new Set(); nbrs[n.id].forEach(o=>{const a=byId[o.id].axis; if(a) s.add(a);}); axreach[n.id]=s.size; });
   const crossOf = l => { const a=byId[l.source].axis,b=byId[l.target].axis; return a&&b&&a!==b; };
   const rad = d => 4 + Math.sqrt(d.cited_by||0)/7;
   const citThresh = [...allNodes].map(n=>n.cited_by||0).sort((a,b)=>b-a)[15] || 1e9;
@@ -182,7 +193,7 @@ __JS_DATA__
     comm = {}; allNodes.forEach(n=>comm[n.id]=n.comm); nComm = new Set(allNodes.map(n=>n.comm)).size;
   } else { const r = detectCommunities(); comm = r.comm; nComm = r.k; }
   const commColor = id => COMMPAL[(comm[id]||0) % COMMPAL.length];
-  let colorMode='axis', highlightConn=false;
+  let colorMode='axis', hlmode='none';
   const fillOf = d => colorMode==='comm' ? commColor(d.id) : (AXC[d.axis]||AXC['']);
 
   // métricas do subgrafo visível (vivas, acompanham os filtros)
@@ -304,7 +315,7 @@ __JS_DATA__
     document.getElementById('detMeta').innerHTML =
       `<span class="pill" style="background:${AXC[d.axis]||AXC['']}">${AXN[d.axis||'']}</span>`
       + `${d.year||'s.d.'} · ${fmt(d.cited_by)} citações · grau ${deg[d.id]} · força ${fmt(str[d.id])}`
-      + (d.role!==undefined ? `<br><span style="color:var(--muted)">papel: <strong>${d.role}</strong> · participação P=${d.part} · comunidade ${d.comm}</span>` : '');
+      + (d.role!==undefined ? `<br><span style="color:var(--muted)">papel: <strong>${d.role}</strong> · participação P=${d.part} · comunidade ${d.comm}${d.sub?` · cibernética <strong>${d.sub}</strong>`:''}</span>` : '');
     const top = nbrs[d.id].slice(0,8)
       .map(o=>`<b>${(byId[o.id]||{}).label||o.id}</b> <span style="color:var(--muted)">(${o.w})</span>`).join(' · ');
     document.getElementById('detNb').innerHTML = top ? ('Mais cocitada com: '+top) : 'Sem cocitações no limiar atual.';
@@ -327,7 +338,9 @@ __JS_DATA__
   function applyQuery(){
     node.style('opacity', n => {
       if (query) return matches(n) ? 1 : .12;
-      if (highlightConn) return 0.12 + 0.88 * (n.part || 0);   // P alto = conector, destacado
+      if (hlmode === 'conn') return 0.12 + 0.88 * (n.part || 0);            // participação
+      if (hlmode === 'orgcib') return (n.sub === 'organizacional') ? 1 : .12;  // cibernética organizacional
+      if (hlmode === 'encr') return (axreach[n.id] >= 4) ? 1 : .12;         // vizinhança toca os 4 eixos
       return null;
     });
     updateLabels();
@@ -351,7 +364,7 @@ __JS_DATA__
   wEl.addEventListener('input',e=>{wmin=+e.target.value; wv.textContent=wmin; restart(false);});
   document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; updateLabels();});
   document.getElementById('crossOnly').addEventListener('change',e=>{crossOnly=e.target.checked; restart(true);});
-  document.getElementById('connHi').addEventListener('change',e=>{ highlightConn=e.target.checked; applyQuery(); });
+  document.getElementById('destaque').addEventListener('change',e=>{ hlmode=e.target.value; applyQuery(); });
   document.getElementById('commColor').addEventListener('change',e=>{
     colorMode = e.target.checked ? 'comm' : 'axis';
     node.attr('fill', fillOf);

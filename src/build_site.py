@@ -266,6 +266,11 @@ def explorer_network():
         n["comm"] = comm.get(n["id"], 0)
         n["part"] = round(P.get(n["id"], 0), 2)
         n["role"] = sfi_methods.ga_role(P.get(n["id"], 0), z.get(n["id"], 0))
+        if n.get("axis") == "Cyb":            # subtipo: organizacional × geral/fundacional
+            t = (n.get("label") or "").lower()
+            ger = any(k in t for k in build_rayyan._GERAL_CYB)
+            org = any(k in t for k in build_rayyan._ORG_CYB)
+            n["sub"] = "geral" if (ger and not org) else "organizacional"
     return {"nodes": nodes, "links": links}
 
 
