@@ -251,6 +251,24 @@ def build_meta(R):
     }
 
 
+def explorer_network():
+    """Rede do explorador: a versão ampliada (network_exploded.json) anotada com a
+    comunidade detectada (CNM), o coeficiente de participação e o papel de Guimerà-Amaral."""
+    src = os.path.join(ROOT, "data", "network_exploded.json")
+    if not os.path.exists(src):
+        src = os.path.join(ROOT, "data", "network.json")
+    net = json.load(open(src, encoding="utf-8"))
+    nodes, links = net.get("nodes", []), net.get("links", [])
+    ids = [n["id"] for n in nodes]
+    comm, _, _ = sfi_methods.cnm_communities(ids, links)
+    P, z = sfi_methods.participation_z(ids, links, comm)
+    for n in nodes:
+        n["comm"] = comm.get(n["id"], 0)
+        n["part"] = round(P.get(n["id"], 0), 2)
+        n["role"] = sfi_methods.ga_role(P.get(n["id"], 0), z.get(n["id"], 0))
+    return {"nodes": nodes, "links": links}
+
+
 def main():
     os.makedirs(DADOS, exist_ok=True)
     with open(JSON_SRC, encoding="utf-8") as f:
@@ -259,24 +277,27 @@ def main():
     rayyan = build_rayyan.build(DADOS)
     meta = build_meta(R)
     meta["rayyan_n"] = len(rayyan)
-    js = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
+    base = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
     net_src = os.path.join(ROOT, "data", "network.json")
     net = json.load(open(net_src, encoding="utf-8")) if os.path.exists(net_src) else {"nodes": [], "links": []}
-    js += f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
+    js = base + f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
     js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
-    html = inject_template(js, TEMPLATE)
+    html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"site:  {index}  ({os.path.getsize(index)//1024} KB)")
 
-    if os.path.exists(EXPLORER_TPL):
+    if os.path.exists(EXPLORER_TPL):                 # explorador: rede ampliada com papéis P/z
+        expl_net = explorer_network()
+        expl_js = base + f"const NETWORK={json.dumps(expl_net, ensure_ascii=False)};\n"
+        expl_js += f"const NETMETA={json.dumps(net_stats(expl_net), ensure_ascii=False)};\n"
         with open(EXPLORER_TPL, encoding="utf-8") as f:
-            expl = f.read().replace("__JS_DATA__", js)
+            expl = f.read().replace("__JS_DATA__", expl_js)
         explorer = os.path.join(DOCS, "explorador.html")
         with open(explorer, "w", encoding="utf-8") as f:
             f.write(expl)
-        print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB)")
+        print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB, {len(expl_net['nodes'])} nós)")
 
     if os.path.exists(TRIAGEM_TPL):
         works_js = f"const RAYYAN_WORKS={json.dumps(rayyan_works_js(rayyan), ensure_ascii=False)};"

@@ -74,7 +74,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 <div class="layout">
   <aside class="panel">
     <h1>Explorador interativo</h1>
-    <p class="lead">A rede de <strong>cocitação real</strong> (OpenAlex): cada nó é uma obra; cada linha, uma cocitação. Filtre, busque e clique para abrir no OpenAlex. <a href="index.html#rede">Como foi construída &rarr;</a></p>
+    <p class="lead">Rede de <strong>cocitação ampliada</strong> (bola de neve explodida, ~250 obras; OpenAlex). Cada nó é uma obra; cada linha, uma cocitação. Cada obra traz seu <strong>papel</strong> (conector ou hub provincial, por participação) — clique para ver. Filtre, busque, destaque os conectores. <a href="index.html#rede">Como foi construída &rarr;</a></p>
 
     <div class="ctl">
       <label class="h">Eixos temáticos</label>
@@ -83,7 +83,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 
     <div class="ctl">
       <label class="h" for="wmin">Limiar de cocitação (peso ≥ <span id="wval" class="rngval"></span>)</label>
-      <input type="range" id="wmin" min="3" max="20" step="1" value="3">
+      <input type="range" id="wmin" min="3" max="20" step="1" value="6">
     </div>
 
     <div class="ctl">
@@ -95,6 +95,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
       <label class="toggle"><input type="checkbox" id="labels" checked> Mostrar rótulos</label>
       <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="crossOnly"> Só cocitações entre eixos</label>
       <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="commColor"> Colorir por comunidade detectada</label>
+      <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="connHi"> Destacar conectores (participação)</label>
     </div>
 
     <div class="ctl">
@@ -175,9 +176,13 @@ __JS_DATA__
     return {comm:out, k:rank.length};
   }
   const COMMPAL=['#4b3fc2','#1a7a5e','#b85c10','#c23f3f','#185fa5','#d4537e','#7a6a1a','#5a5550'];
-  const {comm, k:nComm} = detectCommunities();
+  // usa a comunidade detectada no servidor (CNM) quando os nós a trazem; senão, propagação de rótulos local
+  let comm, nComm;
+  if (allNodes.length && allNodes[0].comm !== undefined){
+    comm = {}; allNodes.forEach(n=>comm[n.id]=n.comm); nComm = new Set(allNodes.map(n=>n.comm)).size;
+  } else { const r = detectCommunities(); comm = r.comm; nComm = r.k; }
   const commColor = id => COMMPAL[(comm[id]||0) % COMMPAL.length];
-  let colorMode='axis';
+  let colorMode='axis', highlightConn=false;
   const fillOf = d => colorMode==='comm' ? commColor(d.id) : (AXC[d.axis]||AXC['']);
 
   // métricas do subgrafo visível (vivas, acompanham os filtros)
@@ -215,7 +220,7 @@ __JS_DATA__
 
   // estado dos filtros
   const axisOn = {Cyb:true, Reg:true, PolInd:true, '':true};
-  let wmin=3, showLabels=true, query='', selected=null, crossOnly=false;
+  let wmin=6, showLabels=true, query='', selected=null, crossOnly=false;
 
   function visibleData(){
     const ns0 = allNodes.filter(n=>axisOn[n.axis||'']);
@@ -298,7 +303,8 @@ __JS_DATA__
     document.getElementById('detTitle').textContent = d.label;
     document.getElementById('detMeta').innerHTML =
       `<span class="pill" style="background:${AXC[d.axis]||AXC['']}">${AXN[d.axis||'']}</span>`
-      + `${d.year||'s.d.'} · ${fmt(d.cited_by)} citações · grau ${deg[d.id]} · força ${fmt(str[d.id])}`;
+      + `${d.year||'s.d.'} · ${fmt(d.cited_by)} citações · grau ${deg[d.id]} · força ${fmt(str[d.id])}`
+      + (d.role!==undefined ? `<br><span style="color:var(--muted)">papel: <strong>${d.role}</strong> · participação P=${d.part} · comunidade ${d.comm}</span>` : '');
     const top = nbrs[d.id].slice(0,8)
       .map(o=>`<b>${(byId[o.id]||{}).label||o.id}</b> <span style="color:var(--muted)">(${o.w})</span>`).join(' · ');
     document.getElementById('detNb').innerHTML = top ? ('Mais cocitada com: '+top) : 'Sem cocitações no limiar atual.';
@@ -319,7 +325,11 @@ __JS_DATA__
     });
   }
   function applyQuery(){
-    node.style('opacity', query ? (n=>matches(n)?1:.12) : null);
+    node.style('opacity', n => {
+      if (query) return matches(n) ? 1 : .12;
+      if (highlightConn) return 0.12 + 0.88 * (n.part || 0);   // P alto = conector, destacado
+      return null;
+    });
     updateLabels();
   }
 
@@ -341,6 +351,7 @@ __JS_DATA__
   wEl.addEventListener('input',e=>{wmin=+e.target.value; wv.textContent=wmin; restart(false);});
   document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; updateLabels();});
   document.getElementById('crossOnly').addEventListener('change',e=>{crossOnly=e.target.checked; restart(true);});
+  document.getElementById('connHi').addEventListener('change',e=>{ highlightConn=e.target.checked; applyQuery(); });
   document.getElementById('commColor').addEventListener('change',e=>{
     colorMode = e.target.checked ? 'comm' : 'axis';
     node.attr('fill', fillOf);
