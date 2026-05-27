@@ -53,6 +53,11 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 .actions button.sel-may{background:var(--pi);color:#fff;border-color:var(--pi)}
 .empty-list{color:var(--muted);font-family:var(--mono);font-size:12px;padding:2rem 0;text-align:center}
 .hint{font-family:var(--mono);font-size:10px;color:var(--muted)}
+details.how{margin:.2rem 0 1.3rem;border:1px solid var(--border);border-radius:8px;background:#fbf9f5}
+details.how>summary{cursor:pointer;padding:.6rem .9rem;font-family:var(--mono);font-size:12px;color:var(--cyb);user-select:none}
+details.how[open]>summary{border-bottom:1px solid var(--border)}
+details.how>div{padding:.3rem .9rem .7rem}
+details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
 @media (max-width:640px){
   .card{grid-template-columns:1fr}
   .actions{flex-direction:row}.actions button{flex:1}
@@ -106,7 +111,15 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
   </span>
 </div>
 <main class="wrap">
-  <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. É uma pré-triagem leve; a triagem colaborativa completa segue no Rayyan. <span class="hint">Atalhos no teclado: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
+  <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. <span class="hint">Atalhos no teclado: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
+  <details class="how">
+    <summary>Como funciona — e o raciocínio da curadoria</summary>
+    <div>
+      <p><b>De onde vêm as obras.</b> A síntese reúne o <b>núcleo global</b> (mapeamento no OpenAlex: obras-semente, mais citadas, obras-ponte, rajadas de citação, belas adormecidas e a sondagem do 4º eixo) e o <b>corpus brasileiro</b> (revisão de literatura nacional de Claucia Faganello). Cada obra traz seus <b>eixos</b> (cibernética · instrumentos de governo · política industrial · economia da complexidade) e seu <b>papel</b> na análise.</p>
+      <p><b>Por onde começar.</b> Os atalhos acima abrem blocos já recortados — <i>Só Brasil</i> (corpus da Claucia), <i>Cruzamento</i> (obras presentes nas duas frentes, global e Brasil), <i>Cibernética organizacional</i> (o recorte-alvo: a vertente que faz ponte com regulação e política industrial), <i>4º eixo</i> (economia da complexidade) e <i>Indecisas</i> (o que falta decidir). Os chips de eixo, papel e status refinam o bloco; “incluir/excluir bloco” decide tudo de uma vez.</p>
+      <p><b>Curadoria por tamanho (30 / 60 / 90 / 120).</b> Quando não quiser triar tudo à mão, esses botões exportam as <b>N obras de maior prioridade do filtro atual</b>. A prioridade ordena por <b>papel</b> (semente &gt; ponte / mais citada &gt; rajada / bela adormecida &gt; cibernética organizacional / complexidade &gt; corpus Brasil), com bônus leve para obras <b>com resumo</b> (mais trianáveis) e mais <b>recentes</b>. É um ponto de partida transparente, não um veredito — a triagem completa e colaborativa segue no Rayyan.</p>
+    </div>
+  </details>
   <div id="list"></div>
   <div class="empty-list" id="emptyMsg" style="display:none">Nenhuma obra corresponde aos filtros.</div>
 </main>
@@ -116,7 +129,7 @@ const RAYYAN_WORKS=[{"uid": "10.1111/padm.12960", "title": "How rediscovering no
 </script>
 <script>
 (function(){
-  const AXC = {Cibernética:'#4b3fc2','Instrumentos de governo':'#1a7a5e','Política industrial':'#b85c10'};
+  const AXC = {Cibernética:'#4b3fc2','Instrumentos de governo':'#1a7a5e','Política industrial':'#b85c10','Economia da complexidade':'#2a9d8f'};
   const STORE = 'triagem_scisci_v1';
   const DEC = JSON.parse(localStorage.getItem(STORE) || '{}');
   const works = (typeof RAYYAN_WORKS !== 'undefined' ? RAYYAN_WORKS : []);
