@@ -1,26 +1,34 @@
-"""Resolve os capítulos de "The Economy as an Evolving Complex System II"
-(W2141042444) como obras individuais no OpenAlex — normaliza a referência do
-volume editado em entradas por capítulo. Uso único, exige rede (OpenAlex).
+"""Normaliza o volume editado "The Economy as an Evolving Complex System II"
+(W2141042444) nos seus capítulos individuais, usando o OpenAlex como referência.
 
-Para cada capítulo (título + sobrenomes da sumário do volume), busca no
-OpenAlex, pontua os candidatos por semelhança de título + presença de autor, e
-imprime um relatório para revisão. Com --emit, grava os casados em
-data/eecs2_chapters.json no esquema de data/cplx_works.json.
+Os capítulos da edição CRC 2018 têm DOI determinístico
+`10.1201/9780429496639-N`, onde N é a posição no sumário (1 = Introdução …
+21 = Anderson). Assim a resolução é UMA requisição em lote por DOI — sem busca
+por título ambígua e amigável ao limite de taxa.
+
+IMPORTANTE: exige IP "fresco" no OpenAlex (o container de sessão fica limitado
+após muitas requisições). Roda limpo no Colab (Célula 13 / ambiente novo).
+
+Uso:  python src/split_eecs2.py            # grava data/eecs2_chapters.json
+      python src/split_eecs2.py --merge    # funde em data/cplx_works.json
 """
-import difflib
 import json
-import re
+import os
 import sys
-import time
 import urllib.parse
 
-sys.path.insert(0, "src")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import oa  # noqa: E402
 
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARENT = "W2141042444"
+DOI_BASE = "10.1201/9780429496639"
+OUT = os.path.join(ROOT, "data", "eecs2_chapters.json")
+CPLX = os.path.join(ROOT, "data", "cplx_works.json")
 
-# (título do capítulo, [sobrenomes dos autores]) — do sumário do volume
-CHAPTERS = [
+# Sumário do volume, em ordem (posição N -> DOI -N). Autores conferem o casamento.
+TOC = [
+    ("Introduction", ["Arthur", "Durlauf", "Lane"]),
     ("Asset Pricing Under Endogenous Expectations in an Artificial Stock Market",
      ["Arthur", "Holland", "LeBaron", "Palmer", "Tayler"]),
     ("Natural Rationality", ["Darley", "Kauffman"]),
@@ -46,15 +54,7 @@ CHAPTERS = [
     ("Some Thoughts About Distribution in Economics", ["Anderson"]),
 ]
 
-ACCEPT_SIM = 0.78  # semelhança de título para aceitar
-
-
-def norm(s):
-    return re.sub(r"[^a-z0-9 ]", " ", (s or "").lower()).split()
-
-
-def sim(a, b):
-    return difflib.SequenceMatcher(None, " ".join(norm(a)), " ".join(norm(b))).ratio()
+RIS_TYPE = {"article": "JOUR", "book": "BOOK", "book-chapter": "CHAP", "preprint": "JOUR"}
 
 
 def reconstruct_abstract(inv):
@@ -69,91 +69,55 @@ def reconstruct_abstract(inv):
     return " ".join(w for w in slots if w)
 
 
-def surnames_in(authorships, wanted):
-    names = " ".join((a.get("author") or {}).get("display_name", "") for a in authorships).lower()
-    return [w for w in wanted if w.lower() in names]
-
-
-def search(title, authors):
-    q = urllib.parse.quote(title)
-    data = oa.get(f"https://api.openalex.org/works?filter=title.search:{q}&per-page=10")
-    cands = data.get("results", []) or []
-    if not cands:  # fallback busca geral
-        data = oa.get(f"https://api.openalex.org/works?search={q}&per-page=10")
-        cands = data.get("results", []) or []
-    scored = []
-    for w in cands:
-        s = sim(title, w.get("title") or "")
-        hit = surnames_in(w.get("authorships") or [], authors)
-        scored.append((s + 0.15 * bool(hit), s, hit, w))
-    scored.sort(key=lambda x: -x[0])
-    return scored
-
-
-RIS_TYPE = {"article": "JOUR", "book": "BOOK", "book-chapter": "CHAP",
-            "preprint": "JOUR", "dissertation": "THES", "report": "RPRT"}
-
-
 def to_entry(w):
     auth = [(a.get("author") or {}).get("display_name", "") for a in (w.get("authorships") or [])]
     auth = [a for a in auth if a][:6]
-    doi = (w.get("doi") or "").replace("https://doi.org/", "")
     return {
         "oa_id": (w.get("id") or "").split("/")[-1],
         "title": w.get("title") or "",
         "authors": auth,
         "year": w.get("publication_year"),
-        "doi": doi,
+        "doi": (w.get("doi") or "").replace("https://doi.org/", ""),
         "type": RIS_TYPE.get((w.get("type") or "").lower(), "CHAP"),
         "abstract": reconstruct_abstract(w.get("abstract_inverted_index")),
     }
 
 
-def pick(scored):
-    """Entre os candidatos fortes (semelhança + autor), prefere o mais antigo
-    (capítulo original, não a reimpressão de 2018) e, em empate, o que tem DOI."""
-    strong = [(s, w) for (sc, s, hit, w) in scored if s >= ACCEPT_SIM and hit]
-    if not strong:
-        return None
-    strong.sort(key=lambda sw: (sw[1].get("publication_year") or 9999,
-                                0 if sw[1].get("doi") else 1))
-    return strong[0][1]
+def resolve():
+    dois = [f"{DOI_BASE}-{n}" for n in range(1, len(TOC) + 1)]
+    flt = "doi:" + "|".join("https://doi.org/" + d for d in dois)
+    sel = "id,title,authorships,publication_year,type,doi,abstract_inverted_index"
+    url = (f"https://api.openalex.org/works?filter={urllib.parse.quote(flt, safe=':|/.')}"
+           f"&per-page=30&select={sel}")
+    res = oa.get(url).get("results", [])
+    by_doi = {(w.get("doi") or "").replace("https://doi.org/", "").lower(): w for w in res}
+    out = []
+    for n, (title, _authors) in enumerate(TOC, start=1):
+        w = by_doi.get(f"{DOI_BASE}-{n}".lower())
+        if w:
+            out.append(to_entry(w))
+            print(f"  -{n:<2} {out[-1]['oa_id']} {w.get('publication_year')} {(w.get('title') or title)[:50]}")
+        else:
+            print(f"  -{n:<2} (não resolveu — IP limitado? rodar em IP novo)")
+    json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"\nresolvidos {len(out)}/{len(TOC)} -> {OUT}")
+    return out
 
 
-CKPT = "data/eecs2_ckpt.json"        # {título: entrada|null} — retoma entre execuções
-OUT = "data/eecs2_chapters.json"     # capítulos casados (consumido na fusão)
-
-
-def main(retry_misses=False):
-    ck = {}
-    if __import__("os").path.exists(CKPT):
-        ck = json.load(open(CKPT, encoding="utf-8"))
-    for title, authors in CHAPTERS:
-        if title in ck and not (retry_misses and ck[title] is None):
-            continue
-        scored = search(title, authors)
-        print("=" * 70, flush=True)
-        print(f"CAP: {title[:64]}", flush=True)
-        for (sc, s, hit, w) in scored[:3]:
-            mark = "✓" if (s >= ACCEPT_SIM and hit) else " "
-            doi = (w.get("doi") or "").replace("https://doi.org/", "")
-            print(f"  {mark} [{s:.2f} aut={','.join(hit) or '-'}] {(w.get('id') or '').split('/')[-1]} "
-                  f"{w.get('publication_year')} doi={doi or '-'} {(w.get('title') or '')[:48]}", flush=True)
-        w = pick(scored)
-        ck[title] = to_entry(w) if w else None
-        json.dump(ck, open(CKPT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-        print("     ->", "casado" if w else "SEM CASAMENTO", flush=True)
-        time.sleep(1.5)
-    done = [t for t, v in ck.items() if v]
-    miss = [t for t in (c[0] for c in CHAPTERS) if not ck.get(t)]
-    accepted = [ck[t] for t in (c[0] for c in CHAPTERS) if ck.get(t)]
-    json.dump(accepted, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print("=" * 70)
-    print(f"CASADOS: {len(done)}/{len(CHAPTERS)} | FALHAS: {len(miss)}")
-    for m in miss:
-        print("  falta:", m[:64])
-    print(f"gravado {OUT} ({len(accepted)} capítulos)")
+def merge_into_cplx(chapters):
+    """Substitui a entrada do volume (W2141042444) pelos capítulos em cplx_works.json."""
+    works = json.load(open(CPLX, encoding="utf-8"))
+    works = [w for w in works if w.get("oa_id") != PARENT]
+    have = {w.get("oa_id") for w in works}
+    for ch in chapters:
+        if ch["oa_id"] and ch["oa_id"] not in have:
+            works.append(ch)
+            have.add(ch["oa_id"])
+    json.dump(works, open(CPLX, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"cplx_works.json: volume substituído por {len(chapters)} capítulos ({len(works)} obras no total)")
 
 
 if __name__ == "__main__":
-    main(retry_misses="--retry-misses" in sys.argv)
+    chs = resolve()
+    if "--merge" in sys.argv and chs:
+        merge_into_cplx(chs)
