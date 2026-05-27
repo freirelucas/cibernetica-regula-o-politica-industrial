@@ -453,19 +453,19 @@ pre.code{max-width:100%}
 
 <!-- 07 · REDE DO NÚCLEO INTELECTUAL -->
 <section id="rede" class="section"><div class="container">
-  <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rede do núcleo intelectual</h2><span class="sec-method">citação + acoplamento · OpenAlex</span></div>
-  <div class="prose"><p>Rede das obras mais influentes do campo — as obras-semente, as referências em rajada e o ponto pivotal — ligadas por <strong>citações reais</strong> (linha sólida, uma obra cita a outra) e por <strong>acoplamento bibliográfico</strong> (linha tracejada, referências em comum). A cor indica o eixo; o tamanho do nó, o total de citações. <em>Arraste</em> os nós para reorganizar; <em>clique</em> para abrir a obra no OpenAlex.</p></div>
+  <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rede de cocitação do núcleo</h2><span class="sec-method">cocitação · bola de neve das 13 obras-semente</span></div>
+  <div class="prose"><p>Rede de <strong>cocitação</strong> reconstruída a partir de uma bola de neve das treze obras-semente: recuperam-se os trabalhos que as citam (cerca de 590) e, das suas listas de referência, tomam-se as obras <strong>mais cocitadas</strong> — duas obras ligam-se quando aparecem juntas na bibliografia de um mesmo trabalho, e a espessura da linha conta quantas vezes isso ocorre. É a estrutura que o próprio campo desenha ao citar: a cor indica o eixo (atribuído pelo vocabulário do título e dos tópicos); o tamanho do nó, o total de citações. <em>Arraste</em> os nós para reorganizar; <em>clique</em> para abrir a obra no OpenAlex.</p></div>
   <div style="position:relative">
-    <div class="chart-wrap" id="net-wrap" style="height:520px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><canvas id="netcanvas" role="img" aria-label="Rede de citação e acoplamento do núcleo intelectual do campo">Visualização de rede (requer JavaScript). Os dados estão em dados/network.json.</canvas></div>
+    <div class="chart-wrap" id="net-wrap" style="height:520px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><canvas id="netcanvas" role="img" aria-label="Rede de cocitação do núcleo intelectual do campo">Visualização de rede (requer JavaScript). Os dados estão em dados/network.json.</canvas></div>
     <div id="net-tip" class="net-tip"></div>
   </div>
   <div class="chart-legend" style="margin-top:10px">
     <span><span class="sw" style="background:var(--cyb)"></span>Cibernética</span>
     <span><span class="sw" style="background:var(--reg)"></span>Regulação</span>
     <span><span class="sw" style="background:var(--pi)"></span>Política industrial</span>
-    <span style="color:var(--muted)">○ contorno preto = obra-semente · linha cheia = citação · linha tracejada = acoplamento</span>
+    <span style="color:var(--muted)">○ contorno preto = obra-semente · linha = cocitação (espessura ∝ frequência)</span>
   </div>
-  <p class="fig-cap">Núcleo de <span id="net-n"></span> obras. Livros clássicos sem lista de referências no OpenAlex (Beer, Ashby, Hood 1983) podem aparecer sem conexões — reflexo da limitação de cobertura (ver <a href="#limitacoes">limitações</a>), não de relevância.</p>
+  <p class="fig-cap">Núcleo de <span id="net-n"></span> obras mais cocitadas (arestas com peso ≥ 3). A disposição por força revela <strong>três comunidades</strong> visualmente distintas — cibernética, instrumentos de governo e política industrial —, confirmando a separação dos eixos já vista no acoplamento; as poucas obras que se alojam entre dois agrupamentos são as pontes reais por cocitação. As três obras de Lange caem em comunidades diferentes (cibernética e planejamento), retrato visual de uma recepção ainda compartimentada. É um corte local e delimitado (bola de neve das sementes), não o funil completo do Colab; obras clássicas sem referências indexadas no OpenAlex (Beer, Ashby) entram pela cocitação dos que as citam.</p>
 </div></section>
 
 <!-- 08 · RAJADAS -->
@@ -1027,7 +1027,7 @@ new Chart(byId('chartClusters'), {
     links.forEach(l=>{
       ctx.beginPath(); ctx.moveTo(l.source.x,l.source.y); ctx.lineTo(l.target.x,l.target.y);
       if (l.tipo==='cita'){ ctx.strokeStyle='rgba(14,14,14,.28)'; ctx.lineWidth=1; ctx.setLineDash([]); }
-      else { ctx.strokeStyle='rgba(184,92,16,.35)'; ctx.lineWidth=1.2; ctx.setLineDash([3,3]); }
+      else { ctx.strokeStyle='rgba(60,56,52,.18)'; ctx.lineWidth=0.4+(l.peso||1)/14; ctx.setLineDash([]); }
       ctx.stroke();
     });
     ctx.setLineDash([]);
