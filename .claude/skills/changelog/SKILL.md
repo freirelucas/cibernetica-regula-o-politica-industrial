@@ -24,8 +24,9 @@ commit num tema pela 1ª palavra-chave que casa no assunto e reescreve
 `CHANGELOG.md` (mais recente primeiro dentro de cada tema). Idempotente: rode de
 novo após cada commit para manter em dia.
 
-Verificar sem escrever (ex.: num hook ou na CI) — sai com código ≠ 0 se estiver
-desatualizado:
+Conferir drift sem escrever (sai com código ≠ 0 se o arquivo divergir do
+regenerado) — útil manualmente; sob o hook de `pre-commit` fica naturalmente um
+commit atrás (a auto-referência), então não use como gate estrito de CI:
 
 ```bash
 python .claude/skills/changelog/changelog.py --check
@@ -39,15 +40,26 @@ Regenerar é uma ação; "a cada commit" é um comportamento automático. Duas f
    rode o driver e inclua o `CHANGELOG.md` no commit seguinte (ou faça
    `git commit --amend` se ainda não empurrou). Funciona enquanto o agente é quem
    comita.
-2. **Hook de `post-commit`** (sem agente) — escreve a versão mecânica a cada commit:
+2. **Hook de `pre-commit`** (recomendado — automático, sem agente, árvore limpa):
 
    ```bash
-   printf '#!/bin/sh\npython "$(git rev-parse --show-toplevel)/.claude/skills/changelog/changelog.py"\ngit add CHANGELOG.md\n' \
-     > .git/hooks/post-commit && chmod +x .git/hooks/post-commit
+   cat > .git/hooks/pre-commit <<'SH'
+   #!/bin/sh
+   root="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+   [ -f "$root/.claude/skills/changelog/changelog.py" ] || exit 0
+   python3 "$root/.claude/skills/changelog/changelog.py" >/dev/null 2>&1 || exit 0
+   git add "$root/CHANGELOG.md" 2>/dev/null || true
+   exit 0
+   SH
+   chmod +x .git/hooks/pre-commit
    ```
 
-   (O hook regenera e estagia; o conteúdo entra no **próximo** commit. Hooks em
-   `.git/hooks/` não são versionados — reinstale por clone.)
+   Regenera e **estagia o CHANGELOG dentro do próprio commit** (a árvore fica
+   limpa, sem nada pendente depois). Nunca bloqueia o commit (todos os ramos
+   saem com `exit 0`). A entrada do commit que está sendo feito só aparece no
+   commit seguinte — auto-referência inevitável de um changelog que se versiona.
+   Hooks em `.git/hooks/` **não são versionados**: reinstale após cada clone
+   (este bloco é o instalador).
 
 ## Temas
 
