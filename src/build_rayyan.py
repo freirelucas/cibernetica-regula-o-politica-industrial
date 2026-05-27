@@ -25,7 +25,9 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
 BRASIL = os.path.join(ROOT, "docs", "material-brasil", "dataset_politica_industrial_brasil.csv")
 ENRICH = os.path.join(ROOT, "data", "openalex_enrich.json")
+CROSS = os.path.join(ROOT, "data", "cross_brasil.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
+PONTE = "ponte global×Brasil"
 
 AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Política industrial"}
 
@@ -142,6 +144,22 @@ def apply_enrich(works):
             e["type"] = d["type"]
         if not e["year"] and d.get("year"):
             e["year"] = d["year"]
+    return works
+
+
+def tag_cross(works):
+    """Marca as obras do cruzamento Brasil × núcleo global (ponte por citação) com um
+    papel próprio — para filtrar na triagem e gerar o recorte rayyan_cruzamento."""
+    if not os.path.exists(CROSS):
+        return works
+    c = json.load(open(CROSS, encoding="utf-8"))
+    gids = set(c.get("global", []))
+    boa = {b["oa_id"] for b in c.get("brasil", []) if b.get("oa_id")}
+    bdois = {b["doi"] for b in c.get("brasil", []) if b.get("doi")}
+    for e in works:
+        oid = e.get("oa_id")
+        if (oid and (oid in gids or oid in boa)) or (e.get("doi") and e["doi"] in bdois):
+            e["roles"].add(PONTE)
     return works
 
 
@@ -272,24 +290,29 @@ def to_csv(works, path):
                         _oneline(e["abstract"]), e["doi"], kw, _note(e)])
 
 
+def emit(works, out, stem):
+    """Escreve um conjunto de obras em todos os formatos (ris/csv/enw/bib) + zip do RIS.
+    O .zip contém só o RIS — o Rayyan importa todos os arquivos do arquivo compactado,
+    e vários formatos gerariam registros duplicados na revisão."""
+    ris = os.path.join(out, stem + ".ris")
+    with open(ris, "w", encoding="utf-8") as f:
+        f.write(to_ris(works))
+    to_csv(works, os.path.join(out, stem + ".csv"))
+    with open(os.path.join(out, stem + ".enw"), "w", encoding="utf-8") as f:
+        f.write(to_enw(works))
+    with open(os.path.join(out, stem + ".bib"), "w", encoding="utf-8") as f:
+        f.write(to_bib(works))
+    with zipfile.ZipFile(os.path.join(out, stem + ".zip"), "w", zipfile.ZIP_DEFLATED) as z:
+        z.write(ris, stem + ".ris")
+
+
 def build(out=DADOS):
-    works = dedup_oaid(apply_enrich(consolidate()))
+    works = tag_cross(dedup_oaid(apply_enrich(consolidate())))
     os.makedirs(out, exist_ok=True)
-    paths = {
-        "rayyan_sintese.ris": to_ris(works),
-        "rayyan_sintese.csv": None,  # escrito pelo to_csv (csv.writer)
-        "rayyan_sintese.enw": to_enw(works),
-        "rayyan_sintese.bib": to_bib(works),
-    }
-    to_csv(works, os.path.join(out, "rayyan_sintese.csv"))
-    for name, text in paths.items():
-        if text is not None:
-            with open(os.path.join(out, name), "w", encoding="utf-8") as f:
-                f.write(text)
-    # contêiner .zip com UM só formato (RIS) — o Rayyan importa todos os arquivos do
-    # arquivo compactado; vários formatos gerariam registros duplicados na revisão.
-    with zipfile.ZipFile(os.path.join(out, "rayyan_sintese.zip"), "w", zipfile.ZIP_DEFLATED) as z:
-        z.write(os.path.join(out, "rayyan_sintese.ris"), "rayyan_sintese.ris")
+    emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
+    cruz = [e for e in works if PONTE in e["roles"]]      # opção B — cruzamento (ponte por citação)
+    if cruz:
+        emit(cruz, out, "rayyan_cruzamento")
     return works
 
 
