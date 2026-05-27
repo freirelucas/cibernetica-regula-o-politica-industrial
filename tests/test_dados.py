@@ -1,4 +1,8 @@
 """Integridade do JSON-fonte e dos CSV exportados (cabeçalhos em PT)."""
+import json
+import os
+
+import build_rayyan
 import build_site
 
 REQUIRED_KEYS = [
@@ -54,3 +58,80 @@ def test_csv_rows(results, tmp_path):
     for name, n in counts.items():
         linhas = (tmp_path / name).read_text(encoding="utf-8").strip().splitlines()
         assert len(linhas) == n + 1, f"{name}: {len(linhas)-1} linhas != {n}"
+
+
+def test_network_csv(root, tmp_path):
+    net_src = os.path.join(root, "data", "network.json")
+    if not os.path.exists(net_src):
+        return
+    net = json.load(open(net_src, encoding="utf-8"))
+    assert build_site.write_network_csvs(net, str(tmp_path)) == 2
+    nos = (tmp_path / "10_rede_nos.csv").read_text(encoding="utf-8").strip().splitlines()
+    arr = (tmp_path / "11_rede_arestas.csv").read_text(encoding="utf-8").strip().splitlines()
+    assert nos[0] == "id_openalex,obra,eixo,citacoes,ano,semente"
+    assert arr[0] == "origem,destino,tipo,cocitacoes,forca_associacao"
+    assert len(nos) - 1 == len(net["nodes"])
+    assert len(arr) - 1 == len(net["links"])
+
+
+def test_rayyan_export(tmp_path):
+    import csv as _csv
+    import re
+    works = build_rayyan.build(str(tmp_path))
+    assert len(works) > 100
+    assert all(w["roles"] for w in works), "toda obra deve ter ao menos um papel"
+    ris = (tmp_path / "rayyan_sintese.ris").read_text(encoding="utf-8")
+    assert ris.count("TY  - ") == ris.count("ER  - ") == len(works)
+    rows = list(_csv.DictReader(open(tmp_path / "rayyan_sintese.csv", encoding="utf-8")))
+    assert len(rows) == len(works)
+    # colunas do exemplo oficial do Rayyan + anotações
+    assert {"key", "title", "authors", "journal", "issn", "volume", "issue", "pages", "year",
+            "publisher", "url", "abstract", "doi", "keywords", "notes"} <= set(rows[0].keys())
+    # demais formatos aceitos pelo Rayyan
+    enw = (tmp_path / "rayyan_sintese.enw").read_text(encoding="utf-8")
+    assert enw.count("%0 ") == enw.count("%T ") == len(works)
+    bib = (tmp_path / "rayyan_sintese.bib").read_text(encoding="utf-8")
+    assert bib.count("{scisci") == len(works)
+    # contêiner .zip com UM só formato (evita import múltiplo no Rayyan)
+    import zipfile
+    with zipfile.ZipFile(tmp_path / "rayyan_sintese.zip") as z:
+        assert z.namelist() == ["rayyan_sintese.ris"]
+
+
+def test_rayyan_dedup_by_id(tmp_path):
+    """Após o dedup por id OpenAlex não pode haver dois registros com o mesmo id."""
+    works = build_rayyan.build(str(tmp_path))
+    ids = [w["oa_id"] for w in works if w.get("oa_id")]
+    assert len(ids) == len(set(ids)), "há obras repetidas com o mesmo id OpenAlex"
+
+
+def test_rayyan_abstract_coverage(tmp_path):
+    """Guarda contra regressão do enriquecimento: a maioria das obras tem resumo."""
+    if not os.path.exists(build_rayyan.ENRICH):
+        return
+    works = build_rayyan.build(str(tmp_path))
+    with_ab = sum(1 for w in works if w["abstract"])
+    assert with_ab >= 90, f"cobertura de resumos caiu para {with_ab} (esperado >= 90)"
+
+
+def test_rayyan_ris_wellformed(tmp_path):
+    """RIS válido para o Rayyan: toda linha não-vazia é uma tag; cada registro
+    começa em TY e termina em ER (sem linha de continuação quebrada)."""
+    import re
+    build_rayyan.build(str(tmp_path))
+    tag = re.compile(r"^([A-Z][A-Z0-9])  - ")
+    rec_open = False
+    for line in (tmp_path / "rayyan_sintese.ris").read_text(encoding="utf-8").splitlines():
+        if line == "":
+            continue
+        assert tag.match(line), f"linha RIS inválida (continuação quebrada?): {line!r}"
+        code = line[:2]
+        if code == "TY":
+            assert not rec_open, "novo TY antes de ER"
+            rec_open = True
+        elif code == "ER":
+            assert rec_open, "ER sem TY"
+            rec_open = False
+        else:
+            assert rec_open, f"tag {code} fora de um registro"
+    assert not rec_open, "último registro sem ER"

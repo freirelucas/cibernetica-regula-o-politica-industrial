@@ -12,6 +12,7 @@ verificável aqui para alimentar a visualização e testar a convergência.
 Uso:  python src/minirun.py
 """
 import json
+import math
 import os
 import time
 import urllib.request
@@ -145,6 +146,29 @@ def main():
               ensure_ascii=False, indent=1)
     print(f"REDE: {len(nodes)} nós, {len(links)} arestas de cocitação")
     print("eixos:", dict(Counter(n["axis"] or "—" for n in nodes)))
+
+    # 4b) métricas estruturais (Science of Science): modularidade da partição por
+    #     eixo (os eixos são comunidades reais?), fração de cocitação entre eixos e
+    #     cocitação normalizada (força de associação), que corrige o viés de citação.
+    deg = defaultdict(float); m = 0.0
+    for l in links:
+        deg[l["source"]] += l["peso"]; deg[l["target"]] += l["peso"]; m += l["peso"]
+    within = sum(l["peso"] for l in links if ax_by[l["source"]] == ax_by[l["target"]])
+    sumk = defaultdict(float)
+    for n in nodes:
+        sumk[n["axis"] or ""] += deg[n["id"]]
+    Q = within / m - sum((s / (2 * m)) ** 2 for s in sumk.values()) if m else 0
+    cl = [l for l in links if ax_by[l["source"]] and ax_by[l["target"]]]
+    cross = sum(1 for l in cl if ax_by[l["source"]] != ax_by[l["target"]])
+    print(f"modularidade Q (partição por eixo): {Q:.3f}")
+    if cl:
+        print(f"cocitação entre classificados: {len(cl)} | cruzam eixos: {cross} ({100 * cross / len(cl):.0f}%)")
+    lab = {n["id"]: n["label"] for n in nodes}
+    assoc = sorted(((l["peso"] / math.sqrt(deg[l["source"]] * deg[l["target"]]), l) for l in links
+                    if deg[l["source"]] * deg[l["target"]] > 0), key=lambda x: -x[0])
+    print("maiores forças de associação (cocitação normalizada):")
+    for s, l in assoc[:6]:
+        print(f"   {s:.3f} | {lab[l['source']][:24]} ~ {lab[l['target']][:24]}")
     lange = [n for n in nodes if "Lange" in n["label"]]
     print("Lange na rede:", [(n["label"], n["axis"], n["id"] in bridges) for n in lange])
     print(f"nós-ponte (vizinhança cruza eixos): {len(bridges)}")

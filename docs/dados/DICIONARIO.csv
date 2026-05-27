@@ -39,3 +39,14 @@ arquivo,coluna,descricao
 09_serie_temporal.csv,Cyb,trabalhos do eixo Cibernética no ano
 09_serie_temporal.csv,Reg,trabalhos do eixo Regulação no ano
 09_serie_temporal.csv,PolInd,trabalhos do eixo Política Industrial no ano
+10_rede_nos.csv,id_openalex,identificador OpenAlex
+10_rede_nos.csv,obra,rótulo/título da obra (nó da rede)
+10_rede_nos.csv,eixo,eixo temático do nó (Cyb/Reg/PolInd)
+10_rede_nos.csv,citacoes,total de citações (OpenAlex)
+10_rede_nos.csv,ano,ano de publicação
+10_rede_nos.csv,semente,indica se é obra-semente (True/False)
+11_rede_arestas.csv,origem,nó de origem da aresta (id OpenAlex)
+11_rede_arestas.csv,destino,nó de destino da aresta (id OpenAlex)
+11_rede_arestas.csv,tipo,tipo de ligação (cocita)
+11_rede_arestas.csv,cocitacoes,número de vezes citadas em conjunto (peso da cocitação)
+11_rede_arestas.csv,forca_associacao,cocitação normalizada: peso / raiz(grau_origem · grau_destino)
