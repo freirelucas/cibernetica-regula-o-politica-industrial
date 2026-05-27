@@ -28,6 +28,7 @@ sys.path.insert(0, HERE)
 from report_from_json import build_js  # noqa: E402  (reúso dos consts de gráfico)
 from report_template import inject_template  # noqa: E402
 import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
+import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
 
 TEMPLATE = os.path.join(HERE, "site_template.html")
 EXPLORER_TPL = os.path.join(HERE, "explorador_template.html")
@@ -185,33 +186,12 @@ def net_stats(net):
             sumk[a] = sumk.get(a, 0) + deg.get(nid, 0)
         Q = within / m - sum((s / (2 * m)) ** 2 for s in sumk.values())
 
-    # comunidades DETECTADAS (propagação de rótulos, sem usar o vocabulário) — para
-    # validar os eixos sem circularidade: Q da partição detectada e concordância (NMI).
-    adj = {nid: [] for nid in nodes}
-    for l in links:
-        adj[l["source"]].append((l["target"], l.get("peso", 1)))
-        adj[l["target"]].append((l["source"], l.get("peso", 1)))
-    comm = {nid: nid for nid in nodes}
-    order = sorted(nodes, key=lambda n: (-deg.get(n, 0), n))
-    for _ in range(40):
-        changed = False
-        for nid in order:
-            wv = {}
-            for o, wt in adj[nid]:
-                wv[comm[o]] = wv.get(comm[o], 0) + wt
-            if wv:
-                best = max(sorted(wv), key=lambda c: wv[c])
-                if best != comm[nid]:
-                    comm[nid] = best; changed = True
-        if not changed:
-            break
-    Qd, nmi, ncomm = 0.0, 0.0, len(set(comm.values()))
-    if m > 0:
-        withinD = sum(l.get("peso", 1) for l in links if comm[l["source"]] == comm[l["target"]])
-        sumkD = {}
-        for nid in nodes:
-            sumkD[comm[nid]] = sumkD.get(comm[nid], 0) + deg.get(nid, 0)
-        Qd = withinD / m - sum((s / (2 * m)) ** 2 for s in sumkD.values())
+    # comunidades DETECTADAS pela modularidade gulosa (Clauset–Newman–Moore, 2004),
+    # SEM usar o vocabulário — valida os eixos sem circularidade: Q detectada e NMI.
+    comm, Qd, ncomm = sfi_methods.cnm_communities(list(nodes), links)
+    nmi = 0.0
+    # ajuste de lei de potência da distribuição de citações (Clauset–Shalizi–Newman, 2009)
+    powerlaw = sfi_methods.powerlaw_fit([nd.get("cited_by", 0) for nd in nodes.values()])
     if N:                                                  # NMI(detectada, eixo)
         import math
         ax = {nid: (nodes[nid].get("axis") or "—") for nid in nodes}
@@ -231,6 +211,7 @@ def net_stats(net):
         "modularidade_detectada": round(Qd, 3),
         "n_comunidades": ncomm,
         "nmi": round(nmi, 3),
+        "powerlaw": powerlaw,
         "classif": classif,
         "intra": same, "inter": cross,
         "pct_intra": round(100 * same / classif) if classif else 0,

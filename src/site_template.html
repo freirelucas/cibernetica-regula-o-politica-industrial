@@ -398,7 +398,8 @@ pre.code{max-width:100%}
       <li><strong>Detecção de rajadas</strong> <span class="term">(Kleinberg, 2003)</span> — períodos de citação anormalmente intensa, estimados por programação dinâmica (algoritmo de Viterbi).</li>
       <li><strong>Coeficiente de beleza</strong> <span class="term">(Ke et al., 2015)</span> — mede a hibernação seguida de despertar tardio (as <em>belas adormecidas</em>).</li>
       <li><strong>Modularidade</strong> <span class="term">(Newman, 2006)</span> — quão bem uma partição da rede concentra as ligações dentro dos grupos; afere se os eixos correspondem a comunidades reais.</li>
-      <li><strong>Detecção de comunidades por propagação de rótulos</strong> <span class="term">(Raghavan et al., 2007)</span> — agrupa só pela estrutura, sem usar o vocabulário, e a concordância com os eixos é medida por <strong>informação mútua normalizada</strong> <span class="term">(Danon et al., 2005)</span> — validação não-circular dos eixos.</li>
+      <li><strong>Detecção de comunidades por modularidade gulosa</strong> <span class="term">(Clauset, Newman &amp; Moore, 2004)</span> — agrupa só pela estrutura, sem usar o vocabulário; a concordância com os eixos é medida por <strong>informação mútua normalizada</strong> <span class="term">(Danon et al., 2005)</span> — validação não-circular dos eixos.</li>
+      <li><strong>Lei de potência</strong> <span class="term">(Clauset, Shalizi &amp; Newman, 2009)</span> — testa se a distribuição de citações é de cauda pesada (atenção concentrada), por máxima verossimilhança com seleção de x<sub>mín</sub> por Kolmogorov–Smirnov.</li>
     </ul>
     <p>Aplicadas ao corpus, as medidas produzem duas redes complementares: a de cocitação, com <span id="m-cocit"></span>, e a de acoplamento bibliográfico, com <span id="m-coupling"></span>. O particionamento de Leiden identifica <span id="m-clusters"></span>. <span id="m-pivotal"></span> A cobertura de referências citadas alcança <span id="m-pctrefs"></span> do corpus, o que limita a bola de neve regressiva das obras-semente em formato de livro (ver <a href="#limitacoes">limitações</a>).</p>
   </div>
@@ -729,8 +730,9 @@ python src/build_site.py                # este site (docs/)</pre>
     <dt>Bela adormecida · coeficiente de beleza <span class="src">(sleeping beauty · beauty coefficient)</span></dt><dd>Obra de longa hibernação e despertar tardio; o coeficiente mede a intensidade do despertar (Ke et al., 2015).</dd>
     <dt>Força de associação <span class="src">(association strength)</span></dt><dd>Cocitação normalizada — o peso bruto dividido pela raiz do produto dos graus —, que corrige o viés das obras muito citadas e revela proximidade intelectual real (van Eck &amp; Waltman, 2009).</dd>
     <dt>Modularidade <span class="src">(modularity, Q)</span></dt><dd>Mede o quanto uma partição da rede concentra as ligações dentro dos grupos, acima do esperado ao acaso; Q &gt; 0,3 indica comunidades reais (Newman, 2006).</dd>
-    <dt>Detecção de comunidades · propagação de rótulos <span class="src">(community detection · label propagation)</span></dt><dd>Encontra grupos coesos a partir só da estrutura de ligações, sem usar rótulos externos; aqui valida se os eixos emergem da própria rede (Raghavan et al., 2007).</dd>
+    <dt>Detecção de comunidades <span class="src">(community detection)</span></dt><dd>Encontra grupos coesos a partir só da estrutura de ligações, sem usar rótulos externos; aqui, por modularidade gulosa (Clauset, Newman &amp; Moore, 2004), valida se os eixos emergem da própria rede. O explorador usa a variante interativa por propagação de rótulos (Raghavan et al., 2007).</dd>
     <dt>Informação mútua normalizada <span class="src">(normalized mutual information, NMI)</span></dt><dd>Concordância entre duas partições (0 a 1): mede o quanto as comunidades detectadas coincidem com os eixos atribuídos por vocabulário (Danon et al., 2005).</dd>
+    <dt>Lei de potência <span class="src">(power law)</span></dt><dd>Distribuição de cauda pesada em que poucos itens concentram quase tudo; a atenção (citações) na ciência segue esse padrão. Ajustada por máxima verossimilhança com seleção de x<sub>mín</sub> por Kolmogorov–Smirnov (Clauset, Shalizi &amp; Newman, 2009).</dd>
     <dt>Densidade da rede <span class="src">(network density)</span></dt><dd>Fração das ligações possíveis que de fato existem entre os nós.</dd>
     <dt>Funil de coleta <span class="src">(pipeline)</span></dt><dd>Sequência encadeada de etapas de coleta e análise.</dd>
   </dl>
@@ -746,6 +748,8 @@ python src/build_site.py                # este site (docs/)</pre>
     <li>BEER, S. <em>The Heart of Enterprise</em>. Chichester: Wiley, 1979.</li>
     <li>BEER, S. <em>Diagnosing the System for Organizations</em>. Chichester: Wiley, 1985.</li>
     <li>BRANDES, U. A faster algorithm for betweenness centrality. <em>Journal of Mathematical Sociology</em>, v. 25, n. 2, p. 163–177, 2001.</li>
+    <li>CLAUSET, A.; NEWMAN, M. E. J.; MOORE, C. Finding community structure in very large networks. <em>Physical Review E</em>, v. 70, 066111, 2004.</li>
+    <li>CLAUSET, A.; SHALIZI, C. R.; NEWMAN, M. E. J. Power-law distributions in empirical data. <em>SIAM Review</em>, v. 51, n. 4, p. 661–703, 2009.</li>
     <li>DANON, L.; DÍAZ-GUILERA, A.; DUCH, J.; ARENAS, A. Comparing community structure identification. <em>Journal of Statistical Mechanics</em>, P09008, 2005.</li>
     <li>ESPEJO, R.; REYES, A. <em>Organizational Systems: Managing Complexity with the Viable System Model</em>. Berlin: Springer, 2011.</li>
     <li>HOOD, C. <em>The Tools of Government</em>. London: Macmillan, 1983.</li>
@@ -1107,7 +1111,7 @@ new Chart(byId('chartClusters'), {
       + (M.pares && M.pares['Cyb × Reg'] ? ` — e o cruzamento é quase todo entre cibernética e instrumentos de governo.` : '.')
       + ilha
       + ` A separação que se vê no desenho é, portanto, <em>estrutural</em>: a convergência entre as três tradições é uma agenda a construir, não um fato já inscrito na literatura citada. `
-      + (M.nmi ? `E não é rótulo imposto: <strong>sem usar o vocabulário</strong>, a detecção de comunidades encontra ${M.n_comunidades} agrupamentos (modularidade Q&nbsp;=&nbsp;${String(M.modularidade_detectada).replace('.',',')}) que concordam com os eixos em <strong>NMI&nbsp;=&nbsp;${String(M.nmi).replace('.',',')}</strong> — a própria estrutura de cocitação recupera os três eixos. ` : (M.modularidade ? `Modularidade da partição por eixo: Q&nbsp;=&nbsp;${String(M.modularidade).replace('.',',')}. ` : ''))
+      + (M.nmi ? `E não é rótulo imposto: <strong>sem usar o vocabulário</strong>, a modularidade gulosa (Clauset–Newman–Moore) encontra ${M.n_comunidades} comunidades (Q&nbsp;=&nbsp;${String(M.modularidade_detectada).replace('.',',')}) que concordam com os eixos em <strong>NMI&nbsp;=&nbsp;${String(M.nmi).replace('.',',')}</strong> — a própria estrutura de cocitação recupera os três eixos. ` : (M.modularidade ? `Modularidade da partição por eixo: Q&nbsp;=&nbsp;${String(M.modularidade).replace('.',',')}. ` : ''))
       + `<span style="color:var(--muted)">(densidade ${M.densidade}; eixo atribuído por vocabulário a ${classN} dos ${M.n} nós.)</span>`;
   }
   const ctx = cv.getContext('2d');
