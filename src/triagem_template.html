@@ -181,7 +181,7 @@ __JS_DATA__
   }
   function risOf(list){
     return list.map(e=>{
-      const r=['TY  - GEN','T1  - '+oneline(e.title)];
+      const r=['TY  - '+(e.type||'GEN'),'T1  - '+oneline(e.title)];
       (e.authors||[]).forEach(a=>r.push('AU  - '+oneline(a)));
       if(e.year) r.push('PY  - '+e.year);
       if(e.venue) r.push('JO  - '+oneline(e.venue));

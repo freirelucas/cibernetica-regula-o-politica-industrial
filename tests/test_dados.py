@@ -92,11 +92,17 @@ def test_rayyan_export(tmp_path):
     assert enw.count("%0 ") == enw.count("%T ") == len(works)
     bib = (tmp_path / "rayyan_sintese.bib").read_text(encoding="utf-8")
     assert bib.count("{scisci") == len(works)
-    # contêiner .zip com os quatro formatos
+    # contêiner .zip com UM só formato (evita import múltiplo no Rayyan)
     import zipfile
     with zipfile.ZipFile(tmp_path / "rayyan_sintese.zip") as z:
-        assert set(z.namelist()) == {"rayyan_sintese.ris", "rayyan_sintese.csv",
-                                      "rayyan_sintese.enw", "rayyan_sintese.bib"}
+        assert z.namelist() == ["rayyan_sintese.ris"]
+
+
+def test_rayyan_dedup_by_id(tmp_path):
+    """Após o dedup por id OpenAlex não pode haver dois registros com o mesmo id."""
+    works = build_rayyan.build(str(tmp_path))
+    ids = [w["oa_id"] for w in works if w.get("oa_id")]
+    assert len(ids) == len(set(ids)), "há obras repetidas com o mesmo id OpenAlex"
 
 
 def test_rayyan_ris_wellformed(tmp_path):

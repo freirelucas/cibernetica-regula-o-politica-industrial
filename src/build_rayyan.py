@@ -58,7 +58,8 @@ def _add(store, title, **kw):
     if not key:
         return
     e = store.setdefault(key, {"title": title, "authors": [], "year": "", "doi": "", "url": "",
-                               "venue": "", "abstract": "", "axes": set(), "roles": set(), "type": "GEN"})
+                               "venue": "", "abstract": "", "axes": set(), "roles": set(),
+                               "type": "GEN", "oa_id": ""})
     if len(title) > len(e["title"]):          # mantém o título mais completo
         e["title"] = title
     for fld in ("year", "doi", "url", "venue", "abstract"):
@@ -116,7 +117,8 @@ def consolidate():
 
 
 def apply_enrich(works):
-    """Preenche resumo/DOI/url ausentes a partir do cache do OpenAlex (se houver)."""
+    """Completa cada obra a partir do cache do OpenAlex/Crossref (se houver): id canônico,
+    DOI, resumo, título completo, autoria e tipo."""
     if not os.path.exists(ENRICH):
         return works
     enr = json.load(open(ENRICH, encoding="utf-8"))
@@ -124,13 +126,50 @@ def apply_enrich(works):
         d = enr.get(_norm(e["title"]))
         if not d:
             continue
-        if not e["abstract"] and d.get("abstract"):
-            e["abstract"] = d["abstract"]
+        if d.get("oa_id"):
+            e["oa_id"] = d["oa_id"]
+            if not e["url"] or "openalex" not in e["url"]:
+                e["url"] = f"https://openalex.org/{d['oa_id']}"
         if not e["doi"] and d.get("doi"):
             e["doi"] = d["doi"]
-        if not e["url"] and d.get("oa_id"):
-            e["url"] = f"https://openalex.org/{d['oa_id']}"
+        if not e["abstract"] and d.get("abstract"):
+            e["abstract"] = d["abstract"]
+        if d.get("title") and len(d["title"]) > len(e["title"]):   # título canônico (sem truncar)
+            e["title"] = d["title"]
+        if d.get("authors") and len(d["authors"]) > len(e["authors"]):  # autoria completa
+            e["authors"] = d["authors"]
+        if d.get("type") and e["type"] == "GEN":                   # tipo real
+            e["type"] = d["type"]
+        if not e["year"] and d.get("year"):
+            e["year"] = d["year"]
     return works
+
+
+def dedup_oaid(works):
+    """Funde obras que compartilham o mesmo id OpenAlex (variantes do mesmo trabalho:
+    títulos truncados, com/sem subtítulo, 'The X'/'X'). Une eixos e papéis."""
+    out, byid = [], {}
+    for e in works:
+        oid = e.get("oa_id")
+        if oid and oid in byid:
+            t = byid[oid]
+            t["axes"].update(e["axes"]); t["roles"].update(e["roles"])
+            for fld in ("doi", "url", "venue", "abstract"):
+                if not t[fld] and e[fld]:
+                    t[fld] = e[fld]
+            if len(e["title"]) > len(t["title"]):
+                t["title"] = e["title"]
+            if len(e["authors"]) > len(t["authors"]):
+                t["authors"] = e["authors"]
+            if t["type"] == "GEN" and e["type"] != "GEN":
+                t["type"] = e["type"]
+            if not t["year"] and e["year"]:
+                t["year"] = e["year"]
+        else:
+            if oid:
+                byid[oid] = e
+            out.append(e)
+    return out
 
 
 def _note(e):
@@ -234,7 +273,7 @@ def to_csv(works, path):
 
 
 def build(out=DADOS):
-    works = apply_enrich(consolidate())
+    works = dedup_oaid(apply_enrich(consolidate()))
     os.makedirs(out, exist_ok=True)
     paths = {
         "rayyan_sintese.ris": to_ris(works),
@@ -247,11 +286,10 @@ def build(out=DADOS):
         if text is not None:
             with open(os.path.join(out, name), "w", encoding="utf-8") as f:
                 f.write(text)
-    # contêiner .zip com todos os formatos (aceito pelo Rayyan via "My Library")
+    # contêiner .zip com UM só formato (RIS) — o Rayyan importa todos os arquivos do
+    # arquivo compactado; vários formatos gerariam registros duplicados na revisão.
     with zipfile.ZipFile(os.path.join(out, "rayyan_sintese.zip"), "w", zipfile.ZIP_DEFLATED) as z:
-        for name in ("rayyan_sintese.ris", "rayyan_sintese.csv",
-                     "rayyan_sintese.enw", "rayyan_sintese.bib"):
-            z.write(os.path.join(out, name), name)
+        z.write(os.path.join(out, "rayyan_sintese.ris"), "rayyan_sintese.ris")
     return works
 
 

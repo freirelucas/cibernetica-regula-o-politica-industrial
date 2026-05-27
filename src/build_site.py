@@ -207,7 +207,7 @@ def rayyan_works_js(works):
         uid = e["doi"] or (m.group(1) if m else None) or build_rayyan._norm(e["title"])[:60]
         out.append({"uid": uid, "title": e["title"], "authors": e["authors"], "year": e["year"],
                     "venue": e["venue"], "abstract": e["abstract"], "doi": e["doi"], "url": e["url"],
-                    "axes": sorted(e["axes"]), "roles": sorted(e["roles"])})
+                    "type": e.get("type", "GEN"), "axes": sorted(e["axes"]), "roles": sorted(e["roles"])})
     return out
 
 
