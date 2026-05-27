@@ -60,22 +60,44 @@ def by_id(wid):
             "title": w.get("title") or "", "year": w.get("publication_year")}
 
 
+STOP = {"the", "of", "and", "in", "a", "an", "for", "to", "from", "on", "with", "as", "by",
+        "der", "die", "und", "el", "la", "los", "las", "de", "do", "da", "uma", "um", "no", "na"}
+
+
+def _tokens(s):
+    return {w for w in build_rayyan._norm(s).split() if len(w) > 2 and w not in STOP}
+
+
 def by_title(title, year):
-    q = urllib.parse.quote((title or "")[:90])
-    data = get(f"{API}?filter=title.search:{q}&per-page=5"
+    # busca limpa (sem pontuação, ~12 palavras) e casamento por contenção de tokens,
+    # robusto a títulos truncados (o truncado é subconjunto do título completo).
+    qclean = " ".join(re.sub(r"[^A-Za-z0-9 ]", " ", title or "").split()[:12])
+    if not qclean:
+        return None
+    data = get(f"{API}?filter=title.search:{urllib.parse.quote(qclean)}&per-page=8"
                "&select=id,title,publication_year,doi,abstract_inverted_index")
+    qt = _tokens(title)
+    if not qt:
+        return None
     nt = build_rayyan._norm(title)
+    best, best_score = None, 0.0
     for w in data.get("results", []):
         cand = build_rayyan._norm(w.get("title") or "")
-        if not cand:
+        ct = _tokens(w.get("title") or "")
+        if not ct:
             continue
-        close = cand == nt or (len(nt) >= 12 and (cand.startswith(nt) or nt.startswith(cand)))
+        inter = len(qt & ct)
+        contain = inter / min(len(qt), len(ct))          # 1.0 quando um é subconjunto do outro
+        exact = cand == nt or cand.startswith(nt) or nt.startswith(cand)
         yok = (not year) or (not w.get("publication_year")) or abs(int(w["publication_year"]) - int(year)) <= 1
-        if close and yok:
-            return {"oa_id": (w.get("id") or "").split("/")[-1], "doi": _doi(w),
-                    "abstract": abstract_of(w.get("abstract_inverted_index")),
-                    "title": w.get("title") or "", "year": w.get("publication_year")}
-    return None
+        score = 1.0 if exact else contain
+        if yok and score >= 0.8 and score > best_score:
+            best, best_score = w, score
+    if not best:
+        return None
+    return {"oa_id": (best.get("id") or "").split("/")[-1], "doi": _doi(best),
+            "abstract": abstract_of(best.get("abstract_inverted_index")),
+            "title": best.get("title") or "", "year": best.get("publication_year")}
 
 
 def main():

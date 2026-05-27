@@ -87,10 +87,16 @@ def test_rayyan_export(tmp_path):
     # colunas do exemplo oficial do Rayyan + anotações
     assert {"key", "title", "authors", "journal", "issn", "volume", "issue", "pages", "year",
             "publisher", "url", "abstract", "doi", "keywords", "notes"} <= set(rows[0].keys())
-    # contêiner .zip com os dois arquivos de referência
+    # demais formatos aceitos pelo Rayyan
+    enw = (tmp_path / "rayyan_sintese.enw").read_text(encoding="utf-8")
+    assert enw.count("%0 ") == enw.count("%T ") == len(works)
+    bib = (tmp_path / "rayyan_sintese.bib").read_text(encoding="utf-8")
+    assert bib.count("{scisci") == len(works)
+    # contêiner .zip com os quatro formatos
     import zipfile
     with zipfile.ZipFile(tmp_path / "rayyan_sintese.zip") as z:
-        assert set(z.namelist()) == {"rayyan_sintese.ris", "rayyan_sintese.csv"}
+        assert set(z.namelist()) == {"rayyan_sintese.ris", "rayyan_sintese.csv",
+                                      "rayyan_sintese.enw", "rayyan_sintese.bib"}
 
 
 def test_rayyan_ris_wellformed(tmp_path):

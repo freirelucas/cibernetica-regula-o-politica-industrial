@@ -43,6 +43,9 @@ T1  - Europe first? The rise of EU industrial policy promoting and protecting th
 AU  - Donato Di Carlo
 AU  - Luuk Schmitz
 PY  - 2023
+DO  - 10.1080/13501763.2023.2202684
+UR  - https://openalex.org/W4368376507
+AB  - Within Europe’s regulatory state, industrial policy has largely remained within national governments’ remit. Yet, a plethora of new supra- and cross-national industrial policy initiatives have recently emerged whereby the Commission proactively engages in pan-European activities to foster innovation and economic development. This article brings the ‘Developmental Network States’ (DNS) literature into dialogue with EU integration scholarship to explain both the timing of EU industrial policy’s rise since the mid-2010s and the variation in forms of EU integration of different industrial policy functions. Our analysis suggests that the Commission increasingly operates four major developmental functions akin to DNSs and aimed at promoting and protecting the single market. Neofunctionalist theories of EU integration explain these momentous shifts. The timing behind the rise of EU industrial policy is best explained as an interplay of functional, cultivated, and political spillovers, driven especially by the Franco-German realignment on pro-EU industrial policy positions since 2016. Variation in the governance forms of integrated EU industrial policy functions is instead explained in terms of the degree of pre-existing integration of extant policies, the low vs high politics nature of the policy domain and the types of externalities attached to the specific policy area.
 KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
 KW  - papel: obra-ponte
@@ -54,6 +57,9 @@ T1  - Governing the net-zero transition: Strategy, policy, and politics
 AU  - James Meadowcroft
 AU  - Daniel Rosenbloom
 PY  - 2023
+DO  - 10.1073/pnas.2207727120
+UR  - https://openalex.org/W4388622472
+AB  - This paper applies insights from the literature on transitions in major consumption-production systems to clarify the nature of the challenge of moving to a net-zero greenhouse gas (GHG) emission society. It highlights critical features of transitions including their multiactor/multicausal logic, phased development, and distributive impacts. Because current systems are so dependent on fossil energy resources, and on GHG-emitting industrial processes and agricultural practices, multiple transitions across a range of distinct consumption-production systems will be required for net zero. The transformation of each system faces different barriers and enabling conditions and is influenced by varied nonclimate-related disruptions. Important policy implications follow, including the need to focus on sector and regional transitions, link climate policy to other societal goals, and adopt policy mixes appropriate to the transition phase. The article discusses recent policy and politics-related findings from the transitions literatures including those dealing with policy mixes, transition intermediaries, and green industrial policy.
 KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
 KW  - papel: obra-ponte
@@ -147,6 +153,9 @@ AU  - Omer San
 AU  - Trond Kvamsdal
 PY  - 2020
 JO  - IEEE Access
+DO  - 10.1109/access.2020.2970143
+UR  - https://openalex.org/W3003667836
+AB  - Digital twin can be defined as a virtual representation of a physical asset enabled through data and simulators for real-time prediction, optimization, monitoring, controlling, and improved decision making. Recent advances in computational pipelines, multiphysics solvers, artificial intelligence, big data cybernetics, data processing and management tools bring the promise of digital twins and their impact on society closer to reality. Digital twinning is now an important and emerging trend in many applications. Also referred to as a computational megamodel, device shadow, mirrored system, avatar or a synchronized virtual prototype, there can be no doubt that a digital twin plays a transformative role not only in how we design and operate cyber-physical intelligent systems, but also in how we advance the modularity of multi-disciplinary systems to tackle fundamental barriers not addressed by the current, evolutionary modeling practices. In this work, we review the recent status of methodologies and techniques related to the construction of digital twins mostly from a modeling perspective. Our aim is to provide a detailed coverage of the current challenges and enabling technologies along with recommendations and reflections for various stakeholders.
 KW  - eixo: Cibernética
 KW  - papel: mais citada
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: mais citada
@@ -159,6 +168,9 @@ AU  - Michael Howlett
 AU  - Darryl S. L. Jarvis
 PY  - 2020
 JO  - Policy and Society
+DO  - 10.1080/14494035.2020.1787628
+UR  - https://openalex.org/W3038709602
+AB  - The objective of this collection of essays is to gain insights into the different national-level state responses to COVID-19 around the world and the conditions that shaped them. The pandemic offers a natural experiment wherein the policy problem governments faced was the same but the responses they made were different, creating opportunities for comparison of both the kinds of policy tools being used and the factors that accounted for their choice. Accordingly, after surveying on-line databases of policy tools used in the pandemic and subjecting these to topic modelling to reveal the characteristics of a 'standard' national pandemic response, we discuss the similarities and differences found in specific responses. This is done with reference to the nature and level of policy capacity of respective governments, highlighting the critical roles played by (in)adequate preparation and lesson-drawing from past experiences with similar outbreaks or crises. Taken together the articles show how the national responses to the COVID-19 pandemic were shaped by the opportunity and capacity each government had to learn from previous pandemics and their capacity to operationalize and build political support for the standard portfolio of policy measures deployed to deal with the crisis. However, they also show how other factors such as the nature of national leadership, the organization of government and civil society, and blindspots towards the vulnerabilities of certain population segments also helped to shape policy responses to the pandemic.
 KW  - eixo: Instrumentos de governo
 KW  - papel: mais citada
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
@@ -211,6 +223,9 @@ AU  - Luciano Floridi
 AU  - Libby Kinsey
 PY  - 2019
 JO  - Science and Engineering Ethics
+DO  - 10.1007/s11948-019-00165-5
+UR  - https://openalex.org/W2996541402
+AB  - The debate about the ethical implications of Artificial Intelligence dates from the 1960s (Samuel in Science, 132(3429):741-742, 1960. https://doi.org/10.1126/science.132.3429.741 ; Wiener in Cybernetics: or control and communication in the animal and the machine, MIT Press, New York, 1961). However, in recent years symbolic AI has been complemented and sometimes replaced by (Deep) Neural Networks and Machine Learning (ML) techniques. This has vastly increased its potential utility and impact on society, with the consequence that the ethical debate has gone mainstream. Such a debate has primarily focused on principles-the 'what' of AI ethics (beneficence, non-maleficence, autonomy, justice and explicability)-rather than on practices, the 'how.' Awareness of the potential issues is increasing at a fast rate, but the AI community's ability to take action to mitigate the associated risks is still at its infancy. Our intention in presenting this research is to contribute to closing the gap between principles and practices by constructing a typology that may help practically-minded developers apply ethics at each stage of the Machine Learning development pipeline, and to signal to researchers where further work is needed. The focus is exclusively on Machine Learning, but it is hoped that the results of this research may be easily applicable to other branches of AI. The article outlines the research method for creating this typology, the initial findings, and provides a summary of future research needs.
 KW  - eixo: Cibernética
 KW  - papel: mais citada
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: mais citada
@@ -252,6 +267,9 @@ AU  - Bernhard Reinsberg
 AU  - Alexander Kentikelenis
 AU  - T
 PY  - 2019
+DO  - 10.1086/701703
+UR  - https://openalex.org/W2895014065
+AB  - The administrative ability of the state to deliver effective policy is essential for economic development. While sociologists have long devoted attention to domestic forces underpinning state capacity, the authors focus on world system pressures from Western-dominated international organizations. Scrutinizing policy reforms mandated by the International Monetary Fund (IMF), the authors argue that “structural conditions” exert deleterious effects on bureaucratic quality by increasing the risk of bureaucrats falling prey to special interests and narrowing potential policy instruments available to them. The authors test these arguments using a new data set on IMF conditionality from 1985 to 2014. Their analysis shows that structural conditions—especially conditions on privatization, price deregulation, and public sector employment—reduce bureaucratic quality. Using instrumentation techniques, the authors also discount the possibility that the relationship is driven by the IMF imposing structural conditions precisely in countries with low bureaucratic quality. A careful reconsideration of IMF policy reforms is therefore required to avoid undermining local institutions.
 KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
 KW  - papel: obra-ponte
@@ -343,6 +361,9 @@ AU  - Ron Boschma
 AU  - Joan Crespo
 PY  - 2018
 JO  - Regional Studies
+DO  - 10.1080/00343404.2018.1437900
+UR  - https://openalex.org/W2791808130
+AB  - The operationalization of smart specialization policy has been rather limited because a coherent set of analytical tools to guide the policy directives remains elusive. We propose a policy framework around the concepts of relatedness and knowledge complexity. We show that diversifying into more complex technologies is attractive but difficult for European Union regions to accomplish. Regions can overcome this diversification dilemma by developing new complex technologies that build on local related capabilities. We use these findings to construct a policy framework for smart specialization that highlights the potential risks and rewards for regions of adopting competing diversification strategies.
 KW  - eixo: Política industrial
 KW  - papel: mais citada
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: mais citada
@@ -879,6 +900,8 @@ AU  - Ann Harrison
 AU  - Andrés Rodrı́guez-Clare
 PY  - 2010
 JO  - Handbook of development economics
+DO  - 10.1016/b978-0-444-52944-2.00001-x
+UR  - https://openalex.org/W1577375906
 KW  - eixo: Política industrial
 KW  - papel: mais citada
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: mais citada
@@ -889,6 +912,8 @@ T1  - Governance modes, policy regimes and operational plans: A multi-level nest
 AU  - Michael Howlett
 PY  - 2009
 JO  - Policy Sciences
+DO  - 10.1007/s11077-009-9079-1
+UR  - https://openalex.org/W2057748843
 KW  - eixo: Instrumentos de governo
 KW  - papel: mais citada
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
@@ -1157,6 +1182,7 @@ PY  - 1999
 JO  - Bulletin of Latin American Research
 DO  - 10.1111/J.1470-9856.1999.TB00145.X
 UR  - https://www.sciencedirect.com/science/article/pii/S0261305099000042
+AB  - Abstract — Industrial policy is no longer what it used to be. In the industrialised world and in advanced developing countries alike, the focus has shifted from a top‐down, statist approach that sought to create industries to a decentralised, networked approach whose aim is to shape competitive advantages and to create ‘systemic competitiveness.’ This reflects the fact that globalisation and localisation are parallel and mutually reinforcing processes: The firms which do better in a globalised market are rooted in well‐developed networks of supporting firms and institutions. The analysis of the case of Santa Catarina, a state which had a strong industrial growth record in the 1970s and 1980s, shows that the relevant actors tend to be slow to move to this kind of pattern. State‐level industrial policy mainly consists of participation in a ‘guerra fiscal’ geared to attracting external investment as well as, to a very limited extent, measures aimed at giving financial support to local firms. Yet there is no such thing as an explicit policy at the state level — to say nothing of the local level — designed to support firms by shaping locational advantages. This is due to limitations on the part both of the state and the private sector. As far as the state is concerned, a traditional clientelist and ad hoc style of policy making prevails. In the private sector the business associations ( sindicatos and the Federation of Industries, local chambers of industry and commerce and their umbrella federation) are slowly adapting to the new conditions presented by an open economy and far more competitive pressure, though they have thus far lagged in putting more pressure on local and state government to support company‐level efforts to increase competitiveness. Within this general picture, however, there are differences between industrial clusters. The most advanced of them, made up of world‐class firms manufacturing ceramic tiles, may show the way by strengthening associations, shaping locational advantages, and articulating the demands of companies toward the state.
 KW  - eixo: Política industrial
 KW  - papel: corpus Brasil (Faganello)
 N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello)
@@ -1314,8 +1340,6 @@ ER  -
 TY  - GEN
 T1  - The viable system model: interpretations of Stafford Beer's VSM
 PY  - 1990
-DO  - 10.1016/0377-2217(90)90368-l
-UR  - https://openalex.org/W2921753315
 KW  - papel: bela adormecida
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: bela adormecida
 ER  - 
@@ -1323,6 +1347,8 @@ ER  -
 TY  - GEN
 T1  - The Viable System Model
 PY  - 1990
+DO  - 10.1007/bf01062728
+UR  - https://openalex.org/W1983425281
 KW  - papel: bela adormecida
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: bela adormecida
 ER  - 
@@ -1385,6 +1411,9 @@ T1  - The Viable System Model: Its Provenance, Development, Methodology and Path
 AU  - Stafford Beer
 PY  - 1984
 JO  - Journal of the Operational Research Society
+DO  - 10.1057/jors.1984.2
+UR  - https://openalex.org/W2025177555
+AB  - It took the author 30 years to develop the Viable System Model, which sets out to explain how systems are viable-that is, capable of independent existence. He wanted to elucidate the laws of viability in order to facilitate the management task, and did so in a stream of papers and two (of his seven) books. Much misunderstanding about the V.S.M. and its use seems to exist; especially its methodological foundations have been largely forgotten, while its major results have hardly been noted. This paper reflects on the history, nature and present status of the V.S.M., without seeking once again to expound the model in detail or to demonstrate its validity. It does, however, provide a synopsis, present the methodology and confront some highly contentious issues about both the managerial and scientific paradigms.
 KW  - eixo: Cibernética
 KW  - papel: mais citada
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: mais citada
@@ -1393,6 +1422,9 @@ ER  -
 TY  - GEN
 T1  - The Viable System Model: Its Provenance, Development, Methodology
 PY  - 1984
+DO  - 10.1057/jors.1984.2
+UR  - https://openalex.org/W2025177555
+AB  - It took the author 30 years to develop the Viable System Model, which sets out to explain how systems are viable-that is, capable of independent existence. He wanted to elucidate the laws of viability in order to facilitate the management task, and did so in a stream of papers and two (of his seven) books. Much misunderstanding about the V.S.M. and its use seems to exist; especially its methodological foundations have been largely forgotten, while its major results have hardly been noted. This paper reflects on the history, nature and present status of the V.S.M., without seeking once again to expound the model in detail or to demonstrate its validity. It does, however, provide a synopsis, present the methodology and confront some highly contentious issues about both the managerial and scientific paradigms.
 KW  - papel: bela adormecida
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: bela adormecida
 ER  - 

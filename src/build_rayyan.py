@@ -167,6 +167,57 @@ def to_ris(works):
     return "\n".join(out)
 
 
+ENW_TYPE = {"JOUR": "Journal Article", "BOOK": "Book", "CHAP": "Book Section",
+            "THES": "Thesis", "GEN": "Generic"}
+BIB_TYPE = {"JOUR": "article", "BOOK": "book", "CHAP": "incollection",
+            "THES": "phdthesis", "GEN": "misc"}
+
+
+def to_enw(works):
+    """EndNote (.enw) — formato aceito pelo Rayyan, com resumo (%X)."""
+    out = []
+    for e in works:
+        out.append(f"%0 {ENW_TYPE.get(e['type'], 'Generic')}")
+        out.append(f"%T {_oneline(e['title'])}")
+        for a in e["authors"]:
+            out.append(f"%A {_oneline(a)}")
+        if e["venue"]:
+            out.append(f"%J {_oneline(e['venue'])}")
+        if e["year"]:
+            out.append(f"%D {_oneline(str(e['year']))}")
+        if e["doi"]:
+            out.append(f"%R {_oneline(e['doi'])}")
+        if e["url"]:
+            out.append(f"%U {_oneline(e['url'])}")
+        if e["abstract"]:
+            out.append(f"%X {_oneline(e['abstract'])}")
+        for ax in sorted(e["axes"]):
+            out.append(f"%K eixo: {ax}")
+        for role in sorted(e["roles"]):
+            out.append(f"%K papel: {role}")
+        out.append("")
+    return "\n".join(out)
+
+
+def _bibval(s):
+    return _oneline(s).replace("{", "(").replace("}", ")").replace("\\", "")
+
+
+def to_bib(works):
+    """BibTeX (.bib) — formato aceito pelo Rayyan; inclui resumo (campo abstract)."""
+    out = []
+    for i, e in enumerate(works, 1):
+        fields = [("title", e["title"]),
+                  ("author", " and ".join(e["authors"])),
+                  ("journal", e["venue"]), ("year", str(e["year"]) if e["year"] else ""),
+                  ("doi", e["doi"]), ("url", e["url"]), ("abstract", e["abstract"]),
+                  ("keywords", "; ".join([f"eixo: {a}" for a in sorted(e["axes"])]
+                                         + [f"papel: {r}" for r in sorted(e["roles"])]))]
+        body = ",\n".join(f"  {k} = {{{_bibval(v)}}}" for k, v in fields if v)
+        out.append(f"@{BIB_TYPE.get(e['type'], 'misc')}{{scisci{i:03d},\n{body}\n}}")
+    return "\n\n".join(out) + "\n"
+
+
 def to_csv(works, path):
     # colunas e convenções do exemplo oficial do Rayyan (autores separados por " and ");
     # keywords/notes ao final carregam eixo e papel para a triagem.
@@ -185,15 +236,22 @@ def to_csv(works, path):
 def build(out=DADOS):
     works = apply_enrich(consolidate())
     os.makedirs(out, exist_ok=True)
-    ris_path = os.path.join(out, "rayyan_sintese.ris")
-    csv_path = os.path.join(out, "rayyan_sintese.csv")
-    with open(ris_path, "w", encoding="utf-8") as f:
-        f.write(to_ris(works))
-    to_csv(works, csv_path)
-    # contêiner .zip (formato aceito pelo Rayyan via "My Library")
+    paths = {
+        "rayyan_sintese.ris": to_ris(works),
+        "rayyan_sintese.csv": None,  # escrito pelo to_csv (csv.writer)
+        "rayyan_sintese.enw": to_enw(works),
+        "rayyan_sintese.bib": to_bib(works),
+    }
+    to_csv(works, os.path.join(out, "rayyan_sintese.csv"))
+    for name, text in paths.items():
+        if text is not None:
+            with open(os.path.join(out, name), "w", encoding="utf-8") as f:
+                f.write(text)
+    # contêiner .zip com todos os formatos (aceito pelo Rayyan via "My Library")
     with zipfile.ZipFile(os.path.join(out, "rayyan_sintese.zip"), "w", zipfile.ZIP_DEFLATED) as z:
-        z.write(ris_path, "rayyan_sintese.ris")
-        z.write(csv_path, "rayyan_sintese.csv")
+        for name in ("rayyan_sintese.ris", "rayyan_sintese.csv",
+                     "rayyan_sintese.enw", "rayyan_sintese.bib"):
+            z.write(os.path.join(out, name), name)
     return works
 
 
