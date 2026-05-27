@@ -12,7 +12,7 @@ Uso (caminhos relativos à RAIZ do repositório):
     python .claude/skills/run-scisci-ipea/driver.py --shot /tmp/s.png --path /
 
 Saída: STATUS OK (código 0) quando não há erro de página, há 3 gráficos e todas
-as 18 seções estão presentes; PROBLEMA (código 1) caso contrário.
+as 22 seções estão presentes; PROBLEMA (código 1) caso contrário.
 Pré-requisito do caminho do agente:
     pip install playwright && python -m playwright install --with-deps chromium
 """
