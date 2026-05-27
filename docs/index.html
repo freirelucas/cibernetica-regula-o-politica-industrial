@@ -432,7 +432,8 @@ pre.code{max-width:100%}
   <div class="sec-header"><span class="sec-num">04</span><h2 class="sec-title">Panorama temporal por eixo</h2><span class="sec-method">1960–2025 · trabalhos por ano</span></div>
   <div class="prose"><p>A cibernética domina a produção desde os anos 1970. A regulação e a política industrial convergem a partir de 2007 — com a segunda edição de Hood &amp; Margetts — e crescem fortemente entre 2013 e 2019, no rastro do debate sobre o Estado empreendedor e as missões. A aproximação simultânea dos três eixos torna-se visível a partir de 2013.</p></div>
   <div class="chart-wrap" style="height:300px"><canvas id="chartTemporal" role="img" aria-label="Produção por eixo temático, 1960 a 2025">Gráfico de área da produção anual.</canvas></div>
-  <p class="fig-cap">Série anual de trabalhos por eixo (um mesmo trabalho pode contar para mais de um eixo). Clique na legenda para mostrar ou ocultar um eixo.</p>
+  <p class="fig-cap">Série anual de trabalhos por eixo (um mesmo trabalho pode contar para mais de um eixo). Clique na legenda para mostrar ou ocultar um eixo; <strong>clique em um ano</strong> para ver as obras de destaque daquele ano.</p>
+  <div class="callout" id="temporal-detail" style="display:none"></div>
 </div></section>
 
 <!-- 05 · ZONAS DE INTERCÂMBIO -->
@@ -1002,6 +1003,28 @@ byId('dl-grid').innerHTML = DADOS.map(x => {
 byId('dict-table').innerHTML = DADOS.map(x =>
   `<tr><td class="ref">${x.f.split('/').pop()}</td><td>${x.d}</td></tr>`).join('');
 
+/* Detalhamento por ano — clique no gráfico temporal abre as obras de destaque do ano */
+function showYear(year){
+  const el = byId('temporal-detail'); if(!el) return;
+  const it = [];
+  TOP20.filter(r=>r.year===year).forEach(r=>it.push({t:r.title, role:'mais citada', meta:`${r.authors||'—'} · ${fmt(r.cited_by)} cit.`}));
+  BRIDGES.filter(r=>r.year===year).forEach(r=>it.push({t:r.title, role:'obra-ponte', meta:`${r.authors||'—'} · ${fmt(r.cited_by)} cit.`}));
+  BEAUTIES.filter(r=>r.year===year).forEach(r=>it.push({t:r.title, role:'bela adormecida', meta:`B=${r.B}`}));
+  BURSTS.filter(r=>year>=r.begin && year<=r.end).forEach(r=>it.push({t:r.title, w:r.ref_id, role:`rajada ${r.begin}–${r.end}`, meta:r.authors||'—'}));
+  SEEDS.forEach(s=>{const m=(s.ref||'').match(/\((\d{4})\)/); if(m && +m[1]===year) it.push({t:s.ref, w:s.id, role:'obra-semente', meta:axisName(s.axis)});});
+  const seen={}; const uniq = it.filter(i=>{const k=(i.t||'').toLowerCase(); if(seen[k])return false; seen[k]=1; return true;});
+  let html = `<strong>${year}</strong> — `;
+  if(!uniq.length){
+    html += `nenhuma obra de destaque das listas neste ano. <span style="color:var(--muted)">A série cobre todo o corpus; os destaques (mais citadas, pontes, rajadas, belas adormecidas) são subconjuntos curados.</span>`;
+  } else {
+    html += `${uniq.length} obra(s) de destaque <span style="color:var(--muted)">(clique para abrir no OpenAlex)</span>:`
+      + `<div style="margin-top:.6rem;display:flex;flex-direction:column;gap:.45rem">`
+      + uniq.map(i=>`<div ${i.w?`data-w="${i.w}"`:`data-t="${(i.t||'').replace(/"/g,'&quot;')}"`} style="cursor:pointer" title="abrir no OpenAlex"><span style="font-family:var(--mono);font-size:10px;color:var(--muted)">${i.role}</span> · <strong>${i.t}</strong> <span style="color:var(--muted)">— ${i.meta}</span></div>`).join('')
+      + `</div>`;
+  }
+  el.innerHTML = html; el.style.display='block';
+}
+
 /* GRÁFICOS — desenhados após o carregamento das fontes, para que a medição
    dos rótulos use a fonte definitiva e não os corte. */
 const fMono = "'JetBrains Mono'";
@@ -1012,7 +1035,10 @@ new Chart(byId('chartTemporal'), {
     {label:'Regulação',  data:TEMPORAL.map(d=>d.Reg),borderColor:'#1a7a5e',backgroundColor:'rgba(26,122,94,.07)', fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
     {label:'Pol. industrial',data:TEMPORAL.map(d=>d.PolInd),borderColor:'#b85c10',backgroundColor:'rgba(184,92,16,.07)',fill:true,tension:.35,pointRadius:0,borderWidth:1.5},
   ]},
-  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{family:fMono,size:11},color:'#6b6560',boxWidth:12,boxHeight:8,padding:14}},tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono}}},
+  options:{responsive:true,maintainAspectRatio:false,
+    onClick:(e,els)=>{if(els.length)showYear(TEMPORAL[els[0].index].year);},
+    onHover:(e,els)=>{e.native.target.style.cursor=els.length?'pointer':'default';},
+    plugins:{legend:{display:true,position:'bottom',labels:{font:{family:fMono,size:11},color:'#6b6560',boxWidth:12,boxHeight:8,padding:14}},tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono}}},
     scales:{x:{grid:{display:false},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:12,font:{size:10,family:fMono},color:'#6b6560'}},
             y:{grid:{color:'rgba(14,14,14,.05)'},ticks:{font:{size:10,family:fMono},color:'#6b6560'}}}}
 });
