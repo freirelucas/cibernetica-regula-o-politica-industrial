@@ -14,30 +14,16 @@ Uso:  python src/experiment_cplx.py
 import json
 import os
 import time
-import urllib.error
-import urllib.request
 from collections import Counter, defaultdict
 from itertools import combinations
 
 import minirun as mr
 import sfi_methods as sfi
+from oa import get          # pool polido + chave Premium via ambiente; backoff p/ 429
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PERPAGE, TOPN, THRESH = 120, 250, 3
 OUTFILE = "network_4axis.json"        # crawl balanceado dos 4 eixos (17 sementes)
-
-
-def get(url):
-    """Fetch robusto com backoff exponencial honrando o 429 do OpenAlex."""
-    for i in range(7):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=mr.UA), timeout=45) as r:
-                return json.load(r)
-        except urllib.error.HTTPError as e:
-            time.sleep(min(60, 5 * (2 ** i)) if e.code == 429 else 3)
-        except Exception:
-            time.sleep(3)
-    return {}
 
 CPLX_SEEDS = {
     "W2137358449": ("Nelson & Winter · Evolutionary Theory", "Cplx"),

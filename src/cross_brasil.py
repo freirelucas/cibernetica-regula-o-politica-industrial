@@ -16,25 +16,17 @@ import csv
 import json
 import os
 import re
+import sys
 import time
 import urllib.parse
-import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "src"))
+from oa import get  # noqa: E402  (pool polido + chave Premium via ambiente; backoff 429)
+
 DATASET = os.path.join(ROOT, "docs", "material-brasil", "dataset_politica_industrial_brasil.csv")
 NETWORK = os.path.join(ROOT, "data", "network.json")
 OUT = os.path.join(ROOT, "data", "cross_brasil.json")
-UA = {"User-Agent": "scisci-ipea/1.0 (mailto:lucasfreire@gmail.com)"}
-
-
-def get(url):
-    for _ in range(4):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
-                return json.load(r)
-        except Exception:
-            time.sleep(2)
-    return {}
 
 
 def main():

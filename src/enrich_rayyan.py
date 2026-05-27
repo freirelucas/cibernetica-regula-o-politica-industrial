@@ -17,30 +17,19 @@ import re
 import sys
 import time
 import urllib.parse
-import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import build_rayyan  # noqa: E402
+from oa import get    # noqa: E402  (pool polido + chave Premium via ambiente; backoff 429)
 
 OUT = os.path.join(ROOT, "data", "openalex_enrich.json")
 API = "https://api.openalex.org/works"
 CROSSREF = "https://api.crossref.org/works/"
-UA = {"User-Agent": "scisci-ipea/1.0 (mailto:lucasfreire@gmail.com)"}
 OA_TYPE = {"article": "JOUR", "journal-article": "JOUR", "book": "BOOK", "monograph": "BOOK",
            "book-chapter": "CHAP", "dissertation": "THES", "report": "RPRT", "preprint": "JOUR"}
 SELECT = "id,title,publication_year,doi,type,authorships,abstract_inverted_index"
-
-
-def get(url):
-    for _ in range(4):
-        try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as r:
-                return json.load(r)
-        except Exception:
-            time.sleep(2)
-    return {}
 
 
 def abstract_of(inv):

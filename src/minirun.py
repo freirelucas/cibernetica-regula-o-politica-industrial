@@ -15,11 +15,11 @@ import json
 import math
 import os
 import time
-import urllib.request
 from collections import Counter, defaultdict
 from itertools import combinations
 
-UA = {"User-Agent": "scisci-ipea/1.0 (mailto:lucasfreire@gmail.com)"}
+from oa import UA, get  # noqa: F401  (pool polido + chave Premium via ambiente)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SEEDS = {  # id -> (rótulo curto, eixo)
@@ -60,15 +60,6 @@ def axis_of(title):
     t = (title or "").lower()
     hit = [a for a, ks in VOCAB.items() if any(k in t for k in ks)]
     return hit[0] if hit else ""
-
-
-def get(url):
-    for _ in range(4):
-        try:
-            return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=45))
-        except Exception:
-            time.sleep(3)
-    return {}
 
 
 def main():
