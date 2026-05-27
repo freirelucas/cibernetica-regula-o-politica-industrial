@@ -17,3 +17,4 @@ ckpt_*.parquet
 
 # Checkpoint transitório do resolvedor de capítulos do EECS-II
 data/eecs2_ckpt.json
+data/eecs2_chapters.json

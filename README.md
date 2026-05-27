@@ -14,6 +14,31 @@ construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 
 ---
 
+## Objetivo
+
+Mapear, com rigor cienciométrico e **apenas dados reais** (OpenAlex, verificados — sem
+id inventado ou não-resolvível), a estrutura intelectual na interseção entre **cibernética
+organizacional**, **instrumentos de governo / regulação** e **política industrial**, e
+converter esse mapa em instrumento de pesquisa e de política. Três frentes:
+
+1. **Diagnóstico honesto da (não-)convergência.** Testar, contra um modelo nulo, se as três
+   tradições dialogam na estrutura de citação. O achado central: **são silos** (modularidade
+   muito acima do acaso; nenhuma obra é conector significativo) — a convergência **não está
+   latente, precisa ser construída**.
+2. **Triagem sistemática para a equipe.** Entregar aos três pesquisadores uma síntese pronta
+   para o Rayyan — recortes por eixo, cruzamento Brasil × global e curadoria por tamanho —,
+   com decisões de inclusão/exclusão reprodutíveis.
+3. **Agenda concreta.** Sobre o terreno comum que a análise revelou (teoria evolucionária e de
+   capacidades da firma), formular uma **política industrial adaptativa de inspiração
+   cibernética**: retroalimentação e capacidade estatal, composição de instrumentos (Hood) e
+   missões (Mazzucato/Rodrik).
+
+**Critérios de pronto:** funil reprodutível em um clique (Colab) sobre corpus real; site
+`docs/` camera-ready (relatório + explorador + triagem); zero dado inventado ou não-resolvível;
+suíte de testes verde; prosa sem anglicismo.
+
+---
+
 ## Conteúdo do repositório
 
 ```
