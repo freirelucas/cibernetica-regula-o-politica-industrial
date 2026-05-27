@@ -254,9 +254,9 @@ def build_meta(R):
 def explorer_network():
     """Rede do explorador: a versão ampliada (network_exploded.json) anotada com a
     comunidade detectada (CNM), o coeficiente de participação e o papel de Guimerà-Amaral."""
-    src = os.path.join(ROOT, "data", "network_exploded.json")
-    if not os.path.exists(src):
-        src = os.path.join(ROOT, "data", "network.json")
+    src = next((os.path.join(ROOT, "data", f) for f in
+                ("network_4axis.json", "network_exploded.json", "network.json")
+                if os.path.exists(os.path.join(ROOT, "data", f))), os.path.join(ROOT, "data", "network.json"))
     net = json.load(open(src, encoding="utf-8"))
     nodes, links = net.get("nodes", []), net.get("links", [])
     ids = [n["id"] for n in nodes]
@@ -319,6 +319,9 @@ def main():
     expl_src = os.path.join(ROOT, "data", "network_exploded.json")
     if os.path.exists(expl_src):
         shutil.copy(expl_src, os.path.join(DADOS, "rede_explodida.json"))
+    ax4_src = os.path.join(ROOT, "data", "network_4axis.json")
+    if os.path.exists(ax4_src):
+        shutil.copy(ax4_src, os.path.join(DADOS, "rede_4eixos.json"))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
 
     missing = [s for s in SECTIONS if f'id="{s}"' not in html]

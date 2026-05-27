@@ -23,7 +23,8 @@ import minirun as mr
 import sfi_methods as sfi
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PERPAGE, TOPN, THRESH = 150, 160, 3
+PERPAGE, TOPN, THRESH = 120, 250, 3
+OUTFILE = "network_4axis.json"        # crawl balanceado dos 4 eixos (17 sementes)
 
 
 def get(url):
@@ -65,7 +66,7 @@ def main():
     # se ela cocita os outros eixos (ponte) ou só a própria linhagem (silo).
     corpus_refs = []
     cites_core = Counter()                      # citantes Cplx que também citam as sementes dos 3 eixos
-    for sid in CPLX_SEEDS:
+    for sid in SEEDS:                            # crawl balanceado: todas as 17 sementes (4 eixos)
         r = get(f"https://api.openalex.org/works?filter=cites:{sid}&sort=cited_by_count:desc"
                 f"&per-page={PERPAGE}&select=id,referenced_works")
         n0 = len(corpus_refs)
@@ -122,7 +123,7 @@ def main():
                       "year": (int(year) if year else None), "seed": n in SEEDS})
     links = [{"source": a, "target": b, "tipo": "cocita", "peso": int(w)} for a, b, w in edges]
     json.dump({"nodes": nodes, "links": links},
-              open(os.path.join(ROOT, "data", "network_cplx.json"), "w", encoding="utf-8"),
+              open(os.path.join(ROOT, "data", OUTFILE), "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
 
     print(f"\nREDE (4 eixos): {len(nodes)} nós, {len(links)} arestas")

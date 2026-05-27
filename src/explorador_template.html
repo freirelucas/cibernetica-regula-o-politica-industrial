@@ -74,7 +74,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 <div class="layout">
   <aside class="panel">
     <h1>Explorador interativo</h1>
-    <p class="lead">Rede de <strong>cocitação ampliada</strong> (bola de neve explodida, ~250 obras; OpenAlex). Cada nó é uma obra; cada linha, uma cocitação. Cada obra traz seu <strong>papel</strong> (conector ou hub provincial, por participação) — clique para ver. Filtre, busque, destaque os conectores. <a href="index.html#rede">Como foi construída &rarr;</a></p>
+    <p class="lead">Rede de <strong>cocitação ampliada</strong> dos <strong>quatro eixos</strong> (inclui a sondagem da economia da complexidade; ~250 obras; OpenAlex). Cada nó é uma obra; cada linha, uma cocitação. Cada obra traz seu <strong>papel</strong> (conector ou hub provincial, por participação) — clique para ver. Filtre por eixo, busque, destaque os conectores. <a href="index.html#pontes">Como foi construída &rarr;</a></p>
 
     <div class="ctl">
       <label class="h">Eixos temáticos</label>
@@ -128,8 +128,8 @@ __JS_DATA__
 </script>
 <script>
 (function(){
-  const AXC = {Cyb:'#4b3fc2', Reg:'#1a7a5e', PolInd:'#b85c10', '':'#9a948c'};
-  const AXN = {Cyb:'Cibernética', Reg:'Instrumentos de governo', PolInd:'Política industrial', '':'Sem eixo atribuído'};
+  const AXC = {Cyb:'#4b3fc2', Reg:'#1a7a5e', PolInd:'#b85c10', Cplx:'#2a9d8f', '':'#9a948c'};
+  const AXN = {Cyb:'Cibernética', Reg:'Instrumentos de governo', PolInd:'Política industrial', Cplx:'Economia da complexidade', '':'Sem eixo atribuído'};
   const fmt = n => (n==null?'—':(''+n).replace(/\B(?=(\d{3})+(?!\d))/g,'.'));
   if (!window.d3 || typeof NETWORK === 'undefined' || !NETWORK.nodes || !NETWORK.nodes.length){
     document.querySelector('.stage').innerHTML='<p style="padding:2rem;color:#6b6560">Rede indisponível (dados/network.json ausente).</p>'; return;
@@ -219,7 +219,7 @@ __JS_DATA__
     .on('tick', ticked);
 
   // estado dos filtros
-  const axisOn = {Cyb:true, Reg:true, PolInd:true, '':true};
+  const axisOn = {Cyb:true, Reg:true, PolInd:true, Cplx:true, '':true};
   let wmin=6, showLabels=true, query='', selected=null, crossOnly=false;
 
   function visibleData(){
@@ -340,7 +340,7 @@ __JS_DATA__
   // controles
   const af = document.getElementById('axisFilters');
   const counts = {}; allNodes.forEach(n=>counts[n.axis||'']=(counts[n.axis||'']||0)+1);
-  ['Cyb','Reg','PolInd',''].forEach(a=>{
+  ['Cyb','Reg','PolInd','Cplx',''].forEach(a=>{
     const row=document.createElement('label'); row.className='axis-row';
     row.innerHTML=`<input type="checkbox" checked data-ax="${a}"><span class="sw" style="background:${AXC[a]}"></span>${AXN[a]}<span class="ct">${counts[a]||0}</span>`;
     row.querySelector('input').addEventListener('change',e=>{axisOn[a]=e.target.checked; restart(false);});
@@ -375,7 +375,8 @@ __JS_DATA__
   document.getElementById('legend').innerHTML =
     `<span class="sw" style="background:${AXC.Cyb}"></span>Cibernética &nbsp; `
     +`<span class="sw" style="background:${AXC.Reg}"></span>Regulação &nbsp; `
-    +`<span class="sw" style="background:${AXC.PolInd}"></span>Política industrial<br>`
+    +`<span class="sw" style="background:${AXC.PolInd}"></span>Política industrial &nbsp; `
+    +`<span class="sw" style="background:${AXC.Cplx}"></span>Economia da complexidade<br>`
     +`○ contorno preto = obra-semente &nbsp;·&nbsp; <span style="color:var(--accent)">━</span> linha vermelha = cocitação entre eixos`;
 
   window.addEventListener('resize',()=>{

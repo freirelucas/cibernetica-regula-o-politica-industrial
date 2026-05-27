@@ -67,6 +67,7 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
   <a href="explorador.html">explorador</a>
   <span class="sp"></span>
   <button class="btn primary" id="expRis">Exportar incluídos (RIS)</button>
+  <button class="btn" id="expBlock">Exportar bloco filtrado (RIS)</button>
   <button class="btn" id="expCsv">Decisões (CSV)</button>
   <button class="btn" id="expJson">Decisões (JSON)</button>
   <label class="btn" for="impFile" title="combinar com decisões de outro pesquisador">Importar</label>
@@ -80,6 +81,11 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
   <span class="chips" id="roleChips"></span>
   <span class="chips" id="statusChips"></span>
   <input id="q" type="text" placeholder="buscar título, autor, resumo…" autocomplete="off">
+  <span class="chips" id="blockActions" title="aplica a decisão a TODAS as obras filtradas (bloco conceitual atual)">
+    <button class="chip" id="blkInc">✓ incluir bloco</button>
+    <button class="chip" id="blkExc">✗ excluir bloco</button>
+    <button class="chip" id="blkClr">limpar bloco</button>
+  </span>
 </div>
 <main class="wrap">
   <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. É uma pré-triagem leve; a triagem colaborativa completa segue no Rayyan. <span class="hint">Atalhos no teclado: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
@@ -241,6 +247,24 @@ const RAYYAN_WORKS=[{"uid": "10.1111/padm.12960", "title": "How rediscovering no
     if(!inc.length){ alert('Nenhuma obra incluída ainda. Marque "Incluir" em algumas obras.'); return; }
     download('triagem_incluidos.ris', risOf(inc), 'application/x-research-info-systems');
   };
+  // exporta exatamente o bloco conceitual filtrado no momento (eixo/papel/status/busca)
+  document.getElementById('expBlock').onclick=()=>{
+    const vs=visible();
+    if(!vs.length){ alert('Nenhuma obra no filtro atual.'); return; }
+    download('triagem_bloco.ris', risOf(vs), 'application/x-research-info-systems');
+  };
+  // inclui/exclui em lote TODAS as obras do bloco filtrado (incluir/excluir blocos conceituais)
+  function bulkDecide(d){
+    const vs=visible();
+    if(!vs.length){ alert('Nenhuma obra no filtro atual.'); return; }
+    const verbo={inc:'incluir',exc:'excluir','':'limpar'}[d];
+    if(!confirm(`${verbo[0].toUpperCase()+verbo.slice(1)} ${vs.length} obras do bloco filtrado?`)) return;
+    vs.forEach(w=>{ if(d) DEC[w.uid]=d; else delete DEC[w.uid]; });
+    save(); render();
+  }
+  document.getElementById('blkInc').onclick=()=>bulkDecide('inc');
+  document.getElementById('blkExc').onclick=()=>bulkDecide('exc');
+  document.getElementById('blkClr').onclick=()=>bulkDecide('');
   document.getElementById('expCsv').onclick=()=>{
     const q=s=>'"'+String(s==null?'':s).replace(/"/g,'""')+'"';
     const rows=[['uid','titulo','ano','eixos','decisao']];
