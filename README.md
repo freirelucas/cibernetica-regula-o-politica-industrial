@@ -162,10 +162,10 @@ O smoke headless do site fica em `.claude/skills/run-scisci-ipea/driver.py`.
 
 ## Autoria
 
-**Bruno Queiroz · Lucas Freire · Claudia Faganello** · IPEA / DIEST-COGIT · Brasília.
+**Bruno Queiroz · Lucas Freire · Claucia Faganello** · IPEA / DIEST-COGIT · Brasília.
 Material preliminar, sujeito a revisão. A seção *O caso brasileiro* (site) e os arquivos
 em `docs/material-brasil/` resumem a revisão da literatura nacional conduzida por
-Claudia Faganello (busca em SciSpace/Google Scholar, abril/2026; 220 trabalhos),
+Claucia Faganello (busca em SciSpace/Google Scholar, abril/2026; 220 trabalhos),
 complementando o mapeamento bibliométrico global (OpenAlex) das demais seções.
 
 Execução de referência (corpus OpenAlex): 2026-05-25 17:33.
