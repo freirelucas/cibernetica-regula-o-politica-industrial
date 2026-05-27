@@ -138,6 +138,48 @@ def cnm_communities(node_ids, links, weight="peso"):
     return out, round(Q, 3), c
 
 
+def participation_z(node_ids, links, comm, weight="peso"):
+    """Cartografia de papéis de Guimerà & Amaral (Nature, 2005), ponderada.
+
+    Devolve (P, z): coeficiente de participação P_i = 1 − Σ_s (k_is/k_i)² — alto quando
+    as ligações do nó se espalham por muitas comunidades (CONECTOR entre comunidades,
+    independente do grau) — e o grau intramódulo padronizado z (hub vs não-hub). Usa as
+    comunidades `comm` (mapa id->comunidade, idealmente as detectadas pelo CNM).
+    """
+    from collections import defaultdict
+    deg = defaultdict(float)
+    kc = defaultdict(lambda: defaultdict(float))
+    for l in links:
+        s, t, w = l["source"], l["target"], l.get(weight, 1)
+        deg[s] += w; deg[t] += w
+        kc[s][comm.get(t)] += w
+        kc[t][comm.get(s)] += w
+    P, kin = {}, {}
+    for n in node_ids:
+        d = deg.get(n, 0)
+        P[n] = (1 - sum((v / d) ** 2 for v in kc[n].values())) if d else 0.0
+        kin[n] = kc[n].get(comm.get(n), 0)
+    z = {}
+    for c in set(comm.get(n) for n in node_ids):
+        mem = [n for n in node_ids if comm.get(n) == c]
+        vals = [kin[n] for n in mem]
+        mu = sum(vals) / len(vals) if vals else 0.0
+        sd = (sum((v - mu) ** 2 for v in vals) / len(vals)) ** 0.5 if vals else 0.0
+        for n in mem:
+            z[n] = (kin[n] - mu) / sd if sd > 0 else 0.0
+    return P, z
+
+
+def ga_role(P, z):  # papéis de Guimerà-Amaral (limiares do artigo)
+    if z >= 2.5:
+        return "hub conector" if P > 0.30 else "hub provincial"
+    if P > 0.62:
+        return "conector"
+    if P > 0.05:
+        return "periférico"
+    return "ultraperiférico"
+
+
 if __name__ == "__main__":
     import json
     import os

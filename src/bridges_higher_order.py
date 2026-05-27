@@ -18,7 +18,11 @@ Uso:  python src/bridges_higher_order.py [--net data/network_exploded.json]
 import argparse
 import json
 import os
+import sys
 from collections import defaultdict, deque
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sfi_methods as sfi
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AXN = {"Cyb": "cibernética", "Reg": "instrumentos de governo", "PolInd": "política industrial"}
@@ -102,10 +106,26 @@ def main():
     lab = {n: nodes[n].get("label", n) for n in V}
     print(f"rede: {args.net.split('/')[-1]} — {len(V)} nós, {sum(len(a) for a in adj.values())//2} arestas")
 
+    net = json.load(open(args.net, encoding="utf-8"))
+    links = net["links"]
     CB = betweenness(adj, V)
-    print("\n== intermediários globais (centralidade de intermediação, Brandes) ==")
-    for n, c in sorted(CB.items(), key=lambda kv: -kv[1])[:15]:
-        print(f"   {c:8.1f} | {AXN.get(axis[n], '—'):24} | {lab[n][:46]}")
+
+    # CONECTORES ENTRE COMUNIDADES — coeficiente de participação (Guimerà & Amaral, 2005),
+    # sobre as comunidades DETECTADAS (CNM), ponderado e normalizado pelo grau. É a medida
+    # correta de "conector entre comunidades" — separa o conector do simples hub citado.
+    comm, Qd, k = sfi.cnm_communities(V, links)
+    P, z = sfi.participation_z(V, links, comm)
+    deg = defaultdict(float)
+    for l in links:
+        deg[l["source"]] += l.get("peso", 1); deg[l["target"]] += l.get("peso", 1)
+    print(f"\n== conectores entre comunidades (participação; CNM: {k} comunidades, Q={Qd}) ==")
+    print("   os de MAIOR participação P — ligações espalhadas por comunidades:")
+    for n in sorted(V, key=lambda n: -P[n])[:15]:
+        print(f"   P={P[n]:.2f} z={z[n]:+.1f} {sfi.ga_role(P[n], z[n]):14} | {AXN.get(axis[n], '—'):22} | {lab[n][:38]}")
+
+    print("\n== contraste: os TOP intermediação são conectores ou só hubs citados? ==")
+    for n, c in sorted(CB.items(), key=lambda kv: -kv[1])[:10]:
+        print(f"   bt={c:8.0f} P={P[n]:.2f} {sfi.ga_role(P[n], z[n]):14} | {lab[n][:40]}")
 
     print("\n== ordem de conexão entre eixos (caminho mais curto de cocitação) ==")
     groups = {a: [n for n in V if axis[n] == a] for a in ("Cyb", "Reg", "PolInd")}
