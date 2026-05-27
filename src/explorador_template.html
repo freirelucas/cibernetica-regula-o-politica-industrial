@@ -144,6 +144,8 @@ __JS_DATA__
   Object.values(nbrs).forEach(a=>a.sort((x,y)=>y.w-x.w));
   const crossOf = l => { const a=byId[l.source].axis,b=byId[l.target].axis; return a&&b&&a!==b; };
   const rad = d => 4 + Math.sqrt(d.cited_by||0)/7;
+  const citThresh = [...allNodes].map(n=>n.cited_by||0).sort((a,b)=>b-a)[15] || 1e9;
+  const labelable = d => d.seed || (d.cited_by||0) >= citThresh;  // rotula só sementes e as ~16 mais citadas
 
   const svg = d3.select('#graph');
   const stage = document.querySelector('.stage');
@@ -158,11 +160,11 @@ __JS_DATA__
   const tip = document.getElementById('tip');
 
   const sim = d3.forceSimulation()
-    .force('link', d3.forceLink().id(d=>d.id).distance(l=>90-Math.min(l.peso,30)).strength(.35))
-    .force('charge', d3.forceManyBody().strength(-140))
-    .force('x', d3.forceX(W/2).strength(.06))
-    .force('y', d3.forceY(H/2).strength(.06))
-    .force('collide', d3.forceCollide().radius(d=>rad(d)+5))
+    .force('link', d3.forceLink().id(d=>d.id).distance(l=>100-Math.min(l.peso,28)*1.6).strength(.2))
+    .force('charge', d3.forceManyBody().strength(-300))
+    .force('x', d3.forceX(W/2).strength(.05))
+    .force('y', d3.forceY(H/2).strength(.05))
+    .force('collide', d3.forceCollide().radius(d=>rad(d)+9))
     .on('tick', ticked);
 
   // estado dos filtros
@@ -206,8 +208,7 @@ __JS_DATA__
     label = label.data(ns, d=>d.id);
     label.exit().remove();
     label = label.enter().append('text').attr('class','lbl').attr('dx',d=>rad(d)+3).attr('dy',3)
-      .text(d=>d.label.slice(0,26)).merge(label)
-      .style('display', showLabels?null:'none');
+      .text(d=>d.label.slice(0,26)).merge(label);
 
     sim.nodes(ns);
     sim.force('link').links(ls);
@@ -225,7 +226,7 @@ __JS_DATA__
   function hoverOn(ev,d){
     const keep = new Set([d.id]); nbrs[d.id].forEach(o=>keep.add(o.id));
     node.classed('dim', n=>!keep.has(n.id));
-    label.classed('dim', n=>!keep.has(n.id));
+    label.style('display', n=>keep.has(n.id)?null:'none');  // revela os rótulos da vizinhança
     link.classed('hl', l=>(l.source.id===d.id||l.target.id===d.id))
         .classed('dim', l=>!(l.source.id===d.id||l.target.id===d.id));
     tip.style.display='block';
@@ -261,12 +262,17 @@ __JS_DATA__
   document.getElementById('detClose').onclick=()=>{document.getElementById('detail').style.display='none';};
   svg.on('click', ()=>{document.getElementById('detail').style.display='none';});
 
+  const matches = n => ((n.label||'')+' '+(n.axis||'')+' '+(AXN[n.axis||''])).toLowerCase().includes(query.toLowerCase());
+  function updateLabels(){
+    label.style('display', d=>{
+      if (query) return matches(d) ? null : 'none';
+      if (!showLabels) return 'none';
+      return labelable(d) ? null : 'none';
+    });
+  }
   function applyQuery(){
-    if (!query){ node.style('opacity',null); label.style('opacity',showLabels?null:0); return; }
-    const q=query.toLowerCase();
-    const hit=n=>((n.label||'')+' '+(n.axis||'')+' '+(AXN[n.axis||''])).toLowerCase().includes(q);
-    node.style('opacity',n=>hit(n)?1:.12);
-    label.style('opacity',n=>(showLabels&&hit(n))?1:0);
+    node.style('opacity', query ? (n=>matches(n)?1:.12) : null);
+    updateLabels();
   }
 
   function dStart(ev){ if(!ev.active) sim.alphaTarget(.3).restart(); ev.subject.fx=ev.subject.x; ev.subject.fy=ev.subject.y; }
@@ -285,7 +291,7 @@ __JS_DATA__
   const wEl=document.getElementById('wmin'), wv=document.getElementById('wval');
   wv.textContent=wmin;
   wEl.addEventListener('input',e=>{wmin=+e.target.value; wv.textContent=wmin; restart(false);});
-  document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; label.style('display',showLabels?null:'none'); applyQuery();});
+  document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; updateLabels();});
   document.getElementById('crossOnly').addEventListener('change',e=>{crossOnly=e.target.checked; restart(true);});
   document.getElementById('search').addEventListener('input',e=>{query=e.target.value.trim(); applyQuery();});
   document.getElementById('reset').addEventListener('click',()=>restart(true));
