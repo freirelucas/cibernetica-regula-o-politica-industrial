@@ -84,7 +84,13 @@ def test_rayyan_export(tmp_path):
     assert ris.count("TY  - ") == ris.count("ER  - ") == len(works)
     rows = list(_csv.DictReader(open(tmp_path / "rayyan_sintese.csv", encoding="utf-8")))
     assert len(rows) == len(works)
-    assert {"title", "authors", "year", "doi", "keywords", "notes"} <= set(rows[0].keys())
+    # colunas do exemplo oficial do Rayyan + anotações
+    assert {"key", "title", "authors", "journal", "issn", "volume", "issue", "pages", "year",
+            "publisher", "url", "abstract", "doi", "keywords", "notes"} <= set(rows[0].keys())
+    # contêiner .zip com os dois arquivos de referência
+    import zipfile
+    with zipfile.ZipFile(tmp_path / "rayyan_sintese.zip") as z:
+        assert set(z.namelist()) == {"rayyan_sintese.ris", "rayyan_sintese.csv"}
 
 
 def test_rayyan_ris_wellformed(tmp_path):

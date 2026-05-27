@@ -19,10 +19,12 @@ import csv
 import json
 import os
 import re
+import zipfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
 BRASIL = os.path.join(ROOT, "docs", "material-brasil", "dataset_politica_industrial_brasil.csv")
+ENRICH = os.path.join(ROOT, "data", "openalex_enrich.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 
 AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Política industrial"}
@@ -113,6 +115,24 @@ def consolidate():
     return [store[k] for k in sorted(store, key=lambda k: (store[k]["year"] or "0"), reverse=True)]
 
 
+def apply_enrich(works):
+    """Preenche resumo/DOI/url ausentes a partir do cache do OpenAlex (se houver)."""
+    if not os.path.exists(ENRICH):
+        return works
+    enr = json.load(open(ENRICH, encoding="utf-8"))
+    for e in works:
+        d = enr.get(_norm(e["title"]))
+        if not d:
+            continue
+        if not e["abstract"] and d.get("abstract"):
+            e["abstract"] = d["abstract"]
+        if not e["doi"] and d.get("doi"):
+            e["doi"] = d["doi"]
+        if not e["url"] and d.get("oa_id"):
+            e["url"] = f"https://openalex.org/{d['oa_id']}"
+    return works
+
+
 def _note(e):
     src = "Brasil" if any("Brasil" in x for x in e["roles"]) else "núcleo global"
     return (f"Síntese cienciométrica IPEA · fonte: {src}"
@@ -124,7 +144,7 @@ def to_ris(works):
     out = []
     for e in works:
         out.append(f"TY  - {e['type']}")
-        out.append(f"TI  - {_oneline(e['title'])}")
+        out.append(f"T1  - {_oneline(e['title'])}")
         for a in e["authors"]:
             out.append(f"AU  - {_oneline(a)}")
         if e["year"]:
@@ -148,22 +168,32 @@ def to_ris(works):
 
 
 def to_csv(works, path):
-    cols = ["key", "title", "authors", "journal", "year", "doi", "url", "abstract", "keywords", "notes"]
+    # colunas e convenções do exemplo oficial do Rayyan (autores separados por " and ");
+    # keywords/notes ao final carregam eixo e papel para a triagem.
+    cols = ["key", "title", "authors", "journal", "issn", "volume", "issue", "pages", "year",
+            "publisher", "url", "abstract", "doi", "keywords", "notes"]
     with open(path, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(cols)
         for i, e in enumerate(works, 1):
             kw = "; ".join([f"eixo: {a}" for a in sorted(e["axes"])] + [f"papel: {r}" for r in sorted(e["roles"])])
-            w.writerow([f"R{i:03d}", _oneline(e["title"]), "; ".join(_oneline(a) for a in e["authors"]),
-                        _oneline(e["venue"]), e["year"], e["doi"], e["url"], _oneline(e["abstract"]), kw, _note(e)])
+            w.writerow([f"R{i:03d}", _oneline(e["title"]), " and ".join(_oneline(a) for a in e["authors"]),
+                        _oneline(e["venue"]), "", "", "", "", e["year"], "", e["url"],
+                        _oneline(e["abstract"]), e["doi"], kw, _note(e)])
 
 
 def build(out=DADOS):
-    works = consolidate()
+    works = apply_enrich(consolidate())
     os.makedirs(out, exist_ok=True)
-    with open(os.path.join(out, "rayyan_sintese.ris"), "w", encoding="utf-8") as f:
+    ris_path = os.path.join(out, "rayyan_sintese.ris")
+    csv_path = os.path.join(out, "rayyan_sintese.csv")
+    with open(ris_path, "w", encoding="utf-8") as f:
         f.write(to_ris(works))
-    to_csv(works, os.path.join(out, "rayyan_sintese.csv"))
+    to_csv(works, csv_path)
+    # contêiner .zip (formato aceito pelo Rayyan via "My Library")
+    with zipfile.ZipFile(os.path.join(out, "rayyan_sintese.zip"), "w", zipfile.ZIP_DEFLATED) as z:
+        z.write(ris_path, "rayyan_sintese.ris")
+        z.write(csv_path, "rayyan_sintese.csv")
     return works
 
 
