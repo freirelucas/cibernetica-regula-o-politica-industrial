@@ -80,6 +80,22 @@ def write_csvs(R, out):
     return 8
 
 
+def write_network_csvs(net, out):
+    """Exporta a rede de cocitação real (nós e arestas) em CSV (Excel/Gephi)."""
+    def w(name, header, rows):
+        with open(os.path.join(out, name), "w", encoding="utf-8", newline="") as f:
+            cw = csv.writer(f, lineterminator="\n"); cw.writerow(header); cw.writerows(rows)
+    nodes, links = net.get("nodes", []), net.get("links", [])
+    if not nodes:
+        return 0
+    w("10_rede_nos.csv", ["id_openalex", "obra", "eixo", "citacoes", "ano", "semente"],
+      [(n["id"], n.get("label", ""), n.get("axis", ""), n.get("cited_by", 0),
+        n.get("year") or "", n.get("seed", False)) for n in nodes])
+    w("11_rede_arestas.csv", ["origem", "destino", "tipo", "cocitacoes"],
+      [(l["source"], l["target"], l.get("tipo", "cocita"), l.get("peso", 1)) for l in links])
+    return 2
+
+
 COLDOC = {
     "parametro": "nome do parâmetro/métrica", "valor": "valor", "descricao": "descrição do parâmetro",
     "ano": "ano de publicação", "citacoes": "total de citações (OpenAlex)",
@@ -93,6 +109,10 @@ COLDOC = {
     "id_openalex": "identificador OpenAlex", "referencia": "referência bibliográfica da obra-semente",
     "Cyb": "trabalhos do eixo Cibernética no ano", "Reg": "trabalhos do eixo Regulação no ano",
     "PolInd": "trabalhos do eixo Política Industrial no ano",
+    "obra": "rótulo/título da obra (nó da rede)", "eixo": "eixo temático do nó (Cyb/Reg/PolInd)",
+    "semente": "indica se é obra-semente (True/False)", "origem": "nó de origem da aresta (id OpenAlex)",
+    "destino": "nó de destino da aresta (id OpenAlex)", "tipo": "tipo de ligação (cocita)",
+    "cocitacoes": "número de vezes citadas em conjunto (peso da cocitação)",
 }
 
 
@@ -100,7 +120,7 @@ def write_dicionario(out):
     """Gera DICIONARIO.csv (arquivo, coluna, descrição) a partir dos CSV gerados."""
     import glob
     rows = []
-    for fp in sorted(glob.glob(os.path.join(out, "0*.csv"))):
+    for fp in sorted(glob.glob(os.path.join(out, "[0-9][0-9]_*.csv"))):
         name = os.path.basename(fp)
         cols = open(fp, encoding="utf-8").readline().strip().split(",")
         rows += [(name, c, COLDOC.get(c, "")) for c in cols]
@@ -189,9 +209,12 @@ def main():
         print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB)")
 
     n = write_csvs(R, DADOS)
+    n += write_network_csvs(net, DADOS)
     write_dicionario(DADOS)
-    print(f"dados: {n} CSVs gerados a partir do JSON em {DADOS}")
+    print(f"dados: {n} CSVs gerados a partir do JSON/rede em {DADOS}")
     shutil.copy(JSON_SRC, os.path.join(DADOS, "scisci_results.json"))
+    if os.path.exists(net_src):
+        shutil.copy(net_src, os.path.join(DADOS, "rede_cocitacao.json"))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
 
     missing = [s for s in SECTIONS if f'id="{s}"' not in html]

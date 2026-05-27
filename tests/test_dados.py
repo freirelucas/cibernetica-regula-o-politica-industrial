@@ -1,4 +1,7 @@
 """Integridade do JSON-fonte e dos CSV exportados (cabeçalhos em PT)."""
+import json
+import os
+
 import build_site
 
 REQUIRED_KEYS = [
@@ -54,3 +57,17 @@ def test_csv_rows(results, tmp_path):
     for name, n in counts.items():
         linhas = (tmp_path / name).read_text(encoding="utf-8").strip().splitlines()
         assert len(linhas) == n + 1, f"{name}: {len(linhas)-1} linhas != {n}"
+
+
+def test_network_csv(root, tmp_path):
+    net_src = os.path.join(root, "data", "network.json")
+    if not os.path.exists(net_src):
+        return
+    net = json.load(open(net_src, encoding="utf-8"))
+    assert build_site.write_network_csvs(net, str(tmp_path)) == 2
+    nos = (tmp_path / "10_rede_nos.csv").read_text(encoding="utf-8").strip().splitlines()
+    arr = (tmp_path / "11_rede_arestas.csv").read_text(encoding="utf-8").strip().splitlines()
+    assert nos[0] == "id_openalex,obra,eixo,citacoes,ano,semente"
+    assert arr[0] == "origem,destino,tipo,cocitacoes"
+    assert len(nos) - 1 == len(net["nodes"])
+    assert len(arr) - 1 == len(net["links"])
