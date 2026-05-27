@@ -4,15 +4,13 @@
   "W2013386523",
   "W2120106358",
   "W2137358449",
-  "W3124879925",
-  "W4285719527"
+  "W3124879925"
  ],
  "global_labels": {
   "W2013386523": "The Competitive Advantage of Nations",
   "W2120106358": "Economic development as self-discovery",
   "W2137358449": "An Evolutionary Theory of Economic Change.",
-  "W3124879925": "Rodrik · Industrial Policy 21C",
-  "W4285719527": "W4285719527"
+  "W3124879925": "Rodrik · Industrial Policy 21C"
  },
  "brasil": [
   {
@@ -25,20 +23,11 @@
    ]
   },
   {
-   "oa_id": "W2153465427",
-   "doi": "10.1017/s0305741011001482",
-   "title": "Fear for Manufacturing? China and the Future of Industry in Brazil and Latin America",
-   "cita": [
-    "W4285719527"
-   ]
-  },
-  {
    "oa_id": "W2756082066",
    "doi": "10.1016/j.enpol.2017.08.050",
    "title": "Regional industrial policy in the wind energy sector: The case of the State of Rio Grande do Sul, Brazil",
    "cita": [
-    "W2013386523",
-    "W4285719527"
+    "W2013386523"
    ]
   },
   {
@@ -89,14 +78,6 @@
    "title": "From Industrial Policy to Regional and Local Locational Policy: Experience from Santa Catarina/Brazil",
    "cita": [
     "W2013386523"
-   ]
-  },
-  {
-   "oa_id": "W2902795424",
-   "doi": "10.1590/1982-3533.2018v27n3art12",
-   "title": "O Brasil no novo milênio: regulação, progresso técnico e novo desenvolvimentismo",
-   "cita": [
-    "W4285719527"
    ]
   },
   {

@@ -153,14 +153,6 @@
    "seed": false
   },
   {
-   "id": "W1601128533",
-   "label": "W1601128533",
-   "axis": "",
-   "cited_by": 0,
-   "year": null,
-   "seed": false
-  },
-  {
    "id": "W1999686839",
    "label": "The Functions of the Executive",
    "axis": "",
@@ -249,14 +241,6 @@
    "seed": false
   },
   {
-   "id": "W4285719527",
-   "label": "W4285719527",
-   "axis": "",
-   "cited_by": 0,
-   "year": null,
-   "seed": false
-  },
-  {
    "id": "W1993663609",
    "label": "The iron cage revisited institutional isomorphism and collec",
    "axis": "Reg",
@@ -326,14 +310,6 @@
    "axis": "",
    "cited_by": 12378,
    "year": 1979,
-   "seed": false
-  },
-  {
-   "id": "W4206762723",
-   "label": "W4206762723",
-   "axis": "",
-   "cited_by": 0,
-   "year": null,
    "seed": false
   },
   {
@@ -1177,14 +1153,6 @@
    "seed": false
   },
   {
-   "id": "W2091579301",
-   "label": "W2091579301",
-   "axis": "",
-   "cited_by": 0,
-   "year": null,
-   "seed": false
-  },
-  {
    "id": "W4231371657",
    "label": "Diagnosing the System for Organisations",
    "axis": "Cyb",
@@ -1806,14 +1774,6 @@
    "axis": "",
    "cited_by": 8169,
    "year": 1959,
-   "seed": false
-  },
-  {
-   "id": "W4255725700",
-   "label": "W4255725700",
-   "axis": "",
-   "cited_by": 0,
-   "year": null,
    "seed": false
   },
   {
@@ -2827,18 +2787,6 @@
    "peso": 4
   },
   {
-   "source": "W1855283887",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2048086870",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 19
-  },
-  {
    "source": "W1498488428",
    "target": "W1541456364",
    "tipo": "cocita",
@@ -3086,12 +3034,6 @@
   },
   {
    "source": "W2048086870",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W2048086870",
    "target": "W2137358449",
    "tipo": "cocita",
    "peso": 3
@@ -3107,30 +3049,6 @@
    "target": "W2753533763",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W2091579301",
-   "target": "W2137358449",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2091579301",
-   "target": "W2493894436",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2091579301",
-   "target": "W2753533763",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2091579301",
-   "target": "W3124140110",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2108020239",
@@ -3297,24 +3215,6 @@
   {
    "source": "W2048086870",
    "target": "W2988934653",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2091579301",
-   "target": "W2111030512",
-   "tipo": "cocita",
-   "peso": 11
-  },
-  {
-   "source": "W2091579301",
-   "target": "W2123755784",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W2091579301",
-   "target": "W2164284962",
    "tipo": "cocita",
    "peso": 3
   },
@@ -3685,12 +3585,6 @@
    "peso": 14
   },
   {
-   "source": "W2164284962",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 9
-  },
-  {
    "source": "W1500910854",
    "target": "W2111030512",
    "tipo": "cocita",
@@ -3704,12 +3598,6 @@
   },
   {
    "source": "W1527571715",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1527571715",
    "target": "W2111030512",
    "tipo": "cocita",
    "peso": 19
@@ -3719,12 +3607,6 @@
    "target": "W2753533763",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W1995875735",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W1540626093",
@@ -3775,12 +3657,6 @@
    "peso": 35
   },
   {
-   "source": "W1492856410",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 25
-  },
-  {
    "source": "W1498488428",
    "target": "W2111030512",
    "tipo": "cocita",
@@ -3788,33 +3664,15 @@
   },
   {
    "source": "W1498488428",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W1498488428",
    "target": "W90769783",
    "tipo": "cocita",
    "peso": 3
   },
   {
    "source": "W1999686839",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1999686839",
    "target": "W90769783",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2111030512",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 28
   },
   {
    "source": "W2111030512",
@@ -3827,12 +3685,6 @@
    "target": "W90769783",
    "tipo": "cocita",
    "peso": 15
-  },
-  {
-   "source": "W4285719527",
-   "target": "W90769783",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W597091629",
@@ -3896,12 +3748,6 @@
   },
   {
    "source": "W1492856410",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W1492856410",
    "target": "W2493894436",
    "tipo": "cocita",
    "peso": 6
@@ -3917,12 +3763,6 @@
    "target": "W2048086870",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1601944394",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1601944394",
@@ -3973,22 +3813,10 @@
    "peso": 14
   },
   {
-   "source": "W1527571715",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W2048086870",
    "target": "W3026354358",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W3026354358",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W1965278510",
@@ -4940,33 +4768,9 @@
   },
   {
    "source": "W2123755784",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 34
-  },
-  {
-   "source": "W2123755784",
    "target": "W52678905",
    "tipo": "cocita",
    "peso": 42
-  },
-  {
-   "source": "W2140256961",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2970049487",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W4285719527",
-   "target": "W52678905",
-   "tipo": "cocita",
-   "peso": 15
   },
   {
    "source": "W1916207017",
@@ -5029,18 +4833,6 @@
    "peso": 3
   },
   {
-   "source": "W1731457293",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2091579301",
-   "target": "W582908774",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1492856410",
    "target": "W1995156820",
    "tipo": "cocita",
@@ -5071,12 +4863,6 @@
    "peso": 15
   },
   {
-   "source": "W1995156820",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W2025177555",
    "target": "W2099069868",
    "tipo": "cocita",
@@ -5089,28 +4875,10 @@
    "peso": 11
   },
   {
-   "source": "W2025177555",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 12
-  },
-  {
    "source": "W2048086870",
    "target": "W2099069868",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W2099069868",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 9
-  },
-  {
-   "source": "W4205188686",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 14
   },
   {
    "source": "W148613442",
@@ -5185,12 +4953,6 @@
    "peso": 15
   },
   {
-   "source": "W148613442",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1540626093",
    "target": "W2025177555",
    "tipo": "cocita",
@@ -5210,12 +4972,6 @@
   },
   {
    "source": "W1540626093",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 12
-  },
-  {
-   "source": "W1540626093",
    "target": "W52678905",
    "tipo": "cocita",
    "peso": 26
@@ -5231,12 +4987,6 @@
    "target": "W2489535817",
    "tipo": "cocita",
    "peso": 14
-  },
-  {
-   "source": "W1566478880",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 34
   },
   {
    "source": "W2025177555",
@@ -5264,12 +5014,6 @@
   },
   {
    "source": "W2489535817",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2489535817",
    "target": "W52678905",
    "tipo": "cocita",
    "peso": 20
@@ -5279,12 +5023,6 @@
    "target": "W2111030512",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W2010793828",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W2004899202",
@@ -5359,22 +5097,10 @@
    "peso": 3
   },
   {
-   "source": "W1916207017",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2025177555",
    "target": "W2493894436",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2493894436",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W1492856410",
@@ -5390,12 +5116,6 @@
   },
   {
    "source": "W1530425941",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1530425941",
    "target": "W52678905",
    "tipo": "cocita",
    "peso": 21
@@ -5405,12 +5125,6 @@
    "target": "W582908774",
    "tipo": "cocita",
    "peso": 16
-  },
-  {
-   "source": "W4285719527",
-   "target": "W582908774",
-   "tipo": "cocita",
-   "peso": 14
   },
   {
    "source": "W1540626093",
@@ -5477,12 +5191,6 @@
    "target": "W2752617332",
    "tipo": "cocita",
    "peso": 7
-  },
-  {
-   "source": "W1566344170",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W148613442",
@@ -5642,12 +5350,6 @@
   },
   {
    "source": "W1517138715",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1517138715",
    "target": "W1999997471",
    "tipo": "cocita",
    "peso": 3
@@ -5657,12 +5359,6 @@
    "target": "W2013386523",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W1554940969",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1554940969",
@@ -5687,12 +5383,6 @@
    "target": "W2099069868",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2013386523",
-   "tipo": "cocita",
-   "peso": 8
   },
   {
    "source": "W2013386523",
@@ -5723,12 +5413,6 @@
    "target": "W4205188686",
    "tipo": "cocita",
    "peso": 10
-  },
-  {
-   "source": "W2091579301",
-   "target": "W4205188686",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2111030512",
@@ -5840,12 +5524,6 @@
   },
   {
    "source": "W1968459280",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W1968459280",
    "target": "W52678905",
    "tipo": "cocita",
    "peso": 16
@@ -5864,33 +5542,15 @@
   },
   {
    "source": "W2136083730",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W2136083730",
    "target": "W603352075",
    "tipo": "cocita",
    "peso": 4
   },
   {
    "source": "W233775549",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 9
-  },
-  {
-   "source": "W233775549",
    "target": "W603352075",
    "tipo": "cocita",
    "peso": 8
-  },
-  {
-   "source": "W4285719527",
-   "target": "W603352075",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W52678905",
@@ -5921,12 +5581,6 @@
    "target": "W1983425281",
    "tipo": "cocita",
    "peso": 7
-  },
-  {
-   "source": "W2132454116",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W1540626093",
@@ -6203,12 +5857,6 @@
    "target": "W4205188686",
    "tipo": "cocita",
    "peso": 11
-  },
-  {
-   "source": "W1968044930",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W1566478880",
@@ -8509,22 +8157,10 @@
    "peso": 4
   },
   {
-   "source": "W1495419098",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W1495961791",
    "target": "W2111030512",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W1495961791",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W1495961791",
@@ -8543,24 +8179,6 @@
    "target": "W2123755784",
    "tipo": "cocita",
    "peso": 18
-  },
-  {
-   "source": "W1983425281",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2083449279",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2101157755",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 8
   },
   {
    "source": "W1492856410",
@@ -8701,12 +8319,6 @@
    "peso": 3
   },
   {
-   "source": "W2036963701",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
    "source": "W2099069868",
    "target": "W2123755784",
    "tipo": "cocita",
@@ -8741,12 +8353,6 @@
    "target": "W2988934653",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2312190944",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W2312190944",
@@ -8785,58 +8391,10 @@
    "peso": 3
   },
   {
-   "source": "W1601944394",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1970428482",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W1971074578",
    "target": "W233775549",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1971074578",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2027321021",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2037306909",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2753533763",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W4285719527",
-   "target": "W67809301",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W4285719527",
-   "target": "W92085004",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1227306373",
@@ -8996,33 +8554,15 @@
   },
   {
    "source": "W1540626093",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1540626093",
    "target": "W3026354358",
    "tipo": "cocita",
    "peso": 4
   },
   {
    "source": "W1566478880",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W1566478880",
    "target": "W3026354358",
    "tipo": "cocita",
    "peso": 9
-  },
-  {
-   "source": "W1970428482",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2072863585",
@@ -9059,24 +8599,6 @@
    "target": "W52678905",
    "tipo": "cocita",
    "peso": 10
-  },
-  {
-   "source": "W2091579301",
-   "target": "W4237835702",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2091579301",
-   "target": "W52678905",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2091579301",
-   "target": "W597091629",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2111030512",
@@ -9187,12 +8709,6 @@
    "peso": 4
   },
   {
-   "source": "W2026948646",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
    "source": "W2036963701",
    "target": "W2970049487",
    "tipo": "cocita",
@@ -9253,12 +8769,6 @@
    "peso": 3
   },
   {
-   "source": "W2141951329",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W2325487953",
    "target": "W2970049487",
    "tipo": "cocita",
@@ -9269,12 +8779,6 @@
    "target": "W4205188686",
    "tipo": "cocita",
    "peso": 7
-  },
-  {
-   "source": "W2325487953",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 10
   },
   {
    "source": "W1993663609",
@@ -9410,19 +8914,7 @@
   },
   {
    "source": "W2047233587",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2047233587",
    "target": "W77672729",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2072863585",
-   "target": "W4285719527",
    "tipo": "cocita",
    "peso": 4
   },
@@ -9539,18 +9031,6 @@
    "target": "W603352075",
    "tipo": "cocita",
    "peso": 15
-  },
-  {
-   "source": "W2154683088",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 34
-  },
-  {
-   "source": "W4231371657",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 12
   },
   {
    "source": "W1495419098",
@@ -9775,12 +9255,6 @@
    "peso": 3
   },
   {
-   "source": "W1500910854",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W1527571715",
    "target": "W1995156820",
    "tipo": "cocita",
@@ -9893,12 +9367,6 @@
    "target": "W582908774",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W4244612406",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 13
   },
   {
    "source": "W4244612406",
@@ -10441,12 +9909,6 @@
    "peso": 3
   },
   {
-   "source": "W1995875735",
-   "target": "W2091579301",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W1968044930",
    "target": "W2086450534",
    "tipo": "cocita",
@@ -10519,12 +9981,6 @@
    "peso": 8
   },
   {
-   "source": "W2091579301",
-   "target": "W2114648917",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2114648917",
    "target": "W4244612406",
    "tipo": "cocita",
@@ -10565,12 +10021,6 @@
    "target": "W2123709218",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W2123709218",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
   },
   {
    "source": "W1527571715",
@@ -11203,22 +10653,10 @@
    "peso": 3
   },
   {
-   "source": "W201578715",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2140256961",
    "target": "W2154683088",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2566856888",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 8
   },
   {
    "source": "W2083449279",
@@ -11287,12 +10725,6 @@
    "peso": 3
   },
   {
-   "source": "W2098978150",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1995156820",
    "target": "W2493894436",
    "tipo": "cocita",
@@ -11315,12 +10747,6 @@
    "target": "W2753533763",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W4243328523",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 9
   },
   {
    "source": "W2061977616",
@@ -11407,12 +10833,6 @@
    "peso": 9
   },
   {
-   "source": "W2165238389",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W2489535817",
    "target": "W4244612406",
    "tipo": "cocita",
@@ -11443,12 +10863,6 @@
    "peso": 3
   },
   {
-   "source": "W2010793828",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W4205188686",
    "target": "W603352075",
    "tipo": "cocita",
@@ -11477,12 +10891,6 @@
    "target": "W2154683088",
    "tipo": "cocita",
    "peso": 7
-  },
-  {
-   "source": "W1606540910",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W1530425941",
@@ -11761,12 +11169,6 @@
    "peso": 3
   },
   {
-   "source": "W1601128533",
-   "target": "W1973308529",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1501219137",
    "target": "W1504789830",
    "tipo": "cocita",
@@ -11927,12 +11329,6 @@
    "target": "W2489535817",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2137358449",
-   "tipo": "cocita",
-   "peso": 21
   },
   {
    "source": "W2123709218",
@@ -12211,18 +11607,6 @@
    "peso": 9
   },
   {
-   "source": "W1601629960",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 16
-  },
-  {
-   "source": "W1993663609",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 10
-  },
-  {
    "source": "W1520641906",
    "target": "W1548856973",
    "tipo": "cocita",
@@ -12482,12 +11866,6 @@
   },
   {
    "source": "W142073415",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W142073415",
    "target": "W595329111",
    "tipo": "cocita",
    "peso": 16
@@ -12499,22 +11877,10 @@
    "peso": 26
   },
   {
-   "source": "W1520641906",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 17
-  },
-  {
    "source": "W1574300438",
    "target": "W2126563689",
    "tipo": "cocita",
    "peso": 12
-  },
-  {
-   "source": "W1574300438",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1601629960",
@@ -12527,12 +11893,6 @@
    "target": "W2127454860",
    "tipo": "cocita",
    "peso": 8
-  },
-  {
-   "source": "W1601629960",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 37
   },
   {
    "source": "W2126563689",
@@ -12548,12 +11908,6 @@
   },
   {
    "source": "W2126563689",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 81
-  },
-  {
-   "source": "W2126563689",
    "target": "W595329111",
    "tipo": "cocita",
    "peso": 11
@@ -12566,27 +11920,9 @@
   },
   {
    "source": "W2127454860",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2127454860",
    "target": "W595329111",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W221732451",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W4206762723",
-   "target": "W595329111",
-   "tipo": "cocita",
-   "peso": 7
   },
   {
    "source": "W1566344170",
@@ -13399,24 +12735,6 @@
    "peso": 3
   },
   {
-   "source": "W1520641906",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 10
-  },
-  {
-   "source": "W1601629960",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 37
-  },
-  {
-   "source": "W221732451",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1601629960",
    "target": "W2062663664",
    "tipo": "cocita",
@@ -14143,36 +13461,6 @@
    "peso": 4
   },
   {
-   "source": "W2127617481",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 11
-  },
-  {
-   "source": "W2127617481",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2134758682",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W2134758682",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W4255725700",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 10
-  },
-  {
    "source": "W142073415",
    "target": "W2134758682",
    "tipo": "cocita",
@@ -14187,18 +13475,6 @@
   {
    "source": "W1980975001",
    "target": "W1993663609",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1500608409",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W4255725700",
-   "target": "W4371184",
    "tipo": "cocita",
    "peso": 3
   },
@@ -14281,12 +13557,6 @@
    "peso": 3
   },
   {
-   "source": "W1570538375",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W1500608409",
    "target": "W2003934805",
    "tipo": "cocita",
@@ -14331,18 +13601,6 @@
   {
    "source": "W1965278510",
    "target": "W3123282572",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1965278510",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W3123282572",
-   "target": "W4285719527",
    "tipo": "cocita",
    "peso": 4
   },
@@ -14413,12 +13671,6 @@
    "peso": 10
   },
   {
-   "source": "W1500608409",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W2003934805",
    "target": "W2080554996",
    "tipo": "cocita",
@@ -14447,18 +13699,6 @@
    "target": "W2127617481",
    "tipo": "cocita",
    "peso": 13
-  },
-  {
-   "source": "W2080554996",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 13
-  },
-  {
-   "source": "W2127617481",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 11
   },
   {
    "source": "W142073415",
@@ -14527,12 +13767,6 @@
    "peso": 8
   },
   {
-   "source": "W2003934805",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W1574300438",
    "target": "W570136161",
    "tipo": "cocita",
@@ -14545,50 +13779,14 @@
    "peso": 3
   },
   {
-   "source": "W1574300438",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1574300438",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W2003934805",
    "target": "W595329111",
    "tipo": "cocita",
    "peso": 4
   },
   {
-   "source": "W4255725700",
-   "target": "W595329111",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W4285719527",
-   "target": "W595329111",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W1980975001",
    "target": "W2127454860",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1570538375",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2037927976",
-   "target": "W4255725700",
    "tipo": "cocita",
    "peso": 3
   },
@@ -14609,12 +13807,6 @@
    "target": "W595329111",
    "tipo": "cocita",
    "peso": 10
-  },
-  {
-   "source": "W27930607",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W1570538375",
@@ -14701,20 +13893,8 @@
    "peso": 7
   },
   {
-   "source": "W1520641906",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W2009399369",
    "target": "W221732451",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2091579301",
-   "target": "W2108795964",
    "tipo": "cocita",
    "peso": 3
   },
@@ -14779,30 +13959,6 @@
    "peso": 4
   },
   {
-   "source": "W1895366050",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2037927976",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2126563689",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 16
-  },
-  {
-   "source": "W4206762723",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 20
-  },
-  {
    "source": "W1684540946",
    "target": "W3022339544",
    "tipo": "cocita",
@@ -14833,24 +13989,6 @@
    "peso": 5
   },
   {
-   "source": "W1980406593",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2080554996",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W4206762723",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 14
-  },
-  {
    "source": "W1570538375",
    "target": "W2009399369",
    "tipo": "cocita",
@@ -14859,12 +13997,6 @@
   {
    "source": "W2009399369",
    "target": "W2080554996",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2057748843",
-   "target": "W4255725700",
    "tipo": "cocita",
    "peso": 3
   },
@@ -14881,18 +14013,6 @@
    "peso": 3
   },
   {
-   "source": "W27930607",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1548856973",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1548856973",
    "target": "W2057748843",
    "tipo": "cocita",
@@ -14905,22 +14025,10 @@
    "peso": 8
   },
   {
-   "source": "W2037927976",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W2080554996",
    "target": "W2134758682",
    "tipo": "cocita",
    "peso": 6
-  },
-  {
-   "source": "W2080554996",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W158727920",
@@ -14983,12 +14091,6 @@
    "peso": 4
   },
   {
-   "source": "W142073415",
-   "target": "W4255725700",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W2057748843",
    "target": "W2127617481",
    "tipo": "cocita",
@@ -15013,28 +14115,10 @@
    "peso": 4
   },
   {
-   "source": "W2126563689",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 15
-  },
-  {
-   "source": "W1578152577",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W158727920",
    "target": "W201578715",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2020982650",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W2126563689",
@@ -15043,58 +14127,10 @@
    "peso": 5
   },
   {
-   "source": "W2147111138",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1585847492",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2043474425",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1570538375",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2009399369",
    "target": "W2127617481",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2009399369",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2057748843",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2082088739",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2128634656",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 7
   },
   {
    "source": "W2057748843",
@@ -15115,12 +14151,6 @@
    "peso": 3
   },
   {
-   "source": "W2134758682",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W1527311855",
    "target": "W2126563689",
    "tipo": "cocita",
@@ -15129,24 +14159,6 @@
   {
    "source": "W1527311855",
    "target": "W2127454860",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1527311855",
-   "target": "W4206762723",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W4206762723",
-   "target": "W570136161",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2020982650",
-   "target": "W4255725700",
    "tipo": "cocita",
    "peso": 3
   },
@@ -15163,12 +14175,6 @@
    "peso": 14
   },
   {
-   "source": "W2109469951",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W1569410165",
    "target": "W2147111138",
    "tipo": "cocita",
@@ -15181,18 +14187,6 @@
    "peso": 4
   },
   {
-   "source": "W4255725700",
-   "target": "W4386803846",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W4206762723",
-   "target": "W4386803846",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W2120106358",
    "target": "W3124879925",
    "tipo": "cocita",
@@ -15203,12 +14197,6 @@
    "target": "W1490995146",
    "tipo": "cocita",
    "peso": 10
-  },
-  {
-   "source": "W1486212401",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W1486212401",
@@ -15236,12 +14224,6 @@
   },
   {
    "source": "W1490995146",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1490995146",
    "target": "W1979968159",
    "tipo": "cocita",
    "peso": 8
@@ -15261,12 +14243,6 @@
   {
    "source": "W1490995146",
    "target": "W2120106358",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W1979968159",
    "tipo": "cocita",
    "peso": 3
   },
@@ -15305,18 +14281,6 @@
    "target": "W3124879925",
    "tipo": "cocita",
    "peso": 14
-  },
-  {
-   "source": "W1494609826",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W3124879925",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 17
   },
   {
    "source": "W1535129021",
@@ -15503,24 +14467,6 @@
    "target": "W2013386523",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W1601128533",
-   "target": "W1684540946",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2015930340",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2028436159",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W1684540946",
@@ -15877,12 +14823,6 @@
    "peso": 10
   },
   {
-   "source": "W1554940969",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
    "source": "W1553746973",
    "target": "W2064927380",
    "tipo": "cocita",
@@ -15903,12 +14843,6 @@
   {
    "source": "W1490995146",
    "target": "W3124879925",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2013386523",
-   "target": "W4285719527",
    "tipo": "cocita",
    "peso": 5
   },
@@ -15973,24 +14907,6 @@
    "peso": 6
   },
   {
-   "source": "W2059789395",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W2137358449",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 30
-  },
-  {
-   "source": "W4285719527",
-   "target": "W4301066124",
-   "tipo": "cocita",
-   "peso": 9
-  },
-  {
    "source": "W1494609826",
    "target": "W1510137183",
    "tipo": "cocita",
@@ -16001,12 +14917,6 @@
    "target": "W4301066124",
    "tipo": "cocita",
    "peso": 15
-  },
-  {
-   "source": "W2099330597",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W2035713188",
@@ -16057,22 +14967,10 @@
    "peso": 3
   },
   {
-   "source": "W2035713188",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W2058869237",
    "target": "W2118243939",
    "tipo": "cocita",
    "peso": 6
-  },
-  {
-   "source": "W2058869237",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2059789395",
@@ -16085,12 +14983,6 @@
    "target": "W2118243939",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2118243939",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W1554940969",
@@ -16118,12 +15010,6 @@
   },
   {
    "source": "W1551036771",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W1551036771",
    "target": "W2058869237",
    "tipo": "cocita",
    "peso": 4
@@ -16136,12 +15022,6 @@
   },
   {
    "source": "W1553746973",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1553746973",
    "target": "W2058869237",
    "tipo": "cocita",
    "peso": 5
@@ -16151,12 +15031,6 @@
    "target": "W2118243939",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2118243939",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2030753430",
@@ -16199,12 +15073,6 @@
    "target": "W1980406593",
    "tipo": "cocita",
    "peso": 6
-  },
-  {
-   "source": "W1553746973",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 11
   },
   {
    "source": "W1515810707",
@@ -16549,12 +15417,6 @@
    "peso": 13
   },
   {
-   "source": "W1601128533",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
    "source": "W1993663609",
    "target": "W2141951329",
    "tipo": "cocita",
@@ -16649,12 +15511,6 @@
    "target": "W4230710385",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W4230710385",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W2312418354",
@@ -17119,12 +15975,6 @@
    "peso": 7
   },
   {
-   "source": "W1684540946",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W1973308529",
    "target": "W2140409505",
    "tipo": "cocita",
@@ -17155,28 +16005,10 @@
    "peso": 8
   },
   {
-   "source": "W2140409505",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W2566856888",
    "target": "W3130930004",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W3022339544",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W3130930004",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 15
   },
   {
    "source": "W1684540946",
@@ -17207,12 +16039,6 @@
    "target": "W658486438",
    "tipo": "cocita",
    "peso": 16
-  },
-  {
-   "source": "W2048894562",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 11
   },
   {
    "source": "W1486212401",
@@ -17635,18 +16461,6 @@
    "peso": 7
   },
   {
-   "source": "W2312418354",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W4285719527",
-   "target": "W658486438",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W1503457370",
    "target": "W1895366050",
    "tipo": "cocita",
@@ -17935,12 +16749,6 @@
    "peso": 3
   },
   {
-   "source": "W1576605329",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2059789395",
    "target": "W2140409505",
    "tipo": "cocita",
@@ -17981,18 +16789,6 @@
    "target": "W2007180942",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W2007180942",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W2015930340",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
   },
   {
    "source": "W1554940969",
@@ -18098,12 +16894,6 @@
   },
   {
    "source": "W2063282131",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W2063282131",
    "target": "W2101157755",
    "tipo": "cocita",
    "peso": 3
@@ -18133,12 +16923,6 @@
    "peso": 7
   },
   {
-   "source": "W2099670044",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W2137358449",
    "target": "W2140256961",
    "tipo": "cocita",
@@ -18155,18 +16939,6 @@
    "target": "W3124140110",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W3016265253",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W3124140110",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 16
   },
   {
    "source": "W1504129344",
@@ -18775,12 +17547,6 @@
    "peso": 7
   },
   {
-   "source": "W2028436159",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W2095561982",
    "target": "W2108795964",
    "tipo": "cocita",
@@ -18809,12 +17575,6 @@
    "target": "W3124140110",
    "tipo": "cocita",
    "peso": 8
-  },
-  {
-   "source": "W2095561982",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
   },
   {
    "source": "W2095561982",
@@ -18866,12 +17626,6 @@
   },
   {
    "source": "W2108767715",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W2108767715",
    "target": "W4301066124",
    "tipo": "cocita",
    "peso": 6
@@ -18899,12 +17653,6 @@
    "target": "W3124140110",
    "tipo": "cocita",
    "peso": 12
-  },
-  {
-   "source": "W2108795964",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W2108795964",
@@ -18968,12 +17716,6 @@
   },
   {
    "source": "W2142257426",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W2142257426",
    "target": "W4301066124",
    "tipo": "cocita",
    "peso": 4
@@ -19004,12 +17746,6 @@
   },
   {
    "source": "W2179492332",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 9
-  },
-  {
-   "source": "W2179492332",
    "target": "W4301066124",
    "tipo": "cocita",
    "peso": 3
@@ -19031,12 +17767,6 @@
    "target": "W1495419098",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1491554624",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1491554624",
@@ -19064,12 +17794,6 @@
   },
   {
    "source": "W1495419098",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W1495419098",
    "target": "W2099670044",
    "tipo": "cocita",
    "peso": 4
@@ -19085,12 +17809,6 @@
    "target": "W1566344170",
    "tipo": "cocita",
    "peso": 6
-  },
-  {
-   "source": "W1517602275",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W1517602275",
@@ -19148,12 +17866,6 @@
   },
   {
    "source": "W1566344170",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1566344170",
    "target": "W2123709218",
    "tipo": "cocita",
    "peso": 3
@@ -19163,60 +17875,6 @@
    "target": "W617038684",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W1601128533",
-   "target": "W1895366050",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2095561982",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2099670044",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2102469678",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2123709218",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2133469585",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2140956556",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2142257426",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W1601128533",
-   "target": "W617038684",
-   "tipo": "cocita",
-   "peso": 7
   },
   {
    "source": "W1855283887",
@@ -19304,12 +17962,6 @@
   },
   {
    "source": "W1566172004",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W1566172004",
    "target": "W1973459906",
    "tipo": "cocita",
    "peso": 3
@@ -19325,30 +17977,6 @@
    "target": "W2123709218",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2060827592",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2061977616",
-   "tipo": "cocita",
-   "peso": 9
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2085563972",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2122679534",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W1973459906",
@@ -19568,12 +18196,6 @@
   },
   {
    "source": "W1517602275",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1517602275",
    "target": "W4301066124",
    "tipo": "cocita",
    "peso": 5
@@ -19583,12 +18205,6 @@
    "target": "W3016265253",
    "tipo": "cocita",
    "peso": 6
-  },
-  {
-   "source": "W1566172004",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 7
   },
   {
    "source": "W1566172004",
@@ -19634,21 +18250,9 @@
   },
   {
    "source": "W2060827592",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W2060827592",
    "target": "W617038684",
    "tipo": "cocita",
    "peso": 8
-  },
-  {
-   "source": "W2061977616",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 11
   },
   {
    "source": "W2061977616",
@@ -19676,12 +18280,6 @@
   },
   {
    "source": "W2101946146",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W2101946146",
    "target": "W4301066124",
    "tipo": "cocita",
    "peso": 3
@@ -19691,12 +18289,6 @@
    "target": "W617038684",
    "tipo": "cocita",
    "peso": 8
-  },
-  {
-   "source": "W2102469678",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W2108767715",
@@ -19709,12 +18301,6 @@
    "target": "W617038684",
    "tipo": "cocita",
    "peso": 6
-  },
-  {
-   "source": "W2140956556",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 10
   },
   {
    "source": "W2140956556",
@@ -19928,12 +18514,6 @@
   },
   {
    "source": "W1504129344",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1504129344",
    "target": "W1999686839",
    "tipo": "cocita",
    "peso": 3
@@ -19994,12 +18574,6 @@
   },
   {
    "source": "W158727920",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W158727920",
    "target": "W1999686839",
    "tipo": "cocita",
    "peso": 4
@@ -20015,30 +18589,6 @@
    "target": "W2137358449",
    "tipo": "cocita",
    "peso": 5
-  },
-  {
-   "source": "W1601128533",
-   "target": "W1978399955",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1601128533",
-   "target": "W1999686839",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2101946146",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2313563931",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W1978399955",
@@ -20701,12 +19251,6 @@
    "peso": 3
   },
   {
-   "source": "W1601128533",
-   "target": "W2132454116",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
    "source": "W1606540910",
    "target": "W2101946146",
    "tipo": "cocita",
@@ -20767,12 +19311,6 @@
    "peso": 5
   },
   {
-   "source": "W2025579080",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W2061977616",
    "target": "W2099670044",
    "tipo": "cocita",
@@ -20789,12 +19327,6 @@
    "target": "W3124140110",
    "tipo": "cocita",
    "peso": 8
-  },
-  {
-   "source": "W1601128533",
-   "target": "W201578715",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W201578715",
@@ -20921,12 +19453,6 @@
    "target": "W3124140110",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2122679534",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1990513740",
@@ -21332,12 +19858,6 @@
   },
   {
    "source": "W1504789830",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1504789830",
    "target": "W1973308529",
    "tipo": "cocita",
    "peso": 6
@@ -21355,40 +19875,10 @@
    "peso": 3
   },
   {
-   "source": "W1511343964",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W1973308529",
    "target": "W617038684",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W1993023795",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W1999130476",
-   "tipo": "cocita",
-   "peso": 8
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2164284962",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W1601128533",
-   "target": "W3124140110",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W1993023795",
@@ -21421,30 +19911,6 @@
    "peso": 3
   },
   {
-   "source": "W1495886451",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
-   "source": "W1498488428",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1535129021",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2007180942",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
    "source": "W1981733426",
    "target": "W2108767715",
    "tipo": "cocita",
@@ -21455,36 +19921,6 @@
    "target": "W2179492332",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1981733426",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2039191423",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2082503759",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2108795964",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2753533763",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W2039191423",
@@ -22591,18 +21027,6 @@
    "peso": 4
   },
   {
-   "source": "W1601128533",
-   "target": "W2025579080",
-   "tipo": "cocita",
-   "peso": 6
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2140409505",
-   "tipo": "cocita",
-   "peso": 7
-  },
-  {
    "source": "W1606540910",
    "target": "W1999130476",
    "tipo": "cocita",
@@ -22719,12 +21143,6 @@
   {
    "source": "W2108795964",
    "target": "W2109469951",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
-   "source": "W1601128533",
-   "target": "W266848492",
    "tipo": "cocita",
    "peso": 5
   },
@@ -23083,22 +21501,10 @@
    "peso": 6
   },
   {
-   "source": "W1495886451",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
-  },
-  {
    "source": "W1535129021",
    "target": "W1576605329",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W1535129021",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W1554940969",
@@ -23185,12 +21591,6 @@
    "peso": 6
   },
   {
-   "source": "W2000465687",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
    "source": "W2009202666",
    "target": "W2142257426",
    "tipo": "cocita",
@@ -23209,12 +21609,6 @@
    "peso": 11
   },
   {
-   "source": "W2009202666",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 13
-  },
-  {
    "source": "W2142257426",
    "target": "W3022339544",
    "tipo": "cocita",
@@ -23225,12 +21619,6 @@
    "target": "W3121147769",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W3121147769",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
   },
   {
    "source": "W2109469951",
@@ -23486,27 +21874,9 @@
   },
   {
    "source": "W1498201492",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W1498201492",
    "target": "W2009202666",
    "tipo": "cocita",
    "peso": 11
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2009202666",
-   "tipo": "cocita",
-   "peso": 14
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2109469951",
-   "tipo": "cocita",
-   "peso": 4
   },
   {
    "source": "W1999130476",
@@ -23705,24 +22075,6 @@
    "target": "W2009202666",
    "tipo": "cocita",
    "peso": 4
-  },
-  {
-   "source": "W1598833883",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1598833883",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2129261459",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 6
   },
   {
    "source": "W2009202666",
@@ -24248,12 +22600,6 @@
   },
   {
    "source": "W1503457370",
-   "target": "W1601128533",
-   "tipo": "cocita",
-   "peso": 4
-  },
-  {
-   "source": "W1503457370",
    "target": "W2141042444",
    "tipo": "cocita",
    "peso": 5
@@ -24263,12 +22609,6 @@
    "target": "W2143943407",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W1601128533",
-   "target": "W2141042444",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W2028436159",
@@ -24535,12 +22875,6 @@
    "peso": 6
   },
   {
-   "source": "W2141042444",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 10
-  },
-  {
    "source": "W1501219137",
    "target": "W2044929988",
    "tipo": "cocita",
@@ -24572,12 +22906,6 @@
   },
   {
    "source": "W2133469585",
-   "target": "W2141042444",
-   "tipo": "cocita",
-   "peso": 3
-  },
-  {
-   "source": "W2091579301",
    "target": "W2141042444",
    "tipo": "cocita",
    "peso": 3
@@ -24911,12 +23239,6 @@
    "target": "W2050032417",
    "tipo": "cocita",
    "peso": 3
-  },
-  {
-   "source": "W2050032417",
-   "target": "W4285719527",
-   "tipo": "cocita",
-   "peso": 5
   },
   {
    "source": "W2050032417",
