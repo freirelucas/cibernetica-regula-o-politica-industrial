@@ -78,7 +78,7 @@ h1 em{font-style:italic;color:var(--muted)}
 .sec-title{font-family:var(--serif);font-size:1.5rem;font-weight:400}
 .sec-method{font-family:var(--mono);font-size:10px;color:var(--muted);margin-left:auto;text-align:right}
 .prose{max-width:70ch}
-.prose p{margin-bottom:1rem;font-size:1rem}
+.prose p{margin-bottom:1rem;font-size:1rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
 .prose p.lead{font-size:1.12rem;line-height:1.6}
 .prose h3{font-family:var(--serif);font-weight:600;font-size:1.05rem;margin:1.5rem 0 .5rem}
 .prose ul{margin:.5rem 0 1rem 1.3rem}.prose li{margin-bottom:.4rem}
@@ -181,7 +181,7 @@ h1 em{font-style:italic;color:var(--muted)}
 .gloss .src{font-style:italic}
 .refs{font-family:var(--serif);font-size:.88rem;line-height:1.6}
 .refs li{margin-bottom:.55rem;list-style:none;padding-left:1.4em;text-indent:-1.4em}
-.callout{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem;margin:1rem 0;font-size:.9rem}
+.callout{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem;margin:1rem 0;font-size:.9rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
 .callout code{font-family:var(--mono);font-size:.82rem;background:var(--paper);padding:1px 5px;border-radius:3px}
 pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:11.5px;line-height:1.7;padding:1rem 1.1rem;border-radius:6px;overflow-x:auto;margin:.75rem 0}
 .sidenav{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:7px;z-index:100}
@@ -651,6 +651,8 @@ pre.code{max-width:100%}
       <li><strong>Shadlen &amp; Fonseca (2013)</strong> — saúde como política industrial; <strong>Barbalho et al. (2018)</strong> — homologação de produtos cibernéticos; <strong>Bioni &amp; Luciano (2019)</strong> — precaução na regulação de IA.</li>
       <li><strong>Brasil (2008, FGV/EBAPE)</strong> — a aplicação brasileira mais explícita do MSV (auditorias do TCERJ): o elo nacional raro entre cibernética e gestão pública.</li>
     </ul>
+    <div class="callout" id="rayyan-callout">
+      <strong>Triagem colaborativa no Rayyan.</strong> Toda a síntese — o núcleo global (obras-semente, mais citadas, obras-ponte, rajadas e belas adormecidas) somado ao corpus brasileiro de Claucia Faganello, <span id="rayyan-n">138</span> obras deduplicadas por título — está exportada para importação direta no <a href="https://rayyan.ai" target="_blank" rel="noopener">Rayyan</a>, em <a href="dados/rayyan_sintese.ris" download>RIS</a> (recomendado) e <a href="dados/rayyan_sintese.csv" download>CSV</a>. Cada referência já vem anotada com seu(s) <em>eixo(s)</em> e <em>papel</em> (semente, ponte, rajada, mais citada, bela adormecida, corpus Brasil) como palavras-chave, para que os três pesquisadores façam a triagem (incluir/excluir, etiquetas) partindo de uma base comum. É o ponto de entrada operacional para a revisão sistemática.</div>
   </div>
 </div></section>
 
@@ -824,6 +826,7 @@ byId('m-clusters').textContent = `${META.clusters_cc} comunidades na cocitação
 byId('m-pivotal').textContent  = (META.pivotal === 1 ? 'Uma obra emerge' : `${META.pivotal} obras emergem`)
   + ' como ponto pivotal — concentra intermediação e rajada de citação simultâneas.';
 byId('m-pctrefs').textContent  = String(META.pct_refs).replace('.', ',') + '%';
+if (META.rayyan_n && byId('rayyan-n')) byId('rayyan-n').textContent = META.rayyan_n;
 
 /* Ponto pivotal — obra de maior centralidade de intermediação */
 const pv = byId('pivotal-callout');
@@ -976,6 +979,8 @@ const DADOS = [
   {f:'dados/10_rede_nos.csv',          d:'Nós da rede de cocitação real (obra, eixo, citações)'},
   {f:'dados/11_rede_arestas.csv',      d:'Arestas da rede de cocitação real (origem, destino, peso)'},
   {f:'dados/rede_cocitacao.json',      d:'Rede de cocitação completa (JSON, p/ Gephi/networkx)'},
+  {f:'dados/rayyan_sintese.ris',       d:'Síntese para triagem no Rayyan (RIS — recomendado)'},
+  {f:'dados/rayyan_sintese.csv',       d:'Síntese para triagem no Rayyan (CSV)'},
   {f:'dados/scisci_results.json',      d:'Resultados consolidados (JSON)'},
   {f:'dados/DICIONARIO.csv',           d:'Dicionário de dados (descrição das colunas)'},
 ];

@@ -2,6 +2,7 @@
 import json
 import os
 
+import build_rayyan
 import build_site
 
 REQUIRED_KEYS = [
@@ -71,3 +72,15 @@ def test_network_csv(root, tmp_path):
     assert arr[0] == "origem,destino,tipo,cocitacoes"
     assert len(nos) - 1 == len(net["nodes"])
     assert len(arr) - 1 == len(net["links"])
+
+
+def test_rayyan_export(tmp_path):
+    import csv as _csv
+    works = build_rayyan.build(str(tmp_path))
+    assert len(works) > 100
+    assert all(w["roles"] for w in works), "toda obra deve ter ao menos um papel"
+    ris = (tmp_path / "rayyan_sintese.ris").read_text(encoding="utf-8")
+    assert ris.count("TY  - ") == ris.count("ER  - ") == len(works)
+    rows = list(_csv.DictReader(open(tmp_path / "rayyan_sintese.csv", encoding="utf-8")))
+    assert len(rows) == len(works)
+    assert {"title", "authors", "year", "doi", "keywords", "notes"} <= set(rows[0].keys())

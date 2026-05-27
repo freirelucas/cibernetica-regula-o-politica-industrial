@@ -26,6 +26,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 from report_from_json import build_js  # noqa: E402  (reúso dos consts de gráfico)
 from report_template import inject_template  # noqa: E402
+import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
 
 TEMPLATE = os.path.join(HERE, "site_template.html")
 EXPLORER_TPL = os.path.join(HERE, "explorador_template.html")
@@ -189,7 +190,10 @@ def main():
     with open(JSON_SRC, encoding="utf-8") as f:
         R = json.load(f)
 
-    js = build_js(R) + f"const META={json.dumps(build_meta(R), ensure_ascii=False)};\n"
+    rayyan = build_rayyan.build(DADOS)
+    meta = build_meta(R)
+    meta["rayyan_n"] = len(rayyan)
+    js = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
     net_src = os.path.join(ROOT, "data", "network.json")
     net = json.load(open(net_src, encoding="utf-8")) if os.path.exists(net_src) else {"nodes": [], "links": []}
     js += f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
@@ -212,6 +216,7 @@ def main():
     n += write_network_csvs(net, DADOS)
     write_dicionario(DADOS)
     print(f"dados: {n} CSVs gerados a partir do JSON/rede em {DADOS}")
+    print(f"rayyan: {len(rayyan)} obras em rayyan_sintese.ris/.csv")
     shutil.copy(JSON_SRC, os.path.join(DADOS, "scisci_results.json"))
     if os.path.exists(net_src):
         shutil.copy(net_src, os.path.join(DADOS, "rede_cocitacao.json"))
