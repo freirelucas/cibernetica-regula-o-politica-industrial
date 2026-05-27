@@ -108,6 +108,45 @@ def write_dicionario(out):
         w.writerow(["arquivo", "coluna", "descricao"]); w.writerows(rows)
 
 
+def net_stats(net):
+    """Métricas estruturais da rede de cocitação real (calculadas do network.json)."""
+    nodes = {n["id"]: n for n in net.get("nodes", [])}
+    links = net.get("links", [])
+    N, E = len(nodes), len(links)
+    if N < 2:
+        return {}
+    by_axis = {}
+    for n in nodes.values():
+        by_axis[n.get("axis") or ""] = by_axis.get(n.get("axis") or "", 0) + 1
+    same = cross = 0
+    pares = {}
+    polind_cross = 0
+    for l in links:
+        a = nodes.get(l["source"], {}).get("axis")
+        b = nodes.get(l["target"], {}).get("axis")
+        if a and b:
+            if a == b:
+                same += 1
+            else:
+                cross += 1
+                k = " × ".join(sorted((a, b)))
+                pares[k] = pares.get(k, 0) + 1
+                if "PolInd" in (a, b):
+                    polind_cross += 1
+    classif = same + cross
+    return {
+        "n": N, "e": E,
+        "densidade": round(2 * E / (N * (N - 1)), 3),
+        "classif": classif,
+        "intra": same, "inter": cross,
+        "pct_intra": round(100 * same / classif) if classif else 0,
+        "pct_inter": round(100 * cross / classif) if classif else 0,
+        "pares": pares,
+        "polind_cross": polind_cross,
+        "by_axis": by_axis,
+    }
+
+
 def build_meta(R):
     """Campos do JSON que não entram nos consts de gráfico, mas alimentam a prosa."""
     piv = (R.get("top_pivotal") or [{}])[0]
@@ -133,6 +172,7 @@ def main():
     net_src = os.path.join(ROOT, "data", "network.json")
     net = json.load(open(net_src, encoding="utf-8")) if os.path.exists(net_src) else {"nodes": [], "links": []}
     js += f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
+    js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
     html = inject_template(js, TEMPLATE)
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:

@@ -36,15 +36,22 @@ SEEDS = {  # id -> (rótulo curto, eixo)
     "W3130930004": ("Lange · Economic Theory of Socialism", "PolInd"),
     "W2063282131": ("Lange · Wholes and Parts", "Cyb"),
 }
-VOCAB = {
+VOCAB = {  # vocabulário conservador (de preferência multipalavra) por eixo
     "Cyb": ("cybernet", "viable system", "vsm", "stafford beer", "ashby", "requisite variety",
             "autopoiesis", "systems thinking", "soft systems", "homeostas", "second-order", "wiener",
-            "complexity", "feedback"),
+            "feedback", "systems approach", "systems practice", "systems methodolog", "system of systems",
+            "systems engineering", "general system theory", "critical systems", "critical heuristics",
+            "team syntegrity", "fifth discipline", "system dynamics", "multimethodolog", "self-organ",
+            "brain of the firm", "heart of enterprise", "diagnosing the system", "corporate future",
+            "von bertalanffy", "organizational learning", "theory of communication", "total systems",
+            "problem structuring", "principles of systems"),
     "Reg": ("tools of government", "policy instrument", "policy mix", "nodality", "regulat",
-            "governance", "policy design", "policy capacity"),
+            "governance", "policy design", "policy capacity", "public polic", "policy cycle",
+            "policy process", "instruments of government", "policy tool"),
     "PolInd": ("industrial policy", "developmental state", "state capacity", "entrepreneurial state",
                "mission-oriented", "industrial strategy", "central plan", "socialism", "economic cybernetic",
-               "innovation policy", "reindustrial"),
+               "innovation policy", "reindustrial", "competitive advantage", "economic development",
+               "economic change", "self-discovery", "innovation system"),
 }
 
 
@@ -102,6 +109,13 @@ def main():
                 f"&per-page=50&select=id,title,publication_year,cited_by_count,topics")
         for w in r.get("results", []):
             wid = w["id"].split("/")[-1]
+            cnames = " ".join(t.get("display_name", "") for t in (w.get("topics") or [])[:6])
+            meta[wid] = (w.get("title") or "", w.get("publication_year"), w.get("cited_by_count") or 0, cnames)
+        time.sleep(0.2)
+    # fallback individual para ids que o lote descartou (obras mescladas/redirecionadas)
+    for wid in [i for i in ids if i not in meta]:
+        w = get(f"https://api.openalex.org/works/{wid}?select=id,title,publication_year,cited_by_count,topics")
+        if w.get("id"):
             cnames = " ".join(t.get("display_name", "") for t in (w.get("topics") or [])[:6])
             meta[wid] = (w.get("title") or "", w.get("publication_year"), w.get("cited_by_count") or 0, cnames)
         time.sleep(0.2)

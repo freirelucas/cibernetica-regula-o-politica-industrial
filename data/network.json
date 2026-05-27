@@ -1,46 +1,6 @@
 {
  "nodes": [
   {
-   "id": "W1506732837",
-   "label": "The systems approach and its enemies",
-   "axis": "Cyb",
-   "cited_by": 650,
-   "year": 1980,
-   "seed": false
-  },
-  {
-   "id": "W2126563689",
-   "label": "Hood & Margetts · Digital Age",
-   "axis": "Reg",
-   "cited_by": 233,
-   "year": 2007,
-   "seed": true
-  },
-  {
-   "id": "W597091629",
-   "label": "Principles of systems",
-   "axis": "Cyb",
-   "cited_by": 1359,
-   "year": 1968,
-   "seed": false
-  },
-  {
-   "id": "W2048894562",
-   "label": "On the Economic Theory of Socialism.",
-   "axis": "PolInd",
-   "cited_by": 778,
-   "year": 1938,
-   "seed": false
-  },
-  {
-   "id": "W2020982650",
-   "label": "Managing the “hollow state”: procedural po",
-   "axis": "Reg",
-   "cited_by": 350,
-   "year": 2000,
-   "seed": false
-  },
-  {
    "id": "W4230710385",
    "label": "Lange · Economic Cybernetics",
    "axis": "Cyb",
@@ -49,84 +9,20 @@
    "seed": true
   },
   {
-   "id": "W1498488428",
-   "label": "The social psychology of organizing",
-   "axis": "",
-   "cited_by": 10943,
-   "year": 1969,
-   "seed": false
-  },
-  {
-   "id": "W2013386523",
-   "label": "The Competitive Advantage of Nations",
-   "axis": "",
-   "cited_by": 17696,
-   "year": 1991,
-   "seed": false
-  },
-  {
-   "id": "W1970428482",
-   "label": "Creative Problem Solving: Total Systems In",
-   "axis": "Cyb",
-   "cited_by": 833,
-   "year": 1992,
-   "seed": false
-  },
-  {
-   "id": "W1492856410",
-   "label": "Systems Thinking, Systems Practice",
-   "axis": "Cyb",
-   "cited_by": 5938,
-   "year": 1981,
-   "seed": false
-  },
-  {
-   "id": "W1995875735",
-   "label": "A Mathematical Theory of Communication",
-   "axis": "",
-   "cited_by": 80200,
-   "year": 1948,
-   "seed": false
-  },
-  {
-   "id": "W4244612406",
-   "label": "Espejo & Reyes · Org. Systems",
-   "axis": "Cyb",
-   "cited_by": 215,
-   "year": 2011,
-   "seed": true
-  },
-  {
-   "id": "W1553746973",
-   "label": "Mazzucato · Entrepreneurial State",
-   "axis": "PolInd",
-   "cited_by": 2314,
-   "year": 2014,
-   "seed": true
-  },
-  {
-   "id": "W4205188686",
-   "label": "Systems thinking, systems practice",
-   "axis": "Cyb",
-   "cited_by": 3581,
-   "year": 1982,
-   "seed": false
-  },
-  {
-   "id": "W1566478880",
-   "label": "Beer · Heart of Enterprise",
-   "axis": "Cyb",
-   "cited_by": 805,
-   "year": 1980,
-   "seed": true
-  },
-  {
-   "id": "W595329111",
-   "label": "Carrots, Sticks and Sermons: Policy Instru",
+   "id": "W1578152577",
+   "label": "Designing Public Policies: Principles and ",
    "axis": "Reg",
-   "cited_by": 783,
-   "year": 2003,
+   "cited_by": 368,
+   "year": 2010,
    "seed": false
+  },
+  {
+   "id": "W4386803846",
+   "label": "Margetts · Nodality",
+   "axis": "Reg",
+   "cited_by": 18,
+   "year": 2023,
+   "seed": true
   },
   {
    "id": "W3130930004",
@@ -137,35 +33,27 @@
    "seed": true
   },
   {
-   "id": "W2111030512",
-   "label": "An introduction to cybernetics",
+   "id": "W2063282131",
+   "label": "Lange · Wholes and Parts",
    "axis": "Cyb",
-   "cited_by": 7232,
-   "year": 1956,
-   "seed": false
-  },
-  {
-   "id": "W2154683088",
-   "label": "Beer · Diagnosing the System",
-   "axis": "Cyb",
-   "cited_by": 293,
-   "year": 1985,
+   "cited_by": 35,
+   "year": 1966,
    "seed": true
   },
   {
-   "id": "W2025177555",
-   "label": "The Viable System Model: Its Provenance, D",
+   "id": "W2015231219",
+   "label": "Introduction to Economic Cybernetics",
    "axis": "Cyb",
-   "cited_by": 691,
-   "year": 1984,
+   "cited_by": 84,
+   "year": 1970,
    "seed": false
   },
   {
-   "id": "W1570538375",
-   "label": "The New Governance and the Tools of Public",
-   "axis": "Reg",
-   "cited_by": 560,
-   "year": 2011,
+   "id": "W233775549",
+   "label": "Systems Approaches to Management",
+   "axis": "Cyb",
+   "cited_by": 866,
+   "year": 2000,
    "seed": false
   },
   {
@@ -177,147 +65,19 @@
    "seed": false
   },
   {
-   "id": "W52678905",
-   "label": "Diagnosing the system for organizations",
-   "axis": "",
-   "cited_by": 992,
-   "year": 1986,
-   "seed": false
-  },
-  {
-   "id": "W1495961791",
-   "label": "Multimethodology : the theory and practice",
-   "axis": "",
-   "cited_by": 460,
-   "year": 1997,
-   "seed": false
-  },
-  {
-   "id": "W1542961362",
-   "label": "Policy design for democracy",
-   "axis": "Reg",
-   "cited_by": 1262,
-   "year": 1998,
-   "seed": false
-  },
-  {
-   "id": "W2080554996",
-   "label": "Introduction: Understanding Public Policy ",
-   "axis": "Reg",
-   "cited_by": 1382,
-   "year": 2007,
-   "seed": false
-  },
-  {
-   "id": "W2101157755",
-   "label": "The fifth discipline, the art and practice",
-   "axis": "",
-   "cited_by": 20170,
-   "year": 1991,
-   "seed": false
-  },
-  {
-   "id": "W1980975001",
-   "label": "Studying public policy: policy cycles and ",
-   "axis": "",
-   "cited_by": 2510,
-   "year": 1996,
-   "seed": false
-  },
-  {
-   "id": "W142073415",
-   "label": "Policy Instruments: Typologies and Theorie",
-   "axis": "Reg",
-   "cited_by": 562,
-   "year": 2017,
-   "seed": false
-  },
-  {
-   "id": "W1578152577",
-   "label": "Designing Public Policies: Principles and ",
-   "axis": "",
-   "cited_by": 368,
-   "year": 2010,
-   "seed": false
-  },
-  {
-   "id": "W1500608409",
-   "label": "Policy Instruments, Policy Styles, and Pol",
-   "axis": "Reg",
-   "cited_by": 417,
-   "year": 1991,
-   "seed": false
-  },
-  {
-   "id": "W1556995072",
-   "label": "A methodology for systems engineering",
-   "axis": "",
-   "cited_by": 541,
-   "year": 1962,
-   "seed": false
-  },
-  {
-   "id": "W2072863585",
-   "label": "Critical Heuristics of Social Planning: A ",
-   "axis": "",
-   "cited_by": 597,
-   "year": 1996,
-   "seed": false
-  },
-  {
-   "id": "W1520641906",
-   "label": "The Tools of government: a guide to the ne",
-   "axis": "Reg",
-   "cited_by": 1845,
-   "year": 2002,
-   "seed": false
-  },
-  {
-   "id": "W1540626093",
-   "label": "The Viable System Model: Interpretations a",
-   "axis": "Cyb",
-   "cited_by": 240,
-   "year": 1990,
-   "seed": false
-  },
-  {
-   "id": "W1601944394",
-   "label": "The Systems Approach",
-   "axis": "Cyb",
-   "cited_by": 1355,
-   "year": 1979,
-   "seed": false
-  },
-  {
-   "id": "W1968459280",
-   "label": "Beyond dispute: The invention of team synt",
-   "axis": "",
-   "cited_by": 217,
-   "year": 1995,
-   "seed": false
-  },
-  {
-   "id": "W3124879925",
-   "label": "Rodrik · Industrial Policy 21C",
+   "id": "W2120106358",
+   "label": "Economic development as self-discovery",
    "axis": "PolInd",
-   "cited_by": 1527,
-   "year": 2004,
-   "seed": true
-  },
-  {
-   "id": "W2127454860",
-   "label": "Reconceptualising the ‘policy mix’ for inn",
-   "axis": "Reg",
-   "cited_by": 1073,
-   "year": 2011,
+   "cited_by": 1681,
+   "year": 2003,
    "seed": false
   },
   {
-   "id": "W2127617481",
-   "label": "Instruments of Government: Perceptions and",
-   "axis": "",
-   "cited_by": 480,
-   "year": 1989,
+   "id": "W1506732837",
+   "label": "The systems approach and its enemies",
+   "axis": "Cyb",
+   "cited_by": 650,
+   "year": 1980,
    "seed": false
   },
   {
@@ -329,70 +89,6 @@
    "seed": false
   },
   {
-   "id": "W2048086870",
-   "label": "Beer · Brain of the Firm",
-   "axis": "Cyb",
-   "cited_by": 296,
-   "year": 1974,
-   "seed": true
-  },
-  {
-   "id": "W1601629960",
-   "label": "Hood · Tools of Government",
-   "axis": "Reg",
-   "cited_by": 778,
-   "year": 1983,
-   "seed": true
-  },
-  {
-   "id": "W2013140629",
-   "label": "Cybernetics and management",
-   "axis": "Cyb",
-   "cited_by": 316,
-   "year": 1960,
-   "seed": false
-  },
-  {
-   "id": "W2114648917",
-   "label": "Critical Heuristics of Social Planning",
-   "axis": "",
-   "cited_by": 291,
-   "year": 1998,
-   "seed": false
-  },
-  {
-   "id": "W221732451",
-   "label": "Public policy instruments : evaluating the",
-   "axis": "Reg",
-   "cited_by": 195,
-   "year": 1998,
-   "seed": false
-  },
-  {
-   "id": "W92085004",
-   "label": "Systems Thinking: Creative Holism for Mana",
-   "axis": "Cyb",
-   "cited_by": 825,
-   "year": 2003,
-   "seed": false
-  },
-  {
-   "id": "W2083449279",
-   "label": "Organizational Learning: A Theory of Actio",
-   "axis": "",
-   "cited_by": 11131,
-   "year": 1997,
-   "seed": false
-  },
-  {
-   "id": "W2137358449",
-   "label": "An Evolutionary Theory of Economic Change.",
-   "axis": "",
-   "cited_by": 21731,
-   "year": 1983,
-   "seed": false
-  },
-  {
    "id": "W1585847492",
    "label": "Designing Government: From Instruments to ",
    "axis": "Reg",
@@ -401,28 +97,12 @@
    "seed": false
   },
   {
-   "id": "W2063282131",
-   "label": "Lange · Wholes and Parts",
+   "id": "W52678905",
+   "label": "Diagnosing the system for organizations",
    "axis": "Cyb",
-   "cited_by": 35,
-   "year": 1966,
-   "seed": true
-  },
-  {
-   "id": "W2325487953",
-   "label": "Ashby · Intro to Cybernetics",
-   "axis": "Cyb",
-   "cited_by": 115,
-   "year": 1957,
-   "seed": true
-  },
-  {
-   "id": "W4386803846",
-   "label": "Margetts · Nodality",
-   "axis": "Reg",
-   "cited_by": 18,
-   "year": 2023,
-   "seed": true
+   "cited_by": 992,
+   "year": 1986,
+   "seed": false
   },
   {
    "id": "W1574300438",
@@ -433,83 +113,131 @@
    "seed": false
   },
   {
-   "id": "W90769783",
-   "label": "Creating the corporate future",
-   "axis": "",
-   "cited_by": 807,
-   "year": 1982,
-   "seed": false
-  },
-  {
-   "id": "W1995156820",
-   "label": "General System Theory: Foundations, Develo",
-   "axis": "",
-   "cited_by": 2575,
-   "year": 1969,
-   "seed": false
-  },
-  {
-   "id": "W2015231219",
-   "label": "Introduction to Economic Cybernetics",
+   "id": "W1566478880",
+   "label": "Beer · Heart of Enterprise",
    "axis": "Cyb",
-   "cited_by": 84,
-   "year": 1970,
-   "seed": false
+   "cited_by": 805,
+   "year": 1980,
+   "seed": true
   },
   {
-   "id": "W232611682",
-   "label": "Smart Regulation: Designing Environmental ",
-   "axis": "Reg",
-   "cited_by": 924,
-   "year": 1999,
-   "seed": false
-  },
-  {
-   "id": "W1527571715",
-   "label": "Cybernetics or Control and Communication i",
+   "id": "W4244612406",
+   "label": "Espejo & Reyes · Org. Systems",
    "axis": "Cyb",
-   "cited_by": 5019,
-   "year": 2019,
-   "seed": false
-  },
-  {
-   "id": "W2120106358",
-   "label": "Economic development as self-discovery",
-   "axis": "",
-   "cited_by": 1681,
-   "year": 2003,
-   "seed": false
-  },
-  {
-   "id": "W582908774",
-   "label": "Organizational Systems: Managing Complexit",
-   "axis": "Cyb",
-   "cited_by": 152,
+   "cited_by": 215,
    "year": 2011,
+   "seed": true
+  },
+  {
+   "id": "W221732451",
+   "label": "Public policy instruments : evaluating the",
+   "axis": "Reg",
+   "cited_by": 195,
+   "year": 1998,
    "seed": false
   },
   {
-   "id": "W2086450534",
-   "label": "Towards a System of Systems Methodologies",
-   "axis": "",
-   "cited_by": 703,
+   "id": "W2013386523",
+   "label": "The Competitive Advantage of Nations",
+   "axis": "PolInd",
+   "cited_by": 17696,
+   "year": 1991,
+   "seed": false
+  },
+  {
+   "id": "W2025177555",
+   "label": "The Viable System Model: Its Provenance, D",
+   "axis": "Cyb",
+   "cited_by": 691,
    "year": 1984,
    "seed": false
   },
   {
-   "id": "W67809301",
-   "label": "Challenging strategic planning assumptions",
-   "axis": "Reg",
-   "cited_by": 1068,
-   "year": 1981,
+   "id": "W1983425281",
+   "label": "The Viable System Model",
+   "axis": "Cyb",
+   "cited_by": 195,
+   "year": 1990,
    "seed": false
   },
   {
-   "id": "W233775549",
-   "label": "Systems Approaches to Management",
-   "axis": "",
-   "cited_by": 866,
-   "year": 2000,
+   "id": "W1980975001",
+   "label": "Studying public policy: policy cycles and ",
+   "axis": "Reg",
+   "cited_by": 2510,
+   "year": 1996,
+   "seed": false
+  },
+  {
+   "id": "W2126563689",
+   "label": "Hood & Margetts · Digital Age",
+   "axis": "Reg",
+   "cited_by": 233,
+   "year": 2007,
+   "seed": true
+  },
+  {
+   "id": "W1495961791",
+   "label": "Multimethodology : the theory and practice",
+   "axis": "Cyb",
+   "cited_by": 460,
+   "year": 1997,
+   "seed": false
+  },
+  {
+   "id": "W2111030512",
+   "label": "An introduction to cybernetics",
+   "axis": "Cyb",
+   "cited_by": 7232,
+   "year": 1956,
+   "seed": false
+  },
+  {
+   "id": "W1570538375",
+   "label": "The New Governance and the Tools of Public",
+   "axis": "Reg",
+   "cited_by": 560,
+   "year": 2011,
+   "seed": false
+  },
+  {
+   "id": "W2127617481",
+   "label": "Instruments of Government: Perceptions and",
+   "axis": "Reg",
+   "cited_by": 480,
+   "year": 1989,
+   "seed": false
+  },
+  {
+   "id": "W1553746973",
+   "label": "Mazzucato · Entrepreneurial State",
+   "axis": "PolInd",
+   "cited_by": 2314,
+   "year": 2014,
+   "seed": true
+  },
+  {
+   "id": "W2137358449",
+   "label": "An Evolutionary Theory of Economic Change.",
+   "axis": "PolInd",
+   "cited_by": 21731,
+   "year": 1983,
+   "seed": false
+  },
+  {
+   "id": "W2101157755",
+   "label": "The fifth discipline, the art and practice",
+   "axis": "Cyb",
+   "cited_by": 20170,
+   "year": 1991,
+   "seed": false
+  },
+  {
+   "id": "W2114648917",
+   "label": "Critical Heuristics of Social Planning",
+   "axis": "Cyb",
+   "cited_by": 291,
+   "year": 1998,
    "seed": false
   },
   {
@@ -521,6 +249,30 @@
    "seed": false
   },
   {
+   "id": "W582908774",
+   "label": "Organizational Systems: Managing Complexit",
+   "axis": "Cyb",
+   "cited_by": 152,
+   "year": 2011,
+   "seed": false
+  },
+  {
+   "id": "W2013140629",
+   "label": "Cybernetics and management",
+   "axis": "Cyb",
+   "cited_by": 316,
+   "year": 1960,
+   "seed": false
+  },
+  {
+   "id": "W1492856410",
+   "label": "Systems Thinking, Systems Practice",
+   "axis": "Cyb",
+   "cited_by": 5938,
+   "year": 1981,
+   "seed": false
+  },
+  {
    "id": "W2026948646",
    "label": "Soft Systems Methodology in Action",
    "axis": "Cyb",
@@ -529,9 +281,241 @@
    "seed": false
   },
   {
+   "id": "W3124879925",
+   "label": "Rodrik · Industrial Policy 21C",
+   "axis": "PolInd",
+   "cited_by": 1527,
+   "year": 2004,
+   "seed": true
+  },
+  {
+   "id": "W1520641906",
+   "label": "The Tools of government: a guide to the ne",
+   "axis": "Reg",
+   "cited_by": 1845,
+   "year": 2002,
+   "seed": false
+  },
+  {
+   "id": "W2072863585",
+   "label": "Critical Heuristics of Social Planning: A ",
+   "axis": "Cyb",
+   "cited_by": 597,
+   "year": 1996,
+   "seed": false
+  },
+  {
+   "id": "W2325487953",
+   "label": "Ashby · Intro to Cybernetics",
+   "axis": "Cyb",
+   "cited_by": 115,
+   "year": 1957,
+   "seed": true
+  },
+  {
+   "id": "W2048086870",
+   "label": "Beer · Brain of the Firm",
+   "axis": "Cyb",
+   "cited_by": 296,
+   "year": 1974,
+   "seed": true
+  },
+  {
+   "id": "W1995875735",
+   "label": "A Mathematical Theory of Communication",
+   "axis": "Cyb",
+   "cited_by": 80200,
+   "year": 1948,
+   "seed": false
+  },
+  {
+   "id": "W597091629",
+   "label": "Principles of systems",
+   "axis": "Cyb",
+   "cited_by": 1359,
+   "year": 1968,
+   "seed": false
+  },
+  {
+   "id": "W2083449279",
+   "label": "Organizational Learning: A Theory of Actio",
+   "axis": "Cyb",
+   "cited_by": 11131,
+   "year": 1997,
+   "seed": false
+  },
+  {
+   "id": "W1527571715",
+   "label": "Cybernetics or Control and Communication i",
+   "axis": "Cyb",
+   "cited_by": 5019,
+   "year": 2019,
+   "seed": false
+  },
+  {
+   "id": "W67809301",
+   "label": "Challenging strategic planning assumptions",
+   "axis": "Reg",
+   "cited_by": 1068,
+   "year": 1981,
+   "seed": false
+  },
+  {
+   "id": "W2048894562",
+   "label": "On the Economic Theory of Socialism.",
+   "axis": "PolInd",
+   "cited_by": 778,
+   "year": 1938,
+   "seed": false
+  },
+  {
+   "id": "W2080554996",
+   "label": "Introduction: Understanding Public Policy ",
+   "axis": "Reg",
+   "cited_by": 1382,
+   "year": 2007,
+   "seed": false
+  },
+  {
+   "id": "W92085004",
+   "label": "Systems Thinking: Creative Holism for Mana",
+   "axis": "Cyb",
+   "cited_by": 825,
+   "year": 2003,
+   "seed": false
+  },
+  {
+   "id": "W90769783",
+   "label": "Creating the corporate future",
+   "axis": "Cyb",
+   "cited_by": 807,
+   "year": 1982,
+   "seed": false
+  },
+  {
+   "id": "W1601944394",
+   "label": "The Systems Approach",
+   "axis": "Cyb",
+   "cited_by": 1355,
+   "year": 1979,
+   "seed": false
+  },
+  {
+   "id": "W1556995072",
+   "label": "A methodology for systems engineering",
+   "axis": "Cyb",
+   "cited_by": 541,
+   "year": 1962,
+   "seed": false
+  },
+  {
+   "id": "W1498488428",
+   "label": "The social psychology of organizing",
+   "axis": "",
+   "cited_by": 10943,
+   "year": 1969,
+   "seed": false
+  },
+  {
+   "id": "W4205188686",
+   "label": "Systems thinking, systems practice",
+   "axis": "Cyb",
+   "cited_by": 3581,
+   "year": 1982,
+   "seed": false
+  },
+  {
+   "id": "W2154683088",
+   "label": "Beer · Diagnosing the System",
+   "axis": "Cyb",
+   "cited_by": 293,
+   "year": 1985,
+   "seed": true
+  },
+  {
+   "id": "W1995156820",
+   "label": "General System Theory: Foundations, Develo",
+   "axis": "Cyb",
+   "cited_by": 2575,
+   "year": 1969,
+   "seed": false
+  },
+  {
+   "id": "W1601629960",
+   "label": "Hood · Tools of Government",
+   "axis": "Reg",
+   "cited_by": 778,
+   "year": 1983,
+   "seed": true
+  },
+  {
+   "id": "W1968459280",
+   "label": "Beyond dispute: The invention of team synt",
+   "axis": "Cyb",
+   "cited_by": 217,
+   "year": 1995,
+   "seed": false
+  },
+  {
+   "id": "W1970428482",
+   "label": "Creative Problem Solving: Total Systems In",
+   "axis": "Cyb",
+   "cited_by": 833,
+   "year": 1992,
+   "seed": false
+  },
+  {
+   "id": "W1500608409",
+   "label": "Policy Instruments, Policy Styles, and Pol",
+   "axis": "Reg",
+   "cited_by": 417,
+   "year": 1991,
+   "seed": false
+  },
+  {
+   "id": "W2020982650",
+   "label": "Managing the “hollow state”: procedural po",
+   "axis": "Reg",
+   "cited_by": 350,
+   "year": 2000,
+   "seed": false
+  },
+  {
+   "id": "W1540626093",
+   "label": "The Viable System Model: Interpretations a",
+   "axis": "Cyb",
+   "cited_by": 240,
+   "year": 1990,
+   "seed": false
+  },
+  {
+   "id": "W1542961362",
+   "label": "Policy design for democracy",
+   "axis": "Reg",
+   "cited_by": 1262,
+   "year": 1998,
+   "seed": false
+  },
+  {
+   "id": "W595329111",
+   "label": "Carrots, Sticks and Sermons: Policy Instru",
+   "axis": "Reg",
+   "cited_by": 783,
+   "year": 2003,
+   "seed": false
+  },
+  {
+   "id": "W2127454860",
+   "label": "Reconceptualising the ‘policy mix’ for inn",
+   "axis": "Reg",
+   "cited_by": 1073,
+   "year": 2011,
+   "seed": false
+  },
+  {
    "id": "W2123755784",
    "label": "Brain of the firm",
-   "axis": "",
+   "axis": "Cyb",
    "cited_by": 1190,
    "year": 1972,
    "seed": false
@@ -539,17 +523,33 @@
   {
    "id": "W1968044930",
    "label": "Systems Methodology for the Management Sci",
-   "axis": "",
+   "axis": "Cyb",
    "cited_by": 600,
    "year": 1991,
    "seed": false
   },
   {
-   "id": "W1983425281",
-   "label": "The Viable System Model",
+   "id": "W2086450534",
+   "label": "Towards a System of Systems Methodologies",
    "axis": "Cyb",
-   "cited_by": 195,
-   "year": 1990,
+   "cited_by": 703,
+   "year": 1984,
+   "seed": false
+  },
+  {
+   "id": "W142073415",
+   "label": "Policy Instruments: Typologies and Theorie",
+   "axis": "Reg",
+   "cited_by": 562,
+   "year": 2017,
+   "seed": false
+  },
+  {
+   "id": "W232611682",
+   "label": "Smart Regulation: Designing Environmental ",
+   "axis": "Reg",
+   "cited_by": 924,
+   "year": 1999,
    "seed": false
   }
  ],

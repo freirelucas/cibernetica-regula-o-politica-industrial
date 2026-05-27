@@ -465,7 +465,8 @@ pre.code{max-width:100%}
     <span><span class="sw" style="background:var(--pi)"></span>Política industrial</span>
     <span style="color:var(--muted)">○ contorno preto = obra-semente · linha = cocitação (espessura ∝ frequência)</span>
   </div>
-  <p class="fig-cap">Núcleo de <span id="net-n"></span> obras mais cocitadas (arestas com peso ≥ 3). A disposição por força revela <strong>três comunidades</strong> visualmente distintas — cibernética, instrumentos de governo e política industrial —, confirmando a separação dos eixos já vista no acoplamento; as poucas obras que se alojam entre dois agrupamentos são as pontes reais por cocitação. As três obras de Lange caem em comunidades diferentes (cibernética e planejamento), retrato visual de uma recepção ainda compartimentada. É um corte local e delimitado (bola de neve das sementes), não o funil completo do Colab; obras clássicas sem referências indexadas no OpenAlex (Beer, Ashby) entram pela cocitação dos que as citam.</p>
+  <div class="callout" id="net-stats" style="margin-top:1.25rem"></div>
+  <p class="fig-cap">Núcleo de <span id="net-n"></span> obras mais cocitadas (arestas com peso ≥ 3). A disposição por força revela <strong>três comunidades</strong> visualmente distintas — cibernética, instrumentos de governo e política industrial. As três obras de Lange caem em comunidades diferentes (cibernética e planejamento), retrato visual de uma recepção ainda compartimentada. É um corte local e delimitado (bola de neve das sementes), não o funil completo do Colab; o eixo é atribuído por vocabulário, e duas obras citadas já não existem como registro no OpenAlex (aparecem sem rótulo).</p>
 </div></section>
 
 <!-- 08 · RAJADAS -->
@@ -1003,6 +1004,20 @@ new Chart(byId('chartClusters'), {
   const cv = byId('netcanvas');
   if (!cv || !window.d3 || !NETWORK.nodes || !NETWORK.nodes.length) return;
   byId('net-n').textContent = NETWORK.nodes.length;
+  if (typeof NETMETA === 'object' && NETMETA.classif){
+    const M = NETMETA, classN = (M.n - (M.by_axis && M.by_axis[''] || 0));
+    const ilha = M.polind_cross === 0
+      ? ' A <strong>política industrial não registra nenhuma</strong> ligação de cocitação com os outros dois eixos — é uma ilha.'
+      : ` A política industrial cruza eixos em ${M.polind_cross} ligações.`;
+    const stEl = byId('net-stats');
+    if (stEl) stEl.innerHTML =
+      `<strong>Leitura estrutural.</strong> Das ${fmt(M.classif)} ligações de cocitação entre obras com eixo atribuído, `
+      + `<strong>${M.pct_intra}% permanecem dentro de um mesmo eixo</strong> e apenas <strong>${M.pct_inter}% cruzam eixos</strong>`
+      + (M.pares && M.pares['Cyb × Reg'] ? ` — e o cruzamento é quase todo entre cibernética e instrumentos de governo.` : '.')
+      + ilha
+      + ` A separação que se vê no desenho é, portanto, <em>estrutural</em>: a convergência entre as três tradições é uma agenda a construir, não um fato já inscrito na literatura citada. `
+      + `<span style="color:var(--muted)">(densidade ${M.densidade}; eixo atribuído por vocabulário a ${classN} dos ${M.n} nós.)</span>`;
+  }
   const ctx = cv.getContext('2d');
   const AXC = {Cyb:'#4b3fc2', Reg:'#1a7a5e', PolInd:'#b85c10', '':'#9a948c'};
   const nodes = NETWORK.nodes.map(d=>Object.assign({}, d));
