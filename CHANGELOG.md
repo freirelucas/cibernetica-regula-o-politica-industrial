@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (81 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (82 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -108,4 +108,5 @@ Registro de mudanças desta branch, agrupado por tema (81 commits de trabalho). 
 
 ## Outros
 
+- Pruning: remove nós-agregados de periódico (hubs falsos) · `d962761` · 2026-05-27
 - changelog: hook de pre-commit (automático, árvore limpa) · `a181304` · 2026-05-27

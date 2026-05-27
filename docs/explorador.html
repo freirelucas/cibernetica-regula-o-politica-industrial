@@ -36,7 +36,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 #graph{width:100%;height:100%;display:block;cursor:grab}
 #graph:active{cursor:grabbing}
 .lk{stroke:rgba(60,56,52,.16)}
-.lk.cross{stroke:var(--accent);stroke-opacity:.55}
+.lk.cross{stroke:var(--accent);stroke-opacity:.72}
 .lk.hl{stroke:var(--ink);stroke-opacity:.7}
 .nd{cursor:pointer;stroke:#fff;stroke-width:.6}
 .nd.seed{stroke:#0e0e0e;stroke-width:2}
@@ -207,6 +207,8 @@ const NETMETA={"n": 219, "e": 2924, "densidade": 0.122, "modularidade": 0.355, "
   const commColor = id => COMMPAL[(comm[id]||0) % COMMPAL.length];
   let colorMode='axis', hlmode='none';
   const fillOf = d => colorMode==='comm' ? commColor(d.id) : (AXC[d.axis]||AXC['']);
+  // no modo "por eixo", os nós sem eixo recuam para a estrutura colorida saltar
+  const fillOpacityOf = d => (colorMode==='axis' && !d.axis) ? 0.42 : 1;
 
   // métricas do subgrafo visível (vivas, acompanham os filtros)
   function metricsOf(ns, ls){
@@ -285,13 +287,13 @@ const NETMETA={"n": 219, "e": 2924, "densidade": 0.122, "modularidade": 0.355, "
     link = link.enter().append('line')
       .attr('class', d=>'lk'+(crossOf({source:d.source.id||d.source,target:d.target.id||d.target})?' cross':''))
       .merge(link)
-      .attr('stroke-width', d=>0.5+Math.min(d.peso,30)/12);
+      .attr('stroke-width', d=>{const w=0.5+Math.min(d.peso,30)/12; return crossOf({source:d.source.id||d.source,target:d.target.id||d.target})?w*1.7:w;});
 
     node = node.data(ns, d=>d.id);
     node.exit().remove();
     const nEnter = node.enter().append('circle')
       .attr('class', d=>'nd'+(d.seed?' seed':''))
-      .attr('r', rad).attr('fill', fillOf)
+      .attr('r', rad).attr('fill', fillOf).attr('fill-opacity', fillOpacityOf)
       .on('mouseover', hoverOn).on('mousemove', moveTip).on('mouseout', hoverOff)
       .on('click', (ev,d)=>{ev.stopPropagation(); select(d);})
       .call(d3.drag().on('start',dStart).on('drag',dDrag).on('end',dEnd));
@@ -396,7 +398,7 @@ const NETMETA={"n": 219, "e": 2924, "densidade": 0.122, "modularidade": 0.355, "
   document.getElementById('destaque').addEventListener('change',e=>{ hlmode=e.target.value; applyQuery(); });
   document.getElementById('commColor').addEventListener('change',e=>{
     colorMode = e.target.checked ? 'comm' : 'axis';
-    node.attr('fill', fillOf);
+    node.attr('fill', fillOf).attr('fill-opacity', fillOpacityOf);
     document.getElementById('legend').style.opacity = colorMode==='comm' ? .45 : 1;
     const cm = document.getElementById('commNote');
     if (cm) cm.textContent = colorMode==='comm'
