@@ -93,6 +93,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 
     <div class="ctl">
       <label class="toggle"><input type="checkbox" id="labels" checked> Mostrar rótulos</label>
+      <label class="toggle" style="margin-top:.4rem"><input type="checkbox" id="crossOnly"> Só cocitações entre eixos</label>
     </div>
 
     <div class="ctl">
@@ -177,12 +178,18 @@ const NETMETA={"n": 69, "e": 543, "densidade": 0.231, "classif": 501, "intra": 4
 
   // estado dos filtros
   const axisOn = {Cyb:true, Reg:true, PolInd:true, '':true};
-  let wmin=3, showLabels=true, query='', selected=null;
+  let wmin=3, showLabels=true, query='', selected=null, crossOnly=false;
 
   function visibleData(){
-    const ns = allNodes.filter(n=>axisOn[n.axis||'']);
-    const ok = new Set(ns.map(n=>n.id));
-    const ls = allLinks.filter(l=>l.peso>=wmin && ok.has(l.source.id||l.source) && ok.has(l.target.id||l.target));
+    const ns0 = allNodes.filter(n=>axisOn[n.axis||'']);
+    const ok = new Set(ns0.map(n=>n.id));
+    let ls = allLinks.filter(l=>l.peso>=wmin && ok.has(l.source.id||l.source) && ok.has(l.target.id||l.target));
+    let ns = ns0;
+    if (crossOnly){
+      ls = ls.filter(l=>crossOf({source:l.source.id||l.source, target:l.target.id||l.target}));
+      const keep = new Set(); ls.forEach(l=>{keep.add(l.source.id||l.source); keep.add(l.target.id||l.target);});
+      ns = ns0.filter(n=>keep.has(n.id));
+    }
     return {ns, ls};
   }
 
@@ -290,6 +297,7 @@ const NETMETA={"n": 69, "e": 543, "densidade": 0.231, "classif": 501, "intra": 4
   wv.textContent=wmin;
   wEl.addEventListener('input',e=>{wmin=+e.target.value; wv.textContent=wmin; restart(false);});
   document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; label.style('display',showLabels?null:'none'); applyQuery();});
+  document.getElementById('crossOnly').addEventListener('change',e=>{crossOnly=e.target.checked; restart(true);});
   document.getElementById('search').addEventListener('input',e=>{query=e.target.value.trim(); applyQuery();});
   document.getElementById('reset').addEventListener('click',()=>restart(true));
 
