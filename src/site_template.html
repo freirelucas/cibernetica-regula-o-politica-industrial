@@ -184,6 +184,12 @@ h1 em{font-style:italic;color:var(--muted)}
 .refs{font-family:var(--serif);font-size:.88rem;line-height:1.6}
 .refs li{margin-bottom:.55rem;list-style:none;padding-left:1.4em;text-indent:-1.4em}
 .callout{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem;margin:1rem 0;font-size:.9rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+.rtabs{display:flex;gap:6px;flex-wrap:wrap;margin:.7rem 0 .2rem;text-align:left}
+.rtab{font-family:var(--mono);font-size:11px;padding:.4rem .75rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper);color:var(--ink);cursor:pointer}
+.rtab:hover{border-color:var(--cyb)}.rtab.on{background:var(--cyb);color:var(--paper);border-color:var(--cyb)}
+#rdesc{text-align:left}
+a.fmt{display:inline-block;font-family:var(--mono);font-size:11px;padding:.3rem .6rem;border:1px solid var(--border-s);border-radius:4px;margin:2px 4px 2px 0;color:var(--cyb)}
+a.fmt:hover{background:var(--cyb);color:var(--paper);text-decoration:none}
 .callout code{font-family:var(--mono);font-size:.82rem;background:var(--paper);padding:1px 5px;border-radius:3px}
 pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:11.5px;line-height:1.7;padding:1rem 1.1rem;border-radius:6px;overflow-x:auto;margin:.75rem 0}
 .sidenav{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:7px;z-index:100}
@@ -677,8 +683,17 @@ pre.code{max-width:100%}
       <li><strong>Brasil (2008, FGV/EBAPE)</strong> — a aplicação brasileira mais explícita do MSV (auditorias do TCERJ): o elo nacional raro entre cibernética e gestão pública.</li>
     </ul>
     <div class="callout" id="rayyan-callout">
-      <strong>Triagem colaborativa no Rayyan.</strong> Toda a síntese — o núcleo global (obras-semente, mais citadas, obras-ponte, rajadas e belas adormecidas) somado ao corpus brasileiro de Claucia Faganello, <span id="rayyan-n">138</span> obras deduplicadas por título — (mais o 4º eixo da economia da complexidade) está exportada para importação direta no <a href="https://rayyan.ai" target="_blank" rel="noopener">Rayyan</a> em três recortes: <strong>(A) a síntese abrangente</strong> — para triar tudo —, <strong>(B) o <a href="dados/rayyan_cruzamento.ris" download>cruzamento</a></strong> — só as obras onde o corpus brasileiro e o núcleo global se tocam por citação (ver <a href="#analise-brasil">análise independente</a>) — e <strong>(C) <a href="dados/rayyan_brasil.ris" download>só as referências da Claucia</a></strong> (corpus brasileiro). Na <a href="triagem.html">triagem</a>, os atalhos fazem esses recortes (e por eixo, incluindo a complexidade) em um clique. A opção A vem em <a href="dados/rayyan_sintese.ris" download>RIS</a> (recomendado), <a href="dados/rayyan_sintese.csv" download>CSV</a> e <a href="dados/rayyan_sintese.zip" download>ZIP</a> — todos entre os <a href="https://help.rayyan.ai/hc/en-us/articles/4406426903825-Supported-File-Formats-for-Importing-into-Rayyan" target="_blank" rel="noopener">formatos aceitos pelo Rayyan</a>, com resumos (essenciais para o ranqueamento por relevância e a extração PICO). Cada referência já vem anotada com seu(s) <em>eixo(s)</em> e <em>papel</em> (semente, ponte, rajada, mais citada, bela adormecida, corpus Brasil) como palavras-chave, para que os três pesquisadores façam a triagem (incluir/excluir, etiquetas) partindo de uma base comum. É o ponto de entrada operacional para a revisão sistemática. Para uma pré-triagem leve, dá para <a href="triagem.html"><strong>decidir inclusão/exclusão aqui mesmo</strong></a> (com resumo e eixo à vista) e exportar só os incluídos em RIS.
-      <div style="margin-top:.7rem;font-size:.86rem"><strong>Como importar no Rayyan:</strong> <span style="color:var(--muted)">(1) baixe o <a href="dados/rayyan_sintese.ris" download>RIS</a> ou o <a href="dados/rayyan_sintese.zip" download>ZIP</a>; (2) no Rayyan, crie uma revisão (ou abra a <em>My Library</em>, obrigatória para o ZIP) e use <em>Add references → Upload</em>; (3) selecione o arquivo — cada obra entra com eixo e papel nas <em>keywords</em>. Use sempre o registro completo (com resumo) para o ranqueamento por relevância funcionar.</span></div></div>
+      <strong>Triagem colaborativa no Rayyan.</strong> A síntese — núcleo global + corpus brasileiro (Claucia) + o 4º eixo (economia da complexidade), deduplicada por título — está pronta para importação direta no <a href="https://rayyan.ai" target="_blank" rel="noopener">Rayyan</a>. Cada obra já entra com seu(s) <em>eixo(s)</em> e <em>papel</em> (semente, mais citada, ponte, rajada, bela adormecida, corpus Brasil, complexidade) nas <em>keywords</em> — base comum para os três pesquisadores triarem (incluir/excluir, etiquetas). <strong>Escolha o recorte:</strong>
+      <div class="rtabs" id="rtabs">
+        <button class="rtab" data-r="sintese">A · Síntese — triar tudo</button>
+        <button class="rtab" data-r="cruzamento">B · Cruzamento Brasil × núcleo</button>
+        <button class="rtab" data-r="brasil">C · Só as referências da Claucia</button>
+      </div>
+      <div id="rdesc"></div>
+      <div style="margin-top:.85rem;font-size:.86rem"><strong>O que tem no ZIP?</strong> <span style="color:var(--muted)">Cada <code>.zip</code> traz <strong>um único arquivo</strong> — o <code>.ris</code> daquele recorte (ex.: <code>rayyan_sintese.zip</code> → <code>rayyan_sintese.ris</code>). É de propósito: o Rayyan importa <em>todos</em> os arquivos do compactado, então um só formato evita registros em duplicata. Use o ZIP para subir pela <em>My Library</em> (obrigatória para compactados); para o upload direto, use o <code>.ris</code> avulso.</span></div>
+      <div style="margin-top:.6rem;font-size:.86rem"><strong>Como importar:</strong> <span style="color:var(--muted)">(1) baixe o RIS ou o ZIP; (2) no Rayyan, crie uma revisão — ou abra a <em>My Library</em> para o ZIP — e use <em>Add references → Upload</em>; (3) selecione o arquivo. Use sempre o registro completo (com resumo) para o ranqueamento por relevância e o PICO funcionarem. Formatos no <a href="https://help.rayyan.ai/hc/en-us/articles/4406426903825-Supported-File-Formats-for-Importing-into-Rayyan" target="_blank" rel="noopener">guia oficial</a>.</span></div>
+      <div style="margin-top:.6rem;font-size:.86rem;color:var(--muted)">Prefere montar o recorte você mesmo? Na <a href="triagem.html">triagem</a>, os atalhos refazem esses recortes (e por eixo, incluindo a complexidade) em um clique — e você exporta o bloco filtrado ou só os incluídos.</div>
+    </div>
   </div>
 </div></section>
 
@@ -867,7 +882,25 @@ byId('m-clusters').textContent = `${META.clusters_cc} comunidades na cocitação
 byId('m-pivotal').textContent  = (META.pivotal === 1 ? 'Uma obra emerge' : `${META.pivotal} obras emergem`)
   + ' como ponto pivotal — concentra intermediação e rajada de citação simultâneas.';
 byId('m-pctrefs').textContent  = String(META.pct_refs).replace('.', ',') + '%';
-if (META.rayyan_n && byId('rayyan-n')) byId('rayyan-n').textContent = META.rayyan_n;
+/* Seletor de recorte do Rayyan (A/B/C): mostra contagem + downloads do recorte */
+const RECORTES = {
+  sintese:   {n: META.rayyan_n,        lbl: 'núcleo global (sementes, mais citadas, pontes, rajadas, belas adormecidas) + corpus brasileiro + 4º eixo da complexidade — para triar tudo', fmt: ['ris','csv','zip','enw','bib']},
+  cruzamento:{n: META.rayyan_cruz_n,   lbl: 'só as obras onde o corpus brasileiro e o núcleo global se tocam por citação (ver a análise independente)', fmt: ['ris','csv','zip']},
+  brasil:    {n: META.rayyan_brasil_n, lbl: 'apenas as referências da Claucia (corpus brasileiro)', fmt: ['ris','csv','zip']},
+};
+function showRecorte(r){
+  const c = RECORTES[r], stem = 'rayyan_' + (r === 'sintese' ? 'sintese' : r);
+  document.querySelectorAll('#rtabs .rtab').forEach(t => t.classList.toggle('on', t.dataset.r === r));
+  byId('rdesc').innerHTML =
+    `<p style="margin:.5rem 0"><strong>${c.n != null ? c.n : '—'} obras</strong> — ${c.lbl}.</p>`
+    + `<span style="font-family:var(--mono);font-size:11px;color:var(--muted)">baixar:</span> `
+    + c.fmt.map(f => `<a class="fmt" href="dados/${stem}.${f}" download>${f.toUpperCase()}</a>`).join('')
+    + `<div style="font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:4px">RIS recomendado · o ZIP contém ${stem}.ris</div>`;
+}
+if (byId('rtabs')) {
+  document.querySelectorAll('#rtabs .rtab').forEach(t => t.onclick = () => showRecorte(t.dataset.r));
+  showRecorte('sintese');
+}
 
 /* Ponto pivotal — obra de maior centralidade de intermediação */
 const pv = byId('pivotal-callout');

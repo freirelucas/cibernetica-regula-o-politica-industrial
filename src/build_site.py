@@ -277,6 +277,8 @@ def main():
     rayyan = build_rayyan.build(DADOS)
     meta = build_meta(R)
     meta["rayyan_n"] = len(rayyan)
+    meta["rayyan_cruz_n"] = sum(1 for e in rayyan if build_rayyan.PONTE in e["roles"])
+    meta["rayyan_brasil_n"] = sum(1 for e in rayyan if build_rayyan.BRASIL_ROLE in e["roles"])
     base = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
     net_src = os.path.join(ROOT, "data", "network.json")
     net = json.load(open(net_src, encoding="utf-8")) if os.path.exists(net_src) else {"nodes": [], "links": []}
