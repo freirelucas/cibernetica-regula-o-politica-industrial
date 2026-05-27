@@ -33,7 +33,7 @@ DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
-            "rajadas", "adormecidas", "citadas", "discussao", "brasil", "analise-brasil", "sementes", "repro", "dados",
+            "rajadas", "adormecidas", "citadas", "discussao", "brasil", "analise-brasil", "sintese", "leitura", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 
 
