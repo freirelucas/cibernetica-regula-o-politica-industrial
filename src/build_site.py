@@ -295,6 +295,9 @@ def main():
     shutil.copy(JSON_SRC, os.path.join(DADOS, "scisci_results.json"))
     if os.path.exists(net_src):
         shutil.copy(net_src, os.path.join(DADOS, "rede_cocitacao.json"))
+    expl_src = os.path.join(ROOT, "data", "network_exploded.json")
+    if os.path.exists(expl_src):
+        shutil.copy(expl_src, os.path.join(DADOS, "rede_explodida.json"))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
 
     missing = [s for s in SECTIONS if f'id="{s}"' not in html]

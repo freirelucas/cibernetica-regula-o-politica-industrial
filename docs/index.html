@@ -484,6 +484,7 @@ pre.code{max-width:100%}
     <span style="color:var(--muted)">○ contorno preto = obra-semente · linha cinza = cocitação · <span style="color:var(--accent)">linha vermelha</span> = cocitação entre eixos (espessura ∝ frequência)</span>
   </div>
   <div class="callout" id="net-stats" style="margin-top:1.25rem"></div>
+  <div class="callout" style="margin-top:1rem"><strong>Robustez em escala (bola de neve explodida).</strong> Quadruplicando a coleta — 200 trabalhos citantes por obra-semente, 1.805 citantes, núcleo ampliado para <strong>251 obras e 3.464 ligações</strong> — a estrutura não se desfaz: <em>confirma-se</em>. A modularidade gulosa (Clauset–Newman&nbsp;&amp;&nbsp;Moore, 2004) encontra <strong>quatro comunidades, Q&nbsp;=&nbsp;0,58</strong>, que recobrem os três eixos — uma de cibernética, uma de instrumentos de governo e uma de política industrial, mais um resíduo misto —, e a partição por eixo sobe a Q&nbsp;=&nbsp;0,39. A distribuição de citações é de cauda pesada, próxima de uma <strong>lei de potência</strong> (α&nbsp;≈&nbsp;2; Clauset, Shalizi&nbsp;&amp;&nbsp;Newman, 2009): a atenção concentra-se em poucas obras. O recorte ampliado está na <a href="#dados">central de dados</a>.</div>
   <p style="margin:1.1rem 0 .25rem"><a href="explorador.html" class="explore-link" style="font-family:var(--mono);font-size:13px;padding:.5rem .9rem">Abrir o explorador interativo &nearr;</a> <span style="color:var(--muted);font-size:.85rem">filtre por eixo, ajuste o limiar de cocitação, busque obras e abra cada uma no OpenAlex.</span></p>
   <p class="fig-cap">Núcleo de <span id="net-n"></span> obras mais cocitadas (arestas com peso ≥ 3). A disposição por força revela <strong>três comunidades</strong> visualmente distintas — cibernética, instrumentos de governo e política industrial. As três obras de Lange caem em comunidades diferentes (cibernética e planejamento), retrato visual de uma recepção ainda compartimentada. É um corte local e delimitado (bola de neve das sementes), não o funil completo do Colab; o eixo é atribuído por vocabulário, e duas obras citadas já não existem como registro no OpenAlex (aparecem sem rótulo).</p>
 </div></section>
@@ -1008,7 +1009,8 @@ const DADOS = [
   {g:'Funil — dados processados', f:'dados/09_serie_temporal.csv',    d:'Produção anual por eixo'},
   {g:'Rede de cocitação',         f:'dados/10_rede_nos.csv',          d:'Nós da rede (obra, eixo, citações)'},
   {g:'Rede de cocitação',         f:'dados/11_rede_arestas.csv',      d:'Arestas da rede (peso e força de associação)'},
-  {g:'Rede de cocitação',         f:'dados/rede_cocitacao.json',      d:'Rede completa (JSON, p/ Gephi/networkx)'},
+  {g:'Rede de cocitação',         f:'dados/rede_cocitacao.json',      d:'Rede do núcleo (69 nós, JSON p/ Gephi/networkx)'},
+  {g:'Rede de cocitação',         f:'dados/rede_explodida.json',      d:'Rede ampliada (251 nós; bola de neve explodida)'},
   {g:'Triagem · Rayyan — A · síntese (Claucia + 1ª bola de neve)', f:'dados/rayyan_sintese.zip', d:'ZIP com o RIS — upload em My Library (recomendado)'},
   {g:'Triagem · Rayyan — A · síntese (Claucia + 1ª bola de neve)', f:'dados/rayyan_sintese.ris', d:'RIS (RefMan) — importação direta'},
   {g:'Triagem · Rayyan — A · síntese (Claucia + 1ª bola de neve)', f:'dados/rayyan_sintese.enw', d:'EndNote (.enw)'},
