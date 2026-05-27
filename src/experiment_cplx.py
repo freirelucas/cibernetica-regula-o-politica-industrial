@@ -23,7 +23,7 @@ import minirun as mr
 import sfi_methods as sfi
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PERPAGE, TOPN, THRESH = 120, 250, 3
+PERPAGE, TOPN, THRESH = 150, 160, 3
 
 
 def get(url):
@@ -60,16 +60,25 @@ def axis_of(text):
 
 
 def main():
+    # crawl enxuto: só as 4 sementes de complexidade (menos requisições = menos 429).
+    # Os trabalhos que CITAM a economia da complexidade revelam, em suas referências,
+    # se ela cocita os outros eixos (ponte) ou só a própria linhagem (silo).
     corpus_refs = []
-    for sid in SEEDS:
+    cites_core = Counter()                      # citantes Cplx que também citam as sementes dos 3 eixos
+    for sid in CPLX_SEEDS:
         r = get(f"https://api.openalex.org/works?filter=cites:{sid}&sort=cited_by_count:desc"
-                   f"&per-page={PERPAGE}&select=id,referenced_works")
+                f"&per-page={PERPAGE}&select=id,referenced_works")
+        n0 = len(corpus_refs)
         for w in r.get("results", []):
             refs = [x.split("/")[-1] for x in (w.get("referenced_works") or [])]
             if refs:
                 corpus_refs.append(refs[:80])
-        time.sleep(0.4)
-    print(f"corpus (com refs): {len(corpus_refs)} trabalhos citantes")
+                for s in set(refs) & set(mr.SEEDS):     # cita alguma semente dos 3 eixos?
+                    cites_core[mr.SEEDS[s][1]] += 1
+        print(f"  semente {sid}: +{len(corpus_refs)-n0} citantes com refs (total {len(corpus_refs)})", flush=True)
+        time.sleep(0.6)
+    print(f"corpus (com refs): {len(corpus_refs)} trabalhos citantes", flush=True)
+    print(f"citantes de complexidade que também citam as sementes dos 3 eixos: {dict(cites_core)}", flush=True)
 
     cocit, freq = Counter(), Counter()
     for refs in corpus_refs:
@@ -85,6 +94,7 @@ def main():
     nodeset = set(SEEDS) | {n for e in edges for n in e[:2]}
 
     ids = list(nodeset)
+    print(f"nós candidatos: {len(ids)} | arestas: {len(edges)} — buscando metadados…", flush=True)
     meta = {}
     for i in range(0, len(ids), 25):
         r = get(f"https://api.openalex.org/works?filter=openalex:{'|'.join(ids[i:i+25])}"
