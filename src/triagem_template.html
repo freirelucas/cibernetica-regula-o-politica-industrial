@@ -66,8 +66,15 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
   <a href="index.html">&larr; estudo</a>
   <a href="explorador.html">explorador</a>
   <span class="sp"></span>
-  <button class="btn primary" id="expRis">Exportar incluídos (RIS)</button>
-  <button class="btn" id="expBlock">Exportar bloco filtrado (RIS)</button>
+  <span title="exporta as N obras de maior prioridade de curadoria do bloco filtrado (papel + resumo + recência)" style="display:inline-flex;align-items:center;gap:4px">
+    <span class="hint">curadoria&nbsp;RIS:</span>
+    <button class="btn" data-cur="30">30</button>
+    <button class="btn" data-cur="60">60</button>
+    <button class="btn" data-cur="90">90</button>
+    <button class="btn" data-cur="120">120</button>
+  </span>
+  <button class="btn primary" id="expRis">Incluídos (RIS)</button>
+  <button class="btn" id="expBlock">Bloco filtrado (RIS)</button>
   <button class="btn" id="expCsv">Decisões (CSV)</button>
   <button class="btn" id="expJson">Decisões (JSON)</button>
   <label class="btn" for="impFile" title="combinar com decisões de outro pesquisador">Importar</label>
@@ -276,6 +283,23 @@ __JS_DATA__
     if(!inc.length){ alert('Nenhuma obra incluída ainda. Marque "Incluir" em algumas obras.'); return; }
     download('triagem_incluidos.ris', risOf(inc), 'application/x-research-info-systems');
   };
+  // curadoria por tamanho: as N obras de maior prioridade do bloco filtrado
+  // (prioridade = papel mais forte + tem resumo + leve recência)
+  const ROLEW={'obra-semente':6,'obra-ponte':5,'ponte global×Brasil':5,'mais citada':5,
+    'bela adormecida':3,'rajada de citação':3,'cibernética organizacional':2,
+    'complexidade (4º eixo)':2,'corpus Brasil (Faganello)':1};
+  function score(w){
+    let s=(w.roles||[]).reduce((m,r)=>Math.max(m,ROLEW[r]||0),0);
+    if(w.abstract) s+=1;
+    if(w.year) s+=Math.max(0,Math.min(1,(+w.year-1980)/45))*0.5;
+    return s;
+  }
+  function expCuradoria(n){
+    const vs=visible().slice().sort((a,b)=>score(b)-score(a)).slice(0,n);
+    if(!vs.length){ alert('Nenhuma obra no filtro atual.'); return; }
+    download(`triagem_curadoria_${vs.length}.ris`, risOf(vs), 'application/x-research-info-systems');
+  }
+  document.querySelectorAll('[data-cur]').forEach(btn=>btn.onclick=()=>expCuradoria(+btn.dataset.cur));
   // exporta exatamente o bloco conceitual filtrado no momento (eixo/papel/status/busca)
   document.getElementById('expBlock').onclick=()=>{
     const vs=visible();
