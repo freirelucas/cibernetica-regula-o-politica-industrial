@@ -14,6 +14,8 @@ Uso:  python src/experiment_cplx.py
 import json
 import os
 import time
+import urllib.error
+import urllib.request
 from collections import Counter, defaultdict
 from itertools import combinations
 
@@ -22,6 +24,19 @@ import sfi_methods as sfi
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PERPAGE, TOPN, THRESH = 120, 250, 3
+
+
+def get(url):
+    """Fetch robusto com backoff exponencial honrando o 429 do OpenAlex."""
+    for i in range(7):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=mr.UA), timeout=45) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as e:
+            time.sleep(min(60, 5 * (2 ** i)) if e.code == 429 else 3)
+        except Exception:
+            time.sleep(3)
+    return {}
 
 CPLX_SEEDS = {
     "W2137358449": ("Nelson & Winter · Evolutionary Theory", "Cplx"),
@@ -47,7 +62,7 @@ def axis_of(text):
 def main():
     corpus_refs = []
     for sid in SEEDS:
-        r = mr.get(f"https://api.openalex.org/works?filter=cites:{sid}&sort=cited_by_count:desc"
+        r = get(f"https://api.openalex.org/works?filter=cites:{sid}&sort=cited_by_count:desc"
                    f"&per-page={PERPAGE}&select=id,referenced_works")
         for w in r.get("results", []):
             refs = [x.split("/")[-1] for x in (w.get("referenced_works") or [])]
@@ -72,7 +87,7 @@ def main():
     ids = list(nodeset)
     meta = {}
     for i in range(0, len(ids), 25):
-        r = mr.get(f"https://api.openalex.org/works?filter=openalex:{'|'.join(ids[i:i+25])}"
+        r = get(f"https://api.openalex.org/works?filter=openalex:{'|'.join(ids[i:i+25])}"
                    f"&per-page=25&select=id,title,publication_year,cited_by_count,topics")
         for w in r.get("results", []):
             wid = w["id"].split("/")[-1]
@@ -80,7 +95,7 @@ def main():
             meta[wid] = (w.get("title") or "", w.get("publication_year"), w.get("cited_by_count") or 0, cnames)
         time.sleep(0.3)
     for wid in [i for i in ids if i not in meta]:
-        w = mr.get(f"https://api.openalex.org/works/{wid}?select=id,title,publication_year,cited_by_count,topics")
+        w = get(f"https://api.openalex.org/works/{wid}?select=id,title,publication_year,cited_by_count,topics")
         if w.get("id"):
             cnames = " ".join(t.get("display_name", "") for t in (w.get("topics") or [])[:6])
             meta[wid] = (w.get("title") or "", w.get("publication_year"), w.get("cited_by_count") or 0, cnames)
