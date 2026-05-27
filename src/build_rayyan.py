@@ -123,7 +123,9 @@ def consolidate():
                  year=str(w.get("year") or ""), doi=w.get("doi", ""),
                  url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
                  abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
-                 axes=["Economia da complexidade"], roles=["complexidade (4º eixo)"])
+                 axes=["Economia da complexidade"],
+                 roles=["complexidade (4º eixo)"]
+                 + ([f"complexidade · {w['subtrad']}"] if w.get("subtrad") else []))
 
     return [store[k] for k in sorted(store, key=lambda k: (store[k]["year"] or "0"), reverse=True)]
 
