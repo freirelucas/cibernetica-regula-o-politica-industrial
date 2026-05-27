@@ -29,7 +29,7 @@ ROOT = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
 DOCS = os.path.join(ROOT, "docs")
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
-            "rajadas", "adormecidas", "citadas", "discussao", "brasil", "sementes", "repro", "dados",
+            "rajadas", "adormecidas", "citadas", "discussao", "brasil", "analise-brasil", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 META_SPANS = ["m-cocit", "m-coupling", "m-clusters", "m-pivotal", "m-pctrefs"]
 
