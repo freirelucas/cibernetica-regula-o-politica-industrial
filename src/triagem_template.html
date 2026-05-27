@@ -87,6 +87,16 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
     <button class="chip" id="blkClr">limpar bloco</button>
   </span>
 </div>
+<div class="bar2" style="border-bottom:1px solid var(--border);padding-top:.45rem;padding-bottom:.45rem">
+  <span class="hint">Comece por:</span>
+  <span class="chips" id="presets">
+    <button class="chip" data-preset="tudo">Tudo</button>
+    <button class="chip" data-preset="brasil">Só referências da Claucia (Brasil)</button>
+    <button class="chip" data-preset="cruz">Cruzamento (ponte)</button>
+    <button class="chip" data-preset="cplx">4º eixo · complexidade</button>
+    <button class="chip" data-preset="indec">Indecisas</button>
+  </span>
+</div>
 <main class="wrap">
   <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. É uma pré-triagem leve; a triagem colaborativa completa segue no Rayyan. <span class="hint">Atalhos no teclado: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
   <div id="list"></div>
@@ -126,6 +136,23 @@ __JS_DATA__
     fStatus=c.dataset.s; document.querySelectorAll('#statusChips .chip').forEach(x=>x.classList.toggle('on',x===c)); render();
   });
   document.getElementById('q').addEventListener('input', e=>{q=e.target.value.toLowerCase().trim(); render();});
+
+  // atalhos de filtro (presets) — sincronizam os chips e re-renderizam
+  function syncChips(){
+    document.querySelectorAll('#axisChips .chip').forEach(c=>c.classList.toggle('on', fAxis.has(c.dataset.v)));
+    document.querySelectorAll('#roleChips .chip').forEach(c=>c.classList.toggle('on', fRole.has(c.dataset.v)));
+    document.querySelectorAll('#statusChips .chip').forEach(c=>c.classList.toggle('on', c.dataset.s===fStatus));
+    document.getElementById('q').value = q;
+  }
+  function applyPreset(p){
+    fAxis.clear(); fRole.clear(); fStatus='todos'; q='';
+    if(p==='brasil') fRole.add('corpus Brasil (Faganello)');
+    else if(p==='cruz') fRole.add('ponte global×Brasil');
+    else if(p==='cplx') fAxis.add('Economia da complexidade');
+    else if(p==='indec') fStatus='undec';
+    syncChips(); render();
+  }
+  document.querySelectorAll('#presets .chip').forEach(c=>c.onclick=()=>applyPreset(c.dataset.preset));
 
   function visible(){
     return works.filter(w=>{

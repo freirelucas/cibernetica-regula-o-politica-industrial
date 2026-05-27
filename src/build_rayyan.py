@@ -26,8 +26,10 @@ JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
 BRASIL = os.path.join(ROOT, "docs", "material-brasil", "dataset_politica_industrial_brasil.csv")
 ENRICH = os.path.join(ROOT, "data", "openalex_enrich.json")
 CROSS = os.path.join(ROOT, "data", "cross_brasil.json")
+CPLX = os.path.join(ROOT, "data", "cplx_works.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
+BRASIL_ROLE = "corpus Brasil (Faganello)"
 
 AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Política industrial"}
 
@@ -114,6 +116,14 @@ def consolidate():
                  abstract=(r.get("Abstract") or "").strip(),
                  type=ty.get((r.get("Publication Type") or "").strip(), "GEN"),
                  axes=["Política industrial"], roles=["corpus Brasil (Faganello)"])
+
+    if os.path.exists(CPLX):                       # 4º eixo — economia da complexidade
+        for w in json.load(open(CPLX, encoding="utf-8")):
+            _add(store, w.get("title", ""), authors=w.get("authors") or [],
+                 year=str(w.get("year") or ""), doi=w.get("doi", ""),
+                 url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
+                 abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
+                 axes=["Economia da complexidade"], roles=["complexidade (4º eixo)"])
 
     return [store[k] for k in sorted(store, key=lambda k: (store[k]["year"] or "0"), reverse=True)]
 
@@ -313,6 +323,9 @@ def build(out=DADOS):
     cruz = [e for e in works if PONTE in e["roles"]]      # opção B — cruzamento (ponte por citação)
     if cruz:
         emit(cruz, out, "rayyan_cruzamento")
+    brasil = [e for e in works if BRASIL_ROLE in e["roles"]]   # só as referências da Claucia
+    if brasil:
+        emit(brasil, out, "rayyan_brasil")
     return works
 
 
