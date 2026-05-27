@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (78 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (79 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -100,6 +100,7 @@ Registro de mudanças desta branch, agrupado por tema (78 commits de trabalho). 
 
 ## Infraestrutura, testes e ferramentas
 
+- Adiciona a skill /changelog e gera o CHANGELOG por tema · `b84f0b7` · 2026-05-27
 - Atualiza a skill run-scisci-ipea (3 páginas + pipeline atual) · `292cc60` · 2026-05-27
 - Fase 6: aposenta o gerador legado (report_builder + html_template) · `5ef5d20` · 2026-05-26
 - README camera-ready em PT e suite de testes pytest · `828b302` · 2026-05-26
