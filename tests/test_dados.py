@@ -76,6 +76,7 @@ def test_network_csv(root, tmp_path):
 
 def test_rayyan_export(tmp_path):
     import csv as _csv
+    import re
     works = build_rayyan.build(str(tmp_path))
     assert len(works) > 100
     assert all(w["roles"] for w in works), "toda obra deve ter ao menos um papel"
@@ -84,3 +85,26 @@ def test_rayyan_export(tmp_path):
     rows = list(_csv.DictReader(open(tmp_path / "rayyan_sintese.csv", encoding="utf-8")))
     assert len(rows) == len(works)
     assert {"title", "authors", "year", "doi", "keywords", "notes"} <= set(rows[0].keys())
+
+
+def test_rayyan_ris_wellformed(tmp_path):
+    """RIS válido para o Rayyan: toda linha não-vazia é uma tag; cada registro
+    começa em TY e termina em ER (sem linha de continuação quebrada)."""
+    import re
+    build_rayyan.build(str(tmp_path))
+    tag = re.compile(r"^([A-Z][A-Z0-9])  - ")
+    rec_open = False
+    for line in (tmp_path / "rayyan_sintese.ris").read_text(encoding="utf-8").splitlines():
+        if line == "":
+            continue
+        assert tag.match(line), f"linha RIS inválida (continuação quebrada?): {line!r}"
+        code = line[:2]
+        if code == "TY":
+            assert not rec_open, "novo TY antes de ER"
+            rec_open = True
+        elif code == "ER":
+            assert rec_open, "ER sem TY"
+            rec_open = False
+        else:
+            assert rec_open, f"tag {code} fora de um registro"
+    assert not rec_open, "último registro sem ER"

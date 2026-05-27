@@ -32,6 +32,12 @@ def _norm(t):
     return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", (t or "").lower())).strip()
 
 
+def _oneline(s):
+    """Colapsa qualquer espaço em branco (inclusive quebras de linha) em um único
+    espaço — garante que cada valor ocupe uma só linha lógica no RIS."""
+    return re.sub(r"\s+", " ", (s or "")).strip()
+
+
 def _axis_of_ref(ref):
     if any(x in ref for x in ("Beer", "Ashby", "Espejo")):
         return ["Cibernética"]
@@ -118,24 +124,24 @@ def to_ris(works):
     out = []
     for e in works:
         out.append(f"TY  - {e['type']}")
-        out.append(f"TI  - {e['title']}")
+        out.append(f"TI  - {_oneline(e['title'])}")
         for a in e["authors"]:
-            out.append(f"AU  - {a}")
+            out.append(f"AU  - {_oneline(a)}")
         if e["year"]:
-            out.append(f"PY  - {e['year']}")
+            out.append(f"PY  - {_oneline(str(e['year']))}")
         if e["venue"]:
-            out.append(f"JO  - {e['venue']}")
+            out.append(f"JO  - {_oneline(e['venue'])}")
         if e["doi"]:
-            out.append(f"DO  - {e['doi']}")
+            out.append(f"DO  - {_oneline(e['doi'])}")
         if e["url"]:
-            out.append(f"UR  - {e['url']}")
+            out.append(f"UR  - {_oneline(e['url'])}")
         if e["abstract"]:
-            out.append(f"AB  - {e['abstract']}")
+            out.append(f"AB  - {_oneline(e['abstract'])}")
         for ax in sorted(e["axes"]):
             out.append(f"KW  - eixo: {ax}")
         for role in sorted(e["roles"]):
             out.append(f"KW  - papel: {role}")
-        out.append(f"N1  - {_note(e)}")
+        out.append(f"N1  - {_oneline(_note(e))}")
         out.append("ER  - ")
         out.append("")
     return "\n".join(out)
@@ -148,8 +154,8 @@ def to_csv(works, path):
         w.writerow(cols)
         for i, e in enumerate(works, 1):
             kw = "; ".join([f"eixo: {a}" for a in sorted(e["axes"])] + [f"papel: {r}" for r in sorted(e["roles"])])
-            w.writerow([f"R{i:03d}", e["title"], "; ".join(e["authors"]), e["venue"], e["year"],
-                        e["doi"], e["url"], e["abstract"], kw, _note(e)])
+            w.writerow([f"R{i:03d}", _oneline(e["title"]), "; ".join(_oneline(a) for a in e["authors"]),
+                        _oneline(e["venue"]), e["year"], e["doi"], e["url"], _oneline(e["abstract"]), kw, _note(e)])
 
 
 def build(out=DADOS):
