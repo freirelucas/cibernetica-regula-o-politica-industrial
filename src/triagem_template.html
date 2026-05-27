@@ -58,6 +58,10 @@ details.how>summary{cursor:pointer;padding:.6rem .9rem;font-family:var(--mono);f
 details.how[open]>summary{border-bottom:1px solid var(--border)}
 details.how>div{padding:.3rem .9rem .7rem}
 details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+#curBanner{display:none;align-items:center;gap:10px;flex-wrap:wrap;background:#eef0ff;border:1px solid var(--cyb);border-radius:8px;padding:.55rem .85rem;margin-bottom:.9rem;font-size:.85rem;color:#2a2722}
+#curBanner .sp{flex:1}
+.btn.cur-on{background:var(--cyb);color:#fff;border-color:var(--cyb)}
+.rank{font-family:var(--mono);font-size:11px;color:var(--cyb);font-weight:500}
 @media (max-width:640px){
   .card{grid-template-columns:1fr}
   .actions{flex-direction:row}.actions button{flex:1}
@@ -71,8 +75,8 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
   <a href="index.html">&larr; estudo</a>
   <a href="explorador.html">explorador</a>
   <span class="sp"></span>
-  <span title="exporta as N obras de maior prioridade de curadoria do bloco filtrado (papel + resumo + recência)" style="display:inline-flex;align-items:center;gap:4px">
-    <span class="hint">curadoria&nbsp;RIS:</span>
+  <span title="mostra as N obras de maior prioridade do filtro (papel + resumo + recência) para revisar e exportar" style="display:inline-flex;align-items:center;gap:4px">
+    <span class="hint">curadoria:</span>
     <button class="btn" data-cur="30">30</button>
     <button class="btn" data-cur="60">60</button>
     <button class="btn" data-cur="90">90</button>
@@ -117,9 +121,10 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
     <div>
       <p><b>De onde vêm as obras.</b> A síntese reúne o <b>núcleo global</b> (mapeamento no OpenAlex: obras-semente, mais citadas, obras-ponte, rajadas de citação, belas adormecidas e a sondagem do 4º eixo) e o <b>corpus brasileiro</b> (revisão de literatura nacional de Claucia Faganello). Cada obra traz seus <b>eixos</b> (cibernética · instrumentos de governo · política industrial · economia da complexidade) e seu <b>papel</b> na análise.</p>
       <p><b>Por onde começar.</b> Os atalhos acima abrem blocos já recortados — <i>Só Brasil</i> (corpus da Claucia), <i>Cruzamento</i> (obras presentes nas duas frentes, global e Brasil), <i>Cibernética organizacional</i> (o recorte-alvo: a vertente que faz ponte com regulação e política industrial), <i>4º eixo</i> (economia da complexidade) e <i>Indecisas</i> (o que falta decidir). Os chips de eixo, papel e status refinam o bloco; “incluir/excluir bloco” decide tudo de uma vez.</p>
-      <p><b>Curadoria por tamanho (30 / 60 / 90 / 120).</b> Quando não quiser triar tudo à mão, esses botões exportam as <b>N obras de maior prioridade do filtro atual</b>. A prioridade ordena por <b>papel</b> (semente &gt; ponte / mais citada &gt; rajada / bela adormecida &gt; cibernética organizacional / complexidade &gt; corpus Brasil), com bônus leve para obras <b>com resumo</b> (mais trianáveis) e mais <b>recentes</b>. É um ponto de partida transparente, não um veredito — a triagem completa e colaborativa segue no Rayyan.</p>
+      <p><b>Curadoria por tamanho (30 / 60 / 90 / 120).</b> Quando não quiser triar tudo à mão, esses botões <b>mostram</b> as <b>N obras de maior prioridade do filtro atual</b> (ranqueadas, com nº de ordem) para você revisar o conjunto — e então exportá-lo em RIS. A prioridade ordena por <b>papel</b> (semente &gt; ponte / mais citada &gt; rajada / bela adormecida &gt; cibernética organizacional / complexidade &gt; corpus Brasil), com bônus leve para obras <b>com resumo</b> (mais trianáveis) e mais <b>recentes</b>. É um ponto de partida transparente, não um veredito — a triagem completa e colaborativa segue no Rayyan.</p>
     </div>
   </details>
+  <div id="curBanner"></div>
   <div id="list"></div>
   <div class="empty-list" id="emptyMsg" style="display:none">Nenhuma obra corresponde aos filtros.</div>
 </main>
@@ -197,7 +202,7 @@ __JS_DATA__
     document.getElementById('seg-exc').style.width=pct(exc);
     document.getElementById('seg-und').style.width=pct(und);
   }
-  function card(w){
+  function card(w, rank){
     const d=DEC[w.uid]||'';
     const tags = w.axes.map(a=>`<span class="tag" style="background:${AXC[a]||'#9a948c'}">${esc(a)}</span>`).join('')
       + w.roles.map(r=>`<span class="tag role">${esc(r)}</span>`).join('');
@@ -208,7 +213,7 @@ __JS_DATA__
     const link = w.doi ? `https://doi.org/${w.doi}` : (w.url||'');
     return `<article class="card ${d}${w.uid===curUid?' cur':''}" data-uid="${esc(w.uid)}">
       <div>
-        <h3>${esc(w.title)}</h3>
+        <h3>${rank?`<span class="rank">#${rank}</span> `:''}${esc(w.title)}</h3>
         <div class="meta">${esc(meta)}</div>
         <div class="tags">${tags}</div>
         ${absHtml}
@@ -221,12 +226,14 @@ __JS_DATA__
       </div>
     </article>`;
   }
-  let vis=[];
+  let vis=[], curN=0;
   function render(){
-    vis=visible();
+    const base=visible();
+    vis = curN>0 ? base.slice().sort((a,b)=>score(b)-score(a)).slice(0,curN) : base;
     if(!vis.some(w=>w.uid===curUid)) curUid = vis.length?vis[0].uid:null;
-    document.getElementById('list').innerHTML = vis.map(card).join('');
+    document.getElementById('list').innerHTML = vis.map((w,i)=>card(w, curN?i+1:0)).join('');
     document.getElementById('emptyMsg').style.display = vis.length?'none':'block';
+    curBanner(base.length);
     progress();
   }
   function curIndex(){ return vis.findIndex(w=>w.uid===curUid); }
@@ -307,12 +314,24 @@ __JS_DATA__
     if(w.year) s+=Math.max(0,Math.min(1,(+w.year-1980)/45))*0.5;
     return s;
   }
-  function expCuradoria(n){
-    const vs=visible().slice().sort((a,b)=>score(b)-score(a)).slice(0,n);
-    if(!vs.length){ alert('Nenhuma obra no filtro atual.'); return; }
-    download(`triagem_curadoria_${vs.length}.ris`, risOf(vs), 'application/x-research-info-systems');
+  // curadoria: MOSTRA as N de maior prioridade do filtro (ranqueadas) para revisar; e exporta o conjunto
+  function curBanner(baseN){
+    const b=document.getElementById('curBanner');
+    if(!curN){ b.style.display='none'; b.innerHTML=''; return; }
+    b.style.display='flex';
+    b.innerHTML = `<span><b>Curadoria:</b> as <b>${vis.length}</b> obras de maior prioridade do filtro (${baseN} no total) — papel + resumo + recência. Revise abaixo e exporte.</span>`
+      + `<span class="sp"></span>`
+      + `<button class="btn primary" id="curExp">Exportar estas ${vis.length} (RIS)</button>`
+      + `<button class="btn" id="curClr">limpar</button>`;
+    document.getElementById('curExp').onclick=()=>{ if(vis.length) download(`triagem_curadoria_${vis.length}.ris`, risOf(vis), 'application/x-research-info-systems'); };
+    document.getElementById('curClr').onclick=()=>applyCur(0);
   }
-  document.querySelectorAll('[data-cur]').forEach(btn=>btn.onclick=()=>expCuradoria(+btn.dataset.cur));
+  function applyCur(n){
+    curN=n;
+    document.querySelectorAll('[data-cur]').forEach(b=>b.classList.toggle('cur-on', +b.dataset.cur===curN));
+    render();
+  }
+  document.querySelectorAll('[data-cur]').forEach(btn=>btn.onclick=()=>applyCur(curN===+btn.dataset.cur?0:+btn.dataset.cur));
   // exporta exatamente o bloco conceitual filtrado no momento (eixo/papel/status/busca)
   document.getElementById('expBlock').onclick=()=>{
     const vs=visible();
