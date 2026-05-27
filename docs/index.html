@@ -397,6 +397,8 @@ pre.code{max-width:100%}
       <li><strong>Centralidade de intermediação</strong> <span class="term">(Brandes, 2001)</span> — identifica as obras que funcionam como pontos de passagem entre regiões da rede.</li>
       <li><strong>Detecção de rajadas</strong> <span class="term">(Kleinberg, 2003)</span> — períodos de citação anormalmente intensa, estimados por programação dinâmica (algoritmo de Viterbi).</li>
       <li><strong>Coeficiente de beleza</strong> <span class="term">(Ke et al., 2015)</span> — mede a hibernação seguida de despertar tardio (as <em>belas adormecidas</em>).</li>
+      <li><strong>Modularidade</strong> <span class="term">(Newman, 2006)</span> — quão bem uma partição da rede concentra as ligações dentro dos grupos; afere se os eixos correspondem a comunidades reais.</li>
+      <li><strong>Detecção de comunidades por propagação de rótulos</strong> <span class="term">(Raghavan et al., 2007)</span> — agrupa só pela estrutura, sem usar o vocabulário, e a concordância com os eixos é medida por <strong>informação mútua normalizada</strong> <span class="term">(Danon et al., 2005)</span> — validação não-circular dos eixos.</li>
     </ul>
     <p>Aplicadas ao corpus, as medidas produzem duas redes complementares: a de cocitação, com <span id="m-cocit"></span>, e a de acoplamento bibliográfico, com <span id="m-coupling"></span>. O particionamento de Leiden identifica <span id="m-clusters"></span>. <span id="m-pivotal"></span> A cobertura de referências citadas alcança <span id="m-pctrefs"></span> do corpus, o que limita a bola de neve regressiva das obras-semente em formato de livro (ver <a href="#limitacoes">limitações</a>).</p>
   </div>
@@ -724,7 +726,12 @@ python src/build_site.py                # este site (docs/)</pre>
     <dt>Agrupamento <span class="src">(cluster)</span></dt><dd>Comunidade de trabalhos detectada por padrão de citação compartilhada.</dd>
     <dt>Centralidade de intermediação <span class="src">(betweenness centrality)</span></dt><dd>Medida da posição de uma obra como ponto de passagem na rede.</dd>
     <dt>Rajada de citação <span class="src">(citation burst)</span></dt><dd>Período de citação anormalmente intensa em relação ao fluxo do corpus.</dd>
-    <dt>Bela adormecida · coeficiente de beleza <span class="src">(sleeping beauty · beauty coefficient)</span></dt><dd>Obra de longa hibernação e despertar tardio; o coeficiente mede a intensidade do despertar.</dd>
+    <dt>Bela adormecida · coeficiente de beleza <span class="src">(sleeping beauty · beauty coefficient)</span></dt><dd>Obra de longa hibernação e despertar tardio; o coeficiente mede a intensidade do despertar (Ke et al., 2015).</dd>
+    <dt>Força de associação <span class="src">(association strength)</span></dt><dd>Cocitação normalizada — o peso bruto dividido pela raiz do produto dos graus —, que corrige o viés das obras muito citadas e revela proximidade intelectual real (van Eck &amp; Waltman, 2009).</dd>
+    <dt>Modularidade <span class="src">(modularity, Q)</span></dt><dd>Mede o quanto uma partição da rede concentra as ligações dentro dos grupos, acima do esperado ao acaso; Q &gt; 0,3 indica comunidades reais (Newman, 2006).</dd>
+    <dt>Detecção de comunidades · propagação de rótulos <span class="src">(community detection · label propagation)</span></dt><dd>Encontra grupos coesos a partir só da estrutura de ligações, sem usar rótulos externos; aqui valida se os eixos emergem da própria rede (Raghavan et al., 2007).</dd>
+    <dt>Informação mútua normalizada <span class="src">(normalized mutual information, NMI)</span></dt><dd>Concordância entre duas partições (0 a 1): mede o quanto as comunidades detectadas coincidem com os eixos atribuídos por vocabulário (Danon et al., 2005).</dd>
+    <dt>Densidade da rede <span class="src">(network density)</span></dt><dd>Fração das ligações possíveis que de fato existem entre os nós.</dd>
     <dt>Funil de coleta <span class="src">(pipeline)</span></dt><dd>Sequência encadeada de etapas de coleta e análise.</dd>
   </dl>
 </div></section>
@@ -739,6 +746,7 @@ python src/build_site.py                # este site (docs/)</pre>
     <li>BEER, S. <em>The Heart of Enterprise</em>. Chichester: Wiley, 1979.</li>
     <li>BEER, S. <em>Diagnosing the System for Organizations</em>. Chichester: Wiley, 1985.</li>
     <li>BRANDES, U. A faster algorithm for betweenness centrality. <em>Journal of Mathematical Sociology</em>, v. 25, n. 2, p. 163–177, 2001.</li>
+    <li>DANON, L.; DÍAZ-GUILERA, A.; DUCH, J.; ARENAS, A. Comparing community structure identification. <em>Journal of Statistical Mechanics</em>, P09008, 2005.</li>
     <li>ESPEJO, R.; REYES, A. <em>Organizational Systems: Managing Complexity with the Viable System Model</em>. Berlin: Springer, 2011.</li>
     <li>HOOD, C. <em>The Tools of Government</em>. London: Macmillan, 1983.</li>
     <li>HOOD, C.; MARGETTS, H. <em>The Tools of Government in the Digital Age</em>. Basingstoke: Palgrave Macmillan, 2007.</li>
@@ -747,6 +755,8 @@ python src/build_site.py                # este site (docs/)</pre>
     <li>KLEINBERG, J. Bursty and hierarchical structure in streams. <em>Data Mining and Knowledge Discovery</em>, v. 7, n. 4, p. 373–397, 2003.</li>
     <li>MARGETTS, H. Rediscovering nodality, 2024.</li>
     <li>MAZZUCATO, M. <em>The Entrepreneurial State</em>. London: Anthem Press, 2013.</li>
+    <li>NEWMAN, M. E. J. Modularity and community structure in networks. <em>PNAS</em>, v. 103, n. 23, p. 8577–8582, 2006.</li>
+    <li>RAGHAVAN, U. N.; ALBERT, R.; KUMARA, S. Near linear time algorithm to detect community structures in large-scale networks. <em>Physical Review E</em>, v. 76, 036106, 2007.</li>
     <li>RODRIK, D. <em>Industrial Policy for the Twenty-First Century</em>. KSG Working Paper, 2004.</li>
     <li>SMALL, H. Co-citation in the scientific literature. <em>Journal of the American Society for Information Science</em>, v. 24, n. 4, p. 265–269, 1973.</li>
     <li>TRAAG, V. A.; WALTMAN, L.; VAN ECK, N. J. From Louvain to Leiden: guaranteeing well-connected communities. <em>Scientific Reports</em>, v. 9, 5233, 2019.</li>
