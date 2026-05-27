@@ -44,6 +44,13 @@ def test_site_prose(root):
     assert _scan(_strip_html(html)) == []
 
 
+def test_explorer_prose(root):
+    fp = os.path.join(root, "docs", "explorador.html")
+    if not os.path.exists(fp):
+        return
+    assert _scan(_strip_html(open(fp, encoding="utf-8").read())) == []
+
+
 def test_readme_prose(root):
     md = open(os.path.join(root, "README.md"), encoding="utf-8").read()
     assert _scan(_strip_md(md)) == []

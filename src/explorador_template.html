@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explorador da rede de cocitação · Cibernética × Regulação × Política industrial</title>
+<meta name="description" content="Explorador interativo da rede de cocitação real (dados OpenAlex): filtre por eixo, ajuste o limiar de cocitação, busque obras e abra cada uma no OpenAlex.">
+<link rel="stylesheet" href="vendor/fonts.css">
+<style>
+:root{--ink:#0e0e0e;--paper:#f5f2ed;--surface:#ede9e2;--border:rgba(14,14,14,.12);--border-s:rgba(14,14,14,.25);--cyb:#4b3fc2;--reg:#1a7a5e;--pi:#b85c10;--accent:#c23f3f;--muted:#6b6560;--mono:'JetBrains Mono',monospace;--serif:'Spectral',serif;--sans:'DM Sans',sans-serif}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;overflow:hidden}
+a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
+.topbar{height:46px;display:flex;align-items:center;gap:14px;padding:0 1.1rem;border-bottom:1px solid var(--border-s);background:rgba(245,242,237,.96);font-family:var(--mono);font-size:11px}
+.topbar .brand{font-weight:500}
+.topbar .sp{flex:1}
+.layout{display:flex;height:calc(100% - 46px)}
+.panel{width:288px;flex:none;border-right:1px solid var(--border);padding:1rem 1.1rem;overflow-y:auto;background:var(--surface)}
+.panel h1{font-family:var(--serif);font-size:1.15rem;font-weight:600;margin:.1rem 0 .2rem}
+.panel .lead{font-size:.82rem;color:var(--muted);line-height:1.5;margin:0 0 1rem}
+.ctl{margin-bottom:1.15rem}
+.ctl>label.h{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
+.axis-row{display:flex;align-items:center;gap:8px;font-size:.84rem;padding:.18rem 0;cursor:pointer;user-select:none}
+.axis-row input{accent-color:var(--ink);cursor:pointer}
+.sw{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
+.axis-row .ct{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--muted)}
+input[type=range]{width:100%;accent-color:var(--cyb)}
+.rngval{font-family:var(--mono);font-size:11px;color:var(--muted)}
+#search{width:100%;padding:.45rem .55rem;border:1px solid var(--border-s);border-radius:5px;font-family:var(--sans);font-size:.84rem;background:var(--paper)}
+.toggle{display:flex;align-items:center;gap:8px;font-size:.84rem;cursor:pointer;user-select:none}
+.btn{font-family:var(--mono);font-size:11px;padding:.4rem .7rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper);color:var(--ink);cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.live{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:.2rem}
+.stage{flex:1;position:relative;overflow:hidden}
+#graph{width:100%;height:100%;display:block;cursor:grab}
+#graph:active{cursor:grabbing}
+.lk{stroke:rgba(60,56,52,.16)}
+.lk.cross{stroke:var(--accent);stroke-opacity:.55}
+.lk.hl{stroke:var(--ink);stroke-opacity:.7}
+.nd{cursor:pointer;stroke:#fff;stroke-width:.6}
+.nd.seed{stroke:#0e0e0e;stroke-width:2}
+.nd.dim{opacity:.12}
+.lk.dim{stroke-opacity:.03}
+.lbl{font-family:var(--mono);font-size:9px;fill:var(--ink);pointer-events:none;paint-order:stroke;stroke:var(--paper);stroke-width:2.5px}
+.lbl.dim{opacity:.08}
+.legend{position:absolute;left:14px;bottom:12px;background:rgba(245,242,237,.9);border:1px solid var(--border);border-radius:6px;padding:.5rem .7rem;font-family:var(--mono);font-size:10px;color:var(--muted);line-height:1.7}
+.legend .sw{vertical-align:middle;margin-right:5px}
+.hint{position:absolute;right:14px;top:12px;font-family:var(--mono);font-size:10px;color:var(--muted);text-align:right;line-height:1.6}
+#detail{position:absolute;right:14px;bottom:12px;width:330px;max-width:calc(100% - 28px);background:var(--paper);border:1px solid var(--border-s);border-radius:8px;padding:1rem 1.1rem;box-shadow:0 10px 30px rgba(14,14,14,.16);display:none}
+#detail h3{font-family:var(--serif);font-size:1rem;margin:.1rem 0 .5rem;line-height:1.35}
+#detail .meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:.6rem}
+#detail .pill{display:inline-block;padding:.08rem .45rem;border-radius:20px;font-size:10px;color:#fff;margin-right:6px}
+#detail .nb{font-size:.8rem;color:var(--muted);line-height:1.55;max-height:150px;overflow-y:auto}
+#detail .nb b{color:var(--ink);font-weight:500}
+#detail .row{display:flex;gap:8px;margin-top:.7rem;align-items:center}
+#detail .close{position:absolute;top:8px;right:10px;cursor:pointer;color:var(--muted);font-size:16px;line-height:1}
+.tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:11px;padding:.3rem .5rem;border-radius:4px;display:none;z-index:50;max-width:260px}
+@media (max-width:760px){
+  body{overflow:auto}
+  .layout{flex-direction:column;height:auto}
+  .panel{width:100%;border-right:none;border-bottom:1px solid var(--border)}
+  .stage{height:72vh}
+  #detail{width:calc(100% - 28px)}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="brand">Explorador · rede de cocitação</span>
+  <span class="sp"></span>
+  <a href="index.html">&larr; voltar ao estudo</a>
+</div>
+<div class="layout">
+  <aside class="panel">
+    <h1>Explorador interativo</h1>
+    <p class="lead">A rede de <strong>cocitação real</strong> (OpenAlex): cada nó é uma obra; cada linha, uma cocitação. Filtre, busque e clique para abrir no OpenAlex. <a href="index.html#rede">Como foi construída &rarr;</a></p>
+
+    <div class="ctl">
+      <label class="h">Eixos temáticos</label>
+      <div id="axisFilters"></div>
+    </div>
+
+    <div class="ctl">
+      <label class="h" for="wmin">Limiar de cocitação (peso ≥ <span id="wval" class="rngval"></span>)</label>
+      <input type="range" id="wmin" min="3" max="20" step="1" value="3">
+    </div>
+
+    <div class="ctl">
+      <label class="h" for="search">Buscar obra</label>
+      <input type="text" id="search" placeholder="título, autor, eixo…" autocomplete="off">
+    </div>
+
+    <div class="ctl">
+      <label class="toggle"><input type="checkbox" id="labels" checked> Mostrar rótulos</label>
+    </div>
+
+    <div class="ctl">
+      <button class="btn" id="reset">Reorganizar</button>
+    </div>
+
+    <div class="live" id="live"></div>
+  </aside>
+
+  <div class="stage">
+    <svg id="graph" role="img" aria-label="Rede de cocitação interativa"></svg>
+    <div class="hint">arraste o fundo para mover · roda para ampliar<br>passe o mouse para destacar a vizinhança</div>
+    <div class="legend" id="legend"></div>
+    <div class="tip" id="tip"></div>
+    <div id="detail">
+      <span class="close" id="detClose" title="fechar">&times;</span>
+      <h3 id="detTitle"></h3>
+      <div class="meta" id="detMeta"></div>
+      <div class="nb" id="detNb"></div>
+      <div class="row"><a class="btn" id="detLink" target="_blank" rel="noopener">Abrir no OpenAlex &nearr;</a></div>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/d3.min.js"></script>
+<script>
+__JS_DATA__
+</script>
+<script>
+(function(){
+  const AXC = {Cyb:'#4b3fc2', Reg:'#1a7a5e', PolInd:'#b85c10', '':'#9a948c'};
+  const AXN = {Cyb:'Cibernética', Reg:'Instrumentos de governo', PolInd:'Política industrial', '':'Sem eixo atribuído'};
+  const fmt = n => (n==null?'—':(''+n).replace(/\B(?=(\d{3})+(?!\d))/g,'.'));
+  if (!window.d3 || typeof NETWORK === 'undefined' || !NETWORK.nodes || !NETWORK.nodes.length){
+    document.querySelector('.stage').innerHTML='<p style="padding:2rem;color:#6b6560">Rede indisponível (dados/network.json ausente).</p>'; return;
+  }
+
+  const allNodes = NETWORK.nodes.map(d=>Object.assign({}, d));
+  const allLinks = NETWORK.links.map(d=>Object.assign({}, d));
+  const byId = Object.fromEntries(allNodes.map(n=>[n.id,n]));
+  // grau e força (soma dos pesos) sobre a rede completa
+  const deg={}, str={}, nbrs={};
+  allNodes.forEach(n=>{deg[n.id]=0;str[n.id]=0;nbrs[n.id]=[];});
+  allLinks.forEach(l=>{
+    deg[l.source]++;deg[l.target]++;str[l.source]+=l.peso;str[l.target]+=l.peso;
+    nbrs[l.source].push({id:l.target,w:l.peso});nbrs[l.target].push({id:l.source,w:l.peso});
+  });
+  Object.values(nbrs).forEach(a=>a.sort((x,y)=>y.w-x.w));
+  const crossOf = l => { const a=byId[l.source].axis,b=byId[l.target].axis; return a&&b&&a!==b; };
+  const rad = d => 4 + Math.sqrt(d.cited_by||0)/7;
+
+  const svg = d3.select('#graph');
+  const stage = document.querySelector('.stage');
+  let W=stage.clientWidth, H=stage.clientHeight;
+  svg.attr('viewBox',[0,0,W,H]);
+  const root = svg.append('g');
+  const gL = root.append('g'), gN = root.append('g'), gT = root.append('g');
+
+  svg.call(d3.zoom().scaleExtent([0.3,6]).on('zoom', ev=>root.attr('transform', ev.transform)));
+
+  let link = gL.selectAll('line'), node = gN.selectAll('circle'), label = gT.selectAll('text');
+  const tip = document.getElementById('tip');
+
+  const sim = d3.forceSimulation()
+    .force('link', d3.forceLink().id(d=>d.id).distance(l=>90-Math.min(l.peso,30)).strength(.35))
+    .force('charge', d3.forceManyBody().strength(-140))
+    .force('x', d3.forceX(W/2).strength(.06))
+    .force('y', d3.forceY(H/2).strength(.06))
+    .force('collide', d3.forceCollide().radius(d=>rad(d)+5))
+    .on('tick', ticked);
+
+  // estado dos filtros
+  const axisOn = {Cyb:true, Reg:true, PolInd:true, '':true};
+  let wmin=3, showLabels=true, query='', selected=null;
+
+  function visibleData(){
+    const ns = allNodes.filter(n=>axisOn[n.axis||'']);
+    const ok = new Set(ns.map(n=>n.id));
+    const ls = allLinks.filter(l=>l.peso>=wmin && ok.has(l.source.id||l.source) && ok.has(l.target.id||l.target));
+    return {ns, ls};
+  }
+
+  function restart(reheat){
+    const {ns, ls} = visibleData();
+    document.getElementById('live').textContent = `mostrando ${ns.length} de ${allNodes.length} obras · ${ls.length} cocitações`;
+
+    link = link.data(ls, d=>(d.source.id||d.source)+'-'+(d.target.id||d.target));
+    link.exit().remove();
+    link = link.enter().append('line')
+      .attr('class', d=>'lk'+(crossOf({source:d.source.id||d.source,target:d.target.id||d.target})?' cross':''))
+      .merge(link)
+      .attr('stroke-width', d=>0.5+Math.min(d.peso,30)/12);
+
+    node = node.data(ns, d=>d.id);
+    node.exit().remove();
+    const nEnter = node.enter().append('circle')
+      .attr('class', d=>'nd'+(d.seed?' seed':''))
+      .attr('r', rad).attr('fill', d=>AXC[d.axis]||AXC[''])
+      .on('mouseover', hoverOn).on('mousemove', moveTip).on('mouseout', hoverOff)
+      .on('click', (ev,d)=>{ev.stopPropagation(); select(d);})
+      .call(d3.drag().on('start',dStart).on('drag',dDrag).on('end',dEnd));
+    node = nEnter.merge(node);
+
+    label = label.data(ns, d=>d.id);
+    label.exit().remove();
+    label = label.enter().append('text').attr('class','lbl').attr('dx',d=>rad(d)+3).attr('dy',3)
+      .text(d=>d.label.slice(0,26)).merge(label)
+      .style('display', showLabels?null:'none');
+
+    sim.nodes(ns);
+    sim.force('link').links(ls);
+    if (reheat) sim.alpha(.7).restart(); else sim.alpha(.25).restart();
+    applyQuery();
+  }
+
+  function ticked(){
+    link.attr('x1',d=>d.source.x).attr('y1',d=>d.source.y).attr('x2',d=>d.target.x).attr('y2',d=>d.target.y);
+    node.attr('cx',d=>d.x).attr('cy',d=>d.y);
+    label.attr('x',d=>d.x).attr('y',d=>d.y);
+  }
+
+  // hover: destaca o nó e sua vizinhança
+  function hoverOn(ev,d){
+    const keep = new Set([d.id]); nbrs[d.id].forEach(o=>keep.add(o.id));
+    node.classed('dim', n=>!keep.has(n.id));
+    label.classed('dim', n=>!keep.has(n.id));
+    link.classed('hl', l=>(l.source.id===d.id||l.target.id===d.id))
+        .classed('dim', l=>!(l.source.id===d.id||l.target.id===d.id));
+    tip.style.display='block';
+    tip.innerHTML = `<b>${d.label}</b><br>${AXN[d.axis||'']} · ${d.year||'s.d.'} · ${fmt(d.cited_by)} cit. · grau ${deg[d.id]}`;
+    moveTip(ev);
+  }
+  function moveTip(ev){
+    const r=stage.getBoundingClientRect();
+    tip.style.left=(ev.clientX-r.left+14)+'px'; tip.style.top=(ev.clientY-r.top+14)+'px';
+  }
+  function hoverOff(){
+    tip.style.display='none';
+    node.classed('dim',false); label.classed('dim',false);
+    link.classed('hl',false).classed('dim',false);
+    applyQuery();
+  }
+
+  // clique: painel de detalhe
+  function select(d){
+    selected=d;
+    document.getElementById('detTitle').textContent = d.label;
+    document.getElementById('detMeta').innerHTML =
+      `<span class="pill" style="background:${AXC[d.axis]||AXC['']}">${AXN[d.axis||'']}</span>`
+      + `${d.year||'s.d.'} · ${fmt(d.cited_by)} citações · grau ${deg[d.id]} · força ${fmt(str[d.id])}`;
+    const top = nbrs[d.id].slice(0,8)
+      .map(o=>`<b>${(byId[o.id]||{}).label||o.id}</b> <span style="color:var(--muted)">(${o.w})</span>`).join(' · ');
+    document.getElementById('detNb').innerHTML = top ? ('Mais cocitada com: '+top) : 'Sem cocitações no limiar atual.';
+    const link = document.getElementById('detLink');
+    if (/^W\d+$/.test(d.id)){ link.style.display=''; link.href='https://openalex.org/'+d.id; }
+    else link.style.display='none';
+    document.getElementById('detail').style.display='block';
+  }
+  document.getElementById('detClose').onclick=()=>{document.getElementById('detail').style.display='none';};
+  svg.on('click', ()=>{document.getElementById('detail').style.display='none';});
+
+  function applyQuery(){
+    if (!query){ node.style('opacity',null); label.style('opacity',showLabels?null:0); return; }
+    const q=query.toLowerCase();
+    const hit=n=>((n.label||'')+' '+(n.axis||'')+' '+(AXN[n.axis||''])).toLowerCase().includes(q);
+    node.style('opacity',n=>hit(n)?1:.12);
+    label.style('opacity',n=>(showLabels&&hit(n))?1:0);
+  }
+
+  function dStart(ev){ if(!ev.active) sim.alphaTarget(.3).restart(); ev.subject.fx=ev.subject.x; ev.subject.fy=ev.subject.y; }
+  function dDrag(ev){ ev.subject.fx=ev.x; ev.subject.fy=ev.y; }
+  function dEnd(ev){ if(!ev.active) sim.alphaTarget(0); ev.subject.fx=null; ev.subject.fy=null; }
+
+  // controles
+  const af = document.getElementById('axisFilters');
+  const counts = {}; allNodes.forEach(n=>counts[n.axis||'']=(counts[n.axis||'']||0)+1);
+  ['Cyb','Reg','PolInd',''].forEach(a=>{
+    const row=document.createElement('label'); row.className='axis-row';
+    row.innerHTML=`<input type="checkbox" checked data-ax="${a}"><span class="sw" style="background:${AXC[a]}"></span>${AXN[a]}<span class="ct">${counts[a]||0}</span>`;
+    row.querySelector('input').addEventListener('change',e=>{axisOn[a]=e.target.checked; restart(false);});
+    af.appendChild(row);
+  });
+  const wEl=document.getElementById('wmin'), wv=document.getElementById('wval');
+  wv.textContent=wmin;
+  wEl.addEventListener('input',e=>{wmin=+e.target.value; wv.textContent=wmin; restart(false);});
+  document.getElementById('labels').addEventListener('change',e=>{showLabels=e.target.checked; label.style('display',showLabels?null:'none'); applyQuery();});
+  document.getElementById('search').addEventListener('input',e=>{query=e.target.value.trim(); applyQuery();});
+  document.getElementById('reset').addEventListener('click',()=>restart(true));
+
+  document.getElementById('legend').innerHTML =
+    `<span class="sw" style="background:${AXC.Cyb}"></span>Cibernética &nbsp; `
+    +`<span class="sw" style="background:${AXC.Reg}"></span>Regulação &nbsp; `
+    +`<span class="sw" style="background:${AXC.PolInd}"></span>Política industrial<br>`
+    +`○ contorno preto = obra-semente &nbsp;·&nbsp; <span style="color:var(--accent)">━</span> linha vermelha = cocitação entre eixos`;
+
+  window.addEventListener('resize',()=>{
+    W=stage.clientWidth; H=stage.clientHeight; svg.attr('viewBox',[0,0,W,H]);
+    sim.force('x',d3.forceX(W/2).strength(.06)).force('y',d3.forceY(H/2).strength(.06)).alpha(.2).restart();
+  });
+
+  restart(true);
+})();
+</script>
+</body>
+</html>

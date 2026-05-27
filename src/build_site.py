@@ -28,6 +28,7 @@ from report_from_json import build_js  # noqa: E402  (reúso dos consts de gráf
 from report_template import inject_template  # noqa: E402
 
 TEMPLATE = os.path.join(HERE, "site_template.html")
+EXPLORER_TPL = os.path.join(HERE, "explorador_template.html")
 JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
 DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
@@ -178,6 +179,14 @@ def main():
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)
     print(f"site:  {index}  ({os.path.getsize(index)//1024} KB)")
+
+    if os.path.exists(EXPLORER_TPL):
+        with open(EXPLORER_TPL, encoding="utf-8") as f:
+            expl = f.read().replace("__JS_DATA__", js)
+        explorer = os.path.join(DOCS, "explorador.html")
+        with open(explorer, "w", encoding="utf-8") as f:
+            f.write(expl)
+        print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB)")
 
     n = write_csvs(R, DADOS)
     write_dicionario(DADOS)

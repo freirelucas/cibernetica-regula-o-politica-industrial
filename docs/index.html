@@ -48,6 +48,8 @@ em{font-style:italic}
 .navmenu[open]>.navlist{display:flex;flex-direction:column;gap:1px;position:absolute;top:calc(100% + 6px);left:0;min-width:210px;max-height:72vh;overflow-y:auto;background:var(--paper);border:1px solid var(--border-s);border-radius:6px;padding:.4rem;box-shadow:0 8px 24px rgba(14,14,14,.12);z-index:300}
 .navlist a{color:var(--muted);padding:.4rem .6rem;border-radius:4px;white-space:nowrap;display:block}
 .navlist a:hover{color:var(--ink);background:var(--surface);text-decoration:none}
+.explore-link{color:var(--cyb);border:1px solid var(--cyb);border-radius:4px;padding:.3rem .6rem;white-space:nowrap}
+.explore-link:hover{background:var(--cyb);color:var(--paper);text-decoration:none}
 .navmenu>summary:focus-visible,.navlist a:focus-visible,.dl-btn:focus-visible{outline:2px solid var(--cyb);outline-offset:2px}
 @media(min-width:901px){
   .navmenu>summary{display:none}
@@ -143,6 +145,13 @@ h1 em{font-style:italic;color:var(--muted)}
 .cluster-n{font-size:10px;color:var(--muted);display:block;margin-top:2px}
 .cluster-papers{font-size:.82rem;color:var(--muted);line-height:1.6}
 .cluster-papers em{font-style:italic;color:var(--ink)}
+.cluster-papers [data-t]{cursor:pointer;border-radius:3px;transition:background .12s}
+.cluster-papers [data-t]:hover{background:var(--cyb-l)}
+.paper-row[data-t],.bridge-card[data-t],.burst-row[data-w],.beauty-row[data-t]{cursor:pointer;transition:background .12s}
+.paper-row[data-t]:hover,.beauty-row[data-t]:hover,.burst-row[data-w]:hover{background:var(--surface)}
+.bridge-card[data-t]:hover{border-color:var(--cyb);box-shadow:0 2px 10px rgba(75,63,194,.1)}
+.cluster-row.flash{animation:flashbg 1.5s ease-out}
+@keyframes flashbg{0%{background:var(--cyb-l)}100%{background:transparent}}
 .beauty-row{display:grid;grid-template-columns:72px 1fr 80px;gap:10px;align-items:start;padding:.65rem 0;border-bottom:1px solid var(--border)}
 .beauty-b{font-family:var(--mono);font-size:1.2rem;font-weight:500}
 .beauty-tm{font-family:var(--mono);font-size:9.5px;color:var(--muted);margin-top:2px}
@@ -266,6 +275,7 @@ pre.code{max-width:100%}
       <a href="#pontes">Zonas de intercâmbio</a>
       <a href="#agrupamentos">Agrupamentos</a>
       <a href="#rede">Rede</a>
+      <a href="explorador.html">Explorador interativo &nearr;</a>
       <a href="#rajadas">Rajadas</a>
       <a href="#adormecidas">Belas adormecidas</a>
       <a href="#citadas">Mais citadas</a>
@@ -281,6 +291,7 @@ pre.code{max-width:100%}
       <a href="#referencias">Referências</a>
     </div>
   </details>
+  <a href="explorador.html" class="explore-link">Explorador&nearr;</a>
 </nav>
 
 <nav class="sidenav" aria-label="Seções">
@@ -463,9 +474,10 @@ pre.code{max-width:100%}
     <span><span class="sw" style="background:var(--cyb)"></span>Cibernética</span>
     <span><span class="sw" style="background:var(--reg)"></span>Regulação</span>
     <span><span class="sw" style="background:var(--pi)"></span>Política industrial</span>
-    <span style="color:var(--muted)">○ contorno preto = obra-semente · linha = cocitação (espessura ∝ frequência)</span>
+    <span style="color:var(--muted)">○ contorno preto = obra-semente · linha cinza = cocitação · <span style="color:var(--accent)">linha vermelha</span> = cocitação entre eixos (espessura ∝ frequência)</span>
   </div>
   <div class="callout" id="net-stats" style="margin-top:1.25rem"></div>
+  <p style="margin:1.1rem 0 .25rem"><a href="explorador.html" class="explore-link" style="font-family:var(--mono);font-size:13px;padding:.5rem .9rem">Abrir o explorador interativo &nearr;</a> <span style="color:var(--muted);font-size:.85rem">filtre por eixo, ajuste o limiar de cocitação, busque obras e abra cada uma no OpenAlex.</span></p>
   <p class="fig-cap">Núcleo de <span id="net-n"></span> obras mais cocitadas (arestas com peso ≥ 3). A disposição por força revela <strong>três comunidades</strong> visualmente distintas — cibernética, instrumentos de governo e política industrial. As três obras de Lange caem em comunidades diferentes (cibernética e planejamento), retrato visual de uma recepção ainda compartimentada. É um corte local e delimitado (bola de neve das sementes), não o funil completo do Colab; o eixo é atribuído por vocabulário, e duas obras citadas já não existem como registro no OpenAlex (aparecem sem rótulo).</p>
 </div></section>
 
@@ -780,6 +792,20 @@ const NETMETA={"n": 69, "e": 543, "densidade": 0.231, "classif": 501, "intra": 4
 const byId = id => document.getElementById(id);
 const fmt = n => Number(n).toLocaleString('pt-BR');
 
+/* Clique em qualquer obra → abre no OpenAlex (id real quando há) ou busca pelo título */
+function openWork(o){
+  const id = (o && (o.id || o.ref_id)) || '';
+  if (/^W\d+$/.test(id)) { window.open('https://openalex.org/' + id, '_blank', 'noopener'); return; }
+  const q = (o && (o.title || o.label)) || '';
+  if (q) window.open('https://openalex.org/works?search=' + encodeURIComponent(q.slice(0, 120)), '_blank', 'noopener');
+}
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-w],[data-t]');
+  if (!el) return;
+  if (el.dataset.w) openWork({ id: el.dataset.w });
+  else openWork({ title: el.dataset.t });
+});
+
 byId('gen-date').textContent = 'Execução de referência · ' + STATS.generated;
 byId('footer-stats').textContent = fmt(STATS.corpus) + ' trabalhos · ' + STATS.generated;
 
@@ -866,7 +892,7 @@ function renderTop20(){
   const rows = TOP20.filter(r => (!t20ax || (r.axes||'').includes(t20ax)) && matchq(r,t20q));
   rows.sort((a,b)=> t20sort==='ano' ? (b.year||0)-(a.year||0) : b.cited_by-a.cited_by);
   byId('list-top20').innerHTML = rows.map((r,i)=>
-    `<div class="paper-row">
+    `<div class="paper-row" data-t="${r.title.replace(/"/g,'&quot;')}" title="buscar no OpenAlex">
       <div class="paper-rank">${String(i+1).padStart(2,'0')}</div>
       <div><div class="paper-title">${r.title}</div>
       <div class="paper-meta">${r.authors||'—'} · ${r.year} · ${tags(r.axes)}</div></div>
@@ -885,7 +911,7 @@ function renderBridges(){
   const rows = BRIDGES.filter(r => (r.axes||'').split(',').length>=brMin && matchq(r,brQ));
   byId('list-bridges').innerHTML = rows.map(r=>{
     const isAll=(r.axes||'').split(',').length>=3;
-    return `<div class="bridge-card ${isAll?'full':'two'}">
+    return `<div class="bridge-card ${isAll?'full':'two'}" data-t="${r.title.replace(/"/g,'&quot;')}" title="buscar no OpenAlex">
       <div class="bridge-title">${r.title}</div>
       <div class="bridge-meta">${r.authors||'—'} · ${r.year} · ${fmt(r.cited_by)} cit.</div>
       <div style="margin-top:5px">${tags(r.axes)}</div>
@@ -903,7 +929,7 @@ const bcols = ['#4b3fc2','#1a7a5e','#b85c10'];
 byId('list-bursts').innerHTML = BURSTS.map((r,i) => {
   const pct = Math.round(r.weight/maxW*100);
   const col = bcols[i%bcols.length];
-  return `<div class="burst-row">
+  return `<div class="burst-row" data-w="${r.ref_id||''}" title="abrir no OpenAlex">
     <div class="burst-w">p=${r.weight}</div>
     <div class="burst-track"><div class="burst-fill" style="width:${pct}%;background:${col}">
       <span class="burst-label">${r.title} · <em>${r.authors||'—'}</em></span>
@@ -913,10 +939,10 @@ byId('list-bursts').innerHTML = BURSTS.map((r,i) => {
 }).join('');
 
 /* Agrupamentos */
-byId('list-clusters').innerHTML = CLUSTERS.filter(c=>c.size>=3).map(c =>
-  `<div class="cluster-row">
+byId('list-clusters').innerHTML = CLUSTERS.filter(c=>c.size>=3).map((c,i) =>
+  `<div class="cluster-row" id="cl-${i}">
     <div><div class="cluster-name">${c.label}</div><span class="cluster-n">${c.size} trabalhos</span></div>
-    <div class="cluster-papers">${c.papers.map(p=>`<em>${p.title}${p.title.length>=59?'…':''}</em> (${fmt(p.cited_by)} cit., ${p.year})`).join('<br>')}</div>
+    <div class="cluster-papers">${c.papers.map(p=>`<span data-t="${p.title.replace(/"/g,'&quot;')}" title="buscar no OpenAlex"><em>${p.title}${p.title.length>=59?'…':''}</em> (${fmt(p.cited_by)} cit., ${p.year})</span>`).join('<br>')}</div>
   </div>`).join('');
 
 /* Belas adormecidas */
@@ -925,7 +951,7 @@ byId('list-beauties').innerHTML = BEAUTIES.map(r => {
   const bw = Math.round(r.B/maxB*70);
   const col = r.B>100?'var(--cyb)':r.B>50?'var(--reg)':'var(--pi)';
   const cls = r.B>100?'clássica':r.B>50?'tardia':'emergente';
-  return `<div class="beauty-row">
+  return `<div class="beauty-row" data-t="${r.title.replace(/"/g,'&quot;')}" title="buscar no OpenAlex">
     <div><div class="beauty-b">B=${r.B}</div><div class="beauty-tm">t<sub>m</sub>=${r.t_m} anos</div></div>
     <div><div class="beauty-title">${r.title}</div>
     <div class="beauty-sub">${r.year} · ${fmt(r.cited_by)} cit.</div></div>
@@ -988,10 +1014,14 @@ new Chart(byId('chartBridges'), {
     backgroundColor:BRIDGES.map(b=>(b.axes||'').split(',').length>=3?'rgba(194,63,63,.55)':'rgba(107,101,96,.4)'),
     borderColor:BRIDGES.map(b=>(b.axes||'').split(',').length>=3?'#c23f3f':'#6b6560'),borderWidth:1
   }]},
-  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},
+  options:{responsive:true,maintainAspectRatio:false,
+    onClick:(e,els)=>{if(els.length)openWork({title:BRIDGES[els[0].index].title});},
+    onHover:(e,els)=>{e.native.target.style.cursor=els.length?'pointer':'default';},
+    plugins:{legend:{display:false},
       tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono},callbacks:{
         title:(items)=>{const b=BRIDGES[items[0].dataIndex];return b.title;},
-        label:(ctx)=>{const b=BRIDGES[ctx.dataIndex];return `${b.authors||'—'} · ${b.year} · ${fmt(b.cited_by)} cit. · ${b.axes}`;}}}},
+        label:(ctx)=>{const b=BRIDGES[ctx.dataIndex];return `${b.authors||'—'} · ${b.year} · ${fmt(b.cited_by)} cit. · ${b.axes}`;},
+        afterLabel:()=>'— clique para buscar no OpenAlex'}}},
     scales:{x:{ticks:{callback:v=>String(v),font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}},
             y:{ticks:{callback:v=>Number(v).toLocaleString('pt-BR'),font:{size:10,family:fMono},color:'#6b6560'},grid:{color:'rgba(14,14,14,.05)'}}},
     layout:{padding:{top:14,right:14}}}
@@ -1003,7 +1033,10 @@ new Chart(byId('chartClusters'), {
   data:{labels:clShown.map(c=>c.label.split('·').slice(0,2).map(s=>s.trim()).join(' · ')),
         datasets:[{data:clShown.map(c=>c.size),
           backgroundColor:clPal.map(c=>c+'CC'),borderColor:clPal,borderWidth:1,borderRadius:2}]},
-  options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},
+  options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',
+    onClick:(e,els)=>{if(els.length){const card=byId('cl-'+els[0].index);if(card){card.scrollIntoView({behavior:'smooth',block:'center'});card.classList.add('flash');setTimeout(()=>card.classList.remove('flash'),1500);}}},
+    onHover:(e,els)=>{e.native.target.style.cursor=els.length?'pointer':'default';},
+    plugins:{legend:{display:false},tooltip:{titleFont:{family:fMono},bodyFont:{family:fMono},callbacks:{afterLabel:()=>'— clique para ver as obras'}}},
     scales:{x:{grid:{color:'rgba(14,14,14,.05)'},ticks:{font:{size:10,family:fMono},color:'#6b6560'}},
             y:{grid:{display:false},ticks:{font:{size:10,family:fMono},color:'#0e0e0e'}}}}
 });
@@ -1052,8 +1085,9 @@ new Chart(byId('chartClusters'), {
     ctx.clearRect(0,0,W,H);
     links.forEach(l=>{
       ctx.beginPath(); ctx.moveTo(l.source.x,l.source.y); ctx.lineTo(l.target.x,l.target.y);
-      if (l.tipo==='cita'){ ctx.strokeStyle='rgba(14,14,14,.28)'; ctx.lineWidth=1; ctx.setLineDash([]); }
-      else { ctx.strokeStyle='rgba(60,56,52,.18)'; ctx.lineWidth=0.4+(l.peso||1)/14; ctx.setLineDash([]); }
+      const cross = l.source.axis && l.target.axis && l.source.axis!==l.target.axis;
+      if (cross){ ctx.strokeStyle='rgba(194,63,63,.6)'; ctx.lineWidth=1+(l.peso||1)/12; }
+      else { ctx.strokeStyle='rgba(60,56,52,.16)'; ctx.lineWidth=0.4+(l.peso||1)/14; }
       ctx.stroke();
     });
     ctx.setLineDash([]);
