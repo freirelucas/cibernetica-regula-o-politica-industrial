@@ -21,6 +21,10 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 .prog{font-family:var(--mono);font-size:11px;color:var(--muted)}
 .prog b{color:var(--ink)}
 .prog .pi-ok{color:var(--ok)}.prog .pi-no{color:var(--accent)}.prog .pi-mb{color:var(--pi)}
+.pbar{display:inline-flex;width:170px;height:8px;border-radius:5px;overflow:hidden;border:1px solid var(--border-s)}
+.pbar i{display:block;height:100%}
+#seg-inc{background:var(--ok)}#seg-may{background:var(--pi)}#seg-exc{background:var(--accent)}#seg-und{background:var(--border-s)}
+.card.cur{outline:2px solid var(--cyb);outline-offset:2px}
 .chips{display:flex;gap:5px;flex-wrap:wrap}
 .chip{font-family:var(--mono);font-size:10px;padding:.25rem .55rem;border:1px solid var(--border-s);border-radius:20px;cursor:pointer;user-select:none;background:var(--paper);color:var(--muted)}
 .chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
@@ -63,18 +67,22 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
   <a href="explorador.html">explorador</a>
   <span class="sp"></span>
   <button class="btn primary" id="expRis">Exportar incluídos (RIS)</button>
-  <button class="btn" id="expCsv">Exportar decisões (CSV)</button>
+  <button class="btn" id="expCsv">Decisões (CSV)</button>
+  <button class="btn" id="expJson">Decisões (JSON)</button>
+  <label class="btn" for="impFile" title="combinar com decisões de outro pesquisador">Importar</label>
+  <input id="impFile" type="file" accept=".json,application/json" hidden>
   <button class="btn" id="reset">Limpar</button>
 </nav>
 <div class="bar2">
   <span class="prog" id="prog"></span>
+  <span class="pbar" id="pbar" title="progresso"><i id="seg-inc"></i><i id="seg-may"></i><i id="seg-exc"></i><i id="seg-und"></i></span>
   <span class="chips" id="axisChips"></span>
   <span class="chips" id="roleChips"></span>
   <span class="chips" id="statusChips"></span>
   <input id="q" type="text" placeholder="buscar título, autor, resumo…" autocomplete="off">
 </div>
 <main class="wrap">
-  <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. É uma pré-triagem leve; a triagem colaborativa completa segue no Rayyan.</p>
+  <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro), com resumo e eixo à vista. Decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b> — as decisões ficam salvas neste navegador. Ao final, exporte os incluídos em <b>RIS</b> e suba no Rayyan (<i>Add references → Upload</i>) — ou baixe todas as decisões em CSV. É uma pré-triagem leve; a triagem colaborativa completa segue no Rayyan. <span class="hint">Atalhos no teclado: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
   <div id="list"></div>
   <div class="empty-list" id="emptyMsg" style="display:none">Nenhuma obra corresponde aos filtros.</div>
 </main>
@@ -93,7 +101,7 @@ const RAYYAN_WORKS=[{"uid": "10.1111/padm.12960", "title": "How rediscovering no
   const save = () => localStorage.setItem(STORE, JSON.stringify(DEC));
   document.getElementById('nTotal').textContent = works.length;
 
-  let fAxis=new Set(), fRole=new Set(), fStatus='todos', q='';
+  let fAxis=new Set(), fRole=new Set(), fStatus='todos', q='', curUid=null;
 
   // chips de eixo / papel / status
   const axes=[...new Set(works.flatMap(w=>w.axes))].sort();
@@ -125,9 +133,14 @@ const RAYYAN_WORKS=[{"uid": "10.1111/padm.12960", "title": "How rediscovering no
   }
   function progress(){
     let inc=0,exc=0,may=0; works.forEach(w=>{const d=DEC[w.uid]; if(d==='inc')inc++; else if(d==='exc')exc++; else if(d==='may')may++;});
-    const und=works.length-inc-exc-may;
+    const und=works.length-inc-exc-may, n=works.length||1;
     document.getElementById('prog').innerHTML =
       `<b>${works.length}</b> obras · <span class="pi-ok">${inc} incluídas</span> · <span class="pi-mb">${may} talvez</span> · <span class="pi-no">${exc} excluídas</span> · ${und} indecisas`;
+    const pct=x=>(100*x/n).toFixed(1)+'%';
+    document.getElementById('seg-inc').style.width=pct(inc);
+    document.getElementById('seg-may').style.width=pct(may);
+    document.getElementById('seg-exc').style.width=pct(exc);
+    document.getElementById('seg-und').style.width=pct(und);
   }
   function card(w){
     const d=DEC[w.uid]||'';
@@ -138,7 +151,7 @@ const RAYYAN_WORKS=[{"uid": "10.1111/padm.12960", "title": "How rediscovering no
       ? `<div class="abs clamp" id="abs-${w.uid}">${esc(w.abstract)}</div><button class="more" data-more="${w.uid}">ver resumo completo</button>`
       : `<div class="abs empty">sem resumo disponível</div>`;
     const link = w.doi ? `https://doi.org/${w.doi}` : (w.url||'');
-    return `<article class="card ${d}" data-uid="${esc(w.uid)}">
+    return `<article class="card ${d}${w.uid===curUid?' cur':''}" data-uid="${esc(w.uid)}">
       <div>
         <h3>${esc(w.title)}</h3>
         <div class="meta">${esc(meta)}</div>
@@ -153,25 +166,54 @@ const RAYYAN_WORKS=[{"uid": "10.1111/padm.12960", "title": "How rediscovering no
       </div>
     </article>`;
   }
+  let vis=[];
   function render(){
-    const vs=visible();
-    document.getElementById('list').innerHTML = vs.map(card).join('');
-    document.getElementById('emptyMsg').style.display = vs.length?'none':'block';
+    vis=visible();
+    if(!vis.some(w=>w.uid===curUid)) curUid = vis.length?vis[0].uid:null;
+    document.getElementById('list').innerHTML = vis.map(card).join('');
+    document.getElementById('emptyMsg').style.display = vis.length?'none':'block';
     progress();
   }
-  // delegação: decisões, "ver mais"
+  function curIndex(){ return vis.findIndex(w=>w.uid===curUid); }
+  function setCur(uid, scroll){
+    curUid=uid;
+    document.querySelectorAll('.card').forEach(c=>c.classList.toggle('cur', c.dataset.uid===uid));
+    if(scroll){ const el=[...document.querySelectorAll('.card')].find(c=>c.dataset.uid===uid); if(el) el.scrollIntoView({block:'center', behavior:'smooth'}); }
+  }
+  function move(delta){ if(!vis.length) return; let i=curIndex(); i=Math.max(0,Math.min(vis.length-1,(i<0?0:i)+delta)); setCur(vis[i].uid, true); }
+  function nextUndecided(){
+    const start=curIndex();
+    for(let off=1; off<=vis.length; off++){ const k=(start+off)%vis.length; if(!DEC[vis[k].uid]){ setCur(vis[k].uid, true); return; } }
+  }
+  function applyDecision(uid, d, advance){
+    if(!uid) return;
+    if(DEC[uid]===d) delete DEC[uid]; else DEC[uid]=d;   // repetir desfaz
+    save();
+    if(fStatus!=='todos'){ render(); }
+    else {
+      const art=[...document.querySelectorAll('.card')].find(c=>c.dataset.uid===uid);
+      if(art){ art.className='card '+(DEC[uid]||'')+(uid===curUid?' cur':'');
+        art.querySelectorAll('.actions button').forEach(b=>b.className=DEC[uid]===b.dataset.d?('sel-'+b.dataset.d):''); }
+      progress();
+    }
+    if(advance) move(1);
+  }
+  // delegação: decisões, "ver mais", foco no card
   document.getElementById('list').addEventListener('click', e=>{
     const mb=e.target.closest('[data-more]');
     if(mb){ const el=document.getElementById('abs-'+mb.dataset.more); el.classList.toggle('clamp'); mb.textContent=el.classList.contains('clamp')?'ver resumo completo':'recolher'; return; }
+    const art=e.target.closest('.card'); if(art) setCur(art.dataset.uid, false);
     const btn=e.target.closest('.actions button'); if(!btn) return;
-    const art=e.target.closest('.card'), uid=art.dataset.uid, d=btn.dataset.d;
-    if(DEC[uid]===d) delete DEC[uid]; else DEC[uid]=d;   // clicar de novo desfaz
-    save();
-    if(fStatus!=='todos'){ render(); } else {
-      art.className='card '+(DEC[uid]||'');
-      art.querySelectorAll('.actions button').forEach(b=>b.className=DEC[uid]===b.dataset.d?('sel-'+b.dataset.d):'');
-      progress();
-    }
+    applyDecision(art.dataset.uid, btn.dataset.d, false);
+  });
+  // atalhos de teclado
+  document.addEventListener('keydown', e=>{
+    if(/^(INPUT|TEXTAREA|SELECT)$/.test((document.activeElement||{}).tagName||'')) return;
+    const k=e.key.toLowerCase();
+    if(k==='i'||k==='e'||k==='m'){ applyDecision(curUid, {i:'inc',e:'exc',m:'may'}[k], true); e.preventDefault(); }
+    else if(k==='n'){ nextUndecided(); e.preventDefault(); }
+    else if(k==='j'||k==='arrowdown'){ move(1); e.preventDefault(); }
+    else if(k==='k'||k==='arrowup'){ move(-1); e.preventDefault(); }
   });
 
   // exportações
@@ -205,6 +247,26 @@ const RAYYAN_WORKS=[{"uid": "10.1111/padm.12960", "title": "How rediscovering no
     works.forEach(w=>rows.push([w.uid,w.title,w.year||'',w.axes.join('|'),DEC[w.uid]||'indeciso']));
     download('triagem_decisoes.csv', rows.map(r=>r.map(q).join(',')).join('\n'), 'text/csv');
   };
+  document.getElementById('expJson').onclick=()=>{
+    download('triagem_decisoes.json', JSON.stringify(DEC, null, 1), 'application/json');
+  };
+  // importar decisões de outro pesquisador e COMBINAR (sem destruir: conflitos são mantidos)
+  document.getElementById('impFile').addEventListener('change', ev=>{
+    const f=ev.target.files[0]; if(!f) return;
+    const r=new FileReader();
+    r.onload=()=>{
+      let inc; try{ inc=JSON.parse(r.result); }catch(_){ alert('Arquivo JSON inválido.'); return; }
+      let add=0, conf=0;
+      for(const uid in inc){
+        if(!['inc','exc','may'].includes(inc[uid])) continue;
+        if(!DEC[uid]){ DEC[uid]=inc[uid]; add++; }
+        else if(DEC[uid]!==inc[uid]){ conf++; }
+      }
+      save(); render();
+      alert(`Decisões combinadas: ${add} adicionadas` + (conf?`, ${conf} em conflito (mantidas as suas — reveja no Rayyan).`:'.'));
+    };
+    r.readAsText(f); ev.target.value='';
+  });
   document.getElementById('reset').onclick=()=>{
     if(confirm('Apagar todas as decisões de triagem deste navegador?')){ for(const k in DEC) delete DEC[k]; save(); render(); }
   };
