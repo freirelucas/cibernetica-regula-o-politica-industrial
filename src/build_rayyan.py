@@ -128,6 +128,30 @@ def consolidate():
     return [store[k] for k in sorted(store, key=lambda k: (store[k]["year"] or "0"), reverse=True)]
 
 
+_ORG_CYB = ("viable system", "vsm", "stafford beer", "espejo", "management cybernet",
+            "organizational cybernet", "organizational systems", "syntegrity", "brain of the firm",
+            "heart of enterprise", "diagnosing the system", "designing freedom", "cybersyn",
+            "managing complexity", "soft systems", "systems thinking", "systems practice",
+            "systems methodolog", "critical systems", "fifth discipline")
+_GERAL_CYB = ("ashby", "wiener", "requisite variety", "second-order", "von foerster",
+              "introduction to cybernetics", "theory of communication", "general system",
+              "von bertalanffy", "autopoiesis", "self-organ", "homeostat")
+
+
+def tag_cyb_subtype(works):
+    """Distingue cibernética ORGANIZACIONAL (MSV/Beer/sistemas aplicados) da GERAL/fundacional
+    (Wiener/Ashby/teoria geral) — papel extra nas obras de cibernética. A estrutura da rede
+    mostra que é a organizacional que faz fronteira com regulação e política industrial."""
+    for e in works:
+        if "Cibernética" not in e["axes"]:
+            continue
+        t = e["title"].lower()
+        org = any(k in t for k in _ORG_CYB)
+        ger = any(k in t for k in _GERAL_CYB)
+        e["roles"].add("cibernética organizacional" if (org or not ger) else "cibernética (geral)")
+    return works
+
+
 def apply_enrich(works):
     """Completa cada obra a partir do cache do OpenAlex/Crossref (se houver): id canônico,
     DOI, resumo, título completo, autoria e tipo."""
@@ -317,15 +341,20 @@ def emit(works, out, stem):
 
 
 def build(out=DADOS):
-    works = tag_cross(dedup_oaid(apply_enrich(consolidate())))
+    works = tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate()))))
     os.makedirs(out, exist_ok=True)
     emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
     cruz = [e for e in works if PONTE in e["roles"]]      # opção B — cruzamento (ponte por citação)
     if cruz:
         emit(cruz, out, "rayyan_cruzamento")
-    brasil = [e for e in works if BRASIL_ROLE in e["roles"]]   # só as referências da Claucia
+    brasil = [e for e in works if BRASIL_ROLE in e["roles"]]   # opção C — só as referências da Claucia
     if brasil:
         emit(brasil, out, "rayyan_brasil")
+    # opção D — o alvo: cibernética ORGANIZACIONAL + regulação + política industrial
+    org = [e for e in works if ("cibernética organizacional" in e["roles"])
+           or ("Instrumentos de governo" in e["axes"]) or ("Política industrial" in e["axes"])]
+    if org:
+        emit(org, out, "rayyan_organizacional")
     return works
 
 

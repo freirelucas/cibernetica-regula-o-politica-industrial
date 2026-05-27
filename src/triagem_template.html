@@ -93,6 +93,7 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
     <button class="chip" data-preset="tudo">Tudo</button>
     <button class="chip" data-preset="brasil">Só referências da Claucia (Brasil)</button>
     <button class="chip" data-preset="cruz">Cruzamento (ponte)</button>
+    <button class="chip" data-preset="orgcib">Cibernética organizacional</button>
     <button class="chip" data-preset="cplx">4º eixo · complexidade</button>
     <button class="chip" data-preset="indec">Indecisas</button>
   </span>
@@ -148,6 +149,7 @@ __JS_DATA__
     fAxis.clear(); fRole.clear(); fStatus='todos'; q='';
     if(p==='brasil') fRole.add('corpus Brasil (Faganello)');
     else if(p==='cruz') fRole.add('ponte global×Brasil');
+    else if(p==='orgcib') fRole.add('cibernética organizacional');
     else if(p==='cplx') fAxis.add('Economia da complexidade');
     else if(p==='indec') fStatus='undec';
     syncChips(); render();
