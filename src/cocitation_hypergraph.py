@@ -14,6 +14,7 @@ Saída: data/cocitation_hyperedges.json + relatório. Uso: python src/cocitation
 import collections
 import json
 import os
+import random
 import sys
 import urllib.parse
 
@@ -29,6 +30,41 @@ SEEDS = ["W2048086870", "W1566478880", "W2154683088", "W2325487953", "W424461240
 CITERS_PER_SEED = 60
 AXN = {"Cyb": "cibernética", "Reg": "instrumentos de governo",
        "PolInd": "política industrial", "Cplx": "complexidade"}
+
+
+def null_trans_axis_z(edges, axis_of, n_iter=60, seed=42):
+    """Modelo nulo para o hipergrafo: preserva o tamanho de cada hiperaresta e o
+    multiset de degrees dos nós (estilo *stub-shuffle*, análogo a Maslov–Sneppen pairwise).
+    Compara a fração observada de hiperarestas trans-eixo (≥2 eixos) contra a aleatória —
+    declara se o 40% supera o acaso (z). É o teste de significância que faltava ao XGI:
+    sem ele o 40% é descritivo, não significância-testado."""
+    rng = random.Random(seed)
+    sizes = [len(e) for e in edges]
+    stubs = [n for e in edges for n in e]  # multiset preservando o degree de cada nó
+
+    def frac_trans(es):
+        return sum(1 for e in es if len({axis_of.get(n) for n in e if axis_of.get(n)}) >= 2) / max(len(es), 1)
+
+    obs = frac_trans(edges)
+    rand_fracs = []
+    for _ in range(n_iter):
+        pool = stubs[:]
+        rng.shuffle(pool)
+        new_edges, i = [], 0
+        for s in sizes:
+            picked = set()
+            # toma stubs evitando duplicatas dentro da hiperaresta; se esgotar, recicla
+            while len(picked) < s and i < len(pool) * 4:
+                picked.add(pool[i % len(pool)])
+                i += 1
+            new_edges.append(list(picked))
+        rand_fracs.append(frac_trans(new_edges))
+    mean = sum(rand_fracs) / max(len(rand_fracs), 1)
+    var = sum((x - mean) ** 2 for x in rand_fracs) / max(len(rand_fracs) - 1, 1)
+    sd = var ** 0.5
+    z = (obs - mean) / sd if sd > 0 else 0.0
+    return {"obs": round(obs, 4), "null_mean": round(mean, 4),
+            "null_sd": round(sd, 4), "z": round(z, 1), "n_iter": n_iter}
 
 
 def main():
@@ -67,6 +103,13 @@ def main():
           f"tamanho médio {sum(sizes)/max(len(sizes),1):.1f}, máx {max(sizes) if sizes else 0}")
     print(f"hiperarestas trans-eixo (≥2 eixos): {len(cross)} "
           f"({100*len(cross)/max(len(edges),1):.0f}%)")
+
+    # modelo nulo: o 40% trans-eixo supera o acaso?
+    null = null_trans_axis_z(edges, axis_of, n_iter=60, seed=42)
+    print(f"\n== modelo nulo de configuração (stub-shuffle, {null['n_iter']} sorteios) ==")
+    print(f"   trans-eixo: observado {100*null['obs']:.1f}% vs nulo {100*null['null_mean']:.1f}% "
+          f"± {100*null['null_sd']:.1f}% → z={null['z']:+.1f}")
+
     print("\nobras em mais hiperarestas TRANS-EIXO (pontes de ordem superior):")
     top = [(n, c) for n, c in cross_deg.most_common(15)]
     for n, c in top:
@@ -77,6 +120,8 @@ def main():
         "n_citers": len(seen_citers), "n_edges": len(edges),
         "n_cross_axis_edges": len(cross),
         "mean_size": round(sum(sizes) / max(len(sizes), 1), 2),
+        # significância: stub-shuffle preserva degrees + sizes; 60 sorteios
+        "null_model": null,
         "top_higher_order_bridges": [
             {"oa_id": n, "label": label_of.get(n, n), "axis": AXN.get(axis_of.get(n, ""), ""),
              "cross_axis_hyperedges": c} for n, c in top],

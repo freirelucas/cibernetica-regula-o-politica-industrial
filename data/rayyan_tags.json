@@ -1,0 +1,61 @@
+{
+  "tags": {
+    "obra-semente": {
+      "description": "Obra-semente canônica do funil global",
+      "source": "scisci_results.json:seeds"
+    },
+    "mais citada": {
+      "description": "Top-20 não-semente por nº de citações",
+      "source": "scisci_results.json:top20_nonfeed"
+    },
+    "obra-ponte": {
+      "description": "Toca ≥2 eixos por vocabulário",
+      "source": "scisci_results.json:top_bridges"
+    },
+    "rajada de citação": {
+      "description": "Burst de Kleinberg detectado",
+      "source": "scisci_results.json:top_bursts"
+    },
+    "bela adormecida": {
+      "description": "Coeficiente de beleza (Ke et al., 2015)",
+      "source": "scisci_results.json:sleeping_beauties"
+    },
+    "corpus Brasil (Faganello)": {
+      "description": "Revisão brasileira de C. Faganello",
+      "source": "docs/material-brasil/dataset_politica_industrial_brasil.csv"
+    },
+    "complexidade (4º eixo)": {
+      "description": "Sonda do 4º eixo: economia da complexidade",
+      "source": "data/cplx_works.json · src/experiment_cplx.py"
+    },
+    "obra de autor-semente": {
+      "description": "Snowball por autor-semente",
+      "source": "data/author_works.json · src/author_snowball.py"
+    },
+    "cibernética organizacional": {
+      "description": "Vocabulário aplicado (MSV/Beer/Espejo…) — _ORG_CYB",
+      "source": "tag_cyb_subtype em build_rayyan.py"
+    },
+    "cibernética (geral)": {
+      "description": "Vocabulário fundacional (Wiener/Ashby/von Foerster) — _GERAL_CYB",
+      "source": "tag_cyb_subtype em build_rayyan.py"
+    },
+    "ponte global×Brasil": {
+      "description": "Cruzamento Brasil × núcleo global por citação direta",
+      "source": "data/cross_brasil.json · src/cross_brasil.py"
+    },
+    "ponte a construir": {
+      "description": "Top-25 por prioridade de ponte (CB + comunidade)",
+      "source": "data/bridge_priority.json · src/bridge_priority.py"
+    },
+    "higher_order_bridge": {
+      "description": "Aparece em ≥3 hiperarestas trans-eixo (XGI; Landry, 2023)",
+      "source": "data/cocitation_hyperedges.json · src/cocitation_hypergraph.py"
+    }
+  },
+  "thresholds": {
+    "MIN_CROSS_AXIS_EDGES": 3,
+    "MIN_AXES_COVERED": 2,
+    "N_BRIDGE_PRIORITY": 25
+  }
+}

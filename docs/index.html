@@ -353,6 +353,7 @@ pre.code{max-width:100%}
   <div class="prose">
     <p class="lead">Este estudo mapeia a estrutura intelectual da interseção entre três tradições intelectuais que raramente dialogam de forma explícita: a <strong>cibernética organizacional</strong> (o controle e a viabilidade de sistemas complexos), os <strong>instrumentos de governo e a regulação</strong> (os meios pelos quais o Estado atua sobre a sociedade) e a <strong>política industrial</strong> (a ação deliberada do Estado sobre a estrutura produtiva).</p>
     <p>A partir de dez obras-semente canônicas, aplicou-se amostragem por bola de neve sobre a base bibliográfica aberta OpenAlex, reunindo um corpus de centenas de trabalhos. Sobre esse corpus, calcularam-se redes de cocitação e de acoplamento bibliográfico, agrupamentos de comunidades, centralidade de intermediação, rajadas de citação e o coeficiente de beleza — um conjunto de medidas que, em conjunto, revela onde o campo se concentra, onde ele se fragmenta e quais obras funcionam como pontos de passagem entre as tradições.</p>
+    <p><strong>Achado central</strong> &nbsp;—&nbsp; as três tradições formam <em>silos reais</em> de citação: modularidade Q&nbsp;≈&nbsp;0,59 contra ≈&nbsp;0 no acaso (z&nbsp;≈&nbsp;80 num modelo nulo de configuração) e <strong>nenhuma obra é conector significativo</strong> entre as comunidades. A convergência postulada <strong>não é latente</strong> na estrutura de citação — precisa ser <em>construída</em>. É o que organiza o relato (ver <a href="#pontes">zonas de intercâmbio</a>) e a agenda proposta na <a href="#sintese">síntese</a>.</p>
     <p>Ao mapeamento bibliométrico global soma-se uma <strong>revisão da literatura brasileira</strong> (ver <a href="#brasil">o caso brasileiro</a>), que situa as três tradições na trajetória nacional de regulação, política industrial e governança de tecnologias. Trabalho colaborativo de Bruno Queiroz, Lucas Freire e Claucia Faganello.</p>
     <p class="kw"><b>Palavras-chave:</b> cienciometria; cibernética organizacional; instrumentos de governo; política industrial; análise de cocitação; acoplamento bibliográfico; estrutura intelectual.</p>
     <div class="abstract-en">
@@ -494,7 +495,7 @@ pre.code{max-width:100%}
 <!-- 07 · REDE DO NÚCLEO INTELECTUAL -->
 <section id="rede" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rede de cocitação do núcleo</h2><span class="sec-method">cocitação · bola de neve das 13 obras-semente</span></div>
-  <div class="prose"><p>Rede de <strong>cocitação</strong> reconstruída a partir de uma bola de neve das treze obras-semente: recuperam-se os trabalhos que as citam (cerca de 590) e, das suas listas de referência, tomam-se as obras <strong>mais cocitadas</strong> — duas obras ligam-se quando aparecem juntas na bibliografia de um mesmo trabalho, e a espessura da linha conta quantas vezes isso ocorre. É a estrutura que o próprio campo desenha ao citar: a cor indica o eixo (atribuído pelo vocabulário do título e dos tópicos); o tamanho do nó, o total de citações. <em>Arraste</em> os nós para reorganizar; <em>clique</em> para abrir a obra no OpenAlex.</p></div>
+  <div class="prose"><p>Rede de <strong>cocitação</strong> reconstruída a partir de uma bola de neve das <strong>treze obras-semente</strong> <span style="color:var(--muted)">(as dez canônicas mais três obras de Lange — <em>Introduction to Economic Cybernetics</em>, <em>Wholes and Parts</em>, <em>On the Economic Theory of Socialism</em> — incluídas para captar a recepção compartimentada da cibernética econômica; ver §14)</span>: recuperam-se os trabalhos que as citam (cerca de 590) e, das suas listas de referência, tomam-se as obras <strong>mais cocitadas</strong> — duas obras ligam-se quando aparecem juntas na bibliografia de um mesmo trabalho, e a espessura da linha conta quantas vezes isso ocorre. É a estrutura que o próprio campo desenha ao citar: a cor indica o eixo (atribuído pelo vocabulário do título e dos tópicos); o tamanho do nó, o total de citações. <em>Arraste</em> os nós para reorganizar; <em>clique</em> para abrir a obra no OpenAlex.</p></div>
   <div style="position:relative">
     <div class="chart-wrap" id="net-wrap" style="height:520px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><canvas id="netcanvas" role="img" aria-label="Rede de cocitação do núcleo intelectual do campo">Visualização de rede (requer JavaScript). Os dados estão em dados/network.json.</canvas></div>
     <div id="net-tip" class="net-tip"></div>
@@ -519,14 +520,14 @@ pre.code{max-width:100%}
   <div class="callout" id="pivotal-callout" style="margin-top:1.5rem"></div>
 </div></section>
 
-<!-- 08 · BELAS ADORMECIDAS -->
+<!-- 09 · BELAS ADORMECIDAS -->
 <section id="adormecidas" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">09</span><h2 class="sec-title">Belas adormecidas</h2><span class="sec-method">coeficiente de beleza · Ke et al. (2015)</span></div>
   <div class="prose"><p>Obras de longa hibernação seguida de despertar abrupto. O coeficiente <em>B</em> mede a intensidade desse despertar; <em>t<sub>m</sub></em> é o número de anos até o pico de citações. <em>Brain of the Firm</em> (Beer, 1972) dormiu 41 anos antes de despertar; a <em>Introdução à Cibernética</em> (Ashby, 1956) esperou quase sete décadas para ser redescoberta pela literatura de governança digital.</p></div>
   <div id="list-beauties"></div>
 </div></section>
 
-<!-- 09 · MAIS CITADAS -->
+<!-- 10 · MAIS CITADAS -->
 <section id="citadas" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">10</span><h2 class="sec-title">Obras mais citadas (exceto sementes)</h2><span class="sec-method">contagem de citações · ao menos um eixo</span></div>
   <div class="prose"><p>As vinte obras não-semente mais citadas do corpus. <em>Autopoiesis and Cognition</em> (Maturana &amp; Varela, 1980) lidera pelo eixo da cibernética; a literatura de composição de instrumentos de política (Howlett, Borrás, Rogge) domina o eixo da regulação.</p></div>
@@ -545,7 +546,7 @@ pre.code{max-width:100%}
   <div id="list-top20"></div>
 </div></section>
 
-<!-- 10 · DISCUSSÃO -->
+<!-- 11 · DISCUSSÃO -->
 <section id="discussao" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Implicações para a política industrial</h2><span class="sec-method">síntese e agenda</span></div>
   <div class="prose">
@@ -712,7 +713,7 @@ pre.code{max-width:100%}
   <div id="list-seeds"></div>
 </div></section>
 
-<!-- 12 · REPRODUTIBILIDADE -->
+<!-- 17 · REPRODUTIBILIDADE -->
 <section id="repro" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">17</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
   <div class="prose">
@@ -731,7 +732,7 @@ jupyter notebook colab/scisci_cibernetica_regulacao_PI_v2.ipynb</pre>
 python src/build_site.py                # este site (docs/)</pre>
 </div></section>
 
-<!-- 13 · DADOS -->
+<!-- 18 · DADOS -->
 <section id="dados" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">18</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
   <div class="prose"><p>Os conjuntos de dados processados em cada etapa do funil, em formato CSV (codificação UTF-8). O conjunto completo de resultados consolidados também está disponível em formato JSON.</p></div>
@@ -743,7 +744,7 @@ python src/build_site.py                # este site (docs/)</pre>
   </table>
 </div></section>
 
-<!-- 14 · LIMITAÇÕES -->
+<!-- 19 · LIMITAÇÕES -->
 <section id="limitacoes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">19</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
   <div class="prose">
@@ -756,7 +757,7 @@ python src/build_site.py                # este site (docs/)</pre>
   </div>
 </div></section>
 
-<!-- 15 · GLOSSÁRIO -->
+<!-- 20 · GLOSSÁRIO -->
 <section id="glossario" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">20</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
   <dl class="gloss">
@@ -781,7 +782,7 @@ python src/build_site.py                # este site (docs/)</pre>
   </dl>
 </div></section>
 
-<!-- 16 · REFERÊNCIAS -->
+<!-- 21 · REFERÊNCIAS -->
 <section id="referencias" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">21</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
   <div class="callout" id="como-citar"><strong>Como citar.</strong> QUEIROZ, B.; FREIRE, L.; FAGANELLO, C. <em>Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual</em>. Brasília: IPEA / DIEST-COGIT, 2026. Material preliminar.</div>

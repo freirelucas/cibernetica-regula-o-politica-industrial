@@ -128,12 +128,13 @@ KW  - eixo: Cibernética
 KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
 KW  - papel: cibernética organizacional
+KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: higher_order_bridge=16 hiperarestas trans-eixo (XGI); ponte a construir=top-25 de bridge_priority (score=0.4829)
 ER  - 
 
 TY  - JOUR

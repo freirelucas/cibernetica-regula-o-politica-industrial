@@ -72,9 +72,13 @@ def get(url, use_cache=True):
             with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=45) as r:
                 data = json.load(r)
             if use_cache:
+                # gravação atômica: escreve em .tmp e renomeia — evita .gz truncado
+                # se o processo morrer no meio (e portanto evita lixo comitado pelo hook).
                 os.makedirs(os.path.dirname(cf), exist_ok=True)
-                with gzip.open(cf, "wt", encoding="utf-8") as f:
+                tmp = cf + ".tmp"
+                with gzip.open(tmp, "wt", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False)
+                os.replace(tmp, cf)
             return data
         except urllib.error.HTTPError as e:
             time.sleep(min(60, 5 * (2 ** i)) if e.code == 429 else 3)
