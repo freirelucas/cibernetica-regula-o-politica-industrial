@@ -107,11 +107,14 @@ def enrich_works_titles(works, max_fetches=50):
             break
         chunk = missing_title[i:i + 50]
         flt = "openalex:" + "|".join(chunk)
-        # P2: select inclui `topics` — habilita classificação via OpenAlex topic
-        # names (não só vocab em título). Cada topic é {id, display_name, score, ...}.
+        # P2 + M8: select inclui `topics` e `abstract_inverted_index` — habilita
+        # classificação via OpenAlex topic names + abstract (não só vocab em
+        # título). Cada topic é {id, display_name, score, ...}; abstract vem
+        # como inverted_index, revertido em classify_axes.
         url = (f"{API}/works?filter={urllib.parse.quote(flt, safe=':|')}"
                f"&per-page=50&select=id,display_name,title,publication_year,"
-               f"authorships,referenced_works,cited_by_count,topics")
+               f"authorships,referenced_works,cited_by_count,topics,"
+               f"abstract_inverted_index")
         was_cached = cache_hit(url)
         data = oa.get(url) or {}
         if not was_cached and data:
@@ -151,6 +154,35 @@ def enrich_works_topics(works, max_fetches=50):
             wid = (w.get("id") or "").split("/")[-1]
             if wid in works and w.get("topics"):
                 works[wid]["topics"] = w["topics"]
+    return n_new
+
+
+def enrich_works_abstracts(works, max_fetches=50):
+    """M8: para works sem `abstract_inverted_index`, batch fetch para preencher.
+    Dobra a sensibilidade do classify_axes — abstract cobre 500-2000 chars vs
+    título com ~100 chars."""
+    missing_abs = [wid for wid, w in works.items()
+                   if (w.get("title") or w.get("display_name")) and not w.get("abstract_inverted_index")]
+    if not missing_abs:
+        return 0
+    print(f"  works com título mas sem abstract: {len(missing_abs)}")
+    n_new = 0
+    for i in range(0, len(missing_abs), 50):
+        if n_new >= max_fetches:
+            break
+        chunk = missing_abs[i:i + 50]
+        flt = "openalex:" + "|".join(chunk)
+        url = (f"{API}/works?filter={urllib.parse.quote(flt, safe=':|')}"
+               f"&per-page=50&select=id,abstract_inverted_index")
+        was_cached = cache_hit(url)
+        data = oa.get(url) or {}
+        if not was_cached and data:
+            n_new += 1
+            bump_budget(1)
+        for w in (data.get("results") or []):
+            wid = (w.get("id") or "").split("/")[-1]
+            if wid in works and w.get("abstract_inverted_index"):
+                works[wid]["abstract_inverted_index"] = w["abstract_inverted_index"]
     return n_new
 
 
@@ -214,21 +246,40 @@ def mine_cache_works():
 
 
 # ───────── axis classification ─────────
-def classify_axes(title, topics=None):
+def reverse_inverted_index(inv):
+    """OpenAlex armazena abstracts como inverted index {word: [positions]}.
+    Reconstroi o texto do abstract. Devolve string vazia se inv vazio."""
+    if not inv or not isinstance(inv, dict):
+        return ""
+    word_at_pos = {}
+    for word, positions in inv.items():
+        if not isinstance(positions, list):
+            continue
+        for p in positions:
+            if isinstance(p, int):
+                word_at_pos[p] = word
+    if not word_at_pos:
+        return ""
+    n = max(word_at_pos.keys()) + 1
+    return " ".join(word_at_pos.get(i, "") for i in range(n)).strip()
+
+
+def classify_axes(title, topics=None, abstract_inverted_index=None):
     """Devolve set de eixos que o work toca via vocab match.
 
-    Combina dois sinais:
-      - vocab em TÍTULO (conservador — falha em obras cujo tema está no
-        abstract ou nos topics da OpenAlex sem keyword no título)
-      - vocab em TOPIC NAMES da OpenAlex (`work.topics[].display_name`)
-        — captura contribuições temáticas que o título esconde.
+    Combina três sinais (em ordem de precedência decrescente):
+      - vocab em TÍTULO (~100 chars)
+      - vocab em TOPIC NAMES da OpenAlex (~50 chars)
+      - vocab no ABSTRACT (M8 — adicionado set 2026; 500-2000 chars)
 
-    P2 (set 2026): extensão para topics. Se topics=None ou vazio, fallback
-    para o comportamento anterior (apenas título). Topics typically é
-    fornecida como lista de dicts com chave `display_name`.
+    Abstract é fornecido como inverted_index (formato OpenAlex). É revertido
+    para texto antes do match. Quando ausente, fallback para title+topics.
+
+    M8: abstracts dobram a sensibilidade do classifier porque captam o tema
+    onde o título não diz (e.g., "Industrial Innovation in Brazil" sem
+    "policy" no título mas com "industrial policy" no abstract).
     """
     t = (title or "").lower()
-    # concatena topic names ao texto a ser matched
     if topics:
         for top in topics:
             if isinstance(top, dict):
@@ -237,6 +288,10 @@ def classify_axes(title, topics=None):
                     t += " " + dn
             elif isinstance(top, str):
                 t += " " + top.lower()
+    if abstract_inverted_index:
+        abstract = reverse_inverted_index(abstract_inverted_index).lower()
+        if abstract:
+            t += " " + abstract
     axes = set()
     for ax, vocab in VOCAB.items():
         if any(k in t for k in vocab):
@@ -254,7 +309,7 @@ def aggregate_authors(works):
     })
     for wid, w in works.items():
         title = w.get("title") or w.get("display_name") or ""
-        axes = classify_axes(title, w.get("topics"))
+        axes = classify_axes(title, w.get("topics"), w.get("abstract_inverted_index"))
         for a in (w.get("authorships") or []):
             aid_full = (a.get("author") or {}).get("id") or ""
             aid = aid_full.split("/")[-1]
@@ -406,7 +461,7 @@ def snowball_top_authors(authors_sorted, n_authors=15, per_author=50, corpus_ids
                 "year": w.get("publication_year"),
                 "cited_by": w.get("cited_by_count") or 0,
                 "doi": w.get("doi") or "",
-                "axes_hit": sorted(classify_axes(title, w.get("topics"))),
+                "axes_hit": sorted(classify_axes(title, w.get("topics"), w.get("abstract_inverted_index"))),
             }
             if wid in corpus_ids:
                 in_corpus.append(entry)
@@ -458,7 +513,7 @@ def probe_adjacent(corpus_ids, per_probe=50):
                 "year": w.get("publication_year"),
                 "cited_by": w.get("cited_by_count") or 0,
                 "in_corpus": wid in corpus_ids,
-                "axes_hit": sorted(classify_axes(title, w.get("topics"))),
+                "axes_hit": sorted(classify_axes(title, w.get("topics"), w.get("abstract_inverted_index"))),
             }
             items.append(entry)
             if wid in corpus_ids:
@@ -493,6 +548,13 @@ def main():
     print(f"  new topic fetches: {n_t} | budget after: {read_budget()}/10000")
     n_with_topics = sum(1 for w in works.values() if w.get("topics"))
     print(f"  works with topics now: {n_with_topics}/{len(works)}")
+
+    # M8: abstracts no classificador — captura tema onde título não diz
+    print(f"\nenriching work abstracts (M8) via batch fetch...")
+    n_a = enrich_works_abstracts(works, max_fetches=80)
+    print(f"  new abstract fetches: {n_a} | budget after: {read_budget()}/10000")
+    n_with_abs = sum(1 for w in works.values() if w.get("abstract_inverted_index"))
+    print(f"  works with abstracts now: {n_with_abs}/{len(works)}")
 
     authors = aggregate_authors(works)
     print(f"autores únicos no corpus: {len(authors)}")
@@ -553,6 +615,10 @@ def main():
             }
             for aid, e in sorted_by_cross[:60]
         ],
+        # autores apenas os RELEVANTES para a SR (n_works_total >= 2 OU
+        # cross_axis_score > 0 OU h_index >= 5) — evita inchar JSON com 93k
+        # entries cuja maioria são autores de UM work do corpus. M8+M17 fizeram
+        # a base crescer 4×; preservar todos = JSON >30 MB (não git-friendly).
         "authors": {
             aid: {
                 "display_name": e["display_name"],
@@ -569,6 +635,9 @@ def main():
                 "work_ids": e["work_ids"],
             }
             for aid, e in authors.items()
+            if (e["n_works_total"] >= 2
+                or e["cross_axis_score"] > 0
+                or e.get("h_index", 0) >= 5)
         },
     }
     json.dump(out, open(OUTPUT_JSON, "w", encoding="utf-8"),
