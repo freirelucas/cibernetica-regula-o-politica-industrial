@@ -1,0 +1,1125 @@
+{
+ "_generated": "A.4 · Brazil full snowball",
+ "_budget_used": 1568,
+ "n_faganello_seeds": 73,
+ "n_resolved_oa": 73,
+ "n_broad_results": 200,
+ "n_brazil_works_total": 266,
+ "resolved": [
+  {
+   "title": "Política industrial e empresas estatais no Brasil: BNDES e Petrobras",
+   "doi": "",
+   "year": "2014",
+   "authors": "Mansueto Almeida\nRenato Lima-de-Oliveira\nBen Ross Schneider",
+   "oa_id": "W2252747966"
+  },
+  {
+   "title": "The Political Economy of Brazilian Industrial Policy (2003 - 2014): Main Vectors, Shortcomings and Directions to Improve Effectiveness*",
+   "doi": "10.1590/DADOS.2021.64.2.235",
+   "year": "2021",
+   "authors": "Alexandre Queiroz Guimarães",
+   "oa_id": "W3149911297"
+  },
+  {
+   "title": "Innovation policy in Brazil since 2003 : Advances, incoherencies, and discontinuities",
+   "doi": "10.4324/9780429053092-4",
+   "year": "2019",
+   "authors": "Glauco Arbix",
+   "oa_id": "W2923828223"
+  },
+  {
+   "title": "Indústria Farmacêutica no Brasil: Evolução Histórica, Capacitação Competitiva e Políticas Industriais",
+   "doi": "10.14393/REE-V31N1A2016-3",
+   "year": "2016",
+   "authors": "Rafaela Silva\nThiago Caliari",
+   "oa_id": "W2623693150"
+  },
+  {
+   "title": "Desafios da real política industrial brasileira do século XXI",
+   "doi": "",
+   "year": "2009",
+   "authors": "Mansueto Almeida",
+   "oa_id": "W1767611563"
+  },
+  {
+   "title": "El desafío competitivo para la industria brasileña",
+   "doi": "10.18356/E351DB4D-ES",
+   "year": "1996",
+   "authors": "João Carlos Ferraz\nDavid Kupfer\nLia Haguenauer",
+   "oa_id": "W180828614"
+  },
+  {
+   "title": "Experiência histórica de política industrial no Brasil",
+   "doi": "",
+   "year": "1995",
+   "authors": "Wilson Suzigan",
+   "oa_id": "W3167410932"
+  },
+  {
+   "title": "Health policy as industrial policy: Brazil in comparative perspective",
+   "doi": "10.1177/0032329213507552",
+   "year": "2013",
+   "authors": "Kenneth C. Shadlen\nElize Massard da Fonseca",
+   "oa_id": "W2136615848"
+  },
+  {
+   "title": "Política industrial e tecnológica no Brasil: uma investigação dos determinantes das escolhas políticas.",
+   "doi": "",
+   "year": "2011",
+   "authors": "Fabiana Ieis\nC. L. da Silva\nN. S. S. Bassi",
+   "oa_id": "W2755010101"
+  },
+  {
+   "title": "A experiência recente da política industrial no Brasil: uma avaliação",
+   "doi": "",
+   "year": "1996",
+   "authors": "Eduardo Augusto de Almeida Guimarães",
+   "oa_id": "W2309505641"
+  },
+  {
+   "title": "The return of industrial policy in Brazil",
+   "doi": "10.1057/9781137335173_20",
+   "year": "2012",
+   "authors": "David Kupfer\nJoão Carlos Ferraz\nFelipe Silveira Marques",
+   "oa_id": "W2391060152"
+  },
+  {
+   "title": "Industrial policy, sectoral maturation, and postwar economic growth in Brazil: The resource curse thesis",
+   "doi": "10.2307/144311",
+   "year": "1995",
+   "authors": "R. M. Auty",
+   "oa_id": "W2315979637"
+  },
+  {
+   "title": "Industrial policy and local content: Brazil's pre-salt area case",
+   "doi": "10.4043/28010-MS",
+   "year": "2017",
+   "authors": "F. D. Jesus\nJ. F. Silva\nT. Roitman",
+   "oa_id": "W2767035529"
+  },
+  {
+   "title": "Políticas nacionales y la profundización del MERCOSUR: el impacto de las políticas de competitividad",
+   "doi": "",
+   "year": "2006",
+   "authors": "Gustavo Baruj\nBernardo Kosacoff\nFernando Porta",
+   "oa_id": "W1563742136"
+  },
+  {
+   "title": "Industrial policy as an effective development tool: Lessons from Brazil",
+   "doi": "",
+   "year": "",
+   "authors": "JC Ferraz\nD Kupfer",
+   "oa_id": "W2270275974"
+  },
+  {
+   "title": "Government political-relational capacities and industrial policy profile: Brazil’s experience at the beginning of the 21st Century",
+   "doi": "10.1590/1982-3533.2022v31n3art02",
+   "year": "2022",
+   "authors": "G. Queiroz-Stein\nAlfredo Alejandro Gugliano",
+   "oa_id": "W4312049928"
+  },
+  {
+   "title": "A política industrial brasileira recente e as estratégias de inovação do setor moveleiro da região oeste de Santa Catarina",
+   "doi": "10.5902/1414650921798",
+   "year": "2016",
+   "authors": "Darlan Christiano Kroth",
+   "oa_id": "W2588628362"
+  },
+  {
+   "title": "Making and remaking “good government” in Brazil: Subnational industrial policy in Minas Gerais",
+   "doi": "10.1111/J.1548-2456.2001.TB00399.X",
+   "year": "2001",
+   "authors": "Alfred P. Montero",
+   "oa_id": "W2037980183"
+  },
+  {
+   "title": "Institutions and industrial policy in Brazil after two decades: have we built the needed institutions?",
+   "doi": "10.1080/10438599.2020.1719629",
+   "year": "2020",
+   "authors": "Wilson Suzigan\nRenato Garcia\nPaulo Henrique Assis Feitosa",
+   "oa_id": "W3004438298"
+  },
+  {
+   "title": "O enigma da política industrial no Brasil",
+   "doi": "10.1590/0101-31572015V35N03A05",
+   "year": "2015",
+   "authors": "José Tavares De Araújo",
+   "oa_id": "W2467499421"
+  },
+  {
+   "title": "Where is Brazil going? Taking stock of recent trends in industrial and trade policies and the challenges ahead",
+   "doi": "10.2139/SSRN.2479536",
+   "year": "2014",
+   "authors": "Mauricio Mesquita Moreira\nClaudio Frischtack",
+   "oa_id": "W312455259"
+  },
+  {
+   "title": "O processo de industrialização e as políticas industriais no brasil",
+   "doi": "",
+   "year": "2018",
+   "authors": "Márcio Luiz Ribeiro\nLuciano De Souza Costa",
+   "oa_id": "W2057681169"
+  },
+  {
+   "title": "The Institutional and External Factors Behind the Switch of a Country's Economic Growth Strategy. The Case of the Brazilian Economic Policy",
+   "doi": "10.1515/IJME-2015-0016",
+   "year": "2015",
+   "authors": "Marta Czarnecka-Gallas",
+   "oa_id": "W2285337107"
+  },
+  {
+   "title": "Environmental Regulation and Automotive Industrial Policies in Brazil: The Case of INOVAR-AUTO",
+   "doi": "",
+   "year": "2013",
+   "authors": "José Marcos Domingues\nLuiz Artur Pecorelli-Peres\nRonaldo Seroa da Motta",
+   "oa_id": "W2765226143"
+  },
+  {
+   "title": "Industrial upgrade, economic catch-up and industrial policy in Brazil: general trends and the specific case of the mining industry",
+   "doi": "10.1590/0103-6351/6244",
+   "year": "2019",
+   "authors": "Renato Garcia\nUlisses Pereira dos Santos\nWilson Suzigan",
+   "oa_id": "W3154644541"
+  },
+  {
+   "title": "From industrial policy to regional and local locational policy: experience from Santa Catarina/Brazil",
+   "doi": "10.1111/J.1470-9856.1999.TB00145.X",
+   "year": "1999",
+   "authors": "Jog Rg Meyer-Stamer",
+   "oa_id": "W2123741655"
+  },
+  {
+   "title": "Política industrial e tecnológica e desenvolvimento",
+   "doi": "",
+   "year": "2004",
+   "authors": "José Matias-Pereira",
+   "oa_id": "W338840468"
+  },
+  {
+   "title": "Catching up and Falling behind: An Appraisal of Brazilian Industrial Policy in the Twenty-First Century",
+   "doi": "10.18352/ERLACS.10141",
+   "year": "2016",
+   "authors": "Yuri Kasahara\nAntonio José Junqueira Botelho",
+   "oa_id": "W2337187807"
+  },
+  {
+   "title": "Retomando o Debate: A Nova Política Industrial do Governo Lula",
+   "doi": "",
+   "year": "2009",
+   "authors": "Max Benjoino Ferraz",
+   "oa_id": "W2105109964"
+  },
+  {
+   "title": "The Efficiency of Industrial Policy in 21st Century? The Case of Brazil",
+   "doi": "10.33119/GN/100925",
+   "year": "2013",
+   "authors": "Marta Czarnecka-Gallas",
+   "oa_id": "W2132134298"
+  },
+  {
+   "title": "Regional industrial policy in the wind energy sector: The case of the State of Rio Grande do Sul, Brazil",
+   "doi": "10.1016/J.ENPOL.2017.08.050",
+   "year": "2017",
+   "authors": "Vivian Sebben Adami\nJosé Antônio Valle Antunes Júnior\nMiguel Afonso Sellitto",
+   "oa_id": "W2756082066"
+  },
+  {
+   "title": "Competitividad industrial en Brasil 10 años después de la liberalización",
+   "doi": "10.18356/A304EA3A-ES",
+   "year": "2004",
+   "authors": "João Carlos Ferraz\nDavid Kupfer\nMariana Iootty",
+   "oa_id": "W1528587144"
+  },
+  {
+   "title": "Política industrial e desenvolvimento",
+   "doi": "10.1590/S0101-31572006000200001",
+   "year": "2006",
+   "authors": "Wilson Suzigan\nJoão Furtado",
+   "oa_id": "W2003318188"
+  },
+  {
+   "title": "Competitividad industrial en Brasil 10 años después de la liberalización (pdf 587 kb)João Carlos Ferraz, David Kupfer y Mariana Iootty",
+   "doi": "",
+   "year": "2003",
+   "authors": "David Kupfer\nMariana Ioott\nJoão Carlos Ferraz",
+   "oa_id": "W128049854"
+  },
+  {
+   "title": "Brazilian Regulatory Framework: From the Past to the Expectations About the Future",
+   "doi": "10.4043/29834-MS",
+   "year": "2019",
+   "authors": "Marcelo Amorim Bastos\nJorge Luiz Bastos",
+   "oa_id": "W2982057586"
+  },
+  {
+   "title": "Politics within the state: elite bureaucrats and industrial policy in authoritarian Brazil",
+   "doi": "10.2307/2524242",
+   "year": "1993",
+   "authors": "Ben Ross Schneider",
+   "oa_id": "W2065506938"
+  },
+  {
+   "title": "Políticas industriales para revertir la desindustrialización prematura de la economía brasileña: una agenda para la discusión de políticas",
+   "doi": "10.7203/irep.6.1.29171",
+   "year": "2024",
+   "authors": "Lívia Sousa\nJosé Luís Oreiro",
+   "oa_id": "W4400658330"
+  },
+  {
+   "title": "Novos arranjos institucionais na renovação da política industrial brasileira",
+   "doi": "",
+   "year": "2006",
+   "authors": "Jackson De Toni",
+   "oa_id": "W2144810307"
+  },
+  {
+   "title": "Comments on “New Thinking on Industrial Policy: Country Case Studies of Successful and Unsuccessful Industrial Policies — The Return of Industrial Policy in Brazil”",
+   "doi": "10.1057/9781137335173_21",
+   "year": "2012",
+   "authors": "Volker Treichel",
+   "oa_id": "W2472656716"
+  },
+  {
+   "title": "Brazilian Industrial Policy: A Cluster Analysis of the Challenges Facing the National Industry and Policies Adopted from 2004 to 2018",
+   "doi": "10.5020/2318-0722.2020.27.2.11329",
+   "year": "",
+   "authors": "Rogerio Cesar Corgosinhol\nCristina Lelis Leal Calegario\nClaudio Roberto Carissimo\nSheldon William Silva",
+   "oa_id": "W3110437710"
+  },
+  {
+   "title": "Política industrial no Brasil: uma análise das estratégias propostas na experiência recente (2003-2014)",
+   "doi": "",
+   "year": "2015",
+   "authors": "Guilherme de Queiroz Stein\nRonaldo Herrlein Júnior",
+   "oa_id": "W2573760343"
+  },
+  {
+   "title": "Recente política industrial brasileira",
+   "doi": "",
+   "year": "2009",
+   "authors": "Mauricio Canêdo-Pinheiro",
+   "oa_id": "W1885816391"
+  },
+  {
+   "title": "Industrial policy: theory and practice in Brazil and in the OECD countries",
+   "doi": "10.6084/m9.figshare.20290763",
+   "year": "2021",
+   "authors": "Fábio Stéfano Erber\nJosé Eduardo Cassiolato",
+   "oa_id": "W4394487893"
+  },
+  {
+   "title": "Política industrial: teoria e prática no Brasil e na OCDE",
+   "doi": "",
+   "year": "1997",
+   "authors": "Fabio S. Erber\nJosé Eduardo Cassiolato",
+   "oa_id": "W3192131966"
+  },
+  {
+   "title": "Estado e desenvolvimento: as políticas industriais brasileiras (2003-2014)",
+   "doi": "",
+   "year": "2018",
+   "authors": "Daniela Cristina Comin Rocha",
+   "oa_id": "W3032427909"
+  },
+  {
+   "title": "From Industry Protection to Industry Promotion: IT Policy in Brazil",
+   "doi": "",
+   "year": "1999",
+   "authors": "Antonio Jose Junqueira Botelho\nJason Dedrick\nKenneth L. Kraemer\nPaulo Bastos Tigre",
+   "oa_id": "W1936722473"
+  },
+  {
+   "title": "A recente política industrial brasileira: da “política de desenvolvimento produtivo” ao “plano brasil maior”",
+   "doi": "",
+   "year": "2013",
+   "authors": "Cristiano Sausen Soares\nDaniel Arruda Coronel\nPascoal José Marion Filho",
+   "oa_id": "W1885816391"
+  },
+  {
+   "title": "Industrial policy and the creation of new industries: evidence from Brazil's bioethanol industry",
+   "doi": "10.1093/ICC/DTT039",
+   "year": "2014",
+   "authors": "Santiago Mingo\nTarun Khanna",
+   "oa_id": "W2159305436"
+  },
+  {
+   "title": "Industrial policy and development",
+   "doi": "10.18356/16840348-2006-89-5",
+   "year": "2006",
+   "authors": "Wilson Suzigan\nJoão Furtado",
+   "oa_id": "W2272963762"
+  },
+  {
+   "title": "O Brasil no novo milênio: regulação, progresso técnico e novo desenvolvimentismo",
+   "doi": "10.1590/1982-3533.2018V27N3ART12",
+   "year": "2018",
+   "authors": "Herton Castiglioni Lopes",
+   "oa_id": "W2902795424"
+  },
+  {
+   "title": "ARTIGO / ARTICLE A industrialização no estado do Maranhão: uma análise do plano estratégico de desenvolvimento industrial",
+   "doi": "",
+   "year": "2012",
+   "authors": "Silva Pereira\nDaniel Arruda Coronel",
+   "oa_id": "W2560745790"
+  },
+  {
+   "title": "Perspectivas de uma Nova agenda de Política Industrial: os Desafios da Indústria Brasileira no Pós-Pandemia da Covid-19",
+   "doi": "10.51798/SIJIS.V2I2.51",
+   "year": "2021",
+   "authors": "Marcia Angela Dahmer Quinzani",
+   "oa_id": "W3183746153"
+  },
+  {
+   "title": "Industrial and technological policy and development",
+   "doi": "",
+   "year": "2004",
+   "authors": "José Matias-Pereira\nIsak Kruglianskas\nGileno Fernandes Marcelino\nClandia Maffini Gomes",
+   "oa_id": "W2087845606"
+  },
+  {
+   "title": "Reestructuración industrial en Colombia",
+   "doi": "",
+   "year": "1989",
+   "authors": "Antonio Urdinola",
+   "oa_id": "W2162790847"
+  },
+  {
+   "title": "Industrial Policy in the Field of Informatics in Brazil",
+   "doi": "",
+   "year": "1983",
+   "authors": "Walter Douglas Stuber",
+   "oa_id": "W2788353952"
+  },
+  {
+   "title": "O setor industrial brasileiro frente à integração econômica",
+   "doi": "10.5935/978-85-7042-101-2",
+   "year": "2018",
+   "authors": "Mygre Lopes da Silva",
+   "oa_id": "W2898359964"
+  },
+  {
+   "title": "Contribuição à crítica da política industrial no brasil entre 2004 e 2014",
+   "doi": "10.25091/S01013300201900020008",
+   "year": "2019",
+   "authors": "Alexandre Abdal",
+   "oa_id": "W2973815216"
+  },
+  {
+   "title": "A industrialização no estado do Maranhão: uma análise do plano estratégico de desenvolvimento industrial",
+   "doi": "",
+   "year": "2012",
+   "authors": "Maria Rosivalda da Silva Pereira\nDaniel Arruda Coronel",
+   "oa_id": "W2495808839"
+  },
+  {
+   "title": "O papel das Políticas Públicas na promoção de infraestrutura a Distritos Industriais para geração de Empregos / The role of Public Policies in the promotion of infrastructure to Industrial Districts for the generation of Jobs",
+   "doi": "10.14295/IDONLINE.V13I45.1740",
+   "year": "2019",
+   "authors": "Adilson Cascia Felix dos Santos\nBruno Cezar Silva",
+   "oa_id": "W2948699754"
+  },
+  {
+   "title": "The New Brazilian Anti-Dumping Regulation: A Balance of the First Years",
+   "doi": "10.54648/gtcj2017061",
+   "year": "",
+   "authors": "Vera Kanas\nCarolina Mueller",
+   "oa_id": "W2772320953"
+  },
+  {
+   "title": "Política industrial: bases teórico-analíticas em perspectiva",
+   "doi": "10.47820/recima21.v4i3.2833",
+   "year": "2023",
+   "authors": "Ana Claudia de Queiroz Lira\nVladyr Yuri Soares de Lima Cavalcanti\nMaria de Lourdes Barreto Gomes",
+   "oa_id": "W4323038246"
+  },
+  {
+   "title": "El papel de la política industrial en los procesos de integración subregional: el caso de Argentina y Brasil en el Mercosur.",
+   "doi": "10.5209/CESE.10916",
+   "year": "1999",
+   "authors": "Juan Manuel Ramírez Cendrero",
+   "oa_id": "W2152289404"
+  },
+  {
+   "title": "New patterns of governance for industrial change: perspectives for Brazil",
+   "doi": "10.1080/00220389708422470",
+   "year": "1997",
+   "authors": "Jörg Meyer-Stamer",
+   "oa_id": "W2002071978"
+  },
+  {
+   "title": "Brazilian new patterns of an industrial, technological and foreign trade policy.",
+   "doi": "",
+   "year": "2006",
+   "authors": "José Matias Pereira\nGileno Fernandes Marcelino\nIsak Kruglianskas",
+   "oa_id": "W1912632531"
+  },
+  {
+   "title": "A Nova política industrial brasileira e seu alinhamento às tendências globais",
+   "doi": "10.38116/rtm36art3",
+   "year": "2024",
+   "authors": "Caroline Giusti de Araújo\nVinícius Luís de Souza Nonato\nRafael Grilli Felizardo",
+   "oa_id": "W7084749408"
+  },
+  {
+   "title": "Industrial policy matters: the co-evolution of economic structure, trade, and FDI in Brazil and Mexico, 2000–2015",
+   "doi": "10.1007/s40812-023-00262-4",
+   "year": "2023",
+   "authors": "André Pineli\nRajneesh Narula",
+   "oa_id": "W4327732822"
+  },
+  {
+   "title": "Antagonismo, modernismo e inércia: a política regulatória brasileira em três atos",
+   "doi": "10.1590/1679-395117190",
+   "year": "2016",
+   "authors": "Bruno Queiroz Cunha",
+   "oa_id": "W2497130148"
+  },
+  {
+   "title": "Antagonism, modernism, and inertia: the Brazilian regulatory policy in three acts",
+   "doi": "10.6084/m9.figshare.14287445",
+   "year": "2020",
+   "authors": "Bruno Queiroz Cunha",
+   "oa_id": "W4394424577"
+  },
+  {
+   "title": "The case for reindustrialisation in developing countries: towards the connection between the macroeconomic regime and the industrial policy in Brazil",
+   "doi": "10.1093/CJE/BEX028",
+   "year": "2018",
+   "authors": "André Nassif\nLuiz Carlos Bresser-Pereira\nCarmem Feijo",
+   "oa_id": "W2789614065"
+  },
+  {
+   "title": "Industrial policy in Argentina, Brazil, Chile and Mexico: A comparative approach",
+   "doi": "10.4000/INTERVENTIONSECONOMIQUES.3852",
+   "year": "2017",
+   "authors": "Juan Eduardo Santarcangelo\nDaniel Matías Schteingart\nFernando Enrique Porta",
+   "oa_id": "W2783369335"
+  },
+  {
+   "title": "Carving Out Policy Autonomy for Developing Countries in the World Trade Organization: The Experience of Brazil and Mexico",
+   "doi": "",
+   "year": "2011",
+   "authors": "Alvaro Santos",
+   "oa_id": "W1611317321"
+  },
+  {
+   "title": "Fear for manufacturing? China and the future of industry in Brazil and Latin America",
+   "doi": "10.1017/S0305741011001482",
+   "year": "2012",
+   "authors": "Rhys Jenkins\nAlexandre de Freitas Barbosa",
+   "oa_id": "W2153465427"
+  },
+  {
+   "title": "Diseño de un modelo de red de valor para la gestión Integrada del sector petróleo en Colombia",
+   "doi": "",
+   "year": "2017",
+   "authors": "Luis Felipe Serna Velásquez\nEdwin Said Cárdena Carrillo",
+   "oa_id": "W7132988335"
+  }
+ ],
+ "broad_search": [
+  {
+   "oa_id": "W3137024605",
+   "title": "A review of trends and drivers of greenhouse gas emissions by sector from 1990 to 2018",
+   "year": 2021,
+   "cited_by": 1105,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W1589757319",
+   "title": "More Instruments and Broader Goals: Moving toward the Post-Washington Consensus",
+   "year": 2005,
+   "cited_by": 799,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2969750664",
+   "title": "Sustainable manufacturing in Industry 4.0: an emerging research agenda",
+   "year": 2019,
+   "cited_by": 798,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2554416008",
+   "title": "Essential medicines for universal health coverage",
+   "year": 2016,
+   "cited_by": 608,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W1570322089",
+   "title": "Strategizing by the government: Can industrial policy create firm‐level competitive advantage?",
+   "year": 2013,
+   "cited_by": 271,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2260203097",
+   "title": "Chinese State Capitalism? Rethinking the Role of the State and Business in Chinese Development Cooperation in Africa",
+   "year": 2016,
+   "cited_by": 260,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3003841889",
+   "title": "Conducting Management Research in Latin America: Why and What’s in It for You?",
+   "year": 2020,
+   "cited_by": 259,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2782609022",
+   "title": "The impact of the fourth industrial revolution: a cross-country/region comparison",
+   "year": 2018,
+   "cited_by": 259,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3186872377",
+   "title": "From planetary to societal boundaries: an argument for collectively defined self-limitation",
+   "year": 2021,
+   "cited_by": 201,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2098315400",
+   "title": "Cross-over, thresholds, and interactions between science and technology: lessons for less-developed countries",
+   "year": 2003,
+   "cited_by": 185,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2944759277",
+   "title": "Diving into emerging economies bottleneck: Industry 4.0 and implications for circular economy",
+   "year": 2019,
+   "cited_by": 184,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4295605218",
+   "title": "The contribution of organizational culture, structure, and leadership factors in the digital transformation of SMEs: a mixed-methods approach",
+   "year": 2022,
+   "cited_by": 176,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2158482756",
+   "title": "Reorganising global value chains and building innovation capabilities in Brazil and India",
+   "year": 2015,
+   "cited_by": 150,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2134338860",
+   "title": "Procuring Firm Growth: The Effects of Government Purchases on Firm Dynamics",
+   "year": 2015,
+   "cited_by": 126,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2572320498",
+   "title": "The structuralist revenge: economic complexity as an important dimension to evaluate growth and development",
+   "year": 2018,
+   "cited_by": 119,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2087845606",
+   "title": "Industrial Policy Changes and Firm-Level Technological Capability Development: Evidence from Northern Brazil",
+   "year": 2007,
+   "cited_by": 112,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W1595917532",
+   "title": "The Changing Trade and Revealed Comparative Advantages of Asian and Latin American Manufacture Exports",
+   "year": 2002,
+   "cited_by": 112,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2097802992",
+   "title": "Brazilian foreign policy towards South America during the Lula administration: caught between South America and Mercosur",
+   "year": 2010,
+   "cited_by": 111,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2034473167",
+   "title": "Competitividade e coordenação de sistemas agroindustriais: um ensaio conceitual",
+   "year": 1999,
+   "cited_by": 107,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2122634626",
+   "title": "Desenvolvimento, complexo industrial da saúde e política industrial",
+   "year": 2006,
+   "cited_by": 105,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3166698541",
+   "title": "The politics of COVID-19 vaccination in middle-income countries: Lessons from Brazil",
+   "year": 2021,
+   "cited_by": 104,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2884509223",
+   "title": "Technological intensity and innovation capability in industrial firms",
+   "year": 2018,
+   "cited_by": 104,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W1488025577",
+   "title": "From Old to New Developmentalism in Latin America",
+   "year": 2011,
+   "cited_by": 102,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2061274847",
+   "title": "Failure and success: the fate of industrial policy in Latin America and South East Asia",
+   "year": 1999,
+   "cited_by": 101,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4282937375",
+   "title": "Revisiting the issue of access to medicines in Africa: Challenges and recommendations",
+   "year": 2022,
+   "cited_by": 101,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2165174807",
+   "title": "Industrialization in Sub-Saharan Africa and import substitution policy",
+   "year": 2014,
+   "cited_by": 98,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2503753840",
+   "title": "Reflecting on new developmentalism and classical developmentalism",
+   "year": 2016,
+   "cited_by": 95,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W1967042362",
+   "title": "The road to recovery",
+   "year": 2007,
+   "cited_by": 94,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W1976485169",
+   "title": "Beyond technological catch-up: An empirical investigation of further innovative capability accumulation outcomes in latecomer firms with evidence from Brazil",
+   "year": 2013,
+   "cited_by": 93,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2098313146",
+   "title": "Interação universidade-empresa no Brasil: evidências do Diretório dos Grupos de Pesquisa do CNPq",
+   "year": 2007,
+   "cited_by": 90,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3083484886",
+   "title": "Access to medicines after TRIPS: Is compulsory licensing an effective mechanism to lower drug prices? A review of the existing evidence",
+   "year": 2020,
+   "cited_by": 86,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2759665701",
+   "title": "Políticas de saúde no Brasil em tempos contraditórios: caminhos e tropeços na construção de um sistema universal",
+   "year": 2017,
+   "cited_by": 84,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4386705178",
+   "title": "Circular economy, bioeconomy, and sustainable development goals: a systematic literature review",
+   "year": 2023,
+   "cited_by": 84,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2770125130",
+   "title": "100% Renewable Energy Supply for Brazil—The Role of Sector Coupling and Regional Development",
+   "year": 2017,
+   "cited_by": 83,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2981371352",
+   "title": "Innovative efforts of ISO 9001-certified manufacturing firms: Evidence of links between determinants of innovation, continuous innovation and firm performance",
+   "year": 2019,
+   "cited_by": 82,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3216015584",
+   "title": "The Triple Helix Model and the Future of Innovation: A Reflection on the Triple Helix Research Agenda",
+   "year": 2021,
+   "cited_by": 81,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2789614065",
+   "title": "The case for reindustrialisation in developing countries: towards the connection between the macroeconomic regime and the industrial policy in Brazil",
+   "year": 2017,
+   "cited_by": 80,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3186524125",
+   "title": "Green Supply Chain Management: Conceptual Framework and Models for Analysis",
+   "year": 2021,
+   "cited_by": 79,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2535738532",
+   "title": "Conflicting Climate Change Frames in a Global Field of Media Discourse",
+   "year": 2016,
+   "cited_by": 79,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4214839301",
+   "title": "The rise of 5G technologies and systems: A quantitative analysis of knowledge production",
+   "year": 2022,
+   "cited_by": 78,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3124375852",
+   "title": "Linking Economic Complexity, Diversification, and Industrial Policy with Sustainable Development: A Structured Literature Review",
+   "year": 2021,
+   "cited_by": 78,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2131022615",
+   "title": "Business cycle fluctuations in Brazil",
+   "year": 2002,
+   "cited_by": 78,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2153465427",
+   "title": "Fear for Manufacturing? China and the Future of Industry in Brazil and Latin America",
+   "year": 2012,
+   "cited_by": 77,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2871489377",
+   "title": "Assistência Farmacêutica nos 30 anos do SUS na perspectiva da integralidade",
+   "year": 2018,
+   "cited_by": 76,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2020543162",
+   "title": "Gestão de tecnologia em universidades: uma análise do patenteamento e dos fatores de dificuldade e de apoio à transferência de tecnologia no Estado de São Paulo",
+   "year": 2009,
+   "cited_by": 76,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2953809940",
+   "title": "Artificial Intelligence, Governance and Ethics: Global Perspectives",
+   "year": 2019,
+   "cited_by": 75,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W3025285349",
+   "title": "Why did some countries catch-up, while others got stuck in the middle? Stages of productive sophistication and smart industrial policies",
+   "year": 2021,
+   "cited_by": 73,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2805774460",
+   "title": "Economic Complexity and Human Development: DEA performance measurement in Asia and Latin America",
+   "year": 2018,
+   "cited_by": 71,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2325729858",
+   "title": "State, State Institutions, and Political Power in Brazil",
+   "year": 2016,
+   "cited_by": 71,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2909411031",
+   "title": "International trade, development traps, and the core-periphery structure of income inequality",
+   "year": 2019,
+   "cited_by": 71,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2076562802",
+   "title": "Ten years of the City Statute in Brazil: from the struggle for urban reform to the World Cup cities",
+   "year": 2013,
+   "cited_by": 69,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4294326141",
+   "title": "Occupational Safety and Health Staging Framework for Decent Work",
+   "year": 2022,
+   "cited_by": 69,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2106831030",
+   "title": "Sources of learning paths and technological capabilities: an introductory roadmap of development processes†",
+   "year": 2009,
+   "cited_by": 68,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2078688020",
+   "title": "Redes sociais e poder no Estado brasileiro: aprendizados a partir de políticas urbanas",
+   "year": 2006,
+   "cited_by": 64,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4319455136",
+   "title": "Vaccine technology transfer in a global health crisis: Actors, capabilities, and institutions",
+   "year": 2023,
+   "cited_by": 59,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4309772367",
+   "title": "A method to identify barriers to and enablers of implementing climate change mitigation options",
+   "year": 2022,
+   "cited_by": 59,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2756082066",
+   "title": "Regional industrial policy in the wind energy sector: The case of the State of Rio Grande do Sul, Brazil",
+   "year": 2017,
+   "cited_by": 56,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W4220764215",
+   "title": "Multiobjective optimization of hybrid wind-photovoltaic plants with battery energy storage system: Current situation and possible regulatory changes",
+   "year": 2022,
+   "cited_by": 55,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2784816555",
+   "title": "The contribution of innovation policy criteria to the development of local renewable energy systems",
+   "year": 2018,
+   "cited_by": 54,
+   "query": "\"politica industrial\" OR \"indu"
+  },
+  {
+   "oa_id": "W2006743883",
+   "title": "Inovar para transformar a universidade brasileira",
+   "year": 2011,
+   "cited_by": 54,
+   "query": "\"politica industrial\" OR \"indu"
+  }
+ ],
+ "citation_bridges_top30": [
+  {
+   "oa_id": "W3110437710",
+   "title": "Brazilian Industrial Policy: A Cluster Analysis of the Challenges Facing the National Industry and Policies Adopted from",
+   "n_citers_fetched": 100,
+   "n_high_cite_citers": 67
+  },
+  {
+   "oa_id": "W2270275974",
+   "title": "Industrial policy as an effective development tool: Lessons from Brazil",
+   "n_citers_fetched": 100,
+   "n_high_cite_citers": 32
+  },
+  {
+   "oa_id": "W2065506938",
+   "title": "Politics within the state: elite bureaucrats and industrial policy in authoritarian Brazil",
+   "n_citers_fetched": 100,
+   "n_high_cite_citers": 14
+  },
+  {
+   "oa_id": "W2315979637",
+   "title": "Industrial policy, sectoral maturation, and postwar economic growth in Brazil: The resource curse thesis",
+   "n_citers_fetched": 52,
+   "n_high_cite_citers": 6
+  },
+  {
+   "oa_id": "W2153465427",
+   "title": "Fear for manufacturing? China and the future of industry in Brazil and Latin America",
+   "n_citers_fetched": 77,
+   "n_high_cite_citers": 5
+  },
+  {
+   "oa_id": "W2037980183",
+   "title": "Making and remaking “good government” in Brazil: Subnational industrial policy in Minas Gerais",
+   "n_citers_fetched": 29,
+   "n_high_cite_citers": 4
+  },
+  {
+   "oa_id": "W2087845606",
+   "title": "Industrial and technological policy and development",
+   "n_citers_fetched": 100,
+   "n_high_cite_citers": 4
+  },
+  {
+   "oa_id": "W2002071978",
+   "title": "New patterns of governance for industrial change: perspectives for Brazil",
+   "n_citers_fetched": 38,
+   "n_high_cite_citers": 4
+  },
+  {
+   "oa_id": "W2756082066",
+   "title": "Regional industrial policy in the wind energy sector: The case of the State of Rio Grande do Sul, Brazil",
+   "n_citers_fetched": 56,
+   "n_high_cite_citers": 2
+  },
+  {
+   "oa_id": "W180828614",
+   "title": "El desafío competitivo para la industria brasileña",
+   "n_citers_fetched": 15,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W2136615848",
+   "title": "Health policy as industrial policy: Brazil in comparative perspective",
+   "n_citers_fetched": 49,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W2391060152",
+   "title": "The return of industrial policy in Brazil",
+   "n_citers_fetched": 20,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W338840468",
+   "title": "Política industrial e tecnológica e desenvolvimento",
+   "n_citers_fetched": 1,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W2003318188",
+   "title": "Política industrial e desenvolvimento",
+   "n_citers_fetched": 92,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W1936722473",
+   "title": "From Industry Protection to Industry Promotion: IT Policy in Brazil",
+   "n_citers_fetched": 20,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W2159305436",
+   "title": "Industrial policy and the creation of new industries: evidence from Brazil's bioethanol industry",
+   "n_citers_fetched": 16,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W2272963762",
+   "title": "Industrial policy and development",
+   "n_citers_fetched": 24,
+   "n_high_cite_citers": 1
+  },
+  {
+   "oa_id": "W2252747966",
+   "title": "Política industrial e empresas estatais no Brasil: BNDES e Petrobras",
+   "n_citers_fetched": 10,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W3149911297",
+   "title": "The Political Economy of Brazilian Industrial Policy (2003 - 2014): Main Vectors, Shortcomings and Directions to Improve",
+   "n_citers_fetched": 8,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W2923828223",
+   "title": "Innovation policy in Brazil since 2003 : Advances, incoherencies, and discontinuities",
+   "n_citers_fetched": 4,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W2623693150",
+   "title": "Indústria Farmacêutica no Brasil: Evolução Histórica, Capacitação Competitiva e Políticas Industriais",
+   "n_citers_fetched": 2,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W1767611563",
+   "title": "Desafios da real política industrial brasileira do século XXI",
+   "n_citers_fetched": 18,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W3167410932",
+   "title": "Experiência histórica de política industrial no Brasil",
+   "n_citers_fetched": 24,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W2755010101",
+   "title": "Política industrial e tecnológica no Brasil: uma investigação dos determinantes das escolhas políticas.",
+   "n_citers_fetched": 0,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W2309505641",
+   "title": "A experiência recente da política industrial no Brasil: uma avaliação",
+   "n_citers_fetched": 5,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W2767035529",
+   "title": "Industrial policy and local content: Brazil's pre-salt area case",
+   "n_citers_fetched": 5,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W1563742136",
+   "title": "Políticas nacionales y la profundización del MERCOSUR: el impacto de las políticas de competitividad",
+   "n_citers_fetched": 0,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W4312049928",
+   "title": "Government political-relational capacities and industrial policy profile: Brazil’s experience at the beginning of the 21",
+   "n_citers_fetched": 1,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W2588628362",
+   "title": "A política industrial brasileira recente e as estratégias de inovação do setor moveleiro da região oeste de Santa Catari",
+   "n_citers_fetched": 0,
+   "n_high_cite_citers": 0
+  },
+  {
+   "oa_id": "W3004438298",
+   "title": "Institutions and industrial policy in Brazil after two decades: have we built the needed institutions?",
+   "n_citers_fetched": 43,
+   "n_high_cite_citers": 0
+  }
+ ]
+}

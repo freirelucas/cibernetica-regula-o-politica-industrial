@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (110 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (111 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -107,6 +107,7 @@ Registro de mudanças desta branch, agrupado por tema (110 commits de trabalho).
 
 ## Site e publicação (GitHub Pages)
 
+- Adiciona link aos slides no menu do site · `2014243` · 2026-05-28
 - Fases 3-5: capa de impressão, dicionário de dados, skip-link, deploy Pages · `78fd859` · 2026-05-26
 - Torna o site responsivo (mobile/tablet) — corrige navegação e overflow · `a7f4bc2` · 2026-05-26
 - Adiciona fallback sem JavaScript e CI (pytest) ao site · `6ce543f` · 2026-05-26

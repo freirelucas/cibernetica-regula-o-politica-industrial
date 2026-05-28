@@ -467,6 +467,15 @@ def main():
     ax4_src = os.path.join(ROOT, "data", "network_4axis.json")
     if os.path.exists(ax4_src):
         shutil.copy(ax4_src, os.path.join(DADOS, "rede_4eixos.json"))
+    # arquivos auxiliares acessíveis via GH Pages para auditoria dos achados
+    for fname in ["rayyan_tags.json", "cocitation_hyperedges.json",
+                  "author_network.json", "brokerage_roles.json",
+                  "higher_order_bc.json", "brazil_expanded.json",
+                  "temporal_cocitation.json", "depth2_corpus.json",
+                  "author_snowball_expansion.json", "adjacent_tradition_probes.json"]:
+        src = os.path.join(ROOT, "data", fname)
+        if os.path.exists(src):
+            shutil.copy(src, os.path.join(DADOS, fname))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
 
     missing = [s for s in SECTIONS if f'id="{s}"' not in html]

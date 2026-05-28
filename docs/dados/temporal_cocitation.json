@@ -1,0 +1,487 @@
+{
+  "axis_arrival_year": {
+    "Cyb": 1983,
+    "Reg": 1991,
+    "PolInd": 2005
+  },
+  "axis_peak_year": {
+    "Cyb": 2011,
+    "Reg": 2019,
+    "PolInd": 2017
+  },
+  "axis_peak_value": {
+    "Cyb": 30,
+    "Reg": 19,
+    "PolInd": 18
+  },
+  "first_copresence_year": 2005,
+  "silo_crystallization_decade": "1980s",
+  "cumul_history": [
+    {
+      "year": 1968,
+      "Cyb": 1,
+      "Reg": 0,
+      "PolInd": 0
+    },
+    {
+      "year": 1970,
+      "Cyb": 2,
+      "Reg": 0,
+      "PolInd": 0
+    },
+    {
+      "year": 1974,
+      "Cyb": 3,
+      "Reg": 1,
+      "PolInd": 1
+    },
+    {
+      "year": 1979,
+      "Cyb": 5,
+      "Reg": 1,
+      "PolInd": 1
+    },
+    {
+      "year": 1980,
+      "Cyb": 7,
+      "Reg": 2,
+      "PolInd": 2
+    },
+    {
+      "year": 1982,
+      "Cyb": 8,
+      "Reg": 2,
+      "PolInd": 2
+    },
+    {
+      "year": 1983,
+      "Cyb": 11,
+      "Reg": 3,
+      "PolInd": 3
+    },
+    {
+      "year": 1984,
+      "Cyb": 13,
+      "Reg": 4,
+      "PolInd": 3
+    },
+    {
+      "year": 1985,
+      "Cyb": 15,
+      "Reg": 5,
+      "PolInd": 3
+    },
+    {
+      "year": 1986,
+      "Cyb": 16,
+      "Reg": 6,
+      "PolInd": 3
+    },
+    {
+      "year": 1987,
+      "Cyb": 17,
+      "Reg": 6,
+      "PolInd": 4
+    },
+    {
+      "year": 1988,
+      "Cyb": 18,
+      "Reg": 7,
+      "PolInd": 4
+    },
+    {
+      "year": 1989,
+      "Cyb": 21,
+      "Reg": 8,
+      "PolInd": 4
+    },
+    {
+      "year": 1990,
+      "Cyb": 28,
+      "Reg": 10,
+      "PolInd": 5
+    },
+    {
+      "year": 1991,
+      "Cyb": 29,
+      "Reg": 13,
+      "PolInd": 6
+    },
+    {
+      "year": 1992,
+      "Cyb": 33,
+      "Reg": 14,
+      "PolInd": 6
+    },
+    {
+      "year": 1993,
+      "Cyb": 43,
+      "Reg": 16,
+      "PolInd": 7
+    },
+    {
+      "year": 1994,
+      "Cyb": 46,
+      "Reg": 18,
+      "PolInd": 7
+    },
+    {
+      "year": 1995,
+      "Cyb": 47,
+      "Reg": 19,
+      "PolInd": 7
+    },
+    {
+      "year": 1996,
+      "Cyb": 49,
+      "Reg": 19,
+      "PolInd": 7
+    },
+    {
+      "year": 1997,
+      "Cyb": 56,
+      "Reg": 19,
+      "PolInd": 7
+    },
+    {
+      "year": 1998,
+      "Cyb": 60,
+      "Reg": 21,
+      "PolInd": 7
+    },
+    {
+      "year": 1999,
+      "Cyb": 68,
+      "Reg": 23,
+      "PolInd": 7
+    },
+    {
+      "year": 2000,
+      "Cyb": 71,
+      "Reg": 24,
+      "PolInd": 8
+    },
+    {
+      "year": 2001,
+      "Cyb": 76,
+      "Reg": 27,
+      "PolInd": 8
+    },
+    {
+      "year": 2002,
+      "Cyb": 82,
+      "Reg": 27,
+      "PolInd": 8
+    },
+    {
+      "year": 2003,
+      "Cyb": 89,
+      "Reg": 32,
+      "PolInd": 8
+    },
+    {
+      "year": 2004,
+      "Cyb": 102,
+      "Reg": 36,
+      "PolInd": 10
+    },
+    {
+      "year": 2005,
+      "Cyb": 109,
+      "Reg": 39,
+      "PolInd": 14
+    },
+    {
+      "year": 2006,
+      "Cyb": 128,
+      "Reg": 41,
+      "PolInd": 19
+    },
+    {
+      "year": 2007,
+      "Cyb": 147,
+      "Reg": 47,
+      "PolInd": 26
+    },
+    {
+      "year": 2008,
+      "Cyb": 155,
+      "Reg": 49,
+      "PolInd": 30
+    },
+    {
+      "year": 2009,
+      "Cyb": 169,
+      "Reg": 58,
+      "PolInd": 38
+    },
+    {
+      "year": 2010,
+      "Cyb": 180,
+      "Reg": 66,
+      "PolInd": 41
+    },
+    {
+      "year": 2011,
+      "Cyb": 210,
+      "Reg": 77,
+      "PolInd": 45
+    },
+    {
+      "year": 2012,
+      "Cyb": 232,
+      "Reg": 90,
+      "PolInd": 53
+    },
+    {
+      "year": 2013,
+      "Cyb": 246,
+      "Reg": 99,
+      "PolInd": 66
+    },
+    {
+      "year": 2014,
+      "Cyb": 269,
+      "Reg": 109,
+      "PolInd": 78
+    },
+    {
+      "year": 2015,
+      "Cyb": 295,
+      "Reg": 120,
+      "PolInd": 90
+    },
+    {
+      "year": 2016,
+      "Cyb": 309,
+      "Reg": 130,
+      "PolInd": 97
+    },
+    {
+      "year": 2017,
+      "Cyb": 324,
+      "Reg": 148,
+      "PolInd": 115
+    },
+    {
+      "year": 2018,
+      "Cyb": 342,
+      "Reg": 161,
+      "PolInd": 125
+    },
+    {
+      "year": 2019,
+      "Cyb": 365,
+      "Reg": 180,
+      "PolInd": 141
+    },
+    {
+      "year": 2020,
+      "Cyb": 379,
+      "Reg": 197,
+      "PolInd": 155
+    },
+    {
+      "year": 2021,
+      "Cyb": 388,
+      "Reg": 213,
+      "PolInd": 163
+    },
+    {
+      "year": 2022,
+      "Cyb": 398,
+      "Reg": 218,
+      "PolInd": 167
+    },
+    {
+      "year": 2023,
+      "Cyb": 406,
+      "Reg": 230,
+      "PolInd": 174
+    },
+    {
+      "year": 2024,
+      "Cyb": 412,
+      "Reg": 235,
+      "PolInd": 175
+    },
+    {
+      "year": 2025,
+      "Cyb": 425,
+      "Reg": 241,
+      "PolInd": 176
+    }
+  ],
+  "decade_snapshots": [
+    {
+      "decade": "1960s",
+      "low": 1960,
+      "high": 1969,
+      "n_new_nodes": 9,
+      "n_total_nodes": 26,
+      "axis_distribution_new": {
+        "Reg": 1,
+        "Cyb": 4
+      },
+      "axis_distribution_cumul": {
+        "Reg": 2,
+        "Cyb": 6,
+        "PolInd": 4
+      },
+      "n_edges_cumul": 9,
+      "n_intra_axis_edges": {
+        "Cyb": 6,
+        "PolInd": 1
+      },
+      "n_cross_axis_edges": 2,
+      "intra_axis_fraction": 0.7778
+    },
+    {
+      "decade": "1970s",
+      "low": 1970,
+      "high": 1979,
+      "n_new_nodes": 17,
+      "n_total_nodes": 43,
+      "axis_distribution_new": {
+        "Cyb": 6,
+        "Reg": 6
+      },
+      "axis_distribution_cumul": {
+        "Cyb": 12,
+        "Reg": 8,
+        "PolInd": 4
+      },
+      "n_edges_cumul": 46,
+      "n_intra_axis_edges": {
+        "Cyb": 30,
+        "Reg": 3,
+        "PolInd": 1
+      },
+      "n_cross_axis_edges": 12,
+      "intra_axis_fraction": 0.7391
+    },
+    {
+      "decade": "1980s",
+      "low": 1980,
+      "high": 1989,
+      "n_new_nodes": 26,
+      "n_total_nodes": 69,
+      "axis_distribution_new": {
+        "PolInd": 2,
+        "Reg": 9,
+        "Cyb": 11
+      },
+      "axis_distribution_cumul": {
+        "Cyb": 23,
+        "PolInd": 6,
+        "Reg": 17
+      },
+      "n_edges_cumul": 208,
+      "n_intra_axis_edges": {
+        "Cyb": 130,
+        "Reg": 40,
+        "PolInd": 3
+      },
+      "n_cross_axis_edges": 35,
+      "intra_axis_fraction": 0.8317
+    },
+    {
+      "decade": "1990s",
+      "low": 1990,
+      "high": 1999,
+      "n_new_nodes": 50,
+      "n_total_nodes": 119,
+      "axis_distribution_new": {
+        "Cyb": 15,
+        "Reg": 13,
+        "PolInd": 8
+      },
+      "axis_distribution_cumul": {
+        "Cyb": 38,
+        "Reg": 30,
+        "PolInd": 14
+      },
+      "n_edges_cumul": 580,
+      "n_intra_axis_edges": {
+        "Cyb": 321,
+        "Reg": 171,
+        "PolInd": 32
+      },
+      "n_cross_axis_edges": 56,
+      "intra_axis_fraction": 0.9034
+    },
+    {
+      "decade": "2000s",
+      "low": 2000,
+      "high": 2009,
+      "n_new_nodes": 59,
+      "n_total_nodes": 178,
+      "axis_distribution_new": {
+        "Reg": 21,
+        "PolInd": 10,
+        "Cyb": 11
+      },
+      "axis_distribution_cumul": {
+        "Reg": 51,
+        "Cyb": 49,
+        "PolInd": 24
+      },
+      "n_edges_cumul": 1209,
+      "n_intra_axis_edges": {
+        "Cyb": 525,
+        "PolInd": 98,
+        "Reg": 513
+      },
+      "n_cross_axis_edges": 73,
+      "intra_axis_fraction": 0.9396
+    },
+    {
+      "decade": "2010s",
+      "low": 2010,
+      "high": 2019,
+      "n_new_nodes": 35,
+      "n_total_nodes": 213,
+      "axis_distribution_new": {
+        "Reg": 18,
+        "Cyb": 6,
+        "PolInd": 5
+      },
+      "axis_distribution_cumul": {
+        "Reg": 69,
+        "Cyb": 55,
+        "PolInd": 29
+      },
+      "n_edges_cumul": 1841,
+      "n_intra_axis_edges": {
+        "Cyb": 672,
+        "PolInd": 168,
+        "Reg": 862
+      },
+      "n_cross_axis_edges": 139,
+      "intra_axis_fraction": 0.9245
+    },
+    {
+      "decade": "2020s",
+      "low": 2020,
+      "high": 2029,
+      "n_new_nodes": 2,
+      "n_total_nodes": 215,
+      "axis_distribution_new": {
+        "Reg": 2
+      },
+      "axis_distribution_cumul": {
+        "Reg": 71,
+        "Cyb": 55,
+        "PolInd": 29
+      },
+      "n_edges_cumul": 1867,
+      "n_intra_axis_edges": {
+        "Cyb": 672,
+        "PolInd": 168,
+        "Reg": 888
+      },
+      "n_cross_axis_edges": 139,
+      "intra_axis_fraction": 0.9255
+    }
+  ]
+}

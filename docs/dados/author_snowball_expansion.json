@@ -1,0 +1,6250 @@
+{
+ "_generated": "fase D · 2026-05-29",
+ "by_author": {
+  "A5111505527": {
+   "display_name": "Domenico Mario Nuti",
+   "cross_axis_score": 0.9464,
+   "h_index": 0,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 50,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W1908568312",
+     "title": "Hidden and repressed inflation in Soviet-type economies: definitions, measurements and stabilization",
+     "year": 1989,
+     "cited_by": 132,
+     "doi": "https://doi.org/10.1007/978-94-009-0823-9_5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1994184568",
+     "title": "Economic Essays on Value, Competition and Utility.",
+     "year": 1974,
+     "cited_by": 123,
+     "doi": "https://doi.org/10.2307/2230581",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1528561055",
+     "title": "The Polish Alternative: Old Myths, Hard Facts and New Strategies in the Successful Transformation of the Polish Economy",
+     "year": 1999,
+     "cited_by": 84,
+     "doi": "https://doi.org/10.2139/ssrn.170889",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2077429955",
+     "title": "Capitalism, Socialism and Steady Growth",
+     "year": 1970,
+     "cited_by": 61,
+     "doi": "https://doi.org/10.2307/2230437",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2013739780",
+     "title": "Pre-Keynesian roots of the neoclassical synthesis",
+     "year": 1985,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.3406/cep.1985.997",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1529085045",
+     "title": "The Costs and Benefits of Euro-sation in Central-Eastern Europe Before or Instead of EMU Membership",
+     "year": 2000,
+     "cited_by": 47,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3122112046",
+     "title": "Costs and benefits of unilateral euroization in central eastern Europe",
+     "year": 2002,
+     "cited_by": 40,
+     "doi": "https://doi.org/10.1111/1468-0351.00119",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4230710385",
+     "title": "Introduction to Economic Cybernetics.",
+     "year": 1971,
+     "cited_by": 37,
+     "doi": "https://doi.org/10.2307/2229893",
+     "axes_hit": [
+      "Cyb",
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2030262768",
+     "title": "Profit‐Sharing and Employment: Claims and Overclaims",
+     "year": 1987,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.1111/j.1468-232x.1987.tb00691.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1513387140",
+     "title": "The Polish Crisis: Economic Factors And Constraints",
+     "year": 2025,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.4324/9781003672548-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2495767131",
+     "title": "Employeeism: Corporate Governance and Employee Share Ownership in Transitional Economies",
+     "year": 1997,
+     "cited_by": 31,
+     "doi": "https://doi.org/10.1017/cbo9780511572012.006",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2084403689",
+     "title": "Inflation, interest and exchange rates in the transition1",
+     "year": 1996,
+     "cited_by": 31,
+     "doi": "https://doi.org/10.1111/j.1468-0351.1996.tb00166.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4256423813",
+     "title": "An Essay on Yugoslav Society.",
+     "year": 1970,
+     "cited_by": 27,
+     "doi": "https://doi.org/10.2307/2229907",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2042513221",
+     "title": "ON THE RATES OF RETURN ON INVESTMENT",
+     "year": 1974,
+     "cited_by": 24,
+     "doi": "https://doi.org/10.1111/j.1467-6435.1974.tb01910.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3120503984",
+     "title": "Employee Ownership in Polish Privatizations",
+     "year": 2005,
+     "cited_by": 23,
+     "doi": "https://doi.org/10.4324/9780203985052-10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1990514101",
+     "title": "MONETARY AND EXCHANGE-RATE POLICIES DURING EASTERN EUROPE'S TRANSITION: SOME LESSONS FROM FURTHER EAST",
+     "year": 1992,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1093/oxrep/8.1.27",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2039347168",
+     "title": "The Polish Zloty, 1990–1999: Success and Underperformance",
+     "year": 2000,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.1257/aer.90.2.53",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1976738501",
+     "title": "Competitive valuation and efficiency of capital investment in the socialist economy",
+     "year": 1988,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1016/0014-2921(88)90191-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2991167753",
+     "title": "Market socialism: the model that might have been but never was",
+     "year": 1991,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.1017/cbo9780511559600.003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2166638817",
+     "title": "Not Just Another Accession: The Political Economy of EU Enlargement to the East",
+     "year": 1997,
+     "cited_by": 14,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2037187536",
+     "title": "Perestroika: Transition from Central Planning to Market Socialism",
+     "year": 1988,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.2307/1344490",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4385743412",
+     "title": "The Rise and Fall of Socialism",
+     "year": 2023,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_13",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1973462384",
+     "title": "Remonetisation and capital markets in the reform of centrally planned economies",
+     "year": 1989,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1016/0014-2921(89)90120-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1488387871",
+     "title": "HARD BUDGETS & SOFT STATES Social policy choices in central and eastern Europe",
+     "year": 2000,
+     "cited_by": 12,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2145915366",
+     "title": "Costs and Benefits of Unilateral Euroization in Central Eastern Europe",
+     "year": 2023,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_23",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W613918712",
+     "title": "Socialist economics : selected readings",
+     "year": 1972,
+     "cited_by": 11,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2780445347",
+     "title": "Kornai: Shortage versus surplus economies",
+     "year": 2017,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1556/032.2018.68.s.7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1513542730",
+     "title": "The European Social Model and its Dilution as a Result of EU Enlargement",
+     "year": 2007,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.2139/ssrn.1031908",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2135774066",
+     "title": "Alternative Fiscal Rules for the New EU Member States",
+     "year": 2006,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.2139/ssrn.1053821",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1601048640",
+     "title": "The Contradictions of Socialist Economies: A Marxist Interpretation",
+     "year": 1991,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1007/978-1-349-12625-5_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2230178422",
+     "title": "The Share Economy: Plausibility and Viability of Weitzman's Model 1",
+     "year": 2022,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.4324/9781003261537-15",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4379525313",
+     "title": "Feasible Financial Innovation Under Market Socialism",
+     "year": 2023,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1007/978-3-031-12334-4_9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W88636921",
+     "title": "Post-soviet issues: stabilization, trade and money",
+     "year": 1992,
+     "cited_by": 10,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3113451160",
+     "title": "A tale of two cities: the evolution of the crisis and exit policies in Washington and Frankfurt",
+     "year": 2015,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.4324/9781315745336-16",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2162790888",
+     "title": "The Impact of Investment Funds on Corporate Governance in Mass Privatization Schemes: Czech Republic, Poland and Slovenia",
+     "year": 2000,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1023/a:1009531429918",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4379526736",
+     "title": "Stabilization and Sequencing in the Reform of Socialist Economies",
+     "year": 2023,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1007/978-3-031-12334-4_12",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2105195798",
+     "title": "The Degree of Monopoly in the Kaldor-Mirrlees Growth Model",
+     "year": 1969,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.2307/2296843",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W656500407",
+     "title": "Transition and beyond : essays in honour of Mario Nuti",
+     "year": 2007,
+     "cited_by": 8,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2490475745",
+     "title": "Efficiency, Equality and Enterprise Democracy",
+     "year": 1996,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.4324/9780203011416.ch10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4385743399",
+     "title": "The Impact of the Global Crisis on Transition Economies",
+     "year": 2023,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_25",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2086917477",
+     "title": "Investment reforms in Czechoslovakia",
+     "year": 1970,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1080/09668137008410715",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2086696694",
+     "title": "Democracy and Economy: What Role for Stakeholders?",
+     "year": 1997,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1111/1467-8616.00015",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2254460760",
+     "title": "Codetermination, Profit Sharing and Full Employment",
+     "year": 2023,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_14",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2264615100",
+     "title": "Financial innovation under market socialism",
+     "year": 1987,
+     "cited_by": 6,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1524840880",
+     "title": "Economic crisis in Eastern Europe : prospects and repercussions",
+     "year": 1984,
+     "cited_by": 6,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4385743600",
+     "title": "Capitalism, Socialism and Steady Growth",
+     "year": 2023,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2126657156",
+     "title": "European Community response to the transition: aid, trade access, enlargement1",
+     "year": 1996,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1111/j.1468-0351.1996.tb00187.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1605234015",
+     "title": "Lessons from the Stabilisation Programmes of Central and Eastern European Countries, 1989–1991",
+     "year": 2023,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1007/978-3-031-12334-4_13",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2108640400",
+     "title": "Exchange rate regimes in the transition economies",
+     "year": 1996,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1111/j.1468-0319.1996.tb00059.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1587106827",
+     "title": "The role of the banking sector in the process of privatisation",
+     "year": 1992,
+     "cited_by": 5,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5073896378": {
+   "display_name": "Ángela Espinosa",
+   "cross_axis_score": 0.7836,
+   "h_index": 19,
+   "n_new_works_found": 31,
+   "n_in_corpus_overlap": 19,
+   "new_works": [
+    {
+     "oa_id": "W1977228499",
+     "title": "Sustainability, complexity and learning: insights from complex systems approaches",
+     "year": 2011,
+     "cited_by": 137,
+     "doi": "https://doi.org/10.1108/09696471111096000",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4236494092",
+     "title": "A Complexity Approach to Sustainability",
+     "year": 2011,
+     "cited_by": 74,
+     "doi": "https://doi.org/10.1142/p699",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2026895779",
+     "title": "Extractive bioconversion to produce the Aedes albopictus akirin in an aqueous two-phase system supporting Pichia pastoris growth and protein secretion",
+     "year": 2009,
+     "cited_by": 58,
+     "doi": "https://doi.org/10.1016/j.bej.2009.04.014",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2173293165",
+     "title": "Sustainability management: insights from the Viable System Model",
+     "year": 2015,
+     "cited_by": 51,
+     "doi": "https://doi.org/10.1016/j.jclepro.2015.11.035",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1988560485",
+     "title": "A methodology for supporting strategy implementation based on the VSM: A case study in a Latin-American multi-national",
+     "year": 2014,
+     "cited_by": 48,
+     "doi": "https://doi.org/10.1016/j.ejor.2014.06.014",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4238894328",
+     "title": "A Complexity Approach to Sustainability",
+     "year": 2016,
+     "cited_by": 45,
+     "doi": "https://doi.org/10.1142/q0060",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3030520535",
+     "title": "Constitutive rules for guiding the use of the viable system model: Reflections on practice",
+     "year": 2020,
+     "cited_by": 33,
+     "doi": "https://doi.org/10.1016/j.ejor.2020.05.030",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4385567808",
+     "title": "Designing interagency responses to wicked problems: A viable system model board game",
+     "year": 2023,
+     "cited_by": 28,
+     "doi": "https://doi.org/10.1016/j.ejor.2023.06.040",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2093749609",
+     "title": "Cybernetics and Participation: From Theory to Practice",
+     "year": 2005,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.1007/s11213-005-1230-0",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W3093531680",
+     "title": "Corporate viability and sustainability: A case study in a Mexican corporation",
+     "year": 2020,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.1002/sres.2748",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4306942389",
+     "title": "Sustainable Self-Governance in Businesses and Society",
+     "year": 2022,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.4324/9780429490835",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2093414806",
+     "title": "Division of labour in ant colonies in terms of attractive fields",
+     "year": 2008,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.1016/j.ecocom.2008.10.001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2072138657",
+     "title": "A systemic look at educational development programs: two perspectives on a recent Colombian experience",
+     "year": 2002,
+     "cited_by": 17,
+     "doi": "https://doi.org/10.1108/03684920210443536",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1990094386",
+     "title": "Complexity approaches to self‐organisation: a case study from an Irish eco‐village",
+     "year": 2011,
+     "cited_by": 17,
+     "doi": "https://doi.org/10.1108/03684921111133737",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W643835250",
+     "title": "A complexity approach to sustainability : theory and application",
+     "year": 2011,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1142/p699",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1971278041",
+     "title": "Team syntegrity as a learning tool: some considerations about its capacity to promote critical learning",
+     "year": 2006,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1002/sres.743",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1897431129",
+     "title": "Integrated sustainability management for organizations",
+     "year": 2015,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1108/k-12-2014-0291",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4245095511",
+     "title": "A COMPLEXITY APPROACH TO SUSTAINABILITY",
+     "year": 2011,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1142/9781848165298",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4367182812",
+     "title": "The viability and sustainability approach to support organisational resilience: Learning in a recent case study in the health sector",
+     "year": 2023,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.1002/sres.2951",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2093560205",
+     "title": "Reflections on the new agoras project: a report on a Fuschl conversation",
+     "year": 2006,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1002/sres.721",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4394688499",
+     "title": "A nexus of affective events theory and viable system model to comprehend affective work environment holistically – an empirical investigation",
+     "year": 2024,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1108/joepp-09-2023-0385",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W11800566",
+     "title": "RED HORIZONTAL Y SOSTENIBILIDAD DE SISTEMAS COMPLEJOS",
+     "year": 2011,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1006/jmbi.2001.5032",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4402478846",
+     "title": "Addressing challenges of an uncertain world: A CiberSystemic approach",
+     "year": 2024,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.35707/9789587544398",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2590290714",
+     "title": "What Do We Imagine the Campuses of Tomorrow Will Be like? Universities’ Transition Toward Sustainability in the Light of the Transition Initiatives",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-319-47877-7_14",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4239084868",
+     "title": "What Beer's theory of viability can offer to the field of workforce emotions",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1504/ijwoe.2017.088211",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2762880190",
+     "title": "Transition Towards Sustainability in Hull University Business School: A Study of Curricular Sustainability in the Teaching Processes",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-319-63007-6_48",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1974107632",
+     "title": "Cybernetics and public administration: special issue",
+     "year": 2006,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1108/k.2006.06735aaa.002",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2770369997",
+     "title": "What Beer's theory of viability can offer to the field of workforce emotions",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1504/ijwoe.2017.10009291",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4306925076",
+     "title": "Organisational Viability (and Sustainability)",
+     "year": 2022,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4324/9780429490835-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3047186957",
+     "title": "Using a Viable System Model to Investigate Offshore Wind Supply Chains",
+     "year": 2019,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4306943995",
+     "title": "An Idea Whose Time Has Come",
+     "year": 2022,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9780429490835-10",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2047233587",
+     "title": "A complexity approach to sustainability – Stafford Beer revisited",
+     "year": 2007,
+     "cited_by": 189,
+     "doi": "https://doi.org/10.1016/j.ejor.2007.03.023",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2165238389",
+     "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
+     "year": 2012,
+     "cited_by": 102,
+     "doi": "https://doi.org/10.1016/j.ejor.2012.09.015",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2170564608",
+     "title": "Theoretical approaches to managing complexity in organizations: A comparative analysis",
+     "year": 2014,
+     "cited_by": 69,
+     "doi": "https://doi.org/10.1016/j.estger.2014.10.001",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W3113208274",
+     "title": "Designing interagency responses to wicked problems: Creating a common, cross-agency understanding",
+     "year": 2020,
+     "cited_by": 61,
+     "doi": "https://doi.org/10.1016/j.ejor.2020.11.045",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2040050415",
+     "title": "Beyond hierarchy: a complexity management perspective",
+     "year": 2007,
+     "cited_by": 40,
+     "doi": "https://doi.org/10.1108/03684920710746995",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2738819322",
+     "title": "Complexity management and multi-scale governance: A case study in an Amazonian indigenous association",
+     "year": 2017,
+     "cited_by": 32,
+     "doi": "https://doi.org/10.1016/j.ejor.2017.07.049",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1881401909",
+     "title": "Governance for sustainability: learning from VSM practice",
+     "year": 2015,
+     "cited_by": 29,
+     "doi": "https://doi.org/10.1108/k-02-2015-0043",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2044455918",
+     "title": "ENVIRONMENTAL MANAGEMENT REVISITED: LESSONS FROM A CYBERNETIC INTERVENTION IN COLOMBIA",
+     "year": 2005,
+     "cited_by": 25,
+     "doi": "https://doi.org/10.1080/01969720591008724",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2069920558",
+     "title": "A cybernetic re‐evaluation of socio‐economic development programs",
+     "year": 2006,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1108/03684920610640218",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2046032966",
+     "title": "Towards an Holistic Framework for Environmental Change: The Role of Normative Behaviour and Informal Networking to Enhance Sustainable Business Practices",
+     "year": 2009,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.1007/s11213-009-9123-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2948730219",
+     "title": "Identification of organisational pathologies",
+     "year": 2019,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1108/k-10-2018-0557",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2158672660",
+     "title": "Complexity Management, Democracy and Social Consciousness: Challenges for an Evolutionary Learning Society",
+     "year": 2007,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1007/s11213-007-9075-3",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2776105606",
+     "title": "A Systemic Approach to Integrate SOEs and SMEs in Business Ecosystem",
+     "year": 2017,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1007/978-981-10-5783-0_3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4391388745",
+     "title": "The Viable System Model",
+     "year": 2023,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.54120/jost.000004",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4404702886",
+     "title": "Revisiting the Viable System Model as an emancipatory systems approach",
+     "year": 2024,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1002/sres.3090",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4411188308",
+     "title": "The Viable System Model to Support Sustainable Self-Governance in Communities: Learning from Case Studies",
+     "year": 2025,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/s11213-025-09724-3",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2014029563",
+     "title": "A monitoring system for the social development program in Colombia",
+     "year": 1997,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/bf02557892",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2044894177",
+     "title": "Organizational Cybernetics as a Tool Box to Assist in the Development of Evolutionary Learning Networks",
+     "year": 2004,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1080/725289199",
+     "axes_hit": [
+      "Cyb",
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2495056110",
+     "title": "A Holistic Approach to E-Government",
+     "year": 2010,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4018/978-1-60566-860-4.ch008",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5109805031": {
+   "display_name": "Fred M. Taylor",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 45,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W3130930004",
+     "title": "On the Economic Theory of Socialism",
+     "year": 1938,
+     "cited_by": 563,
+     "doi": "https://doi.org/10.2307/1052453",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2067887730",
+     "title": "The myeloproliferative syndrome in children",
+     "year": 1958,
+     "cited_by": 46,
+     "doi": "https://doi.org/10.1016/s0022-3476(58)80061-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2035193083",
+     "title": "Primary amebic meningoencephalitis in a healthy 7-year-old boy",
+     "year": 1974,
+     "cited_by": 25,
+     "doi": "https://doi.org/10.1016/s0022-3476(74)80309-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1979645524",
+     "title": "Aneurysm of thoracic aorta in an infant treated by resection and arterial homograft",
+     "year": 1956,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1016/s0022-3476(56)80033-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2049756935",
+     "title": "The Law of Nature",
+     "year": 1891,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1177/000271629100100402",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W174213633",
+     "title": "Chloromycetin palmitate",
+     "year": 1953,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1016/s0022-3476(53)80208-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4229995955",
+     "title": "Massive spasms",
+     "year": 1957,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1016/s0022-3476(57)80304-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1979584123",
+     "title": "The Final Report of the Indianapolis Monetary Commission",
+     "year": 1898,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1086/250510",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1598933454",
+     "title": "Some chapters on money : printed for the use of students in The University of Michigan",
+     "year": 1906,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2021592828",
+     "title": "The History and Theory of Money, <i>by Sidney Sherwood</i>",
+     "year": 1893,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.2307/2139840",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2507739710",
+     "title": "<i>Introductory Economics</i>. A. S. Johnson",
+     "year": 1908,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1086/251457",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2408235054",
+     "title": "Hypervitaminosis and Overnutrition: Effects of Intakes above Essential Allowances",
+     "year": 1963,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1016/s0031-3955(16)31371-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2331770884",
+     "title": "The Right of the State to Be. An Attempt to Determine the Ultimate Human Prerogative on which Government Rests.",
+     "year": 1892,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/2175714",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2012984786",
+     "title": "The Elasticity of Note Issue under the New Currency Law",
+     "year": 1914,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1086/252454",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2314816697",
+     "title": "One Type of Undisciplined Child: A Behavior Syndrome",
+     "year": 1958,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/3472822",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2341819250",
+     "title": "Attitudes Toward Mentally Retarded Children",
+     "year": 1964,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1080/00325481.1964.11695191",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2778515239",
+     "title": "The Adversary Within",
+     "year": 1960,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1149507545",
+     "title": "On Mentally Retarded Children: A Philosophy of Concern",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2808107986",
+     "title": "Sir Edward Nicholas (1593–1669), secretary of state to Charles I and II",
+     "year": 1949,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1093/nq/194.12.262b",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2776198268",
+     "title": "A Closed Retreat: Its Value for Physicians",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2782001062",
+     "title": "President's Page: Distribution of Leadership",
+     "year": 1966,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2317685175",
+     "title": "Monetary Reform in the United States",
+     "year": 1898,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/2957109",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W628850827",
+     "title": "Some leading problems in economic theory",
+     "year": 1921,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W611017076",
+     "title": "Key to Problems in Principles of Economics",
+     "year": 2018,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2778509312",
+     "title": "A Matter Of Justice",
+     "year": 1963,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1184515564",
+     "title": "The Adversary Within (excerpts)",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2939802781",
+     "title": "Sagebrush Rebellion, Inc.; The Southwest Idaho Development Association; Lonnie Leavell; Bruce Jacobsen and Rayola Jacobsen; Harold Collett; Tom Collett: Juanita Collett and Paul Nettleton, Plaintiffs, vs. James G. Watt, Secretary of the Interior; Robert Burford, Director of the Bureau of Land Management, United States Department of the Interior; and the United States of America, Defendants: Memorandum of Opinions and Order",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2773400850",
+     "title": "What Manner of Man",
+     "year": 1961,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2774537183",
+     "title": "Scope of Excellence: For All Patients",
+     "year": 1963,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2778421950",
+     "title": "Thomas Linacre -- Humanist, Physician, Priest (Part 1)",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2247814351",
+     "title": "Los precios de una economía socialista",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2774359866",
+     "title": "Medicine: Science, Profession, Vocation",
+     "year": 1961,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1448284501",
+     "title": "Womanhood: Its Individuality and Diversity",
+     "year": 1964,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4407099123",
+     "title": "Do we want an elastic currency?",
+     "year": 2024,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9781003547198-13",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4254980015",
+     "title": "ONE TYPE of UNDISCIPLINED CHILD",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1097/00000446-195806000-00047",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2775002876",
+     "title": "Thomas Linacre: Humanist, Physician, Priest (Part II)",
+     "year": 2021,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1177/0024363921992619",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2515505734",
+     "title": "<i>Outlines of Economics</i>. Richard T. Ely",
+     "year": 1909,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/251546",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W192461302",
+     "title": "Sobre la teoria econòmica del socialisme",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2774238125",
+     "title": "The Baffling Eyes of Youth",
+     "year": 1964,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2777886697",
+     "title": "Capacity for Concern",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2035544389",
+     "title": "Allergic pruritus, its dermatologic management",
+     "year": 1952,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1016/s0022-3476(52)80137-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1530304149",
+     "title": "Some Readings in Economics, Prepared for the use of Students in Course I, Political Economy, University of Michigan",
+     "year": 2011,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4243973475",
+     "title": "Reply",
+     "year": 1975,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1016/s0022-3476(75)80741-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2727498257",
+     "title": "Thomas Linacre: Humanist, Physician, Priest",
+     "year": 2021,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1177/0024363920968427",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1600085410",
+     "title": "ON THE FREQUENCY OF ASEPTIC NECROBIOSIS OR RED DEGENERATION OF FIBROMYOMATA OF THE UTERUS. WITH A REPORT OF TWO CASES",
+     "year": 1904,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1016/s0140-6736(01)13923-1",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5103341805": {
+   "display_name": "Alessandro Roncaglia",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 43,
+   "n_in_corpus_overlap": 7,
+   "new_works": [
+    {
+     "oa_id": "W2326360257",
+     "title": "Sraffa and the Theory of Prices",
+     "year": 1980,
+     "cited_by": 145,
+     "doi": "https://doi.org/10.2307/3501408",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4302359933",
+     "title": "Sraffa and the Theory of Prices",
+     "year": 1979,
+     "cited_by": 127,
+     "doi": "https://doi.org/10.2307/134744",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2126461242",
+     "title": "From Political Economy to Economics. Method, the Social and the Historical in the Evolution of Economic Theory",
+     "year": 2009,
+     "cited_by": 79,
+     "doi": "https://doi.org/10.1080/09672560903101450",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1579869970",
+     "title": "Sraffa e la teoria dei prezzi",
+     "year": 1981,
+     "cited_by": 65,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1984626777",
+     "title": "Keynes and probability: An assessment",
+     "year": 2009,
+     "cited_by": 60,
+     "doi": "https://doi.org/10.1080/09672560903101369",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1561987278",
+     "title": "Petty, the origins of political economy",
+     "year": 1985,
+     "cited_by": 56,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1067573761",
+     "title": "Resources, Production and Structural Dynamics",
+     "year": 2015,
+     "cited_by": 48,
+     "doi": "https://doi.org/10.1017/cbo9781139940948",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4250055647",
+     "title": "Piero Sraffa",
+     "year": 2009,
+     "cited_by": 48,
+     "doi": "https://doi.org/10.1057/9780230234697",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2283009051",
+     "title": "Hollander’s Ricardo",
+     "year": 1982,
+     "cited_by": 47,
+     "doi": "https://doi.org/10.1080/01603477.1982.11489297",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2755734442",
+     "title": "A Brief History of Economic Thought",
+     "year": 2017,
+     "cited_by": 35,
+     "doi": "https://doi.org/10.1017/9781316798416",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2133167856",
+     "title": "Keynesian uncertainty and the shaky foundations of statistical risk assessment models",
+     "year": 2013,
+     "cited_by": 29,
+     "doi": "https://doi.org/10.13133/2037-3643/10197",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1981203296",
+     "title": "LABOUR‐POWER, SUBSISTENCE WAGE AND THE RATE OF WAGES",
+     "year": 1974,
+     "cited_by": 28,
+     "doi": "https://doi.org/10.1111/j.1467-8454.1974.tb00878.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2313442630",
+     "title": "Sraffa and the Theory of Prices.",
+     "year": 1979,
+     "cited_by": 28,
+     "doi": "https://doi.org/10.2307/2553753",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2315353882",
+     "title": "The Dynamics of the Wealth of Nations: Growth, Distribution and Structural Change: Essays in Honour of Luigi Pasinetti.",
+     "year": 1995,
+     "cited_by": 24,
+     "doi": "https://doi.org/10.2307/2235035",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2297267261",
+     "title": "William Petty and the Conceptual Framework for the Analysis of Economic Development",
+     "year": 1988,
+     "cited_by": 24,
+     "doi": "https://doi.org/10.1007/978-1-349-10271-6_9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2169192582",
+     "title": "L’Italia: una crisi nella crisi",
+     "year": 2011,
+     "cited_by": 23,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W568162427",
+     "title": "Saggio sulla produzione della ricchezza",
+     "year": 1972,
+     "cited_by": 22,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2102201075",
+     "title": "Why should economists study the history of economic thought?",
+     "year": 1996,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1080/10427719600000027",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4253315648",
+     "title": "Comment",
+     "year": 1995,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.1215/00182702-27-1-189",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1494289195",
+     "title": "Hyman Minsky's Monetary Production Economy",
+     "year": 2013,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.2139/ssrn.3136991",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2157189712",
+     "title": "The Wealth of Ideas",
+     "year": 2005,
+     "cited_by": 20,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2490154275",
+     "title": "On the Compatibility between Keynes’s and Sraffa’s Viewpoints on Output Levels",
+     "year": 1995,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.1007/978-1-349-23705-0_6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4385157171",
+     "title": "L'etica dell'economista",
+     "year": 2016,
+     "cited_by": 18,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4250676014",
+     "title": "Piero Sraffa",
+     "year": 2000,
+     "cited_by": 17,
+     "doi": "https://doi.org/10.4324/9780203184325",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4300609842",
+     "title": "Barriers to Full Employment",
+     "year": 1989,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.2307/1059503",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4231378503",
+     "title": "The International Oil Market",
+     "year": 1984,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1007/978-1-349-17763-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1496612896",
+     "title": "Energy and market power: an alternative approach to the economics of oil",
+     "year": 2014,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1080/01603477.2003.11051375",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2336931901",
+     "title": "L’etica dell’economista (The ethical economist)",
+     "year": 2016,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.13133/2037-3651_69.273_1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2111813042",
+     "title": "Macroeconomie in crisi e macroeconomie in ripresa",
+     "year": 2011,
+     "cited_by": 12,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1563415515",
+     "title": "The employment issue in the European Union",
+     "year": 2002,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1080/01603477.2002.11051347",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2505274706",
+     "title": "Social Paradoxes of Growth and Civil Economy",
+     "year": 1999,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1007/978-1-349-26981-5_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2992862718",
+     "title": "Should the History of Economic Thought be Included in Undergraduate Curricula",
+     "year": 2014,
+     "cited_by": 10,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1995412396",
+     "title": "The International Oil Market: A Case of Trilateral Oligopoly",
+     "year": 1985,
+     "cited_by": 10,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2755285009",
+     "title": "A Guide to the Literature",
+     "year": 2017,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1017/9781316798416.019",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2086098808",
+     "title": "Income and Employment in Theory and Practice: Essays in Memory of Athanasios Asimakopulos",
+     "year": 1996,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.2307/136261",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1512125864",
+     "title": "Le scienze umane in Italia: il caso dell'economia politica",
+     "year": 2006,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1427/24580",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117151735",
+     "title": "Teoria dell’occupazione: due impostazioni a confronto",
+     "year": 2014,
+     "cited_by": 7,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W640400875",
+     "title": "Market and institutions in economic development : essays in honour of Paulo Sylos Labini",
+     "year": 1993,
+     "cited_by": 7,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1977359193",
+     "title": "The International Oil Market",
+     "year": 1985,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.2307/20042492",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1791705484",
+     "title": "Il pensiero economico di Paolo Sylos Labini",
+     "year": 2007,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1400/91841",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2142465688",
+     "title": "Paolo Sylos Labini, 1920-2005",
+     "year": 2012,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.13133/2037-3643/9861",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W173717758",
+     "title": "La riqueza de las ideas: una historia del pensamiento económico",
+     "year": 2006,
+     "cited_by": 6,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2065382962",
+     "title": "The Classical Approach and Long-period Positions: a comment on Cesaratto",
+     "year": 1996,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1080/09538259600000074",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W1505993329",
+     "title": "The Wealth of Ideas",
+     "year": 2005,
+     "cited_by": 204,
+     "doi": "https://doi.org/10.1017/cbo9780511492341",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2013739780",
+     "title": "Pre-Keynesian roots of the neoclassical synthesis",
+     "year": 1985,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.3406/cep.1985.997",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4211035408",
+     "title": "The Age of Fragmentation",
+     "year": 2019,
+     "cited_by": 26,
+     "doi": "https://doi.org/10.1017/9781108777766",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2481570548",
+     "title": "Post-Keynesian, Post-Sraffian Economics: An Outline",
+     "year": 2014,
+     "cited_by": 23,
+     "doi": "https://doi.org/10.1057/9781137450968_3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2042223972",
+     "title": "The Sraffian schools",
+     "year": 1991,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.1080/09538259100000042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W20318350",
+     "title": "The Neo-Ricardian Approach and the Distribution of Income",
+     "year": 1988,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.1007/978-94-009-2661-5_7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2991189732",
+     "title": "The age of fragmentation a history of contemporary economic thought",
+     "year": 2019,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1017/9781108777766",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5110890240": {
+   "display_name": "Andrei Shleifer",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 45,
+   "n_in_corpus_overlap": 5,
+   "new_works": [
+    {
+     "oa_id": "W3121759882",
+     "title": "Law and Finance",
+     "year": 1998,
+     "cited_by": 18046,
+     "doi": "https://doi.org/10.1086/250042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123091495",
+     "title": "Corporate Ownership Around the World",
+     "year": 1999,
+     "cited_by": 10645,
+     "doi": "https://doi.org/10.1111/0022-1082.00115",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1969519191",
+     "title": "Legal Determinants of External Finance",
+     "year": 1997,
+     "cited_by": 9949,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1997.tb02727.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2135241016",
+     "title": "Large Shareholders and Corporate Control",
+     "year": 1986,
+     "cited_by": 8572,
+     "doi": "https://doi.org/10.1086/261385",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1606272114",
+     "title": "Management ownership and market valuation",
+     "year": 1988,
+     "cited_by": 7063,
+     "doi": "https://doi.org/10.1016/0304-405x(88)90048-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2050643653",
+     "title": "Noise Trader Risk in Financial Markets",
+     "year": 1990,
+     "cited_by": 6357,
+     "doi": "https://doi.org/10.1086/261703",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2162012454",
+     "title": "Investor protection and corporate governance",
+     "year": 2000,
+     "cited_by": 6245,
+     "doi": "https://doi.org/10.1016/s0304-405x(00)00065-9",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3124747412",
+     "title": "Investor Protection and Corporate Valuation",
+     "year": 2002,
+     "cited_by": 4146,
+     "doi": "https://doi.org/10.1111/1540-6261.00457",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4244992121",
+     "title": "Corruption",
+     "year": 1993,
+     "cited_by": 3732,
+     "doi": "https://doi.org/10.2307/2118402",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3125469707",
+     "title": "The law and economics of self-dealing",
+     "year": 2008,
+     "cited_by": 3579,
+     "doi": "https://doi.org/10.1016/j.jfineco.2007.02.007",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2030132760",
+     "title": "Politicians and Firms",
+     "year": 1994,
+     "cited_by": 3362,
+     "doi": "https://doi.org/10.2307/2118354",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2096718584",
+     "title": "Law and Finance",
+     "year": 1996,
+     "cited_by": 2962,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2019222975",
+     "title": "Liquidation Values and Debt Capacity: A Market Equilibrium Approach",
+     "year": 1992,
+     "cited_by": 2877,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1992.tb04661.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2069985282",
+     "title": "Private credit in 129 countries☆",
+     "year": 2007,
+     "cited_by": 2832,
+     "doi": "https://doi.org/10.1016/j.jfineco.2006.03.004",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3094633476",
+     "title": "A model of investor sentiment1We are grateful to the NSF for financial support, and to Oliver Blanchard, Alon Brav, John Campbell (a referee), John Cochrane, Edward Glaeser, J.B. Heaton, Danny Kahneman, David Laibson, Owen Lamont, Drazen Prelec, Jay Ritter (a referee), Ken Singleton, Dick Thaler, an anonymous referee, and the editor, Bill Schwert, for comments.1",
+     "year": 1998,
+     "cited_by": 2747,
+     "doi": "https://doi.org/10.1016/s0304-405x(98)00027-0",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123416450",
+     "title": "Government Ownership of Banks",
+     "year": 2002,
+     "cited_by": 2529,
+     "doi": "https://doi.org/10.1111/1540-6261.00422",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2131538393",
+     "title": "A Survey of Corporate Governance",
+     "year": 1997,
+     "cited_by": 2297,
+     "doi": "https://doi.org/10.2307/2329497",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3125935778",
+     "title": "Legal Determinants of External Finance",
+     "year": 1997,
+     "cited_by": 2279,
+     "doi": "https://doi.org/10.2307/2329518",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124305668",
+     "title": "Positive Feedback Investment Strategies and Destabilizing Rational Speculation",
+     "year": 1990,
+     "cited_by": 2243,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1990.tb03695.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4232286240",
+     "title": "Tunneling",
+     "year": 2000,
+     "cited_by": 2213,
+     "doi": "https://doi.org/10.1257/aer.90.2.22",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123529374",
+     "title": "Stock market driven acquisitions",
+     "year": 2003,
+     "cited_by": 2184,
+     "doi": "https://doi.org/10.1016/s0304-405x(03)00211-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2098861776",
+     "title": "Management entrenchment",
+     "year": 1989,
+     "cited_by": 2176,
+     "doi": "https://doi.org/10.1016/0304-405x(89)90099-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2047803175",
+     "title": "The impact of institutional trading on stock prices",
+     "year": 1992,
+     "cited_by": 2093,
+     "doi": "https://doi.org/10.1016/0304-405x(92)90023-q",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3022790766",
+     "title": "The Regulation of Labor",
+     "year": 2004,
+     "cited_by": 2020,
+     "doi": "https://doi.org/10.1162/0033553042476215",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3121608236",
+     "title": "Do Managerial Objectives Drive Bad Acquisitions?",
+     "year": 1990,
+     "cited_by": 1912,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1990.tb05079.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2100746853",
+     "title": "The Proper Scope of Government: Theory and an Application to Prisons",
+     "year": 1997,
+     "cited_by": 1785,
+     "doi": "https://doi.org/10.1162/003355300555448",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2097152068",
+     "title": "The Noise Trader Approach to Finance",
+     "year": 1990,
+     "cited_by": 1649,
+     "doi": "https://doi.org/10.1257/jep.4.2.19",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1567773991",
+     "title": "Why Is Rent-Seeking So Costly to Growth?",
+     "year": 2008,
+     "cited_by": 1486,
+     "doi": "https://doi.org/10.1007/978-3-540-79247-5_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2062122835",
+     "title": "Do Demand Curves for Stocks Slope Down?",
+     "year": 1986,
+     "cited_by": 1471,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1986.tb04518.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2145277151",
+     "title": "A Theory of Yardstick Competition",
+     "year": 1985,
+     "cited_by": 1410,
+     "doi": "https://doi.org/10.2307/2555560",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2170353571",
+     "title": "Informality and Development",
+     "year": 2014,
+     "cited_by": 1389,
+     "doi": "https://doi.org/10.1257/jep.28.3.109",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1967872601",
+     "title": "Contrarian Investment, Extrapolation, and Risk",
+     "year": 1994,
+     "cited_by": 1386,
+     "doi": "https://doi.org/10.2307/2329262",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2052758069",
+     "title": "Investor Sentiment and the Closed-End Fund Puzzle",
+     "year": 1991,
+     "cited_by": 1362,
+     "doi": "https://doi.org/10.2307/2328690",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3125493359",
+     "title": "Investor Sentiment and the Closed‐End Fund Puzzle",
+     "year": 1991,
+     "cited_by": 1342,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1991.tb03746.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2054479375",
+     "title": "Inefficient Markets: An Introduction to Behavioral Finance",
+     "year": 2002,
+     "cited_by": 1321,
+     "doi": "https://doi.org/10.1628/0932456022975402",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2140619986",
+     "title": "Salience Theory of Choice Under Risk",
+     "year": 2012,
+     "cited_by": 1313,
+     "doi": "https://doi.org/10.1093/qje/qjs018",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124698950",
+     "title": "Investor Protection and Corporate Governance",
+     "year": 2000,
+     "cited_by": 1307,
+     "doi": "https://doi.org/10.2139/ssrn.183908",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3125185801",
+     "title": "Management Ownership and Market Valuation: An Empirical Analysis",
+     "year": 1998,
+     "cited_by": 1239,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4248572084",
+     "title": "Courts",
+     "year": 2003,
+     "cited_by": 1231,
+     "doi": "https://doi.org/10.1162/003355303321675437",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123401135",
+     "title": "The Market for News",
+     "year": 2005,
+     "cited_by": 1213,
+     "doi": "https://doi.org/10.1257/0002828054825619",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4249692389",
+     "title": "Inefficient Markets",
+     "year": 2000,
+     "cited_by": 1201,
+     "doi": "https://doi.org/10.1093/0198292279.001.0001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2060730171",
+     "title": "The Unofficial Economy in Transition",
+     "year": 1997,
+     "cited_by": 1171,
+     "doi": "https://doi.org/10.2307/2534688",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2099227715",
+     "title": "Expectations of Returns and Expected Returns",
+     "year": 2014,
+     "cited_by": 1147,
+     "doi": "https://doi.org/10.1093/rfs/hht082",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4213205397",
+     "title": "Family Firms",
+     "year": 2003,
+     "cited_by": 1110,
+     "doi": "https://doi.org/10.1111/1540-6261.00601",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3121987147",
+     "title": "Investor protection and equity markets",
+     "year": 2002,
+     "cited_by": 1079,
+     "doi": "https://doi.org/10.1016/s0304-405x(02)00149-6",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W3121693921",
+     "title": "A Survey of Corporate Governance",
+     "year": 1997,
+     "cited_by": 16179,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1997.tb04820.x",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3124504068",
+     "title": "Growth in Cities",
+     "year": 1992,
+     "cited_by": 4578,
+     "doi": "https://doi.org/10.1086/261856",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3122578644",
+     "title": "A model of investor sentiment /",
+     "year": null,
+     "cited_by": 4198,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3121522673",
+     "title": "The Economic Consequences of Legal Origins",
+     "year": 2008,
+     "cited_by": 3233,
+     "doi": "https://doi.org/10.1257/jel.46.2.285",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2073650747",
+     "title": "Industrialization and the Big Push",
+     "year": 1989,
+     "cited_by": 1549,
+     "doi": "https://doi.org/10.1086/261641",
+     "axes_hit": [
+      "PolInd"
+     ]
+    }
+   ]
+  },
+  "A5045665091": {
+   "display_name": "Marialuisa Saviano",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 45,
+   "n_in_corpus_overlap": 5,
+   "new_works": [
+    {
+     "oa_id": "W1547729991",
+     "title": "An Introduction to the Viable Systems Approach and its Contribution to Marketing",
+     "year": 2012,
+     "cited_by": 125,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1978638172",
+     "title": "Viable service systems and decision making in service management",
+     "year": 2012,
+     "cited_by": 124,
+     "doi": "https://doi.org/10.1108/09564231211260396",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2740340813",
+     "title": "A service research contribution to the global challenge of sustainability",
+     "year": 2017,
+     "cited_by": 100,
+     "doi": "https://doi.org/10.1108/jstp-10-2015-0228",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2000693872",
+     "title": "Information Asymmetry and Co-Creation in Health Care Services",
+     "year": 2014,
+     "cited_by": 95,
+     "doi": "https://doi.org/10.1016/j.ausmj.2014.08.008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1536169351",
+     "title": "The Viable Systems Approach and its Contribution to the Analysis of Sustainable Business Behaviors",
+     "year": 2014,
+     "cited_by": 78,
+     "doi": "https://doi.org/10.1002/sres.2318",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2203507558",
+     "title": "Foundations of Systems Thinking: The Structure-System Paradigm",
+     "year": 2011,
+     "cited_by": 75,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W3203690078",
+     "title": "Empowering value co-creation in the digital age",
+     "year": 2021,
+     "cited_by": 73,
+     "doi": "https://doi.org/10.1108/jbim-12-2019-0553",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1974495326",
+     "title": "Service economy, knowledge, and the need for T-shaped innovators",
+     "year": 2014,
+     "cited_by": 70,
+     "doi": "https://doi.org/10.1007/s11280-014-0305-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2760024360",
+     "title": "Complexity and Sustainability in Management: Insights from a Systems Perspective",
+     "year": 2017,
+     "cited_by": 58,
+     "doi": "https://doi.org/10.1007/978-3-319-61967-5_3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1990187112",
+     "title": "A <i>VSA-SS</i> Approach to Healthcare Service Systems the Triple Target of Efficiency, Effectiveness and Sustainability",
+     "year": 2010,
+     "cited_by": 58,
+     "doi": "https://doi.org/10.1287/serv.2.1_2.41",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2895441265",
+     "title": "Monitoring Viability and Sustainability in Healthcare Organizations",
+     "year": 2018,
+     "cited_by": 57,
+     "doi": "https://doi.org/10.3390/su10103548",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123300082",
+     "title": "Reflections on service systems boundaries: A viable systems perspective",
+     "year": 2012,
+     "cited_by": 56,
+     "doi": "https://doi.org/10.1016/j.emj.2012.05.004",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2114724109",
+     "title": "Perspective Shifts in Marketing: Toward a Paradigm Change?",
+     "year": 2012,
+     "cited_by": 51,
+     "doi": "https://doi.org/10.1287/serv.1120.0015",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2888694654",
+     "title": "People, technology, and governance for sustainability: the contribution of systems and cyber-systemic thinking",
+     "year": 2018,
+     "cited_by": 46,
+     "doi": "https://doi.org/10.1007/s11625-018-0621-y",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2611109544",
+     "title": "The financial gap for women in the MENA region: a systemic perspective",
+     "year": 2017,
+     "cited_by": 45,
+     "doi": "https://doi.org/10.1108/gm-07-2016-0138",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2242116388",
+     "title": "Managerial Choices between Systems, Knowledge and Viability",
+     "year": 2013,
+     "cited_by": 42,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2197329580",
+     "title": "A New Perspective of Systems Complexity in Service Science",
+     "year": 2010,
+     "cited_by": 40,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2056343703",
+     "title": "The contribution of VSA and SDL perspectives to strategic thinking in emerging economies",
+     "year": 2014,
+     "cited_by": 39,
+     "doi": "https://doi.org/10.1108/msq-09-2013-0199",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2803947236",
+     "title": "Managing protected areas as cultural landscapes: The case of the Alta Murgia National Park in Italy",
+     "year": 2018,
+     "cited_by": 36,
+     "doi": "https://doi.org/10.1016/j.landusepol.2018.03.052",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4327740109",
+     "title": "The challenging meet between human and artificial knowledge. A systems-based view of its influences on firms-customers interaction",
+     "year": 2023,
+     "cited_by": 36,
+     "doi": "https://doi.org/10.1108/jkm-12-2022-0940",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1986456112",
+     "title": "Health care as a worldwide concern. Insights on the Italian and Indian health care systems and PPPs from a VSA perspective",
+     "year": 2014,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.1108/emjb-10-2013-0050",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W130572666",
+     "title": "From the Management of Cultural Heritage to the Governance of the Cultural Heritage System",
+     "year": 2014,
+     "cited_by": 33,
+     "doi": "https://doi.org/10.1007/978-3-319-08527-2_3",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2800940966",
+     "title": "The Cultural Value of Protected Areas as Models of Sustainable Development",
+     "year": 2018,
+     "cited_by": 28,
+     "doi": "https://doi.org/10.3390/su10051567",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2520461508",
+     "title": "T-Shaped People for addressing the Global Challenge of Sustainability",
+     "year": 2015,
+     "cited_by": 26,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2185091049",
+     "title": "An Introduction to a Value Co-Creation Model. Viability, Syntropy and Resonance in Dyadic Interaction",
+     "year": 2013,
+     "cited_by": 25,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2792973222",
+     "title": "How Are Markets Changing? The Emergence of Consumers Market Systems",
+     "year": 2015,
+     "cited_by": 25,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2786090038",
+     "title": "Network Creativity to Reduce Strategic Ambiguity in Turbulent Environments: a Viable Systems Approach (vSa)",
+     "year": 2009,
+     "cited_by": 24,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4396775985",
+     "title": "The challenges in integrating ESG factors into banks’ credit department: a knowledge management enhanced framework",
+     "year": 2024,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1108/jkm-11-2023-1042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2748647264",
+     "title": "Oltre la partnership: un cambiamento di prospettiva",
+     "year": 2012,
+     "cited_by": 20,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2918251990",
+     "title": "From Rare to Neglected Diseases: A Sustainable and Inclusive Healthcare Perspective for Reframing the Orphan Drugs Issue",
+     "year": 2019,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.3390/su11051289",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2477900292",
+     "title": "Resource Integration and Value Co-Creation in Cultural Heritage Management",
+     "year": 2014,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.4018/978-1-4666-5007-7.ch004",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2266923114",
+     "title": "Dynamic capabilities and T-shaped knowledge. A Viable Systems Approach",
+     "year": 2013,
+     "cited_by": 19,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1779636320",
+     "title": "A Service-Based Systems View of Cultural Heritage",
+     "year": 2012,
+     "cited_by": 18,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2014898804",
+     "title": "Project management as a compass in complex decision making contexts",
+     "year": 2011,
+     "cited_by": 17,
+     "doi": "https://doi.org/10.1145/2181101.2181126",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2788388138",
+     "title": "Analisi sistemico vitale della distribuzione commerciale",
+     "year": 2003,
+     "cited_by": 16,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2923541488",
+     "title": "Service Systems, Networks, and Ecosystems: Connecting the Dots Concisely from a Systems Perspective",
+     "year": 2018,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.4135/9781526470355.n15",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2795685731",
+     "title": "From theory to practice: applying systems thinking to Smart Cities",
+     "year": 2016,
+     "cited_by": 14,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2551510304",
+     "title": "Service Innovation in Translational Medicine",
+     "year": 2016,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1007/978-3-319-43380-6_18",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2520664836",
+     "title": "Towards a common framework for knowledge co-creation: opportunities of collaboration between Service Science and Sustainability Science",
+     "year": 2015,
+     "cited_by": 13,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2106957589",
+     "title": "Structure and Dynamics of a “T-Shaped” Knowledge: From Individuals to Cooperating Communities of Practice",
+     "year": 2012,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1287/serv.1120.0014",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4410042635",
+     "title": "Sustainability as a co-created service: Integrating complex adaptive systems and service-dominant logic within the triple helix framework",
+     "year": 2025,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1007/s13162-025-00302-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2785130691",
+     "title": "Re-Reading Sustainability throughthe Triple Helix Model in the Frame of a Systems Perspective",
+     "year": 2018,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.4135/9781473983007.n3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2917724679",
+     "title": "Healthcare and SDGs Governance in Light of the Sustainability Helix Model: Evidence from the African Continent",
+     "year": 2019,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.3390/su11041203",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3125385048",
+     "title": "Project Management as a Compass in Complex Decision Making Contexts: A Viable Systems Approach",
+     "year": 2011,
+     "cited_by": 12,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W3004745394",
+     "title": "AI Technologies &amp; Value Co-Creation in Luxury Context",
+     "year": 2020,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.24251/hicss.2020.199",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2504632100",
+     "title": "Systems, networks, and ecosystems in service research",
+     "year": 2016,
+     "cited_by": 259,
+     "doi": "https://doi.org/10.1108/josm-09-2015-0268",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2789512631",
+     "title": "Envisioning smart and sustainable healthcare: 3D Printing technologies for personalized medication",
+     "year": 2018,
+     "cited_by": 121,
+     "doi": "https://doi.org/10.1016/j.futures.2018.03.002",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2800201688",
+     "title": "Governance for sustainability: a triple-helix model",
+     "year": 2018,
+     "cited_by": 56,
+     "doi": "https://doi.org/10.1007/s11625-018-0567-0",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2921253033",
+     "title": "Strengthening the science–policy–industry interface for progressing toward sustainability: a systems thinking view",
+     "year": 2019,
+     "cited_by": 51,
+     "doi": "https://doi.org/10.1007/s11625-019-00668-x",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2584419371",
+     "title": "A T-shaped model for rethinking higher education programs",
+     "year": 2016,
+     "cited_by": 13,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5050236071": {
+   "display_name": "Leonard Walletzký",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 46,
+   "n_in_corpus_overlap": 4,
+   "new_works": [
+    {
+     "oa_id": "W2792922693",
+     "title": "Investigating the role of smartness for sustainability: insights from the Smart Grid domain",
+     "year": 2018,
+     "cited_by": 69,
+     "doi": "https://doi.org/10.1007/s11625-018-0555-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3092278466",
+     "title": "Service Design for Resilience: A Multi-Contextual Modeling Perspective",
+     "year": 2020,
+     "cited_by": 28,
+     "doi": "https://doi.org/10.1109/access.2020.3029320",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4319261105",
+     "title": "Reconfiguring the service system for resilience: lessons learned in the higher education context",
+     "year": 2023,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.1108/jbim-09-2022-0426",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2756981906",
+     "title": "Value-Driven Conceptualization of Services in the Smart City: A Layered Approach",
+     "year": 2017,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1007/978-3-319-61967-5_5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4206731338",
+     "title": "A Cross-Domain Landscape of ICT Services in Smart Cities",
+     "year": 2021,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.1007/978-3-030-84459-2_5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2795685731",
+     "title": "From theory to practice: applying systems thinking to Smart Cities",
+     "year": 2016,
+     "cited_by": 14,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W3041316324",
+     "title": "Multi-contextual View to Smart City Architecture",
+     "year": 2020,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1007/978-3-030-51057-2_42",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2982677581",
+     "title": "Modelling Service Design and Complexity for Multi-contextual Applications in Smart Cities",
+     "year": 2019,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1109/icstcc.2019.8885800",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4210847417",
+     "title": "Value co-creation ‘gradients’: enabling human-machine interactions through AI-based DSS",
+     "year": 2022,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1051/itmconf/20224101002",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3127427536",
+     "title": "Modelling for Ethical Concerns for Traceability in Time of Pandemic “Do no Harm” or “Better Safe than Sorry!”",
+     "year": 2021,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.24251/hicss.2021.216",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3162042891",
+     "title": "Why Service Science matters in approaching a \"resilient\" Society",
+     "year": 2021,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1051/itmconf/20213802001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3179371524",
+     "title": "Management of Smart City in Lens of Viable System Approach",
+     "year": 2021,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.1007/978-3-030-80840-2_11",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4285256582",
+     "title": "Evaluation of Smart City Models: A Conceptual and Structural View",
+     "year": 2022,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.5220/0011074900003203",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2567792070",
+     "title": "From theory to practice in systems studies: a focus on Smart Cities",
+     "year": 2016,
+     "cited_by": 4,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2729591599",
+     "title": "IT-Enabled Digital Service Design Principles - Lessons Learned from Digital Cities",
+     "year": 2017,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1007/978-3-319-65930-5_15",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W563910211",
+     "title": "EDUCATION AS SERVICE SYSTEM",
+     "year": 2014,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2625148631",
+     "title": "MODELLING THE SERVICE VALUE CHAIN FOR SMART CITY",
+     "year": 2017,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3028280978",
+     "title": "Research Challenges of Open Data as a Service for Smart Cities",
+     "year": 2020,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.5220/0009578604680472",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2789914180",
+     "title": "How smart technologies and Big Data affect systems’ lives? Conceptual reflections on the smart city ecosystem",
+     "year": 2018,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.4324/9780429486982-58",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2784048119",
+     "title": "Is it possible to teach Service Science",
+     "year": 2013,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3141783700",
+     "title": "AN ANALYSIS OF THE COMPLEX EDUCATION SERVICE FOR RESILIENCE IN A MULTI-CONTEXTUAL FRAMEWORK",
+     "year": 2021,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.21125/inted.2021.1060",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4285413149",
+     "title": "Interoperability-oriented Quality Assessment for Czech Open Data",
+     "year": 2022,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.5220/0011291900003269",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4391441074",
+     "title": "Preface",
+     "year": 2024,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1051/itmconf/20246200001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4310051116",
+     "title": "PERCEPTION OF SMART CITY IDEA IN SMALLER MUNICIPALITIES AND ITS IMPACT ON MULTIDISCIPLINARY EDUCATION",
+     "year": 2022,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.21125/iceri.2022.0850",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2909980957",
+     "title": "Investigating the role of smartness for sustainability: Insights from the Smart Grid Domain",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2794787248",
+     "title": "Depicting a conceptual framework for smart city",
+     "year": 2019,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1504/wremsd.2019.10020438",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2791532549",
+     "title": "Service Marketing Mix and its usage: lessons provided by IT companies",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2788635750",
+     "title": "Combining the pillars of the Naples forum on Service: a multi-dimensional constructive tool",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4246332110",
+     "title": "Depicting a conceptual framework for smart city",
+     "year": 2019,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1504/wremsd.2019.099418",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W51241193",
+     "title": "SERVICE ORIENTED MARKETING MIX AND ITS USAGE",
+     "year": 2014,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4383648077",
+     "title": "An Evaluation of Smart City Models Towards a New Service Design Model",
+     "year": 2023,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/978-3-031-37470-8_3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W7161936687",
+     "title": "Concept of Multi-Centroid Graph Traversal for Explainable T-Shaped Curriculum Recommendation",
+     "year": 2026,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.5220/0014834000004021",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2902098803",
+     "title": "MULTIDISCIPLINARY EDUCATION INFLUENCED BY COMPLEX SERVICES",
+     "year": 2018,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.21125/iceri.2018.0395",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2234406765",
+     "title": "HOW TO CREATE AND TEACH MULTIDISCIPLINARY STUDY PROGRAMS",
+     "year": 2013,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2592600705",
+     "title": "The Relations between Service Science and IT",
+     "year": 2015,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2921413954",
+     "title": "Towards a smart systems view of museum networks",
+     "year": 2018,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9780429486982-78",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2626463599",
+     "title": "Informace a ekonomie",
+     "year": 2002,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4391441077",
+     "title": "Application of context-driven methodology for implementing the smart city concept in Czech republic",
+     "year": 2024,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1051/itmconf/20246201002",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4319439500",
+     "title": "Multi-Contextual Smart City Model for Service Interconnections",
+     "year": 2023,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1051/itmconf/20235101001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2241365412",
+     "title": "VALUE PROPOSITION – THE BASEMENT OF STUDY PROGRAM´S CURRICULA",
+     "year": 2015,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2608643865",
+     "title": "Informatika pro ekonomy Základy práce v Matlabu",
+     "year": 2001,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4310041604",
+     "title": "MANAGEMENT OF SMART CITY SERVICES FROM THE PERSPECTIVE OF QUADRUPLE HELIX",
+     "year": 2022,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.21125/iceri.2022.0792",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4409195035",
+     "title": "T-Shaped Competencies in Academic and IT Service Synergies",
+     "year": 2025,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.5220/0013288400003932",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W7161822089",
+     "title": "Context-Aware Indicators for Data-Driven Smart City Evaluation: Evidence from the CESMOD Project",
+     "year": 2026,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.5220/0014837000004042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2794067747",
+     "title": "Reflecting upon the role of Smart Grid in linking Smartness and Sustainability",
+     "year": 2018,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4233797391",
+     "title": "Reflecting upon the role of smart grids in linking smartness and sustainability",
+     "year": 2018,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9780429486982-43",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2570511477",
+     "title": "Investigating the Users’ Approach to ICT Platforms in the City Management",
+     "year": 2017,
+     "cited_by": 67,
+     "doi": "https://doi.org/10.3390/systems5010001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802805807",
+     "title": "Towards a systems thinking based view for the governance of a smart city’s ecosystem",
+     "year": 2018,
+     "cited_by": 51,
+     "doi": "https://doi.org/10.1108/k-07-2017-0274",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2784135196",
+     "title": "The contribution of systems and service research to rethinking higher education programs: a T-shaped model",
+     "year": 2018,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.7433/s104.2017.03",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2584419371",
+     "title": "A T-shaped model for rethinking higher education programs",
+     "year": 2016,
+     "cited_by": 13,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5069443386": {
+   "display_name": "Mariana Mazzucato",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 46,
+   "n_in_corpus_overlap": 4,
+   "new_works": [
+    {
+     "oa_id": "W2941705808",
+     "title": "Six Transformations to achieve the Sustainable Development Goals",
+     "year": 2019,
+     "cited_by": 2186,
+     "doi": "https://doi.org/10.1038/s41893-019-0352-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2468992219",
+     "title": "Financing renewable energy: Who is financing what and why it matters",
+     "year": 2017,
+     "cited_by": 661,
+     "doi": "https://doi.org/10.1016/j.techfore.2017.05.021",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2891019415",
+     "title": "Mission-oriented innovation policy and dynamic capabilities in the public sector",
+     "year": 2018,
+     "cited_by": 464,
+     "doi": "https://doi.org/10.1093/icc/dty032",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2067328055",
+     "title": "The entrepreneurial state",
+     "year": 2011,
+     "cited_by": 407,
+     "doi": "https://doi.org/10.3898/136266211798411183",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2904537456",
+     "title": "The Value of Everything: Making and Taking in the Global Economy",
+     "year": 2018,
+     "cited_by": 346,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1964884334",
+     "title": "Financing innovation: creative destruction vs. destructive creation",
+     "year": 2013,
+     "cited_by": 340,
+     "doi": "https://doi.org/10.1093/icc/dtt025",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2586827268",
+     "title": "Public financing of innovation: new questions",
+     "year": 2017,
+     "cited_by": 286,
+     "doi": "https://doi.org/10.1093/oxrep/grw036",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2128802209",
+     "title": "The risk-reward nexus in the innovation-inequality relationship: who takes the risks? Who gets the rewards?",
+     "year": 2013,
+     "cited_by": 277,
+     "doi": "https://doi.org/10.1093/icc/dtt019",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3082894066",
+     "title": "COVID-19 and public-sector capacity",
+     "year": 2020,
+     "cited_by": 224,
+     "doi": "https://doi.org/10.1093/oxrep/graa031",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2897907851",
+     "title": "The evolution of mission-oriented policies: Exploring changing market creating policies in the US and European space sector",
+     "year": 2018,
+     "cited_by": 219,
+     "doi": "https://doi.org/10.1016/j.respol.2018.10.005",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2609549935",
+     "title": "Co-creating and directing Innovation Ecosystems? NASA's changing approach to public-private partnerships in low-earth orbit",
+     "year": 2017,
+     "cited_by": 174,
+     "doi": "https://doi.org/10.1016/j.techfore.2017.03.034",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2154091935",
+     "title": "Innovation and Firm Growth: Is R&amp;D Worth It?",
+     "year": 2012,
+     "cited_by": 159,
+     "doi": "https://doi.org/10.1080/13662716.2012.649057",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1896892306",
+     "title": "Which Industrial Policy Does Europe Need?",
+     "year": 2015,
+     "cited_by": 153,
+     "doi": "https://doi.org/10.1007/s10272-015-0535-1",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3003679173",
+     "title": "The Brazilian innovation system: a mission-oriented policy proposal",
+     "year": 2016,
+     "cited_by": 142,
+     "doi": "",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2965409745",
+     "title": "Putting value creation back into “public value”: from market-fixing to market-shaping",
+     "year": 2022,
+     "cited_by": 120,
+     "doi": "https://doi.org/10.1080/17487870.2022.2053537",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3024684968",
+     "title": "Socializing the risks and rewards of public investments: Economic, policy, and legal issues",
+     "year": 2020,
+     "cited_by": 116,
+     "doi": "https://doi.org/10.1016/j.repolx.2020.100008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3125658974",
+     "title": "The Green Entrepreneurial State",
+     "year": 2015,
+     "cited_by": 110,
+     "doi": "https://doi.org/10.2139/ssrn.2744602",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3104815796",
+     "title": "Directed innovation policies and the supermultiplier: An empirical assessment of mission-oriented policies in the US economy",
+     "year": 2020,
+     "cited_by": 102,
+     "doi": "https://doi.org/10.1016/j.respol.2020.104151",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2978802814",
+     "title": "Neither crowding in nor out: Public direct investment mobilising private investment into renewable electricity projects",
+     "year": 2020,
+     "cited_by": 99,
+     "doi": "https://doi.org/10.1016/j.enpol.2019.111195",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2484170867",
+     "title": "Innovation as Growth Policy",
+     "year": 2015,
+     "cited_by": 90,
+     "doi": "https://doi.org/10.1093/acprof:oso/9780198747413.003.0009",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4389310700",
+     "title": "Governing the economics of the common good: from correcting market failures to shaping collective goals",
+     "year": 2023,
+     "cited_by": 90,
+     "doi": "https://doi.org/10.1080/17487870.2023.2280969",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4388817133",
+     "title": "Pathways to a healthy net-zero future: report of the Lancet Pathfinder Commission",
+     "year": 2023,
+     "cited_by": 89,
+     "doi": "https://doi.org/10.1016/s0140-6736(23)02466-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1949831182",
+     "title": "Innovation as Growth Policy: The Challenge for Europe",
+     "year": 2014,
+     "cited_by": 89,
+     "doi": "https://doi.org/10.2139/ssrn.2742164",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2992289215",
+     "title": "The Green Entrepreneurial State",
+     "year": 2015,
+     "cited_by": 89,
+     "doi": "https://doi.org/10.4324/9781315747378-9",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W4399753508",
+     "title": "Extending the Sustainable Development Goals to 2050 — a road map",
+     "year": 2024,
+     "cited_by": 83,
+     "doi": "https://doi.org/10.1038/d41586-024-01754-6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1974630147",
+     "title": "The PC Industry: New Economy or Early Life-Cycle?",
+     "year": 2002,
+     "cited_by": 82,
+     "doi": "https://doi.org/10.1006/redy.2002.0164",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2144806065",
+     "title": "Beyond Market Failures: The Market Creating and Shaping Roles of State Investment Banks",
+     "year": 2014,
+     "cited_by": 82,
+     "doi": "https://doi.org/10.2139/ssrn.2586246",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2009461416",
+     "title": "High-growth firms in changing competitive environments: the US pharmaceutical industry (1963 to 2002)",
+     "year": 2014,
+     "cited_by": 82,
+     "doi": "https://doi.org/10.1007/s11187-014-9583-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2164921925",
+     "title": "Building the Entrepreneurial State: A New Framework for Envisioning and Evaluating a Mission-Oriented Public Sector",
+     "year": 2015,
+     "cited_by": 76,
+     "doi": "https://doi.org/10.2139/ssrn.2544707",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W4360600450",
+     "title": "Why we need a new economics of water as a common good",
+     "year": 2023,
+     "cited_by": 71,
+     "doi": "https://doi.org/10.1038/d41586-023-00800-z",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2487406871",
+     "title": "Rethinking capitalism - economics and policy for sustainable and inclusive growth",
+     "year": 2016,
+     "cited_by": 71,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2996630624",
+     "title": "Putting Austerity to Bed: Technical Progress, Aggregate Demand and the Supermultiplier",
+     "year": 2019,
+     "cited_by": 69,
+     "doi": "https://doi.org/10.1080/09538259.2019.1687146",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2969805570",
+     "title": "Financing Low-Carbon Transitions through Carbon Pricing and Green Bonds",
+     "year": 2019,
+     "cited_by": 67,
+     "doi": "https://doi.org/10.1596/1813-9450-8991",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1577673869",
+     "title": "Knowledge Accumulation and Industry Evolution",
+     "year": 2006,
+     "cited_by": 66,
+     "doi": "https://doi.org/10.1017/cbo9780511493232",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2510245504",
+     "title": "Mission-oriented finance for innovation: new ideas for investment-led growth",
+     "year": 2015,
+     "cited_by": 64,
+     "doi": "",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3123277244",
+     "title": "Beyond Market Failures: The Market Creating and Shaping Roles of State Investment Banks",
+     "year": 2015,
+     "cited_by": 63,
+     "doi": "https://doi.org/10.2139/ssrn.2559873",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3121428262",
+     "title": "Apple's changing business model: What should the world's richest company do with all those profits?",
+     "year": 2013,
+     "cited_by": 57,
+     "doi": "https://doi.org/10.1016/j.accfor.2013.07.002",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3153452158",
+     "title": "A Market Shaping Approach for the Biopharmaceutical Industry: Governing Innovation Towards the Public Interest",
+     "year": 2021,
+     "cited_by": 56,
+     "doi": "https://doi.org/10.1017/jme.2021.8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1968377784",
+     "title": "R&amp;D, patents and stock return volatility",
+     "year": 2012,
+     "cited_by": 56,
+     "doi": "https://doi.org/10.1007/s00191-012-0289-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2166553613",
+     "title": "Innovation and idiosyncratic risk: an industry- and firm-level analysis",
+     "year": 2008,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.1093/icc/dtn024",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2904005269",
+     "title": "Rethinking value in health innovation:<i>from mystifications towards prescriptions</i>",
+     "year": 2018,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.1080/17487870.2018.1509712",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4210870370",
+     "title": "Reboot biomedical R&amp;D in the global public interest",
+     "year": 2022,
+     "cited_by": 54,
+     "doi": "https://doi.org/10.1038/d41586-022-00324-y",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123774130",
+     "title": "Financing Low-Carbon Transitions through Carbon Pricing and Green Bonds",
+     "year": 2019,
+     "cited_by": 54,
+     "doi": "https://doi.org/10.3790/vjh.88.2.29",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1716345149",
+     "title": "The Rise of Mission-Oriented State Investment Banks: The Cases of Germany's KfW and Brazil's BNDES",
+     "year": 2015,
+     "cited_by": 54,
+     "doi": "https://doi.org/10.2139/ssrn.2744613",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3190098057",
+     "title": "Mission-oriented policies and the “Entrepreneurial State” at work: An agent-based exploration",
+     "year": 2023,
+     "cited_by": 53,
+     "doi": "https://doi.org/10.1016/j.jedc.2023.104650",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W4376273315",
+     "title": "Mapping modern economic rents: the good, the bad, and the grey areas",
+     "year": 2023,
+     "cited_by": 53,
+     "doi": "https://doi.org/10.1093/cje/bead013",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2897383306",
+     "title": "Mission-oriented innovation policies: challenges and opportunities",
+     "year": 2018,
+     "cited_by": 1300,
+     "doi": "https://doi.org/10.1093/icc/dty034",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2388878075",
+     "title": "From market fixing to market-creating: a new framework for innovation policy",
+     "year": 2016,
+     "cited_by": 717,
+     "doi": "https://doi.org/10.1080/13662716.2016.1146124",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124893232",
+     "title": "Beyond market failures: the market creating and shaping roles of state investment banks",
+     "year": 2016,
+     "cited_by": 311,
+     "doi": "https://doi.org/10.1080/17487870.2016.1216416",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2998208130",
+     "title": "Challenge-Driven Innovation Policy: Towards a New Policy Toolkit",
+     "year": 2019,
+     "cited_by": 289,
+     "doi": "https://doi.org/10.1007/s10842-019-00329-w",
+     "axes_hit": [
+      "Reg"
+     ]
+    }
+   ]
+  },
+  "A5074481124": {
+   "display_name": "Richard Baldwin",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 46,
+   "n_in_corpus_overlap": 4,
+   "new_works": [
+    {
+     "oa_id": "W2126230473",
+     "title": "Gravity for Dummies and Dummies for Gravity Equations",
+     "year": 2006,
+     "cited_by": 1106,
+     "doi": "https://doi.org/10.3386/w12516",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2065560699",
+     "title": "Persistent Trade Effects of Large Exchange Rate Shocks",
+     "year": 1989,
+     "cited_by": 937,
+     "doi": "https://doi.org/10.2307/2937860",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2126319794",
+     "title": "Supply‐chain Trade: A Portrait of Global Patterns and Several Testable Hypotheses",
+     "year": 2014,
+     "cited_by": 814,
+     "doi": "https://doi.org/10.1111/twec.12189",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3125614228",
+     "title": "Agglomeration, integration and tax harmonisation",
+     "year": 2003,
+     "cited_by": 764,
+     "doi": "https://doi.org/10.1016/s0014-2921(02)00318-5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3121248382",
+     "title": "The costs and benefits of eastern enlargement:the impact on the EU and central Europe",
+     "year": 2011,
+     "cited_by": 662,
+     "doi": "https://doi.org/10.1111/1468-0327.00018",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1967096027",
+     "title": "Multilateralising Regionalism: Spaghetti Bowls as Building Blocs on the Path to Global Free Trade",
+     "year": 2006,
+     "cited_by": 550,
+     "doi": "https://doi.org/10.1111/j.1467-9701.2006.00852.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3122589100",
+     "title": "Hyteresis in Import Prices: The Beachhead Effect",
+     "year": 1988,
+     "cited_by": 547,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1525983106",
+     "title": "Chapter 31 Regional economic integration",
+     "year": 1995,
+     "cited_by": 545,
+     "doi": "https://doi.org/10.1016/s1573-4404(05)80011-5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2261208189",
+     "title": "Secular stagnation: facts, causes and cures",
+     "year": 2014,
+     "cited_by": 477,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2099614559",
+     "title": "Heterogeneous firms, agglomeration and economic geography: spatial selection and sorting",
+     "year": 2005,
+     "cited_by": 456,
+     "doi": "https://doi.org/10.1093/jeg/lbi020",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2166852895",
+     "title": "The Political Economy of Trade Policy",
+     "year": 1989,
+     "cited_by": 424,
+     "doi": "https://doi.org/10.1257/jep.3.4.119",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1532028737",
+     "title": "Global supply chains : why they emerged, why they matter, and where they are going",
+     "year": 2025,
+     "cited_by": 405,
+     "doi": "https://doi.org/10.71609/iheid-2ykv-0p36",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1584211046",
+     "title": "Hysteresis In Import Prices: The Beachhead Effect",
+     "year": 1988,
+     "cited_by": 387,
+     "doi": "https://doi.org/10.3386/w2545",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1560723500",
+     "title": "Determinants of the Commodity Structure of US. Trade",
+     "year": 2016,
+     "cited_by": 362,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1597255218",
+     "title": "Really Responsive Risk-Based Regulation",
+     "year": 2010,
+     "cited_by": 361,
+     "doi": "https://doi.org/10.1111/j.1467-9930.2010.00318.x",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2794485177",
+     "title": "The Great Convergence: Information Technology and the New Globalization",
+     "year": 2016,
+     "cited_by": 357,
+     "doi": "https://doi.org/10.4159/9780674972667",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2801145531",
+     "title": "The Political Economy of U.S. Import Policy",
+     "year": 1986,
+     "cited_by": 352,
+     "doi": "https://doi.org/10.2307/20042894",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2066909951",
+     "title": "The Case against Infant-Industry Tariff Protection",
+     "year": 1969,
+     "cited_by": 348,
+     "doi": "https://doi.org/10.1086/259517",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3012680827",
+     "title": "Thinking ahead about the trade impact of COVID-19",
+     "year": 2020,
+     "cited_by": 340,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124912715",
+     "title": "New Dimensions in Regional Integration",
+     "year": 1993,
+     "cited_by": 328,
+     "doi": "https://doi.org/10.1017/cbo9780511628511",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4297928999",
+     "title": "Economic Geography and Public Policy",
+     "year": 2003,
+     "cited_by": 321,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2078123623",
+     "title": "Trade Effects of the Euro: a Comparison of Estimators",
+     "year": 2007,
+     "cited_by": 316,
+     "doi": "https://doi.org/10.11130/jei.2007.22.4.780",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3208214356",
+     "title": "Risks and Global Supply Chains: What We Know and What We Need to Know",
+     "year": 2022,
+     "cited_by": 301,
+     "doi": "https://doi.org/10.1146/annurev-economics-051420-113737",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3122996967",
+     "title": "21st Century Regionalism: Filling the Gap between 21st Century Trade and 20th Century Trade Rules",
+     "year": 2011,
+     "cited_by": 294,
+     "doi": "https://doi.org/10.2139/ssrn.1869845",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123153148",
+     "title": "Global Income Divergence, Trade, and Industrialization: The Geography of Growth Take-Offs",
+     "year": 2001,
+     "cited_by": 287,
+     "doi": "https://doi.org/10.1023/a:1009876310544",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W1485421188",
+     "title": "Two Waves of Globalisation: Superficial Similarities, Fundamental Differences",
+     "year": 1999,
+     "cited_by": 284,
+     "doi": "https://doi.org/10.3386/w6904",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2077104758",
+     "title": "The Persistence of the U.S. Trade Deficit",
+     "year": 1987,
+     "cited_by": 282,
+     "doi": "https://doi.org/10.2307/2534513",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W611217989",
+     "title": "The great trade collapse : causes, consequences and prospects",
+     "year": 2009,
+     "cited_by": 280,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2033483434",
+     "title": "Patterns of Development in Newly Settled Regions",
+     "year": 1956,
+     "cited_by": 279,
+     "doi": "https://doi.org/10.1111/j.1467-9957.1956.tb00981.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2128830850",
+     "title": "The Euro's Trade Effects",
+     "year": 2006,
+     "cited_by": 272,
+     "doi": "https://doi.org/10.2139/ssrn.886260",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3133535491",
+     "title": "COVID-19 and Trade Policy: Why Turning Inward Won’t Work.",
+     "year": 2020,
+     "cited_by": 270,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3125854052",
+     "title": "The Core–Periphery Model and Endogenous Growth: Stabilizing and Destabilizing Integration",
+     "year": 2000,
+     "cited_by": 265,
+     "doi": "https://doi.org/10.1111/1468-0335.00211",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4300935174",
+     "title": "Nontariff Distortions of International Trade.",
+     "year": 1971,
+     "cited_by": 249,
+     "doi": "https://doi.org/10.2307/2325276",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1501419634",
+     "title": "Geography and Ownership as Bases for Economic Accounting",
+     "year": 1998,
+     "cited_by": 249,
+     "doi": "https://doi.org/10.7208/chicago/9780226036540.001.0001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2092471567",
+     "title": "MFN Tariff Reductions and Developing Country Trade Benefits Under the GSP",
+     "year": 1977,
+     "cited_by": 248,
+     "doi": "https://doi.org/10.2307/2231831",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1502385708",
+     "title": "2004), Agglomeration and regional growth",
+     "year": 2003,
+     "cited_by": 238,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2611895824",
+     "title": "The Collapse of Global Trade, Murky Protectionism, and the Crisis: Recommendations for the G20",
+     "year": 2009,
+     "cited_by": 210,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1520497833",
+     "title": "Expanding Membership of the European Union",
+     "year": 1995,
+     "cited_by": 207,
+     "doi": "https://doi.org/10.1017/cbo9780511983368",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2137519841",
+     "title": "Non-tariff Distortions of International Trade.",
+     "year": 1972,
+     "cited_by": 201,
+     "doi": "https://doi.org/10.2307/2230243",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2099268621",
+     "title": "Multinationals, Endogenous Growth, and Technological Spillovers: Theory and Evidence*",
+     "year": 2005,
+     "cited_by": 195,
+     "doi": "https://doi.org/10.1111/j.1467-9396.2005.00546.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2144786877",
+     "title": "Trade Policy Issues and Empirical Analysis",
+     "year": 1988,
+     "cited_by": 194,
+     "doi": "https://doi.org/10.7208/chicago/9780226036519.001.0001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124300968",
+     "title": "The Causes of Regionalism",
+     "year": 1997,
+     "cited_by": 191,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2032300110",
+     "title": "Politically realistic objective functions and trade policy PROFs and tariffs",
+     "year": 1987,
+     "cited_by": 187,
+     "doi": "https://doi.org/10.1016/0165-1765(87)90132-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2237128994",
+     "title": "The World Trade Organization and the Future of Multilateralism",
+     "year": 2016,
+     "cited_by": 186,
+     "doi": "https://doi.org/10.1257/jep.30.1.95",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1596520173",
+     "title": "Openness and Growth: What's the Empirical Relationship?",
+     "year": 2003,
+     "cited_by": 184,
+     "doi": "https://doi.org/10.3386/w9578",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1528447233",
+     "title": "The Economics of Sustainable Development",
+     "year": 1995,
+     "cited_by": 183,
+     "doi": "https://doi.org/10.1017/cbo9780511751905",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2146040615",
+     "title": "Economic Geography and Public Policy",
+     "year": 2011,
+     "cited_by": 1010,
+     "doi": "https://doi.org/10.1515/9781400841233",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4255172836",
+     "title": "Understanding Regulation",
+     "year": 2011,
+     "cited_by": 530,
+     "doi": "https://doi.org/10.1093/acprof:osobl/9780199576081.001.0001",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1544588855",
+     "title": "Trade And Industrialisation After Globalisation's 2nd Unbundling: How Building And Joining A Supply Chain Are Different And Why It Matters",
+     "year": 2011,
+     "cited_by": 470,
+     "doi": "https://doi.org/10.3386/w17716",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2146978316",
+     "title": "Globalisation: the great unbundling(s)",
+     "year": 2006,
+     "cited_by": 336,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5027916379": {
+   "display_name": "J. J. Woo",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 46,
+   "n_in_corpus_overlap": 4,
+   "new_works": [
+    {
+     "oa_id": "W2315933676",
+     "title": "From tools to toolkits in policy design studies: the new design orientation towards policy formulation research",
+     "year": 2015,
+     "cited_by": 295,
+     "doi": "https://doi.org/10.1332/147084414x13992869118596",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3036723169",
+     "title": "Policy capacity and Singapore’s response to the COVID-19 pandemic",
+     "year": 2020,
+     "cited_by": 153,
+     "doi": "https://doi.org/10.1080/14494035.2020.1783789",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2162466188",
+     "title": "Legitimation capacity: System-level resources and political skills in public policy",
+     "year": 2015,
+     "cited_by": 60,
+     "doi": "https://doi.org/10.1016/j.polsoc.2015.09.008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2807296210",
+     "title": "Instrument constituencies and transnational policy diffusion: the case of conditional cash transfers",
+     "year": 2018,
+     "cited_by": 41,
+     "doi": "https://doi.org/10.1080/09692290.2018.1470548",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2948183920",
+     "title": "Practicing public policy in an age of disruption",
+     "year": 2019,
+     "cited_by": 41,
+     "doi": "https://doi.org/10.1080/25741292.2019.1622276",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2493220413",
+     "title": "Singapore as an International Financial Centre",
+     "year": 2016,
+     "cited_by": 27,
+     "doi": "https://doi.org/10.1057/978-1-137-56911-0",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2491841443",
+     "title": "Business and Politics in Asia's Key Financial Centres",
+     "year": 2015,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.1007/978-981-287-985-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4240316601",
+     "title": "The Evolution of the Asian Developmental State",
+     "year": 2018,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.4324/9781315115139",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2014840465",
+     "title": "Policy Relations and Policy Subsystems: Financial Policy in Hong Kong and Singapore",
+     "year": 2015,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.1080/01900692.2014.949750",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3094225757",
+     "title": "Pandemic, politics and pandemonium: political capacity and Singapore’s response to the Covid-19 crisis",
+     "year": 2020,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.1080/25741292.2020.1835212",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2111565670",
+     "title": "Beyond the neoliberal orthodoxy: alternative financial policy regimes in Asia’s financial centers",
+     "year": 2015,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.1080/19460171.2015.1005110",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4313413167",
+     "title": "Community Resilience and COVID-19: A Fuzzy-Set Qualitative Comparative Analysis of Resilience Attributes in 16 Countries",
+     "year": 2022,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.3390/ijerph20010474",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2894930571",
+     "title": "The Evolution of the Asian Developmental State: Hong Kong and Singapore",
+     "year": 2018,
+     "cited_by": 14,
+     "doi": "",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2535737707",
+     "title": "Dynamics of global financial governance: Constraints, opportunities, and capacities in Asia",
+     "year": 2016,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.1016/j.polsoc.2016.10.002",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3131327053",
+     "title": "Technology and Governance in Singapore's Smart Nation Initiative",
+     "year": 2018,
+     "cited_by": 13,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2533712900",
+     "title": "Editorial Financial sector reform and policy design in an age of instability",
+     "year": 2016,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1016/j.polsoc.2016.10.003",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2883000922",
+     "title": "Urban innovation policy in the postdevelopmental era: Lessons from Singapore and Seoul",
+     "year": 2018,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1002/app5.255",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2277678836",
+     "title": "Explaining dynamics without change: a critical subsector approach to financial policy making",
+     "year": 2015,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1080/17516234.2015.1082689",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2955144624",
+     "title": "The politics of policymaking: policy co-creation in Singapore’s financial sector",
+     "year": 2019,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1080/01442872.2019.1634185",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2561196567",
+     "title": "Phaeophyscia esslingeri sp. nov. (Physciaceae, lichen-forming Ascomycota) – a new lichen species from Eastern Asia, with a world-wide key to the hairy species of the genus",
+     "year": 2016,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.17110/studbot.2016.47.2.251",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2591010877",
+     "title": "3-in-1: Governing a Global Financial Centre",
+     "year": 2017,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1142/10479",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2477189111",
+     "title": "Singapore and Switzerland",
+     "year": 2015,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1142/9472",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2910101586",
+     "title": "Agility and Robustness as Design Criteria",
+     "year": 2018,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.4324/9781351252928-28",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4230244199",
+     "title": "Capacity-building and Pandemics",
+     "year": 2020,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/978-981-15-9453-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3100802800",
+     "title": "Singapore’s Response to Covid-19",
+     "year": 2020,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/978-981-15-9453-3_4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4407185206",
+     "title": "Decision-making under epistemic, strategic and institutional uncertainty during COVID-19: findings from a six-country empirical study",
+     "year": 2025,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1136/bmjgh-2024-018124",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3105227951",
+     "title": "Capacity-building and Pandemics: Singapore’s Response to Covid-19",
+     "year": 2020,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/978-981-15-9453-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2983364100",
+     "title": "Sex, rankings and policy change: policy entrepreneurship in Singapore’s higher education system",
+     "year": 2019,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1080/17516234.2019.1688457",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2338866757",
+     "title": "Thirty Years of Instrument Research: What Have We Learned and Where Are We Going",
+     "year": 2015,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4388734174",
+     "title": "Gradations of organizational autonomy in Singapore: a comparison of the Monetary Authority of Singapore, Temasek Holdings, and the Development Bank of Singapore",
+     "year": 2023,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1007/s43508-023-00078-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3205366960",
+     "title": "Singapore’s Social Policy Response to Covid-19: Focusing on Jobs and Employment",
+     "year": 2021,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.26092/elib/975",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4400409844",
+     "title": "Singapore's COVID-19 crisis decision-making through centralization, legitimacy, and agility: an empirical analysis",
+     "year": 2024,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1016/j.lanwpc.2024.101137",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4245949291",
+     "title": "Hong Kong",
+     "year": 2015,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1007/978-981-287-985-1_4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2920384068",
+     "title": "Educating for Empathy",
+     "year": 2019,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1142/11345",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3102492645",
+     "title": "Capacity-Building in a Post-SARS World",
+     "year": 2020,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-981-15-9453-3_3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3001126979",
+     "title": "Singapore’s policy style",
+     "year": 2018,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4324/9781315111247-15",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3007328118",
+     "title": "The smart city as layered policy design",
+     "year": 2020,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4324/9780429439940-4",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4239931171",
+     "title": "Introduction",
+     "year": 2018,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4324/9781315115139-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242199432",
+     "title": "Historical Development",
+     "year": 2016,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1057/978-1-137-56911-0_3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2482677460",
+     "title": "A Multifactorial Approach",
+     "year": 2016,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1057/978-1-137-56911-0_7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3203749102",
+     "title": "The demand for IPE<i>and</i>public policy in the governance of global policy design",
+     "year": 2021,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1080/14494035.2021.1975219",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2498052962",
+     "title": "Studying International Financial Centres",
+     "year": 2016,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1057/978-1-137-56911-0_2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4405793586",
+     "title": "Higher Education and Economic Development: Innovation",
+     "year": 2024,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-981-96-1239-0_5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3012019668",
+     "title": "Conclusion",
+     "year": 2020,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4324/9780429439940-20",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4211133670",
+     "title": "Policy Capacity",
+     "year": 2020,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-981-15-9453-3_2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4241407188",
+     "title": "FRONT MATTER",
+     "year": 2016,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1142/9789814651400_fmatter",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2568724731",
+     "title": "Resilience and robustness in policy design: a critical appraisal",
+     "year": 2017,
+     "cited_by": 202,
+     "doi": "https://doi.org/10.1007/s11077-016-9273-x",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2888136897",
+     "title": "Designing policy robustness: outputs and processes",
+     "year": 2018,
+     "cited_by": 100,
+     "doi": "https://doi.org/10.1080/14494035.2018.1504494",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2749633816",
+     "title": "Educating the developmental state: policy integration and mechanism redesign in Singapore’s SkillsFuture scheme",
+     "year": 2017,
+     "cited_by": 35,
+     "doi": "https://doi.org/10.1080/17516234.2017.1368616",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2056052422",
+     "title": "Singapore’s policy style: statutory boards as policymaking units",
+     "year": 2014,
+     "cited_by": 24,
+     "doi": "https://doi.org/10.1080/17516234.2014.922152",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5042883498": {
+   "display_name": "Robert W. Vishny",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 47,
+   "n_in_corpus_overlap": 3,
+   "new_works": [
+    {
+     "oa_id": "W3121759882",
+     "title": "Law and Finance",
+     "year": 1998,
+     "cited_by": 18046,
+     "doi": "https://doi.org/10.1086/250042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1969519191",
+     "title": "Legal Determinants of External Finance",
+     "year": 1997,
+     "cited_by": 9949,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1997.tb02727.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2135241016",
+     "title": "Large Shareholders and Corporate Control",
+     "year": 1986,
+     "cited_by": 8572,
+     "doi": "https://doi.org/10.1086/261385",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1606272114",
+     "title": "Management ownership and market valuation",
+     "year": 1988,
+     "cited_by": 7063,
+     "doi": "https://doi.org/10.1016/0304-405x(88)90048-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2162012454",
+     "title": "Investor protection and corporate governance",
+     "year": 2000,
+     "cited_by": 6245,
+     "doi": "https://doi.org/10.1016/s0304-405x(00)00065-9",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3124747412",
+     "title": "Investor Protection and Corporate Valuation",
+     "year": 2002,
+     "cited_by": 4146,
+     "doi": "https://doi.org/10.1111/1540-6261.00457",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4244992121",
+     "title": "Corruption",
+     "year": 1993,
+     "cited_by": 3732,
+     "doi": "https://doi.org/10.2307/2118402",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2030132760",
+     "title": "Politicians and Firms",
+     "year": 1994,
+     "cited_by": 3362,
+     "doi": "https://doi.org/10.2307/2118354",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2096718584",
+     "title": "Law and Finance",
+     "year": 1996,
+     "cited_by": 2962,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2019222975",
+     "title": "Liquidation Values and Debt Capacity: A Market Equilibrium Approach",
+     "year": 1992,
+     "cited_by": 2877,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1992.tb04661.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3094633476",
+     "title": "A model of investor sentiment1We are grateful to the NSF for financial support, and to Oliver Blanchard, Alon Brav, John Campbell (a referee), John Cochrane, Edward Glaeser, J.B. Heaton, Danny Kahneman, David Laibson, Owen Lamont, Drazen Prelec, Jay Ritter (a referee), Ken Singleton, Dick Thaler, an anonymous referee, and the editor, Bill Schwert, for comments.1",
+     "year": 1998,
+     "cited_by": 2747,
+     "doi": "https://doi.org/10.1016/s0304-405x(98)00027-0",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2131538393",
+     "title": "A Survey of Corporate Governance",
+     "year": 1997,
+     "cited_by": 2297,
+     "doi": "https://doi.org/10.2307/2329497",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3125935778",
+     "title": "Legal Determinants of External Finance",
+     "year": 1997,
+     "cited_by": 2279,
+     "doi": "https://doi.org/10.2307/2329518",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123529374",
+     "title": "Stock market driven acquisitions",
+     "year": 2003,
+     "cited_by": 2184,
+     "doi": "https://doi.org/10.1016/s0304-405x(03)00211-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2098861776",
+     "title": "Management entrenchment",
+     "year": 1989,
+     "cited_by": 2176,
+     "doi": "https://doi.org/10.1016/0304-405x(89)90099-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2047803175",
+     "title": "The impact of institutional trading on stock prices",
+     "year": 1992,
+     "cited_by": 2093,
+     "doi": "https://doi.org/10.1016/0304-405x(92)90023-q",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3121608236",
+     "title": "Do Managerial Objectives Drive Bad Acquisitions?",
+     "year": 1990,
+     "cited_by": 1912,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1990.tb05079.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2100746853",
+     "title": "The Proper Scope of Government: Theory and an Application to Prisons",
+     "year": 1997,
+     "cited_by": 1785,
+     "doi": "https://doi.org/10.1162/003355300555448",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1567773991",
+     "title": "Why Is Rent-Seeking So Costly to Growth?",
+     "year": 2008,
+     "cited_by": 1486,
+     "doi": "https://doi.org/10.1007/978-3-540-79247-5_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1967872601",
+     "title": "Contrarian Investment, Extrapolation, and Risk",
+     "year": 1994,
+     "cited_by": 1386,
+     "doi": "https://doi.org/10.2307/2329262",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124698950",
+     "title": "Investor Protection and Corporate Governance",
+     "year": 2000,
+     "cited_by": 1307,
+     "doi": "https://doi.org/10.2139/ssrn.183908",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3125185801",
+     "title": "Management Ownership and Market Valuation: An Empirical Analysis",
+     "year": 1998,
+     "cited_by": 1239,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2006885981",
+     "title": "A Theory of Privatisation",
+     "year": 1996,
+     "cited_by": 1199,
+     "doi": "https://doi.org/10.2307/2235248",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1519984423",
+     "title": "The Grabbing Hand: Government Pathologies and Their Cures",
+     "year": 1999,
+     "cited_by": 1060,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2165854756",
+     "title": "Investor Protection and Corporate Valuation",
+     "year": 1999,
+     "cited_by": 925,
+     "doi": "https://doi.org/10.2139/ssrn.192549",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1840144356",
+     "title": "The Quality of Goverment",
+     "year": 1998,
+     "cited_by": 907,
+     "doi": "https://doi.org/10.3386/w6727",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124199955",
+     "title": "Good News for Value Stocks: Further Evidence on Market Efficiency",
+     "year": 1997,
+     "cited_by": 851,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1997.tb04825.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2146188630",
+     "title": "Contrarian Investment, Extrapolation, and Risk",
+     "year": 1993,
+     "cited_by": 820,
+     "doi": "https://doi.org/10.3386/w4360",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2088006783",
+     "title": "The Stock Market and Investment: Is the Market a Sideshow?",
+     "year": 1990,
+     "cited_by": 772,
+     "doi": "https://doi.org/10.2307/2534506",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117731271",
+     "title": "Agency Problems and Dividend Policies around the World",
+     "year": 1998,
+     "cited_by": 771,
+     "doi": "https://doi.org/10.2139/ssrn.52871",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2915255270",
+     "title": "Legal Determinants of External Finance",
+     "year": 1997,
+     "cited_by": 769,
+     "doi": "https://doi.org/10.3386/w5879",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2166822681",
+     "title": "Neglected risks, financial innovation, and financial fragility",
+     "year": 2011,
+     "cited_by": 739,
+     "doi": "https://doi.org/10.1016/j.jfineco.2011.05.005",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1996482653",
+     "title": "Income Distribution, Market Size, and Industrialization",
+     "year": 1989,
+     "cited_by": 704,
+     "doi": "https://doi.org/10.2307/2937810",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W1605070712",
+     "title": "A Theory of Privatization",
+     "year": 1996,
+     "cited_by": 671,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123329458",
+     "title": "The Quality of Government",
+     "year": 1999,
+     "cited_by": 612,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2132200203",
+     "title": "A Model of Investor Sentiment",
+     "year": 1997,
+     "cited_by": 580,
+     "doi": "https://doi.org/10.3386/w5926",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2103679355",
+     "title": "The Limits of Arbitrage",
+     "year": 1995,
+     "cited_by": 568,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1997.tb03807.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1506927806",
+     "title": "Equilibrium Short Horizons of Investors and Firms",
+     "year": 1990,
+     "cited_by": 566,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2327840979",
+     "title": "Money Doctors",
+     "year": 2014,
+     "cited_by": 539,
+     "doi": "https://doi.org/10.1111/jofi.12188",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2151257144",
+     "title": "The Structure and Performance of the Money Management Industry",
+     "year": 1992,
+     "cited_by": 529,
+     "doi": "https://doi.org/10.2307/2534766",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2103138323",
+     "title": "Value Maximization and the Acquisition Process",
+     "year": 1988,
+     "cited_by": 514,
+     "doi": "https://doi.org/10.1257/jep.2.1.7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2902987049",
+     "title": "Do Managerial Objectives Drive Bad Acquisitions?",
+     "year": 1990,
+     "cited_by": 504,
+     "doi": "https://doi.org/10.2307/2328808",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1614957981",
+     "title": "Hostile Takeovers in the 1980s: The Return to Corporate Specialization",
+     "year": 1990,
+     "cited_by": 497,
+     "doi": "https://doi.org/10.2307/2534780",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123705760",
+     "title": "Liquidation Values and Debt Capacity: A Market Equilibrium Approach",
+     "year": 1992,
+     "cited_by": 491,
+     "doi": "https://doi.org/10.2307/2328943",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2319718234",
+     "title": "A Model of Shadow Banking",
+     "year": 2013,
+     "cited_by": 450,
+     "doi": "https://doi.org/10.1111/jofi.12031",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4234246145",
+     "title": "Unstable banking",
+     "year": 2009,
+     "cited_by": 442,
+     "doi": "https://doi.org/10.1016/j.jfineco.2009.10.007",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2151177981",
+     "title": "The Allocation of Talent: Implications for Growth",
+     "year": 1990,
+     "cited_by": 402,
+     "doi": "https://doi.org/10.3386/w3530",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W3121693921",
+     "title": "A Survey of Corporate Governance",
+     "year": 1997,
+     "cited_by": 16179,
+     "doi": "https://doi.org/10.1111/j.1540-6261.1997.tb04820.x",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3122578644",
+     "title": "A model of investor sentiment /",
+     "year": null,
+     "cited_by": 4198,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2073650747",
+     "title": "Industrialization and the Big Push",
+     "year": 1989,
+     "cited_by": 1549,
+     "doi": "https://doi.org/10.1086/261641",
+     "axes_hit": [
+      "PolInd"
+     ]
+    }
+   ]
+  },
+  "A5029868613": {
+   "display_name": "Laurens Klerkx",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 47,
+   "n_in_corpus_overlap": 3,
+   "new_works": [
+    {
+     "oa_id": "W2990272218",
+     "title": "A review of social science on digital agriculture, smart farming and agriculture 4.0: New contributions and a future research agenda",
+     "year": 2019,
+     "cited_by": 1143,
+     "doi": "https://doi.org/10.1016/j.njas.2019.100315",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2896303451",
+     "title": "Towards a typology of intermediaries in sustainability transitions: A systematic review and a research agenda",
+     "year": 2018,
+     "cited_by": 764,
+     "doi": "https://doi.org/10.1016/j.respol.2018.10.006",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2043216809",
+     "title": "Adaptive management in agricultural innovation systems: The interactions between innovation networks and their environment",
+     "year": 2010,
+     "cited_by": 732,
+     "doi": "https://doi.org/10.1016/j.agsy.2010.03.012",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2995631322",
+     "title": "Dealing with the game-changing technologies of Agriculture 4.0: How do we manage diversity and responsibility in food system transition pathways?",
+     "year": 2019,
+     "cited_by": 619,
+     "doi": "https://doi.org/10.1016/j.gfs.2019.100347",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4200084972",
+     "title": "Current status and future challenges in implementing and upscaling vertical farming systems",
+     "year": 2021,
+     "cited_by": 504,
+     "doi": "https://doi.org/10.1038/s43016-021-00402-w",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802951056",
+     "title": "Beyond agricultural innovation systems? Exploring an agricultural innovation ecosystems approach for niche design and development in sustainability transitions",
+     "year": 2018,
+     "cited_by": 400,
+     "doi": "https://doi.org/10.1016/j.agsy.2018.04.007",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2078994995",
+     "title": "Matching demand and supply in the agricultural knowledge infrastructure: Experiences with innovation intermediaries",
+     "year": 2007,
+     "cited_by": 393,
+     "doi": "https://doi.org/10.1016/j.foodpol.2007.10.001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3083910680",
+     "title": "The future(s) of digital agriculture and sustainable food systems: An analysis of high-level policy documents",
+     "year": 2020,
+     "cited_by": 366,
+     "doi": "https://doi.org/10.1016/j.ecoser.2020.101183",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1967418914",
+     "title": "Unravelling the role of innovation platforms in supporting co-evolution of innovation: Contributions and tensions in a smallholder dairy development programme",
+     "year": 2013,
+     "cited_by": 338,
+     "doi": "https://doi.org/10.1016/j.agsy.2013.03.003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3164641649",
+     "title": "Digital transformation of agriculture and rural areas: A socio-cyber-physical system framework to support responsibilisation",
+     "year": 2021,
+     "cited_by": 334,
+     "doi": "https://doi.org/10.1016/j.jrurstud.2021.05.003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2512865108",
+     "title": "Systemic perspectives on scaling agricultural innovations. A review",
+     "year": 2016,
+     "cited_by": 334,
+     "doi": "https://doi.org/10.1007/s13593-016-0380-z",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2777145000",
+     "title": "Managing Socio-Ethical Challenges in the Development of Smart Farming: From a Fragmented to a Comprehensive Approach for Responsible Research and Innovation",
+     "year": 2017,
+     "cited_by": 325,
+     "doi": "https://doi.org/10.1007/s10806-017-9704-5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2942941363",
+     "title": "Combinations of bonding, bridging, and linking social capital for farm innovation: How farmers configure different support networks",
+     "year": 2019,
+     "cited_by": 324,
+     "doi": "https://doi.org/10.1016/j.jrurstud.2019.04.004",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3047322504",
+     "title": "Supporting food systems transformation: The what, why, who, where and how of mission-oriented agricultural innovation systems",
+     "year": 2020,
+     "cited_by": 318,
+     "doi": "https://doi.org/10.1016/j.agsy.2020.102901",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2051399065",
+     "title": "Strengthening agricultural innovation capacity: are innovation brokers the answer?",
+     "year": 2009,
+     "cited_by": 304,
+     "doi": "https://doi.org/10.1504/ijarge.2009.032643",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2552078032",
+     "title": "Dynamics and distribution of public and private research and extension roles for technological innovation and diffusion: Case studies of the implementation and adaptation of precision farming technologies",
+     "year": 2016,
+     "cited_by": 288,
+     "doi": "https://doi.org/10.1016/j.jrurstud.2016.11.008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2014766755",
+     "title": "Orchestrating innovation networks: The case of innovation brokers in the agri-food sector",
+     "year": 2010,
+     "cited_by": 255,
+     "doi": "https://doi.org/10.1080/08985620903220512",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2064080951",
+     "title": "Balancing multiple interests: Embedding innovation intermediation in the agricultural knowledge infrastructure",
+     "year": 2007,
+     "cited_by": 240,
+     "doi": "https://doi.org/10.1016/j.technovation.2007.05.005",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2911071331",
+     "title": "Passing the baton: How intermediaries advance sustainability transitions in different phases",
+     "year": 2019,
+     "cited_by": 232,
+     "doi": "https://doi.org/10.1016/j.eist.2019.01.001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2904710350",
+     "title": "Characterizing diversity of food systems in view of sustainability transitions. A review",
+     "year": 2018,
+     "cited_by": 223,
+     "doi": "https://doi.org/10.1007/s13593-018-0550-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2226761875",
+     "title": "INNOVATION PLATFORMS: EXPERIENCES WITH THEIR INSTITUTIONAL EMBEDDING IN AGRICULTURAL RESEARCH FOR DEVELOPMENT",
+     "year": 2015,
+     "cited_by": 217,
+     "doi": "https://doi.org/10.1017/s001447971500023x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2096643070",
+     "title": "The interaction of multiple champions in orchestrating innovation networks: Conflicts and complementarities",
+     "year": 2013,
+     "cited_by": 216,
+     "doi": "https://doi.org/10.1016/j.technovation.2013.03.002",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2184929315",
+     "title": "Addressing barriers to eco-innovation: Exploring the finance mobilisation functions of institutional innovation intermediaries",
+     "year": 2015,
+     "cited_by": 202,
+     "doi": "https://doi.org/10.1016/j.techfore.2015.10.001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2023317881",
+     "title": "Beyond fragmentation and disconnect: Networks for knowledge exchange in the English land management advisory system",
+     "year": 2012,
+     "cited_by": 195,
+     "doi": "https://doi.org/10.1016/j.landusepol.2012.02.003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2139406327",
+     "title": "Advances in Knowledge Brokering in the Agricultural Sector: Towards Innovation System Facilitation",
+     "year": 2012,
+     "cited_by": 184,
+     "doi": "https://doi.org/10.1111/j.1759-5436.2012.00363.x",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2038374014",
+     "title": "RAAIS: Rapid Appraisal of Agricultural Innovation Systems (Part I). A diagnostic tool for integrated analysis of complex problems and innovation capacity",
+     "year": 2014,
+     "cited_by": 183,
+     "doi": "https://doi.org/10.1016/j.agsy.2014.08.009",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2162369706",
+     "title": "Beyond knowledge brokering: an exploratory study on innovation intermediaries in an evolving smallholder agricultural system in Kenya",
+     "year": 2011,
+     "cited_by": 182,
+     "doi": "https://doi.org/10.1080/19474199.2011.593859",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3012137949",
+     "title": "Drivers of decoupling and recoupling of crop and livestock systems at farm and territorial scales",
+     "year": 2020,
+     "cited_by": 179,
+     "doi": "https://doi.org/10.5751/es-11412-250124",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2198374141",
+     "title": "Systemic problems affecting co-innovation in the New Zealand Agricultural Innovation System: Identification of blocking mechanisms and underlying institutional logics",
+     "year": 2015,
+     "cited_by": 175,
+     "doi": "https://doi.org/10.1016/j.njas.2015.12.001",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2006947884",
+     "title": "Application of an integrated systemic framework for analysing agricultural innovation systems and informing innovation policies: Comparing the Dutch and Scottish agrifood sectors",
+     "year": 2014,
+     "cited_by": 168,
+     "doi": "https://doi.org/10.1016/j.agsy.2014.05.001",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2771902860",
+     "title": "Sustainability transitions in developing countries: Stocktaking, new contributions and a research agenda",
+     "year": 2017,
+     "cited_by": 161,
+     "doi": "https://doi.org/10.1016/j.envsci.2017.11.009",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2507243658",
+     "title": "Scale dynamics of grassroots innovations through parallel pathways of transformative change",
+     "year": 2016,
+     "cited_by": 152,
+     "doi": "https://doi.org/10.1016/j.ecolecon.2016.07.011",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2808816276",
+     "title": "Opening design and innovation processes in agriculture: Insights from design and management sciences and future directions",
+     "year": 2018,
+     "cited_by": 148,
+     "doi": "https://doi.org/10.1016/j.agsy.2018.06.004",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2913341777",
+     "title": "Navigating shades of social capital and trust to leverage opportunities for rural innovation",
+     "year": 2019,
+     "cited_by": 142,
+     "doi": "https://doi.org/10.1016/j.jrurstud.2019.02.003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1966201731",
+     "title": "Structural Conditions for Collaboration and Learning in Innovation Networks: Using an Innovation System Performance Lens to Analyse Agricultural Knowledge Systems",
+     "year": 2015,
+     "cited_by": 139,
+     "doi": "https://doi.org/10.1080/1389224x.2014.991113",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2147953386",
+     "title": "Operationalizing inclusive innovation: lessons from innovation platforms in livestock value chains in India and Mozambique",
+     "year": 2014,
+     "cited_by": 137,
+     "doi": "https://doi.org/10.1080/2157930x.2014.925246",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2991426639",
+     "title": "Digitalisation in the New Zealand Agricultural Knowledge and Innovation System: Initial understandings and emerging organisational responses to digital agriculture",
+     "year": 2019,
+     "cited_by": 136,
+     "doi": "https://doi.org/10.1016/j.njas.2019.100313",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3011202783",
+     "title": "Advisory services and transformation, plurality and disruption of agriculture and food systems: towards a new research agenda for agricultural education and extension studies",
+     "year": 2020,
+     "cited_by": 134,
+     "doi": "https://doi.org/10.1080/1389224x.2020.1738046",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2121412726",
+     "title": "Building knowledge systems for sustainable agriculture: supporting private advisors to adequately address sustainable farm management in regular service contacts",
+     "year": 2010,
+     "cited_by": 132,
+     "doi": "https://doi.org/10.3763/ijas.2009.0457",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2124750233",
+     "title": "Systems approaches to innovation in crop protection. A systematic literature review",
+     "year": 2013,
+     "cited_by": 125,
+     "doi": "https://doi.org/10.1016/j.cropro.2013.11.017",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2010570295",
+     "title": "Information networks that generate economic value: A study on clusters of adopters of new or improved technologies and practices among oil palm growers in Mexico",
+     "year": 2015,
+     "cited_by": 123,
+     "doi": "https://doi.org/10.1016/j.agsy.2015.01.003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2341763501",
+     "title": "Ecological Intensification: Local Innovation to Address Global Challenges",
+     "year": 2016,
+     "cited_by": 120,
+     "doi": "https://doi.org/10.1007/978-3-319-26777-7_1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2577215518",
+     "title": "Value Chain Upgrading and the Inclusion of Smallholders in Markets: Reflections on Contributions of Multi-Stakeholder Processes in Dairy Development in Tanzania",
+     "year": 2017,
+     "cited_by": 118,
+     "doi": "https://doi.org/10.1057/s41287-016-0074-z",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2031943376",
+     "title": "Towards dynamic research configurations: A framework for reflection on the contribution of research to policy and innovation processes",
+     "year": 2013,
+     "cited_by": 112,
+     "doi": "https://doi.org/10.1093/scipol/sct048",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2920677303",
+     "title": "To cluster or not to cluster farmers? Influences on network interactions, risk perceptions, and adoption of aquaculture practices",
+     "year": 2019,
+     "cited_by": 109,
+     "doi": "https://doi.org/10.1016/j.agsy.2019.02.011",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2018691672",
+     "title": "Functions and limitations of farmer cooperatives as innovation intermediaries: Findings from China",
+     "year": 2014,
+     "cited_by": 106,
+     "doi": "https://doi.org/10.1016/j.agsy.2014.02.005",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2566329380",
+     "title": "How is innovation in aquaculture conceptualized and managed? A systematic literature review and reflection framework to inform analysis and action",
+     "year": 2016,
+     "cited_by": 106,
+     "doi": "https://doi.org/10.1016/j.aquaculture.2016.12.020",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2102130439",
+     "title": "Evolution of systems approaches to agricultural innovation: concepts, analysis and interventions",
+     "year": 2012,
+     "cited_by": 644,
+     "doi": "https://doi.org/10.1007/978-94-007-4503-2_20",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2896433686",
+     "title": "Public-private partnerships as systemic agricultural innovation policy instruments – Assessing their contribution to innovation system function dynamics",
+     "year": 2018,
+     "cited_by": 125,
+     "doi": "https://doi.org/10.1016/j.njas.2018.10.001",
+     "axes_hit": [
+      "PolInd",
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4308174942",
+     "title": "Digital innovation ecosystems in agri-food: design principles and organizational framework",
+     "year": 2022,
+     "cited_by": 111,
+     "doi": "https://doi.org/10.1016/j.agsy.2022.103558",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5070268763": {
+   "display_name": "Francesca Farioli",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 34,
+   "n_in_corpus_overlap": 2,
+   "new_works": [
+    {
+     "oa_id": "W2108711327",
+     "title": "From complex systems analysis to transformational change: a comparative appraisal of sustainability science projects",
+     "year": 2012,
+     "cited_by": 408,
+     "doi": "https://doi.org/10.1007/s11625-011-0148-y",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2156497679",
+     "title": "Progress in sustainability science: lessons learnt from current methodologies for sustainability assessment: Part 1",
+     "year": 2012,
+     "cited_by": 292,
+     "doi": "https://doi.org/10.1007/s11367-012-0508-6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2094920168",
+     "title": "Life cycle sustainability assessment in the context of sustainability science progress (part 2)",
+     "year": 2012,
+     "cited_by": 228,
+     "doi": "https://doi.org/10.1007/s11367-012-0509-5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2926915739",
+     "title": "Devising a Competence-Based Training Program for Educators of Sustainable Development: Lessons Learned",
+     "year": 2019,
+     "cited_by": 168,
+     "doi": "https://doi.org/10.3390/su11071890",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2058619349",
+     "title": "Sustainability science: bridging the gap between science and society",
+     "year": 2012,
+     "cited_by": 145,
+     "doi": "https://doi.org/10.1007/s11625-011-0154-0",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1978270428",
+     "title": "Natural powers: from the bio-economy to the eco-economy and sustainable place-making",
+     "year": 2015,
+     "cited_by": 88,
+     "doi": "https://doi.org/10.1007/s11625-014-0287-z",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2082329554",
+     "title": "Sustainability science in action: a review of the state of the field through case studies on disaster recovery, bioenergy, and precautionary purchasing",
+     "year": 2014,
+     "cited_by": 52,
+     "doi": "https://doi.org/10.1007/s11625-014-0261-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2888694654",
+     "title": "People, technology, and governance for sustainability: the contribution of systems and cyber-systemic thinking",
+     "year": 2018,
+     "cited_by": 46,
+     "doi": "https://doi.org/10.1007/s11625-018-0621-y",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2070095862",
+     "title": "Attitudes toward Sustainability and Green Economy Issues Related to Some Students Learning Their Characteristics: A Preliminary Study",
+     "year": 2014,
+     "cited_by": 30,
+     "doi": "https://doi.org/10.3390/su6063484",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2520664836",
+     "title": "Towards a common framework for knowledge co-creation: opportunities of collaboration between Service Science and Sustainability Science",
+     "year": 2015,
+     "cited_by": 13,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2785130691",
+     "title": "Re-Reading Sustainability throughthe Triple Helix Model in the Frame of a Systems Perspective",
+     "year": 2018,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.4135/9781473983007.n3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W229953",
+     "title": "Gender Issues of Biomass Production and Use in Africa",
+     "year": 2011,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1007/978-94-007-2181-4_28",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2579543166",
+     "title": "The chariots of Pharaoh at the Red Sea The crises of capitalism and of environment. A modest proposal towards sustainability",
+     "year": 2016,
+     "cited_by": 8,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3015027667",
+     "title": "An Ecology and Economy Coupling Model. A global stationary state model for a sustainable economy in the Hamiltonian formalism",
+     "year": 2020,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1016/j.ecolecon.2019.106497",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2777933634",
+     "title": "Learning for an unpredictable future : what competences for educators",
+     "year": 2017,
+     "cited_by": 5,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2161933048",
+     "title": "Cane energy for sustainable development and economic competitiveness in Southern Africa.",
+     "year": 2007,
+     "cited_by": 5,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W155026853",
+     "title": "Social Impacts of Biofuel Production in Africa",
+     "year": 2011,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.1007/978-94-007-2181-4_26",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4210427598",
+     "title": "Assessing Sustainability Competences: A Discussion on What and How",
+     "year": 2022,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/978-3-030-91055-6_21",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2023218686",
+     "title": "Collaboration for transformation",
+     "year": 2013,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/s11625-013-0231-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2271794951",
+     "title": "Ensuring Sustainability of Bioenergy in Practice",
+     "year": 2013,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1007/978-1-4020-8939-8_122",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4404106300",
+     "title": "Antiproliferative and Morphological Effects of Fenretinide Lipid Nanosystems in Colon Adenocarcinoma Cells",
+     "year": 2024,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.3390/pharmaceutics16111421",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2758039880",
+     "title": "Le due crisi: crisi del capitalismo e crisi ambientale. Una soluzione sostenibile?",
+     "year": 2015,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2046030579",
+     "title": "L'identification de la cohérence pronominale chez les enfants de 5 à 11 ans",
+     "year": 1979,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.3406/psy.1979.1353",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2920997707",
+     "title": "An integrated model of governance for sustainability",
+     "year": 2018,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4324/9780429486982-46",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4210277398",
+     "title": "Post-Normal Science, Transdisciplinarity, and Uncertainty in Relation to Educators’ Competences: A Conversation with Silvio Funtowicz",
+     "year": 2022,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-030-91055-6_8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4210564644",
+     "title": "Breaking the Mold: Educators as Agents of Change",
+     "year": 2022,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-030-91055-6_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2738269329",
+     "title": "Le competenze di un \"educatore sostenibile\"",
+     "year": 2017,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2921835623",
+     "title": "Is a smarter planet also more sustainable?",
+     "year": 2018,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4324/9780429486982-45",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2921123154",
+     "title": "Learning for the future",
+     "year": 2018,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9780429486982-41",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W387013379",
+     "title": "EDITORIAL : Sustainability science : bridging the gap between science and society (Special Feature : Sustainability science: bridging the gap between science and society)",
+     "year": 2012,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W7131105535",
+     "title": "Cytotoxic and Cytostatic Effects of Nanoformulated Fenretinide on MG63 Osteosarcoma Cells",
+     "year": 2026,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.3390/pharmaceutics18020278",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2721414936",
+     "title": "Le due crisi: crisi del capitalismo e crisi ambientale. Una soluzione sostenibile? (parte II)",
+     "year": 2016,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2792331227",
+     "title": "Governance for Sustainability in the ‘Anthropocene’: A Triple-Helix Model",
+     "year": 2017,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W400096154",
+     "title": "Natural powers : from the bio-economy to the eco-economy and sustainable place-making (Special Feature : Pathways towards sustainable landscapes)",
+     "year": 2015,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2800201688",
+     "title": "Governance for sustainability: a triple-helix model",
+     "year": 2018,
+     "cited_by": 56,
+     "doi": "https://doi.org/10.1007/s11625-018-0567-0",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2921253033",
+     "title": "Strengthening the science–policy–industry interface for progressing toward sustainability: a systems thinking view",
+     "year": 2019,
+     "cited_by": 51,
+     "doi": "https://doi.org/10.1007/s11625-019-00668-x",
+     "axes_hit": [
+      "Cyb"
+     ]
+    }
+   ]
+  },
+  "A5075819167": {
+   "display_name": "Jan Achterbergh",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 48,
+   "n_in_corpus_overlap": 2,
+   "new_works": [
+    {
+     "oa_id": "W2164156022",
+     "title": "Organizations: Social Systems Conducting Experiments",
+     "year": 2009,
+     "cited_by": 74,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2004972904",
+     "title": "Managing viable knowledge",
+     "year": 2002,
+     "cited_by": 69,
+     "doi": "https://doi.org/10.1002/sres.440",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4239078235",
+     "title": "Organizations",
+     "year": 2009,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3189109144",
+     "title": "Virtuous Structures",
+     "year": 2016,
+     "cited_by": 30,
+     "doi": "https://doi.org/10.1007/s10551-016-3174-y",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2133712088",
+     "title": "The social dimension of system dynamics‐based modelling",
+     "year": 2006,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1002/sres.782",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1553369442",
+     "title": "Introducing Organizations as Social Systems Conducting Experiments",
+     "year": 2009,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4248296247",
+     "title": "Organizations",
+     "year": 2010,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117436514",
+     "title": "Planning Local E-Government",
+     "year": 2004,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.1201/1078/43877.21.1.20041201/78985.5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4237677632",
+     "title": "Organizational Development",
+     "year": 2019,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.4324/9781315695228",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1985573507",
+     "title": "Cybernetically sound organizational structures I: de Sitter's design theory",
+     "year": 2011,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1108/03684921111133656",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4250605589",
+     "title": "Introducing Organizations as Social Systems Conducting Experiments",
+     "year": 2010,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W18710816",
+     "title": "Organizations: Social Systems Conducting Experiments Second Revised Edition",
+     "year": 2010,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1016/j.jelekin.2008.07.001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1532612528",
+     "title": "Cybernetically sound organizational structures II",
+     "year": 2011,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1108/03684921111133665",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2133458543",
+     "title": "Tools for Supporting Responsible Decision‐Making?",
+     "year": 2013,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1002/sres.2246",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W852773011",
+     "title": "Op zoek naar het andere. Een liber amicorum voor Hans Doorewaard",
+     "year": 2013,
+     "cited_by": 5,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4232344215",
+     "title": "Organizational structures",
+     "year": 2019,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.4324/9781315695228-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4230539314",
+     "title": "Beer: Functional Design Principles for Viable Infrastructures",
+     "year": 2009,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2106871913",
+     "title": "The Source Map",
+     "year": 2004,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1.ch008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W776374859",
+     "title": "It's All in the Game",
+     "year": 2004,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1.ch011",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1960381303",
+     "title": "Specific Design Principles: de Sitter's Organizational Structures",
+     "year": 2009,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W841303222",
+     "title": "Enabling Strategy Formulation by ICT",
+     "year": 2008,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4018/978-1-59904-949-6.ch041",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242227194",
+     "title": "Epilogue to Part II: functional and specific design principles",
+     "year": 2010,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4234542036",
+     "title": "The Social “arche,” Organizations as Social Systems: Luhmann",
+     "year": 2010,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242108912",
+     "title": "Towards Rich Survival: Aristotle",
+     "year": 2009,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4235006204",
+     "title": "The Experimental Arche Continued: Von Foerster on Observing Systems",
+     "year": 2010,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_3",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1857419190",
+     "title": "The Experimental Arche Continued: Von Foerster on Observing Systems",
+     "year": 2009,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_3",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1554294573",
+     "title": "Beer: Functional Design Principles for Viable Infrastructures",
+     "year": 2010,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2951904363",
+     "title": "Organizational development designing episodic interventions",
+     "year": 2019,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1519657591",
+     "title": "Towards Rich Survival: Aristotle",
+     "year": 2010,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4246918862",
+     "title": "Specific Design Principles: de Sitter’s Organizational Structures",
+     "year": 2010,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1534476166",
+     "title": "Kwaliteit, structuur en maatschappelijk verantwoord organiseren",
+     "year": 2011,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2800009711",
+     "title": "Valuation: a decision process. An analysis of a decision process among valuation methods for investment companies",
+     "year": 1999,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4241538341",
+     "title": "IT Supporting Strategy Formulation",
+     "year": 2009,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4018/978-1-60566-026-4.ch364",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4256662949",
+     "title": "Enabling Strategy Formulation by ICT",
+     "year": 2004,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1.ch004",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2952633975",
+     "title": "The functional dimension",
+     "year": 2019,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9781315695228-6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4246697743",
+     "title": "Introduction",
+     "year": 2019,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9781315695228-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2178512143",
+     "title": "Shared services: hoe effectief is de regieorganisatie? Resultaten van een casestudy",
+     "year": 2015,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2950621756",
+     "title": "The infrastructural dimension",
+     "year": 2019,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9781315695228-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4238741573",
+     "title": "It's All in the Game",
+     "year": 2011,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4018/9781599049410.ch109",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2949791611",
+     "title": "The social dimension",
+     "year": 2019,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9781315695228-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2140728298",
+     "title": "Poor Survival: Disciplining Organizational Behavior",
+     "year": 2009,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1924897929",
+     "title": "IT Supporting Strategy Formulation",
+     "year": 2005,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4018/978-1-59140-553-5.ch304",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2952939203",
+     "title": "Episodic interventions in organizational structures",
+     "year": 2019,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9781315695228-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4237854914",
+     "title": "Organizational Structures Supporting Rich Survival",
+     "year": 2010,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4205680674",
+     "title": "The Experimental Arche: Ashby's Cybernetics",
+     "year": 2009,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_2",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1588781019",
+     "title": "Organizational Structures Supporting Rich Survival",
+     "year": 2009,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2795160105",
+     "title": "Relevance regained. On the design of business operations and management accounting systems",
+     "year": 2000,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4229661786",
+     "title": "Epilogue",
+     "year": 2009,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_12",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W1996520028",
+     "title": "Does the balanced scorecard support organizational viability?",
+     "year": 2003,
+     "cited_by": 41,
+     "doi": "https://doi.org/10.1108/03684920310493314",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2043269555",
+     "title": "Organizational cybernetics: Is Beer's VSM sufficient for organizational regulation?",
+     "year": 2011,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1386/jots.8.1.19_1",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    }
+   ]
+  },
+  "A5020400458": {
+   "display_name": "Dirk Vriens",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 48,
+   "n_in_corpus_overlap": 2,
+   "new_works": [
+    {
+     "oa_id": "W2145230620",
+     "title": "Knowledge-based systems and knowledge management: Friends or foes?",
+     "year": 1999,
+     "cited_by": 181,
+     "doi": "https://doi.org/10.1016/s0378-7206(98)00080-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2164156022",
+     "title": "Organizations: Social Systems Conducting Experiments",
+     "year": 2009,
+     "cited_by": 74,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2004972904",
+     "title": "Managing viable knowledge",
+     "year": 2002,
+     "cited_by": 69,
+     "doi": "https://doi.org/10.1002/sres.440",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2612604926",
+     "title": "The Role of the Distributor Network in the Persistence of Legal and Ethical Problems of Multi-level Marketing Companies",
+     "year": 2017,
+     "cited_by": 59,
+     "doi": "https://doi.org/10.1007/s10551-017-3556-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4239078235",
+     "title": "Organizations",
+     "year": 2009,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1491860672",
+     "title": "Disruptive Intelligence - How to gather Information to deal with disruptive innovations",
+     "year": 2015,
+     "cited_by": 40,
+     "doi": "https://doi.org/10.37380/jisib.v4i3.105",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2104585871",
+     "title": "Using the SSAV model to evaluate Business Intelligence Software",
+     "year": 2012,
+     "cited_by": 39,
+     "doi": "https://doi.org/10.37380/jisib.v2i3.46",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3189109144",
+     "title": "Virtuous Structures",
+     "year": 2016,
+     "cited_by": 30,
+     "doi": "https://doi.org/10.1007/s10551-016-3174-y",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2063605080",
+     "title": "From Geographical Information Systems to Spatial Group Decision Support Systems: A Complex Itinerary",
+     "year": 2000,
+     "cited_by": 25,
+     "doi": "https://doi.org/10.1080/136159300111388",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1519673644",
+     "title": "Information and Communications Technology for Competitive Intelligence",
+     "year": 2004,
+     "cited_by": 25,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2133712088",
+     "title": "The social dimension of system dynamics‐based modelling",
+     "year": 2006,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1002/sres.782",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1553369442",
+     "title": "Introducing Organizations as Social Systems Conducting Experiments",
+     "year": 2009,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4248296247",
+     "title": "Organizations",
+     "year": 2010,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W836887926",
+     "title": "The Role of Information and Communication Technology in Competitive Intelligence",
+     "year": 2004,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1.ch001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117436514",
+     "title": "Planning Local E-Government",
+     "year": 2004,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.1201/1078/43877.21.1.20041201/78985.5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2536525006",
+     "title": "Public Professional Accountability: A Conditional Approach",
+     "year": 2016,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.1007/s10551-016-3345-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4237677632",
+     "title": "Organizational Development",
+     "year": 2019,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.4324/9781315695228",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1985573507",
+     "title": "Cybernetically sound organizational structures I: de Sitter's design theory",
+     "year": 2011,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1108/03684921111133656",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W295111962",
+     "title": "Evaluating Business Intelligence Software : Testing the SSAV Model",
+     "year": 2009,
+     "cited_by": 9,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1972883229",
+     "title": "Causal loop diagrams as a de-escalation technique",
+     "year": 2014,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1057/jors.2014.24",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4250605589",
+     "title": "Introducing Organizations as Social Systems Conducting Experiments",
+     "year": 2010,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W18710816",
+     "title": "Organizations: Social Systems Conducting Experiments Second Revised Edition",
+     "year": 2010,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1016/j.jelekin.2008.07.001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1532612528",
+     "title": "Cybernetically sound organizational structures II",
+     "year": 2011,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1108/03684921111133665",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2133458543",
+     "title": "Tools for Supporting Responsible Decision‐Making?",
+     "year": 2013,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1002/sres.2246",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4232344215",
+     "title": "Organizational structures",
+     "year": 2019,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.4324/9781315695228-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4230539314",
+     "title": "Beer: Functional Design Principles for Viable Infrastructures",
+     "year": 2009,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4411024984",
+     "title": "Failure or success of self-organizing teams in long-term care organizations: an integrative systematic literature review on the role of the organization structure",
+     "year": 2025,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1186/s12913-025-12904-5",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4237157135",
+     "title": "The Role of Information and Communication Technology in Competitive Intelligence",
+     "year": 2008,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.4018/978-1-59904-949-6.ch096",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W798177981",
+     "title": "Improving Competitive Intelligence Through System Synamics",
+     "year": 2004,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1.ch006",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4236485280",
+     "title": "Viability through Web-Enabled Technologies",
+     "year": 2011,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.4018/9781878289728.ch006",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2106871913",
+     "title": "The Source Map",
+     "year": 2004,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1.ch008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W776374859",
+     "title": "It's All in the Game",
+     "year": 2004,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4018/978-1-59140-142-1.ch011",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4229667290",
+     "title": "Information and Communication Technology Tools for Competitive Intelligence",
+     "year": 2005,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4018/978-1-59140-553-5.ch256",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1960381303",
+     "title": "Specific Design Principles: de Sitter's Organizational Structures",
+     "year": 2009,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4249927350",
+     "title": "The Role of Information and Communication Technology in Competitive Intelligence",
+     "year": 2011,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4018/9781599049496.ch096",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4404218250",
+     "title": "Buy! Buy! Buy!—How Multilevel Marketing Companies Pressure Their Participants to Buy Their Products",
+     "year": 2024,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1177/07439156241301737",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W841303222",
+     "title": "Enabling Strategy Formulation by ICT",
+     "year": 2008,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.4018/978-1-59904-949-6.ch041",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1552072174",
+     "title": "Problem-setting support",
+     "year": 1993,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1016/b978-0-444-81485-2.50007-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242227194",
+     "title": "Epilogue to Part II: functional and specific design principles",
+     "year": 2010,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4234542036",
+     "title": "The Social “arche,” Organizations as Social Systems: Luhmann",
+     "year": 2010,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242108912",
+     "title": "Towards Rich Survival: Aristotle",
+     "year": 2009,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1500445554",
+     "title": "Information and Communication Technology Tools for Competitive Intelligence",
+     "year": 2008,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4018/978-1-59904-949-6.ch097",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2223281609",
+     "title": "Viability through Web-Enabled Technologies",
+     "year": 2011,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.4018/978-1-878289-72-8.ch006",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4235006204",
+     "title": "The Experimental Arche Continued: Von Foerster on Observing Systems",
+     "year": 2010,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_3",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1985110633",
+     "title": "Noblesse Oblige: how systems for accountability affect trust among professionals",
+     "year": 2013,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.5465/ambpp.2013.16143abstract",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1857419190",
+     "title": "The Experimental Arche Continued: Von Foerster on Observing Systems",
+     "year": 2009,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-00110-9_3",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1554294573",
+     "title": "Beer: Functional Design Principles for Viable Infrastructures",
+     "year": 2010,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1007/978-3-642-14316-8_6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2951904363",
+     "title": "Organizational development designing episodic interventions",
+     "year": 2019,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W1996520028",
+     "title": "Does the balanced scorecard support organizational viability?",
+     "year": 2003,
+     "cited_by": 41,
+     "doi": "https://doi.org/10.1108/03684920310493314",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2043269555",
+     "title": "Organizational cybernetics: Is Beer's VSM sufficient for organizational regulation?",
+     "year": 2011,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1386/jots.8.1.19_1",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    }
+   ]
+  }
+ },
+ "summary": {
+  "n_new_works": 572,
+  "n_overlap": 159
+ }
+}

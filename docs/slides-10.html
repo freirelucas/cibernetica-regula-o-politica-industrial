@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Cibernética · Regulação · Política Industrial — onde estamos (10 slides)</title>
+<meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+<style>
+  :root { --serif: "Source Serif Pro","PT Serif",Georgia,serif;
+          --sans: "Inter",system-ui,sans-serif; --accent: #c89b3c; }
+  .reveal { font-family: var(--sans); }
+  .reveal h1, .reveal h2, .reveal h3 { font-family: var(--serif); font-weight: 600; text-transform: none; letter-spacing: -0.01em; }
+  .reveal h1 { color: var(--accent); font-size: 2.2em; }
+  .reveal h2 { font-size: 1.6em; color: var(--accent); }
+  .reveal section { text-align: left; }
+  .reveal section.center { text-align: center; }
+  .reveal .num { font-size: 2.4em; color: var(--accent); font-family: var(--serif); line-height: 1; }
+  .reveal .lead { font-size: 1.05em; color: #dadada; line-height: 1.5; }
+  .reveal .muted { color: #888; font-size: 0.85em; }
+  .reveal table { font-size: 0.65em; margin: 1em auto; border-collapse: collapse; width: 100%; }
+  .reveal table th, .reveal table td { padding: 0.4em 0.8em; border-bottom: 1px solid #444; text-align: left; }
+  .reveal table th { color: var(--accent); }
+  .reveal ul li { margin-bottom: 0.5em; line-height: 1.4; }
+  .reveal code { background: #222; padding: 0.1em 0.4em; border-radius: 3px; font-size: 0.85em; }
+  .reveal .quote { font-style: italic; color: #b8b8b8; border-left: 3px solid var(--accent); padding-left: 1em; }
+  .reveal .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5em; margin-top: 1em; }
+  .reveal .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5em; margin-top: 1em; }
+  .reveal .box { background: #1a1a1a; padding: 0.8em 1em; border-radius: 6px; border-left: 3px solid var(--accent); }
+  .reveal .ax { display: inline-block; padding: 0.05em 0.5em; border-radius: 4px; font-weight: 600; font-size: 0.9em; }
+  .reveal .ax-c { background: #1f4068; color: #cae0ff; }
+  .reveal .ax-r { background: #5c4827; color: #ffdb9c; }
+  .reveal .ax-p { background: #4d2a3c; color: #ffc4dc; }
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<!-- 1 -->
+<section class="center">
+  <h1>Onde estamos</h1>
+  <p class="lead">Cibernética · Regulação · Política Industrial</p>
+  <p class="lead">cienciometria honesta de três tradições que governam sistemas produtivos complexos</p>
+  <p style="margin-top: 2em;">Bruno Queiroz · Lucas Freire · Claucia Faganello</p>
+  <p class="muted">Sessão 2026-05-28/30 · 3 PRs mergeados em main · <a href="index.html" style="color: var(--accent);">relatório completo</a></p>
+</section>
+
+<!-- 2 -->
+<section>
+  <h2>A pergunta e o método</h2>
+  <p class="lead">Três tradições compartilham o problema <em>"governar sistema complexo sob incerteza"</em> — mas se comunicam pouco. O campo já as conecta? Onde? Por quê não?</p>
+  <div class="grid3">
+    <div class="box"><span class="ax ax-c">Cibernética</span><p class="muted" style="margin: 0.5em 0 0;">Beer, Ashby, Espejo · controle &amp; viabilidade</p></div>
+    <div class="box"><span class="ax ax-r">Regulação</span><p class="muted" style="margin: 0.5em 0 0;">Hood, Margetts · instrumentos de governo</p></div>
+    <div class="box"><span class="ax ax-p">Política industrial</span><p class="muted" style="margin: 0.5em 0 0;">Rodrik, Mazzucato · ação estatal deliberada</p></div>
+  </div>
+  <p class="muted" style="margin-top: 1.5em;">Método: 13 sementes → bola de neve OpenAlex → corpus 817 obras → cocitação + hipergrafo XGI + coautoria + bridges. <strong>Modelos nulos em todas as métricas.</strong> Saída para Rayyan com 14+ tags.</p>
+</section>
+
+<!-- 3 -->
+<section>
+  <h2>Achado central: silos significativos</h2>
+  <div class="grid2">
+    <div class="box center">
+      <p class="num">z ≈ 80</p>
+      <p class="lead">pairwise (Maslov-Sneppen)</p>
+      <p class="muted">Separação entre os 3 eixos é massivamente significativa</p>
+    </div>
+    <div class="box center">
+      <p class="num">z ≈ −50</p>
+      <p class="lead">hipergrafo (stub-shuffle)</p>
+      <p class="muted">Fração trans-eixo (36%) está abaixo do aleatório (84%)</p>
+    </div>
+  </div>
+  <p class="quote" style="margin-top: 1.5em;">Mesmo no nível da lista de leitura individual, a estrutura é significativamente <strong>mais siloed</strong> que o aleatório. <strong>A convergência precisa ser construída.</strong></p>
+</section>
+
+<!-- 4 -->
+<section>
+  <h2>Onde NÃO estão as pontes</h2>
+  <p class="lead">Busca por <strong>obras-ponte</strong> via betweenness centrality + null configuration (1000 sorteios):</p>
+  <ul>
+    <li><strong>Nenhuma obra</strong> atinge significância como conector cross-axis no esqueleto par-a-par.</li>
+    <li>26 obras tocam ≥2 eixos por vocabulário, mas estruturalmente são <em>satélites</em>.</li>
+    <li>O par-a-par mostra silos rígidos. A convergência <strong>não está</strong> aqui.</li>
+  </ul>
+  <p class="quote" style="margin-top: 1.5em;">No hipergrafo, mesmo as 482 hiperarestas trans-eixo realizadas (de 1341) ainda estão abaixo do que o acaso produziria — sinal de silo é robusto na ordem superior.</p>
+</section>
+
+<!-- 5 -->
+<section>
+  <h2>Onde ESTÃO as pontes empíricas</h2>
+  <p class="lead">Coautoria sobre o corpus expandido <strong>(16.105 autores únicos)</strong>:</p>
+  <table>
+    <tr><th>#</th><th>Autor</th><th>Score</th><th>C</th><th>R</th><th>P</th><th>h</th><th>Vínculo</th></tr>
+    <tr><td>1</td><td>Domenico Mario Nuti</td><td>0.95</td><td>1</td><td>2</td><td>1</td><td>17</td><td>coautor de Lange — <em>Economic Cybernetics</em></td></tr>
+    <tr><td>2</td><td>Ángela Espinosa</td><td>0.78</td><td>10</td><td>3</td><td>2</td><td>19</td><td>colaboradora de Espejo — VSM/Cybersyn</td></tr>
+    <tr><td>4</td><td>Kenneth E. Boulding</td><td>0.60</td><td>5</td><td>0</td><td>3</td><td>59</td><td>economista cibernético (<em>Wholes and Parts</em>)</td></tr>
+    <tr><td>6</td><td>Peter John</td><td>0.41</td><td>0</td><td>10</td><td>2</td><td>56</td><td>coautor de Hood</td></tr>
+    <tr><td>7</td><td>Raúl Espejo</td><td>0.37</td><td>24</td><td>4</td><td>0</td><td>22</td><td>colaborador de Beer — Cybersyn</td></tr>
+  </table>
+  <p class="lead">Nomes que emergem = <strong>tradutores institucionais</strong> reais entre tradições.</p>
+</section>
+
+<!-- 6 -->
+<section>
+  <h2>Brokerage Gould-Fernandez — silo social 9:1</h2>
+  <p class="lead">Sobre o coauthor graph expandido (14.012 autores conectados, 271 com triplets):</p>
+  <table>
+    <tr><th>Papel G-F</th><th>Triplets</th><th>Lê-se</th></tr>
+    <tr><td><strong>coordinator</strong></td><td>5.806</td><td>intra-eixo (silo social)</td></tr>
+    <tr><td>gatekeeper</td><td>340</td><td>traz info para o grupo</td></tr>
+    <tr><td>representative</td><td>281</td><td>leva info para fora</td></tr>
+    <tr><td>liaison</td><td>12</td><td>entre 2 grupos externos</td></tr>
+    <tr><td>itinerant</td><td>13</td><td>através 3 grupos</td></tr>
+  </table>
+  <p class="quote" style="margin-top: 1em;">Razão <strong>9:1</strong> coordinator vs cross-axis. O silo é também social — confirma a tese de fora a fora. <em>Cross-brokers</em> raros: Costanza, Espejo, Cars Hommes, Florian Kern, Boulding.</p>
+</section>
+
+<!-- 7 -->
+<section>
+  <h2>Longue-durée — quando os silos se formaram</h2>
+  <p class="lead">Cocitação por década, snapshot cumulativo:</p>
+  <table>
+    <tr><th>Década</th><th>Intra-fração</th><th>Status histórico</th></tr>
+    <tr><td>1970s</td><td>74%</td><td>diálogo possível · Cybersyn (1971-73)</td></tr>
+    <tr><td>1980s</td><td><strong>83%</strong></td><td><strong>silo cristaliza</strong> · Beer <em>Heart of Enterprise</em> · Hood <em>Tools</em></td></tr>
+    <tr><td>1990s</td><td>89%</td><td>silo consolidado</td></tr>
+    <tr><td>2000s</td><td>94%</td><td>silo robusto · Rodrik reabre PolInd (sem diálogo)</td></tr>
+  </table>
+  <p class="quote" style="margin-top: 1em;">A cristalização do silo nos 1980s coincide com a <strong>ruptura institucional</strong> dos programas que poderiam tê-los unido (Cybersyn destruído). Os silos atuais são herdeiros de uma fragmentação histórica <strong>reparável</strong>.</p>
+</section>
+
+<!-- 8 -->
+<section>
+  <h2>Brasil + tradições adjacentes</h2>
+  <div class="grid2">
+    <div class="box">
+      <h3 style="font-size: 1em; color: var(--accent); margin: 0 0 0.4em;">Brasil (Faganello + snowball)</h3>
+      <ul style="font-size: 0.85em; margin: 0;">
+        <li><strong>73/73</strong> obras Faganello resolvidas em OA id</li>
+        <li>200 BR top-cited adicional via search</li>
+        <li>Top bridge: <em>Brazilian Industrial Policy</em> · 67 citantes ≥100</li>
+        <li>BNDES + Petrobras como cases (Almeida, Schneider)</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3 style="font-size: 1em; color: var(--accent); margin: 0 0 0.4em;">Adjacent (top-50 cited)</h3>
+      <ul style="font-size: 0.85em; margin: 0;">
+        <li>Polanyi · 3/50</li>
+        <li>Schumpeter · <strong>15/50</strong></li>
+        <li>Hirschman · 9/50</li>
+        <li>Complexity economics · 10/50</li>
+        <li>Governmentality · 3/50</li>
+      </ul>
+    </div>
+  </div>
+  <p class="quote" style="margin-top: 1em;">Adjacent traditions existem no corpus expandido (a ausência anterior era artefato). Próxima sondagem: incluir como <strong>sementes oficiais</strong> para testar se viram pontes materiais.</p>
+</section>
+
+<!-- 9 -->
+<section>
+  <h2>Pipeline SR — 206 obras, 14+ tags multinível</h2>
+  <p class="lead">A revisão sistemática <strong>triangula</strong> — cada métrica = uma tag em <code>data/rayyan_tags.json</code>.</p>
+  <table>
+    <tr><th>Tag</th><th>Critério</th><th>N</th></tr>
+    <tr><td><code>corpus Brasil (Faganello)</code></td><td>revisão BR</td><td>73</td></tr>
+    <tr><td><code>obra de autor-semente</code></td><td>snowball por autor</td><td>56</td></tr>
+    <tr><td><code>cibernética organizacional</code></td><td>vocab VSM/Beer</td><td>35</td></tr>
+    <tr><td><code>ponte a construir</code></td><td>top-25 prioridade</td><td>25</td></tr>
+    <tr><td><code>rajada de citação</code></td><td>Kleinberg top peso</td><td>19</td></tr>
+    <tr><td><code>higher_order_bridge</code></td><td>top-40 XGI cross-edges</td><td>16</td></tr>
+    <tr><td><code>obra-ponte</code></td><td>vocab ≥2 eixos</td><td>15</td></tr>
+    <tr><td><code>bela adormecida</code></td><td>coef. Ke</td><td>14</td></tr>
+    <tr><td><code>obra de autor-ponte</code></td><td>top-30 cross-axis</td><td>10</td></tr>
+    <tr><td><code>ponte de ordem superior</code></td><td>top-20 HO BC</td><td>8</td></tr>
+  </table>
+  <p class="muted" style="margin-top: 0.5em;">Auditável: <a href="dados/rayyan_tags.json" style="color: var(--accent);">data/rayyan_tags.json</a> · Saída: <code>docs/dados/rayyan_sintese.{ris,csv,bib,enw,zip}</code></p>
+</section>
+
+<!-- 10 -->
+<section>
+  <h2>Onde estamos · próximos passos</h2>
+  <p class="lead"><strong>Site em produção</strong>: <a href="index.html" style="color: var(--accent);">freirelucas.github.io/cibernetica-regula-o-politica-industrial</a></p>
+  <div class="grid2">
+    <div class="box">
+      <h3 style="font-size: 1em; color: var(--accent); margin: 0 0 0.4em;">Estabelecido</h3>
+      <ul style="font-size: 0.85em; margin: 0;">
+        <li>Silos significativos pairwise + ordem superior</li>
+        <li>Pontes humanas identificadas (5+ tradutores)</li>
+        <li>Silo cristalizou nos 1980s — reparável</li>
+        <li>206 candidatos com 14+ tags multinível</li>
+        <li>Reproduzível: cache + tests + CI + auto-deploy</li>
+      </ul>
+    </div>
+    <div class="box">
+      <h3 style="font-size: 1em; color: var(--accent); margin: 0 0 0.4em;">Próximos</h3>
+      <ul style="font-size: 0.85em; margin: 0;">
+        <li>SR efetiva no Rayyan pelos 3 pesquisadores</li>
+        <li>Classificador via OpenAlex concepts</li>
+        <li>Adjacent traditions como sementes oficiais</li>
+        <li>Paper teórico + nota IPEA (NIB 2023)</li>
+        <li>Aplicação ao desenho do NIB</li>
+      </ul>
+    </div>
+  </div>
+  <p class="quote" style="margin-top: 1em;">A convergência precisa ser construída. O IPEA pode ser o broker institucional — única instituição que opera nos 3 eixos simultaneamente.</p>
+  <p class="muted center" style="margin-top: 1em;">Obrigado · Q&amp;A</p>
+</section>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({ hash: true, controls: true, progress: true, history: true, slideNumber: 'c/t', transition: 'fade' });
+</script>
+</body>
+</html>
