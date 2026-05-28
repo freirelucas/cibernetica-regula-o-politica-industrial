@@ -1,0 +1,257 @@
+[
+ {
+  "author": "Friedrich A. von Hayek",
+  "oa_id": "A5010904858",
+  "axes": [
+   "complexidade",
+   "instrumentos de governo",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "The Use of Knowledge in Society",
+    "axis": "política industrial"
+   },
+   {
+    "label": "Collectivist Economic Planning.",
+    "axis": "instrumentos de governo"
+   },
+   {
+    "label": "Individualism and Economic Order",
+    "axis": "complexidade"
+   }
+  ]
+ },
+ {
+  "author": "Albert-Ĺaszló Barabási",
+  "oa_id": "A5038976962",
+  "axes": [
+   "complexidade",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "Emergence of Scaling in Random Networks",
+    "axis": "complexidade"
+   },
+   {
+    "label": "The Product Space Conditions the Development of Nations",
+    "axis": "política industrial"
+   }
+  ]
+ },
+ {
+  "author": "Armen A. Alchian",
+  "oa_id": "A5073172028",
+  "axes": [
+   "complexidade",
+   "instrumentos de governo"
+  ],
+  "works": [
+   {
+    "label": "Production, Information Costs and Economic Organization",
+    "axis": "instrumentos de governo"
+   },
+   {
+    "label": "Uncertainty, Evolution, and Economic Theory",
+    "axis": "complexidade"
+   }
+  ]
+ },
+ {
+  "author": "C. S. Holling",
+  "oa_id": "A5109276346",
+  "axes": [
+   "cibernética",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "Panarchy: Understanding Transformations in Human and Natural",
+    "axis": "política industrial"
+   },
+   {
+    "label": "Resilience and Stability of Ecological Systems",
+    "axis": "cibernética"
+   }
+  ]
+ },
+ {
+  "author": "Daniel A. Levinthal",
+  "oa_id": "A5030291124",
+  "axes": [
+   "cibernética",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "The myopia of learning",
+    "axis": "cibernética"
+   },
+   {
+    "label": "Absorptive Capacity: A New Perspective on Learning and Innov",
+    "axis": "política industrial"
+   }
+  ]
+ },
+ {
+  "author": "Francis Fukuyama",
+  "oa_id": "A5066976206",
+  "axes": [
+   "complexidade",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "The Complexity of Cooperation: Agent-Based Models of Competi",
+    "axis": "complexidade"
+   },
+   {
+    "label": "Capitalism, Socialism and Democracy",
+    "axis": "política industrial"
+   }
+  ]
+ },
+ {
+  "author": "Giovanni Dosi",
+  "oa_id": "A5060960665",
+  "axes": [
+   "complexidade",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "Technological paradigms and technological trajectories",
+    "axis": "política industrial"
+   },
+   {
+    "label": "Income Distribution, Credit and Fiscal Policies in an Agent-",
+    "axis": "complexidade"
+   },
+   {
+    "label": "Sources, Procedures, and Microeconomic Effects of Innovation",
+    "axis": "complexidade"
+   },
+   {
+    "label": "Fiscal and monetary policies in complex evolving economies",
+    "axis": "complexidade"
+   }
+  ]
+ },
+ {
+  "author": "James G. March",
+  "oa_id": "A5108337915",
+  "axes": [
+   "cibernética",
+   "instrumentos de governo"
+  ],
+  "works": [
+   {
+    "label": "The myopia of learning",
+    "axis": "cibernética"
+   },
+   {
+    "label": "Exploration and Exploitation in Organizational Learning",
+    "axis": "cibernética"
+   },
+   {
+    "label": "A Behavioral Theory of the Firm",
+    "axis": "instrumentos de governo"
+   },
+   {
+    "label": "A Garbage Can Model of Organizational Choice",
+    "axis": "instrumentos de governo"
+   }
+  ]
+ },
+ {
+  "author": "John H. Holland",
+  "oa_id": "A5071875770",
+  "axes": [
+   "cibernética",
+   "complexidade"
+  ],
+  "works": [
+   {
+    "label": "Adaptation in Natural and Artificial Systems",
+    "axis": "complexidade"
+   },
+   {
+    "label": "Hidden Order: How Adaptation Builds Complexity",
+    "axis": "cibernética"
+   }
+  ]
+ },
+ {
+  "author": "Mark Granovetter",
+  "oa_id": "A5035549347",
+  "axes": [
+   "complexidade",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "The Strength of Weak Ties",
+    "axis": "complexidade"
+   },
+   {
+    "label": "Economic Action and Social Structure: The Problem of Embedde",
+    "axis": "política industrial"
+   }
+  ]
+ },
+ {
+  "author": "Oskar Lange",
+  "oa_id": "A5108366788",
+  "axes": [
+   "cibernética",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "Lange · Wholes and Parts",
+    "axis": "cibernética"
+   },
+   {
+    "label": "Lange · Economic Theory of Socialism",
+    "axis": "política industrial"
+   }
+  ]
+ },
+ {
+  "author": "Richard R. Nelson",
+  "oa_id": "A5109805326",
+  "axes": [
+   "complexidade",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "National Innovation Systems: A Comparative Analysis",
+    "axis": "política industrial"
+   },
+   {
+    "label": "Nelson & Winter · Evolutionary Theory",
+    "axis": "complexidade"
+   }
+  ]
+ },
+ {
+  "author": "Ronald H. Coase",
+  "oa_id": "A5048382598",
+  "axes": [
+   "instrumentos de governo",
+   "política industrial"
+  ],
+  "works": [
+   {
+    "label": "The Problem of Social Cost",
+    "axis": "política industrial"
+   },
+   {
+    "label": "The Nature of the Firm",
+    "axis": "instrumentos de governo"
+   }
+  ]
+ }
+]
