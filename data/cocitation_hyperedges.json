@@ -1,0 +1,98 @@
+{
+ "n_citers": 671,
+ "n_edges": 467,
+ "n_cross_axis_edges": 187,
+ "mean_size": 5.54,
+ "top_higher_order_bridges": [
+  {
+   "oa_id": "W3130930004",
+   "label": "Lange · Economic Theory of Socialism",
+   "axis": "política industrial",
+   "cross_axis_hyperedges": 35
+  },
+  {
+   "oa_id": "W1553746973",
+   "label": "Mazzucato · Entrepreneurial State",
+   "axis": "política industrial",
+   "cross_axis_hyperedges": 29
+  },
+  {
+   "oa_id": "W1566478880",
+   "label": "Beer · Heart of Enterprise",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 28
+  },
+  {
+   "oa_id": "W1492856410",
+   "label": "Systems Thinking, Systems Practice",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 24
+  },
+  {
+   "oa_id": "W2048086870",
+   "label": "Beer · Brain of the Firm",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 24
+  },
+  {
+   "oa_id": "W2123755784",
+   "label": "Brain of the firm",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 20
+  },
+  {
+   "oa_id": "W2137358449",
+   "label": "Nelson & Winter · Evolutionary Theory",
+   "axis": "complexidade",
+   "cross_axis_hyperedges": 19
+  },
+  {
+   "oa_id": "W2015930340",
+   "label": "The Nature of the Firm",
+   "axis": "instrumentos de governo",
+   "cross_axis_hyperedges": 18
+  },
+  {
+   "oa_id": "W2154683088",
+   "label": "Beer · Diagnosing the System",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 18
+  },
+  {
+   "oa_id": "W67809301",
+   "label": "Challenging strategic planning assumptions",
+   "axis": "instrumentos de governo",
+   "cross_axis_hyperedges": 17
+  },
+  {
+   "oa_id": "W1601629960",
+   "label": "Hood · Tools of Government",
+   "axis": "instrumentos de governo",
+   "cross_axis_hyperedges": 17
+  },
+  {
+   "oa_id": "W3124879925",
+   "label": "Rodrik · Industrial Policy 21C",
+   "axis": "política industrial",
+   "cross_axis_hyperedges": 16
+  },
+  {
+   "oa_id": "W2312418354",
+   "label": "Collectivist Economic Planning.",
+   "axis": "instrumentos de governo",
+   "cross_axis_hyperedges": 16
+  },
+  {
+   "oa_id": "W90769783",
+   "label": "Creating the corporate future",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 15
+  },
+  {
+   "oa_id": "W1601944394",
+   "label": "The Systems Approach",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 14
+  }
+ ]
+}

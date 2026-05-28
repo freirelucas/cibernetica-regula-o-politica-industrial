@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (91 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (92 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -10,6 +10,7 @@ Registro de mudanças desta branch, agrupado por tema (91 commits de trabalho). 
 
 ## Triagem e exportação (Rayyan)
 
+- Cache OpenAlex: gzip por arquivo (consolidação antes de explodir a rede) · `3384468` · 2026-05-28
 - Triagem: curadoria mostra o conjunto de refs antes de exportar · `9ebf596` · 2026-05-27
 - Rayyan: zip determinístico (data fixa na entrada) · `ca94d3c` · 2026-05-27
 - README: declara o Objetivo do projeto (norte: diagnóstico, triagem, agenda) · `e12fc0d` · 2026-05-27
