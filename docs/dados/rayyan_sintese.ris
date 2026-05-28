@@ -984,8 +984,9 @@ KW  - eixo: Política industrial
 KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, rajada de citação
 ER  - 
 
 TY  - GEN
@@ -1255,8 +1256,9 @@ KW  - eixo: Política industrial
 KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, rajada de citação
 ER  - 
 
 TY  - JOUR
@@ -1270,7 +1272,8 @@ DO  - 10.1016/j.respol.2011.02.005
 UR  - https://openalex.org/W2127454860
 KW  - eixo: Instrumentos de governo
 KW  - papel: mais citada
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada, ponte a construir
 ER  - 
 
 TY  - BOOK
@@ -1283,8 +1286,9 @@ UR  - https://openalex.org/W582908774
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir, rajada de citação
 ER  - 
 
 TY  - GEN
@@ -1394,7 +1398,8 @@ UR  - https://openalex.org/W2050032417
 KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · modelagem baseada em agentes
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · modelagem baseada em agentes
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · modelagem baseada em agentes, ponte a construir
 ER  - 
 
 TY  - JOUR
@@ -1449,7 +1454,8 @@ KW  - eixo: Política industrial
 KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir
 ER  - 
 
 TY  - JOUR
@@ -1647,9 +1653,10 @@ KW  - eixo: Política industrial
 KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
+KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, ponte global×Brasil, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação
 ER  - 
 
 TY  - GEN
@@ -1845,7 +1852,8 @@ AB  - The software Viplan learning system is an aid to learn about Beer’s viab
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir
 ER  - 
 
 TY  - JOUR
@@ -1873,7 +1881,8 @@ AB  - A collection of seven essays that serves as an introductory text on comple
 KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · modelagem baseada em agentes
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · modelagem baseada em agentes
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · modelagem baseada em agentes, ponte a construir
 ER  - 
 
 TY  - JOUR
@@ -2004,7 +2013,8 @@ AB  - ISSUES FOR TODAY'S ORGANIZATIONS. Organization Structure. Transformation. 
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir
 ER  - 
 
 TY  - GEN
@@ -2054,7 +2064,8 @@ UR  - https://openalex.org/W2009202666
 KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · retornos crescentes / dependência de trajetória
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória, ponte a construir
 ER  - 
 
 TY  - BOOK
@@ -2140,7 +2151,8 @@ KW  - eixo: Cibernética
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, obra de autor-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, obra de autor-semente, ponte a construir
 ER  - 
 
 TY  - GEN
@@ -2208,7 +2220,8 @@ AB  - This paper examines the dynamics of allocation under increasing returns wi
 KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · retornos crescentes / dependência de trajetória
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória, ponte a construir
 ER  - 
 
 TY  - JOUR
@@ -2262,8 +2275,9 @@ KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente, ponte a construir, rajada de citação
 ER  - 
 
 TY  - JOUR
@@ -2279,7 +2293,8 @@ KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: mais citada
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, mais citada, obra de autor-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, mais citada, obra de autor-semente, ponte a construir
 ER  - 
 
 TY  - BOOK
@@ -2296,7 +2311,8 @@ KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente, ponte a construir
 ER  - 
 
 TY  - JOUR
@@ -2323,7 +2339,8 @@ AB  - Journal Article An Evolutionary Theory of Economic Change Get access An Ev
 KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · economia evolucionária
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · economia evolucionária
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · economia evolucionária, ponte a construir
 ER  - 
 
 TY  - BOOK
@@ -2357,8 +2374,9 @@ KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente, ponte a construir, rajada de citação
 ER  - 
 
 TY  - JOUR
@@ -2403,8 +2421,9 @@ KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra de autor-semente, obra-ponte, obra-semente, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, obra de autor-semente, obra-ponte, obra-semente, ponte a construir, rajada de citação
 ER  - 
 
 TY  - BOOK
@@ -2520,7 +2539,8 @@ AB  - Journal Article An Introduction to Cybernetics Get access An Introduction 
 KW  - eixo: Cibernética
 KW  - papel: cibernética (geral)
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra-semente, ponte a construir
 ER  - 
 
 TY  - JOUR
@@ -2533,7 +2553,8 @@ AB  - In recent years increasing need has been felt for a body of systematic the
 KW  - eixo: Cibernética
 KW  - papel: cibernética (geral)
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-semente, ponte a construir
 ER  - 
 
 TY  - BOOK
@@ -2586,8 +2607,9 @@ PY  - 1991
 DO  - 10.2307/2583669
 UR  - https://openalex.org/W2026948646
 AB  - The Emergence of Soft Systems Thinking. Soft Systems Methodology--the Whole. Soft Systems Methodology--the Parts. Soft Systems Methodology--the Whole Revisited. Soft Systems Methodology--the Context. Conclusion. Appendix. Bibliography. Indexes.
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: ponte a construir, rajada de citação
 ER  - 
 
 TY  - JOUR
@@ -2597,8 +2619,9 @@ AU  - Walker
 PY  - 2012
 DO  - 10.1016/j.ejor.2012.09.015
 UR  - https://openalex.org/W2165238389
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: ponte a construir, rajada de citação
 ER  - 
 
 TY  - BOOK
@@ -2630,8 +2653,9 @@ PY  - 1992
 DO  - 10.1057/jors.1992.153
 UR  - https://openalex.org/W1970428482
 AB  - In this brief chapter, I outline a methodology that can be used by those who wish to follow the philosophy and principles of critical systems thinking. This methodology is known as total systems intervention (TSI); it is dealt with at book length in Flood and Jackson (1991a). This account draws heavily on Chapter 3 of that book.
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: ponte a construir, rajada de citação
 ER  - 
 
 TY  - BOOK
@@ -2640,8 +2664,9 @@ AU  - Checkland
 PY  - 1981
 UR  - https://openalex.org/W1492856410
 AB  - Whether by design, accident or merely synchronicity, Checkland appears to have developed a habit of writing seminal publications near the start of each decade which establish the basis and framework for systems methodology research for that decade.ii Hamish Rennie, Journal of the Operational Research Society, 1992 Thirty years ago Peter Checkland set out to test whether the Systems Engineering (SE) approach, highly successful in technical problems, could be used by managers coping with the unfolding complexities of organizational life. The straightforward transfer of SE to the broader situations of management was not possible, but by insisting on a combination of systems thinking strongly linked to real-world practice Checkland and his collaborators developed an alternative approach - Soft Systems Methodology (SSM) - which enables managers of all kinds and at any level to deal with the subtleties and confusions of the situations they face. This work established the now accepted distinction between hard systems thinking, in which parts of the world are taken to be systems which can be engineered, and soft systems thinking in which the focus is on making sure the process of inquiry into real-world complexity is itself a system for learning. Systems Thinking, Systems Practice (1981) and Soft Systems Methodology in Action (1990) together with an earlier paper Towards a Systems-based Methodology for Real-World Problem Solving (1972) have long been recognized as classics in the field. Now Peter Checkland has looked back over the three decades of SSM development, brought the account of it up to date, and reflected on the whole evolutionary process which has produced a mature SSM. SSM: A 30-Year Retrospective, here included with Systems Thinking, Systems Practice closes a chapter on what is undoubtedly the most significant single research programme on the use of systems ideas in problem solving. Now retired from full-time university work, Peter Checkland continues his research as a Leverhulme Emeritus Fellow.
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: ponte a construir, rajada de citação
 ER  - 
 
 TY  - JOUR

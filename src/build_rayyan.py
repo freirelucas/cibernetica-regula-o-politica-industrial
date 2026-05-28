@@ -28,6 +28,7 @@ ENRICH = os.path.join(ROOT, "data", "openalex_enrich.json")
 CROSS = os.path.join(ROOT, "data", "cross_brasil.json")
 CPLX = os.path.join(ROOT, "data", "cplx_works.json")
 AUTHORS = os.path.join(ROOT, "data", "author_works.json")
+PRIORITY = os.path.join(ROOT, "data", "bridge_priority.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
 BRASIL_ROLE = "corpus Brasil (Faganello)"
@@ -208,6 +209,22 @@ def tag_cross(works):
     return works
 
 
+def tag_bridge_priority(works, n=25):
+    """Marca as N obras de maior PRIORIDADE DE PONTE (data/bridge_priority.json,
+    gerado por src/bridge_priority.py) com o papel 'ponte a construir' — os papers
+    a revisar em detalhe para construir as pontes entre os eixos."""
+    if not os.path.exists(PRIORITY):
+        return works
+    ranking = json.load(open(PRIORITY, encoding="utf-8")).get("ranking", [])
+    top = set(list(dict.fromkeys(r["oa_id"] for r in ranking
+                                 if r.get("oa_id") and r.get("score", 0) > 0))[:n])
+    for e in works:
+        m = re.search(r"openalex\.org/(W\d+)", e.get("url", "") or "")
+        if m and m.group(1) in top:
+            e["roles"].add("ponte a construir")
+    return works
+
+
 def dedup_oaid(works):
     """Funde obras que compartilham o mesmo id OpenAlex (variantes do mesmo trabalho:
     títulos truncados, com/sem subtítulo, 'The X'/'X'). Une eixos e papéis."""
@@ -355,9 +372,12 @@ def emit(works, out, stem):
 
 
 def build(out=DADOS):
-    works = tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate()))))
+    works = tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate())))))
     os.makedirs(out, exist_ok=True)
     emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
+    pontes = [e for e in works if "ponte a construir" in e["roles"]]   # opção E — a revisar p/ construir pontes
+    if pontes:
+        emit(pontes, out, "rayyan_pontes")
     cruz = [e for e in works if PONTE in e["roles"]]      # opção B — cruzamento (ponte por citação)
     if cruz:
         emit(cruz, out, "rayyan_cruzamento")

@@ -1,0 +1,5924 @@
+{
+ "weights": {
+  "ho": 0.4,
+  "reach": 0.3,
+  "cyb": 0.15,
+  "role": 0.15
+ },
+ "ranking": [
+  {
+   "oa_id": "W1566478880",
+   "title": "The Heart of Enterprise",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.845,
+   "ho": 28,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2048086870",
+   "title": "Brain of the Firm: The Managerial Cybernetics of Organization",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.7993,
+   "ho": 24,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W1553746973",
+   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.7064,
+   "ho": 29,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2137358449",
+   "title": "An Evolutionary Theory of Economic Change.",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.6671,
+   "ho": 19,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · economia evolucionária"
+   ]
+  },
+  {
+   "oa_id": "W2154683088",
+   "title": "Diagnosing the System for Organizations",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.6557,
+   "ho": 18,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W1492856410",
+   "title": "Systems Thinking, Systems Practice",
+   "axes": [],
+   "score": 0.5743,
+   "ho": 24,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2025177555",
+   "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.5414,
+   "ho": 8,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "mais citada",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W582908774",
+   "title": "Organizational Systems: Managing Complexity with the Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.5071,
+   "ho": 5,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2129261459",
+   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.5071,
+   "ho": 5,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
+   ]
+  },
+  {
+   "oa_id": "W2136083730",
+   "title": "The viable system model and the Viplan software",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.4843,
+   "ho": 3,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2009202666",
+   "title": "Increasing Returns and Path Dependence in the Economy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4843,
+   "ho": 3,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
+   ]
+  },
+  {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4829,
+   "ho": 16,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "ponte global×Brasil",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2026948646",
+   "title": "Soft Systems Methodology in Action",
+   "axes": [],
+   "score": 0.4371,
+   "ho": 12,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2126563689",
+   "title": "The Tools of Government in the Digital Age",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4257,
+   "ho": 11,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W1601629960",
+   "title": "The Tools of Government",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4193,
+   "ho": 17,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W2325487953",
+   "title": "An Introduction to Cybernetics",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.4143,
+   "ho": 10,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W1970428482",
+   "title": "Creative Problem Solving: Total Systems Intervention.",
+   "axes": [],
+   "score": 0.3914,
+   "ho": 8,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2098978150",
+   "title": "General Systems Theory—The Skeleton of Science",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3457,
+   "ho": 4,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4244612406",
+   "title": "Organizational Systems",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.3279,
+   "ho": 9,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W1501219137",
+   "title": "The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.3229,
+   "ho": 2,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
+   "oa_id": "W2165238389",
+   "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
+   "axes": [],
+   "score": 0.3229,
+   "ho": 2,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2127454860",
+   "title": "Reconceptualising the ‘policy mix’ for innovation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.2936,
+   "ho": 6,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W1983425281",
+   "title": "The Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.2479,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2050032417",
+   "title": "The economy needs agent-based modelling",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.2364,
+   "ho": 1,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
+   "oa_id": "W1530425941",
+   "title": "Organizational Transformation and Learning: A Cybernetic Approach to Management",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.2364,
+   "ho": 1,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2147111138",
+   "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.2186,
+   "ho": 6,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
+   ]
+  },
+  {
+   "oa_id": "W2120106358",
+   "title": "Economic development as self-discovery",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.1957,
+   "ho": 4,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4368376507",
+   "title": "Europe first? The rise of EU industrial policy promoting and protecting the single market",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  {
+   "oa_id": "W4388622472",
+   "title": "Governing the net-zero transition: Strategy, policy, and politics",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  {
+   "oa_id": "W3183746153",
+   "title": "Perspectivas de uma Nova agenda de Política Industrial: os Desafios da Indústria Brasileira no Pós-Pandemia da Covid-19",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W3003667836",
+   "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W3004438298",
+   "title": "Institutions and industrial policy in Brazil after two decades: have we built the needed institutions?",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W3097131333",
+   "title": "An agenda for ontological cybernetics and social responsibility",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W3048027481",
+   "title": "The enterprise complexity model: An extension of the viable system model for emerging organizational forms",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2996541402",
+   "title": "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2998208130",
+   "title": "Challenge-Driven Innovation Policy: Towards a New Policy Toolkit",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  {
+   "oa_id": "W2895014065",
+   "title": "The World System and the Hollowing Out of State Capacity: How Structural Adjustment Programs Affect Bureaucratic Quality in Developing Countries",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  {
+   "oa_id": "W2789614065",
+   "title": "The case for reindustrialisation in developing countries: towards the connection between the macroeconomic regime and the industrial policy in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W2756082066",
+   "title": "Regional industrial policy in the wind energy sector: The case of the State of Rio Grande do Sul, Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W2337187807",
+   "title": "Catching up and Falling behind: An Appraisal of Brazilian Industrial Policy in the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W2265337851",
+   "title": "Cybernetics of Value Cocreation for Product Development",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2159305436",
+   "title": "Industrial policy and the creation of new industries: evidence from Brazil's bioethanol industry",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W183842712",
+   "title": "Cybernetics of Governance: The Cybersyn Project 1971–1973",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2138571544",
+   "title": "Modern regional innovation policy",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  {
+   "oa_id": "W1842827659",
+   "title": "International Industrial Policy Experiences and the Lessons for the UK",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  {
+   "oa_id": "W2003318188",
+   "title": "Política industrial e desenvolvimento",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W2272963762",
+   "title": "Industrial policy and development",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W1968707856",
+   "title": "What is cybernetics?",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2123741655",
+   "title": "From industrial policy to regional and local locational policy: experience from Santa Catarina/Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W1988229579",
+   "title": "Integrated performance measurement systems: a development guide",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2353090867",
+   "title": "The Viable System Model as a Framework for Understanding Organizations",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4302602650",
+   "title": "Beyond Dispute: The Invention of Team Syntegrity.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4246626855",
+   "title": "Organisational Fitness: Corporate Effectiveness Through Management Cybernetics.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2921753315",
+   "title": "The viable system model: interpretations of Stafford Beer's VSM",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4237835702",
+   "title": "The Viable System Model: Interpretations and Applications of Stafford Beer's VSM",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2037415231",
+   "title": "Complexity and change: Reflections upon the cybernetic intervention in Chile, 1970?1973",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2051514829",
+   "title": "Information and Management: the Cybernetics of a Small Company",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2802703918",
+   "title": "Platform for Change",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2110081675",
+   "title": "Brain of the Firm: A Development in Management Cybernetics.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4241223750",
+   "title": "Engineering Cybernetics",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2011221427",
+   "title": "Decision and Control: The Meaning of Operational Research and Management Cybernetics.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2795994081",
+   "title": "Cybernetics and Management.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2005481417",
+   "title": "What has Cybernetics to do with Operational Research?",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2111030512",
+   "title": "An Introduction to Cybernetics",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética (geral)",
+    "obra de autor-semente",
+    "obra-ponte",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W3126441471",
+   "title": "The Human Use of Human Beings: Cybernetics and Society",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W1916207017",
+   "title": "Autopoiesis and Cognition: The Realization of the Living",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.1207,
+   "ho": 4,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética (geral)",
+    "mais citada",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2082088739",
+   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
+   "axes": [],
+   "score": 0.1207,
+   "ho": 4,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2127617481",
+   "title": "Instruments of Government: Perceptions and Contexts",
+   "axes": [],
+   "score": 0.1093,
+   "ho": 3,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida"
+   ]
+  },
+  {
+   "oa_id": "W2057748843",
+   "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0979,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2080554996",
+   "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0979,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2134758682",
+   "title": "Behavioral Assumptions of Policy Tools",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0979,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W148613442",
+   "title": "Design and diagnosis for sustainable organizations : the viable system method",
+   "axes": [],
+   "score": 0.0864,
+   "ho": 1,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2101174956",
+   "title": "Income Distribution, Credit and Fiscal Policies in an Agent-Based Keynesian Model",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.075,
+   "ho": 0,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
+   "oa_id": "W1545138734",
+   "title": "Handbook of Computational Economics, Volume 2: Agent-Based Computational Economics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.075,
+   "ho": 0,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
+   "oa_id": "W1522372289",
+   "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.075,
+   "ho": 0,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
+   "oa_id": "W4386803846",
+   "title": "How rediscovering nodality can improve democratic governance in a digital world",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W4400658330",
+   "title": "Políticas industriales para revertir la desindustrialización prematura de la economía brasileña: una agenda para la discusión de políticas",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "A Nova política industrial brasileira e seu alinhamento às tendências globais",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W4323038246",
+   "title": "Política industrial: bases teórico-analíticas em perspectiva",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W4327732822",
+   "title": "Industrial policy matters: the co-evolution of economic structure, trade, and FDI in Brazil and Mexico, 2000–2015",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W4387025480",
+   "title": "Data science, artificial intelligence and the third wave of digital era governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4379525313",
+   "title": "Feasible Financial Innovation Under Market Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4312049928",
+   "title": "Government political-relational capacities and industrial policy profile: Brazil’s experience at the beginning of the 21st Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W4226076751",
+   "title": "Rethinking AI for Good Governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W3149911297",
+   "title": "The Political Economy of Brazilian Industrial Policy (2003 - 2014): Main Vectors, Shortcomings and Directions to Improve Effectiveness*",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W4394487893",
+   "title": "Industrial policy: theory and practice in Brazil and in the OECD countries",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W3038709602",
+   "title": "Mobilizing Policy (In)Capacity to Fight COVID-19: Understanding Variations in State Responses",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2997402048",
+   "title": "Rebirth of Industrial Policy and an Agenda for the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W4394424577",
+   "title": "Antagonism, modernism, and inertia: the Brazilian regulatory policy in three acts",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W3125415848",
+   "title": "Some Causal Effects of an Industrial Policy",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2923828223",
+   "title": "Innovation policy in Brazil since 2003 : Advances, incoherencies, and discontinuities",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W3154644541",
+   "title": "Industrial upgrade, economic catch-up and industrial policy in Brazil: general trends and the specific case of the mining industry",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2982057586",
+   "title": "Brazilian Regulatory Framework: From the Past to the Expectations About the Future",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2973815216",
+   "title": "Contribuição à crítica da política industrial no brasil entre 2004 e 2014",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2948699754",
+   "title": "O papel das Políticas Públicas na promoção de infraestrutura a Distritos Industriais para geração de Empregos / The role of Public Policies in the promotion of infrastructure to Industrial Districts for the generation of Jobs",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2996085990",
+   "title": "What Washington Means by Policy Reform",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2791808130",
+   "title": "Smart specialization policy in the European Union: relatedness, knowledge complexity and regional diversification",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "O processo de industrialização e as políticas industriais no brasil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Estado e desenvolvimento: as políticas industriais brasileiras (2003-2014)",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2902795424",
+   "title": "O Brasil no novo milênio: regulação, progresso técnico e novo desenvolvimentismo",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2898359964",
+   "title": "O setor industrial brasileiro frente à integração econômica",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W4250027192",
+   "title": "Introduction",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1905823147",
+   "title": "Asset Pricing Under Endogenous Expectations in an Artificial Stock Market",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W4230870409",
+   "title": "Natural Rationality",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1521966682",
+   "title": "Statistical Mechanics Approaches to Socioeconomic Behavior",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W4231397303",
+   "title": "Is What Is Good For Each Best For All? Learning From Others In The Information Contagion Model",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W4251529684",
+   "title": "Evolution of Trading Structures",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1527555409",
+   "title": "Foresight, Complexity, and Strategy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1531922412",
+   "title": "The Emergence of Simple Ecologies of Skill: A Hypercycle Approach to Economic Organization",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1487841157",
+   "title": "Some Fundamental Puzzles in Economic History/Development",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1584351242",
+   "title": "How the Economy Organizes Itself in Space: A Survey of the New Economic Geography",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1504860304",
+   "title": "Time and Money",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W4249640825",
+   "title": "Promises Promises",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W3207028280",
+   "title": "Macroeconomics and Complexity",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1495494612",
+   "title": "Evolutionary Dynamics in Game-Theoretic Models",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1489891708",
+   "title": "Identification of Anonymous Endogenous Interactions",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1518017987",
+   "title": "Asset Price Behavior In Complex Environments",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W4230147377",
+   "title": "Population Games",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1584959115",
+   "title": "Computational Political Economy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W3168857647",
+   "title": "The Economy as an Interactive System",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W1919092021",
+   "title": "How Economists Can Get ALife",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W3034369434",
+   "title": "Some Thoughts about Distribution in Economics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  {
+   "oa_id": "W2767035529",
+   "title": "Industrial policy and local content: Brazil's pre-salt area case",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2783369335",
+   "title": "Industrial policy in Argentina, Brazil, Chile and Mexico: A comparative approach",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Diseño de un modelo de red de valor para la gestión Integrada del sector petróleo en Colombia",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2363378650",
+   "title": "Policy mixes for sustainability transitions: An extended concept and framework for analysis",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2623693150",
+   "title": "Indústria Farmacêutica no Brasil: Evolução Histórica, Capacitação Competitiva e Políticas Industriais",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2588628362",
+   "title": "A política industrial brasileira recente e as estratégias de inovação do setor moveleiro da região oeste de Santa Catarina",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2497130148",
+   "title": "Antagonismo, modernismo e inércia: a política regulatória brasileira em três atos",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2467499421",
+   "title": "O enigma da política industrial no Brasil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2285337107",
+   "title": "The Institutional and External Factors Behind the Switch of a Country's Economic Growth Strategy. The Case of the Brazilian Economic Policy",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Política industrial no Brasil: uma análise das estratégias propostas na experiência recente (2003-2014)",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2270868360",
+   "title": "Design principles for essentially digital governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Política industrial e empresas estatais no Brasil: BNDES e Petrobras",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W312455259",
+   "title": "Where is Brazil going? Taking stock of recent trends in industrial and trade policies and the challenges ahead",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Smart Specialization, Regional Growth and Applications to European Union Cohesion Pol",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2047016160",
+   "title": "The choice of innovation policy instruments",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2136615848",
+   "title": "Health policy as industrial policy: Brazil in comparative perspective",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2765226143",
+   "title": "Environmental Regulation and Automotive Industrial Policies in Brazil: The Case of INOVAR-AUTO",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2132134298",
+   "title": "The Efficiency of Industrial Policy in 21st Century? The Case of Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "A recente política industrial brasileira: da “política de desenvolvimento produtivo” ao “plano brasil maior”",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W1993166762",
+   "title": "The second wave of digital-era governance: a quasi-paradigm for government on the Web",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2391060152",
+   "title": "The return of industrial policy in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2472656716",
+   "title": "Comments on “New Thinking on Industrial Policy: Country Case Studies of Successful and Unsuccessful Industrial Policies — The Return of Industrial Policy in Brazil”",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "ARTIGO / ARTICLE A industrialização no estado do Maranhão: uma análise do plano estratégico de desenvolvimento industrial",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "A industrialização no estado do Maranhão: uma análise do plano estratégico de desenvolvimento industrial",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2153465427",
+   "title": "Fear for manufacturing? China and the future of industry in Brazil and Latin America",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Política industrial e tecnológica no Brasil: uma investigação dos determinantes das escolhas políticas.",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W1611317321",
+   "title": "Carving Out Policy Autonomy for Developing Countries in the World Trade Organization: The Experience of Brazil and Mexico",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W1577375906",
+   "title": "Trade, Foreign Investment, and Industrial Policy for Developing Countries*",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W1578729938",
+   "title": "The second wave of digital era governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Desafios da real política industrial brasileira do século XXI",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Retomando o Debate: A Nova Política Industrial do Governo Lula",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Recente política industrial brasileira",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2131562731",
+   "title": "Industrial Policy: Don’t Ask Why, Ask How",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2103271327",
+   "title": "Digital Era Governance: IT Corporations, the State, and e-Government",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W301774265",
+   "title": "Normalizing Industrial Policy",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrange",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": "W2113964908",
+   "title": "Is There a Case for Industrial Policy? A Critical Survey",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Políticas nacionales y la profundización del MERCOSUR: el impacto de las políticas de competitividad",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Novos arranjos institucionais na renovação da política industrial brasileira",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W1912632531",
+   "title": "Brazilian new patterns of an industrial, technological and foreign trade policy.",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2506954441",
+   "title": "Digital Era Governance:",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2500251709",
+   "title": "Transparency and Digital Government",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2138646760",
+   "title": "Governing from the Centre? Comparing the Nodality of Digital Governments",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2117334181",
+   "title": "DOOMED TO CHOOSE: INDUSTRIAL POLICY AS PREDICAMENT",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Política industrial e tecnológica e desenvolvimento",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W1528587144",
+   "title": "Competitividad industrial en Brasil 10 años después de la liberalización",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2612935693",
+   "title": "Industrial and technological policy and development",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Competitividad industrial en Brasil 10 años después de la liberalización (pdf 587 kb)João Carlos Ferraz, David Kupfer y Mariana Iootty",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2037980183",
+   "title": "Making and remaking “good government” in Brazil: Subnational industrial policy in Minas Gerais",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W34927365",
+   "title": "Giving Requisite Variety to Strategic and Implementation Processes: Theory and Practice 1",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2008978319",
+   "title": "The Europeanisation of Sub-national Governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2162790888",
+   "title": "The Impact of Investment Funds on Corporate Governance in Mass Privatization Schemes: Czech Republic, Poland and Slovenia",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W1936722473",
+   "title": "From Industry Protection to Industry Promotion: IT Policy in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2152289404",
+   "title": "El papel de la política industrial en los procesos de integración subregional: el caso de Argentina y Brasil en el Mercosur.",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2124267344",
+   "title": "Political leadership in the new urban governance: Britain and France compared",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2130676853",
+   "title": "Urban Regimes and Local Governance in Britain and France",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Política industrial: teoria e prática no Brasil e na OCDE",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2002071978",
+   "title": "New patterns of governance for industrial change: perspectives for Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2495767131",
+   "title": "Employeeism: Corporate Governance and Employee Share Ownership in Transitional Economies",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W180828614",
+   "title": "El desafío competitivo para la industria brasileña",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "A experiência recente da política industrial no Brasil: uma avaliação",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Experiência histórica de política industrial no Brasil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2315979637",
+   "title": "Industrial policy, sectoral maturation, and postwar economic growth in Brazil: The resource curse thesis",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W587568002",
+   "title": "Economic Theory and Market Socialism: Selected Essays of Oskar Lange",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2065506938",
+   "title": "Politics within the State: Elite Bureaucrats and Industrial Policy in Authoritarian Brazil.",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2991167753",
+   "title": "Market socialism: the model that might have been but never was",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "The Viable System Model: Interpretations and Applications of Staf",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Embodiments of organizational fitness: The Viable System Model (V",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Reestructuración industrial en Colombia",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2037187536",
+   "title": "Perestroika: Transition from Central Planning to Market Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2264615100",
+   "title": "Financial innovation under market socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W3035410188",
+   "title": "General Systems Theory",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2788353952",
+   "title": "Industrial Policy in the Field of Informatics in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Decision and Control: The Meaning of Operational Research and Man",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida"
+   ]
+  },
+  {
+   "oa_id": "W2065758324",
+   "title": "Self-Organizing Systems",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W595334711",
+   "title": "General systems : yearbook of the Society for General Systems Research",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2132852401",
+   "title": "Using the Viable System Model (VSM) to structure information processing complexity in disaster response",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W1968893806",
+   "title": "Intelligent organizations: an integrative framework",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Industrial policy as an effective development tool: Lessons from Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": null,
+   "title": "Brazilian Industrial Policy: A Cluster Analysis of the Challenges Facing the National Industry and Policies Adopted from 2004 to 2018",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2772320953",
+   "title": "The New Brazilian Anti-Dumping Regulation: A Balance of the First Years",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  }
+ ],
+ "by_oa_id": {
+  "W1566478880": {
+   "oa_id": "W1566478880",
+   "title": "The Heart of Enterprise",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.845,
+   "ho": 28,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  "W2048086870": {
+   "oa_id": "W2048086870",
+   "title": "Brain of the Firm: The Managerial Cybernetics of Organization",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.7993,
+   "ho": 24,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  "W1553746973": {
+   "oa_id": "W1553746973",
+   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.7064,
+   "ho": 29,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  "W2137358449": {
+   "oa_id": "W2137358449",
+   "title": "An Evolutionary Theory of Economic Change.",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.6671,
+   "ho": 19,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · economia evolucionária"
+   ]
+  },
+  "W2154683088": {
+   "oa_id": "W2154683088",
+   "title": "Diagnosing the System for Organizations",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.6557,
+   "ho": 18,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  "W1492856410": {
+   "oa_id": "W1492856410",
+   "title": "Systems Thinking, Systems Practice",
+   "axes": [],
+   "score": 0.5743,
+   "ho": 24,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2025177555": {
+   "oa_id": "W2025177555",
+   "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.5414,
+   "ho": 8,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "mais citada",
+    "obra de autor-semente"
+   ]
+  },
+  "W582908774": {
+   "oa_id": "W582908774",
+   "title": "Organizational Systems: Managing Complexity with the Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.5071,
+   "ho": 5,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "rajada de citação"
+   ]
+  },
+  "W2129261459": {
+   "oa_id": "W2129261459",
+   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.5071,
+   "ho": 5,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
+   ]
+  },
+  "W2136083730": {
+   "oa_id": "W2136083730",
+   "title": "The viable system model and the Viplan software",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.4843,
+   "ho": 3,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2009202666": {
+   "oa_id": "W2009202666",
+   "title": "Increasing Returns and Path Dependence in the Economy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4843,
+   "ho": 3,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
+   ]
+  },
+  "W3124879925": {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4829,
+   "ho": 16,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "ponte global×Brasil",
+    "rajada de citação"
+   ]
+  },
+  "W2026948646": {
+   "oa_id": "W2026948646",
+   "title": "Soft Systems Methodology in Action",
+   "axes": [],
+   "score": 0.4371,
+   "ho": 12,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2126563689": {
+   "oa_id": "W2126563689",
+   "title": "The Tools of Government in the Digital Age",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4257,
+   "ho": 11,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente"
+   ]
+  },
+  "W1601629960": {
+   "oa_id": "W1601629960",
+   "title": "The Tools of Government",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4193,
+   "ho": 17,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente"
+   ]
+  },
+  "W2325487953": {
+   "oa_id": "W2325487953",
+   "title": "An Introduction to Cybernetics",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.4143,
+   "ho": 10,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra-semente"
+   ]
+  },
+  "W1970428482": {
+   "oa_id": "W1970428482",
+   "title": "Creative Problem Solving: Total Systems Intervention.",
+   "axes": [],
+   "score": 0.3914,
+   "ho": 8,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2098978150": {
+   "oa_id": "W2098978150",
+   "title": "General Systems Theory—The Skeleton of Science",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3457,
+   "ho": 4,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  "W4244612406": {
+   "oa_id": "W4244612406",
+   "title": "Organizational Systems",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.3279,
+   "ho": 9,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "rajada de citação"
+   ]
+  },
+  "W1501219137": {
+   "oa_id": "W1501219137",
+   "title": "The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.3229,
+   "ho": 2,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  "W2165238389": {
+   "oa_id": "W2165238389",
+   "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
+   "axes": [],
+   "score": 0.3229,
+   "ho": 2,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2127454860": {
+   "oa_id": "W2127454860",
+   "title": "Reconceptualising the ‘policy mix’ for innovation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.2936,
+   "ho": 6,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W1983425281": {
+   "oa_id": "W1983425281",
+   "title": "The Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.2479,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2050032417": {
+   "oa_id": "W2050032417",
+   "title": "The economy needs agent-based modelling",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.2364,
+   "ho": 1,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  "W1530425941": {
+   "oa_id": "W1530425941",
+   "title": "Organizational Transformation and Learning: A Cybernetic Approach to Management",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.2364,
+   "ho": 1,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2147111138": {
+   "oa_id": "W2147111138",
+   "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.2186,
+   "ho": 6,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
+   ]
+  },
+  "W2120106358": {
+   "oa_id": "W2120106358",
+   "title": "Economic development as self-discovery",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.1957,
+   "ho": 4,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W4368376507": {
+   "oa_id": "W4368376507",
+   "title": "Europe first? The rise of EU industrial policy promoting and protecting the single market",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  "W4388622472": {
+   "oa_id": "W4388622472",
+   "title": "Governing the net-zero transition: Strategy, policy, and politics",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  "W3183746153": {
+   "oa_id": "W3183746153",
+   "title": "Perspectivas de uma Nova agenda de Política Industrial: os Desafios da Indústria Brasileira no Pós-Pandemia da Covid-19",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W3003667836": {
+   "oa_id": "W3003667836",
+   "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "mais citada"
+   ]
+  },
+  "W3004438298": {
+   "oa_id": "W3004438298",
+   "title": "Institutions and industrial policy in Brazil after two decades: have we built the needed institutions?",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W3097131333": {
+   "oa_id": "W3097131333",
+   "title": "An agenda for ontological cybernetics and social responsibility",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W3048027481": {
+   "oa_id": "W3048027481",
+   "title": "The enterprise complexity model: An extension of the viable system model for emerging organizational forms",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2996541402": {
+   "oa_id": "W2996541402",
+   "title": "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "mais citada"
+   ]
+  },
+  "W2998208130": {
+   "oa_id": "W2998208130",
+   "title": "Challenge-Driven Innovation Policy: Towards a New Policy Toolkit",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  "W2895014065": {
+   "oa_id": "W2895014065",
+   "title": "The World System and the Hollowing Out of State Capacity: How Structural Adjustment Programs Affect Bureaucratic Quality in Developing Countries",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  "W2789614065": {
+   "oa_id": "W2789614065",
+   "title": "The case for reindustrialisation in developing countries: towards the connection between the macroeconomic regime and the industrial policy in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W2756082066": {
+   "oa_id": "W2756082066",
+   "title": "Regional industrial policy in the wind energy sector: The case of the State of Rio Grande do Sul, Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W2337187807": {
+   "oa_id": "W2337187807",
+   "title": "Catching up and Falling behind: An Appraisal of Brazilian Industrial Policy in the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W2265337851": {
+   "oa_id": "W2265337851",
+   "title": "Cybernetics of Value Cocreation for Product Development",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2159305436": {
+   "oa_id": "W2159305436",
+   "title": "Industrial policy and the creation of new industries: evidence from Brazil's bioethanol industry",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W183842712": {
+   "oa_id": "W183842712",
+   "title": "Cybernetics of Governance: The Cybersyn Project 1971–1973",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2138571544": {
+   "oa_id": "W2138571544",
+   "title": "Modern regional innovation policy",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  "W1842827659": {
+   "oa_id": "W1842827659",
+   "title": "International Industrial Policy Experiences and the Lessons for the UK",
+   "axes": [
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "obra-ponte"
+   ]
+  },
+  "W2003318188": {
+   "oa_id": "W2003318188",
+   "title": "Política industrial e desenvolvimento",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W2272963762": {
+   "oa_id": "W2272963762",
+   "title": "Industrial policy and development",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W1968707856": {
+   "oa_id": "W1968707856",
+   "title": "What is cybernetics?",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2123741655": {
+   "oa_id": "W2123741655",
+   "title": "From industrial policy to regional and local locational policy: experience from Santa Catarina/Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "corpus Brasil (Faganello)",
+    "ponte global×Brasil"
+   ]
+  },
+  "W1988229579": {
+   "oa_id": "W1988229579",
+   "title": "Integrated performance measurement systems: a development guide",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "mais citada"
+   ]
+  },
+  "W2353090867": {
+   "oa_id": "W2353090867",
+   "title": "The Viable System Model as a Framework for Understanding Organizations",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W4302602650": {
+   "oa_id": "W4302602650",
+   "title": "Beyond Dispute: The Invention of Team Syntegrity.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W4246626855": {
+   "oa_id": "W4246626855",
+   "title": "Organisational Fitness: Corporate Effectiveness Through Management Cybernetics.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2921753315": {
+   "oa_id": "W2921753315",
+   "title": "The viable system model: interpretations of Stafford Beer's VSM",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W4237835702": {
+   "oa_id": "W4237835702",
+   "title": "The Viable System Model: Interpretations and Applications of Stafford Beer's VSM",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2037415231": {
+   "oa_id": "W2037415231",
+   "title": "Complexity and change: Reflections upon the cybernetic intervention in Chile, 1970?1973",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2051514829": {
+   "oa_id": "W2051514829",
+   "title": "Information and Management: the Cybernetics of a Small Company",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2802703918": {
+   "oa_id": "W2802703918",
+   "title": "Platform for Change",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2110081675": {
+   "oa_id": "W2110081675",
+   "title": "Brain of the Firm: A Development in Management Cybernetics.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W4241223750": {
+   "oa_id": "W4241223750",
+   "title": "Engineering Cybernetics",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2011221427": {
+   "oa_id": "W2011221427",
+   "title": "Decision and Control: The Meaning of Operational Research and Management Cybernetics.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2795994081": {
+   "oa_id": "W2795994081",
+   "title": "Cybernetics and Management.",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2005481417": {
+   "oa_id": "W2005481417",
+   "title": "What has Cybernetics to do with Operational Research?",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W2111030512": {
+   "oa_id": "W2111030512",
+   "title": "An Introduction to Cybernetics",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética (geral)",
+    "obra de autor-semente",
+    "obra-ponte",
+    "rajada de citação"
+   ]
+  },
+  "W3126441471": {
+   "oa_id": "W3126441471",
+   "title": "The Human Use of Human Beings: Cybernetics and Society",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente"
+   ]
+  },
+  "W1916207017": {
+   "oa_id": "W1916207017",
+   "title": "Autopoiesis and Cognition: The Realization of the Living",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.1207,
+   "ho": 4,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética (geral)",
+    "mais citada",
+    "obra de autor-semente"
+   ]
+  },
+  "W2082088739": {
+   "oa_id": "W2082088739",
+   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
+   "axes": [],
+   "score": 0.1207,
+   "ho": 4,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2127617481": {
+   "oa_id": "W2127617481",
+   "title": "Instruments of Government: Perceptions and Contexts",
+   "axes": [],
+   "score": 0.1093,
+   "ho": 3,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida"
+   ]
+  },
+  "W2057748843": {
+   "oa_id": "W2057748843",
+   "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0979,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
+  "W2080554996": {
+   "oa_id": "W2080554996",
+   "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0979,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
+  "W2134758682": {
+   "oa_id": "W2134758682",
+   "title": "Behavioral Assumptions of Policy Tools",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0979,
+   "ho": 2,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W148613442": {
+   "oa_id": "W148613442",
+   "title": "Design and diagnosis for sustainable organizations : the viable system method",
+   "axes": [],
+   "score": 0.0864,
+   "ho": 1,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2101174956": {
+   "oa_id": "W2101174956",
+   "title": "Income Distribution, Credit and Fiscal Policies in an Agent-Based Keynesian Model",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.075,
+   "ho": 0,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  "W1545138734": {
+   "oa_id": "W1545138734",
+   "title": "Handbook of Computational Economics, Volume 2: Agent-Based Computational Economics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.075,
+   "ho": 0,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  "W1522372289": {
+   "oa_id": "W1522372289",
+   "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.075,
+   "ho": 0,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  "W4386803846": {
+   "oa_id": "W4386803846",
+   "title": "How rediscovering nodality can improve democratic governance in a digital world",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
+  "W4400658330": {
+   "oa_id": "W4400658330",
+   "title": "Políticas industriales para revertir la desindustrialización prematura de la economía brasileña: una agenda para la discusión de políticas",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W4323038246": {
+   "oa_id": "W4323038246",
+   "title": "Política industrial: bases teórico-analíticas em perspectiva",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W4327732822": {
+   "oa_id": "W4327732822",
+   "title": "Industrial policy matters: the co-evolution of economic structure, trade, and FDI in Brazil and Mexico, 2000–2015",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W4387025480": {
+   "oa_id": "W4387025480",
+   "title": "Data science, artificial intelligence and the third wave of digital era governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W4379525313": {
+   "oa_id": "W4379525313",
+   "title": "Feasible Financial Innovation Under Market Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W4312049928": {
+   "oa_id": "W4312049928",
+   "title": "Government political-relational capacities and industrial policy profile: Brazil’s experience at the beginning of the 21st Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W4226076751": {
+   "oa_id": "W4226076751",
+   "title": "Rethinking AI for Good Governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W3149911297": {
+   "oa_id": "W3149911297",
+   "title": "The Political Economy of Brazilian Industrial Policy (2003 - 2014): Main Vectors, Shortcomings and Directions to Improve Effectiveness*",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W4394487893": {
+   "oa_id": "W4394487893",
+   "title": "Industrial policy: theory and practice in Brazil and in the OECD countries",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W3038709602": {
+   "oa_id": "W3038709602",
+   "title": "Mobilizing Policy (In)Capacity to Fight COVID-19: Understanding Variations in State Responses",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W2997402048": {
+   "oa_id": "W2997402048",
+   "title": "Rebirth of Industrial Policy and an Agenda for the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "obra de autor-semente"
+   ]
+  },
+  "W4394424577": {
+   "oa_id": "W4394424577",
+   "title": "Antagonism, modernism, and inertia: the Brazilian regulatory policy in three acts",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W3125415848": {
+   "oa_id": "W3125415848",
+   "title": "Some Causal Effects of an Industrial Policy",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W2923828223": {
+   "oa_id": "W2923828223",
+   "title": "Innovation policy in Brazil since 2003 : Advances, incoherencies, and discontinuities",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W3154644541": {
+   "oa_id": "W3154644541",
+   "title": "Industrial upgrade, economic catch-up and industrial policy in Brazil: general trends and the specific case of the mining industry",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2982057586": {
+   "oa_id": "W2982057586",
+   "title": "Brazilian Regulatory Framework: From the Past to the Expectations About the Future",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2973815216": {
+   "oa_id": "W2973815216",
+   "title": "Contribuição à crítica da política industrial no brasil entre 2004 e 2014",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2948699754": {
+   "oa_id": "W2948699754",
+   "title": "O papel das Políticas Públicas na promoção de infraestrutura a Distritos Industriais para geração de Empregos / The role of Public Policies in the promotion of infrastructure to Industrial Districts for the generation of Jobs",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2996085990": {
+   "oa_id": "W2996085990",
+   "title": "What Washington Means by Policy Reform",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W2791808130": {
+   "oa_id": "W2791808130",
+   "title": "Smart specialization policy in the European Union: relatedness, knowledge complexity and regional diversification",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W2902795424": {
+   "oa_id": "W2902795424",
+   "title": "O Brasil no novo milênio: regulação, progresso técnico e novo desenvolvimentismo",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2898359964": {
+   "oa_id": "W2898359964",
+   "title": "O setor industrial brasileiro frente à integração econômica",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W4250027192": {
+   "oa_id": "W4250027192",
+   "title": "Introduction",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1905823147": {
+   "oa_id": "W1905823147",
+   "title": "Asset Pricing Under Endogenous Expectations in an Artificial Stock Market",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W4230870409": {
+   "oa_id": "W4230870409",
+   "title": "Natural Rationality",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1521966682": {
+   "oa_id": "W1521966682",
+   "title": "Statistical Mechanics Approaches to Socioeconomic Behavior",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W4231397303": {
+   "oa_id": "W4231397303",
+   "title": "Is What Is Good For Each Best For All? Learning From Others In The Information Contagion Model",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W4251529684": {
+   "oa_id": "W4251529684",
+   "title": "Evolution of Trading Structures",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1527555409": {
+   "oa_id": "W1527555409",
+   "title": "Foresight, Complexity, and Strategy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1531922412": {
+   "oa_id": "W1531922412",
+   "title": "The Emergence of Simple Ecologies of Skill: A Hypercycle Approach to Economic Organization",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1487841157": {
+   "oa_id": "W1487841157",
+   "title": "Some Fundamental Puzzles in Economic History/Development",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1584351242": {
+   "oa_id": "W1584351242",
+   "title": "How the Economy Organizes Itself in Space: A Survey of the New Economic Geography",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1504860304": {
+   "oa_id": "W1504860304",
+   "title": "Time and Money",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W4249640825": {
+   "oa_id": "W4249640825",
+   "title": "Promises Promises",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W3207028280": {
+   "oa_id": "W3207028280",
+   "title": "Macroeconomics and Complexity",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1495494612": {
+   "oa_id": "W1495494612",
+   "title": "Evolutionary Dynamics in Game-Theoretic Models",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1489891708": {
+   "oa_id": "W1489891708",
+   "title": "Identification of Anonymous Endogenous Interactions",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1518017987": {
+   "oa_id": "W1518017987",
+   "title": "Asset Price Behavior In Complex Environments",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W4230147377": {
+   "oa_id": "W4230147377",
+   "title": "Population Games",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1584959115": {
+   "oa_id": "W1584959115",
+   "title": "Computational Political Economy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W3168857647": {
+   "oa_id": "W3168857647",
+   "title": "The Economy as an Interactive System",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W1919092021": {
+   "oa_id": "W1919092021",
+   "title": "How Economists Can Get ALife",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W3034369434": {
+   "oa_id": "W3034369434",
+   "title": "Some Thoughts about Distribution in Economics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+   ]
+  },
+  "W2767035529": {
+   "oa_id": "W2767035529",
+   "title": "Industrial policy and local content: Brazil's pre-salt area case",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2783369335": {
+   "oa_id": "W2783369335",
+   "title": "Industrial policy in Argentina, Brazil, Chile and Mexico: A comparative approach",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2363378650": {
+   "oa_id": "W2363378650",
+   "title": "Policy mixes for sustainability transitions: An extended concept and framework for analysis",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
+  "W2623693150": {
+   "oa_id": "W2623693150",
+   "title": "Indústria Farmacêutica no Brasil: Evolução Histórica, Capacitação Competitiva e Políticas Industriais",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2588628362": {
+   "oa_id": "W2588628362",
+   "title": "A política industrial brasileira recente e as estratégias de inovação do setor moveleiro da região oeste de Santa Catarina",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2497130148": {
+   "oa_id": "W2497130148",
+   "title": "Antagonismo, modernismo e inércia: a política regulatória brasileira em três atos",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2467499421": {
+   "oa_id": "W2467499421",
+   "title": "O enigma da política industrial no Brasil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2285337107": {
+   "oa_id": "W2285337107",
+   "title": "The Institutional and External Factors Behind the Switch of a Country's Economic Growth Strategy. The Case of the Brazilian Economic Policy",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2270868360": {
+   "oa_id": "W2270868360",
+   "title": "Design principles for essentially digital governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W312455259": {
+   "oa_id": "W312455259",
+   "title": "Where is Brazil going? Taking stock of recent trends in industrial and trade policies and the challenges ahead",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2047016160": {
+   "oa_id": "W2047016160",
+   "title": "The choice of innovation policy instruments",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W2136615848": {
+   "oa_id": "W2136615848",
+   "title": "Health policy as industrial policy: Brazil in comparative perspective",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2765226143": {
+   "oa_id": "W2765226143",
+   "title": "Environmental Regulation and Automotive Industrial Policies in Brazil: The Case of INOVAR-AUTO",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2132134298": {
+   "oa_id": "W2132134298",
+   "title": "The Efficiency of Industrial Policy in 21st Century? The Case of Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W1993166762": {
+   "oa_id": "W1993166762",
+   "title": "The second wave of digital-era governance: a quasi-paradigm for government on the Web",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2391060152": {
+   "oa_id": "W2391060152",
+   "title": "The return of industrial policy in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2472656716": {
+   "oa_id": "W2472656716",
+   "title": "Comments on “New Thinking on Industrial Policy: Country Case Studies of Successful and Unsuccessful Industrial Policies — The Return of Industrial Policy in Brazil”",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2153465427": {
+   "oa_id": "W2153465427",
+   "title": "Fear for manufacturing? China and the future of industry in Brazil and Latin America",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W1611317321": {
+   "oa_id": "W1611317321",
+   "title": "Carving Out Policy Autonomy for Developing Countries in the World Trade Organization: The Experience of Brazil and Mexico",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W1577375906": {
+   "oa_id": "W1577375906",
+   "title": "Trade, Foreign Investment, and Industrial Policy for Developing Countries*",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W1578729938": {
+   "oa_id": "W1578729938",
+   "title": "The second wave of digital era governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2131562731": {
+   "oa_id": "W2131562731",
+   "title": "Industrial Policy: Don’t Ask Why, Ask How",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2103271327": {
+   "oa_id": "W2103271327",
+   "title": "Digital Era Governance: IT Corporations, the State, and e-Government",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W301774265": {
+   "oa_id": "W301774265",
+   "title": "Normalizing Industrial Policy",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2113964908": {
+   "oa_id": "W2113964908",
+   "title": "Is There a Case for Industrial Policy? A Critical Survey",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W1912632531": {
+   "oa_id": "W1912632531",
+   "title": "Brazilian new patterns of an industrial, technological and foreign trade policy.",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2506954441": {
+   "oa_id": "W2506954441",
+   "title": "Digital Era Governance:",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2500251709": {
+   "oa_id": "W2500251709",
+   "title": "Transparency and Digital Government",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2138646760": {
+   "oa_id": "W2138646760",
+   "title": "Governing from the Centre? Comparing the Nodality of Digital Governments",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2117334181": {
+   "oa_id": "W2117334181",
+   "title": "DOOMED TO CHOOSE: INDUSTRIAL POLICY AS PREDICAMENT",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W1528587144": {
+   "oa_id": "W1528587144",
+   "title": "Competitividad industrial en Brasil 10 años después de la liberalización",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2612935693": {
+   "oa_id": "W2612935693",
+   "title": "Industrial and technological policy and development",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2037980183": {
+   "oa_id": "W2037980183",
+   "title": "Making and remaking “good government” in Brazil: Subnational industrial policy in Minas Gerais",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W34927365": {
+   "oa_id": "W34927365",
+   "title": "Giving Requisite Variety to Strategic and Implementation Processes: Theory and Practice 1",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  "W2008978319": {
+   "oa_id": "W2008978319",
+   "title": "The Europeanisation of Sub-national Governance",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2162790888": {
+   "oa_id": "W2162790888",
+   "title": "The Impact of Investment Funds on Corporate Governance in Mass Privatization Schemes: Czech Republic, Poland and Slovenia",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W1936722473": {
+   "oa_id": "W1936722473",
+   "title": "From Industry Protection to Industry Promotion: IT Policy in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2152289404": {
+   "oa_id": "W2152289404",
+   "title": "El papel de la política industrial en los procesos de integración subregional: el caso de Argentina y Brasil en el Mercosur.",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2124267344": {
+   "oa_id": "W2124267344",
+   "title": "Political leadership in the new urban governance: Britain and France compared",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2130676853": {
+   "oa_id": "W2130676853",
+   "title": "Urban Regimes and Local Governance in Britain and France",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2002071978": {
+   "oa_id": "W2002071978",
+   "title": "New patterns of governance for industrial change: perspectives for Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2495767131": {
+   "oa_id": "W2495767131",
+   "title": "Employeeism: Corporate Governance and Employee Share Ownership in Transitional Economies",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W180828614": {
+   "oa_id": "W180828614",
+   "title": "El desafío competitivo para la industria brasileña",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2315979637": {
+   "oa_id": "W2315979637",
+   "title": "Industrial policy, sectoral maturation, and postwar economic growth in Brazil: The resource curse thesis",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W587568002": {
+   "oa_id": "W587568002",
+   "title": "Economic Theory and Market Socialism: Selected Essays of Oskar Lange",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2065506938": {
+   "oa_id": "W2065506938",
+   "title": "Politics within the State: Elite Bureaucrats and Industrial Policy in Authoritarian Brazil.",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2991167753": {
+   "oa_id": "W2991167753",
+   "title": "Market socialism: the model that might have been but never was",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2037187536": {
+   "oa_id": "W2037187536",
+   "title": "Perestroika: Transition from Central Planning to Market Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W2264615100": {
+   "oa_id": "W2264615100",
+   "title": "Financial innovation under market socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W3035410188": {
+   "oa_id": "W3035410188",
+   "title": "General Systems Theory",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  "W2788353952": {
+   "oa_id": "W2788353952",
+   "title": "Industrial Policy in the Field of Informatics in Brazil",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2065758324": {
+   "oa_id": "W2065758324",
+   "title": "Self-Organizing Systems",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  "W595334711": {
+   "oa_id": "W595334711",
+   "title": "General systems : yearbook of the Society for General Systems Research",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente"
+   ]
+  },
+  "W2132852401": {
+   "oa_id": "W2132852401",
+   "title": "Using the Viable System Model (VSM) to structure information processing complexity in disaster response",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W1968893806": {
+   "oa_id": "W1968893806",
+   "title": "Intelligent organizations: an integrative framework",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2772320953": {
+   "oa_id": "W2772320953",
+   "title": "The New Brazilian Anti-Dumping Regulation: A Balance of the First Years",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "corpus Brasil (Faganello)"
+   ]
+  }
+ }
+}

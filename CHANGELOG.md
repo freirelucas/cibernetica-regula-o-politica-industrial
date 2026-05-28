@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (92 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (95 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -67,6 +67,7 @@ Registro de mudanças desta branch, agrupado por tema (92 commits de trabalho). 
 
 ## Funil, dados e reprodutibilidade
 
+- run-scisci-ipea: atualiza a skill (219 nós, 203 cartões, 26 testes, cache + crawls) · `12ef075` · 2026-05-28
 - Versiona o raw das consultas OpenAlex (data/oa_cache) + skill /oa-cache · `0556215` · 2026-05-28
 - Cache de consultas OpenAlex + desdobra EECS-II + corrige fillcolor do Plotly · `7b1c993` · 2026-05-28
 - EECS-II: resolvedor por DOI determinístico (10.1201/9780429496639-N) · `ead3fea` · 2026-05-27
@@ -109,6 +110,7 @@ Registro de mudanças desta branch, agrupado por tema (92 commits de trabalho). 
 
 ## Infraestrutura, testes e ferramentas
 
+- Prioridade de ponte: métrica única que adapta Emma/XGI ao objetivo · `fcdacc2` · 2026-05-28
 - CHANGELOG: regenera após a skill (inclui o próprio commit) · `a021925` · 2026-05-27
 - Adiciona a skill /changelog e gera o CHANGELOG por tema · `b84f0b7` · 2026-05-27
 - Atualiza a skill run-scisci-ipea (3 páginas + pipeline atual) · `292cc60` · 2026-05-27
@@ -117,6 +119,7 @@ Registro de mudanças desta branch, agrupado por tema (92 commits de trabalho). 
 
 ## Outros
 
+- Ordem superior (XGI): cocitação como hipergrafo — 40% dos grupos cruzam eixos · `fac51da` · 2026-05-28
 - Pivô Zajdela: o silo é social — só ~5% dos autores atravessam eixos · `a9f1e7a` · 2026-05-28
 - Pruning: remove nós-agregados de periódico (hubs falsos) · `d962761` · 2026-05-27
 - changelog: hook de pre-commit (automático, árvore limpa) · `a181304` · 2026-05-27
