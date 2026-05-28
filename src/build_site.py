@@ -251,6 +251,31 @@ def build_meta(R):
     }
 
 
+def inject_hypergraph_numbers(html):
+    """Injeta números vivos de data/cocitation_hyperedges.json no template.
+    Permite reescalar o crawl (CITERS_PER_SEED) sem editar o HTML — tokens XGI_*
+    são substituídos pelos valores do último run do hipergrafo. Tokens cobertos:
+    XGI_N_CITERS, XGI_N_EDGES, XGI_N_CROSS, XGI_PCT_CROSS, XGI_Z, XGI_NULL_MEAN_PCT,
+    XGI_NULL_ITER."""
+    H_PATH = os.path.join(ROOT, "data", "cocitation_hyperedges.json")
+    if not os.path.exists(H_PATH):
+        return html
+    H = json.load(open(H_PATH, encoding="utf-8"))
+    null = H.get("null_model", {})
+    subs = {
+        "XGI_N_CITERS": str(H.get("n_citers", "?")),
+        "XGI_N_EDGES":  str(H.get("n_edges", "?")),
+        "XGI_N_CROSS":  str(H.get("n_cross_axis_edges", "?")),
+        "XGI_PCT_CROSS": f"{(H.get('n_cross_axis_edges', 0)/max(H.get('n_edges',1),1))*100:.0f}",
+        "XGI_Z":        f"{null.get('z', 0):.0f}",
+        "XGI_NULL_MEAN_PCT": f"{null.get('null_mean', 0)*100:.0f}",
+        "XGI_NULL_ITER": str(null.get("n_iter", "?")),
+    }
+    for tok, val in subs.items():
+        html = html.replace(tok, val)
+    return html
+
+
 def explorer_network():
     """Rede do explorador: a versão ampliada (network_exploded.json) anotada com a
     comunidade detectada (CNM), o coeficiente de participação e o papel de Guimerà-Amaral."""
@@ -311,6 +336,7 @@ def main():
     js = base + f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
     js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
+    html = inject_hypergraph_numbers(html)           # XGI_* tokens ← data/cocitation_hyperedges.json
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)

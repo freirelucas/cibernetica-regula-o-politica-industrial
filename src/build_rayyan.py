@@ -44,7 +44,8 @@ AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Pol
 # para o trio de triadores. Esta é a "arquitetura de tagging multinível" da §4 do
 # plano de avaliação — fácil de auditar e estender.
 # ============================================================
-MIN_CROSS_AXIS_EDGES = 3       # tag higher_order_bridge: ≥N hiperarestas trans-eixo (XGI)
+MIN_CROSS_AXIS_EDGES = int(os.environ.get("MIN_CROSS_AXIS_EDGES", "10"))  # floor p/ higher_order_bridge (XGI)
+TOP_N_HIGHER_ORDER  = int(os.environ.get("TOP_N_HIGHER_ORDER", "40"))     # cap rank-based (scale-invariant)
 MIN_AXES_COVERED = 2           # tag obra-ponte: ≥N eixos por vocabulário
 N_BRIDGE_PRIORITY = 25         # tag ponte a construir: top-N por bridge_priority
 
@@ -73,7 +74,7 @@ CRITERIA = {
             "data/cross_brasil.json · src/cross_brasil.py"),
     "ponte a construir": (f"Top-{N_BRIDGE_PRIORITY} por prioridade de ponte (CB + comunidade)",
                           "data/bridge_priority.json · src/bridge_priority.py"),
-    "higher_order_bridge": (f"Aparece em ≥{MIN_CROSS_AXIS_EDGES} hiperarestas trans-eixo (XGI; Landry, 2023)",
+    "higher_order_bridge": (f"Top {TOP_N_HIGHER_ORDER} obras com ≥{MIN_CROSS_AXIS_EDGES} hiperarestas trans-eixo (XGI; Landry, 2023)",
                             "data/cocitation_hyperedges.json · src/cocitation_hypergraph.py"),
 }
 
@@ -85,6 +86,7 @@ def write_manifest(out_path=TAGS_MANIFEST):
         "tags": {t: {"description": d, "source": s} for t, (d, s) in CRITERIA.items()},
         "thresholds": {
             "MIN_CROSS_AXIS_EDGES": MIN_CROSS_AXIS_EDGES,
+            "TOP_N_HIGHER_ORDER": TOP_N_HIGHER_ORDER,
             "MIN_AXES_COVERED": MIN_AXES_COVERED,
             "N_BRIDGE_PRIORITY": N_BRIDGE_PRIORITY,
         },
@@ -287,22 +289,27 @@ def tag_bridge_priority(works, n=N_BRIDGE_PRIORITY):
 
 
 def tag_higher_order_bridge(works):
-    """Marca obras que aparecem em ≥MIN_CROSS_AXIS_EDGES hiperarestas trans-eixo.
-    As hiperarestas (cada bibliografia citante é uma hiperaresta sobre o núcleo cocitado)
-    vêm de `src/cocitation_hypergraph.py` (XGI; Landry, 2023). É a tag que materializa
-    o caminho de ordem superior — a convergência que a projeção par-a-par esconde."""
+    """Marca top-TOP_N_HIGHER_ORDER obras (com ≥MIN_CROSS_AXIS_EDGES no floor) em hiperarestas trans-eixo.
+    Rank-based para ser scale-invariant: ao aumentar CITERS_PER_SEED no crawl, o cap top-N
+    mantém o conjunto curado em tamanho gerenciável (vs. threshold-only que explode com a escala).
+    Hiperarestas em `src/cocitation_hypergraph.py` (XGI; Landry, 2023)."""
     if not os.path.exists(HYPEREDGES):
         return works
     H = json.load(open(HYPEREDGES, encoding="utf-8"))
     cross_deg = H.get("cross_axis_degree", {})
+    # selecionar top-N ids elegíveis (≥MIN no floor) — scale-invariant
+    eligible = sorted(
+        ((oid, n) for oid, n in cross_deg.items() if n >= MIN_CROSS_AXIS_EDGES),
+        key=lambda x: -x[1])[:TOP_N_HIGHER_ORDER]
+    top_ids = {oid: n for oid, n in eligible}
     for e in works:
         m = re.search(r"openalex\.org/(W\d+)", e.get("url", "") or "")
         oid = e.get("oa_id") or (m.group(1) if m else None)
-        n_cross = cross_deg.get(oid, 0) if oid else 0
-        if n_cross >= MIN_CROSS_AXIS_EDGES:
+        n_cross = top_ids.get(oid)
+        if n_cross is not None:
             e["roles"].add("higher_order_bridge")
             e.setdefault("rationale", {})["higher_order_bridge"] = (
-                f"{n_cross} hiperarestas trans-eixo (XGI)")
+                f"top-{TOP_N_HIGHER_ORDER} em hiperarestas trans-eixo: {n_cross} (XGI)")
     return works
 
 

@@ -49,12 +49,13 @@
       "source": "data/bridge_priority.json · src/bridge_priority.py"
     },
     "higher_order_bridge": {
-      "description": "Aparece em ≥3 hiperarestas trans-eixo (XGI; Landry, 2023)",
+      "description": "Top 40 obras com ≥10 hiperarestas trans-eixo (XGI; Landry, 2023)",
       "source": "data/cocitation_hyperedges.json · src/cocitation_hypergraph.py"
     }
   },
   "thresholds": {
-    "MIN_CROSS_AXIS_EDGES": 3,
+    "MIN_CROSS_AXIS_EDGES": 10,
+    "TOP_N_HIGHER_ORDER": 40,
     "MIN_AXES_COVERED": 2,
     "N_BRIDGE_PRIORITY": 25
   }
