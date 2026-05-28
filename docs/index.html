@@ -353,6 +353,7 @@ pre.code{max-width:100%}
   <div class="prose">
     <p class="lead">Este estudo mapeia a estrutura intelectual da interseção entre três tradições intelectuais que raramente dialogam de forma explícita: a <strong>cibernética organizacional</strong> (o controle e a viabilidade de sistemas complexos), os <strong>instrumentos de governo e a regulação</strong> (os meios pelos quais o Estado atua sobre a sociedade) e a <strong>política industrial</strong> (a ação deliberada do Estado sobre a estrutura produtiva).</p>
     <p>A partir de dez obras-semente canônicas, aplicou-se amostragem por bola de neve sobre a base bibliográfica aberta OpenAlex, reunindo um corpus de centenas de trabalhos. Sobre esse corpus, calcularam-se redes de cocitação e de acoplamento bibliográfico, agrupamentos de comunidades, centralidade de intermediação, rajadas de citação e o coeficiente de beleza — um conjunto de medidas que, em conjunto, revela onde o campo se concentra, onde ele se fragmenta e quais obras funcionam como pontos de passagem entre as tradições.</p>
+    <p><strong>Achado central</strong> &nbsp;—&nbsp; as três tradições formam <em>silos reais</em> de citação: modularidade Q&nbsp;≈&nbsp;0,59 contra ≈&nbsp;0 no acaso (z&nbsp;≈&nbsp;80 num modelo nulo de configuração) e <strong>nenhuma obra é conector significativo</strong> entre as comunidades. A convergência postulada <strong>não é latente</strong> na estrutura de citação — precisa ser <em>construída</em>. É o que organiza o relato (ver <a href="#pontes">zonas de intercâmbio</a>) e a agenda proposta na <a href="#sintese">síntese</a>.</p>
     <p>Ao mapeamento bibliométrico global soma-se uma <strong>revisão da literatura brasileira</strong> (ver <a href="#brasil">o caso brasileiro</a>), que situa as três tradições na trajetória nacional de regulação, política industrial e governança de tecnologias. Trabalho colaborativo de Bruno Queiroz, Lucas Freire e Claucia Faganello.</p>
     <p class="kw"><b>Palavras-chave:</b> cienciometria; cibernética organizacional; instrumentos de governo; política industrial; análise de cocitação; acoplamento bibliográfico; estrutura intelectual.</p>
     <div class="abstract-en">
@@ -477,7 +478,7 @@ pre.code{max-width:100%}
     </ul>
     Ou seja: o que é estatisticamente excepcional é a <strong>separação</strong>, não a ponte. A convergência entre cibernética, instrumentos de governo e política industrial <strong>não está latente</strong> na estrutura de citação — precisa ser <em>construída</em>. É o argumento central do trabalho, agora com teste de significância. <span style="color:var(--muted)">Reproduzível em <code>src/bridges_higher_order.py</code>.</span></div>
   <div class="callout"><strong>O silo é social, não só de citação.</strong> Levando a pergunta ao nível do <em>autor</em> — a unidade fiel da formação de colaboração (Zajdela et al., 2022) —, dos <strong>266 autores</strong> do núcleo ampliado apenas <strong>13 (~5%) atravessam eixos</strong>, e são os de sempre: Nelson, Dosi e Holland (evolucionária/complexidade), March (Carnegie), Granovetter e Coase (instituições e laços), Holling (gestão adaptativa), Lange (cibernética econômica). A separação se repete na autoria, não só na citação — a convergência não emerge espontaneamente; precisa de <strong>interação prescrita</strong>, a alavanca do Estado/IPEA (convocar, não esperar). <span style="color:var(--muted)">Coautoria entre eixos em <code>src/coauthorship.py</code>.</span></div>
-  <div class="callout"><strong>Ordem superior — a convergência aparece nas listas de leitura.</strong> A rede de pares é uma projeção; a estrutura real é de <em>hipergrafo</em> — cada bibliografia citante é uma <strong>hiperaresta</strong> (as obras do núcleo citadas <em>juntas</em>). Recuperadas <strong>467 hiperarestas</strong> de 671 citantes (XGI; Landry, 2023), <strong>40% abarcam ≥2 eixos</strong> — bem mais convergência no nível da <em>lista de leitura individual</em> do que o esqueleto par-a-par revela. As obras que mais ancoram grupos trans-eixo são as próprias sementes e os elos evolucionários/institucionais — Lange, Mazzucato, Beer, Nelson&nbsp;&amp;&nbsp;Winter, Coase, Hood, Rodrik. Coerente com a tese: a convergência já é <em>ensaiada</em> por leitores individuais; falta consolidá-la — interação prescrita. <span style="color:var(--muted)">Hipergrafo em <code>src/cocitation_hypergraph.py</code>.</span></div>
+  <div class="callout"><strong>Ordem superior — os silos persistem (e ficam mais fortes que o acaso).</strong> A rede de pares é uma projeção; a estrutura real é de <em>hipergrafo</em> — cada bibliografia citante é uma <strong>hiperaresta</strong> (as obras do núcleo citadas <em>juntas</em>). Recuperadas <strong>467 hiperarestas</strong> de 671 citantes (XGI; Landry, 2023), <strong>40% abarcam ≥2 eixos</strong>: é a convergência <em>realizada</em> nas listas de leitura individuais — <strong>187 hiperarestas trans-eixo</strong> em termos absolutos. Mas o <strong>modelo nulo de configuração</strong> (stub-shuffle preservando degrees + sizes; 60 sorteios) coloca esses 40% <strong>muito abaixo</strong> dos ~86% esperados ao acaso — <strong>z ≈ −29</strong>. Ou seja: também no nível das listas de leitura, a estrutura é <em>significativamente mais siloed</em> do que seria se as bibliografias misturassem nós aleatoriamente. O par-a-par mostra os silos; o hipergrafo confirma que eles vão até o ato individual de citar. As obras que mais ancoram as 187 hiperarestas trans-eixo realizadas são as próprias sementes e os elos evolucionários/institucionais — Lange, Mazzucato, Beer, Nelson&nbsp;&amp;&nbsp;Winter, Coase, Hood, Rodrik —, candidatos naturais para a <em>interação prescrita</em> (Zajdela et al., 2022): a convergência não emerge espontaneamente nem mesmo nas leituras individuais; precisa ser <em>construída</em>. <span style="color:var(--muted)">Hipergrafo em <code>src/cocitation_hypergraph.py</code> · null em <code>data/cocitation_hyperedges.json:null_model</code>.</span></div>
   <div class="callout"><strong>Sondagem do 4º eixo — a economia da complexidade seria a ponte?</strong> Inspirados no <em>The Economy as an Evolving Complex System IV</em> (SFI Press), testamos a economia da complexidade (Arthur, Nelson &amp; Winter, Farmer &amp; Foley) como um quarto eixo: refizemos a bola de neve com essas sementes (219 obras, 4 eixos). Ela de fato <strong>cocita os três eixos</strong> (política industrial 47, regulação 24, cibernética 20) e ocupa posição transversal — mas, no modelo nulo, <strong>nenhuma obra de complexidade é conector significativo</strong> (participação no nível do acaso; Nelson &amp; Winter sai até provincial). Veredito honesto: a economia da complexidade é o <em>lugar natural</em> para construir a convergência — a única tradição que toca as três —, porém ainda <strong>não uma ponte realizada</strong> na estrutura de citação. Coerente com o achado central. A rede dos 4 eixos está no <a href="explorador.html">explorador</a> e na <a href="#dados">central de dados</a>. <span style="color:var(--muted)">Sondagem em <code>src/experiment_cplx.py</code>.</span></div>
   <div class="callout"><strong>Os caminhos potenciais — por onde a convergência se construiria.</strong> Se as pontes não existem como conectores significativos, a pergunta construtiva é <em>por onde</em> as quatro comunidades se tocam e quais obras estão na encruzilhada. Mapeando as cocitações que cruzam comunidades e as obras cuja vizinhança alcança os quatro eixos, a resposta é nítida e convergente: quase todas as rotas passam pela <strong>teoria evolucionária e de capacidades da firma</strong> — Penrose (<em>The Theory of the Growth of the Firm</em>), Nelson &amp; Winter, Teece (<em>capacidades dinâmicas</em>), Arthur (<em>retornos crescentes</em>), March (<em>exploração × explotação</em>), Cohen &amp; Levinthal (<em>capacidade absortiva</em>), David (<em>path dependence</em>), a <em>visão baseada em recursos</em> e os <em>sistemas de inovação</em>. É a imagem da <strong>firma como um sistema de capacidades que evolui</strong> que liga a cibernética organizacional (sistema viável, aprendizado), os instrumentos de governo (recursos e competências), a política industrial (construção de capacidades) e a economia da complexidade (evolução, retornos crescentes). <strong>Esse é o material concreto da convergência</strong> — não uma ponte já citada entre os eixos, mas o solo comum onde construí-la. <span style="color:var(--muted)">Descoberta em <code>src/paths_between.py</code>.</span></div>
 </div></section>
@@ -494,7 +495,7 @@ pre.code{max-width:100%}
 <!-- 07 · REDE DO NÚCLEO INTELECTUAL -->
 <section id="rede" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">07</span><h2 class="sec-title">Rede de cocitação do núcleo</h2><span class="sec-method">cocitação · bola de neve das 13 obras-semente</span></div>
-  <div class="prose"><p>Rede de <strong>cocitação</strong> reconstruída a partir de uma bola de neve das treze obras-semente: recuperam-se os trabalhos que as citam (cerca de 590) e, das suas listas de referência, tomam-se as obras <strong>mais cocitadas</strong> — duas obras ligam-se quando aparecem juntas na bibliografia de um mesmo trabalho, e a espessura da linha conta quantas vezes isso ocorre. É a estrutura que o próprio campo desenha ao citar: a cor indica o eixo (atribuído pelo vocabulário do título e dos tópicos); o tamanho do nó, o total de citações. <em>Arraste</em> os nós para reorganizar; <em>clique</em> para abrir a obra no OpenAlex.</p></div>
+  <div class="prose"><p>Rede de <strong>cocitação</strong> reconstruída a partir de uma bola de neve das <strong>treze obras-semente</strong> <span style="color:var(--muted)">(as dez canônicas mais três obras de Lange — <em>Introduction to Economic Cybernetics</em>, <em>Wholes and Parts</em>, <em>On the Economic Theory of Socialism</em> — incluídas para captar a recepção compartimentada da cibernética econômica; ver §14)</span>: recuperam-se os trabalhos que as citam (cerca de 590) e, das suas listas de referência, tomam-se as obras <strong>mais cocitadas</strong> — duas obras ligam-se quando aparecem juntas na bibliografia de um mesmo trabalho, e a espessura da linha conta quantas vezes isso ocorre. É a estrutura que o próprio campo desenha ao citar: a cor indica o eixo (atribuído pelo vocabulário do título e dos tópicos); o tamanho do nó, o total de citações. <em>Arraste</em> os nós para reorganizar; <em>clique</em> para abrir a obra no OpenAlex.</p></div>
   <div style="position:relative">
     <div class="chart-wrap" id="net-wrap" style="height:520px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><canvas id="netcanvas" role="img" aria-label="Rede de cocitação do núcleo intelectual do campo">Visualização de rede (requer JavaScript). Os dados estão em dados/network.json.</canvas></div>
     <div id="net-tip" class="net-tip"></div>
@@ -519,14 +520,14 @@ pre.code{max-width:100%}
   <div class="callout" id="pivotal-callout" style="margin-top:1.5rem"></div>
 </div></section>
 
-<!-- 08 · BELAS ADORMECIDAS -->
+<!-- 09 · BELAS ADORMECIDAS -->
 <section id="adormecidas" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">09</span><h2 class="sec-title">Belas adormecidas</h2><span class="sec-method">coeficiente de beleza · Ke et al. (2015)</span></div>
   <div class="prose"><p>Obras de longa hibernação seguida de despertar abrupto. O coeficiente <em>B</em> mede a intensidade desse despertar; <em>t<sub>m</sub></em> é o número de anos até o pico de citações. <em>Brain of the Firm</em> (Beer, 1972) dormiu 41 anos antes de despertar; a <em>Introdução à Cibernética</em> (Ashby, 1956) esperou quase sete décadas para ser redescoberta pela literatura de governança digital.</p></div>
   <div id="list-beauties"></div>
 </div></section>
 
-<!-- 09 · MAIS CITADAS -->
+<!-- 10 · MAIS CITADAS -->
 <section id="citadas" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">10</span><h2 class="sec-title">Obras mais citadas (exceto sementes)</h2><span class="sec-method">contagem de citações · ao menos um eixo</span></div>
   <div class="prose"><p>As vinte obras não-semente mais citadas do corpus. <em>Autopoiesis and Cognition</em> (Maturana &amp; Varela, 1980) lidera pelo eixo da cibernética; a literatura de composição de instrumentos de política (Howlett, Borrás, Rogge) domina o eixo da regulação.</p></div>
@@ -545,7 +546,33 @@ pre.code{max-width:100%}
   <div id="list-top20"></div>
 </div></section>
 
-<!-- 10 · DISCUSSÃO -->
+<!-- 10·5 · A CONSTRUÇÃO DO CANDIDATO-SET PARA O RAYYAN -->
+<section id="candidatos" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">10·5</span><h2 class="sec-title">A construção do candidato-set para o Rayyan</h2><span class="sec-method">cadeia de curadoria multinível</span></div>
+  <div class="prose">
+    <p class="lead">A revisão sistemática que vem depois deste mapeamento <strong>triangula</strong> — não escolhe uma métrica única. Cada bloco do funil contribui uma <em>camada de aproximação</em> ao "núcleo de pontes" (a união conceitual postulada na <a href="#sintese">síntese</a>, ausente da estrutura empírica de citação — ver <a href="#pontes">zonas de intercâmbio</a>). É o que o gerador <code>src/build_rayyan.py</code> aplica como tags multinível, com catálogo auditável em <a href="dados/rayyan_tags.json"><code>data/rayyan_tags.json</code></a>.</p>
+  </div>
+  <p class="fig-cap" style="margin-top:1.25rem">Cada métrica vira uma tag em cada obra; o Rayyan filtra por combinação de tags. Limiares paramétricos no manifest.</p>
+  <table class="tbl">
+    <thead><tr><th>Métrica · seção</th><th>Tag</th><th>Papel na curadoria</th></tr></thead>
+    <tbody>
+      <tr><td>Cocitação pairwise + Leiden + modelo nulo · §05, §07</td><td><code>obra-ponte</code> · <code>obra-semente</code></td><td>define a <em>distância</em> (3 silos); declara a união como metáfora</td></tr>
+      <tr><td>Acoplamento bibliográfico · §06</td><td>via <code>clusters_bc</code></td><td>candidatos por <em>frente compartilhada</em></td></tr>
+      <tr><td>Rajadas (Kleinberg) · §08</td><td><code>rajada de citação</code></td><td>candidatos <em>vivos no presente</em></td></tr>
+      <tr><td>Belas adormecidas (Ke) · §09</td><td><code>bela adormecida</code></td><td>candidatos <em>cuja hora chegou</em></td></tr>
+      <tr><td>Mais citadas · §10</td><td><code>mais citada</code></td><td>candidatos <em>por atenção concentrada</em></td></tr>
+      <tr><td>Hipergrafo (XGI; Landry, 2023)</td><td><code>higher_order_bridge</code></td><td>candidatos <em>cuja própria leitura mistura</em> (187 hiperarestas trans-eixo realizadas; ver caveat do null abaixo)</td></tr>
+      <tr><td>Sondagem 4º eixo · <code>paths_between</code></td><td><code>complexidade (4º eixo)</code></td><td>candidatos <em>por tradição-aderente</em> (terreno evolucionário das capacidades da firma)</td></tr>
+      <tr><td>Cruzamento Brasil × núcleo</td><td><code>ponte global×Brasil</code></td><td>elos de citação Brasil ↔ núcleo global</td></tr>
+      <tr><td>Prioridade de ponte (CB + comunidade)</td><td><code>ponte a construir</code></td><td>top-25 a revisar em detalhe</td></tr>
+      <tr><td>Bola de neve por autor + revisão Brasil (Faganello)</td><td><code>obra de autor-semente</code> · <code>corpus Brasil (Faganello)</code></td><td>cobertura social e nacional</td></tr>
+    </tbody>
+  </table>
+  <div class="callout" style="margin-top:1.25rem"><strong>Como ler.</strong> Os 3 <em>eixos-base</em> (cibernética, regulação, política industrial) permanecem como recorte primário; as comunidades Leiden (sub-eixos) e as tags acima são camadas adicionais para a triagem. No <a href="triagem.html">explorador de triagem</a>, cada obra exibe seu conjunto de tags — combinar filtros = isolar o tipo de candidato (ex.: <em>hipergrafo trans-eixo &amp; bela adormecida &amp; ≥ 2 comunidades Leiden</em>). A revisão é <strong>triangulada</strong>, não unidimensional.</div>
+  <div class="callout"><strong>Caveat do XGI — o sinal do null é negativo.</strong> A tag <code>higher_order_bridge</code> marca obras que aparecem em ≥ <code>MIN_CROSS_AXIS_EDGES</code> hiperarestas trans-eixo (limiar paramétrico em <code>src/build_rayyan.py</code>). O modelo nulo (stub-shuffle preservando degrees + sizes, 60 sorteios; ver <a href="#pontes">§05</a>) coloca a fração trans-eixo observada (40%) <strong>muito abaixo</strong> do esperado por chance (~86%, <strong>z ≈ −29</strong>) — ou seja, o sinal <em>não é</em> "convergência inesperada"; é a convergência <em>realizada</em> (187 hiperarestas) sob uma estrutura ainda mais siloed do que o aleatório. Essas 187 hiperarestas ainda são as melhores aproximações de ordem superior para a SR (são as listas que <em>de fato</em> misturam eixos), mas a leitura honesta é: mesmo no hipergrafo os silos predominam — a tag aponta candidatos, não pontes consumadas. Resultado completo em <code>data/cocitation_hyperedges.json:null_model</code>. <span style="color:var(--muted)">Análogo a Maslov–Sneppen (2002) adaptado para hipergrafos.</span></div>
+</div></section>
+
+<!-- 11 · DISCUSSÃO -->
 <section id="discussao" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Implicações para a política industrial</h2><span class="sec-method">síntese e agenda</span></div>
   <div class="prose">
@@ -712,7 +739,7 @@ pre.code{max-width:100%}
   <div id="list-seeds"></div>
 </div></section>
 
-<!-- 12 · REPRODUTIBILIDADE -->
+<!-- 17 · REPRODUTIBILIDADE -->
 <section id="repro" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">17</span><h2 class="sec-title">Reprodutibilidade</h2><span class="sec-method">como reexecutar o estudo</span></div>
   <div class="prose">
@@ -731,7 +758,7 @@ jupyter notebook colab/scisci_cibernetica_regulacao_PI_v2.ipynb</pre>
 python src/build_site.py                # este site (docs/)</pre>
 </div></section>
 
-<!-- 13 · DADOS -->
+<!-- 18 · DADOS -->
 <section id="dados" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">18</span><h2 class="sec-title">Dados — descarga direta</h2><span class="sec-method">conjuntos processados do funil</span></div>
   <div class="prose"><p>Os conjuntos de dados processados em cada etapa do funil, em formato CSV (codificação UTF-8). O conjunto completo de resultados consolidados também está disponível em formato JSON.</p></div>
@@ -743,7 +770,7 @@ python src/build_site.py                # este site (docs/)</pre>
   </table>
 </div></section>
 
-<!-- 14 · LIMITAÇÕES -->
+<!-- 19 · LIMITAÇÕES -->
 <section id="limitacoes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">19</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
   <div class="prose">
@@ -756,7 +783,7 @@ python src/build_site.py                # este site (docs/)</pre>
   </div>
 </div></section>
 
-<!-- 15 · GLOSSÁRIO -->
+<!-- 20 · GLOSSÁRIO -->
 <section id="glossario" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">20</span><h2 class="sec-title">Glossário</h2><span class="sec-method">termos em português e equivalentes de origem</span></div>
   <dl class="gloss">
@@ -781,7 +808,7 @@ python src/build_site.py                # este site (docs/)</pre>
   </dl>
 </div></section>
 
-<!-- 16 · REFERÊNCIAS -->
+<!-- 21 · REFERÊNCIAS -->
 <section id="referencias" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">21</span><h2 class="sec-title">Referências</h2><span class="sec-method">obras-semente e fundamentos metodológicos</span></div>
   <div class="callout" id="como-citar"><strong>Como citar.</strong> QUEIROZ, B.; FREIRE, L.; FAGANELLO, C. <em>Cibernética Organizacional, Regulação e Política Industrial: mapeamento bibliométrico da estrutura intelectual</em>. Brasília: IPEA / DIEST-COGIT, 2026. Material preliminar.</div>

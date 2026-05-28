@@ -1,0 +1,9 @@
+#!/bin/sh
+# Auto-estagia o cache do OpenAlex e regenera o CHANGELOG a cada commit.
+# Instalado via `git config core.hooksPath .githooks` (faça uma vez por checkout — ver scripts/setup.sh).
+root="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+if [ -f "$root/.claude/skills/changelog/changelog.py" ]; then
+  python3 "$root/.claude/skills/changelog/changelog.py" >/dev/null 2>&1 && git add "$root/CHANGELOG.md" 2>/dev/null
+fi
+[ -d "$root/data/oa_cache" ] && git add "$root/data/oa_cache" 2>/dev/null
+exit 0

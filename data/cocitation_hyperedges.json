@@ -3,6 +3,13 @@
  "n_edges": 467,
  "n_cross_axis_edges": 187,
  "mean_size": 5.54,
+ "null_model": {
+  "obs": 0.4004,
+  "null_mean": 0.8603,
+  "null_sd": 0.0161,
+  "z": -28.6,
+  "n_iter": 60
+ },
  "top_higher_order_bridges": [
   {
    "oa_id": "W3130930004",
@@ -93,6 +100,7095 @@
    "label": "The Systems Approach",
    "axis": "cibernética",
    "cross_axis_hyperedges": 14
+  }
+ ],
+ "top_citers_for_sr": [
+  {
+   "oa_id": "W2748556714",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 28,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W1977228499",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 15,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W4210667362",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W4206188300",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W1969380537",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2970586186",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    3,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2156460774",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 17,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2162830306",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2128922219",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1965368556",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2116295271",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4211073852",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2015622423",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2931358054",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W2072905943",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W2025499361",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 31,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2127454860",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2893813884",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3165496502",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W1813492422",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2123807871",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W1147735437",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2985138089",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2970236343",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    3,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3008865792",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3213379273",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 20,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2002842410",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 19,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2118889754",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 15,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2033415620",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1969589856",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  }
+ ],
+ "citer_summary": [
+  {
+   "oa_id": "W2748556714",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 28,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W1977228499",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 15,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W4210667362",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W4206188300",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W1969380537",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2970586186",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    3,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2156460774",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 17,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2162830306",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2128922219",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1965368556",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2116295271",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4211073852",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2015622423",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 4,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2931358054",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W2072905943",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W2025499361",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 31,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2127454860",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2893813884",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3165496502",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W1813492422",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2123807871",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W1147735437",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2985138089",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2970236343",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    3,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3008865792",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3213379273",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 20,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2002842410",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 19,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2118889754",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 15,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2033415620",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1969589856",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2289439864",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3124893232",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2026873133",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4322717806",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2883962203",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2148632636",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2137251887",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2078172354",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2138571544",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4244164162",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2014463087",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2480765239",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1983983294",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2097709715",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1579489317",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1488856981",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3004966553",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2063383122",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3015530477",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1822630717",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2571401218",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3121473648",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2154807756",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W650483544",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2065845659",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2128707085",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2900531799",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2766991621",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2309694902",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cplx",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2096011630",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2558617721",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W1979025727",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2330438636",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2017153321",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W4415186388",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2046348850",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 20,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2057748843",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 18,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3097776646",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1570322089",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1917677028",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2549966611",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cplx",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2100299366",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2142013550",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1986862917",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2895478811",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3089156371",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2077385024",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1968889776",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2403375936",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3095766918",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2119879855",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2889003232",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2191776653",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2041786453",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4240229210",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1965265480",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2045256736",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2049314901",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2007163030",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2142865043",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1580697173",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2007070036",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1503695006",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1531305731",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2108815721",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2100874993",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2586827268",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1779067388",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3123911168",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1602575783",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2017443876",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2091420782",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3196508150",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4409615723",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2886482722",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2134758682",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2478318629",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2557163480",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3176375818",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2243672366",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2155464244",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2092767734",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3141412768",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2104960777",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2337023566",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4415186772",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2145817486",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2006670069",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2104874918",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2033666713",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2133519256",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2035385486",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2002152631",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2980500179",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2290583425",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2086640914",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3173770377",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2051899416",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3089458991",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2096718335",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4395682269",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3191336279",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2790204853",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2075128806",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2024154468",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1993166762",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2141347671",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1946339087",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cplx",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2099828324",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    3,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2346909237",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    3,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3082894066",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2559855969",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3118195910",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3022845741",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3014493409",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2311282525",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4239447457",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2289835386",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1979424742",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2990427797",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2247528439",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cplx",
+    "Cyb"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4385567808",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2015643139",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2050556122",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2005320115",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1999977215",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2038219332",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2032151549",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1595454776",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2086450534",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2326095036",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1983518310",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2036304336",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2049808247",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1967535226",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4206968682",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2562219501",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2302417364",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1989593490",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2063605080",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2791808130",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2057373779",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1567058360",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1915568689",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2009256057",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1986511690",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2068143788",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1963803115",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4396956235",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2794720493",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2530259327",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4248739107",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2051866602",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2112140333",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2138769638",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1976014527",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2106469677",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4387247572",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2022082603",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2011570654",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2794912082",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2131801973",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2132852401",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2081622870",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2178972335",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2170564608",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1968893806",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2760024360",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3121405033",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1975986198",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2167709058",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2570511477",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W7161499982",
+   "seed_via": "W4386803846",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2999723559",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2041734968",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1561987548",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2157991933",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4409771962",
+   "seed_via": "W4386803846",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W202517426",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2041865365",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2131731201",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1979566786",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3147057371",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W120340580",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4239967028",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2005616702",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2758839365",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2765128060",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4309673227",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2162758154",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2443940530",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W7115170880",
+   "seed_via": "W4386803846",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1577375906",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2798125246",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2242116388",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4283391690",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2094085690",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4416458210",
+   "seed_via": "W4386803846",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2113964908",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4254657991",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2154708929",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2767980865",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2625888171",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2027853256",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2137457881",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2077955663",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2020067775",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2218921379",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3133819930",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2310028898",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2021470717",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2063505860",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    4
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4396946771",
+   "seed_via": "W4386803846",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4401916482",
+   "seed_via": "W4386803846",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4410480531",
+   "seed_via": "W4386803846",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2026197177",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2626399753",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2104283584",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2907557406",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2165367750",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2070529657",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2108941298",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2013663799",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W94685782",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W116527095",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1536806849",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2335193562",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2593250188",
+   "seed_via": "W2063282131",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2517538075",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 23,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1487012808",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 22,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2143385530",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 21,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2009399369",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 18,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2013704629",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 17,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2093155805",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 15,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1572359230",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1824457469",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2082088739",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2048218622",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 14,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2012658652",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 13,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3159363278",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1840620148",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 12,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2144491668",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2032085674",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1871871347",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2791412108",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2801811244",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1980435410",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2022938561",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 11,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2109882267",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2006491173",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2336480949",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1988536861",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2626664234",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2087699103",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2786452361",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W131648237",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2080554996",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2114047497",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2024374408",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2057063177",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 9,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2014204309",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1975111082",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1881401909",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2083712072",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2026935939",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W183842712",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2055911529",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3049328680",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2047016160",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2076248782",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2124991726",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2884562481",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2111250315",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2046277739",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2051241714",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2006818088",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2041387848",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1973608324",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1995440326",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2023614577",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1548845287",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2047416652",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2046636328",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1920211981",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2568029919",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2018993869",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1794712641",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2566562292",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2092544074",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2136083730",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2054135956",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2079533706",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2004461356",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1986399043",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2042885415",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1789020023",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2345373943",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2935509659",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3093531680",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1816767395",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1884238595",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3138816883",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1747834428",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2586817110",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3005896759",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2622534488",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1513709451",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2112878681",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2156092241",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2921304920",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2150135664",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1992077121",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1661345012",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2015188571",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2013143195",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2984829254",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2023074175",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2534744224",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2084123794",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2015865104",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1583244633",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2039688329",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W156802950",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2947202110",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3175144489",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3111994964",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1987177424",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1967645161",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2094366643",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2081977264",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2185091049",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2025177555",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1968707856",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1513263247",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1968991056",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1989196198",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2020376431",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2077980442",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1547040632",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2116504302",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4230539314",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4321765531",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2992547304",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2529142987",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3196523113",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2475745619",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W26979065",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2148920855",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W760270995",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2106352077",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2047457791",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2113963513",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2108155734",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2325912084",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2562649910",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2004339768",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2335307468",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2117290994",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2144413950",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2131562731",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3124048998",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2112457901",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2124113373",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2950153699",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3117059995",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2766549523",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2282204482",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2607416939",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2415002517",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2895345049",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1941592914",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4210534350",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2046480402",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1966487295",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2010608898",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1983425281",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3217067389",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2124647698",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2025848126",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1579533189",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1966335615",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2013395685",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2000953634",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1592676734",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1982348009",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2040140198",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2011154203",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4406574114",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4409654452",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3092853210",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2265337851",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2951235005",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2797581459",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2589263246",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3038709602",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2127617481",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2043474425",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2088135745",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2571797687",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1969481249",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1567306273",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2146580098",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2127635096",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2966990894",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2155065409",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2164536736",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2157621324",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1936030115",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1978047700",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2786863284",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3080762533",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2152133813",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2031491587",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2413919263",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2734859434",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2806351446",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2138646760",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Reg"
+   ],
+   "n_axes": 1,
+   "communities": [
+    4
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3124744803",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2117334181",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2126315266",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2156548261",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2038905498",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2285225377",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3123553322",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2148207779",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2099327766",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2125926764",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2790947948",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2806155052",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2755053267",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2620652927",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1582202853",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3114595537",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W4247735143",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2596543763",
+   "seed_via": "W4230710385",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W1967245772",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2072617828",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
   }
  ],
  "cross_axis_degree": {

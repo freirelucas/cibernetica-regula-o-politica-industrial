@@ -29,11 +29,68 @@ CROSS = os.path.join(ROOT, "data", "cross_brasil.json")
 CPLX = os.path.join(ROOT, "data", "cplx_works.json")
 AUTHORS = os.path.join(ROOT, "data", "author_works.json")
 PRIORITY = os.path.join(ROOT, "data", "bridge_priority.json")
+HYPEREDGES = os.path.join(ROOT, "data", "cocitation_hyperedges.json")
+TAGS_MANIFEST = os.path.join(ROOT, "data", "rayyan_tags.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
 BRASIL_ROLE = "corpus Brasil (Faganello)"
 
 AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Política industrial"}
+
+# ============================================================
+# Catálogo de critérios de curadoria — cada tag (role) tem uma definição auditável
+# e um limiar paramétrico. Adicionar um critério aqui é todo o esforço conceitual;
+# a pipeline (consolidate + tag_*) o aplica e o manifest write_manifest() o expõe
+# para o trio de triadores. Esta é a "arquitetura de tagging multinível" da §4 do
+# plano de avaliação — fácil de auditar e estender.
+# ============================================================
+MIN_CROSS_AXIS_EDGES = 3       # tag higher_order_bridge: ≥N hiperarestas trans-eixo (XGI)
+MIN_AXES_COVERED = 2           # tag obra-ponte: ≥N eixos por vocabulário
+N_BRIDGE_PRIORITY = 25         # tag ponte a construir: top-N por bridge_priority
+
+CRITERIA = {
+    "obra-semente": ("Obra-semente canônica do funil global",
+                     "scisci_results.json:seeds"),
+    "mais citada": ("Top-20 não-semente por nº de citações",
+                    "scisci_results.json:top20_nonfeed"),
+    "obra-ponte": (f"Toca ≥{MIN_AXES_COVERED} eixos por vocabulário",
+                   "scisci_results.json:top_bridges"),
+    "rajada de citação": ("Burst de Kleinberg detectado",
+                          "scisci_results.json:top_bursts"),
+    "bela adormecida": ("Coeficiente de beleza (Ke et al., 2015)",
+                        "scisci_results.json:sleeping_beauties"),
+    BRASIL_ROLE: ("Revisão brasileira de C. Faganello",
+                  "docs/material-brasil/dataset_politica_industrial_brasil.csv"),
+    "complexidade (4º eixo)": ("Sonda do 4º eixo: economia da complexidade",
+                               "data/cplx_works.json · src/experiment_cplx.py"),
+    "obra de autor-semente": ("Snowball por autor-semente",
+                              "data/author_works.json · src/author_snowball.py"),
+    "cibernética organizacional": ("Vocabulário aplicado (MSV/Beer/Espejo…) — _ORG_CYB",
+                                   "tag_cyb_subtype em build_rayyan.py"),
+    "cibernética (geral)": ("Vocabulário fundacional (Wiener/Ashby/von Foerster) — _GERAL_CYB",
+                            "tag_cyb_subtype em build_rayyan.py"),
+    PONTE: ("Cruzamento Brasil × núcleo global por citação direta",
+            "data/cross_brasil.json · src/cross_brasil.py"),
+    "ponte a construir": (f"Top-{N_BRIDGE_PRIORITY} por prioridade de ponte (CB + comunidade)",
+                          "data/bridge_priority.json · src/bridge_priority.py"),
+    "higher_order_bridge": (f"Aparece em ≥{MIN_CROSS_AXIS_EDGES} hiperarestas trans-eixo (XGI; Landry, 2023)",
+                            "data/cocitation_hyperedges.json · src/cocitation_hypergraph.py"),
+}
+
+
+def write_manifest(out_path=TAGS_MANIFEST):
+    """Escreve `data/rayyan_tags.json` — catálogo auditável de todas as tags da síntese
+    (descrição, fonte e limiar). É o que torna as escolhas conceituais explícitas."""
+    manifest = {
+        "tags": {t: {"description": d, "source": s} for t, (d, s) in CRITERIA.items()},
+        "thresholds": {
+            "MIN_CROSS_AXIS_EDGES": MIN_CROSS_AXIS_EDGES,
+            "MIN_AXES_COVERED": MIN_AXES_COVERED,
+            "N_BRIDGE_PRIORITY": N_BRIDGE_PRIORITY,
+        },
+    }
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    json.dump(manifest, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 
 def _norm(t):
@@ -65,7 +122,7 @@ def _add(store, title, **kw):
         return
     e = store.setdefault(key, {"title": title, "authors": [], "year": "", "doi": "", "url": "",
                                "venue": "", "abstract": "", "axes": set(), "roles": set(),
-                               "type": "GEN", "oa_id": ""})
+                               "rationale": {}, "type": "GEN", "oa_id": ""})
     if len(title) > len(e["title"]):          # mantém o título mais completo
         e["title"] = title
     for fld in ("year", "doi", "url", "venue", "abstract"):
@@ -209,19 +266,43 @@ def tag_cross(works):
     return works
 
 
-def tag_bridge_priority(works, n=25):
+def tag_bridge_priority(works, n=N_BRIDGE_PRIORITY):
     """Marca as N obras de maior PRIORIDADE DE PONTE (data/bridge_priority.json,
     gerado por src/bridge_priority.py) com o papel 'ponte a construir' — os papers
     a revisar em detalhe para construir as pontes entre os eixos."""
     if not os.path.exists(PRIORITY):
         return works
     ranking = json.load(open(PRIORITY, encoding="utf-8")).get("ranking", [])
-    top = set(list(dict.fromkeys(r["oa_id"] for r in ranking
-                                 if r.get("oa_id") and r.get("score", 0) > 0))[:n])
+    top_list = list(dict.fromkeys(r["oa_id"] for r in ranking
+                                  if r.get("oa_id") and r.get("score", 0) > 0))[:n]
+    top = set(top_list)
+    score_by_id = {r["oa_id"]: r.get("score", 0) for r in ranking if r.get("oa_id") in top}
     for e in works:
         m = re.search(r"openalex\.org/(W\d+)", e.get("url", "") or "")
         if m and m.group(1) in top:
             e["roles"].add("ponte a construir")
+            e.setdefault("rationale", {})["ponte a construir"] = (
+                f"top-{n} de bridge_priority (score={score_by_id.get(m.group(1), '?')})")
+    return works
+
+
+def tag_higher_order_bridge(works):
+    """Marca obras que aparecem em ≥MIN_CROSS_AXIS_EDGES hiperarestas trans-eixo.
+    As hiperarestas (cada bibliografia citante é uma hiperaresta sobre o núcleo cocitado)
+    vêm de `src/cocitation_hypergraph.py` (XGI; Landry, 2023). É a tag que materializa
+    o caminho de ordem superior — a convergência que a projeção par-a-par esconde."""
+    if not os.path.exists(HYPEREDGES):
+        return works
+    H = json.load(open(HYPEREDGES, encoding="utf-8"))
+    cross_deg = H.get("cross_axis_degree", {})
+    for e in works:
+        m = re.search(r"openalex\.org/(W\d+)", e.get("url", "") or "")
+        oid = e.get("oa_id") or (m.group(1) if m else None)
+        n_cross = cross_deg.get(oid, 0) if oid else 0
+        if n_cross >= MIN_CROSS_AXIS_EDGES:
+            e["roles"].add("higher_order_bridge")
+            e.setdefault("rationale", {})["higher_order_bridge"] = (
+                f"{n_cross} hiperarestas trans-eixo (XGI)")
     return works
 
 
@@ -254,9 +335,13 @@ def dedup_oaid(works):
 
 def _note(e):
     src = "Brasil" if any("Brasil" in x for x in e["roles"]) else "núcleo global"
-    return (f"Síntese cienciométrica IPEA · fonte: {src}"
+    base = (f"Síntese cienciométrica IPEA · fonte: {src}"
             + (f" · eixos: {', '.join(sorted(e['axes']))}" if e["axes"] else "")
             + f" · papel: {', '.join(sorted(e['roles']))}")
+    ratl = e.get("rationale") or {}
+    if ratl:
+        base += " · razão: " + "; ".join(f"{k}={v}" for k, v in sorted(ratl.items()))
+    return base
 
 
 def to_ris(works):
@@ -372,8 +457,10 @@ def emit(works, out, stem):
 
 
 def build(out=DADOS):
-    works = tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate())))))
+    works = tag_higher_order_bridge(
+        tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate()))))))
     os.makedirs(out, exist_ok=True)
+    write_manifest()           # data/rayyan_tags.json — auditoria das escolhas conceituais
     emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
     pontes = [e for e in works if "ponte a construir" in e["roles"]]   # opção E — a revisar p/ construir pontes
     if pontes:

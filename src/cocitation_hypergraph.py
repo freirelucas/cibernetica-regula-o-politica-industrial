@@ -14,6 +14,7 @@ Saída: data/cocitation_hyperedges.json + relatório. Uso: python src/cocitation
 import collections
 import json
 import os
+import random
 import sys
 import urllib.parse
 
@@ -31,14 +32,51 @@ AXN = {"Cyb": "cibernética", "Reg": "instrumentos de governo",
        "PolInd": "política industrial", "Cplx": "complexidade"}
 
 
+def null_trans_axis_z(edges, axis_of, n_iter=60, seed=42):
+    """Modelo nulo para o hipergrafo: preserva o tamanho de cada hiperaresta e o
+    multiset de degrees dos nós (estilo *stub-shuffle*, análogo a Maslov–Sneppen pairwise).
+    Compara a fração observada de hiperarestas trans-eixo (≥2 eixos) contra a aleatória —
+    declara se o 40% supera o acaso (z). É o teste de significância que faltava ao XGI:
+    sem ele o 40% é descritivo, não significância-testado."""
+    rng = random.Random(seed)
+    sizes = [len(e) for e in edges]
+    stubs = [n for e in edges for n in e]  # multiset preservando o degree de cada nó
+
+    def frac_trans(es):
+        return sum(1 for e in es if len({axis_of.get(n) for n in e if axis_of.get(n)}) >= 2) / max(len(es), 1)
+
+    obs = frac_trans(edges)
+    rand_fracs = []
+    for _ in range(n_iter):
+        pool = stubs[:]
+        rng.shuffle(pool)
+        new_edges, i = [], 0
+        for s in sizes:
+            picked = set()
+            # toma stubs evitando duplicatas dentro da hiperaresta; se esgotar, recicla
+            while len(picked) < s and i < len(pool) * 4:
+                picked.add(pool[i % len(pool)])
+                i += 1
+            new_edges.append(list(picked))
+        rand_fracs.append(frac_trans(new_edges))
+    mean = sum(rand_fracs) / max(len(rand_fracs), 1)
+    var = sum((x - mean) ** 2 for x in rand_fracs) / max(len(rand_fracs) - 1, 1)
+    sd = var ** 0.5
+    z = (obs - mean) / sd if sd > 0 else 0.0
+    return {"obs": round(obs, 4), "null_mean": round(mean, 4),
+            "null_sd": round(sd, 4), "z": round(z, 1), "n_iter": n_iter}
+
+
 def main():
     net = bs.explorer_network()
     axis_of = {n["id"]: (n.get("axis") or n.get("axis_inf") or "") for n in net["nodes"]}
     label_of = {n["id"]: n.get("label") or n["id"] for n in net["nodes"]}
     corpus = set(axis_of)                       # obras do núcleo = "vértices" do hipergrafo
+    comm_of = {n["id"]: n.get("comm", -1) for n in net["nodes"]}   # comunidade CNM (sub-eixo Leiden)
 
     # hiperarestas = (lista de refs de cada citante) ∩ núcleo, tamanho ≥ 2
     edges, seen_citers = [], set()
+    edge_to_citer, seed_of_citer = [], {}    # rastreio por citante p/ ranqueamento do SR (C2)
     for sid in SEEDS:
         url = (f"{API}/works?filter=cites:{sid}&sort=cited_by_count:desc"
                f"&per-page={CITERS_PER_SEED}&select=id,referenced_works")
@@ -51,6 +89,8 @@ def main():
             he = sorted(refs & corpus)
             if len(he) >= 2:
                 edges.append(he)
+                edge_to_citer.append(cid)
+                seed_of_citer[cid] = sid
     print(f"citantes únicos: {len(seen_citers)} | hiperarestas (≥2 do núcleo): {len(edges)}")
 
     import xgi
@@ -67,19 +107,51 @@ def main():
           f"tamanho médio {sum(sizes)/max(len(sizes),1):.1f}, máx {max(sizes) if sizes else 0}")
     print(f"hiperarestas trans-eixo (≥2 eixos): {len(cross)} "
           f"({100*len(cross)/max(len(edges),1):.0f}%)")
+
+    # modelo nulo: o 40% trans-eixo supera o acaso?
+    null = null_trans_axis_z(edges, axis_of, n_iter=60, seed=42)
+    print(f"\n== modelo nulo de configuração (stub-shuffle, {null['n_iter']} sorteios) ==")
+    print(f"   trans-eixo: observado {100*null['obs']:.1f}% vs nulo {100*null['null_mean']:.1f}% "
+          f"± {100*null['null_sd']:.1f}% → z={null['z']:+.1f}")
+
     print("\nobras em mais hiperarestas TRANS-EIXO (pontes de ordem superior):")
     top = [(n, c) for n, c in cross_deg.most_common(15)]
     for n, c in top:
         ax = AXN.get(axis_of.get(n, ""), "—")
         print(f"   {c:3d}× | {ax:22} | {label_of.get(n, n)[:44]}")
 
+    # ranking de citantes p/ SR (C2 + C3): cada citante = uma hiperaresta;
+    # ranqueia por eixos cobertos (3 > 2 > 1), comunidades CNM (sub-eixos Leiden)
+    # e tamanho da hiperaresta. As tags entram no Rayyan via higher_order_bridge,
+    # e a riqueza dos sub-eixos (comm) preserva o que a manchete "silos" achata.
+    citer_summary = []
+    for i, he in enumerate(edges):
+        cid = edge_to_citer[i]
+        axs = sorted(edge_axes(he))
+        cms = sorted({comm_of.get(n, -1) for n in he if comm_of.get(n, -1) >= 0})
+        citer_summary.append({
+            "oa_id": cid, "seed_via": seed_of_citer[cid],
+            "n_refs_in_corpus": len(he), "axes": axs, "n_axes": len(axs),
+            "communities": cms, "n_communities": len(cms),
+        })
+    citer_summary.sort(key=lambda r: (-r["n_axes"], -r["n_communities"], -r["n_refs_in_corpus"]))
+    top_citers = citer_summary[:30]
+    print(f"\n== ranking de citantes p/ SR (top {len(top_citers)} por eixos × comunidades) ==")
+    for r in top_citers[:10]:
+        print(f"   eixos {r['n_axes']} · comms {r['n_communities']} · refs {r['n_refs_in_corpus']} | {r['oa_id']}")
+
     out = {
         "n_citers": len(seen_citers), "n_edges": len(edges),
         "n_cross_axis_edges": len(cross),
         "mean_size": round(sum(sizes) / max(len(sizes), 1), 2),
+        # significância: stub-shuffle preserva degrees + sizes; 60 sorteios
+        "null_model": null,
         "top_higher_order_bridges": [
             {"oa_id": n, "label": label_of.get(n, n), "axis": AXN.get(axis_of.get(n, ""), ""),
              "cross_axis_hyperedges": c} for n, c in top],
+        # candidatos à SR (C2): citantes ranqueados por cobertura (eixos × sub-eixos × refs)
+        "top_citers_for_sr": top_citers,
+        "citer_summary": citer_summary,
         # mapa completo (oa_id -> nº de hiperarestas trans-eixo) para juntar à prioridade de ponte
         "cross_axis_degree": dict(cross_deg),
         "degree": dict(deg),

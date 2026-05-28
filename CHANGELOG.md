@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (95 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (98 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -10,6 +10,8 @@ Registro de mudanças desta branch, agrupado por tema (95 commits de trabalho). 
 
 ## Triagem e exportação (Rayyan)
 
+- Endurece cache, surfaceia silos no Resumo e arquitetura de tagging do Rayyan · `455c2b1` · 2026-05-28
+- Recorte "pontes a construir": as 25 obras de maior prioridade de ponte · `2cd4747` · 2026-05-28
 - Cache OpenAlex: gzip por arquivo (consolidação antes de explodir a rede) · `3384468` · 2026-05-28
 - Triagem: curadoria mostra o conjunto de refs antes de exportar · `9ebf596` · 2026-05-27
 - Rayyan: zip determinístico (data fixa na entrada) · `ca94d3c` · 2026-05-27
@@ -119,6 +121,7 @@ Registro de mudanças desta branch, agrupado por tema (95 commits de trabalho). 
 
 ## Outros
 
+- Pipeline XGI → SR: citantes ranqueados, sub-eixos Leiden e nova seção 10·5 · `68b0b13` · 2026-05-28
 - Ordem superior (XGI): cocitação como hipergrafo — 40% dos grupos cruzam eixos · `fac51da` · 2026-05-28
 - Pivô Zajdela: o silo é social — só ~5% dos autores atravessam eixos · `a9f1e7a` · 2026-05-28
 - Pruning: remove nós-agregados de periódico (hubs falsos) · `d962761` · 2026-05-27
