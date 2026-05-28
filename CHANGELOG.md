@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (112 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (113 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -125,6 +125,7 @@ Registro de mudanças desta branch, agrupado por tema (112 commits de trabalho).
 
 ## Outros
 
+- Novo deck-metodologia: balanço pedagógico dos caminhos metodológicos · `55dcc1f` · 2026-05-28
 - Checagem completa: copia data/ para docs/dados/ + novo deck-10 executivo · `d7c8728` · 2026-05-28
 - Fase E (A.3+A.4+B.4+B.5+D.4): corpus 6.5× expandido, brokerage G-F, HO BC, slides · `228cb2e` · 2026-05-28
 - A.3 + setup api_key + slides D.4: depth-2 → 13k works / 16k autores · `88748ff` · 2026-05-28

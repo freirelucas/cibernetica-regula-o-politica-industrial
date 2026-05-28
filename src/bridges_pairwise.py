@@ -13,7 +13,7 @@ ligam as tradições por cadeias curtas. Este script, sobre data/network_explode
   • o alcance por nº de saltos: quais eixos cada obra atinge em 1, 2, 3 saltos, e quais
     obras alcançam os TRÊS eixos em poucos saltos (corretoras tri-axiais).
 
-Uso:  python src/bridges_higher_order.py [--net data/network_exploded.json]
+Uso:  python src/bridges_pairwise.py [--net data/network_exploded.json]
 """
 import argparse
 import json
