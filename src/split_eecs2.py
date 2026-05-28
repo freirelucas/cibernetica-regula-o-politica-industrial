@@ -80,6 +80,7 @@ def to_entry(w):
         "doi": (w.get("doi") or "").replace("https://doi.org/", ""),
         "type": RIS_TYPE.get((w.get("type") or "").lower(), "CHAP"),
         "abstract": reconstruct_abstract(w.get("abstract_inverted_index")),
+        "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)",
     }
 
 

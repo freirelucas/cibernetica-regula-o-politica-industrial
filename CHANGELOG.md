@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (80 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (86 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -10,6 +10,8 @@ Registro de mudanças desta branch, agrupado por tema (80 commits de trabalho). 
 
 ## Triagem e exportação (Rayyan)
 
+- Triagem: curadoria mostra o conjunto de refs antes de exportar · `9ebf596` · 2026-05-27
+- Rayyan: zip determinístico (data fixa na entrada) · `ca94d3c` · 2026-05-27
 - README: declara o Objetivo do projeto (norte: diagnóstico, triagem, agenda) · `e12fc0d` · 2026-05-27
 - Triagem: explicador recolhível do raciocínio + cor do 4º eixo · `3b2617f` · 2026-05-27
 - Triagem: curadoria por tamanho de bloco (30/60/90/120) + badge Colab no README · `016b2ed` · 2026-05-27
@@ -28,6 +30,8 @@ Registro de mudanças desta branch, agrupado por tema (80 commits de trabalho). 
 
 ## Explorador e visualizações
 
+- Explorador: resolve os 'sem eixo' por inferência e revela pontes de 2ª ordem · `fd5c2f7` · 2026-05-27
+- Explorador: realça a estrutura — recua os 'sem eixo', destaca as pontes · `493dfc5` · 2026-05-27
 - Explorador: disposição "por eixo" (silos visíveis) em vez do emaranhado · `a2cc1cf` · 2026-05-27
 - Leva a rede explodida (251 nós, papéis P/z) ao explorador · `87a6a82` · 2026-05-27
 - Exporta subrede do explorador e guarda a cobertura de resumos · `b7e15a4` · 2026-05-27
@@ -105,3 +109,8 @@ Registro de mudanças desta branch, agrupado por tema (80 commits de trabalho). 
 - Atualiza a skill run-scisci-ipea (3 páginas + pipeline atual) · `292cc60` · 2026-05-27
 - Fase 6: aposenta o gerador legado (report_builder + html_template) · `5ef5d20` · 2026-05-26
 - README camera-ready em PT e suite de testes pytest · `828b302` · 2026-05-26
+
+## Outros
+
+- Pruning: remove nós-agregados de periódico (hubs falsos) · `d962761` · 2026-05-27
+- changelog: hook de pre-commit (automático, árvore limpa) · `a181304` · 2026-05-27

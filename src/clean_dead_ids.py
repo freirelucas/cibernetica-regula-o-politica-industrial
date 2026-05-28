@@ -21,15 +21,27 @@ DEAD = {
     "W6637432206", "W7066150168", "W7074557132",
 }
 
+# Nós que RESOLVEM no OpenAlex mas não são obras: registros-agregados do próprio
+# periódico (o nome da revista vira "obra" e aparece como hub falso — ex.: a
+# "American Economic Review" com grau 16). Não representam um trabalho citável,
+# distorcem a centralidade — podados como não-obras.
+NON_WORK = {
+    "W1513281941",  # American Economic Review (agregado)
+    "W1517701247",  # Harvard Business Review (agregado)
+    "W4297081765",  # Harvard Business Review (agregado, variante)
+}
+
+REMOVE = DEAD | NON_WORK
+
 NETWORKS = ["network.json", "network_4axis.json", "network_exploded.json", "network_cplx.json"]
 
 
 def clean_network(path):
     d = json.load(open(path, encoding="utf-8"))
     n0, e0 = len(d["nodes"]), len(d["links"])
-    d["nodes"] = [x for x in d["nodes"] if x.get("id") not in DEAD]
+    d["nodes"] = [x for x in d["nodes"] if x.get("id") not in REMOVE]
     d["links"] = [l for l in d["links"]
-                  if l.get("source") not in DEAD and l.get("target") not in DEAD]
+                  if l.get("source") not in REMOVE and l.get("target") not in REMOVE]
     json.dump(d, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     return n0, len(d["nodes"]), e0, len(d["links"])
 
@@ -73,7 +85,7 @@ def main():
             continue
         d = json.load(open(p, encoding="utf-8"))
         txt = json.dumps(d, ensure_ascii=False)
-        for di in DEAD:
+        for di in REMOVE:
             if di in txt:
                 leftover.append((fn, di))
         if isinstance(d, dict) and "nodes" in d:
