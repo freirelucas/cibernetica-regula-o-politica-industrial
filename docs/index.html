@@ -521,6 +521,39 @@ pre.code{max-width:100%}
   <div class="callout" id="pivotal-callout" style="margin-top:1.5rem"></div>
 </div></section>
 
+<!-- 08·5 · LONGUE-DURÉE — TRAJETÓRIA TEMPORAL E FORMAÇÃO DOS SILOS -->
+<section id="longue-duree" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">08·5</span><h2 class="sec-title">Longue-durée: quando os silos se formaram</h2><span class="sec-method">cocitação cumulativa por década · fração intra-eixo</span></div>
+  <div class="prose">
+    <p class="lead">A rede de cocitação agregada não tem timestamp por aresta — cada aresta soma sobre todos os citantes históricos. Mas cada <em>nó</em> do core cocitado tem ano de publicação. Tomar snapshots cumulativos por década (núcleo formado por nós publicados até o fim da década) responde: <strong>quando a estrutura intra-eixo passou a dominar?</strong></p>
+  </div>
+  <p class="fig-cap" style="margin-top:1.5rem">Marcos de cada tradição na série anual do corpus (≥3 obras/ano como limiar de presença sustentada).</p>
+  <table class="tbl">
+    <thead><tr><th>Eixo</th><th>Emergência (≥3 obras/ano)</th><th>Pico</th></tr></thead>
+    <tbody>
+      <tr><td>Cibernética</td><td>1983</td><td>2011 (30 obras)</td></tr>
+      <tr><td>Regulação/instrumentos</td><td>1991</td><td>2019 (19 obras)</td></tr>
+      <tr><td>Política industrial</td><td>2005</td><td>2017 (18 obras)</td></tr>
+      <tr><td colspan="3" style="border-bottom:none"><strong>Primeiro ano de co-presença das três tradições (todas ≥3/ano): 2005</strong> — quando Rodrik traz a política industrial de volta ao mainstream depois de duas décadas de eclipse neoliberal.</td></tr>
+    </tbody>
+  </table>
+  <p class="fig-cap" style="margin-top:2rem">Snapshot cumulativo por década: a fração de arestas de cocitação que ficam <em>dentro</em> de um mesmo eixo (vs. cruzando eixos).</p>
+  <table class="tbl">
+    <thead><tr><th>Década</th><th>Nós cumul.</th><th>Arestas cumul.</th><th>Intra-eixo</th><th>Trans-eixo</th><th>% intra-eixo</th></tr></thead>
+    <tbody>
+      <tr><td>1960s</td><td>26</td><td>9</td><td>7</td><td>2</td><td>77,8%</td></tr>
+      <tr><td>1970s</td><td>43</td><td>46</td><td>34</td><td>12</td><td>73,9%</td></tr>
+      <tr><td style="background:rgba(180,140,80,0.13)"><strong>1980s</strong></td><td><strong>69</strong></td><td><strong>208</strong></td><td><strong>173</strong></td><td><strong>35</strong></td><td><strong>83,2%</strong></td></tr>
+      <tr><td>1990s</td><td>119</td><td>580</td><td>524</td><td>56</td><td>90,3%</td></tr>
+      <tr><td>2000s</td><td>178</td><td>1.209</td><td>1.136</td><td>73</td><td>94,0%</td></tr>
+      <tr><td>2010s</td><td>213</td><td>1.841</td><td>1.701</td><td>140</td><td>92,4%</td></tr>
+      <tr><td>2020s</td><td>215</td><td>1.867</td><td>1.727</td><td>140</td><td>92,5%</td></tr>
+    </tbody>
+  </table>
+  <div class="callout" style="margin-top:1.5rem"><strong>Os silos cristalizaram-se na década 1980.</strong> Entre os anos 1960 e 1970, com poucos nós no core, a fração intra-eixo oscilou entre 73% e 78% — a estrutura era pequena demais para ser estatisticamente siloed. A partir dos 1980s, à medida que o core triplica de 43 para 69 nós, a fração intra-eixo cruza 83% e segue subindo: <strong>90% em 1990, 94% em 2000</strong>. O salto 1970s→1980s precede em duas décadas a chegada da política industrial moderna (Rodrik 2004) — quando PolInd finalmente entra em força nos 2000s, encontra um terreno onde cibernética e regulação já tinham seus próprios circuitos de cocitação consolidados. Por isso a co-presença das três tradições (2005) <em>não</em> destrava convergência — apenas adiciona uma terceira ilha ao arquipélago.</div>
+  <div class="callout"><strong>Eco do Cybersyn.</strong> O experimento chileno (1971–1973), apesar do brilho intelectual e da escala, encerrou-se sem produzir uma escola continuada que mantivesse o vocabulário cibernético no debate de política econômica. A cristalização do silo na década 1980 — exatamente quando o programa neoliberal interrompe a tradição planejadora a que Beer e Lange pertenciam — sugere que o silo é também produto de uma <em>ruptura institucional</em>, não só de drift acadêmico. Reconstruir a ponte hoje passa pela reapropriação curatorial das obras que a interrupção segregou (ver <a href="#sintese">§14</a> e <a href="#candidatos">§10·5</a>). <span style="color:var(--muted)">Dados em <code>data/temporal_cocitation.json</code> · script <code>src/temporal_cocitation.py</code>.</span></div>
+</div></section>
+
 <!-- 09 · BELAS ADORMECIDAS -->
 <section id="adormecidas" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">09</span><h2 class="sec-title">Belas adormecidas</h2><span class="sec-method">coeficiente de beleza · Ke et al. (2015)</span></div>

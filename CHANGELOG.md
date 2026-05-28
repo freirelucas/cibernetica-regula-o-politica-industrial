@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (102 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (103 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -122,6 +122,7 @@ Registro de mudanças desta branch, agrupado por tema (102 commits de trabalho).
 
 ## Outros
 
+- Honestifica o badge de rajadas: 760 brutos → 20 de alto impacto (top peso) · `5ac22a1` · 2026-05-28
 - Source + data + docs do c673371 (sources que não entraram na primeira tentativa) · `0260722` · 2026-05-28
 - Escala XGI 60→200 citantes/semente; bridges rank-based scale-invariant; injeção viva de números · `c673371` · 2026-05-28
 - Reescreve §05 e E1 honestamente: z = -29 indica estrutura MAIS siloed que o acaso · `3ec4e46` · 2026-05-28
