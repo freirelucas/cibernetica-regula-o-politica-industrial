@@ -46,13 +46,15 @@ Regenerar é uma ação; "a cada commit" é um comportamento automático. Duas f
    cat > .git/hooks/pre-commit <<'SH'
    #!/bin/sh
    root="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
-   [ -f "$root/.claude/skills/changelog/changelog.py" ] || exit 0
-   python3 "$root/.claude/skills/changelog/changelog.py" >/dev/null 2>&1 || exit 0
-   git add "$root/CHANGELOG.md" 2>/dev/null || true
+   if [ -f "$root/.claude/skills/changelog/changelog.py" ]; then
+     python3 "$root/.claude/skills/changelog/changelog.py" >/dev/null 2>&1 && git add "$root/CHANGELOG.md" 2>/dev/null
+   fi
+   [ -d "$root/data/oa_cache" ] && git add "$root/data/oa_cache" 2>/dev/null   # ver skill /oa-cache
    exit 0
    SH
    chmod +x .git/hooks/pre-commit
    ```
+   (O mesmo hook também versiona o cache de consultas OpenAlex — ver `/oa-cache`.)
 
    Regenera e **estagia o CHANGELOG dentro do próprio commit** (a árvore fica
    limpa, sem nada pendente depois). Nunca bloqueia o commit (todos os ramos

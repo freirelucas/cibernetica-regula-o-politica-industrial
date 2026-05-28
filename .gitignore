@@ -19,5 +19,5 @@ ckpt_*.parquet
 data/eecs2_ckpt.json
 data/eecs2_chapters.json
 
-# Cache de consultas OpenAlex (grande; re-gerável)
-data/oa_cache/
+# NB: data/oa_cache/ (raw das consultas OpenAlex) É VERSIONADO de propósito —
+# reprodutibilidade offline do funil. Mantido em dia pelo hook de pre-commit.
