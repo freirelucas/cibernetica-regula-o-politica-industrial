@@ -20,6 +20,15 @@ import urllib.request
 
 MAILTO = os.environ.get("OPENALEX_MAILTO", "lucasfreire@gmail.com")
 API_KEY = os.environ.get("OPENALEX_API_KEY", "")
+if not API_KEY:
+    # fallback: ~/.openalex_key (fora do repo; não commitado). Permite persistir
+    # entre subshells em sessões Claude Code sem mexer no .bashrc do snapshot.
+    _key_file = os.path.expanduser("~/.openalex_key")
+    if os.path.exists(_key_file):
+        try:
+            API_KEY = open(_key_file).read().strip()
+        except Exception:
+            pass
 UA = {"User-Agent": f"scisci-ipea/1.0 (mailto:{MAILTO})"}
 CACHE = os.environ.get("OA_CACHE", os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "oa_cache"))

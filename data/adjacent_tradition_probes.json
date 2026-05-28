@@ -4,7 +4,7 @@
   "polanyi": {
    "query": "Karl Polanyi",
    "n_results": 50,
-   "n_overlap_with_corpus": 1,
+   "n_overlap_with_corpus": 3,
    "items": [
     {
      "oa_id": "W1606540910",
@@ -27,7 +27,7 @@
      "title": "The narrative constitution of identity: A relational and network approach",
      "year": 1994,
      "cited_by": 2867,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -35,7 +35,7 @@
      "title": "Tacit knowledge and the economic geography of context, or The undefinable tacitness of being (there)",
      "year": 2002,
      "cited_by": 1950,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -411,7 +411,7 @@
   "schumpeter": {
    "query": "Joseph Schumpeter",
    "n_results": 50,
-   "n_overlap_with_corpus": 2,
+   "n_overlap_with_corpus": 15,
    "items": [
     {
      "oa_id": "W2095561982",
@@ -442,7 +442,7 @@
      "title": "Open for innovation: the role of openness in explaining innovation performance among U.K. manufacturing firms",
      "year": 2005,
      "cited_by": 6166,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -450,7 +450,7 @@
      "title": "Economic Reform and the Process of Global Integration",
      "year": 1995,
      "cited_by": 4916,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -482,7 +482,7 @@
      "title": "An Estimated Model of Entrepreneurial Choice under Liquidity Constraints",
      "year": 1989,
      "cited_by": 3335,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -540,7 +540,7 @@
      "title": "Strategy research: governance and competence perspectives",
      "year": 1999,
      "cited_by": 1573,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": [
       "Reg"
      ]
@@ -566,7 +566,7 @@
      "title": "Distance to Frontier, Selection, and Economic Growth",
      "year": 2006,
      "cited_by": 1468,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -574,7 +574,7 @@
      "title": "Federalism, Chinese Style: The Political Basis for Economic Success in China",
      "year": 1995,
      "cited_by": 1339,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -590,7 +590,7 @@
      "title": "INNOVATION IN THE PUBLIC SECTOR: A SYSTEMATIC REVIEW AND FUTURE RESEARCH AGENDA",
      "year": 2015,
      "cited_by": 1151,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -606,7 +606,7 @@
      "title": "Creative destruction or mere niche support? Innovation policy mixes for sustainability transitions",
      "year": 2015,
      "cited_by": 1119,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": [
       "Reg"
      ]
@@ -632,7 +632,7 @@
      "title": "The Purchasing Power Parity Debate",
      "year": 2004,
      "cited_by": 1003,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -656,7 +656,7 @@
      "title": "What's New about the New Economy? Sources of Growth in the Managed and Entrepreneurial Economies",
      "year": 2001,
      "cited_by": 980,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -664,7 +664,7 @@
      "title": "Recombinant Property in East European Capitalism",
      "year": 1996,
      "cited_by": 977,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -744,7 +744,7 @@
      "title": "National innovation systems, capabilities and economic development",
      "year": 2008,
      "cited_by": 792,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": [
       "PolInd"
      ]
@@ -810,7 +810,7 @@
      "title": "Dynamic capabilities as (workable) management systems theory",
      "year": 2018,
      "cited_by": 661,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -826,14 +826,14 @@
   "hirschman": {
    "query": "Albert Hirschman",
    "n_results": 50,
-   "n_overlap_with_corpus": 0,
+   "n_overlap_with_corpus": 9,
    "items": [
     {
      "oa_id": "W2136850043",
      "title": "An automated method for finding molecular complexes in large protein interaction networks",
      "year": 2003,
      "cited_by": 6265,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -865,7 +865,7 @@
      "title": "New Public Management Is Dead--Long Live Digital-Era Governance",
      "year": 2005,
      "cited_by": 2429,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": [
       "Reg"
      ]
@@ -907,7 +907,7 @@
      "title": "THE CASE FOR REGIONAL DEVELOPMENT INTERVENTION: PLACE‐BASED VERSUS PLACE‐NEUTRAL APPROACHES*",
      "year": 2012,
      "cited_by": 1488,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -947,7 +947,7 @@
      "title": "Reappraising the Eclectic Paradigm in an Age of Alliance Capitalism",
      "year": 1995,
      "cited_by": 1166,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -955,7 +955,7 @@
      "title": "Varieties of Capitalism and Institutional Complementarities in the Political Economy: An Empirical Analysis",
      "year": 2009,
      "cited_by": 1105,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -963,7 +963,7 @@
      "title": "What's New about the New Economy? Sources of Growth in the Managed and Entrepreneurial Economies",
      "year": 2001,
      "cited_by": 980,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -971,7 +971,7 @@
      "title": "Recombinant Property in East European Capitalism",
      "year": 1996,
      "cited_by": 977,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1003,7 +1003,7 @@
      "title": "How the Cases You Choose Affect the Answers You Get: Selection Bias in Comparative Politics",
      "year": 1990,
      "cited_by": 836,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1099,7 +1099,7 @@
      "title": "Commodity Prices and Growth in Africa",
      "year": 1999,
      "cited_by": 628,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1235,7 +1235,7 @@
   "complexity_economics": {
    "query": "complexity economics",
    "n_results": 50,
-   "n_overlap_with_corpus": 3,
+   "n_overlap_with_corpus": 10,
    "items": [
     {
      "oa_id": "W4239510810",
@@ -1266,7 +1266,7 @@
      "title": "Dynamic capabilities: what are they?",
      "year": 2000,
      "cited_by": 14377,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1322,7 +1322,7 @@
      "title": "Reinforcement Learning: A Survey",
      "year": 1996,
      "cited_by": 8797,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1354,7 +1354,7 @@
      "title": "What Will 5G Be?",
      "year": 2014,
      "cited_by": 8153,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1452,7 +1452,7 @@
      "title": "Planetary Boundaries: Exploring the Safe Operating Space for Humanity",
      "year": 2009,
      "cited_by": 6988,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1478,7 +1478,7 @@
      "title": "The governance of global value chains",
      "year": 2005,
      "cited_by": 6606,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": [
       "Reg"
      ]
@@ -1496,7 +1496,7 @@
      "title": "Process evaluation of complex interventions: Medical Research Council guidance",
      "year": 2015,
      "cited_by": 6438,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1512,7 +1512,7 @@
      "title": "Open for innovation: the role of openness in explaining innovation performance among U.K. manufacturing firms",
      "year": 2005,
      "cited_by": 6166,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1648,7 +1648,7 @@
   "governmentality": {
    "query": "governmentality foucault",
    "n_results": 50,
-   "n_overlap_with_corpus": 0,
+   "n_overlap_with_corpus": 3,
    "items": [
     {
      "oa_id": "W133664784",
@@ -1679,7 +1679,7 @@
      "title": "The narrative constitution of identity: A relational and network approach",
      "year": 1994,
      "cited_by": 2867,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1791,7 +1791,7 @@
      "title": "Artificial Intelligence and Management: The Automation–Augmentation Paradox",
      "year": 2021,
      "cited_by": 1764,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1807,7 +1807,7 @@
      "title": "Ontologies, socio-technical transitions (to sustainability), and the multi-level perspective",
      "year": 2010,
      "cited_by": 1671,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {

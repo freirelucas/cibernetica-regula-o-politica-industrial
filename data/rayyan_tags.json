@@ -48,6 +48,10 @@
       "description": "Escrita por autor no top-30 cross_axis_score ≥0.35 (Fase D)",
       "source": "data/author_network.json:top_cross_axis"
     },
+    "ponte de ordem superior": {
+      "description": "Top-20 por higher-order betweenness via random walks (B.4)",
+      "source": "data/higher_order_bc.json:top_30"
+    },
     "ponte a construir": {
       "description": "Top-25 por prioridade de ponte (CB + comunidade)",
       "source": "data/bridge_priority.json · src/bridge_priority.py"
@@ -62,6 +66,8 @@
     "TOP_N_HIGHER_ORDER": 40,
     "TOP_N_AUTHOR_BRIDGES": 30,
     "MIN_CROSS_AXIS_SCORE": 0.35,
+    "TOP_N_HO_BC": 20,
+    "MIN_HO_BC_SCORE": 0.05,
     "MIN_AXES_COVERED": 2,
     "N_BRIDGE_PRIORITY": 25
   }

@@ -287,6 +287,7 @@ pre.code{max-width:100%}
       <a href="#rede">Rede</a>
       <a href="explorador.html">Explorador interativo &nearr;</a>
       <a href="triagem.html">Triagem (inclusão/exclusão) &nearr;</a>
+      <a href="slides.html">Apresentação (20 slides) &nearr;</a>
       <a href="#rajadas">Rajadas</a>
       <a href="#adormecidas">Belas adormecidas</a>
       <a href="#citadas">Mais citadas</a>
@@ -617,6 +618,18 @@ pre.code{max-width:100%}
   <div class="callout" style="margin-top:1.25rem"><strong>Pontes humanas estritas (≥3 eixos):</strong> <strong>AUTHORNET_N_CROSS_STRICT</strong> autores. <strong>Soltas (≥2 eixos):</strong> <strong>AUTHORNET_N_CROSS_LOOSE</strong>. Comunidades de coautoria (Leiden): AUTHORNET_N_COMMUNITIES sobre 743 autores conectados. Os nomes que emergem — Domenico Mario Nuti (colaborador de Lange em <em>Economic Cybernetics</em>, 1971), Fred M. Taylor (modelo Lange-Taylor de socialismo de mercado), Kenneth Boulding (<em>Wholes and Parts</em>), Raúl Espejo (colaborador de Beer no Cybersyn), Peter John (colaborador de Hood) — são justo os <em>tradutores institucionais</em> entre as tradições. A aproximação curatorial e pedagógica proposta em <a href="#pontes">§05</a> tem nome próprio aqui: <strong>conectar a leitura desses autores para uma nova geração</strong>. Obras escritas por autores no top-N recebem a tag <code>obra de autor-ponte</code> no Rayyan.</div>
   <div class="callout"><strong>Sondagens dirigidas.</strong> Fetch de obras dos top-15 cross-axis catalogou <strong>AUTHORNET_N_SNOWBALL_NEW</strong> novas obras não-no-corpus, com <strong>AUTHORNET_N_SNOWBALL_OVERLAP</strong> em overlap. Sondagem em tradições <em>adjacentes</em> (Polanyi, Schumpeter, Hirschman, complexity economics, governmentality, top-50 cada): corpus quase NÃO toca essas tradições (1, 2, 0, 3, 0 overlaps sobre 50). Gap real para expansões da SR. Detalhes em <code>data/author_snowball_expansion.json</code> e <code>data/adjacent_tradition_probes.json</code>.</div>
   <div class="callout"><strong>Caveats.</strong> O score é conservador — só conta works cujo TÍTULO casa com o vocabulário de Cyb/Reg/PolInd (sem usar OpenAlex concepts ou abstracts ainda). Autores cujas contribuições estão em concepts ou texto livre podem ser sub-classificados. Próxima sondagem natural: estender o classificador para concepts ponderados.</div>
+  <p class="fig-cap" style="margin-top:1.25rem">Tipo de ponte por autor — classificação Gould-Fernandez sobre o grafo de coautoria expandido (B.5). <em>Coordinator</em> = intra-eixo; <em>gatekeeper</em>/<em>representative</em>/<em>liaison</em>/<em>itinerant</em> = cross-eixo. Fonte: <code>data/brokerage_roles.json</code>.</p>
+  <table class="tbl">
+    <thead><tr><th>Papel (G-F)</th><th>Triplets</th><th>N autores</th><th>Lê-se</th></tr></thead>
+    <tbody>
+      <tr><td><strong>coordinator</strong></td><td>BROK_COORD</td><td>BROK_N_COORD</td><td>intra-eixo (silo social)</td></tr>
+      <tr><td><strong>gatekeeper</strong></td><td>BROK_GATE</td><td>BROK_N_GATE</td><td>traz info para o grupo</td></tr>
+      <tr><td><strong>representative</strong></td><td>BROK_REP</td><td>BROK_N_REP</td><td>leva info para fora</td></tr>
+      <tr><td><strong>liaison</strong></td><td>BROK_LIAISON</td><td>BROK_N_LIAISON</td><td>entre 2 grupos externos</td></tr>
+      <tr><td><strong>itinerant</strong></td><td>BROK_ITIN</td><td>BROK_N_ITIN</td><td>através 3 grupos diferentes</td></tr>
+    </tbody>
+  </table>
+  <div class="callout"><strong>Achado.</strong> Coordinator (intra-eixo) domina o grafo de coautoria — confirma silos também no plano social. Cross-axis brokerage (gatekeeper+representative+liaison+itinerant) é raro: pouquíssimos autores aparecem ≥3 tipos diferentes. Top-5 cross-brokers em <code>data/brokerage_roles.json:top_by_cross_brokerage</code>.</div>
 </div></section>
 
 <!-- 11 · DISCUSSÃO -->
@@ -666,6 +679,24 @@ pre.code{max-width:100%}
     <a class="dl-btn" href="material-brasil/dataset_politica_industrial_brasil.csv" download><svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span class="dl-name">dataset_politica_industrial_brasil.csv</span><span class="dl-desc">Base de 140 trabalhos (Brasil)</span></div></a>
     <a class="dl-btn" href="material-brasil/referencias_todos.bib" download><svg width="13" height="13" viewBox="0 0 12 12" fill="none"><path d="M6 1v7M3 6l3 3 3-3M1 10h10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg><div><span class="dl-name">referencias_todos.bib</span><span class="dl-desc">Referências (BibTeX)</span></div></a>
   </div>
+</div></section>
+
+<!-- 12·5 · CORPUS BRASIL EXPANDIDO -->
+<section id="brasil-expandido" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">12·5</span><h2 class="sec-title">Corpus Brasil expandido — bola de neve completa</h2><span class="sec-method">A.4 da Fase E (expansão dirigida)</span></div>
+  <div class="prose">
+    <p class="lead">A.4 da expansão dirigida: para cada uma das <strong>BRASIL_N_FAGANELLO</strong> obras Faganello, resolveu-se o OA id (DOI direto ou busca por título) e fez-se bola de neve progressiva de 1 nível. Plus busca ampla com <code>filter=authorships.institutions.country_code:BR</code> + concepts de política industrial/regulação.</p>
+  </div>
+  <p class="fig-cap" style="margin-top:1rem">Estatísticas pós-expansão. Fonte: <code>data/brazil_expanded.json</code>.</p>
+  <table class="tbl">
+    <thead><tr><th>Métrica</th><th>Valor</th></tr></thead>
+    <tbody>
+      <tr><td>Obras Faganello resolvidas em OA id</td><td>BRASIL_N_RESOLVED de BRASIL_N_FAGANELLO</td></tr>
+      <tr><td>Obras BR top-cited (broad search)</td><td>BRASIL_N_BROAD</td></tr>
+      <tr><td>Total Brasil únicos (resolvidos + broad)</td><td>BRASIL_N_TOTAL</td></tr>
+    </tbody>
+  </table>
+  <div class="callout"><strong>Top-5 obras BR com citantes-de-alto-impacto.</strong> Critério: obras Faganello cujos citantes têm cited_by_count ≥ 100 (pontes BR×global de alto alcance). Listagem dinâmica em <code>data/brazil_expanded.json:citation_bridges_top30</code>. Estes são candidatos privilegiados para a SR — obras BR que entraram na conversa internacional.</div>
 </div></section>
 
 <!-- 13 · ANÁLISE INDEPENDENTE -->

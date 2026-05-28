@@ -32,6 +32,7 @@ AUTHORS = os.path.join(ROOT, "data", "author_works.json")
 PRIORITY = os.path.join(ROOT, "data", "bridge_priority.json")
 HYPEREDGES = os.path.join(ROOT, "data", "cocitation_hyperedges.json")
 AUTHOR_NETWORK = os.path.join(ROOT, "data", "author_network.json")
+HO_BC = os.path.join(ROOT, "data", "higher_order_bc.json")
 TAGS_MANIFEST = os.path.join(ROOT, "data", "rayyan_tags.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
@@ -50,6 +51,8 @@ MIN_CROSS_AXIS_EDGES = int(os.environ.get("MIN_CROSS_AXIS_EDGES", "10"))  # floo
 TOP_N_HIGHER_ORDER  = int(os.environ.get("TOP_N_HIGHER_ORDER", "40"))     # cap rank-based (scale-invariant)
 TOP_N_AUTHOR_BRIDGES   = int(os.environ.get("TOP_N_AUTHOR_BRIDGES", "30"))    # top-N autores cross-axis
 MIN_CROSS_AXIS_SCORE   = float(os.environ.get("MIN_CROSS_AXIS_SCORE", "0.35"))  # floor de cross_axis_score
+TOP_N_HO_BC            = int(os.environ.get("TOP_N_HO_BC", "20"))   # ponte de ordem superior (B.4)
+MIN_HO_BC_SCORE        = float(os.environ.get("MIN_HO_BC_SCORE", "0.05"))   # floor de HO centrality
 MIN_AXES_COVERED = 2           # tag obra-ponte: ≥N eixos por vocabulário
 N_BRIDGE_PRIORITY = 25         # tag ponte a construir: top-N por bridge_priority
 
@@ -78,6 +81,8 @@ CRITERIA = {
             "data/cross_brasil.json · src/cross_brasil.py"),
     "obra de autor-ponte": (f"Escrita por autor no top-{TOP_N_AUTHOR_BRIDGES} cross_axis_score ≥{MIN_CROSS_AXIS_SCORE} (Fase D)",
                               "data/author_network.json:top_cross_axis"),
+    "ponte de ordem superior": (f"Top-{TOP_N_HO_BC} por higher-order betweenness via random walks (B.4)",
+                                  "data/higher_order_bc.json:top_30"),
     "ponte a construir": (f"Top-{N_BRIDGE_PRIORITY} por prioridade de ponte (CB + comunidade)",
                           "data/bridge_priority.json · src/bridge_priority.py"),
     "higher_order_bridge": (f"Top {TOP_N_HIGHER_ORDER} obras com ≥{MIN_CROSS_AXIS_EDGES} hiperarestas trans-eixo (XGI; Landry, 2023)",
@@ -95,6 +100,8 @@ def write_manifest(out_path=TAGS_MANIFEST):
             "TOP_N_HIGHER_ORDER": TOP_N_HIGHER_ORDER,
             "TOP_N_AUTHOR_BRIDGES": TOP_N_AUTHOR_BRIDGES,
             "MIN_CROSS_AXIS_SCORE": MIN_CROSS_AXIS_SCORE,
+            "TOP_N_HO_BC": TOP_N_HO_BC,
+            "MIN_HO_BC_SCORE": MIN_HO_BC_SCORE,
             "MIN_AXES_COVERED": MIN_AXES_COVERED,
             "N_BRIDGE_PRIORITY": N_BRIDGE_PRIORITY,
         },
@@ -293,6 +300,30 @@ def tag_bridge_priority(works, n=N_BRIDGE_PRIORITY):
             e["roles"].add("ponte a construir")
             e.setdefault("rationale", {})["ponte a construir"] = (
                 f"top-{n} de bridge_priority (score={score_by_id.get(m.group(1), '?')})")
+    return works
+
+
+def tag_ho_bridge(works):
+    """Marca top-TOP_N_HO_BC obras por higher-order betweenness via random walks.
+    Captura pontes que a BC pairwise não vê (B.4)."""
+    if not os.path.exists(HO_BC):
+        return works
+    H = json.load(open(HO_BC, encoding="utf-8"))
+    by_id = H.get("by_oa_id", {})
+    eligible = sorted(
+        ((oid, c) for oid, c in by_id.items() if c >= MIN_HO_BC_SCORE),
+        key=lambda x: -x[1])[:TOP_N_HO_BC]
+    top_ids = {oid: c for oid, c in eligible}
+    n = 0
+    for e in works:
+        m = re.search(r"openalex\.org/(W\d+)", e.get("url", "") or "")
+        oid = e.get("oa_id") or (m.group(1) if m else None)
+        if oid and oid in top_ids:
+            e["roles"].add("ponte de ordem superior")
+            e.setdefault("rationale", {})["ponte de ordem superior"] = (
+                f"HO centrality={top_ids[oid]:.3f} (B.4 random walks)")
+            n += 1
+    print(f"  tag ponte de ordem superior: {n} obras")
     return works
 
 
@@ -508,8 +539,8 @@ def emit(works, out, stem):
 
 
 def build(out=DADOS):
-    works = tag_author_bridge(tag_higher_order_bridge(
-        tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate())))))))
+    works = tag_ho_bridge(tag_author_bridge(tag_higher_order_bridge(
+        tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate()))))))))
     os.makedirs(out, exist_ok=True)
     write_manifest()           # data/rayyan_tags.json — auditoria das escolhas conceituais
     emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)

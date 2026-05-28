@@ -1,0 +1,3128 @@
+{
+ "_generated": "B.5 · Gould-Fernandez brokerage",
+ "summary": {
+  "role_totals": {
+   "coordinator": 5806,
+   "representative": 281,
+   "gatekeeper": 340,
+   "itinerant": 13,
+   "liaison": 12
+  },
+  "n_authors_per_role": {
+   "coordinator": 249,
+   "representative": 45,
+   "gatekeeper": 47,
+   "itinerant": 6,
+   "liaison": 5
+  }
+ },
+ "top_by_cross_brokerage": [
+  {
+   "oa_id": "A5091724650",
+   "display_name": "Robert Costanza",
+   "primary_axis": "PolInd",
+   "roles": {
+    "itinerant": 3,
+    "gatekeeper": 42,
+    "representative": 30
+   },
+   "cross_brokerage_sum": 75
+  },
+  {
+   "oa_id": "A5053268108",
+   "display_name": "Raúl Espejo",
+   "primary_axis": "Cyb",
+   "roles": {
+    "coordinator": 114,
+    "representative": 21,
+    "gatekeeper": 26,
+    "itinerant": 3
+   },
+   "cross_brokerage_sum": 50
+  },
+  {
+   "oa_id": "A5065911565",
+   "display_name": "Cars Hommes",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 25,
+    "coordinator": 4,
+    "gatekeeper": 15,
+    "liaison": 8
+   },
+   "cross_brokerage_sum": 48
+  },
+  {
+   "oa_id": "A5014060436",
+   "display_name": "Florian Kern",
+   "primary_axis": "Reg",
+   "roles": {
+    "coordinator": 44,
+    "representative": 19,
+    "gatekeeper": 21
+   },
+   "cross_brokerage_sum": 40
+  },
+  {
+   "oa_id": "A5090239764",
+   "display_name": "Åsa Persson",
+   "primary_axis": "Reg",
+   "roles": {
+    "coordinator": 342,
+    "representative": 16,
+    "gatekeeper": 17
+   },
+   "cross_brokerage_sum": 33
+  },
+  {
+   "oa_id": "A5068656454",
+   "display_name": "Kenneth E. Boulding",
+   "primary_axis": "Cyb",
+   "roles": {
+    "gatekeeper": 19,
+    "itinerant": 4,
+    "coordinator": 5,
+    "representative": 5
+   },
+   "cross_brokerage_sum": 28
+  },
+  {
+   "oa_id": "A5047257119",
+   "display_name": "James Patterson",
+   "primary_axis": "Reg",
+   "roles": {
+    "gatekeeper": 25,
+    "coordinator": 48
+   },
+   "cross_brokerage_sum": 25
+  },
+  {
+   "oa_id": "A5031610815",
+   "display_name": "Flor Avelino",
+   "primary_axis": "Reg",
+   "roles": {
+    "gatekeeper": 15,
+    "coordinator": 18,
+    "representative": 10
+   },
+   "cross_brokerage_sum": 25
+  },
+  {
+   "oa_id": "A5031443120",
+   "display_name": "Gerald Midgley",
+   "primary_axis": "Cyb",
+   "roles": {
+    "coordinator": 25,
+    "representative": 12,
+    "gatekeeper": 12
+   },
+   "cross_brokerage_sum": 24
+  },
+  {
+   "oa_id": "A5077155935",
+   "display_name": "Anna Bergek",
+   "primary_axis": "PolInd",
+   "roles": {
+    "coordinator": 24,
+    "representative": 16,
+    "gatekeeper": 8
+   },
+   "cross_brokerage_sum": 24
+  },
+  {
+   "oa_id": "A5045054843",
+   "display_name": "Marten Scheffer",
+   "primary_axis": "Reg",
+   "roles": {
+    "coordinator": 75,
+    "representative": 8,
+    "gatekeeper": 11,
+    "itinerant": 1
+   },
+   "cross_brokerage_sum": 20
+  },
+  {
+   "oa_id": "A5037095112",
+   "display_name": "Carl Folke",
+   "primary_axis": "Reg",
+   "roles": {
+    "coordinator": 149,
+    "representative": 10,
+    "gatekeeper": 6
+   },
+   "cross_brokerage_sum": 16
+  },
+  {
+   "oa_id": "A5083574648",
+   "display_name": "Jochen Markard",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 12,
+    "coordinator": 12,
+    "gatekeeper": 4
+   },
+   "cross_brokerage_sum": 16
+  },
+  {
+   "oa_id": "A5047504591",
+   "display_name": "Per Olsson",
+   "primary_axis": "Reg",
+   "roles": {
+    "gatekeeper": 13,
+    "coordinator": 68
+   },
+   "cross_brokerage_sum": 13
+  },
+  {
+   "oa_id": "A5034122412",
+   "display_name": "Björn A. Sandén",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 10,
+    "coordinator": 6,
+    "gatekeeper": 2
+   },
+   "cross_brokerage_sum": 12
+  },
+  {
+   "oa_id": "A5113832316",
+   "display_name": "Dani Rodrik",
+   "primary_axis": "PolInd",
+   "roles": {
+    "gatekeeper": 8,
+    "itinerant": 1,
+    "coordinator": 13,
+    "representative": 3
+   },
+   "cross_brokerage_sum": 12
+  },
+  {
+   "oa_id": "A5072199060",
+   "display_name": "Éric F. Lambin",
+   "primary_axis": "Reg",
+   "roles": {
+    "coordinator": 44,
+    "representative": 4,
+    "gatekeeper": 7
+   },
+   "cross_brokerage_sum": 11
+  },
+  {
+   "oa_id": "A5025866626",
+   "display_name": "Bruno Turnheim",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 5,
+    "coordinator": 6,
+    "gatekeeper": 5
+   },
+   "cross_brokerage_sum": 10
+  },
+  {
+   "oa_id": "A5060046382",
+   "display_name": "Stefano Battiston",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 2,
+    "gatekeeper": 6,
+    "itinerant": 1
+   },
+   "cross_brokerage_sum": 9
+  },
+  {
+   "oa_id": "A5008602905",
+   "display_name": "Erik‐Hans Klijn",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 7,
+    "coordinator": 2,
+    "gatekeeper": 2
+   },
+   "cross_brokerage_sum": 9
+  },
+  {
+   "oa_id": "A5019087210",
+   "display_name": "J. Doyne Farmer",
+   "primary_axis": "Reg",
+   "roles": {
+    "gatekeeper": 8
+   },
+   "cross_brokerage_sum": 8
+  },
+  {
+   "oa_id": "A5039037641",
+   "display_name": "N.G. Röling",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 5,
+    "gatekeeper": 3
+   },
+   "cross_brokerage_sum": 8
+  },
+  {
+   "oa_id": "A5006164202",
+   "display_name": "Cees Leeuwis",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 6,
+    "gatekeeper": 2
+   },
+   "cross_brokerage_sum": 8
+  },
+  {
+   "oa_id": "A5073896378",
+   "display_name": "Ángela Espinosa",
+   "primary_axis": "Cyb",
+   "roles": {
+    "representative": 1,
+    "coordinator": 13,
+    "gatekeeper": 5
+   },
+   "cross_brokerage_sum": 6
+  },
+  {
+   "oa_id": "A5109276346",
+   "display_name": "C. S. Holling",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 2,
+    "coordinator": 5,
+    "gatekeeper": 4
+   },
+   "cross_brokerage_sum": 6
+  },
+  {
+   "oa_id": "A5059801420",
+   "display_name": "Nam C. Nguyen",
+   "primary_axis": "Cyb",
+   "roles": {
+    "gatekeeper": 4,
+    "representative": 2
+   },
+   "cross_brokerage_sum": 6
+  },
+  {
+   "oa_id": "A5055593446",
+   "display_name": "O.J.H. Bosch",
+   "primary_axis": "Cyb",
+   "roles": {
+    "gatekeeper": 4,
+    "representative": 2
+   },
+   "cross_brokerage_sum": 6
+  },
+  {
+   "oa_id": "A5111505527",
+   "display_name": "Domenico Mario Nuti",
+   "primary_axis": "Reg",
+   "roles": {
+    "liaison": 1,
+    "gatekeeper": 5,
+    "coordinator": 2
+   },
+   "cross_brokerage_sum": 6
+  },
+  {
+   "oa_id": "A5006299972",
+   "display_name": "Terry P. Hughes",
+   "primary_axis": "Reg",
+   "roles": {
+    "coordinator": 23,
+    "representative": 2,
+    "gatekeeper": 4
+   },
+   "cross_brokerage_sum": 6
+  },
+  {
+   "oa_id": "A5066582682",
+   "display_name": "Giorgio Fagiolo",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 1,
+    "coordinator": 3,
+    "gatekeeper": 4
+   },
+   "cross_brokerage_sum": 5
+  },
+  {
+   "oa_id": "A5086658512",
+   "display_name": "Mari Martiskainen",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 5,
+    "coordinator": 2
+   },
+   "cross_brokerage_sum": 5
+  },
+  {
+   "oa_id": "A5051981949",
+   "display_name": "Fikret Berkes",
+   "primary_axis": "Reg",
+   "roles": {
+    "coordinator": 7,
+    "representative": 4,
+    "gatekeeper": 1
+   },
+   "cross_brokerage_sum": 5
+  },
+  {
+   "oa_id": "A5067810736",
+   "display_name": "Sergio Barile",
+   "primary_axis": "Cyb",
+   "roles": {
+    "coordinator": 13,
+    "representative": 5
+   },
+   "cross_brokerage_sum": 5
+  },
+  {
+   "oa_id": "A5073478048",
+   "display_name": "Ray Ison",
+   "primary_axis": "Cyb",
+   "roles": {
+    "gatekeeper": 2,
+    "liaison": 1,
+    "representative": 2
+   },
+   "cross_brokerage_sum": 5
+  },
+  {
+   "oa_id": "A5033061211",
+   "display_name": "Julia M. Wittmayer",
+   "primary_axis": "Reg",
+   "roles": {
+    "gatekeeper": 4,
+    "coordinator": 8
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5013037228",
+   "display_name": "Benjamin E. Lippincott",
+   "primary_axis": "PolInd",
+   "roles": {
+    "coordinator": 11,
+    "representative": 3,
+    "gatekeeper": 1
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5042463542",
+   "display_name": "Johan Schot",
+   "primary_axis": "PolInd",
+   "roles": {
+    "coordinator": 4,
+    "representative": 4
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5103035625",
+   "display_name": "Xinshen Diao",
+   "primary_axis": "Reg",
+   "roles": {
+    "gatekeeper": 3,
+    "representative": 1
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5059312614",
+   "display_name": "Helen Ross",
+   "primary_axis": "Cyb",
+   "roles": {
+    "gatekeeper": 4
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5045665091",
+   "display_name": "Marialuisa Saviano",
+   "primary_axis": "Cyb",
+   "roles": {
+    "coordinator": 8,
+    "representative": 4
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5003394214",
+   "display_name": "Milica Uvalić",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 2,
+    "gatekeeper": 2
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5070549609",
+   "display_name": "Kevin Collins",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 1,
+    "gatekeeper": 3
+   },
+   "cross_brokerage_sum": 4
+  },
+  {
+   "oa_id": "A5108366788",
+   "display_name": "Oskar Lange",
+   "primary_axis": "PolInd",
+   "roles": {
+    "liaison": 1,
+    "gatekeeper": 2,
+    "coordinator": 2
+   },
+   "cross_brokerage_sum": 3
+  },
+  {
+   "oa_id": "A5041207215",
+   "display_name": "Kjell Andersson",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 2,
+    "gatekeeper": 1
+   },
+   "cross_brokerage_sum": 3
+  },
+  {
+   "oa_id": "A5013903129",
+   "display_name": "Roberto Zarama",
+   "primary_axis": "Cyb",
+   "roles": {
+    "coordinator": 3,
+    "representative": 3
+   },
+   "cross_brokerage_sum": 3
+  },
+  {
+   "oa_id": "A5069424805",
+   "display_name": "René Kemp",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 1,
+    "coordinator": 3,
+    "gatekeeper": 2
+   },
+   "cross_brokerage_sum": 3
+  },
+  {
+   "oa_id": "A5071190894",
+   "display_name": "Raed Jaradat",
+   "primary_axis": "Cyb",
+   "roles": {
+    "representative": 3
+   },
+   "cross_brokerage_sum": 3
+  },
+  {
+   "oa_id": "A5049662324",
+   "display_name": "Edgar Z. Palmer",
+   "primary_axis": "PolInd",
+   "roles": {
+    "liaison": 1,
+    "gatekeeper": 1
+   },
+   "cross_brokerage_sum": 2
+  },
+  {
+   "oa_id": "A5036974074",
+   "display_name": "Derk Loorbach",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 1,
+    "gatekeeper": 1
+   },
+   "cross_brokerage_sum": 2
+  },
+  {
+   "oa_id": "A5110161513",
+   "display_name": "William A. Brock",
+   "primary_axis": "PolInd",
+   "roles": {
+    "gatekeeper": 2
+   },
+   "cross_brokerage_sum": 2
+  },
+  {
+   "oa_id": "A5029405627",
+   "display_name": "Margaret McMillan",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 1,
+    "coordinator": 1,
+    "gatekeeper": 1
+   },
+   "cross_brokerage_sum": 2
+  },
+  {
+   "oa_id": "A5029868613",
+   "display_name": "Laurens Klerkx",
+   "primary_axis": "Reg",
+   "roles": {
+    "gatekeeper": 2
+   },
+   "cross_brokerage_sum": 2
+  },
+  {
+   "oa_id": "A5057886841",
+   "display_name": "Steven N. Durlauf",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 1
+   },
+   "cross_brokerage_sum": 1
+  },
+  {
+   "oa_id": "A5070268763",
+   "display_name": "Francesca Farioli",
+   "primary_axis": "Cyb",
+   "roles": {
+    "gatekeeper": 1
+   },
+   "cross_brokerage_sum": 1
+  },
+  {
+   "oa_id": "A5020982608",
+   "display_name": "Saul Estrin",
+   "primary_axis": "Reg",
+   "roles": {
+    "representative": 1
+   },
+   "cross_brokerage_sum": 1
+  },
+  {
+   "oa_id": "A5057650206",
+   "display_name": "Frank Schweitzer",
+   "primary_axis": "PolInd",
+   "roles": {
+    "representative": 1
+   },
+   "cross_brokerage_sum": 1
+  }
+ ],
+ "by_author": {
+  "A5088360125": {
+   "display_name": "John M. Anderies",
+   "primary_axis": "Reg",
+   "n_neighbors": 16,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5089627274": {
+   "display_name": "Louis Lebel",
+   "primary_axis": "Reg",
+   "n_neighbors": 19,
+   "roles": {
+    "coordinator": 33
+   },
+   "total_triplets": 33
+  },
+  "A5010673771": {
+   "display_name": "Jon Norberg",
+   "primary_axis": "Reg",
+   "n_neighbors": 15,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5032057336": {
+   "display_name": "Harriet Bulkeley",
+   "primary_axis": "Reg",
+   "n_neighbors": 16,
+   "roles": {
+    "coordinator": 59
+   },
+   "total_triplets": 59
+  },
+  "A5037095112": {
+   "display_name": "Carl Folke",
+   "primary_axis": "Reg",
+   "n_neighbors": 97,
+   "roles": {
+    "coordinator": 149,
+    "representative": 10,
+    "gatekeeper": 6
+   },
+   "total_triplets": 165
+  },
+  "A5038233956": {
+   "display_name": "Helen Margetts",
+   "primary_axis": "Reg",
+   "n_neighbors": 65,
+   "roles": {
+    "coordinator": 17
+   },
+   "total_triplets": 17
+  },
+  "A5013036158": {
+   "display_name": "Basil Bornemann",
+   "primary_axis": "Reg",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 13
+   },
+   "total_triplets": 13
+  },
+  "A5050088132": {
+   "display_name": "Leroy White",
+   "primary_axis": "Cyb",
+   "n_neighbors": 86,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5077756369": {
+   "display_name": "John Mingers",
+   "primary_axis": "Cyb",
+   "n_neighbors": 13,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5086898925": {
+   "display_name": "John Brocklesby",
+   "primary_axis": "Cyb",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5074972555": {
+   "display_name": "Mike Yearworth",
+   "primary_axis": "Cyb",
+   "n_neighbors": 84,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5031443120": {
+   "display_name": "Gerald Midgley",
+   "primary_axis": "Cyb",
+   "n_neighbors": 179,
+   "roles": {
+    "coordinator": 25,
+    "representative": 12,
+    "gatekeeper": 12
+   },
+   "total_triplets": 49
+  },
+  "A5047504591": {
+   "display_name": "Per Olsson",
+   "primary_axis": "Reg",
+   "n_neighbors": 75,
+   "roles": {
+    "gatekeeper": 13,
+    "coordinator": 68
+   },
+   "total_triplets": 81
+  },
+  "A5047257119": {
+   "display_name": "James Patterson",
+   "primary_axis": "Reg",
+   "n_neighbors": 71,
+   "roles": {
+    "gatekeeper": 25,
+    "coordinator": 48
+   },
+   "total_triplets": 73
+  },
+  "A5033061211": {
+   "display_name": "Julia M. Wittmayer",
+   "primary_axis": "Reg",
+   "n_neighbors": 50,
+   "roles": {
+    "gatekeeper": 4,
+    "coordinator": 8
+   },
+   "total_triplets": 12
+  },
+  "A5022231519": {
+   "display_name": "Jeff Foote",
+   "primary_axis": "Cyb",
+   "n_neighbors": 31,
+   "roles": {
+    "coordinator": 24
+   },
+   "total_triplets": 24
+  },
+  "A5073896378": {
+   "display_name": "Ángela Espinosa",
+   "primary_axis": "Cyb",
+   "n_neighbors": 12,
+   "roles": {
+    "representative": 1,
+    "coordinator": 13,
+    "gatekeeper": 5
+   },
+   "total_triplets": 19
+  },
+  "A5085402396": {
+   "display_name": "Jon Walker",
+   "primary_axis": "Cyb",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5001531287": {
+   "display_name": "Roger Harnden",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5103040148": {
+   "display_name": "Pedro Pablo Cardoso Castro",
+   "primary_axis": "Cyb",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5103445562": {
+   "display_name": "Sidney G. Winter",
+   "primary_axis": "PolInd",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5060960665": {
+   "display_name": "Giovanni Dosi",
+   "primary_axis": "PolInd",
+   "n_neighbors": 19,
+   "roles": {
+    "coordinator": 13
+   },
+   "total_triplets": 13
+  },
+  "A5068656454": {
+   "display_name": "Kenneth E. Boulding",
+   "primary_axis": "Cyb",
+   "n_neighbors": 39,
+   "roles": {
+    "gatekeeper": 19,
+    "itinerant": 4,
+    "coordinator": 5,
+    "representative": 5
+   },
+   "total_triplets": 33
+  },
+  "A5109835266": {
+   "display_name": "Barbara Wootton",
+   "primary_axis": "PolInd",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5017839059": {
+   "display_name": "Peter Checkland",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5046424221": {
+   "display_name": "Humberto R. Maturana",
+   "primary_axis": "Cyb",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5111715641": {
+   "display_name": "Stafford Beer",
+   "primary_axis": "Cyb",
+   "n_neighbors": 16,
+   "roles": {
+    "coordinator": 76
+   },
+   "total_triplets": 76
+  },
+  "A5109805326": {
+   "display_name": "Richard R. Nelson",
+   "primary_axis": "PolInd",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5006537035": {
+   "display_name": "John R. Beaumont",
+   "primary_axis": "Cyb",
+   "n_neighbors": 33,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5109276346": {
+   "display_name": "C. S. Holling",
+   "primary_axis": "Reg",
+   "n_neighbors": 20,
+   "roles": {
+    "representative": 2,
+    "coordinator": 5,
+    "gatekeeper": 4
+   },
+   "total_triplets": 11
+  },
+  "A5028246781": {
+   "display_name": "Lance Gunderson",
+   "primary_axis": "Reg",
+   "n_neighbors": 24,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5105309508": {
+   "display_name": "Steve Carpenter",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5004330953": {
+   "display_name": "Thomas Elmqvist",
+   "primary_axis": "Reg",
+   "n_neighbors": 32,
+   "roles": {
+    "coordinator": 59
+   },
+   "total_triplets": 59
+  },
+  "A5045054843": {
+   "display_name": "Marten Scheffer",
+   "primary_axis": "Reg",
+   "n_neighbors": 44,
+   "roles": {
+    "coordinator": 75,
+    "representative": 8,
+    "gatekeeper": 11,
+    "itinerant": 1
+   },
+   "total_triplets": 95
+  },
+  "A5091724650": {
+   "display_name": "Robert Costanza",
+   "primary_axis": "PolInd",
+   "n_neighbors": 56,
+   "roles": {
+    "itinerant": 3,
+    "gatekeeper": 42,
+    "representative": 30
+   },
+   "total_triplets": 75
+  },
+  "A5112182993": {
+   "display_name": "Staffan Jacobsson",
+   "primary_axis": "PolInd",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 12
+   },
+   "total_triplets": 12
+  },
+  "A5077155935": {
+   "display_name": "Anna Bergek",
+   "primary_axis": "PolInd",
+   "n_neighbors": 37,
+   "roles": {
+    "coordinator": 24,
+    "representative": 16,
+    "gatekeeper": 8
+   },
+   "total_triplets": 48
+  },
+  "A5111963681": {
+   "display_name": "Patrick Le Galès",
+   "primary_axis": "Reg",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5019087210": {
+   "display_name": "J. Doyne Farmer",
+   "primary_axis": "Reg",
+   "n_neighbors": 24,
+   "roles": {
+    "gatekeeper": 8
+   },
+   "total_triplets": 8
+  },
+  "A5060046382": {
+   "display_name": "Stefano Battiston",
+   "primary_axis": "Reg",
+   "n_neighbors": 14,
+   "roles": {
+    "representative": 2,
+    "gatekeeper": 6,
+    "itinerant": 1
+   },
+   "total_triplets": 9
+  },
+  "A5065911565": {
+   "display_name": "Cars Hommes",
+   "primary_axis": "PolInd",
+   "n_neighbors": 31,
+   "roles": {
+    "representative": 25,
+    "coordinator": 4,
+    "gatekeeper": 15,
+    "liaison": 8
+   },
+   "total_triplets": 52
+  },
+  "A5066658913": {
+   "display_name": "Anne L. Schneider",
+   "primary_axis": "Reg",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5075837299": {
+   "display_name": "Justin Yifu Lin",
+   "primary_axis": "PolInd",
+   "n_neighbors": 23,
+   "roles": {
+    "coordinator": 15
+   },
+   "total_triplets": 15
+  },
+  "A5016553509": {
+   "display_name": "Ha‐Joon Chang",
+   "primary_axis": "PolInd",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5064102643": {
+   "display_name": "Keun Lee",
+   "primary_axis": "PolInd",
+   "n_neighbors": 15,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5012081170": {
+   "display_name": "Michael C. Jackson",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5055730564": {
+   "display_name": "P. Keys",
+   "primary_axis": "Cyb",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5013037228": {
+   "display_name": "Benjamin E. Lippincott",
+   "primary_axis": "PolInd",
+   "n_neighbors": 107,
+   "roles": {
+    "coordinator": 11,
+    "representative": 3,
+    "gatekeeper": 1
+   },
+   "total_triplets": 15
+  },
+  "A5108366788": {
+   "display_name": "Oskar Lange",
+   "primary_axis": "PolInd",
+   "n_neighbors": 26,
+   "roles": {
+    "liaison": 1,
+    "gatekeeper": 2,
+    "coordinator": 2
+   },
+   "total_triplets": 5
+  },
+  "A5049662324": {
+   "display_name": "Edgar Z. Palmer",
+   "primary_axis": "PolInd",
+   "n_neighbors": 35,
+   "roles": {
+    "liaison": 1,
+    "gatekeeper": 1
+   },
+   "total_triplets": 2
+  },
+  "A5021318098": {
+   "display_name": "B. Guy Peters",
+   "primary_axis": "Reg",
+   "n_neighbors": 10,
+   "roles": {
+    "coordinator": 18
+   },
+   "total_triplets": 18
+  },
+  "A5015346324": {
+   "display_name": "Giliberto Capano",
+   "primary_axis": "Reg",
+   "n_neighbors": 13,
+   "roles": {
+    "coordinator": 28
+   },
+   "total_triplets": 28
+  },
+  "A5029251637": {
+   "display_name": "Ishani Mukherjee",
+   "primary_axis": "Reg",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5077475073": {
+   "display_name": "Michael Howlett",
+   "primary_axis": "Reg",
+   "n_neighbors": 34,
+   "roles": {
+    "coordinator": 253
+   },
+   "total_triplets": 253
+  },
+  "A5049441915": {
+   "display_name": "Jale Tosun",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5103184427": {
+   "display_name": "Amanda Clarke",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5045167008": {
+   "display_name": "Patrick Dunleavy",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5040027314": {
+   "display_name": "Peter John",
+   "primary_axis": "Reg",
+   "n_neighbors": 72,
+   "roles": {
+    "coordinator": 74
+   },
+   "total_triplets": 74
+  },
+  "A5053268108": {
+   "display_name": "Raúl Espejo",
+   "primary_axis": "Cyb",
+   "n_neighbors": 47,
+   "roles": {
+    "coordinator": 114,
+    "representative": 21,
+    "gatekeeper": 26,
+    "itinerant": 3
+   },
+   "total_triplets": 164
+  },
+  "A5015551394": {
+   "display_name": "Gandolfo Dominici",
+   "primary_axis": "Cyb",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 7
+   },
+   "total_triplets": 7
+  },
+  "A5017776355": {
+   "display_name": "Zoraida Mendiwelso-Bendek",
+   "primary_axis": "Cyb",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5066481217": {
+   "display_name": "Markus Schwaninger",
+   "primary_axis": "Cyb",
+   "n_neighbors": 15,
+   "roles": {
+    "coordinator": 18
+   },
+   "total_triplets": 18
+  },
+  "A5041207215": {
+   "display_name": "Kjell Andersson",
+   "primary_axis": "Reg",
+   "n_neighbors": 8,
+   "roles": {
+    "representative": 2,
+    "gatekeeper": 1
+   },
+   "total_triplets": 3
+  },
+  "A5013903129": {
+   "display_name": "Roberto Zarama",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 3,
+    "representative": 3
+   },
+   "total_triplets": 6
+  },
+  "A5066582682": {
+   "display_name": "Giorgio Fagiolo",
+   "primary_axis": "PolInd",
+   "n_neighbors": 11,
+   "roles": {
+    "representative": 1,
+    "coordinator": 3,
+    "gatekeeper": 4
+   },
+   "total_triplets": 8
+  },
+  "A5112082129": {
+   "display_name": "W. Ross Ashby",
+   "primary_axis": "Cyb",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5047558576": {
+   "display_name": "Ewan Ferlı́e",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 14
+   },
+   "total_triplets": 14
+  },
+  "A5087469637": {
+   "display_name": "Jacob Torfing",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5060969324": {
+   "display_name": "Eva Sørensen",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5034901485": {
+   "display_name": "M. Jae Moon",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 14
+   },
+   "total_triplets": 14
+  },
+  "A5006126748": {
+   "display_name": "Jonathan Craft",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5079053135": {
+   "display_name": "Evert A. Lindquist",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5008330081": {
+   "display_name": "Kathleen McNutt",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5067365908": {
+   "display_name": "Jeremy Rayner",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5046930270": {
+   "display_name": "Richard M. Walker",
+   "primary_axis": "Reg",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5004895081": {
+   "display_name": "Rhys Andrews",
+   "primary_axis": "Reg",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5018432314": {
+   "display_name": "Gene A. Brewer",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 7
+   },
+   "total_triplets": 7
+  },
+  "A5101553587": {
+   "display_name": "Oliver James",
+   "primary_axis": "Reg",
+   "n_neighbors": 18,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5090712468": {
+   "display_name": "José M. Alonso",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5070629755": {
+   "display_name": "Laurence Ferry",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5090530327": {
+   "display_name": "Alice Moseley",
+   "primary_axis": "Reg",
+   "n_neighbors": 15,
+   "roles": {
+    "coordinator": 16
+   },
+   "total_triplets": 16
+  },
+  "A5002465028": {
+   "display_name": "Gregg G. Van Ryzin",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5082263110": {
+   "display_name": "Gerry Stoker",
+   "primary_axis": "Reg",
+   "n_neighbors": 18,
+   "roles": {
+    "coordinator": 56
+   },
+   "total_triplets": 56
+  },
+  "A5008602905": {
+   "display_name": "Erik‐Hans Klijn",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "representative": 7,
+    "coordinator": 2,
+    "gatekeeper": 2
+   },
+   "total_triplets": 11
+  },
+  "A5089523174": {
+   "display_name": "Ludwig von Bertalanffy",
+   "primary_axis": "Cyb",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5042463542": {
+   "display_name": "Johan Schot",
+   "primary_axis": "PolInd",
+   "n_neighbors": 33,
+   "roles": {
+    "coordinator": 4,
+    "representative": 4
+   },
+   "total_triplets": 8
+  },
+  "A5069424805": {
+   "display_name": "René Kemp",
+   "primary_axis": "PolInd",
+   "n_neighbors": 6,
+   "roles": {
+    "representative": 1,
+    "coordinator": 3,
+    "gatekeeper": 2
+   },
+   "total_triplets": 6
+  },
+  "A5036974074": {
+   "display_name": "Derk Loorbach",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "representative": 1,
+    "gatekeeper": 1
+   },
+   "total_triplets": 2
+  },
+  "A5014060436": {
+   "display_name": "Florian Kern",
+   "primary_axis": "Reg",
+   "n_neighbors": 36,
+   "roles": {
+    "coordinator": 44,
+    "representative": 19,
+    "gatekeeper": 21
+   },
+   "total_triplets": 84
+  },
+  "A5083574648": {
+   "display_name": "Jochen Markard",
+   "primary_axis": "PolInd",
+   "n_neighbors": 33,
+   "roles": {
+    "representative": 12,
+    "coordinator": 12,
+    "gatekeeper": 4
+   },
+   "total_triplets": 28
+  },
+  "A5025866626": {
+   "display_name": "Bruno Turnheim",
+   "primary_axis": "Reg",
+   "n_neighbors": 30,
+   "roles": {
+    "representative": 5,
+    "coordinator": 6,
+    "gatekeeper": 5
+   },
+   "total_triplets": 16
+  },
+  "A5034122412": {
+   "display_name": "Björn A. Sandén",
+   "primary_axis": "PolInd",
+   "n_neighbors": 31,
+   "roles": {
+    "representative": 10,
+    "coordinator": 6,
+    "gatekeeper": 2
+   },
+   "total_triplets": 18
+  },
+  "A5031610815": {
+   "display_name": "Flor Avelino",
+   "primary_axis": "Reg",
+   "n_neighbors": 33,
+   "roles": {
+    "gatekeeper": 15,
+    "coordinator": 18,
+    "representative": 10
+   },
+   "total_triplets": 43
+  },
+  "A5086658512": {
+   "display_name": "Mari Martiskainen",
+   "primary_axis": "Reg",
+   "n_neighbors": 29,
+   "roles": {
+    "representative": 5,
+    "coordinator": 2
+   },
+   "total_triplets": 7
+  },
+  "A5110161513": {
+   "display_name": "William A. Brock",
+   "primary_axis": "PolInd",
+   "n_neighbors": 5,
+   "roles": {
+    "gatekeeper": 2
+   },
+   "total_triplets": 2
+  },
+  "A5057886841": {
+   "display_name": "Steven N. Durlauf",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "representative": 1
+   },
+   "total_triplets": 1
+  },
+  "A5076727552": {
+   "display_name": "Florian Wagener",
+   "primary_axis": "PolInd",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5073412215": {
+   "display_name": "Arwin van Buuren",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 18
+   },
+   "total_triplets": 18
+  },
+  "A5014566928": {
+   "display_name": "Jurian Edelenbos",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5034550995": {
+   "display_name": "Ricardo Hausmann",
+   "primary_axis": "PolInd",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5113832316": {
+   "display_name": "Dani Rodrik",
+   "primary_axis": "PolInd",
+   "n_neighbors": 30,
+   "roles": {
+    "gatekeeper": 8,
+    "itinerant": 1,
+    "coordinator": 13,
+    "representative": 3
+   },
+   "total_triplets": 25
+  },
+  "A5064297795": {
+   "display_name": "César A. Hidalgo",
+   "primary_axis": "PolInd",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5029405627": {
+   "display_name": "Margaret McMillan",
+   "primary_axis": "PolInd",
+   "n_neighbors": 5,
+   "roles": {
+    "representative": 1,
+    "coordinator": 1,
+    "gatekeeper": 1
+   },
+   "total_triplets": 3
+  },
+  "A5103035625": {
+   "display_name": "Xinshen Diao",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "gatekeeper": 3,
+    "representative": 1
+   },
+   "total_triplets": 4
+  },
+  "A5091287448": {
+   "display_name": "Neil Gunningham",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5070735698": {
+   "display_name": "Karoline S. Rogge",
+   "primary_axis": "Reg",
+   "n_neighbors": 11,
+   "roles": {
+    "coordinator": 31
+   },
+   "total_triplets": 31
+  },
+  "A5081020083": {
+   "display_name": "Paula Kivimaa",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 13
+   },
+   "total_triplets": 13
+  },
+  "A5085262382": {
+   "display_name": "Jan Rosenow",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5090491703": {
+   "display_name": "Jonn Axsen",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5069415850": {
+   "display_name": "M. Ramesh",
+   "primary_axis": "Reg",
+   "n_neighbors": 10,
+   "roles": {
+    "coordinator": 19
+   },
+   "total_triplets": 19
+  },
+  "A5090584367": {
+   "display_name": "Azad Singh Bali",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 7
+   },
+   "total_triplets": 7
+  },
+  "A5064629213": {
+   "display_name": "Benjamin Cashore",
+   "primary_axis": "Reg",
+   "n_neighbors": 12,
+   "roles": {
+    "coordinator": 26
+   },
+   "total_triplets": 26
+  },
+  "A5072083988": {
+   "display_name": "Araz Taeihagh",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5081825073": {
+   "display_name": "José Pérez Ríos",
+   "primary_axis": "Cyb",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5057962870": {
+   "display_name": "Derek Cabrera",
+   "primary_axis": "Cyb",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 20
+   },
+   "total_triplets": 20
+  },
+  "A5109925589": {
+   "display_name": "Richard S. Gallagher",
+   "primary_axis": "Cyb",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5056221101": {
+   "display_name": "Scott J. Leischow",
+   "primary_axis": "Cyb",
+   "n_neighbors": 12,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5058715573": {
+   "display_name": "William M. K. Trochim",
+   "primary_axis": "Cyb",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5059801420": {
+   "display_name": "Nam C. Nguyen",
+   "primary_axis": "Cyb",
+   "n_neighbors": 6,
+   "roles": {
+    "gatekeeper": 4,
+    "representative": 2
+   },
+   "total_triplets": 6
+  },
+  "A5055593446": {
+   "display_name": "O.J.H. Bosch",
+   "primary_axis": "Cyb",
+   "n_neighbors": 6,
+   "roles": {
+    "gatekeeper": 4,
+    "representative": 2
+   },
+   "total_triplets": 6
+  },
+  "A5059312614": {
+   "display_name": "Helen Ross",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "gatekeeper": 4
+   },
+   "total_triplets": 4
+  },
+  "A5084071391": {
+   "display_name": "Bernhard Truffer",
+   "primary_axis": "PolInd",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 30
+   },
+   "total_triplets": 30
+  },
+  "A5101604723": {
+   "display_name": "Adrian Smith",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5078922784": {
+   "display_name": "Lars Coenen",
+   "primary_axis": "PolInd",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5051981949": {
+   "display_name": "Fikret Berkes",
+   "primary_axis": "Reg",
+   "n_neighbors": 20,
+   "roles": {
+    "coordinator": 7,
+    "representative": 4,
+    "gatekeeper": 1
+   },
+   "total_triplets": 12
+  },
+  "A5029501048": {
+   "display_name": "Amin Vahidi",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5029854233": {
+   "display_name": "Francesco Polese",
+   "primary_axis": "Cyb",
+   "n_neighbors": 10,
+   "roles": {
+    "coordinator": 9
+   },
+   "total_triplets": 9
+  },
+  "A5067810736": {
+   "display_name": "Sergio Barile",
+   "primary_axis": "Cyb",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 13,
+    "representative": 5
+   },
+   "total_triplets": 18
+  },
+  "A5045665091": {
+   "display_name": "Marialuisa Saviano",
+   "primary_axis": "Cyb",
+   "n_neighbors": 12,
+   "roles": {
+    "coordinator": 8,
+    "representative": 4
+   },
+   "total_triplets": 12
+  },
+  "A5047633096": {
+   "display_name": "Antonio Manuel López Hernández",
+   "primary_axis": "Reg",
+   "n_neighbors": 12,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5101413936": {
+   "display_name": "José Luis Zafra Gómez",
+   "primary_axis": "Reg",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5018797387": {
+   "display_name": "John M. Bryson",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5034808384": {
+   "display_name": "Barbara C. Crosby",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5103539448": {
+   "display_name": "Melissa M. Stone",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5062327405": {
+   "display_name": "Irvine Lapsley",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5037193620": {
+   "display_name": "Ileana Steccolini",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5070268763": {
+   "display_name": "Francesca Farioli",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "gatekeeper": 1
+   },
+   "total_triplets": 1
+  },
+  "A5044202770": {
+   "display_name": "Francesca Iandolo",
+   "primary_axis": "Cyb",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 15
+   },
+   "total_triplets": 15
+  },
+  "A5061479956": {
+   "display_name": "Luca Carrubbo",
+   "primary_axis": "Cyb",
+   "n_neighbors": 8,
+   "roles": {
+    "coordinator": 19
+   },
+   "total_triplets": 19
+  },
+  "A5008560824": {
+   "display_name": "Francesco Caputo",
+   "primary_axis": "Cyb",
+   "n_neighbors": 26,
+   "roles": {
+    "coordinator": 52
+   },
+   "total_triplets": 52
+  },
+  "A5050236071": {
+   "display_name": "Leonard Walletzký",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5028697924": {
+   "display_name": "Rebecca Herron",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5022657282": {
+   "display_name": "Eliseo Luis Vilalta-perdomo",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5063068737": {
+   "display_name": "David Ernesto Salinas-Navarro",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5090928235": {
+   "display_name": "Carsten Daugbjerg",
+   "primary_axis": "Reg",
+   "n_neighbors": 11,
+   "roles": {
+    "coordinator": 24
+   },
+   "total_triplets": 24
+  },
+  "A5010204821": {
+   "display_name": "Torsten Krause",
+   "primary_axis": "Reg",
+   "n_neighbors": 22,
+   "roles": {
+    "coordinator": 17
+   },
+   "total_triplets": 17
+  },
+  "A5026703018": {
+   "display_name": "Fariborz Zelli",
+   "primary_axis": "Reg",
+   "n_neighbors": 10,
+   "roles": {
+    "coordinator": 11
+   },
+   "total_triplets": 11
+  },
+  "A5003464103": {
+   "display_name": "Harro van Asselt",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5010644863": {
+   "display_name": "Frank Biermann",
+   "primary_axis": "Reg",
+   "n_neighbors": 12,
+   "roles": {
+    "coordinator": 24
+   },
+   "total_triplets": 24
+  },
+  "A5111505527": {
+   "display_name": "Domenico Mario Nuti",
+   "primary_axis": "Reg",
+   "n_neighbors": 22,
+   "roles": {
+    "liaison": 1,
+    "gatekeeper": 5,
+    "coordinator": 2
+   },
+   "total_triplets": 8
+  },
+  "A5020982608": {
+   "display_name": "Saul Estrin",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "representative": 1
+   },
+   "total_triplets": 1
+  },
+  "A5003394214": {
+   "display_name": "Milica Uvalić",
+   "primary_axis": "PolInd",
+   "n_neighbors": 6,
+   "roles": {
+    "representative": 2,
+    "gatekeeper": 2
+   },
+   "total_triplets": 4
+  },
+  "A5002591484": {
+   "display_name": "Francesca Loia",
+   "primary_axis": "Cyb",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5076558792": {
+   "display_name": "Irene Fulco",
+   "primary_axis": "Cyb",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5030104769": {
+   "display_name": "Mario Calabrese",
+   "primary_axis": "Cyb",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5008358751": {
+   "display_name": "Gianpaolo Basile",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5071190894": {
+   "display_name": "Raed Jaradat",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "representative": 3
+   },
+   "total_triplets": 3
+  },
+  "A5036926853": {
+   "display_name": "Roberto Bruni",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5083145020": {
+   "display_name": "Alberto Paucar‐Caceres",
+   "primary_axis": "Cyb",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5011022122": {
+   "display_name": "Jens Newig",
+   "primary_axis": "Reg",
+   "n_neighbors": 29,
+   "roles": {
+    "coordinator": 31
+   },
+   "total_triplets": 31
+  },
+  "A5025324057": {
+   "display_name": "Lindsay C. Stringer",
+   "primary_axis": "Reg",
+   "n_neighbors": 23,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5107985437": {
+   "display_name": "Dave Huitema",
+   "primary_axis": "Reg",
+   "n_neighbors": 19,
+   "roles": {
+    "coordinator": 98
+   },
+   "total_triplets": 98
+  },
+  "A5065959761": {
+   "display_name": "Andrew Jordan",
+   "primary_axis": "Reg",
+   "n_neighbors": 13,
+   "roles": {
+    "coordinator": 18
+   },
+   "total_triplets": 18
+  },
+  "A5048310508": {
+   "display_name": "Elisa Kochskämper",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5052304858": {
+   "display_name": "Edward Challies",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5062784318": {
+   "display_name": "Yannis M. Ioannides",
+   "primary_axis": "Reg",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5090239764": {
+   "display_name": "Åsa Persson",
+   "primary_axis": "Reg",
+   "n_neighbors": 77,
+   "roles": {
+    "coordinator": 342,
+    "representative": 16,
+    "gatekeeper": 17
+   },
+   "total_triplets": 375
+  },
+  "A5072199060": {
+   "display_name": "Éric F. Lambin",
+   "primary_axis": "Reg",
+   "n_neighbors": 55,
+   "roles": {
+    "coordinator": 44,
+    "representative": 4,
+    "gatekeeper": 7
+   },
+   "total_triplets": 55
+  },
+  "A5006299972": {
+   "display_name": "Terry P. Hughes",
+   "primary_axis": "Reg",
+   "n_neighbors": 35,
+   "roles": {
+    "coordinator": 23,
+    "representative": 2,
+    "gatekeeper": 4
+   },
+   "total_triplets": 29
+  },
+  "A5000089168": {
+   "display_name": "W. Neil Adger",
+   "primary_axis": "Reg",
+   "n_neighbors": 21,
+   "roles": {
+    "coordinator": 14
+   },
+   "total_triplets": 14
+  },
+  "A5044881481": {
+   "display_name": "Victor Galaz",
+   "primary_axis": "Reg",
+   "n_neighbors": 45,
+   "roles": {
+    "coordinator": 95
+   },
+   "total_triplets": 95
+  },
+  "A5065435002": {
+   "display_name": "Måns Nilsson",
+   "primary_axis": "Reg",
+   "n_neighbors": 25,
+   "roles": {
+    "coordinator": 22
+   },
+   "total_triplets": 22
+  },
+  "A5076105326": {
+   "display_name": "Hens Runhaar",
+   "primary_axis": "Reg",
+   "n_neighbors": 52,
+   "roles": {
+    "coordinator": 705
+   },
+   "total_triplets": 705
+  },
+  "A5049476075": {
+   "display_name": "Christine Wamsler",
+   "primary_axis": "Reg",
+   "n_neighbors": 10,
+   "roles": {
+    "coordinator": 7
+   },
+   "total_triplets": 7
+  },
+  "A5051373420": {
+   "display_name": "Sylvia Karlsson‐Vinkhuyzen",
+   "primary_axis": "Reg",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 26
+   },
+   "total_triplets": 26
+  },
+  "A5103179017": {
+   "display_name": "Alexander Widmer",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5013894933": {
+   "display_name": "Riyanti Djalante",
+   "primary_axis": "Reg",
+   "n_neighbors": 28,
+   "roles": {
+    "coordinator": 25
+   },
+   "total_triplets": 25
+  },
+  "A5050776659": {
+   "display_name": "Rakhyun E. Kim",
+   "primary_axis": "Reg",
+   "n_neighbors": 27,
+   "roles": {
+    "coordinator": 23
+   },
+   "total_triplets": 23
+  },
+  "A5059660065": {
+   "display_name": "Judith van Leeuwen",
+   "primary_axis": "Reg",
+   "n_neighbors": 26,
+   "roles": {
+    "coordinator": 25
+   },
+   "total_triplets": 25
+  },
+  "A5023694806": {
+   "display_name": "Aarti Gupta",
+   "primary_axis": "Reg",
+   "n_neighbors": 33,
+   "roles": {
+    "coordinator": 151
+   },
+   "total_triplets": 151
+  },
+  "A5025546069": {
+   "display_name": "Joost Vervoort",
+   "primary_axis": "Reg",
+   "n_neighbors": 115,
+   "roles": {
+    "coordinator": 541
+   },
+   "total_triplets": 541
+  },
+  "A5020279517": {
+   "display_name": "Jeroen van der Heijden",
+   "primary_axis": "Reg",
+   "n_neighbors": 27,
+   "roles": {
+    "coordinator": 25
+   },
+   "total_triplets": 25
+  },
+  "A5082335667": {
+   "display_name": "Ryan Plummer",
+   "primary_axis": "Reg",
+   "n_neighbors": 19,
+   "roles": {
+    "coordinator": 14
+   },
+   "total_triplets": 14
+  },
+  "A5073019300": {
+   "display_name": "Derek Armitage",
+   "primary_axis": "Reg",
+   "n_neighbors": 13,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5028577628": {
+   "display_name": "Ron Martin",
+   "primary_axis": "PolInd",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5055772660": {
+   "display_name": "Peter Sunley",
+   "primary_axis": "PolInd",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5062722994": {
+   "display_name": "Ron Boschma",
+   "primary_axis": "PolInd",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 7
+   },
+   "total_triplets": 7
+  },
+  "A5001946369": {
+   "display_name": "Lucas Rutting",
+   "primary_axis": "Reg",
+   "n_neighbors": 55,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5068315457": {
+   "display_name": "Frans Berkhout",
+   "primary_axis": "Reg",
+   "n_neighbors": 11,
+   "roles": {
+    "coordinator": 32
+   },
+   "total_triplets": 32
+  },
+  "A5017134980": {
+   "display_name": "Niki Frantzeskaki",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5056892193": {
+   "display_name": "Duncan Shaw",
+   "primary_axis": "Cyb",
+   "n_neighbors": 11,
+   "roles": {
+    "coordinator": 11
+   },
+   "total_triplets": 11
+  },
+  "A5050959724": {
+   "display_name": "Peter Kawalek",
+   "primary_axis": "Cyb",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5056377198": {
+   "display_name": "Iris D. Tommelein",
+   "primary_axis": "Cyb",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 10
+   },
+   "total_triplets": 10
+  },
+  "A5006965163": {
+   "display_name": "Fatos Elezi",
+   "primary_axis": "Cyb",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 10
+   },
+   "total_triplets": 10
+  },
+  "A5109350765": {
+   "display_name": "Udo Lindemann",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5061031604": {
+   "display_name": "Paul Cairney",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5000390103": {
+   "display_name": "Michael D. Jones",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5078704942": {
+   "display_name": "Christopher M. Weible",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5082826691": {
+   "display_name": "John Humphrey",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5086923102": {
+   "display_name": "J. de Jong",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5089638830": {
+   "display_name": "Sebastian Sewerin",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5076520736": {
+   "display_name": "Tobias S. Schmidt",
+   "primary_axis": "Reg",
+   "n_neighbors": 10,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5074636588": {
+   "display_name": "Volker H. Hoffmann",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5068021528": {
+   "display_name": "Graeme Auld",
+   "primary_axis": "Reg",
+   "n_neighbors": 9,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5076254656": {
+   "display_name": "Steven Bernstein",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5000507264": {
+   "display_name": "Peter Driessen",
+   "primary_axis": "Reg",
+   "n_neighbors": 37,
+   "roles": {
+    "coordinator": 305
+   },
+   "total_triplets": 305
+  },
+  "A5051766741": {
+   "display_name": "Heleen Mees",
+   "primary_axis": "Reg",
+   "n_neighbors": 25,
+   "roles": {
+    "coordinator": 67
+   },
+   "total_triplets": 67
+  },
+  "A5017141250": {
+   "display_name": "H.F.M.W. van Rijswick",
+   "primary_axis": "Reg",
+   "n_neighbors": 20,
+   "roles": {
+    "coordinator": 115
+   },
+   "total_triplets": 115
+  },
+  "A5015932162": {
+   "display_name": "Carel Dieperink",
+   "primary_axis": "Reg",
+   "n_neighbors": 13,
+   "roles": {
+    "coordinator": 33
+   },
+   "total_triplets": 33
+  },
+  "A5089233205": {
+   "display_name": "Zbigniew W. Kundzewicz",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5046583709": {
+   "display_name": "D.L.T. Hegger",
+   "primary_axis": "Reg",
+   "n_neighbors": 13,
+   "roles": {
+    "coordinator": 21
+   },
+   "total_triplets": 21
+  },
+  "A5086964996": {
+   "display_name": "Marloes H. N. Bakker",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5070568750": {
+   "display_name": "Martin J. Wassen",
+   "primary_axis": "Reg",
+   "n_neighbors": 17,
+   "roles": {
+    "coordinator": 15
+   },
+   "total_triplets": 15
+  },
+  "A5019074862": {
+   "display_name": "Karlijn Muiderman",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5024972853": {
+   "display_name": "Sander Meijerink",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5042495356": {
+   "display_name": "Art Dewulf",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5060960406": {
+   "display_name": "Stephan Pauleit",
+   "primary_axis": "Reg",
+   "n_neighbors": 13,
+   "roles": {
+    "coordinator": 35
+   },
+   "total_triplets": 35
+  },
+  "A5073518178": {
+   "display_name": "C.J.A.M. Termeer",
+   "primary_axis": "Reg",
+   "n_neighbors": 28,
+   "roles": {
+    "coordinator": 259
+   },
+   "total_triplets": 259
+  },
+  "A5019999484": {
+   "display_name": "Bas Arts",
+   "primary_axis": "Reg",
+   "n_neighbors": 17,
+   "roles": {
+    "coordinator": 28
+   },
+   "total_triplets": 28
+  },
+  "A5066964317": {
+   "display_name": "Laura Tozer",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5068112217": {
+   "display_name": "I.J. Visseren-Hamakers",
+   "primary_axis": "Reg",
+   "n_neighbors": 20,
+   "roles": {
+    "coordinator": 62
+   },
+   "total_triplets": 62
+  },
+  "A5028102780": {
+   "display_name": "Saba Siddiki",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5083144709": {
+   "display_name": "Martín Lodge",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5111623818": {
+   "display_name": "Goio Etxebarria",
+   "primary_axis": "PolInd",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5067140045": {
+   "display_name": "Mikel Gómez Uranga",
+   "primary_axis": "PolInd",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5071234082": {
+   "display_name": "Jan Fagerberg",
+   "primary_axis": "PolInd",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5056897354": {
+   "display_name": "Jakob Edler",
+   "primary_axis": "PolInd",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5038408449": {
+   "display_name": "Kyle Thompson",
+   "primary_axis": "Reg",
+   "n_neighbors": 45,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5008517487": {
+   "display_name": "Carien Moossdorff",
+   "primary_axis": "Reg",
+   "n_neighbors": 31,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5039000610": {
+   "display_name": "Astrid Mangnus",
+   "primary_axis": "Reg",
+   "n_neighbors": 48,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5082588811": {
+   "display_name": "Marko P. Hekkert",
+   "primary_axis": "PolInd",
+   "n_neighbors": 15,
+   "roles": {
+    "coordinator": 36
+   },
+   "total_triplets": 36
+  },
+  "A5075929639": {
+   "display_name": "Jeroen C.J.M. van den Bergh",
+   "primary_axis": "PolInd",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5058620169": {
+   "display_name": "Jan-Peter Voß",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5088298896": {
+   "display_name": "Simona O. Negro",
+   "primary_axis": "PolInd",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5073335166": {
+   "display_name": "David C. Lane",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5073478048": {
+   "display_name": "Ray Ison",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "gatekeeper": 2,
+    "liaison": 1,
+    "representative": 2
+   },
+   "total_triplets": 5
+  },
+  "A5039037641": {
+   "display_name": "N.G. Röling",
+   "primary_axis": "PolInd",
+   "n_neighbors": 10,
+   "roles": {
+    "representative": 5,
+    "gatekeeper": 3
+   },
+   "total_triplets": 8
+  },
+  "A5070549609": {
+   "display_name": "Kevin Collins",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "representative": 1,
+    "gatekeeper": 3
+   },
+   "total_triplets": 4
+  },
+  "A5034013189": {
+   "display_name": "Erin O. Sills",
+   "primary_axis": "Reg",
+   "n_neighbors": 11,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5082514099": {
+   "display_name": "Alexandra Lesnikowski",
+   "primary_axis": "Reg",
+   "n_neighbors": 32,
+   "roles": {
+    "coordinator": 72
+   },
+   "total_triplets": 72
+  },
+  "A5025375817": {
+   "display_name": "Saleemul Huq",
+   "primary_axis": "Reg",
+   "n_neighbors": 28,
+   "roles": {
+    "coordinator": 56
+   },
+   "total_triplets": 56
+  },
+  "A5080454664": {
+   "display_name": "Robbert Biesbroek",
+   "primary_axis": "Reg",
+   "n_neighbors": 19,
+   "roles": {
+    "coordinator": 20
+   },
+   "total_triplets": 20
+  },
+  "A5080531371": {
+   "display_name": "Kristine Kern",
+   "primary_axis": "Reg",
+   "n_neighbors": 6,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5069340047": {
+   "display_name": "Frank Thomalla",
+   "primary_axis": "Reg",
+   "n_neighbors": 23,
+   "roles": {
+    "coordinator": 14
+   },
+   "total_triplets": 14
+  },
+  "A5004596367": {
+   "display_name": "Daniel Henstra",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5089437638": {
+   "display_name": "Qingduo Mao",
+   "primary_axis": "Reg",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 12
+   },
+   "total_triplets": 12
+  },
+  "A5033135314": {
+   "display_name": "Sigrid Stagl",
+   "primary_axis": "PolInd",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5086786251": {
+   "display_name": "Christian Rammel",
+   "primary_axis": "PolInd",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5065302842": {
+   "display_name": "David Umoru",
+   "primary_axis": "Reg",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5076196832": {
+   "display_name": "Patsy Healey",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 3
+   },
+   "total_triplets": 3
+  },
+  "A5057650206": {
+   "display_name": "Frank Schweitzer",
+   "primary_axis": "PolInd",
+   "n_neighbors": 3,
+   "roles": {
+    "representative": 1
+   },
+   "total_triplets": 1
+  },
+  "A5006164202": {
+   "display_name": "Cees Leeuwis",
+   "primary_axis": "PolInd",
+   "n_neighbors": 11,
+   "roles": {
+    "representative": 6,
+    "gatekeeper": 2
+   },
+   "total_triplets": 8
+  },
+  "A5029868613": {
+   "display_name": "Laurens Klerkx",
+   "primary_axis": "Reg",
+   "n_neighbors": 8,
+   "roles": {
+    "gatekeeper": 2
+   },
+   "total_triplets": 2
+  },
+  "A5046236948": {
+   "display_name": "Michael W. Bauer",
+   "primary_axis": "Reg",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5055244038": {
+   "display_name": "Mark Petticrew",
+   "primary_axis": "Cyb",
+   "n_neighbors": 43,
+   "roles": {
+    "coordinator": 24
+   },
+   "total_triplets": 24
+  },
+  "A5051233142": {
+   "display_name": "Steven Cummins",
+   "primary_axis": "Cyb",
+   "n_neighbors": 34,
+   "roles": {
+    "coordinator": 24
+   },
+   "total_triplets": 24
+  },
+  "A5023951465": {
+   "display_name": "Penelope Hawe",
+   "primary_axis": "Cyb",
+   "n_neighbors": 28,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5000637278": {
+   "display_name": "Diane T. Finegood",
+   "primary_axis": "Cyb",
+   "n_neighbors": 24,
+   "roles": {
+    "coordinator": 8
+   },
+   "total_triplets": 8
+  },
+  "A5059662321": {
+   "display_name": "Dominik Hartmann",
+   "primary_axis": "PolInd",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 12
+   },
+   "total_triplets": 12
+  },
+  "A5057769492": {
+   "display_name": "Jeroen Candel",
+   "primary_axis": "Reg",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5056683446": {
+   "display_name": "Lucie Rychetnik",
+   "primary_axis": "Cyb",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5054725434": {
+   "display_name": "Eleanor Malbon",
+   "primary_axis": "Cyb",
+   "n_neighbors": 14,
+   "roles": {
+    "coordinator": 5
+   },
+   "total_triplets": 5
+  },
+  "A5082772792": {
+   "display_name": "Francis Heylighen",
+   "primary_axis": "Cyb",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5057446459": {
+   "display_name": "Geoffrey C. Barnes",
+   "primary_axis": "Reg",
+   "n_neighbors": 2,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5025354135": {
+   "display_name": "Carlos Herrera",
+   "primary_axis": "Cyb",
+   "n_neighbors": 5,
+   "roles": {
+    "coordinator": 6
+   },
+   "total_triplets": 6
+  },
+  "A5042852488": {
+   "display_name": "Wolfgang Ketter",
+   "primary_axis": "PolInd",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5016462041": {
+   "display_name": "Maria Gini",
+   "primary_axis": "PolInd",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5040079639": {
+   "display_name": "Tina Nabatchi",
+   "primary_axis": "Reg",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 4
+   },
+   "total_triplets": 4
+  },
+  "A5012474783": {
+   "display_name": "Gang Qu",
+   "primary_axis": "Cyb",
+   "n_neighbors": 4,
+   "roles": {
+    "coordinator": 1
+   },
+   "total_triplets": 1
+  },
+  "A5087123425": {
+   "display_name": "Paul H. Thibodeau",
+   "primary_axis": "Cyb",
+   "n_neighbors": 3,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  },
+  "A5103125636": {
+   "display_name": "Mirella L. Stroink",
+   "primary_axis": "Cyb",
+   "n_neighbors": 7,
+   "roles": {
+    "coordinator": 2
+   },
+   "total_triplets": 2
+  }
+ }
+}

@@ -38,7 +38,7 @@ DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
-            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "discussao", "brasil", "analise-brasil", "sintese", "leitura", "sementes", "repro", "dados",
+            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "brasil", "brasil-expandido", "analise-brasil", "discussao", "sintese", "leitura", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 
 
@@ -322,6 +322,48 @@ def inject_author_network_numbers(html):
     return html
 
 
+def inject_brazil_numbers(html):
+    """BRASIL_* tokens ← data/brazil_expanded.json (Fase E A.4)."""
+    p = os.path.join(ROOT, "data", "brazil_expanded.json")
+    if not os.path.exists(p):
+        return html
+    B = json.load(open(p, encoding="utf-8"))
+    subs = {
+        "BRASIL_N_FAGANELLO": str(B.get("n_faganello_seeds", "?")),
+        "BRASIL_N_RESOLVED": str(B.get("n_resolved_oa", "?")),
+        "BRASIL_N_BROAD": str(B.get("n_broad_results", "?")),
+        "BRASIL_N_TOTAL": str(B.get("n_brazil_works_total", "?")),
+    }
+    for tok, val in subs.items():
+        html = html.replace(tok, val)
+    return html
+
+
+def inject_brokerage_numbers(html):
+    """BROK_* tokens ← data/brokerage_roles.json (Fase E B.5)."""
+    p = os.path.join(ROOT, "data", "brokerage_roles.json")
+    if not os.path.exists(p):
+        return html
+    B = json.load(open(p, encoding="utf-8"))
+    rt = (B.get("summary") or {}).get("role_totals", {})
+    napr = (B.get("summary") or {}).get("n_authors_per_role", {})
+    subs = {
+        "BROK_COORD": str(rt.get("coordinator", "?")),
+        "BROK_GATE": str(rt.get("gatekeeper", "?")),
+        "BROK_REP": str(rt.get("representative", "?")),
+        "BROK_LIAISON": str(rt.get("liaison", "?")),
+        "BROK_ITIN": str(rt.get("itinerant", "?")),
+        "BROK_N_COORD": str(napr.get("coordinator", "?")),
+        "BROK_N_GATE": str(napr.get("gatekeeper", "?")),
+        "BROK_N_REP": str(napr.get("representative", "?")),
+        "BROK_N_LIAISON": str(napr.get("liaison", "?")),
+        "BROK_N_ITIN": str(napr.get("itinerant", "?")),
+    }
+    for tok, val in subs.items():
+        html = html.replace(tok, val)
+    return html
+
+
 def explorer_network():
     """Rede do explorador: a versão ampliada (network_exploded.json) anotada com a
     comunidade detectada (CNM), o coeficiente de participação e o papel de Guimerà-Amaral."""
@@ -384,6 +426,8 @@ def main():
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
     html = inject_hypergraph_numbers(html)           # XGI_* tokens ← data/cocitation_hyperedges.json
     html = inject_author_network_numbers(html)       # AUTHORNET_* tokens ← data/author_network.json
+    html = inject_brazil_numbers(html)               # BRASIL_* tokens ← data/brazil_expanded.json
+    html = inject_brokerage_numbers(html)            # BROK_* tokens ← data/brokerage_roles.json
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)
