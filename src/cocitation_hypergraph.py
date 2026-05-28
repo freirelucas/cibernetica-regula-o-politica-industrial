@@ -72,9 +72,11 @@ def main():
     axis_of = {n["id"]: (n.get("axis") or n.get("axis_inf") or "") for n in net["nodes"]}
     label_of = {n["id"]: n.get("label") or n["id"] for n in net["nodes"]}
     corpus = set(axis_of)                       # obras do núcleo = "vértices" do hipergrafo
+    comm_of = {n["id"]: n.get("comm", -1) for n in net["nodes"]}   # comunidade CNM (sub-eixo Leiden)
 
     # hiperarestas = (lista de refs de cada citante) ∩ núcleo, tamanho ≥ 2
     edges, seen_citers = [], set()
+    edge_to_citer, seed_of_citer = [], {}    # rastreio por citante p/ ranqueamento do SR (C2)
     for sid in SEEDS:
         url = (f"{API}/works?filter=cites:{sid}&sort=cited_by_count:desc"
                f"&per-page={CITERS_PER_SEED}&select=id,referenced_works")
@@ -87,6 +89,8 @@ def main():
             he = sorted(refs & corpus)
             if len(he) >= 2:
                 edges.append(he)
+                edge_to_citer.append(cid)
+                seed_of_citer[cid] = sid
     print(f"citantes únicos: {len(seen_citers)} | hiperarestas (≥2 do núcleo): {len(edges)}")
 
     import xgi
@@ -116,6 +120,26 @@ def main():
         ax = AXN.get(axis_of.get(n, ""), "—")
         print(f"   {c:3d}× | {ax:22} | {label_of.get(n, n)[:44]}")
 
+    # ranking de citantes p/ SR (C2 + C3): cada citante = uma hiperaresta;
+    # ranqueia por eixos cobertos (3 > 2 > 1), comunidades CNM (sub-eixos Leiden)
+    # e tamanho da hiperaresta. As tags entram no Rayyan via higher_order_bridge,
+    # e a riqueza dos sub-eixos (comm) preserva o que a manchete "silos" achata.
+    citer_summary = []
+    for i, he in enumerate(edges):
+        cid = edge_to_citer[i]
+        axs = sorted(edge_axes(he))
+        cms = sorted({comm_of.get(n, -1) for n in he if comm_of.get(n, -1) >= 0})
+        citer_summary.append({
+            "oa_id": cid, "seed_via": seed_of_citer[cid],
+            "n_refs_in_corpus": len(he), "axes": axs, "n_axes": len(axs),
+            "communities": cms, "n_communities": len(cms),
+        })
+    citer_summary.sort(key=lambda r: (-r["n_axes"], -r["n_communities"], -r["n_refs_in_corpus"]))
+    top_citers = citer_summary[:30]
+    print(f"\n== ranking de citantes p/ SR (top {len(top_citers)} por eixos × comunidades) ==")
+    for r in top_citers[:10]:
+        print(f"   eixos {r['n_axes']} · comms {r['n_communities']} · refs {r['n_refs_in_corpus']} | {r['oa_id']}")
+
     out = {
         "n_citers": len(seen_citers), "n_edges": len(edges),
         "n_cross_axis_edges": len(cross),
@@ -125,6 +149,9 @@ def main():
         "top_higher_order_bridges": [
             {"oa_id": n, "label": label_of.get(n, n), "axis": AXN.get(axis_of.get(n, ""), ""),
              "cross_axis_hyperedges": c} for n, c in top],
+        # candidatos à SR (C2): citantes ranqueados por cobertura (eixos × sub-eixos × refs)
+        "top_citers_for_sr": top_citers,
+        "citer_summary": citer_summary,
         # mapa completo (oa_id -> nº de hiperarestas trans-eixo) para juntar à prioridade de ponte
         "cross_axis_degree": dict(cross_deg),
         "degree": dict(deg),

@@ -546,6 +546,32 @@ pre.code{max-width:100%}
   <div id="list-top20"></div>
 </div></section>
 
+<!-- 10·5 · A CONSTRUÇÃO DO CANDIDATO-SET PARA O RAYYAN -->
+<section id="candidatos" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">10·5</span><h2 class="sec-title">A construção do candidato-set para o Rayyan</h2><span class="sec-method">cadeia de curadoria multinível</span></div>
+  <div class="prose">
+    <p class="lead">A revisão sistemática que vem depois deste mapeamento <strong>triangula</strong> — não escolhe uma métrica única. Cada bloco do funil contribui uma <em>camada de aproximação</em> ao "núcleo de pontes" (a união conceitual postulada na <a href="#sintese">síntese</a>, ausente da estrutura empírica de citação — ver <a href="#pontes">zonas de intercâmbio</a>). É o que o gerador <code>src/build_rayyan.py</code> aplica como tags multinível, com catálogo auditável em <a href="dados/rayyan_tags.json"><code>data/rayyan_tags.json</code></a>.</p>
+  </div>
+  <p class="fig-cap" style="margin-top:1.25rem">Cada métrica vira uma tag em cada obra; o Rayyan filtra por combinação de tags. Limiares paramétricos no manifest.</p>
+  <table class="tbl">
+    <thead><tr><th>Métrica · seção</th><th>Tag</th><th>Papel na curadoria</th></tr></thead>
+    <tbody>
+      <tr><td>Cocitação pairwise + Leiden + modelo nulo · §05, §07</td><td><code>obra-ponte</code> · <code>obra-semente</code></td><td>define a <em>distância</em> (3 silos); declara a união como metáfora</td></tr>
+      <tr><td>Acoplamento bibliográfico · §06</td><td>via <code>clusters_bc</code></td><td>candidatos por <em>frente compartilhada</em></td></tr>
+      <tr><td>Rajadas (Kleinberg) · §08</td><td><code>rajada de citação</code></td><td>candidatos <em>vivos no presente</em></td></tr>
+      <tr><td>Belas adormecidas (Ke) · §09</td><td><code>bela adormecida</code></td><td>candidatos <em>cuja hora chegou</em></td></tr>
+      <tr><td>Mais citadas · §10</td><td><code>mais citada</code></td><td>candidatos <em>por atenção concentrada</em></td></tr>
+      <tr><td>Hipergrafo (XGI; Landry, 2023)</td><td><code>higher_order_bridge</code></td><td>candidatos <em>cuja própria leitura já mistura</em> (40% trans-eixo; significância em <code>null_model</code>)</td></tr>
+      <tr><td>Sondagem 4º eixo · <code>paths_between</code></td><td><code>complexidade (4º eixo)</code></td><td>candidatos <em>por tradição-aderente</em> (terreno evolucionário das capacidades da firma)</td></tr>
+      <tr><td>Cruzamento Brasil × núcleo</td><td><code>ponte global×Brasil</code></td><td>elos de citação Brasil ↔ núcleo global</td></tr>
+      <tr><td>Prioridade de ponte (CB + comunidade)</td><td><code>ponte a construir</code></td><td>top-25 a revisar em detalhe</td></tr>
+      <tr><td>Bola de neve por autor + revisão Brasil (Faganello)</td><td><code>obra de autor-semente</code> · <code>corpus Brasil (Faganello)</code></td><td>cobertura social e nacional</td></tr>
+    </tbody>
+  </table>
+  <div class="callout" style="margin-top:1.25rem"><strong>Como ler.</strong> Os 3 <em>eixos-base</em> (cibernética, regulação, política industrial) permanecem como recorte primário; as comunidades Leiden (sub-eixos) e as tags acima são camadas adicionais para a triagem. No <a href="triagem.html">explorador de triagem</a>, cada obra exibe seu conjunto de tags — combinar filtros = isolar o tipo de candidato (ex.: <em>hipergrafo trans-eixo &amp; bela adormecida &amp; ≥ 2 comunidades Leiden</em>). A revisão é <strong>triangulada</strong>, não unidimensional.</div>
+  <div class="callout"><strong>Significância do XGI.</strong> A coluna <em>higher_order_bridge</em> é tagueada para obras que aparecem em ≥ <code>MIN_CROSS_AXIS_EDGES</code> hiperarestas trans-eixo (limiar paramétrico em <code>src/build_rayyan.py</code>). O <em>z</em>-score da fração trans-eixo (modelo nulo de stub-shuffle, 60 sorteios) vai em <code>data/cocitation_hyperedges.json:null_model</code> — sem ele, o 40% é descritivo; com ele, é significância-testado. <span style="color:var(--muted)">Análogo a Maslov–Sneppen (2002) para hipergrafos.</span></div>
+</div></section>
+
 <!-- 11 · DISCUSSÃO -->
 <section id="discussao" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">11</span><h2 class="sec-title">Implicações para a política industrial</h2><span class="sec-method">síntese e agenda</span></div>
