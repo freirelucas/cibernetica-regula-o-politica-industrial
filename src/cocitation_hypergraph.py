@@ -80,6 +80,9 @@ def main():
         "top_higher_order_bridges": [
             {"oa_id": n, "label": label_of.get(n, n), "axis": AXN.get(axis_of.get(n, ""), ""),
              "cross_axis_hyperedges": c} for n, c in top],
+        # mapa completo (oa_id -> nº de hiperarestas trans-eixo) para juntar à prioridade de ponte
+        "cross_axis_degree": dict(cross_deg),
+        "degree": dict(deg),
     }
     json.dump(out, open(os.path.join(ROOT, "data", "cocitation_hyperedges.json"), "w",
                         encoding="utf-8"), ensure_ascii=False, indent=1)
