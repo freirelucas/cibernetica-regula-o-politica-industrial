@@ -2448,6 +2448,16 @@ KW  - papel: obra de autor-semente
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
 ER  - 
 
+TY  - GEN
+T1  - Introduction to Economic Cybernetics
+AU  - Lange & Nuti
+PY  - 1971
+UR  - https://openalex.org/https://openalex.org/W4230710385
+KW  - eixo: Política industrial
+KW  - papel: obra-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente
+ER  - 
+
 TY  - JOUR
 T1  - Engineering Cybernetics
 AU  - Stafford Beer
@@ -2479,6 +2489,16 @@ KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
+ER  - 
+
+TY  - GEN
+T1  - Wholes and Parts
+AU  - Lange & Boulding
+PY  - 1966
+UR  - https://openalex.org/https://openalex.org/W2063282131
+KW  - eixo: Política industrial
+KW  - papel: obra-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente
 ER  - 
 
 TY  - JOUR
@@ -2596,6 +2616,17 @@ KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
+ER  - 
+
+TY  - GEN
+T1  - On the Economic Theory of Socialism
+AU  - Lange
+PY  - 1938
+UR  - https://openalex.org/https://openalex.org/W3130930004
+KW  - eixo: Política industrial
+KW  - papel: higher_order_bridge
+KW  - papel: obra-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: higher_order_bridge, obra-semente · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 91 (XGI)
 ER  - 
 
 TY  - JOUR

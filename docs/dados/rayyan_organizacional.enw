@@ -1690,6 +1690,14 @@
 %K papel: cibernética organizacional
 %K papel: obra de autor-semente
 
+%0 Generic
+%T Introduction to Economic Cybernetics
+%A Lange & Nuti
+%D 1971
+%U https://openalex.org/https://openalex.org/W4230710385
+%K eixo: Política industrial
+%K papel: obra-semente
+
 %0 Journal Article
 %T Engineering Cybernetics
 %A Stafford Beer
@@ -1711,6 +1719,14 @@
 %K eixo: Cibernética
 %K papel: cibernética organizacional
 %K papel: obra de autor-semente
+
+%0 Generic
+%T Wholes and Parts
+%A Lange & Boulding
+%D 1966
+%U https://openalex.org/https://openalex.org/W2063282131
+%K eixo: Política industrial
+%K papel: obra-semente
 
 %0 Journal Article
 %T Cybernetics and Management.
@@ -1762,6 +1778,15 @@
 %K eixo: Cibernética
 %K papel: cibernética organizacional
 %K papel: obra de autor-semente
+
+%0 Generic
+%T On the Economic Theory of Socialism
+%A Lange
+%D 1938
+%U https://openalex.org/https://openalex.org/W3130930004
+%K eixo: Política industrial
+%K papel: higher_order_bridge
+%K papel: obra-semente
 
 %0 Generic
 %T Industrial policy as an effective development tool: Lessons from Brazil
