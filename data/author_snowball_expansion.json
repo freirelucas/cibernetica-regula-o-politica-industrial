@@ -1,0 +1,5655 @@
+{
+ "_generated": "fase D · 2026-05-29",
+ "by_author": {
+  "A5111505527": {
+   "display_name": "Domenico Mario Nuti",
+   "cross_axis_score": 0.9464,
+   "h_index": 17,
+   "n_new_works_found": 1,
+   "n_in_corpus_overlap": 49,
+   "new_works": [
+    {
+     "oa_id": "W1529085045",
+     "title": "The Costs and Benefits of Euro-sation in Central-Eastern Europe Before or Instead of EMU Membership",
+     "year": 2000,
+     "cited_by": 47,
+     "doi": "",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W1908568312",
+     "title": "Hidden and repressed inflation in Soviet-type economies: definitions, measurements and stabilization",
+     "year": 1989,
+     "cited_by": 132,
+     "doi": "https://doi.org/10.1007/978-94-009-0823-9_5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1994184568",
+     "title": "Economic Essays on Value, Competition and Utility.",
+     "year": 1974,
+     "cited_by": 123,
+     "doi": "https://doi.org/10.2307/2230581",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1528561055",
+     "title": "The Polish Alternative: Old Myths, Hard Facts and New Strategies in the Successful Transformation of the Polish Economy",
+     "year": 1999,
+     "cited_by": 84,
+     "doi": "https://doi.org/10.2139/ssrn.170889",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2077429955",
+     "title": "Capitalism, Socialism and Steady Growth",
+     "year": 1970,
+     "cited_by": 61,
+     "doi": "https://doi.org/10.2307/2230437",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2013739780",
+     "title": "Pre-Keynesian roots of the neoclassical synthesis",
+     "year": 1985,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.3406/cep.1985.997",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3122112046",
+     "title": "Costs and benefits of unilateral euroization in central eastern Europe",
+     "year": 2002,
+     "cited_by": 40,
+     "doi": "https://doi.org/10.1111/1468-0351.00119",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4230710385",
+     "title": "Introduction to Economic Cybernetics.",
+     "year": 1971,
+     "cited_by": 37,
+     "doi": "https://doi.org/10.2307/2229893",
+     "axes_hit": [
+      "Cyb",
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2030262768",
+     "title": "Profit‐Sharing and Employment: Claims and Overclaims",
+     "year": 1987,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.1111/j.1468-232x.1987.tb00691.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1513387140",
+     "title": "The Polish Crisis: Economic Factors And Constraints",
+     "year": 2025,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.4324/9781003672548-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2495767131",
+     "title": "Employeeism: Corporate Governance and Employee Share Ownership in Transitional Economies",
+     "year": 1997,
+     "cited_by": 31,
+     "doi": "https://doi.org/10.1017/cbo9780511572012.006",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2084403689",
+     "title": "Inflation, interest and exchange rates in the transition1",
+     "year": 1996,
+     "cited_by": 31,
+     "doi": "https://doi.org/10.1111/j.1468-0351.1996.tb00166.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4256423813",
+     "title": "An Essay on Yugoslav Society.",
+     "year": 1970,
+     "cited_by": 27,
+     "doi": "https://doi.org/10.2307/2229907",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2042513221",
+     "title": "ON THE RATES OF RETURN ON INVESTMENT",
+     "year": 1974,
+     "cited_by": 24,
+     "doi": "https://doi.org/10.1111/j.1467-6435.1974.tb01910.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3120503984",
+     "title": "Employee Ownership in Polish Privatizations",
+     "year": 2005,
+     "cited_by": 23,
+     "doi": "https://doi.org/10.4324/9780203985052-10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1990514101",
+     "title": "MONETARY AND EXCHANGE-RATE POLICIES DURING EASTERN EUROPE'S TRANSITION: SOME LESSONS FROM FURTHER EAST",
+     "year": 1992,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1093/oxrep/8.1.27",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2039347168",
+     "title": "The Polish Zloty, 1990–1999: Success and Underperformance",
+     "year": 2000,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.1257/aer.90.2.53",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1976738501",
+     "title": "Competitive valuation and efficiency of capital investment in the socialist economy",
+     "year": 1988,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1016/0014-2921(88)90191-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2991167753",
+     "title": "Market socialism: the model that might have been but never was",
+     "year": 1991,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.1017/cbo9780511559600.003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2166638817",
+     "title": "Not Just Another Accession: The Political Economy of EU Enlargement to the East",
+     "year": 1997,
+     "cited_by": 14,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2037187536",
+     "title": "Perestroika: Transition from Central Planning to Market Socialism",
+     "year": 1988,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.2307/1344490",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4385743412",
+     "title": "The Rise and Fall of Socialism",
+     "year": 2023,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_13",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1973462384",
+     "title": "Remonetisation and capital markets in the reform of centrally planned economies",
+     "year": 1989,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1016/0014-2921(89)90120-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1488387871",
+     "title": "HARD BUDGETS & SOFT STATES Social policy choices in central and eastern Europe",
+     "year": 2000,
+     "cited_by": 12,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2145915366",
+     "title": "Costs and Benefits of Unilateral Euroization in Central Eastern Europe",
+     "year": 2023,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_23",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W613918712",
+     "title": "Socialist economics : selected readings",
+     "year": 1972,
+     "cited_by": 11,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2780445347",
+     "title": "Kornai: Shortage versus surplus economies",
+     "year": 2017,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1556/032.2018.68.s.7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1513542730",
+     "title": "The European Social Model and its Dilution as a Result of EU Enlargement",
+     "year": 2007,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.2139/ssrn.1031908",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2135774066",
+     "title": "Alternative Fiscal Rules for the New EU Member States",
+     "year": 2006,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.2139/ssrn.1053821",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1601048640",
+     "title": "The Contradictions of Socialist Economies: A Marxist Interpretation",
+     "year": 1991,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1007/978-1-349-12625-5_11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2230178422",
+     "title": "The Share Economy: Plausibility and Viability of Weitzman's Model 1",
+     "year": 2022,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.4324/9781003261537-15",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4379525313",
+     "title": "Feasible Financial Innovation Under Market Socialism",
+     "year": 2023,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1007/978-3-031-12334-4_9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W88636921",
+     "title": "Post-soviet issues: stabilization, trade and money",
+     "year": 1992,
+     "cited_by": 10,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3113451160",
+     "title": "A tale of two cities: the evolution of the crisis and exit policies in Washington and Frankfurt",
+     "year": 2015,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.4324/9781315745336-16",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2162790888",
+     "title": "The Impact of Investment Funds on Corporate Governance in Mass Privatization Schemes: Czech Republic, Poland and Slovenia",
+     "year": 2000,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1023/a:1009531429918",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4379526736",
+     "title": "Stabilization and Sequencing in the Reform of Socialist Economies",
+     "year": 2023,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1007/978-3-031-12334-4_12",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2105195798",
+     "title": "The Degree of Monopoly in the Kaldor-Mirrlees Growth Model",
+     "year": 1969,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.2307/2296843",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W656500407",
+     "title": "Transition and beyond : essays in honour of Mario Nuti",
+     "year": 2007,
+     "cited_by": 8,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2490475745",
+     "title": "Efficiency, Equality and Enterprise Democracy",
+     "year": 1996,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.4324/9780203011416.ch10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4385743399",
+     "title": "The Impact of the Global Crisis on Transition Economies",
+     "year": 2023,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_25",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2086917477",
+     "title": "Investment reforms in Czechoslovakia",
+     "year": 1970,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1080/09668137008410715",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2086696694",
+     "title": "Democracy and Economy: What Role for Stakeholders?",
+     "year": 1997,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1111/1467-8616.00015",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2254460760",
+     "title": "Codetermination, Profit Sharing and Full Employment",
+     "year": 2023,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_14",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2264615100",
+     "title": "Financial innovation under market socialism",
+     "year": 1987,
+     "cited_by": 6,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1524840880",
+     "title": "Economic crisis in Eastern Europe : prospects and repercussions",
+     "year": 1984,
+     "cited_by": 6,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4385743600",
+     "title": "Capitalism, Socialism and Steady Growth",
+     "year": 2023,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1007/978-3-031-23167-4_2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2126657156",
+     "title": "European Community response to the transition: aid, trade access, enlargement1",
+     "year": 1996,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1111/j.1468-0351.1996.tb00187.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1605234015",
+     "title": "Lessons from the Stabilisation Programmes of Central and Eastern European Countries, 1989–1991",
+     "year": 2023,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1007/978-3-031-12334-4_13",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2108640400",
+     "title": "Exchange rate regimes in the transition economies",
+     "year": 1996,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1111/j.1468-0319.1996.tb00059.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1587106827",
+     "title": "The role of the banking sector in the process of privatisation",
+     "year": 1992,
+     "cited_by": 5,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5109805031": {
+   "display_name": "Fred M. Taylor",
+   "cross_axis_score": 0.6309,
+   "h_index": 8,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 45,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W3130930004",
+     "title": "On the Economic Theory of Socialism",
+     "year": 1938,
+     "cited_by": 563,
+     "doi": "https://doi.org/10.2307/1052453",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2067887730",
+     "title": "The myeloproliferative syndrome in children",
+     "year": 1958,
+     "cited_by": 46,
+     "doi": "https://doi.org/10.1016/s0022-3476(58)80061-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2035193083",
+     "title": "Primary amebic meningoencephalitis in a healthy 7-year-old boy",
+     "year": 1974,
+     "cited_by": 25,
+     "doi": "https://doi.org/10.1016/s0022-3476(74)80309-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1979645524",
+     "title": "Aneurysm of thoracic aorta in an infant treated by resection and arterial homograft",
+     "year": 1956,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1016/s0022-3476(56)80033-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2049756935",
+     "title": "The Law of Nature",
+     "year": 1891,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1177/000271629100100402",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W174213633",
+     "title": "Chloromycetin palmitate",
+     "year": 1953,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1016/s0022-3476(53)80208-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4229995955",
+     "title": "Massive spasms",
+     "year": 1957,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1016/s0022-3476(57)80304-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1979584123",
+     "title": "The Final Report of the Indianapolis Monetary Commission",
+     "year": 1898,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1086/250510",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1598933454",
+     "title": "Some chapters on money : printed for the use of students in The University of Michigan",
+     "year": 1906,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2021592828",
+     "title": "The History and Theory of Money, <i>by Sidney Sherwood</i>",
+     "year": 1893,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.2307/2139840",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2507739710",
+     "title": "<i>Introductory Economics</i>. A. S. Johnson",
+     "year": 1908,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1086/251457",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2408235054",
+     "title": "Hypervitaminosis and Overnutrition: Effects of Intakes above Essential Allowances",
+     "year": 1963,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1016/s0031-3955(16)31371-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2331770884",
+     "title": "The Right of the State to Be. An Attempt to Determine the Ultimate Human Prerogative on which Government Rests.",
+     "year": 1892,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/2175714",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2012984786",
+     "title": "The Elasticity of Note Issue under the New Currency Law",
+     "year": 1914,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1086/252454",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2314816697",
+     "title": "One Type of Undisciplined Child: A Behavior Syndrome",
+     "year": 1958,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/3472822",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2341819250",
+     "title": "Attitudes Toward Mentally Retarded Children",
+     "year": 1964,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1080/00325481.1964.11695191",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2778515239",
+     "title": "The Adversary Within",
+     "year": 1960,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1149507545",
+     "title": "On Mentally Retarded Children: A Philosophy of Concern",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2808107986",
+     "title": "Sir Edward Nicholas (1593–1669), secretary of state to Charles I and II",
+     "year": 1949,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1093/nq/194.12.262b",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2776198268",
+     "title": "A Closed Retreat: Its Value for Physicians",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2782001062",
+     "title": "President's Page: Distribution of Leadership",
+     "year": 1966,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2317685175",
+     "title": "Monetary Reform in the United States",
+     "year": 1898,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/2957109",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W628850827",
+     "title": "Some leading problems in economic theory",
+     "year": 1921,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W611017076",
+     "title": "Key to Problems in Principles of Economics",
+     "year": 2018,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2778509312",
+     "title": "A Matter Of Justice",
+     "year": 1963,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1184515564",
+     "title": "The Adversary Within (excerpts)",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2939802781",
+     "title": "Sagebrush Rebellion, Inc.; The Southwest Idaho Development Association; Lonnie Leavell; Bruce Jacobsen and Rayola Jacobsen; Harold Collett; Tom Collett: Juanita Collett and Paul Nettleton, Plaintiffs, vs. James G. Watt, Secretary of the Interior; Robert Burford, Director of the Bureau of Land Management, United States Department of the Interior; and the United States of America, Defendants: Memorandum of Opinions and Order",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2773400850",
+     "title": "What Manner of Man",
+     "year": 1961,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2774537183",
+     "title": "Scope of Excellence: For All Patients",
+     "year": 1963,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2778421950",
+     "title": "Thomas Linacre -- Humanist, Physician, Priest (Part 1)",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2247814351",
+     "title": "Los precios de una economía socialista",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2774359866",
+     "title": "Medicine: Science, Profession, Vocation",
+     "year": 1961,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1448284501",
+     "title": "Womanhood: Its Individuality and Diversity",
+     "year": 1964,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4407099123",
+     "title": "Do we want an elastic currency?",
+     "year": 2024,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.4324/9781003547198-13",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4254980015",
+     "title": "ONE TYPE of UNDISCIPLINED CHILD",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1097/00000446-195806000-00047",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2775002876",
+     "title": "Thomas Linacre: Humanist, Physician, Priest (Part II)",
+     "year": 2021,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1177/0024363921992619",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2515505734",
+     "title": "<i>Outlines of Economics</i>. Richard T. Ely",
+     "year": 1909,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/251546",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W192461302",
+     "title": "Sobre la teoria econòmica del socialisme",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2774238125",
+     "title": "The Baffling Eyes of Youth",
+     "year": 1964,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2777886697",
+     "title": "Capacity for Concern",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2035544389",
+     "title": "Allergic pruritus, its dermatologic management",
+     "year": 1952,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1016/s0022-3476(52)80137-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1530304149",
+     "title": "Some Readings in Economics, Prepared for the use of Students in Course I, Political Economy, University of Michigan",
+     "year": 2011,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4243973475",
+     "title": "Reply",
+     "year": 1975,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1016/s0022-3476(75)80741-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2727498257",
+     "title": "Thomas Linacre: Humanist, Physician, Priest",
+     "year": 2021,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1177/0024363920968427",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1600085410",
+     "title": "ON THE FREQUENCY OF ASEPTIC NECROBIOSIS OR RED DEGENERATION OF FIBROMYOMATA OF THE UTERUS. WITH A REPORT OF TWO CASES",
+     "year": 1904,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1016/s0140-6736(01)13923-1",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5070899188": {
+   "display_name": "O. Lange",
+   "cross_axis_score": 0.6309,
+   "h_index": 1,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 1,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W4230710385",
+     "title": "Introduction to Economic Cybernetics.",
+     "year": 1971,
+     "cited_by": 37,
+     "doi": "https://doi.org/10.2307/2229893",
+     "axes_hit": [
+      "Cyb",
+      "PolInd"
+     ]
+    }
+   ]
+  },
+  "A5068656454": {
+   "display_name": "Kenneth E. Boulding",
+   "cross_axis_score": 0.6022,
+   "h_index": 59,
+   "n_new_works_found": 1,
+   "n_in_corpus_overlap": 49,
+   "new_works": [
+    {
+     "oa_id": "W4241639447",
+     "title": "general systems theory",
+     "year": 2011,
+     "cited_by": 70,
+     "doi": "https://doi.org/10.1057/9780230226203.2629",
+     "axes_hit": [
+      "Cyb"
+     ]
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2098978150",
+     "title": "General Systems Theory—The Skeleton of Science",
+     "year": 1956,
+     "cited_by": 2231,
+     "doi": "https://doi.org/10.1287/mnsc.2.3.197",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2339576888",
+     "title": "The Economics of the Coming Spaceship Earth",
+     "year": 2003,
+     "cited_by": 1308,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2326037061",
+     "title": "A Behavioral Theory of the Firm.",
+     "year": 1964,
+     "cited_by": 1120,
+     "doi": "https://doi.org/10.2307/2091213",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3126441471",
+     "title": "The Human Use of Human Beings: Cybernetics and Society",
+     "year": 1952,
+     "cited_by": 963,
+     "doi": "https://doi.org/10.2307/1907665",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4239008548",
+     "title": "Image",
+     "year": 1956,
+     "cited_by": 845,
+     "doi": "https://doi.org/10.3998/mpub.6607",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1984765835",
+     "title": "The Image: Knowledge in Life and Society",
+     "year": 1957,
+     "cited_by": 651,
+     "doi": "https://doi.org/10.2307/1054430",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1984478138",
+     "title": "Conflict and Defense. A General Theory.",
+     "year": 1963,
+     "cited_by": 493,
+     "doi": "https://doi.org/10.2307/2090624",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2315459739",
+     "title": "Conflict and Defense",
+     "year": 1962,
+     "cited_by": 459,
+     "doi": "https://doi.org/10.2307/1054935",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2057700074",
+     "title": "National images and international systems",
+     "year": 1959,
+     "cited_by": 445,
+     "doi": "https://doi.org/10.1177/002200275900300204",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2796327498",
+     "title": "Conflict and Defense: A General Theory",
+     "year": 1962,
+     "cited_by": 438,
+     "doi": "https://doi.org/10.2307/445554",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2004434228",
+     "title": "On the Shoulders of Giants: A Shandean Postscript.",
+     "year": 1966,
+     "cited_by": 408,
+     "doi": "https://doi.org/10.2307/2091284",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2141175090",
+     "title": "A Critique of Welfare Economics.",
+     "year": 1951,
+     "cited_by": 383,
+     "doi": "https://doi.org/10.2307/2550015",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2105569419",
+     "title": "A Strategy of Decision: Policy Evaluation as a Social Process.",
+     "year": 1964,
+     "cited_by": 339,
+     "doi": "https://doi.org/10.2307/2090878",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2018979402",
+     "title": "Three faces of power",
+     "year": 1989,
+     "cited_by": 310,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2091375513",
+     "title": "Ecodynamics: A New Theory of Societal Evolution",
+     "year": 1982,
+     "cited_by": 289,
+     "doi": "https://doi.org/10.2307/1058697",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2029862383",
+     "title": "Economics As a Science",
+     "year": 1970,
+     "cited_by": 184,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2093428423",
+     "title": "A Reconstruction of Economics",
+     "year": 1952,
+     "cited_by": 171,
+     "doi": "https://doi.org/10.2307/1907656",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2014667926",
+     "title": "Twelve Friendly Quarrels with Johan Galtung",
+     "year": 1977,
+     "cited_by": 169,
+     "doi": "https://doi.org/10.1177/002234337701400105",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4245134092",
+     "title": "Stable Peace",
+     "year": 1978,
+     "cited_by": 164,
+     "doi": "https://doi.org/10.7560/764477",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2324348171",
+     "title": "Ecodynamics: A New Theory of Societal Evolution.",
+     "year": 1979,
+     "cited_by": 146,
+     "doi": "https://doi.org/10.2307/2577280",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2084049626",
+     "title": "The Structure of American Economy, 1919-1929: An Empirical Application of Equilibrium Analysis. By Wassily W. Leontief. Cambridge, Mass.: Harvard University Press. 1941. Pp. xvi, 181, ($2.50)",
+     "year": 1942,
+     "cited_by": 143,
+     "doi": "https://doi.org/10.2307/137008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2056695552",
+     "title": "After Samuelson, Who Needs Adam Smith?",
+     "year": 1971,
+     "cited_by": 143,
+     "doi": "https://doi.org/10.1215/00182702-3-2-225",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2034591081",
+     "title": "The Impact of the Social Sciences.",
+     "year": 1967,
+     "cited_by": 142,
+     "doi": "https://doi.org/10.2307/2552042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2052311760",
+     "title": "What is evolutionary economics?",
+     "year": 1991,
+     "cited_by": 140,
+     "doi": "https://doi.org/10.1007/bf01202334",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2328512412",
+     "title": "Business Enterprise in Its Social Setting.",
+     "year": 1959,
+     "cited_by": 133,
+     "doi": "https://doi.org/10.2307/2390916",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W586387191",
+     "title": "The economy of love and fear : a preface to grants economics",
+     "year": 1973,
+     "cited_by": 133,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1985086364",
+     "title": "Readings In Price Theory",
+     "year": 2011,
+     "cited_by": 132,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2321224523",
+     "title": "Conflict and Defense: A General Theory.",
+     "year": 1963,
+     "cited_by": 122,
+     "doi": "https://doi.org/10.2307/2228541",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2289452557",
+     "title": "Reconstruction of Economics",
+     "year": 1951,
+     "cited_by": 120,
+     "doi": "https://doi.org/10.2307/1233413",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W612742022",
+     "title": "The Meaning of the Twentieth Century",
+     "year": 2021,
+     "cited_by": 117,
+     "doi": "https://doi.org/10.4324/9781003256960",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W299674540",
+     "title": "World resources, 1990–1991",
+     "year": 1991,
+     "cited_by": 117,
+     "doi": "https://doi.org/10.1016/0959-3780(91)90014-k",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2007753300",
+     "title": "Social Science Research",
+     "year": 1962,
+     "cited_by": 115,
+     "doi": "https://doi.org/10.1126/science.138.3538.402",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W595334711",
+     "title": "General systems : yearbook of the Society for General Systems Research",
+     "year": 1956,
+     "cited_by": 108,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1556242366",
+     "title": "Beyond Economics: Essays on Society, Religion, and Ethics",
+     "year": 1968,
+     "cited_by": 105,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2003957451",
+     "title": "Theory of the Firm: Resource Allocation in a Market Economy",
+     "year": 1966,
+     "cited_by": 99,
+     "doi": "https://doi.org/10.2307/1910119",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2043653283",
+     "title": "A Preface to Grants Economics: The Economy of Love and Fear",
+     "year": 1983,
+     "cited_by": 97,
+     "doi": "https://doi.org/10.2307/1058255",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2327634701",
+     "title": "Barriers to New Competition: Their Character and Consequences in Manufacturing Industries.",
+     "year": 1957,
+     "cited_by": 91,
+     "doi": "https://doi.org/10.2307/2390593",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2022888445",
+     "title": "Beyond the Welfare State: Economic Planning and Its International Implications.",
+     "year": 1961,
+     "cited_by": 88,
+     "doi": "https://doi.org/10.2307/2390743",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W4234038438",
+     "title": "General Systems Theory—The Skeleton of Science",
+     "year": 1991,
+     "cited_by": 86,
+     "doi": "https://doi.org/10.1007/978-1-4899-0718-9_15",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1537522929",
+     "title": "The Meaning of the Twentieth Century: The Great Transition",
+     "year": 1964,
+     "cited_by": 86,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1853899770",
+     "title": "The Organizational Revolution",
+     "year": 1954,
+     "cited_by": 82,
+     "doi": "https://doi.org/10.2307/3497848",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W634612412",
+     "title": "Conflict and defence : a general theory",
+     "year": 1962,
+     "cited_by": 77,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W275291318",
+     "title": "Evolution, Order and Complexity",
+     "year": 2002,
+     "cited_by": 76,
+     "doi": "https://doi.org/10.4324/9780203013151",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2797096936",
+     "title": "Toward a General Theory of Growth",
+     "year": 1953,
+     "cited_by": 76,
+     "doi": "https://doi.org/10.2307/138345",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3035410188",
+     "title": "General Systems Theory",
+     "year": 1987,
+     "cited_by": 76,
+     "doi": "https://doi.org/10.1057/978-1-349-95121-5_763-1",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1512476684",
+     "title": "Education and the State: A Study in Political Economy",
+     "year": 1966,
+     "cited_by": 75,
+     "doi": "https://doi.org/10.2307/1598752",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2124449564",
+     "title": "The Theory of a Single Investment",
+     "year": 1935,
+     "cited_by": 69,
+     "doi": "https://doi.org/10.2307/1883864",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1986283665",
+     "title": "Science: Our Common Heritage",
+     "year": 1980,
+     "cited_by": 68,
+     "doi": "https://doi.org/10.1126/science.6766564",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W361190094",
+     "title": "Communication and information economics: New perspectives",
+     "year": 1984,
+     "cited_by": 68,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5006537035": {
+   "display_name": "John R. Beaumont",
+   "cross_axis_score": 0.5119,
+   "h_index": 26,
+   "n_new_works_found": 1,
+   "n_in_corpus_overlap": 49,
+   "new_works": [
+    {
+     "oa_id": "W1970300940",
+     "title": "Location-allocation problems in a plane a review of some models",
+     "year": 1981,
+     "cited_by": 37,
+     "doi": "https://doi.org/10.1016/0038-0121(81)90042-2",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W1503477597",
+     "title": "Multifacetted Modelling and Discrete Event Simulation.",
+     "year": 1985,
+     "cited_by": 662,
+     "doi": "https://doi.org/10.2307/2582832",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2937064730",
+     "title": "Changing course: A global business perspective on development and the environment",
+     "year": 1993,
+     "cited_by": 592,
+     "doi": "https://doi.org/10.1016/0016-3287(93)90129-h",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2007488245",
+     "title": "Control and Coordination in Hierarchical Systems",
+     "year": 1981,
+     "cited_by": 351,
+     "doi": "https://doi.org/10.1057/jors.1981.65",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4251819717",
+     "title": "Control and Coordination in Hierarchical Systems",
+     "year": 1981,
+     "cited_by": 321,
+     "doi": "https://doi.org/10.2307/2581429",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2154683088",
+     "title": "Diagnosing the System for Organizations",
+     "year": 1985,
+     "cited_by": 293,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4230905941",
+     "title": "Multifacetted Modelling and Discrete Event Simulation",
+     "year": 1985,
+     "cited_by": 176,
+     "doi": "https://doi.org/10.1057/jors.1985.95",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2020048970",
+     "title": "Connectivity, Complexity, and Catastrophe in Large-Scale Systems",
+     "year": 1980,
+     "cited_by": 161,
+     "doi": "https://doi.org/10.1057/jors.1980.158",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4243328523",
+     "title": "Diagnosing the System for Organisations.",
+     "year": 1986,
+     "cited_by": 156,
+     "doi": "https://doi.org/10.2307/2582047",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4245833874",
+     "title": "Large-Scale Systems: Modeling and Control",
+     "year": 1983,
+     "cited_by": 130,
+     "doi": "https://doi.org/10.2307/2580906",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4248263571",
+     "title": "Connectivity, Complexity, and Catastrophe in Large-Scale Systems",
+     "year": 1980,
+     "cited_by": 122,
+     "doi": "https://doi.org/10.2307/2581905",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1545742527",
+     "title": "Production and operations management",
+     "year": 1993,
+     "cited_by": 120,
+     "doi": "https://doi.org/10.1016/b978-0-7506-1574-7.50010-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2083899078",
+     "title": "Large-Scale Systems: Modeling and Control",
+     "year": 1983,
+     "cited_by": 119,
+     "doi": "https://doi.org/10.1057/jors.1983.220",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2010915529",
+     "title": "Studies on Graphs and Discrete Programming",
+     "year": 1982,
+     "cited_by": 80,
+     "doi": "https://doi.org/10.2307/2581223",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4246117830",
+     "title": "Expert Systems for Business",
+     "year": 1988,
+     "cited_by": 71,
+     "doi": "https://doi.org/10.2307/2583775",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4231371657",
+     "title": "Diagnosing the System for Organisations",
+     "year": 1986,
+     "cited_by": 59,
+     "doi": "https://doi.org/10.1057/jors.1986.129",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2057581422",
+     "title": "Managing the environment: Business opportunity and responsibility",
+     "year": 1992,
+     "cited_by": 53,
+     "doi": "https://doi.org/10.1016/0016-3287(92)90030-j",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2127176297",
+     "title": "SPATIAL INTERACTION MODELS AND THE LOCATION‐ALLOCATION PROBLEM*",
+     "year": 1980,
+     "cited_by": 48,
+     "doi": "https://doi.org/10.1111/j.1467-9787.1980.tb00625.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2243489219",
+     "title": "Expert Systems for Business",
+     "year": 1988,
+     "cited_by": 46,
+     "doi": "https://doi.org/10.1057/jors.1988.135",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2032322950",
+     "title": "Mathematical Modelling in Science and Technology.",
+     "year": 1984,
+     "cited_by": 45,
+     "doi": "https://doi.org/10.2307/2582467",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4300847487",
+     "title": "Studies on Graphs and Discrete Programming",
+     "year": 1982,
+     "cited_by": 44,
+     "doi": "https://doi.org/10.1057/jors.1982.188",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W579894727",
+     "title": "An introduction to Q-analysis",
+     "year": 1982,
+     "cited_by": 37,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2070883569",
+     "title": "Changing energy parameters and the evolution of urban spatial structure",
+     "year": 1981,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.1016/0166-0462(81)90011-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1986078744",
+     "title": "Mathematical Methods in Economics",
+     "year": 1985,
+     "cited_by": 31,
+     "doi": "https://doi.org/10.1057/jors.1985.117",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2035048366",
+     "title": "Geodemographics in Practice: Developments in Britain and Europe",
+     "year": 1989,
+     "cited_by": 29,
+     "doi": "https://doi.org/10.1068/a210587",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2296625494",
+     "title": "Location-Allocation Models and Central Place Theory",
+     "year": 1987,
+     "cited_by": 27,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4302080674",
+     "title": "Coping with Complexity: Perspectives for Economics, Management and Social Sciences",
+     "year": 1984,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.1057/jors.1984.173",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4301375165",
+     "title": "Mathematical Modelling in Science and Technology",
+     "year": 1984,
+     "cited_by": 17,
+     "doi": "https://doi.org/10.1057/jors.1984.206",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2970974314",
+     "title": "Managing the environment",
+     "year": 1993,
+     "cited_by": 16,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W286477282",
+     "title": "Applied expert systems",
+     "year": 1989,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1016/0377-2217(89)90196-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2074875180",
+     "title": "Systems Analysis in Health-Care Delivery",
+     "year": 1980,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.2307/2581904",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W97578436",
+     "title": "Information resources management",
+     "year": 1993,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.1016/b978-0-7506-1574-7.50011-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W579329538",
+     "title": "An introduction to market analysis",
+     "year": 1991,
+     "cited_by": 14,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1994588431",
+     "title": "Spatial Economics: Density, Potential and Flow",
+     "year": 1986,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1057/jors.1986.16",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4210598354",
+     "title": "Spatial Economics: Density, Potential and Flow.",
+     "year": 1986,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.2307/2582555",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2045704384",
+     "title": "Admitting scientific expert evidence in the UK: reliability challenges and the need for revised criteria – proposing an Abridged Daubert",
+     "year": 2015,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1108/jfp-03-2014-0008",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W114835919",
+     "title": "Accounting and financial management",
+     "year": 1993,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1016/b978-0-7506-1574-7.50008-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1973974523",
+     "title": "Information Technology in the U.K.",
+     "year": 1984,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1057/jors.1984.226",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1976569376",
+     "title": "New Dimensions to Energy Policy",
+     "year": 1980,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1057/jors.1980.127",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2085601332",
+     "title": "Coping with Complexity: Perspectives for Economics, Management and Social Sciences.",
+     "year": 1984,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.2307/2582640",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2071345923",
+     "title": "Combined Heat and Power Generation Schemes: A Feasibility Study",
+     "year": 1981,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1068/a130623",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W603837467",
+     "title": "Information Resources Management: Management in Our Knowledge-Based Society and Economy",
+     "year": 1992,
+     "cited_by": 9,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2041728674",
+     "title": "Information management in service industries: towards a strategic framework",
+     "year": 1991,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1111/j.1365-2575.1991.tb00034.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4240834570",
+     "title": "Topics in Management Science",
+     "year": 1984,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.2307/2581760",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2131546098",
+     "title": "Towards a conceptualization of evolution in environmental systems",
+     "year": 1982,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1016/s0020-7373(82)80053-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2008199648",
+     "title": "A description of structural change in a central place system: a speculation using Q-analysis",
+     "year": 1984,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1016/s0020-7373(84)80030-9",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W4248586710",
+     "title": "New Dimensions to Energy Policy",
+     "year": 1980,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.2307/2580859",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4233603210",
+     "title": "Two letters written by Mr. John Beaumont Junior of Stony-Easton in Somerset-shire, concerning rock-plants and their growth",
+     "year": 1676,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1098/rstl.1676.0042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2042094401",
+     "title": "Quantitative Methods in the Real World: A Consultant's View of Practice",
+     "year": 1987,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1068/a191441",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1990165464",
+     "title": "Mathematical programming in human geography",
+     "year": 1982,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.1016/0165-4896(82)91079-4",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5040027314": {
+   "display_name": "Peter John",
+   "cross_axis_score": 0.4101,
+   "h_index": 56,
+   "n_new_works_found": 1,
+   "n_in_corpus_overlap": 49,
+   "new_works": [
+    {
+     "oa_id": "W1979357479",
+     "title": "The policy agendas project: a review",
+     "year": 2006,
+     "cited_by": 72,
+     "doi": "https://doi.org/10.1080/13501760600923870",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W89546078",
+     "title": "Agendas and Instability in American Politics",
+     "year": 2013,
+     "cited_by": 855,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1492381003",
+     "title": "Analysing Public Policy",
+     "year": 1998,
+     "cited_by": 609,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2170493758",
+     "title": "Is There Life After Policy Streams, Advocacy Coalitions, and Punctuations: Using Evolutionary Theory to Explain Policy Change?",
+     "year": 2003,
+     "cited_by": 395,
+     "doi": "https://doi.org/10.1111/1541-0072.00039",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2083640591",
+     "title": "Sporopollenin in the cell wall of Chlorella and other algae: Ultrastructure, chemistry, and incorporation of 14C-acetate, studied in synchronous cultures",
+     "year": 1972,
+     "cited_by": 375,
+     "doi": "https://doi.org/10.1007/bf00398011",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2061774292",
+     "title": "Exit, voice and loyalty: Analytic and empirical developments",
+     "year": 2000,
+     "cited_by": 352,
+     "doi": "https://doi.org/10.1111/1475-6765.00522",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2289338980",
+     "title": "Political turbulence how social media shape collective action",
+     "year": 2015,
+     "cited_by": 345,
+     "doi": "https://doi.org/10.1515/9781400873555",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W618958753",
+     "title": "Analyzing Public Policy",
+     "year": 2013,
+     "cited_by": 334,
+     "doi": "https://doi.org/10.4324/9780203136218",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2051447928",
+     "title": "Tiebout : A Survey of the Empirical Literature",
+     "year": 1994,
+     "cited_by": 308,
+     "doi": "https://doi.org/10.1080/00420989420080671",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2104300977",
+     "title": "A General Empirical Law of Public Budgets: A Comparative Analysis",
+     "year": 2009,
+     "cited_by": 305,
+     "doi": "https://doi.org/10.1111/j.1540-5907.2009.00405.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4235193380",
+     "title": "Political Turbulence",
+     "year": 2015,
+     "cited_by": 225,
+     "doi": "https://doi.org/10.2307/j.ctvc773c7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2152422646",
+     "title": "Nudge Nudge, Think Think: Two Strategies for Changing Civic Behaviour",
+     "year": 2009,
+     "cited_by": 219,
+     "doi": "https://doi.org/10.1111/j.1467-923x.2009.02001.x",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2106070533",
+     "title": "Democracy and Government Performance: Holding Incumbents Accountable in English Local Governments",
+     "year": 2009,
+     "cited_by": 186,
+     "doi": "https://doi.org/10.1017/s0022381609990089",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2127028709",
+     "title": "The Dynamics of Political Attention: Public Opinion and the Queen's Speech in the United Kingdom",
+     "year": 2009,
+     "cited_by": 182,
+     "doi": "https://doi.org/10.1111/j.1540-5907.2009.00404.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3130697414",
+     "title": "Nudge plus: incorporating reflection into behavioral public policy",
+     "year": 2021,
+     "cited_by": 144,
+     "doi": "https://doi.org/10.1017/bpp.2021.6",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2113278016",
+     "title": "Effects of the Core Functions of Government on the Diversity of Executive Agendas",
+     "year": 2011,
+     "cited_by": 143,
+     "doi": "https://doi.org/10.1177/0010414011405165",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2003038466",
+     "title": "The growth and division of the single mitochondrion and other organelles during the cell cycle ofChlorella, studied by quantitative stereology and three dimensional reconstruction",
+     "year": 1974,
+     "cited_by": 140,
+     "doi": "https://doi.org/10.1007/bf02055775",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2791184098",
+     "title": "How Far to Nudge?",
+     "year": 2018,
+     "cited_by": 127,
+     "doi": "https://doi.org/10.4337/9781786430557",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W178119353",
+     "title": "Nudge, Nudge, Think, Think",
+     "year": 2011,
+     "cited_by": 120,
+     "doi": "https://doi.org/10.5040/9781849662284",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1488184033",
+     "title": "Policy Agendas in British Politics",
+     "year": 2013,
+     "cited_by": 118,
+     "doi": "https://doi.org/10.1057/9780230390409",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W979918218",
+     "title": "Nudge, Nudge, Think, Think: Experimenting with Ways to Change Civic Behaviour",
+     "year": 2011,
+     "cited_by": 116,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2116789738",
+     "title": "The Three Exit, Three Voice and Loyalty Framework: A Test with Survey Data on Local Services",
+     "year": 2007,
+     "cited_by": 114,
+     "doi": "https://doi.org/10.1111/j.1467-9248.2007.00688.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2020212489",
+     "title": "Policy punctuations in the UK: fluctuations and equilibria in central government expenditure since 1951",
+     "year": 2003,
+     "cited_by": 114,
+     "doi": "https://doi.org/10.1111/1467-9299.00354",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2105117703",
+     "title": "Punctuations and Turning Points in British Politics: The Policy Agenda of the Queen’s Speech, 1940–2005",
+     "year": 2010,
+     "cited_by": 109,
+     "doi": "https://doi.org/10.1017/s0007123409990068",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1601214089",
+     "title": "Collection of Delinquent Fines: An Adaptive Randomized Trial to Assess the Effectiveness of Alternative Text Messages",
+     "year": 2013,
+     "cited_by": 106,
+     "doi": "https://doi.org/10.1002/pam.21717",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2142553039",
+     "title": "Comparing Government Agendas",
+     "year": 2011,
+     "cited_by": 106,
+     "doi": "https://doi.org/10.1177/0010414011405162",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2119810942",
+     "title": "The Agenda of British Government: The Speech from the Throne, 1911-2008",
+     "year": 2010,
+     "cited_by": 103,
+     "doi": "https://doi.org/10.1111/j.1467-9248.2010.00859.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2008978319",
+     "title": "The Europeanisation of Sub-national Governance",
+     "year": 2000,
+     "cited_by": 102,
+     "doi": "https://doi.org/10.1080/00420980050011136",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1968128438",
+     "title": "Top Management Turnover and Organizational Performance: A Test of a Contingency Model",
+     "year": 2011,
+     "cited_by": 97,
+     "doi": "https://doi.org/10.1111/j.1540-6210.2011.02389.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2140744786",
+     "title": "Social information and political participation on the internet: an experiment",
+     "year": 2011,
+     "cited_by": 96,
+     "doi": "https://doi.org/10.1017/s1755773911000129",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2124267344",
+     "title": "Political leadership in the new urban governance: Britain and France compared",
+     "year": 1999,
+     "cited_by": 95,
+     "doi": "https://doi.org/10.1080/03003939908433969",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2157786246",
+     "title": "Ideas and Interests; Agendas and Implementation: An Evolutionary Explanation of Policy Change in British Local Government Finance",
+     "year": 1999,
+     "cited_by": 93,
+     "doi": "https://doi.org/10.1111/1467-856x.00003",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3013160587",
+     "title": "Agenda Setting, Policies, and Political Systems: A Comparative Approach",
+     "year": 2014,
+     "cited_by": 92,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2058032431",
+     "title": "Path Dependency and the Reform of English Local Government",
+     "year": 2005,
+     "cited_by": 88,
+     "doi": "https://doi.org/10.1111/j.0033-3298.2005.00436.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2127149756",
+     "title": "When Do Institutions, Policy Sectors, and Cities Matter?",
+     "year": 2000,
+     "cited_by": 85,
+     "doi": "https://doi.org/10.1177/0010414000033002004",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2145313533",
+     "title": "The Great Survivor: The Persistence and Resilience of English Local Government",
+     "year": 2014,
+     "cited_by": 84,
+     "doi": "https://doi.org/10.1080/03003930.2014.891984",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2053845953",
+     "title": "Targeting Benefits for Electoral Gain: Constituency Marginality and the Distribution of Grants to English Local Authorities",
+     "year": 1999,
+     "cited_by": 83,
+     "doi": "https://doi.org/10.1111/1467-9248.00186",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2227476554",
+     "title": "Exits, Voices and Social Investment",
+     "year": 2012,
+     "cited_by": 82,
+     "doi": "https://doi.org/10.1017/cbo9781139136709",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2922992194",
+     "title": "Rethinking the role of experts and expertise in behavioural public policy",
+     "year": 2019,
+     "cited_by": 81,
+     "doi": "https://doi.org/10.1332/030557319x15526371698257",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2793951121",
+     "title": "How best to nudge taxpayers? The impact of message simplification and descriptive social norms on payment rates in a central London local authority",
+     "year": 2018,
+     "cited_by": 79,
+     "doi": "https://doi.org/10.30636/jbpa.11.10",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1503378783",
+     "title": "Does Public Service Performance Affect Top Management Turnover?",
+     "year": 2010,
+     "cited_by": 78,
+     "doi": "https://doi.org/10.1093/jopart/muq024",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1973833133",
+     "title": "Active Citizenship and Effective Public Services and Programmes: How Can We Know What Really Works?",
+     "year": 2006,
+     "cited_by": 78,
+     "doi": "https://doi.org/10.1080/00420980600676626",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2108874631",
+     "title": "THE CELL CYCLES OF <i>CHLAMYDOMONAS</i> AND <i>CHLORELLA</i>",
+     "year": 1985,
+     "cited_by": 78,
+     "doi": "https://doi.org/10.1111/j.1469-8137.1985.tb03634.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3125433277",
+     "title": "Transparency at the Parish Pump: A Field Experiment to Measure the Effectiveness of Freedom of Information Requests in England",
+     "year": 2016,
+     "cited_by": 78,
+     "doi": "https://doi.org/10.1093/jopart/muw063",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2110316940",
+     "title": "DOES POLITICAL CHANGE AFFECT SENIOR MANAGEMENT TURNOVER? AN EMPIRICAL ANALYSIS OF TOP-TIER LOCAL AUTHORITIES IN ENGLAND",
+     "year": 2010,
+     "cited_by": 75,
+     "doi": "https://doi.org/10.1111/j.1467-9299.2009.01751.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2136920316",
+     "title": "The use of feedback to enhance environmental outcomes: a randomised controlled trial of a food waste scheme",
+     "year": 2011,
+     "cited_by": 73,
+     "doi": "https://doi.org/10.1080/13549839.2011.586026",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2130676853",
+     "title": "Urban Regimes and Local Governance in Britain and France",
+     "year": 1998,
+     "cited_by": 73,
+     "doi": "https://doi.org/10.1177/107808749803300307",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2123513113",
+     "title": "Is Voting Habit Forming? The Longitudinal Impact of a GOTV Campaign in the UK",
+     "year": 2009,
+     "cited_by": 72,
+     "doi": "https://doi.org/10.1080/17457280903073914",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1964339813",
+     "title": "How Different Are Telephoning and Canvassing? Results from a ‘Get Out the Vote’ Field Experiment in the British 2005 General Election",
+     "year": 2008,
+     "cited_by": 68,
+     "doi": "https://doi.org/10.1017/s0007123408000288",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1999333770",
+     "title": "Political Manipulation in a Majoritarian Democracy: Central Government Targeting of Public Funds to English Subnational Government, in Space and across Time",
+     "year": 2001,
+     "cited_by": 66,
+     "doi": "https://doi.org/10.1111/1467-856x.00062",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5053268108": {
+   "display_name": "Raúl Espejo",
+   "cross_axis_score": 0.3733,
+   "h_index": 22,
+   "n_new_works_found": 2,
+   "n_in_corpus_overlap": 48,
+   "new_works": [
+    {
+     "oa_id": "W2277499879",
+     "title": "Dynamic Line Rating Oncor Electric Delivery Smart Grid Program",
+     "year": 2013,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.2172/1111102",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W183356",
+     "title": "A cybernetic methodology to study and design human activities",
+     "year": 1988,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.48780/publications.aston.ac.uk.00012179",
+     "axes_hit": [
+      "Cyb"
+     ]
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W1530425941",
+     "title": "Organizational Transformation and Learning: A Cybernetic Approach to Management",
+     "year": 1996,
+     "cited_by": 234,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4244612406",
+     "title": "Organizational Systems",
+     "year": 2011,
+     "cited_by": 215,
+     "doi": "https://doi.org/10.1007/978-3-642-19109-1",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1983425281",
+     "title": "The Viable System Model",
+     "year": 1990,
+     "cited_by": 195,
+     "doi": "https://doi.org/10.1007/bf01062728",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W582908774",
+     "title": "Organizational Systems: Managing Complexity with the Viable System Model",
+     "year": 2011,
+     "cited_by": 152,
+     "doi": "https://doi.org/10.1007/978-3-642-19109-1",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4237835702",
+     "title": "The Viable System Model: Interpretations and Applications of Stafford Beer's VSM",
+     "year": 1990,
+     "cited_by": 132,
+     "doi": "https://doi.org/10.2307/2583516",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2136083730",
+     "title": "The viable system model and the Viplan software",
+     "year": 1999,
+     "cited_by": 109,
+     "doi": "https://doi.org/10.1108/03684929910282944",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2014204309",
+     "title": "What is systemic thinking?",
+     "year": 1994,
+     "cited_by": 98,
+     "doi": "https://doi.org/10.1002/sdr.4260100208",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2353090867",
+     "title": "The Viable System Model as a Framework for Understanding Organizations",
+     "year": 1997,
+     "cited_by": 91,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2921753315",
+     "title": "The viable system model: interpretations of Stafford Beer's VSM",
+     "year": 1990,
+     "cited_by": 70,
+     "doi": "https://doi.org/10.1016/0377-2217(90)90368-l",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W183842712",
+     "title": "Cybernetics of Governance: The Cybersyn Project 1971–1973",
+     "year": 2014,
+     "cited_by": 43,
+     "doi": "https://doi.org/10.1007/978-4-431-54478-4_3",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2265337851",
+     "title": "Cybernetics of Value Cocreation for Product Development",
+     "year": 2016,
+     "cited_by": 40,
+     "doi": "https://doi.org/10.1002/sres.2392",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2112336442",
+     "title": "Management of complexity in problem solving",
+     "year": 1992,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.1177/014233129201400103",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2071491867",
+     "title": "The footprint of complexity: the embodiment of social systems",
+     "year": 2004,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.1108/03684920410523643",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2032502074",
+     "title": "Self‐construction of desirable social systems",
+     "year": 2000,
+     "cited_by": 34,
+     "doi": "https://doi.org/10.1108/03684920010342062",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2013143195",
+     "title": "Information Management, Organization and Managerial Effectiveness",
+     "year": 1988,
+     "cited_by": 32,
+     "doi": "https://doi.org/10.1057/jors.1988.2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2046636328",
+     "title": "Requirements for effective participation in self-constructed organizations",
+     "year": 1996,
+     "cited_by": 30,
+     "doi": "https://doi.org/10.1016/0263-2373(96)00029-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2083712072",
+     "title": "Aspects of identity, cohesion, citizenship and performance in recursive organisations",
+     "year": 1999,
+     "cited_by": 29,
+     "doi": "https://doi.org/10.1108/03684929910282935",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2028652971",
+     "title": "Observing organisations: the use of identity and structural archetypes",
+     "year": 2008,
+     "cited_by": 28,
+     "doi": "https://doi.org/10.1504/ijass.2008.022791",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3097131333",
+     "title": "An agenda for ontological cybernetics and social responsibility",
+     "year": 2020,
+     "cited_by": 25,
+     "doi": "https://doi.org/10.1108/k-06-2020-0390",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2051514829",
+     "title": "Information and Management: the Cybernetics of a Small Company",
+     "year": 1979,
+     "cited_by": 23,
+     "doi": "https://doi.org/10.1108/eb027735",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1967776899",
+     "title": "Systemic reflections on environmental sustainability",
+     "year": 1998,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.1002/(sici)1099-1743(199811/12)15:6<483::aid-sres209>3.0.co;2-y",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4246626855",
+     "title": "Organisational Fitness: Corporate Effectiveness Through Management Cybernetics.",
+     "year": 1995,
+     "cited_by": 22,
+     "doi": "https://doi.org/10.2307/2583998",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W34927365",
+     "title": "Giving Requisite Variety to Strategic and Implementation Processes: Theory and Practice 1",
+     "year": 2000,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.1111/iwj.13739",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W3048027481",
+     "title": "The enterprise complexity model: An extension of the viable system model for emerging organizational forms",
+     "year": 2020,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.1002/sres.2735",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2037415231",
+     "title": "Complexity and change: Reflections upon the cybernetic intervention in Chile, 1970?1973",
+     "year": 1990,
+     "cited_by": 19,
+     "doi": "https://doi.org/10.1007/bf01062734",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2046649294",
+     "title": "Performance management, the nature of regulation and the CyberSyn project",
+     "year": 2009,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.1108/03684920910930277",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2026076708",
+     "title": "Self‐construction and restricted conversations",
+     "year": 2002,
+     "cited_by": 17,
+     "doi": "https://doi.org/10.1002/sres.468",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2023578764",
+     "title": "Models of Transparency and Accountability in the Biotech Age",
+     "year": 2006,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.1177/0270467605284347",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1624931450",
+     "title": "Auditing as the Dissolution of Corruption",
+     "year": 2001,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.1023/a:1011303705113",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2071197234",
+     "title": "An Enterprise Complexity Model",
+     "year": 2015,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.4018/ijss.2015010101",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1992654960",
+     "title": "An intervention with the Cybernetic Methodology in Regent Engineering",
+     "year": 1992,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1177/014233129201400104",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4205381349",
+     "title": "Cybersyn, big data, variety engineering and governance",
+     "year": 2022,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1007/s00146-021-01348-0",
+     "axes_hit": [
+      "Cyb",
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1816767395",
+     "title": "Performance for viability: complexity and variety management",
+     "year": 2015,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1108/k-02-2015-0044",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2015865104",
+     "title": "Governance and inclusive democracy",
+     "year": 2012,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1108/03684921211229442",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1982271949",
+     "title": "MANAGEMENT INFORMATION SYSTEMS: A SYSTEM FOR DESIGN",
+     "year": 1979,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1080/01969727908927609",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1884238595",
+     "title": "Good social cybernetics is a must in policy processes",
+     "year": 2015,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.1108/k-02-2015-0050",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1689147090",
+     "title": "Auditing as a Trust Creation Process",
+     "year": 2001,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1023/a:1011311906930",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2059019427",
+     "title": "CYBERNETIC PRAXIS IN GOVERNMENT: THE MANAGEMENT OF INDUSTRY IN CHILE 1970-1973",
+     "year": 1980,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1080/01969728008960243",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4196169",
+     "title": "The State of the State: Introduction",
+     "year": 2001,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1023/a:1011351621043",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2037032859",
+     "title": "MANAGEMENT AND INFORMATION: THE COMPLEMENTARITY CONTROL-AUTONOMY",
+     "year": 1983,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1080/01969728308927719",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1965423676",
+     "title": "Strategy, structure and information management*",
+     "year": 1993,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1111/j.1365-2575.1993.tb00112.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2127863403",
+     "title": "Appreciating the complexity of organizational processes",
+     "year": 2011,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1108/03684921111133683",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2066975000",
+     "title": "An argument for active citizenship and organisational transparency",
+     "year": 2011,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1108/03684921111133692",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4210538393",
+     "title": "The Cybernetics of political communications and social transformation in Colombia: the case of the National Audit Office (1995–1998)",
+     "year": 2022,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1007/s00146-021-01352-4",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2234927670",
+     "title": "Giving Requisite Variety to Strategy and Information Systems",
+     "year": 1993,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1007/978-1-4615-2862-3_6",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W942472606",
+     "title": "Seeing Systems: Overcoming Organisational Fragmentation",
+     "year": 2006,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/0-306-47467-0_1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4206475620",
+     "title": "COVID‐19",
+     "year": 2020,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1002/sres.2692",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2063404128",
+     "title": "Seeing a case study through a cybernetic epistemological lens",
+     "year": 2011,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1108/03684921111169387",
+     "axes_hit": [
+      "Cyb"
+     ]
+    }
+   ]
+  },
+  "A5113832316": {
+   "display_name": "Dani Rodrik",
+   "cross_axis_score": 0.343,
+   "h_index": 118,
+   "n_new_works_found": 16,
+   "n_in_corpus_overlap": 34,
+   "new_works": [
+    {
+     "oa_id": "W1977433163",
+     "title": "Institutions Rule: The Primacy of Institutions over Geography and Integration in Economic Development",
+     "year": 2002,
+     "cited_by": 1711,
+     "doi": "https://doi.org/10.3386/w9305",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2892303649",
+     "title": "What You Export Matters",
+     "year": 2005,
+     "cited_by": 1464,
+     "doi": "https://doi.org/10.3386/w11905",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1520184347",
+     "title": "Globalization, Structural Change and Productivity Growth",
+     "year": 2011,
+     "cited_by": 1033,
+     "doi": "https://doi.org/10.3386/w17143",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2097480477",
+     "title": "Goodbye Washington Consensus, hello Washington confusion?: A review of the World Bank's 'Economic growth in the 1990s: Learning from a decade of reform'",
+     "year": 2008,
+     "cited_by": 941,
+     "doi": "https://doi.org/10.2298/pan0802135r",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2097197933",
+     "title": "Trade Policy and Economic Growth: A Skeptic's Guide to Cross-National Evidence",
+     "year": 1999,
+     "cited_by": 876,
+     "doi": "https://doi.org/10.3386/w7081",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2273189401",
+     "title": "Handbook of development economics",
+     "year": 1988,
+     "cited_by": 872,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3020979170",
+     "title": "Institutions for High-Quality Growth: What They are and How to Acquire Them",
+     "year": 2000,
+     "cited_by": 801,
+     "doi": "https://doi.org/10.3386/w7540",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4248554038",
+     "title": "Goodbye Washington Consensus, Hello Washington Confusion? A Review of the World Bank's <i>Economic Growth in the 1990s: Learning from a Decade of Reform</i>",
+     "year": 2006,
+     "cited_by": 791,
+     "doi": "https://doi.org/10.1257/jel.44.4.973",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2890370308",
+     "title": "What's So Special about China's Exports?",
+     "year": 2006,
+     "cited_by": 713,
+     "doi": "https://doi.org/10.3386/w11947",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4239302827",
+     "title": "Premature Deindustrialization",
+     "year": 2015,
+     "cited_by": 695,
+     "doi": "https://doi.org/10.3386/w20935",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3122700437",
+     "title": "Globalization, structural change and productivity growth",
+     "year": 2011,
+     "cited_by": 601,
+     "doi": "https://doi.org/10.30875/b10cb347-en",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3126143197",
+     "title": "Short-Term Capital Flows",
+     "year": 1999,
+     "cited_by": 456,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2147618847",
+     "title": "Distributive Politics and Economic Growth",
+     "year": 1991,
+     "cited_by": 425,
+     "doi": "https://doi.org/10.3386/w3668",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2150136496",
+     "title": "Short-Term Capital Flows",
+     "year": 1999,
+     "cited_by": 403,
+     "doi": "https://doi.org/10.3386/w7364",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2891903900",
+     "title": "Why Do More Open Economies Have Bigger Governments?",
+     "year": 1996,
+     "cited_by": 399,
+     "doi": "https://doi.org/10.1086/250038",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3024311712",
+     "title": "Economic Development as Self-Discovery",
+     "year": 2002,
+     "cited_by": 388,
+     "doi": "https://doi.org/10.3386/w8952",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2465170261",
+     "title": "Has Globalization Gone Too Far?",
+     "year": 1998,
+     "cited_by": 2503,
+     "doi": "https://doi.org/10.1080/05775132.1998.11472025",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2588728401",
+     "title": "Trade Policy and Economic Growth: A Skeptic's Guide to the Cross-National Evidence",
+     "year": 2000,
+     "cited_by": 2350,
+     "doi": "https://doi.org/10.1086/654419",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3190948128",
+     "title": "Premature deindustrialization",
+     "year": 2015,
+     "cited_by": 1763,
+     "doi": "https://doi.org/10.1007/s10887-015-9122-3",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2155346737",
+     "title": "The Real Exchange Rate and Economic Growth",
+     "year": 2008,
+     "cited_by": 1713,
+     "doi": "https://doi.org/10.1353/eca.0.0020",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2240202731",
+     "title": "Has Globalization Gone Too Far?",
+     "year": 1997,
+     "cited_by": 1696,
+     "doi": "https://doi.org/10.2307/41165897",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2120106358",
+     "title": "Economic development as self-discovery",
+     "year": 2003,
+     "cited_by": 1681,
+     "doi": "https://doi.org/10.1016/s0304-3878(03)00124-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124879925",
+     "title": "Industrial Policy for the Twenty-First Century",
+     "year": 2004,
+     "cited_by": 1527,
+     "doi": "https://doi.org/10.2139/ssrn.617544",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2727880884",
+     "title": "Populism and the economics of globalization",
+     "year": 2018,
+     "cited_by": 1292,
+     "doi": "https://doi.org/10.1057/s42214-018-0001-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2137658278",
+     "title": "Understanding Economic Policy Reform",
+     "year": 2018,
+     "cited_by": 1283,
+     "doi": "https://doi.org/10.4324/9780429498893-10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3193006831",
+     "title": "Growth Accelerations",
+     "year": 2005,
+     "cited_by": 1234,
+     "doi": "https://doi.org/10.1007/s10887-005-4712-0",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4231155341",
+     "title": "One Economics, Many Recipes",
+     "year": 2007,
+     "cited_by": 1101,
+     "doi": "https://doi.org/10.1515/9781400829354",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2071256925",
+     "title": "The Globalization Paradox: Democracy and the Future of the World Economy",
+     "year": 2011,
+     "cited_by": 1001,
+     "doi": "https://doi.org/10.1355/ae28-3k",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1802390472",
+     "title": "Institutions for high-quality growth: What they are and how to acquire them",
+     "year": 2000,
+     "cited_by": 1000,
+     "doi": "https://doi.org/10.1007/bf02699764",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W91656327",
+     "title": "WHO NEEDS CAPITAL-ACCOUNT CONVERTIBILITY?",
+     "year": 1998,
+     "cited_by": 999,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2066623064",
+     "title": "Globalization, Structural Change, and Productivity Growth, with an Update on Africa",
+     "year": 2013,
+     "cited_by": 981,
+     "doi": "https://doi.org/10.1016/j.worlddev.2013.10.012",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2090438200",
+     "title": "Unconditional Convergence in Manufacturing*",
+     "year": 2012,
+     "cited_by": 909,
+     "doi": "https://doi.org/10.1093/qje/qjs047",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3025498968",
+     "title": "Policy uncertainty and private investment in developing countries",
+     "year": 1991,
+     "cited_by": 890,
+     "doi": "https://doi.org/10.1016/0304-3878(91)90034-s",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1574946700",
+     "title": "The New Global Economy and Developing Countries: Making Openness Work",
+     "year": 1999,
+     "cited_by": 795,
+     "doi": "https://doi.org/10.2307/20049465",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2078042761",
+     "title": "Economic Growth in East Asia: Accumulation versus Assimilation",
+     "year": 1996,
+     "cited_by": 738,
+     "doi": "https://doi.org/10.2307/2534621",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2139225013",
+     "title": "How Far Will International Economic Integration Go?",
+     "year": 2000,
+     "cited_by": 730,
+     "doi": "https://doi.org/10.1257/jep.14.1.177",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1507887863",
+     "title": "In Search of Prosperity",
+     "year": 2003,
+     "cited_by": 689,
+     "doi": "https://doi.org/10.1515/9781400845897",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2076193947",
+     "title": "What You Export Matters",
+     "year": 2005,
+     "cited_by": 596,
+     "doi": "https://doi.org/10.2139/ssrn.896243",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123692307",
+     "title": "What's So Special about China's Exports?",
+     "year": 2006,
+     "cited_by": 575,
+     "doi": "https://doi.org/10.1111/j.1749-124x.2006.00038.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2997402048",
+     "title": "Rebirth of Industrial Policy and an Agenda for the Twenty-First Century",
+     "year": 2020,
+     "cited_by": 550,
+     "doi": "https://doi.org/10.1007/s10842-019-00322-3",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2119732780",
+     "title": "Do Democratic Transitions Produce Bad Economic Outcomes?",
+     "year": 2005,
+     "cited_by": 524,
+     "doi": "https://doi.org/10.1257/000282805774670059",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2788821120",
+     "title": "What Do Trade Agreements Really Do?",
+     "year": 2018,
+     "cited_by": 493,
+     "doi": "https://doi.org/10.1257/jep.32.2.73",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2099688027",
+     "title": "Why Did Financial Globalization Disappoint?",
+     "year": 2009,
+     "cited_by": 490,
+     "doi": "https://doi.org/10.1057/imfsp.2008.29",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2101363902",
+     "title": "Why Do Open Economies Have Bigger Governments",
+     "year": 1996,
+     "cited_by": 479,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4319588164",
+     "title": "The New Global Economy and Developing Countries",
+     "year": 1999,
+     "cited_by": 459,
+     "doi": "https://doi.org/10.56021/9781565170278",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2011801091",
+     "title": "The Political Economy of International Trade",
+     "year": 1996,
+     "cited_by": 452,
+     "doi": "https://doi.org/10.1177/0010414096029006004",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2016902065",
+     "title": "Measuring and Analyzing the Effects of Short-Term Volatility in Real Exchange Rates",
+     "year": 1986,
+     "cited_by": 442,
+     "doi": "https://doi.org/10.2307/1925511",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2128371458",
+     "title": "When Ideas Trump Interests: Preferences, Worldviews, and Policy Innovations",
+     "year": 2014,
+     "cited_by": 428,
+     "doi": "https://doi.org/10.1257/jep.28.1.189",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W913746716",
+     "title": "The globalization paradox",
+     "year": 2011,
+     "cited_by": 414,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2030033665",
+     "title": "Coordination failures and government policy: A model with applications to East Asia and Eastern Europe",
+     "year": 1996,
+     "cited_by": 395,
+     "doi": "https://doi.org/10.1016/0022-1996(95)01386-5",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5108366788": {
+   "display_name": "Oskar Lange",
+   "cross_axis_score": 0.0,
+   "h_index": 19,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 50,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W3130930004",
+     "title": "On the Economic Theory of Socialism",
+     "year": 1938,
+     "cited_by": 563,
+     "doi": "https://doi.org/10.2307/1052453",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W4251950452",
+     "title": "On the Economic Theory of Socialism: Part One",
+     "year": 1936,
+     "cited_by": 555,
+     "doi": "https://doi.org/10.2307/2967660",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W4249603615",
+     "title": "On the Economic Theory of Socialism: Part Two",
+     "year": 1937,
+     "cited_by": 300,
+     "doi": "https://doi.org/10.2307/2967609",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2596750046",
+     "title": "Introduction to Econometrics",
+     "year": 1961,
+     "cited_by": 119,
+     "doi": "https://doi.org/10.2307/1526038",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2496073326",
+     "title": "SAY'S LAW: A RESTATEMENT AND CRITICISM",
+     "year": 1970,
+     "cited_by": 80,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50015-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2315855233",
+     "title": "THE FOUNDATIONS OF WELFARE ECONOMICS",
+     "year": 1970,
+     "cited_by": 78,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50022-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2046485495",
+     "title": "The Place of Interest in the Theory of Production",
+     "year": 1936,
+     "cited_by": 51,
+     "doi": "https://doi.org/10.2307/2967626",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2329221294",
+     "title": "The Output-Investment Ratio and Input-Output Analysis",
+     "year": 1960,
+     "cited_by": 50,
+     "doi": "https://doi.org/10.2307/1907723",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4302193006",
+     "title": "Studies in the Theory of Economic Expansion.",
+     "year": 1938,
+     "cited_by": 39,
+     "doi": "https://doi.org/10.2307/2549029",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2496130044",
+     "title": "THE ROLE OF PLANNING IN A SOCIALIST ECONOMY",
+     "year": 1970,
+     "cited_by": 36,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50011-7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2063282131",
+     "title": "Wholes and Parts: A General Theory of System Behavior",
+     "year": 1966,
+     "cited_by": 35,
+     "doi": "https://doi.org/10.2307/1909950",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W1567467887",
+     "title": "Optymalne decyzje : zasady programowania",
+     "year": 1964,
+     "cited_by": 33,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2496499899",
+     "title": "THE POLITICAL ECONOMY OF SOCIALISM",
+     "year": 1970,
+     "cited_by": 27,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50010-5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2324217867",
+     "title": "Introduction to Econometrics",
+     "year": 1964,
+     "cited_by": 27,
+     "doi": "https://doi.org/10.2307/2527639",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W637550559",
+     "title": "Optimal Decisions: Principles of Programming",
+     "year": 2013,
+     "cited_by": 26,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1524639845",
+     "title": "Teoria reprodukcji i akumulacji",
+     "year": 1961,
+     "cited_by": 20,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4241974030",
+     "title": "Mr. Lerner's Note on Socialist Economics",
+     "year": 1937,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.2307/2967610",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1975634253",
+     "title": "Theory of reproduction and accumulation",
+     "year": 1969,
+     "cited_by": 19,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W610313122",
+     "title": "The working principles of the Soviet economy",
+     "year": 1944,
+     "cited_by": 19,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4249174046",
+     "title": "Theory of Reproduction and Accumulation",
+     "year": 1970,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.2307/133615",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W640580224",
+     "title": "Ganzheit und Entwicklung in kybernetischer Sicht",
+     "year": 1966,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.1515/9783112757079",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2498038756",
+     "title": "SOME OBSERVATIONS ON INPUT—OUTPUT ANALYSIS",
+     "year": 1970,
+     "cited_by": 17,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50028-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W587568002",
+     "title": "Economic Theory and Market Socialism: Selected Essays of Oskar Lange",
+     "year": 1994,
+     "cited_by": 16,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2499760083",
+     "title": "CURRENT PROBLEMS OF ECONOMIC SCIENCE IN POLAND",
+     "year": 1970,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50029-4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W644942366",
+     "title": "ECONOMIC DEVELOPMENT, PLANNING AND INTERNATIONAL CO-OPERATION",
+     "year": 1970,
+     "cited_by": 16,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50035-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2047408922",
+     "title": "Die allgemeine Interdependenz der Wirtschaftsgrößen und die Isolierungsmethode",
+     "year": 1932,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.1007/bf01318454",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1592312745",
+     "title": "Problems of political economy of socialism",
+     "year": 1962,
+     "cited_by": 15,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2477429352",
+     "title": "The Way to the Socialist Planned Economy",
+     "year": 2003,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.1080/10370196.2003.11733389",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1598601033",
+     "title": "Essays on economic planning",
+     "year": 1967,
+     "cited_by": 12,
+     "doi": "",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W1600061777",
+     "title": "On political economy and econometrics : essays in honour of Oskar Lange",
+     "year": 1965,
+     "cited_by": 11,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2797214686",
+     "title": "Introduction to Econometrics",
+     "year": 1965,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.2307/1401313",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2897800660",
+     "title": "THE METHOD OF POLITICAL ECONOMY",
+     "year": 1963,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.1016/b978-0-08-013561-8.50008-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W646486605",
+     "title": "Zagadnienia ekonomii politycznej socjalizmu",
+     "year": 1958,
+     "cited_by": 8,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2220133437",
+     "title": "THE ECONOMIC OPERATION OF A SOCIALIST SOCIETY: II",
+     "year": 1987,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1093/oxfordjournals.cpe.a035712",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2896731190",
+     "title": "THE SUBJECT MATTER OF POLITICAL ECONOMY ELEMENTARY CONCEPTS",
+     "year": 1963,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1016/b978-0-08-013561-8.50005-3",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2047758016",
+     "title": "Formen der Angebotsanpassung und wirtschaftliches Gleichgewicht",
+     "year": 1935,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1007/bf01311643",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1496139760",
+     "title": "Einführung in die ökonomische Kybernetik",
+     "year": 1969,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1515/9783112619629",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2008349584",
+     "title": "Professor Knight's Note on Interest Theory",
+     "year": 1937,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.2307/2967458",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W584289891",
+     "title": "Pisma ekonomiczne i społeczne, 1930-1960",
+     "year": 1961,
+     "cited_by": 5,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2795791693",
+     "title": "Political Economy and Capitalism: Some Essays in Economic Tradition. By Maurice Dobb. London: Routledge and Sons. 1937. Pp. viii, 360. (10<i>s.</i> 6<i>d.</i>)",
+     "year": 1938,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.2307/136787",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2482663329",
+     "title": "FOREWORD TO THE ENGLISH TRANSLATION",
+     "year": 1963,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1016/b978-0-08-013561-8.50004-1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1510493059",
+     "title": "Wstęp do ekonometrii",
+     "year": 1958,
+     "cited_by": 4,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2061523023",
+     "title": "On the Policy of Transition",
+     "year": 1971,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.14452/mr-022-08-1971-01_4",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2596979954",
+     "title": "Uvod u ekonometriju",
+     "year": 1960,
+     "cited_by": 4,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4206919633",
+     "title": "Ganzheit und Entwicklung in kybernetischer Sicht",
+     "year": 1969,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1515/9783112473368",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W167670219",
+     "title": "ELEMENTS OF A THEORY OF SYSTEM BEHAVIOUR",
+     "year": 2014,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1016/b978-1-4832-0058-3.50010-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2482005703",
+     "title": "LUDWIK KRZYWICKI—THEORIST OF HISTORICAL MATERIALISM",
+     "year": 1970,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50009-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2497084169",
+     "title": "MICHAL KALECKI'S MODEL OF THE BUSINESS CYCLE",
+     "year": 1970,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1016/b978-0-08-012352-3.50026-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W656513051",
+     "title": "Die Preisdispersion : als Mittel zur statistischen Messung wirtschaftlicher Gleichgewichtsstörungen",
+     "year": 1932,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W593153274",
+     "title": "Ökonomisch-theoretische Studien",
+     "year": 1977,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5038233956": {
+   "display_name": "Helen Margetts",
+   "cross_axis_score": 0.0,
+   "h_index": 45,
+   "n_new_works_found": 1,
+   "n_in_corpus_overlap": 49,
+   "new_works": [
+    {
+     "oa_id": "W3104629892",
+     "title": "Petition growth and success rates on the UK No. 10 Downing Street website",
+     "year": 2013,
+     "cited_by": 59,
+     "doi": "https://doi.org/10.1145/2464464.2464518",
+     "axes_hit": []
+    }
+   ],
+   "in_corpus": [
+    {
+     "oa_id": "W2506954441",
+     "title": "Digital Era Governance:",
+     "year": 2006,
+     "cited_by": 550,
+     "doi": "https://doi.org/10.1093/acprof:oso/9780199296194.001.0001",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1993166762",
+     "title": "The second wave of digital-era governance: a quasi-paradigm for government on the Web",
+     "year": 2013,
+     "cited_by": 507,
+     "doi": "https://doi.org/10.1098/rsta.2012.0382",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3081158114",
+     "title": "Computational social science: Obstacles and opportunities",
+     "year": 2020,
+     "cited_by": 415,
+     "doi": "https://doi.org/10.1126/science.aaz8170",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3174174150",
+     "title": "Integrating explanation and prediction in computational social science",
+     "year": 2021,
+     "cited_by": 361,
+     "doi": "https://doi.org/10.1038/s41586-021-03659-0",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2289338980",
+     "title": "Political turbulence how social media shape collective action",
+     "year": 2015,
+     "cited_by": 345,
+     "doi": "https://doi.org/10.1515/9781400873555",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2103271327",
+     "title": "Digital Era Governance: IT Corporations, the State, and e-Government",
+     "year": 2008,
+     "cited_by": 342,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2126563689",
+     "title": "The Tools of Government in the Digital Age",
+     "year": 2007,
+     "cited_by": 233,
+     "doi": "https://doi.org/10.1007/978-1-137-06154-6",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4235193380",
+     "title": "Political Turbulence",
+     "year": 2015,
+     "cited_by": 225,
+     "doi": "https://doi.org/10.2307/j.ctvc773c7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2973159684",
+     "title": "Challenges and frontiers in abusive content detection",
+     "year": 2019,
+     "cited_by": 195,
+     "doi": "https://doi.org/10.18653/v1/w19-3509",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2937768668",
+     "title": "Rethink government with AI",
+     "year": 2019,
+     "cited_by": 192,
+     "doi": "https://doi.org/10.1038/d41586-019-01099-5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1899455794",
+     "title": "Governments and Citizens Getting to Know Each Other? Open, Closed, and Big Data in Public Management Reform",
+     "year": 2014,
+     "cited_by": 140,
+     "doi": "https://doi.org/10.1002/1944-2866.poi377",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4230509593",
+     "title": "Cyber Parties",
+     "year": 2006,
+     "cited_by": 132,
+     "doi": "https://doi.org/10.4135/9781848608047.n46",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2162029530",
+     "title": "Understanding the Dynamics of Electoral Reform",
+     "year": 1995,
+     "cited_by": 129,
+     "doi": "https://doi.org/10.1177/019251219501600102",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2020212489",
+     "title": "Policy punctuations in the UK: fluctuations and equilibria in central government expenditure since 1951",
+     "year": 2003,
+     "cited_by": 114,
+     "doi": "https://doi.org/10.1111/1467-9299.00354",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2004339768",
+     "title": "The Internet and Public Policy",
+     "year": 2009,
+     "cited_by": 110,
+     "doi": "https://doi.org/10.2202/1944-2866.1029",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4387025480",
+     "title": "Data science, artificial intelligence and the third wave of digital era governance",
+     "year": 2023,
+     "cited_by": 110,
+     "doi": "https://doi.org/10.1177/09520767231198737",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W1989804168",
+     "title": "Experiments for Public Management Research",
+     "year": 2011,
+     "cited_by": 108,
+     "doi": "https://doi.org/10.1080/14719037.2010.532970",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2014277420",
+     "title": "The Solitary Center: the Core Executive in Central and Eastern Europe",
+     "year": 1999,
+     "cited_by": 105,
+     "doi": "https://doi.org/10.1111/0952-1895.00112",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2079550991",
+     "title": "The Latent Support for the Extreme Right in British Politics",
+     "year": 2009,
+     "cited_by": 103,
+     "doi": "https://doi.org/10.1080/01402380902779063",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W138102",
+     "title": "Information Technology in Government: Britain and America",
+     "year": 1998,
+     "cited_by": 99,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2140744786",
+     "title": "Social information and political participation on the internet: an experiment",
+     "year": 2011,
+     "cited_by": 96,
+     "doi": "https://doi.org/10.1017/s1755773911000129",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2902851317",
+     "title": "9. Rethinking Democracy with Social Media",
+     "year": 2018,
+     "cited_by": 93,
+     "doi": "https://doi.org/10.1111/1467-923x.12574",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1479943402",
+     "title": "Paradoxes of Modernization: Unintended Consequences of Public Policy Reform",
+     "year": 2010,
+     "cited_by": 90,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3104964565",
+     "title": "Detecting East Asian Prejudice on Social Media",
+     "year": 2020,
+     "cited_by": 90,
+     "doi": "https://doi.org/10.18653/v1/2020.alw-1.19",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2152133813",
+     "title": "The web structure of e-government - developing a methodology for quantitative evaluation",
+     "year": 2006,
+     "cited_by": 85,
+     "doi": "https://doi.org/10.1145/1135777.1135875",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4399426804",
+     "title": "Evaluating the persuasive influence of political microtargeting with large language models",
+     "year": 2024,
+     "cited_by": 84,
+     "doi": "https://doi.org/10.1073/pnas.2403116121",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3154048149",
+     "title": "An Expert Annotated Dataset for the Detection of Online Misogyny",
+     "year": 2021,
+     "cited_by": 82,
+     "doi": "https://doi.org/10.18653/v1/2021.eacl-main.114",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2130841086",
+     "title": "Feminist Ideas and Domestic Violence Policy Change",
+     "year": 2000,
+     "cited_by": 82,
+     "doi": "https://doi.org/10.1111/1467-9248.00258",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4388447826",
+     "title": "Artificial intelligence in government: Concepts, standards, and a unified framework",
+     "year": 2023,
+     "cited_by": 78,
+     "doi": "https://doi.org/10.1016/j.giq.2023.101881",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3168261013",
+     "title": "Introducing CAD: the Contextual Abuse Dataset",
+     "year": 2021,
+     "cited_by": 76,
+     "doi": "https://doi.org/10.18653/v1/2021.naacl-main.182",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2102882051",
+     "title": "Regime Politics in London Local Government",
+     "year": 1999,
+     "cited_by": 74,
+     "doi": "https://doi.org/10.1177/10780879922184068",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1990615167",
+     "title": "E-Government in Britain—A Decade On",
+     "year": 2006,
+     "cited_by": 70,
+     "doi": "https://doi.org/10.1093/pa/gsl003",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1984284850",
+     "title": "The Internet and Transparency",
+     "year": 2011,
+     "cited_by": 69,
+     "doi": "https://doi.org/10.1111/j.1467-923x.2011.02253.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1578729938",
+     "title": "The second wave of digital era governance",
+     "year": 2010,
+     "cited_by": 68,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2054411873",
+     "title": "Mixed Electoral Systems in Britain and the Jenkins Commission on Electoral Reform",
+     "year": 1999,
+     "cited_by": 64,
+     "doi": "https://doi.org/10.1111/1467-856x.00002",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2910590489",
+     "title": "European political organizations and the internet: Mobilization, participation, and change",
+     "year": 2008,
+     "cited_by": 62,
+     "doi": "https://doi.org/10.4324/9780203962541-10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2500251709",
+     "title": "Transparency and Digital Government",
+     "year": 2006,
+     "cited_by": 58,
+     "doi": "https://doi.org/10.5871/bacad/9780197263839.003.0012",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4233404975",
+     "title": "Information Technology in Government",
+     "year": 1988,
+     "cited_by": 57,
+     "doi": "https://doi.org/10.4324/9780203267127",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2771364323",
+     "title": "Public Policy in the Platform Society",
+     "year": 2017,
+     "cited_by": 55,
+     "doi": "https://doi.org/10.1002/poi3.165",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2270868360",
+     "title": "Design principles for essentially digital governance",
+     "year": 2015,
+     "cited_by": 50,
+     "doi": "",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4226076751",
+     "title": "Rethinking AI for Good Governance",
+     "year": 2022,
+     "cited_by": 49,
+     "doi": "https://doi.org/10.1162/daed_a_01922",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2038187658",
+     "title": "From Majoritarian to Pluralist Democracy?",
+     "year": 2001,
+     "cited_by": 49,
+     "doi": "https://doi.org/10.1177/095169280101300304",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2014878936",
+     "title": "THE COMPUTERIZATION OF SOCIAL SECURITY: THE WAY FORWARD OR A STEP BACKWARDS?",
+     "year": 1991,
+     "cited_by": 47,
+     "doi": "https://doi.org/10.1111/j.1467-9299.1991.tb00797.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2138646760",
+     "title": "Governing from the Centre? Comparing the Nodality of Digital Governments",
+     "year": 2006,
+     "cited_by": 46,
+     "doi": "https://doi.org/10.2139/ssrn.1755762",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W656788788",
+     "title": "Turning Japanese? : Britain with a permanent party of government",
+     "year": 1994,
+     "cited_by": 44,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802962159",
+     "title": "How digital design shapes political participation: A natural experiment with social information",
+     "year": 2018,
+     "cited_by": 41,
+     "doi": "https://doi.org/10.1371/journal.pone.0196068",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2480328275",
+     "title": "Paradoxes of Modernization",
+     "year": 2010,
+     "cited_by": 41,
+     "doi": "https://doi.org/10.1093/acprof:oso/9780199573547.001.0001",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2519215365",
+     "title": "Big Data and Public Policy: Can It Succeed Where E‐Participation Has Failed?",
+     "year": 2016,
+     "cited_by": 38,
+     "doi": "https://doi.org/10.1002/poi3.130",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2019286435",
+     "title": "Rational Choice and Community Power Structures",
+     "year": 1995,
+     "cited_by": 37,
+     "doi": "https://doi.org/10.1111/j.1467-9248.1995.tb01711.x",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5111715641": {
+   "display_name": "Stafford Beer",
+   "cross_axis_score": 0.0,
+   "h_index": 26,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 50,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W1916207017",
+     "title": "Autopoiesis and Cognition: The Realization of the Living",
+     "year": 1980,
+     "cited_by": 4741,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2123755784",
+     "title": "Brain of the firm",
+     "year": 1972,
+     "cited_by": 1190,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2025177555",
+     "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
+     "year": 1984,
+     "cited_by": 691,
+     "doi": "https://doi.org/10.1057/jors.1984.2",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2065758324",
+     "title": "Self-Organizing Systems",
+     "year": 1961,
+     "cited_by": 558,
+     "doi": "https://doi.org/10.1057/jors.1961.24",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2795994081",
+     "title": "Cybernetics and Management.",
+     "year": 1960,
+     "cited_by": 345,
+     "doi": "https://doi.org/10.2307/2343193",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2011221427",
+     "title": "Decision and Control: The Meaning of Operational Research and Management Cybernetics.",
+     "year": 1968,
+     "cited_by": 342,
+     "doi": "https://doi.org/10.2307/2391462",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2048086870",
+     "title": "Brain of the Firm: The Managerial Cybernetics of Organization",
+     "year": 1974,
+     "cited_by": 296,
+     "doi": "https://doi.org/10.2307/3102789",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2802703918",
+     "title": "Platform for Change",
+     "year": 1976,
+     "cited_by": 286,
+     "doi": "https://doi.org/10.2307/40182488",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3128202457",
+     "title": "Cybernetics and Management",
+     "year": 1960,
+     "cited_by": 256,
+     "doi": "https://doi.org/10.2307/1419983",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4243328523",
+     "title": "Diagnosing the System for Organisations.",
+     "year": 1986,
+     "cited_by": 156,
+     "doi": "https://doi.org/10.2307/2582047",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4253050812",
+     "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
+     "year": 1984,
+     "cited_by": 131,
+     "doi": "https://doi.org/10.2307/2581927",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1968707856",
+     "title": "What is cybernetics?",
+     "year": 2002,
+     "cited_by": 124,
+     "doi": "https://doi.org/10.1108/03684920210417283",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4236358623",
+     "title": "Self-Organizing Systems",
+     "year": 1961,
+     "cited_by": 113,
+     "doi": "https://doi.org/10.2307/3007426",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W574233267",
+     "title": "Kybernetik und Management",
+     "year": 1983,
+     "cited_by": 89,
+     "doi": "https://doi.org/10.3790/978-3-428-45448-8",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2110081675",
+     "title": "Brain of the Firm: A Development in Management Cybernetics.",
+     "year": 1972,
+     "cited_by": 82,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1989196198",
+     "title": "The Will of the People",
+     "year": 1983,
+     "cited_by": 79,
+     "doi": "https://doi.org/10.1057/jors.1983.173",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1599005212",
+     "title": "Management science : the business use of operations research",
+     "year": 1967,
+     "cited_by": 74,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4241223750",
+     "title": "Engineering Cybernetics",
+     "year": 1969,
+     "cited_by": 60,
+     "doi": "https://doi.org/10.1038/222395c0",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4302602650",
+     "title": "Beyond Dispute: The Invention of Team Syntegrity.",
+     "year": 1996,
+     "cited_by": 57,
+     "doi": "https://doi.org/10.2307/3010024",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2005481417",
+     "title": "What has Cybernetics to do with Operational Research?",
+     "year": 1959,
+     "cited_by": 41,
+     "doi": "https://doi.org/10.1057/jors.1959.1",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2093248396",
+     "title": "World in Torment: A Time Whose Idea Must Come",
+     "year": 1993,
+     "cited_by": 38,
+     "doi": "https://doi.org/10.1108/eb005989",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W569317741",
+     "title": "The heart of enterprise : the managerial cybernetics of organization",
+     "year": 1994,
+     "cited_by": 35,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W4233010308",
+     "title": "Preface",
+     "year": 1980,
+     "cited_by": 31,
+     "doi": "https://doi.org/10.1007/978-94-009-8947-4_7",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2796004030",
+     "title": "Cybernetics and Management",
+     "year": 1960,
+     "cited_by": 28,
+     "doi": "https://doi.org/10.2307/3007077",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2029277555",
+     "title": "Managing modern complexity",
+     "year": 1970,
+     "cited_by": 26,
+     "doi": "https://doi.org/10.1016/s0016-3287(70)80003-9",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2001369766",
+     "title": "The World, The Flesh and The Metal: The Prerogatives of Systems",
+     "year": 1965,
+     "cited_by": 26,
+     "doi": "https://doi.org/10.1038/205223a0",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1587170908",
+     "title": "Platform for Change: A Message from Stafford Beer",
+     "year": 1975,
+     "cited_by": 24,
+     "doi": "",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2008262250",
+     "title": "The liberty machine",
+     "year": 1971,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.1016/0016-3287(71)90053-x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1970562856",
+     "title": "Operational Research and Accounting",
+     "year": 1954,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.1057/jors.1954.1",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4206806595",
+     "title": "Managing modern complexity",
+     "year": 1970,
+     "cited_by": 15,
+     "doi": "https://doi.org/10.1016/0016-3287(70)90028-5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2151002949",
+     "title": "This Cybernetic World of Men, Machines and Earth Systems",
+     "year": 1973,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.2307/3102426",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2019700923",
+     "title": "Cybernetics— A Systems Approach to Management",
+     "year": 1972,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1108/eb055198",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1966560199",
+     "title": "Holism and the Frou‐Frou Slander",
+     "year": 1988,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1108/eb005778",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1984914320",
+     "title": "The world we manage",
+     "year": 1973,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.1002/bs.3830180307",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4229542605",
+     "title": "May the Whole Earth Be Happy: Loka Samastat Sukhino Bhavantu",
+     "year": 1994,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1287/inte.24.4.83",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1986358030",
+     "title": "May the whole earth be happy:Loka Samastat Sukhino Bhavantu",
+     "year": 1994,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.1007/bf02169364",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W585922351",
+     "title": "Pebbles to Computers: The Thread",
+     "year": 1987,
+     "cited_by": 11,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W291340737",
+     "title": "On the Nature of Models: Let us Now Praise Famous Men and Women, from Warren McCulloch to Candace Pert",
+     "year": 1999,
+     "cited_by": 11,
+     "doi": "https://doi.org/10.28945/603",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2009937709",
+     "title": "On suicidal rabbits: A relativity of systems",
+     "year": 1990,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1007/bf01060874",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4235837905",
+     "title": "What Has Cybernetics to Do with Operational Research?",
+     "year": 1959,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.2307/3007308",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2033956993",
+     "title": "Reflections of a Cybernetician on the Practice of Planning",
+     "year": 1991,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.1108/eb005900",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2080170049",
+     "title": "For Gordon, with love",
+     "year": 1993,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1002/sres.3850100304",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2010118923",
+     "title": "Operational Research as Revelation: Inaugural Address by the President, 14 January 1970",
+     "year": 1970,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1057/jors.1970.14",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2073049986",
+     "title": "Joint Plenary Session — O. R. S. and T. I. M. S.",
+     "year": 1971,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1057/jors.1971.14",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1989782725",
+     "title": "The culpabliss error: A calculus of ethics for a systemic world",
+     "year": 1997,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/bf02557886",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2031914076",
+     "title": "I am the Emperor ? and I want dumplings",
+     "year": 1989,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/bf01059975",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1996151594",
+     "title": "Recursion zero: Metamanagement",
+     "year": 1990,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.1007/bf01062735",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4244797131",
+     "title": "Commentary",
+     "year": 1965,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1287/mnsc.12.2.b10",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1982635051",
+     "title": "An Operational Research Project on Technical Education",
+     "year": 1962,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1057/jors.1962.29",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2797956715",
+     "title": "The Productivity Index in Active Service",
+     "year": 1955,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.2307/2985839",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5110505973": {
+   "display_name": "Alfonso Reyes",
+   "cross_axis_score": 0.0,
+   "h_index": 10,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 50,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W4244612406",
+     "title": "Organizational Systems",
+     "year": 2011,
+     "cited_by": 215,
+     "doi": "https://doi.org/10.1007/978-3-642-19109-1",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2150127067",
+     "title": "Cantar de mio Cid",
+     "year": 1920,
+     "cited_by": 71,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W638909835",
+     "title": "Notas sobre la inteligencia americana",
+     "year": 1983,
+     "cited_by": 67,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1573607608",
+     "title": "La experiencia literaria",
+     "year": 1953,
+     "cited_by": 40,
+     "doi": "https://doi.org/10.2307/40092360",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2564419429",
+     "title": "Obras completas de Alfonso Reyes",
+     "year": 1955,
+     "cited_by": 37,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W561430875",
+     "title": "Conferencias del Ateneo de la Juventud",
+     "year": 1911,
+     "cited_by": 26,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1572965537",
+     "title": "El estanque de los lotos",
+     "year": 1921,
+     "cited_by": 21,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3208019874",
+     "title": "A Healthy Diet Is Not More Expensive than Less Healthy Options: Cost-Analysis of Different Dietary Patterns in Mexican Children and Adolescents",
+     "year": 2021,
+     "cited_by": 18,
+     "doi": "https://doi.org/10.3390/nu13113871",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W651249589",
+     "title": "La antigua retórica",
+     "year": 1944,
+     "cited_by": 13,
+     "doi": "https://doi.org/10.2307/40084855",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W586427213",
+     "title": "Correspondencia, Alfonso Reyes/Octavio Paz : (1939-1959)",
+     "year": 1998,
+     "cited_by": 11,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2798668306",
+     "title": "La filosofía helenística",
+     "year": 1961,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.2307/40115696",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2607124596",
+     "title": "Retratos reales e imaginarios",
+     "year": 1984,
+     "cited_by": 8,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1883626362",
+     "title": "Fray Servando Teresa de Mier",
+     "year": 1976,
+     "cited_by": 7,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2801741291",
+     "title": "Con leal franqueza. Correspondencia entre Alfonso Reyes y Genaro Estrada",
+     "year": 1996,
+     "cited_by": 7,
+     "doi": "https://doi.org/10.2307/29741314",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2754364516",
+     "title": "Memorias de cocina y bodega",
+     "year": 1955,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.2307/40093837",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W616638771",
+     "title": "Ultima tule y otros ensayos",
+     "year": 1991,
+     "cited_by": 6,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802656682",
+     "title": "Tentativas y Orientaciones",
+     "year": 1945,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.2307/40085778",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2799710862",
+     "title": "Resumen de la literatura mexicana. (Siglos XVI-XIX)",
+     "year": 1958,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.2307/40098918",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4313383272",
+     "title": "The phosphorylation kinetics of the key regulators in T cell receptor signaling pathway",
+     "year": 2019,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.4049/jimmunol.202.supp.184.6",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1583390371",
+     "title": "Simpatias y diferencias",
+     "year": 1945,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W655268296",
+     "title": "El suicida : libro de ensayos",
+     "year": 1957,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802184892",
+     "title": "Alfonso Reyes helenista",
+     "year": 1958,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.2307/40099400",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2240323442",
+     "title": "El argentino Jorge Luis Borges",
+     "year": 1987,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1486375238",
+     "title": "Prosa y poesía",
+     "year": 1984,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2892124289",
+     "title": "Fronteras conquistadas",
+     "year": 1998,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.2307/j.ctv3dnqv5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W631155751",
+     "title": "Los textos de Góngora (corrupciones y alteraciones)",
+     "year": 2015,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W180834549",
+     "title": "Tres puntos de exegética literaria",
+     "year": 1945,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.2307/j.ctvcwnz09",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2560187851",
+     "title": "Alfonso Reyes: homenaje nacional",
+     "year": 1981,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W581045171",
+     "title": "El cielo no se abre : semblanza documental de Alfonso Reyes",
+     "year": 1995,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2800908372",
+     "title": "Discurso por Virgilio",
+     "year": 1938,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.2307/40079570",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3135945041",
+     "title": "Un paso de América",
+     "year": 2009,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.31819/9783964564221-031",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1524181040",
+     "title": "La lengua y la literatura",
+     "year": 1921,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W379057401",
+     "title": "Casi oficios : cartas cruzadas entre Jaime Torres Bodet y Alfonso Reyes, 1922-1959",
+     "year": 1994,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802505842",
+     "title": "La crítica en la edad ateniense",
+     "year": 1942,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.2307/40082793",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W106070137",
+     "title": "Mallarmé en castellano",
+     "year": 1932,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2274425549",
+     "title": "Cartilla moral : conciencia del entorno",
+     "year": 2005,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W625890251",
+     "title": "La crítica en la edad ateniense ; La antigua retórica",
+     "year": 1961,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802947837",
+     "title": "Obras completas. VIII: Tránsito de Amado Nervo. De viva voz. A lápiz. Tren de ondas. Varia",
+     "year": 1959,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/40113913",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1525097156",
+     "title": "De la traducción",
+     "year": 1996,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2322807352",
+     "title": "Alfonso Reyes, ensayista. Vida y pensamiento",
+     "year": 1958,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/471011",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W141996050",
+     "title": "Cantata en la tumba de Federico García Lorca",
+     "year": 1993,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W595065366",
+     "title": "Cuestiones gongorinas ; Tres alcances a Góngora ; Varia ; Entre libros ; Páginas adicionales",
+     "year": 1958,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W626318100",
+     "title": "Parentalia. Primer libro de recuerdos",
+     "year": 1961,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/40115455",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W256938843",
+     "title": "El deslinde ; Apuntes para la teoría literaria",
+     "year": 1963,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2612100435",
+     "title": "La experiencia literaria: ensayos sobre experiencia, exégesis y teoría de la literatura",
+     "year": 1986,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2316813614",
+     "title": "Correspondencia (1907-1914)",
+     "year": 1988,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/40144060",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2795650307",
+     "title": "La X en la Frente",
+     "year": 1956,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/3537572",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W131742999",
+     "title": "El silencio por Mallarmé: encuesta sin trascendencia",
+     "year": 1993,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W615382606",
+     "title": "El cazador : ensayos y divagaciones, 1911-1920",
+     "year": 1921,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1623816994",
+     "title": "VOZ VIVA DE MEXICO",
+     "year": 1967,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5013037228": {
+   "display_name": "Benjamin E. Lippincott",
+   "cross_axis_score": 0.0,
+   "h_index": 8,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 42,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W2048894562",
+     "title": "On the Economic Theory of Socialism.",
+     "year": 1938,
+     "cited_by": 778,
+     "doi": "https://doi.org/10.2307/2225451",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3130930004",
+     "title": "On the Economic Theory of Socialism",
+     "year": 1938,
+     "cited_by": 563,
+     "doi": "https://doi.org/10.2307/1052453",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2802490090",
+     "title": "From Luther to Hitler: The History of Fascist-Nazi Political Philosophy",
+     "year": 1944,
+     "cited_by": 49,
+     "doi": "https://doi.org/10.2307/1841044",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2025917594",
+     "title": "Treatment of a Painful Keloid with Botulinum Toxin Type A",
+     "year": 2010,
+     "cited_by": 44,
+     "doi": "https://doi.org/10.1097/phm.0b013e3181c1ec11",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2321753733",
+     "title": "Victorian Critics of Democracy.",
+     "year": 1939,
+     "cited_by": 21,
+     "doi": "https://doi.org/10.2307/2180786",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117772176",
+     "title": "The Bias of American Political Science",
+     "year": 1940,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.2307/2125249",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4245097063",
+     "title": "The Army Air Forces in World War II",
+     "year": 1949,
+     "cited_by": 12,
+     "doi": "https://doi.org/10.2307/1843066",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4229507552",
+     "title": "The Recollections of Alexis de Tocqueville",
+     "year": 1951,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.2307/1852017",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1967964456",
+     "title": "Counter-Revolution: How Revolutions Die.",
+     "year": 1968,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.2307/2110159",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2796260701",
+     "title": "Government Control of the Economic Order.",
+     "year": 1935,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.2307/2262528",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1510795044",
+     "title": "Democracy's Dilemma: The Totalitarian Party in a Free Society.",
+     "year": 1968,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.2307/2110305",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2321563255",
+     "title": "Government Control of the Economic Order.",
+     "year": 1936,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.2307/2225159",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2318372524",
+     "title": "Freedom and Order. By Edward Heimann. (New York: Charles Scribner's Sons. 1947. Pp. xiv, 344. $3.00.)",
+     "year": 1948,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/1949487",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2326275648",
+     "title": "James Fitzjames Stephen-Critic of Democracy",
+     "year": 1931,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/2548036",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2795641346",
+     "title": "Victorian Critics of Democracy: Carlyle, Ruskin, Arnold, Stephen, Maine, Lecky",
+     "year": 1939,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/1839062",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W233457873",
+     "title": "Teori ekonomi sosialisme",
+     "year": 1964,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2478805172",
+     "title": "Britain—Uneasy Ally. By Leon D. Epstein. (Chicago: The University of Chicago Press. 1954. Pp. viii, 279. $4.00.)",
+     "year": 1955,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1951406",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W649935293",
+     "title": "Government control of the economic order : a symposium",
+     "year": 1935,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242558970",
+     "title": "Professional Conferences",
+     "year": 1953,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s0003055400076280",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2085462970",
+     "title": "SMITH, T. V. The Democratic Way of Life. Rev. Ed. Pp. xxxiii, 290. Chi cago: University of Chicago Press, 1939. $2.50",
+     "year": 1939,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1177/000271623920600129",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4312571499",
+     "title": "Harold Scott Quigley",
+     "year": 1969,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s0030826900600802",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2077153696",
+     "title": "Malcolm C. Moos",
+     "year": 1982,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s1049096500060662",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4313187552",
+     "title": "Malcolm C. Moos",
+     "year": 1982,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s0030826900618337",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2334855446",
+     "title": "Charles H. McLaughlin",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s1049096500023945",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3026288049",
+     "title": "Victorian Critics of Democracy: Carlyle, Ruskin, Arnold, Stephen, Maine, Lecky.",
+     "year": 1938,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/2018806",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2494715897",
+     "title": "America and the British Left: From Bright to Bevan. By Henry M. Pelling. (New York: New York University Press. 1957. Pp. x, 174, $3.50.)",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1953031",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2320657790",
+     "title": "Rousseau and Burke. By Annie Marion Osborne. (New York: Oxford University Press. 1940. Pp. 272. $3.75.)",
+     "year": 1941,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1948261",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2323130800",
+     "title": "Victorian Critics of Democracy: Carlyle, Ruskin, Arnold, Stephen, Maine, Lecky",
+     "year": 1939,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/824675",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3042708327",
+     "title": "The Recollections of Alexis de Tocqueville. Edited with Many Additions from the Original Text and an Introduction by <i>J. P. Mayer</i>. Translated by <i>Alexander Teixeira de Mattos</i>. (New York: Columbia University Press. 1949. Pp. xxvi, 332. $5.00.)",
+     "year": 1951,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/ahr/56.4.882",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2316656087",
+     "title": "Principles of Social and Political Theory. By Ernest Barker. (New York: Oxford University Press. 1951. Pp. viii, 284. $5.00.)",
+     "year": 1952,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1950850",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2802063813",
+     "title": "Personnel Administration in a Department of Political Science",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/40222342",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W192461302",
+     "title": "Sobre la teoria econòmica del socialisme",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2914717192",
+     "title": "The Army Air Forces in World War II. Volume I, Plans and Early Operations, January 1939 to August 1942. Prepared under the editorship of <i>Wesley Frank Craven</i>, New York University, and <i>James Lea Cate</i>, University of Chicago, by Office of Air Force History, United States Air Force, Wilfred J. Paul, Colonel, USAF, Director, Albert J. Simpson, Air Force Historian. (Chicago: University of Chicago Press. 1948. Pp. xxxi, 788. $5.00.)",
+     "year": 1949,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/ahr/54.3.641",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4312803828",
+     "title": "Charles H. McLaughlin",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s0030826900621082",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2797051647",
+     "title": "The Heresy of Democracy: A Study in the History of Government",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/444443",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2335132487",
+     "title": "American Socialism; Its Aims and Practical Program. By Harry W. Laidler. (New York: Harper and Brothers. 1937. Pp. xv, 330. $2.50.) - The People's Front. By Earl Browder. (New York: International Publishers. 1938. Pp. 354. $2.75.)",
+     "year": 1938,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1948333",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2333596152",
+     "title": "Political Theory and Miscellaneous America's Heritage from John Stuart Mill (Columbia University Press, pp. 203), by George Morlan.",
+     "year": 1937,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s0003055400039046",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2314893013",
+     "title": "Harold Scott Quigley",
+     "year": 1969,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s1049096500009483",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2504077311",
+     "title": "Karl Marx. By Karl Korsch. (New York: John Wiley and Sons. 1938. Pp. 247. $1.75.)",
+     "year": 1939,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1948755",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2080777718",
+     "title": "Book Reviews : The Heresy of Democracy: A Study in the History of Government. By LORD PERCY OF NEWCASTLE. (Chicago: Henry Regnery Company. 1955. Pp. 246. $4.00.)",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1177/106591295801100245",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4313138156",
+     "title": "APSA Awards and Recipients",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1017/s0030826900622671",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3037410924",
+     "title": "From Luther to Hitler: The History of Fascist-Nazi Political Philosophy. By <i>William Montgomery McGovern</i>. (New York: Houghton Mifflin Company. 1941. Pp. xiv, 683. $4.00.)",
+     "year": 1944,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/ahr/49.3.472",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5049662324": {
+   "display_name": "Edgar Z. Palmer",
+   "cross_axis_score": 0.0,
+   "h_index": 8,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 37,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W3130930004",
+     "title": "On the Economic Theory of Socialism",
+     "year": 1938,
+     "cited_by": 563,
+     "doi": "https://doi.org/10.2307/1052453",
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W1968906090",
+     "title": "Methods of Correlation Analysis",
+     "year": 1942,
+     "cited_by": 243,
+     "doi": "https://doi.org/10.2307/1052503",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2315469063",
+     "title": "The Variate Difference Method",
+     "year": 1940,
+     "cited_by": 89,
+     "doi": "https://doi.org/10.2307/1053110",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2552209522",
+     "title": "Applied General Statistics",
+     "year": 1940,
+     "cited_by": 57,
+     "doi": "https://doi.org/10.2307/1053476",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4301623630",
+     "title": "On the Accuracy of Economic Observations",
+     "year": 1950,
+     "cited_by": 33,
+     "doi": "https://doi.org/10.2307/1053702",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2023778317",
+     "title": "Demand Analysis--A Study of Econometrics",
+     "year": 1954,
+     "cited_by": 20,
+     "doi": "https://doi.org/10.2307/1054168",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2015008815",
+     "title": "Elementary Social Statistics",
+     "year": 1942,
+     "cited_by": 14,
+     "doi": "https://doi.org/10.2307/1052502",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1970254611",
+     "title": "The Theory of the Land Question",
+     "year": 1937,
+     "cited_by": 8,
+     "doi": "https://doi.org/10.2307/1052750",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2056959179",
+     "title": "Elementary Statistics, with General Applications",
+     "year": 1945,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.2307/1053277",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2319927403",
+     "title": "Caldwell and Company",
+     "year": 1940,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.2307/1053466",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2313798841",
+     "title": "Sources and Distribution of Income in the South",
+     "year": 1936,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.2307/1053195",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2327774659",
+     "title": "The Long-Run Behavior of Costs in a Chain of Shoe-Stores: A Statistical Analysis",
+     "year": 1942,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.2307/1052694",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2144671756",
+     "title": "The meaning and measurement of the national income and of other social accounting aggregates",
+     "year": 1966,
+     "cited_by": 1,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W610539485",
+     "title": "Alfalfa dehydration industry in Nebraska",
+     "year": 1949,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4240289077",
+     "title": "The Economics of Peace",
+     "year": 1945,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1053376",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W625087622",
+     "title": "City and regional wage comparisons",
+     "year": 1960,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W262077355",
+     "title": "The distribution of economic well-being in the Neterlands, its evolution in the 1980s and the role of demographic change",
+     "year": 1996,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W650118678",
+     "title": "The motel industry in Nebraska",
+     "year": 1962,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W605377432",
+     "title": "Types of business in Nebraska towns",
+     "year": 1954,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W633512015",
+     "title": "The prewar industrial pattern of Wisconsin",
+     "year": 1947,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2318477808",
+     "title": "Studies in Income and Wealth, Volume One.",
+     "year": 1938,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/2279722",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2318977998",
+     "title": "An Outline of Statistics. Third Edition.",
+     "year": 1948,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/2280080",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2319532250",
+     "title": "The Money Problem",
+     "year": 1937,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1052246",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W578148190",
+     "title": "Agriculture in Turkey: long-term projections of supply and demand.",
+     "year": 1966,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2509819949",
+     "title": "<i>Business Cycles and Forecasting</i>. Elmer C. Bratt",
+     "year": 1937,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/255121",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2329694949",
+     "title": "Studies in Income and Wealth, Volume Two.",
+     "year": 1939,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/2278878",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2517072968",
+     "title": "<i>Problems and Procedures of Unemployment Compensation in the States.</i>Walter Matscheck , Raymond C. Atkinson",
+     "year": 1940,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/2125394",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W593372500",
+     "title": "Estimating the number of business establishments in Nebraska",
+     "year": 1963,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2514150582",
+     "title": "<i>Value Theory and Business Cycles</i>. Harlan Linneus McCracken",
+     "year": 1934,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/254711",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W645242499",
+     "title": "I will lift up mine eyes",
+     "year": 1978,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W655738066",
+     "title": "The Omaha real estate market 1950 to 1960 : a statistical study",
+     "year": 1963,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3138154254",
+     "title": "ASSESSMENT RATIOS FOR REAL PROPERTY TAX EQUALIZATION",
+     "year": 1945,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1086/bullnattax41787349",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2093510761",
+     "title": "Error and Unreliability in Seasonals",
+     "year": 1930,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1214/aoms/1177733064",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W634528608",
+     "title": "The community economic base and multiplier : case studies in the Great Plains States",
+     "year": 1958,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2316983669",
+     "title": "Studies in Income and Wealth. Vol. VIII. Conference on Research in Income and Wealth",
+     "year": 1947,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/1052314",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2803664566",
+     "title": "Crosswinds School evaluation report",
+     "year": 1999,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W575759114",
+     "title": "Some economic problems of Clay Center, Nebraska, Lincoln, Neb., Univ. of",
+     "year": 1950,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  },
+  "A5110694028": {
+   "display_name": "William L. Casey",
+   "cross_axis_score": 0.0,
+   "h_index": 5,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 34,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W2048086870",
+     "title": "Brain of the Firm: The Managerial Cybernetics of Organization",
+     "year": 1974,
+     "cited_by": 296,
+     "doi": "https://doi.org/10.2307/3102789",
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W1978549517",
+     "title": "Inward Foreign Direct Investment in the US: An Empirical Analysis of their Impact on State Economies",
+     "year": 2011,
+     "cited_by": 10,
+     "doi": "https://doi.org/10.1057/eej.2010.5",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2314109540",
+     "title": "The American Challenge",
+     "year": 1969,
+     "cited_by": 9,
+     "doi": "https://doi.org/10.2307/1056058",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W239168682",
+     "title": "Foreign Direct Investment as an Engine of Economic Development",
+     "year": 2006,
+     "cited_by": 6,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2049256986",
+     "title": "Representative Pointed Optics And Associated Gimbal Characteristics",
+     "year": 1988,
+     "cited_by": 6,
+     "doi": "https://doi.org/10.1117/12.944215",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1966883924",
+     "title": "Narrowband optical interference filters",
+     "year": 1991,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.1117/12.43781",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3110332359",
+     "title": "Foreign Direct Investment in the United States",
+     "year": 1998,
+     "cited_by": 5,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2036530693",
+     "title": "Wideband Laser Diode Transmitter For Free-Space Communication",
+     "year": 1988,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.1117/12.7976679",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2022219498",
+     "title": "Selection Of Laser Diode Beam Combining Techniques For Free Space Communication",
+     "year": 1986,
+     "cited_by": 5,
+     "doi": "https://doi.org/10.1117/12.961063",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2052327174",
+     "title": "Design considerations for air-to-air laser communications",
+     "year": 1991,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1117/12.43745",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2100313138",
+     "title": "A high data rate LEO to GEO optical crosslink design",
+     "year": 2003,
+     "cited_by": 4,
+     "doi": "https://doi.org/10.1109/milcom.1992.244104",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2323930112",
+     "title": "The Kinked-Demand Model of Oligopoly: Textbook Departures from the Original Sweezy Model",
+     "year": 1982,
+     "cited_by": 3,
+     "doi": "https://doi.org/10.1177/056943458202600204",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W389174585",
+     "title": "Entrepreneurship, productivity, and the Freedom of Information Act : protecting circumstantially relevant business information",
+     "year": 1983,
+     "cited_by": 3,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2069487115",
+     "title": "Design Of A Wideband Free-Space Lasercom Transmitter",
+     "year": 1986,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1117/12.961042",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2080572423",
+     "title": "Aperture shared laser diode array beam combiner",
+     "year": 1988,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1364/ao.27.002685",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2992747143",
+     "title": "The Success of Ireland's Foreign Investment Promotion Strategy: A Reconsideration",
+     "year": 2011,
+     "cited_by": 2,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2155104488",
+     "title": "Short-range multi-terminal satellite crosslink communications",
+     "year": 2003,
+     "cited_by": 2,
+     "doi": "https://doi.org/10.1109/milcom.1992.243952",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2143069768",
+     "title": "Operation of a diode-based direct detection laser crosslink through solar crossing",
+     "year": 2002,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1109/milcom.1993.408575",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2127334171",
+     "title": "A GEO to GEO high data rate optical crosslink approach",
+     "year": 2003,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.1109/milcom.1992.244168",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2314449951",
+     "title": "Entrepreneurship, Productivity, and the Freedom of Information Act",
+     "year": 1984,
+     "cited_by": 1,
+     "doi": "https://doi.org/10.2307/1058346",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2188112358",
+     "title": "ABSTRACTS 1. GROWING CONCERN AND HOSTILITY ABOUT CHINESE FOREIGN DIRECT INVESTMENT IN THE U.S.: AN HISTORICAL PERSPECTIVE",
+     "year": 2013,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4238475088",
+     "title": "Man and the Computer",
+     "year": 1973,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.2307/3102476",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1967055691",
+     "title": "Rf And Laser Space-Based Communication Links: Another Perspective",
+     "year": 1988,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1117/12.960162",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3036836409",
+     "title": "Aircraft window polarization testing for a 1-Gbps laser communication test (A)",
+     "year": 1979,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2314992626",
+     "title": "The Improper Derivation of Marginal Revenue in Kinky Oligopoly Models: A Reply",
+     "year": 1984,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1177/056943458402800217",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W778404692",
+     "title": "Optical Alignment Device For Laser Communication",
+     "year": 1988,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2144874441",
+     "title": "A twice synchronous range GEO to GEO optical intersatellite link",
+     "year": 2003,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1109/milcom.1992.244169",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W851682668",
+     "title": "Viewfinder/tracking system for Skylab",
+     "year": 1975,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4206204949",
+     "title": "Book reviews",
+     "year": 1989,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/bf00398633",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2104120299",
+     "title": "Integrated Undergraduate Management Education: An Informal Benefit / Cost Analysis",
+     "year": 2011,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.19030/ctms.v1i3.5239",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2084282003",
+     "title": "An Aperture Shared Laser Diode Array Beam Combiner",
+     "year": 1988,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1117/12.976563",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2018302115",
+     "title": "The evolution of U.S. government policy on foreign direct investment",
+     "year": 2000,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1007/bf02296122",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1973678347",
+     "title": "Laser Communication System Design",
+     "year": 1988,
+     "cited_by": 0,
+     "doi": "https://doi.org/10.1117/12.960163",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2926784930",
+     "title": "The Effect of Corporate Strategy and Organizational Design on the Spillover Effects of FDI",
+     "year": 2017,
+     "cited_by": 0,
+     "doi": "",
+     "axes_hit": []
+    }
+   ]
+  }
+ },
+ "summary": {
+  "n_new_works": 23,
+  "n_overlap": 636
+ }
+}

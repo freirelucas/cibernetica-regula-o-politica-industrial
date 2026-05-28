@@ -1,6 +1,6 @@
 {
  "_generated": "fase D · 2026-05-29",
- "_budget_used": 824,
+ "_budget_used": 825,
  "n_authors": 817,
  "n_cross_axis_strict": 1,
  "n_cross_axis_loose": 8,
@@ -204,7 +204,7 @@
     "Law"
    ],
    "degree": 18,
-   "community_id": 32
+   "community_id": 36
   },
   {
    "oa_id": "A5108366788",
@@ -446,7 +446,7 @@
     "Law"
    ],
    "degree": 5,
-   "community_id": 38
+   "community_id": 42
   },
   {
    "oa_id": "A5105085092",
@@ -521,7 +521,7 @@
     "Psychology"
    ],
    "degree": 9,
-   "community_id": 39
+   "community_id": 26
   },
   {
    "oa_id": "A5025362889",
@@ -644,7 +644,7 @@
     "Law"
    ],
    "degree": 6,
-   "community_id": 32
+   "community_id": 36
   },
   {
    "oa_id": "A5004477526",
@@ -1110,7 +1110,7 @@
     "Engineering"
    ],
    "degree": 3,
-   "community_id": 36
+   "community_id": 40
   },
   {
    "oa_id": "A5046424221",
@@ -1208,7 +1208,7 @@
     "Economics"
    ],
    "degree": 2,
-   "community_id": 27
+   "community_id": 31
   },
   {
    "oa_id": "A5081825073",
@@ -2263,7 +2263,7 @@
     "Engineering"
    ],
    "degree": 3,
-   "community_id": 36,
+   "community_id": 40,
    "work_ids": [
     "W1492856410",
     "W77672729",
@@ -2347,7 +2347,7 @@
     "Philosophy"
    ],
    "degree": 2,
-   "community_id": 42,
+   "community_id": 25,
    "work_ids": [
     "W1576605329",
     "W2137358449"
@@ -4073,6 +4073,401 @@
     "W2099616619"
    ]
   },
+  "A5055251050": {
+   "display_name": "Jay B. Barney",
+   "n_works_total": 2,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 89,
+   "works_count": 302,
+   "institutions": [
+    "University of Utah"
+   ],
+   "concepts": [
+    "Business",
+    "Economics",
+    "Marketing",
+    "Computer science",
+    "Political science"
+   ],
+   "degree": 0,
+   "community_id": -1,
+   "work_ids": [
+    "W2061977616",
+    "W2108767715"
+   ]
+  },
+  "A5102738088": {
+   "display_name": "Thomas Kühn",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 47,
+   "works_count": 239,
+   "institutions": [
+    "Luleå University of Technology"
+   ],
+   "concepts": [
+    "Physics",
+    "Philosophy",
+    "Computer science",
+    "Meteorology",
+    "Geology"
+   ],
+   "degree": 1,
+   "community_id": 23,
+   "work_ids": [
+    "W2753533763"
+   ]
+  },
+  "A5109867375": {
+   "display_name": "Richard Schlegel",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 72,
+   "works_count": 333,
+   "institutions": [
+    "Georgetown University",
+    "Georgetown University Medical Center"
+   ],
+   "concepts": [
+    "Biology",
+    "Gene",
+    "Cell biology",
+    "Cancer research",
+    "Genetics"
+   ],
+   "degree": 1,
+   "community_id": 23,
+   "work_ids": [
+    "W2753533763"
+   ]
+  },
+  "A5066540447": {
+   "display_name": "Wesley M. Cohen",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 40,
+   "works_count": 90,
+   "institutions": [
+    "National Bureau of Economic Research",
+    "Duke University",
+    "Federal Reserve Bank of San Francisco"
+   ],
+   "concepts": [
+    "Business",
+    "Industrial organization",
+    "Economics",
+    "Computer science",
+    "Marketing"
+   ],
+   "degree": 1,
+   "community_id": 10,
+   "work_ids": [
+    "W2108795964"
+   ]
+  },
+  "A5030291124": {
+   "display_name": "Daniel A. Levinthal",
+   "n_works_total": 2,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 57,
+   "works_count": 179,
+   "institutions": [
+    "University of the Arts",
+    "University of Pennsylvania"
+   ],
+   "concepts": [
+    "Business",
+    "Knowledge management",
+    "Psychology",
+    "Economics",
+    "Computer science"
+   ],
+   "degree": 2,
+   "community_id": 10,
+   "work_ids": [
+    "W2108795964",
+    "W1993023795"
+   ]
+  },
+  "A5111995000": {
+   "display_name": "Daniel Kahneman",
+   "n_works_total": 2,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 160,
+   "works_count": 376,
+   "institutions": [
+    "Princeton University",
+    "Princeton Public Schools",
+    "University of Pennsylvania"
+   ],
+   "concepts": [
+    "Psychology",
+    "Economics",
+    "Philosophy",
+    "Social psychology",
+    "Computer science"
+   ],
+   "degree": 1,
+   "community_id": 24,
+   "work_ids": [
+    "W2133469585",
+    "W158727920"
+   ]
+  },
+  "A5000234995": {
+   "display_name": "Amos Tversky",
+   "n_works_total": 2,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 128,
+   "works_count": 289,
+   "institutions": [],
+   "concepts": [
+    "Psychology",
+    "Mathematics",
+    "Economics",
+    "Computer science",
+    "Philosophy"
+   ],
+   "degree": 1,
+   "community_id": 24,
+   "work_ids": [
+    "W2133469585",
+    "W158727920"
+   ]
+  },
+  "A5001761955": {
+   "display_name": "Robert M. Solow",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 80,
+   "works_count": 472,
+   "institutions": [],
+   "concepts": [
+    "Economics",
+    "Political science",
+    "Philosophy",
+    "Neoclassical economics",
+    "Computer science"
+   ],
+   "degree": 0,
+   "community_id": -1,
+   "work_ids": [
+    "W2070631858"
+   ]
+  },
+  "A5084654258": {
+   "display_name": "Brian J. Loasby",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 1
+   },
+   "n_axes_touched": 1,
+   "cross_axis_score": 0.0,
+   "h_index": 34,
+   "works_count": 173,
+   "institutions": [],
+   "concepts": [
+    "Economics",
+    "Neoclassical economics",
+    "Computer science",
+    "Sociology",
+    "Philosophy"
+   ],
+   "degree": 2,
+   "community_id": 25,
+   "work_ids": [
+    "W2137358449"
+   ]
+  },
+  "A5103445562": {
+   "display_name": "Sidney G. Winter",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 1
+   },
+   "n_axes_touched": 1,
+   "cross_axis_score": 0.0,
+   "h_index": 62,
+   "works_count": 213,
+   "institutions": [
+    "California University of Pennsylvania",
+    "University of Pennsylvania"
+   ],
+   "concepts": [
+    "Economics",
+    "Business",
+    "Computer science",
+    "Philosophy",
+    "Political science"
+   ],
+   "degree": 2,
+   "community_id": 25,
+   "work_ids": [
+    "W2137358449"
+   ]
+  },
+  "A5102740532": {
+   "display_name": "Robert Axelrod",
+   "n_works_total": 2,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 16,
+   "works_count": 37,
+   "institutions": [],
+   "concepts": [
+    "Political science",
+    "Computer science",
+    "Psychology",
+    "Sociology",
+    "Mathematics"
+   ],
+   "degree": 3,
+   "community_id": 2,
+   "work_ids": [
+    "W2062663664",
+    "W1501219137"
+   ]
+  },
+  "A5053628685": {
+   "display_name": "W D Hamilton",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 56,
+   "works_count": 157,
+   "institutions": [],
+   "concepts": [
+    "Biology",
+    "Genetics",
+    "Gene",
+    "Computer science",
+    "Sociology"
+   ],
+   "degree": 1,
+   "community_id": 2,
+   "work_ids": [
+    "W2062663664"
+   ]
+  },
+  "A5110433687": {
+   "display_name": "Anna Richards",
+   "n_works_total": 6,
+   "n_per_axis": {
+    "Cyb": 1,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 1,
+   "cross_axis_score": 0.0,
+   "h_index": 2,
+   "works_count": 10,
+   "institutions": [
+    "Commonwealth Scientific and Industrial Research Organisation"
+   ],
+   "concepts": [
+    "Business",
+    "Philosophy",
+    "Computer science",
+    "Art",
+    "Psychology"
+   ],
+   "degree": 9,
+   "community_id": 26,
+   "work_ids": [
+    "W4250742786",
+    "W2325487953",
+    "W4322755887",
+    "W3147540436",
+    "W2499172425",
+    "W2493292936"
+   ]
+  },
+  "A5006201359": {
+   "display_name": "Petra Wulbusch",
+   "n_works_total": 1,
+   "n_per_axis": {
+    "Cyb": 0,
+    "Reg": 0,
+    "PolInd": 0
+   },
+   "n_axes_touched": 0,
+   "cross_axis_score": 0.0,
+   "h_index": 0,
+   "works_count": 3,
+   "institutions": [],
+   "concepts": [
+    "Art",
+    "Computer science",
+    "Philosophy"
+   ],
+   "degree": 1,
+   "community_id": 26,
+   "work_ids": [
+    "W4250742786"
+   ]
+  },
   "A5110694028": {
    "display_name": "William L. Casey",
    "n_works_total": 34,
@@ -4183,7 +4578,7 @@
     "Computer science"
    ],
    "degree": 1,
-   "community_id": 23,
+   "community_id": 27,
    "work_ids": [
     "W1566344170",
     "W2071419362"
@@ -4210,7 +4605,7 @@
     "Microeconomics"
    ],
    "degree": 1,
-   "community_id": 23,
+   "community_id": 27,
    "work_ids": [
     "W1566344170"
    ]
@@ -4291,7 +4686,7 @@
     "Philosophy"
    ],
    "degree": 1,
-   "community_id": 24,
+   "community_id": 28,
    "work_ids": [
     "W2000465687"
    ]
@@ -4319,7 +4714,7 @@
     "Organic chemistry"
    ],
    "degree": 1,
-   "community_id": 24,
+   "community_id": 28,
    "work_ids": [
     "W2000465687"
    ]
@@ -4432,7 +4827,7 @@
     "Economics"
    ],
    "degree": 1,
-   "community_id": 25,
+   "community_id": 29,
    "work_ids": [
     "W1504129344"
    ]
@@ -4460,7 +4855,7 @@
     "Ancient history"
    ],
    "degree": 1,
-   "community_id": 25,
+   "community_id": 29,
    "work_ids": [
     "W1504129344"
    ]
@@ -4543,7 +4938,7 @@
     "Engineering"
    ],
    "degree": 1,
-   "community_id": 26,
+   "community_id": 30,
    "work_ids": [
     "W1491554624"
    ]
@@ -4571,7 +4966,7 @@
     "Engineering"
    ],
    "degree": 1,
-   "community_id": 26,
+   "community_id": 30,
    "work_ids": [
     "W1491554624"
    ]
@@ -4599,7 +4994,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 27,
+   "community_id": 31,
    "work_ids": [
     "W1981733426",
     "W2099670044"
@@ -4630,7 +5025,7 @@
     "Economics"
    ],
    "degree": 2,
-   "community_id": 27,
+   "community_id": 31,
    "work_ids": [
     "W1981733426",
     "W2099670044",
@@ -4690,7 +5085,7 @@
     "Biology"
    ],
    "degree": 2,
-   "community_id": 28,
+   "community_id": 32,
    "work_ids": [
     "W2058869237"
    ]
@@ -4720,7 +5115,7 @@
     "Law"
    ],
    "degree": 2,
-   "community_id": 28,
+   "community_id": 32,
    "work_ids": [
     "W2058869237"
    ]
@@ -4746,7 +5141,7 @@
     "Biology"
    ],
    "degree": 2,
-   "community_id": 28,
+   "community_id": 32,
    "work_ids": [
     "W2058869237"
    ]
@@ -4768,7 +5163,7 @@
     "Business"
    ],
    "degree": 1,
-   "community_id": 29,
+   "community_id": 33,
    "work_ids": [
     "W1511343964"
    ]
@@ -4794,7 +5189,7 @@
     "Computer science"
    ],
    "degree": 1,
-   "community_id": 29,
+   "community_id": 33,
    "work_ids": [
     "W1511343964"
    ]
@@ -4850,7 +5245,7 @@
     "Computer science"
    ],
    "degree": 1,
-   "community_id": 30,
+   "community_id": 34,
    "work_ids": [
     "W2006128341",
     "W1518017987"
@@ -4881,7 +5276,7 @@
     "Mathematics"
    ],
    "degree": 1,
-   "community_id": 30,
+   "community_id": 34,
    "work_ids": [
     "W2006128341"
    ]
@@ -4909,7 +5304,7 @@
     "Law"
    ],
    "degree": 2,
-   "community_id": 31,
+   "community_id": 35,
    "work_ids": [
     "W27930607"
    ]
@@ -4937,7 +5332,7 @@
     "Finance"
    ],
    "degree": 2,
-   "community_id": 31,
+   "community_id": 35,
    "work_ids": [
     "W27930607"
    ]
@@ -4963,7 +5358,7 @@
     "Law"
    ],
    "degree": 2,
-   "community_id": 31,
+   "community_id": 35,
    "work_ids": [
     "W27930607"
    ]
@@ -4992,7 +5387,7 @@
     "Law"
    ],
    "degree": 6,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2120106358",
     "W3193006831",
@@ -5024,7 +5419,7 @@
     "Law"
    ],
    "degree": 18,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2120106358",
     "W2465170261",
@@ -5103,7 +5498,7 @@
     "Mathematics"
    ],
    "degree": 1,
-   "community_id": 33,
+   "community_id": 37,
    "work_ids": [
     "W1537415400"
    ]
@@ -5129,7 +5524,7 @@
     "Software engineering"
    ],
    "degree": 1,
-   "community_id": 33,
+   "community_id": 37,
    "work_ids": [
     "W1537415400"
    ]
@@ -5237,7 +5632,7 @@
     "Philosophy"
    ],
    "degree": 1,
-   "community_id": 34,
+   "community_id": 38,
    "work_ids": [
     "W2030753430"
    ]
@@ -5265,7 +5660,7 @@
     "Engineering"
    ],
    "degree": 1,
-   "community_id": 34,
+   "community_id": 38,
    "work_ids": [
     "W2030753430"
    ]
@@ -5321,7 +5716,7 @@
     "Computer science"
    ],
    "degree": 2,
-   "community_id": 35,
+   "community_id": 39,
    "work_ids": [
     "W232611682"
    ]
@@ -5347,7 +5742,7 @@
     "Sociology"
    ],
    "degree": 2,
-   "community_id": 35,
+   "community_id": 39,
    "work_ids": [
     "W232611682"
    ]
@@ -5375,7 +5770,7 @@
     "Engineering"
    ],
    "degree": 2,
-   "community_id": 35,
+   "community_id": 39,
    "work_ids": [
     "W232611682"
    ]
@@ -5429,7 +5824,7 @@
     "Art"
    ],
    "degree": 1,
-   "community_id": 36,
+   "community_id": 40,
    "work_ids": [
     "W77672729"
    ]
@@ -5457,7 +5852,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 37,
+   "community_id": 41,
    "work_ids": [
     "W2004064845"
    ]
@@ -5486,7 +5881,7 @@
     "Political science"
    ],
    "degree": 1,
-   "community_id": 37,
+   "community_id": 41,
    "work_ids": [
     "W2004064845"
    ]
@@ -5543,7 +5938,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 38,
+   "community_id": 42,
    "work_ids": [
     "W1968942643"
    ]
@@ -5571,7 +5966,7 @@
     "Law"
    ],
    "degree": 5,
-   "community_id": 38,
+   "community_id": 42,
    "work_ids": [
     "W1968942643",
     "W1500608409",
@@ -5796,401 +6191,6 @@
    "community_id": 10,
    "work_ids": [
     "W2063282131"
-   ]
-  },
-  "A5110433687": {
-   "display_name": "Anna Richards",
-   "n_works_total": 6,
-   "n_per_axis": {
-    "Cyb": 1,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 1,
-   "cross_axis_score": 0.0,
-   "h_index": 2,
-   "works_count": 10,
-   "institutions": [
-    "Commonwealth Scientific and Industrial Research Organisation"
-   ],
-   "concepts": [
-    "Business",
-    "Philosophy",
-    "Computer science",
-    "Art",
-    "Psychology"
-   ],
-   "degree": 9,
-   "community_id": 39,
-   "work_ids": [
-    "W4250742786",
-    "W2325487953",
-    "W4322755887",
-    "W3147540436",
-    "W2499172425",
-    "W2493292936"
-   ]
-  },
-  "A5006201359": {
-   "display_name": "Petra Wulbusch",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 0,
-   "works_count": 3,
-   "institutions": [],
-   "concepts": [
-    "Art",
-    "Computer science",
-    "Philosophy"
-   ],
-   "degree": 1,
-   "community_id": 39,
-   "work_ids": [
-    "W4250742786"
-   ]
-  },
-  "A5055251050": {
-   "display_name": "Jay B. Barney",
-   "n_works_total": 2,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 89,
-   "works_count": 302,
-   "institutions": [
-    "University of Utah"
-   ],
-   "concepts": [
-    "Business",
-    "Economics",
-    "Marketing",
-    "Computer science",
-    "Political science"
-   ],
-   "degree": 0,
-   "community_id": -1,
-   "work_ids": [
-    "W2061977616",
-    "W2108767715"
-   ]
-  },
-  "A5102738088": {
-   "display_name": "Thomas Kühn",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 47,
-   "works_count": 239,
-   "institutions": [
-    "Luleå University of Technology"
-   ],
-   "concepts": [
-    "Physics",
-    "Philosophy",
-    "Computer science",
-    "Meteorology",
-    "Geology"
-   ],
-   "degree": 1,
-   "community_id": 40,
-   "work_ids": [
-    "W2753533763"
-   ]
-  },
-  "A5109867375": {
-   "display_name": "Richard Schlegel",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 72,
-   "works_count": 333,
-   "institutions": [
-    "Georgetown University",
-    "Georgetown University Medical Center"
-   ],
-   "concepts": [
-    "Biology",
-    "Gene",
-    "Cell biology",
-    "Cancer research",
-    "Genetics"
-   ],
-   "degree": 1,
-   "community_id": 40,
-   "work_ids": [
-    "W2753533763"
-   ]
-  },
-  "A5066540447": {
-   "display_name": "Wesley M. Cohen",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 40,
-   "works_count": 90,
-   "institutions": [
-    "National Bureau of Economic Research",
-    "Duke University",
-    "Federal Reserve Bank of San Francisco"
-   ],
-   "concepts": [
-    "Business",
-    "Industrial organization",
-    "Economics",
-    "Computer science",
-    "Marketing"
-   ],
-   "degree": 1,
-   "community_id": 10,
-   "work_ids": [
-    "W2108795964"
-   ]
-  },
-  "A5030291124": {
-   "display_name": "Daniel A. Levinthal",
-   "n_works_total": 2,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 57,
-   "works_count": 179,
-   "institutions": [
-    "University of the Arts",
-    "University of Pennsylvania"
-   ],
-   "concepts": [
-    "Business",
-    "Knowledge management",
-    "Psychology",
-    "Economics",
-    "Computer science"
-   ],
-   "degree": 2,
-   "community_id": 10,
-   "work_ids": [
-    "W2108795964",
-    "W1993023795"
-   ]
-  },
-  "A5111995000": {
-   "display_name": "Daniel Kahneman",
-   "n_works_total": 2,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 160,
-   "works_count": 376,
-   "institutions": [
-    "Princeton University",
-    "Princeton Public Schools",
-    "University of Pennsylvania"
-   ],
-   "concepts": [
-    "Psychology",
-    "Economics",
-    "Philosophy",
-    "Social psychology",
-    "Computer science"
-   ],
-   "degree": 1,
-   "community_id": 41,
-   "work_ids": [
-    "W2133469585",
-    "W158727920"
-   ]
-  },
-  "A5000234995": {
-   "display_name": "Amos Tversky",
-   "n_works_total": 2,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 128,
-   "works_count": 289,
-   "institutions": [],
-   "concepts": [
-    "Psychology",
-    "Mathematics",
-    "Economics",
-    "Computer science",
-    "Philosophy"
-   ],
-   "degree": 1,
-   "community_id": 41,
-   "work_ids": [
-    "W2133469585",
-    "W158727920"
-   ]
-  },
-  "A5001761955": {
-   "display_name": "Robert M. Solow",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 80,
-   "works_count": 472,
-   "institutions": [],
-   "concepts": [
-    "Economics",
-    "Political science",
-    "Philosophy",
-    "Neoclassical economics",
-    "Computer science"
-   ],
-   "degree": 0,
-   "community_id": -1,
-   "work_ids": [
-    "W2070631858"
-   ]
-  },
-  "A5084654258": {
-   "display_name": "Brian J. Loasby",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 1
-   },
-   "n_axes_touched": 1,
-   "cross_axis_score": 0.0,
-   "h_index": 34,
-   "works_count": 173,
-   "institutions": [],
-   "concepts": [
-    "Economics",
-    "Neoclassical economics",
-    "Computer science",
-    "Sociology",
-    "Philosophy"
-   ],
-   "degree": 2,
-   "community_id": 42,
-   "work_ids": [
-    "W2137358449"
-   ]
-  },
-  "A5103445562": {
-   "display_name": "Sidney G. Winter",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 1
-   },
-   "n_axes_touched": 1,
-   "cross_axis_score": 0.0,
-   "h_index": 62,
-   "works_count": 213,
-   "institutions": [
-    "California University of Pennsylvania",
-    "University of Pennsylvania"
-   ],
-   "concepts": [
-    "Economics",
-    "Business",
-    "Computer science",
-    "Philosophy",
-    "Political science"
-   ],
-   "degree": 2,
-   "community_id": 42,
-   "work_ids": [
-    "W2137358449"
-   ]
-  },
-  "A5102740532": {
-   "display_name": "Robert Axelrod",
-   "n_works_total": 2,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 16,
-   "works_count": 37,
-   "institutions": [],
-   "concepts": [
-    "Political science",
-    "Computer science",
-    "Psychology",
-    "Sociology",
-    "Mathematics"
-   ],
-   "degree": 3,
-   "community_id": 2,
-   "work_ids": [
-    "W2062663664",
-    "W1501219137"
-   ]
-  },
-  "A5053628685": {
-   "display_name": "W D Hamilton",
-   "n_works_total": 1,
-   "n_per_axis": {
-    "Cyb": 0,
-    "Reg": 0,
-    "PolInd": 0
-   },
-   "n_axes_touched": 0,
-   "cross_axis_score": 0.0,
-   "h_index": 56,
-   "works_count": 157,
-   "institutions": [],
-   "concepts": [
-    "Biology",
-    "Genetics",
-    "Gene",
-    "Computer science",
-    "Sociology"
-   ],
-   "degree": 1,
-   "community_id": 2,
-   "work_ids": [
-    "W2062663664"
    ]
   },
   "A5053676175": {
@@ -7326,7 +7326,7 @@
     "Artificial intelligence"
    ],
    "degree": 2,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W2325487953",
     "W4301828042"
@@ -8919,7 +8919,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2588728401"
    ]
@@ -8947,7 +8947,7 @@
     "Law"
    ],
    "degree": 2,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W3193006831"
    ]
@@ -8977,7 +8977,7 @@
     "Law"
    ],
    "degree": 2,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2066623064"
    ]
@@ -9007,7 +9007,7 @@
     "Macroeconomics"
    ],
    "degree": 2,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2066623064"
    ]
@@ -9033,7 +9033,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W1574946700"
    ]
@@ -9061,7 +9061,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2078042761"
    ]
@@ -9087,7 +9087,7 @@
     "Financial economics"
    ],
    "degree": 2,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2076193947"
    ]
@@ -9116,7 +9116,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2997402048"
    ]
@@ -9146,7 +9146,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2119732780"
    ]
@@ -9174,7 +9174,7 @@
     "Law"
    ],
    "degree": 2,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2099688027",
     "W2030768727"
@@ -9203,7 +9203,7 @@
     "Law"
    ],
    "degree": 4,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2011801091"
    ]
@@ -9231,7 +9231,7 @@
     "Law"
    ],
    "degree": 4,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2011801091"
    ]
@@ -9259,7 +9259,7 @@
     "Mathematics"
    ],
    "degree": 4,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2011801091"
    ]
@@ -9287,7 +9287,7 @@
     "Mathematics"
    ],
    "degree": 4,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2011801091"
    ]
@@ -9313,7 +9313,7 @@
     "Finance"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2016902065"
    ]
@@ -9341,7 +9341,7 @@
     "Computer science"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W3119817639"
    ]
@@ -9370,7 +9370,7 @@
     "Law"
    ],
    "degree": 2,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2030768727"
    ]
@@ -12352,7 +12352,7 @@
     "Biology"
    ],
    "degree": 1,
-   "community_id": 27,
+   "community_id": 31,
    "work_ids": [
     "W1585382938"
    ]
@@ -12633,7 +12633,7 @@
     "Sociology"
    ],
    "degree": 2,
-   "community_id": 38,
+   "community_id": 42,
    "work_ids": [
     "W1585847492"
    ]
@@ -12659,7 +12659,7 @@
     "Sociology"
    ],
    "degree": 2,
-   "community_id": 38,
+   "community_id": 42,
    "work_ids": [
     "W1585847492"
    ]
@@ -16505,7 +16505,7 @@
     "Artificial intelligence"
    ],
    "degree": 4,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2008620264",
     "W2064927380"
@@ -16534,7 +16534,7 @@
     "Genetics"
    ],
    "degree": 1,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2008620264"
    ]
@@ -16988,7 +16988,7 @@
     "Mathematics"
    ],
    "degree": 3,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2064927380"
    ]
@@ -17014,7 +17014,7 @@
     "Mathematics"
    ],
    "degree": 3,
-   "community_id": 32,
+   "community_id": 36,
    "work_ids": [
     "W2064927380"
    ]
@@ -17240,7 +17240,7 @@
     "Law"
    ],
    "degree": 1,
-   "community_id": 38,
+   "community_id": 42,
    "work_ids": [
     "W2009399369"
    ]
@@ -20031,7 +20031,7 @@
     "Computer science"
    ],
    "degree": 7,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4322755887"
    ]
@@ -20059,7 +20059,7 @@
     "Biology"
    ],
    "degree": 7,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4322755887"
    ]
@@ -20088,7 +20088,7 @@
     "Economics"
    ],
    "degree": 7,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4322755887"
    ]
@@ -20118,7 +20118,7 @@
     "Ecology"
    ],
    "degree": 7,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4322755887"
    ]
@@ -20148,7 +20148,7 @@
     "Ecology"
    ],
    "degree": 7,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4322755887"
    ]
@@ -20178,7 +20178,7 @@
     "Gene"
    ],
    "degree": 7,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4322755887"
    ]
@@ -20208,7 +20208,7 @@
     "Ecology"
    ],
    "degree": 7,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4322755887"
    ]
@@ -23996,7 +23996,7 @@
     "Computer science"
    ],
    "degree": 1,
-   "community_id": 38,
+   "community_id": 42,
    "work_ids": [
     "W2082088739"
    ]
@@ -24051,7 +24051,7 @@
     "Artificial intelligence"
    ],
    "degree": 1,
-   "community_id": 39,
+   "community_id": 26,
    "work_ids": [
     "W4301828042"
    ]
@@ -24529,7 +24529,7 @@
     "Engineering"
    ],
    "degree": 2,
-   "community_id": 36,
+   "community_id": 40,
    "work_ids": [
     "W2026948646"
    ]
@@ -24555,7 +24555,7 @@
     "Quantum mechanics"
    ],
    "degree": 2,
-   "community_id": 36,
+   "community_id": 40,
    "work_ids": [
     "W2026948646"
    ]

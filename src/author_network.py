@@ -328,6 +328,98 @@ def leiden_communities(edges):
         return comm
 
 
+# ───────── snowball: top-N authors → their works ─────────
+def snowball_top_authors(authors_sorted, n_authors=15, per_author=50, corpus_ids=None):
+    """Para cada um dos top-N autores por cross_axis_score, fetch /works
+    filter=author.id:Aid&per-page=per_author&sort=cited_by_count:desc.
+    Catalogue obras NOVAS (não no corpus atual) — não incorpore."""
+    corpus_ids = corpus_ids or set()
+    out = {}
+    n_new = 0
+    for aid, ent in authors_sorted[:n_authors]:
+        url = (f"{API}/works?filter=author.id:{aid}&sort=cited_by_count:desc"
+               f"&per-page={per_author}&select=id,title,display_name,"
+               f"publication_year,cited_by_count,doi,authorships")
+        was_cached = cache_hit(url)
+        data = oa.get(url) or {}
+        if not was_cached and data:
+            n_new += 1
+            bump_budget(1)
+        new_works = []
+        in_corpus = []
+        for w in (data.get("results") or []):
+            wid = (w.get("id") or "").split("/")[-1]
+            title = w.get("title") or w.get("display_name") or ""
+            entry = {
+                "oa_id": wid, "title": title,
+                "year": w.get("publication_year"),
+                "cited_by": w.get("cited_by_count") or 0,
+                "doi": w.get("doi") or "",
+                "axes_hit": sorted(classify_axes(title)),
+            }
+            if wid in corpus_ids:
+                in_corpus.append(entry)
+            else:
+                new_works.append(entry)
+        out[aid] = {
+            "display_name": ent["display_name"],
+            "cross_axis_score": round(ent["cross_axis_score"], 4),
+            "h_index": ent.get("h_index", 0),
+            "n_new_works_found": len(new_works),
+            "n_in_corpus_overlap": len(in_corpus),
+            "new_works": new_works,
+            "in_corpus": in_corpus,
+        }
+    return out, n_new
+
+
+# ───────── adjacent tradition probes ─────────
+ADJACENT_PROBES = {
+    "polanyi": "Karl Polanyi",
+    "schumpeter": "Joseph Schumpeter",
+    "hirschman": "Albert Hirschman",
+    "complexity_economics": "complexity economics",
+    "governmentality": "governmentality foucault",
+}
+
+
+def probe_adjacent(corpus_ids, per_probe=50):
+    """Sondagem dirigida: 50 obras mais citadas por consulta para cada tradição
+    adjacente. Catalogue overlap com corpus e candidatos novos. Não incorpore."""
+    out = {}
+    n_new = 0
+    for key, query in ADJACENT_PROBES.items():
+        url = (f"{API}/works?search={urllib.parse.quote(query)}"
+               f"&sort=cited_by_count:desc&per-page={per_probe}"
+               f"&select=id,title,display_name,publication_year,cited_by_count,doi")
+        was_cached = cache_hit(url)
+        data = oa.get(url) or {}
+        if not was_cached and data:
+            n_new += 1
+            bump_budget(1)
+        items = []
+        in_corpus = 0
+        for w in (data.get("results") or []):
+            wid = (w.get("id") or "").split("/")[-1]
+            title = w.get("title") or w.get("display_name") or ""
+            entry = {
+                "oa_id": wid, "title": title[:120],
+                "year": w.get("publication_year"),
+                "cited_by": w.get("cited_by_count") or 0,
+                "in_corpus": wid in corpus_ids,
+                "axes_hit": sorted(classify_axes(title)),
+            }
+            items.append(entry)
+            if wid in corpus_ids:
+                in_corpus += 1
+        out[key] = {
+            "query": query, "n_results": len(items),
+            "n_overlap_with_corpus": in_corpus,
+            "items": items,
+        }
+    return out, n_new
+
+
 # ───────── main pipeline ─────────
 def main():
     print(f"== Fase D · Author network completo ==")
@@ -423,6 +515,35 @@ def main():
     json.dump(out, open(OUTPUT_JSON, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     print(f"\n-> {OUTPUT_JSON} ({os.path.getsize(OUTPUT_JSON)//1024} KB)")
+
+    # ─ snowball: top-15 authors → catalog novas obras
+    if read_budget() < 9500:
+        print(f"\n== snowball top-15 cross-axis authors ==")
+        corpus_ids = set(works.keys())
+        snow, n_snow = snowball_top_authors(sorted_by_cross, n_authors=15,
+                                            per_author=50, corpus_ids=corpus_ids)
+        print(f"  new fetches: {n_snow} | budget: {read_budget()}/10000")
+        total_new = sum(s["n_new_works_found"] for s in snow.values())
+        total_overlap = sum(s["n_in_corpus_overlap"] for s in snow.values())
+        print(f"  obras novas catalogadas: {total_new} | overlap c/ corpus: {total_overlap}")
+        json.dump({"_generated": out["_generated"], "by_author": snow,
+                   "summary": {"n_new_works": total_new, "n_overlap": total_overlap}},
+                  open(SNOWBALL_JSON, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        print(f"  -> {SNOWBALL_JSON} ({os.path.getsize(SNOWBALL_JSON)//1024} KB)")
+
+    # ─ sondagem: adjacent traditions
+    if read_budget() < 9500:
+        print(f"\n== adjacent tradition probes ==")
+        corpus_ids = set(works.keys())
+        adj, n_adj = probe_adjacent(corpus_ids, per_probe=50)
+        print(f"  new fetches: {n_adj} | budget: {read_budget()}/10000")
+        for key, p in adj.items():
+            print(f"  [{key:22}] {p['n_results']} items | overlap c/ corpus: {p['n_overlap_with_corpus']}")
+        json.dump({"_generated": out["_generated"], "probes": adj},
+                  open(ADJACENT_JSON, "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        print(f"  -> {ADJACENT_JSON} ({os.path.getsize(ADJACENT_JSON)//1024} KB)")
     print(f"\ntop-10 by cross_axis_score:")
     for i, (aid, e) in enumerate(sorted_by_cross[:10]):
         ax = e["n_per_axis"]
