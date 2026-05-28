@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (94 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (95 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -110,6 +110,7 @@ Registro de mudanças desta branch, agrupado por tema (94 commits de trabalho). 
 
 ## Infraestrutura, testes e ferramentas
 
+- Prioridade de ponte: métrica única que adapta Emma/XGI ao objetivo · `fcdacc2` · 2026-05-28
 - CHANGELOG: regenera após a skill (inclui o próprio commit) · `a021925` · 2026-05-27
 - Adiciona a skill /changelog e gera o CHANGELOG por tema · `b84f0b7` · 2026-05-27
 - Atualiza a skill run-scisci-ipea (3 páginas + pipeline atual) · `292cc60` · 2026-05-27
