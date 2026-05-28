@@ -21,6 +21,7 @@ import urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import oa  # noqa: E402
 import build_site as bs  # noqa: E402
+import hypergraph_core as hc  # noqa: E402  (M27 — análises XGI nativas)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://api.openalex.org"
@@ -140,12 +141,36 @@ def main():
     for r in top_citers[:10]:
         print(f"   eixos {r['n_axes']} · comms {r['n_communities']} · refs {r['n_refs_in_corpus']} | {r['oa_id']}")
 
+    # M2+M3 — análises XGI nativas: centralidades + comunidades + null Chung-Lu
+    print("\n== análises XGI nativas (M2+M3+M4) ==")
+    H_xgi = hc.build_xgi(edges)
+    node_cent = hc.native_node_centralities(H_xgi, top_k=30)
+    print(f"   h_eigenvector top-3: "
+          f"{', '.join(t['oa_id'][:10] for t in node_cent.get('top_h_eigenvector', [])[:3])}")
+    print(f"   clique_eigenvector top-3: "
+          f"{', '.join(t['oa_id'][:10] for t in node_cent.get('top_clique_eigenvector', [])[:3])}")
+    edge_cent = hc.native_edge_centralities(H_xgi, edges_for_remap=edges, top_k=30)
+    if edge_cent.get("top_line_vector"):
+        print(f"   line_vector (centralidade de hiperarestas) top-3 edge_idx: "
+              f"{[t['edge_idx'] for t in edge_cent['top_line_vector'][:3]]}")
+    print("   spectral communities (k=3, alinhar com 3 eixos)...")
+    xgi_comms = hc.native_communities(H_xgi, n_clusters=3, seed=42)
+    nmi = hc.compare_partitions(axis_of, xgi_comms)
+    print(f"   NMI(nossos 3 eixos × xgi spectral): {nmi.get('nmi')} (n_common={nmi.get('n_common')})")
+
+    # null Chung-Lu (M4 — preserva degrees independentes, mais informativo que stub-shuffle)
+    print("   null Chung-Lu (30 sorteios)...")
+    null_cl = hc.null_chung_lu_z(edges, axis_of, n_iter=30, seed=42)
+    print(f"   Chung-Lu: obs={null_cl.get('obs')}  null_mean={null_cl.get('null_mean')}  z={null_cl.get('z')}")
+
     out = {
         "n_citers": len(seen_citers), "n_edges": len(edges),
         "n_cross_axis_edges": len(cross),
         "mean_size": round(sum(sizes) / max(len(sizes), 1), 2),
         # significância: stub-shuffle preserva degrees + sizes; 60 sorteios
         "null_model": null,
+        # M4 — null Chung-Lu alternativo (preserva degrees independentes)
+        "null_model_chung_lu": null_cl,
         "top_higher_order_bridges": [
             {"oa_id": n, "label": label_of.get(n, n), "axis": AXN.get(axis_of.get(n, ""), ""),
              "cross_axis_hyperedges": c} for n, c in top],
@@ -155,6 +180,23 @@ def main():
         # mapa completo (oa_id -> nº de hiperarestas trans-eixo) para juntar à prioridade de ponte
         "cross_axis_degree": dict(cross_deg),
         "degree": dict(deg),
+        # M1 — persistência: hiperarestas + edge_to_citer + axis_of permite TODA
+        # análise futura sem rerodar o crawler.
+        "hyperedges": edges,
+        "edge_to_citer": edge_to_citer,
+        "axis_of": axis_of,
+        # M2 — centralidades XGI nativas (eigen no hipergrafo + clique expansion)
+        "node_centralities": {
+            "top_h_eigenvector": node_cent.get("top_h_eigenvector", [])[:30],
+            "top_clique_eigenvector": node_cent.get("top_clique_eigenvector", [])[:30],
+        },
+        "edge_centralities": {
+            "top_line_vector": edge_cent.get("top_line_vector", [])[:30],
+        },
+        # M3 — comunidades espectrais nativas em hipergrafo + comparação com nossos eixos
+        "xgi_communities": xgi_comms if "_error" not in xgi_comms else None,
+        "xgi_communities_error": xgi_comms.get("_error") if "_error" in xgi_comms else None,
+        "nmi_eixos_vs_xgi_communities": nmi,
     }
     json.dump(out, open(os.path.join(ROOT, "data", "cocitation_hyperedges.json"), "w",
                         encoding="utf-8"), ensure_ascii=False, indent=1)

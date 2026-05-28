@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (115 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (116 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -126,6 +126,7 @@ Registro de mudanças desta branch, agrupado por tema (115 commits de trabalho).
 
 ## Outros
 
+- P6+P8: vocab adjacente + Estrada-Vega exato via clique expansion · `a28e839` · 2026-05-28
 - P3+P4+P7: smoke test de tokens + rename pairwise + archive legacy · `c189d57` · 2026-05-28
 - Novo deck-metodologia: balanço pedagógico dos caminhos metodológicos · `55dcc1f` · 2026-05-28
 - Checagem completa: copia data/ para docs/dados/ + novo deck-10 executivo · `d7c8728` · 2026-05-28
