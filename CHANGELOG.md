@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (87 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (88 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -65,6 +65,7 @@ Registro de mudanças desta branch, agrupado por tema (87 commits de trabalho). 
 
 ## Funil, dados e reprodutibilidade
 
+- Cache de consultas OpenAlex + desdobra EECS-II + corrige fillcolor do Plotly · `7b1c993` · 2026-05-28
 - EECS-II: resolvedor por DOI determinístico (10.1201/9780429496639-N) · `ead3fea` · 2026-05-27
 - Colab: banho de loja — tabela de células, referências e teste de sanidade · `f8d0c53` · 2026-05-27
 - Deixa os crawls prontos para chave OpenAlex (secret) — pool polido + Premium · `39d255a` · 2026-05-27

@@ -111,6 +111,7 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
     <button class="chip" data-preset="cruz">Cruzamento (ponte)</button>
     <button class="chip" data-preset="orgcib">Cibernética organizacional</button>
     <button class="chip" data-preset="cplx">4º eixo · complexidade</button>
+    <button class="chip" data-preset="autores">Obra dos autores-semente</button>
     <button class="chip" data-preset="indec">Indecisas</button>
   </span>
 </div>
@@ -176,6 +177,7 @@ __JS_DATA__
     else if(p==='cruz') fRole.add('ponte global×Brasil');
     else if(p==='orgcib') fRole.add('cibernética organizacional');
     else if(p==='cplx') fAxis.add('Economia da complexidade');
+    else if(p==='autores') fRole.add('obra de autor-semente');
     else if(p==='indec') fStatus='undec';
     syncChips(); render();
   }
@@ -306,7 +308,7 @@ __JS_DATA__
   // curadoria por tamanho: as N obras de maior prioridade do bloco filtrado
   // (prioridade = papel mais forte + tem resumo + leve recência)
   const ROLEW={'obra-semente':6,'obra-ponte':5,'ponte global×Brasil':5,'mais citada':5,
-    'bela adormecida':3,'rajada de citação':3,'cibernética organizacional':2,
+    'obra de autor-semente':4,'bela adormecida':3,'rajada de citação':3,'cibernética organizacional':2,
     'complexidade (4º eixo)':2,'corpus Brasil (Faganello)':1};
   function score(w){
     let s=(w.roles||[]).reduce((m,r)=>Math.max(m,ROLEW[r]||0),0);
