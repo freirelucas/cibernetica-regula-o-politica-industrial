@@ -53,8 +53,8 @@ Verified output ends with:
 
 ```
 [index]       charts: 3 (esperado 3) · sections: 22/22 · spans vazios: nenhum · page errors: NENHUM -> OK
-[explorador]  nós (círculos d3): 69 · page errors: NENHUM -> OK
-[triagem]     cartões: 126 · page errors: NENHUM -> OK
+[explorador]  nós (círculos d3): 219 · page errors: NENHUM -> OK
+[triagem]     cartões: 203 · page errors: NENHUM -> OK
 screenshots: /tmp/scisci_site.png, /tmp/scisci_explorador.png, /tmp/scisci_triagem.png
 STATUS: OK
 ```
@@ -70,18 +70,24 @@ section with `--path '/#sintese'`. Open the screenshots to confirm they are not 
 python -m pytest -q
 ```
 
-25 tests: build/sections/placeholder, CSV headers (PT) + row counts, network
+26 tests: build/sections/placeholder, CSV headers (PT) + row counts, network
 metrics, Rayyan export (RIS well-formed, dedup by OpenAlex id, abstract coverage,
 single-file zip), and an anglicism scan of the site/explorer/triage/README/notebook.
 
-## One-off data steps (require network — not part of the normal build)
+## One-off data steps (network — cached, so re-runs are cheap/resumable)
 
-These hit the OpenAlex/Crossref APIs and rewrite committed data; run only to
-refresh the bibliometrics, then rebuild + commit:
+These hit the OpenAlex API and rewrite committed data. **Every response is cached
+in `data/oa_cache/`** (gzip, versioned) via `src/oa.py`, so re-runs and debugging
+don't re-query and survive a mid-run 429/break (see the `/oa-cache` skill). Run to
+refresh, then rebuild + commit:
 
 ```bash
-python src/minirun.py        # rebuilds the real co-citation rede -> data/network.json
-python src/enrich_rayyan.py  # OpenAlex+Crossref cache -> data/openalex_enrich.json (authors/type/abstracts)
+python src/minirun.py                # real co-citation rede -> data/network.json
+python src/enrich_rayyan.py          # authors/type/abstracts -> data/openalex_enrich.json
+python src/split_eecs2.py --merge    # EECS-II volume -> 21 capítulos em data/cplx_works.json
+python src/author_snowball.py        # obra dos autores-semente -> data/author_works.json
+python src/coauthorship.py           # autores-ponte entre eixos -> data/coauthor_bridges.json
+python src/cocitation_hypergraph.py  # ordem superior (hipergrafo) -> data/cocitation_hyperedges.json  (needs: pip install xgi)
 ```
 
 ## Run — human path
@@ -116,6 +122,10 @@ To publish: GitHub repo → **Settings → Pages → Source: branch + `/docs`**.
   leidenalg, scipy, sklearn, networkx + the OpenAlex API + ~45 min. This container
   rebuilds the site from the saved JSON; `minirun.py` is the lightweight local rede.
 - Serve over HTTP, not `file://` (the driver and the human path both do).
+- **OpenAlex queries are cached + versioned** (`data/oa_cache/`, gzip, content-addressed
+  by URL — immutable, no history churn). Re-running any crawl script above reads the
+  cache (no re-query; survives a 429/break). Force a refresh by deleting the cache file
+  or passing `use_cache=False`. The pre-commit hook keeps the cache staged. See `/oa-cache`.
 
 ## Troubleshooting
 
