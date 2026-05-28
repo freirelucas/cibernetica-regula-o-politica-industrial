@@ -615,6 +615,10 @@ def main():
             }
             for aid, e in sorted_by_cross[:60]
         ],
+        # autores apenas os RELEVANTES para a SR (n_works_total >= 2 OU
+        # cross_axis_score > 0 OU h_index >= 5) — evita inchar JSON com 93k
+        # entries cuja maioria são autores de UM work do corpus. M8+M17 fizeram
+        # a base crescer 4×; preservar todos = JSON >30 MB (não git-friendly).
         "authors": {
             aid: {
                 "display_name": e["display_name"],
@@ -631,6 +635,9 @@ def main():
                 "work_ids": e["work_ids"],
             }
             for aid, e in authors.items()
+            if (e["n_works_total"] >= 2
+                or e["cross_axis_score"] > 0
+                or e.get("h_index", 0) >= 5)
         },
     }
     json.dump(out, open(OUTPUT_JSON, "w", encoding="utf-8"),

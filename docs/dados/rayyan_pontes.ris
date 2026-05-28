@@ -29,11 +29,12 @@ KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
+KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 27 (XGI); ponte a construir=top-25 de bridge_priority (score=0.3279)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 27 (XGI); obra de autor-ponte=autor Alfonso Reyes — cross_axis_score=0.631; ponte a construir=top-25 de bridge_priority (score=0.3279)
 ER  - 
 
 TY  - JOUR
@@ -225,7 +226,7 @@ KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); obra de autor-ponte=autor John R. Beaumont — cross_axis_score=0.921; ponte a construir=top-25 de bridge_priority (score=0.6557)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); obra de autor-ponte=autor John R. Beaumont — cross_axis_score=0.870; ponte a construir=top-25 de bridge_priority (score=0.6557)
 ER  - 
 
 TY  - JOUR
@@ -295,12 +296,11 @@ KW  - eixo: Política industrial
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
-KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); obra de autor-ponte=autor Maurice Snowdon — cross_axis_score=0.631; ponte a construir=top-25 de bridge_priority (score=0.845)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); ponte a construir=top-25 de bridge_priority (score=0.845)
 ER  - 
 
 TY  - JOUR
@@ -350,10 +350,9 @@ UR  - https://openalex.org/W2098978150
 AB  - In recent years increasing need has been felt for a body of systematic theoretical constructs which will discuss the general relationships of the empirical world. This is the quest of General Systems Theory. It does not seek, of course, to establish a single, self-contained “general theory of practically everything” which will replace all the special theories of particular disciplines. Such a theory would be almost without content, for we always pay for generality by sacrificing content, and all we can say about practically everything is almost nothing. Somewhere however between the specific that has no meaning and the general that has no content there must be, for each purpose and at each level of abstraction, an optimum degree of generality. It is the contention of the General Systems Theorists that this optimum degree of generality in theory is not always reached by the particular sciences.
 KW  - eixo: Cibernética
 KW  - papel: cibernética (geral)
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-ponte, obra de autor-semente, ponte a construir · razão: obra de autor-ponte=autor Kenneth E. Boulding — cross_axis_score=0.834; ponte a construir=top-25 de bridge_priority (score=0.3457)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.3457)
 ER  - 
 
 TY  - JOUR
@@ -381,7 +380,7 @@ UR  - https://openalex.org/W2165238389
 KW  - papel: obra de autor-ponte
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: obra de autor-ponte, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Ángela Espinosa — cross_axis_score=0.705; ponte a construir=top-25 de bridge_priority (score=0.3229)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: obra de autor-ponte, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Ángela Espinosa — cross_axis_score=0.688; ponte a construir=top-25 de bridge_priority (score=0.3229)
 ER  - 
 
 TY  - BOOK

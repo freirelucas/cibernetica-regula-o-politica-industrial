@@ -4,7 +4,7 @@
   "polanyi": {
    "query": "Karl Polanyi",
    "n_results": 50,
-   "n_overlap_with_corpus": 3,
+   "n_overlap_with_corpus": 8,
    "items": [
     {
      "oa_id": "W1606540910",
@@ -59,7 +59,7 @@
      "title": "Introduction: Institutional Change in Advanced Political Economies",
      "year": 2005,
      "cited_by": 1595,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -203,7 +203,7 @@
      "title": "After taste: Culture, consumption and theories of practice",
      "year": 2014,
      "cited_by": 600,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -267,7 +267,7 @@
      "title": "Economic Action and Social Structure: the Problem of Embeddedness",
      "year": 2002,
      "cited_by": 471,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -275,7 +275,7 @@
      "title": "A Long Goodbye to Bismarck? : The Politics of Welfare Reform in Continental Europe",
      "year": 2010,
      "cited_by": 450,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -291,7 +291,7 @@
      "title": "Measuring the immeasurable?",
      "year": 2008,
      "cited_by": 436,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -411,7 +411,7 @@
   "schumpeter": {
    "query": "Joseph Schumpeter",
    "n_results": 50,
-   "n_overlap_with_corpus": 15,
+   "n_overlap_with_corpus": 19,
    "items": [
     {
      "oa_id": "W2095561982",
@@ -516,7 +516,7 @@
      "title": "The Modern Industrial Revolution, Exit, and the Failure of Internal Control Systems",
      "year": 1993,
      "cited_by": 1698,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -728,7 +728,7 @@
      "title": "Large Shareholder Diversification and Corporate Risk-Taking",
      "year": 2011,
      "cited_by": 829,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -762,7 +762,7 @@
      "title": "Where Ricardo and Mill Rebut and Confirm Arguments of Mainstream Economists Supporting Globalization",
      "year": 2004,
      "cited_by": 732,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -786,7 +786,7 @@
      "title": "Does self-employment reduce unemployment?",
      "year": 2008,
      "cited_by": 709,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -826,7 +826,7 @@
   "hirschman": {
    "query": "Albert Hirschman",
    "n_results": 50,
-   "n_overlap_with_corpus": 9,
+   "n_overlap_with_corpus": 12,
    "items": [
     {
      "oa_id": "W2136850043",
@@ -891,7 +891,7 @@
      "title": "The Modern Industrial Revolution, Exit, and the Failure of Internal Control Systems",
      "year": 1993,
      "cited_by": 1698,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1043,7 +1043,7 @@
      "title": "The Superiority of Economists",
      "year": 2015,
      "cited_by": 685,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1187,7 +1187,7 @@
      "title": "Economic Action and Social Structure: the Problem of Embeddedness",
      "year": 2002,
      "cited_by": 471,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1648,7 +1648,7 @@
   "governmentality": {
    "query": "governmentality foucault",
    "n_results": 50,
-   "n_overlap_with_corpus": 3,
+   "n_overlap_with_corpus": 5,
    "items": [
     {
      "oa_id": "W133664784",
@@ -1783,7 +1783,7 @@
      "title": "The Theory and Practice of Online Learning",
      "year": 2008,
      "cited_by": 1824,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1831,7 +1831,7 @@
      "title": "International Journal of Design",
      "year": 2021,
      "cited_by": 1614,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
