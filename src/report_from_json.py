@@ -34,7 +34,8 @@ def build_js(results):
         "axes3":         results.get("n_axes_3"),
         "cocit_n":       results.get("cocit_nodes"),
         "cocit_e":       results.get("cocit_edges"),
-        "bursts":        results.get("n_bursts"),
+        "bursts":        results.get("n_bursts"),                    # bruto: todos os eventos de burst (Kleinberg level≥1)
+        "bursts_top":    len(results.get("top_bursts", [])),          # top-K por peso (Rayyan usa esses)
         "bursting_refs": results.get("n_bursting_refs"),
         "generated":     results.get("generated"),
     }
