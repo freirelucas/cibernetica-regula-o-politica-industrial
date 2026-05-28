@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (106 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (107 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -49,6 +49,7 @@ Registro de mudanças desta branch, agrupado por tema (106 commits de trabalho).
 
 ## Análise (cienciometria / Science of Science)
 
+- Fase D snapshot 2: snowball top-15 + adjacent probes · `0291844` · 2026-05-28
 - Snowball por autor-semente (estratégia mais ousada, via cache) · `bb1a0b1` · 2026-05-28
 - 4º eixo: estrutura a literatura da complexidade por subtradição · `0a17659` · 2026-05-27
 - Descobre os caminhos potenciais entre as comunidades epistêmicas · `dc2b097` · 2026-05-27

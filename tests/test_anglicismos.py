@@ -25,7 +25,8 @@ def _scan(text):
 def _strip_html(html):
     for pat in [r"<script.*?</script>", r"<style.*?</style>",
                 r'<span class="src">.*?</span>', r'<ul class="refs">.*?</ul>',
-                r'<pre class="code">.*?</pre>', r'<div class="abstract-en">.*?</div>']:
+                r'<pre class="code">.*?</pre>', r'<div class="abstract-en">.*?</div>',
+                r'<code>[^<]*</code>']:        # código inline (filenames, fields) — não é prosa
         html = re.sub(pat, " ", html, flags=re.S)
     return re.sub(r"<[^>]+>", " ", html)
 

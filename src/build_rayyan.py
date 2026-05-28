@@ -15,6 +15,7 @@ triagem colaborativa (incluir/excluir, etiquetas) já com eixo e papel anotados.
 
 Uso:  python src/build_rayyan.py
 """
+import collections
 import csv
 import json
 import os
@@ -30,6 +31,7 @@ CPLX = os.path.join(ROOT, "data", "cplx_works.json")
 AUTHORS = os.path.join(ROOT, "data", "author_works.json")
 PRIORITY = os.path.join(ROOT, "data", "bridge_priority.json")
 HYPEREDGES = os.path.join(ROOT, "data", "cocitation_hyperedges.json")
+AUTHOR_NETWORK = os.path.join(ROOT, "data", "author_network.json")
 TAGS_MANIFEST = os.path.join(ROOT, "data", "rayyan_tags.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
@@ -46,6 +48,8 @@ AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Pol
 # ============================================================
 MIN_CROSS_AXIS_EDGES = int(os.environ.get("MIN_CROSS_AXIS_EDGES", "10"))  # floor p/ higher_order_bridge (XGI)
 TOP_N_HIGHER_ORDER  = int(os.environ.get("TOP_N_HIGHER_ORDER", "40"))     # cap rank-based (scale-invariant)
+TOP_N_AUTHOR_BRIDGES   = int(os.environ.get("TOP_N_AUTHOR_BRIDGES", "30"))    # top-N autores cross-axis
+MIN_CROSS_AXIS_SCORE   = float(os.environ.get("MIN_CROSS_AXIS_SCORE", "0.35"))  # floor de cross_axis_score
 MIN_AXES_COVERED = 2           # tag obra-ponte: ≥N eixos por vocabulário
 N_BRIDGE_PRIORITY = 25         # tag ponte a construir: top-N por bridge_priority
 
@@ -72,6 +76,8 @@ CRITERIA = {
                             "tag_cyb_subtype em build_rayyan.py"),
     PONTE: ("Cruzamento Brasil × núcleo global por citação direta",
             "data/cross_brasil.json · src/cross_brasil.py"),
+    "obra de autor-ponte": (f"Escrita por autor no top-{TOP_N_AUTHOR_BRIDGES} cross_axis_score ≥{MIN_CROSS_AXIS_SCORE} (Fase D)",
+                              "data/author_network.json:top_cross_axis"),
     "ponte a construir": (f"Top-{N_BRIDGE_PRIORITY} por prioridade de ponte (CB + comunidade)",
                           "data/bridge_priority.json · src/bridge_priority.py"),
     "higher_order_bridge": (f"Top {TOP_N_HIGHER_ORDER} obras com ≥{MIN_CROSS_AXIS_EDGES} hiperarestas trans-eixo (XGI; Landry, 2023)",
@@ -87,6 +93,8 @@ def write_manifest(out_path=TAGS_MANIFEST):
         "thresholds": {
             "MIN_CROSS_AXIS_EDGES": MIN_CROSS_AXIS_EDGES,
             "TOP_N_HIGHER_ORDER": TOP_N_HIGHER_ORDER,
+            "TOP_N_AUTHOR_BRIDGES": TOP_N_AUTHOR_BRIDGES,
+            "MIN_CROSS_AXIS_SCORE": MIN_CROSS_AXIS_SCORE,
             "MIN_AXES_COVERED": MIN_AXES_COVERED,
             "N_BRIDGE_PRIORITY": N_BRIDGE_PRIORITY,
         },
@@ -288,6 +296,42 @@ def tag_bridge_priority(works, n=N_BRIDGE_PRIORITY):
     return works
 
 
+def tag_author_bridge(works):
+    """Marca obras escritas por autor no top-N cross_axis_score (≥MIN_CROSS_AXIS_SCORE).
+    Materializa a 'aproximação curatorial' sem metáfora: autores reais que
+    demonstravelmente atravessam silos. Fonte: data/author_network.json (Fase D)."""
+    if not os.path.exists(AUTHOR_NETWORK):
+        return works
+    A = json.load(open(AUTHOR_NETWORK, encoding="utf-8"))
+    # top-N autores elegíveis (score ≥ floor)
+    eligible = [
+        a for a in A.get("top_cross_axis", [])
+        if a.get("cross_axis_score", 0) >= MIN_CROSS_AXIS_SCORE
+    ][:TOP_N_AUTHOR_BRIDGES]
+    # build work_id -> list of (author_name, score)
+    work_to_authors = collections.defaultdict(list)
+    authors_map = A.get("authors") or {}
+    for a in eligible:
+        aid = a["oa_id"]
+        for wid in (authors_map.get(aid) or {}).get("work_ids", []):
+            work_to_authors[wid].append((a["display_name"], a["cross_axis_score"]))
+    # apply tag
+    n_tagged = 0
+    for e in works:
+        m = re.search(r"openalex\.org/(W\d+)", e.get("url", "") or "")
+        oid = e.get("oa_id") or (m.group(1) if m else None)
+        if oid and oid in work_to_authors:
+            ats = work_to_authors[oid]
+            e["roles"].add("obra de autor-ponte")
+            best = max(ats, key=lambda t: t[1])
+            e.setdefault("rationale", {})["obra de autor-ponte"] = (
+                f"autor {best[0]} — cross_axis_score={best[1]:.3f}")
+            n_tagged += 1
+    print(f"  tag obra de autor-ponte: {n_tagged} obras (top-{TOP_N_AUTHOR_BRIDGES} autores, "
+          f"score ≥{MIN_CROSS_AXIS_SCORE})")
+    return works
+
+
 def tag_higher_order_bridge(works):
     """Marca top-TOP_N_HIGHER_ORDER obras (com ≥MIN_CROSS_AXIS_EDGES no floor) em hiperarestas trans-eixo.
     Rank-based para ser scale-invariant: ao aumentar CITERS_PER_SEED no crawl, o cap top-N
@@ -464,8 +508,8 @@ def emit(works, out, stem):
 
 
 def build(out=DADOS):
-    works = tag_higher_order_bridge(
-        tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate()))))))
+    works = tag_author_bridge(tag_higher_order_bridge(
+        tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate())))))))
     os.makedirs(out, exist_ok=True)
     write_manifest()           # data/rayyan_tags.json — auditoria das escolhas conceituais
     emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
