@@ -29,12 +29,11 @@ KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
-KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 27 (XGI); obra de autor-ponte=autor Raúl Espejo — cross_axis_score=0.373; ponte a construir=top-25 de bridge_priority (score=0.3279)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 27 (XGI); ponte a construir=top-25 de bridge_priority (score=0.3279)
 ER  - 
 
 TY  - JOUR
@@ -62,11 +61,10 @@ DO  - 10.1007/978-3-642-19109-1
 UR  - https://openalex.org/W582908774
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-ponte, obra de autor-semente, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Raúl Espejo — cross_axis_score=0.373; ponte a construir=top-25 de bridge_priority (score=0.5071)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.5071)
 ER  - 
 
 TY  - JOUR
@@ -132,10 +130,9 @@ UR  - https://openalex.org/W2136083730
 AB  - The software Viplan learning system is an aid to learn about Beer’s viable system model (VSM) and its application. This is done with the support of the Viplan method. The five activities of this method are explained with examples. First, it offers an approach to understand and discuss organisational identity through analysis of stakeholders. Second, it describes structural modelling of activities, which is followed by the crucial idea in the method of unfolding the organisation’s complexity. Fourth, it shows a tool for studying the distribution of resources and discretion in an organisation. Fifth, and finally, it offers a form of relating these resources to the VSM, thus allowing the development of diagnostic points. The paper ends with a short description of the software itself.
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-ponte, obra de autor-semente, ponte a construir · razão: obra de autor-ponte=autor Raúl Espejo — cross_axis_score=0.373; ponte a construir=top-25 de bridge_priority (score=0.4843)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4843)
 ER  - 
 
 TY  - JOUR
@@ -165,10 +162,9 @@ UR  - https://openalex.org/W1530425941
 AB  - ISSUES FOR TODAY'S ORGANIZATIONS. Organization Structure. Transformation. A LANGUAGE FOR EFFECTIVE ACTION IN ORGANIZATIONS. Basic Notions. Effective Action in an Organizational Context. Giving Requisite Variety to Management: A Discussion Based on the Viable System Model. Organizational Learning. The Cybernetics of Individual and Organizational Learning. RECURSIVE MANAGEMENT. Enabling Systemic Management. Primary Processes and Information Management. Management and Meta-Management. Conclusion. Bibliography. Index.
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-ponte, obra de autor-semente, ponte a construir · razão: obra de autor-ponte=autor Raúl Espejo — cross_axis_score=0.373; ponte a construir=top-25 de bridge_priority (score=0.2364)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.2364)
 ER  - 
 
 TY  - BOOK
@@ -193,10 +189,9 @@ UR  - https://openalex.org/W1983425281
 KW  - eixo: Cibernética
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, obra de autor-ponte, obra de autor-semente, ponte a construir · razão: obra de autor-ponte=autor Raúl Espejo — cross_axis_score=0.373; ponte a construir=top-25 de bridge_priority (score=0.2479)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.2479)
 ER  - 
 
 TY  - JOUR
@@ -210,7 +205,8 @@ KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · retornos crescentes / dependência de trajetória
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5071)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória, ponte a construir, ponte de ordem superior · razão: ponte a construir=top-25 de bridge_priority (score=0.5071); ponte de ordem superior=HO centrality=0.375 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -225,12 +221,12 @@ KW  - eixo: Política industrial
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
-KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
+KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); obra de autor-ponte=autor John R. Beaumont — cross_axis_score=0.512; ponte a construir=top-25 de bridge_priority (score=0.6557)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6557); ponte de ordem superior=HO centrality=0.354 (B.4 random walks)
 ER  - 
 
 TY  - JOUR
@@ -248,7 +244,8 @@ KW  - papel: higher_order_bridge
 KW  - papel: mais citada
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, mais citada, obra de autor-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 23 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5414)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, mais citada, obra de autor-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 23 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5414); ponte de ordem superior=HO centrality=0.444 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -267,7 +264,8 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4193)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4193); ponte de ordem superior=HO centrality=0.465 (B.4 random walks)
 ER  - 
 
 TY  - JOUR
@@ -284,7 +282,8 @@ KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · economia evolucionária
 KW  - papel: higher_order_bridge
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · economia evolucionária, higher_order_bridge, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6671)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · economia evolucionária, higher_order_bridge, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6671); ponte de ordem superior=HO centrality=1.000 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -303,8 +302,9 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
+KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); ponte a construir=top-25 de bridge_priority (score=0.845)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); ponte a construir=top-25 de bridge_priority (score=0.845); ponte de ordem superior=HO centrality=0.729 (B.4 random walks)
 ER  - 
 
 TY  - JOUR
@@ -354,10 +354,9 @@ UR  - https://openalex.org/W2098978150
 AB  - In recent years increasing need has been felt for a body of systematic theoretical constructs which will discuss the general relationships of the empirical world. This is the quest of General Systems Theory. It does not seek, of course, to establish a single, self-contained “general theory of practically everything” which will replace all the special theories of particular disciplines. Such a theory would be almost without content, for we always pay for generality by sacrificing content, and all we can say about practically everything is almost nothing. Somewhere however between the specific that has no meaning and the general that has no content there must be, for each purpose and at each level of abstraction, an optimum degree of generality. It is the contention of the General Systems Theorists that this optimum degree of generality in theory is not always reached by the particular sciences.
 KW  - eixo: Cibernética
 KW  - papel: cibernética (geral)
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-ponte, obra de autor-semente, ponte a construir · razão: obra de autor-ponte=autor Kenneth E. Boulding — cross_axis_score=0.602; ponte a construir=top-25 de bridge_priority (score=0.3457)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.3457)
 ER  - 
 
 TY  - JOUR
@@ -371,8 +370,9 @@ UR  - https://openalex.org/W2026948646
 AB  - The Emergence of Soft Systems Thinking. Soft Systems Methodology--the Whole. Soft Systems Methodology--the Parts. Soft Systems Methodology--the Whole Revisited. Soft Systems Methodology--the Context. Conclusion. Appendix. Bibliography. Indexes.
 KW  - papel: higher_order_bridge
 KW  - papel: ponte a construir
+KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 24 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4371)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 24 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4371); ponte de ordem superior=HO centrality=0.438 (B.4 random walks)
 ER  - 
 
 TY  - JOUR
@@ -382,9 +382,10 @@ AU  - Walker
 PY  - 2012
 DO  - 10.1016/j.ejor.2012.09.015
 UR  - https://openalex.org/W2165238389
+KW  - papel: obra de autor-ponte
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: ponte a construir, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.3229)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: obra de autor-ponte, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Ángela Espinosa — cross_axis_score=0.784; ponte a construir=top-25 de bridge_priority (score=0.3229)
 ER  - 
 
 TY  - BOOK
@@ -408,6 +409,7 @@ UR  - https://openalex.org/W1492856410
 AB  - Whether by design, accident or merely synchronicity, Checkland appears to have developed a habit of writing seminal publications near the start of each decade which establish the basis and framework for systems methodology research for that decade.ii Hamish Rennie, Journal of the Operational Research Society, 1992 Thirty years ago Peter Checkland set out to test whether the Systems Engineering (SE) approach, highly successful in technical problems, could be used by managers coping with the unfolding complexities of organizational life. The straightforward transfer of SE to the broader situations of management was not possible, but by insisting on a combination of systems thinking strongly linked to real-world practice Checkland and his collaborators developed an alternative approach - Soft Systems Methodology (SSM) - which enables managers of all kinds and at any level to deal with the subtleties and confusions of the situations they face. This work established the now accepted distinction between hard systems thinking, in which parts of the world are taken to be systems which can be engineered, and soft systems thinking in which the focus is on making sure the process of inquiry into real-world complexity is itself a system for learning. Systems Thinking, Systems Practice (1981) and Soft Systems Methodology in Action (1990) together with an earlier paper Towards a Systems-based Methodology for Real-World Problem Solving (1972) have long been recognized as classics in the field. Now Peter Checkland has looked back over the three decades of SSM development, brought the account of it up to date, and reflected on the whole evolutionary process which has produced a mature SSM. SSM: A 30-Year Retrospective, here included with Systems Thinking, Systems Practice closes a chapter on what is undoubtedly the most significant single research programme on the use of systems ideas in problem solving. Now retired from full-time university work, Peter Checkland continues his research as a Leverhulme Emeritus Fellow.
 KW  - papel: higher_order_bridge
 KW  - papel: ponte a construir
+KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 49 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5743)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 49 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5743); ponte de ordem superior=HO centrality=0.653 (B.4 random walks)
 ER  - 

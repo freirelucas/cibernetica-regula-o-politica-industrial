@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (108 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (109 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -124,6 +124,7 @@ Registro de mudanças desta branch, agrupado por tema (108 commits de trabalho).
 
 ## Outros
 
+- A.3 + setup api_key + slides D.4: depth-2 → 13k works / 16k autores · `88748ff` · 2026-05-28
 - Fase D · Author network completo: tag obra de autor-ponte + §10·6 + sondagens · `98ae1cf` · 2026-05-28
 - Fase D snapshot 1: author_network.py + enriquecimento de 817 autores · `fea88d6` · 2026-05-28
 - Recovery note: balanço de features + roteiro + onde paramos · `2b86304` · 2026-05-28
