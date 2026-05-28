@@ -1,7 +1,7 @@
 {
   "generated": "2026-05-25 17:33",
   "corpus_size": 817,
-  "n_seeds": 13,
+  "n_seeds": 20,
   "n_axes_1": 790,
   "n_axes_2": 26,
   "n_axes_3": 10,
@@ -80,6 +80,41 @@
       "key": "Lange_Wholes_1966",
       "id": "https://openalex.org/W2063282131",
       "ref": "Lange & Boulding (1966) Wholes and Parts"
+    },
+    {
+      "key": "Wiener_Cybernetics_1948",
+      "id": "https://openalex.org/W1527571715",
+      "ref": "Wiener (1948) Cybernetics or Control and Communication in the Animal and the Machine"
+    },
+    {
+      "key": "Maturana_Varela_Autopoiesis_1980",
+      "id": "https://openalex.org/W1916207017",
+      "ref": "Maturana & Varela (1980) Autopoiesis and Cognition: The Realization of the Living"
+    },
+    {
+      "key": "vonFoerster_2ndOrder_2004",
+      "id": "https://openalex.org/W1997780809",
+      "ref": "von Foerster (2004) Second-order cybernetics: historical introduction"
+    },
+    {
+      "key": "Lascoumes_LeGales_2010",
+      "id": "https://openalex.org/W2076248782",
+      "ref": "Lascoumes & Le Galès (2010) Exploring Governance: Policy Instruments Approach"
+    },
+    {
+      "key": "Salamon_Tools_2001",
+      "id": "https://openalex.org/W2258876734",
+      "ref": "Salamon (2001) Tools of Government"
+    },
+    {
+      "key": "Chang_Kicking_2002",
+      "id": "https://openalex.org/W1919820734",
+      "ref": "Chang (2002) Kicking Away the Ladder: Development Strategy in Historical Perspective"
+    },
+    {
+      "key": "Evans_EmbeddedAutonomy_1995",
+      "id": "https://openalex.org/W2912536286",
+      "ref": "Evans (1995) Embedded Autonomy: States and Industrial Transformation"
     }
   ],
   "top20_nonfeed": [

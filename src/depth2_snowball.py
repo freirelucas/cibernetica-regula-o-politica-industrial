@@ -16,7 +16,7 @@ OUTPUT = os.path.join(ROOT, "data", "depth2_corpus.json")
 BUDGET_FILE = os.path.join(ROOT, "data", "_budget_used.txt")
 
 PER_PAGE = 50           # top-K citers per level-1 work
-MAX_LEVEL1_TO_EXPAND = 600  # cap para evitar runaway (de 880 level-1 works)
+MAX_LEVEL1_TO_EXPAND = int(os.environ.get("MAX_LEVEL1_TO_EXPAND", "2000"))  # M17: cap relaxado para cobertura completa do level-1 (que cresceu com cache)
 
 
 def read_budget():
@@ -125,7 +125,7 @@ def main():
 
     # fetch level-2
     budget_left = 15000 - read_budget()
-    max_per_run = min(budget_left, 300)  # turn cap
+    max_per_run = min(budget_left, int(os.environ.get("DEPTH2_PER_TURN", "1500")))  # M17: cap relaxado
     print(f"\nfetching level-2 citers (cap {max_per_run} this turn)...")
     n_new, l2_unique, by_l1 = fetch_level2(target_set, max_per_run)
     print(f"  new fetches: {n_new} | budget: {read_budget()}/15000")

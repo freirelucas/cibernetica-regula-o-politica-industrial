@@ -881,6 +881,14 @@
 %K eixo: Política industrial
 %K papel: corpus Brasil (Faganello)
 
+%0 Generic
+%T Exploring Governance: Policy Instruments Approach
+%A Lascoumes & Le Galès
+%D 2010
+%U https://openalex.org/https://openalex.org/W2076248782
+%K eixo: Política industrial
+%K papel: obra-semente
+
 %0 Book Section
 %T Trade, Foreign Investment, and Industrial Policy for Developing Countries*
 %A Ann Harrison
@@ -1143,6 +1151,14 @@
 %K papel: rajada de citação
 
 %0 Generic
+%T Second-order cybernetics: historical introduction
+%A von Foerster
+%D 2004
+%U https://openalex.org/https://openalex.org/W1997780809
+%K eixo: Política industrial
+%K papel: obra-semente
+
+%0 Generic
 %T Política industrial e tecnológica e desenvolvimento
 %A José Matias-Pereira
 %D 2004
@@ -1195,6 +1211,14 @@
 %U https://openalex.org/W2120106358
 %K eixo: Política industrial
 %K papel: obra de autor-semente
+
+%0 Generic
+%T Kicking Away the Ladder: Development Strategy in Historical Perspective
+%A Chang
+%D 2002
+%U https://openalex.org/https://openalex.org/W1919820734
+%K eixo: Política industrial
+%K papel: obra-semente
 
 %0 Journal Article
 %T What is cybernetics?
@@ -1411,6 +1435,14 @@
 %K papel: ponte a construir
 
 %0 Generic
+%T Embedded Autonomy: States and Industrial Transformation
+%A Evans
+%D 1995
+%U https://openalex.org/https://openalex.org/W2912536286
+%K eixo: Política industrial
+%K papel: obra-semente
+
+%0 Generic
 %T Experiência histórica de política industrial no Brasil
 %A Wilson Suzigan
 %D 1995
@@ -1623,6 +1655,23 @@
 %K papel: corpus Brasil (Faganello)
 
 %0 Book
+%T Autopoiesis and Cognition: The Realization of the Living
+%A Humberto R. Maturana
+%A Francisco J. Varela
+%A Stafford Bee
+%J Medical Entomology and Zoology
+%D 1980
+%U https://openalex.org/https://openalex.org/W1916207017
+%X Editorial Preface General Table Of Contents Foreword Introduction (by Professor Maturana) Biology Of Cognition Dedication Table of Contents I. Introduction II. The Problem III. Cognitive Function in General A. The Observer B. The Living System C. Evolution D. The Cognitive Process IV. Cognitive Function in Particular A. Nerve Cells B. Architecture C. Function D. Representation E. Description F. Thinking G. Natural Language H. Memory and Learning I. The Observer V. Problems in the Neurophysiology of Cognition VI. Conclusions VII. Post Scriptum Autopoiesis: The Organization Of The Living Preface (by Sir Stafford Beer) Introduction I. On Machines, living and Otherwise 1. Machines 2. Living Machines II. Dispensability of Teleonomy 1. Purposelessness 2. Individuality III. Embodiments of Autopoiesis 1. Descriptive and Causal Notions 2. Molecular Embodiments 3. Origin IV. Diversity of Autopoiesis 1. Subordination to the Condition of Unity 2. Plasticity of Ontogeny 3. Reproduction, a Complication of the Unity 4. Evolution, a Historical Network 5. Second and Third Order Autopoietic Systems V. Presence of Autopoiesis 1. Biological Implications 2. Epistemological Implications 3. Cognitive Implications Appendix: The Nervous System Glossary Bibliography Index Of Names
+%K eixo: Cibernética
+%K eixo: Política industrial
+%K papel: bela adormecida
+%K papel: cibernética (geral)
+%K papel: mais citada
+%K papel: obra de autor-semente
+%K papel: obra-semente
+
+%0 Book
 %T The Heart of Enterprise
 %A Stafford Beer
 %D 1980
@@ -1783,6 +1832,14 @@
 %K papel: cibernética organizacional
 %K papel: obra de autor-ponte
 %K papel: obra de autor-semente
+
+%0 Generic
+%T Cybernetics or Control and Communication in the Animal and the Machine
+%A Wiener
+%D 1948
+%U https://openalex.org/https://openalex.org/W1527571715
+%K eixo: Política industrial
+%K papel: obra-semente
 
 %0 Generic
 %T On the Economic Theory of Socialism
