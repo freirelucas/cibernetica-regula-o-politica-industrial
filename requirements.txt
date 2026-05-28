@@ -11,3 +11,4 @@ pyarrow>=14
 requests>=2.31
 tqdm
 networkx>=3.0
+xgi>=0.10           # redes de ordem superior (hipergrafo de cocitação)
