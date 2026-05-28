@@ -1,0 +1,2056 @@
+{
+ "_generated": "fase D · 2026-05-29",
+ "probes": {
+  "polanyi": {
+   "query": "Karl Polanyi",
+   "n_results": 50,
+   "n_overlap_with_corpus": 3,
+   "items": [
+    {
+     "oa_id": "W1606540910",
+     "title": "The Tacit Dimension",
+     "year": 1997,
+     "cited_by": 12042,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1992680417",
+     "title": "International regimes, transactions, and change: embedded liberalism in the postwar economic order",
+     "year": 1982,
+     "cited_by": 4406,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1995453178",
+     "title": "The narrative constitution of identity: A relational and network approach",
+     "year": 1994,
+     "cited_by": 2867,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2162482203",
+     "title": "Tacit knowledge and the economic geography of context, or The undefinable tacitness of being (there)",
+     "year": 2002,
+     "cited_by": 1950,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4399863396",
+     "title": "Misteri i Kapitalit",
+     "year": 2000,
+     "cited_by": 1901,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2593901133",
+     "title": "Anthropocene or Capitalocene? Nature, History, and the Crisis of Capitalism",
+     "year": 2016,
+     "cited_by": 1823,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2129057559",
+     "title": "Introduction: Institutional Change in Advanced Political Economies",
+     "year": 2005,
+     "cited_by": 1595,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2078941804",
+     "title": "The Laws of the Markets",
+     "year": 2000,
+     "cited_by": 1396,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W395052669",
+     "title": "The Road from Mont Pèlerin",
+     "year": 2009,
+     "cited_by": 1293,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1566672885",
+     "title": "Disrespect: The Normative Foundations of Critical Theory",
+     "year": 2007,
+     "cited_by": 1060,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2068283766",
+     "title": "‘Spatial’ relationships? Towards a reconceptualization of embedded ness",
+     "year": 2004,
+     "cited_by": 974,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2136087731",
+     "title": "Practices of assemblage and community forest management",
+     "year": 2007,
+     "cited_by": 893,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2125931397",
+     "title": "What is land? Assembling a resource for global investment",
+     "year": 2014,
+     "cited_by": 889,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2072267290",
+     "title": "The Sociology of Economic Life",
+     "year": 1993,
+     "cited_by": 870,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2268683859",
+     "title": "Routines and Other Recurring Action Patterns of Organizations: Contemporary Research Issues",
+     "year": 1996,
+     "cited_by": 759,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2109476496",
+     "title": "The market economy, and the scientific commons",
+     "year": 2003,
+     "cited_by": 751,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2097308785",
+     "title": "Hydro-hegemony – a framework for analysis of trans-boundary water conflicts",
+     "year": 2006,
+     "cited_by": 736,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2147620534",
+     "title": "The poverty of neorealism",
+     "year": 1984,
+     "cited_by": 708,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1495133523",
+     "title": "How Will Capitalism End?",
+     "year": 2014,
+     "cited_by": 677,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1981362892",
+     "title": "Vision and Method in Historical Sociology",
+     "year": 1984,
+     "cited_by": 668,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2051049084",
+     "title": "The Economics of Ecosystems and Biodiversity: Recent Instances for Debate",
+     "year": 2013,
+     "cited_by": 641,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2442495973",
+     "title": "Summarizing Scientific Articles: Experiments with Relevance and Rhetorical Status",
+     "year": 2002,
+     "cited_by": 636,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2151065489",
+     "title": "Social capital and health: Does egalitarianism matter? A literature review",
+     "year": 2006,
+     "cited_by": 614,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1608615070",
+     "title": "The Second Enclosure Movement and the Construction of the Public Domain",
+     "year": 2003,
+     "cited_by": 609,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2138006524",
+     "title": "After taste: Culture, consumption and theories of practice",
+     "year": 2014,
+     "cited_by": 600,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2114044277",
+     "title": "Payments for ecosystem services and the fatal attraction of win‐win solutions",
+     "year": 2012,
+     "cited_by": 553,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2342655129",
+     "title": "Is there a global environmental justice movement?",
+     "year": 2016,
+     "cited_by": 519,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2609161541",
+     "title": "Coming Full Circle: Why Social and Institutional Dimensions Matter for the Circular Economy",
+     "year": 2017,
+     "cited_by": 505,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2109873055",
+     "title": "Making Sense of Sensemaking in <i>Organization Studies</i>",
+     "year": 2014,
+     "cited_by": 502,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4246812311",
+     "title": "American Journal of Economics and Sociology",
+     "year": 2010,
+     "cited_by": 498,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1590984175",
+     "title": "Replication, falsification, and the crisis of confidence in social psychology",
+     "year": 2015,
+     "cited_by": 491,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1497823852",
+     "title": "Reclaiming the Epistemological Other: Narrative and the Social Constitution of Identity",
+     "year": 1993,
+     "cited_by": 480,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124965590",
+     "title": "Economic Action and Social Structure: the Problem of Embeddedness",
+     "year": 2002,
+     "cited_by": 471,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1755638628",
+     "title": "A Long Goodbye to Bismarck? : The Politics of Welfare Reform in Continental Europe",
+     "year": 2010,
+     "cited_by": 450,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2167693915",
+     "title": "For a Sociological Marxism: The Complementary Convergence of Antonio Gramsci and Karl Polanyi",
+     "year": 2003,
+     "cited_by": 443,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1552572493",
+     "title": "Measuring the immeasurable?",
+     "year": 2008,
+     "cited_by": 436,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2169365388",
+     "title": "Offshore work: Oil, modularity, and the how of capitalism in Equatorial Guinea",
+     "year": 2012,
+     "cited_by": 432,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2411887133",
+     "title": "Soil “Ecosystem” Services and Natural Capital: Critical Appraisal of Research on Uncertain Ground",
+     "year": 2016,
+     "cited_by": 425,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1608025330",
+     "title": "Negative and Positive Integration in the Political Economy of European Welfare States",
+     "year": 1998,
+     "cited_by": 417,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2014529019",
+     "title": "Looking Like a State: Techniques of Persistent Failure in State Capability for Implementation",
+     "year": 2012,
+     "cited_by": 416,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2041834136",
+     "title": "Can society be commodities all the way down? Post-Polanyian reflections on capitalist crisis",
+     "year": 2014,
+     "cited_by": 410,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123751986",
+     "title": "The Second Enclosure Movement and the Construction of the Public Domain",
+     "year": 2017,
+     "cited_by": 404,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2155107911",
+     "title": "Evolution of Social Behavior: Individual and Group Selection",
+     "year": 2002,
+     "cited_by": 403,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2180026002",
+     "title": "Who Invented the “Copenhagen Interpretation”? A Study in Mythology",
+     "year": 2004,
+     "cited_by": 396,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2255041136",
+     "title": "Indigeneity, Capitalism, and the Management of Dispossession",
+     "year": 2010,
+     "cited_by": 384,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3036985664",
+     "title": "Why general artificial intelligence will not be realized",
+     "year": 2020,
+     "cited_by": 383,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W59242865",
+     "title": "Markets and Other Allocation Systems in History: The Challenge of Karl Polanyi.",
+     "year": 1977,
+     "cited_by": 376,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2056538516",
+     "title": "Embodied affectivity: on moving and being moved",
+     "year": 2014,
+     "cited_by": 376,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2249926681",
+     "title": "Crisis, Value, and Hope: Rethinking the Economy",
+     "year": 2014,
+     "cited_by": 374,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2158146441",
+     "title": "Scientific Communities or Transepistemic Arenas of Research? A Critique of Quasi-Economic Models of Science",
+     "year": 1982,
+     "cited_by": 370,
+     "in_corpus": false,
+     "axes_hit": []
+    }
+   ]
+  },
+  "schumpeter": {
+   "query": "Joseph Schumpeter",
+   "n_results": 50,
+   "n_overlap_with_corpus": 15,
+   "items": [
+    {
+     "oa_id": "W2095561982",
+     "title": "Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms",
+     "year": 1990,
+     "cited_by": 8293,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2147111138",
+     "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+     "year": 2000,
+     "cited_by": 7615,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123548166",
+     "title": "Financial Dependence and Growth",
+     "year": 1996,
+     "cited_by": 6779,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2087712586",
+     "title": "Open for innovation: the role of openness in explaining innovation performance among U.K. manufacturing firms",
+     "year": 2005,
+     "cited_by": 6166,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1992109042",
+     "title": "Economic Reform and the Process of Global Integration",
+     "year": 1995,
+     "cited_by": 4916,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2061798179",
+     "title": "History of Economic Analysis, <i>by Joseph A. Schumpeter, Elizabeth Boody Schumpeter</i>",
+     "year": 1954,
+     "cited_by": 3851,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4299530062",
+     "title": "Capitalism, Socialism, and Democracy.",
+     "year": 1951,
+     "cited_by": 3613,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2029792205",
+     "title": "The Effect of Credit Market Competition on Lending Relationships",
+     "year": 1995,
+     "cited_by": 3350,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2034250651",
+     "title": "An Estimated Model of Entrepreneurial Choice under Liquidity Constraints",
+     "year": 1989,
+     "cited_by": 3335,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3122398539",
+     "title": "Stock Markets, Banks, and Economic Growth",
+     "year": 1996,
+     "cited_by": 3182,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4399863396",
+     "title": "Misteri i Kapitalit",
+     "year": 2000,
+     "cited_by": 1901,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2116184502",
+     "title": "Entry regulation as a barrier to entrepreneurship",
+     "year": 2006,
+     "cited_by": 1700,
+     "in_corpus": false,
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4229772028",
+     "title": "The Modern Industrial Revolution, Exit, and the Failure of Internal Control Systems",
+     "year": 1993,
+     "cited_by": 1698,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2113844427",
+     "title": "Finance and Growth: Theory and Evidence",
+     "year": 2004,
+     "cited_by": 1678,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1982579431",
+     "title": "The second image reversed: the international sources of domestic politics",
+     "year": 1978,
+     "cited_by": 1583,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2097273566",
+     "title": "Strategy research: governance and competence perspectives",
+     "year": 1999,
+     "cited_by": 1573,
+     "in_corpus": true,
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2992481041",
+     "title": "Entrepreneurship, Social Mobility, and Income Redistribution in South India",
+     "year": 2016,
+     "cited_by": 1537,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2151945084",
+     "title": "Endogenous Innovation in the Theory of Growth",
+     "year": 1994,
+     "cited_by": 1513,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3125767605",
+     "title": "Distance to Frontier, Selection, and Economic Growth",
+     "year": 2006,
+     "cited_by": 1468,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2027882651",
+     "title": "Federalism, Chinese Style: The Political Basis for Economic Success in China",
+     "year": 1995,
+     "cited_by": 1339,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1968920975",
+     "title": "Deliberative Democracy or Agonistic Pluralism?",
+     "year": 2026,
+     "cited_by": 1300,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2122642665",
+     "title": "INNOVATION IN THE PUBLIC SECTOR: A SYSTEMATIC REVIEW AND FUTURE RESEARCH AGENDA",
+     "year": 2015,
+     "cited_by": 1151,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3022550709",
+     "title": "Determinants of Economic Growth: A Cross-Country Empirical Study",
+     "year": 1996,
+     "cited_by": 1134,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2129862350",
+     "title": "Creative destruction or mere niche support? Innovation policy mixes for sustainability transitions",
+     "year": 2015,
+     "cited_by": 1119,
+     "in_corpus": true,
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4300899703",
+     "title": "History of Economic Analysis",
+     "year": 2006,
+     "cited_by": 1010,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2158135958",
+     "title": "The Social Structure of Entrepreneurial Activity: Geographic Concentration of Footwear Production in the United States, ",
+     "year": 2000,
+     "cited_by": 1007,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2132507817",
+     "title": "The Purchasing Power Parity Debate",
+     "year": 2004,
+     "cited_by": 1003,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2032654443",
+     "title": "Technological revolutions and techno-economic paradigms",
+     "year": 2009,
+     "cited_by": 999,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3081261125",
+     "title": "Consumers and Artificial Intelligence: An Experiential Perspective",
+     "year": 2020,
+     "cited_by": 983,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2134338974",
+     "title": "What's New about the New Economy? Sources of Growth in the Managed and Entrepreneurial Economies",
+     "year": 2001,
+     "cited_by": 980,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2065401570",
+     "title": "Recombinant Property in East European Capitalism",
+     "year": 1996,
+     "cited_by": 977,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1968403192",
+     "title": "Wheat From Chaff: Meta-Analysis As Quantitative Literature Review",
+     "year": 2001,
+     "cited_by": 961,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1987673617",
+     "title": "The Classical Liberals Were Right: Democracy, Interdependence, and Conflict, 1950-1985",
+     "year": 1997,
+     "cited_by": 950,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2799391587",
+     "title": "Capitalism, Socialism, and Democracy, <i>by Joseph A. Schumpeter</i>",
+     "year": 1943,
+     "cited_by": 920,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2133207356",
+     "title": "The Effect of Financial Development on Convergence: Theory and Evidence*",
+     "year": 2005,
+     "cited_by": 895,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2892402642",
+     "title": "World Development Report 2019: The Changing Nature of Work",
+     "year": 2018,
+     "cited_by": 857,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2031847699",
+     "title": "Organizational Capabilities and the Economic History of the Industrial Enterprise",
+     "year": 1992,
+     "cited_by": 845,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1552718068",
+     "title": "Good Capitalism, Bad Capitalism, and the Economics of Growth and Prosperity",
+     "year": 2007,
+     "cited_by": 841,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3022248576",
+     "title": "Large Shareholder Diversification and Corporate Risk-Taking",
+     "year": 2011,
+     "cited_by": 829,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2057207144",
+     "title": "Perspectives on Growth Theory",
+     "year": 1994,
+     "cited_by": 805,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2060772697",
+     "title": "National innovation systems, capabilities and economic development",
+     "year": 2008,
+     "cited_by": 792,
+     "in_corpus": true,
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W3203472537",
+     "title": "Embedded and defective democracies",
+     "year": 2004,
+     "cited_by": 771,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2167042016",
+     "title": "Where Ricardo and Mill Rebut and Confirm Arguments of Mainstream Economists Supporting Globalization",
+     "year": 2004,
+     "cited_by": 732,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1972054141",
+     "title": "Why Do Developing Countries Tax So Little?",
+     "year": 2014,
+     "cited_by": 732,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2049274424",
+     "title": "Who profits from innovation in global value chains?: a study of the iPod and notebook PCs",
+     "year": 2009,
+     "cited_by": 717,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2159138758",
+     "title": "Does self-employment reduce unemployment?",
+     "year": 2008,
+     "cited_by": 709,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2168845291",
+     "title": "Appropriate Growth Policy: A Unifying Framework",
+     "year": 2006,
+     "cited_by": 702,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1998681109",
+     "title": "Credit Booms Gone Bust: Monetary Policy, Leverage Cycles and Financial Crises, 1870-2008",
+     "year": 2009,
+     "cited_by": 700,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2789887285",
+     "title": "Dynamic capabilities as (workable) management systems theory",
+     "year": 2018,
+     "cited_by": 661,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2164642877",
+     "title": "Why does democracy need education?",
+     "year": 2007,
+     "cited_by": 658,
+     "in_corpus": false,
+     "axes_hit": []
+    }
+   ]
+  },
+  "hirschman": {
+   "query": "Albert Hirschman",
+   "n_results": 50,
+   "n_overlap_with_corpus": 9,
+   "items": [
+    {
+     "oa_id": "W2136850043",
+     "title": "An automated method for finding molecular complexes in large protein interaction networks",
+     "year": 2003,
+     "cited_by": 6265,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1497789111",
+     "title": "Market value and patent citations",
+     "year": 2005,
+     "cited_by": 3330,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2010189956",
+     "title": "Rural development : putting the last first",
+     "year": 1983,
+     "cited_by": 2625,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2113613985",
+     "title": "STRING 8--a global view on proteins and their functional interactions in 630 organisms",
+     "year": 2008,
+     "cited_by": 2532,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2123431441",
+     "title": "New Public Management Is Dead--Long Live Digital-Era Governance",
+     "year": 2005,
+     "cited_by": 2429,
+     "in_corpus": true,
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W4231640998",
+     "title": "The Passions and the Interests Political Arguments for Capitalism before Its Triumph",
+     "year": null,
+     "cited_by": 2426,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117702238",
+     "title": "Power in International Politics",
+     "year": 2005,
+     "cited_by": 1724,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4229772028",
+     "title": "The Modern Industrial Revolution, Exit, and the Failure of Internal Control Systems",
+     "year": 1993,
+     "cited_by": 1698,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1982579431",
+     "title": "The second image reversed: the international sources of domestic politics",
+     "year": 1978,
+     "cited_by": 1583,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2108547887",
+     "title": "THE CASE FOR REGIONAL DEVELOPMENT INTERVENTION: PLACE‐BASED VERSUS PLACE‐NEUTRAL APPROACHES*",
+     "year": 2012,
+     "cited_by": 1488,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2104251546",
+     "title": "Bargaining in the Shadow of the Law: The Case of Divorce",
+     "year": 1979,
+     "cited_by": 1480,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2100062546",
+     "title": "The Passions and the Interests: Political Arguments for Capitalism before Its Triumph.",
+     "year": 1979,
+     "cited_by": 1402,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2096517822",
+     "title": "Missing in Action: Teacher and Health Worker Absence in Developing Countries",
+     "year": 2006,
+     "cited_by": 1265,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4241576146",
+     "title": "Organizations and Markets",
+     "year": 1991,
+     "cited_by": 1202,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2112501260",
+     "title": "Reappraising the Eclectic Paradigm in an Age of Alliance Capitalism",
+     "year": 1995,
+     "cited_by": 1166,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2139460564",
+     "title": "Varieties of Capitalism and Institutional Complementarities in the Political Economy: An Empirical Analysis",
+     "year": 2009,
+     "cited_by": 1105,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2134338974",
+     "title": "What's New about the New Economy? Sources of Growth in the Managed and Entrepreneurial Economies",
+     "year": 2001,
+     "cited_by": 980,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2065401570",
+     "title": "Recombinant Property in East European Capitalism",
+     "year": 1996,
+     "cited_by": 977,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1975345058",
+     "title": "The Political Power of Economic Ideas: Keynesianism Across Nations.",
+     "year": 1990,
+     "cited_by": 894,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1524486083",
+     "title": "Procrastination and Obedience",
+     "year": 1991,
+     "cited_by": 867,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2123171788",
+     "title": "The Sequence Ontology: a tool for the unification of genome annotations",
+     "year": 2005,
+     "cited_by": 839,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2100784037",
+     "title": "How the Cases You Choose Affect the Answers You Get: Selection Bias in Comparative Politics",
+     "year": 1990,
+     "cited_by": 836,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2168905447",
+     "title": "A survey of current work in biomedical text mining",
+     "year": 2005,
+     "cited_by": 771,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1982813377",
+     "title": "An analog of the minimax theorem for vector payoffs",
+     "year": 1956,
+     "cited_by": 757,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2329283878",
+     "title": "National Power and the Structure of Foreign Trade, <i>by Albert O. Hirschman</i>",
+     "year": 1946,
+     "cited_by": 742,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2128888925",
+     "title": "The Role of Optimum Stimulation Level in Exploratory Consumer Behavior",
+     "year": 1992,
+     "cited_by": 709,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2159141474",
+     "title": "The Superiority of Economists",
+     "year": 2015,
+     "cited_by": 685,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1495133523",
+     "title": "How Will Capitalism End?",
+     "year": 2014,
+     "cited_by": 677,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2081245992",
+     "title": "Transitional Care Interventions to Prevent Readmissions for Persons With Heart Failure",
+     "year": 2014,
+     "cited_by": 676,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2095666781",
+     "title": "Trust, Contract and Relationship Development",
+     "year": 2005,
+     "cited_by": 671,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2138003801",
+     "title": "Protein complex prediction via cost-based clustering",
+     "year": 2004,
+     "cited_by": 668,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3121441566",
+     "title": "Government Failures in Development",
+     "year": 1990,
+     "cited_by": 657,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2024960572",
+     "title": "Bringing Society In: Toward a Theory of Public-Service Motivation",
+     "year": 2000,
+     "cited_by": 642,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2057843669",
+     "title": "Commodity Prices and Growth in Africa",
+     "year": 1999,
+     "cited_by": 628,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3187097875",
+     "title": "Contested multilateralism",
+     "year": 2014,
+     "cited_by": 609,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2099380913",
+     "title": "Discovery of meaningful associations in genomic data using partial correlation coefficients",
+     "year": 2004,
+     "cited_by": 561,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2102803219",
+     "title": "Generalizations on consumer innovation adoption: A meta-analysis on drivers of intention and behavior",
+     "year": 2011,
+     "cited_by": 553,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2124533460",
+     "title": "Efficient sampling algorithm for estimating subgraph concentrations and detecting network motifs",
+     "year": 2004,
+     "cited_by": 547,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2052416029",
+     "title": "The Revenge of Homo Economicus: Contested Exchange and the Revival of Political Economy",
+     "year": 1993,
+     "cited_by": 538,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2126833522",
+     "title": "Imagined futures: fictional expectations in the economy",
+     "year": 2013,
+     "cited_by": 512,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3103319283",
+     "title": "Towards Transparency by Design for Artificial Intelligence",
+     "year": 2020,
+     "cited_by": 505,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W317417172",
+     "title": "Web 2.0: New Challenges for the Study of E-Democracy in an Era of Informational Exuberance",
+     "year": 2011,
+     "cited_by": 485,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2018779715",
+     "title": "Development Projects Observed",
+     "year": 1967,
+     "cited_by": 481,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2099681651",
+     "title": "Escaping the Resource Curse",
+     "year": 2006,
+     "cited_by": 472,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3124965590",
+     "title": "Economic Action and Social Structure: the Problem of Embeddedness",
+     "year": 2002,
+     "cited_by": 471,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2188737930",
+     "title": "The Logic of Clientelism in Argentina: An Ethnographic Account",
+     "year": 2000,
+     "cited_by": 463,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2588946958",
+     "title": "Economic theory and underdeveloped regions",
+     "year": 2017,
+     "cited_by": 455,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2034343613",
+     "title": "Societal Accountability in Latin America",
+     "year": 2000,
+     "cited_by": 453,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2031328405",
+     "title": "Environmental NGOs and Institutional Dynamics in China",
+     "year": 2005,
+     "cited_by": 433,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3045639497",
+     "title": "Consumer Behaviour during Crises: Preliminary Research on How Coronavirus Has Manifested Consumer Panic Buying, Herd Men",
+     "year": 2020,
+     "cited_by": 413,
+     "in_corpus": false,
+     "axes_hit": []
+    }
+   ]
+  },
+  "complexity_economics": {
+   "query": "complexity economics",
+   "n_results": 50,
+   "n_overlap_with_corpus": 10,
+   "items": [
+    {
+     "oa_id": "W4239510810",
+     "title": "Support-vector networks",
+     "year": 1995,
+     "cited_by": 40316,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2119821739",
+     "title": "Support-Vector Networks",
+     "year": 1995,
+     "cited_by": 32714,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3022903699",
+     "title": "The PRISMA Statement for Reporting Systematic Reviews and Meta-Analyses of Studies That Evaluate Health Care Interventio",
+     "year": 2009,
+     "cited_by": 27836,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2089402107",
+     "title": "Dynamic capabilities: what are they?",
+     "year": 2000,
+     "cited_by": 14377,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2912654919",
+     "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 354 diseases and injuries for ",
+     "year": 2018,
+     "cited_by": 13972,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2751884637",
+     "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for ",
+     "year": 2017,
+     "cited_by": 13513,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2110052313",
+     "title": "A comparative risk assessment of burden of disease and injury attributable to 67 risk factors and risk factor clusters i",
+     "year": 2012,
+     "cited_by": 11979,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2111619626",
+     "title": "Internet of Things (IoT): A vision, architectural elements, and future directions",
+     "year": 2013,
+     "cited_by": 11921,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2063978378",
+     "title": "Least angle regression",
+     "year": 2004,
+     "cited_by": 9476,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3175417087",
+     "title": "Regression Modeling Strategies",
+     "year": 2001,
+     "cited_by": 9260,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2107726111",
+     "title": "Reinforcement Learning: A Survey",
+     "year": 1996,
+     "cited_by": 8797,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2981731882",
+     "title": "Explainable Artificial Intelligence (XAI): Concepts, taxonomies, opportunities and challenges toward responsible AI",
+     "year": 2019,
+     "cited_by": 8786,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2116810060",
+     "title": "Strengthening the Reporting of Observational Studies in Epidemiology (STROBE): Explanation and Elaboration",
+     "year": 2007,
+     "cited_by": 8359,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2095561982",
+     "title": "Architectural Innovation: The Reconfiguration of Existing Product Technologies and the Failure of Established Firms",
+     "year": 1990,
+     "cited_by": 8293,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2054692642",
+     "title": "What Will 5G Be?",
+     "year": 2014,
+     "cited_by": 8153,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1991308688",
+     "title": "The representative concentration pathways: an overview",
+     "year": 2011,
+     "cited_by": 7938,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3210383951",
+     "title": "Partial Least Squares Structural Equation Modeling (PLS-SEM) Using R",
+     "year": 2021,
+     "cited_by": 7909,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2103317434",
+     "title": "EFFECTS OF BIODIVERSITY ON ECOSYSTEM FUNCTIONING: A CONSENSUS OF CURRENT KNOWLEDGE",
+     "year": 2005,
+     "cited_by": 7901,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1617145133",
+     "title": "Global, regional, and national comparative risk assessment of 79 behavioural, environmental and occupational, and metabo",
+     "year": 2016,
+     "cited_by": 7781,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2031753087",
+     "title": "Fractional Brownian Motions, Fractional Noises and Applications",
+     "year": 1968,
+     "cited_by": 7669,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2147111138",
+     "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+     "year": 2000,
+     "cited_by": 7615,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3197233575",
+     "title": "Global, regional, and national burden of stroke and its risk factors, 1990–2019: a systematic analysis for the Global Bu",
+     "year": 2021,
+     "cited_by": 7459,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2527824850",
+     "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 310 diseases and injuries, 199",
+     "year": 2016,
+     "cited_by": 7369,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2111030512",
+     "title": "An introduction to cybernetics",
+     "year": 1956,
+     "cited_by": 7232,
+     "in_corpus": false,
+     "axes_hit": [
+      "Cyb"
+     ]
+    },
+    {
+     "oa_id": "W2120079020",
+     "title": "Evaluating the public health impact of health promotion interventions: the RE-AIM framework.",
+     "year": 1999,
+     "cited_by": 7193,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2111628838",
+     "title": "Analyzing the Past to Prepare for the Future: Writing a Literature Review",
+     "year": 2002,
+     "cited_by": 7064,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2105414963",
+     "title": "Planetary Boundaries: Exploring the Safe Operating Space for Humanity",
+     "year": 2009,
+     "cited_by": 6988,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2322480672",
+     "title": "The Problem of Pattern and Scale in Ecology: The Robert H. MacArthur Award Lecture",
+     "year": 1992,
+     "cited_by": 6731,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2099330597",
+     "title": "Technological transitions as evolutionary reconfiguration processes: a multi-level perspective and a case-study",
+     "year": 2002,
+     "cited_by": 6613,
+     "in_corpus": true,
+     "axes_hit": [
+      "PolInd"
+     ]
+    },
+    {
+     "oa_id": "W2136039427",
+     "title": "The governance of global value chains",
+     "year": 2005,
+     "cited_by": 6606,
+     "in_corpus": true,
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W2098082628",
+     "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 301 acute and chronic diseases",
+     "year": 2015,
+     "cited_by": 6490,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2085001923",
+     "title": "Process evaluation of complex interventions: Medical Research Council guidance",
+     "year": 2015,
+     "cited_by": 6438,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4298826872",
+     "title": "MICE: Multivariate Imputation by Chained Equations in R",
+     "year": 2010,
+     "cited_by": 6246,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2087712586",
+     "title": "Open for innovation: the role of openness in explaining innovation performance among U.K. manufacturing firms",
+     "year": 2005,
+     "cited_by": 6166,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2130509491",
+     "title": "Changes in the global value of ecosystem services",
+     "year": 2014,
+     "cited_by": 6053,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3177318507",
+     "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+     "year": 2021,
+     "cited_by": 5920,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1989388297",
+     "title": "Rational choice and the structure of the environment.",
+     "year": 1956,
+     "cited_by": 5869,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2530409471",
+     "title": "Job demands–resources theory: Taking stock and looking forward.",
+     "year": 2016,
+     "cited_by": 5864,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242318543",
+     "title": "Antibiotic resistance threats in the United States, 2019",
+     "year": 2019,
+     "cited_by": 5859,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4248110397",
+     "title": "Women and Human Development",
+     "year": 2000,
+     "cited_by": 5852,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1999918735",
+     "title": "A Simple Model of Capital Market Equilibrium with Incomplete Information",
+     "year": 1987,
+     "cited_by": 5766,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2928467655",
+     "title": "Health effects of dietary risks in 195 countries, 1990–2017: a systematic analysis for the Global Burden of Disease Stud",
+     "year": 2019,
+     "cited_by": 5696,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2754967293",
+     "title": "Global, regional, and national burden of neurological disorders, 1990–2016: a systematic analysis for the Global Burden ",
+     "year": 2019,
+     "cited_by": 5651,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2121005211",
+     "title": "Economics and Identity*",
+     "year": 2000,
+     "cited_by": 5576,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2155163959",
+     "title": "Matching Methods for Causal Inference: A Review and a Look Forward",
+     "year": 2010,
+     "cited_by": 5320,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2513922847",
+     "title": "Climate Change 2014 - Synthesis Report",
+     "year": 2015,
+     "cited_by": 5309,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2163278718",
+     "title": "The REporting of studies Conducted using Observational Routinely-collected health Data (RECORD) Statement",
+     "year": 2015,
+     "cited_by": 5177,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3135028703",
+     "title": "Machine Learning: Algorithms, Real-World Applications and Research Directions",
+     "year": 2021,
+     "cited_by": 5042,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3202964273",
+     "title": "Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021",
+     "year": 2021,
+     "cited_by": 4897,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3121385028",
+     "title": "Recent Developments in the Econometrics of Program Evaluation",
+     "year": 2009,
+     "cited_by": 4866,
+     "in_corpus": false,
+     "axes_hit": []
+    }
+   ]
+  },
+  "governmentality": {
+   "query": "governmentality foucault",
+   "n_results": 50,
+   "n_overlap_with_corpus": 3,
+   "items": [
+    {
+     "oa_id": "W133664784",
+     "title": "The Foucault Effect: Studies in Governmentality",
+     "year": 1991,
+     "cited_by": 10145,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1599420887",
+     "title": "Governmentality: power and rule in modern society",
+     "year": 2010,
+     "cited_by": 6248,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1728021200",
+     "title": "Decolonization is not a metaphor",
+     "year": 2012,
+     "cited_by": 4107,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1995453178",
+     "title": "The narrative constitution of identity: A relational and network approach",
+     "year": 1994,
+     "cited_by": 2867,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4243971884",
+     "title": "Beyond “identity”",
+     "year": 2000,
+     "cited_by": 2762,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2132585345",
+     "title": "Rethinking Racism: Toward a Structural Interpretation",
+     "year": 1997,
+     "cited_by": 2707,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W597757997",
+     "title": "The Will to Improve: Governmentality, Development, and the Practice of Politics",
+     "year": 2007,
+     "cited_by": 2468,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3035686316",
+     "title": "Setting the future of digital and social media marketing research: Perspectives and research propositions",
+     "year": 2020,
+     "cited_by": 2407,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1945197361",
+     "title": "Rankings and Reactivity: How Public Measures Recreate Social Worlds",
+     "year": 2007,
+     "cited_by": 2285,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3162006628",
+     "title": "Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed",
+     "year": 1999,
+     "cited_by": 2175,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2013045877",
+     "title": "Dismantling the Divide Between Indigenous and Scientific Knowledge",
+     "year": 1995,
+     "cited_by": 2119,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2100153433",
+     "title": "Postfeminist media culture",
+     "year": 2007,
+     "cited_by": 2088,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1779680771",
+     "title": "Datafication, dataism and dataveillance: Big Data between scientific paradigm and ideology",
+     "year": 2014,
+     "cited_by": 2088,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2142889348",
+     "title": "The Politics, Power, and Pathologies of International Organizations",
+     "year": 1999,
+     "cited_by": 2078,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1996322800",
+     "title": "'The birth of bio-politics': Michel Foucault's lecture at the Collège de France on neo-liberal governmentality",
+     "year": 2001,
+     "cited_by": 1998,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2490996775",
+     "title": "The Birth of Biopolitics",
+     "year": 2008,
+     "cited_by": 1883,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2104357911",
+     "title": "The Theory and Practice of Online Learning",
+     "year": 2008,
+     "cited_by": 1824,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4247155454",
+     "title": "Artificial Intelligence and Management: The Automation–Augmentation Paradox",
+     "year": 2021,
+     "cited_by": 1764,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117702238",
+     "title": "Power in International Politics",
+     "year": 2005,
+     "cited_by": 1724,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2134317867",
+     "title": "Ontologies, socio-technical transitions (to sustainability), and the multi-level perspective",
+     "year": 2010,
+     "cited_by": 1671,
+     "in_corpus": true,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4245130871",
+     "title": "Foucault and Political Reason: Liberalism, Neo-Liberalism, and Rationalities of Government",
+     "year": 1997,
+     "cited_by": 1643,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2490277392",
+     "title": "Undoing the demos: Neoliberalism’s stealth revolution",
+     "year": 2015,
+     "cited_by": 1616,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4200005433",
+     "title": "International Journal of Design",
+     "year": 2021,
+     "cited_by": 1614,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W230660992",
+     "title": "Identity and Language Learning",
+     "year": 2013,
+     "cited_by": 1603,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1984411180",
+     "title": "Rationality and Power: Democracy in Practice.",
+     "year": 1999,
+     "cited_by": 1539,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4242918116",
+     "title": "Data Feminism",
+     "year": 2020,
+     "cited_by": 1447,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1487145407",
+     "title": "The Foucault effect : studies in governmentality : with two lectures by and an interview with Michel Foucault",
+     "year": 1991,
+     "cited_by": 1425,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W654970580",
+     "title": "The Anthropology of the state: a reader",
+     "year": 2007,
+     "cited_by": 1407,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2193984671",
+     "title": "The sharing economy: A pathway to sustainability or a nightmarish form of neoliberal capitalism?",
+     "year": 2015,
+     "cited_by": 1302,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2036415660",
+     "title": "Ticks and Tickborne Bacterial Diseases in Humans: An Emerging Infectious Threat",
+     "year": 2001,
+     "cited_by": 1255,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2126314759",
+     "title": "Discourse and Institutions",
+     "year": 2004,
+     "cited_by": 1254,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1792840760",
+     "title": "Youth, Identity, and Digital Media",
+     "year": 2007,
+     "cited_by": 1253,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2138991990",
+     "title": "Foucault, Governmentality, and Critique",
+     "year": 2002,
+     "cited_by": 1172,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2159672129",
+     "title": "Ain't I A Woman? Revisiting Intersectionality",
+     "year": 2004,
+     "cited_by": 1132,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1580878179",
+     "title": "&lt;p&gt;&lt;b&gt;Foucault, Michel&lt;/b&gt;. &lt;i&gt;Abnormal: Lectures at the College de France,1974-1975&lt;/i&gt;, ",
+     "year": 2004,
+     "cited_by": 1131,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1894528794",
+     "title": "Foucault, Health and Medicine",
+     "year": 2002,
+     "cited_by": 1116,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2164079995",
+     "title": "International organization: a state of the art on an art of the state",
+     "year": 1986,
+     "cited_by": 1106,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2941496369",
+     "title": "Frameworks for supporting patient and public involvement in research: Systematic review and co‐design pilot",
+     "year": 2019,
+     "cited_by": 1093,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1970017934",
+     "title": "Entrepreneurial learning from failure: An interpretative phenomenological analysis",
+     "year": 2010,
+     "cited_by": 1068,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2049638293",
+     "title": "Media Literacy and the Challenge of New Information and Communication Technologies",
+     "year": 2004,
+     "cited_by": 1051,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2000483576",
+     "title": "Foucault And Political Reason",
+     "year": 2013,
+     "cited_by": 1006,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2093734423",
+     "title": "Articulating Indigenous Identity in Indonesia: Resource Politics and the Tribal Slot",
+     "year": 2000,
+     "cited_by": 1005,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4241533837",
+     "title": "Biopower Today",
+     "year": 2006,
+     "cited_by": 1000,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2136087731",
+     "title": "Practices of assemblage and community forest management",
+     "year": 2007,
+     "cited_by": 893,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2125931397",
+     "title": "What is land? Assembling a resource for global investment",
+     "year": 2014,
+     "cited_by": 889,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1528579282",
+     "title": "Show sold separately: promos, spoilers, and other media paratexts",
+     "year": 2010,
+     "cited_by": 888,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2765155369",
+     "title": "Whose Knowledge, Whose nature? Biodiversity, Conservation, and the Political Ecology of Social Movements",
+     "year": 1998,
+     "cited_by": 884,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2520870635",
+     "title": "Language and Superdiversity",
+     "year": 2015,
+     "cited_by": 884,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3194399577",
+     "title": "Critiques of the circular economy",
+     "year": 2021,
+     "cited_by": 877,
+     "in_corpus": false,
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2117178771",
+     "title": "The High-Frequency Trading Arms Race: Frequent Batch Auctions as a Market Design Response *",
+     "year": 2015,
+     "cited_by": 872,
+     "in_corpus": false,
+     "axes_hit": []
+    }
+   ]
+  }
+ }
+}

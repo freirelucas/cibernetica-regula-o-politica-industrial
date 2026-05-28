@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Balanço metodológico — Cibernética · Regulação · Política Industrial</title>
+<meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css" id="theme">
+<style>
+  :root { --serif: "Source Serif Pro","PT Serif",Georgia,serif;
+          --sans: "Inter",system-ui,sans-serif;
+          --accent: #8b4513; --muted: #666; --rule: #d4d4d4; }
+  .reveal { font-family: var(--serif); font-size: 28px; color: #222; }
+  .reveal section { text-align: left; line-height: 1.55; padding: 0 1em; }
+  .reveal h1, .reveal h2, .reveal h3 {
+    font-family: var(--serif); font-weight: 600;
+    text-transform: none; letter-spacing: -0.01em;
+    color: #1a1a1a; margin-bottom: 0.6em;
+  }
+  .reveal h1 { font-size: 1.7em; }
+  .reveal h2 { font-size: 1.3em; border-bottom: 2px solid var(--accent); padding-bottom: 0.25em; }
+  .reveal h3 { font-size: 1em; color: var(--accent); margin-top: 1.2em; margin-bottom: 0.3em; }
+  .reveal p { margin: 0 0 0.8em; }
+  .reveal .lead { font-size: 1em; }
+  .reveal .muted { color: var(--muted); font-size: 0.85em; }
+  .reveal .footnote { font-size: 0.72em; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 0.5em; margin-top: 1em; font-style: italic; }
+  .reveal ul { margin-left: 1em; }
+  .reveal ul li { margin-bottom: 0.4em; }
+  .reveal code { background: #f4ecd8; padding: 0.05em 0.4em; border-radius: 3px; font-size: 0.9em; font-family: "Source Code Pro", monospace; color: #5a3a14; }
+  .reveal .quote {
+    font-style: italic; color: #555; border-left: 3px solid var(--accent);
+    padding: 0.2em 0 0.2em 1em; margin: 1em 0;
+  }
+  .reveal .what { background: #fafafa; border-left: 3px solid var(--accent); padding: 0.7em 1em; margin: 0.6em 0; }
+  .reveal .what h3 { margin: 0 0 0.3em; font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.05em; }
+  .reveal .num { color: var(--accent); font-weight: 600; font-size: 1.05em; }
+  .reveal section.title { text-align: center; padding-top: 4em; }
+  .reveal section.title h1 { font-size: 2em; margin-bottom: 0.3em; }
+  .reveal section.divider { text-align: center; padding-top: 6em; background: #f4ecd8; }
+  .reveal section.divider h1 { color: var(--accent); font-size: 1.8em; }
+  .reveal section.divider .muted { font-size: 1em; margin-top: 1em; }
+  .reveal table { width: 100%; border-collapse: collapse; margin: 0.6em 0; font-size: 0.85em; }
+  .reveal table th, .reveal table td { padding: 0.4em 0.6em; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+  .reveal table th { background: #f4ecd8; color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<!-- ════════════ APRESENTAÇÃO ════════════ -->
+
+<section class="title">
+  <h1>Cibernética · Regulação · Política Industrial</h1>
+  <p class="muted">Balanço metodológico do mapeamento cienciométrico</p>
+  <p class="lead" style="margin-top: 2em;">Bruno Queiroz · Lucas Freire · Claucia Faganello</p>
+  <p class="muted">IPEA · 2026</p>
+  <p class="footnote" style="margin-top: 3em;">Relatório técnico completo: <code>freirelucas.github.io/cibernetica-regula-o-politica-industrial</code></p>
+</section>
+
+<section>
+  <h2>O que esta apresentação faz</h2>
+  <p>Este deck faz o <strong>balanço dos caminhos metodológicos</strong> percorridos no mapeamento — não só os achados, mas também: <em>o que cada método mede, por que foi escolhido, o que ele revela e o que ele não revela</em>.</p>
+  <p>É deliberadamente sóbrio: cada slide apresenta uma técnica ou um achado central, com a intenção de tornar transparente o conjunto de decisões metodológicas que levaram à conclusão geral.</p>
+  <p>O <strong>achado central</strong> antecipa-se em uma frase: as três tradições (cibernética organizacional, instrumentos de governo e regulação, política industrial) formam silos de citação significativos no plano par-a-par e no plano da ordem superior — silos cuja origem histórica é situada nos anos 1980 e cujas pontes empíricas reais são <em>humanas</em> (autores específicos), não textuais (obras-ponte).</p>
+</section>
+
+<!-- ════════════ PARTE 1 · A PERGUNTA E O OBJETO ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 1</p>
+  <h1>A pergunta e o objeto</h1>
+</section>
+
+<section>
+  <h2>O ponto de partida intelectual</h2>
+  <p>Três tradições intelectuais compartilham um <em>problema comum</em> — como governar um sistema produtivo complexo sob incerteza — mas se desenvolveram em comunidades de citação e vocabulários largamente separados:</p>
+  <ul>
+    <li><strong>Cibernética organizacional</strong> trata da viabilidade de sistemas complexos via mecanismos de retroalimentação e variedade requisita (Beer, Ashby, Espejo, Cybersyn).</li>
+    <li><strong>Instrumentos de governo e regulação</strong> trata dos meios pelos quais o Estado age sobre a sociedade — autoridade, nodalidade, tesouro, organização (Hood, Margetts, Lascoumes).</li>
+    <li><strong>Política industrial</strong> trata da ação estatal deliberada sobre a estrutura produtiva (Rodrik, Mazzucato, Nelson e Winter).</li>
+  </ul>
+  <p>A hipótese de partida: as três tradições <em>deveriam</em> conversar. A pergunta empírica: <strong>elas conversam?</strong> Se sim, onde? Se não, por quê?</p>
+</section>
+
+<section>
+  <h2>Por que cienciometria — e não revisão narrativa</h2>
+  <p>Optamos por uma abordagem cienciométrica em vez de uma revisão narrativa tradicional por três razões metodológicas:</p>
+  <p><strong>Primeiro</strong>, porque a hipótese é <em>estrutural</em>: ela afirma algo sobre os padrões agregados de citação, não sobre o conteúdo das obras. Métodos de rede são adequados ao tipo de pergunta.</p>
+  <p><strong>Segundo</strong>, porque o campo é vasto: três tradições de várias décadas cada uma somam milhares de obras. Uma cienciometria com modelos nulos permite afirmar <em>significância</em> do que se observa, em vez de apenas descrever.</p>
+  <p><strong>Terceiro</strong>, porque o produto final é uma <strong>revisão sistemática</strong> (Rayyan): a cienciometria não substitui essa revisão — ela <em>seleciona o candidato-set</em> a ser revisado, com critérios auditáveis.</p>
+</section>
+
+<!-- ════════════ PARTE 2 · CONSTRUÇÃO DO CORPUS ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 2</p>
+  <h1>Como construímos a evidência</h1>
+</section>
+
+<section>
+  <h2>As obras-semente</h2>
+  <p>O corpus parte de <strong>13 obras-semente</strong> canônicas, escolhidas a priori pela equipe — não inferidas pelo método. As 10 originais (Beer × 3, Ashby, Espejo, Hood × 2, Margetts, Rodrik, Mazzucato) foram complementadas por 3 obras de Oskar Lange (<em>Economic Cybernetics</em>, <em>Economic Theory of Socialism</em>, <em>Wholes and Parts</em>) para recuperar a tradição da cibernética econômica que articula explicitamente os três eixos.</p>
+  <p>Essa escolha é o <strong>vínculo teórico</strong> do estudo: as sementes encarnam a hipótese de que esses autores e obras representam os três eixos. A cienciometria que se segue testa <em>como o campo organizado pela citação responde</em> a essas sementes.</p>
+  <p class="footnote">A lista canônica está documentada no §01 do relatório e em <code>data/scisci_results.json:seeds</code>.</p>
+</section>
+
+<section>
+  <h2>Bola de neve OpenAlex</h2>
+  <p>A partir das 13 sementes, executamos <strong>bola de neve em duas direções</strong> seguindo Wohlin (2014):</p>
+  <ul>
+    <li><strong>Progressiva</strong>: recuperamos trabalhos que <em>citam</em> as sementes.</li>
+    <li><strong>Regressiva</strong>: recuperamos trabalhos que <em>são citados pelas</em> sementes.</li>
+  </ul>
+  <p>O resultado é um corpus inicial de aproximadamente <strong>800 obras</strong>, expandido depois (Fase E) para <strong>13 mil obras com authorships completos</strong> e <strong>16 mil autores únicos</strong> via snowball depth-2.</p>
+  <p>A base é <strong>OpenAlex</strong> — escolha deliberada por ser aberta, gratuita, reprodutível e com cobertura ampla. Não usamos Scopus ou Web of Science, embora a triangulação seja um próximo passo declarado.</p>
+</section>
+
+<section>
+  <h2>Filtro por vocabulário controlado</h2>
+  <p>Cada obra recuperada é classificada em um eixo (cibernética, regulação ou política industrial) por <strong>casamento de vocabulário</strong> em título — listas controladas mantidas em <code>src/build_rayyan.py</code> e <code>src/author_network.py</code> (palavras-chave como <em>viable system</em>, <em>nodality</em>, <em>tools of government</em>, <em>industrial polic</em>, <em>mission-oriented</em>).</p>
+  <p>O filtro é deliberadamente <strong>conservador</strong>: aceitamos sub-classificação para evitar falsos positivos. Obras cujo tema é industrial mas cujo título não exibe o vocabulário ficam sem classificação. É uma escolha epistêmica: preferimos um sinal honesto a um sinal ruidoso.</p>
+  <p class="footnote">A próxima sondagem natural é estender o classificador para <em>OpenAlex concepts</em> ponderados — captaria contribuições temáticas mesmo sem keyword no título.</p>
+</section>
+
+<section>
+  <h2>Limites do corpus que precisamos declarar</h2>
+  <p>O método herda três limitações de cobertura que afetam diretamente a interpretação:</p>
+  <p><strong>Livros clássicos não estão totalmente indexados</strong> em OpenAlex. Para Beer, Ashby, Hood (1983), a base não expõe as listas de obras citadas — a bola de neve regressiva dessas sementes é parcial ou nula.</p>
+  <p><strong>O corpus é majoritariamente anglófono</strong>. A literatura brasileira é tratada num corpus complementar (a revisão de Claucia Faganello sobre política industrial brasileira) que é então cruzado com o corpus global.</p>
+  <p><strong>Não há triangulação multi-base</strong>. OpenAlex é nossa única fonte. Estudos paralelos sobre os mesmos eixos via Scopus ou Web of Science poderiam validar ou refinar os achados.</p>
+</section>
+
+<!-- ════════════ PARTE 3 · MÉTRICAS DE ESTRUTURA ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 3</p>
+  <h1>Métricas de estrutura</h1>
+  <p class="muted">Como o campo se organiza no plano da citação</p>
+</section>
+
+<section>
+  <h2>Cocitação par-a-par</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>Duas obras estão <em>cocitadas</em> quando aparecem juntas na bibliografia de um mesmo trabalho posterior. A força da cocitação cresce com o número de vezes em que isso ocorre. A rede resultante é a estrutura intelectual que <em>o próprio campo desenha ao citar</em>.</p>
+  </div>
+  <div class="what">
+    <h3>Por que aqui</h3>
+    <p>É a métrica mais clássica da cienciometria e a que melhor responde à pergunta sobre proximidade intelectual: obras frequentemente cocitadas são percebidas como conversando entre si pelos próprios pesquisadores do campo.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>A rede tem <span class="num">600</span> nós e <span class="num">11.209</span> arestas. Os três eixos formam regiões visualmente distintas, com poucas arestas atravessando.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Acoplamento bibliográfico</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>O acoplamento é a métrica dual da cocitação: duas obras estão acopladas quando compartilham referências na sua própria bibliografia. Enquanto cocitação olha para frente (quem cita as duas), acoplamento olha para trás (o que as duas citam).</p>
+  </div>
+  <div class="what">
+    <h3>Por que aqui</h3>
+    <p>O acoplamento revela <em>frentes de pesquisa compartilhadas</em>: obras que estão trabalhando no mesmo terreno conceitual mesmo que ainda não tenham sido frequentemente cocitadas.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>Detectamos <span class="num">54</span> agrupamentos de acoplamento via Leiden. As frentes mais densas são a cibernética organizacional aplicada (cluster Beer/VSM/Espejo) e a frente de policy instruments (cluster Hood/Margetts).</p>
+  </div>
+</section>
+
+<section>
+  <h2>Comunidades Leiden</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>Leiden (Traag, Waltman, van Eck, 2019) é um algoritmo de detecção de comunidades que particiona a rede maximizando a modularidade. Comunidades são grupos de nós densamente conectados internamente e esparsamente conectados entre si.</p>
+  </div>
+  <div class="what">
+    <h3>Por que aqui</h3>
+    <p>Comunidades Leiden são <em>auto-emergentes</em>: não dependem de classificação por vocabulário. Se os três eixos forem reais como recortes estruturais (não só como categorias a priori), Leiden deve refleti-los nas comunidades que detecta.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>As comunidades efetivamente se alinham aos três eixos. Isso é uma validação cruzada da escolha das sementes — o vocabulário a priori e a estrutura de citação concordam.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Centralidade de intermediação (betweenness)</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>A betweenness de um nó é a fração de caminhos mínimos entre todos os pares de outros nós que passam por ele. Nós de alta betweenness são <em>pontes topológicas</em>: a sua remoção desconectaria partes do grafo.</p>
+  </div>
+  <div class="what">
+    <h3>Por que aqui</h3>
+    <p>Se houvesse obras que efetivamente conectam os três silos, a betweenness as identificaria. É a métrica clássica para localizar pontes.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado preliminar</h3>
+    <p>Algumas obras destacam-se por betweenness alta (Mazzucato, Beer Brain, Hood Tools). Mas a interpretação muda radicalmente quando comparamos com modelos nulos — próximo slide.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Modelos nulos para validar pontes</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>Um modelo nulo gera redes aleatórias que preservam propriedades estruturais selecionadas (degree sequence, sizes) e quebra o resto. A Maslov-Sneppen (2002) preserva degrees via swaps aleatórios. Comparamos a betweenness observada com a distribuição obtida em 1000 sorteios.</p>
+  </div>
+  <div class="what">
+    <h3>Por que isso muda tudo</h3>
+    <p>Sem nulo, betweenness alta é descritiva — pode refletir só popularidade. Com nulo, sabemos se a posição de ponte é <em>mais que aleatória</em>. Sem essa pergunta, qualquer hub vira "ponte" por inflação.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>A separação entre os três eixos tem <span class="num">z ≈ 80</span> contra o nulo de configuração. <strong>Nenhuma obra individual atinge significância como conector cross-axis</strong>. As 26 obras que tocam ≥2 eixos por vocabulário são estruturalmente <em>satélites</em>, não pontes.</p>
+  </div>
+</section>
+
+<!-- ════════════ PARTE 4 · ORDEM SUPERIOR ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 4</p>
+  <h1>Estrutura de ordem superior</h1>
+  <p class="muted">O que a projeção par-a-par esconde</p>
+</section>
+
+<section>
+  <h2>O que é um hipergrafo</h2>
+  <p>Um <strong>grafo simples</strong> conecta nós dois a dois: cada aresta tem exatamente dois extremos. Uma rede de cocitação tradicional é assim — duas obras estão conectadas se foram citadas juntas, e a força da aresta cresce com o número de cocitações.</p>
+  <p>Um <strong>hipergrafo</strong> generaliza essa ideia: cada <em>hiperaresta</em> conecta um número arbitrário de nós (≥ 2). É a estrutura matemática que descreve <em>conjuntos</em> em vez de pares.</p>
+  <div class="what">
+    <h3>Exemplo concreto</h3>
+    <p>Suponha que um trabalho recente cite três obras do núcleo: Beer (1972), Hood (1983) e Rodrik (2004). No grafo par-a-par, isso vira <strong>três arestas</strong>: Beer-Hood, Hood-Rodrik, Beer-Rodrik. Cada par recebe +1 na contagem de cocitação.</p>
+    <p>No hipergrafo, isso vira <strong>uma hiperaresta {Beer, Hood, Rodrik}</strong> de tamanho 3. A informação preservada é que essas três obras foram lidas <em>juntas pelo mesmo leitor</em> — não que duas a duas elas dialogaram historicamente.</p>
+    <p>É uma diferença sutil mas importante: o par-a-par achata grupos em pares, dissolvendo a evidência de que um conjunto inteiro foi mobilizado em ato. O hipergrafo preserva essa multiplicidade.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Por que o hipergrafo importa para nossa pergunta</h2>
+  <p>A pergunta de fundo — <em>as três tradições conversam?</em> — tem duas leituras estruturais distintas, e cada uma corresponde a um nível diferente de análise.</p>
+  <p><strong>Plano par-a-par</strong>. Pergunta: existem obras que ligam significativamente os silos? Resposta (já vista): nenhuma. As 26 obras que tocam ≥ 2 eixos por vocabulário são estruturalmente satélites, não pontes.</p>
+  <p><strong>Plano de ordem superior</strong>. Pergunta diferente: existem <em>leitores</em> cuja própria bibliografia mistura eixos? Cada citante contribui uma hiperaresta. Se hiperarestas trans-eixo são comuns, há convergência <em>no ato individual de citar</em> que a projeção par-a-par esconde.</p>
+  <p>A projeção par-a-par é uma escolha de dimensionalidade: é mais simples de analisar e quase toda a cienciometria clássica funciona nesse plano. Mas ela <em>perde informação</em>. O hipergrafo é a estrutura nativa antes da projeção.</p>
+  <p class="footnote">Para o framework e implementação, adotamos XGI (Landry et al., 2023) — biblioteca Python aberta para análise de hipergrafos científicos.</p>
+</section>
+
+<section>
+  <h2>Construção do hipergrafo no nosso corpus</h2>
+  <div class="what">
+    <h3>O processo, passo a passo</h3>
+    <p>Para cada um dos <span class="num">1.915</span> citantes únicos das 13 sementes, recuperamos sua bibliografia (lista de referências). Filtramos essa bibliografia ao subconjunto que pertence ao núcleo cocitado do corpus. Esse subconjunto é a <em>hiperaresta</em> daquele citante: o que ele leu do núcleo, em ato.</p>
+  </div>
+  <div class="what">
+    <h3>Algumas decisões metodológicas</h3>
+    <p>Hiperarestas de tamanho 1 são descartadas — um único nó não forma uma aresta. Hiperarestas de tamanho ≥ 2 são preservadas. Não impomos teto superior: algumas bibliografias são muito grandes, e cortar arbitrariamente perderia informação.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado bruto</h3>
+    <p>Obtemos <span class="num">1.341</span> hiperarestas. Delas, <span class="num">482</span> abarcam ≥ 2 eixos — aproximadamente <span class="num">36%</span> de fração trans-eixo. À primeira vista isso parece <em>boa notícia</em>: muito mais convergência do que o esqueleto par-a-par revela. Mas essa leitura é desfeita pelo modelo nulo — próximo slide.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Modelo nulo do hipergrafo</h2>
+  <div class="what">
+    <h3>Stub-shuffle</h3>
+    <p>Para testar significância, executamos um <em>stub-shuffle</em> análogo a Maslov-Sneppen para hipergrafos: preservamos o tamanho de cada hiperaresta e o degree de cada nó, mas trocamos aleatoriamente quais nós entram em quais hiperarestas. Sessenta sorteios.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado contra-intuitivo</h3>
+    <p>A fração trans-eixo esperada sob o nulo é <span class="num">~84%</span>. A fração observada (36%) está <strong>muito abaixo</strong> do que o acaso produziria. O z-score é <span class="num">−50</span>.</p>
+  </div>
+  <div class="what">
+    <h3>Interpretação correta</h3>
+    <p>Em vez de revelar convergência inesperada, o hipergrafo confirma — em outro nível — a hipótese dos silos. <em>Mesmo no ato individual de citar</em>, leitores tendem a permanecer dentro de um eixo. A estrutura é <strong>mais siloed</strong> do que o aleatório. A convergência precisa ser <em>construída</em>: não emerge espontaneamente.</p>
+  </div>
+</section>
+
+<!-- ════════════ PARTE 5 · DUAS REDES, DUAS PERGUNTAS ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 5</p>
+  <h1>Duas redes, duas perguntas</h1>
+  <p class="muted">Por que precisamos da rede de papers e da rede de autores</p>
+</section>
+
+<section>
+  <h2>Rede de papers e rede de autores são leituras complementares</h2>
+  <p>Até aqui descrevemos a estrutura intelectual no plano dos <strong>papers</strong>: o que dialoga com o quê via citação. Essa é a leitura mais comum em cienciometria, e foi onde o achado dos silos pairwise apareceu.</p>
+  <p>Mas existe outra leitura possível, no plano dos <strong>autores</strong>: quem escreve em qual eixo, quem coautoria com quem, quem migra entre tradições ao longo da carreira. A unidade de análise muda — e com ela muda o tipo de ponte que se pode identificar.</p>
+  <div class="what">
+    <h3>Rede de papers</h3>
+    <p>Nós = obras. Arestas = cocitação (ou acoplamento, ou citação direta). Responde: <em>que obras dialogam intelectualmente? que clássicos articulam os campos? quais são os pontos de passagem textuais?</em></p>
+  </div>
+  <div class="what">
+    <h3>Rede de autores</h3>
+    <p>Nós = pessoas. Arestas = coautoria. Responde: <em>que pessoas atravessam fronteiras na prática? quais são os tradutores institucionais reais? onde estão as pontes humanas — não as pontes textuais?</em></p>
+  </div>
+</section>
+
+<section>
+  <h2>Por que as duas leituras dão respostas diferentes</h2>
+  <p>Os silos pairwise e os silos sociais não são automaticamente correlacionados. Pode haver ricos diálogos intelectuais mediados por autores que nunca se citaram diretamente — ou autores que escrevem nos três eixos em obras separadas que não dialogam entre si.</p>
+  <p>Por isso o estudo executa as duas leituras como <strong>perguntas separadas</strong> e depois cruza os achados:</p>
+  <ul>
+    <li>No plano dos papers: pontes textuais via betweenness, modelos nulos, hiperarestas, higher-order BC.</li>
+    <li>No plano dos autores: cross_axis_score (entropia da distribuição de obras), comunidades de coautoria, brokerage Gould-Fernandez (papéis de mediação).</li>
+  </ul>
+  <p>A consequência é importante para a SR: pontes <em>textuais</em> entram no Rayyan como tags específicas (<code>obra-ponte</code>, <code>higher_order_bridge</code>, <code>ponte de ordem superior</code>). Pontes <em>humanas</em> entram como uma tag distinta (<code>obra de autor-ponte</code>) — obras escritas por autores que demonstravelmente atravessam silos. Triador no Rayyan pode filtrar por uma ou por outra.</p>
+</section>
+
+<section class="divider">
+  <p class="muted">Parte 6</p>
+  <h1>Onde estão as pontes empíricas</h1>
+</section>
+
+<section>
+  <h2>Higher-order betweenness via random walks</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>Generalizamos a centralidade de intermediação para hipergrafos seguindo a tradição Estrada-Vega: executamos <span class="num">1.000</span> caminhadas aleatórias de comprimento 8 no hipergrafo. A cada passo, o nó atual escolhe uma hiperaresta incidente e dela escolhe um próximo nó. Contamos visitas em posições não-extremas.</p>
+  </div>
+  <div class="what">
+    <h3>Por que isso revela pontes que o par-a-par não vê</h3>
+    <p>A betweenness clássica é calculada na projeção par-a-par e portanto ignora a estrutura de hiperaresta. Caminhadas no hipergrafo podem revelar nós centrais à dinâmica de fluxo de informação que estavam invisíveis à projeção.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>O topo do ranking inclui <em>Nelson &amp; Winter — Evolutionary Theory</em> (score 1.00), <em>Beer — Heart of Enterprise</em>, <em>North — Institutions, Institutional Change</em>, <em>David — Clio and QWERTY</em>, <em>Cohen &amp; Levinthal — Absorptive Capacity</em>. Esses clássicos da economia evolucionária e do institucionalismo histórico emergem como pontes de ordem superior reais.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Coautoria + cross_axis_score</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>Para cada autor no corpus, computamos a distribuição de suas obras entre os três eixos. O <em>cross_axis_score</em> é a entropia normalizada dessa distribuição: 1 quando o autor está perfeitamente balanceado nos três eixos, 0 quando está concentrado num único eixo.</p>
+  </div>
+  <div class="what">
+    <h3>Por que isso é diferente de obra-ponte</h3>
+    <p>Obras que tocam ≥ 2 eixos por vocabulário são raras e estatisticamente irrelevantes. Mas <em>autores</em> podem ter trajetórias que atravessam tradições — escrevem em eixos diferentes ao longo da carreira. A unidade de análise é a pessoa, não a obra individual.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>Sobre os <span class="num">16.105</span> autores únicos do corpus expandido, os nomes que emergem com score alto são <strong>tradutores institucionais reais</strong>: Domenico Mario Nuti (coautor de Lange em <em>Economic Cybernetics</em>), Ángela Espinosa (colaboradora de Espejo no MSV), Kenneth Boulding, Peter John (coautor de Hood), Raúl Espejo.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Brokerage Gould-Fernandez</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>Gould e Fernandez (1989) classificam papéis de intermediação em tripletes A–B–C, onde B é o intermediário e A e C são seus coautores não-coautores entre si. Os papéis são definidos pelo grupo (eixo primário) de cada um: <em>coordinator</em> (todos no mesmo grupo), <em>gatekeeper</em> (B traz info para o grupo), <em>representative</em> (B leva info para fora), <em>liaison</em> (entre dois grupos externos), <em>itinerant</em> (através de três grupos).</p>
+  </div>
+  <div class="what">
+    <h3>Por que isso aprofunda o achado</h3>
+    <p>Coautoria por si só conta vínculos. Brokerage <em>caracteriza</em> esses vínculos: distingue silos sociais densos (coordinator) de pontes sociais reais (liaison, itinerant).</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>Sobre 14.012 autores com coautor, encontramos <span class="num">5.806</span> tripletes coordinator (intra-eixo) contra <span class="num">645</span> tripletes cross-axis (gatekeeper + representative + liaison + itinerant). A razão é de <span class="num">9 para 1</span>. O silo é também social. Os poucos brokers cross-axis (Costanza, Espejo, Cars Hommes, Florian Kern, Boulding) são figuras identificáveis.</p>
+  </div>
+</section>
+
+<!-- ════════════ PARTE 7 · TRABALHOS FUNDANTES ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 7</p>
+  <h1>Trabalhos fundantes da abordagem</h1>
+  <p class="muted">Lineage metodológica e código aberto</p>
+</section>
+
+<section>
+  <h2>A literatura de redes de ordem superior</h2>
+  <p>A passagem de redes par-a-par para redes de ordem superior é um movimento recente mas consolidado na física e na ciência da complexidade. Três referências organizam o terreno:</p>
+  <div class="what">
+    <h3>Battiston et al. (2020) — Physics Reports</h3>
+    <p><em>Networks beyond pairwise interactions: structure and dynamics.</em> Revisão de referência sobre quando interações coletivas (não-pairwise) importam estruturalmente. Argumenta que a projeção par-a-par é informacionalmente lossy e propõe um vocabulário unificado para redes de ordem superior.</p>
+  </div>
+  <div class="what">
+    <h3>Boccaletti et al. (2014) — Physics Reports</h3>
+    <p><em>The structure and dynamics of multilayer networks.</em> Estabelece o framework geral para redes onde a unidade é mais rica que um par. Antecedente direto da literatura sobre hipergrafos como objetos científicos.</p>
+  </div>
+  <div class="what">
+    <h3>Estrada &amp; Vega (2020)</h3>
+    <p>Generaliza medidas clássicas (centralidade, intermediação) para hipergrafos. É a referência matemática para a nossa implementação de higher-order betweenness via random walks.</p>
+  </div>
+</section>
+
+<section>
+  <h2>XGI — a biblioteca Python que usamos</h2>
+  <div class="what">
+    <h3>Landry et al. (2023)</h3>
+    <p><em>XGI: A Python package for higher-order interaction networks</em>, Journal of Open Source Software. Implementa a estrutura de hipergrafo, geradores de redes nulas, métricas de centralidade e visualizações. É a biblioteca padrão de fato para análise empírica de hipergrafos.</p>
+    <p>Repositório: <code>github.com/xgi-org/xgi</code></p>
+  </div>
+  <div class="what">
+    <h3>O que XGI nos dá</h3>
+    <p>A estrutura de dados <code>xgi.Hypergraph</code>, geradores randômicos preservando degrees e sizes (necessários para os nossos modelos nulos), e os algoritmos de detecção de comunidades em ordem superior. Usamos XGI em <code>src/cocitation_hypergraph.py</code> para construir o hipergrafo a partir do cache OpenAlex.</p>
+  </div>
+  <div class="what">
+    <h3>Maslov &amp; Sneppen (2002) — análogo pairwise</h3>
+    <p>Para o nulo do hipergrafo, adaptamos o procedimento clássico de Maslov-Sneppen (preservar degrees via swaps) para hiperarestas via stub-shuffle. A referência original é sobre redes de proteínas, mas o procedimento é estatístico-geral.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Outras técnicas com suas referências fundadoras</h2>
+  <table>
+    <tr><th>Técnica</th><th>Referência fundadora</th></tr>
+    <tr><td>Comunidades Leiden</td><td>Traag, Waltman, van Eck (2019)</td></tr>
+    <tr><td>Modelo nulo de configuração</td><td>Newman (2003), com extensão por Maslov &amp; Sneppen (2002)</td></tr>
+    <tr><td>Centralidade de intermediação</td><td>Freeman (1977), algoritmo eficiente de Brandes (2001)</td></tr>
+    <tr><td>Rajadas de citação</td><td>Kleinberg (2003) — <em>Bursty and hierarchical structure in streams</em></td></tr>
+    <tr><td>Belas adormecidas</td><td>Ke, Ferrara, Radicchi, Flammini (2015) — <em>Defining and identifying sleeping beauties in science</em></td></tr>
+    <tr><td>Brokerage Gould-Fernandez</td><td>Gould &amp; Fernandez (1989) — <em>Structures of mediation</em></td></tr>
+    <tr><td>Coautoria e ciência da ciência</td><td>Zajdela et al. (2022) sobre catalisar colaboração; Wuchty, Jones, Uzzi (2007)</td></tr>
+    <tr><td>Snowball sampling em SR</td><td>Wohlin (2014) — <em>Guidelines for snowballing</em></td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Nosso código aberto</h2>
+  <div class="what">
+    <h3>Repositório</h3>
+    <p><code>github.com/freirelucas/cibernetica-regula-o-politica-industrial</code></p>
+  </div>
+  <div class="what">
+    <h3>Pipeline reproduzível</h3>
+    <p>O cache de consultas OpenAlex (<code>data/oa_cache/</code>) é versionado no próprio repositório — mais de 1.600 arquivos gzip que tornam toda análise replicável offline. Tests em <code>tests/</code> validam estrutura dos JSONs e prosa. CI em GitHub Actions roda em cada push.</p>
+  </div>
+  <div class="what">
+    <h3>Scripts principais</h3>
+    <ul>
+      <li><code>src/cocitation_hypergraph.py</code> — construção do hipergrafo + null model</li>
+      <li><code>src/higher_order_betweenness.py</code> — BC para hipergrafos via random walks</li>
+      <li><code>src/author_network.py</code> — rede de autores + cross_axis_score</li>
+      <li><code>src/brokerage_roles.py</code> — Gould-Fernandez sobre coauthor graph</li>
+      <li><code>src/temporal_cocitation.py</code> — longue-durée por década</li>
+      <li><code>src/build_rayyan.py</code> — consolidação multi-tag para revisão sistemática</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════════════ PARTE 8 · DIMENSÃO TEMPORAL ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 8</p>
+  <h1>Dimensão temporal</h1>
+</section>
+
+<section>
+  <h2>Longue-durée — quando os silos se formaram</h2>
+  <div class="what">
+    <h3>O que faz</h3>
+    <p>Em vez de tratar o corpus como sincrônico, particionamos a rede de cocitação por décadas (1970s, 80s, 90s, 2000s, 2010s) e olhamos como a fração intra-eixo evolui. Trata-se de uma análise de longue-durée braudeliana aplicada à estrutura intelectual.</p>
+  </div>
+  <div class="what">
+    <h3>Por que isso é importante</h3>
+    <p>Se os silos sempre estiveram lá, eles são naturais ao campo. Se foram construídos historicamente, são <em>reparáveis</em>. A distinção tem consequências práticas: políticas de aproximação intelectual fazem sentido se os silos têm uma origem datável.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>A fração intra-eixo evolui de <span class="num">74%</span> nos 1970s para <span class="num">83%</span> nos 1980s, <span class="num">89%</span> nos 1990s e <span class="num">94%</span> nos 2000s. A <strong>cristalização ocorre nos anos 1980</strong> — exatamente quando o Cybersyn é destruído, Beer publica <em>Heart of Enterprise</em> e Hood publica <em>Tools of Government</em>, sem que esses três fluxos se cruzem.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Rajadas de citação (Kleinberg)</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>O algoritmo de Kleinberg (2003) modela cada referência como um automato de estados: períodos de citação "normal" e períodos de "burst" (rajada). Uma rajada é um intervalo de tempo em que a taxa de citação dispara acima do padrão histórico.</p>
+  </div>
+  <div class="what">
+    <h3>Por que essa métrica é tricky</h3>
+    <p>O Kleinberg cru produz muitas rajadas — quase qualquer obra com vida longa tem ao menos uma. O número bruto pode iludir: o que importa é o <em>peso</em> da rajada (intensidade ponderada pela duração). Por isso filtramos por top-K por peso, em vez de número absoluto.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado honesto</h3>
+    <p>Detectamos 760 rajadas brutas, mas apenas 20 são de alto impacto (top peso). É essas 20 que entram no Rayyan como candidatos com vida vibrante no presente, não as 760.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Belas adormecidas (coeficiente de beleza)</h2>
+  <div class="what">
+    <h3>O que mede</h3>
+    <p>Ke et al. (2015) definem o coeficiente de beleza B, que mede quão "adormecida" uma obra ficou — quantos anos passaram com baixa citação antes de a obra ser reconhecida. Obras com B alto foram subestimadas no seu tempo e despertaram depois.</p>
+  </div>
+  <div class="what">
+    <h3>Por que isso é útil para nossa pergunta</h3>
+    <p>Se há obras-ponte potenciais cuja hora ainda não chegou, esperaríamos encontrá-las entre as belas adormecidas. Elas têm valor cur torial: são candidatos a serem incluídos numa SR honestamente, não por popularidade atual mas por relevância latente.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>Detectamos 14 belas adormecidas com B significativo no corpus. Várias delas são clássicos da economia evolucionária e do institucionalismo histórico — coerente com o achado de que essas tradições são pontes potenciais.</p>
+  </div>
+</section>
+
+<!-- ════════════ PARTE · SONDAGENS ════════════ -->
+
+<section class="divider">
+  <p class="muted">Sondagens</p>
+  <h1>Sondagens dirigidas</h1>
+</section>
+
+<section>
+  <h2>Caso brasileiro</h2>
+  <div class="what">
+    <h3>O que faz</h3>
+    <p>O caso brasileiro foi tratado de duas formas. <strong>Primeiro</strong>, com a revisão documentada de Claucia Faganello (73 obras BR sobre política industrial, busca via cadeias booleanas no Scopus e SciELO). <strong>Segundo</strong>, expandindo via OpenAlex: bola de neve completa a partir das 73 obras Faganello mais busca ampla com filtro <code>country_code:BR</code>.</p>
+  </div>
+  <div class="what">
+    <h3>Por que tratar separadamente</h3>
+    <p>A literatura brasileira sobre política industrial tem dinâmica e referenciais próprios — não está adequadamente representada no corpus global anglocêntrico. Tratá-la como sub-corpus permite verificar quais pontes existem entre o Brasil e o núcleo internacional.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado</h3>
+    <p>Resolvemos 73 de 73 obras Faganello em OA id. As pontes BR×global mais fortes são lideradas por <em>Brazilian Industrial Policy: A Cluster Analysis</em> (67 citantes de alto impacto). BNDES e Petrobras emergem como cases nos clusters mais densos.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Tradições adjacentes — Polanyi, Schumpeter, Hirschman</h2>
+  <div class="what">
+    <h3>O que faz</h3>
+    <p>Sondamos cinco tradições conceitualmente adjacentes aos três eixos centrais: Polanyi (sobre embeddedness), Schumpeter (sobre destruição criativa), Hirschman (sobre desenvolvimento), complexity economics (Santa Fe), governmentality (Foucault). Para cada uma, recuperamos as 50 obras mais citadas e medimos o overlap com nosso corpus.</p>
+  </div>
+  <div class="what">
+    <h3>Por que isso é uma verificação importante</h3>
+    <p>Se essas tradições adjacentes <em>já estivessem</em> presentes no corpus, isso indicaria que os silos não são tão fechados quanto parecem. Se estivessem ausentes, seria um <em>gap</em> a corrigir em sondagens futuras.</p>
+  </div>
+  <div class="what">
+    <h3>Resultado nuanced</h3>
+    <p>Com corpus expandido (Fase E), Schumpeter aparece em <span class="num">15/50</span>, complexity em <span class="num">10/50</span>, Hirschman em <span class="num">9/50</span>, Polanyi em <span class="num">3/50</span>, governmentality em <span class="num">3/50</span>. Presença minoritária mas real — gap quantificado para próxima iteração da SR.</p>
+  </div>
+</section>
+
+<!-- ════════════ PARTE 9 · SÍNTESE METODOLÓGICA ════════════ -->
+
+<section class="divider">
+  <p class="muted">Parte 9</p>
+  <h1>O argumento — como identificamos as pontes</h1>
+</section>
+
+<section>
+  <h2>A tese metodológica em uma página</h2>
+  <p>O argumento central do estudo, em síntese: <strong>as pontes entre as três tradições existem, mas vivem em planos distintos</strong> que exigem instrumentos diferentes para serem reveladas. Nenhum método isolado responde à pergunta de pesquisa; a triangulação responde.</p>
+  <div class="what">
+    <h3>Plano 1 — Textual (par-a-par)</h3>
+    <p>Método: cocitação par-a-par + betweenness + modelo nulo de configuração. Resultado: <em>nenhuma obra é ponte significativa</em>. A leitura ingênua "Mazzucato conecta os três" não sobrevive ao nulo. O esqueleto par-a-par mostra silos rígidos.</p>
+  </div>
+  <div class="what">
+    <h3>Plano 2 — Ordem superior (hipergrafo)</h3>
+    <p>Método: hipergrafo XGI + higher-order BC via random walks. Resultado: <em>bridges escondidos pela projeção par-a-par emergem</em>. Nelson &amp; Winter, North, David, Cohen-Levinthal, Penrose — clássicos da economia evolucionária e do institucionalismo histórico — são bridges no hipergrafo embora invisíveis na projeção pareada. São <strong>pontes textuais que só existem como conjunto</strong>.</p>
+  </div>
+  <div class="what">
+    <h3>Plano 3 — Humano (coautoria + brokerage)</h3>
+    <p>Método: cross_axis_score (entropia) + Gould-Fernandez brokerage. Resultado: <em>tradutores institucionais reais identificáveis</em>. Domenico Mario Nuti, Ángela Espinosa, Kenneth Boulding, Peter John, Raúl Espejo, Robert Costanza — são pessoas que escreveram em ≥ 2 eixos, e cujos papéis sociais de gatekeeper/representative/liaison podem ser caracterizados.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Por que essa é uma forma honesta de identificar pontes</h2>
+  <p>A força da abordagem está em reconhecer que <em>ponte</em> é polissêmica e que cada definição tem o seu método próprio:</p>
+  <ul>
+    <li><strong>Obra-ponte textual</strong> = obra que figura entre comunidades de cocitação. Falha o teste de significância. Conclusão honesta: <em>não existem.</em></li>
+    <li><strong>Ponte de ordem superior</strong> = obra que aparece em listas de leitura que misturam eixos. Existe como conjunto. Identificada por hipergrafo + HO BC.</li>
+    <li><strong>Ponte humana</strong> = pessoa cuja produção atravessa eixos. Identificada por coautoria + cross_axis_score + brokerage.</li>
+  </ul>
+  <p>Sem o hipergrafo, perderíamos o Plano 2 — daríamos como ausentes pontes que existem em outro nível. Sem a rede de autores, perderíamos o Plano 3 — daríamos como sem mediação humana um campo onde Nuti e Espejo são figuras concretas. Sem o pairwise + nulo, daríamos como conectado um campo cujo esqueleto textual é siloed.</p>
+  <p>A combinação dos três planos é o que <strong>protege contra leituras enganosas</strong>: se o hipergrafo dá 36% de hiperarestas trans-eixo, é tentador concluir "convergência"; o nulo desfaz isso. Se a rede de autores tem 16 mil pessoas, é tentador procurar muitas pontes; o brokerage mostra que coordinator domina 9:1.</p>
+  <p>O argumento é então: <strong>essa combinação de três planos com seus modelos nulos respectivos é uma forma metodologicamente honesta de identificar pontes onde elas existem e de declará-las ausentes onde não existem.</strong></p>
+</section>
+
+<section class="divider">
+  <p class="muted">Parte 10</p>
+  <h1>Balanço dos métodos</h1>
+</section>
+
+<section>
+  <h2>O que cada método revela — e o que não revela</h2>
+  <table>
+    <tr><th>Método</th><th>Revela</th><th>Não revela</th></tr>
+    <tr><td>Cocitação par-a-par</td><td>Proximidade percebida</td><td>Convergência conceitual subjacente</td></tr>
+    <tr><td>Acoplamento bibliográfico</td><td>Frentes compartilhadas</td><td>Recepção do trabalho</td></tr>
+    <tr><td>Comunidades Leiden</td><td>Grupos auto-emergentes</td><td>O conteúdo das diferenças</td></tr>
+    <tr><td>Betweenness</td><td>Posição topológica</td><td>Significância contra o acaso</td></tr>
+    <tr><td>Modelo nulo</td><td>Significância</td><td>Mecanismo causal</td></tr>
+    <tr><td>Hipergrafo XGI</td><td>Convergência na leitura individual</td><td>Conteúdo de cada hiperaresta</td></tr>
+    <tr><td>HO betweenness</td><td>Bridges de ordem superior</td><td>Estrutura temporal</td></tr>
+    <tr><td>Coautoria + score</td><td>Pontes humanas</td><td>Qualidade da colaboração</td></tr>
+    <tr><td>Brokerage G-F</td><td>Papel social do broker</td><td>Conteúdo da mediação</td></tr>
+    <tr><td>Rajadas (Kleinberg)</td><td>Atenção concentrada</td><td>Profundidade da recepção</td></tr>
+    <tr><td>Belas adormecidas (Ke)</td><td>Reconhecimento tardio</td><td>Causa do despertar</td></tr>
+    <tr><td>Longue-durée</td><td>Quando o silo se formou</td><td>Causalidade histórica</td></tr>
+  </table>
+  <p class="footnote">Nenhum método sozinho responde à pergunta de partida. A força da abordagem está na <em>triangulação</em>.</p>
+</section>
+
+<section>
+  <h2>Triangulação — o pipeline Rayyan</h2>
+  <p>Cada método contribui uma camada para a curadoria do candidato-set da revisão sistemática. Não escolhemos uma métrica única para selecionar candidatos: cada obra entra com um <em>conjunto de tags</em> que registra quais critérios ela atende. A triagem manual no Rayyan pode então filtrar por combinações.</p>
+  <p>A consolidação produz <span class="num">206</span> obras únicas com <span class="num">14+</span> tags possíveis: <em>obra-semente, obra-ponte, ponte a construir, rajada de citação, bela adormecida, mais citada, higher_order_bridge, obra de autor-ponte, ponte de ordem superior, cibernética organizacional, cibernética geral, corpus Brasil, ponte global×Brasil, complexidade (4º eixo)</em>.</p>
+  <p>O catálogo de tags é auditável em <code>data/rayyan_tags.json</code>: cada tag tem sua descrição, sua fonte e seu threshold paramétrico declarado.</p>
+</section>
+
+<section>
+  <h2>Honestidade epistêmica — o que NÃO mostramos</h2>
+  <p>A apresentação seria incompleta sem declarar os limites:</p>
+  <p><strong>Cobertura de livros é parcial</strong>. Para os clássicos de cibernética e instrumentos, OpenAlex não expõe completamente as bibliografias internas. A bola de neve regressiva é portanto limitada.</p>
+  <p><strong>O vocabulário em título é conservador</strong>. Obras cujo tema está em abstracts ou em concepts mas não no título são sub-classificadas. A extensão para OpenAlex concepts é a próxima sondagem natural.</p>
+  <p><strong>Modelos nulos para hipergrafo são heurísticos</strong>. O stub-shuffle preserva degrees e sizes mas não controla todos os fatores. A literatura sobre nulos para hipergrafos ainda está em desenvolvimento.</p>
+  <p><strong>Não há triangulação multi-base</strong>. Estudos paralelos via Scopus, Web of Science ou Semantic Scholar poderiam validar ou refinar os achados estruturais.</p>
+  <p><strong>O caso brasileiro tem busca documentada mas sem PRISMA completo</strong>. Fluxograma e contagens de deduplicação não estão formalmente reportados.</p>
+</section>
+
+<!-- ════════════ CONCLUSÕES ════════════ -->
+
+<section class="divider">
+  <p class="muted">Encerramento</p>
+  <h1>Implicações e próximos passos</h1>
+</section>
+
+<section>
+  <h2>Implicações para a política industrial</h2>
+  <p>O conjunto de achados — silos significativos em três níveis de análise (par-a-par, ordem superior, social), pontes humanas raras mas identificáveis, cristalização histórica datável nos 1980s — sugere algumas implicações concretas para o trabalho do IPEA e para o desenho da Nova Indústria Brasil 2023.</p>
+  <p><strong>A convergência não emerge espontaneamente.</strong> Esperar que as três tradições conversem por força do tempo é uma estratégia confiavelmente lenta. A convergência precisa ser <em>construída</em> por mediação intelectual ativa — curadoria de listas, edições comentadas, cursos, working papers que façam tradução conceitual.</p>
+  <p><strong>Os tradutores reais existem e são poucos.</strong> Domenico Mario Nuti, Ángela Espinosa, Kenneth Boulding, Peter John, Raúl Espejo, Robert Costanza — são as figuras concretas a partir das quais uma agenda de aproximação faz sentido.</p>
+  <p><strong>O IPEA tem uma posição institucional rara.</strong> Como instituição que opera nos três eixos simultaneamente (cibernética via sistemas, regulação via instrumentos, política industrial via análise), pode ser <em>broker institucional</em> de modo que indivíduos isolados não conseguem.</p>
+</section>
+
+<section>
+  <h2>Próximos passos metodológicos</h2>
+  <p><strong>Estender o classificador para OpenAlex concepts</strong>. A pesquisa atual usa apenas vocabulário em título — conservador, mas perde contribuições temáticas. Concepts ponderados (cada work tem concepts com score) podem captar autores cujas obras tratam de Cyb/Reg/PolInd no abstract sem keyword no título.</p>
+  <p><strong>Incluir tradições adjacentes como sementes oficiais</strong>. Polanyi, Schumpeter, Hirschman aparecem como minoritários no corpus expandido. Rerodar o pipeline com 5 ou 6 eixos pode revelar pontes que o recorte 3-eixos esconde estruturalmente.</p>
+  <p><strong>Triangulação multi-base</strong>. Comparar com Scopus, Web of Science, Semantic Scholar valida os achados contra viés de cobertura do OpenAlex.</p>
+  <p><strong>Executar a revisão sistemática</strong>. O candidato-set está pronto no Rayyan. A triagem manual pelos três pesquisadores (Bruno, Lucas, Claucia) é o próximo passo natural — com critérios PRISMA documentados.</p>
+  <p><strong>Paper teórico e nota IPEA</strong>. Materializar o arcabouço "política industrial como sistema viável" em publicação acadêmica e em nota técnica para o desenho da NIB.</p>
+</section>
+
+<!-- ════════════ ENCERRAMENTO ════════════ -->
+
+<section class="title">
+  <h1>Obrigado</h1>
+  <p class="lead">A convergência precisa ser construída.</p>
+  <p class="muted" style="margin-top: 3em;">Bruno Queiroz · Lucas Freire · Claucia Faganello</p>
+  <p class="muted">IPEA · 2026</p>
+  <p class="footnote" style="margin-top: 3em;">
+    Relatório: <code>freirelucas.github.io/cibernetica-regula-o-politica-industrial</code><br>
+    Código: <code>github.com/freirelucas/cibernetica-regula-o-politica-industrial</code><br>
+    Catálogo de tags: <code>dados/rayyan_tags.json</code>
+  </p>
+</section>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+Reveal.initialize({
+  hash: true, controls: true, progress: true, history: true,
+  slideNumber: 'c/t', transition: 'fade',
+  width: 1280, height: 800,
+});
+</script>
+</body>
+</html>
