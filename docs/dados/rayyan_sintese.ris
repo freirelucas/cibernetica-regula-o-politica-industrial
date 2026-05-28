@@ -115,9 +115,8 @@ PY  - 2023
 DO  - 10.1007/978-3-031-12334-4_9
 UR  - https://openalex.org/W4379525313
 KW  - eixo: Política industrial
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.946
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -331,9 +330,8 @@ UR  - https://openalex.org/W2998208130
 AB  - Abstract Policy makers are increasingly embracing the idea of using industrial and innovation policy to tackle the ‘grand challenges’ facing modern societies. This article argues that through well-defined goals, or more specifically ‘missions’, that are focused on solving important societal challenges, policymakers have the opportunity to determine the direction of growth by making strategic investments across many different sectors and nurturing new industrial landscapes, which the private sector can develop further, and as a result induce cross-sectoral learning and increase macroeconomic stability. This ‘mission-oriented’ approach to industrial policy is not about ‘top down’ planning by an overbearing state; it is about providing a direction for growth and increasing business expectations about future growth areas and catalysing activity that otherwise would not happen. It is not about de-risking and levelling the playing field, nor about supporting more competitive sectors over less since the market does not always ‘know best’ but tilting the playing field in the direction of the desired societal goals, such as the sustainable development goals. To achieve this requires a different policy framework, what we call the ‘ROAR’ framework, which involves strategic thinking about the desired direction of travel ( Routes ), the structure and capacity of public sector Organisations , the way in which policy is Assessed and the incentive structure for both private and public sectors ( Risks and Rewards ). The article argues that if we want to take grand challenges such as the SDGs seriously as policy goals, market shaping should become the over-arching approach followed in various policy fields.
 KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
-KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra de autor-ponte, obra-ponte · razão: obra de autor-ponte=autor Mariana Mazzucato — cross_axis_score=0.631
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra-ponte
 ER  - 
 
 TY  - JOUR
@@ -1802,9 +1800,8 @@ PY  - 2000
 DO  - 10.1023/a:1009531429918
 UR  - https://openalex.org/W2162790888
 KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.946
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -1968,9 +1965,8 @@ DO  - 10.1017/cbo9780511572012.006
 UR  - https://openalex.org/W2495767131
 AB  - Abstract Under the heading of “corporate governance” we include problems arising when an enterprise is owned by more than one owner and managed by a hired managerial group, and also the rules and incentives appropriate to make it function as efficiently and impartially as if it were owned and run by a single owner-entrepreneur. Throughout this essay we shall refer to co-owners as shareholders, thus implicitly referring to joint stock companies; unless otherwise stated, decisional (voting) powers are presumed to be distributed in proportion to ownership. Mutatis mutandis, identical considerations apply to any form of enterprise co-ownership and attribution of decisional powers.
 KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.946
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -2111,9 +2107,8 @@ DO  - 10.1017/cbo9780511559600.003
 UR  - https://openalex.org/W2991167753
 AB  - Abstract The ultimate model for the wave of economic reforms attempted in Central Eastern Europe over the last thirty-five years has been a moving target. At first, reform aimed at improving Soviet-type central planning, replacing central commands with contractual relations, using net value instead of gross physical indicators of enterprise performance, credit instead of budgetary grants, material incentives instead of campaigns, and gearing the system to some market signals, especially to world markets (e.g. Poland, 1956; USSR, 1965; Hungary, 1968; Czechoslovakia, 1981).
 KW  - eixo: Política industrial
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.946
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -2231,8 +2226,7 @@ KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · retornos crescentes / dependência de trajetória
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória, ponte a construir, ponte de ordem superior · razão: ponte a construir=top-25 de bridge_priority (score=0.5071); ponte de ordem superior=HO centrality=0.375 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · retornos crescentes / dependência de trajetória, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5071)
 ER  - 
 
 TY  - JOUR
@@ -2245,9 +2239,8 @@ DO  - 10.2307/1344490
 UR  - https://openalex.org/W2037187536
 AB  - Perestroika Domenico Mario Nuti Reform is almost as old as the history of socialist economies. Indeed the typical pattern is one of reform followed by reversals and recentralization, with pressure for reform mounting again as the system's shortcomings re-emerge. Is the current wave any different from the others? Many signs indicate that Perestroika is deeper if not outright revolutionary. The need for reform is intimately linked to the systemic difficulties of socialist economies. These difficulties are primarily due to a generalized failure to provide the incentives required to operate an otherwise quite perfected planning process. Neither enterprises, nor workers, nor planners have the incentive to offer the best response. As a result, centrally planned economies are typically good at achieving a single objective, but have failed at pursuing multiple targets and more balanced growth. Indeed, the overall economic performance of the last two decades is seriously disappointing. What distinguishes perestroika from previous reforms is its radical nature, a change apparently designed to move several countries away from the visible fist of the command economy to the invisible hand of markets and quasi-markets. This includes a serious dismantling of central planning, and a concerted effort to introduce competition and to increase individual economic and political responsibilities. It is too early to tell whether this reform will succeed. This article provides markers for early detection of how perestroika will fare.
 KW  - eixo: Política industrial
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.946
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -2257,9 +2250,8 @@ PY  - 1987
 UR  - https://openalex.org/W2264615100
 AB  - First made available online in May 2015.
 KW  - eixo: Política industrial
-KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.946
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-semente
 ER  - 
 
 TY  - CHAP
@@ -2271,8 +2263,9 @@ UR  - https://openalex.org/W3035410188
 AB  - The term ‘general systems’ refers to a movement among a wide variety of scholars to overcome the barriers of communication which divide the established disciplines, by developing theoretical concepts and systems which are common to the different disciplines. Biologist Ludwig von Bertalanffy originated the movement with his concept of ‘open systems’. The Society for General Systems Research, originally called the Society for the Advancement of General Systems, was founded at a meeting at the American Association for the Advancement of Science in Berkeley, California, in December 1954. The economist Kenneth E. Boulding was the first president. The Society issues the General Systems Yearbook, partly of reprinted, partly of original articles, of which the first editor was Anatol Rapoport, a mathematician and game theorist. The yearbooks are still published, and a number of journals now contribute to the field.
 KW  - eixo: Cibernética
 KW  - papel: cibernética (geral)
+KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Kenneth E. Boulding — cross_axis_score=0.834
 ER  - 
 
 TY  - BOOK
@@ -2287,12 +2280,12 @@ KW  - eixo: Política industrial
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
+KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6557); ponte de ordem superior=HO centrality=0.354 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); obra de autor-ponte=autor John R. Beaumont — cross_axis_score=0.921; ponte a construir=top-25 de bridge_priority (score=0.6557)
 ER  - 
 
 TY  - JOUR
@@ -2310,8 +2303,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: mais citada
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, mais citada, obra de autor-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 23 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5414); ponte de ordem superior=HO centrality=0.444 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, mais citada, obra de autor-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 23 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5414)
 ER  - 
 
 TY  - BOOK
@@ -2330,8 +2322,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4193); ponte de ordem superior=HO centrality=0.465 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4193)
 ER  - 
 
 TY  - JOUR
@@ -2360,8 +2351,7 @@ KW  - papel: complexidade (4º eixo)
 KW  - papel: complexidade · economia evolucionária
 KW  - papel: higher_order_bridge
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · economia evolucionária, higher_order_bridge, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6671); ponte de ordem superior=HO centrality=1.000 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), complexidade · economia evolucionária, higher_order_bridge, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6671)
 ER  - 
 
 TY  - BOOK
@@ -2394,12 +2384,12 @@ KW  - eixo: Política industrial
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
+KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); ponte a construir=top-25 de bridge_priority (score=0.845); ponte de ordem superior=HO centrality=0.729 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); obra de autor-ponte=autor Maurice Snowdon — cross_axis_score=0.631; ponte a construir=top-25 de bridge_priority (score=0.845)
 ER  - 
 
 TY  - JOUR
@@ -2469,7 +2459,7 @@ UR  - https://openalex.org/https://openalex.org/W4230710385
 KW  - eixo: Política industrial
 KW  - papel: obra de autor-ponte
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-ponte, obra-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.946
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-ponte, obra-semente · razão: obra de autor-ponte=autor O. Lange — cross_axis_score=0.631
 ER  - 
 
 TY  - JOUR
@@ -2511,8 +2501,9 @@ AU  - Lange & Boulding
 PY  - 1966
 UR  - https://openalex.org/https://openalex.org/W2063282131
 KW  - eixo: Política industrial
+KW  - papel: obra de autor-ponte
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-ponte, obra-semente · razão: obra de autor-ponte=autor Kenneth E. Boulding — cross_axis_score=0.834
 ER  - 
 
 TY  - JOUR
@@ -2598,9 +2589,10 @@ UR  - https://openalex.org/W2098978150
 AB  - In recent years increasing need has been felt for a body of systematic theoretical constructs which will discuss the general relationships of the empirical world. This is the quest of General Systems Theory. It does not seek, of course, to establish a single, self-contained “general theory of practically everything” which will replace all the special theories of particular disciplines. Such a theory would be almost without content, for we always pay for generality by sacrificing content, and all we can say about practically everything is almost nothing. Somewhere however between the specific that has no meaning and the general that has no content there must be, for each purpose and at each level of abstraction, an optimum degree of generality. It is the contention of the General Systems Theorists that this optimum degree of generality in theory is not always reached by the particular sciences.
 KW  - eixo: Cibernética
 KW  - papel: cibernética (geral)
+KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.3457)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-ponte, obra de autor-semente, ponte a construir · razão: obra de autor-ponte=autor Kenneth E. Boulding — cross_axis_score=0.834; ponte a construir=top-25 de bridge_priority (score=0.3457)
 ER  - 
 
 TY  - BOOK
@@ -2615,8 +2607,9 @@ PY  - 1956
 UR  - https://openalex.org/W595334711
 KW  - eixo: Cibernética
 KW  - papel: cibernética (geral)
+KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética (geral), obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Kenneth E. Boulding — cross_axis_score=0.834
 ER  - 
 
 TY  - JOUR
@@ -2628,8 +2621,9 @@ DO  - 10.2307/1907665
 UR  - https://openalex.org/W3126441471
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
+KW  - papel: obra de autor-ponte
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Kenneth E. Boulding — cross_axis_score=0.834
 ER  - 
 
 TY  - GEN
@@ -2667,9 +2661,8 @@ UR  - https://openalex.org/W2026948646
 AB  - The Emergence of Soft Systems Thinking. Soft Systems Methodology--the Whole. Soft Systems Methodology--the Parts. Soft Systems Methodology--the Whole Revisited. Soft Systems Methodology--the Context. Conclusion. Appendix. Bibliography. Indexes.
 KW  - papel: higher_order_bridge
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 24 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4371); ponte de ordem superior=HO centrality=0.438 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 24 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4371)
 ER  - 
 
 TY  - JOUR
@@ -2682,7 +2675,7 @@ UR  - https://openalex.org/W2165238389
 KW  - papel: obra de autor-ponte
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: obra de autor-ponte, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Ángela Espinosa — cross_axis_score=0.784; ponte a construir=top-25 de bridge_priority (score=0.3229)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: obra de autor-ponte, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Ángela Espinosa — cross_axis_score=0.705; ponte a construir=top-25 de bridge_priority (score=0.3229)
 ER  - 
 
 TY  - BOOK
@@ -2728,9 +2721,8 @@ UR  - https://openalex.org/W1492856410
 AB  - Whether by design, accident or merely synchronicity, Checkland appears to have developed a habit of writing seminal publications near the start of each decade which establish the basis and framework for systems methodology research for that decade.ii Hamish Rennie, Journal of the Operational Research Society, 1992 Thirty years ago Peter Checkland set out to test whether the Systems Engineering (SE) approach, highly successful in technical problems, could be used by managers coping with the unfolding complexities of organizational life. The straightforward transfer of SE to the broader situations of management was not possible, but by insisting on a combination of systems thinking strongly linked to real-world practice Checkland and his collaborators developed an alternative approach - Soft Systems Methodology (SSM) - which enables managers of all kinds and at any level to deal with the subtleties and confusions of the situations they face. This work established the now accepted distinction between hard systems thinking, in which parts of the world are taken to be systems which can be engineered, and soft systems thinking in which the focus is on making sure the process of inquiry into real-world complexity is itself a system for learning. Systems Thinking, Systems Practice (1981) and Soft Systems Methodology in Action (1990) together with an earlier paper Towards a Systems-based Methodology for Real-World Problem Solving (1972) have long been recognized as classics in the field. Now Peter Checkland has looked back over the three decades of SSM development, brought the account of it up to date, and reflected on the whole evolutionary process which has produced a mature SSM. SSM: A 30-Year Retrospective, here included with Systems Thinking, Systems Practice closes a chapter on what is undoubtedly the most significant single research programme on the use of systems ideas in problem solving. Now retired from full-time university work, Peter Checkland continues his research as a Leverhulme Emeritus Fellow.
 KW  - papel: higher_order_bridge
 KW  - papel: ponte a construir
-KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 49 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5743); ponte de ordem superior=HO centrality=0.653 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: higher_order_bridge, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 49 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5743)
 ER  - 
 
 TY  - JOUR

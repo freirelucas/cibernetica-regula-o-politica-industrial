@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (112 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (115 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -71,6 +71,7 @@ Registro de mudanças desta branch, agrupado por tema (112 commits de trabalho).
 
 ## Funil, dados e reprodutibilidade
 
+- P5+P2: split de build_site (token_injection) + classifier estendido com OpenAlex topics · `bc0ba7d` · 2026-05-28
 - Reconcilia n_seeds 10→13 (alinha badge §03 ao §07 e ao crawl XGI) · `414d2ba` · 2026-05-28
 - run-scisci-ipea: atualiza a skill (219 nós, 203 cartões, 26 testes, cache + crawls) · `12ef075` · 2026-05-28
 - Versiona o raw das consultas OpenAlex (data/oa_cache) + skill /oa-cache · `0556215` · 2026-05-28
@@ -125,6 +126,8 @@ Registro de mudanças desta branch, agrupado por tema (112 commits de trabalho).
 
 ## Outros
 
+- P3+P4+P7: smoke test de tokens + rename pairwise + archive legacy · `c189d57` · 2026-05-28
+- Novo deck-metodologia: balanço pedagógico dos caminhos metodológicos · `55dcc1f` · 2026-05-28
 - Checagem completa: copia data/ para docs/dados/ + novo deck-10 executivo · `d7c8728` · 2026-05-28
 - Fase E (A.3+A.4+B.4+B.5+D.4): corpus 6.5× expandido, brokerage G-F, HO BC, slides · `228cb2e` · 2026-05-28
 - A.3 + setup api_key + slides D.4: depth-2 → 13k works / 16k autores · `88748ff` · 2026-05-28
