@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (114 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (115 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -71,6 +71,7 @@ Registro de mudanças desta branch, agrupado por tema (114 commits de trabalho).
 
 ## Funil, dados e reprodutibilidade
 
+- P5+P2: split de build_site (token_injection) + classifier estendido com OpenAlex topics · `bc0ba7d` · 2026-05-28
 - Reconcilia n_seeds 10→13 (alinha badge §03 ao §07 e ao crawl XGI) · `414d2ba` · 2026-05-28
 - run-scisci-ipea: atualiza a skill (219 nós, 203 cartões, 26 testes, cache + crawls) · `12ef075` · 2026-05-28
 - Versiona o raw das consultas OpenAlex (data/oa_cache) + skill /oa-cache · `0556215` · 2026-05-28

@@ -121,17 +121,74 @@ def random_walk_centrality(edges, corpus_nodes, n_walks, walk_length, seed):
     return {n: c / norm for n, c in visits.items()}
 
 
+def exact_betweenness_clique_expansion(edges, corpus_nodes):
+    """P8: Higher-order BC EXATO via clique expansion + Brandes (NetworkX).
+
+    Para hipergrafo G_H com hiperarestas E_1...E_m sobre nós V, o clique
+    expansion é o grafo G onde cada hiperaresta E_k vira uma clique completa
+    sobre seus |E_k| nós (todas as arestas pareadas). Brandes em G dá BC
+    exato, e essa é a versão "exata" mais aceita para hipergrafos quando o
+    objetivo é fluxo de informação (Estrada-Vega 2020, secção sobre clique
+    expansion).
+
+    Para corpus de ~220 nós e ~1300 hiperarestas, é viável (O(n³) com
+    NetworkX Brandes ≈ 0.5-2s).
+    """
+    import networkx as nx
+    G = nx.Graph()
+    # adiciona nós do corpus apenas
+    for n in corpus_nodes:
+        G.add_node(n)
+    # cada hiperaresta vira uma clique de seus nós que estão no corpus
+    n_cliques = 0
+    for e in edges:
+        e_in_corpus = [n for n in e if n in corpus_nodes]
+        for i, a in enumerate(e_in_corpus):
+            for b in e_in_corpus[i + 1:]:
+                # peso = 1 / (tamanho da hiperaresta - 1), normaliza pelo
+                # tamanho da clique (hiperarestas grandes têm peso menor por aresta)
+                w = 1.0 / max(len(e_in_corpus) - 1, 1)
+                if G.has_edge(a, b):
+                    G[a][b]["weight"] += w
+                else:
+                    G.add_edge(a, b, weight=w)
+        if len(e_in_corpus) >= 2:
+            n_cliques += 1
+    # Brandes betweenness, normalizado
+    bc = nx.betweenness_centrality(G, normalized=True, weight=None)
+    return bc, n_cliques
+
+
 def main():
-    print("== B.4 · Higher-order betweenness via random walks ==")
+    import os
+    mode = os.environ.get("HO_BC_MODE", "both")  # "rw", "exact", "both"
+    print(f"== B.4 · Higher-order betweenness (mode={mode}) ==")
 
     edges, corpus = build_hypergraph_from_seeds()
     if not edges:
         print("ERRO: hiperarestas não reconstruíveis. Verifique cache.")
         return
 
-    print(f"\nrunning {N_WALKS} walks of length {WALK_LENGTH} (seed={SEED})...")
-    centrality = random_walk_centrality(edges, corpus, N_WALKS, WALK_LENGTH, SEED)
-    print(f"  {len(centrality)} nós com centralidade > 0")
+    centrality_rw, centrality_exact = {}, {}
+    n_cliques = 0
+    if mode in ("rw", "both"):
+        print(f"\nrunning {N_WALKS} walks of length {WALK_LENGTH} (seed={SEED})...")
+        centrality_rw = random_walk_centrality(edges, corpus, N_WALKS, WALK_LENGTH, SEED)
+        print(f"  {len(centrality_rw)} nós com centralidade > 0 (random walk)")
+    if mode in ("exact", "both"):
+        print(f"\ncomputing exact Brandes BC on clique expansion...")
+        centrality_exact, n_cliques = exact_betweenness_clique_expansion(edges, corpus)
+        n_nonzero = sum(1 for v in centrality_exact.values() if v > 0)
+        print(f"  {n_nonzero} nós com BC > 0 (Brandes exato sobre {n_cliques} cliques)")
+
+    # usa centrality_exact como principal se modo exato; senão random walk
+    centrality = centrality_exact if (mode == "exact" or (mode == "both" and centrality_exact)) else centrality_rw
+    # normalize exact centrality to [0,1] para comparação direta
+    if centrality_exact:
+        max_e = max(centrality_exact.values()) or 1.0
+        centrality_exact_norm = {n: v / max_e for n, v in centrality_exact.items()}
+    else:
+        centrality_exact_norm = {}
 
     # compare with pairwise BC from scisci_results
     R = json.load(open(SCISCI, encoding="utf-8"))
@@ -171,8 +228,13 @@ def main():
         "n_hyperedges": len(edges),
         "n_nodes_with_centrality": len(centrality),
         "n_hidden_bridges_in_top30": n_hidden,
+        "mode": mode,
+        "n_cliques_expanded": n_cliques,
         "top_30": hidden_bridges,
         "by_oa_id": {n: round(c, 4) for n, c in centrality.items()},
+        # P8: exporta ambas para auditoria
+        "by_oa_id_random_walk": {n: round(c, 4) for n, c in centrality_rw.items()},
+        "by_oa_id_exact_normalized": {n: round(c, 4) for n, c in centrality_exact_norm.items()},
     }
     json.dump(out, open(OUTPUT, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
