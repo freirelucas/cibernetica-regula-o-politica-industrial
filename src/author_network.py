@@ -107,9 +107,11 @@ def enrich_works_titles(works, max_fetches=50):
             break
         chunk = missing_title[i:i + 50]
         flt = "openalex:" + "|".join(chunk)
+        # P2: select inclui `topics` — habilita classificação via OpenAlex topic
+        # names (não só vocab em título). Cada topic é {id, display_name, score, ...}.
         url = (f"{API}/works?filter={urllib.parse.quote(flt, safe=':|')}"
                f"&per-page=50&select=id,display_name,title,publication_year,"
-               f"authorships,referenced_works,cited_by_count")
+               f"authorships,referenced_works,cited_by_count,topics")
         was_cached = cache_hit(url)
         data = oa.get(url) or {}
         if not was_cached and data:
@@ -118,8 +120,37 @@ def enrich_works_titles(works, max_fetches=50):
         for w in (data.get("results") or []):
             wid = (w.get("id") or "").split("/")[-1]
             if wid in works:
-                # merge — keep existing authorships + new title/year
+                # merge — keep existing authorships + new title/year/topics
                 works[wid].update({k: v for k, v in w.items() if v})
+    return n_new
+
+
+def enrich_works_topics(works, max_fetches=50):
+    """P2: para works que já têm título mas não têm `topics` (vieram de fetches
+    antigos sem topics no select), faz batch fetch para preencher topics.
+    Permite re-classificar via topic names sem perder o cache existente."""
+    missing_topics = [wid for wid, w in works.items()
+                      if (w.get("title") or w.get("display_name")) and not w.get("topics")]
+    if not missing_topics:
+        return 0
+    print(f"  works com título mas sem topics: {len(missing_topics)}")
+    n_new = 0
+    for i in range(0, len(missing_topics), 50):
+        if n_new >= max_fetches:
+            break
+        chunk = missing_topics[i:i + 50]
+        flt = "openalex:" + "|".join(chunk)
+        url = (f"{API}/works?filter={urllib.parse.quote(flt, safe=':|')}"
+               f"&per-page=50&select=id,topics")
+        was_cached = cache_hit(url)
+        data = oa.get(url) or {}
+        if not was_cached and data:
+            n_new += 1
+            bump_budget(1)
+        for w in (data.get("results") or []):
+            wid = (w.get("id") or "").split("/")[-1]
+            if wid in works and w.get("topics"):
+                works[wid]["topics"] = w["topics"]
     return n_new
 
 
@@ -183,9 +214,29 @@ def mine_cache_works():
 
 
 # ───────── axis classification ─────────
-def classify_axes(title):
-    """Devolve set de eixos que o título toca via vocab match."""
+def classify_axes(title, topics=None):
+    """Devolve set de eixos que o work toca via vocab match.
+
+    Combina dois sinais:
+      - vocab em TÍTULO (conservador — falha em obras cujo tema está no
+        abstract ou nos topics da OpenAlex sem keyword no título)
+      - vocab em TOPIC NAMES da OpenAlex (`work.topics[].display_name`)
+        — captura contribuições temáticas que o título esconde.
+
+    P2 (set 2026): extensão para topics. Se topics=None ou vazio, fallback
+    para o comportamento anterior (apenas título). Topics typically é
+    fornecida como lista de dicts com chave `display_name`.
+    """
     t = (title or "").lower()
+    # concatena topic names ao texto a ser matched
+    if topics:
+        for top in topics:
+            if isinstance(top, dict):
+                dn = (top.get("display_name") or "").lower()
+                if dn:
+                    t += " " + dn
+            elif isinstance(top, str):
+                t += " " + top.lower()
     axes = set()
     for ax, vocab in VOCAB.items():
         if any(k in t for k in vocab):
@@ -203,7 +254,7 @@ def aggregate_authors(works):
     })
     for wid, w in works.items():
         title = w.get("title") or w.get("display_name") or ""
-        axes = classify_axes(title)
+        axes = classify_axes(title, w.get("topics"))
         for a in (w.get("authorships") or []):
             aid_full = (a.get("author") or {}).get("id") or ""
             aid = aid_full.split("/")[-1]
@@ -355,7 +406,7 @@ def snowball_top_authors(authors_sorted, n_authors=15, per_author=50, corpus_ids
                 "year": w.get("publication_year"),
                 "cited_by": w.get("cited_by_count") or 0,
                 "doi": w.get("doi") or "",
-                "axes_hit": sorted(classify_axes(title)),
+                "axes_hit": sorted(classify_axes(title, w.get("topics"))),
             }
             if wid in corpus_ids:
                 in_corpus.append(entry)
@@ -407,7 +458,7 @@ def probe_adjacent(corpus_ids, per_probe=50):
                 "year": w.get("publication_year"),
                 "cited_by": w.get("cited_by_count") or 0,
                 "in_corpus": wid in corpus_ids,
-                "axes_hit": sorted(classify_axes(title)),
+                "axes_hit": sorted(classify_axes(title, w.get("topics"))),
             }
             items.append(entry)
             if wid in corpus_ids:
@@ -434,6 +485,14 @@ def main():
     print(f"  new fetches this step: {n_w} | budget after: {read_budget()}/10000")
     n_with_title = sum(1 for w in works.values() if (w.get("title") or w.get("display_name")))
     print(f"  works with title now: {n_with_title}/{len(works)}")
+
+    # P2: enrich with topics (OpenAlex concepts/topics) — habilita classificação
+    # mais rica que vocab-em-título sozinho
+    print(f"\nenriching work topics (P2) via batch fetch...")
+    n_t = enrich_works_topics(works, max_fetches=50)
+    print(f"  new topic fetches: {n_t} | budget after: {read_budget()}/10000")
+    n_with_topics = sum(1 for w in works.values() if w.get("topics"))
+    print(f"  works with topics now: {n_with_topics}/{len(works)}")
 
     authors = aggregate_authors(works)
     print(f"autores únicos no corpus: {len(authors)}")

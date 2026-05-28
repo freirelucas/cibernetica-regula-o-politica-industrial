@@ -221,12 +221,13 @@ KW  - eixo: Política industrial
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
+KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6557); ponte de ordem superior=HO centrality=0.354 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); obra de autor-ponte=autor John R. Beaumont — cross_axis_score=0.921; ponte a construir=top-25 de bridge_priority (score=0.6557); ponte de ordem superior=HO centrality=0.354 (B.4 random walks)
 ER  - 
 
 TY  - JOUR
@@ -385,7 +386,7 @@ UR  - https://openalex.org/W2165238389
 KW  - papel: obra de autor-ponte
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: obra de autor-ponte, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Ángela Espinosa — cross_axis_score=0.784; ponte a construir=top-25 de bridge_priority (score=0.3229)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · papel: obra de autor-ponte, ponte a construir, rajada de citação · razão: obra de autor-ponte=autor Ángela Espinosa — cross_axis_score=0.641; ponte a construir=top-25 de bridge_priority (score=0.3229)
 ER  - 
 
 TY  - BOOK

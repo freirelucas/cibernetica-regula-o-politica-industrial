@@ -1235,7 +1235,7 @@
   "complexity_economics": {
    "query": "complexity economics",
    "n_results": 50,
-   "n_overlap_with_corpus": 10,
+   "n_overlap_with_corpus": 13,
    "items": [
     {
      "oa_id": "W4239510810",
@@ -1282,7 +1282,7 @@
      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 328 diseases and injuries for ",
      "year": 2017,
      "cited_by": 13513,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1488,7 +1488,7 @@
      "title": "Global, regional, and national incidence, prevalence, and years lived with disability for 301 acute and chronic diseases",
      "year": 2015,
      "cited_by": 6490,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1632,7 +1632,7 @@
      "title": "Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021",
      "year": 2021,
      "cited_by": 4897,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
