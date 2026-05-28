@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (98 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (104 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -33,6 +33,7 @@ Registro de mudanças desta branch, agrupado por tema (98 commits de trabalho). 
 
 ## Explorador e visualizações
 
+- Fase C — Longue-durée temporal: silos cristalizaram-se nos 1980s · `8d529bf` · 2026-05-28
 - Explorador: resolve os 'sem eixo' por inferência e revela pontes de 2ª ordem · `fd5c2f7` · 2026-05-27
 - Explorador: realça a estrutura — recua os 'sem eixo', destaca as pontes · `493dfc5` · 2026-05-27
 - Explorador: disposição "por eixo" (silos visíveis) em vez do emaranhado · `a2cc1cf` · 2026-05-27
@@ -69,6 +70,7 @@ Registro de mudanças desta branch, agrupado por tema (98 commits de trabalho). 
 
 ## Funil, dados e reprodutibilidade
 
+- Reconcilia n_seeds 10→13 (alinha badge §03 ao §07 e ao crawl XGI) · `414d2ba` · 2026-05-28
 - run-scisci-ipea: atualiza a skill (219 nós, 203 cartões, 26 testes, cache + crawls) · `12ef075` · 2026-05-28
 - Versiona o raw das consultas OpenAlex (data/oa_cache) + skill /oa-cache · `0556215` · 2026-05-28
 - Cache de consultas OpenAlex + desdobra EECS-II + corrige fillcolor do Plotly · `7b1c993` · 2026-05-28
@@ -121,6 +123,10 @@ Registro de mudanças desta branch, agrupado por tema (98 commits de trabalho). 
 
 ## Outros
 
+- Honestifica o badge de rajadas: 760 brutos → 20 de alto impacto (top peso) · `5ac22a1` · 2026-05-28
+- Source + data + docs do c673371 (sources que não entraram na primeira tentativa) · `0260722` · 2026-05-28
+- Escala XGI 60→200 citantes/semente; bridges rank-based scale-invariant; injeção viva de números · `c673371` · 2026-05-28
+- Reescreve §05 e E1 honestamente: z = -29 indica estrutura MAIS siloed que o acaso · `3ec4e46` · 2026-05-28
 - Pipeline XGI → SR: citantes ranqueados, sub-eixos Leiden e nova seção 10·5 · `68b0b13` · 2026-05-28
 - Ordem superior (XGI): cocitação como hipergrafo — 40% dos grupos cruzam eixos · `fac51da` · 2026-05-28
 - Pivô Zajdela: o silo é social — só ~5% dos autores atravessam eixos · `a9f1e7a` · 2026-05-28

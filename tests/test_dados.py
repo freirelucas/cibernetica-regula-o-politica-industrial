@@ -32,7 +32,7 @@ def test_json_required_keys(results):
 
 def test_json_consistency(results):
     assert results["corpus_size"] == 817
-    assert results["n_seeds"] == 10 == len(results["seeds"])
+    assert results["n_seeds"] == 13 == len(results["seeds"])  # 10 canônicas + 3 de Lange (reconciliação A1)
     assert len(results["top20_nonfeed"]) == 20
     assert len(results["temporal"]) == 49
     assert all({"year", "Cyb", "Reg", "PolInd"} <= set(t) for t in results["temporal"])
@@ -53,7 +53,7 @@ def test_csv_rows(results, tmp_path):
     counts = {
         "02_mais_citados.csv": 20, "03_obras_ponte.csv": 15,
         "05_rajadas_kleinberg.csv": 20, "06_belas_adormecidas.csv": 15,
-        "08_obras_semente.csv": 10, "09_serie_temporal.csv": 49,
+        "08_obras_semente.csv": 13, "09_serie_temporal.csv": 49,
     }
     for name, n in counts.items():
         linhas = (tmp_path / name).read_text(encoding="utf-8").strip().splitlines()
