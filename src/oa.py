@@ -9,6 +9,7 @@ Sem a chave, usa o pool polido grátis (10 req/s, 100k/dia). `get()` tem backoff
 exponencial que honra o 429 E **guarda cada resposta em disco** (por URL): re-execução
 e depuração não re-consultam o OpenAlex e sobrevivem a quebras no meio do funil.
 """
+import gzip
 import hashlib
 import json
 import os
@@ -34,20 +35,37 @@ def _augment(url):
 
 def _cache_file(url):
     h = hashlib.sha1(url.encode("utf-8")).hexdigest()
-    return os.path.join(CACHE, h[:2], h + ".json")
+    return os.path.join(CACHE, h[:2], h + ".json.gz")
+
+
+def _read_cache(cf):
+    """Lê o cache gzip; aceita o formato legado .json (sem .gz) por segurança."""
+    if os.path.exists(cf):
+        try:
+            with gzip.open(cf, "rt", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    legacy = cf[:-3]  # .json sem o .gz
+    if os.path.exists(legacy):
+        try:
+            return json.load(open(legacy, encoding="utf-8"))
+        except Exception:
+            pass
+    return None
 
 
 def get(url, use_cache=True):
-    """GET JSON com pool polido/chave, **cache em disco** e backoff honrando o 429.
+    """GET JSON com pool polido/chave, **cache gzip em disco** e backoff honrando o 429.
 
-    O cache é por URL (independe da credencial). Só respostas bem-sucedidas são
-    guardadas — um 429 esgotado devolve {} e NÃO envenena o cache."""
+    O cache é por URL (independe da credencial) e comprimido (~5–10× menor, imutável:
+    cada consulta é gravada uma vez). Só respostas bem-sucedidas entram — um 429
+    esgotado devolve {} e NÃO envenena o cache."""
     cf = _cache_file(url)
-    if use_cache and os.path.exists(cf):
-        try:
-            return json.load(open(cf, encoding="utf-8"))
-        except Exception:
-            pass
+    if use_cache:
+        cached = _read_cache(cf)
+        if cached is not None:
+            return cached
     u = _augment(url)
     for i in range(7):
         try:
@@ -55,7 +73,7 @@ def get(url, use_cache=True):
                 data = json.load(r)
             if use_cache:
                 os.makedirs(os.path.dirname(cf), exist_ok=True)
-                with open(cf, "w", encoding="utf-8") as f:
+                with gzip.open(cf, "wt", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False)
             return data
         except urllib.error.HTTPError as e:

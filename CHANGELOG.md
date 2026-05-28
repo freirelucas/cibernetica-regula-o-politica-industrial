@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (89 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (91 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -66,6 +66,7 @@ Registro de mudanças desta branch, agrupado por tema (89 commits de trabalho). 
 
 ## Funil, dados e reprodutibilidade
 
+- Versiona o raw das consultas OpenAlex (data/oa_cache) + skill /oa-cache · `0556215` · 2026-05-28
 - Cache de consultas OpenAlex + desdobra EECS-II + corrige fillcolor do Plotly · `7b1c993` · 2026-05-28
 - EECS-II: resolvedor por DOI determinístico (10.1201/9780429496639-N) · `ead3fea` · 2026-05-27
 - Colab: banho de loja — tabela de células, referências e teste de sanidade · `f8d0c53` · 2026-05-27
@@ -115,5 +116,6 @@ Registro de mudanças desta branch, agrupado por tema (89 commits de trabalho). 
 
 ## Outros
 
+- Pivô Zajdela: o silo é social — só ~5% dos autores atravessam eixos · `a9f1e7a` · 2026-05-28
 - Pruning: remove nós-agregados de periódico (hubs falsos) · `d962761` · 2026-05-27
 - changelog: hook de pre-commit (automático, árvore limpa) · `a181304` · 2026-05-27
