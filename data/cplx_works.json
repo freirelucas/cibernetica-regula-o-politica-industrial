@@ -50,18 +50,6 @@
   "subtrad": "retornos crescentes / dependência de trajetória"
  },
  {
-  "oa_id": "W2141042444",
-  "title": "The Economy as an Evolving Complex System II",
-  "authors": [
-   "W. Brian Arthur"
-  ],
-  "year": 2018,
-  "doi": "10.1201/9780429496639",
-  "type": "BOOK",
-  "abstract": "* Introduction W.B. Arthur, S.N., Durlauf, and D. Lane * Asset Pricing Under Endogenous Expectations in an Artificial Stock Market W.B. Arthur, J.H. Holland, B. LeBaron, R. Palmer, and P. Tayler * Natural Rationality V.M. Darley and S.A. Kauffman * Statistical Mechanics Approaches to Socioeconomic Behavior S.N. Durlauf * Is What Is Good for Each Best for All? Learning From Others in the Information Contagion Model D. Lane * Evolution of Trading Structures Y.M. Ioannides * Foresight, Complexity, and Strategy D. Lane and R. Maxfield * The Emergence of Simple Ecologies of Skill J.F. Padgett * Some Fundamental Puzzles in Economic History/Development D.C. North * How the Economy Organizes Itself in Space: A Survey of the New Economic Geography P. Krugman * Time and Money P. Shubik * Promises Promises J. Geanakoplos * Macroeconomics and Complexity: Inflation Theory A. Leijonhufvud * Evolutionary Dynamics in Game-Theoretic Models K. Lindgren * Identification of Anonymous Endogenous Interactions C.F. Manski * Asset Price Behavior in Complex Environments W.A. Brock * Population Games L.E. Blume * Computational Political Economy K. Kollman, J. H. Miller, and S. Page * The Economy as an Interactive System A.P. Kirman * How Economists Can Get A Life L. Tesfatsion * Some Thoughts About Distribution in Economics P.W. Anderson",
-  "subtrad": "Santa Fe — economia como sistema complexo"
- },
- {
   "oa_id": "W1501219137",
   "title": "The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration",
   "authors": [
@@ -127,5 +115,257 @@
   "type": "JOUR",
   "abstract": "",
   "subtrad": "modelagem baseada em agentes"
+ },
+ {
+  "oa_id": "W4250027192",
+  "title": "Introduction",
+  "authors": [
+   "W. B. Arthur"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-1",
+  "type": "CHAP",
+  "abstract": "In September 1987, twenty people came together at the Santa Fe Institute to talk about \"the economy as an evolving, complex system.\" Ten were theoretical economists, invited by Kenneth J. Arrow, and ten were physicists, biologists, and computer scientists, invited by Philip W. Anderson. The meeting was motivated by the hope that new ideas bubbling in the natural sciences, loosely tied together under the rubric of \"the sciences of complexity,\" might stimulate new ways of thinking about economic problems. The meeting left two legacies. The first was a volume of essays, The Economy as an Evolving Complex System, edited by Arrow, Anderson, and David Pines. The other was the founding, in 1988, of the Economics Program at the Santa Fe Institute, the Institute's first resident research program. This volume, The Economy as an Evolving Complex System II, represents the proceedings of an August 1996 workshop sponsored by the SFI Economics Program.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1905823147",
+  "title": "Asset Pricing Under Endogenous Expectations in an Artificial Stock Market",
+  "authors": [
+   "W. Brian Arthur"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-2",
+  "type": "CHAP",
+  "abstract": "This chapter proposes a theory of asset pricing based on heterogeneous agents who continually adapt their expectations to the market that these expectations aggregatively create. It explores the implications of this theory computationally using Santa Fe artificial stock market. Computer experiments with this endogenous-expectations market explain one of the more striking puzzles in finance: that market traders often believe in such concepts as technical trading, &quot;market psychology,&quot; and bandwagon effects, while academic theorists believe in market efficiency and a lack of speculative opportunities. Academic theorists and market traders tend to view financial markets in strikingly different ways. Standard (efficient-market) financial theory assumes identical investors who share rational expectations of an asset's future price, and who instantaneously and rationally discount all market information into this price. While a few academics would be willing to assert that the market has a personality or experiences moods, the standard economic view has in recent years begun to change.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W4230870409",
+  "title": "Natural Rationality",
+  "authors": [
+   "V. M. Darley"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-3",
+  "type": "CHAP",
+  "abstract": "This chapter proposes a method for modeling economic systems in which outcomes depend locally on the predictions that agents make of other agents. It develops population games in which each agent adaptively searches for a good model of its environment. The chapter demonstrates that such systems can exhibit persistent dynamics, cyclic oscillations between low and high complexity states, and other complex, yet endogenous, phenomena. It proposes these &quot;adaptively rational&quot; agents as a natural extension of rational expectations, suitable when mutual consistency is not realistic. The chapter discusses the connections between work and the programs of bounded rationality, evolutionary game theory, and models motivated by statistical mechanics. It attempts to formulate a categorization of the natural rationality of agents whose mutual interactions form their world. The chapter compares the results of its analysis and experimentation with the intuitive ideas introduced earlier.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1521966682",
+  "title": "Statistical Mechanics Approaches to Socioeconomic Behavior",
+  "authors": [
+   "Steven N. Durlauf"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-4",
+  "type": "CHAP",
+  "abstract": "This chapter provides a unified framework for interpreting a wide range of interactions models which have appeared in the economics literature. It also provides a unified discussion of the use of statistical mechanics methods in the study of socioeconomic behavior. The framework bears a close relationship to econometric models of discrete choice and, therefore, holds the potential for rendering interactions models estimable. A number of new applications of statistical mechanics to socioeconomic problems are suggested. At first glance, statistical mechanics methods, which underlie the theory of condensed matter, would appear to have little to do with socioeconomic phenomena related to inequality. An important goal of this chapter is to show how statistical mechanics structures naturally arise in a number of socioeconomic environments. The statistical mechanics-inspired models of socioeconomic phenomena that typically have been studied focus on environments in which each individual of a group faces a binary choice.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W4231397303",
+  "title": "Is What Is Good For Each Best For All? Learning From Others In The Information Contagion Model",
+  "authors": [
+   "David P. Lane"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-5",
+  "type": "CHAP",
+  "abstract": "This chapter discusses a model designed to isolate the effects of this informational feedback on the market-share allocation process, at least with respect to a particular kind of choice problem and a particular underlying social structure. It focuses on some subtle and surprising ways in which agent characteristics and connectivity structure affect the market-shares of the competing products. The chapter describes two examples of properties that seem desirable at the individual level, but which turn out to have undesirable effects at the aggregate level: what is good for each is, in a certain sense, bad for all. It shows that giving agents access to more information does not necessarily lead to a better outcome at the aggregate level: increasing the number of informants for each agent can decrease the proportion of agents that end up adopting the better product. The chapter compares two different procedures for integrating data obtained from informants into a choice between the two products.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W4251529684",
+  "title": "Evolution of Trading Structures",
+  "authors": [
+   "Yannis M. loannides"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-6",
+  "type": "CHAP",
+  "abstract": "This chapter reviews the evolution of trading structures by examining two pertinent strands in the literature on economies with interacting agents, one, works that presume a specified topology of interactions among agents, and two, works that let random mechanisms determine that topology. It also reviews interactive discrete choice models in isotropic settings and proposes extensions within certain stylized anisotropic settings, which are particularly interesting for economists. The chapter suggests that the random topology of interaction approach, which has employed random graph theory to study evolution of trading structures, may go beyond analyses of sizes of trading groups and thus exploit the full range of possible topological properties of trading structures. It proposes to integrate those approaches and to exploit their natural complementarities. The chapter addresses a number of additional topics, including matching models, spatial aspects of the evolution of trading structures and issues of statistical inference.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1527555409",
+  "title": "Foresight, Complexity, and Strategy",
+  "authors": [
+   "David A. Lane"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-7",
+  "type": "CHAP",
+  "abstract": "This chapter argues that strategy in the face of complex foresight horizons should consist of an on-going set of practices that interpret and construct the relationships that comprise the world in which the firm acts. It illustrates the ideas advanced with a story about the entry of ROLM into the PBX market in 1975. The chapter utilizes a few terms that may at first seem like unnecessary jargon, but for which we do not find ready, unambiguous substitutes in ordinary language. These include agent, actor, artifact, space, generative relationships, attributions, and identity. The chapter focuses on various ROLM marketing and strategy documents in the possession of KM, a cofounder of ROLM who led its PBX division, and material collected in a Stanford Graduate School of Business case prepared by Professor Adrian Ryans. ROLM had a strategy when it launched its PBX product, but events quickly invalidated many of the assumptions on which this strategy was based.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1531922412",
+  "title": "The Emergence of Simple Ecologies of Skill: A Hypercycle Approach to Economic Organization",
+  "authors": [
+   "John F. Padgett"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-8",
+  "type": "CHAP",
+  "abstract": "This chapter utilizes the suggestive language selfish and altruistic because these labels exactly describe who in the model benefits, in terms of learning, from the interaction—the one who initiates the interaction or the one who responds. Specifically, in a spatial context, target-only reproduction/learning creates more complicated and expansive social ecologies (in equilibrium) than does source-only reproduction/learning. The developmental dynamic for &quot;selfish&quot; source-only reproduction is depressingly simple in a spatial context. Catalytic source-only social ecologies of three or more interacting individuals inexorably and quickly collapse into isolated dyads of two specialized individuals, who then stably &quot;feed&quot; on each other. Perhaps the most important finding in the simulations of higher-element spatial hypercycles, however, is the fact that stable reproductive ecologies were found at all. Physical space is more than just a passive receptacle for social and chemical technologies to be located within. Dynamic barriers of technological complexity can be transcended once global is transformed into the concatenation of locals.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1487841157",
+  "title": "Some Fundamental Puzzles in Economic History/Development",
+  "authors": [
+   "Douglass C. North"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-9",
+  "type": "CHAP",
+  "abstract": "This chapter describes the confront a number of fundamental puzzles in economic history/development—puzzles that go to the heart of the nature of economic change. They can be broadly classified under two general headings: how to account for the uneven and erratic pattern of both historical change and contemporary development, and how to model this process of change and development. Economic organizations are firms, trade unions, cooperatives, etc.; political organizations are political parties, legislatures, regulatory bodies; educational organizations are universities, schools, vocational training centers. It was the lack of large-scale political and economic order that created the essential environment hospitable to political/economic development. The Netherlands and England pursued different paths to political/economic success, but in each case, the experiences were conducive to the evolution of a belief structure that induced political and economic institutions that lowered transaction costs.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1584351242",
+  "title": "How the Economy Organizes Itself in Space: A Survey of the New Economic Geography",
+  "authors": [
+   "Paúl Krugman"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-10",
+  "type": "CHAP",
+  "abstract": "As the example of Silicon Valley makes clear, the economic analysis of location— the geography of the economy—is the subfield of economics to which the typical buzz words of complexity apply most obviously and dramatically. The critical mass aspect of the model is immediately apparent. In fact, there are two critical masses, depending on whether the regional economy is growing or shrinking. Turing analysis involves focusing on the very early stages of spatial self-organization, in which the object being studied—embryo or economy—is diverging away from an almost but not quite uniform spatial distribution. In Fujita-type models, as in the racetrack models, the economy is one-dimensional; but instead of a closed circle, it consists of an infinitely long line. The distinction between workers and farmers is dropped; homogeneous labor can produce either manufactures or food. But agriculture requires land, so the farm population must be spread along the line.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1504860304",
+  "title": "Time and Money",
+  "authors": [
+   "Martín Shubik"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-11",
+  "type": "CHAP",
+  "abstract": "General equilibrium is timeless, and without outside money, the price system is homogeneous of order zero. Some finite-horizon strategic-market game models are considered, with an initial issue of fiat money held as an asset. This chapter devotes to an essentially nontechnical presentation of the key elements of the approach together with some of the key results. It indicates the basic shift in paradigm away from equilibrium toward the study of process, learning, and evolution which is transforming economic analysis. The chapter deals with exchange economies with completely stationary or cyclical inputs. It suggests that the basic points made here hold for growth models with some adjustments concerning the boundedness conditions on the money supply being related to the size of growth. The money market alone cannot adjust the money supply seamlessly to the variations needed for the appropriate relative prices.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W4249640825",
+  "title": "Promises Promises",
+  "authors": [
+   "John Geanakoplos"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-12",
+  "type": "CHAP",
+  "abstract": "In the classical general equilibrium model, agents keep all their promises, every good is traded, and competition prevents any agent from earning superior returns on investments in financial markets. This chapter introduces the age-old problem of broken promises into the general equilibrium model. It suggests that a new market dynamic emerges, based on collateral as a device to secure promises. The chapter shows that under suitable conditions, in rational expectations equilibrium, some investors will be able to earn higher than normal returns on their investments, and the prices of goods used as collateral will be especially volatile. It illustrates the theoretical points with some of the experiences on Wall Street as director of fixed income research at the firm of Kidder Peabody. The chapter suggests that the main business of Wall Street is to help people make and keep promises.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W3207028280",
+  "title": "Macroeconomics and Complexity",
+  "authors": [
+   "Axel Leijonhufvud"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-13",
+  "type": "CHAP",
+  "abstract": "The complaints about macroeconomics are familiar to all. The economy is not modeled as an evolving system exhibiting emergent properties. The infinite-horizon optimizing representative agent model is not altogether representative of macroeconomics. This chapter deals with two types of mortal agents (overlapping generations) and some models with asymmetric information or externalities capable of producing a sort of coordination failures. But generally speaking these, too, tend to be subject to the same complaints. The chapter describes a set of (somewhat atypical) empirical phenomena, explains why they are not handled well by current macroeconomics, and end with a few suggestions about how they might be attacked. An overview of macroeconomics might too easily deteriorate into catalogue of models to which these complaints and reservations apply in varying combinations. The inflationary economy does not gravitate toward the use of a single index as the common unit of account.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1495494612",
+  "title": "Evolutionary Dynamics in Game-Theoretic Models",
+  "authors": [
+   "Kristian Lindgren"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-14",
+  "type": "CHAP",
+  "abstract": "The term &quot;evolutionary dynamics&quot; often refers to systems that exhibit a time evolution in which the character of the dynamics may change due to internal mechanisms. Such models are, of course, interesting for studying systems in which variation and selection are important components. This chapter focuses on dynamical systems described by equations of motion that may change in time according to certain rules, which can be interpreted as mutation operations. It devotes to a discussion of a number of evolutionary models based on the iterated Prisoner's Dilemma game as the interaction between individuals, see, e.g., Axelrod. The chapter illustrates the following: by varying the trickiness of the game (iterated game, mistakes, misunderstandings, choice of payoff matrix), by introducing spatial dimensions, and by modifying the strategy space and the representation of strategies. It discusses that the equations of motion for the different variables (individuals) in the models are usually coupled, which means that we have coevolutionary systems.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1489891708",
+  "title": "Identification of Anonymous Endogenous Interactions",
+  "authors": [
+   "Charles F. Manski"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-15",
+  "type": "CHAP",
+  "abstract": "Endogenous growth models assume dynamic learning processes in which the output of a given firm depends on the lagged value of aggregate industry output. Biological models of contagion suppose that the probability of an uninfected person becoming infected varies with the fraction of the population already infected. This chapter utilizes the term anonymous endogenous interactions to describe the class of social processes in which the behavior of an individual varies with the distribution of behavior in a group containing the individual. The interactions are endogenous because the outcome of each group member varies with the outcomes of the other group members, not with other attributes of the group. The chapter describes some models that illustrate alternative forms of the response function. These models express a range of ideas about the nature of interactions, yet all are quite simple.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1518017987",
+  "title": "Asset Price Behavior In Complex Environments",
+  "authors": [
+   "William A. Brock"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-16",
+  "type": "CHAP",
+  "abstract": "This chapter first surveys empirical patterns that appear in asset returns. Some of the main patterns are the following. Returns are hard to predict out of sample. The correlation dimension is rather large and is unstable; i.e., returns are generated by a &quot;complex&quot; process, Detrended volume of trading activity is persistent, i.e., the autocorrelation function is positive and decreases slowly as lag length increases. Volatility of returns is also persistent and the autocorrelation function of volatility is rather similar to that of detrended volume. Detrended volume and volatility are highly correlated contemporaneously. The chapter sketches development of adaptive evolutionary theoretic financial asset pricing models that nest the usual rational expectations type of models. It reviews some studies of the types of structures of belief heterogeneity that is needed to generate equilibrium returns, volume of trading, and volatility of returns that is consistent with the stylized facts reviewed.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W4230147377",
+  "title": "Population Games",
+  "authors": [
+   "Lawrence E. Blume"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-17",
+  "type": "CHAP",
+  "abstract": "In most economists' view, aggregate economic activity results from the interactions of many small economic agents pursuing diverse interests. To some, this statement is a normative proposition. This chapter discusses that research which has attended to the dynamics of systems continually subject to random perturbations, or noise. It presents a &quot;local interaction&quot; model; that each player directly competes with only a few players in the population. Other topics have also been studied, including local interaction with endogenous partner choice, forward-looking behavior, and variable and endogenous population size. Both the short-run and the long-run behavior of population models are important objects of study. Long-run behavior is characterized by the process' ergodic distribution. When the population is large, the short-run dynamics are nearly deterministic, and can be described by the differential equation which describes the evolution of mean behavior.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1584959115",
+  "title": "Computational Political Economy",
+  "authors": [
+   "Ken Kollman"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-18",
+  "type": "CHAP",
+  "abstract": "This chapter addresses the use of adaptive computational modeling techniques in the field of political economy. It considers the advantages of computational methods. The chapter describes two computational models: a spatial model of electoral competition and a Tiebout model. It discusses what the future may hold for these new techniques. The chapter summarizes computational methods in the context of two basic models in political economy. it reveals the strengths and weaknesses of both computational and mathematical approaches. Computational approaches can change the way social scientists understand social phenomena by forcing them to reconsider core assumptions. While the advantages of computational models make a compelling case for their implementation, practitioners must address important methodological issues. Computational modeling is no different than any other scientific enterprise; there are instances of brittle results being driven by both ignorance and political agendas.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W3168857647",
+  "title": "The Economy as an Interactive System",
+  "authors": [
+   "Alan Kirman"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-19",
+  "type": "CHAP",
+  "abstract": "In standard economic models agents only interact through the price system. In fact, the state that agents find themselves in depends on the states of the other agents in the economy. This chapter discusses economic models in which agents interact directly with each other but use relatively simple rules and learn from their experience. It suggests that the understanding of aggregate economic phenomena requires an understanding both of individual behavior and the way in which individuals interact. The chapter argues that it is important to consider economic models in which the &quot;states&quot; of individuals depend on the states of others. It describes a view of the economy as an interactive system in which agents, rather than fully optimizing, learn from experience. The chapter emphasizes the importance of models in which agents only interact with a limited subset of other agents, their neighbors. It also suggests that the neighborhood structure itself should be considered as endogenous.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W1919092021",
+  "title": "How Economists Can Get ALife",
+  "authors": [
+   "Leigh Tesfatsion"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-20",
+  "type": "CHAP",
+  "abstract": "This chapter presents an overview of the fast-developing field of artificial life, stressing aspects especially relevant for the study of decentralized market economies. Artificial life (alife) is the bottom-up study of basic phenomena commonly associated with living organisms, such as self-replication, evolution, adaptation, selforganization, parasitism, competition, and cooperation. Alife researchers study complex adaptive systems sharing many of the following characteristics. Most importantly, each such system typically consists of many dispersed units acting in parallel with no global controller responsible for the behavior of all units. Alife research tends to focus on continually evolving systems whose global behavior arises from the local interactions of distributed units; this is the sense in which alife research is said to be bottom up. The central problem for economic alife researchers is to understand the apparently spontaneous appearance of regularity in economic processes, such as the unplanned coordination of trading activities in decentralized market economies that economists associate with Adam Smith's invisible hand.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
+ },
+ {
+  "oa_id": "W3034369434",
+  "title": "Some Thoughts about Distribution in Economics",
+  "authors": [
+   "Philip W. Anderson"
+  ],
+  "year": 2018,
+  "doi": "10.1201/9780429496639-21",
+  "type": "CHAP",
+  "abstract": "The message of this talk is a philosophical one: scientists tend to place too much focus on averages, while the world is full of singularities.",
+  "subtrad": "Santa Fe — economia como sistema complexo (EECS-II)"
  }
 ]

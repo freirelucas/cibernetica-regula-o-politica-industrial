@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (86 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (87 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -45,6 +45,7 @@ Registro de mudanças desta branch, agrupado por tema (86 commits de trabalho). 
 
 ## Análise (cienciometria / Science of Science)
 
+- 4º eixo: estrutura a literatura da complexidade por subtradição · `0a17659` · 2026-05-27
 - Descobre os caminhos potenciais entre as comunidades epistêmicas · `dc2b097` · 2026-05-27
 - Experimento do 4º eixo conclui: economia da complexidade é candidata a ponte · `39d0d7b` · 2026-05-27
 - Adiciona o experimento do 4º eixo (economia da complexidade / SFI EECS-IV) · `d4ee7d5` · 2026-05-27
