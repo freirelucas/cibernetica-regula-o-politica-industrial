@@ -11,9 +11,11 @@ não re-batem na API e depurar deixa de ser doloroso (nada de "quebrou cedo").
 
 ## O que é
 
-Cada resposta bem-sucedida do OpenAlex é gravada como um JSON, com nome =
-`sha1(url)` em pastas-balde de 2 caracteres (`data/oa_cache/ab/abcd….json`). A
-chave é a **URL** (independe da credencial mailto/api_key). Quem grava:
+Cada resposta bem-sucedida do OpenAlex é gravada como um JSON **comprimido**
+(`.json.gz`, ~5–10× menor), com nome = `sha1(url)` em pastas-balde de 2 caracteres
+(`data/oa_cache/ab/abcd….json.gz`). A chave é a **URL** (independe da credencial
+mailto/api_key) e o arquivo é **imutável** — gravado uma vez, nunca reescrito, então
+não gera churn no histórico do git. Quem grava:
 
 - `src/oa.py` — `get(url)` dos scripts locais (minirun, split_eecs2, author_snowball, cross_brasil…).
 - o `oa_get` do notebook (`OUT/oa_cache/` no Colab).
@@ -53,10 +55,13 @@ reprodução). Para re-buscar uma URL, apague o arquivo dela ou rode com
 
 ## Gotchas
 
-- **Cresce com o corpus.** Hoje ~2 MB / dezenas de respostas; um funil completo
-  (817 obras + citantes + refs no Colab) pode chegar a dezenas de MB. É o preço
-  da reprodutibilidade offline — aceitável para um repo de pesquisa. Se incomodar,
-  versione só o cache das fases caras (enrichment/cocitação) e mantenha o resto local.
+- **Cresce com o corpus.** Comprimido fica em ~0,5 MB hoje; um funil completo
+  (817 obras + citantes + refs no Colab) chega a alguns MB gzip. É o preço da
+  reprodutibilidade offline — aceitável para repo de pesquisa (sem LFS, sem custo).
+  Para uma explosão MUITO grande, o gargalo passa a ser o **nº de arquivos** (git
+  fica lento com dezenas de milhares): aí sele as fases concluídas em poucos packs
+  imutáveis (`fase_N.jsonl.gz`) em vez de arquivos soltos, ou versione só o cache
+  das fases caras (enrichment/cocitação) e mantenha o resto local.
 - **Não comitar `{}`/erros:** o `get()` já evita (só grava sucesso).
 - Verificado nesta sessão: `data/oa_cache/` versionado, hook estagiando, 2ª
   chamada à mesma URL retorna do cache em ~0,00 s.
