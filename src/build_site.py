@@ -38,7 +38,7 @@ DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
-            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "discussao", "brasil", "analise-brasil", "sintese", "leitura", "sementes", "repro", "dados",
+            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "discussao", "brasil", "analise-brasil", "sintese", "leitura", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 
 
@@ -276,6 +276,52 @@ def inject_hypergraph_numbers(html):
     return html
 
 
+def inject_author_network_numbers(html):
+    """Injeta números vivos + tabela top-30 de data/author_network.json no template.
+    Permite reescalar a rede de autores sem editar HTML."""
+    A_PATH = os.path.join(ROOT, "data", "author_network.json")
+    S_PATH = os.path.join(ROOT, "data", "author_snowball_expansion.json")
+    if not os.path.exists(A_PATH):
+        return html
+    A = json.load(open(A_PATH, encoding="utf-8"))
+    snow = {}
+    if os.path.exists(S_PATH):
+        snow = json.load(open(S_PATH, encoding="utf-8")).get("summary", {})
+    # render top-30 table
+    rows = ['<table class="tbl">',
+            '<thead><tr><th>#</th><th>Autor</th><th>score</th>'
+            '<th>n_works</th><th>C</th><th>R</th><th>P</th>'
+            '<th>h-index</th><th>comm</th></tr></thead><tbody>']
+    for i, a in enumerate(A.get("top_cross_axis", [])[:30], 1):
+        ax = a["n_per_axis"]
+        oid = a.get("oa_id", "")
+        link = f'<a href="https://openalex.org/{oid}">{a["display_name"] or oid}</a>'
+        rows.append(
+            f'<tr><td>{i}</td><td>{link}</td>'
+            f'<td>{a["cross_axis_score"]:.3f}</td>'
+            f'<td>{a["n_works_total"]}</td>'
+            f'<td>{ax.get("Cyb",0)}</td>'
+            f'<td>{ax.get("Reg",0)}</td>'
+            f'<td>{ax.get("PolInd",0)}</td>'
+            f'<td>{a.get("h_index",0)}</td>'
+            f'<td>{a.get("community_id",-1)}</td></tr>'
+        )
+    rows.append('</tbody></table>')
+    top_table = "\n".join(rows)
+    subs = {
+        "AUTHORNET_N_AUTHORS": str(A.get("n_authors", "?")),
+        "AUTHORNET_N_CROSS_STRICT": str(A.get("n_cross_axis_strict", "?")),
+        "AUTHORNET_N_CROSS_LOOSE": str(A.get("n_cross_axis_loose", "?")),
+        "AUTHORNET_N_COMMUNITIES": str(A.get("n_communities", "?")),
+        "AUTHORNET_N_SNOWBALL_NEW": str(snow.get("n_new_works", "?")),
+        "AUTHORNET_N_SNOWBALL_OVERLAP": str(snow.get("n_overlap", "?")),
+        "AUTHORNET_TOP_TABLE": top_table,
+    }
+    for tok, val in subs.items():
+        html = html.replace(tok, val)
+    return html
+
+
 def explorer_network():
     """Rede do explorador: a versão ampliada (network_exploded.json) anotada com a
     comunidade detectada (CNM), o coeficiente de participação e o papel de Guimerà-Amaral."""
@@ -337,6 +383,7 @@ def main():
     js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
     html = inject_hypergraph_numbers(html)           # XGI_* tokens ← data/cocitation_hyperedges.json
+    html = inject_author_network_numbers(html)       # AUTHORNET_* tokens ← data/author_network.json
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)

@@ -44,6 +44,10 @@
       "description": "Cruzamento Brasil × núcleo global por citação direta",
       "source": "data/cross_brasil.json · src/cross_brasil.py"
     },
+    "obra de autor-ponte": {
+      "description": "Escrita por autor no top-30 cross_axis_score ≥0.35 (Fase D)",
+      "source": "data/author_network.json:top_cross_axis"
+    },
     "ponte a construir": {
       "description": "Top-25 por prioridade de ponte (CB + comunidade)",
       "source": "data/bridge_priority.json · src/bridge_priority.py"
@@ -56,6 +60,8 @@
   "thresholds": {
     "MIN_CROSS_AXIS_EDGES": 10,
     "TOP_N_HIGHER_ORDER": 40,
+    "TOP_N_AUTHOR_BRIDGES": 30,
+    "MIN_CROSS_AXIS_SCORE": 0.35,
     "MIN_AXES_COVERED": 2,
     "N_BRIDGE_PRIORITY": 25
   }

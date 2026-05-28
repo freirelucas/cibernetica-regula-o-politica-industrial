@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (104 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (107 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -49,6 +49,7 @@ Registro de mudanças desta branch, agrupado por tema (104 commits de trabalho).
 
 ## Análise (cienciometria / Science of Science)
 
+- Fase D snapshot 2: snowball top-15 + adjacent probes · `0291844` · 2026-05-28
 - Snowball por autor-semente (estratégia mais ousada, via cache) · `bb1a0b1` · 2026-05-28
 - 4º eixo: estrutura a literatura da complexidade por subtradição · `0a17659` · 2026-05-27
 - Descobre os caminhos potenciais entre as comunidades epistêmicas · `dc2b097` · 2026-05-27
@@ -123,6 +124,8 @@ Registro de mudanças desta branch, agrupado por tema (104 commits de trabalho).
 
 ## Outros
 
+- Fase D snapshot 1: author_network.py + enriquecimento de 817 autores · `fea88d6` · 2026-05-28
+- Recovery note: balanço de features + roteiro + onde paramos · `2b86304` · 2026-05-28
 - Honestifica o badge de rajadas: 760 brutos → 20 de alto impacto (top peso) · `5ac22a1` · 2026-05-28
 - Source + data + docs do c673371 (sources que não entraram na primeira tentativa) · `0260722` · 2026-05-28
 - Escala XGI 60→200 citantes/semente; bridges rank-based scale-invariant; injeção viva de números · `c673371` · 2026-05-28
