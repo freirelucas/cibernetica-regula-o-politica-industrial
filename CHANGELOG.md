@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (103 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (104 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -33,6 +33,7 @@ Registro de mudanças desta branch, agrupado por tema (103 commits de trabalho).
 
 ## Explorador e visualizações
 
+- Fase C — Longue-durée temporal: silos cristalizaram-se nos 1980s · `8d529bf` · 2026-05-28
 - Explorador: resolve os 'sem eixo' por inferência e revela pontes de 2ª ordem · `fd5c2f7` · 2026-05-27
 - Explorador: realça a estrutura — recua os 'sem eixo', destaca as pontes · `493dfc5` · 2026-05-27
 - Explorador: disposição "por eixo" (silos visíveis) em vez do emaranhado · `a2cc1cf` · 2026-05-27
