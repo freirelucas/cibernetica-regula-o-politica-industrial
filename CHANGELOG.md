@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (97 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (98 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -121,6 +121,7 @@ Registro de mudanças desta branch, agrupado por tema (97 commits de trabalho). 
 
 ## Outros
 
+- Pipeline XGI → SR: citantes ranqueados, sub-eixos Leiden e nova seção 10·5 · `68b0b13` · 2026-05-28
 - Ordem superior (XGI): cocitação como hipergrafo — 40% dos grupos cruzam eixos · `fac51da` · 2026-05-28
 - Pivô Zajdela: o silo é social — só ~5% dos autores atravessam eixos · `a9f1e7a` · 2026-05-28
 - Pruning: remove nós-agregados de periódico (hubs falsos) · `d962761` · 2026-05-27
