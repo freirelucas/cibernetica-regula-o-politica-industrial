@@ -27,6 +27,7 @@ BRASIL = os.path.join(ROOT, "docs", "material-brasil", "dataset_politica_industr
 ENRICH = os.path.join(ROOT, "data", "openalex_enrich.json")
 CROSS = os.path.join(ROOT, "data", "cross_brasil.json")
 CPLX = os.path.join(ROOT, "data", "cplx_works.json")
+AUTHORS = os.path.join(ROOT, "data", "author_works.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
 BRASIL_ROLE = "corpus Brasil (Faganello)"
@@ -126,6 +127,14 @@ def consolidate():
                  axes=["Economia da complexidade"],
                  roles=["complexidade (4º eixo)"]
                  + ([f"complexidade · {w['subtrad']}"] if w.get("subtrad") else []))
+
+    if os.path.exists(AUTHORS):                    # snowball por autor-semente
+        for w in json.load(open(AUTHORS, encoding="utf-8")):
+            _add(store, w.get("title", ""), authors=w.get("authors") or [],
+                 year=str(w.get("year") or ""), doi=w.get("doi", ""),
+                 url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
+                 abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
+                 axes=w.get("axes") or [], roles=["obra de autor-semente"])
 
     return [store[k] for k in sorted(store, key=lambda k: (store[k]["year"] or "0"), reverse=True)]
 
