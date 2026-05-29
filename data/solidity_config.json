@@ -8,11 +8,15 @@
  "design": {
   "null_iter": 200,
   "seed": 42,
+  "fdr_alpha": 0.05,
   "tau_z": 2.0
  },
  "latente": {
   "holdout_year": 2015,
-  "tau_baixo_pct": 20
+  "tau_baixo_pct": 20,
+  "min_positivos": 5,
+  "bootstrap": 500,
+  "max_eval": 4000
  },
  "semantico": {
   "faixa_low_pct": 40,

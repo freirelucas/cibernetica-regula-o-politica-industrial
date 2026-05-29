@@ -42,8 +42,9 @@ EIXOS = ("Cyb", "Reg", "PolInd")          # os três silos canônicos (Cplx é 4
 DEFAULT_CONFIG = {
     "_doc": "limiares e parâmetros da solidez tripla — versionado e reprodutível",
     "poda": {"min_cited_by": 5, "max_candidatos": 3000, "min_par_peso": 1},
-    "design": {"null_iter": 200, "seed": 42, "tau_z": 2.0},
-    "latente": {"holdout_year": 2015, "tau_baixo_pct": 20},   # latente abaixo do P20 = "repelida"
+    "design": {"null_iter": 200, "seed": 42, "fdr_alpha": 0.05},   # nulo CASADO por eixos + BH-FDR
+    "latente": {"holdout_year": 2015, "tau_baixo_pct": 20, "min_positivos": 5,
+                "bootstrap": 500, "max_eval": 4000},
     "semantico": {"faixa_low_pct": 40, "faixa_high_pct": 75, "metodo": "auto"},
 }
 
@@ -150,10 +151,12 @@ def _cross_pair_counts(edges, axis_of):
 
 
 def design_scores(cands, edges, axis_of, central, cfg):
-    """Ganho de integração CANDIDATA-ESPECÍFICO: a tríade integra mais quando (a) cruza
-    eixos pouco conectados hoje (raridade) e (b) seus membros são centrais ao tráfego
-    cross-silo (cross_axis_degree). z vs nulo de tríades aleatórias cross-silo
-    (determinístico, seed). NÃO depende só da composição de eixos — varia por membro."""
+    """DESIGN é o PROPOSITOR (sempre acha integração) — medido por raridade do cruzamento
+    de eixos × centralidade cross-silo dos membros. Significância contra NULO CASADO pelo
+    multiset de eixos dos MEMBROS (remove a inflação de "eu selecionei cross-silo"), p
+    EMPÍRICO, e correção de multiplicidade Benjamini-Hochberg (FDR) sobre as 3000 candidatas.
+    Marca c["design_sig"] = sobreviveu ao FDR. NÃO é teste independente do latente — é a
+    hipótese; quem falsifica é o eixo temporal (out-of-sample) e o semântico."""
     cc = _cross_pair_counts(edges, axis_of)
     maxc = max(cc.values()) if cc else 1
     maxd = max(central.values()) if central else 1
@@ -168,25 +171,52 @@ def design_scores(cands, edges, axis_of, central, cfg):
         for a, b in cross:
             rarity = 1.0 - cc.get(frozenset((e[a], e[b])), 0) / maxc
             cent = (central.get(a, 0) + central.get(b, 0)) / (2 * maxd)
-            g += rarity * (0.5 + cent)            # membros centrais integram mais
+            g += rarity * (0.5 + cent)
         n_eixos = len({e[m] for m in members if e[m] in EIXOS})
-        return g * (1 + 0.5 * (n_eixos - 1))      # tocar 3 eixos > tocar 2
-    # modelo nulo: tríades aleatórias cross-silo
+        return g * (1 + 0.5 * (n_eixos - 1))
+
+    pools = collections.defaultdict(list)
+    for n, a in axis_of.items():
+        pools[a].append(n)
     rng = random.Random(cfg["design"]["seed"])
-    pool = [n for n, a in axis_of.items() if a in EIXOS]
-    null_raws = []
-    for _ in range(cfg["design"]["null_iter"]):
-        if len(pool) >= 3:
-            null_raws.append(raw(rng.sample(pool, 3)))
-    mean = sum(null_raws) / max(len(null_raws), 1)
-    var = sum((x - mean) ** 2 for x in null_raws) / max(len(null_raws) - 1, 1)
-    sd = var ** 0.5 or 1e-9
+    N = cfg["design"]["null_iter"]
+    null_cache = {}
+
+    def null_for(key):                       # key = multiset de eixos dos membros (ex.: ('Cyb','PolInd','Reg'))
+        if key not in null_cache:
+            rs = []
+            for _ in range(N):
+                tri = [rng.choice(pools[a]) for a in key if pools.get(a)]
+                if len(tri) == len(key):
+                    rs.append(raw(tri))
+            null_cache[key] = rs
+        return null_cache[key]
+
+    pvals = []
     for c in cands:
+        key = tuple(sorted(axis_of.get(m, "") for m in c["membros"]))
+        rs = null_for(key)
         r = raw(c["membros"])
+        mean = sum(rs) / len(rs) if rs else 0.0
+        sd = (sum((x - mean) ** 2 for x in rs) / max(len(rs) - 1, 1)) ** 0.5 or 1e-9
+        p = (sum(1 for x in rs if x >= r) + 1) / (len(rs) + 1) if rs else 1.0   # p empírico
         c["design_raw"] = round(r, 4)
         c["design_z"] = round((r - mean) / sd, 3)
-    return {"null_mean": round(mean, 4), "null_sd": round(sd, 4),
-            "n_iter": cfg["design"]["null_iter"], "seed": cfg["design"]["seed"]}
+        c["design_p"] = round(p, 5)
+        pvals.append(p)
+    # Benjamini-Hochberg FDR sobre todas as candidatas (controla multiplicidade)
+    alpha = cfg["design"]["fdr_alpha"]
+    m = max(len(pvals), 1)
+    order = sorted(range(len(pvals)), key=lambda i: pvals[i])
+    kmax = 0
+    for rank, i in enumerate(order, 1):
+        if pvals[i] <= rank / m * alpha:
+            kmax = rank
+    sig = set(order[:kmax])
+    for j, c in enumerate(cands):
+        c["design_sig"] = bool(j in sig)
+    return {"nulo": "casado por multiset de eixos dos membros", "n_iter": N,
+            "seed": cfg["design"]["seed"], "fdr_alpha": alpha, "n_design_sig": len(sig)}
 
 
 # ── M-4 · LATENTE: fechamento simplicial + holdout temporal ──────────────────────
@@ -225,44 +255,86 @@ def fetch_citer_years(citers):
     return years
 
 
-def temporal_holdout(edges, citers, pair_w, cands, cfg):
-    """Anti-circularidade: treina o fechamento em arestas com citante ≤T, testa se as
-    tríades de alto escore-treino de fato ganharam suporte em arestas >T. Reporta a
-    diferença de fechamento entre o topo e o resto (sinal preditivo, não circular)."""
+def temporal_validation(edges, citers, axis_of, cfg):
+    """O eixo INDEPENDENTE de verdade (out-of-sample no tempo) — o que quebra a
+    circularidade. Gera tríades abertas SÓ do treino (arestas com citante ≤T: ≥2 pares
+    co-ocorrem, FACE ausente no treino) e pergunta se a face FECHA no teste (>T). Mede
+    AUC-PR do escore latente-de-treino predizendo o fechamento futuro, contra a
+    PREVALÊNCIA (acaso) com IC bootstrap. "Validado" se o IC95 inferior da AP > prevalência.
+
+    Não vaza o futuro: candidatas e features vêm só de ≤T; rótulo vem só de >T. Se há
+    poucos fechamentos (silos!), devolve validated=False com n_positivos — resultado
+    negativo válido (nenhum método pode reivindicar predição sem positivos)."""
     years = data_io.load_data("citer_years.json", required=False) or {}
     T = cfg["latente"]["holdout_year"]
-    train_idx = [i for i, c in enumerate(citers) if years.get(c, 9999) <= T]
-    test_idx = [i for i, c in enumerate(citers) if years.get(c, 0) > T]
-    if len(train_idx) < 30 or len(test_idx) < 30:
-        return {"ok": False, "motivo": "anos de citantes insuficientes (rode o recrawl online)",
-                "n_train": len(train_idx), "n_test": len(test_idx)}
-    pw_train = collections.Counter()
-    for i in train_idx:
-        for a, b in itertools.combinations(sorted(edges[i]), 2):
-            pw_train[frozenset((a, b))] += 1
-    test_pairs = set()
-    for i in test_idx:
-        for a, b in itertools.combinations(sorted(edges[i]), 2):
-            test_pairs.add(frozenset((a, b)))
-    # escore-treino por candidata e "fechou no teste" = algum par novo surgiu em >T
-    def closed_after(c):
-        m = c["membros"]
-        return any(frozenset((m[i], m[j])) in test_pairs
-                   for i, j in itertools.combinations(range(len(m)), 2))
-    scored = []
-    for c in cands:
-        m = c["membros"]
-        ws = [pw_train.get(frozenset((m[i], m[j])), 0)
-              for i, j in itertools.combinations(range(len(m)), 2)]
-        scored.append((sum(ws), closed_after(c)))
-    scored.sort(key=lambda x: -x[0])
-    top = scored[: max(1, len(scored) // 5)]
-    rest = scored[len(top):]
-    rate_top = sum(1 for _, cl in top if cl) / max(len(top), 1)
-    rate_rest = sum(1 for _, cl in rest if cl) / max(len(rest), 1)
-    return {"ok": True, "T": T, "n_train": len(train_idx), "n_test": len(test_idx),
-            "fechamento_top20pct": round(rate_top, 3), "fechamento_resto": round(rate_rest, 3),
-            "lift": round(rate_top - rate_rest, 3)}
+    tr = [edges[i] for i, c in enumerate(citers) if years.get(c, 9999) <= T]
+    te = [edges[i] for i, c in enumerate(citers) if years.get(c, 0) > T]
+    if len(tr) < 30 or len(te) < 30:
+        return {"validated": False, "motivo": f"anos insuficientes (treino={len(tr)}, teste={len(te)}) — rode o recrawl online",
+                "n_train": len(tr), "n_test": len(te), "T": T}
+    pw_tr = collections.Counter()
+    adj_tr = collections.defaultdict(set)
+    for e in tr:
+        for a, b in itertools.combinations(sorted(e), 2):
+            pw_tr[frozenset((a, b))] += 1
+            adj_tr[a].add(b); adj_tr[b].add(a)
+    tr_faces = [set(e) for e in tr]
+    te_faces = [set(e) for e in te]
+    maxw = max(pw_tr.values()) if pw_tr else 1
+
+    def in_any(tri, faces):
+        s = set(tri)
+        return any(s <= f for f in faces)
+
+    seen, feats, labels = set(), [], []
+    for pair in list(pw_tr):
+        a, b = tuple(pair)
+        for c in (adj_tr[a] | adj_tr[b]):
+            if c in (a, b):
+                continue
+            tri = frozenset((a, b, c))
+            if tri in seen:
+                continue
+            eix = {axis_of.get(x) for x in tri if axis_of.get(x) in EIXOS}
+            if len(eix) < 2 or in_any(tri, tr_faces):   # cross-silo E aberta no treino
+                continue
+            seen.add(tri)
+            ws = [pw_tr.get(frozenset((x, y)), 0) / maxw for x, y in itertools.combinations(sorted(tri), 2)]
+            ws = [w for w in ws if w > 0]
+            feats.append(len(ws) / sum(1 / w for w in ws) if len(ws) == 3 else (sum(ws) / 3) * 0.5)
+            labels.append(1 if in_any(tri, te_faces) else 0)   # FECHOU no futuro?
+            if len(seen) >= cfg["latente"]["max_eval"]:
+                break
+        if len(seen) >= cfg["latente"]["max_eval"]:
+            break
+    n, n_pos = len(labels), sum(labels)
+    base = {"validated": False, "T": T, "n_train": len(tr), "n_test": len(te),
+            "n_eval": n, "n_positivos": n_pos}
+    if n_pos < cfg["latente"]["min_positivos"] or n_pos in (0, n):
+        base["motivo"] = f"fechamentos insuficientes no teste (positivos={n_pos}/{n}) — sem poder estatístico"
+        return base
+    try:
+        import numpy as np
+        from sklearn.metrics import average_precision_score
+        y, s = np.array(labels), np.array(feats)
+        prev = float(y.mean())
+        ap = float(average_precision_score(y, s))
+        rng = np.random.default_rng(cfg["design"]["seed"])
+        aps = []
+        for _ in range(cfg["latente"]["bootstrap"]):
+            bi = rng.integers(0, n, n)
+            if y[bi].sum() > 0:
+                aps.append(average_precision_score(y[bi], s[bi]))
+        lo = float(np.percentile(aps, 2.5)) if aps else None
+        hi = float(np.percentile(aps, 97.5)) if aps else None
+        base.update({"validated": bool(lo is not None and lo > prev),
+                     "prevalencia": round(prev, 4), "average_precision": round(ap, 4),
+                     "ap_ci95": [round(lo, 4) if lo else None, round(hi, 4) if hi else None],
+                     "lift_sobre_acaso": round(ap / prev, 3) if prev > 0 else None,
+                     "criterio": "validado se IC95 inferior da AP > prevalência"})
+    except Exception as e:
+        base["motivo"] = f"falha na métrica: {str(e)[:120]}"
+    return base
 
 
 # ── M-5 · SEMÂNTICO: tópicos (Jaccard) + embeddings (faixa intermediária) ─────────
@@ -370,35 +442,47 @@ def semantic_scores(cands, topics, absts, axis_of, cfg):
 
 
 # ── M-6 · quadrante + solidez + confiança modal + entregável ─────────────────────
-def classify(cands, cfg):
+def classify(cands, cfg, temporal_validated):
+    """DESIGN propõe (significativo no FDR); SEMÂNTICO e TEMPORAL falsificam. A tríade
+    só é "sólida (3 de 3)" se o eixo temporal tiver poder (temporal_validated) E a
+    candidata passar nos três. Sem validação temporal, NÃO se certifica a tripla —
+    reporta-se "2 de 3" (design+semântico) à espera de validação. Devolve (n_solidas, n_2de3)."""
     lat_vals = sorted(c["latente"] for c in cands)
+
     def pct(vals, p):
         if not vals:
             return 0.0
         k = min(len(vals) - 1, max(0, int(round(p / 100 * (len(vals) - 1)))))
         return vals[k]
     lat_hi = pct(lat_vals, 60)
-    lat_lo = pct(lat_vals, cfg["latente"]["tau_baixo_pct"])     # abaixo disso = "repelida"
-    tau_z = cfg["design"]["tau_z"]
-    n_solidas = 0
+    lat_lo = pct(lat_vals, cfg["latente"]["tau_baixo_pct"])
+    n_solidas, n_2de3 = 0, 0
     for c in cands:
-        design_pass = c.get("design_z", 0) >= tau_z
-        latent_pass = c["latente"] >= lat_lo                    # não-repelida (não exige alta)
-        sem_pass = c["sem_na_faixa"]
-        c["solida"] = bool(design_pass and latent_pass and sem_pass)
+        design_pass = bool(c.get("design_sig"))      # significativo após FDR (propositor)
+        sem_pass = bool(c["sem_na_faixa"])
+        two = design_pass and sem_pass
+        n_2de3 += two
+        c["design_pass"] = design_pass
+        c["sem_pass"] = sem_pass
+        if temporal_validated:
+            latent_pass = c["latente"] >= lat_lo      # não-repelida (eixo temporal tem poder)
+            c["latente_pass"] = latent_pass
+            c["solida"] = bool(design_pass and latent_pass and sem_pass)
+        else:
+            c["latente_pass"] = None                  # eixo temporal sem poder -> não certifica
+            c["solida"] = False
         n_solidas += c["solida"]
         hi_lat = c["latente"] >= lat_hi
-        hi_des = design_pass
-        if not sem_pass or (not hi_des and not hi_lat):
+        if not sem_pass or (not design_pass and not hi_lat):
             c["quadrante"] = "ruido_quimera"
-        elif hi_lat and hi_des:
+        elif hi_lat and design_pass:
             c["quadrante"] = "costura_ouro"
-        elif hi_des and not hi_lat:
+        elif design_pass and not hi_lat:
             c["quadrante"] = "agenda_pesquisa"
         else:
             c["quadrante"] = "fechamento_trivial"
         c["confianca_modal"] = "obra"      # v1 = obra-só (maior confiança)
-    return n_solidas
+    return n_solidas, n_2de3
 
 
 def build(out_dados=None):
@@ -407,22 +491,31 @@ def build(out_dados=None):
     cfg = load_config()
     edges, citers, axis_of, pair_w, _, central = load_hobra()
     cands = gen_candidates(edges, axis_of, pair_w, cfg)
-    null = design_scores(cands, edges, axis_of, central, cfg)
-    latent_scores(cands, pair_w)
-    fetch_citer_years(citers)                       # recrawl barato (no-op se offline/cacheado)
-    holdout = temporal_holdout(edges, citers, pair_w, cands, cfg)
+    null = design_scores(cands, edges, axis_of, central, cfg)   # propositor + nulo casado + FDR
+    latent_scores(cands, pair_w)                                # feature (validade vem do holdout)
+    fetch_citer_years(citers)                                   # recrawl barato (no-op se offline/cacheado)
+    tv = temporal_validation(edges, citers, axis_of, cfg)       # eixo independente out-of-sample
     members = sorted({m for c in cands for m in c["membros"]})
     topics, absts = enrich_members(members)
     sem_meta = semantic_scores(cands, topics, absts, axis_of, cfg)
-    n_solidas = classify(cands, cfg)
-    cands.sort(key=lambda c: (-int(c["solida"]), -(c.get("design_z") or 0), -c["latente"]))
+    n_solidas, n_2de3 = classify(cands, cfg, tv.get("validated", False))
+    cands.sort(key=lambda c: (-int(c["solida"]), -int(c.get("design_sig", False)),
+                              -(c.get("design_z") or 0), -c["latente"]))
 
     solidas = [c for c in cands if c["solida"]]
+    if tv.get("validated"):
+        status = "sem ponte sólida" if n_solidas == 0 else f"{n_solidas} pontes sólidas (3 de 3)"
+    else:
+        status = (f"0 sólidas — eixo temporal sem poder (ver validacao_temporal); "
+                  f"{n_2de3} candidatas em 2 de 3 (design+semântico), à espera de validação temporal")
     out = {
-        "_generated": "camada de pontes de ordem superior — solidez tripla (v1, obra-só)",
-        "config": cfg, "modelo_nulo": null, "holdout_temporal": holdout, "semantico": sem_meta,
-        "n_candidatas": len(cands), "n_solidas": n_solidas,
-        "status": "sem ponte sólida" if n_solidas == 0 else f"{n_solidas} pontes sólidas",
+        "_generated": "camada de pontes de ordem superior — solidez tripla",
+        "metodo": "v2 — DESIGN propõe (nulo casado por eixos + BH-FDR); falsificadores "
+                  "INDEPENDENTES: holdout temporal out-of-sample (AUC-PR vs prevalência) e semântico",
+        "config": cfg, "modelo_nulo": null, "validacao_temporal": tv, "semantico": sem_meta,
+        "n_candidatas": len(cands), "n_solidas": n_solidas, "n_2de3": n_2de3,
+        "tripla_certificavel": bool(tv.get("validated")),
+        "status": status,
         "por_quadrante": dict(collections.Counter(c["quadrante"] for c in cands)),
         "solidas": solidas[:200],
         "candidatas": cands[:500],
@@ -431,9 +524,9 @@ def build(out_dados=None):
     data_io.save_data("solidity_config.json", cfg)   # materializa a config versionada
     os.makedirs(out_dados, exist_ok=True)
     _write_csvs(cands, out_dados)
-    print(f"solidity: {len(cands)} candidatas | {n_solidas} sólidas | "
-          f"quadrantes {out['por_quadrante']} | semântico={sem_meta['metodo']} | "
-          f"holdout={'ok' if holdout.get('ok') else 'pendente'}")
+    print(f"solidity: {len(cands)} candidatas | {n_solidas} sólidas (3de3) | {n_2de3} em 2de3 | "
+          f"temporal_validado={tv.get('validated')} (AP={tv.get('average_precision')}, "
+          f"prev={tv.get('prevalencia')}, pos={tv.get('n_positivos')}) | semântico={sem_meta['metodo']}")
     return out
 
 

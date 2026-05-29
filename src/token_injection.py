@@ -150,12 +150,20 @@ def inject_solidity_numbers(html, root=ROOT):
     if not solidas:
         rows.append('<tr><td colspan="6">Nenhuma ponte sólida no recorte atual — resultado válido por desenho.</td></tr>')
     rows.append("</tbody></table>")
+    tv = S.get("validacao_temporal", {})
+    if tv.get("average_precision") is not None:
+        temporal = (f"Validação temporal (fora da amostra): precisão média AP={tv['average_precision']} "
+                    f"vs prevalência={tv.get('prevalencia')} (IC95 {tv.get('ap_ci95')}); "
+                    f"{tv.get('n_positivos')} fechamentos no teste — "
+                    f"{'eixo com poder' if tv.get('validated') else 'não distinguível do acaso'}.")
+    else:
+        temporal = f"Validação temporal indisponível: {tv.get('motivo', '')}."
     subs = {
         "SOLIDEZ_STATUS": str(S.get("status", "?")),
         "SOLIDEZ_N_CAND": str(S.get("n_candidatas", "?")),
         "SOLIDEZ_N_SOLIDAS": str(S.get("n_solidas", "?")),
-        "SOLIDEZ_N_OURO": str(q.get("costura_ouro", 0)),
-        "SOLIDEZ_N_AGENDA": str(q.get("agenda_pesquisa", 0)),
+        "SOLIDEZ_N_2DE3": str(S.get("n_2de3", "?")),
+        "SOLIDEZ_TEMPORAL": temporal,
         "SOLIDEZ_TABLE": "\n".join(rows),
     }
     for tok, val in subs.items():
