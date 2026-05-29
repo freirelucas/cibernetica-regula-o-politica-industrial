@@ -18,5 +18,10 @@ jobs:
           python-version: "3.11"
       - name: Instalar pytest
         run: pip install pytest
+      - name: Regenerar derivados volumosos do cache (offline, sem rede)
+        # PR-3: data/author_network.json é gitignored (>1 MB, regenerável). O cache
+        # versionado o reconstrói em ~20s sem tocar a rede (OA_OFFLINE). PR-8 troca
+        # este passo pelo smoke completo run_all.py --offline.
+        run: OA_OFFLINE=1 python src/author_network.py
       - name: Rodar a suite
         run: pytest -q

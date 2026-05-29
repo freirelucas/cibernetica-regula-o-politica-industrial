@@ -21,3 +21,13 @@ data/eecs2_chapters.json
 
 # NB: data/oa_cache/ (raw das consultas OpenAlex) É VERSIONADO de propósito —
 # reprodutibilidade offline do funil. Mantido em dia pelo hook de pre-commit.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Derivados volumosos (> 1 MB) REGENERÁVEIS a partir do cache versionado (PR-3).
+# Regra de ouro: versiona-se o INSUMO (data/oa_cache/ real + a fonte curada
+# data/scisci_results.json) e NÃO os derivados grandes — o orquestrador os
+# regenera. Derivados < 1 MB seguem versionados (baratos, úteis p/ diff/auditoria).
+# author_network.json (~8,3 MB): confirmado regenerável SÓ do cache, ZERO fetches
+# novos, em ~20 s — ver notes/2026-05-29-pr3-derivados-gitignore.md. Regenere com:
+#   OA_OFFLINE=1 python src/author_network.py
+data/author_network.json

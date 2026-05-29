@@ -75,6 +75,13 @@ def get(url, use_cache=True):
         cached = _read_cache(cf)
         if cached is not None:
             return cached
+    # PR-3 — modo offline (OA_OFFLINE): cache-only. No miss devolve {} na hora, sem
+    # tocar a rede e sem dormir nos retries. É o primitivo que torna a regeneração
+    # de derivados a partir do cache versionado reprodutível e RÁPIDA (sem ele, um
+    # miss offline gastaria 7 retries × backoff). run_all --offline (PR-5) e o
+    # guarda-corpo de budget (PR-4) reutilizam esta porta.
+    if os.environ.get("OA_OFFLINE", "").strip().lower() not in ("", "0", "false", "no"):
+        return {}
     u = _augment(url)
     for i in range(7):
         try:
