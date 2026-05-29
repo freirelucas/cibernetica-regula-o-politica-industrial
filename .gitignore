@@ -34,3 +34,7 @@ data/author_network.json
 
 # Estado efêmero do livro de budget da API (PR-4) — reseta por dia; não se versiona.
 data/oa_budget.json
+
+# Sentinelas e relatório do orquestrador (PR-5) — estado de execução efêmero.
+data/.done_*
+data/run_all_report.csv
