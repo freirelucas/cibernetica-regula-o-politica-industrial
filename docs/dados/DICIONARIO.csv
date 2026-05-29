@@ -50,3 +50,18 @@ arquivo,coluna,descricao
 11_rede_arestas.csv,tipo,tipo de ligação (cocita)
 11_rede_arestas.csv,cocitacoes,número de vezes citadas em conjunto (peso da cocitação)
 11_rede_arestas.csv,forca_associacao,cocitação normalizada: peso / raiz(grau_origem · grau_destino)
+12_pontes_candidatas.csv,membros,
+12_pontes_candidatas.csv,eixos,eixos temáticos tocados (Cyb/Reg/PolInd)
+12_pontes_candidatas.csv,escore_latente,
+12_pontes_candidatas.csv,escore_design_z,
+12_pontes_candidatas.csv,similaridade_semantica,
+12_pontes_candidatas.csv,na_faixa,
+12_pontes_candidatas.csv,quadrante,
+12_pontes_candidatas.csv,solida,
+12_pontes_candidatas.csv,confianca_modal,
+13_diagrama_solidez.csv,membros,
+13_diagrama_solidez.csv,x_latente,
+13_diagrama_solidez.csv,y_design_z,
+13_diagrama_solidez.csv,semantico,
+13_diagrama_solidez.csv,na_faixa,
+13_diagrama_solidez.csv,quadrante,

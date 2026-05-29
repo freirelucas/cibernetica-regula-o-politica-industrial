@@ -130,6 +130,39 @@ def inject_brokerage_numbers(html, root=ROOT):
     return html
 
 
+def inject_solidity_numbers(html, root=ROOT):
+    """SOLIDEZ_* tokens + tabela das pontes sólidas ← data/solidity_bridges.json (modelagem)."""
+    p = os.path.join(root, "data", "solidity_bridges.json")
+    if not os.path.exists(p):
+        return html
+    S = json.load(open(p, encoding="utf-8"))
+    q = S.get("por_quadrante", {})
+    solidas = S.get("solidas", [])
+    QN = {"costura_ouro": "costura de ouro", "agenda_pesquisa": "agenda de pesquisa",
+          "fechamento_trivial": "fechamento trivial", "ruido_quimera": "ruído/quimera"}
+    rows = ['<table class="tbl"><thead><tr><th>Membros (OpenAlex)</th><th>Eixos</th>'
+            '<th>design z</th><th>latente</th><th>semântico</th><th>quadrante</th></tr></thead><tbody>']
+    for c in solidas[:20]:
+        mem = " · ".join(f'<a href="https://openalex.org/{m}">{m}</a>' for m in c.get("membros", []))
+        rows.append(f'<tr><td>{mem}</td><td>{", ".join(c.get("eixos", []))}</td>'
+                    f'<td>{c.get("design_z", "")}</td><td>{c.get("latente", "")}</td>'
+                    f'<td>{c.get("semantico", "")}</td><td>{QN.get(c.get("quadrante"), c.get("quadrante", ""))}</td></tr>')
+    if not solidas:
+        rows.append('<tr><td colspan="6">Nenhuma ponte sólida no recorte atual — resultado válido por desenho.</td></tr>')
+    rows.append("</tbody></table>")
+    subs = {
+        "SOLIDEZ_STATUS": str(S.get("status", "?")),
+        "SOLIDEZ_N_CAND": str(S.get("n_candidatas", "?")),
+        "SOLIDEZ_N_SOLIDAS": str(S.get("n_solidas", "?")),
+        "SOLIDEZ_N_OURO": str(q.get("costura_ouro", 0)),
+        "SOLIDEZ_N_AGENDA": str(q.get("agenda_pesquisa", 0)),
+        "SOLIDEZ_TABLE": "\n".join(rows),
+    }
+    for tok, val in subs.items():
+        html = html.replace(tok, val)
+    return html
+
+
 def inject_all(html, root=ROOT):
     """Aplica todos os injetores na ordem certa.
     Idempotente: chamadas múltiplas dão o mesmo resultado."""
@@ -137,4 +170,5 @@ def inject_all(html, root=ROOT):
     html = inject_author_network_numbers(html, root)
     html = inject_brazil_numbers(html, root)
     html = inject_brokerage_numbers(html, root)
+    html = inject_solidity_numbers(html, root)
     return html
