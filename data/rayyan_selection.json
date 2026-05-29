@@ -1,0 +1,6 @@
+{
+ "_generated": "PR-7 — seleção de triagem (decisão reprodutível, versionada; não estado de navegador)",
+ "_doc": "thresholds = limiares de rigor da triagem (prioridade de ponte, HO-BC, nº de eixos, é-Brasil); decisions = {uid: inc|exc|may}. A triagem.html carrega este arquivo; 'Salvar seleção' baixa uma versão nova para commitar aqui.",
+ "thresholds": {"prioridade": 0, "ho_bc": 0, "eixos": 0, "brasil": "todos"},
+ "decisions": {}
+}

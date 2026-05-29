@@ -228,15 +228,32 @@ def net_stats(net):
 
 
 def rayyan_works_js(works):
-    """Serializa as obras da síntese para a página de triagem (uid estável + campos de decisão)."""
+    """Serializa as obras da síntese para a triagem (uid estável + SINAIS por critério).
+
+    PR-7: anexa a cada obra os sinais que a reforma de UX usa nos limiares ao vivo —
+    prioridade de ponte (bridge_priority), HO-BC (higher_order_bc), nº de eixos e
+    é-Brasil — e o ESPAÇO (placeholder) da solidez tripla (estrutural/latente/
+    semântico) que a sessão de modelagem futura preenche (aqui fica None)."""
     import re
+    prio = data_io.load_data("bridge_priority.json", required=False).get("by_oa_id", {})
+    hobc = data_io.load_data("higher_order_bc.json", required=False).get("by_oa_id", {})
     out = []
     for e in works:
         m = re.search(r"openalex\.org/(W\d+)", e.get("url", ""))
-        uid = e["doi"] or (m.group(1) if m else None) or build_rayyan._norm(e["title"])[:60]
-        out.append({"uid": uid, "title": e["title"], "authors": e["authors"], "year": e["year"],
-                    "venue": e["venue"], "abstract": e["abstract"], "doi": e["doi"], "url": e["url"],
-                    "type": e.get("type", "GEN"), "axes": sorted(e["axes"]), "roles": sorted(e["roles"])})
+        oid = e.get("oa_id") or (m.group(1) if m else "")
+        uid = e["doi"] or oid or build_rayyan._norm(e["title"])[:60]
+        roles = e["roles"]
+        pe = prio.get(oid) or {}
+        prio_score = pe.get("score", 0) if isinstance(pe, dict) else 0
+        out.append({"uid": uid, "oa_id": oid, "title": e["title"], "authors": e["authors"],
+                    "year": e["year"], "venue": e["venue"], "abstract": e["abstract"],
+                    "doi": e["doi"], "url": e["url"], "type": e.get("type", "GEN"),
+                    "axes": sorted(e["axes"]), "roles": sorted(roles), "n_axes": len(e["axes"]),
+                    "brasil": ("corpus Brasil (Faganello)" in roles) or ("ponte global×Brasil" in roles),
+                    "prioridade": round(float(prio_score or 0), 4),
+                    "ho_bc": round(float(hobc.get(oid) or 0), 4),
+                    # gancho da solidez tripla (PR-7) — a modelagem preenche os 3 escores
+                    "solidez": {"estrutural": None, "latente": None, "semantico": None}})
     return out
 
 
@@ -340,7 +357,11 @@ def main():
         print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB, {len(expl_net['nodes'])} nós)")
 
     if os.path.exists(TRIAGEM_TPL):
-        works_js = f"const RAYYAN_WORKS={json.dumps(rayyan_works_js(rayyan), ensure_ascii=False)};"
+        # PR-7 — estado da triagem vem do arquivo VERSIONADO (não do navegador):
+        # data/rayyan_selection.json (decisões + limiares). Ausente -> {} (UI usa padrões).
+        sel = data_io.load_data("rayyan_selection.json", required=False, default={})
+        works_js = (f"const RAYYAN_WORKS={json.dumps(rayyan_works_js(rayyan), ensure_ascii=False)};\n"
+                    f"const RAYYAN_SELECTION={json.dumps(sel, ensure_ascii=False)};")
         with open(TRIAGEM_TPL, encoding="utf-8") as f:
             tri = f.read().replace("__JS_DATA__", works_js)
         triagem = os.path.join(DOCS, "triagem.html")

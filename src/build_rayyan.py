@@ -542,12 +542,34 @@ def emit(works, out, stem):
         z.writestr(zi, ris_text)
 
 
+def _write_provenance(works, out):
+    """PR-7 — proveniência da exportação: registra os limiares de tagging usados e a
+    composição (papel/eixo) ao lado do rayyan_sintese.* — decisão reprodutível."""
+    roles = collections.Counter(r for w in works for r in w["roles"])
+    axes = collections.Counter(a for w in works for a in w["axes"])
+    prov = {
+        "_generated": "proveniência da síntese Rayyan (PR-7)",
+        "n_obras": len(works),
+        "limiares": {
+            "MIN_CROSS_AXIS_EDGES": MIN_CROSS_AXIS_EDGES, "TOP_N_HIGHER_ORDER": TOP_N_HIGHER_ORDER,
+            "TOP_N_AUTHOR_BRIDGES": TOP_N_AUTHOR_BRIDGES, "MIN_CROSS_AXIS_SCORE": MIN_CROSS_AXIS_SCORE,
+            "TOP_N_HO_BC": TOP_N_HO_BC, "MIN_HO_BC_SCORE": MIN_HO_BC_SCORE,
+            "MIN_AXES_COVERED": MIN_AXES_COVERED, "N_BRIDGE_PRIORITY": N_BRIDGE_PRIORITY,
+        },
+        "por_papel": dict(roles.most_common()),
+        "por_eixo": dict(axes.most_common()),
+    }
+    with open(os.path.join(out, "rayyan_sintese.provenance.json"), "w", encoding="utf-8") as f:
+        json.dump(prov, f, ensure_ascii=False, indent=1)
+
+
 def build(out=DADOS):
     works = tag_ho_bridge(tag_author_bridge(tag_higher_order_bridge(
         tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate()))))))))
     os.makedirs(out, exist_ok=True)
     write_manifest()           # data/rayyan_tags.json — auditoria das escolhas conceituais
     emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
+    _write_provenance(works, out)   # PR-7 — proveniência (limiares + composição) do export
     pontes = [e for e in works if "ponte a construir" in e["roles"]]   # opção E — a revisar p/ construir pontes
     if pontes:
         emit(pontes, out, "rayyan_pontes")
