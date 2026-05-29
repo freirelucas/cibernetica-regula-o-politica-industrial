@@ -13,10 +13,14 @@ import gzip
 import hashlib
 import json
 import os
+import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import budget  # noqa: E402  (PR-4 — contabiliza custo dos fetches e aplica o teto diário)
 
 MAILTO = os.environ.get("OPENALEX_MAILTO", "lucasfreire@gmail.com")
 API_KEY = os.environ.get("OPENALEX_API_KEY", "")
@@ -82,6 +86,12 @@ def get(url, use_cache=True):
     # guarda-corpo de budget (PR-4) reutilizam esta porta.
     if os.environ.get("OA_OFFLINE", "").strip().lower() not in ("", "0", "false", "no"):
         return {}
+    # PR-4 — guarda-corpo de budget: se o gasto do dia já alcançou o teto diário
+    # (OA_DAILY_CAP_USD, padrão US$1.00), para de buscar não-cacheados e devolve {}.
+    if budget.over_cap():
+        sys.stderr.write(f"[oa] teto diário de budget atingido (US${budget.daily_cap():.2f}); "
+                         f"devolvendo {{}} sem buscar não-cacheado.\n")
+        return {}
     u = _augment(url)
     for i in range(7):
         try:
@@ -95,6 +105,7 @@ def get(url, use_cache=True):
                 with gzip.open(tmp, "wt", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False)
                 os.replace(tmp, cf)
+            budget.add_cost(url, data)   # PR-4 — conta o custo deste fetch não-cacheado
             return data
         except urllib.error.HTTPError as e:
             time.sleep(min(60, 5 * (2 ** i)) if e.code == 429 else 3)

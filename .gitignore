@@ -31,3 +31,6 @@ data/eecs2_chapters.json
 # novos, em ~20 s — ver notes/2026-05-29-pr3-derivados-gitignore.md. Regenere com:
 #   OA_OFFLINE=1 python src/author_network.py
 data/author_network.json
+
+# Estado efêmero do livro de budget da API (PR-4) — reseta por dia; não se versiona.
+data/oa_budget.json
