@@ -86,6 +86,9 @@ PHASES = [
      "writes": ["bridge_priority.json"], "network": False},
     {"name": "brokerage",     "script": "brokerage_roles.py",        "reads": ["author_network.json"],
      "writes": ["brokerage_roles.json"], "network": False},
+    {"name": "solidity",      "script": "solidity.py",               "reads": ["cocitation_hyperedges.json"],
+     "writes": ["solidity_bridges.json"], "network": True},   # recrawl/enrich/embeddings só no recompute;
+     #                                                            saída versionada -> --offline PULA (CI sem modelo)
     {"name": "site",          "script": "build_site.py",             "reads": ["scisci_results.json"],
      "writes": ["docs/index.html"], "network": False, "always": True},
 ]
