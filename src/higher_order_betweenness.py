@@ -29,55 +29,43 @@ SEED = 42
 
 
 def load_hypergraph():
-    """Devolve {edges: list[set], node_to_edges: dict[node, list[edge_idx]]}."""
+    """Lê as hiperarestas CANÔNICAS persistidas em data/cocitation_hyperedges.json.
+
+    PR-1 — dívida das hiperarestas saldada. O handout supunha que o JSON gravava só
+    `degree`/`cross_axis_degree`; na prática `cocitation_hypergraph.main()` já
+    persiste o campo `hyperedges` (lista de listas de IDs de obras) desde o marco
+    M1. A dívida real estava AQUI: este módulo reconstruía as hiperarestas varrendo
+    TODO o data/oa_cache/ (antiga build_hypergraph_from_seeds), o que incluía
+    citantes de consultas alheias às 13 sementes e contava repetidos — ~7,9k
+    hiperarestas contra as ~1,3k canônicas. Essa reconstrução era ENVIESADA; agora
+    lemos a fonte canônica e o ranking HO-BC reflete o hipergrafo de cocitação real
+    (ver nota de divergência no commit/PR; ranking top-15 muda de propósito).
+
+    Devolve (edges, corpus): edges = list[list[str]]; corpus = dict[id -> {label,
+    axis}] só para o relatório — rótulo/eixo são cosméticos e NÃO filtram o cálculo;
+    os vértices do hipergrafo são exatamente os nós presentes nas hiperarestas.
+    """
     H = json.load(open(HYPEREDGES, encoding="utf-8"))
-    # cocitation_hyperedges.json não armazena hiperarestas diretamente —
-    # apenas top_higher_order_bridges + cross_axis_degree. Reconstruir a
-    # partir do degree dict não é possível. Usar a saída de
-    # cocitation_hypergraph.main() seria ideal, mas como workaround:
-    # tratar cada nó com degree>0 e usar cross_axis_degree como proxy.
-    degree = H.get("degree", {})
-    cross_deg = H.get("cross_axis_degree", {})
-    if not degree:
-        return None, None
-    # construir grafo proxy: nodes ponderados por degree
-    return degree, cross_deg
-
-
-def build_hypergraph_from_seeds():
-    """Reconstroi hiperarestas re-executando o pipeline do cocitation_hypergraph
-    minimal: para cada citante no cache, pegar referenced_works ∩ corpus_nodes."""
-    import gzip
-    cache_dir = os.path.join(ROOT, "data", "oa_cache")
-    # corpus = nós da rede ampliada
-    net_path = os.path.join(ROOT, "data", "network_4axis.json")
-    if not os.path.exists(net_path):
-        net_path = os.path.join(ROOT, "data", "network.json")
-    net = json.load(open(net_path, encoding="utf-8"))
-    corpus = {n["id"]: n for n in net.get("nodes", [])}
-    print(f"  corpus (network nodes): {len(corpus)}")
-
-    edges = []
-    edge_titles = []
-    for root, _, files in os.walk(cache_dir):
-        for f in files:
-            if not f.endswith(".json.gz"):
-                continue
-            try:
-                data = json.loads(gzip.open(os.path.join(root, f), "rt").read())
-            except Exception:
-                continue
-            results = data.get("results") if isinstance(data, dict) else None
-            if isinstance(results, list):
-                for w in results:
-                    refs = w.get("referenced_works") or []
-                    he = sorted(set(
-                        r.split("/")[-1] for r in refs
-                        if (r.split("/")[-1]) in corpus
-                    ))
-                    if len(he) >= 2:
-                        edges.append(he)
-    print(f"  hiperarestas reconstruídas: {len(edges)}")
+    edges = H.get("hyperedges")
+    if not edges:
+        raise SystemExit(
+            "ERRO: 'hyperedges' ausente em data/cocitation_hyperedges.json. "
+            "Rode `python src/cocitation_hypergraph.py` (marco M1) antes deste passo."
+        )
+    axis_of = H.get("axis_of", {})
+    nodes = {n for e in edges for n in e}            # vértices reais do hipergrafo
+    # metadados cosméticos (rótulo + eixo) vindos da rede do explorador, se houver
+    meta = {}
+    for net_name in ("network_4axis.json", "network_exploded.json", "network.json"):
+        p = os.path.join(ROOT, "data", net_name)
+        if os.path.exists(p):
+            meta = {n["id"]: n for n in json.load(open(p, encoding="utf-8")).get("nodes", [])}
+            break
+    corpus = {n: {"label": meta.get(n, {}).get("label", n),
+                  "axis": meta.get(n, {}).get("axis") or axis_of.get(n, "")}
+              for n in nodes}
+    print(f"  hiperarestas canônicas (cocitation_hyperedges.json): {len(edges)} "
+          f"| vértices: {len(nodes)}")
     return edges, corpus
 
 
@@ -164,10 +152,7 @@ def main():
     mode = os.environ.get("HO_BC_MODE", "both")  # "rw", "exact", "both"
     print(f"== B.4 · Higher-order betweenness (mode={mode}) ==")
 
-    edges, corpus = build_hypergraph_from_seeds()
-    if not edges:
-        print("ERRO: hiperarestas não reconstruíveis. Verifique cache.")
-        return
+    edges, corpus = load_hypergraph()   # PR-1: fonte canônica (sem varrer o cache)
 
     centrality_rw, centrality_exact = {}, {}
     n_cliques = 0

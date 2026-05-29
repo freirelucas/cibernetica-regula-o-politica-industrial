@@ -20,20 +20,26 @@ import csv
 import json
 import os
 import re
+import sys
 import zipfile
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import data_io  # noqa: E402  (PR-2 — leitura/escrita tolerante dos derivados em data/)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
+# Caminhos dos derivados centralizados em data_io (PR-2); BRASIL e DADOS vivem em
+# docs/ (fonte curada e saída publicada), fora da camada data/.
+JSON_SRC = data_io.data_path("scisci_results.json")
 BRASIL = os.path.join(ROOT, "docs", "material-brasil", "dataset_politica_industrial_brasil.csv")
-ENRICH = os.path.join(ROOT, "data", "openalex_enrich.json")
-CROSS = os.path.join(ROOT, "data", "cross_brasil.json")
-CPLX = os.path.join(ROOT, "data", "cplx_works.json")
-AUTHORS = os.path.join(ROOT, "data", "author_works.json")
-PRIORITY = os.path.join(ROOT, "data", "bridge_priority.json")
-HYPEREDGES = os.path.join(ROOT, "data", "cocitation_hyperedges.json")
-AUTHOR_NETWORK = os.path.join(ROOT, "data", "author_network.json")
-HO_BC = os.path.join(ROOT, "data", "higher_order_bc.json")
-TAGS_MANIFEST = os.path.join(ROOT, "data", "rayyan_tags.json")
+ENRICH = data_io.data_path("openalex_enrich.json")
+CROSS = data_io.data_path("cross_brasil.json")
+CPLX = data_io.data_path("cplx_works.json")
+AUTHORS = data_io.data_path("author_works.json")
+PRIORITY = data_io.data_path("bridge_priority.json")
+HYPEREDGES = data_io.data_path("cocitation_hyperedges.json")
+AUTHOR_NETWORK = data_io.data_path("author_network.json")
+HO_BC = data_io.data_path("higher_order_bc.json")
+TAGS_MANIFEST = data_io.data_path("rayyan_tags.json")
 DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
 BRASIL_ROLE = "corpus Brasil (Faganello)"
@@ -106,8 +112,7 @@ def write_manifest(out_path=TAGS_MANIFEST):
             "N_BRIDGE_PRIORITY": N_BRIDGE_PRIORITY,
         },
     }
-    os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    json.dump(manifest, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    data_io.save_data(out_path, manifest, indent=2)   # PR-2 — escrita atômica via data_io
 
 
 def _norm(t):
@@ -154,7 +159,7 @@ def _add(store, title, **kw):
 
 
 def consolidate():
-    R = json.load(open(JSON_SRC, encoding="utf-8"))
+    R = data_io.load_data("scisci_results.json", required=True)  # PR-2 — fonte curada obrigatória
     store = {}
 
     for s in R.get("seeds", []):
@@ -193,23 +198,21 @@ def consolidate():
                  type=ty.get((r.get("Publication Type") or "").strip(), "GEN"),
                  axes=["Política industrial"], roles=["corpus Brasil (Faganello)"])
 
-    if os.path.exists(CPLX):                       # 4º eixo — economia da complexidade
-        for w in json.load(open(CPLX, encoding="utf-8")):
-            _add(store, w.get("title", ""), authors=w.get("authors") or [],
-                 year=str(w.get("year") or ""), doi=w.get("doi", ""),
-                 url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
-                 abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
-                 axes=["Economia da complexidade"],
-                 roles=["complexidade (4º eixo)"]
-                 + ([f"complexidade · {w['subtrad']}"] if w.get("subtrad") else []))
+    for w in data_io.load_data(CPLX, required=False, default=[]):   # 4º eixo — economia da complexidade
+        _add(store, w.get("title", ""), authors=w.get("authors") or [],
+             year=str(w.get("year") or ""), doi=w.get("doi", ""),
+             url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
+             abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
+             axes=["Economia da complexidade"],
+             roles=["complexidade (4º eixo)"]
+             + ([f"complexidade · {w['subtrad']}"] if w.get("subtrad") else []))
 
-    if os.path.exists(AUTHORS):                    # snowball por autor-semente
-        for w in json.load(open(AUTHORS, encoding="utf-8")):
-            _add(store, w.get("title", ""), authors=w.get("authors") or [],
-                 year=str(w.get("year") or ""), doi=w.get("doi", ""),
-                 url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
-                 abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
-                 axes=w.get("axes") or [], roles=["obra de autor-semente"])
+    for w in data_io.load_data(AUTHORS, required=False, default=[]):   # snowball por autor-semente
+        _add(store, w.get("title", ""), authors=w.get("authors") or [],
+             year=str(w.get("year") or ""), doi=w.get("doi", ""),
+             url=f"https://openalex.org/{w['oa_id']}" if w.get("oa_id") else "",
+             abstract=w.get("abstract", ""), type=w.get("type", "GEN"),
+             axes=w.get("axes") or [], roles=["obra de autor-semente"])
 
     return [store[k] for k in sorted(store, key=lambda k: (store[k]["year"] or "0"), reverse=True)]
 
@@ -241,9 +244,9 @@ def tag_cyb_subtype(works):
 def apply_enrich(works):
     """Completa cada obra a partir do cache do OpenAlex/Crossref (se houver): id canônico,
     DOI, resumo, título completo, autoria e tipo."""
-    if not os.path.exists(ENRICH):
+    enr = data_io.load_data(ENRICH, required=False)
+    if not enr:
         return works
-    enr = json.load(open(ENRICH, encoding="utf-8"))
     for e in works:
         d = enr.get(_norm(e["title"]))
         if not d:
@@ -270,9 +273,9 @@ def apply_enrich(works):
 def tag_cross(works):
     """Marca as obras do cruzamento Brasil × núcleo global (ponte por citação) com um
     papel próprio — para filtrar na triagem e gerar o recorte rayyan_cruzamento."""
-    if not os.path.exists(CROSS):
+    c = data_io.load_data(CROSS, required=False)
+    if not c:
         return works
-    c = json.load(open(CROSS, encoding="utf-8"))
     gids = set(c.get("global", []))
     boa = {b["oa_id"] for b in c.get("brasil", []) if b.get("oa_id")}
     bdois = {b["doi"] for b in c.get("brasil", []) if b.get("doi")}
@@ -287,9 +290,10 @@ def tag_bridge_priority(works, n=N_BRIDGE_PRIORITY):
     """Marca as N obras de maior PRIORIDADE DE PONTE (data/bridge_priority.json,
     gerado por src/bridge_priority.py) com o papel 'ponte a construir' — os papers
     a revisar em detalhe para construir as pontes entre os eixos."""
-    if not os.path.exists(PRIORITY):
+    pri = data_io.load_data(PRIORITY, required=False)
+    if not pri:
         return works
-    ranking = json.load(open(PRIORITY, encoding="utf-8")).get("ranking", [])
+    ranking = pri.get("ranking", [])
     top_list = list(dict.fromkeys(r["oa_id"] for r in ranking
                                   if r.get("oa_id") and r.get("score", 0) > 0))[:n]
     top = set(top_list)
@@ -306,9 +310,9 @@ def tag_bridge_priority(works, n=N_BRIDGE_PRIORITY):
 def tag_ho_bridge(works):
     """Marca top-TOP_N_HO_BC obras por higher-order betweenness via random walks.
     Captura pontes que a BC pairwise não vê (B.4)."""
-    if not os.path.exists(HO_BC):
+    H = data_io.load_data(HO_BC, required=False)
+    if not H:
         return works
-    H = json.load(open(HO_BC, encoding="utf-8"))
     by_id = H.get("by_oa_id", {})
     eligible = sorted(
         ((oid, c) for oid, c in by_id.items() if c >= MIN_HO_BC_SCORE),
@@ -331,9 +335,9 @@ def tag_author_bridge(works):
     """Marca obras escritas por autor no top-N cross_axis_score (≥MIN_CROSS_AXIS_SCORE).
     Materializa a 'aproximação curatorial' sem metáfora: autores reais que
     demonstravelmente atravessam silos. Fonte: data/author_network.json (Fase D)."""
-    if not os.path.exists(AUTHOR_NETWORK):
+    A = data_io.load_data(AUTHOR_NETWORK, required=False)
+    if not A:
         return works
-    A = json.load(open(AUTHOR_NETWORK, encoding="utf-8"))
     # top-N autores elegíveis (score ≥ floor)
     eligible = [
         a for a in A.get("top_cross_axis", [])
@@ -368,9 +372,9 @@ def tag_higher_order_bridge(works):
     Rank-based para ser scale-invariant: ao aumentar CITERS_PER_SEED no crawl, o cap top-N
     mantém o conjunto curado em tamanho gerenciável (vs. threshold-only que explode com a escala).
     Hiperarestas em `src/cocitation_hypergraph.py` (XGI; Landry, 2023)."""
-    if not os.path.exists(HYPEREDGES):
+    H = data_io.load_data(HYPEREDGES, required=False)
+    if not H:
         return works
-    H = json.load(open(HYPEREDGES, encoding="utf-8"))
     cross_deg = H.get("cross_axis_degree", {})
     # selecionar top-N ids elegíveis (≥MIN no floor) — scale-invariant
     eligible = sorted(
@@ -538,12 +542,34 @@ def emit(works, out, stem):
         z.writestr(zi, ris_text)
 
 
+def _write_provenance(works, out):
+    """PR-7 — proveniência da exportação: registra os limiares de tagging usados e a
+    composição (papel/eixo) ao lado do rayyan_sintese.* — decisão reprodutível."""
+    roles = collections.Counter(r for w in works for r in w["roles"])
+    axes = collections.Counter(a for w in works for a in w["axes"])
+    prov = {
+        "_generated": "proveniência da síntese Rayyan (PR-7)",
+        "n_obras": len(works),
+        "limiares": {
+            "MIN_CROSS_AXIS_EDGES": MIN_CROSS_AXIS_EDGES, "TOP_N_HIGHER_ORDER": TOP_N_HIGHER_ORDER,
+            "TOP_N_AUTHOR_BRIDGES": TOP_N_AUTHOR_BRIDGES, "MIN_CROSS_AXIS_SCORE": MIN_CROSS_AXIS_SCORE,
+            "TOP_N_HO_BC": TOP_N_HO_BC, "MIN_HO_BC_SCORE": MIN_HO_BC_SCORE,
+            "MIN_AXES_COVERED": MIN_AXES_COVERED, "N_BRIDGE_PRIORITY": N_BRIDGE_PRIORITY,
+        },
+        "por_papel": dict(roles.most_common()),
+        "por_eixo": dict(axes.most_common()),
+    }
+    with open(os.path.join(out, "rayyan_sintese.provenance.json"), "w", encoding="utf-8") as f:
+        json.dump(prov, f, ensure_ascii=False, indent=1)
+
+
 def build(out=DADOS):
     works = tag_ho_bridge(tag_author_bridge(tag_higher_order_bridge(
         tag_bridge_priority(tag_cyb_subtype(tag_cross(dedup_oaid(apply_enrich(consolidate()))))))))
     os.makedirs(out, exist_ok=True)
     write_manifest()           # data/rayyan_tags.json — auditoria das escolhas conceituais
     emit(works, out, "rayyan_sintese")                    # opção A — abrangente (Claucia + 1º snowball)
+    _write_provenance(works, out)   # PR-7 — proveniência (limiares + composição) do export
     pontes = [e for e in works if "ponte a construir" in e["roles"]]   # opção E — a revisar p/ construir pontes
     if pontes:
         emit(pontes, out, "rayyan_pontes")

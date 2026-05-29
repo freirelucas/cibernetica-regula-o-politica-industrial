@@ -18,5 +18,28 @@ jobs:
           python-version: "3.11"
       - name: Instalar pytest
         run: pip install pytest
-      - name: Rodar a suite
+      - name: Reconstruir derivados do cache (offline, sem rede / sem budget)
+        # PR-5/PR-8: regenera o que falta (ex.: data/author_network.json, gitignored
+        # no PR-3) e reconstrói o site SÓ do cache versionado — sem tocar a rede.
+        # Mantém tests/test_author_network.py verde num checkout limpo.
+        run: python src/run_all.py --offline
+      - name: Rodar a suíte
         run: pytest -q
+
+  smoke-offline:
+    # PR-8 — "rodar tudo" offline reconstrói os derivados + site e RENDERIZA,
+    # sem gastar budget (OA_OFFLINE via --offline). Garante que a cadeia não quebrou.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar Playwright
+        run: pip install playwright
+      - name: Instalar Chromium (+ libs do sistema)
+        run: python -m playwright install --with-deps chromium
+      - name: Smoke offline — run_all --offline + driver headless
+        run: |
+          python src/run_all.py --offline
+          python .claude/skills/run-scisci-ipea/driver.py

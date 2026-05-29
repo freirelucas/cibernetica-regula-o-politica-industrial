@@ -33,11 +33,12 @@ from token_injection import (  # noqa: E402
 )
 import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
 import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
+import data_io  # noqa: E402  (PR-2 — leitura tolerante dos derivados em data/)
 
 TEMPLATE = os.path.join(HERE, "site_template.html")
 EXPLORER_TPL = os.path.join(HERE, "explorador_template.html")
 TRIAGEM_TPL = os.path.join(HERE, "triagem_template.html")
-JSON_SRC = os.path.join(ROOT, "data", "scisci_results.json")
+JSON_SRC = data_io.data_path("scisci_results.json")
 DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 
@@ -227,15 +228,32 @@ def net_stats(net):
 
 
 def rayyan_works_js(works):
-    """Serializa as obras da síntese para a página de triagem (uid estável + campos de decisão)."""
+    """Serializa as obras da síntese para a triagem (uid estável + SINAIS por critério).
+
+    PR-7: anexa a cada obra os sinais que a reforma de UX usa nos limiares ao vivo —
+    prioridade de ponte (bridge_priority), HO-BC (higher_order_bc), nº de eixos e
+    é-Brasil — e o ESPAÇO (placeholder) da solidez tripla (estrutural/latente/
+    semântico) que a sessão de modelagem futura preenche (aqui fica None)."""
     import re
+    prio = data_io.load_data("bridge_priority.json", required=False).get("by_oa_id", {})
+    hobc = data_io.load_data("higher_order_bc.json", required=False).get("by_oa_id", {})
     out = []
     for e in works:
         m = re.search(r"openalex\.org/(W\d+)", e.get("url", ""))
-        uid = e["doi"] or (m.group(1) if m else None) or build_rayyan._norm(e["title"])[:60]
-        out.append({"uid": uid, "title": e["title"], "authors": e["authors"], "year": e["year"],
-                    "venue": e["venue"], "abstract": e["abstract"], "doi": e["doi"], "url": e["url"],
-                    "type": e.get("type", "GEN"), "axes": sorted(e["axes"]), "roles": sorted(e["roles"])})
+        oid = e.get("oa_id") or (m.group(1) if m else "")
+        uid = e["doi"] or oid or build_rayyan._norm(e["title"])[:60]
+        roles = e["roles"]
+        pe = prio.get(oid) or {}
+        prio_score = pe.get("score", 0) if isinstance(pe, dict) else 0
+        out.append({"uid": uid, "oa_id": oid, "title": e["title"], "authors": e["authors"],
+                    "year": e["year"], "venue": e["venue"], "abstract": e["abstract"],
+                    "doi": e["doi"], "url": e["url"], "type": e.get("type", "GEN"),
+                    "axes": sorted(e["axes"]), "roles": sorted(roles), "n_axes": len(e["axes"]),
+                    "brasil": ("corpus Brasil (Faganello)" in roles) or ("ponte global×Brasil" in roles),
+                    "prioridade": round(float(prio_score or 0), 4),
+                    "ho_bc": round(float(hobc.get(oid) or 0), 4),
+                    # gancho da solidez tripla (PR-7) — a modelagem preenche os 3 escores
+                    "solidez": {"estrutural": None, "latente": None, "semantico": None}})
     return out
 
 
@@ -259,10 +277,13 @@ def build_meta(R):
 def explorer_network():
     """Rede do explorador: a versão ampliada (network_exploded.json) anotada com a
     comunidade detectada (CNM), o coeficiente de participação e o papel de Guimerà-Amaral."""
-    src = next((os.path.join(ROOT, "data", f) for f in
-                ("network_4axis.json", "network_exploded.json", "network.json")
-                if os.path.exists(os.path.join(ROOT, "data", f))), os.path.join(ROOT, "data", "network.json"))
-    net = json.load(open(src, encoding="utf-8"))
+    src_name = next((f for f in ("network_4axis.json", "network_exploded.json", "network.json")
+                     if data_io.exists(f)), None)
+    if src_name is None:                       # PR-2 — sem rede: explorador vazio, não quebra o build
+        print("[build_site] aviso: nenhuma rede (network*.json) encontrada — explorador vazio",
+              file=sys.stderr)
+        return {"nodes": [], "links": []}
+    net = data_io.load_data(src_name, required=False, default={"nodes": [], "links": []})
     nodes, links = net.get("nodes", []), net.get("links", [])
     ids = [n["id"] for n in nodes]
     comm, _, _ = sfi_methods.cnm_communities(ids, links)
@@ -300,8 +321,7 @@ def explorer_network():
 
 def main():
     os.makedirs(DADOS, exist_ok=True)
-    with open(JSON_SRC, encoding="utf-8") as f:
-        R = json.load(f)
+    R = data_io.load_data("scisci_results.json", required=True)  # PR-2 — fonte curada obrigatória
 
     rayyan = build_rayyan.build(DADOS)
     meta = build_meta(R)
@@ -311,8 +331,8 @@ def main():
     meta["rayyan_org_n"] = sum(1 for e in rayyan if ("cibernética organizacional" in e["roles"])
                                or ("Instrumentos de governo" in e["axes"]) or ("Política industrial" in e["axes"]))
     base = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
-    net_src = os.path.join(ROOT, "data", "network.json")
-    net = json.load(open(net_src, encoding="utf-8")) if os.path.exists(net_src) else {"nodes": [], "links": []}
+    net_src = data_io.data_path("network.json")
+    net = data_io.load_data("network.json", required=False, default={"nodes": [], "links": []})
     js = base + f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
     js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
@@ -337,7 +357,11 @@ def main():
         print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB, {len(expl_net['nodes'])} nós)")
 
     if os.path.exists(TRIAGEM_TPL):
-        works_js = f"const RAYYAN_WORKS={json.dumps(rayyan_works_js(rayyan), ensure_ascii=False)};"
+        # PR-7 — estado da triagem vem do arquivo VERSIONADO (não do navegador):
+        # data/rayyan_selection.json (decisões + limiares). Ausente -> {} (UI usa padrões).
+        sel = data_io.load_data("rayyan_selection.json", required=False, default={})
+        works_js = (f"const RAYYAN_WORKS={json.dumps(rayyan_works_js(rayyan), ensure_ascii=False)};\n"
+                    f"const RAYYAN_SELECTION={json.dumps(sel, ensure_ascii=False)};")
         with open(TRIAGEM_TPL, encoding="utf-8") as f:
             tri = f.read().replace("__JS_DATA__", works_js)
         triagem = os.path.join(DOCS, "triagem.html")
