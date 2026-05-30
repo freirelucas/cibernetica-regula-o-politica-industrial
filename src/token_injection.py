@@ -171,6 +171,35 @@ def inject_solidity_numbers(html, root=ROOT):
     return html
 
 
+def inject_bridge_numbers(html, root=ROOT):
+    """SEMBR_* tokens + lista de leitura ← data/bridge_candidates.json (item 2: pontes semânticas)."""
+    p = os.path.join(root, "data", "bridge_candidates.json")
+    if not os.path.exists(p):
+        return html
+    B = json.load(open(p, encoding="utf-8"))
+    d = B.get("distribuicao_cosseno", {})
+    fr = B.get("cobertura_frentes_top", {})
+    rows = ['<table class="tbl"><thead><tr><th>Obra (OpenAlex)</th><th>Silo → parceiro</th>'
+            '<th>proximidade (cosseno)</th><th>nº de pontes potenciais</th></tr></thead><tbody>']
+    for w in B.get("lista_leitura", [])[:20]:
+        rows.append(f'<tr><td><a href="https://openalex.org/{w["oa_id"]}">{w["oa_id"]}</a></td>'
+                    f'<td>{w.get("eixo")} → {w.get("melhor_parceiro_eixo")}</td>'
+                    f'<td>{w.get("melhor_cosseno")}</td><td>{w.get("n_pontes_potenciais", "")}</td></tr>')
+    if not B.get("lista_leitura"):
+        rows.append('<tr><td colspan="4">Sem candidatos no recorte atual.</td></tr>')
+    rows.append("</tbody></table>")
+    subs = {
+        "SEMBR_N_PARES": str(B.get("n_pares", "?")),
+        "SEMBR_COS": (f"mediana {d.get('p50')}, P90 {d.get('p90')}, P99 {d.get('p99')}, "
+                      f"máx {d.get('max')}"),
+        "SEMBR_FRENTES": " · ".join(f"{k}: {v}" for k, v in fr.items()) or "—",
+        "SEMBR_TABLE": "\n".join(rows),
+    }
+    for tok, val in subs.items():
+        html = html.replace(tok, val)
+    return html
+
+
 def inject_all(html, root=ROOT):
     """Aplica todos os injetores na ordem certa.
     Idempotente: chamadas múltiplas dão o mesmo resultado."""
@@ -179,4 +208,5 @@ def inject_all(html, root=ROOT):
     html = inject_brazil_numbers(html, root)
     html = inject_brokerage_numbers(html, root)
     html = inject_solidity_numbers(html, root)
+    html = inject_bridge_numbers(html, root)
     return html

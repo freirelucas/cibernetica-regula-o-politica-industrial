@@ -30,6 +30,7 @@ from report_template import inject_template  # noqa: E402
 from token_injection import (  # noqa: E402
     inject_hypergraph_numbers, inject_author_network_numbers,
     inject_brazil_numbers, inject_brokerage_numbers, inject_solidity_numbers,
+    inject_bridge_numbers,
 )
 import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
 import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
@@ -43,7 +44,7 @@ DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
-            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "brasil", "brasil-expandido", "analise-brasil", "discussao", "sintese", "leitura", "pontes-ordem-superior", "sementes", "repro", "dados",
+            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "brasil", "brasil-expandido", "analise-brasil", "discussao", "sintese", "leitura", "pontes-ordem-superior", "pontes-semanticas", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 
 
@@ -352,6 +353,7 @@ def main():
     html = inject_brazil_numbers(html)               # BRASIL_* tokens ← data/brazil_expanded.json
     html = inject_brokerage_numbers(html)            # BROK_* tokens ← data/brokerage_roles.json
     html = inject_solidity_numbers(html)             # SOLIDEZ_* tokens ← data/solidity_bridges.json (modelagem)
+    html = inject_bridge_numbers(html)               # SEMBR_* tokens ← data/bridge_candidates.json (item 2)
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)

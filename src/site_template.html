@@ -861,6 +861,17 @@ python src/build_site.py                # este site (docs/)</pre>
   </div>
 </div></section>
 
+<!-- 18c · PONTES SEMÂNTICAS (candidatos a leitura) -->
+<section id="pontes-semanticas" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">18c</span><h2 class="sec-title">Candidatos a leitura — pontes semânticas</h2><span class="sec-method">buraco estrutural + proximidade de conteúdo</span></div>
+  <div class="prose">
+    <p class="lead">Onde a estrutura de citação não fecha, o conteúdo pode indicar por onde costurar. Esta lista inverte a pergunta do teste de solidez: entre obras de <strong>silos diferentes</strong> que <strong>nunca foram citadas juntas</strong> (buraco estrutural), quais <strong>falam de coisas próximas</strong>? São <strong>candidatos a leitura</strong> — pistas para a revisão, não pontes consumadas: pares que a literatura tratou em separado mas cujo conteúdo se aproxima, justamente os que valeria aproximar.</p>
+    <p>São <strong>SEMBR_N_PARES</strong> pares entre silos, não co-citados, ranqueados por proximidade semântica de título + resumo (cosseno: SEMBR_COS). Cobertura das três frentes no topo — SEMBR_FRENTES — para a leitura não pender para um só par de tradições. Proximidade alta aqui é informativa (mesmo assunto, silos que não se citaram), não trivialidade.</p>
+    SEMBR_TABLE
+    <p class="fig-cap">Pistas para a triagem, com confiança modal de obra. Vetores de conteúdo por <code>sentence-transformers/all-MiniLM-L6-v2</code>; lista completa em <a href="dados/14_pontes_semanticas.csv"><code>14_pontes_semanticas.csv</code></a>; método em <code>src/bridge_candidates.py</code>. Complementa a seção anterior: lá o teste (rejeita o que não passa nos três); aqui a busca (amplia o que vale ler).</p>
+  </div>
+</div></section>
+
 <!-- 19 · LIMITAÇÕES -->
 <section id="limitacoes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">19</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>

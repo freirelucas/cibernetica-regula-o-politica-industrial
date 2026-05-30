@@ -895,6 +895,38 @@ python src/build_site.py                # este site (docs/)</pre>
   </div>
 </div></section>
 
+<!-- 18c · PONTES SEMÂNTICAS (candidatos a leitura) -->
+<section id="pontes-semanticas" class="section"><div class="container">
+  <div class="sec-header"><span class="sec-num">18c</span><h2 class="sec-title">Candidatos a leitura — pontes semânticas</h2><span class="sec-method">buraco estrutural + proximidade de conteúdo</span></div>
+  <div class="prose">
+    <p class="lead">Onde a estrutura de citação não fecha, o conteúdo pode indicar por onde costurar. Esta lista inverte a pergunta do teste de solidez: entre obras de <strong>silos diferentes</strong> que <strong>nunca foram citadas juntas</strong> (buraco estrutural), quais <strong>falam de coisas próximas</strong>? São <strong>candidatos a leitura</strong> — pistas para a revisão, não pontes consumadas: pares que a literatura tratou em separado mas cujo conteúdo se aproxima, justamente os que valeria aproximar.</p>
+    <p>São <strong>9554</strong> pares entre silos, não co-citados, ranqueados por proximidade semântica de título + resumo (cosseno: mediana 0.2069, P90 0.3414, P99 0.4671, máx 0.641). Cobertura das três frentes no topo — Cyb × PolInd: 61 · PolInd × Reg: 51 · Cyb × Reg: 38 — para a leitura não pender para um só par de tradições. Proximidade alta aqui é informativa (mesmo assunto, silos que não se citaram), não trivialidade.</p>
+    <table class="tbl"><thead><tr><th>Obra (OpenAlex)</th><th>Silo → parceiro</th><th>proximidade (cosseno)</th><th>nº de pontes potenciais</th></tr></thead><tbody>
+<tr><td><a href="https://openalex.org/W617038684">W617038684</a></td><td>PolInd → Cyb</td><td>0.641</td><td>130</td></tr>
+<tr><td><a href="https://openalex.org/W1855283887">W1855283887</a></td><td>Cyb → PolInd</td><td>0.641</td><td>79</td></tr>
+<tr><td><a href="https://openalex.org/W1491554624">W1491554624</a></td><td>PolInd → Reg</td><td>0.628</td><td>126</td></tr>
+<tr><td><a href="https://openalex.org/W2127454860">W2127454860</a></td><td>Reg → PolInd</td><td>0.628</td><td>107</td></tr>
+<tr><td><a href="https://openalex.org/W2114648917">W2114648917</a></td><td>Cyb → Reg</td><td>0.6256</td><td>102</td></tr>
+<tr><td><a href="https://openalex.org/W2010793828">W2010793828</a></td><td>Reg → Cyb</td><td>0.6256</td><td>67</td></tr>
+<tr><td><a href="https://openalex.org/W2007180942">W2007180942</a></td><td>PolInd → Cyb</td><td>0.5868</td><td>100</td></tr>
+<tr><td><a href="https://openalex.org/W1495419098">W1495419098</a></td><td>Cyb → PolInd</td><td>0.5868</td><td>86</td></tr>
+<tr><td><a href="https://openalex.org/W1500910854">W1500910854</a></td><td>Cyb → PolInd</td><td>0.5859</td><td>103</td></tr>
+<tr><td><a href="https://openalex.org/W1585382938">W1585382938</a></td><td>PolInd → Reg</td><td>0.579</td><td>125</td></tr>
+<tr><td><a href="https://openalex.org/W3123282572">W3123282572</a></td><td>Reg → PolInd</td><td>0.579</td><td>102</td></tr>
+<tr><td><a href="https://openalex.org/W1999997471">W1999997471</a></td><td>PolInd → Reg</td><td>0.577</td><td>95</td></tr>
+<tr><td><a href="https://openalex.org/W2142257426">W2142257426</a></td><td>Reg → PolInd</td><td>0.577</td><td>116</td></tr>
+<tr><td><a href="https://openalex.org/W67809301">W67809301</a></td><td>Reg → PolInd</td><td>0.5744</td><td>70</td></tr>
+<tr><td><a href="https://openalex.org/W1576605329">W1576605329</a></td><td>PolInd → Reg</td><td>0.5669</td><td>110</td></tr>
+<tr><td><a href="https://openalex.org/W3121147769">W3121147769</a></td><td>PolInd → Reg</td><td>0.5627</td><td>77</td></tr>
+<tr><td><a href="https://openalex.org/W1566344170">W1566344170</a></td><td>Reg → PolInd</td><td>0.5627</td><td>110</td></tr>
+<tr><td><a href="https://openalex.org/W4244612406">W4244612406</a></td><td>Cyb → Reg</td><td>0.5597</td><td>92</td></tr>
+<tr><td><a href="https://openalex.org/W2059789395">W2059789395</a></td><td>PolInd → Cyb</td><td>0.5542</td><td>103</td></tr>
+<tr><td><a href="https://openalex.org/W597091629">W597091629</a></td><td>Cyb → PolInd</td><td>0.5542</td><td>105</td></tr>
+</tbody></table>
+    <p class="fig-cap">Pistas para a triagem, com confiança modal de obra. Vetores de conteúdo por <code>sentence-transformers/all-MiniLM-L6-v2</code>; lista completa em <a href="dados/14_pontes_semanticas.csv"><code>14_pontes_semanticas.csv</code></a>; método em <code>src/bridge_candidates.py</code>. Complementa a seção anterior: lá o teste (rejeita o que não passa nos três); aqui a busca (amplia o que vale ler).</p>
+  </div>
+</div></section>
+
 <!-- 19 · LIMITAÇÕES -->
 <section id="limitacoes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">19</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>

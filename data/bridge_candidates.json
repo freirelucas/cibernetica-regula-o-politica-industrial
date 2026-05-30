@@ -1,0 +1,2576 @@
+{
+ "_generated": "leads de leitura por ponte semântica (item 2)",
+ "metodo": "pares cross-silo NÃO co-citados, ranqueados por proximidade semântica (buraco estrutural + ponte semântica). LEADS para ler, não pontes validadas.",
+ "semantico": {
+  "metodo": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_obras_com_abstract": 186,
+  "n_corpus": 186
+ },
+ "distribuicao_cosseno": {
+  "p10": 0.078,
+  "p50": 0.2069,
+  "p90": 0.3414,
+  "p99": 0.4671,
+  "max": 0.641
+ },
+ "n_pares": 9554,
+ "cobertura_frentes_top": {
+  "Cyb × PolInd": 61,
+  "PolInd × Reg": 51,
+  "Cyb × Reg": 38
+ },
+ "pares_top": [
+  {
+   "a": "W617038684",
+   "b": "W1855283887",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.641,
+   "centralidade": 0.0549
+  },
+  {
+   "a": "W1491554624",
+   "b": "W2127454860",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.628,
+   "centralidade": 0.1209
+  },
+  {
+   "a": "W2114648917",
+   "b": "W2010793828",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.6256,
+   "centralidade": 0.2692
+  },
+  {
+   "a": "W2007180942",
+   "b": "W1495419098",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5868,
+   "centralidade": 0.2253
+  },
+  {
+   "a": "W2007180942",
+   "b": "W1500910854",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5859,
+   "centralidade": 0.1923
+  },
+  {
+   "a": "W1585382938",
+   "b": "W3123282572",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.579,
+   "centralidade": 0.0934
+  },
+  {
+   "a": "W1999997471",
+   "b": "W2142257426",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.577,
+   "centralidade": 0.1374
+  },
+  {
+   "a": "W617038684",
+   "b": "W67809301",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5744,
+   "centralidade": 0.1813
+  },
+  {
+   "a": "W1576605329",
+   "b": "W2142257426",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5669,
+   "centralidade": 0.0879
+  },
+  {
+   "a": "W3121147769",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5627,
+   "centralidade": 0.2253
+  },
+  {
+   "a": "W4244612406",
+   "b": "W1566344170",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5597,
+   "centralidade": 0.2253
+  },
+  {
+   "a": "W2059789395",
+   "b": "W597091629",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5542,
+   "centralidade": 0.0824
+  },
+  {
+   "a": "W2102469678",
+   "b": "W2752617332",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5531,
+   "centralidade": 0.1538
+  },
+  {
+   "a": "W2140256961",
+   "b": "W2028436159",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5497,
+   "centralidade": 0.0604
+  },
+  {
+   "a": "W617038684",
+   "b": "W1504129344",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5485,
+   "centralidade": 0.044
+  },
+  {
+   "a": "W2179492332",
+   "b": "W1566344170",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5477,
+   "centralidade": 0.1209
+  },
+  {
+   "a": "W1585382938",
+   "b": "W1511343964",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5459,
+   "centralidade": 0.0165
+  },
+  {
+   "a": "W1566172004",
+   "b": "W90769783",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5443,
+   "centralidade": 0.2198
+  },
+  {
+   "a": "W2085563972",
+   "b": "W617038684",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5432,
+   "centralidade": 0.022
+  },
+  {
+   "a": "W1993023795",
+   "b": "W617038684",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5409,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W2114648917",
+   "b": "W2312418354",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5383,
+   "centralidade": 0.3132
+  },
+  {
+   "a": "W1965278510",
+   "b": "W2004899202",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5365,
+   "centralidade": 0.0934
+  },
+  {
+   "a": "W1491554624",
+   "b": "W1992324015",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5354,
+   "centralidade": 0.0604
+  },
+  {
+   "a": "W1979968159",
+   "b": "W67809301",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5341,
+   "centralidade": 0.2198
+  },
+  {
+   "a": "W4244612406",
+   "b": "W2039191423",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5338,
+   "centralidade": 0.1758
+  },
+  {
+   "a": "W2118243939",
+   "b": "W2127454860",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5319,
+   "centralidade": 0.1319
+  },
+  {
+   "a": "W2120106358",
+   "b": "W2312418354",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.529,
+   "centralidade": 0.3242
+  },
+  {
+   "a": "W1585382938",
+   "b": "W4244612406",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5272,
+   "centralidade": 0.1538
+  },
+  {
+   "a": "W1517602275",
+   "b": "W1895366050",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5269,
+   "centralidade": 0.0495
+  },
+  {
+   "a": "W582908774",
+   "b": "W1585382938",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5259,
+   "centralidade": 0.0659
+  },
+  {
+   "a": "W2060827592",
+   "b": "W1495419098",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.518,
+   "centralidade": 0.1484
+  },
+  {
+   "a": "W90769783",
+   "b": "W2312418354",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5156,
+   "centralidade": 0.3901
+  },
+  {
+   "a": "W1511343964",
+   "b": "W1965278510",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5155,
+   "centralidade": 0.0714
+  },
+  {
+   "a": "W2970049487",
+   "b": "W2010793828",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5152,
+   "centralidade": 0.2637
+  },
+  {
+   "a": "W582908774",
+   "b": "W2099670044",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5147,
+   "centralidade": 0.0824
+  },
+  {
+   "a": "W1585382938",
+   "b": "W2164284962",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5126,
+   "centralidade": 0.0879
+  },
+  {
+   "a": "W1553746973",
+   "b": "W2142257426",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5125,
+   "centralidade": 0.4725
+  },
+  {
+   "a": "W2083449279",
+   "b": "W2028436159",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5118,
+   "centralidade": 0.1044
+  },
+  {
+   "a": "W1585382938",
+   "b": "W1530425941",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5118,
+   "centralidade": 0.0275
+  },
+  {
+   "a": "W2060827592",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5102,
+   "centralidade": 0.1484
+  },
+  {
+   "a": "W2118243939",
+   "b": "W1992324015",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5097,
+   "centralidade": 0.0714
+  },
+  {
+   "a": "W1566344170",
+   "b": "W2004899202",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5053,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W2142257426",
+   "b": "W1551036771",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5043,
+   "centralidade": 0.0604
+  },
+  {
+   "a": "W1992324015",
+   "b": "W1517138715",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5028,
+   "centralidade": 0.1319
+  },
+  {
+   "a": "W1517602275",
+   "b": "W2123709218",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5024,
+   "centralidade": 0.1154
+  },
+  {
+   "a": "W2127454860",
+   "b": "W1551036771",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5014,
+   "centralidade": 0.1429
+  },
+  {
+   "a": "W1979968159",
+   "b": "W90769783",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.501,
+   "centralidade": 0.1813
+  },
+  {
+   "a": "W1576605329",
+   "b": "W1992324015",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5001,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W582908774",
+   "b": "W2003934805",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4992,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W2095561982",
+   "b": "W2004899202",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4986,
+   "centralidade": 0.0604
+  },
+  {
+   "a": "W2179492332",
+   "b": "W2007180942",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4978,
+   "centralidade": 0.1923
+  },
+  {
+   "a": "W582908774",
+   "b": "W1965278510",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4978,
+   "centralidade": 0.1209
+  },
+  {
+   "a": "W1999997471",
+   "b": "W1992324015",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4977,
+   "centralidade": 0.1593
+  },
+  {
+   "a": "W1569410165",
+   "b": "W2012275303",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4954,
+   "centralidade": 0.1044
+  },
+  {
+   "a": "W1993023795",
+   "b": "W2102469678",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4952,
+   "centralidade": 0.0604
+  },
+  {
+   "a": "W1585382938",
+   "b": "W1993023795",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4943,
+   "centralidade": 0.0385
+  },
+  {
+   "a": "W2063282131",
+   "b": "W2059789395",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4942,
+   "centralidade": 0.0714
+  },
+  {
+   "a": "W2312418354",
+   "b": "W2072863585",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4937,
+   "centralidade": 0.3516
+  },
+  {
+   "a": "W617038684",
+   "b": "W2123709218",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4934,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W1504129344",
+   "b": "W1978399955",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4921,
+   "centralidade": 0.0714
+  },
+  {
+   "a": "W1517602275",
+   "b": "W2108767715",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4913,
+   "centralidade": 0.0275
+  },
+  {
+   "a": "W2122679534",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4908,
+   "centralidade": 0.1154
+  },
+  {
+   "a": "W603352075",
+   "b": "W1965278510",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4886,
+   "centralidade": 0.0934
+  },
+  {
+   "a": "W4244612406",
+   "b": "W2003934805",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4879,
+   "centralidade": 0.1978
+  },
+  {
+   "a": "W1999800658",
+   "b": "W2127454860",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4876,
+   "centralidade": 0.1319
+  },
+  {
+   "a": "W2102469678",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4849,
+   "centralidade": 0.1044
+  },
+  {
+   "a": "W4244612406",
+   "b": "W617038684",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.484,
+   "centralidade": 0.1484
+  },
+  {
+   "a": "W1511343964",
+   "b": "W2003934805",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.484,
+   "centralidade": 0.0604
+  },
+  {
+   "a": "W2164284962",
+   "b": "W617038684",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4838,
+   "centralidade": 0.0824
+  },
+  {
+   "a": "W2099670044",
+   "b": "W1511343964",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4836,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W1553746973",
+   "b": "W1570538375",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4825,
+   "centralidade": 0.467
+  },
+  {
+   "a": "W1585382938",
+   "b": "W2004899202",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4802,
+   "centralidade": 0.0385
+  },
+  {
+   "a": "W1511343964",
+   "b": "W3123282572",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4796,
+   "centralidade": 0.0989
+  },
+  {
+   "a": "W4230710385",
+   "b": "W2039191423",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.479,
+   "centralidade": 0.0879
+  },
+  {
+   "a": "W2108795964",
+   "b": "W2142257426",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4786,
+   "centralidade": 0.1374
+  },
+  {
+   "a": "W1999997471",
+   "b": "W4244612406",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4784,
+   "centralidade": 0.2637
+  },
+  {
+   "a": "W582908774",
+   "b": "W1566344170",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4783,
+   "centralidade": 0.1374
+  },
+  {
+   "a": "W1566172004",
+   "b": "W603352075",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4782,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W1731457293",
+   "b": "W2099069868",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4779,
+   "centralidade": 0.0769
+  },
+  {
+   "a": "W2123755784",
+   "b": "W2752617332",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4775,
+   "centralidade": 0.3846
+  },
+  {
+   "a": "W1981733426",
+   "b": "W2127454860",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4769,
+   "centralidade": 0.1264
+  },
+  {
+   "a": "W1978399955",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4768,
+   "centralidade": 0.1044
+  },
+  {
+   "a": "W617038684",
+   "b": "W90769783",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4766,
+   "centralidade": 0.1429
+  },
+  {
+   "a": "W1585382938",
+   "b": "W2140256961",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4754,
+   "centralidade": 0.0549
+  },
+  {
+   "a": "W2108795964",
+   "b": "W1495419098",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4741,
+   "centralidade": 0.1923
+  },
+  {
+   "a": "W2025579080",
+   "b": "W1993023795",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.473,
+   "centralidade": 0.0495
+  },
+  {
+   "a": "W2179492332",
+   "b": "W1585382938",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4728,
+   "centralidade": 0.0495
+  },
+  {
+   "a": "W2059789395",
+   "b": "W1601944394",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4716,
+   "centralidade": 0.1648
+  },
+  {
+   "a": "W2123709218",
+   "b": "W1566344170",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4713,
+   "centralidade": 0.1868
+  },
+  {
+   "a": "W2003934805",
+   "b": "W2004899202",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4713,
+   "centralidade": 0.0824
+  },
+  {
+   "a": "W4371184",
+   "b": "W3022339544",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4712,
+   "centralidade": 0.1319
+  },
+  {
+   "a": "W2140956556",
+   "b": "W2752617332",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4697,
+   "centralidade": 0.1978
+  },
+  {
+   "a": "W1585382938",
+   "b": "W1965278510",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4693,
+   "centralidade": 0.0659
+  },
+  {
+   "a": "W2059789395",
+   "b": "W2099069868",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.469,
+   "centralidade": 0.0879
+  },
+  {
+   "a": "W2140956556",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4689,
+   "centralidade": 0.1484
+  },
+  {
+   "a": "W2154683088",
+   "b": "W2003934805",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4679,
+   "centralidade": 0.2912
+  },
+  {
+   "a": "W1491554624",
+   "b": "W2142257426",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4671,
+   "centralidade": 0.0385
+  },
+  {
+   "a": "W1585382938",
+   "b": "W2123709218",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4661,
+   "centralidade": 0.1154
+  },
+  {
+   "a": "W2059789395",
+   "b": "W2087699103",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4657,
+   "centralidade": 0.0714
+  },
+  {
+   "a": "W2566856888",
+   "b": "W1569410165",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4641,
+   "centralidade": 0.1209
+  },
+  {
+   "a": "W1566172004",
+   "b": "W617038684",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4637,
+   "centralidade": 0.0769
+  },
+  {
+   "a": "W2123709218",
+   "b": "W2118243939",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4635,
+   "centralidade": 0.1374
+  },
+  {
+   "a": "W4230710385",
+   "b": "W1498201492",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4633,
+   "centralidade": 0.0659
+  },
+  {
+   "a": "W2108767715",
+   "b": "W67809301",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4622,
+   "centralidade": 0.2033
+  },
+  {
+   "a": "W1731457293",
+   "b": "W1601944394",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4605,
+   "centralidade": 0.1538
+  },
+  {
+   "a": "W1585382938",
+   "b": "W603352075",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4598,
+   "centralidade": 0.0385
+  },
+  {
+   "a": "W1992324015",
+   "b": "W2127454860",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4589,
+   "centralidade": 0.1484
+  },
+  {
+   "a": "W1566172004",
+   "b": "W1511343964",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4584,
+   "centralidade": 0.0879
+  },
+  {
+   "a": "W1491554624",
+   "b": "W1973459906",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4579,
+   "centralidade": 0.0604
+  },
+  {
+   "a": "W1999997471",
+   "b": "W2123709218",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4574,
+   "centralidade": 0.2253
+  },
+  {
+   "a": "W2164284962",
+   "b": "W1566344170",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4573,
+   "centralidade": 0.1593
+  },
+  {
+   "a": "W1855283887",
+   "b": "W1566344170",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4572,
+   "centralidade": 0.1319
+  },
+  {
+   "a": "W3121147769",
+   "b": "W1517602275",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4563,
+   "centralidade": 0.1538
+  },
+  {
+   "a": "W2102469678",
+   "b": "W2028436159",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4562,
+   "centralidade": 0.0385
+  },
+  {
+   "a": "W617038684",
+   "b": "W603352075",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4555,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W2025177555",
+   "b": "W1980406593",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4555,
+   "centralidade": 0.2253
+  },
+  {
+   "a": "W2060827592",
+   "b": "W1517602275",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4554,
+   "centralidade": 0.0769
+  },
+  {
+   "a": "W2007180942",
+   "b": "W2132454116",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4548,
+   "centralidade": 0.1758
+  },
+  {
+   "a": "W1979968159",
+   "b": "W2127454860",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4545,
+   "centralidade": 0.1429
+  },
+  {
+   "a": "W1569410165",
+   "b": "W1510137183",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4541,
+   "centralidade": 0.0659
+  },
+  {
+   "a": "W1576605329",
+   "b": "W1973459906",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.454,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W142073415",
+   "b": "W2012275303",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4536,
+   "centralidade": 0.1154
+  },
+  {
+   "a": "W617038684",
+   "b": "W2004899202",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4533,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W2059789395",
+   "b": "W2970049487",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.452,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W2101946146",
+   "b": "W617038684",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4514,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W1585382938",
+   "b": "W2028436159",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4513,
+   "centralidade": 0.0165
+  },
+  {
+   "a": "W2099670044",
+   "b": "W2030753430",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4513,
+   "centralidade": 0.1264
+  },
+  {
+   "a": "W2179492332",
+   "b": "W2028436159",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4508,
+   "centralidade": 0.0549
+  },
+  {
+   "a": "W2099670044",
+   "b": "W2004899202",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4501,
+   "centralidade": 0.0549
+  },
+  {
+   "a": "W2095561982",
+   "b": "W4244612406",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4499,
+   "centralidade": 0.1758
+  },
+  {
+   "a": "W2123709218",
+   "b": "W3123282572",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4497,
+   "centralidade": 0.1978
+  },
+  {
+   "a": "W2087699103",
+   "b": "W2003934805",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4479,
+   "centralidade": 0.0714
+  },
+  {
+   "a": "W3130930004",
+   "b": "W2970049487",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4476,
+   "centralidade": 0.5604
+  },
+  {
+   "a": "W2154683088",
+   "b": "W1965278510",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4474,
+   "centralidade": 0.3022
+  },
+  {
+   "a": "W2566856888",
+   "b": "W4230710385",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4473,
+   "centralidade": 0.1484
+  },
+  {
+   "a": "W2101946146",
+   "b": "W1895366050",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4471,
+   "centralidade": 0.0769
+  },
+  {
+   "a": "W2059789395",
+   "b": "W4230710385",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4471,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W2099670044",
+   "b": "W90769783",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4468,
+   "centralidade": 0.1648
+  },
+  {
+   "a": "W4371184",
+   "b": "W2140409505",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4466,
+   "centralidade": 0.1648
+  },
+  {
+   "a": "W1511343964",
+   "b": "W142073415",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4466,
+   "centralidade": 0.0549
+  },
+  {
+   "a": "W3016265253",
+   "b": "W2004899202",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4458,
+   "centralidade": 0.0879
+  },
+  {
+   "a": "W1569410165",
+   "b": "W1576605329",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4454,
+   "centralidade": 0.0989
+  },
+  {
+   "a": "W1566344170",
+   "b": "W603352075",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4452,
+   "centralidade": 0.1099
+  },
+  {
+   "a": "W3130930004",
+   "b": "W2099069868",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.445,
+   "centralidade": 0.5385
+  },
+  {
+   "a": "W1585382938",
+   "b": "W2108020239",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4446,
+   "centralidade": 0.0549
+  },
+  {
+   "a": "W2140256961",
+   "b": "W2007180942",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4446,
+   "centralidade": 0.1978
+  },
+  {
+   "a": "W1517602275",
+   "b": "W2122679534",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4444,
+   "centralidade": 0.044
+  },
+  {
+   "a": "W1500910854",
+   "b": "W1973459906",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.444,
+   "centralidade": 0.0879
+  },
+  {
+   "a": "W2059789395",
+   "b": "W2025177555",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4438,
+   "centralidade": 0.1758
+  },
+  {
+   "a": "W1517138715",
+   "b": "W2142257426",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4435,
+   "centralidade": 0.1099
+  }
+ ],
+ "lista_leitura": [
+  {
+   "oa_id": "W617038684",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.641,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 130
+  },
+  {
+   "oa_id": "W1855283887",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.641,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 79
+  },
+  {
+   "oa_id": "W1491554624",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.628,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 126
+  },
+  {
+   "oa_id": "W2127454860",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.628,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 107
+  },
+  {
+   "oa_id": "W2114648917",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.6256,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
+  },
+  {
+   "oa_id": "W2010793828",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.6256,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 67
+  },
+  {
+   "oa_id": "W2007180942",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5868,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  },
+  {
+   "oa_id": "W1495419098",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5868,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 86
+  },
+  {
+   "oa_id": "W1500910854",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5859,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W1585382938",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.579,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 125
+  },
+  {
+   "oa_id": "W3123282572",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.579,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
+  },
+  {
+   "oa_id": "W1999997471",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.577,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 95
+  },
+  {
+   "oa_id": "W2142257426",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.577,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 116
+  },
+  {
+   "oa_id": "W67809301",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5744,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 70
+  },
+  {
+   "oa_id": "W1576605329",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5669,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W3121147769",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5627,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 77
+  },
+  {
+   "oa_id": "W1566344170",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5627,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W4244612406",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5597,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 92
+  },
+  {
+   "oa_id": "W2059789395",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5542,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W597091629",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5542,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 105
+  },
+  {
+   "oa_id": "W2102469678",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5531,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W2752617332",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5531,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 98
+  },
+  {
+   "oa_id": "W2140256961",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5497,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 86
+  },
+  {
+   "oa_id": "W2028436159",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5497,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 118
+  },
+  {
+   "oa_id": "W1504129344",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5485,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 84
+  },
+  {
+   "oa_id": "W2179492332",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5477,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 76
+  },
+  {
+   "oa_id": "W1511343964",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5459,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 104
+  },
+  {
+   "oa_id": "W1566172004",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5443,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 73
+  },
+  {
+   "oa_id": "W90769783",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5443,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W2085563972",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5432,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W1993023795",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5409,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 87
+  },
+  {
+   "oa_id": "W2312418354",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5383,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 109
+  },
+  {
+   "oa_id": "W1965278510",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5365,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 91
+  },
+  {
+   "oa_id": "W2004899202",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5365,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 104
+  },
+  {
+   "oa_id": "W1992324015",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5354,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 81
+  },
+  {
+   "oa_id": "W1979968159",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5341,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 121
+  },
+  {
+   "oa_id": "W2039191423",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5338,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 91
+  },
+  {
+   "oa_id": "W2118243939",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5319,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 120
+  },
+  {
+   "oa_id": "W2120106358",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.529,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 119
+  },
+  {
+   "oa_id": "W1517602275",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5269,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 126
+  },
+  {
+   "oa_id": "W1895366050",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5269,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  },
+  {
+   "oa_id": "W582908774",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5259,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W2060827592",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.518,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 86
+  },
+  {
+   "oa_id": "W2970049487",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5152,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 104
+  },
+  {
+   "oa_id": "W2099670044",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5147,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 125
+  },
+  {
+   "oa_id": "W2164284962",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5126,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 73
+  },
+  {
+   "oa_id": "W1553746973",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5125,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 83
+  },
+  {
+   "oa_id": "W2083449279",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5118,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 84
+  },
+  {
+   "oa_id": "W1530425941",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5118,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 91
+  },
+  {
+   "oa_id": "W1551036771",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5043,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 123
+  },
+  {
+   "oa_id": "W1517138715",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5028,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 104
+  },
+  {
+   "oa_id": "W2123709218",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5024,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 53
+  },
+  {
+   "oa_id": "W2003934805",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4992,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 123
+  },
+  {
+   "oa_id": "W2095561982",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4986,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W1569410165",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4954,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 128
+  },
+  {
+   "oa_id": "W2012275303",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4954,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 121
+  },
+  {
+   "oa_id": "W2063282131",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4942,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
+  },
+  {
+   "oa_id": "W2072863585",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4937,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 104
+  },
+  {
+   "oa_id": "W1978399955",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4921,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W2108767715",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4913,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 111
+  },
+  {
+   "oa_id": "W2122679534",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4908,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 108
+  },
+  {
+   "oa_id": "W603352075",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4886,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 104
+  },
+  {
+   "oa_id": "W1999800658",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4876,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 127
+  },
+  {
+   "oa_id": "W1570538375",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4825,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 128
+  },
+  {
+   "oa_id": "W4230710385",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.479,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 94
+  },
+  {
+   "oa_id": "W2108795964",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4786,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 86
+  },
+  {
+   "oa_id": "W1731457293",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4779,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 98
+  },
+  {
+   "oa_id": "W2099069868",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4779,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 101
+  },
+  {
+   "oa_id": "W2123755784",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4775,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 76
+  },
+  {
+   "oa_id": "W1981733426",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4769,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 111
+  },
+  {
+   "oa_id": "W2025579080",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.473,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  },
+  {
+   "oa_id": "W1601944394",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4716,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W4371184",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4712,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 114
+  },
+  {
+   "oa_id": "W3022339544",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4712,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 97
+  },
+  {
+   "oa_id": "W2140956556",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4697,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 89
+  },
+  {
+   "oa_id": "W2154683088",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4679,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 79
+  },
+  {
+   "oa_id": "W2087699103",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4657,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 106
+  },
+  {
+   "oa_id": "W2566856888",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4641,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 106
+  },
+  {
+   "oa_id": "W1498201492",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4633,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 129
+  },
+  {
+   "oa_id": "W1973459906",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4579,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 94
+  },
+  {
+   "oa_id": "W2025177555",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4555,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 88
+  },
+  {
+   "oa_id": "W1980406593",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4555,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W2132454116",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4548,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 92
+  },
+  {
+   "oa_id": "W1510137183",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4541,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 126
+  },
+  {
+   "oa_id": "W142073415",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4536,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 129
+  },
+  {
+   "oa_id": "W2101946146",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4514,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 97
+  },
+  {
+   "oa_id": "W2030753430",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4513,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W3130930004",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4476,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 105
+  },
+  {
+   "oa_id": "W2140409505",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4466,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  },
+  {
+   "oa_id": "W3016265253",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4458,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 94
+  },
+  {
+   "oa_id": "W2108020239",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4446,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 90
+  },
+  {
+   "oa_id": "W2020982650",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4431,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 128
+  },
+  {
+   "oa_id": "W2136083730",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4401,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 96
+  },
+  {
+   "oa_id": "W1535129021",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4389,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 92
+  },
+  {
+   "oa_id": "W1968044930",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4387,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W1495961791",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.437,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W1500608409",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.435,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 130
+  },
+  {
+   "oa_id": "W3124879925",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.435,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 108
+  },
+  {
+   "oa_id": "W1515810707",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4337,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 84
+  },
+  {
+   "oa_id": "W2128634656",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4324,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 128
+  },
+  {
+   "oa_id": "W1527311855",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4321,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 63
+  },
+  {
+   "oa_id": "W221732451",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4321,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 124
+  },
+  {
+   "oa_id": "W2061977616",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.431,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 80
+  },
+  {
+   "oa_id": "W2043474425",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4296,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 125
+  },
+  {
+   "oa_id": "W1566478880",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4281,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 61
+  },
+  {
+   "oa_id": "W1506732837",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4277,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
+  },
+  {
+   "oa_id": "W1983425281",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4267,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  },
+  {
+   "oa_id": "W2099330597",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4266,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 109
+  },
+  {
+   "oa_id": "W225706379",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4258,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 94
+  },
+  {
+   "oa_id": "W2082503759",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4258,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 113
+  },
+  {
+   "oa_id": "W2057748843",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4243,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 130
+  },
+  {
+   "oa_id": "W2048086870",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4236,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 67
+  },
+  {
+   "oa_id": "W2013140629",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4222,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W2165238389",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4219,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
+  },
+  {
+   "oa_id": "W27930607",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4214,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W233775549",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4142,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 92
+  },
+  {
+   "oa_id": "W2098978150",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4129,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 96
+  },
+  {
+   "oa_id": "W2013386523",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4125,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 97
+  },
+  {
+   "oa_id": "W2009399369",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4098,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 127
+  },
+  {
+   "oa_id": "W2037306909",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4086,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 98
+  },
+  {
+   "oa_id": "W2313563931",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4067,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 84
+  },
+  {
+   "oa_id": "W1973308529",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4053,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 98
+  },
+  {
+   "oa_id": "W2017802748",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4047,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 123
+  },
+  {
+   "oa_id": "W1524464890",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4035,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 99
+  },
+  {
+   "oa_id": "W1527571715",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4033,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 94
+  },
+  {
+   "oa_id": "W2015930340",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4027,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 70
+  },
+  {
+   "oa_id": "W2988934653",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4004,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 73
+  },
+  {
+   "oa_id": "W1970428482",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3998,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 101
+  },
+  {
+   "oa_id": "W2127617481",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.3983,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 126
+  },
+  {
+   "oa_id": "W77672729",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3971,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W2082088739",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.3963,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 116
+  },
+  {
+   "oa_id": "W148613442",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3944,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 105
+  },
+  {
+   "oa_id": "W232611682",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3934,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 127
+  },
+  {
+   "oa_id": "W1521985566",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.3933,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 121
+  },
+  {
+   "oa_id": "W1601629960",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.3913,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 105
+  },
+  {
+   "oa_id": "W1492856410",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3912,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 81
+  },
+  {
+   "oa_id": "W2325487953",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3906,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 96
+  },
+  {
+   "oa_id": "W201578715",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3893,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 88
+  },
+  {
+   "oa_id": "W2058869237",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3886,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 121
+  },
+  {
+   "oa_id": "W1556995072",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3884,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W1585847492",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.3878,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 126
+  },
+  {
+   "oa_id": "W570136161",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3867,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 117
+  },
+  {
+   "oa_id": "W2131740028",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3857,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 108
+  },
+  {
+   "oa_id": "W1968459280",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3849,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 95
+  },
+  {
+   "oa_id": "W1486212401",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3847,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 121
+  },
+  {
+   "oa_id": "W2489535817",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3838,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 107
+  },
+  {
+   "oa_id": "W1495886451",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3829,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W1968942643",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.3823,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 122
+  },
+  {
+   "oa_id": "W2101157755",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.3814,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 67
+  },
+  {
+   "oa_id": "W1990513740",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.3812,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  }
+ ]
+}

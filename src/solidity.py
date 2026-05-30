@@ -46,6 +46,7 @@ DEFAULT_CONFIG = {
     "latente": {"holdout_year": 2015, "tau_baixo_pct": 20, "min_positivos": 5,
                 "bootstrap": 500, "max_eval": 4000},
     "semantico": {"faixa_low_pct": 40, "faixa_high_pct": 75, "metodo": "auto"},
+    "leitura": {"top_pares": 150},   # item 2 — leads de leitura por ponte semântica
 }
 
 

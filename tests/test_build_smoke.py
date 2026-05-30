@@ -12,7 +12,7 @@ import subprocess
 import sys
 
 
-KNOWN_PREFIXES = ["XGI_", "AUTHORNET_", "BRASIL_", "BROK_", "SOLIDEZ_"]
+KNOWN_PREFIXES = ["XGI_", "AUTHORNET_", "BRASIL_", "BROK_", "SOLIDEZ_", "SEMBR_"]
 
 
 def test_build_runs(root):

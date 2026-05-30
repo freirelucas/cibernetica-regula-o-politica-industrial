@@ -89,6 +89,8 @@ PHASES = [
     {"name": "solidity",      "script": "solidity.py",               "reads": ["cocitation_hyperedges.json"],
      "writes": ["solidity_bridges.json"], "network": True},   # recrawl/enrich/embeddings só no recompute;
      #                                                            saída versionada -> --offline PULA (CI sem modelo)
+    {"name": "bridge_cands",  "script": "bridge_candidates.py",      "reads": ["cocitation_hyperedges.json"],
+     "writes": ["bridge_candidates.json"], "network": True},  # item 2 — leads de leitura (embeddings); idem solidity
     {"name": "site",          "script": "build_site.py",             "reads": ["scisci_results.json"],
      "writes": ["docs/index.html"], "network": False, "always": True},
 ]
