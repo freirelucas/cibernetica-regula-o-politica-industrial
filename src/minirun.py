@@ -28,9 +28,11 @@ SEEDS = {  # id -> (rótulo curto, eixo)
     "W2154683088": ("Beer · Diagnosing the System", "Cyb"),
     "W2325487953": ("Ashby · Intro to Cybernetics", "Cyb"),
     "W4244612406": ("Espejo & Reyes · Org. Systems", "Cyb"),
-    "W1601629960": ("Hood · Tools of Government", "Reg"),
-    "W2126563689": ("Hood & Margetts · Digital Age", "Reg"),
-    "W4386803846": ("Margetts · Nodality", "Reg"),
+    # Instrumentos de governo (Hood/Margetts) → Cyb: o eixo Reg passa a ser REGULAÇÃO
+    # ECONÔMICA; a tradição "tools of government" é a leitura cibernética do controle estatal.
+    "W1601629960": ("Hood · Tools of Government", "Cyb"),
+    "W2126563689": ("Hood & Margetts · Digital Age", "Cyb"),
+    "W4386803846": ("Margetts · Nodality", "Cyb"),
     "W3124879925": ("Rodrik · Industrial Policy 21C", "PolInd"),
     "W1553746973": ("Mazzucato · Entrepreneurial State", "PolInd"),
     "W4230710385": ("Lange · Economic Cybernetics", "Cyb"),
@@ -45,10 +47,14 @@ VOCAB = {  # vocabulário conservador (de preferência multipalavra) por eixo
             "team syntegrity", "fifth discipline", "system dynamics", "multimethodolog", "self-organ",
             "brain of the firm", "heart of enterprise", "diagnosing the system", "corporate future",
             "von bertalanffy", "organizational learning", "theory of communication", "total systems",
-            "problem structuring", "principles of systems"),
-    "Reg": ("tools of government", "policy instrument", "policy mix", "nodality", "regulat",
-            "governance", "policy design", "policy capacity", "public polic", "policy cycle",
-            "policy process", "instruments of government", "policy tool"),
+            "problem structuring", "principles of systems",
+            # instrumentos de governo (Hood/Margetts): leitura cibernética do controle estatal → Cyb
+            "tools of government", "policy instrument", "policy tool", "instruments of government",
+            "nodality", "policy design", "policy mix", "instrument choice"),
+    "Reg": (  # REGULAÇÃO ECONÔMICA (não "instrumentos de governo", que migraram p/ Cyb)
+            "regulat", "antitrust", "competition policy", "competition law", "natural monopoly",
+            "price control", "public utilit", "regulatory state", "regulatory capture",
+            "regulatory agency", "regulatory governance"),
     "PolInd": ("industrial policy", "developmental state", "state capacity", "entrepreneurial state",
                "mission-oriented", "industrial strategy", "central plan", "socialism", "economic cybernetic",
                "innovation policy", "reindustrial", "competitive advantage", "economic development",
