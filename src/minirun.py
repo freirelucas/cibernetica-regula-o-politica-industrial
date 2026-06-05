@@ -38,6 +38,30 @@ SEEDS = {  # id -> (rótulo curto, eixo)
     "W4230710385": ("Lange · Economic Cybernetics", "Cyb"),
     "W3130930004": ("Lange · Economic Theory of Socialism", "PolInd"),
     "W2063282131": ("Lange · Wholes and Parts", "Cyb"),
+    # ── REGULAÇÃO ECONÔMICA (Reg) ──────────────────────────────────────────
+    # A · Economia da regulação (curados; vivem em topics amplos de economia)
+    "W4293229472": ("Stigler · Economic Regulation", "Reg"),
+    "W2102461236": ("Peltzman · General Theory of Regulation", "Reg"),
+    "W2107431528": ("Posner · Theories of Economic Regulation", "Reg"),
+    "W1516216046": ("Laffont & Tirole · Incentives in Regulation", "Reg"),
+    "W1608766426": ("Averch & Johnson · Regulatory Constraint", "Reg"),
+    "W4242178059": ("Demsetz · Why Regulate Utilities", "Reg"),
+    # B · Estado regulador / regulation studies (gerados pelo topic T12185 + curados)
+    "W2171753429": ("Majone · Rise of the Regulatory State", "Reg"),
+    "W2155153551": ("Levi-Faur · Regulatory Capitalism", "Reg"),
+    "W4388316013": ("Ayres & Braithwaite · Responsive Regulation", "Reg"),
+    "W3170187706": ("Vogel · Freer Markets, More Rules", "Reg"),
+    "W2054422547": ("Wilson · Politics of Regulation", "Reg"),
+    "W1581687645": ("Moran · British Regulatory State", "Reg"),
+    "W2569986058": ("Bardach & Kagan · Going by the Book", "Reg"),
+    "W4388120068": ("Gunningham · Smart Regulation", "Reg"),
+    "W3121399009": ("Black · Regulatory Legitimacy", "Reg"),
+    "W1978648732": ("Weingast & Moran · Bureaucratic Discretion", "Reg"),
+    "W2163458930": ("Majone · Regulatory State Legitimacy", "Reg"),
+    # C · Regulação no Brasil (curados; não emergem por citação)
+    "W2159914272": ("Mueller & Pereira · Regulatory Agencies Brazil", "Reg"),
+    "W2125441319": ("Prado · Independent Agencies Brazil", "Reg"),
+    "W2154631061": ("Pacheco · Regulação no Brasil", "Reg"),
 }
 VOCAB = {  # vocabulário conservador (de preferência multipalavra) por eixo
     "Cyb": ("cybernet", "viable system", "vsm", "stafford beer", "ashby", "requisite variety",
