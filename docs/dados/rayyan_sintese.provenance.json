@@ -14,7 +14,7 @@
  "por_papel": {
   "corpus Brasil (Faganello)": 73,
   "obra de autor-semente": 56,
-  "cibernética organizacional": 35,
+  "cibernética organizacional": 38,
   "complexidade (4º eixo)": 30,
   "ponte a construir": 25,
   "complexidade · Santa Fe — economia como sistema complexo (EECS-II)": 21,
@@ -32,9 +32,10 @@
   "complexidade · economia evolucionária": 1
  },
  "por_eixo": {
-  "Política industrial": 112,
-  "Cibernética": 43,
-  "Instrumentos de governo": 40,
-  "Economia da complexidade": 30
+  "Política industrial": 109,
+  "Cibernética": 46,
+  "Economia da complexidade": 30,
+  "Regulação econômica": 24,
+  "Instrumentos de governo": 15
  }
 }

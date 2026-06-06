@@ -2,7 +2,7 @@
 ## IPEA / DIEST-COGIT · Pacote de reprodutibilidade
 
 Mapeamento cienciométrico da estrutura intelectual na interseção entre **cibernética
-organizacional**, **instrumentos de governo / regulação** e **política industrial**.
+organizacional**, **regulação econômica** e **política industrial**.
 O entregável canônico é o **site** em `docs/` (publicável no GitHub Pages),
 construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 
@@ -18,7 +18,7 @@ construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 
 Mapear, com rigor cienciométrico e **apenas dados reais** (OpenAlex, verificados — sem
 id inventado ou não-resolvível), a estrutura intelectual na interseção entre **cibernética
-organizacional**, **instrumentos de governo / regulação** e **política industrial**, e
+organizacional**, **regulação econômica** e **política industrial**, e
 converter esse mapa em instrumento de pesquisa e de política. Três frentes:
 
 1. **Diagnóstico honesto da (não-)convergência.** Testar, contra um modelo nulo, se as três
@@ -30,7 +30,7 @@ converter esse mapa em instrumento de pesquisa e de política. Três frentes:
    com decisões de inclusão/exclusão reprodutíveis.
 3. **Agenda concreta.** Sobre o terreno comum que a análise revelou (teoria evolucionária e de
    capacidades da firma), formular uma **política industrial adaptativa de inspiração
-   cibernética**: retroalimentação e capacidade estatal, composição de instrumentos (Hood) e
+   cibernética**: retroalimentação e capacidade estatal, regulação econômica e desenho de agências (Stigler/Majone) e
    missões (Mazzucato/Rodrik).
 
 **Critérios de pronto:** funil reprodutível em um clique (Colab) sobre corpus real; site
@@ -121,13 +121,16 @@ jupyter notebook colab/scisci_cibernetica_regulacao_PI_v2.ipynb
 | Cyb | W2154683088 | Beer, S. (1985). Diagnosing the System |
 | Cyb | W2325487953 | Ashby, W.R. (1956). Introduction to Cybernetics |
 | Cyb | W4244612406 | Espejo & Reyes (2011). Organizational Systems |
-| Reg | W1601629960 | Hood, C. (1983). The Tools of Government |
-| Reg | W2126563689 | Hood & Margetts (2007). Tools of Government Digital Age |
-| Reg | W4386803846 | Margetts, H. (2024). Rediscovering Nodality |
+| Cyb | W1601629960 | Hood, C. (1983). The Tools of Government (instrumentos = leitura cibernética do controle estatal) |
+| Cyb | W2126563689 | Hood & Margetts (2007). Tools of Government Digital Age |
+| Cyb | W4386803846 | Margetts, H. (2024). Rediscovering Nodality |
+| Reg | W4293229472 | Stigler, G. (1971). The Theory of Economic Regulation |
+| Reg | W2171753429 | Majone, G. (1994). The Rise of the Regulatory State |
+| Reg | W2155153551 | Levi-Faur, D. (2005). Regulatory Capitalism |
 | PI  | W3124879925 | Rodrik, D. (2004). Industrial Policy for the 21C |
 | PI  | W1553746973 | Mazzucato, M. (2013). The Entrepreneurial State |
 
-(Os códigos de eixo `Cyb`/`Reg`/`PolInd` são um vocabulário controlado interno.)
+(Os códigos de eixo `Cyb`/`Reg`/`PolInd` são um vocabulário controlado interno. Conjunto completo — **60 sementes, 20 por eixo** (+ 4 da sonda Cplx), re-semeado em jun/2026 — em `src/minirun.py`.)
 
 ---
 
