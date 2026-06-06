@@ -44,7 +44,7 @@ DADOS = os.path.join(ROOT, "docs", "dados")
 PONTE = "ponte global×Brasil"
 BRASIL_ROLE = "corpus Brasil (Faganello)"
 
-AXMAP = {"Cyb": "Cibernética", "Reg": "Instrumentos de governo", "PolInd": "Política industrial"}
+AXMAP = {"Cyb": "Cibernética", "Reg": "Regulação econômica", "PolInd": "Política industrial"}
 
 # ============================================================
 # Catálogo de critérios de curadoria — cada tag (role) tem uma definição auditável
@@ -126,10 +126,14 @@ def _oneline(s):
 
 
 def _axis_of_ref(ref):
-    if any(x in ref for x in ("Beer", "Ashby", "Espejo")):
+    if any(x in ref for x in ("Beer", "Ashby", "Espejo", "Wiener", "Bertalanffy", "Forrester",
+                               "Checkland", "Churchman", "Maturana", "Senge", "Sterman", "Jackson",
+                               "Hood", "Margetts", "Lascoumes", "Salamon")):
         return ["Cibernética"]
-    if any(x in ref for x in ("Hood", "Margetts")):
-        return ["Instrumentos de governo"]
+    if any(x in ref for x in ("Stigler", "Peltzman", "Posner", "Majone", "Levi", "Ayres",
+                               "Braithwaite", "Vogel", "Laffont", "Demsetz", "Averch", "Wilson",
+                               "Moran", "Bardach", "Gunningham", "Weingast", "Mueller", "Pacheco")):
+        return ["Regulação econômica"]
     return ["Política industrial"]
 
 
@@ -581,7 +585,7 @@ def build(out=DADOS):
         emit(brasil, out, "rayyan_brasil")
     # opção D — o alvo: cibernética ORGANIZACIONAL + regulação + política industrial
     org = [e for e in works if ("cibernética organizacional" in e["roles"])
-           or ("Instrumentos de governo" in e["axes"]) or ("Política industrial" in e["axes"])]
+           or ("Regulação econômica" in e["axes"]) or ("Política industrial" in e["axes"])]
     if org:
         emit(org, out, "rayyan_organizacional")
     return works

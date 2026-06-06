@@ -29,7 +29,7 @@ SEEDS = ["W2048086870", "W1566478880", "W2154683088", "W2325487953", "W424461240
          "W1601629960", "W2126563689", "W4386803846", "W3124879925", "W1553746973",
          "W4230710385", "W3130930004", "W2063282131"]
 CITERS_PER_SEED = int(os.environ.get("CITERS_PER_SEED", "200"))  # max OpenAlex per-page; env-overridable
-AXN = {"Cyb": "cibernética", "Reg": "instrumentos de governo",
+AXN = {"Cyb": "cibernética", "Reg": "regulação econômica",
        "PolInd": "política industrial", "Cplx": "complexidade"}
 
 
