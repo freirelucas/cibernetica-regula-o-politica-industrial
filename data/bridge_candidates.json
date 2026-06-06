@@ -3,49 +3,40 @@
  "metodo": "pares cross-silo NÃO co-citados, ranqueados por proximidade semântica (buraco estrutural + ponte semântica). LEADS para ler, não pontes validadas.",
  "semantico": {
   "metodo": "sentence-transformers/all-MiniLM-L6-v2",
-  "n_obras_com_abstract": 186,
-  "n_corpus": 186
+  "n_obras_com_abstract": 245,
+  "n_corpus": 253
  },
  "distribuicao_cosseno": {
-  "p10": 0.078,
-  "p50": 0.2069,
-  "p90": 0.3414,
-  "p99": 0.4671,
-  "max": 0.641
+  "p10": 0.074,
+  "p50": 0.1996,
+  "p90": 0.3436,
+  "p99": 0.463,
+  "max": 0.6622
  },
- "n_pares": 9554,
+ "n_pares": 16069,
  "cobertura_frentes_top": {
-  "Cyb × PolInd": 61,
-  "PolInd × Reg": 51,
-  "Cyb × Reg": 38
+  "PolInd × Reg": 107,
+  "Cyb × PolInd": 29,
+  "Cyb × Reg": 14
  },
  "pares_top": [
   {
-   "a": "W617038684",
-   "b": "W1855283887",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.641,
-   "centralidade": 0.0549
-  },
-  {
-   "a": "W1491554624",
-   "b": "W2127454860",
+   "a": "W2140409505",
+   "b": "W1575626990",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.628,
-   "centralidade": 0.1209
+   "cosseno": 0.6622,
+   "centralidade": 0.0347
   },
   {
-   "a": "W2114648917",
-   "b": "W2010793828",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
+   "a": "W2143943407",
+   "b": "W1529223067",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.6256,
-   "centralidade": 0.2692
+   "cosseno": 0.619,
+   "centralidade": 0.0297
   },
   {
    "a": "W2007180942",
@@ -54,52 +45,70 @@
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
    "cosseno": 0.5868,
-   "centralidade": 0.2253
+   "centralidade": 0.0578
   },
   {
-   "a": "W2007180942",
-   "b": "W1500910854",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5859,
-   "centralidade": 0.1923
-  },
-  {
-   "a": "W1585382938",
-   "b": "W3123282572",
+   "a": "W1970326724",
+   "b": "W1529223067",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.579,
-   "centralidade": 0.0934
+   "cosseno": 0.5832,
+   "centralidade": 0.038
   },
   {
-   "a": "W1999997471",
-   "b": "W2142257426",
+   "a": "W2143943407",
+   "b": "W1561018600",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.577,
-   "centralidade": 0.1374
+   "cosseno": 0.5793,
+   "centralidade": 0.0281
   },
   {
-   "a": "W617038684",
-   "b": "W67809301",
+   "a": "W2566856888",
+   "b": "W1529223067",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.5744,
-   "centralidade": 0.1813
+   "cosseno": 0.5767,
+   "centralidade": 0.0479
   },
   {
-   "a": "W1576605329",
-   "b": "W2142257426",
+   "a": "W2143590178",
+   "b": "W620490219",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5755,
+   "centralidade": 0.0182
+  },
+  {
+   "a": "W1489741075",
+   "b": "W1516216046",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.5669,
-   "centralidade": 0.0879
+   "cosseno": 0.568,
+   "centralidade": 0.005
+  },
+  {
+   "a": "W172274565",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5662,
+   "centralidade": 0.0347
+  },
+  {
+   "a": "W1970326724",
+   "b": "W4298413470",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5629,
+   "centralidade": 0.0825
   },
   {
    "a": "W3121147769",
@@ -108,7 +117,25 @@
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
    "cosseno": 0.5627,
-   "centralidade": 0.2253
+   "centralidade": 0.0759
+  },
+  {
+   "a": "W1585485765",
+   "b": "W1978213954",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5622,
+   "centralidade": 0.0099
+  },
+  {
+   "a": "W620490219",
+   "b": "W2163458930",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5606,
+   "centralidade": 0.0033
   },
   {
    "a": "W4244612406",
@@ -117,7 +144,7 @@
    "eixo_a": "Cyb",
    "eixo_b": "Reg",
    "cosseno": 0.5597,
-   "centralidade": 0.2253
+   "centralidade": 0.1023
   },
   {
    "a": "W2059789395",
@@ -126,169 +153,250 @@
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
    "cosseno": 0.5542,
-   "centralidade": 0.0824
-  },
-  {
-   "a": "W2102469678",
-   "b": "W2752617332",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.5531,
-   "centralidade": 0.1538
-  },
-  {
-   "a": "W2140256961",
-   "b": "W2028436159",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.5497,
-   "centralidade": 0.0604
-  },
-  {
-   "a": "W617038684",
-   "b": "W1504129344",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.5485,
-   "centralidade": 0.044
-  },
-  {
-   "a": "W2179492332",
-   "b": "W1566344170",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.5477,
-   "centralidade": 0.1209
-  },
-  {
-   "a": "W1585382938",
-   "b": "W1511343964",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5459,
    "centralidade": 0.0165
+  },
+  {
+   "a": "W1569410165",
+   "b": "W2143943407",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5532,
+   "centralidade": 0.0281
+  },
+  {
+   "a": "W4230710385",
+   "b": "W3122116504",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5511,
+   "centralidade": 0.0363
+  },
+  {
+   "a": "W1511343964",
+   "b": "W1993663609",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5478,
+   "centralidade": 0.0495
+  },
+  {
+   "a": "W91655458",
+   "b": "W1978213954",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5464,
+   "centralidade": 0.0099
   },
   {
    "a": "W1566172004",
    "b": "W90769783",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5443,
-   "centralidade": 0.2198
-  },
-  {
-   "a": "W2085563972",
-   "b": "W617038684",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.5432,
-   "centralidade": 0.022
-  },
-  {
-   "a": "W1993023795",
-   "b": "W617038684",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
-   "eixo_b": "PolInd",
-   "cosseno": 0.5409,
-   "centralidade": 0.033
-  },
-  {
-   "a": "W2114648917",
-   "b": "W2312418354",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.5383,
-   "centralidade": 0.3132
-  },
-  {
-   "a": "W1965278510",
-   "b": "W2004899202",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5365,
-   "centralidade": 0.0934
-  },
-  {
-   "a": "W1491554624",
-   "b": "W1992324015",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.5354,
-   "centralidade": 0.0604
+   "cosseno": 0.5443,
+   "centralidade": 0.0479
+  },
+  {
+   "a": "W4293229472",
+   "b": "W266848492",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.544,
+   "centralidade": 0.0248
+  },
+  {
+   "a": "W2143943407",
+   "b": "W2143590178",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5434,
+   "centralidade": 0.0264
+  },
+  {
+   "a": "W1978213954",
+   "b": "W2912536286",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5433,
+   "centralidade": 0.0314
+  },
+  {
+   "a": "W2012275303",
+   "b": "W1978213954",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.542,
+   "centralidade": 0.0347
+  },
+  {
+   "a": "W2012275303",
+   "b": "W2125441319",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5412,
+   "centralidade": 0.0281
+  },
+  {
+   "a": "W620490219",
+   "b": "W2079608375",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5382,
+   "centralidade": 0.0033
+  },
+  {
+   "a": "W2155153551",
+   "b": "W2566856888",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.537,
+   "centralidade": 0.038
+  },
+  {
+   "a": "W2912536286",
+   "b": "W2125441319",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5355,
+   "centralidade": 0.0248
+  },
+  {
+   "a": "W4298413470",
+   "b": "W59570615",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5342,
+   "centralidade": 0.0693
   },
   {
    "a": "W1979968159",
    "b": "W67809301",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.5341,
-   "centralidade": 0.2198
-  },
-  {
-   "a": "W4244612406",
-   "b": "W2039191423",
    "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
-   "eixo_b": "PolInd",
-   "cosseno": 0.5338,
-   "centralidade": 0.1758
-  },
-  {
-   "a": "W2118243939",
-   "b": "W2127454860",
-   "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.5319,
-   "centralidade": 0.1319
+   "eixo_b": "Cyb",
+   "cosseno": 0.5341,
+   "centralidade": 0.038
   },
   {
-   "a": "W2120106358",
-   "b": "W2312418354",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.529,
-   "centralidade": 0.3242
-  },
-  {
-   "a": "W1585382938",
+   "a": "W2039191423",
    "b": "W4244612406",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.5272,
-   "centralidade": 0.1538
+   "cosseno": 0.5338,
+   "centralidade": 0.0875
   },
   {
-   "a": "W1517602275",
-   "b": "W1895366050",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.5269,
-   "centralidade": 0.0495
-  },
-  {
-   "a": "W582908774",
-   "b": "W1585382938",
+   "a": "W1511343964",
+   "b": "W2068155429",
    "frente": "Cyb × PolInd",
    "eixo_a": "Cyb",
    "eixo_b": "PolInd",
-   "cosseno": 0.5259,
-   "centralidade": 0.0659
+   "cosseno": 0.5322,
+   "centralidade": 0.0281
+  },
+  {
+   "a": "W1998800754",
+   "b": "W1495419098",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5321,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W2066979365",
+   "b": "W1529223067",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.527,
+   "centralidade": 0.0264
+  },
+  {
+   "a": "W1585485765",
+   "b": "W1575626990",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5266,
+   "centralidade": 0.005
+  },
+  {
+   "a": "W2043285762",
+   "b": "W1520641906",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5264,
+   "centralidade": 0.1238
+  },
+  {
+   "a": "W2143590178",
+   "b": "W3121147769",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.524,
+   "centralidade": 0.071
+  },
+  {
+   "a": "W1608766426",
+   "b": "W1489741075",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5236,
+   "centralidade": 0.005
+  },
+  {
+   "a": "W2334918364",
+   "b": "W1575626990",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5219,
+   "centralidade": 0.0297
+  },
+  {
+   "a": "W2155153551",
+   "b": "W172274565",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5194,
+   "centralidade": 0.0231
+  },
+  {
+   "a": "W2012275303",
+   "b": "W1967877710",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5193,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W2079608375",
+   "b": "W2483843983",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5192,
+   "centralidade": 0.005
   },
   {
    "a": "W2060827592",
@@ -297,61 +405,97 @@
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
    "cosseno": 0.518,
-   "centralidade": 0.1484
+   "centralidade": 0.0479
   },
   {
-   "a": "W90769783",
-   "b": "W2312418354",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.5156,
-   "centralidade": 0.3901
-  },
-  {
-   "a": "W1511343964",
-   "b": "W1965278510",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.5155,
-   "centralidade": 0.0714
-  },
-  {
-   "a": "W2970049487",
-   "b": "W2010793828",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.5152,
-   "centralidade": 0.2637
-  },
-  {
-   "a": "W582908774",
-   "b": "W2099670044",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
+   "a": "W1978213954",
+   "b": "W59570615",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
    "eixo_b": "PolInd",
-   "cosseno": 0.5147,
-   "centralidade": 0.0824
+   "cosseno": 0.5176,
+   "centralidade": 0.0099
   },
   {
-   "a": "W1585382938",
+   "a": "W1998800754",
    "b": "W2164284962",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.5126,
-   "centralidade": 0.0879
+   "cosseno": 0.5164,
+   "centralidade": 0.0347
   },
   {
-   "a": "W1553746973",
-   "b": "W2142257426",
+   "a": "W1993663609",
+   "b": "W2099670044",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5164,
+   "centralidade": 0.0528
+  },
+  {
+   "a": "W1965278510",
+   "b": "W1511343964",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.5155,
+   "centralidade": 0.0264
+  },
+  {
+   "a": "W1990360714",
+   "b": "W1993663609",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.5125,
-   "centralidade": 0.4725
+   "cosseno": 0.5151,
+   "centralidade": 0.0578
+  },
+  {
+   "a": "W86171905",
+   "b": "W1520386898",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5148,
+   "centralidade": 0.0182
+  },
+  {
+   "a": "W3170187706",
+   "b": "W4302604455",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5146,
+   "centralidade": 0.0165
+  },
+  {
+   "a": "W3170187706",
+   "b": "W2796849763",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5144,
+   "centralidade": 0.0099
+  },
+  {
+   "a": "W3170187706",
+   "b": "W2017802748",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5141,
+   "centralidade": 0.0347
+  },
+  {
+   "a": "W1569410165",
+   "b": "W2796849763",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.5135,
+   "centralidade": 0.0281
   },
   {
    "a": "W2083449279",
@@ -360,16 +504,16 @@
    "eixo_a": "Cyb",
    "eixo_b": "Reg",
    "cosseno": 0.5118,
-   "centralidade": 0.1044
+   "centralidade": 0.0396
   },
   {
-   "a": "W1585382938",
-   "b": "W1530425941",
-   "frente": "Cyb × PolInd",
+   "a": "W2066979365",
+   "b": "W1550684686",
+   "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5118,
-   "centralidade": 0.0275
+   "eixo_b": "Reg",
+   "cosseno": 0.5115,
+   "centralidade": 0.0231
   },
   {
    "a": "W2060827592",
@@ -378,61 +522,97 @@
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
    "cosseno": 0.5102,
-   "centralidade": 0.1484
+   "centralidade": 0.0446
   },
   {
-   "a": "W2118243939",
-   "b": "W1992324015",
+   "a": "W2097592255",
+   "b": "W1601944394",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
+   "cosseno": 0.5099,
+   "centralidade": 0.0281
+  },
+  {
+   "a": "W4293229472",
+   "b": "W1495882109",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
    "cosseno": 0.5097,
-   "centralidade": 0.0714
+   "centralidade": 0.0248
   },
   {
-   "a": "W1566344170",
-   "b": "W2004899202",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5053,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W2142257426",
-   "b": "W1551036771",
+   "a": "W4298413470",
+   "b": "W70394360",
    "frente": "PolInd × Reg",
    "eixo_a": "Reg",
    "eixo_b": "PolInd",
+   "cosseno": 0.5071,
+   "centralidade": 0.066
+  },
+  {
+   "a": "W91655458",
+   "b": "W1575626990",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5071,
+   "centralidade": 0.005
+  },
+  {
+   "a": "W620490219",
+   "b": "W3121399009",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5044,
+   "centralidade": 0.0
+  },
+  {
+   "a": "W2566856888",
+   "b": "W1575626990",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
    "cosseno": 0.5043,
-   "centralidade": 0.0604
+   "centralidade": 0.0281
   },
   {
-   "a": "W1992324015",
-   "b": "W1517138715",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
-   "eixo_b": "PolInd",
-   "cosseno": 0.5028,
-   "centralidade": 0.1319
-  },
-  {
-   "a": "W1517602275",
-   "b": "W2123709218",
+   "a": "W1520641906",
+   "b": "W1516216046",
    "frente": "Cyb × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5024,
-   "centralidade": 0.1154
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5037,
+   "centralidade": 0.1007
   },
   {
-   "a": "W2127454860",
-   "b": "W1551036771",
+   "a": "W4244612406",
+   "b": "W1993663609",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.5019,
+   "centralidade": 0.1254
+  },
+  {
+   "a": "W2066979365",
+   "b": "W1575626990",
    "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.5014,
-   "centralidade": 0.1429
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5018,
+   "centralidade": 0.0066
+  },
+  {
+   "a": "W2143943407",
+   "b": "W2171753429",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.5016,
+   "centralidade": 0.0264
   },
   {
    "a": "W1979968159",
@@ -441,61 +621,88 @@
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
    "cosseno": 0.501,
-   "centralidade": 0.1813
+   "centralidade": 0.0462
   },
   {
-   "a": "W1576605329",
-   "b": "W1992324015",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.5001,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W582908774",
-   "b": "W2003934805",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4992,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W2095561982",
-   "b": "W2004899202",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4986,
-   "centralidade": 0.0604
-  },
-  {
-   "a": "W2179492332",
-   "b": "W2007180942",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
+   "a": "W72021140",
+   "b": "W3121147769",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
    "eixo_b": "PolInd",
-   "cosseno": 0.4978,
-   "centralidade": 0.1923
+   "cosseno": 0.501,
+   "centralidade": 0.0528
   },
   {
-   "a": "W582908774",
-   "b": "W1965278510",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4978,
-   "centralidade": 0.1209
-  },
-  {
-   "a": "W1999997471",
-   "b": "W1992324015",
+   "a": "W2097592255",
+   "b": "W4244612406",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.4977,
-   "centralidade": 0.1593
+   "cosseno": 0.5006,
+   "centralidade": 0.0842
+  },
+  {
+   "a": "W3124140110",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4999,
+   "centralidade": 0.0363
+  },
+  {
+   "a": "W72021140",
+   "b": "W3130930004",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4994,
+   "centralidade": 0.1073
+  },
+  {
+   "a": "W1608766426",
+   "b": "W1598833883",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4994,
+   "centralidade": 0.0066
+  },
+  {
+   "a": "W2566856888",
+   "b": "W1550684686",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4983,
+   "centralidade": 0.0446
+  },
+  {
+   "a": "W620490219",
+   "b": "W1529223067",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4981,
+   "centralidade": 0.0215
+  },
+  {
+   "a": "W2143943407",
+   "b": "W1993663609",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4975,
+   "centralidade": 0.0545
+  },
+  {
+   "a": "W59570615",
+   "b": "W1520386898",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.497,
+   "centralidade": 0.0215
   },
   {
    "a": "W1569410165",
@@ -504,70 +711,61 @@
    "eixo_a": "Reg",
    "eixo_b": "PolInd",
    "cosseno": 0.4954,
-   "centralidade": 0.1044
+   "centralidade": 0.0479
   },
   {
-   "a": "W1993023795",
-   "b": "W2102469678",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
+   "a": "W1965278510",
+   "b": "W91655458",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
    "eixo_b": "PolInd",
-   "cosseno": 0.4952,
-   "centralidade": 0.0604
+   "cosseno": 0.4949,
+   "centralidade": 0.0264
   },
   {
-   "a": "W1585382938",
-   "b": "W1993023795",
+   "a": "W2059789395",
+   "b": "W2063282131",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.4943,
-   "centralidade": 0.0385
-  },
-  {
-   "a": "W2063282131",
-   "b": "W2059789395",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
-   "eixo_b": "PolInd",
    "cosseno": 0.4942,
-   "centralidade": 0.0714
+   "centralidade": 0.0264
   },
   {
-   "a": "W2312418354",
-   "b": "W2072863585",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4937,
-   "centralidade": 0.3516
-  },
-  {
-   "a": "W617038684",
-   "b": "W2123709218",
+   "a": "W1970326724",
+   "b": "W4244612406",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.4934,
-   "centralidade": 0.1099
+   "cosseno": 0.4929,
+   "centralidade": 0.0957
   },
   {
-   "a": "W1504129344",
-   "b": "W1978399955",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
+   "a": "W1970326724",
+   "b": "W1511343964",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
    "cosseno": 0.4921,
-   "centralidade": 0.0714
+   "centralidade": 0.0198
   },
   {
-   "a": "W1517602275",
-   "b": "W2108767715",
+   "a": "W2068155429",
+   "b": "W1566344170",
    "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4913,
-   "centralidade": 0.0275
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.492,
+   "centralidade": 0.0479
+  },
+  {
+   "a": "W59570615",
+   "b": "W1566344170",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4918,
+   "centralidade": 0.0264
   },
   {
    "a": "W2122679534",
@@ -576,124 +774,259 @@
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
    "cosseno": 0.4908,
-   "centralidade": 0.1154
+   "centralidade": 0.0347
   },
   {
-   "a": "W603352075",
-   "b": "W1965278510",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4886,
-   "centralidade": 0.0934
+   "a": "W151157839",
+   "b": "W4244612406",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.49,
+   "centralidade": 0.0809
   },
   {
-   "a": "W4244612406",
-   "b": "W2003934805",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4879,
-   "centralidade": 0.1978
+   "a": "W2143590178",
+   "b": "W91655458",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4894,
+   "centralidade": 0.0215
   },
   {
-   "a": "W1999800658",
-   "b": "W2127454860",
+   "a": "W72021140",
+   "b": "W2048894562",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4893,
+   "centralidade": 0.0611
+  },
+  {
+   "a": "W2066979365",
+   "b": "W1978213954",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4876,
-   "centralidade": 0.1319
+   "cosseno": 0.4892,
+   "centralidade": 0.0116
   },
   {
-   "a": "W2102469678",
+   "a": "W70394360",
+   "b": "W1529223067",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4878,
+   "centralidade": 0.0215
+  },
+  {
+   "a": "W1595964953",
+   "b": "W91655458",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4874,
+   "centralidade": 0.0066
+  },
+  {
+   "a": "W2037927976",
+   "b": "W4386803846",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4866,
+   "centralidade": 0.0561
+  },
+  {
+   "a": "W2060827592",
+   "b": "W1608766426",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4861,
+   "centralidade": 0.0215
+  },
+  {
+   "a": "W1581687645",
+   "b": "W3124879925",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4854,
+   "centralidade": 0.0974
+  },
+  {
+   "a": "W1511343964",
+   "b": "W2099670044",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4836,
+   "centralidade": 0.0099
+  },
+  {
+   "a": "W2066979365",
    "b": "W1566344170",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4849,
-   "centralidade": 0.1044
+   "cosseno": 0.4827,
+   "centralidade": 0.0281
   },
   {
-   "a": "W4244612406",
-   "b": "W617038684",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
+   "a": "W1569410165",
+   "b": "W4302604455",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
    "eixo_b": "PolInd",
-   "cosseno": 0.484,
-   "centralidade": 0.1484
+   "cosseno": 0.4818,
+   "centralidade": 0.0347
   },
   {
-   "a": "W1511343964",
-   "b": "W2003934805",
+   "a": "W1498488428",
+   "b": "W2120946983",
    "frente": "Cyb × Reg",
    "eixo_a": "Cyb",
    "eixo_b": "Reg",
-   "cosseno": 0.484,
-   "centralidade": 0.0604
+   "cosseno": 0.4813,
+   "centralidade": 0.0545
   },
   {
-   "a": "W2164284962",
-   "b": "W617038684",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
+   "a": "W1973308529",
+   "b": "W1598833883",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
    "eixo_b": "PolInd",
-   "cosseno": 0.4838,
-   "centralidade": 0.0824
+   "cosseno": 0.4811,
+   "centralidade": 0.0413
   },
   {
-   "a": "W2099670044",
-   "b": "W1511343964",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4836,
-   "centralidade": 0.033
-  },
-  {
-   "a": "W1553746973",
-   "b": "W1570538375",
+   "a": "W91655458",
+   "b": "W760270995",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4825,
-   "centralidade": 0.467
+   "cosseno": 0.481,
+   "centralidade": 0.0116
   },
   {
-   "a": "W1585382938",
-   "b": "W2004899202",
+   "a": "W2107431528",
+   "b": "W1520641906",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4804,
+   "centralidade": 0.1106
+  },
+  {
+   "a": "W3170187706",
+   "b": "W2012275303",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.48,
+   "centralidade": 0.0297
+  },
+  {
+   "a": "W1990360714",
+   "b": "W1529223067",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4799,
+   "centralidade": 0.033
+  },
+  {
+   "a": "W2068155429",
+   "b": "W4244612406",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.4802,
-   "centralidade": 0.0385
+   "cosseno": 0.4799,
+   "centralidade": 0.104
   },
   {
-   "a": "W1511343964",
-   "b": "W3123282572",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
+   "a": "W3122116504",
+   "b": "W1529223067",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4796,
-   "centralidade": 0.0989
+   "cosseno": 0.4799,
+   "centralidade": 0.0347
   },
   {
-   "a": "W4230710385",
-   "b": "W2039191423",
+   "a": "W1895366050",
+   "b": "W158727920",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4794,
+   "centralidade": 0.0297
+  },
+  {
+   "a": "W3124140110",
+   "b": "W1993663609",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4791,
+   "centralidade": 0.0594
+  },
+  {
+   "a": "W1498488428",
+   "b": "W151157839",
    "frente": "Cyb × PolInd",
    "eixo_a": "Cyb",
    "eixo_b": "PolInd",
    "cosseno": 0.479,
-   "centralidade": 0.0879
+   "centralidade": 0.033
   },
   {
-   "a": "W2108795964",
-   "b": "W2142257426",
+   "a": "W2039191423",
+   "b": "W4230710385",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.479,
+   "centralidade": 0.0314
+  },
+  {
+   "a": "W2483843983",
+   "b": "W1597798001",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4786,
-   "centralidade": 0.1374
+   "cosseno": 0.479,
+   "centralidade": 0.0066
+  },
+  {
+   "a": "W2140409505",
+   "b": "W2155153551",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4789,
+   "centralidade": 0.0446
+  },
+  {
+   "a": "W200208739",
+   "b": "W3170187706",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4788,
+   "centralidade": 0.0132
+  },
+  {
+   "a": "W1515810707",
+   "b": "W1550684686",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Cyb",
+   "eixo_b": "Reg",
+   "cosseno": 0.4784,
+   "centralidade": 0.033
   },
   {
    "a": "W1999997471",
@@ -702,79 +1035,79 @@
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
    "cosseno": 0.4784,
-   "centralidade": 0.2637
+   "centralidade": 0.1007
   },
   {
-   "a": "W582908774",
-   "b": "W1566344170",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
+   "a": "W72021140",
+   "b": "W1684540946",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
    "cosseno": 0.4783,
-   "centralidade": 0.1374
+   "centralidade": 0.0264
   },
   {
-   "a": "W1566172004",
-   "b": "W603352075",
+   "a": "W91655458",
+   "b": "W1993663609",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4779,
+   "centralidade": 0.0495
+  },
+  {
+   "a": "W2752617332",
+   "b": "W2123755784",
    "frente": "Cyb × Reg",
    "eixo_a": "Reg",
    "eixo_b": "Cyb",
-   "cosseno": 0.4782,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W1731457293",
-   "b": "W2099069868",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4779,
-   "centralidade": 0.0769
-  },
-  {
-   "a": "W2123755784",
-   "b": "W2752617332",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
    "cosseno": 0.4775,
-   "centralidade": 0.3846
+   "centralidade": 0.1502
   },
   {
-   "a": "W1981733426",
-   "b": "W2127454860",
+   "a": "W1581687645",
+   "b": "W1491554624",
    "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4769,
-   "centralidade": 0.1264
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4767,
+   "centralidade": 0.0149
   },
   {
-   "a": "W1978399955",
+   "a": "W86171905",
    "b": "W1566344170",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4768,
-   "centralidade": 0.1044
-  },
-  {
-   "a": "W617038684",
-   "b": "W90769783",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
    "cosseno": 0.4766,
-   "centralidade": 0.1429
+   "centralidade": 0.0231
   },
   {
-   "a": "W1585382938",
-   "b": "W2140256961",
+   "a": "W2012275303",
+   "b": "W1520386898",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4761,
+   "centralidade": 0.0462
+  },
+  {
+   "a": "W1993023795",
+   "b": "W1495419098",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.4754,
-   "centralidade": 0.0549
+   "cosseno": 0.4759,
+   "centralidade": 0.0363
+  },
+  {
+   "a": "W2017802748",
+   "b": "W1597798001",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4745,
+   "centralidade": 0.038
   },
   {
    "a": "W2108795964",
@@ -783,25 +1116,61 @@
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
    "cosseno": 0.4741,
-   "centralidade": 0.1923
+   "centralidade": 0.0578
   },
   {
-   "a": "W2025579080",
-   "b": "W1993023795",
+   "a": "W2066979365",
+   "b": "W1569410165",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4734,
+   "centralidade": 0.0248
+  },
+  {
+   "a": "W1979505044",
+   "b": "W1495419098",
    "frente": "Cyb × PolInd",
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
-   "cosseno": 0.473,
-   "centralidade": 0.0495
+   "cosseno": 0.4732,
+   "centralidade": 0.033
   },
   {
-   "a": "W2179492332",
-   "b": "W1585382938",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
+   "a": "W72021140",
+   "b": "W2566856888",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
    "eixo_b": "PolInd",
-   "cosseno": 0.4728,
-   "centralidade": 0.0495
+   "cosseno": 0.4729,
+   "centralidade": 0.0264
+  },
+  {
+   "a": "W3022339544",
+   "b": "W1978213954",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4726,
+   "centralidade": 0.0314
+  },
+  {
+   "a": "W1972661585",
+   "b": "W4230710385",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "PolInd",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4725,
+   "centralidade": 0.0248
+  },
+  {
+   "a": "W2155153551",
+   "b": "W59570615",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.472,
+   "centralidade": 0.0149
   },
   {
    "a": "W2059789395",
@@ -810,25 +1179,43 @@
    "eixo_a": "PolInd",
    "eixo_b": "Cyb",
    "cosseno": 0.4716,
-   "centralidade": 0.1648
+   "centralidade": 0.033
+  },
+  {
+   "a": "W1489741075",
+   "b": "W1973308529",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4715,
+   "centralidade": 0.0396
+  },
+  {
+   "a": "W91655458",
+   "b": "W2125441319",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4713,
+   "centralidade": 0.0033
   },
   {
    "a": "W2123709218",
    "b": "W1566344170",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
    "eixo_b": "Reg",
    "cosseno": 0.4713,
-   "centralidade": 0.1868
+   "centralidade": 0.0594
   },
   {
-   "a": "W2003934805",
-   "b": "W2004899202",
+   "a": "W1981314212",
+   "b": "W4244612406",
    "frente": "Cyb × Reg",
    "eixo_a": "Reg",
    "eixo_b": "Cyb",
    "cosseno": 0.4713,
-   "centralidade": 0.0824
+   "centralidade": 0.0891
   },
   {
    "a": "W4371184",
@@ -837,7 +1224,79 @@
    "eixo_a": "Reg",
    "eixo_b": "PolInd",
    "cosseno": 0.4712,
-   "centralidade": 0.1319
+   "centralidade": 0.0611
+  },
+  {
+   "a": "W1581687645",
+   "b": "W172274565",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.471,
+   "centralidade": 0.0215
+  },
+  {
+   "a": "W3170187706",
+   "b": "W59570615",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4705,
+   "centralidade": 0.005
+  },
+  {
+   "a": "W2912536286",
+   "b": "W1520386898",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4705,
+   "centralidade": 0.0429
+  },
+  {
+   "a": "W2143943407",
+   "b": "W2163458930",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4703,
+   "centralidade": 0.0116
+  },
+  {
+   "a": "W2159914272",
+   "b": "W1520641906",
+   "frente": "Cyb × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "Cyb",
+   "cosseno": 0.4701,
+   "centralidade": 0.1007
+  },
+  {
+   "a": "W1979968159",
+   "b": "W4293229472",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4701,
+   "centralidade": 0.0396
+  },
+  {
+   "a": "W1561018600",
+   "b": "W172274565",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4699,
+   "centralidade": 0.0314
+  },
+  {
+   "a": "W620490219",
+   "b": "W1978213954",
+   "frente": "PolInd × Reg",
+   "eixo_a": "PolInd",
+   "eixo_b": "Reg",
+   "cosseno": 0.4699,
+   "centralidade": 0.0066
   },
   {
    "a": "W2140956556",
@@ -846,25 +1305,34 @@
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
    "cosseno": 0.4697,
-   "centralidade": 0.1978
+   "centralidade": 0.0627
   },
   {
-   "a": "W1585382938",
-   "b": "W1965278510",
+   "a": "W72021140",
+   "b": "W3122116504",
+   "frente": "PolInd × Reg",
+   "eixo_a": "Reg",
+   "eixo_b": "PolInd",
+   "cosseno": 0.4691,
+   "centralidade": 0.0132
+  },
+  {
+   "a": "W2099069868",
+   "b": "W2059789395",
+   "frente": "Cyb × PolInd",
+   "eixo_a": "Cyb",
+   "eixo_b": "PolInd",
+   "cosseno": 0.469,
+   "centralidade": 0.038
+  },
+  {
+   "a": "W3124140110",
+   "b": "W72021140",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4693,
-   "centralidade": 0.0659
-  },
-  {
-   "a": "W2059789395",
-   "b": "W2099069868",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
    "cosseno": 0.469,
-   "centralidade": 0.0879
+   "centralidade": 0.0132
   },
   {
    "a": "W2140956556",
@@ -873,552 +1341,68 @@
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
    "cosseno": 0.4689,
-   "centralidade": 0.1484
+   "centralidade": 0.0446
   },
   {
-   "a": "W2154683088",
-   "b": "W2003934805",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4679,
-   "centralidade": 0.2912
-  },
-  {
-   "a": "W1491554624",
-   "b": "W2142257426",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4671,
-   "centralidade": 0.0385
-  },
-  {
-   "a": "W1585382938",
-   "b": "W2123709218",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4661,
-   "centralidade": 0.1154
-  },
-  {
-   "a": "W2059789395",
-   "b": "W2087699103",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4657,
-   "centralidade": 0.0714
-  },
-  {
-   "a": "W2566856888",
-   "b": "W1569410165",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4641,
-   "centralidade": 0.1209
-  },
-  {
-   "a": "W1566172004",
-   "b": "W617038684",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4637,
-   "centralidade": 0.0769
-  },
-  {
-   "a": "W2123709218",
-   "b": "W2118243939",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4635,
-   "centralidade": 0.1374
-  },
-  {
-   "a": "W4230710385",
-   "b": "W1498201492",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4633,
-   "centralidade": 0.0659
-  },
-  {
-   "a": "W2108767715",
-   "b": "W67809301",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4622,
-   "centralidade": 0.2033
-  },
-  {
-   "a": "W1731457293",
-   "b": "W1601944394",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4605,
-   "centralidade": 0.1538
-  },
-  {
-   "a": "W1585382938",
-   "b": "W603352075",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4598,
-   "centralidade": 0.0385
-  },
-  {
-   "a": "W1992324015",
-   "b": "W2127454860",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4589,
-   "centralidade": 0.1484
-  },
-  {
-   "a": "W1566172004",
-   "b": "W1511343964",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4584,
-   "centralidade": 0.0879
-  },
-  {
-   "a": "W1491554624",
-   "b": "W1973459906",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4579,
-   "centralidade": 0.0604
-  },
-  {
-   "a": "W1999997471",
-   "b": "W2123709218",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4574,
-   "centralidade": 0.2253
-  },
-  {
-   "a": "W2164284962",
+   "a": "W2002050008",
    "b": "W1566344170",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4573,
-   "centralidade": 0.1593
-  },
-  {
-   "a": "W1855283887",
-   "b": "W1566344170",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4572,
-   "centralidade": 0.1319
-  },
-  {
-   "a": "W3121147769",
-   "b": "W1517602275",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4563,
-   "centralidade": 0.1538
-  },
-  {
-   "a": "W2102469678",
-   "b": "W2028436159",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4562,
-   "centralidade": 0.0385
-  },
-  {
-   "a": "W617038684",
-   "b": "W603352075",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4555,
+   "cosseno": 0.4687,
    "centralidade": 0.033
   },
   {
-   "a": "W2025177555",
-   "b": "W1980406593",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4555,
-   "centralidade": 0.2253
-  },
-  {
-   "a": "W2060827592",
-   "b": "W1517602275",
+   "a": "W2483843983",
+   "b": "W2125441319",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4554,
-   "centralidade": 0.0769
+   "cosseno": 0.4681,
+   "centralidade": 0.0017
   },
   {
-   "a": "W2007180942",
-   "b": "W2132454116",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4548,
-   "centralidade": 0.1758
-  },
-  {
-   "a": "W1979968159",
-   "b": "W2127454860",
+   "a": "W91655458",
+   "b": "W2163458930",
    "frente": "PolInd × Reg",
    "eixo_a": "PolInd",
    "eixo_b": "Reg",
-   "cosseno": 0.4545,
-   "centralidade": 0.1429
-  },
-  {
-   "a": "W1569410165",
-   "b": "W1510137183",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4541,
-   "centralidade": 0.0659
-  },
-  {
-   "a": "W1576605329",
-   "b": "W1973459906",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.454,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W142073415",
-   "b": "W2012275303",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4536,
-   "centralidade": 0.1154
-  },
-  {
-   "a": "W617038684",
-   "b": "W2004899202",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4533,
-   "centralidade": 0.033
-  },
-  {
-   "a": "W2059789395",
-   "b": "W2970049487",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.452,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W2101946146",
-   "b": "W617038684",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4514,
-   "centralidade": 0.033
-  },
-  {
-   "a": "W1585382938",
-   "b": "W2028436159",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4513,
-   "centralidade": 0.0165
-  },
-  {
-   "a": "W2099670044",
-   "b": "W2030753430",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4513,
-   "centralidade": 0.1264
-  },
-  {
-   "a": "W2179492332",
-   "b": "W2028436159",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4508,
-   "centralidade": 0.0549
-  },
-  {
-   "a": "W2099670044",
-   "b": "W2004899202",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4501,
-   "centralidade": 0.0549
-  },
-  {
-   "a": "W2095561982",
-   "b": "W4244612406",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4499,
-   "centralidade": 0.1758
-  },
-  {
-   "a": "W2123709218",
-   "b": "W3123282572",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4497,
-   "centralidade": 0.1978
-  },
-  {
-   "a": "W2087699103",
-   "b": "W2003934805",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4479,
-   "centralidade": 0.0714
-  },
-  {
-   "a": "W3130930004",
-   "b": "W2970049487",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4476,
-   "centralidade": 0.5604
-  },
-  {
-   "a": "W2154683088",
-   "b": "W1965278510",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4474,
-   "centralidade": 0.3022
-  },
-  {
-   "a": "W2566856888",
-   "b": "W4230710385",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4473,
-   "centralidade": 0.1484
-  },
-  {
-   "a": "W2101946146",
-   "b": "W1895366050",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4471,
-   "centralidade": 0.0769
-  },
-  {
-   "a": "W2059789395",
-   "b": "W4230710385",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4471,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W2099670044",
-   "b": "W90769783",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4468,
-   "centralidade": 0.1648
-  },
-  {
-   "a": "W4371184",
-   "b": "W2140409505",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4466,
-   "centralidade": 0.1648
-  },
-  {
-   "a": "W1511343964",
-   "b": "W142073415",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.4466,
-   "centralidade": 0.0549
-  },
-  {
-   "a": "W3016265253",
-   "b": "W2004899202",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4458,
-   "centralidade": 0.0879
-  },
-  {
-   "a": "W1569410165",
-   "b": "W1576605329",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4454,
-   "centralidade": 0.0989
-  },
-  {
-   "a": "W1566344170",
-   "b": "W603352075",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4452,
-   "centralidade": 0.1099
-  },
-  {
-   "a": "W3130930004",
-   "b": "W2099069868",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.445,
-   "centralidade": 0.5385
-  },
-  {
-   "a": "W1585382938",
-   "b": "W2108020239",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4446,
-   "centralidade": 0.0549
-  },
-  {
-   "a": "W2140256961",
-   "b": "W2007180942",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "Cyb",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4446,
-   "centralidade": 0.1978
-  },
-  {
-   "a": "W1517602275",
-   "b": "W2122679534",
-   "frente": "PolInd × Reg",
-   "eixo_a": "Reg",
-   "eixo_b": "PolInd",
-   "cosseno": 0.4444,
-   "centralidade": 0.044
-  },
-  {
-   "a": "W1500910854",
-   "b": "W1973459906",
-   "frente": "Cyb × Reg",
-   "eixo_a": "Cyb",
-   "eixo_b": "Reg",
-   "cosseno": 0.444,
-   "centralidade": 0.0879
-  },
-  {
-   "a": "W2059789395",
-   "b": "W2025177555",
-   "frente": "Cyb × PolInd",
-   "eixo_a": "PolInd",
-   "eixo_b": "Cyb",
-   "cosseno": 0.4438,
-   "centralidade": 0.1758
-  },
-  {
-   "a": "W1517138715",
-   "b": "W2142257426",
-   "frente": "PolInd × Reg",
-   "eixo_a": "PolInd",
-   "eixo_b": "Reg",
-   "cosseno": 0.4435,
-   "centralidade": 0.1099
+   "cosseno": 0.4672,
+   "centralidade": 0.0066
   }
  ],
  "lista_leitura": [
   {
-   "oa_id": "W617038684",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.641,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 130
-  },
-  {
-   "oa_id": "W1855283887",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.641,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 79
-  },
-  {
-   "oa_id": "W1491554624",
+   "oa_id": "W2140409505",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.628,
+   "melhor_cosseno": 0.6622,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 126
+   "n_pontes_potenciais": 85
   },
   {
-   "oa_id": "W2127454860",
+   "oa_id": "W1575626990",
    "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.628,
+   "melhor_cosseno": 0.6622,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 107
+   "n_pontes_potenciais": 179
   },
   {
-   "oa_id": "W2114648917",
-   "eixo": "Cyb",
+   "oa_id": "W2143943407",
+   "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.6256,
+   "melhor_cosseno": 0.619,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 102
+   "n_pontes_potenciais": 98
   },
   {
-   "oa_id": "W2010793828",
+   "oa_id": "W1529223067",
    "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.6256,
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.619,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 67
+   "n_pontes_potenciais": 152
   },
   {
    "oa_id": "W2007180942",
@@ -1426,7 +1410,7 @@
    "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.5868,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 100
+   "n_pontes_potenciais": 86
   },
   {
    "oa_id": "W1495419098",
@@ -1434,63 +1418,87 @@
    "melhor_parceiro_eixo": "PolInd",
    "melhor_cosseno": 0.5868,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 86
+   "n_pontes_potenciais": 164
   },
   {
-   "oa_id": "W1500910854",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5859,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 103
-  },
-  {
-   "oa_id": "W1585382938",
+   "oa_id": "W1970326724",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.579,
+   "melhor_cosseno": 0.5832,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 125
+   "n_pontes_potenciais": 97
   },
   {
-   "oa_id": "W3123282572",
+   "oa_id": "W1561018600",
    "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.579,
+   "melhor_cosseno": 0.5793,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 175
+  },
+  {
+   "oa_id": "W2566856888",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5767,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 91
+  },
+  {
+   "oa_id": "W2143590178",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5755,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 172
+  },
+  {
+   "oa_id": "W620490219",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5755,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 113
+  },
+  {
+   "oa_id": "W1489741075",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.568,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 102
   },
   {
-   "oa_id": "W1999997471",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.577,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 95
-  },
-  {
-   "oa_id": "W2142257426",
+   "oa_id": "W1516216046",
    "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.577,
+   "melhor_cosseno": 0.568,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 116
+   "n_pontes_potenciais": 183
   },
   {
-   "oa_id": "W67809301",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5744,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 70
-  },
-  {
-   "oa_id": "W1576605329",
+   "oa_id": "W172274565",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5669,
+   "melhor_cosseno": 0.5662,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 110
+   "n_pontes_potenciais": 101
+  },
+  {
+   "oa_id": "W1566344170",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5662,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 143
+  },
+  {
+   "oa_id": "W4298413470",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5629,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 90
   },
   {
    "oa_id": "W3121147769",
@@ -1498,15 +1506,31 @@
    "melhor_parceiro_eixo": "Reg",
    "melhor_cosseno": 0.5627,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 77
+   "n_pontes_potenciais": 74
   },
   {
-   "oa_id": "W1566344170",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5627,
+   "oa_id": "W1585485765",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5622,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W1978213954",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5622,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 176
+  },
+  {
+   "oa_id": "W2163458930",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5606,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 179
   },
   {
    "oa_id": "W4244612406",
@@ -1514,7 +1538,7 @@
    "melhor_parceiro_eixo": "Reg",
    "melhor_cosseno": 0.5597,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 92
+   "n_pontes_potenciais": 170
   },
   {
    "oa_id": "W2059789395",
@@ -1522,7 +1546,7 @@
    "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.5542,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 103
+   "n_pontes_potenciais": 100
   },
   {
    "oa_id": "W597091629",
@@ -1530,135 +1554,151 @@
    "melhor_parceiro_eixo": "PolInd",
    "melhor_cosseno": 0.5542,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 105
+   "n_pontes_potenciais": 194
   },
   {
-   "oa_id": "W2102469678",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5531,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 110
-  },
-  {
-   "oa_id": "W2752617332",
+   "oa_id": "W1569410165",
    "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5531,
+   "melhor_cosseno": 0.5532,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 168
+  },
+  {
+   "oa_id": "W4230710385",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5511,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 172
+  },
+  {
+   "oa_id": "W3122116504",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5511,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 98
   },
   {
-   "oa_id": "W2140256961",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5497,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 86
-  },
-  {
-   "oa_id": "W2028436159",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.5497,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 118
-  },
-  {
-   "oa_id": "W1504129344",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5485,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 84
-  },
-  {
-   "oa_id": "W2179492332",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5477,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 76
-  },
-  {
    "oa_id": "W1511343964",
    "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5459,
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5478,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 187
+  },
+  {
+   "oa_id": "W1993663609",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5478,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 139
+  },
+  {
+   "oa_id": "W91655458",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5464,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 104
   },
   {
    "oa_id": "W1566172004",
-   "eixo": "Reg",
+   "eixo": "PolInd",
    "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.5443,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 73
-  },
-  {
-   "oa_id": "W90769783",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5443,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
-  },
-  {
-   "oa_id": "W2085563972",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5432,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
-  },
-  {
-   "oa_id": "W1993023795",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5409,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 87
   },
   {
-   "oa_id": "W2312418354",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.5383,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 109
-  },
-  {
-   "oa_id": "W1965278510",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.5365,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 91
-  },
-  {
-   "oa_id": "W2004899202",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5365,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 104
-  },
-  {
-   "oa_id": "W1992324015",
+   "oa_id": "W90769783",
    "eixo": "Cyb",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5354,
+   "melhor_cosseno": 0.5443,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 81
+   "n_pontes_potenciais": 185
+  },
+  {
+   "oa_id": "W4293229472",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.544,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 143
+  },
+  {
+   "oa_id": "W266848492",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.544,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
+  },
+  {
+   "oa_id": "W2912536286",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5433,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 98
+  },
+  {
+   "oa_id": "W2012275303",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.542,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
+  },
+  {
+   "oa_id": "W2125441319",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5412,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 183
+  },
+  {
+   "oa_id": "W2079608375",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5382,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 175
+  },
+  {
+   "oa_id": "W2155153551",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.537,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 172
+  },
+  {
+   "oa_id": "W59570615",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5342,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 110
   },
   {
    "oa_id": "W1979968159",
    "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.5341,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 121
+   "n_pontes_potenciais": 106
+  },
+  {
+   "oa_id": "W67809301",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5341,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 185
   },
   {
    "oa_id": "W2039191423",
@@ -1666,47 +1706,79 @@
    "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.5338,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 91
+   "n_pontes_potenciais": 90
   },
   {
-   "oa_id": "W2118243939",
+   "oa_id": "W2068155429",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5322,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 86
+  },
+  {
+   "oa_id": "W1998800754",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5321,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 112
+  },
+  {
+   "oa_id": "W2066979365",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5319,
+   "melhor_cosseno": 0.527,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 120
+   "n_pontes_potenciais": 107
   },
   {
-   "oa_id": "W2120106358",
-   "eixo": "PolInd",
+   "oa_id": "W2043285762",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5264,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 174
+  },
+  {
+   "oa_id": "W1520641906",
+   "eixo": "Cyb",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.529,
+   "melhor_cosseno": 0.5264,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 119
+   "n_pontes_potenciais": 146
   },
   {
-   "oa_id": "W1517602275",
+   "oa_id": "W1608766426",
    "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5269,
+   "melhor_cosseno": 0.5236,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 126
+   "n_pontes_potenciais": 183
   },
   {
-   "oa_id": "W1895366050",
+   "oa_id": "W2334918364",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5269,
+   "melhor_cosseno": 0.5219,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 100
+   "n_pontes_potenciais": 84
   },
   {
-   "oa_id": "W582908774",
-   "eixo": "Cyb",
+   "oa_id": "W1967877710",
+   "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5259,
+   "melhor_cosseno": 0.5193,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
+   "n_pontes_potenciais": 176
+  },
+  {
+   "oa_id": "W2483843983",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5192,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 113
   },
   {
    "oa_id": "W2060827592",
@@ -1714,39 +1786,87 @@
    "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.518,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 86
-  },
-  {
-   "oa_id": "W2970049487",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5152,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 104
-  },
-  {
-   "oa_id": "W2099670044",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.5147,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 125
+   "n_pontes_potenciais": 79
   },
   {
    "oa_id": "W2164284962",
    "eixo": "Cyb",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.5126,
+   "melhor_cosseno": 0.5164,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 73
+   "n_pontes_potenciais": 144
   },
   {
-   "oa_id": "W1553746973",
+   "oa_id": "W2099670044",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5125,
+   "melhor_cosseno": 0.5164,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 83
+   "n_pontes_potenciais": 108
+  },
+  {
+   "oa_id": "W1965278510",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5155,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 132
+  },
+  {
+   "oa_id": "W1990360714",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5151,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 98
+  },
+  {
+   "oa_id": "W86171905",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5148,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 113
+  },
+  {
+   "oa_id": "W1520386898",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5148,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 147
+  },
+  {
+   "oa_id": "W3170187706",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5146,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 181
+  },
+  {
+   "oa_id": "W4302604455",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5146,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  },
+  {
+   "oa_id": "W2796849763",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5144,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 106
+  },
+  {
+   "oa_id": "W2017802748",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5141,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 101
   },
   {
    "oa_id": "W2083449279",
@@ -1754,71 +1874,103 @@
    "melhor_parceiro_eixo": "Reg",
    "melhor_cosseno": 0.5118,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 84
+   "n_pontes_potenciais": 167
   },
   {
-   "oa_id": "W1530425941",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
+   "oa_id": "W2028436159",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.5118,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 91
+   "n_pontes_potenciais": 156
   },
   {
-   "oa_id": "W1551036771",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5043,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 123
-  },
-  {
-   "oa_id": "W1517138715",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.5028,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 104
-  },
-  {
-   "oa_id": "W2123709218",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.5024,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 53
-  },
-  {
-   "oa_id": "W2003934805",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4992,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 123
-  },
-  {
-   "oa_id": "W2095561982",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4986,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 110
-  },
-  {
-   "oa_id": "W1569410165",
+   "oa_id": "W1550684686",
    "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4954,
+   "melhor_cosseno": 0.5115,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 128
+   "n_pontes_potenciais": 167
   },
   {
-   "oa_id": "W2012275303",
+   "oa_id": "W2097592255",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.5099,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 111
+  },
+  {
+   "oa_id": "W1601944394",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5099,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 186
+  },
+  {
+   "oa_id": "W1495882109",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4954,
+   "melhor_cosseno": 0.5097,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 121
+   "n_pontes_potenciais": 106
+  },
+  {
+   "oa_id": "W70394360",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.5071,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 113
+  },
+  {
+   "oa_id": "W3121399009",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5044,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 183
+  },
+  {
+   "oa_id": "W2171753429",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.5016,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 174
+  },
+  {
+   "oa_id": "W72021140",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.501,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 183
+  },
+  {
+   "oa_id": "W3124140110",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4999,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 97
+  },
+  {
+   "oa_id": "W3130930004",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4994,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 85
+  },
+  {
+   "oa_id": "W1598833883",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4994,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
   },
   {
    "oa_id": "W2063282131",
@@ -1826,31 +1978,7 @@
    "melhor_parceiro_eixo": "PolInd",
    "melhor_cosseno": 0.4942,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 102
-  },
-  {
-   "oa_id": "W2072863585",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4937,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 104
-  },
-  {
-   "oa_id": "W1978399955",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4921,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 103
-  },
-  {
-   "oa_id": "W2108767715",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4913,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 111
+   "n_pontes_potenciais": 185
   },
   {
    "oa_id": "W2122679534",
@@ -1858,63 +1986,167 @@
    "melhor_parceiro_eixo": "Reg",
    "melhor_cosseno": 0.4908,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 108
+   "n_pontes_potenciais": 96
   },
   {
-   "oa_id": "W603352075",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4886,
+   "oa_id": "W151157839",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.49,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 104
+   "n_pontes_potenciais": 111
   },
   {
-   "oa_id": "W1999800658",
+   "oa_id": "W2048894562",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4876,
+   "melhor_cosseno": 0.4893,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 127
+   "n_pontes_potenciais": 92
   },
   {
-   "oa_id": "W1570538375",
+   "oa_id": "W1595964953",
    "eixo": "Reg",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4825,
+   "melhor_cosseno": 0.4874,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 128
+   "n_pontes_potenciais": 179
   },
   {
-   "oa_id": "W4230710385",
+   "oa_id": "W2037927976",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4866,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 165
+  },
+  {
+   "oa_id": "W4386803846",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4866,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 192
+  },
+  {
+   "oa_id": "W1581687645",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4854,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 177
+  },
+  {
+   "oa_id": "W3124879925",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4854,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 89
+  },
+  {
+   "oa_id": "W1498488428",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4813,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 163
+  },
+  {
+   "oa_id": "W2120946983",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4813,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 137
+  },
+  {
+   "oa_id": "W1973308529",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4811,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 129
+  },
+  {
+   "oa_id": "W760270995",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.481,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 179
+  },
+  {
+   "oa_id": "W2107431528",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4804,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 153
+  },
+  {
+   "oa_id": "W1895366050",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4794,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 93
+  },
+  {
+   "oa_id": "W158727920",
    "eixo": "Cyb",
    "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4794,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 166
+  },
+  {
+   "oa_id": "W1597798001",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
    "melhor_cosseno": 0.479,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 181
+  },
+  {
+   "oa_id": "W200208739",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4788,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 111
+  },
+  {
+   "oa_id": "W1515810707",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4784,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 165
+  },
+  {
+   "oa_id": "W1999997471",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4784,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 97
+  },
+  {
+   "oa_id": "W1684540946",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4783,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 94
   },
   {
-   "oa_id": "W2108795964",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4786,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 86
-  },
-  {
-   "oa_id": "W1731457293",
-   "eixo": "PolInd",
+   "oa_id": "W2752617332",
+   "eixo": "Reg",
    "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4779,
+   "melhor_cosseno": 0.4775,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 98
-  },
-  {
-   "oa_id": "W2099069868",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4779,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 101
+   "n_pontes_potenciais": 121
   },
   {
    "oa_id": "W2123755784",
@@ -1922,31 +2154,71 @@
    "melhor_parceiro_eixo": "Reg",
    "melhor_cosseno": 0.4775,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 76
+   "n_pontes_potenciais": 154
   },
   {
-   "oa_id": "W1981733426",
+   "oa_id": "W1491554624",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4769,
+   "melhor_cosseno": 0.4767,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 111
+   "n_pontes_potenciais": 110
   },
   {
-   "oa_id": "W2025579080",
+   "oa_id": "W1993023795",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.473,
+   "melhor_cosseno": 0.4759,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 100
+   "n_pontes_potenciais": 94
   },
   {
-   "oa_id": "W1601944394",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4716,
+   "oa_id": "W2108795964",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4741,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
+   "n_pontes_potenciais": 89
+  },
+  {
+   "oa_id": "W1979505044",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4732,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W3022339544",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4726,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 83
+  },
+  {
+   "oa_id": "W1972661585",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4725,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 112
+  },
+  {
+   "oa_id": "W2123709218",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4713,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 79
+  },
+  {
+   "oa_id": "W1981314212",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4713,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 163
   },
   {
    "oa_id": "W4371184",
@@ -1954,15 +2226,15 @@
    "melhor_parceiro_eixo": "PolInd",
    "melhor_cosseno": 0.4712,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 114
+   "n_pontes_potenciais": 152
   },
   {
-   "oa_id": "W3022339544",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4712,
+   "oa_id": "W2159914272",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4701,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 97
+   "n_pontes_potenciais": 183
   },
   {
    "oa_id": "W2140956556",
@@ -1970,31 +2242,63 @@
    "melhor_parceiro_eixo": "Reg",
    "melhor_cosseno": 0.4697,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 89
+   "n_pontes_potenciais": 85
   },
   {
-   "oa_id": "W2154683088",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4679,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 79
-  },
-  {
-   "oa_id": "W2087699103",
+   "oa_id": "W2099069868",
    "eixo": "Cyb",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4657,
+   "melhor_cosseno": 0.469,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 181
+  },
+  {
+   "oa_id": "W2002050008",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4687,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 106
   },
   {
-   "oa_id": "W2566856888",
+   "oa_id": "W52678905",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4663,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 160
+  },
+  {
+   "oa_id": "W1786831919",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4663,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 175
+  },
+  {
+   "oa_id": "W2082597100",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4662,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 107
+  },
+  {
+   "oa_id": "W2988934653",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4662,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 161
+  },
+  {
+   "oa_id": "W2080485486",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4641,
+   "melhor_cosseno": 0.4635,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 106
+   "n_pontes_potenciais": 109
   },
   {
    "oa_id": "W1498201492",
@@ -2002,39 +2306,63 @@
    "melhor_parceiro_eixo": "Cyb",
    "melhor_cosseno": 0.4633,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 129
+   "n_pontes_potenciais": 113
   },
   {
-   "oa_id": "W1973459906",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4579,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 94
-  },
-  {
-   "oa_id": "W2025177555",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4555,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 88
-  },
-  {
-   "oa_id": "W1980406593",
-   "eixo": "Reg",
+   "oa_id": "W4299953765",
+   "eixo": "PolInd",
    "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4555,
+   "melhor_cosseno": 0.463,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
+   "n_pontes_potenciais": 96
   },
   {
-   "oa_id": "W2132454116",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4548,
+   "oa_id": "W2108767715",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4622,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 92
+   "n_pontes_potenciais": 101
+  },
+  {
+   "oa_id": "W4301066124",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4616,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 84
+  },
+  {
+   "oa_id": "W1492359653",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4612,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 108
+  },
+  {
+   "oa_id": "W2524218442",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4604,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 85
+  },
+  {
+   "oa_id": "W1970915980",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4583,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 180
+  },
+  {
+   "oa_id": "W1855283887",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4572,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 83
   },
   {
    "oa_id": "W1510137183",
@@ -2042,535 +2370,207 @@
    "melhor_parceiro_eixo": "Reg",
    "melhor_cosseno": 0.4541,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 126
-  },
-  {
-   "oa_id": "W142073415",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4536,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 129
-  },
-  {
-   "oa_id": "W2101946146",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4514,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 97
-  },
-  {
-   "oa_id": "W2030753430",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4513,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 103
-  },
-  {
-   "oa_id": "W3130930004",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4476,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 105
-  },
-  {
-   "oa_id": "W2140409505",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4466,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 100
-  },
-  {
-   "oa_id": "W3016265253",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4458,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 94
-  },
-  {
-   "oa_id": "W2108020239",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4446,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 90
-  },
-  {
-   "oa_id": "W2020982650",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4431,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 128
-  },
-  {
-   "oa_id": "W2136083730",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4401,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 96
-  },
-  {
-   "oa_id": "W1535129021",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4389,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 92
-  },
-  {
-   "oa_id": "W1968044930",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4387,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
-  },
-  {
-   "oa_id": "W1495961791",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.437,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
-  },
-  {
-   "oa_id": "W1500608409",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.435,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 130
-  },
-  {
-   "oa_id": "W3124879925",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.435,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 108
-  },
-  {
-   "oa_id": "W1515810707",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4337,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 84
-  },
-  {
-   "oa_id": "W2128634656",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4324,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 128
-  },
-  {
-   "oa_id": "W1527311855",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4321,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 63
-  },
-  {
-   "oa_id": "W221732451",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4321,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 124
-  },
-  {
-   "oa_id": "W2061977616",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.431,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 80
-  },
-  {
-   "oa_id": "W2043474425",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4296,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 125
-  },
-  {
-   "oa_id": "W1566478880",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4281,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 61
-  },
-  {
-   "oa_id": "W1506732837",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4277,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 102
-  },
-  {
-   "oa_id": "W1983425281",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4267,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 100
-  },
-  {
-   "oa_id": "W2099330597",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4266,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 109
-  },
-  {
-   "oa_id": "W225706379",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4258,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 94
-  },
-  {
-   "oa_id": "W2082503759",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4258,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 113
-  },
-  {
-   "oa_id": "W2057748843",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4243,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 130
-  },
-  {
-   "oa_id": "W2048086870",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4236,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 67
-  },
-  {
-   "oa_id": "W2013140629",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4222,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 103
-  },
-  {
-   "oa_id": "W2165238389",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4219,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 102
-  },
-  {
-   "oa_id": "W27930607",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4214,
-   "confianca_modal": "obra",
    "n_pontes_potenciais": 110
-  },
-  {
-   "oa_id": "W233775549",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4142,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 92
-  },
-  {
-   "oa_id": "W2098978150",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4129,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 96
-  },
-  {
-   "oa_id": "W2013386523",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4125,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 97
-  },
-  {
-   "oa_id": "W2009399369",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4098,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 127
-  },
-  {
-   "oa_id": "W2037306909",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4086,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 98
-  },
-  {
-   "oa_id": "W2313563931",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4067,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 84
-  },
-  {
-   "oa_id": "W1973308529",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.4053,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 98
-  },
-  {
-   "oa_id": "W2017802748",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4047,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 123
-  },
-  {
-   "oa_id": "W1524464890",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.4035,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 99
-  },
-  {
-   "oa_id": "W1527571715",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4033,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 94
-  },
-  {
-   "oa_id": "W2015930340",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4027,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 70
-  },
-  {
-   "oa_id": "W2988934653",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.4004,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 73
-  },
-  {
-   "oa_id": "W1970428482",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3998,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 101
-  },
-  {
-   "oa_id": "W2127617481",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.3983,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 126
-  },
-  {
-   "oa_id": "W77672729",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3971,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 103
-  },
-  {
-   "oa_id": "W2082088739",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.3963,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 116
-  },
-  {
-   "oa_id": "W148613442",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3944,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 105
-  },
-  {
-   "oa_id": "W232611682",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3934,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 127
-  },
-  {
-   "oa_id": "W1521985566",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.3933,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 121
-  },
-  {
-   "oa_id": "W1601629960",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.3913,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 105
-  },
-  {
-   "oa_id": "W1492856410",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3912,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 81
-  },
-  {
-   "oa_id": "W2325487953",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3906,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 96
-  },
-  {
-   "oa_id": "W201578715",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3893,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 88
-  },
-  {
-   "oa_id": "W2058869237",
-   "eixo": "PolInd",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3886,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 121
-  },
-  {
-   "oa_id": "W1556995072",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3884,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 103
-  },
-  {
-   "oa_id": "W1585847492",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.3878,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 126
-  },
-  {
-   "oa_id": "W570136161",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3867,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 117
   },
   {
    "oa_id": "W2131740028",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3857,
+   "melhor_cosseno": 0.4541,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 108
+   "n_pontes_potenciais": 87
   },
   {
-   "oa_id": "W1968459280",
+   "oa_id": "W1848725895",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4536,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 102
+  },
+  {
+   "oa_id": "W1495961791",
    "eixo": "Cyb",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3849,
+   "melhor_cosseno": 0.4531,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 95
+   "n_pontes_potenciais": 185
   },
   {
-   "oa_id": "W1486212401",
+   "oa_id": "W2102461236",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4529,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 182
+  },
+  {
+   "oa_id": "W2066374751",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3847,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 121
-  },
-  {
-   "oa_id": "W2489535817",
-   "eixo": "Cyb",
-   "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3838,
+   "melhor_cosseno": 0.4524,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 107
   },
   {
-   "oa_id": "W1495886451",
+   "oa_id": "W3023721815",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3829,
+   "melhor_cosseno": 0.4523,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 98
+  },
+  {
+   "oa_id": "W233775549",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4508,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 176
+  },
+  {
+   "oa_id": "W1999130476",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4502,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 111
+  },
+  {
+   "oa_id": "W2095561982",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4499,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 100
+  },
+  {
+   "oa_id": "W1596169349",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4495,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W1978648732",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4492,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 183
+  },
+  {
+   "oa_id": "W1558962107",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4481,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 105
+  },
+  {
+   "oa_id": "W1502659095",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4478,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 112
+  },
+  {
+   "oa_id": "W2154683088",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4474,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 155
+  },
+  {
+   "oa_id": "W1577156806",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4471,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 182
+  },
+  {
+   "oa_id": "W1524264467",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4469,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 103
+  },
+  {
+   "oa_id": "W1576605329",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4468,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 96
+  },
+  {
+   "oa_id": "W1919343167",
+   "eixo": "Reg",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.446,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 177
+  },
+  {
+   "oa_id": "W1999800658",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4454,
    "confianca_modal": "obra",
    "n_pontes_potenciais": 110
   },
   {
-   "oa_id": "W1968942643",
-   "eixo": "Reg",
-   "melhor_parceiro_eixo": "Cyb",
-   "melhor_cosseno": 0.3823,
-   "confianca_modal": "obra",
-   "n_pontes_potenciais": 122
-  },
-  {
-   "oa_id": "W2101157755",
+   "oa_id": "W1506732837",
    "eixo": "Cyb",
    "melhor_parceiro_eixo": "PolInd",
-   "melhor_cosseno": 0.3814,
+   "melhor_cosseno": 0.4449,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 67
+   "n_pontes_potenciais": 188
   },
   {
-   "oa_id": "W1990513740",
+   "oa_id": "W2025177555",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.4438,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 164
+  },
+  {
+   "oa_id": "W2037306909",
+   "eixo": "Cyb",
+   "melhor_parceiro_eixo": "PolInd",
+   "melhor_cosseno": 0.443,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 185
+  },
+  {
+   "oa_id": "W2089402107",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Cyb",
+   "melhor_cosseno": 0.4424,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 96
+  },
+  {
+   "oa_id": "W1554940969",
    "eixo": "PolInd",
    "melhor_parceiro_eixo": "Reg",
-   "melhor_cosseno": 0.3812,
+   "melhor_cosseno": 0.4409,
    "confianca_modal": "obra",
-   "n_pontes_potenciais": 100
+   "n_pontes_potenciais": 88
+  },
+  {
+   "oa_id": "W2015930340",
+   "eixo": "PolInd",
+   "melhor_parceiro_eixo": "Reg",
+   "melhor_cosseno": 0.4408,
+   "confianca_modal": "obra",
+   "n_pontes_potenciais": 72
   }
  ]
 }
