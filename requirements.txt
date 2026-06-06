@@ -12,3 +12,4 @@ requests>=2.31
 tqdm
 networkx>=3.0
 xgi>=0.10           # redes de ordem superior (hipergrafo de cocitação)
+sentence-transformers==5.5.1   # camada semântica da solidez tripla (só no RECOMPUTE; a CI offline lê escores versionados, sem o modelo)

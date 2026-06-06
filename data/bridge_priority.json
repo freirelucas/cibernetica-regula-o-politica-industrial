@@ -7,24 +7,25 @@
  },
  "ranking": [
   {
-   "oa_id": "W1566478880",
-   "title": "The Heart of Enterprise",
+   "oa_id": "W1601629960",
+   "title": "The Tools of Government",
    "axes": [
     "Cibernética",
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.845,
-   "ho": 28,
-   "reach": 3,
+   "score": 0.6507,
+   "ho": 152,
+   "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
     "obra-semente",
-    "rajada de citação"
+    "ponte a construir"
    ]
   },
   {
@@ -35,204 +36,41 @@
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.7993,
-   "ho": 24,
+   "score": 0.6333,
+   "ho": 82,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra de autor-semente",
     "obra-ponte",
     "obra-semente",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
   {
-   "oa_id": "W1553746973",
-   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+   "oa_id": "W2111030512",
+   "title": "An Introduction to Cybernetics",
    "axes": [
     "Cibernética",
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.7064,
-   "ho": 29,
+   "score": 0.6187,
+   "ho": 71,
    "reach": 3,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-ponte",
-    "obra-semente",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2137358449",
-   "title": "An Evolutionary Theory of Economic Change.",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.6671,
-   "ho": 19,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · economia evolucionária"
-   ]
-  },
-  {
-   "oa_id": "W2154683088",
-   "title": "Diagnosing the System for Organizations",
-   "axes": [
-    "Cibernética",
-    "Instrumentos de governo",
-    "Política industrial"
-   ],
-   "score": 0.6557,
-   "ho": 18,
-   "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
-    "cibernética organizacional",
-    "obra-ponte",
-    "obra-semente",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W1492856410",
-   "title": "Systems Thinking, Systems Practice",
-   "axes": [],
-   "score": 0.5743,
-   "ho": 24,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2025177555",
-   "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.5414,
-   "ho": 8,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "bela adormecida",
-    "cibernética organizacional",
-    "mais citada",
-    "obra de autor-semente"
-   ]
-  },
-  {
-   "oa_id": "W582908774",
-   "title": "Organizational Systems: Managing Complexity with the Viable System Model",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.5071,
-   "ho": 5,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
+    "cibernética (geral)",
+    "higher_order_bridge",
     "obra de autor-semente",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2129261459",
-   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.5071,
-   "ho": 5,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · retornos crescentes / dependência de trajetória"
-   ]
-  },
-  {
-   "oa_id": "W2136083730",
-   "title": "The viable system model and the Viplan software",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.4843,
-   "ho": 3,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra de autor-semente"
-   ]
-  },
-  {
-   "oa_id": "W2009202666",
-   "title": "Increasing Returns and Path Dependence in the Economy",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.4843,
-   "ho": 3,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · retornos crescentes / dependência de trajetória"
-   ]
-  },
-  {
-   "oa_id": "W3124879925",
-   "title": "Industrial Policy for the Twenty-First Century",
-   "axes": [
-    "Cibernética",
-    "Instrumentos de governo",
-    "Política industrial"
-   ],
-   "score": 0.4829,
-   "ho": 16,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
     "obra-ponte",
-    "obra-semente",
-    "ponte global×Brasil",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2026948646",
-   "title": "Soft Systems Methodology in Action",
-   "axes": [],
-   "score": 0.4371,
-   "ho": 12,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
     "rajada de citação"
    ]
   },
@@ -244,80 +82,243 @@
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.4257,
-   "ho": 11,
+   "score": 0.5952,
+   "ho": 110,
    "reach": 2,
-   "cyb_link": 0.0,
+   "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
-   "oa_id": "W1601629960",
-   "title": "The Tools of Government",
+   "oa_id": "W1566478880",
+   "title": "The Heart of Enterprise",
    "axes": [
     "Cibernética",
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.4193,
-   "ho": 17,
+   "score": 0.582,
+   "ho": 100,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2137358449",
+   "title": "An Evolutionary Theory of Economic Change.",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.5054,
+   "ho": 42,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · economia evolucionária",
+    "higher_order_bridge",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W1553746973",
+   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4714,
+   "ho": 73,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2129261459",
+   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4672,
+   "ho": 13,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W2009202666",
+   "title": "Increasing Returns and Path Dependence in the Economy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4592,
+   "ho": 7,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W2120106358",
+   "title": "Economic development as self-discovery",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4014,
+   "ho": 20,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W1492856410",
+   "title": "Systems Thinking, Systems Practice",
+   "axes": [],
+   "score": 0.3726,
+   "ho": 55,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.37,
+   "ho": 53,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir",
+    "ponte global×Brasil",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W1527571715",
+   "title": "Cybernetics or Control and Communication in the Animal and the Machine",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.3304,
+   "ho": 23,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W1916207017",
+   "title": "Autopoiesis and Cognition: The Realization of the Living",
+   "axes": [
+    "Cibernética",
+    "Política industrial"
+   ],
+   "score": 0.3277,
+   "ho": 21,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética (geral)",
+    "higher_order_bridge",
+    "mais citada",
+    "obra de autor-semente",
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W2154683088",
+   "title": "Diagnosing the System for Organizations",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.3148,
+   "ho": 68,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
+    "higher_order_bridge",
+    "obra de autor-ponte",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir",
+    "rajada de citação"
    ]
   },
   {
-   "oa_id": "W2325487953",
-   "title": "An Introduction to Cybernetics",
+   "oa_id": "W2063282131",
+   "title": "Wholes and Parts",
    "axes": [
-    "Cibernética"
+    "Política industrial"
    ],
-   "score": 0.4143,
+   "score": 0.3132,
    "ho": 10,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "cibernética (geral)",
     "obra-semente"
-   ]
-  },
-  {
-   "oa_id": "W1970428482",
-   "title": "Creative Problem Solving: Total Systems Intervention.",
-   "axes": [],
-   "score": 0.3914,
-   "ho": 8,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2098978150",
-   "title": "General Systems Theory—The Skeleton of Science",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.3457,
-   "ho": 4,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "cibernética (geral)",
-    "obra de autor-semente"
    ]
   },
   {
@@ -328,77 +329,71 @@
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.3279,
-   "ho": 9,
+   "score": 0.2884,
+   "ho": 48,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
+    "obra de autor-ponte",
     "obra-ponte",
     "obra-semente",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
   {
-   "oa_id": "W1501219137",
-   "title": "The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.3229,
-   "ho": 2,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  {
-   "oa_id": "W2165238389",
-   "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
-   "axes": [],
-   "score": 0.3229,
-   "ho": 2,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2127454860",
-   "title": "Reconceptualising the ‘policy mix’ for innovation",
-   "axes": [
-    "Instrumentos de governo"
-   ],
-   "score": 0.2936,
-   "ho": 6,
-   "reach": 3,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "mais citada"
-   ]
-  },
-  {
-   "oa_id": "W1983425281",
-   "title": "The Viable System Model",
+   "oa_id": "W2025177555",
+   "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
    "axes": [
     "Cibernética"
    ],
-   "score": 0.2479,
-   "ho": 2,
+   "score": 0.2725,
+   "ho": 36,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
-    "obra de autor-semente"
+    "higher_order_bridge",
+    "mais citada",
+    "obra de autor-semente",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W2912536286",
+   "title": "Embedded Autonomy: States and Industrial Transformation",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.2448,
+   "ho": 15,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W3130930004",
+   "title": "On the Economic Theory of Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.2358,
+   "ho": 65,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra de autor-ponte",
+    "obra-semente"
    ]
   },
   {
@@ -407,61 +402,15 @@
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.2364,
+   "score": 0.1513,
    "ho": 1,
-   "reach": 3,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  {
-   "oa_id": "W1530425941",
-   "title": "Organizational Transformation and Learning: A Cybernetic Approach to Management",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.2364,
-   "ho": 1,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra de autor-semente"
-   ]
-  },
-  {
-   "oa_id": "W2147111138",
-   "title": "Increasing Returns, Path Dependence, and the Study of Politics",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.2186,
-   "ho": 6,
    "reach": 2,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)",
-    "complexidade · retornos crescentes / dependência de trajetória"
-   ]
-  },
-  {
-   "oa_id": "W2120106358",
-   "title": "Economic development as self-discovery",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.1957,
-   "ho": 4,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "obra de autor-semente"
+    "complexidade · modelagem baseada em agentes",
+    "ponte a construir"
    ]
   },
   {
@@ -605,6 +554,7 @@
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
+    "obra de autor-ponte",
     "obra-ponte"
    ]
   },
@@ -754,6 +704,24 @@
    ]
   },
   {
+   "oa_id": "W582908774",
+   "title": "Organizational Systems: Managing Complexity with the Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  {
    "oa_id": "W2003318188",
    "title": "Política industrial e desenvolvimento",
    "axes": [
@@ -814,7 +782,25 @@
    "role": 1.0,
    "roles": [
     "corpus Brasil (Faganello)",
+    "obra de autor-ponte",
     "ponte global×Brasil"
+   ]
+  },
+  {
+   "oa_id": "W2136083730",
+   "title": "The viable system model and the Viplan software",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -866,6 +852,23 @@
    ]
   },
   {
+   "oa_id": "W1530425941",
+   "title": "Organizational Transformation and Learning: A Cybernetic Approach to Management",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir"
+   ]
+  },
+  {
    "oa_id": "W4246626855",
    "title": "Organisational Fitness: Corporate Effectiveness Through Management Cybernetics.",
    "axes": [
@@ -896,6 +899,24 @@
     "bela adormecida",
     "cibernética organizacional",
     "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W1983425281",
+   "title": "The Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -1044,27 +1065,6 @@
    ]
   },
   {
-   "oa_id": "W2111030512",
-   "title": "An Introduction to Cybernetics",
-   "axes": [
-    "Cibernética",
-    "Instrumentos de governo",
-    "Política industrial"
-   ],
-   "score": 0.15,
-   "ho": 0,
-   "reach": 0,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "bela adormecida",
-    "cibernética (geral)",
-    "obra de autor-semente",
-    "obra-ponte",
-    "rajada de citação"
-   ]
-  },
-  {
    "oa_id": "W3126441471",
    "title": "The Human Use of Human Beings: Cybernetics and Society",
    "axes": [
@@ -1081,155 +1081,66 @@
    ]
   },
   {
-   "oa_id": "W1916207017",
-   "title": "Autopoiesis and Cognition: The Realization of the Living",
+   "oa_id": "W2325487953",
+   "title": "An Introduction to Cybernetics",
    "axes": [
     "Cibernética"
    ],
-   "score": 0.1207,
-   "ho": 4,
+   "score": 0.1106,
+   "ho": 27,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "bela adormecida",
     "cibernética (geral)",
-    "mais citada",
-    "obra de autor-semente"
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
-   "oa_id": "W2082088739",
-   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
+   "oa_id": "W2026948646",
+   "title": "Soft Systems Methodology in Action",
    "axes": [],
-   "score": 0.1207,
-   "ho": 4,
+   "score": 0.1027,
+   "ho": 21,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "higher_order_bridge",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
   {
-   "oa_id": "W2127617481",
-   "title": "Instruments of Government: Perceptions and Contexts",
+   "oa_id": "W1970428482",
+   "title": "Creative Problem Solving: Total Systems Intervention.",
    "axes": [],
-   "score": 0.1093,
-   "ho": 3,
+   "score": 0.0948,
+   "ho": 15,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "bela adormecida"
-   ]
-  },
-  {
-   "oa_id": "W2057748843",
-   "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
-   "axes": [
-    "Instrumentos de governo"
-   ],
-   "score": 0.0979,
-   "ho": 2,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "mais citada",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
   {
-   "oa_id": "W2080554996",
-   "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
+   "oa_id": "W4230710385",
+   "title": "Introduction to Economic Cybernetics",
    "axes": [
-    "Instrumentos de governo"
+    "Política industrial"
    ],
-   "score": 0.0979,
-   "ho": 2,
+   "score": 0.0935,
+   "ho": 14,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "mais citada",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2134758682",
-   "title": "Behavioral Assumptions of Policy Tools",
-   "axes": [
-    "Instrumentos de governo"
-   ],
-   "score": 0.0979,
-   "ho": 2,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "mais citada"
-   ]
-  },
-  {
-   "oa_id": "W148613442",
-   "title": "Design and diagnosis for sustainable organizations : the viable system method",
-   "axes": [],
-   "score": 0.0864,
-   "ho": 1,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2101174956",
-   "title": "Income Distribution, Credit and Fiscal Policies in an Agent-Based Keynesian Model",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.075,
-   "ho": 0,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  {
-   "oa_id": "W1545138734",
-   "title": "Handbook of Computational Economics, Volume 2: Agent-Based Computational Economics",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.075,
-   "ho": 0,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  {
-   "oa_id": "W1522372289",
-   "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.075,
-   "ho": 0,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
+    "obra de autor-ponte",
+    "obra-semente"
    ]
   },
   {
@@ -1238,8 +1149,8 @@
    "axes": [
     "Instrumentos de governo"
    ],
-   "score": 0.0,
-   "ho": 0,
+   "score": 0.0026,
+   "ho": 2,
    "reach": 0,
    "cyb_link": 0.0,
    "role": 0.0,
@@ -1334,6 +1245,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -1924,7 +1836,8 @@
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)",
-    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)",
+    "obra de autor-ponte"
    ]
   },
   {
@@ -2336,6 +2249,38 @@
    ]
   },
   {
+   "oa_id": "W2101174956",
+   "title": "Income Distribution, Credit and Fiscal Policies in an Agent-Based Keynesian Model",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
+   "oa_id": "W2127454860",
+   "title": "Reconceptualising the ‘policy mix’ for innovation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "ponte a construir"
+   ]
+  },
+  {
    "oa_id": null,
    "title": "Política industrial e tecnológica no Brasil: uma investigação dos determinantes das escolhas políticas.",
    "axes": [
@@ -2366,6 +2311,21 @@
    ]
   },
   {
+   "oa_id": "W2076248782",
+   "title": "Exploring Governance: Policy Instruments Approach",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
+  {
    "oa_id": "W1577375906",
    "title": "Trade, Foreign Investment, and Industrial Policy for Developing Countries*",
    "axes": [
@@ -2393,6 +2353,22 @@
    "role": 0.0,
    "roles": [
     "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2057748843",
+   "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
    ]
   },
   {
@@ -2486,6 +2462,22 @@
    ]
   },
   {
+   "oa_id": "W2080554996",
+   "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
+  {
    "oa_id": null,
    "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrange",
    "axes": [
@@ -2561,6 +2553,38 @@
    ]
   },
   {
+   "oa_id": "W1545138734",
+   "title": "Handbook of Computational Economics, Volume 2: Agent-Based Computational Economics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
+   "oa_id": "W1522372289",
+   "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  {
    "oa_id": "W2506954441",
    "title": "Digital Era Governance:",
    "axes": [
@@ -2618,6 +2642,21 @@
    "role": 0.0,
    "roles": [
     "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W1997780809",
+   "title": "Second-order cybernetics: historical introduction",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
    ]
   },
   {
@@ -2681,6 +2720,21 @@
    ]
   },
   {
+   "oa_id": "W1919820734",
+   "title": "Kicking Away the Ladder: Development Strategy in Historical Perspective",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
+  {
    "oa_id": "W2037980183",
    "title": "Making and remaking “good government” in Brazil: Subnational industrial policy in Minas Gerais",
    "axes": [
@@ -2693,6 +2747,22 @@
    "role": 0.0,
    "roles": [
     "corpus Brasil (Faganello)"
+   ]
+  },
+  {
+   "oa_id": "W2147111138",
+   "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
    ]
   },
   {
@@ -2738,6 +2808,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -2787,6 +2858,23 @@
    ]
   },
   {
+   "oa_id": "W1501219137",
+   "title": "The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes",
+    "ponte a construir"
+   ]
+  },
+  {
    "oa_id": "W2130676853",
    "title": "Urban Regimes and Local Governance in Britain and France",
    "axes": [
@@ -2828,7 +2916,8 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "corpus Brasil (Faganello)"
+    "corpus Brasil (Faganello)",
+    "obra de autor-ponte"
    ]
   },
   {
@@ -2843,6 +2932,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -2948,7 +3038,23 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2134758682",
+   "title": "Behavioral Assumptions of Policy Tools",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
    ]
   },
   {
@@ -2967,6 +3073,19 @@
   {
    "oa_id": null,
    "title": "Embodiments of organizational fitness: The Viable System Model (V",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida"
+   ]
+  },
+  {
+   "oa_id": "W2127617481",
+   "title": "Instruments of Government: Perceptions and Contexts",
    "axes": [],
    "score": 0.0,
    "ho": 0,
@@ -3004,6 +3123,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -3019,6 +3139,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -3083,6 +3204,23 @@
    ]
   },
   {
+   "oa_id": "W2098978150",
+   "title": "General Systems Theory—The Skeleton of Science",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente",
+    "ponte a construir"
+   ]
+  },
+  {
    "oa_id": "W595334711",
    "title": "General systems : yearbook of the Society for General Systems Research",
    "axes": [
@@ -3096,6 +3234,47 @@
    "roles": [
     "cibernética (geral)",
     "obra de autor-semente"
+   ]
+  },
+  {
+   "oa_id": "W2082088739",
+   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2165238389",
+   "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-ponte",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W148613442",
+   "title": "Design and diagnosis for sustainable organizations : the viable system method",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
    ]
   },
   {
@@ -3171,25 +3350,26 @@
   }
  ],
  "by_oa_id": {
-  "W1566478880": {
-   "oa_id": "W1566478880",
-   "title": "The Heart of Enterprise",
+  "W1601629960": {
+   "oa_id": "W1601629960",
+   "title": "The Tools of Government",
    "axes": [
     "Cibernética",
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.845,
-   "ho": 28,
-   "reach": 3,
+   "score": 0.6507,
+   "ho": 152,
+   "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
     "obra-semente",
-    "rajada de citação"
+    "ponte a construir"
    ]
   },
   "W2048086870": {
@@ -3200,204 +3380,41 @@
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.7993,
-   "ho": 24,
+   "score": 0.6333,
+   "ho": 82,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra de autor-semente",
     "obra-ponte",
     "obra-semente",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
-  "W1553746973": {
-   "oa_id": "W1553746973",
-   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+  "W2111030512": {
+   "oa_id": "W2111030512",
+   "title": "An Introduction to Cybernetics",
    "axes": [
     "Cibernética",
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.7064,
-   "ho": 29,
+   "score": 0.6187,
+   "ho": 71,
    "reach": 3,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-ponte",
-    "obra-semente",
-    "rajada de citação"
-   ]
-  },
-  "W2137358449": {
-   "oa_id": "W2137358449",
-   "title": "An Evolutionary Theory of Economic Change.",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.6671,
-   "ho": 19,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · economia evolucionária"
-   ]
-  },
-  "W2154683088": {
-   "oa_id": "W2154683088",
-   "title": "Diagnosing the System for Organizations",
-   "axes": [
-    "Cibernética",
-    "Instrumentos de governo",
-    "Política industrial"
-   ],
-   "score": 0.6557,
-   "ho": 18,
-   "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
-    "cibernética organizacional",
-    "obra-ponte",
-    "obra-semente",
-    "rajada de citação"
-   ]
-  },
-  "W1492856410": {
-   "oa_id": "W1492856410",
-   "title": "Systems Thinking, Systems Practice",
-   "axes": [],
-   "score": 0.5743,
-   "ho": 24,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  "W2025177555": {
-   "oa_id": "W2025177555",
-   "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.5414,
-   "ho": 8,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "bela adormecida",
-    "cibernética organizacional",
-    "mais citada",
-    "obra de autor-semente"
-   ]
-  },
-  "W582908774": {
-   "oa_id": "W582908774",
-   "title": "Organizational Systems: Managing Complexity with the Viable System Model",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.5071,
-   "ho": 5,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
+    "cibernética (geral)",
+    "higher_order_bridge",
     "obra de autor-semente",
-    "rajada de citação"
-   ]
-  },
-  "W2129261459": {
-   "oa_id": "W2129261459",
-   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.5071,
-   "ho": 5,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · retornos crescentes / dependência de trajetória"
-   ]
-  },
-  "W2136083730": {
-   "oa_id": "W2136083730",
-   "title": "The viable system model and the Viplan software",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.4843,
-   "ho": 3,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra de autor-semente"
-   ]
-  },
-  "W2009202666": {
-   "oa_id": "W2009202666",
-   "title": "Increasing Returns and Path Dependence in the Economy",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.4843,
-   "ho": 3,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · retornos crescentes / dependência de trajetória"
-   ]
-  },
-  "W3124879925": {
-   "oa_id": "W3124879925",
-   "title": "Industrial Policy for the Twenty-First Century",
-   "axes": [
-    "Cibernética",
-    "Instrumentos de governo",
-    "Política industrial"
-   ],
-   "score": 0.4829,
-   "ho": 16,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
     "obra-ponte",
-    "obra-semente",
-    "ponte global×Brasil",
-    "rajada de citação"
-   ]
-  },
-  "W2026948646": {
-   "oa_id": "W2026948646",
-   "title": "Soft Systems Methodology in Action",
-   "axes": [],
-   "score": 0.4371,
-   "ho": 12,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
     "rajada de citação"
    ]
   },
@@ -3409,80 +3426,243 @@
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.4257,
-   "ho": 11,
+   "score": 0.5952,
+   "ho": 110,
    "reach": 2,
-   "cyb_link": 0.0,
+   "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
-  "W1601629960": {
-   "oa_id": "W1601629960",
-   "title": "The Tools of Government",
+  "W1566478880": {
+   "oa_id": "W1566478880",
+   "title": "The Heart of Enterprise",
    "axes": [
     "Cibernética",
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.4193,
-   "ho": 17,
+   "score": 0.582,
+   "ho": 100,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  "W2137358449": {
+   "oa_id": "W2137358449",
+   "title": "An Evolutionary Theory of Economic Change.",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.5054,
+   "ho": 42,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · economia evolucionária",
+    "higher_order_bridge",
+    "ponte a construir"
+   ]
+  },
+  "W1553746973": {
+   "oa_id": "W1553746973",
+   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.4714,
+   "ho": 73,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  "W2129261459": {
+   "oa_id": "W2129261459",
+   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4672,
+   "ho": 13,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória",
+    "ponte a construir"
+   ]
+  },
+  "W2009202666": {
+   "oa_id": "W2009202666",
+   "title": "Increasing Returns and Path Dependence in the Economy",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4592,
+   "ho": 7,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória",
+    "ponte a construir"
+   ]
+  },
+  "W2120106358": {
+   "oa_id": "W2120106358",
+   "title": "Economic development as self-discovery",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4014,
+   "ho": 20,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-semente"
+   ]
+  },
+  "W1492856410": {
+   "oa_id": "W1492856410",
+   "title": "Systems Thinking, Systems Practice",
+   "axes": [],
+   "score": 0.3726,
+   "ho": 55,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  "W3124879925": {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.37,
+   "ho": 53,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir",
+    "ponte global×Brasil",
+    "rajada de citação"
+   ]
+  },
+  "W1527571715": {
+   "oa_id": "W1527571715",
+   "title": "Cybernetics or Control and Communication in the Animal and the Machine",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.3304,
+   "ho": 23,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra-semente"
+   ]
+  },
+  "W1916207017": {
+   "oa_id": "W1916207017",
+   "title": "Autopoiesis and Cognition: The Realization of the Living",
+   "axes": [
+    "Cibernética",
+    "Política industrial"
+   ],
+   "score": 0.3277,
+   "ho": 21,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética (geral)",
+    "higher_order_bridge",
+    "mais citada",
+    "obra de autor-semente",
+    "obra-semente"
+   ]
+  },
+  "W2154683088": {
+   "oa_id": "W2154683088",
+   "title": "Diagnosing the System for Organizations",
+   "axes": [
+    "Cibernética",
+    "Instrumentos de governo",
+    "Política industrial"
+   ],
+   "score": 0.3148,
+   "ho": 68,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
+    "higher_order_bridge",
+    "obra de autor-ponte",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir",
+    "rajada de citação"
    ]
   },
-  "W2325487953": {
-   "oa_id": "W2325487953",
-   "title": "An Introduction to Cybernetics",
+  "W2063282131": {
+   "oa_id": "W2063282131",
+   "title": "Wholes and Parts",
    "axes": [
-    "Cibernética"
+    "Política industrial"
    ],
-   "score": 0.4143,
+   "score": 0.3132,
    "ho": 10,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "cibernética (geral)",
     "obra-semente"
-   ]
-  },
-  "W1970428482": {
-   "oa_id": "W1970428482",
-   "title": "Creative Problem Solving: Total Systems Intervention.",
-   "axes": [],
-   "score": 0.3914,
-   "ho": 8,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  "W2098978150": {
-   "oa_id": "W2098978150",
-   "title": "General Systems Theory—The Skeleton of Science",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.3457,
-   "ho": 4,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "cibernética (geral)",
-    "obra de autor-semente"
    ]
   },
   "W4244612406": {
@@ -3493,77 +3673,71 @@
     "Instrumentos de governo",
     "Política industrial"
    ],
-   "score": 0.3279,
-   "ho": 9,
+   "score": 0.2884,
+   "ho": 48,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
+    "obra de autor-ponte",
     "obra-ponte",
     "obra-semente",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
-  "W1501219137": {
-   "oa_id": "W1501219137",
-   "title": "The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.3229,
-   "ho": 2,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  "W2165238389": {
-   "oa_id": "W2165238389",
-   "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
-   "axes": [],
-   "score": 0.3229,
-   "ho": 2,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  "W2127454860": {
-   "oa_id": "W2127454860",
-   "title": "Reconceptualising the ‘policy mix’ for innovation",
-   "axes": [
-    "Instrumentos de governo"
-   ],
-   "score": 0.2936,
-   "ho": 6,
-   "reach": 3,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "mais citada"
-   ]
-  },
-  "W1983425281": {
-   "oa_id": "W1983425281",
-   "title": "The Viable System Model",
+  "W2025177555": {
+   "oa_id": "W2025177555",
+   "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
    "axes": [
     "Cibernética"
    ],
-   "score": 0.2479,
-   "ho": 2,
+   "score": 0.2725,
+   "ho": 36,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "bela adormecida",
     "cibernética organizacional",
-    "obra de autor-semente"
+    "higher_order_bridge",
+    "mais citada",
+    "obra de autor-semente",
+    "ponte a construir"
+   ]
+  },
+  "W2912536286": {
+   "oa_id": "W2912536286",
+   "title": "Embedded Autonomy: States and Industrial Transformation",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.2448,
+   "ho": 15,
+   "reach": 3,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
+  "W3130930004": {
+   "oa_id": "W3130930004",
+   "title": "On the Economic Theory of Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.2358,
+   "ho": 65,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra de autor-ponte",
+    "obra-semente"
    ]
   },
   "W2050032417": {
@@ -3572,61 +3746,15 @@
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.2364,
+   "score": 0.1513,
    "ho": 1,
-   "reach": 3,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  "W1530425941": {
-   "oa_id": "W1530425941",
-   "title": "Organizational Transformation and Learning: A Cybernetic Approach to Management",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.2364,
-   "ho": 1,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra de autor-semente"
-   ]
-  },
-  "W2147111138": {
-   "oa_id": "W2147111138",
-   "title": "Increasing Returns, Path Dependence, and the Study of Politics",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.2186,
-   "ho": 6,
    "reach": 2,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)",
-    "complexidade · retornos crescentes / dependência de trajetória"
-   ]
-  },
-  "W2120106358": {
-   "oa_id": "W2120106358",
-   "title": "Economic development as self-discovery",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.1957,
-   "ho": 4,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "obra de autor-semente"
+    "complexidade · modelagem baseada em agentes",
+    "ponte a construir"
    ]
   },
   "W4368376507": {
@@ -3770,6 +3898,7 @@
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
+    "obra de autor-ponte",
     "obra-ponte"
    ]
   },
@@ -3918,6 +4047,24 @@
     "obra-ponte"
    ]
   },
+  "W582908774": {
+   "oa_id": "W582908774",
+   "title": "Organizational Systems: Managing Complexity with the Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
   "W2003318188": {
    "oa_id": "W2003318188",
    "title": "Política industrial e desenvolvimento",
@@ -3979,7 +4126,25 @@
    "role": 1.0,
    "roles": [
     "corpus Brasil (Faganello)",
+    "obra de autor-ponte",
     "ponte global×Brasil"
+   ]
+  },
+  "W2136083730": {
+   "oa_id": "W2136083730",
+   "title": "The viable system model and the Viplan software",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir"
    ]
   },
   "W1988229579": {
@@ -4030,6 +4195,23 @@
     "obra de autor-semente"
    ]
   },
+  "W1530425941": {
+   "oa_id": "W1530425941",
+   "title": "Organizational Transformation and Learning: A Cybernetic Approach to Management",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir"
+   ]
+  },
   "W4246626855": {
    "oa_id": "W4246626855",
    "title": "Organisational Fitness: Corporate Effectiveness Through Management Cybernetics.",
@@ -4061,6 +4243,24 @@
     "bela adormecida",
     "cibernética organizacional",
     "obra de autor-semente"
+   ]
+  },
+  "W1983425281": {
+   "oa_id": "W1983425281",
+   "title": "The Viable System Model",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.15,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "bela adormecida",
+    "cibernética organizacional",
+    "obra de autor-semente",
+    "ponte a construir"
    ]
   },
   "W4237835702": {
@@ -4208,27 +4408,6 @@
     "obra de autor-semente"
    ]
   },
-  "W2111030512": {
-   "oa_id": "W2111030512",
-   "title": "An Introduction to Cybernetics",
-   "axes": [
-    "Cibernética",
-    "Instrumentos de governo",
-    "Política industrial"
-   ],
-   "score": 0.15,
-   "ho": 0,
-   "reach": 0,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "bela adormecida",
-    "cibernética (geral)",
-    "obra de autor-semente",
-    "obra-ponte",
-    "rajada de citação"
-   ]
-  },
   "W3126441471": {
    "oa_id": "W3126441471",
    "title": "The Human Use of Human Beings: Cybernetics and Society",
@@ -4245,156 +4424,67 @@
     "obra de autor-semente"
    ]
   },
-  "W1916207017": {
-   "oa_id": "W1916207017",
-   "title": "Autopoiesis and Cognition: The Realization of the Living",
+  "W2325487953": {
+   "oa_id": "W2325487953",
+   "title": "An Introduction to Cybernetics",
    "axes": [
     "Cibernética"
    ],
-   "score": 0.1207,
-   "ho": 4,
+   "score": 0.1106,
+   "ho": 27,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "bela adormecida",
     "cibernética (geral)",
-    "mais citada",
-    "obra de autor-semente"
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte a construir"
    ]
   },
-  "W2082088739": {
-   "oa_id": "W2082088739",
-   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
+  "W2026948646": {
+   "oa_id": "W2026948646",
+   "title": "Soft Systems Methodology in Action",
    "axes": [],
-   "score": 0.1207,
-   "ho": 4,
+   "score": 0.1027,
+   "ho": 21,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "higher_order_bridge",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
-  "W2127617481": {
-   "oa_id": "W2127617481",
-   "title": "Instruments of Government: Perceptions and Contexts",
+  "W1970428482": {
+   "oa_id": "W1970428482",
+   "title": "Creative Problem Solving: Total Systems Intervention.",
    "axes": [],
-   "score": 0.1093,
-   "ho": 3,
+   "score": 0.0948,
+   "ho": 15,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "bela adormecida"
-   ]
-  },
-  "W2057748843": {
-   "oa_id": "W2057748843",
-   "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
-   "axes": [
-    "Instrumentos de governo"
-   ],
-   "score": 0.0979,
-   "ho": 2,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "mais citada",
+    "ponte a construir",
     "rajada de citação"
    ]
   },
-  "W2080554996": {
-   "oa_id": "W2080554996",
-   "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
+  "W4230710385": {
+   "oa_id": "W4230710385",
+   "title": "Introduction to Economic Cybernetics",
    "axes": [
-    "Instrumentos de governo"
+    "Política industrial"
    ],
-   "score": 0.0979,
-   "ho": 2,
+   "score": 0.0935,
+   "ho": 14,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "mais citada",
-    "rajada de citação"
-   ]
-  },
-  "W2134758682": {
-   "oa_id": "W2134758682",
-   "title": "Behavioral Assumptions of Policy Tools",
-   "axes": [
-    "Instrumentos de governo"
-   ],
-   "score": 0.0979,
-   "ho": 2,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "mais citada"
-   ]
-  },
-  "W148613442": {
-   "oa_id": "W148613442",
-   "title": "Design and diagnosis for sustainable organizations : the viable system method",
-   "axes": [],
-   "score": 0.0864,
-   "ho": 1,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
-   ]
-  },
-  "W2101174956": {
-   "oa_id": "W2101174956",
-   "title": "Income Distribution, Credit and Fiscal Policies in an Agent-Based Keynesian Model",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.075,
-   "ho": 0,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  "W1545138734": {
-   "oa_id": "W1545138734",
-   "title": "Handbook of Computational Economics, Volume 2: Agent-Based Computational Economics",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.075,
-   "ho": 0,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
-   ]
-  },
-  "W1522372289": {
-   "oa_id": "W1522372289",
-   "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.075,
-   "ho": 0,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
-    "complexidade · modelagem baseada em agentes"
+    "obra de autor-ponte",
+    "obra-semente"
    ]
   },
   "W4386803846": {
@@ -4403,8 +4493,8 @@
    "axes": [
     "Instrumentos de governo"
    ],
-   "score": 0.0,
-   "ho": 0,
+   "score": 0.0026,
+   "ho": 2,
    "reach": 0,
    "cyb_link": 0.0,
    "role": 0.0,
@@ -4484,6 +4574,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -5044,7 +5135,8 @@
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)",
-    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)"
+    "complexidade · Santa Fe — economia como sistema complexo (EECS-II)",
+    "obra de autor-ponte"
    ]
   },
   "W1919092021": {
@@ -5350,6 +5442,38 @@
     "corpus Brasil (Faganello)"
    ]
   },
+  "W2101174956": {
+   "oa_id": "W2101174956",
+   "title": "Income Distribution, Credit and Fiscal Policies in an Agent-Based Keynesian Model",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  "W2127454860": {
+   "oa_id": "W2127454860",
+   "title": "Reconceptualising the ‘policy mix’ for innovation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "ponte a construir"
+   ]
+  },
   "W1611317321": {
    "oa_id": "W1611317321",
    "title": "Carving Out Policy Autonomy for Developing Countries in the World Trade Organization: The Experience of Brazil and Mexico",
@@ -5363,6 +5487,21 @@
    "role": 0.0,
    "roles": [
     "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2076248782": {
+   "oa_id": "W2076248782",
+   "title": "Exploring Governance: Policy Instruments Approach",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
    ]
   },
   "W1577375906": {
@@ -5393,6 +5532,22 @@
    "role": 0.0,
    "roles": [
     "obra de autor-semente"
+   ]
+  },
+  "W2057748843": {
+   "oa_id": "W2057748843",
+   "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
    ]
   },
   "W2131562731": {
@@ -5440,6 +5595,22 @@
     "obra de autor-semente"
    ]
   },
+  "W2080554996": {
+   "oa_id": "W2080554996",
+   "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada",
+    "rajada de citação"
+   ]
+  },
   "W2113964908": {
    "oa_id": "W2113964908",
    "title": "Is There a Case for Industrial Policy? A Critical Survey",
@@ -5468,6 +5639,38 @@
    "role": 0.0,
    "roles": [
     "corpus Brasil (Faganello)"
+   ]
+  },
+  "W1545138734": {
+   "oa_id": "W1545138734",
+   "title": "Handbook of Computational Economics, Volume 2: Agent-Based Computational Economics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
+   ]
+  },
+  "W1522372289": {
+   "oa_id": "W1522372289",
+   "title": "Chapter 16 Agent-Based Computational Economics: A Constructive Approach to Economic Theory",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes"
    ]
   },
   "W2506954441": {
@@ -5530,6 +5733,21 @@
     "obra de autor-semente"
    ]
   },
+  "W1997780809": {
+   "oa_id": "W1997780809",
+   "title": "Second-order cybernetics: historical introduction",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
   "W1528587144": {
    "oa_id": "W1528587144",
    "title": "Competitividad industrial en Brasil 10 años después de la liberalización",
@@ -5560,6 +5778,21 @@
     "corpus Brasil (Faganello)"
    ]
   },
+  "W1919820734": {
+   "oa_id": "W1919820734",
+   "title": "Kicking Away the Ladder: Development Strategy in Historical Perspective",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
+   ]
+  },
   "W2037980183": {
    "oa_id": "W2037980183",
    "title": "Making and remaking “good government” in Brazil: Subnational industrial policy in Minas Gerais",
@@ -5573,6 +5806,22 @@
    "role": 0.0,
    "roles": [
     "corpus Brasil (Faganello)"
+   ]
+  },
+  "W2147111138": {
+   "oa_id": "W2147111138",
+   "title": "Increasing Returns, Path Dependence, and the Study of Politics",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · retornos crescentes / dependência de trajetória"
    ]
   },
   "W34927365": {
@@ -5618,6 +5867,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -5666,6 +5916,23 @@
     "obra de autor-semente"
    ]
   },
+  "W1501219137": {
+   "oa_id": "W1501219137",
+   "title": "The Complexity of Cooperation: Agent-Based Models of Competition and Collaboration",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "complexidade · modelagem baseada em agentes",
+    "ponte a construir"
+   ]
+  },
   "W2130676853": {
    "oa_id": "W2130676853",
    "title": "Urban Regimes and Local Governance in Britain and France",
@@ -5693,7 +5960,8 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "corpus Brasil (Faganello)"
+    "corpus Brasil (Faganello)",
+    "obra de autor-ponte"
    ]
   },
   "W2495767131": {
@@ -5708,6 +5976,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -5783,7 +6052,36 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
+   ]
+  },
+  "W2134758682": {
+   "oa_id": "W2134758682",
+   "title": "Behavioral Assumptions of Policy Tools",
+   "axes": [
+    "Instrumentos de governo"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "mais citada"
+   ]
+  },
+  "W2127617481": {
+   "oa_id": "W2127617481",
+   "title": "Instruments of Government: Perceptions and Contexts",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "bela adormecida"
    ]
   },
   "W2037187536": {
@@ -5798,6 +6096,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -5813,6 +6112,7 @@
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra de autor-ponte",
     "obra de autor-semente"
    ]
   },
@@ -5863,6 +6163,23 @@
     "obra de autor-semente"
    ]
   },
+  "W2098978150": {
+   "oa_id": "W2098978150",
+   "title": "General Systems Theory—The Skeleton of Science",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra de autor-semente",
+    "ponte a construir"
+   ]
+  },
   "W595334711": {
    "oa_id": "W595334711",
    "title": "General systems : yearbook of the Society for General Systems Research",
@@ -5877,6 +6194,47 @@
    "roles": [
     "cibernética (geral)",
     "obra de autor-semente"
+   ]
+  },
+  "W2082088739": {
+   "oa_id": "W2082088739",
+   "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
+   ]
+  },
+  "W2165238389": {
+   "oa_id": "W2165238389",
+   "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "obra de autor-ponte",
+    "ponte a construir",
+    "rajada de citação"
+   ]
+  },
+  "W148613442": {
+   "oa_id": "W148613442",
+   "title": "Design and diagnosis for sustainable organizations : the viable system method",
+   "axes": [],
+   "score": 0.0,
+   "ho": 0,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "rajada de citação"
    ]
   },
   "W2132852401": {

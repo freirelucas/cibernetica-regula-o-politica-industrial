@@ -29,7 +29,8 @@ from report_from_json import build_js  # noqa: E402  (reúso dos consts de gráf
 from report_template import inject_template  # noqa: E402
 from token_injection import (  # noqa: E402
     inject_hypergraph_numbers, inject_author_network_numbers,
-    inject_brazil_numbers, inject_brokerage_numbers,
+    inject_brazil_numbers, inject_brokerage_numbers, inject_solidity_numbers,
+    inject_bridge_numbers,
 )
 import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
 import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
@@ -43,7 +44,7 @@ DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
-            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "brasil", "brasil-expandido", "analise-brasil", "discussao", "sintese", "leitura", "sementes", "repro", "dados",
+            "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "brasil", "brasil-expandido", "analise-brasil", "discussao", "sintese", "leitura", "pontes-ordem-superior", "pontes-semanticas", "sementes", "repro", "dados",
             "limitacoes", "glossario", "referencias"]
 
 
@@ -237,6 +238,17 @@ def rayyan_works_js(works):
     import re
     prio = data_io.load_data("bridge_priority.json", required=False).get("by_oa_id", {})
     hobc = data_io.load_data("higher_order_bc.json", required=False).get("by_oa_id", {})
+    # PR-7→modelagem: preenche o gancho da solidez tripla por OBRA a partir das pontes
+    # SÓLIDAS (data/solidity_bridges.json). Uma obra herda o melhor escore das pontes
+    # sólidas que a contêm; quem não está em ponte sólida fica None (mostra "—").
+    sol = data_io.load_data("solidity_bridges.json", required=False)
+    solm = {}
+    for c in (sol.get("solidas") if isinstance(sol, dict) else None) or []:
+        for m in c.get("membros", []):
+            cur = solm.setdefault(m, {"estrutural": 0.0, "latente": 0.0, "semantico": 0.0})
+            cur["estrutural"] = round(max(cur["estrutural"], c.get("design_z") or 0), 3)
+            cur["latente"] = round(max(cur["latente"], c.get("latente") or 0), 4)
+            cur["semantico"] = round(max(cur["semantico"], c.get("semantico") or 0), 4)
     out = []
     for e in works:
         m = re.search(r"openalex\.org/(W\d+)", e.get("url", ""))
@@ -252,8 +264,8 @@ def rayyan_works_js(works):
                     "brasil": ("corpus Brasil (Faganello)" in roles) or ("ponte global×Brasil" in roles),
                     "prioridade": round(float(prio_score or 0), 4),
                     "ho_bc": round(float(hobc.get(oid) or 0), 4),
-                    # gancho da solidez tripla (PR-7) — a modelagem preenche os 3 escores
-                    "solidez": {"estrutural": None, "latente": None, "semantico": None}})
+                    # gancho da solidez tripla — preenchido pelas pontes sólidas (modelagem)
+                    "solidez": solm.get(oid) or {"estrutural": None, "latente": None, "semantico": None}})
     return out
 
 
@@ -329,7 +341,7 @@ def main():
     meta["rayyan_cruz_n"] = sum(1 for e in rayyan if build_rayyan.PONTE in e["roles"])
     meta["rayyan_brasil_n"] = sum(1 for e in rayyan if build_rayyan.BRASIL_ROLE in e["roles"])
     meta["rayyan_org_n"] = sum(1 for e in rayyan if ("cibernética organizacional" in e["roles"])
-                               or ("Instrumentos de governo" in e["axes"]) or ("Política industrial" in e["axes"]))
+                               or ("Regulação econômica" in e["axes"]) or ("Política industrial" in e["axes"]))
     base = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
     net_src = data_io.data_path("network.json")
     net = data_io.load_data("network.json", required=False, default={"nodes": [], "links": []})
@@ -340,6 +352,8 @@ def main():
     html = inject_author_network_numbers(html)       # AUTHORNET_* tokens ← data/author_network.json
     html = inject_brazil_numbers(html)               # BRASIL_* tokens ← data/brazil_expanded.json
     html = inject_brokerage_numbers(html)            # BROK_* tokens ← data/brokerage_roles.json
+    html = inject_solidity_numbers(html)             # SOLIDEZ_* tokens ← data/solidity_bridges.json (modelagem)
+    html = inject_bridge_numbers(html)               # SEMBR_* tokens ← data/bridge_candidates.json (item 2)
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)

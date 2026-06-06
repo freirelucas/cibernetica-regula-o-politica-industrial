@@ -62,7 +62,7 @@
   <h2>O que esta apresentação faz</h2>
   <p>Este deck faz o <strong>balanço dos caminhos metodológicos</strong> percorridos no mapeamento — não só os achados, mas também: <em>o que cada método mede, por que foi escolhido, o que ele revela e o que ele não revela</em>.</p>
   <p>É deliberadamente sóbrio: cada slide apresenta uma técnica ou um achado central, com a intenção de tornar transparente o conjunto de decisões metodológicas que levaram à conclusão geral.</p>
-  <p>O <strong>achado central</strong> antecipa-se em uma frase: as três tradições (cibernética organizacional, instrumentos de governo e regulação, política industrial) formam silos de citação significativos no plano par-a-par e no plano da ordem superior — silos cuja origem histórica é situada nos anos 1980 e cujas pontes empíricas reais são <em>humanas</em> (autores específicos), não textuais (obras-ponte).</p>
+  <p>O <strong>achado central</strong> antecipa-se em uma frase: as três tradições (cibernética organizacional, regulação econômica, política industrial) formam silos de citação significativos no plano par-a-par e no plano da ordem superior — silos cuja origem histórica é situada nos anos 1980 e cujas pontes empíricas reais são <em>humanas</em> (autores específicos), não textuais (obras-ponte).</p>
 </section>
 
 <!-- ════════════ PARTE 1 · A PERGUNTA E O OBJETO ════════════ -->
@@ -77,7 +77,7 @@
   <p>Três tradições intelectuais compartilham um <em>problema comum</em> — como governar um sistema produtivo complexo sob incerteza — mas se desenvolveram em comunidades de citação e vocabulários largamente separados:</p>
   <ul>
     <li><strong>Cibernética organizacional</strong> trata da viabilidade de sistemas complexos via mecanismos de retroalimentação e variedade requisita (Beer, Ashby, Espejo, Cybersyn).</li>
-    <li><strong>Instrumentos de governo e regulação</strong> trata dos meios pelos quais o Estado age sobre a sociedade — autoridade, nodalidade, tesouro, organização (Hood, Margetts, Lascoumes).</li>
+    <li><strong>Regulação econômica</strong> trata da disciplina da atividade econômica pelo Estado — captura regulatória, monopólio natural, agências reguladoras, o estado regulador (Stigler, Majone, Levi-Faur, Ayres &amp; Braithwaite).</li>
     <li><strong>Política industrial</strong> trata da ação estatal deliberada sobre a estrutura produtiva (Rodrik, Mazzucato, Nelson e Winter).</li>
   </ul>
   <p>A hipótese de partida: as três tradições <em>deveriam</em> conversar. A pergunta empírica: <strong>elas conversam?</strong> Se sim, onde? Se não, por quê?</p>
@@ -118,7 +118,7 @@
 
 <section>
   <h2>Filtro por vocabulário controlado</h2>
-  <p>Cada obra recuperada é classificada em um eixo (cibernética, regulação ou política industrial) por <strong>casamento de vocabulário</strong> em título — listas controladas mantidas em <code>src/build_rayyan.py</code> e <code>src/author_network.py</code> (palavras-chave como <em>viable system</em>, <em>nodality</em>, <em>tools of government</em>, <em>industrial polic</em>, <em>mission-oriented</em>).</p>
+  <p>Cada obra recuperada é classificada em um eixo (cibernética, regulação ou política industrial) por <strong>casamento de vocabulário</strong> em título — listas controladas mantidas em <code>src/build_rayyan.py</code> e <code>src/author_network.py</code> (palavras-chave como <em>viable system</em>, <em>regulatory capture</em>, <em>regulatory agency</em>, <em>industrial polic</em>, <em>mission-oriented</em>).</p>
   <p>O filtro é deliberadamente <strong>conservador</strong>: aceitamos sub-classificação para evitar falsos positivos. Obras cujo tema é industrial mas cujo título não exibe o vocabulário ficam sem classificação. É uma escolha epistêmica: preferimos um sinal honesto a um sinal ruidoso.</p>
   <p class="footnote">A próxima sondagem natural é estender o classificador para <em>OpenAlex concepts</em> ponderados — captaria contribuições temáticas mesmo sem keyword no título.</p>
 </section>
@@ -167,7 +167,7 @@
   </div>
   <div class="what">
     <h3>Resultado</h3>
-    <p>Detectamos <span class="num">54</span> agrupamentos de acoplamento via Leiden. As frentes mais densas são a cibernética organizacional aplicada (cluster Beer/VSM/Espejo) e a frente de policy instruments (cluster Hood/Margetts).</p>
+    <p>Detectamos <span class="num">54</span> agrupamentos de acoplamento via Leiden. As frentes mais densas são a cibernética organizacional aplicada (cluster Beer/VSM/Espejo) e a frente da regulação econômica (cluster do estado regulador e das agências).</p>
   </div>
 </section>
 

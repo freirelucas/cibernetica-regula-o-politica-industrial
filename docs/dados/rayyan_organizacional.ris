@@ -6,9 +6,10 @@ PY  - 2024
 DO  - 10.1111/padm.12960
 UR  - https://openalex.org/W4386803846
 AB  - Abstract In Hood's (1983) classic “NATO” scheme, nodality—centrality and visibility in information networks—is one of the four tools of government. Despite its potential as a resource to effect policy change, contemporary scholars have largely neglected this unique policy tool. However, the growing prominence of digital platforms in public life prompts a rediscovery of this concept. The decisive shift is the parallel growth of citizen nodality, which can increase societal capacity and enhance government nodality, partly by allowing citizens to challenge government nodality. Moreover, citizen nodality and government nodality can interact to promote more democratic government. With the aim of rediscovering and updating nodality, this article defines the concept, reviews how the modern digital landscape has transformed the practice of nodality, and proposes a conceptual and methodological toolkit. The goal is to understand how nodality may be more effectively used by policy‐makers while at the same time fostering democratic governance.
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Cibernética
+KW  - papel: cibernética organizacional
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra-semente
 ER  - 
 
 TY  - JOUR
@@ -47,10 +48,11 @@ PY  - 2023
 DO  - 10.1080/13501763.2023.2202684
 UR  - https://openalex.org/W4368376507
 AB  - Within Europe’s regulatory state, industrial policy has largely remained within national governments’ remit. Yet, a plethora of new supra- and cross-national industrial policy initiatives have recently emerged whereby the Commission proactively engages in pan-European activities to foster innovation and economic development. This article brings the ‘Developmental Network States’ (DNS) literature into dialogue with EU integration scholarship to explain both the timing of EU industrial policy’s rise since the mid-2010s and the variation in forms of EU integration of different industrial policy functions. Our analysis suggests that the Commission increasingly operates four major developmental functions akin to DNSs and aimed at promoting and protecting the single market. Neofunctionalist theories of EU integration explain these momentous shifts. The timing behind the rise of EU industrial policy is best explained as an interplay of functional, cultivated, and political spillovers, driven especially by the Franco-German realignment on pro-EU industrial policy positions since 2016. Variation in the governance forms of integrated EU industrial policy functions is instead explained in terms of the degree of pre-existing integration of extant policies, the low vs high politics nature of the policy domain and the types of externalities attached to the specific policy area.
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: obra-ponte
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra-ponte
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial, Regulação econômica · papel: obra-ponte, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.15)
 ER  - 
 
 TY  - JOUR
@@ -61,10 +63,11 @@ PY  - 2023
 DO  - 10.1073/pnas.2207727120
 UR  - https://openalex.org/W4388622472
 AB  - This paper applies insights from the literature on transitions in major consumption-production systems to clarify the nature of the challenge of moving to a net-zero greenhouse gas (GHG) emission society. It highlights critical features of transitions including their multiactor/multicausal logic, phased development, and distributive impacts. Because current systems are so dependent on fossil energy resources, and on GHG-emitting industrial processes and agricultural practices, multiple transitions across a range of distinct consumption-production systems will be required for net zero. The transformation of each system faces different barriers and enabling conditions and is influenced by varied nonclimate-related disruptions. Important policy implications follow, including the need to focus on sector and regional transitions, link climate policy to other societal goals, and adopt policy mixes appropriate to the transition phase. The article discusses recent policy and politics-related findings from the transitions literatures including those dealing with policy mixes, transition intermediaries, and green industrial policy.
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: obra-ponte
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra-ponte
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial, Regulação econômica · papel: obra-ponte, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.15)
 ER  - 
 
 TY  - JOUR
@@ -95,19 +98,6 @@ KW  - papel: corpus Brasil (Faganello)
 N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello)
 ER  - 
 
-TY  - JOUR
-T1  - Data science, artificial intelligence and the third wave of digital era governance
-AU  - Patrick Dunleavy
-AU  - Helen Margetts
-PY  - 2023
-DO  - 10.1177/09520767231198737
-UR  - https://openalex.org/W4387025480
-AB  - This article examines the model of digital era governance (DEG) in the light of the latest-wave of data-driven technologies, such as data science methodologies and artificial intelligence (labelled here DSAI). It identifies four key top-level macro-themes through which digital changes in response to these developments may be investigated. First, the capability to store and analyse large quantities of digital data obviates the need for data ‘compression’ that characterises Weberian-model bureaucracies, and facilitates data de-compression in data-intensive information regimes, where the capabilities of public agencies and civil society are both enhanced. Second, the increasing capability of robotic devices have expanded the range of tasks that machines extending or substituting workers’ capabilities can perform, with implications for a reshaping of state organisation. Third, DSAI technologies allow new options for partitioning state functions in ways that can maximise organisational productivity, in an ‘intelligent centre, devolved delivery’ model within vertical policy sectors. Fourth, within each tier of government, DSAI technologies offer new possibilities for ‘administrative holism’ - the horizontal allocation of power and functions between organisations, through state integration, common capacity and needs-based joining-up of services. Together, these four themes comprise a third wave of DEG changes, suggesting important administrative choices to be made regarding information regimes, state organisation, functional allocation and outsourcing arrangements, as well as a long-term research agenda for public administration, requiring extensive and detailed analysis.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
 TY  - CHAP
 T1  - Feasible Financial Innovation Under Market Socialism
 AU  - Domenico Mario Nuti
@@ -132,18 +122,6 @@ AB  - Abstract Formulating industrial policies is a complex process marked by ad
 KW  - eixo: Política industrial
 KW  - papel: corpus Brasil (Faganello)
 N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello)
-ER  - 
-
-TY  - JOUR
-T1  - Rethinking AI for Good Governance
-AU  - Helen Margetts
-PY  - 2022
-DO  - 10.1162/daed_a_01922
-UR  - https://openalex.org/W4226076751
-AB  - Abstract This essay examines what AI can dofor government, specifically through three generic tools at the heart of governance: detection, prediction, and data-driven decision-making. Public sector functions, such as resource allocation and the protection of rights, are more normatively loaded than those of firms, and AI poses greater ethical challenges than earlier generations of digital technology, threatening transparency, fairness, and accountability. The essay discusses how AI might be developed specifically for government, with a public digital ethos to protect these values. Three moves that could maximize the transformative possibilities for a distinctively public sector AI are the development of government capacity to foster innovation through AI; the building of integrated and generalized models for policy-making; and the detection and tackling of structural inequalities. Combined, these developments could offer a model of data-intensive government that is more efficient, ethical, fair, prescient, and resilient than ever before in administrative history.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -181,8 +159,9 @@ UR  - https://openalex.org/W3183746153
 AB  - This research aims to investigate the importance of industrial policies for the recovery and economic development of Brazil in the post-Covid-19 pandemic. To this end, it starts from theoretical and historical foundations of industrial policy and industrial processes, especially as a development strategy. From this, we seek to evaluate the challenges that the Brazilian industry has faced in recent years until the current situation. Brazil has shown a significant decline in industrial activity in recent decades. As a result, one can see losses in the capacity for innovation and competitiveness, as well as technological and productive dependence of the Brazilian industry. In the same way, with the arrival of the Covid-19 pandemic, the industrial impact has highlighted issues related to insufficient production in several sectors, especially in the health area. The Brazilian industrial policy agenda needs to be focused on the transformation of the industrial structure, with increased productive gains, supported by new technologies and the diversification of sectors and activities that have greater economic value. The dynamics of the industrial sector is an instrument for the long-term development of the country and for overcoming the post-pandemic economic recession.
 KW  - eixo: Política industrial
 KW  - papel: corpus Brasil (Faganello)
+KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello), ponte global×Brasil
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello), ponte a construir, ponte global×Brasil · razão: ponte a construir=top-25 de bridge_priority (score=0.15)
 ER  - 
 
 TY  - JOUR
@@ -198,7 +177,8 @@ AB  - Digital twin can be defined as a virtual representation of a physical asse
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: mais citada
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, mais citada
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, mais citada, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.15)
 ER  - 
 
 TY  - JOUR
@@ -213,9 +193,9 @@ JO  - Policy and Society
 DO  - 10.1080/14494035.2020.1787628
 UR  - https://openalex.org/W3038709602
 AB  - The objective of this collection of essays is to gain insights into the different national-level state responses to COVID-19 around the world and the conditions that shaped them. The pandemic offers a natural experiment wherein the policy problem governments faced was the same but the responses they made were different, creating opportunities for comparison of both the kinds of policy tools being used and the factors that accounted for their choice. Accordingly, after surveying on-line databases of policy tools used in the pandemic and subjecting these to topic modelling to reveal the characteristics of a 'standard' national pandemic response, we discuss the similarities and differences found in specific responses. This is done with reference to the nature and level of policy capacity of respective governments, highlighting the critical roles played by (in)adequate preparation and lesson-drawing from past experiences with similar outbreaks or crises. Taken together the articles show how the national responses to the COVID-19 pandemic were shaped by the opportunity and capacity each government had to learn from previous pandemics and their capacity to operationalize and build political support for the standard portfolio of policy measures deployed to deal with the crisis. However, they also show how other factors such as the nature of national leadership, the organization of government and civil society, and blindspots towards the vulnerabilities of certain population segments also helped to shape policy responses to the pandemic.
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada
 ER  - 
 
 TY  - JOUR
@@ -329,11 +309,11 @@ PY  - 2019
 DO  - 10.1007/s10842-019-00329-w
 UR  - https://openalex.org/W2998208130
 AB  - Abstract Policy makers are increasingly embracing the idea of using industrial and innovation policy to tackle the ‘grand challenges’ facing modern societies. This article argues that through well-defined goals, or more specifically ‘missions’, that are focused on solving important societal challenges, policymakers have the opportunity to determine the direction of growth by making strategic investments across many different sectors and nurturing new industrial landscapes, which the private sector can develop further, and as a result induce cross-sectoral learning and increase macroeconomic stability. This ‘mission-oriented’ approach to industrial policy is not about ‘top down’ planning by an overbearing state; it is about providing a direction for growth and increasing business expectations about future growth areas and catalysing activity that otherwise would not happen. It is not about de-risking and levelling the playing field, nor about supporting more competitive sectors over less since the market does not always ‘know best’ but tilting the playing field in the direction of the desired societal goals, such as the sustainable development goals. To achieve this requires a different policy framework, what we call the ‘ROAR’ framework, which involves strategic thinking about the desired direction of travel ( Routes ), the structure and capacity of public sector Organisations , the way in which policy is Assessed and the incentive structure for both private and public sectors ( Risks and Rewards ). The article argues that if we want to take grand challenges such as the SDGs seriously as policy goals, market shaping should become the over-arching approach followed in various policy fields.
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: obra de autor-ponte
 KW  - papel: obra-ponte
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra de autor-ponte, obra-ponte · razão: obra de autor-ponte=autor Rainer Kattel — cross_axis_score=0.631
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial, Regulação econômica · papel: obra de autor-ponte, obra-ponte · razão: obra de autor-ponte=autor Rainer Kattel — cross_axis_score=0.631
 ER  - 
 
 TY  - JOUR
@@ -346,10 +326,10 @@ PY  - 2019
 DO  - 10.1086/701703
 UR  - https://openalex.org/W2895014065
 AB  - The administrative ability of the state to deliver effective policy is essential for economic development. While sociologists have long devoted attention to domestic forces underpinning state capacity, the authors focus on world system pressures from Western-dominated international organizations. Scrutinizing policy reforms mandated by the International Monetary Fund (IMF), the authors argue that “structural conditions” exert deleterious effects on bureaucratic quality by increasing the risk of bureaucrats falling prey to special interests and narrowing potential policy instruments available to them. The authors test these arguments using a new data set on IMF conditionality from 1985 to 2014. Their analysis shows that structural conditions—especially conditions on privatization, price deregulation, and public sector employment—reduce bureaucratic quality. Using instrumentation techniques, the authors also discount the possibility that the relationship is driven by the IMF imposing structural conditions precisely in countries with low bureaucratic quality. A careful reconsideration of IMF policy reforms is therefore required to avoid undermining local institutions.
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: obra-ponte
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra-ponte
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial, Regulação econômica · papel: obra-ponte
 ER  - 
 
 TY  - CHAP
@@ -425,9 +405,9 @@ PY  - 2018
 DO  - 10.4324/9780429498893-4
 UR  - https://openalex.org/W2996085990
 AB  - This chapter aims to set out what would be regarded in Washington as constituting a desirable set of economic policy reforms. It identifies and discusses ten policy instruments about whose proper deployment Washington can muster a reasonable degree of consensus. The policy instruments include fiscal deficits, public expenditure priorities, tax reform, interest rates, exchange rates, trade policy, foreign direct investment, privatization, deregulation, and property rights. When a fiscal deficit needs to be cut, there are three major expenditure categories on which views are strongly held: subsidies, education and health, and public investment. There is very broad agreement in Washington that large and sustained fiscal deficits are a primary source of macroeconomic dislocation in the forms of inflation, payments deficits, and capital flight. The economic policies that Washington urges on the rest of the world may be summarized as prudent macroeconomic policies, outward orientation, and free-market capitalism.
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada
 ER  - 
 
 TY  - JOUR
@@ -577,10 +557,10 @@ JO  - Research Policy
 DO  - 10.1016/j.respol.2016.04.004
 UR  - https://openalex.org/W2363378650
 AB  - Reaching a better understanding of the policies and politics of transitions presents a main agenda item in the emerging field of sustainability transitions. One important requirement for these transitions, such as the move towards a decarbonized energy system, is the redirection and acceleration of technological change, for which policies play a key role. In this regard, several studies have argued for the need to combine different policy instruments in so-called policy mixes. However, existing policy mix studies often fall short of reflecting the complexity and dynamics of actual policy mixes, the underlying politics and the evaluation of their impacts. In this paper we take a first step towards an extended, interdisciplinary policy mix concept based on a review of the bodies of literature on innovation studies, environmental economics and policy analysis. The concept introduces a clear terminology and consists of the three building blocks elements, policy processes and characteristics, which can be delineated by several dimensions. Based on this, we discuss its application as analytical framework for empirical studies analyzing the impact of the policy mix on technological change. Throughout the paper we illustrate the proposed concept by using the example of the policy mix for fostering the transition of the German energy system to renewable power generation technologies. Finally, we derive policy implications and suggest avenues for future research.
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada, rajada de citação
 ER  - 
 
 TY  - JOUR
@@ -689,18 +669,6 @@ N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industr
 ER  - 
 
 TY  - JOUR
-T1  - Design principles for essentially digital governance
-AU  - Patrick Dunleavy
-AU  - Helen Margetts
-PY  - 2015
-UR  - https://openalex.org/W2270868360
-AB  - Governments and citizens operate in a digital environment, leaving digital trails whatever they do and wherever they go.These trails generate huge quantities of information about themselves, each other and any interactions they have.In this context, the most important elements of an organization that deals with people are the information it can access and the intelligence provided by analysis of that information.Information and intelligence generate capacity for innovation, efficiency and the agility to adapt to a rapidly changing environment.These statements are as true for public as for private organizations; most governments in the 21 st century industrialised world and beyond are reliant on a large digital presence and complex network of large-scale information systems for administrative operations and policy-making.These systems go beyond being critical for policy implementation to shaping the whole context within which policy and service delivery choices are made, either facilitating innovation or constraining policy options.Simply put, many or even most government departments and agencies 'are' their information systems and digital presence -the only part of them with which many citizens will interact (Margetts, 1999;Dunleavy, Margetts et al, 2008, Steinberg, 2012).Yet those that direct, manage and study government can find it bewildering to negotiate this rapidly changing information environment or to prioritise the interactions and feedback loops that would capitalise on the potential of the internet and digital technologies for public policy solutions and service delivery, particularly in the prolonged period of austerity following the financial crash of 2008.Consequently, the online worlds of governments and citizens remain strangely separate and distinct.The state can lag behind technological trends endangering its operation.As driverless cars become a reality, for example, the technology available to service them far outstrips the development of the legal framework to govern their use or allocate responsibility, for example when two driverless cars crash.This paper puts forward an 'Essentially Digital' model of Governance (EDGE) to navigate this changed world, a model of bureaucracy where finally digital technologies take centre stage in government organization.It draws on the authors' earlier exploration of Digital Era Governance (Dunleavy, Margetts et al, 2006, 2008, 2010, 2013) and over 25 years of research into digital government and policy-making to investigate the relationship between the internet, politics and public policy.The Essentially Digital Governance (EDGE) model places digital technologies at the centre of government, from which they have so long been marginalised (Margetts, 1999; Dunleavy and Margetts, 2006;Pollitt, 2011), starting from the digital baseline that ten years of DEG has provided and putting forward principles for the design of the state in the era of social media, cloud computing, robotization and big data.It identifies the organizational cultures that can foster EDGE practices, most originating outside of government, in visions and practices that derive from the normative views and theoretical models that have grown up around the internet and information technology, from open source to digital rights and even the anarchism and cyber-utopianism that characterised the early days of the internet.It provides practical principles for the design of governmental organization and service delivery, and for the normative choices that confront policy-makers in the digital era.The paper is structured as follows.First, we look at the relationship between technology and bureaucracy in public management reformr and, second, how digital cultures have grown up in the information state.Third we make the case for nine 'Do' principles and 'Choice' principles to guide the design of 'Essentially Digital Governance'.First, five 'Do' principles provide the framework for administrative and service design: D1.Deliver public services for free D2.Use already existing digital information D3.Do it once D4.Grow scalable services in competition D5.Isocratic (DIY) administration Second, four 'Choice' principles lay out a normative framework for policy-making and service delivery in the age of social media and big data: C1.Value equality of outcome over process C2.Provide formal rights and real redress C3. 'Keep the state nodal' obligation C4.Experiential learning
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
-TY  - JOUR
 T1  - The entrepreneurial state: debunking public vs. private sector myths
 AU  - Mariana Mazzucato
 PY  - 2014
@@ -708,15 +676,15 @@ DO  - 10.5860/choice.51-3359
 UR  - https://openalex.org/W1553746973
 AB  - Introduction: Thinking Big Again 1. From Crisis Ideology to the Division of Innovative Labour 2. Technology, Innovation and Growth 3. Risk-Taking State: From 'De-risking' to 'Bring It On!' 4. The US Entrepreneurial State 5. The State behind the iPhone 6. Pushing vs. Nudging the Green Industrial Revolution 7. Wind and Solar Power: Government Success Stories and Technology in Crisis 8. Risks and Rewards: From Rotten Apples to Symbiotic Ecosystems 9. Socialization of Risk and Privatization of Rewards: Can the Entrepreneurial State Eat Its Cake Too? 10. Conclusion
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 82 (XGI); ponte a construir=top-25 de bridge_priority (score=0.7064)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 73 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4714)
 ER  - 
 
 TY  - GEN
@@ -794,9 +762,9 @@ PY  - 2013
 JO  - Technological Forecasting and Social Change
 DO  - 10.1016/j.techfore.2013.03.002
 UR  - https://openalex.org/W2047016160
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada
 ER  - 
 
 TY  - JOUR
@@ -807,10 +775,10 @@ PY  - 2013
 DO  - 10.1093/cjres/rst007
 UR  - https://openalex.org/W2138571544
 AB  - This paper analyses the evolution of regional innovation policy into the mainstream of public policy. The paper examines the empirical and theoretical developments which have shifted much of the focus on innovation-related issues to matters of economic geography. As well as academic material we also review the literature on the subject produced by the international development institutions. In terms of policy, special attention is devoted to the role of local market failures and local institutions in explaining the importance and need for regional innovation policies, and the advent of the smart specialisation agenda is discussed. Finally, the paper discusses the current regional innovation policy tools and interventions observed around the world, which are seen by international institutions as examples of best practice. Copyright 2013, Oxford University Press.
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: obra-ponte
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra-ponte
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial, Regulação econômica · papel: obra-ponte
 ER  - 
 
 TY  - JOUR
@@ -822,10 +790,10 @@ PY  - 2013
 DO  - 10.13140/rg.2.1.1849.4560
 UR  - https://openalex.org/W1842827659
 AB  - In section 1, we start by reviewing the current state of the manufacturing sector in the UK, especially, although not exclusively, comparing it with the nine countries whose industrial policy we review in this state.The picture that emerges is an alarming one, in which the UK's industrial performance distinguishes itself for being poor and is still declining further.In section 2, we discuss some of the key theoretical issues in the debate on industrial policy.We discuss: (a) different definitions of industrial policy, especially focusing on the relationship between and the relative merits of 'horizontal' (or 'general') and 'vertical' (or 'selective') industrial policies; (b) the special role of the manufacturing sector in the overall economy, especially as the source of productivity growth, innovation, learning, and resilience; (c) main theoretical justifications for certain notable industrial policy tools and institutions used in the countries reviewed.In Section 3, we review the industrial policy experiences of the nine comparator countries.While historical material dating back from the 18 th century is covered when appropriate, the focus is more on the recent period, since the 1980s or the 1990s, depending on the country.In Section 4, we draw lessons for the UK's industrial policy from the nine country experiences that we review in Section 3, filtered through the theoretical discussions provided in Section 2. We draw the lessons along several dimensions: (a) the role of 'vision'; (b) institutional settings (e.g., coordination within the government, the role of surrounding institutional networks); (c) finance and corporate governance; (d) promotion of innovation; (e) management of transnational corporations (TNCs); (f) support for SMEs; (g) skills and training.In Section 5, we look ahead for the future of the UK's manufacturing sector, taking into account our theoretical discussions, country case reviews, and the lessons we have drawn from those discussions.4 International industrial policy experiences and the lessons for the UK Netherlands 4,948 47 Mexico 1,
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: obra-ponte
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo, Política industrial · papel: obra-ponte
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial, Regulação econômica · papel: obra-ponte
 ER  - 
 
 TY  - JOUR
@@ -879,19 +847,6 @@ AB  - O artigo teve por objetivo discutir as recentes politicas industriais adot
 KW  - eixo: Política industrial
 KW  - papel: corpus Brasil (Faganello)
 N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello)
-ER  - 
-
-TY  - JOUR
-T1  - The second wave of digital-era governance: a quasi-paradigm for government on the Web
-AU  - Helen Margetts
-AU  - Patrick Dunleavy
-PY  - 2013
-DO  - 10.1098/rsta.2012.0382
-UR  - https://openalex.org/W1993166762
-AB  - Widespread use of the Internet and the Web has transformed the public management 'quasi-paradigm' in advanced industrial countries. The toolkit for public management reform has shifted away from a 'new public management' (NPM) approach stressing fragmentation, competition and incentivization and towards a 'digital-era governance' (DEG) one, focusing on reintegrating services, providing holistic services for citizens and implementing thoroughgoing digital changes in administration. We review the current status of NPM and DEG approaches, showing how the development of the social Web has already helped trigger a 'second wave' of DEG(2) changes. Web science and organizational studies are converging swiftly in public management and public services, opening up an extensive agenda for future redesign of state organization and interventions. So far, DEG changes have survived austerity pressures well, whereas key NPM elements have been rolled back.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
 ER  - 
 
 TY  - CHAP
@@ -966,8 +921,8 @@ PY  - 2011
 DO  - 10.1007/978-3-642-19109-1
 UR  - https://openalex.org/W4244612406
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra de autor-ponte
@@ -975,7 +930,7 @@ KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 27 (XGI); obra de autor-ponte=autor Alfonso Reyes — cross_axis_score=0.631; ponte a construir=top-25 de bridge_priority (score=0.3279)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 48 (XGI); obra de autor-ponte=autor Alfonso Reyes — cross_axis_score=0.631; ponte a construir=top-25 de bridge_priority (score=0.2884)
 ER  - 
 
 TY  - JOUR
@@ -987,11 +942,9 @@ PY  - 2011
 JO  - Research Policy
 DO  - 10.1016/j.respol.2011.02.005
 UR  - https://openalex.org/W2127454860
-KW  - eixo: Instrumentos de governo
-KW  - papel: higher_order_bridge
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
-KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: higher_order_bridge, mais citada, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 19 (XGI); ponte a construir=top-25 de bridge_priority (score=0.2936)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada
 ER  - 
 
 TY  - BOOK
@@ -1004,9 +957,8 @@ UR  - https://openalex.org/W582908774
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
-KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.5071)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, rajada de citação
 ER  - 
 
 TY  - GEN
@@ -1039,9 +991,10 @@ T1  - Exploring Governance: Policy Instruments Approach
 AU  - Lascoumes & Le Galès
 PY  - 2010
 UR  - https://openalex.org/https://openalex.org/W2076248782
-KW  - eixo: Política industrial
+KW  - eixo: Cibernética
+KW  - papel: cibernética organizacional
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra-semente
 ER  - 
 
 TY  - CHAP
@@ -1058,28 +1011,16 @@ N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política
 ER  - 
 
 TY  - JOUR
-T1  - The second wave of digital era governance
-AU  - Patrick Dunleavy
-AU  - Helen Margetts
-PY  - 2010
-UR  - https://openalex.org/W1578729938
-AB  - Some of the most difficult issues in public management revolve around making strategic choices for the future in an era of rapid social, cultural and technological change. In previous work we drew a contrast between new public management (NPM) approaches, which predominated in the period 1980-­‐2002, and digital era governance (DEG) which grew fast in the 2000s. Since that time the rapid development of societal and technological uses of online processes has been matched by the seismic impact of the 2008 credit crunch and financial crisis, now mapping out as austerity regimes in many OECD countries. In this paper we review the current fortunes of NPM, which has not revived despite the pressure on public spending. By contrast, the first wave of digital-­‐era governance changes have flourished and the importance of key DEG themes has increased– specifically reintegrating government services, pushing towards holistic delivery to clients and responding to the digitalization wave in public services. We also argue for the emergence of an influential ‘second wave’ of digital-­‐era changes inside government, responding to the advent of the social web, cloud computing, apps development and many other recent phenomena moving advanced industrial societies further towards an online civilization.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
-TY  - JOUR
 T1  - Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design
 AU  - Michael Howlett
 PY  - 2009
 JO  - Policy Sciences
 DO  - 10.1007/s11077-009-9079-1
 UR  - https://openalex.org/W2057748843
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada, rajada de citação
 ER  - 
 
 TY  - GEN
@@ -1129,20 +1070,6 @@ N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política
 ER  - 
 
 TY  - BOOK
-T1  - Digital Era Governance: IT Corporations, the State, and e-Government
-AU  - Patrick Dunleavy
-AU  - Helen Margetts
-AU  - Simon Bastow
-AU  - Jane Tinkler
-PY  - 2008
-UR  - https://openalex.org/W2103271327
-AB  - Government information systems are big business (costing over 1 per cent of GDP a year). They are critical to all aspects of public policy and governmental operations. Governments spend billions on them - for instance, the UK alone commits L14 billion a year to public sector IT operations. Yet governments do not generally develop or run their own systems, instead relying on private sector computer services providers to run large, long-run contracts to provide IT. Some of the biggest companies in the world (IBM, EDS, Lockheed Martin, etc) have made this a core market. The book shows how governments in some countries (the USA, Canada and Netherlands) have maintained much more effective policies than others (in the UK, Japan and Australia). It shows how public managers need to retain and develop their own IT expertise and to carefully maintain well-contested markets if they are to deliver value for money in their dealings with the very powerful global IT industry. This book describes how a critical aspect of the modern state is managed, or in some cases mismanaged. It will be vital reading for public managers, IT professionals, and business executives alike, as well as for students of modern government, business, and information studies.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
-TY  - BOOK
 T1  - Normalizing Industrial Policy
 AU  - Dani Rodrik
 PY  - 2008
@@ -1163,14 +1090,14 @@ DO  - 10.1007/978-1-137-06154-6
 UR  - https://openalex.org/W2126563689
 AB  - Exploring Governments' Toolshed Nodality Authority Treasure Organization Government as a Toolkit Alternative Approaches to the Tools of Government A Changing Mix of Government Tools in the Digital Age
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 37 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4257)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 110 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5952)
 ER  - 
 
 TY  - JOUR
@@ -1182,10 +1109,10 @@ JO  - Governance
 DO  - 10.1111/j.1468-0491.2007.00342.x
 UR  - https://openalex.org/W2080554996
 AB  - Public policy instrumentation and its choice of tools and modes of operation are treated either as a kind of evidence (governing means making regulations, taxing, entering into contracts, communicating, etc.) or as if the questions it raises (the properties of instruments, justifications for choosing them, their applicability, etc.) are part of a rationality of methods without any autonomous meaning. This paper aims to explain the significance of a political sociology approach to public policy instruments in accounting for processes of public policy change: (1) public policy instrumentation is a major issue in public policy, since it reveals a (fairly explicit) theorization of the relationship between the governing and the governed: every instrument constitutes a condensed form of knowledge about social control and ways of exercising it; and (2) instruments at work are not neutral devices: they produce specific effects, independently of the objective pursued (the aims ascribed to them), which structure public policy according to their own logic.
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada, rajada de citação
 ER  - 
 
 TY  - GEN
@@ -1194,9 +1121,9 @@ AU  - Michael Howlett
 AU  - Jeremy Rayner
 PY  - 2007
 JO  - Policy and Society
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada
 ER  - 
 
 TY  - JOUR
@@ -1282,45 +1209,6 @@ KW  - papel: corpus Brasil (Faganello)
 N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello)
 ER  - 
 
-TY  - BOOK
-T1  - Digital Era Governance:
-AU  - Patrick Dunleavy
-AU  - Helen Margetts
-AU  - Simon Bastow
-AU  - Jane Tinkler
-PY  - 2006
-DO  - 10.1093/acprof:oso/9780199296194.001.0001
-UR  - https://openalex.org/W2506954441
-AB  - Abstract Government information systems are big business (costing over 1% of GDP a year). They are critical to all aspects of public policy and governmental operations. Governments spend billions on them — for instance, the United Kingdom alone commits £14 billion a year to public sector information technology (IT) operations. Yet governments do not generally develop or run their own systems, instead relying on private sector computer services providers to run large, long-run contracts to provide IT. Some of the biggest companies in the world (IBM, EDS, Lockheed Martin, etc.) have made this a core market. This book shows how governments in some countries (the United States, Canada, and the Netherlands) have maintained much more effective policies than others (in the United Kingdom, Japan, and Australia). It shows how public managers need to retain and develop their own IT expertise and to carefully maintain well-contested markets if they are to deliver value for money in their dealings with the very powerful global IT industry. This book describes how a critical aspect of the modern state is managed, or in some cases mismanaged.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
-TY  - CHAP
-T1  - Transparency and Digital Government
-AU  - Helen Margetts
-PY  - 2006
-DO  - 10.5871/bacad/9780197263839.003.0012
-UR  - https://openalex.org/W2500251709
-AB  - Digital government refers to the use by government of information and communication technology, including the Internet, both internally and to interact with citizens, businesses, and other governments. This chapter briefly outlines the development of digital government. It suggests three key ways in which digital government could be more transparent than government of the ‘pre-digital’ era and three ways in which it might become less transparent. The chapter goes on to identify some ways in which these ‘barriers’ to transparency might be overcome, such as the use of electronic tools like search engines and software. Finally, it discusses the strong variations in the potential for digitally aided transparency across countries, within countries, and within groups of Internet users and non-users. Some non-democratic states have resisted the potential of e-government to promote transparency, and have been more interested in trying to restrict usage of the Internet within their boundaries. This chapter investigates some of these variations in digitally aided transparency.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
-TY  - JOUR
-T1  - Governing from the Centre? Comparing the Nodality of Digital Governments
-AU  - Helen Margetts
-AU  - Tobias Escher
-PY  - 2006
-DO  - 10.2139/ssrn.1755762
-UR  - https://openalex.org/W2138646760
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
 TY  - JOUR
 T1  - DOOMED TO CHOOSE: INDUSTRIAL POLICY AS PREDICAMENT
 AU  - Ricardo Hausmann
@@ -1339,8 +1227,8 @@ PY  - 2004
 DO  - 10.2139/ssrn.617544
 UR  - https://openalex.org/W3124879925
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
@@ -1348,7 +1236,7 @@ KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 40 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4829)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte a construir=top-25 de bridge_priority (score=0.37)
 ER  - 
 
 TY  - GEN
@@ -1422,7 +1310,8 @@ DO  - 10.1016/s0304-3878(03)00124-x
 UR  - https://openalex.org/W2120106358
 KW  - eixo: Política industrial
 KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4014)
 ER  - 
 
 TY  - GEN
@@ -1459,31 +1348,6 @@ AB  - Comparative examples of “good government” at the subnational level may
 KW  - eixo: Política industrial
 KW  - papel: corpus Brasil (Faganello)
 N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello)
-ER  - 
-
-TY  - JOUR
-T1  - The Europeanisation of Sub-national Governance
-AU  - Peter John
-PY  - 2000
-DO  - 10.1080/00420980050011136
-UR  - https://openalex.org/W2008978319
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
-TY  - JOUR
-T1  - The Impact of Investment Funds on Corporate Governance in Mass Privatization Schemes: Czech Republic, Poland and Slovenia
-AU  - Saul Estrin
-AU  - Domenico Mario Nuti
-AU  - Milicia Uvalic
-PY  - 2000
-DO  - 10.1023/a:1009531429918
-UR  - https://openalex.org/W2162790888
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-ponte
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.887
 ER  - 
 
 TY  - JOUR
@@ -1540,34 +1404,7 @@ AB  - The software Viplan learning system is an aid to learn about Beer’s viab
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
-KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4843)
-ER  - 
-
-TY  - JOUR
-T1  - Political leadership in the new urban governance: Britain and France compared
-AU  - Peter John
-AU  - Alistair Cole
-PY  - 1999
-DO  - 10.1080/03003939908433969
-UR  - https://openalex.org/W2124267344
-AB  - (1999). Political leadership in the new urban governance: Britain and France compared. Local Government Studies: Vol. 25, Renewing Local Democracy? The Modernisation Agenda in British Local Government, pp. 98-115.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
-ER  - 
-
-TY  - JOUR
-T1  - Urban Regimes and Local Governance in Britain and France
-AU  - Peter John
-AU  - Alistair Cole
-PY  - 1998
-DO  - 10.1177/107808749803300307
-UR  - https://openalex.org/W2130676853
-AB  - Rather than weakening regime theory, comparative analysis illuminates its central theoretical insights. The cases of Leeds (United Kingdom) and Lille (France) show cities in contrasting geographical, cultural, and institutional contexts developing regime like local polities through business participation in a wide range of public-sector decisions. The five special noninstitutional factors promoting regimes are local business ownership, business integration, large metropolitan context, and economic advantage or disadvantage. The distinctiveness of these cities in their countries is an indication of the degree of policy learning and capacity generation that has taken place.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-semente
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -1625,19 +1462,6 @@ KW  - papel: obra de autor-semente
 N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
 ER  - 
 
-TY  - CHAP
-T1  - Employeeism: Corporate Governance and Employee Share Ownership in Transitional Economies
-AU  - Domenico Mario Nuti
-PY  - 1997
-DO  - 10.1017/cbo9780511572012.006
-UR  - https://openalex.org/W2495767131
-AB  - Abstract Under the heading of “corporate governance” we include problems arising when an enterprise is owned by more than one owner and managed by a hired managerial group, and also the rules and incentives appropriate to make it function as efficiently and impartially as if it were owned and run by a single owner-entrepreneur. Throughout this essay we shall refer to co-owners as shareholders, thus implicitly referring to joint stock companies; unless otherwise stated, decisional (voting) powers are presumed to be distributed in proportion to ownership. Mutatis mutandis, identical considerations apply to any form of enterprise co-ownership and attribution of decisional powers.
-KW  - eixo: Instrumentos de governo
-KW  - papel: obra de autor-ponte
-KW  - papel: obra de autor-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: obra de autor-ponte, obra de autor-semente · razão: obra de autor-ponte=autor Domenico Mario Nuti — cross_axis_score=0.887
-ER  - 
-
 TY  - JOUR
 T1  - El desafío competitivo para la industria brasileña
 AU  - João Carlos Ferraz
@@ -1687,8 +1511,7 @@ AB  - ISSUES FOR TODAY'S ORGANIZATIONS. Organization Structure. Transformation. 
 KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
-KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.2364)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra de autor-semente
 ER  - 
 
 TY  - GEN
@@ -1698,7 +1521,8 @@ PY  - 1995
 UR  - https://openalex.org/https://openalex.org/W2912536286
 KW  - eixo: Política industrial
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.2448)
 ER  - 
 
 TY  - GEN
@@ -1787,9 +1611,9 @@ JO  - The Journal of Politics
 DO  - 10.2307/2131904
 UR  - https://openalex.org/W2134758682
 AB  - This paper provides a framework to analyze the implicit or explicit behavioral theories found in laws, regulations, and programs. The analysis focuses on policy tools or instruments and the underlying behavioral assumptions that guide their choice. We begin with the premise that public policy almost always attempts to get people to do things they otherwise would not have done, or it enables them to do things they might not have done otherwise. Policy tools are used to overcome impediments to policy-relevant actions. The five broad categories of tools we identify--authority, incentives, capacity-building, symbolic and hortatory, and learning--make different assumptions about how policy relevant behavior can be fostered. We contend that policy tools are essentially political phenomena, and that policy participation in the form of compliance, utilization, and other forms of "coproduction" is an important form of political behavior deserving of greater attention by political science.
-KW  - eixo: Instrumentos de governo
+KW  - eixo: Regulação econômica
 KW  - papel: mais citada
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Instrumentos de governo · papel: mais citada
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: mais citada
 ER  - 
 
 TY  - JOUR
@@ -1816,8 +1640,7 @@ KW  - eixo: Cibernética
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: obra de autor-semente
-KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, obra de autor-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.2479)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, obra de autor-semente
 ER  - 
 
 TY  - JOUR
@@ -1890,8 +1713,8 @@ PY  - 1985
 UR  - https://openalex.org/W2154683088
 AB  - Beer is undoubtedly among the world s most provocative, creative, and profound thinkers on the subject of management, and he records his thinking with a flair that is unmatched. His writing is as much art as it is science. He is the most viable system I know. Dr Russell L Ackoff, The Institute for Interactive Management, Pennsylvania, USA. If anyone can make it [Operations Research] understandably readable and positively interesting it is Stafford Beer everyone in management ..should be grateful to him for using clear and at times elegant English and even elegant diagrams. The Economist In Brain of the Firm and The Heart of Enterprise Stafford Beer worked out the scientific laws that govern any viable system. They constitute the basis for this book which is concerned solely with the application of those laws to the understanding of any particular enterprise. In the form of a Handbook or Manager s Guide, Diagnosing the System deals with the fundamental problem of management how to cope with complexity itself. It shows you how to design (or redesign) an enterprise in conformity with the laws of viability, and will help you to diagnose faults in your organizational structure.
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
@@ -1900,7 +1723,7 @@ KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 44 (XGI); obra de autor-ponte=autor John R. Beaumont — cross_axis_score=0.870; ponte a construir=top-25 de bridge_priority (score=0.6557)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-ponte, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 68 (XGI); obra de autor-ponte=autor John R. Beaumont — cross_axis_score=0.870; ponte a construir=top-25 de bridge_priority (score=0.3148)
 ER  - 
 
 TY  - JOUR
@@ -1918,7 +1741,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: mais citada
 KW  - papel: obra de autor-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, mais citada, obra de autor-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 23 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5414)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, mais citada, obra de autor-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 36 (XGI); ponte a construir=top-25 de bridge_priority (score=0.2725)
 ER  - 
 
 TY  - BOOK
@@ -1929,15 +1752,15 @@ DO  - 10.1007/978-1-349-17169-9
 UR  - https://openalex.org/W1601629960
 AB  - Important shifts are taking place in the nature of public policy-making and government at both the central and local level. Increasing financial pressures, the struggle to maintain public services, the emergence of new areas of concern, such as employment and economic development, and increasing partisanship in local politics, are all creating new strains but at the same time opening up new possibilities.
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4193)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 152 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6507)
 ER  - 
 
 TY  - JOUR
@@ -1953,25 +1776,6 @@ N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industr
 ER  - 
 
 TY  - BOOK
-T1  - Autopoiesis and Cognition: The Realization of the Living
-AU  - Humberto R. Maturana
-AU  - Francisco J. Varela
-AU  - Stafford Bee
-PY  - 1980
-JO  - Medical Entomology and Zoology
-UR  - https://openalex.org/https://openalex.org/W1916207017
-AB  - Editorial Preface General Table Of Contents Foreword Introduction (by Professor Maturana) Biology Of Cognition Dedication Table of Contents I. Introduction II. The Problem III. Cognitive Function in General A. The Observer B. The Living System C. Evolution D. The Cognitive Process IV. Cognitive Function in Particular A. Nerve Cells B. Architecture C. Function D. Representation E. Description F. Thinking G. Natural Language H. Memory and Learning I. The Observer V. Problems in the Neurophysiology of Cognition VI. Conclusions VII. Post Scriptum Autopoiesis: The Organization Of The Living Preface (by Sir Stafford Beer) Introduction I. On Machines, living and Otherwise 1. Machines 2. Living Machines II. Dispensability of Teleonomy 1. Purposelessness 2. Individuality III. Embodiments of Autopoiesis 1. Descriptive and Causal Notions 2. Molecular Embodiments 3. Origin IV. Diversity of Autopoiesis 1. Subordination to the Condition of Unity 2. Plasticity of Ontogeny 3. Reproduction, a Complication of the Unity 4. Evolution, a Historical Network 5. Second and Third Order Autopoietic Systems V. Presence of Autopoiesis 1. Biological Implications 2. Epistemological Implications 3. Cognitive Implications Appendix: The Nervous System Glossary Bibliography Index Of Names
-KW  - eixo: Cibernética
-KW  - eixo: Política industrial
-KW  - papel: bela adormecida
-KW  - papel: cibernética (geral)
-KW  - papel: mais citada
-KW  - papel: obra de autor-semente
-KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial · papel: bela adormecida, cibernética (geral), mais citada, obra de autor-semente, obra-semente
-ER  - 
-
-TY  - BOOK
 T1  - The Heart of Enterprise
 AU  - Stafford Beer
 PY  - 1980
@@ -1979,8 +1783,8 @@ DO  - 10.1057/jors.1980.155
 UR  - https://openalex.org/W1566478880
 AB  - Beer is undoubtedly among the world's most provocative, creative, and profound thinkers on the subject of management, and he records his thinking with a flair that is unmatched. His writing is as much art as it is science. He is the most viable system know. Dr Russell L Ackoff, The Institute for Interactive Management, Pennsylvania, USA. If.anyone can make it [Operations Research] understandably readable and positively interesting it is Stafford Beer.everyone in management. should be grateful to him for using clear and at times elegant English and . even elegant diagrams. The Economist This is the companion volume to Brain of the Firm and addresses the nature of viable systems, those capable of surviving. It does not use the neurophysiological basis elucidated in brain, but develops the same theory from first principles. This book declares that every enterprise is a system, and in particular must be a viable system. Viability is not just a matter of economic solvency; we need laws that govern the capacity of any enterprise to maintain independent existence. The Heart of Enterprise is full of examples (actual, author-generated examples) taken from management practice. I consistently find that Stafford Beer provides the most useful analytical framework for understanding and managing an enterprise--public or private. Heart of The Enterprise offers a demanding but rewarding exposition of his approach and applications. Sir Douglas Hague. CBE
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
@@ -1988,7 +1792,7 @@ KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); ponte a construir=top-25 de bridge_priority (score=0.845)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 100 (XGI); ponte a construir=top-25 de bridge_priority (score=0.582)
 ER  - 
 
 TY  - JOUR
@@ -2026,8 +1830,8 @@ DO  - 10.2307/3102789
 UR  - https://openalex.org/W2048086870
 AB  - Beer is undoubtedly among the world's most provocative, creative, and profound thinkers on the subject of management, and he records his thinking with a flair that is unmatched. His writing is as much art as it is science. He is the most viable system I know. Dr Russell L Ackoff, The Institute for Interactive Management, Pennsylvania, USA. If . anyone can make it [Operations Research] understandably readable and positively interesting it is Stafford Beer . everyone in management . should be grateful to him for using clear and at times elegant English and . even elegant diagrams. The Economist This is the second edition of a book which has already become a management 'standard' both in universities and on the bookshelves of managers and their advisers. Brain of the Firm develops an account of the firm based upon insights derived from the study of the human nervous system, and is a basic text from the author's theory of viable systems. Despite the neurophysiology, the book is written for managers to understand. The companion volume to this book is The Heart of Enterprise, which is intended to support and complement this text. Beer's works represent required reading for everyone who believes that a capacity for rigorous thinking is an essential attribute of today's successful managers and administrators. Brain of the Firm shows a first-rate intellect at work and provides concepts, models and inspiration for both practitioners and teachers. Sir Douglas Hague, CBE
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: bela adormecida
 KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
@@ -2036,7 +1840,7 @@ KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-semente, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 56 (XGI); ponte a construir=top-25 de bridge_priority (score=0.7993)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra de autor-semente, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 82 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6333)
 ER  - 
 
 TY  - BOOK
@@ -2094,7 +1898,8 @@ PY  - 1966
 UR  - https://openalex.org/https://openalex.org/W2063282131
 KW  - eixo: Política industrial
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.3132)
 ER  - 
 
 TY  - JOUR
@@ -2133,14 +1938,16 @@ DO  - 10.2307/3006723
 UR  - https://openalex.org/W2111030512
 AB  - Many workers in the biological sciencesphysiologists, psycholo- gists, sociologistsare interested in cybernetics and would like to apply its methods and techniques to their own speciality. Many have, however, been prevented from taking up the subject by an impression that its use must be preceded by a long study of elec- tronics and advanced pure mathematics; for they have formed the impression that cybernetics and these subjects are inseparable.
 KW  - eixo: Cibernética
-KW  - eixo: Instrumentos de governo
 KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
 KW  - papel: bela adormecida
 KW  - papel: cibernética (geral)
+KW  - papel: higher_order_bridge
 KW  - papel: obra de autor-semente
 KW  - papel: obra-ponte
+KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Instrumentos de governo, Política industrial · papel: bela adormecida, cibernética (geral), obra de autor-semente, obra-ponte, rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética (geral), higher_order_bridge, obra de autor-semente, obra-ponte, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 71 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6187)
 ER  - 
 
 TY  - JOUR
@@ -2161,9 +1968,12 @@ T1  - Cybernetics or Control and Communication in the Animal and the Machine
 AU  - Wiener
 PY  - 1948
 UR  - https://openalex.org/https://openalex.org/W1527571715
-KW  - eixo: Política industrial
+KW  - eixo: Cibernética
+KW  - papel: cibernética organizacional
+KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 23 (XGI); ponte a construir=top-25 de bridge_priority (score=0.3304)
 ER  - 
 
 TY  - GEN
@@ -2175,7 +1985,8 @@ KW  - eixo: Política industrial
 KW  - papel: higher_order_bridge
 KW  - papel: obra de autor-ponte
 KW  - papel: obra-semente
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: higher_order_bridge, obra de autor-ponte, obra-semente · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 91 (XGI); obra de autor-ponte=autor Fred M. Taylor — cross_axis_score=0.631
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: higher_order_bridge, obra de autor-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 65 (XGI); obra de autor-ponte=autor Fred M. Taylor — cross_axis_score=0.631; ponte a construir=top-25 de bridge_priority (score=0.2358)
 ER  - 
 
 TY  - GEN

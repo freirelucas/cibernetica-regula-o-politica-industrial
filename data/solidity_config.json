@@ -1,0 +1,29 @@
+{
+ "_doc": "limiares e parâmetros da solidez tripla — versionado e reprodutível",
+ "poda": {
+  "min_cited_by": 5,
+  "max_candidatos": 3000,
+  "min_par_peso": 1
+ },
+ "design": {
+  "null_iter": 200,
+  "seed": 42,
+  "fdr_alpha": 0.05,
+  "tau_z": 2.0
+ },
+ "latente": {
+  "holdout_year": 2015,
+  "tau_baixo_pct": 20,
+  "min_positivos": 5,
+  "bootstrap": 500,
+  "max_eval": 4000
+ },
+ "semantico": {
+  "faixa_low_pct": 40,
+  "faixa_high_pct": 75,
+  "metodo": "auto"
+ },
+ "leitura": {
+  "top_pares": 150
+ }
+}

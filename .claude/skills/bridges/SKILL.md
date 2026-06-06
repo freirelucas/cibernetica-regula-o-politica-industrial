@@ -54,25 +54,32 @@ hiperarestas varrendo TODO o `data/oa_cache/` — incluía citantes de consultas
 enviesado; o ranking HO-BC mudou de propósito (faz emergir Mazzucato, Beer, Kuhn,
 North, Dosi). **Não reintroduza a varredura do cache aqui.**
 
-## Ponto de extensão — a modelagem futura (§7 do handout; NÃO implementada)
+## Camada de solidez tripla — v1 IMPLEMENTADA (`src/solidity.py`, fase `solidity`)
 
-A próxima sessão (semi-assistida, Lucas calibra) empilha SOBRE esta cadeia:
+Prediz hiperarestas AUSENTES que costurariam os silos e reporta só as SÓLIDAS
+(passam nos 3 testes independentes), gravando `data/solidity_bridges.json` (+ CSVs
+12/13 em `docs/dados/` + seção `#pontes-ordem-superior` no site + os 3 escores no
+cartão da triagem, atalho "Passa nos três"). Limiares calibráveis em
+`data/solidity_config.json`.
 
-1. **Solidez tripla** (filtra candidatas trans-eixo): estrutural Δ-design (queda de
-   condutância vs. modelo nulo), latente (fechamento harmônico de Benson 2018, holdout
-   temporal, AUC-PR) e semântica (faixa-passa de embeddings/`topics`, ortogonal à
-   citação). Resultado negativo (`S=∅`) é válido — nunca enfraquecer um teste.
-2. **Cesta ótima** empilhada sobre `S` (submodular *greedy* 1−1/e, com cobertura dos
-   3 pares de eixos + orçamento de leitura + custo de aquisição).
+  - **DESIGN** — ganho de integração candidata-específico (raridade do cruzamento ×
+    centralidade cross-silo dos membros) z vs modelo nulo (`seed=42`).
+  - **LATENTE** — fechamento simplicial (harmônica das 3 subfaces) + **holdout
+    temporal** (`data/citer_years.json`, recrawl barato; treina ≤T, testa >T).
+  - **SEMÂNTICO** — Jaccard de tópicos + embeddings fortes (sentence-transformers,
+    enriquecendo só os membros das candidatas); **faixa intermediária** por percentis.
+  - Quadrantes: `costura_ouro` / `agenda_pesquisa` / `fechamento_trivial` / `ruido_quimera`.
+    **Resultado NEGATIVO é válido** (lista vazia, sem erro). Confiança modal exposta.
 
-**Encaixes já prontos (esta sessão deixou):**
-- `data_io` (PR-2) → novos JSONs (`closure/design/semantic/solidity/basket.json`)
-  entram sem mexer em `build_site`.
-- Cartão da triagem (PR-7) já reserva os **3 indicadores** (estrutural/latente/
-  semântico) + o atalho "Passa nos três".
-- `run_all.py` (PR-5) → as fases da modelagem encaixam como novos nós do DAG.
-- **Preservar a confiança modal** (obra > autor > conceito) nos dados — a cesta
-  vai querer ponderar por isso.
+Decisões honradas: silos = `axis_of` (não Leiden novo); v1 = tríades obra-só; saída em
+derivado próprio (scisci_results.json intocada); embeddings com **escores versionados**
+→ `run_all --offline` PULA a fase (saída existe) e a CI não baixa o modelo.
+
+**Falta para v2 (semi-assistida — Lucas calibra):** candidatas MULTIMODAIS
+(`{autor, conceito, obra}` — a tabela de incidência + `confianca_modal` já preparam);
+**cesta ótima** submodular (greedy 1−1/e, cobertura dos 3 pares de eixos + orçamento de
+leitura + custo) empilhada SOBRE o conjunto sólido; calibração fina da faixa/limiares
+contra o holdout.
 
 ## Gotchas
 
