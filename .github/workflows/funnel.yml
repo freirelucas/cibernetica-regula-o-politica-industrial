@@ -15,10 +15,12 @@
 # dispara sozinho. O segredo OPENALEX_API_KEY é OPCIONAL: sem ele o crawl usa o
 # pool polido (mais lento, porém funciona).
 #
-# NOTA DE FIDELIDADE: o notebook NÃO escreve data/scisci_results.json (essa é a
-# fonte curada do repo, insumo do run_all). Ele escreve data/network.json e os
-# artefatos em scisci_output/. Por isso não há "cópia do resumo": preservamos o
-# método do notebook e deixamos o run_all reconstruir o resto.
+# NOTA: a célula de montagem (reconstruída a partir do report_builder aposentado)
+# faz o notebook escrever data/scisci_results.json — o resumo de 24 chaves
+# (corpus, pontes, rajadas, belas adormecidas, clusters, série temporal) a partir
+# das análises vivas do funil. Em seguida run_all --force reconstrói derivados +
+# site a partir dele. O crawl do notebook tem oa_get próprio (não limitado pelo
+# teto); OA_DAILY_CAP_USD limita as fases de rede do run_all. Limite duro: 330min.
 # ─────────────────────────────────────────────────────────────────────────────
 name: funil-rerun
 
@@ -86,22 +88,12 @@ jobs:
             --output /tmp/funnel_out.ipynb \
             "colab/scisci_cibernetica_regulacao_PI_v2.ipynb"
 
-      - name: Consolidar o resumo (se o funil tiver produzido um)
-        # O notebook canônico regenera data/network.json e os artefatos em
-        # scisci_output/, mas NÃO escreve data/scisci_results.json (fonte curada
-        # do repo). Este passo é defensivo: se algum dia o notebook passar a
-        # emitir o resumo (na raiz ou em scisci_output/), nós o promovemos a
-        # data/scisci_results.json; caso contrário seguimos com o versionado.
+      - name: Verificar o resumo regenerado pelo funil
+        # A célula de montagem do notebook escreve data/scisci_results.json direto.
+        # Falha cedo se faltar ou vier vazio (antes de gastar o run_all).
         run: |
-          for cand in scisci_results.json scisci_output/scisci_results.json; do
-            if [ -f "$cand" ]; then
-              echo "Resumo encontrado em $cand — copiando para data/scisci_results.json"
-              mkdir -p data
-              cp "$cand" data/scisci_results.json
-              break
-            fi
-          done
-          echo "data/scisci_results.json:"; ls -l data/scisci_results.json || true
+          test -f data/scisci_results.json || { echo "ERRO: o funil não gerou data/scisci_results.json"; exit 1; }
+          python3 -c "import json; d=json.load(open('data/scisci_results.json')); print('generated', d['generated'], '| n_seeds', d['n_seeds'], '| corpus', d['corpus_size']); assert d['corpus_size']>0 and d['n_seeds']>0, 'resumo vazio'"
 
       - name: Reconstruir derivados + site
         # run_all lê a fonte curada data/scisci_results.json (obrigatória) e
@@ -129,7 +121,7 @@ jobs:
 
             O que pode ter mudado:
             - `data/network.json` e demais derivados em `data/*.json` (run_all).
-            - `data/scisci_results.json` (apenas se o funil tiver emitido um resumo).
+            - `data/scisci_results.json` — o resumo do relatório, regenerado pelo funil.
             - Site reconstruído em `docs/`.
             - `data/run_all_report.csv` (relatório de execução do DAG).
 
