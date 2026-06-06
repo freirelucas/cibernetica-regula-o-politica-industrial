@@ -1,0 +1,138 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# funil-rerun — re-execução autônoma do funil pesado (OpenAlex → dados → site).
+#
+# O QUE FAZ: roda o notebook canônico do Colab
+# (colab/scisci_cibernetica_regulacao_PI_v2.ipynb) headless via nbconvert, com o
+# MESMO método de crawl/análise — só que as sementes e o vocabulário agora vêm da
+# fonte única src/minirun.py (esquema novo 20/20/20; eixo "Reg" = regulação
+# econômica). O notebook regenera data/network.json + os checkpoints/CSVs em
+# scisci_output/. Em seguida, src/run_all.py --force reconstrói os derivados de
+# data/ e o site em docs/ a partir da fonte curada data/scisci_results.json, e a
+# ação abre um PR com tudo o que mudou.
+#
+# COMO RODAR: manualmente, em Actions → "funil-rerun" → Run workflow
+# (workflow_dispatch). Demora horas (crawl real), por isso timeout alto e nunca
+# dispara sozinho. O segredo OPENALEX_API_KEY é OPCIONAL: sem ele o crawl usa o
+# pool polido (mais lento, porém funciona).
+#
+# NOTA DE FIDELIDADE: o notebook NÃO escreve data/scisci_results.json (essa é a
+# fonte curada do repo, insumo do run_all). Ele escreve data/network.json e os
+# artefatos em scisci_output/. Por isso não há "cópia do resumo": preservamos o
+# método do notebook e deixamos o run_all reconstruir o resto.
+# ─────────────────────────────────────────────────────────────────────────────
+name: funil-rerun
+
+on:
+  workflow_dispatch:
+    inputs:
+      oa_daily_cap:
+        description: "Teto diário de gasto na API OpenAlex (USD)"
+        required: false
+        default: "5"
+      email:
+        description: "E-mail para o polite pool do OpenAlex"
+        required: false
+        default: "lucasfreire@gmail.com"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  funnel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências do funil
+        run: |
+          python -m pip install --upgrade pip
+          pip install \
+            "python-igraph==0.11.6" \
+            "leidenalg==0.10.2" \
+            "ipysigma==0.24.6" \
+            "pyvis==0.3.2" \
+            "plotly>=5.20" \
+            "scipy>=1.11" \
+            "scikit-learn>=1.3" \
+            "pandas>=2.1" \
+            "numpy>=1.24" \
+            "pyarrow>=14" \
+            "requests>=2.31" \
+            "tqdm" \
+            "nbconvert" \
+            "ipykernel" \
+            "jupyter"
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Rodar o funil pesado (notebook headless)
+        # MESMO método do Colab; sementes/vocab vêm de src/minirun (PYTHONPATH=src).
+        # ExecutePreprocessor.timeout=-1 = sem teto por célula (o crawl é longo).
+        # OPENALEX_API_KEY é opcional (pool polido se ausente).
+        env:
+          PYTHONPATH: src
+          OA_DAILY_CAP_USD: ${{ inputs.oa_daily_cap }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          jupyter nbconvert --to notebook --execute \
+            --ExecutePreprocessor.timeout=-1 \
+            --output /tmp/funnel_out.ipynb \
+            "colab/scisci_cibernetica_regulacao_PI_v2.ipynb"
+
+      - name: Consolidar o resumo (se o funil tiver produzido um)
+        # O notebook canônico regenera data/network.json e os artefatos em
+        # scisci_output/, mas NÃO escreve data/scisci_results.json (fonte curada
+        # do repo). Este passo é defensivo: se algum dia o notebook passar a
+        # emitir o resumo (na raiz ou em scisci_output/), nós o promovemos a
+        # data/scisci_results.json; caso contrário seguimos com o versionado.
+        run: |
+          for cand in scisci_results.json scisci_output/scisci_results.json; do
+            if [ -f "$cand" ]; then
+              echo "Resumo encontrado em $cand — copiando para data/scisci_results.json"
+              mkdir -p data
+              cp "$cand" data/scisci_results.json
+              break
+            fi
+          done
+          echo "data/scisci_results.json:"; ls -l data/scisci_results.json || true
+
+      - name: Reconstruir derivados + site
+        # run_all lê a fonte curada data/scisci_results.json (obrigatória) e
+        # regenera data/*.json + docs/. --force re-roda tudo p/ consistência.
+        env:
+          PYTHONPATH: src
+          OA_DAILY_CAP_USD: ${{ inputs.oa_daily_cap }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          PYTHONPATH=src python src/run_all.py --force
+
+      - name: Abrir PR com os resultados do funil
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: funil-rerun/${{ github.run_id }}
+          base: main
+          title: "Funil re-run: scisci_results + derivados (auto)"
+          commit-message: "Funil re-run automático (workflow funil-rerun)"
+          body: |
+            Re-execução autônoma do funil pesado pelo workflow **funil-rerun**
+            (`.github/workflows/funnel.yml`, disparo manual via workflow_dispatch).
+
+            Produzido por: notebook `colab/scisci_cibernetica_regulacao_PI_v2.ipynb`
+            rodado headless (nbconvert) + `src/run_all.py --force`.
+
+            O que pode ter mudado:
+            - `data/network.json` e demais derivados em `data/*.json` (run_all).
+            - `data/scisci_results.json` (apenas se o funil tiver emitido um resumo).
+            - Site reconstruído em `docs/`.
+            - `data/run_all_report.csv` (relatório de execução do DAG).
+
+            Parâmetros do disparo: `oa_daily_cap=${{ inputs.oa_daily_cap }}`,
+            `email=${{ inputs.email }}`. Segredo `OPENALEX_API_KEY`:
+            usado se configurado; caso contrário, pool polido.
