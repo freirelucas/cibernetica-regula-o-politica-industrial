@@ -71,21 +71,25 @@ jobs:
       - name: Rodar o funil pesado (notebook headless)
         # MESMO método do Colab; sementes/vocab vêm de src/minirun (PYTHONPATH=src).
         # ExecutePreprocessor.timeout=-1 = sem teto por célula (o crawl é longo).
+        # --allow-errors: células de inspeção/print (não-dados) não abortam o run de
+        # ~1h; a INTEGRIDADE DOS DADOS é garantida pelo passo de verificação abaixo.
         # O notebook usa o pool polido (EMAIL na célula 2); largura nos params P.
         env:
           PYTHONPATH: src
         run: |
-          jupyter nbconvert --to notebook --execute \
+          jupyter nbconvert --to notebook --execute --allow-errors \
             --ExecutePreprocessor.timeout=-1 \
             --output /tmp/funnel_out.ipynb \
             "colab/scisci_cibernetica_regulacao_PI_v2.ipynb"
 
       - name: Verificar o resumo regenerado pelo funil
-        # A célula de montagem do notebook escreve data/scisci_results.json direto.
-        # Falha cedo se faltar ou vier vazio (antes de gastar o run_all).
+        # Gate de integridade (cobre o --allow-errors acima): falha cedo se o funil
+        # não escreveu um resumo COMPLETO e LIMPO — antes de gastar o run_all.
+        # Checa escalares-chave, as 8 listas não-vazias e ausência de lixo de pandas
+        # (ex.: o bug do sleeping_beauties[].axes, onde paper.axes vazava um Index).
         run: |
           test -f data/scisci_results.json || { echo "ERRO: o funil não gerou data/scisci_results.json"; exit 1; }
-          python3 -c "import json; d=json.load(open('data/scisci_results.json')); print('generated', d['generated'], '| n_seeds', d['n_seeds'], '| corpus', d['corpus_size']); assert d['corpus_size']>0 and d['n_seeds']>0, 'resumo vazio'"
+          python3 -c "import json; d=json.load(open('data/scisci_results.json')); L=['seeds','top20_nonfeed','top_bridges','top_pivotal','top_bursts','sleeping_beauties','temporal','clusters_bc']; b=json.dumps(d,ensure_ascii=False); assert d['corpus_size']>2000 and d['n_seeds']==60 and d['n_clusters_bc']>0 and d['cocit_nodes']>0, 'escalares fora do esperado'; assert all(isinstance(d.get(k),list) and d[k] for k in L), 'lista vazia/ausente'; assert 'Index(' not in b and 'dtype=' not in b, 'lixo de pandas no resumo'; print('resumo integro: corpus',d['corpus_size'],'| n_seeds',d['n_seeds'],'| clusters_bc',d['n_clusters_bc'])"
 
       - name: Reconstruir derivados + site (offline, SEM recrawl)
         # O notebook já fez O ÚNICO crawl (scisci_results.json + network.json).
