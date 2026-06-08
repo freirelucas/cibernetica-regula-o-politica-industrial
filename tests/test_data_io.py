@@ -30,7 +30,7 @@ def test_load_required_missing_raises_clear():
 
 def test_load_existing_reads_json():
     R = data_io.load_data("scisci_results.json", required=True)   # fonte curada sempre presente
-    assert R.get("corpus_size") == 817
+    assert R.get("corpus_size", 0) > 2000  # reframe 20/20/20: corpus expandido (era 817)
 
 
 def test_save_data_atomic_roundtrip(tmp_path):

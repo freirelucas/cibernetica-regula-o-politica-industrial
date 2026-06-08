@@ -31,10 +31,10 @@ def test_json_required_keys(results):
 
 
 def test_json_consistency(results):
-    assert results["corpus_size"] == 817
-    assert results["n_seeds"] == 20 == len(results["seeds"])  # 10 canônicas + 3 Lange + 7 M14 (Wiener/Maturana/vonFoerster/Lascoumes-LeGalès/Salamon/Chang/Evans)
+    assert results["corpus_size"] > 2000  # reframe 20/20/20: corpus expandido (era 817 no recorte de 13 sementes)
+    assert results["n_seeds"] == 60 == len(results["seeds"])  # 20/20/20 Cyb/Reg/PolInd (reframe jun/2026; ver test_reframe.py)
     assert len(results["top20_nonfeed"]) == 20
-    assert len(results["temporal"]) == 49
+    assert len(results["temporal"]) >= 40  # série anual (1962–2025 no recorte atual)
     assert all({"year", "Cyb", "Reg", "PolInd"} <= set(t) for t in results["temporal"])
     assert all({"cluster_id", "label", "size", "top_papers"} <= set(c) for c in results["clusters_bc"])
 
@@ -53,7 +53,8 @@ def test_csv_rows(results, tmp_path):
     counts = {
         "02_mais_citados.csv": 20, "03_obras_ponte.csv": 15,
         "05_rajadas_kleinberg.csv": 20, "06_belas_adormecidas.csv": 15,
-        "08_obras_semente.csv": 20, "09_serie_temporal.csv": 49,
+        "08_obras_semente.csv": len(results["seeds"]),
+        "09_serie_temporal.csv": len(results["temporal"]),
     }
     for name, n in counts.items():
         linhas = (tmp_path / name).read_text(encoding="utf-8").strip().splitlines()

@@ -1,315 +1,405 @@
 {
   "axis_arrival_year": {
-    "Cyb": 1983,
-    "Reg": 1991,
-    "PolInd": 2005
+    "Cyb": 1968,
+    "Reg": 1972,
+    "PolInd": 1970
   },
   "axis_peak_year": {
     "Cyb": 2011,
-    "Reg": 2019,
+    "Reg": 2009,
     "PolInd": 2017
   },
   "axis_peak_value": {
-    "Cyb": 30,
-    "Reg": 19,
-    "PolInd": 18
+    "Cyb": 97,
+    "Reg": 129,
+    "PolInd": 108
   },
-  "first_copresence_year": 2005,
+  "first_copresence_year": 1979,
   "silo_crystallization_decade": "1980s",
   "cumul_history": [
     {
-      "year": 1968,
+      "year": 1962,
       "Cyb": 1,
-      "Reg": 0,
-      "PolInd": 0
+      "Reg": 1,
+      "PolInd": 1
     },
     {
-      "year": 1970,
+      "year": 1963,
       "Cyb": 2,
-      "Reg": 0,
-      "PolInd": 0
+      "Reg": 2,
+      "PolInd": 3
     },
     {
-      "year": 1974,
+      "year": 1964,
       "Cyb": 3,
-      "Reg": 1,
-      "PolInd": 1
-    },
-    {
-      "year": 1979,
-      "Cyb": 5,
-      "Reg": 1,
-      "PolInd": 1
-    },
-    {
-      "year": 1980,
-      "Cyb": 7,
       "Reg": 2,
-      "PolInd": 2
+      "PolInd": 4
     },
     {
-      "year": 1982,
-      "Cyb": 8,
+      "year": 1965,
+      "Cyb": 3,
       "Reg": 2,
-      "PolInd": 2
-    },
-    {
-      "year": 1983,
-      "Cyb": 11,
-      "Reg": 3,
-      "PolInd": 3
-    },
-    {
-      "year": 1984,
-      "Cyb": 13,
-      "Reg": 4,
-      "PolInd": 3
-    },
-    {
-      "year": 1985,
-      "Cyb": 15,
-      "Reg": 5,
-      "PolInd": 3
-    },
-    {
-      "year": 1986,
-      "Cyb": 16,
-      "Reg": 6,
-      "PolInd": 3
-    },
-    {
-      "year": 1987,
-      "Cyb": 17,
-      "Reg": 6,
-      "PolInd": 4
-    },
-    {
-      "year": 1988,
-      "Cyb": 18,
-      "Reg": 7,
-      "PolInd": 4
-    },
-    {
-      "year": 1989,
-      "Cyb": 21,
-      "Reg": 8,
-      "PolInd": 4
-    },
-    {
-      "year": 1990,
-      "Cyb": 28,
-      "Reg": 10,
       "PolInd": 5
     },
     {
-      "year": 1991,
-      "Cyb": 29,
-      "Reg": 13,
+      "year": 1966,
+      "Cyb": 4,
+      "Reg": 3,
       "PolInd": 6
     },
     {
-      "year": 1992,
-      "Cyb": 33,
-      "Reg": 14,
+      "year": 1967,
+      "Cyb": 5,
+      "Reg": 3,
       "PolInd": 6
     },
     {
-      "year": 1993,
-      "Cyb": 43,
-      "Reg": 16,
-      "PolInd": 7
-    },
-    {
-      "year": 1994,
-      "Cyb": 46,
-      "Reg": 18,
-      "PolInd": 7
-    },
-    {
-      "year": 1995,
-      "Cyb": 47,
-      "Reg": 19,
-      "PolInd": 7
-    },
-    {
-      "year": 1996,
-      "Cyb": 49,
-      "Reg": 19,
-      "PolInd": 7
-    },
-    {
-      "year": 1997,
-      "Cyb": 56,
-      "Reg": 19,
-      "PolInd": 7
-    },
-    {
-      "year": 1998,
-      "Cyb": 60,
-      "Reg": 21,
-      "PolInd": 7
-    },
-    {
-      "year": 1999,
-      "Cyb": 68,
-      "Reg": 23,
-      "PolInd": 7
-    },
-    {
-      "year": 2000,
-      "Cyb": 71,
-      "Reg": 24,
+      "year": 1968,
+      "Cyb": 8,
+      "Reg": 5,
       "PolInd": 8
     },
     {
-      "year": 2001,
-      "Cyb": 76,
-      "Reg": 27,
-      "PolInd": 8
-    },
-    {
-      "year": 2002,
-      "Cyb": 82,
-      "Reg": 27,
-      "PolInd": 8
-    },
-    {
-      "year": 2003,
-      "Cyb": 89,
-      "Reg": 32,
-      "PolInd": 8
-    },
-    {
-      "year": 2004,
-      "Cyb": 102,
-      "Reg": 36,
+      "year": 1969,
+      "Cyb": 9,
+      "Reg": 5,
       "PolInd": 10
     },
     {
-      "year": 2005,
-      "Cyb": 109,
-      "Reg": 39,
-      "PolInd": 14
+      "year": 1970,
+      "Cyb": 11,
+      "Reg": 5,
+      "PolInd": 13
     },
     {
-      "year": 2006,
-      "Cyb": 128,
-      "Reg": 41,
+      "year": 1971,
+      "Cyb": 15,
+      "Reg": 7,
+      "PolInd": 16
+    },
+    {
+      "year": 1972,
+      "Cyb": 15,
+      "Reg": 11,
+      "PolInd": 18
+    },
+    {
+      "year": 1973,
+      "Cyb": 16,
+      "Reg": 12,
       "PolInd": 19
     },
     {
-      "year": 2007,
-      "Cyb": 147,
-      "Reg": 47,
+      "year": 1974,
+      "Cyb": 19,
+      "Reg": 14,
+      "PolInd": 24
+    },
+    {
+      "year": 1975,
+      "Cyb": 21,
+      "Reg": 15,
       "PolInd": 26
     },
     {
-      "year": 2008,
-      "Cyb": 155,
-      "Reg": 49,
+      "year": 1976,
+      "Cyb": 25,
+      "Reg": 18,
+      "PolInd": 28
+    },
+    {
+      "year": 1977,
+      "Cyb": 28,
+      "Reg": 21,
       "PolInd": 30
     },
     {
-      "year": 2009,
-      "Cyb": 169,
-      "Reg": 58,
-      "PolInd": 38
+      "year": 1978,
+      "Cyb": 31,
+      "Reg": 22,
+      "PolInd": 32
     },
     {
-      "year": 2010,
-      "Cyb": 180,
-      "Reg": 66,
-      "PolInd": 41
+      "year": 1979,
+      "Cyb": 36,
+      "Reg": 27,
+      "PolInd": 36
     },
     {
-      "year": 2011,
-      "Cyb": 210,
-      "Reg": 77,
+      "year": 1980,
+      "Cyb": 39,
+      "Reg": 29,
+      "PolInd": 39
+    },
+    {
+      "year": 1981,
+      "Cyb": 43,
+      "Reg": 37,
+      "PolInd": 42
+    },
+    {
+      "year": 1982,
+      "Cyb": 48,
+      "Reg": 46,
       "PolInd": 45
     },
     {
+      "year": 1983,
+      "Cyb": 57,
+      "Reg": 57,
+      "PolInd": 48
+    },
+    {
+      "year": 1984,
+      "Cyb": 61,
+      "Reg": 78,
+      "PolInd": 51
+    },
+    {
+      "year": 1985,
+      "Cyb": 71,
+      "Reg": 88,
+      "PolInd": 55
+    },
+    {
+      "year": 1986,
+      "Cyb": 76,
+      "Reg": 104,
+      "PolInd": 60
+    },
+    {
+      "year": 1987,
+      "Cyb": 82,
+      "Reg": 117,
+      "PolInd": 64
+    },
+    {
+      "year": 1988,
+      "Cyb": 94,
+      "Reg": 135,
+      "PolInd": 71
+    },
+    {
+      "year": 1989,
+      "Cyb": 104,
+      "Reg": 152,
+      "PolInd": 80
+    },
+    {
+      "year": 1990,
+      "Cyb": 122,
+      "Reg": 174,
+      "PolInd": 95
+    },
+    {
+      "year": 1991,
+      "Cyb": 140,
+      "Reg": 197,
+      "PolInd": 107
+    },
+    {
+      "year": 1992,
+      "Cyb": 158,
+      "Reg": 217,
+      "PolInd": 127
+    },
+    {
+      "year": 1993,
+      "Cyb": 186,
+      "Reg": 232,
+      "PolInd": 139
+    },
+    {
+      "year": 1994,
+      "Cyb": 208,
+      "Reg": 255,
+      "PolInd": 160
+    },
+    {
+      "year": 1995,
+      "Cyb": 225,
+      "Reg": 286,
+      "PolInd": 192
+    },
+    {
+      "year": 1996,
+      "Cyb": 239,
+      "Reg": 315,
+      "PolInd": 215
+    },
+    {
+      "year": 1997,
+      "Cyb": 263,
+      "Reg": 347,
+      "PolInd": 231
+    },
+    {
+      "year": 1998,
+      "Cyb": 294,
+      "Reg": 393,
+      "PolInd": 259
+    },
+    {
+      "year": 1999,
+      "Cyb": 332,
+      "Reg": 425,
+      "PolInd": 298
+    },
+    {
+      "year": 2000,
+      "Cyb": 368,
+      "Reg": 473,
+      "PolInd": 336
+    },
+    {
+      "year": 2001,
+      "Cyb": 409,
+      "Reg": 515,
+      "PolInd": 373
+    },
+    {
+      "year": 2002,
+      "Cyb": 441,
+      "Reg": 579,
+      "PolInd": 444
+    },
+    {
+      "year": 2003,
+      "Cyb": 490,
+      "Reg": 663,
+      "PolInd": 503
+    },
+    {
+      "year": 2004,
+      "Cyb": 547,
+      "Reg": 734,
+      "PolInd": 562
+    },
+    {
+      "year": 2005,
+      "Cyb": 598,
+      "Reg": 836,
+      "PolInd": 640
+    },
+    {
+      "year": 2006,
+      "Cyb": 673,
+      "Reg": 951,
+      "PolInd": 702
+    },
+    {
+      "year": 2007,
+      "Cyb": 745,
+      "Reg": 1075,
+      "PolInd": 789
+    },
+    {
+      "year": 2008,
+      "Cyb": 806,
+      "Reg": 1166,
+      "PolInd": 881
+    },
+    {
+      "year": 2009,
+      "Cyb": 859,
+      "Reg": 1295,
+      "PolInd": 972
+    },
+    {
+      "year": 2010,
+      "Cyb": 928,
+      "Reg": 1406,
+      "PolInd": 1070
+    },
+    {
+      "year": 2011,
+      "Cyb": 1025,
+      "Reg": 1507,
+      "PolInd": 1177
+    },
+    {
       "year": 2012,
-      "Cyb": 232,
-      "Reg": 90,
-      "PolInd": 53
+      "Cyb": 1113,
+      "Reg": 1628,
+      "PolInd": 1277
     },
     {
       "year": 2013,
-      "Cyb": 246,
-      "Reg": 99,
-      "PolInd": 66
+      "Cyb": 1185,
+      "Reg": 1747,
+      "PolInd": 1367
     },
     {
       "year": 2014,
-      "Cyb": 269,
-      "Reg": 109,
-      "PolInd": 78
+      "Cyb": 1263,
+      "Reg": 1862,
+      "PolInd": 1459
     },
     {
       "year": 2015,
-      "Cyb": 295,
-      "Reg": 120,
-      "PolInd": 90
+      "Cyb": 1343,
+      "Reg": 1969,
+      "PolInd": 1547
     },
     {
       "year": 2016,
-      "Cyb": 309,
-      "Reg": 130,
-      "PolInd": 97
+      "Cyb": 1416,
+      "Reg": 2064,
+      "PolInd": 1646
     },
     {
       "year": 2017,
-      "Cyb": 324,
-      "Reg": 148,
-      "PolInd": 115
+      "Cyb": 1513,
+      "Reg": 2188,
+      "PolInd": 1754
     },
     {
       "year": 2018,
-      "Cyb": 342,
-      "Reg": 161,
-      "PolInd": 125
+      "Cyb": 1585,
+      "Reg": 2285,
+      "PolInd": 1862
     },
     {
       "year": 2019,
-      "Cyb": 365,
-      "Reg": 180,
-      "PolInd": 141
+      "Cyb": 1661,
+      "Reg": 2388,
+      "PolInd": 1969
     },
     {
       "year": 2020,
-      "Cyb": 379,
-      "Reg": 197,
-      "PolInd": 155
+      "Cyb": 1730,
+      "Reg": 2482,
+      "PolInd": 2055
     },
     {
       "year": 2021,
-      "Cyb": 388,
-      "Reg": 213,
-      "PolInd": 163
+      "Cyb": 1787,
+      "Reg": 2552,
+      "PolInd": 2125
     },
     {
       "year": 2022,
-      "Cyb": 398,
-      "Reg": 218,
-      "PolInd": 167
+      "Cyb": 1828,
+      "Reg": 2599,
+      "PolInd": 2165
     },
     {
       "year": 2023,
-      "Cyb": 406,
-      "Reg": 230,
-      "PolInd": 174
+      "Cyb": 1860,
+      "Reg": 2625,
+      "PolInd": 2201
     },
     {
       "year": 2024,
-      "Cyb": 412,
-      "Reg": 235,
-      "PolInd": 175
+      "Cyb": 1882,
+      "Reg": 2653,
+      "PolInd": 2233
     },
     {
       "year": 2025,
-      "Cyb": 425,
-      "Reg": 241,
-      "PolInd": 176
+      "Cyb": 1911,
+      "Reg": 2671,
+      "PolInd": 2244
     }
   ],
   "decade_snapshots": [
@@ -324,9 +414,9 @@
         "Cyb": 4
       },
       "axis_distribution_cumul": {
-        "Reg": 2,
         "Cyb": 6,
-        "PolInd": 4
+        "PolInd": 4,
+        "Reg": 2
       },
       "n_edges_cumul": 9,
       "n_intra_axis_edges": {
@@ -367,14 +457,14 @@
       "n_new_nodes": 26,
       "n_total_nodes": 69,
       "axis_distribution_new": {
-        "PolInd": 2,
+        "Cyb": 11,
         "Reg": 9,
-        "Cyb": 11
+        "PolInd": 2
       },
       "axis_distribution_cumul": {
         "Cyb": 23,
-        "PolInd": 6,
-        "Reg": 17
+        "Reg": 17,
+        "PolInd": 6
       },
       "n_edges_cumul": 208,
       "n_intra_axis_edges": {
@@ -422,8 +512,8 @@
         "Cyb": 11
       },
       "axis_distribution_cumul": {
-        "Reg": 51,
         "Cyb": 49,
+        "Reg": 51,
         "PolInd": 24
       },
       "n_edges_cumul": 1209,
@@ -443,12 +533,12 @@
       "n_total_nodes": 213,
       "axis_distribution_new": {
         "Reg": 18,
-        "Cyb": 6,
-        "PolInd": 5
+        "PolInd": 5,
+        "Cyb": 6
       },
       "axis_distribution_cumul": {
-        "Reg": 69,
         "Cyb": 55,
+        "Reg": 69,
         "PolInd": 29
       },
       "n_edges_cumul": 1841,
@@ -470,8 +560,8 @@
         "Reg": 2
       },
       "axis_distribution_cumul": {
-        "Reg": 71,
         "Cyb": 55,
+        "Reg": 71,
         "PolInd": 29
       },
       "n_edges_cumul": 1867,
