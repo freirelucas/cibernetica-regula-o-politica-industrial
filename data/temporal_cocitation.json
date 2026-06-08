@@ -410,12 +410,12 @@
       "n_new_nodes": 9,
       "n_total_nodes": 26,
       "axis_distribution_new": {
-        "Reg": 1,
-        "Cyb": 4
+        "Cyb": 4,
+        "Reg": 1
       },
       "axis_distribution_cumul": {
-        "Cyb": 6,
         "PolInd": 4,
+        "Cyb": 6,
         "Reg": 2
       },
       "n_edges_cumul": 9,
@@ -437,9 +437,9 @@
         "Reg": 6
       },
       "axis_distribution_cumul": {
-        "Cyb": 12,
         "Reg": 8,
-        "PolInd": 4
+        "PolInd": 4,
+        "Cyb": 12
       },
       "n_edges_cumul": 46,
       "n_intra_axis_edges": {
@@ -462,8 +462,8 @@
         "PolInd": 2
       },
       "axis_distribution_cumul": {
-        "Cyb": 23,
         "Reg": 17,
+        "Cyb": 23,
         "PolInd": 6
       },
       "n_edges_cumul": 208,
@@ -483,13 +483,13 @@
       "n_total_nodes": 119,
       "axis_distribution_new": {
         "Cyb": 15,
-        "Reg": 13,
-        "PolInd": 8
+        "PolInd": 8,
+        "Reg": 13
       },
       "axis_distribution_cumul": {
-        "Cyb": 38,
         "Reg": 30,
-        "PolInd": 14
+        "PolInd": 14,
+        "Cyb": 38
       },
       "n_edges_cumul": 580,
       "n_intra_axis_edges": {
@@ -508,13 +508,13 @@
       "n_total_nodes": 178,
       "axis_distribution_new": {
         "Reg": 21,
-        "PolInd": 10,
-        "Cyb": 11
+        "Cyb": 11,
+        "PolInd": 10
       },
       "axis_distribution_cumul": {
-        "Cyb": 49,
         "Reg": 51,
-        "PolInd": 24
+        "PolInd": 24,
+        "Cyb": 49
       },
       "n_edges_cumul": 1209,
       "n_intra_axis_edges": {
@@ -532,14 +532,14 @@
       "n_new_nodes": 35,
       "n_total_nodes": 213,
       "axis_distribution_new": {
-        "Reg": 18,
         "PolInd": 5,
+        "Reg": 18,
         "Cyb": 6
       },
       "axis_distribution_cumul": {
-        "Cyb": 55,
+        "PolInd": 29,
         "Reg": 69,
-        "PolInd": 29
+        "Cyb": 55
       },
       "n_edges_cumul": 1841,
       "n_intra_axis_edges": {
@@ -560,9 +560,9 @@
         "Reg": 2
       },
       "axis_distribution_cumul": {
-        "Cyb": 55,
+        "PolInd": 29,
         "Reg": 71,
-        "PolInd": 29
+        "Cyb": 55
       },
       "n_edges_cumul": 1867,
       "n_intra_axis_edges": {

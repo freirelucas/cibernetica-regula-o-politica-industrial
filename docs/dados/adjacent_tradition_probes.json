@@ -411,7 +411,7 @@
   "schumpeter": {
    "query": "Joseph Schumpeter",
    "n_results": 50,
-   "n_overlap_with_corpus": 19,
+   "n_overlap_with_corpus": 23,
    "items": [
     {
      "oa_id": "W2095561982",
@@ -466,7 +466,7 @@
      "title": "Capitalism, Socialism, and Democracy.",
      "year": 1951,
      "cited_by": 3613,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -524,7 +524,7 @@
      "title": "Finance and Growth: Theory and Evidence",
      "year": 2004,
      "cited_by": 1678,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -640,7 +640,7 @@
      "title": "Technological revolutions and techno-economic paradigms",
      "year": 2009,
      "cited_by": 999,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -736,7 +736,7 @@
      "title": "Perspectives on Growth Theory",
      "year": 1994,
      "cited_by": 805,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     },
     {
@@ -1235,7 +1235,7 @@
   "complexity_economics": {
    "query": "complexity economics",
    "n_results": 50,
-   "n_overlap_with_corpus": 13,
+   "n_overlap_with_corpus": 14,
    "items": [
     {
      "oa_id": "W4239510810",
@@ -1640,7 +1640,7 @@
      "title": "Recent Developments in the Econometrics of Program Evaluation",
      "year": 2009,
      "cited_by": 4866,
-     "in_corpus": false,
+     "in_corpus": true,
      "axes_hit": []
     }
    ]

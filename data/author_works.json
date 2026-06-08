@@ -328,8 +328,7 @@
   "type": "CHAP",
   "abstract": "",
   "axes": [
-   "Cibernética",
-   "Instrumentos de governo"
+   "Cibernética"
   ],
   "seed_author": "Raúl Espejo"
  },
@@ -443,90 +442,6 @@
   "seed_author": "Raúl Espejo"
  },
  {
-  "oa_id": "W2506954441",
-  "title": "Digital Era Governance:",
-  "authors": [
-   "Patrick Dunleavy",
-   "Helen Margetts",
-   "Simon Bastow",
-   "Jane Tinkler"
-  ],
-  "year": 2006,
-  "doi": "10.1093/acprof:oso/9780199296194.001.0001",
-  "type": "BOOK",
-  "abstract": "Abstract Government information systems are big business (costing over 1% of GDP a year). They are critical to all aspects of public policy and governmental operations. Governments spend billions on them — for instance, the United Kingdom alone commits £14 billion a year to public sector information technology (IT) operations. Yet governments do not generally develop or run their own systems, instead relying on private sector computer services providers to run large, long-run contracts to provide IT. Some of the biggest companies in the world (IBM, EDS, Lockheed Martin, etc.) have made this a core market. This book shows how governments in some countries (the United States, Canada, and the Netherlands) have maintained much more effective policies than others (in the United Kingdom, Japan, and Australia). It shows how public managers need to retain and develop their own IT expertise and to carefully maintain well-contested markets if they are to deliver value for money in their dealings with the very powerful global IT industry. This book describes how a critical aspect of the modern state is managed, or in some cases mismanaged.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Helen Margetts"
- },
- {
-  "oa_id": "W1993166762",
-  "title": "The second wave of digital-era governance: a quasi-paradigm for government on the Web",
-  "authors": [
-   "Helen Margetts",
-   "Patrick Dunleavy"
-  ],
-  "year": 2013,
-  "doi": "10.1098/rsta.2012.0382",
-  "type": "JOUR",
-  "abstract": "Widespread use of the Internet and the Web has transformed the public management 'quasi-paradigm' in advanced industrial countries. The toolkit for public management reform has shifted away from a 'new public management' (NPM) approach stressing fragmentation, competition and incentivization and towards a 'digital-era governance' (DEG) one, focusing on reintegrating services, providing holistic services for citizens and implementing thoroughgoing digital changes in administration. We review the current status of NPM and DEG approaches, showing how the development of the social Web has already helped trigger a 'second wave' of DEG(2) changes. Web science and organizational studies are converging swiftly in public management and public services, opening up an extensive agenda for future redesign of state organization and interventions. So far, DEG changes have survived austerity pressures well, whereas key NPM elements have been rolled back.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Helen Margetts"
- },
- {
-  "oa_id": "W2103271327",
-  "title": "Digital Era Governance: IT Corporations, the State, and e-Government",
-  "authors": [
-   "Patrick Dunleavy",
-   "Helen Margetts",
-   "Simon Bastow",
-   "Jane Tinkler"
-  ],
-  "year": 2008,
-  "doi": "",
-  "type": "BOOK",
-  "abstract": "Government information systems are big business (costing over 1 per cent of GDP a year). They are critical to all aspects of public policy and governmental operations. Governments spend billions on them - for instance, the UK alone commits L14 billion a year to public sector IT operations. Yet governments do not generally develop or run their own systems, instead relying on private sector computer services providers to run large, long-run contracts to provide IT. Some of the biggest companies in the world (IBM, EDS, Lockheed Martin, etc) have made this a core market. The book shows how governments in some countries (the USA, Canada and Netherlands) have maintained much more effective policies than others (in the UK, Japan and Australia). It shows how public managers need to retain and develop their own IT expertise and to carefully maintain well-contested markets if they are to deliver value for money in their dealings with the very powerful global IT industry. This book describes how a critical aspect of the modern state is managed, or in some cases mismanaged. It will be vital reading for public managers, IT professionals, and business executives alike, as well as for students of modern government, business, and information studies.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Helen Margetts"
- },
- {
-  "oa_id": "W4387025480",
-  "title": "Data science, artificial intelligence and the third wave of digital era governance",
-  "authors": [
-   "Patrick Dunleavy",
-   "Helen Margetts"
-  ],
-  "year": 2023,
-  "doi": "10.1177/09520767231198737",
-  "type": "JOUR",
-  "abstract": "This article examines the model of digital era governance (DEG) in the light of the latest-wave of data-driven technologies, such as data science methodologies and artificial intelligence (labelled here DSAI). It identifies four key top-level macro-themes through which digital changes in response to these developments may be investigated. First, the capability to store and analyse large quantities of digital data obviates the need for data ‘compression’ that characterises Weberian-model bureaucracies, and facilitates data de-compression in data-intensive information regimes, where the capabilities of public agencies and civil society are both enhanced. Second, the increasing capability of robotic devices have expanded the range of tasks that machines extending or substituting workers’ capabilities can perform, with implications for a reshaping of state organisation. Third, DSAI technologies allow new options for partitioning state functions in ways that can maximise organisational productivity, in an ‘intelligent centre, devolved delivery’ model within vertical policy sectors. Fourth, within each tier of government, DSAI technologies offer new possibilities for ‘administrative holism’ - the horizontal allocation of power and functions between organisations, through state integration, common capacity and needs-based joining-up of services. Together, these four themes comprise a third wave of DEG changes, suggesting important administrative choices to be made regarding information regimes, state organisation, functional allocation and outsourcing arrangements, as well as a long-term research agenda for public administration, requiring extensive and detailed analysis.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Helen Margetts"
- },
- {
-  "oa_id": "W1578729938",
-  "title": "The second wave of digital era governance",
-  "authors": [
-   "Patrick Dunleavy",
-   "Helen Margetts"
-  ],
-  "year": 2010,
-  "doi": "",
-  "type": "JOUR",
-  "abstract": "Some of the most difficult issues in public management revolve around making strategic choices for the future in an era of rapid social, cultural and technological change. In previous work we drew a contrast between new public management (NPM) approaches, which predominated in the period 1980-­‐2002, and digital era governance (DEG) which grew fast in the 2000s. Since that time the rapid development of societal and technological uses of online processes has been matched by the seismic impact of the 2008 credit crunch and financial crisis, now mapping out as austerity regimes in many OECD countries. In this paper we review the current fortunes of NPM, which has not revived despite the pressure on public spending. By contrast, the first wave of digital-­‐era governance changes have flourished and the importance of key DEG themes has increased– specifically reintegrating government services, pushing towards holistic delivery to clients and responding to the digitalization wave in public services. We also argue for the emergence of an influential ‘second wave’ of digital-­‐era changes inside government, responding to the advent of the social web, cloud computing, apps development and many other recent phenomena moving advanced industrial societies further towards an online civilization.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Helen Margetts"
- },
- {
   "oa_id": "W2500251709",
   "title": "Transparency and Digital Government",
   "authors": [
@@ -537,38 +452,7 @@
   "type": "CHAP",
   "abstract": "Digital government refers to the use by government of information and communication technology, including the Internet, both internally and to interact with citizens, businesses, and other governments. This chapter briefly outlines the development of digital government. It suggests three key ways in which digital government could be more transparent than government of the ‘pre-digital’ era and three ways in which it might become less transparent. The chapter goes on to identify some ways in which these ‘barriers’ to transparency might be overcome, such as the use of electronic tools like search engines and software. Finally, it discusses the strong variations in the potential for digitally aided transparency across countries, within countries, and within groups of Internet users and non-users. Some non-democratic states have resisted the potential of e-government to promote transparency, and have been more interested in trying to restrict usage of the Internet within their boundaries. This chapter investigates some of these variations in digitally aided transparency.",
   "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Helen Margetts"
- },
- {
-  "oa_id": "W2270868360",
-  "title": "Design principles for essentially digital governance",
-  "authors": [
-   "Patrick Dunleavy",
-   "Helen Margetts"
-  ],
-  "year": 2015,
-  "doi": "",
-  "type": "JOUR",
-  "abstract": "Governments and citizens operate in a digital environment, leaving digital trails whatever they do and wherever they go.These trails generate huge quantities of information about themselves, each other and any interactions they have.In this context, the most important elements of an organization that deals with people are the information it can access and the intelligence provided by analysis of that information.Information and intelligence generate capacity for innovation, efficiency and the agility to adapt to a rapidly changing environment.These statements are as true for public as for private organizations; most governments in the 21 st century industrialised world and beyond are reliant on a large digital presence and complex network of large-scale information systems for administrative operations and policy-making.These systems go beyond being critical for policy implementation to shaping the whole context within which policy and service delivery choices are made, either facilitating innovation or constraining policy options.Simply put, many or even most government departments and agencies 'are' their information systems and digital presence -the only part of them with which many citizens will interact (Margetts, 1999;Dunleavy, Margetts et al, 2008, Steinberg, 2012).Yet those that direct, manage and study government can find it bewildering to negotiate this rapidly changing information environment or to prioritise the interactions and feedback loops that would capitalise on the potential of the internet and digital technologies for public policy solutions and service delivery, particularly in the prolonged period of austerity following the financial crash of 2008.Consequently, the online worlds of governments and citizens remain strangely separate and distinct.The state can lag behind technological trends endangering its operation.As driverless cars become a reality, for example, the technology available to service them far outstrips the development of the legal framework to govern their use or allocate responsibility, for example when two driverless cars crash.This paper puts forward an 'Essentially Digital' model of Governance (EDGE) to navigate this changed world, a model of bureaucracy where finally digital technologies take centre stage in government organization.It draws on the authors' earlier exploration of Digital Era Governance (Dunleavy, Margetts et al, 2006, 2008, 2010, 2013) and over 25 years of research into digital government and policy-making to investigate the relationship between the internet, politics and public policy.The Essentially Digital Governance (EDGE) model places digital technologies at the centre of government, from which they have so long been marginalised (Margetts, 1999; Dunleavy and Margetts, 2006;Pollitt, 2011), starting from the digital baseline that ten years of DEG has provided and putting forward principles for the design of the state in the era of social media, cloud computing, robotization and big data.It identifies the organizational cultures that can foster EDGE practices, most originating outside of government, in visions and practices that derive from the normative views and theoretical models that have grown up around the internet and information technology, from open source to digital rights and even the anarchism and cyber-utopianism that characterised the early days of the internet.It provides practical principles for the design of governmental organization and service delivery, and for the normative choices that confront policy-makers in the digital era.The paper is structured as follows.First, we look at the relationship between technology and bureaucracy in public management reformr and, second, how digital cultures have grown up in the information state.Third we make the case for nine 'Do' principles and 'Choice' principles to guide the design of 'Essentially Digital Governance'.First, five 'Do' principles provide the framework for administrative and service design: D1.Deliver public services for free D2.Use already existing digital information D3.Do it once D4.Grow scalable services in competition D5.Isocratic (DIY) administration Second, four 'Choice' principles lay out a normative framework for policy-making and service delivery in the age of social media and big data: C1.Value equality of outcome over process C2.Provide formal rights and real redress C3. 'Keep the state nodal' obligation C4.Experiential learning",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Helen Margetts"
- },
- {
-  "oa_id": "W4226076751",
-  "title": "Rethinking AI for Good Governance",
-  "authors": [
-   "Helen Margetts"
-  ],
-  "year": 2022,
-  "doi": "10.1162/daed_a_01922",
-  "type": "JOUR",
-  "abstract": "Abstract This essay examines what AI can dofor government, specifically through three generic tools at the heart of governance: detection, prediction, and data-driven decision-making. Public sector functions, such as resource allocation and the protection of rights, are more normatively loaded than those of firms, and AI poses greater ethical challenges than earlier generations of digital technology, threatening transparency, fairness, and accountability. The essay discusses how AI might be developed specifically for government, with a public digital ethos to protect these values. Three moves that could maximize the transformative possibilities for a distinctively public sector AI are the development of government capacity to foster innovation through AI; the building of integrated and generalized models for policy-making; and the detection and tackling of structural inequalities. Combined, these developments could offer a model of data-intensive government that is more efficient, ethical, fair, prescient, and resilient than ever before in administrative history.",
-  "axes": [
-   "Instrumentos de governo"
+   "Cibernética"
   ],
   "seed_author": "Helen Margetts"
  },
@@ -584,56 +468,9 @@
   "type": "JOUR",
   "abstract": "",
   "axes": [
-   "Instrumentos de governo"
+   "Cibernética"
   ],
   "seed_author": "Helen Margetts"
- },
- {
-  "oa_id": "W2008978319",
-  "title": "The Europeanisation of Sub-national Governance",
-  "authors": [
-   "Peter John"
-  ],
-  "year": 2000,
-  "doi": "10.1080/00420980050011136",
-  "type": "JOUR",
-  "abstract": "",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Peter John"
- },
- {
-  "oa_id": "W2124267344",
-  "title": "Political leadership in the new urban governance: Britain and France compared",
-  "authors": [
-   "Peter John",
-   "Alistair Cole"
-  ],
-  "year": 1999,
-  "doi": "10.1080/03003939908433969",
-  "type": "JOUR",
-  "abstract": "(1999). Political leadership in the new urban governance: Britain and France compared. Local Government Studies: Vol. 25, Renewing Local Democracy? The Modernisation Agenda in British Local Government, pp. 98-115.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Peter John"
- },
- {
-  "oa_id": "W2130676853",
-  "title": "Urban Regimes and Local Governance in Britain and France",
-  "authors": [
-   "Peter John",
-   "Alistair Cole"
-  ],
-  "year": 1998,
-  "doi": "10.1177/107808749803300307",
-  "type": "JOUR",
-  "abstract": "Rather than weakening regime theory, comparative analysis illuminates its central theoretical insights. The cases of Leeds (United Kingdom) and Lille (France) show cities in contrasting geographical, cultural, and institutional contexts developing regime like local polities through business participation in a wide range of public-sector decisions. The five special noninstitutional factors promoting regimes are local business ownership, business integration, large metropolitan context, and economic advantage or disadvantage. The distinctiveness of these cities in their countries is an indication of the degree of policy learning and capacity generation that has taken place.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Peter John"
  },
  {
   "oa_id": "W2120106358",
@@ -714,21 +551,6 @@
   "seed_author": "Dani Rodrik"
  },
  {
-  "oa_id": "W2495767131",
-  "title": "Employeeism: Corporate Governance and Employee Share Ownership in Transitional Economies",
-  "authors": [
-   "Domenico Mario Nuti"
-  ],
-  "year": 1997,
-  "doi": "10.1017/cbo9780511572012.006",
-  "type": "CHAP",
-  "abstract": "Abstract Under the heading of “corporate governance” we include problems arising when an enterprise is owned by more than one owner and managed by a hired managerial group, and also the rules and incentives appropriate to make it function as efficiently and impartially as if it were owned and run by a single owner-entrepreneur. Throughout this essay we shall refer to co-owners as shareholders, thus implicitly referring to joint stock companies; unless otherwise stated, decisional (voting) powers are presumed to be distributed in proportion to ownership. Mutatis mutandis, identical considerations apply to any form of enterprise co-ownership and attribution of decisional powers.",
-  "axes": [
-   "Instrumentos de governo"
-  ],
-  "seed_author": "Domenico Mario Nuti"
- },
- {
   "oa_id": "W2991167753",
   "title": "Market socialism: the model that might have been but never was",
   "authors": [
@@ -772,23 +594,6 @@
   "abstract": "",
   "axes": [
    "Política industrial"
-  ],
-  "seed_author": "Domenico Mario Nuti"
- },
- {
-  "oa_id": "W2162790888",
-  "title": "The Impact of Investment Funds on Corporate Governance in Mass Privatization Schemes: Czech Republic, Poland and Slovenia",
-  "authors": [
-   "Saul Estrin",
-   "Domenico Mario Nuti",
-   "Milicia Uvalic"
-  ],
-  "year": 2000,
-  "doi": "10.1023/a:1009531429918",
-  "type": "JOUR",
-  "abstract": "",
-  "axes": [
-   "Instrumentos de governo"
   ],
   "seed_author": "Domenico Mario Nuti"
  },
