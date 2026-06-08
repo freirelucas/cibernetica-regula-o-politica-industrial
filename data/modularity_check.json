@@ -1,5 +1,5 @@
 {
-  "_doc": "verificação reprodutível do achado central (§00): modularidade da partição por eixo vs. modelo nulo de configuração (preserva grau). Só nós classificados.",
+  "_doc": "verificação reprodutível do achado central (§00): modularidade da partição por eixo vs. modelo nulo de configuração; + bootstrap de robustez. Só nós classificados.",
   "rede": "network_4axis.json",
   "n_nos_total": 260,
   "n_nos_sem_eixo": 126,
@@ -10,8 +10,8 @@
     "n_arestas": 1553,
     "Q_obs": 0.509,
     "Q_rand": -0.006,
-    "Q_sd": 0.011,
-    "Q_z": 47.5,
+    "Q_sd": 0.01,
+    "Q_z": 49.6,
     "n_iter": 100,
     "n_conectores_significativos": 0
   },
@@ -19,10 +19,20 @@
     "n_nos": 134,
     "n_arestas": 1761,
     "Q_obs": 0.452,
-    "Q_rand": -0.007,
+    "Q_rand": -0.004,
     "Q_sd": 0.009,
-    "Q_z": 50.9,
+    "Q_z": 51.9,
     "n_iter": 100,
     "n_conectores_significativos": 1
+  },
+  "robustez_bootstrap_3eixos": {
+    "B": 300,
+    "frac_mantida": 0.8,
+    "Q_medio": 0.504,
+    "Q_sd": 0.02,
+    "Q_ic95": [
+      0.455,
+      0.542
+    ]
   }
 }
