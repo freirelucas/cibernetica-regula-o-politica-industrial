@@ -16,8 +16,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Instalar pytest
-        run: pip install pytest
+      - name: Instalar pytest + stack de cálculo (numpy/scipy/networkx)
+        # H5: os testes unitários da integração (ΔKf) recomputam em fixtures
+        # sintéticas minúsculas e exigem o stack de cálculo — numpy (pseudo-
+        # inverso do Laplaciano), networkx (grafo + Laplaciano) e scipy
+        # (matriz esparsa do laplacian_matrix). São deps CORE do requirements
+        # (não o modelo semântico), então a CI segue offline e sem budget.
+        run: pip install pytest "numpy>=1.24" "scipy>=1.11" "networkx>=3.0"
       - name: Reconstruir derivados do cache (offline, sem rede / sem budget)
         # PR-5/PR-8: regenera o que falta (ex.: data/author_network.json, gitignored
         # no PR-3) e reconstrói o site SÓ do cache versionado — sem tocar a rede.
