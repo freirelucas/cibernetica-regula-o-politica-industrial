@@ -238,15 +238,15 @@ def rayyan_works_js(works):
     import re
     prio = data_io.load_data("bridge_priority.json", required=False).get("by_oa_id", {})
     hobc = data_io.load_data("higher_order_bc.json", required=False).get("by_oa_id", {})
-    # PR-7→modelagem: preenche o gancho da solidez tripla por OBRA a partir das pontes
-    # SÓLIDAS (data/solidity_bridges.json). Uma obra herda o melhor escore das pontes
-    # sólidas que a contêm; quem não está em ponte sólida fica None (mostra "—").
+    # PR-7→modelagem (H5): preenche o gancho da integração por OBRA a partir dos ALVOS DE
+    # AGENDA (data/solidity_bridges.json). Uma obra herda o melhor escore dos alvos que a
+    # contêm (estrutural = ΔKf, condutância real); quem não está em alvo fica None (mostra "—").
     sol = data_io.load_data("solidity_bridges.json", required=False)
     solm = {}
-    for c in (sol.get("solidas") if isinstance(sol, dict) else None) or []:
+    for c in (sol.get("agenda") if isinstance(sol, dict) else None) or []:
         for m in c.get("membros", []):
             cur = solm.setdefault(m, {"estrutural": 0.0, "latente": 0.0, "semantico": 0.0})
-            cur["estrutural"] = round(max(cur["estrutural"], c.get("design_z") or 0), 3)
+            cur["estrutural"] = round(max(cur["estrutural"], c.get("integracao") or 0), 3)
             cur["latente"] = round(max(cur["latente"], c.get("latente") or 0), 4)
             cur["semantico"] = round(max(cur["semantico"], c.get("semantico") or 0), 4)
     out = []

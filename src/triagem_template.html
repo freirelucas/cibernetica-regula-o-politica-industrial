@@ -53,7 +53,7 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 .tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.5rem}
 .tag{font-family:var(--mono);font-size:9.5px;padding:.12rem .45rem;border-radius:20px;color:#fff}
 .tag.role{background:none;color:var(--muted);border:1px solid var(--border-s);padding:.1rem .45rem}
-/* PR-7 — faixa de sinais por obra (prioridade, HO-BC, e os 3 espaços da solidez tripla) */
+/* PR-7 — faixa de sinais por obra (prioridade, HO-BC, e os 3 escores de integração) */
 .sig{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.5rem;font-family:var(--mono);font-size:9.5px}
 .sig span{border:1px solid var(--border-s);border-radius:4px;padding:.1rem .4rem;color:var(--muted)}
 .sig b{color:var(--ink);font-weight:500}
@@ -132,7 +132,7 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
     <button class="chip" data-preset="orgcib">Cibernética organizacional</button>
     <button class="chip" data-preset="cplx">4º eixo · complexidade</button>
     <button class="chip" data-preset="autores">Obra dos autores-semente</button>
-    <button class="chip" data-preset="solidez" title="obras que passam nos três critérios de solidez (estrutural · latente · semântico) — preenchido na sessão de modelagem">Passa nos três</button>
+    <button class="chip" data-preset="solidez" title="obras em alvos de construção da agenda — alta integração (condutância real, ΔKf) e semanticamente plausíveis">Alvo de agenda</button>
     <button class="chip" data-preset="indec">Indecisas</button>
   </span>
 </div>
@@ -143,7 +143,7 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
     <div>
       <p><b>Limiares de rigor × volume.</b> Os controles do painel filtram por <b>prioridade de ponte</b>, <b>intermediação de ordem superior (HO-BC)</b>, <b>nº de eixos tocados</b> e <b>é-Brasil</b>. A contagem ao vivo mostra quantas obras sobrevivem aos limiares — para calibrar o esforço de leitura dos três revisores antes de exportar.</p>
       <p><b>Composição.</b> O painel mostra a cobertura por eixo, o nº de pontes e a divisão Brasil × global do conjunto que passou — a missão pede solidez para as <b>três</b> comunidades, não para a média; aqui dá para ver se alguma ficou de fora.</p>
-      <p><b>Solidez tripla (em construção).</b> Cada obra reserva espaço para três escores — estrutural, latente e semântico — que a sessão de modelagem vai preencher. Por ora, cada cartão já exibe os sinais que existem: prioridade de ponte e HO-BC. O atalho <i>Passa nos três</i> fica pronto para quando os escores chegarem.</p>
+      <p><b>Integração por condutância real.</b> Cada obra que entra num <i>alvo de construção</i> exibe três escores — <b>estrutural</b> (ΔKf: quanto realizar o elo reduz a resistência efetiva entre os silos), <b>latente</b> (tendência de fechamento) e <b>semântico</b> (proximidade na faixa intermediária). O atalho <i>Alvo de agenda</i> filtra esses alvos. Achado honesto: contra um nulo casado em grau, nenhum elo supera o acaso — a agenda diz <i>onde construir</i>, não certifica ponte latente.</p>
       <p><b>De onde vêm as obras.</b> A síntese reúne o <b>núcleo global</b> (mapeamento no OpenAlex: obras-semente, mais citadas, obras-ponte, rajadas, belas adormecidas e a sondagem do 4º eixo) e o <b>corpus brasileiro</b> (revisão de Claucia Faganello). Cada obra traz seus <b>eixos</b> e seu <b>papel</b>.</p>
       <p><b>Curadoria por tamanho (30 / 60 / 90 / 120).</b> Mostram as <b>N obras de maior prioridade do filtro atual</b> (ranqueadas) para revisar e exportar — ponto de partida transparente, não veredito; a triagem completa segue no Rayyan.</p>
     </div>
@@ -287,7 +287,7 @@ __JS_DATA__
     const c=document.getElementById('thCount');
     c.innerHTML = `<b>${base.length}</b> obras entrariam na leitura/exportação `
       + `(limiares + filtros) · de <b>${works.length}</b> no total`
-      + (fSolidez && !base.length ? ` — <span class="hint">a solidez tripla é preenchida na sessão de modelagem</span>` : ``);
+      + (fSolidez && !base.length ? ` — <span class="hint">nenhum alvo de agenda no filtro atual</span>` : ``);
     const comp=document.getElementById('comp');
     const byAxis={}; axes.forEach(a=>byAxis[a]=0);
     let pontes=0, br=0, gl=0;
