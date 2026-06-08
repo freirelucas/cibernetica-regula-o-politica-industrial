@@ -267,7 +267,8 @@ KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 80 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6306)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 80 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6306); ponte de ordem superior=HO centrality=0.101 (B.4 random walks)
 ER  - 
 
 TY  - CHAP
@@ -337,7 +338,8 @@ KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 100 (XGI); ponte a construir=top-25 de bridge_priority (score=0.582)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 100 (XGI); ponte a construir=top-25 de bridge_priority (score=0.582); ponte de ordem superior=HO centrality=0.168 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -352,7 +354,8 @@ KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 153 (XGI); ponte a construir=top-25 de bridge_priority (score=0.727)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 153 (XGI); ponte a construir=top-25 de bridge_priority (score=0.727); ponte de ordem superior=HO centrality=0.191 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -368,8 +371,9 @@ KW  - papel: cibernética organizacional
 KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
+KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 111 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5965)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 111 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5965); ponte de ordem superior=HO centrality=0.103 (B.4 random walks)
 ER  - 
 
 TY  - BOOK

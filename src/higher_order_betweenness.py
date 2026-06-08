@@ -133,8 +133,8 @@ def exact_betweenness_clique_expansion(edges, corpus_nodes):
         e_in_corpus = [n for n in e if n in corpus_nodes]
         for i, a in enumerate(e_in_corpus):
             for b in e_in_corpus[i + 1:]:
-                # peso = 1 / (tamanho da hiperaresta - 1), normaliza pelo
-                # tamanho da clique (hiperarestas grandes têm peso menor por aresta)
+                # peso = 1 / (tamanho da hiperaresta - 1): hiperarestas grandes
+                # (bibliografias promíscuas) contribuem MENOS por par cocitado.
                 w = 1.0 / max(len(e_in_corpus) - 1, 1)
                 if G.has_edge(a, b):
                     G[a][b]["weight"] += w
@@ -142,8 +142,13 @@ def exact_betweenness_clique_expansion(edges, corpus_nodes):
                     G.add_edge(a, b, weight=w)
         if len(e_in_corpus) >= 2:
             n_cliques += 1
-    # Brandes betweenness, normalizado
-    bc = nx.betweenness_centrality(G, normalized=True, weight=None)
+    # H2 — usar o peso 1/(s-1) DE FATO (antes era computado e descartado por
+    # weight=None). O peso acumulado é uma FORÇA de laço (alta = pares cocitados em
+    # bibliografias enxutas); a betweenness de Brandes percorre por DISTÂNCIA, então
+    # convertemos força->distância (laço forte = caminho curto): distância = 1/força.
+    for _a, _b, _d in G.edges(data=True):
+        _d["distance"] = 1.0 / _d["weight"]
+    bc = nx.betweenness_centrality(G, normalized=True, weight="distance")
     return bc, n_cliques
 
 
