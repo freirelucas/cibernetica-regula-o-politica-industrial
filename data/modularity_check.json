@@ -1,0 +1,28 @@
+{
+  "_doc": "verificação reprodutível do achado central (§00): modularidade da partição por eixo vs. modelo nulo de configuração (preserva grau). Só nós classificados.",
+  "rede": "network_4axis.json",
+  "n_nos_total": 260,
+  "n_nos_sem_eixo": 126,
+  "pct_sem_eixo": 48.5,
+  "nota_H1": "nós sem eixo são referências cocitadas que o vocabulário não classifica (título sem abstract etc.); ficam de fora da partição, não viram comunidade.",
+  "tres_eixos": {
+    "n_nos": 127,
+    "n_arestas": 1553,
+    "Q_obs": 0.509,
+    "Q_rand": -0.006,
+    "Q_sd": 0.011,
+    "Q_z": 47.5,
+    "n_iter": 100,
+    "n_conectores_significativos": 0
+  },
+  "quatro_eixos_com_Cplx": {
+    "n_nos": 134,
+    "n_arestas": 1761,
+    "Q_obs": 0.452,
+    "Q_rand": -0.007,
+    "Q_sd": 0.009,
+    "Q_z": 50.9,
+    "n_iter": 100,
+    "n_conectores_significativos": 1
+  }
+}
