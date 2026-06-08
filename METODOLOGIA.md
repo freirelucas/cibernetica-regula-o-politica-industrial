@@ -20,6 +20,16 @@ de cocitação **intra-eixo** sobe 0,74 (1970s) → **0,83** (1980s) → 0,90 �
 sub-resultado: as três tradições já são **copresentes no tempo desde 1979** (não 2005) —
 ou seja, coexistir no tempo **não** é citar-se.
 
+**Verificação reprodutível** (`src/modularity_check.py` → `data/modularity_check.json`).
+Recomputa o achado dos silos com o **mesmo modelo nulo** do relatório (configuração,
+preserva o grau): na rede do explorador, a partição por eixo tem **Q = 0,51** contra ≈0
+no acaso (**z ≈ 47**) e **0 obras conectoras** significativas — os eixos são silos reais,
+não artefato de amostragem. *(O §00 cita Q≈0,59 da rede interna de 600 nós do funil, que
+não é exportada; 0,51 é o número **reprodutível a partir do repositório** — mesma
+conclusão.)* **Ressalva H1, agora quantificada:** **48,5% dos nós cocitados ficam sem
+eixo** — referências que o vocabulário não classifica — e são deixados **fora** da
+partição (não viram uma "comunidade", o que distorceria Q para baixo).
+
 ## 1. Crítica das heurísticas (o que cada uma esconde)
 
 | # | Heurística | O que sugere | Como é construída | Onde a leitura ingênua falha | Tratamento |
