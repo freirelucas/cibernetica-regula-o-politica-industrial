@@ -1,21 +1,61 @@
 chave,id_openalex,referencia
-Beer_Brain_1972,W2048086870,Beer (1972) Brain of the Firm
-Beer_Heart_1979,W1566478880,Beer (1979) Heart of Enterprise
-Beer_Diagnosing_1985,W2154683088,Beer (1985) Diagnosing the System
-Ashby_1956,W2325487953,Ashby (1956) Intro to Cybernetics
-Espejo_Walker_2011,W4244612406,Espejo & Reyes (2011) Org. Systems
-Hood_1983,W1601629960,Hood (1983) Tools of Government
-Hood_Margetts_2007,W2126563689,Hood & Margetts (2007) Tools Digital Age
-Margetts_2024,W4386803846,Margetts (2024) Rediscovering Nodality
-Rodrik_2004,W3124879925,Rodrik (2004) Industrial Policy 21C
-Mazzucato_2013,W1553746973,Mazzucato (2013) Entrepreneurial State
-Lange_Cybernetics_1971,https://openalex.org/W4230710385,Lange & Nuti (1971) Introduction to Economic Cybernetics
-Lange_Socialism_1938,https://openalex.org/W3130930004,Lange (1938) On the Economic Theory of Socialism
-Lange_Wholes_1966,https://openalex.org/W2063282131,Lange & Boulding (1966) Wholes and Parts
-Wiener_Cybernetics_1948,https://openalex.org/W1527571715,Wiener (1948) Cybernetics or Control and Communication in the Animal and the Machine
-Maturana_Varela_Autopoiesis_1980,https://openalex.org/W1916207017,Maturana & Varela (1980) Autopoiesis and Cognition: The Realization of the Living
-vonFoerster_2ndOrder_2004,https://openalex.org/W1997780809,von Foerster (2004) Second-order cybernetics: historical introduction
-Lascoumes_LeGales_2010,https://openalex.org/W2076248782,Lascoumes & Le Galès (2010) Exploring Governance: Policy Instruments Approach
-Salamon_Tools_2001,https://openalex.org/W2258876734,Salamon (2001) Tools of Government
-Chang_Kicking_2002,https://openalex.org/W1919820734,Chang (2002) Kicking Away the Ladder: Development Strategy in Historical Perspective
-Evans_EmbeddedAutonomy_1995,https://openalex.org/W2912536286,Evans (1995) Embedded Autonomy: States and Industrial Transformation
+W2048086870,W2048086870,Beer · Brain of the Firm
+W1566478880,W1566478880,Beer · Heart of Enterprise
+W2154683088,W2154683088,Beer · Diagnosing the System
+W2325487953,W2325487953,Ashby · Intro to Cybernetics
+W4244612406,W4244612406,Espejo & Reyes · Org. Systems
+W1601629960,W1601629960,Hood · Tools of Government
+W2126563689,W2126563689,Hood & Margetts · Digital Age
+W4386803846,W4386803846,Margetts · Nodality
+W3124879925,W3124879925,Rodrik · Industrial Policy 21C
+W1553746973,W1553746973,Mazzucato · Entrepreneurial State
+W4230710385,W4230710385,Lange · Economic Cybernetics
+W3130930004,W3130930004,Lange · Economic Theory of Socialism
+W2063282131,W2063282131,Lange · Wholes and Parts
+W1995875735,W1995875735,Shannon · Mathematical Theory of Communication
+W1527571715,W1527571715,Wiener · Cybernetics
+W2099069868,W2099069868,von Bertalanffy · General System Theory
+W2101157755,W2101157755,Senge · The Fifth Discipline
+W1492856410,W1492856410,"Checkland · Systems Thinking, Systems Practice"
+W2493894436,W2493894436,Maturana & Varela · Autopoiesis and Cognition
+W597091629,W597091629,Forrester · Principles of Systems
+W1601944394,W1601944394,Churchman · The Systems Approach
+W2988934653,W2988934653,Sterman · Business Dynamics
+W2037306909,W2037306909,Jackson · Systems Thinking (Creative Holism)
+W2017802748,W2017802748,Wade · Governing the Market
+W2012275303,W2012275303,Evans · Embedded Autonomy
+W1979968159,W1979968159,Hirschman · Strategy of Economic Development
+W1490995146,W1490995146,Prebisch · Economic Development of Latin America
+W2140409505,W2140409505,"Schumpeter · Capitalism, Socialism and Democracy"
+W1535129021,W1535129021,Dosi · Technological Paradigms and Trajectories
+W1576605329,W1576605329,Nelson · National Innovation Systems
+W2120106358,W2120106358,Hausmann & Rodrik · Economic Development as Self-Discovery
+W2064927380,W2064927380,Hidalgo & Hausmann · The Product Space
+W1491554624,W1491554624,Abernathy & Utterback · Patterns of Industrial Innovation
+W2013386523,W2013386523,Porter · The Competitive Advantage of Nations
+W1999997471,W1999997471,Hekkert · Functions of Innovation Systems
+W4302604455,W4302604455,Johnson · MITI and the Japanese Miracle
+W2483843983,W2483843983,Chang · Kicking Away the Ladder
+W2080485486,W2080485486,Gerschenkron · Economic Backwardness
+W3121405033,W3121405033,Lin · New Structural Economics
+W1502659095,W1502659095,Reinert · How Rich Countries Got Rich
+W4293229472,W4293229472,Stigler · Economic Regulation
+W2102461236,W2102461236,Peltzman · General Theory of Regulation
+W2107431528,W2107431528,Posner · Theories of Economic Regulation
+W1516216046,W1516216046,Laffont & Tirole · Incentives in Regulation
+W1608766426,W1608766426,Averch & Johnson · Regulatory Constraint
+W4242178059,W4242178059,Demsetz · Why Regulate Utilities
+W2171753429,W2171753429,Majone · Rise of the Regulatory State
+W2155153551,W2155153551,Levi-Faur · Regulatory Capitalism
+W4388316013,W4388316013,Ayres & Braithwaite · Responsive Regulation
+W3170187706,W3170187706,"Vogel · Freer Markets, More Rules"
+W2054422547,W2054422547,Wilson · Politics of Regulation
+W1581687645,W1581687645,Moran · British Regulatory State
+W2569986058,W2569986058,Bardach & Kagan · Going by the Book
+W4388120068,W4388120068,Gunningham · Smart Regulation
+W3121399009,W3121399009,Black · Regulatory Legitimacy
+W1978648732,W1978648732,Weingast & Moran · Bureaucratic Discretion
+W2163458930,W2163458930,Majone · Regulatory State Legitimacy
+W2159914272,W2159914272,Mueller & Pereira · Regulatory Agencies Brazil
+W2125441319,W2125441319,Prado · Independent Agencies Brazil
+W2154631061,W2154631061,Pacheco · Regulação no Brasil

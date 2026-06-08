@@ -1,1150 +1,1440 @@
 {
-  "generated": "2026-05-25 17:33",
-  "corpus_size": 817,
-  "n_seeds": 20,
-  "n_axes_1": 790,
-  "n_axes_2": 26,
-  "n_axes_3": 10,
-  "pct_with_refs": 94.9,
+  "generated": "2026-06-08 03:15",
+  "corpus_size": 6340,
+  "n_seeds": 60,
+  "n_axes_1": 5762,
+  "n_axes_2": 511,
+  "n_axes_3": 67,
+  "pct_with_refs": 97.3,
   "cocit_nodes": 600,
-  "cocit_edges": 11209,
-  "coupling_nodes": 769,
-  "coupling_edges": 28123,
-  "n_clusters_cc": 158,
-  "n_clusters_bc": 54,
+  "cocit_edges": 21396,
+  "coupling_nodes": 6151,
+  "coupling_edges": 999464,
+  "n_clusters_cc": 589,
+  "n_clusters_bc": 60,
   "n_pivotal": 1,
-  "n_bursts": 760,
-  "n_bursting_refs": 579,
+  "n_bursts": 1426,
+  "n_bursting_refs": 599,
   "seeds": [
     {
-      "key": "Beer_Brain_1972",
+      "key": "W2048086870",
       "id": "W2048086870",
-      "ref": "Beer (1972) Brain of the Firm"
+      "ref": "Beer · Brain of the Firm"
     },
     {
-      "key": "Beer_Heart_1979",
+      "key": "W1566478880",
       "id": "W1566478880",
-      "ref": "Beer (1979) Heart of Enterprise"
+      "ref": "Beer · Heart of Enterprise"
     },
     {
-      "key": "Beer_Diagnosing_1985",
+      "key": "W2154683088",
       "id": "W2154683088",
-      "ref": "Beer (1985) Diagnosing the System"
+      "ref": "Beer · Diagnosing the System"
     },
     {
-      "key": "Ashby_1956",
+      "key": "W2325487953",
       "id": "W2325487953",
-      "ref": "Ashby (1956) Intro to Cybernetics"
+      "ref": "Ashby · Intro to Cybernetics"
     },
     {
-      "key": "Espejo_Walker_2011",
+      "key": "W4244612406",
       "id": "W4244612406",
-      "ref": "Espejo & Reyes (2011) Org. Systems"
+      "ref": "Espejo & Reyes · Org. Systems"
     },
     {
-      "key": "Hood_1983",
+      "key": "W1601629960",
       "id": "W1601629960",
-      "ref": "Hood (1983) Tools of Government"
+      "ref": "Hood · Tools of Government"
     },
     {
-      "key": "Hood_Margetts_2007",
+      "key": "W2126563689",
       "id": "W2126563689",
-      "ref": "Hood & Margetts (2007) Tools Digital Age"
+      "ref": "Hood & Margetts · Digital Age"
     },
     {
-      "key": "Margetts_2024",
+      "key": "W4386803846",
       "id": "W4386803846",
-      "ref": "Margetts (2024) Rediscovering Nodality"
+      "ref": "Margetts · Nodality"
     },
     {
-      "key": "Rodrik_2004",
+      "key": "W3124879925",
       "id": "W3124879925",
-      "ref": "Rodrik (2004) Industrial Policy 21C"
+      "ref": "Rodrik · Industrial Policy 21C"
     },
     {
-      "key": "Mazzucato_2013",
+      "key": "W1553746973",
       "id": "W1553746973",
-      "ref": "Mazzucato (2013) Entrepreneurial State"
+      "ref": "Mazzucato · Entrepreneurial State"
     },
     {
-      "key": "Lange_Cybernetics_1971",
-      "id": "https://openalex.org/W4230710385",
-      "ref": "Lange & Nuti (1971) Introduction to Economic Cybernetics"
+      "key": "W4230710385",
+      "id": "W4230710385",
+      "ref": "Lange · Economic Cybernetics"
     },
     {
-      "key": "Lange_Socialism_1938",
-      "id": "https://openalex.org/W3130930004",
-      "ref": "Lange (1938) On the Economic Theory of Socialism"
+      "key": "W3130930004",
+      "id": "W3130930004",
+      "ref": "Lange · Economic Theory of Socialism"
     },
     {
-      "key": "Lange_Wholes_1966",
-      "id": "https://openalex.org/W2063282131",
-      "ref": "Lange & Boulding (1966) Wholes and Parts"
+      "key": "W2063282131",
+      "id": "W2063282131",
+      "ref": "Lange · Wholes and Parts"
     },
     {
-      "key": "Wiener_Cybernetics_1948",
-      "id": "https://openalex.org/W1527571715",
-      "ref": "Wiener (1948) Cybernetics or Control and Communication in the Animal and the Machine"
+      "key": "W1995875735",
+      "id": "W1995875735",
+      "ref": "Shannon · Mathematical Theory of Communication"
     },
     {
-      "key": "Maturana_Varela_Autopoiesis_1980",
-      "id": "https://openalex.org/W1916207017",
-      "ref": "Maturana & Varela (1980) Autopoiesis and Cognition: The Realization of the Living"
+      "key": "W1527571715",
+      "id": "W1527571715",
+      "ref": "Wiener · Cybernetics"
     },
     {
-      "key": "vonFoerster_2ndOrder_2004",
-      "id": "https://openalex.org/W1997780809",
-      "ref": "von Foerster (2004) Second-order cybernetics: historical introduction"
+      "key": "W2099069868",
+      "id": "W2099069868",
+      "ref": "von Bertalanffy · General System Theory"
     },
     {
-      "key": "Lascoumes_LeGales_2010",
-      "id": "https://openalex.org/W2076248782",
-      "ref": "Lascoumes & Le Galès (2010) Exploring Governance: Policy Instruments Approach"
+      "key": "W2101157755",
+      "id": "W2101157755",
+      "ref": "Senge · The Fifth Discipline"
     },
     {
-      "key": "Salamon_Tools_2001",
-      "id": "https://openalex.org/W2258876734",
-      "ref": "Salamon (2001) Tools of Government"
+      "key": "W1492856410",
+      "id": "W1492856410",
+      "ref": "Checkland · Systems Thinking, Systems Practice"
     },
     {
-      "key": "Chang_Kicking_2002",
-      "id": "https://openalex.org/W1919820734",
-      "ref": "Chang (2002) Kicking Away the Ladder: Development Strategy in Historical Perspective"
+      "key": "W2493894436",
+      "id": "W2493894436",
+      "ref": "Maturana & Varela · Autopoiesis and Cognition"
     },
     {
-      "key": "Evans_EmbeddedAutonomy_1995",
-      "id": "https://openalex.org/W2912536286",
-      "ref": "Evans (1995) Embedded Autonomy: States and Industrial Transformation"
+      "key": "W597091629",
+      "id": "W597091629",
+      "ref": "Forrester · Principles of Systems"
+    },
+    {
+      "key": "W1601944394",
+      "id": "W1601944394",
+      "ref": "Churchman · The Systems Approach"
+    },
+    {
+      "key": "W2988934653",
+      "id": "W2988934653",
+      "ref": "Sterman · Business Dynamics"
+    },
+    {
+      "key": "W2037306909",
+      "id": "W2037306909",
+      "ref": "Jackson · Systems Thinking (Creative Holism)"
+    },
+    {
+      "key": "W2017802748",
+      "id": "W2017802748",
+      "ref": "Wade · Governing the Market"
+    },
+    {
+      "key": "W2012275303",
+      "id": "W2012275303",
+      "ref": "Evans · Embedded Autonomy"
+    },
+    {
+      "key": "W1979968159",
+      "id": "W1979968159",
+      "ref": "Hirschman · Strategy of Economic Development"
+    },
+    {
+      "key": "W1490995146",
+      "id": "W1490995146",
+      "ref": "Prebisch · Economic Development of Latin America"
+    },
+    {
+      "key": "W2140409505",
+      "id": "W2140409505",
+      "ref": "Schumpeter · Capitalism, Socialism and Democracy"
+    },
+    {
+      "key": "W1535129021",
+      "id": "W1535129021",
+      "ref": "Dosi · Technological Paradigms and Trajectories"
+    },
+    {
+      "key": "W1576605329",
+      "id": "W1576605329",
+      "ref": "Nelson · National Innovation Systems"
+    },
+    {
+      "key": "W2120106358",
+      "id": "W2120106358",
+      "ref": "Hausmann & Rodrik · Economic Development as Self-Discovery"
+    },
+    {
+      "key": "W2064927380",
+      "id": "W2064927380",
+      "ref": "Hidalgo & Hausmann · The Product Space"
+    },
+    {
+      "key": "W1491554624",
+      "id": "W1491554624",
+      "ref": "Abernathy & Utterback · Patterns of Industrial Innovation"
+    },
+    {
+      "key": "W2013386523",
+      "id": "W2013386523",
+      "ref": "Porter · The Competitive Advantage of Nations"
+    },
+    {
+      "key": "W1999997471",
+      "id": "W1999997471",
+      "ref": "Hekkert · Functions of Innovation Systems"
+    },
+    {
+      "key": "W4302604455",
+      "id": "W4302604455",
+      "ref": "Johnson · MITI and the Japanese Miracle"
+    },
+    {
+      "key": "W2483843983",
+      "id": "W2483843983",
+      "ref": "Chang · Kicking Away the Ladder"
+    },
+    {
+      "key": "W2080485486",
+      "id": "W2080485486",
+      "ref": "Gerschenkron · Economic Backwardness"
+    },
+    {
+      "key": "W3121405033",
+      "id": "W3121405033",
+      "ref": "Lin · New Structural Economics"
+    },
+    {
+      "key": "W1502659095",
+      "id": "W1502659095",
+      "ref": "Reinert · How Rich Countries Got Rich"
+    },
+    {
+      "key": "W4293229472",
+      "id": "W4293229472",
+      "ref": "Stigler · Economic Regulation"
+    },
+    {
+      "key": "W2102461236",
+      "id": "W2102461236",
+      "ref": "Peltzman · General Theory of Regulation"
+    },
+    {
+      "key": "W2107431528",
+      "id": "W2107431528",
+      "ref": "Posner · Theories of Economic Regulation"
+    },
+    {
+      "key": "W1516216046",
+      "id": "W1516216046",
+      "ref": "Laffont & Tirole · Incentives in Regulation"
+    },
+    {
+      "key": "W1608766426",
+      "id": "W1608766426",
+      "ref": "Averch & Johnson · Regulatory Constraint"
+    },
+    {
+      "key": "W4242178059",
+      "id": "W4242178059",
+      "ref": "Demsetz · Why Regulate Utilities"
+    },
+    {
+      "key": "W2171753429",
+      "id": "W2171753429",
+      "ref": "Majone · Rise of the Regulatory State"
+    },
+    {
+      "key": "W2155153551",
+      "id": "W2155153551",
+      "ref": "Levi-Faur · Regulatory Capitalism"
+    },
+    {
+      "key": "W4388316013",
+      "id": "W4388316013",
+      "ref": "Ayres & Braithwaite · Responsive Regulation"
+    },
+    {
+      "key": "W3170187706",
+      "id": "W3170187706",
+      "ref": "Vogel · Freer Markets, More Rules"
+    },
+    {
+      "key": "W2054422547",
+      "id": "W2054422547",
+      "ref": "Wilson · Politics of Regulation"
+    },
+    {
+      "key": "W1581687645",
+      "id": "W1581687645",
+      "ref": "Moran · British Regulatory State"
+    },
+    {
+      "key": "W2569986058",
+      "id": "W2569986058",
+      "ref": "Bardach & Kagan · Going by the Book"
+    },
+    {
+      "key": "W4388120068",
+      "id": "W4388120068",
+      "ref": "Gunningham · Smart Regulation"
+    },
+    {
+      "key": "W3121399009",
+      "id": "W3121399009",
+      "ref": "Black · Regulatory Legitimacy"
+    },
+    {
+      "key": "W1978648732",
+      "id": "W1978648732",
+      "ref": "Weingast & Moran · Bureaucratic Discretion"
+    },
+    {
+      "key": "W2163458930",
+      "id": "W2163458930",
+      "ref": "Majone · Regulatory State Legitimacy"
+    },
+    {
+      "key": "W2159914272",
+      "id": "W2159914272",
+      "ref": "Mueller & Pereira · Regulatory Agencies Brazil"
+    },
+    {
+      "key": "W2125441319",
+      "id": "W2125441319",
+      "ref": "Prado · Independent Agencies Brazil"
+    },
+    {
+      "key": "W2154631061",
+      "id": "W2154631061",
+      "ref": "Pacheco · Regulação no Brasil"
     }
   ],
   "top20_nonfeed": [
     {
-      "year": 1980,
-      "cited_by": 4741,
-      "axes": "Cyb",
+      "year": 1997,
+      "cited_by": 31231,
+      "axes": "PolInd",
       "n_axes": 1,
-      "authors": "Humberto R. Maturana; Francisco J. Varela; Stafford Bee",
-      "title": "Autopoiesis and Cognition: The Realization of the Living",
-      "venue": "Medical Entomology and Zoology"
+      "authors": "David J. Teece; Gary P. Pisano; Amy Shuen",
+      "title": "Dynamic capabilities and strategic management",
+      "venue": "Strategic Management Journal"
     },
     {
-      "year": 2018,
-      "cited_by": 1791,
-      "axes": "Reg",
+      "year": 1994,
+      "cited_by": 17489,
+      "axes": "Cyb",
       "n_axes": 1,
-      "authors": "John Williamson",
-      "title": "What Washington Means by Policy Reform",
+      "authors": "Ikujiro Nonaka",
+      "title": "A Dynamic Theory of Organizational Knowledge Creation",
+      "venue": "Organization Science"
+    },
+    {
+      "year": 1995,
+      "cited_by": 17289,
+      "axes": "PolInd",
+      "n_axes": 1,
+      "authors": "Ikujiro Nonaka; Hirotaka Takeuchi",
+      "title": "The Knowledge-Creating Company",
       "venue": ""
     },
     {
-      "year": 2020,
-      "cited_by": 1669,
-      "axes": "Cyb",
-      "n_axes": 1,
-      "authors": "Adil Rasheed; Omer San; Trond Kvamsdal",
-      "title": "Digital Twin: Values, Challenges and Enablers From a Modeling Perspective",
-      "venue": "IEEE Access"
-    },
-    {
-      "year": 2007,
-      "cited_by": 1381,
+      "year": 1995,
+      "cited_by": 12481,
       "axes": "Reg",
       "n_axes": 1,
-      "authors": "Pierre Lascoumes; Patrick Le Galès",
-      "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of ",
-      "venue": "Governance"
+      "authors": "Michael E. Porter; Claas van der Linde",
+      "title": "Toward a New Conception of the Environment-Competitiveness Relationship",
+      "venue": "The Journal of Economic Perspectives"
     },
     {
-      "year": 2016,
-      "cited_by": 1346,
-      "axes": "Reg",
-      "n_axes": 1,
-      "authors": "Karoline S. Rogge; Kristin Reichardt",
-      "title": "Policy mixes for sustainability transitions: An extended concept and framework for an",
-      "venue": "Research Policy"
+      "year": 1948,
+      "cited_by": 9740,
+      "axes": "Cyb,Reg",
+      "n_axes": 2,
+      "authors": "Claude E. Shannon",
+      "title": "A Mathematical Theory of Communication",
+      "venue": "Bell System Technical Journal"
     },
     {
-      "year": 2011,
-      "cited_by": 1072,
-      "axes": "Reg",
-      "n_axes": 1,
-      "authors": "Kieron Flanagan; Elvira Uyarra; Manuel Laranja",
-      "title": "Reconceptualising the ‘policy mix’ for innovation",
-      "venue": "Research Policy"
-    },
-    {
-      "year": 2013,
-      "cited_by": 948,
+      "year": 2001,
+      "cited_by": 8244,
       "axes": "PolInd",
       "n_axes": 1,
-      "authors": "Philip McCann; Raquel Ortega‐Argilés",
-      "title": "Smart Specialization, Regional Growth and Applications to European Union Cohesion Pol",
-      "venue": "Regional Studies"
+      "authors": "Daron Acemoğlu; Simon Johnson; James A. Robinson",
+      "title": "The Colonial Origins of Comparative Development: An Empirical Investigation",
+      "venue": "American Economic Review"
     },
     {
-      "year": 1990,
-      "cited_by": 863,
+      "year": 2014,
+      "cited_by": 8161,
       "axes": "Reg",
       "n_axes": 1,
-      "authors": "Anne L. Schneider; Helen Ingram",
-      "title": "Behavioral Assumptions of Policy Tools",
-      "venue": "The Journal of Politics"
+      "authors": "Jeffrey G. Andrews; Stefano Buzzi; Wan Choi; Stephen V.",
+      "title": "What Will 5G Be?",
+      "venue": "IEEE Journal on Selected Areas in Communications"
     },
     {
-      "year": 2013,
-      "cited_by": 857,
-      "axes": "Reg",
-      "n_axes": 1,
-      "authors": "Susana Borrás; Charles Edquist",
-      "title": "The choice of innovation policy instruments",
-      "venue": "Technological Forecasting and Social Change"
-    },
-    {
-      "year": 2018,
-      "cited_by": 776,
-      "axes": "PolInd",
-      "n_axes": 1,
-      "authors": "Pierre‐Alexandre Balland; Ron Boschma; Joan Crespo",
-      "title": "Smart specialization policy in the European Union: relatedness, knowledge complexity ",
-      "venue": "Regional Studies"
-    },
-    {
-      "year": 2019,
-      "cited_by": 727,
+      "year": 1991,
+      "cited_by": 7997,
       "axes": "Cyb",
       "n_axes": 1,
-      "authors": "Jessica Morley; Luciano Floridi; Libby Kinsey",
-      "title": "From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods an",
-      "venue": "Science and Engineering Ethics"
+      "authors": "George P. Huber",
+      "title": "Organizational Learning: The Contributing Processes and the Literatures",
+      "venue": "Organization Science"
+    },
+    {
+      "year": 1993,
+      "cited_by": 7187,
+      "axes": "Cyb",
+      "n_axes": 1,
+      "authors": "Daniel A. Levinthal; James G. March",
+      "title": "The myopia of learning",
+      "venue": "Strategic Management Journal"
+    },
+    {
+      "year": 1982,
+      "cited_by": 6329,
+      "axes": "PolInd",
+      "n_axes": 1,
+      "authors": "Winter; G Sidney",
+      "title": "An evolutionary theory of economic change",
+      "venue": ""
+    },
+    {
+      "year": 2000,
+      "cited_by": 6248,
+      "axes": "Reg",
+      "n_axes": 1,
+      "authors": "Rafael La Porta; Florencio López‐de‐Silanes; Andrei Shl",
+      "title": "Investor protection and corporate governance",
+      "venue": "Journal of Financial Economics"
     },
     {
       "year": 1984,
-      "cited_by": 691,
-      "axes": "Cyb",
+      "cited_by": 6074,
+      "axes": "PolInd",
       "n_axes": 1,
-      "authors": "Stafford Beer",
-      "title": "The Viable System Model: Its Provenance, Development, Methodology and Pathology",
-      "venue": "Journal of the Operational Research Society"
+      "authors": "Keith Pavitt",
+      "title": "Sectoral patterns of technical change: Towards a taxonomy and a theory",
+      "venue": "Research Policy"
     },
     {
-      "year": 1997,
-      "cited_by": 690,
+      "year": 1995,
+      "cited_by": 5126,
+      "axes": "PolInd",
+      "n_axes": 1,
+      "authors": "Stuart L. Hart",
+      "title": "A Natural-Resource-Based View of the Firm",
+      "venue": "Academy of Management Review"
+    },
+    {
+      "year": 2014,
+      "cited_by": 4918,
       "axes": "Cyb",
       "n_axes": 1,
-      "authors": "Umit Bititci; Allan S. Carrie; Liam McDevitt",
-      "title": "Integrated performance measurement systems: a development guide",
-      "venue": "International Journal of Operations & Product"
+      "authors": "Yrjö Engeström",
+      "title": "Learning by Expanding",
+      "venue": "Cambridge University Press eBooks"
     },
     {
       "year": 2007,
-      "cited_by": 646,
+      "cited_by": 4755,
       "axes": "Reg",
       "n_axes": 1,
-      "authors": "Michael Howlett; Jeremy Rayner",
-      "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrange",
-      "venue": "Policy and Society"
-    },
-    {
-      "year": 2009,
-      "cited_by": 612,
-      "axes": "Reg",
-      "n_axes": 1,
-      "authors": "Michael Howlett",
-      "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of",
-      "venue": "Policy Sciences"
-    },
-    {
-      "year": 2010,
-      "cited_by": 584,
-      "axes": "PolInd",
-      "n_axes": 1,
-      "authors": "Ann Harrison; Andrés Rodrı́guez-Clare",
-      "title": "Trade, Foreign Investment, and Industrial Policy for Developing Countries*",
-      "venue": "Handbook of development economics"
-    },
-    {
-      "year": 2020,
-      "cited_by": 570,
-      "axes": "Reg",
-      "n_axes": 1,
-      "authors": "Giliberto Capano; Michael Howlett; Darryl S. L. Jarvis",
-      "title": "Mobilizing Policy (In)Capacity to Fight COVID-19: Understanding Variations in State R",
-      "venue": "Policy and Society"
+      "authors": "John L. Campbell",
+      "title": "Why would corporations behave in socially responsible ways? an institutional theory o",
+      "venue": "Academy of Management Review"
     },
     {
       "year": 2006,
-      "cited_by": 560,
+      "cited_by": 4629,
+      "axes": "Cyb",
+      "n_axes": 1,
+      "authors": "Lou Jost",
+      "title": "<i>Entropy and diversity</i>",
+      "venue": "Oikos"
+    },
+    {
+      "year": 2000,
+      "cited_by": 4427,
       "axes": "PolInd",
       "n_axes": 1,
-      "authors": "Howard Pack",
-      "title": "Is There a Case for Industrial Policy? A Critical Survey",
+      "authors": "Michael E. Porter",
+      "title": "Location, Competition, and Economic Development: Local Clusters in a Global Economy",
+      "venue": "Economic Development Quarterly"
+    },
+    {
+      "year": 2000,
+      "cited_by": 4256,
+      "axes": "PolInd",
+      "n_axes": 1,
+      "authors": "Michael Woolcock; Deepa Narayan",
+      "title": "Social Capital: Implications for Development Theory, Research, and Policy",
       "venue": "The World Bank Research Observer"
     },
     {
-      "year": 2020,
-      "cited_by": 550,
-      "axes": "PolInd",
+      "year": 1979,
+      "cited_by": 4214,
+      "axes": "Cyb",
       "n_axes": 1,
-      "authors": "Karl Aiginger; Dani Rodrik",
-      "title": "Rebirth of Industrial Policy and an Agenda for the Twenty-First Century",
-      "venue": "Journal of Industry Competition and Trade"
+      "authors": "Thomas M. Cover; Abbas El Gamal",
+      "title": "Capacity theorems for the relay channel",
+      "venue": "IEEE Transactions on Information Theory"
     },
     {
-      "year": 2019,
-      "cited_by": 497,
-      "axes": "PolInd",
+      "year": 2006,
+      "cited_by": 3956,
+      "axes": "Reg",
       "n_axes": 1,
-      "authors": "Chiara Criscuolo; Ralf Martin; Henry G. Overman",
-      "title": "Some Causal Effects of an Industrial Policy",
+      "authors": "Mara Faccio",
+      "title": "Politically Connected Firms",
       "venue": "American Economic Review"
     }
   ],
   "top_bridges": [
     {
-      "year": 2014,
-      "cited_by": 2314,
+      "year": 1948,
+      "cited_by": 80387,
       "axes": "Cyb,Reg,PolInd",
-      "authors": "Mariana Mazzucato",
-      "title": "The entrepreneurial state: debunking public vs. private sector myths"
+      "authors": "Claude E. Shannon",
+      "title": "A Mathematical Theory of Communication"
     },
     {
-      "year": 2004,
-      "cited_by": 1526,
+      "year": 1991,
+      "cited_by": 20171,
       "axes": "Cyb,Reg,PolInd",
-      "authors": "Dani Rodrik",
-      "title": "Industrial Policy for the Twenty-First Century"
+      "authors": "Peter M. Senge",
+      "title": "The fifth discipline, the art and practice of the learning organization"
+    },
+    {
+      "year": 1991,
+      "cited_by": 17696,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "Terry Clark; Michael Porter",
+      "title": "The Competitive Advantage of Nations"
+    },
+    {
+      "year": 1997,
+      "cited_by": 15545,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "Francis Fukuyama; Joseph A. Schumpeter",
+      "title": "Capitalism, Socialism and Democracy"
+    },
+    {
+      "year": 1948,
+      "cited_by": 9740,
+      "axes": "Cyb,Reg",
+      "authors": "Claude E. Shannon",
+      "title": "A Mathematical Theory of Communication"
+    },
+    {
+      "year": 2000,
+      "cited_by": 9489,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "John D. Sterman",
+      "title": "Business Dynamics: Systems Thinking and Modeling for a Complex World"
+    },
+    {
+      "year": 1971,
+      "cited_by": 7829,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "George J. Stigler",
+      "title": "The Theory of Economic Regulation"
+    },
+    {
+      "year": 1982,
+      "cited_by": 6572,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "Giovanni Dosi",
+      "title": "Technological paradigms and technological trajectories"
+    },
+    {
+      "year": 1959,
+      "cited_by": 6359,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "Staffan Burenstam Linder; Albert O. Hirschman",
+      "title": "The Strategy of Economic Development"
+    },
+    {
+      "year": 1981,
+      "cited_by": 5938,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "Peter Checkland",
+      "title": "Systems Thinking, Systems Practice"
     },
     {
       "year": 1980,
-      "cited_by": 805,
+      "cited_by": 5479,
       "axes": "Cyb,Reg,PolInd",
-      "authors": "Stafford Beer",
-      "title": "The Heart of Enterprise"
-    },
-    {
-      "year": 1983,
-      "cited_by": 778,
-      "axes": "Cyb,Reg,PolInd",
-      "authors": "Christopher C. Hood",
-      "title": "The Tools of Government"
-    },
-    {
-      "year": 1974,
-      "cited_by": 296,
-      "axes": "Cyb,Reg,PolInd",
-      "authors": "Stafford Beer",
-      "title": "Brain of the Firm: The Managerial Cybernetics of Organization"
-    },
-    {
-      "year": 1985,
-      "cited_by": 293,
-      "axes": "Cyb,Reg,PolInd",
-      "authors": "John R. Beaumont",
-      "title": "Diagnosing the System for Organizations"
+      "authors": "Humberto R. Maturana; Francisco J. Varela",
+      "title": "Autopoiesis and Cognition"
     },
     {
       "year": 2019,
-      "cited_by": 289,
-      "axes": "PolInd,Reg",
-      "authors": "Mariana Mazzucato; Rainer Kattel; Josh Ryan‐C",
-      "title": "Challenge-Driven Innovation Policy: Towards a New Policy Toolkit"
-    },
-    {
-      "year": 2013,
-      "cited_by": 267,
-      "axes": "PolInd,Reg",
-      "authors": "Philip McCann; Raquel Ortega‐Argilés",
-      "title": "Modern regional innovation policy"
-    },
-    {
-      "year": 2007,
-      "cited_by": 233,
+      "cited_by": 5020,
       "axes": "Cyb,Reg,PolInd",
-      "authors": "Christopher C. Hood; Helen Margetts",
-      "title": "The Tools of Government in the Digital Age"
+      "authors": "Norbert Wiener",
+      "title": "Cybernetics or Control and Communication in the Animal and the Machine"
     },
     {
-      "year": 2011,
-      "cited_by": 215,
+      "year": 1993,
+      "cited_by": 4920,
       "axes": "Cyb,Reg,PolInd",
-      "authors": "Raúl Espejo; Alfonso Reyes",
-      "title": "Organizational Systems"
+      "authors": "Richard R. Nelson",
+      "title": "National Innovation Systems: A Comparative Analysis"
     },
     {
-      "year": 2023,
-      "cited_by": 133,
-      "axes": "PolInd,Reg",
-      "authors": "Donato Di Carlo; Luuk Schmitz",
-      "title": "Europe first? The rise of EU industrial policy promoting and protecting the sing"
-    },
-    {
-      "year": 1957,
-      "cited_by": 115,
+      "year": 1990,
+      "cited_by": 4798,
       "axes": "Cyb,Reg,PolInd",
-      "authors": "W. Ross Ashby",
-      "title": "An Introduction to Cybernetics"
+      "authors": "Robert Wade",
+      "title": "Governing the Market"
     },
     {
-      "year": 2019,
-      "cited_by": 111,
-      "axes": "PolInd,Reg",
-      "authors": "Bernhard Reinsberg; Alexander Kentikelenis; T",
-      "title": "The World System and the Hollowing Out of State Capacity: How Structural Adjustm"
-    },
-    {
-      "year": 2023,
-      "cited_by": 76,
-      "axes": "PolInd,Reg",
-      "authors": "James Meadowcroft; Daniel Rosenbloom",
-      "title": "Governing the net-zero transition: Strategy, policy, and politics"
-    },
-    {
-      "year": 2013,
-      "cited_by": 69,
-      "axes": "PolInd,Reg",
-      "authors": "Ha‐Joon Chang; Antonio Andreoni; Ming Leong K",
-      "title": "International Industrial Policy Experiences and the Lessons for the UK"
+      "year": 1963,
+      "cited_by": 4248,
+      "axes": "Cyb,Reg,PolInd",
+      "authors": "A. Nove; Alexander Gerschenkron",
+      "title": "Economic Backwardness in Historical Perspective."
     }
   ],
   "top_pivotal": [
     {
-      "ref_id": "W2023994495",
-      "betweenness": 0.0863,
-      "burst_total": 2.2,
-      "n_citations": 6,
-      "year": 2001,
-      "title": "Adaptive policies, policy analysis, and policy-making",
-      "authors": "Warren E. Walker; Saeed Rahman; Jonathan Cave"
+      "ref_id": "W1495419098",
+      "betweenness": 0.0209,
+      "burst_total": 24.2,
+      "n_citations": 65,
+      "year": 1998,
+      "title": "The Knowledge-Creating Company",
+      "authors": "Nonaka"
     }
   ],
   "top_bursts": [
     {
-      "ref_id": "W2123755784",
-      "begin": 1996,
-      "end": 2013,
-      "weight": 42.6,
-      "title": "Brain of the firm",
-      "authors": "Stafford Beer"
-    },
-    {
       "ref_id": "W1553746973",
-      "begin": 2017,
+      "begin": 2015,
       "end": 2024,
-      "weight": 29.1,
-      "title": "The entrepreneurial state: debunking public vs. private sector myths",
+      "weight": 99.6,
+      "title": "The entrepreneurial state: debunking public vs. private sector my",
       "authors": ""
     },
     {
+      "ref_id": "W1999997471",
+      "begin": 2011,
+      "end": 2020,
+      "weight": 58.3,
+      "title": "Functions of innovation systems: A new approach for analysing tec",
+      "authors": "Hekkert; Suurs"
+    },
+    {
+      "ref_id": "W2101157755",
+      "begin": 1993,
+      "end": 2006,
+      "weight": 55.2,
+      "title": "The fifth discipline, the art and practice of the learning organi",
+      "authors": "Senge"
+    },
+    {
       "ref_id": "W4244612406",
-      "begin": 2022,
+      "begin": 2018,
       "end": 2026,
-      "weight": 24.3,
+      "weight": 54.6,
       "title": "Organizational Systems",
       "authors": "Espejo; Reyes"
     },
     {
-      "ref_id": "W2048086870",
-      "begin": 2011,
-      "end": 2016,
-      "weight": 22.3,
-      "title": "Brain of the Firm: The Managerial Cybernetics of Organization",
-      "authors": "Stafford Beer"
+      "ref_id": "W4285719527",
+      "begin": 2010,
+      "end": 2011,
+      "weight": 51.8,
+      "title": "",
+      "authors": ""
     },
     {
-      "ref_id": "W582908774",
+      "ref_id": "W3121399009",
+      "begin": 2016,
+      "end": 2022,
+      "weight": 51.8,
+      "title": "Constructing and contesting legitimacy and accountability in poly",
+      "authors": "Black"
+    },
+    {
+      "ref_id": "W2155153551",
+      "begin": 2009,
+      "end": 2016,
+      "weight": 48.2,
+      "title": "The Global Diffusion of Regulatory Capitalism",
+      "authors": "Levi‐Faur"
+    },
+    {
+      "ref_id": "W2082597100",
+      "begin": 2013,
+      "end": 2024,
+      "weight": 47.0,
+      "title": "Analyzing the functional dynamics of technological innovation sys",
+      "authors": "Bergek; Jacobsson"
+    },
+    {
+      "ref_id": "W2064927380",
+      "begin": 2017,
+      "end": 2024,
+      "weight": 44.9,
+      "title": "The Product Space Conditions the Development of Nations",
+      "authors": "Hidalgo; Klinger"
+    },
+    {
+      "ref_id": "W2013386523",
+      "begin": 1994,
+      "end": 2003,
+      "weight": 44.8,
+      "title": "The Competitive Advantage of Nations",
+      "authors": "Clark; Porter"
+    },
+    {
+      "ref_id": "W1581687645",
+      "begin": 2005,
+      "end": 2010,
+      "weight": 43.3,
+      "title": "The British Regulatory State",
+      "authors": "Moran"
+    },
+    {
+      "ref_id": "W3121605569",
+      "begin": 1981,
+      "end": 1999,
+      "weight": 42.1,
+      "title": "",
+      "authors": ""
+    },
+    {
+      "ref_id": "W1516216046",
+      "begin": 1994,
+      "end": 2004,
+      "weight": 41.1,
+      "title": "A Theory of Incentives in Procurement and Regulation",
+      "authors": "Tirole; Laffont"
+    },
+    {
+      "ref_id": "W3125342930",
+      "begin": 1975,
+      "end": 1998,
+      "weight": 37.8,
+      "title": "",
+      "authors": ""
+    },
+    {
+      "ref_id": "W1520386898",
+      "begin": 1973,
+      "end": 1992,
+      "weight": 37.2,
+      "title": "The Theory of Economic Regulation",
+      "authors": "Stigler"
+    },
+    {
+      "ref_id": "W92085004",
       "begin": 2011,
       "end": 2019,
-      "weight": 21.6,
-      "title": "Organizational Systems: Managing Complexity with the Viable System Model",
-      "authors": "Espejo; Reyes"
+      "weight": 37.1,
+      "title": "Systems Thinking: Creative Holism for Managers",
+      "authors": "Jackson"
     },
     {
-      "ref_id": "W2154683088",
-      "begin": 2002,
-      "end": 2010,
-      "weight": 16.2,
-      "title": "Diagnosing the System for Organizations",
-      "authors": "Beaumont"
+      "ref_id": "W4206762723",
+      "begin": 2012,
+      "end": 2022,
+      "weight": 37.1,
+      "title": "",
+      "authors": ""
     },
     {
-      "ref_id": "W3124879925",
-      "begin": 2013,
-      "end": 2016,
-      "weight": 15.4,
-      "title": "Industrial Policy for the Twenty-First Century",
-      "authors": "Rodrik"
-    },
-    {
-      "ref_id": "W2057748843",
-      "begin": 2014,
-      "end": 2020,
-      "weight": 12.9,
-      "title": "Governance modes, policy regimes and operational plans: A multi-level nested model of policy instrument choice and policy design",
-      "authors": "Howlett"
-    },
-    {
-      "ref_id": "W1566478880",
-      "begin": 2011,
-      "end": 2012,
-      "weight": 12.4,
-      "title": "The Heart of Enterprise",
-      "authors": "Stafford Beer"
-    },
-    {
-      "ref_id": "W2080554996",
-      "begin": 2010,
-      "end": 2018,
-      "weight": 12.2,
-      "title": "Introduction: Understanding Public Policy through Its Instruments—From the Nature of Instruments to the Sociology of Public Policy Instrumentation",
-      "authors": "Lascoumes; Galès"
-    },
-    {
-      "ref_id": "W2111030512",
-      "begin": 2009,
-      "end": 2013,
-      "weight": 12.2,
-      "title": "An introduction to cybernetics",
-      "authors": "Ashby"
-    },
-    {
-      "ref_id": "W2082088739",
+      "ref_id": "W1502659095",
       "begin": 2014,
       "end": 2021,
-      "weight": 11.8,
-      "title": "Design Principles for Policy Mixes: Cohesion and Coherence in ‘New Governance Arrangements’",
-      "authors": "Howlett; Rayner"
+      "weight": 36.7,
+      "title": "How Rich Countries Got Rich ... and Why Poor Countries Stay Poor",
+      "authors": "Reinert"
     },
     {
-      "ref_id": "W2026948646",
-      "begin": 1993,
-      "end": 2010,
-      "weight": 11.7,
-      "title": "Soft Systems Methodology in Action",
-      "authors": "Gough; Checkland"
+      "ref_id": "W2120106358",
+      "begin": 2008,
+      "end": 2014,
+      "weight": 36.4,
+      "title": "Economic development as self-discovery",
+      "authors": "Hausmann; Rodrik"
     },
     {
-      "ref_id": "W2165238389",
-      "begin": 2014,
-      "end": 2026,
-      "weight": 11.7,
-      "title": "Complexity management in practice: A Viable System Model intervention in an Irish eco-community",
-      "authors": "Espinosa; Walker"
-    },
-    {
-      "ref_id": "W148613442",
-      "begin": 2014,
-      "end": 2020,
-      "weight": 11.4,
-      "title": "Design and diagnosis for sustainable organizations : the viable system method",
-      "authors": "Ríos"
-    },
-    {
-      "ref_id": "W2132852401",
-      "begin": 2014,
+      "ref_id": "W2126563689",
+      "begin": 2009,
       "end": 2022,
-      "weight": 11.4,
-      "title": "Using the Viable System Model (VSM) to structure information processing complexity in disaster response",
-      "authors": "Preece; Shaw"
-    },
-    {
-      "ref_id": "W2363378650",
-      "begin": 2017,
-      "end": 2025,
-      "weight": 10.8,
-      "title": "Policy mixes for sustainability transitions: An extended concept and framework for analysis",
-      "authors": "Rogge; Reichardt"
-    },
-    {
-      "ref_id": "W1970428482",
-      "begin": 1994,
-      "end": 2007,
-      "weight": 10.3,
-      "title": "Creative Problem Solving: Total Systems Intervention.",
-      "authors": "Taket"
-    },
-    {
-      "ref_id": "W1492856410",
-      "begin": 1992,
-      "end": 2002,
-      "weight": 10.1,
-      "title": "Systems Thinking, Systems Practice",
-      "authors": "Checkland"
-    },
-    {
-      "ref_id": "W1968893806",
-      "begin": 2001,
-      "end": 2008,
-      "weight": 9.8,
-      "title": "Intelligent organizations: an integrative framework",
-      "authors": "Schwaninger"
+      "weight": 36.2,
+      "title": "The Tools of Government in the Digital Age",
+      "authors": "Hood; Margetts"
     }
   ],
   "sleeping_beauties": [
     {
-      "year": 1974,
-      "cited_by": 296,
-      "B": 166.0,
-      "t_m": 41,
-      "axes": "",
-      "title": "Brain of the Firm: The Managerial Cybernetics of Organization"
-    },
-    {
-      "year": 1980,
-      "cited_by": 805,
-      "B": 130.0,
-      "t_m": 31,
-      "axes": "",
-      "title": "The Heart of Enterprise"
+      "year": 1950,
+      "cited_by": 3350,
+      "B": 266.0,
+      "t_m": 62,
+      "axes": "PolInd",
+      "title": "The economic development of Latin America and its principal problems"
     },
     {
       "year": 1957,
       "cited_by": 115,
-      "B": 60.0,
+      "B": 197.8,
       "t_m": 68,
-      "axes": "",
+      "axes": "Cyb",
       "title": "An Introduction to Cybernetics"
     },
     {
       "year": 1959,
-      "cited_by": 41,
-      "B": 58.0,
-      "t_m": 59,
-      "axes": "",
-      "title": "What has Cybernetics to do with Operational Research?"
+      "cited_by": 6359,
+      "B": 191.7,
+      "t_m": 53,
+      "axes": "PolInd",
+      "title": "The Strategy of Economic Development"
     },
     {
-      "year": 1968,
-      "cited_by": 342,
-      "B": 56.4,
-      "t_m": 46,
-      "axes": "",
-      "title": "Decision and Control: The Meaning of Operational Research and Man"
+      "year": 1974,
+      "cited_by": 296,
+      "B": 188.0,
+      "t_m": 40,
+      "axes": "Cyb",
+      "title": "Brain of the Firm: The Managerial Cybernetics of Organization"
     },
     {
-      "year": 1983,
-      "cited_by": 778,
-      "B": 54.7,
-      "t_m": 34,
-      "axes": "",
-      "title": "The Tools of Government"
+      "year": 1938,
+      "cited_by": 563,
+      "B": 171.3,
+      "t_m": 54,
+      "axes": "PolInd",
+      "title": "On the Economic Theory of Socialism"
     },
     {
-      "year": 1990,
-      "cited_by": 240,
-      "B": 54.4,
-      "t_m": 19,
+      "year": 1992,
+      "cited_by": 146,
+      "B": 154.0,
+      "t_m": 32,
       "axes": "",
-      "title": "The Viable System Model: Interpretations and Applications of Staf"
+      "title": "Institutional sources of corruption in Brazil"
     },
     {
-      "year": 1984,
-      "cited_by": 691,
-      "B": 51.5,
-      "t_m": 28,
+      "year": 1963,
+      "cited_by": 4248,
+      "B": 136.7,
+      "t_m": 41,
       "axes": "",
-      "title": "The Viable System Model: Its Provenance, Development, Methodology"
-    },
-    {
-      "year": 1990,
-      "cited_by": 132,
-      "B": 45.4,
-      "t_m": 22,
-      "axes": "",
-      "title": "The Viable System Model: Interpretations and Applications of Staf"
-    },
-    {
-      "year": 1985,
-      "cited_by": 293,
-      "B": 43.1,
-      "t_m": 26,
-      "axes": "",
-      "title": "Diagnosing the System for Organizations"
-    },
-    {
-      "year": 1990,
-      "cited_by": 70,
-      "B": 42.7,
-      "t_m": 21,
-      "axes": "",
-      "title": "The viable system model: interpretations of Stafford Beer's VSM"
-    },
-    {
-      "year": 1990,
-      "cited_by": 195,
-      "B": 39.4,
-      "t_m": 22,
-      "axes": "",
-      "title": "The Viable System Model"
-    },
-    {
-      "year": 1990,
-      "cited_by": 20,
-      "B": 36.3,
-      "t_m": 28,
-      "axes": "",
-      "title": "Embodiments of organizational fitness: The Viable System Model (V"
-    },
-    {
-      "year": 1980,
-      "cited_by": 4741,
-      "B": 36.0,
-      "t_m": 27,
-      "axes": "",
-      "title": "Autopoiesis and Cognition: The Realization of the Living"
+      "title": "Economic Backwardness in Historical Perspective."
     },
     {
       "year": 1989,
-      "cited_by": 480,
-      "B": 33.9,
-      "t_m": 28,
+      "cited_by": 112,
+      "B": 136.0,
+      "t_m": 18,
+      "axes": "Reg",
+      "title": "The ‘Little Big Bang’ in Paris: financial market deregulation in a <i>dirigiste<"
+    },
+    {
+      "year": 1962,
+      "cited_by": 174,
+      "B": 119.7,
+      "t_m": 43,
+      "axes": "Reg",
+      "title": "Behavior of the Firm Subject to External Regulatory Constraint"
+    },
+    {
+      "year": 1992,
+      "cited_by": 3089,
+      "B": 118.5,
+      "t_m": 32,
       "axes": "",
-      "title": "Instruments of Government: Perceptions and Contexts"
+      "title": "Historical institutionalism in comparative politics"
+    },
+    {
+      "year": 1948,
+      "cited_by": 80387,
+      "B": 112.6,
+      "t_m": 58,
+      "axes": "Cyb",
+      "title": "A Mathematical Theory of Communication"
+    },
+    {
+      "year": 1984,
+      "cited_by": 580,
+      "B": 110.9,
+      "t_m": 25,
+      "axes": "Reg",
+      "title": "Environment and EnforcementRegulation and the Social Definition of Pollution"
+    },
+    {
+      "year": 2002,
+      "cited_by": 2531,
+      "B": 95.4,
+      "t_m": 22,
+      "axes": "",
+      "title": "Government Ownership of Banks"
+    },
+    {
+      "year": 2002,
+      "cited_by": 257,
+      "B": 93.0,
+      "t_m": 22,
+      "axes": "PolInd",
+      "title": "Bad Loans to Good Friends: Money Politics and the Developmental State in South K"
+    },
+    {
+      "year": 2004,
+      "cited_by": 199,
+      "B": 92.0,
+      "t_m": 20,
+      "axes": "",
+      "title": "Political Economy of Resource-Abundant States"
     }
   ],
   "temporal": [
     {
-      "year": 1968,
+      "year": 1962,
+      "Cyb": 1,
+      "Reg": 1,
+      "PolInd": 1
+    },
+    {
+      "year": 1963,
+      "Cyb": 1,
+      "Reg": 1,
+      "PolInd": 2
+    },
+    {
+      "year": 1964,
+      "Cyb": 1,
+      "Reg": 0,
+      "PolInd": 1
+    },
+    {
+      "year": 1965,
+      "Cyb": 0,
+      "Reg": 0,
+      "PolInd": 1
+    },
+    {
+      "year": 1966,
+      "Cyb": 1,
+      "Reg": 1,
+      "PolInd": 1
+    },
+    {
+      "year": 1967,
       "Cyb": 1,
       "Reg": 0,
       "PolInd": 0
+    },
+    {
+      "year": 1968,
+      "Cyb": 3,
+      "Reg": 2,
+      "PolInd": 2
+    },
+    {
+      "year": 1969,
+      "Cyb": 1,
+      "Reg": 0,
+      "PolInd": 2
     },
     {
       "year": 1970,
-      "Cyb": 1,
-      "Reg": 0,
-      "PolInd": 0
-    },
-    {
-      "year": 1974,
-      "Cyb": 1,
-      "Reg": 1,
-      "PolInd": 1
-    },
-    {
-      "year": 1979,
       "Cyb": 2,
       "Reg": 0,
-      "PolInd": 0
+      "PolInd": 3
     },
     {
-      "year": 1980,
-      "Cyb": 2,
-      "Reg": 1,
-      "PolInd": 1
-    },
-    {
-      "year": 1982,
-      "Cyb": 1,
-      "Reg": 0,
-      "PolInd": 0
-    },
-    {
-      "year": 1983,
-      "Cyb": 3,
-      "Reg": 1,
-      "PolInd": 1
-    },
-    {
-      "year": 1984,
-      "Cyb": 2,
-      "Reg": 1,
-      "PolInd": 0
-    },
-    {
-      "year": 1985,
-      "Cyb": 2,
-      "Reg": 1,
-      "PolInd": 0
-    },
-    {
-      "year": 1986,
-      "Cyb": 1,
-      "Reg": 1,
-      "PolInd": 0
-    },
-    {
-      "year": 1987,
-      "Cyb": 1,
-      "Reg": 0,
-      "PolInd": 1
-    },
-    {
-      "year": 1988,
-      "Cyb": 1,
-      "Reg": 1,
-      "PolInd": 0
-    },
-    {
-      "year": 1989,
-      "Cyb": 3,
-      "Reg": 1,
-      "PolInd": 0
-    },
-    {
-      "year": 1990,
-      "Cyb": 7,
-      "Reg": 2,
-      "PolInd": 1
-    },
-    {
-      "year": 1991,
-      "Cyb": 1,
-      "Reg": 3,
-      "PolInd": 1
-    },
-    {
-      "year": 1992,
-      "Cyb": 4,
-      "Reg": 1,
-      "PolInd": 0
-    },
-    {
-      "year": 1993,
-      "Cyb": 10,
-      "Reg": 2,
-      "PolInd": 1
-    },
-    {
-      "year": 1994,
-      "Cyb": 3,
-      "Reg": 2,
-      "PolInd": 0
-    },
-    {
-      "year": 1995,
-      "Cyb": 1,
-      "Reg": 1,
-      "PolInd": 0
-    },
-    {
-      "year": 1996,
-      "Cyb": 2,
-      "Reg": 0,
-      "PolInd": 0
-    },
-    {
-      "year": 1997,
-      "Cyb": 7,
-      "Reg": 0,
-      "PolInd": 0
-    },
-    {
-      "year": 1998,
+      "year": 1971,
       "Cyb": 4,
       "Reg": 2,
-      "PolInd": 0
+      "PolInd": 3
     },
     {
-      "year": 1999,
-      "Cyb": 8,
-      "Reg": 2,
-      "PolInd": 0
-    },
-    {
-      "year": 2000,
-      "Cyb": 3,
-      "Reg": 1,
-      "PolInd": 1
-    },
-    {
-      "year": 2001,
-      "Cyb": 5,
-      "Reg": 3,
-      "PolInd": 0
-    },
-    {
-      "year": 2002,
-      "Cyb": 6,
-      "Reg": 0,
-      "PolInd": 0
-    },
-    {
-      "year": 2003,
-      "Cyb": 7,
-      "Reg": 5,
-      "PolInd": 0
-    },
-    {
-      "year": 2004,
-      "Cyb": 13,
+      "year": 1972,
+      "Cyb": 0,
       "Reg": 4,
       "PolInd": 2
     },
     {
-      "year": 2005,
-      "Cyb": 7,
-      "Reg": 3,
-      "PolInd": 4
+      "year": 1973,
+      "Cyb": 1,
+      "Reg": 1,
+      "PolInd": 1
     },
     {
-      "year": 2006,
-      "Cyb": 19,
+      "year": 1974,
+      "Cyb": 3,
       "Reg": 2,
       "PolInd": 5
     },
     {
-      "year": 2007,
-      "Cyb": 19,
-      "Reg": 6,
-      "PolInd": 7
+      "year": 1975,
+      "Cyb": 2,
+      "Reg": 1,
+      "PolInd": 2
     },
     {
-      "year": 2008,
-      "Cyb": 8,
-      "Reg": 2,
+      "year": 1976,
+      "Cyb": 4,
+      "Reg": 3,
+      "PolInd": 2
+    },
+    {
+      "year": 1977,
+      "Cyb": 3,
+      "Reg": 3,
+      "PolInd": 2
+    },
+    {
+      "year": 1978,
+      "Cyb": 3,
+      "Reg": 1,
+      "PolInd": 2
+    },
+    {
+      "year": 1979,
+      "Cyb": 5,
+      "Reg": 5,
       "PolInd": 4
     },
     {
-      "year": 2009,
-      "Cyb": 14,
-      "Reg": 9,
-      "PolInd": 8
+      "year": 1980,
+      "Cyb": 3,
+      "Reg": 2,
+      "PolInd": 3
     },
     {
-      "year": 2010,
-      "Cyb": 11,
+      "year": 1981,
+      "Cyb": 4,
       "Reg": 8,
       "PolInd": 3
     },
     {
-      "year": 2011,
-      "Cyb": 30,
+      "year": 1982,
+      "Cyb": 5,
+      "Reg": 9,
+      "PolInd": 3
+    },
+    {
+      "year": 1983,
+      "Cyb": 9,
       "Reg": 11,
+      "PolInd": 3
+    },
+    {
+      "year": 1984,
+      "Cyb": 4,
+      "Reg": 21,
+      "PolInd": 3
+    },
+    {
+      "year": 1985,
+      "Cyb": 10,
+      "Reg": 10,
       "PolInd": 4
     },
     {
-      "year": 2012,
-      "Cyb": 22,
+      "year": 1986,
+      "Cyb": 5,
+      "Reg": 16,
+      "PolInd": 5
+    },
+    {
+      "year": 1987,
+      "Cyb": 6,
       "Reg": 13,
-      "PolInd": 8
+      "PolInd": 4
     },
     {
-      "year": 2013,
-      "Cyb": 14,
-      "Reg": 9,
-      "PolInd": 13
-    },
-    {
-      "year": 2014,
-      "Cyb": 23,
-      "Reg": 10,
-      "PolInd": 12
-    },
-    {
-      "year": 2015,
-      "Cyb": 26,
-      "Reg": 11,
-      "PolInd": 12
-    },
-    {
-      "year": 2016,
-      "Cyb": 14,
-      "Reg": 10,
+      "year": 1988,
+      "Cyb": 12,
+      "Reg": 18,
       "PolInd": 7
     },
     {
-      "year": 2017,
-      "Cyb": 15,
-      "Reg": 18,
-      "PolInd": 18
+      "year": 1989,
+      "Cyb": 10,
+      "Reg": 17,
+      "PolInd": 9
     },
     {
-      "year": 2018,
+      "year": 1990,
       "Cyb": 18,
-      "Reg": 13,
-      "PolInd": 10
+      "Reg": 22,
+      "PolInd": 15
     },
     {
-      "year": 2019,
-      "Cyb": 23,
-      "Reg": 19,
+      "year": 1991,
+      "Cyb": 18,
+      "Reg": 23,
+      "PolInd": 12
+    },
+    {
+      "year": 1992,
+      "Cyb": 18,
+      "Reg": 20,
+      "PolInd": 20
+    },
+    {
+      "year": 1993,
+      "Cyb": 28,
+      "Reg": 15,
+      "PolInd": 12
+    },
+    {
+      "year": 1994,
+      "Cyb": 22,
+      "Reg": 23,
+      "PolInd": 21
+    },
+    {
+      "year": 1995,
+      "Cyb": 17,
+      "Reg": 31,
+      "PolInd": 32
+    },
+    {
+      "year": 1996,
+      "Cyb": 14,
+      "Reg": 29,
+      "PolInd": 23
+    },
+    {
+      "year": 1997,
+      "Cyb": 24,
+      "Reg": 32,
       "PolInd": 16
     },
     {
+      "year": 1998,
+      "Cyb": 31,
+      "Reg": 46,
+      "PolInd": 28
+    },
+    {
+      "year": 1999,
+      "Cyb": 38,
+      "Reg": 32,
+      "PolInd": 39
+    },
+    {
+      "year": 2000,
+      "Cyb": 36,
+      "Reg": 48,
+      "PolInd": 38
+    },
+    {
+      "year": 2001,
+      "Cyb": 41,
+      "Reg": 42,
+      "PolInd": 37
+    },
+    {
+      "year": 2002,
+      "Cyb": 32,
+      "Reg": 64,
+      "PolInd": 71
+    },
+    {
+      "year": 2003,
+      "Cyb": 49,
+      "Reg": 84,
+      "PolInd": 59
+    },
+    {
+      "year": 2004,
+      "Cyb": 57,
+      "Reg": 71,
+      "PolInd": 59
+    },
+    {
+      "year": 2005,
+      "Cyb": 51,
+      "Reg": 102,
+      "PolInd": 78
+    },
+    {
+      "year": 2006,
+      "Cyb": 75,
+      "Reg": 115,
+      "PolInd": 62
+    },
+    {
+      "year": 2007,
+      "Cyb": 72,
+      "Reg": 124,
+      "PolInd": 87
+    },
+    {
+      "year": 2008,
+      "Cyb": 61,
+      "Reg": 91,
+      "PolInd": 92
+    },
+    {
+      "year": 2009,
+      "Cyb": 53,
+      "Reg": 129,
+      "PolInd": 91
+    },
+    {
+      "year": 2010,
+      "Cyb": 69,
+      "Reg": 111,
+      "PolInd": 98
+    },
+    {
+      "year": 2011,
+      "Cyb": 97,
+      "Reg": 101,
+      "PolInd": 107
+    },
+    {
+      "year": 2012,
+      "Cyb": 88,
+      "Reg": 121,
+      "PolInd": 100
+    },
+    {
+      "year": 2013,
+      "Cyb": 72,
+      "Reg": 119,
+      "PolInd": 90
+    },
+    {
+      "year": 2014,
+      "Cyb": 78,
+      "Reg": 115,
+      "PolInd": 92
+    },
+    {
+      "year": 2015,
+      "Cyb": 80,
+      "Reg": 107,
+      "PolInd": 88
+    },
+    {
+      "year": 2016,
+      "Cyb": 73,
+      "Reg": 95,
+      "PolInd": 99
+    },
+    {
+      "year": 2017,
+      "Cyb": 97,
+      "Reg": 124,
+      "PolInd": 108
+    },
+    {
+      "year": 2018,
+      "Cyb": 72,
+      "Reg": 97,
+      "PolInd": 108
+    },
+    {
+      "year": 2019,
+      "Cyb": 76,
+      "Reg": 103,
+      "PolInd": 107
+    },
+    {
       "year": 2020,
-      "Cyb": 14,
-      "Reg": 17,
-      "PolInd": 14
+      "Cyb": 69,
+      "Reg": 94,
+      "PolInd": 86
     },
     {
       "year": 2021,
-      "Cyb": 9,
-      "Reg": 16,
-      "PolInd": 8
+      "Cyb": 57,
+      "Reg": 70,
+      "PolInd": 70
     },
     {
       "year": 2022,
-      "Cyb": 10,
-      "Reg": 5,
-      "PolInd": 4
+      "Cyb": 41,
+      "Reg": 47,
+      "PolInd": 40
     },
     {
       "year": 2023,
-      "Cyb": 8,
-      "Reg": 12,
-      "PolInd": 7
+      "Cyb": 32,
+      "Reg": 26,
+      "PolInd": 36
     },
     {
       "year": 2024,
-      "Cyb": 6,
-      "Reg": 5,
-      "PolInd": 1
+      "Cyb": 22,
+      "Reg": 28,
+      "PolInd": 32
     },
     {
       "year": 2025,
-      "Cyb": 13,
-      "Reg": 6,
-      "PolInd": 1
+      "Cyb": 29,
+      "Reg": 18,
+      "PolInd": 11
     }
   ],
   "clusters_bc": [
     {
       "cluster_id": 0,
-      "label": "design · governance · instruments",
-      "size": 190,
+      "label": "development · economic · industrial",
+      "size": 2064,
       "top_papers": [
         {
-          "title": "Introduction: Understanding Public Policy through Its Instru",
-          "cited_by": 1381,
-          "year": 2007,
-          "authors": "Pierre Lascoumes; Patrick Le Galès"
+          "title": "Dynamic capabilities and strategic management",
+          "cited_by": 31231,
+          "year": 1997,
+          "authors": "David J. Teece; Gary P. Pisano; Amy"
         },
         {
-          "title": "Policy mixes for sustainability transitions: An extended con",
-          "cited_by": 1346,
-          "year": 2016,
-          "authors": "Karoline S. Rogge; Kristin Reichard"
+          "title": "Toward a New Conception of the Environment-Competitiveness R",
+          "cited_by": 12481,
+          "year": 1995,
+          "authors": "Michael E. Porter; Claas van der Li"
         },
         {
-          "title": "Reconceptualising the ‘policy mix’ for innovation",
-          "cited_by": 1072,
-          "year": 2011,
-          "authors": "Kieron Flanagan; Elvira Uyarra; Man"
+          "title": "The Colonial Origins of Comparative Development: An Empirica",
+          "cited_by": 8244,
+          "year": 2001,
+          "authors": "Daron Acemoğlu; Simon Johnson; Jame"
         }
       ]
     },
     {
       "cluster_id": 1,
-      "label": "industrial · innovation · new",
-      "size": 139,
+      "label": "governance · policy · regulation",
+      "size": 1500,
       "top_papers": [
         {
-          "title": "The entrepreneurial state: debunking public vs. private sect",
-          "cited_by": 2314,
-          "year": 2014,
-          "authors": ""
+          "title": "Introduction: Understanding Public Policy through Its Instru",
+          "cited_by": 1385,
+          "year": 2007,
+          "authors": "Pierre Lascoumes; Patrick Le Galès"
         },
         {
-          "title": "Industrial Policy for the Twenty-First Century",
-          "cited_by": 1526,
-          "year": 2004,
-          "authors": "Dani Rodrik"
+          "title": "Social Accountability and Corporate Greenwashing",
+          "cited_by": 1318,
+          "year": 2003,
+          "authors": "William S. Laufer"
         },
         {
-          "title": "Smart Specialization, Regional Growth and Applications to Eu",
-          "cited_by": 948,
-          "year": 2013,
-          "authors": "Philip McCann; Raquel Ortega‐Argilé"
+          "title": "Legitimacy and the Privatization of Environmental Governance",
+          "cited_by": 1259,
+          "year": 2002,
+          "authors": "Benjamin Cashore"
         }
       ]
     },
     {
       "cluster_id": 2,
-      "label": "cybernetics · management · model",
-      "size": 121,
+      "label": "management · model · systems",
+      "size": 1064,
       "top_papers": [
         {
-          "title": "The Viable System Model: Its Provenance, Development, Method",
-          "cited_by": 691,
-          "year": 1984,
-          "authors": "Stafford Beer"
+          "title": "A Dynamic Theory of Organizational Knowledge Creation",
+          "cited_by": 17489,
+          "year": 1994,
+          "authors": "Ikujiro Nonaka"
         },
         {
-          "title": "Integrated performance measurement systems: a development gu",
-          "cited_by": 690,
-          "year": 1997,
-          "authors": "Umit Bititci; Allan S. Carrie; Liam"
+          "title": "A Mathematical Theory of Communication",
+          "cited_by": 9740,
+          "year": 1948,
+          "authors": "Claude E. Shannon"
         },
         {
-          "title": "The Viable System Model: Interpretations and Applications of",
-          "cited_by": 240,
-          "year": 1990,
-          "authors": "Frederick P. Wheeler"
+          "title": "What Will 5G Be?",
+          "cited_by": 8161,
+          "year": 2014,
+          "authors": "Jeffrey G. Andrews; Stefano Buzzi; "
         }
       ]
     },
     {
       "cluster_id": 3,
-      "label": "governance · management · model",
-      "size": 110,
+      "label": "policy · political · public",
+      "size": 981,
       "top_papers": [
         {
-          "title": "Organizational Systems",
-          "cited_by": 215,
-          "year": 2011,
-          "authors": "Raúl Espejo; Alfonso Reyes"
+          "title": "Why would corporations behave in socially responsible ways? ",
+          "cited_by": 4755,
+          "year": 2007,
+          "authors": "John L. Campbell"
         },
         {
-          "title": "A Critical Historic Overview of Artificial Intelligence: Iss",
-          "cited_by": 104,
-          "year": 2023,
-          "authors": "Peter P. Groumpos"
+          "title": "Politically Connected Firms",
+          "cited_by": 3956,
+          "year": 2006,
+          "authors": "Mara Faccio"
         },
         {
-          "title": "Organizing for sustainability: a cybernetic concept for sust",
-          "cited_by": 60,
-          "year": 2015,
-          "authors": "Markus Schwaninger"
+          "title": "The great reversals: the politics of financial development i",
+          "cited_by": 3374,
+          "year": 2003,
+          "authors": "Raghuram G. Rajan; Luigi Zingales"
         }
       ]
     },
     {
       "cluster_id": 4,
-      "label": "management · model · perspective",
-      "size": 88,
+      "label": "approach · dynamics · learning",
+      "size": 355,
       "top_papers": [
         {
-          "title": "The Personal Learning Environment and the human condition: f",
-          "cited_by": 139,
-          "year": 2007,
-          "authors": "Mark Johnson; Oleg Liber"
+          "title": "Learning by Expanding",
+          "cited_by": 4918,
+          "year": 2014,
+          "authors": "Yrjö Engeström"
         },
         {
-          "title": "Sustainability, complexity and learning: insights from compl",
-          "cited_by": 137,
-          "year": 2011,
-          "authors": "Ángela Espinosa; Terry B. Porter"
+          "title": "Modernization, cultural change, and democracy the human deve",
+          "cited_by": 3736,
+          "year": 2005,
+          "authors": "Ronald Inglehart; Christian Welzel"
         },
         {
-          "title": "Evolution of cybernetics: philosophical and methodological a",
-          "cited_by": 112,
-          "year": 2017,
-          "authors": "Vladimir Lepskiy"
+          "title": "An Organizational Learning Framework: From Intuition to Inst",
+          "cited_by": 3641,
+          "year": 1999,
+          "authors": "Mary Crossan; Henry W. Lane; Roderi"
         }
       ]
     },
     {
       "cluster_id": 5,
-      "label": "design · management · model",
-      "size": 73,
+      "label": "calculation · economic · economics",
+      "size": 95,
       "top_papers": [
         {
-          "title": "Understanding the Innovation Impacts of Public Procurement",
-          "cited_by": 405,
-          "year": 2009,
-          "authors": "Elvira Uyarra; Kieron Flanagan"
+          "title": "Genealogies of resilience",
+          "cited_by": 1067,
+          "year": 2011,
+          "authors": "Jeremy Walker; Melinda Cooper"
         },
         {
-          "title": "Remembering the Technological Unconscious by Foregrounding K",
-          "cited_by": 299,
-          "year": 2004,
-          "authors": "Nigel Thrift"
+          "title": "The Firm in Illyria: Market Syndicalism",
+          "cited_by": 752,
+          "year": 1977,
+          "authors": "Benjamin Ward"
         },
         {
-          "title": "A new value stream mapping approach for healthcare environme",
-          "cited_by": 146,
-          "year": 2015,
-          "authors": "Daniel Barberato Henrique; Antonio "
+          "title": "Modernization theory and the sociological study of developme",
+          "cited_by": 300,
+          "year": 1971,
+          "authors": "Henry Bernstein"
         }
       ]
     }

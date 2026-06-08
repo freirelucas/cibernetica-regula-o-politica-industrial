@@ -1,6 +1,6 @@
 {
  "_generated": "proveniência da síntese Rayyan (PR-7)",
- "n_obras": 211,
+ "n_obras": 274,
  "limiares": {
   "MIN_CROSS_AXIS_EDGES": 10,
   "TOP_N_HIGHER_ORDER": 40,
@@ -13,29 +13,29 @@
  },
  "por_papel": {
   "corpus Brasil (Faganello)": 73,
+  "obra-semente": 60,
   "obra de autor-semente": 56,
-  "cibernética organizacional": 38,
+  "cibernética organizacional": 56,
   "complexidade (4º eixo)": 30,
-  "ponte a construir": 25,
+  "ponte a construir": 26,
+  "higher_order_bridge": 23,
   "complexidade · Santa Fe — economia como sistema complexo (EECS-II)": 21,
   "mais citada": 20,
-  "obra-semente": 19,
-  "rajada de citação": 19,
-  "higher_order_bridge": 17,
-  "obra-ponte": 15,
-  "obra de autor-ponte": 15,
-  "bela adormecida": 14,
-  "ponte global×Brasil": 10,
-  "cibernética (geral)": 8,
+  "rajada de citação": 16,
+  "bela adormecida": 15,
+  "obra-ponte": 14,
+  "cibernética (geral)": 13,
+  "obra de autor-ponte": 11,
+  "ponte global×Brasil": 9,
   "complexidade · modelagem baseada em agentes": 5,
   "complexidade · retornos crescentes / dependência de trajetória": 3,
   "complexidade · economia evolucionária": 1
  },
  "por_eixo": {
-  "Política industrial": 109,
-  "Cibernética": 46,
+  "Política industrial": 133,
+  "Cibernética": 69,
+  "Regulação econômica": 40,
   "Economia da complexidade": 30,
-  "Regulação econômica": 24,
   "Instrumentos de governo": 15
  }
 }
