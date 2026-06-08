@@ -7,9 +7,8 @@ UR  - https://openalex.org/W3183746153
 AB  - This research aims to investigate the importance of industrial policies for the recovery and economic development of Brazil in the post-Covid-19 pandemic. To this end, it starts from theoretical and historical foundations of industrial policy and industrial processes, especially as a development strategy. From this, we seek to evaluate the challenges that the Brazilian industry has faced in recent years until the current situation. Brazil has shown a significant decline in industrial activity in recent decades. As a result, one can see losses in the capacity for innovation and competitiveness, as well as technological and productive dependence of the Brazilian industry. In the same way, with the arrival of the Covid-19 pandemic, the industrial impact has highlighted issues related to insufficient production in several sectors, especially in the health area. The Brazilian industrial policy agenda needs to be focused on the transformation of the industrial structure, with increased productive gains, supported by new technologies and the diversification of sectors and activities that have greater economic value. The dynamics of the industrial sector is an instrument for the long-term development of the country and for overcoming the post-pandemic economic recession.
 KW  - eixo: Política industrial
 KW  - papel: corpus Brasil (Faganello)
-KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello), ponte a construir, ponte global×Brasil · razão: ponte a construir=top-25 de bridge_priority (score=0.15)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello), ponte global×Brasil
 ER  - 
 
 TY  - JOUR
@@ -120,6 +119,22 @@ N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industr
 ER  - 
 
 TY  - JOUR
+T1  - Hausmann & Rodrik · Economic Development as Self-Discovery
+AU  - Hausmann
+AU  - Rodrik
+PY  - 2003
+DO  - 10.1016/s0304-3878(03)00124-x
+UR  - https://openalex.org/W2120106358
+KW  - eixo: Política industrial
+KW  - papel: obra de autor-semente
+KW  - papel: obra-semente
+KW  - papel: ponte a construir
+KW  - papel: ponte global×Brasil
+KW  - papel: rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: obra de autor-semente, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.5514)
+ER  - 
+
+TY  - JOUR
 T1  - From industrial policy to regional and local locational policy: experience from Santa Catarina/Brazil
 AU  - Jog Rg Meyer-Stamer
 PY  - 1999
@@ -132,4 +147,56 @@ KW  - papel: corpus Brasil (Faganello)
 KW  - papel: obra de autor-ponte
 KW  - papel: ponte global×Brasil
 N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: corpus Brasil (Faganello), obra de autor-ponte, ponte global×Brasil · razão: obra de autor-ponte=autor Jörg Meyer‐Stamer — cross_axis_score=0.631
+ER  - 
+
+TY  - JOUR
+T1  - Porter · The Competitive Advantage of Nations
+AU  - Terry Clark
+AU  - Michael Porter
+PY  - 1991
+DO  - 10.2307/1251962
+UR  - https://openalex.org/W2013386523
+AB  - The Need for a New Paradigm - PART I: FOUNDATIONS - The Competitive Advantage of Firms in Global Industries - Determinants of National Competitive Advantage - The Dynamics of National Advantage - PART II: INDUSTRIES - Four Studies in National Competitive Advantage - National Competitive Advantage in Services - PART III: NATIONS - Patterns of National Competitive Advantage: The Early Postwar Winners - Emerging Nations in the 1970s and 1980s - Shifting National Advantage - The Competitive Development of National Economies - PART IV: IMPLICATIONS - Company Strategy - Government Policy - National Agendas - Epilogue - Appendices - References
+KW  - eixo: Cibernética
+KW  - eixo: Política industrial
+KW  - eixo: Regulação econômica
+KW  - papel: cibernética organizacional
+KW  - papel: obra-ponte
+KW  - papel: obra-semente
+KW  - papel: ponte a construir
+KW  - papel: ponte global×Brasil
+KW  - papel: rajada de citação
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.6198)
+ER  - 
+
+TY  - JOUR
+T1  - An Evolutionary Theory of Economic Change.
+AU  - Brian J. Loasby
+AU  - Richard R. Nelson
+AU  - Sidney G. Winter
+PY  - 1982
+DO  - 10.2307/2232409
+UR  - https://openalex.org/W2137358449
+AB  - Journal Article An Evolutionary Theory of Economic Change Get access An Evolutionary Theory of Economic Change. By Richard R. Nelson and Sidney G. Winter. (Cambridge, Massachusetts & London: Harvard University Press, 1982. Pp. xi +437. £17.50.) Brian J. Loasby Brian J. Loasby University of Stirling Search for other works by this author on: Oxford Academic Google Scholar The Economic Journal, Volume 93, Issue 371, 1 September 1983, Pages 652–654, https://doi.org/10.2307/2232409 Published: 01 September 1983
+KW  - eixo: Economia da complexidade
+KW  - eixo: Política industrial
+KW  - papel: complexidade (4º eixo)
+KW  - papel: higher_order_bridge
+KW  - papel: mais citada
+KW  - papel: ponte a construir
+KW  - papel: ponte global×Brasil
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Economia da complexidade, Política industrial · papel: complexidade (4º eixo), higher_order_bridge, mais citada, ponte a construir, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6554)
+ER  - 
+
+TY  - JOUR
+T1  - Industrial Policy for the Twenty-First Century
+AU  - Dani Rodrik
+PY  - 2004
+DO  - 10.2139/ssrn.617544
+UR  - https://openalex.org/W3124879925
+KW  - eixo: Política industrial
+KW  - papel: higher_order_bridge
+KW  - papel: obra-semente
+KW  - papel: ponte global×Brasil
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: higher_order_bridge, obra-semente, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI)
 ER  - 
