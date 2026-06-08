@@ -6,35 +6,29 @@
 # MESMO método de crawl/análise — só que as sementes e o vocabulário agora vêm da
 # fonte única src/minirun.py (esquema novo 20/20/20; eixo "Reg" = regulação
 # econômica). O notebook regenera data/network.json + os checkpoints/CSVs em
-# scisci_output/. Em seguida, src/run_all.py --force reconstrói os derivados de
-# data/ e o site em docs/ a partir da fonte curada data/scisci_results.json, e a
-# ação abre um PR com tudo o que mudou.
+# scisci_output/ + escreve data/scisci_results.json (resumo). Em seguida,
+# src/run_all.py --offline --force reconstrói os derivados de data/ e o site em
+# docs/ a partir desse resumo — SEM crawlar de novo — e a ação abre um PR.
 #
 # COMO RODAR: manualmente, em Actions → "funil-rerun" → Run workflow
 # (workflow_dispatch). Demora horas (crawl real), por isso timeout alto e nunca
-# dispara sozinho. O segredo OPENALEX_API_KEY é OPCIONAL: sem ele o crawl usa o
-# pool polido (mais lento, porém funciona).
+# dispara sozinho. O crawl usa o pool polido do OpenAlex (e-mail na célula 2 do
+# notebook); a largura é bounded pelos params P do notebook (forward_pages etc.).
 #
 # NOTA: a célula de montagem (reconstruída a partir do report_builder aposentado)
 # faz o notebook escrever data/scisci_results.json — o resumo de 24 chaves
 # (corpus, pontes, rajadas, belas adormecidas, clusters, série temporal) a partir
-# das análises vivas do funil. Em seguida run_all --force reconstrói derivados +
-# site a partir dele. O crawl do notebook tem oa_get próprio (não limitado pelo
-# teto); OA_DAILY_CAP_USD limita as fases de rede do run_all. Limite duro: 330min.
+# das análises vivas do funil. UM crawl só: o do notebook. Depois run_all roda
+# OFFLINE (--offline, zero fetch) e reconstrói derivados + site a partir do resumo
+# fresco, SEM crawlar de novo. Guarda-corpo duro: timeout de 330 min do job. (O
+# crawl do notebook usa oa_get próprio, limitado pelos seus params P, não pelo teto.)
 # ─────────────────────────────────────────────────────────────────────────────
 name: funil-rerun
 
 on:
-  workflow_dispatch:
-    inputs:
-      oa_daily_cap:
-        description: "Teto diário de gasto na API OpenAlex (USD)"
-        required: false
-        default: "5"
-      email:
-        description: "E-mail para o polite pool do OpenAlex"
-        required: false
-        default: "lucasfreire@gmail.com"
+  # Disparo manual apenas. Sem inputs: a largura do crawl e o e-mail do polite
+  # pool vivem nos params P / EMAIL da célula 2 do notebook (ajuste lá se preciso).
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -77,11 +71,9 @@ jobs:
       - name: Rodar o funil pesado (notebook headless)
         # MESMO método do Colab; sementes/vocab vêm de src/minirun (PYTHONPATH=src).
         # ExecutePreprocessor.timeout=-1 = sem teto por célula (o crawl é longo).
-        # OPENALEX_API_KEY é opcional (pool polido se ausente).
+        # O notebook usa o pool polido (EMAIL na célula 2); largura nos params P.
         env:
           PYTHONPATH: src
-          OA_DAILY_CAP_USD: ${{ inputs.oa_daily_cap }}
-          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
           jupyter nbconvert --to notebook --execute \
             --ExecutePreprocessor.timeout=-1 \
@@ -95,15 +87,15 @@ jobs:
           test -f data/scisci_results.json || { echo "ERRO: o funil não gerou data/scisci_results.json"; exit 1; }
           python3 -c "import json; d=json.load(open('data/scisci_results.json')); print('generated', d['generated'], '| n_seeds', d['n_seeds'], '| corpus', d['corpus_size']); assert d['corpus_size']>0 and d['n_seeds']>0, 'resumo vazio'"
 
-      - name: Reconstruir derivados + site
-        # run_all lê a fonte curada data/scisci_results.json (obrigatória) e
-        # regenera data/*.json + docs/. --force re-roda tudo p/ consistência.
+      - name: Reconstruir derivados + site (offline, SEM recrawl)
+        # O notebook já fez O ÚNICO crawl (scisci_results.json + network.json).
+        # Aqui run_all roda OFFLINE (--offline = zero fetch, só cache) e re-roda
+        # as fases p/ reconstruir os derivados de data/ + docs/ a partir do resumo
+        # fresco — sem crawlar de novo. Evita o duplo-crawl e o estouro do timeout.
         env:
           PYTHONPATH: src
-          OA_DAILY_CAP_USD: ${{ inputs.oa_daily_cap }}
-          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: |
-          PYTHONPATH=src python src/run_all.py --force
+          PYTHONPATH=src python src/run_all.py --offline --force
 
       - name: Abrir PR com os resultados do funil
         uses: peter-evans/create-pull-request@v6
@@ -125,6 +117,5 @@ jobs:
             - Site reconstruído em `docs/`.
             - `data/run_all_report.csv` (relatório de execução do DAG).
 
-            Parâmetros do disparo: `oa_daily_cap=${{ inputs.oa_daily_cap }}`,
-            `email=${{ inputs.email }}`. Segredo `OPENALEX_API_KEY`:
-            usado se configurado; caso contrário, pool polido.
+            Disparo manual (workflow_dispatch). O crawl do notebook usa o pool
+            polido (e-mail/params na célula 2); a reconstrução roda offline (sem rede).
