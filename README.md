@@ -12,6 +12,11 @@ construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 (relatório, explorador, triagem e exportações Rayyan). O notebook produz
 `data/scisci_results.json` + `data/network.json` (a "fonte" que o site consome aqui).
 
+**▶ Ou re-rodar sozinho via GitHub Actions** (sem Colab): *Actions → "funil-rerun" →
+Run workflow* (`.github/workflows/funnel.yml`, disparo manual). Roda o notebook headless
+com as sementes de `src/minirun.py` (fonte única, 20/20/20), reconstrói os derivados
+offline e abre um PR com `scisci_results.json` + derivados + site atualizados.
+
 ---
 
 ## Objetivo
@@ -59,7 +64,7 @@ suíte de testes verde; prosa sem anglicismo.
 │   ├── dados/                        ← 8 CSV do funil (PT) + scisci_results.json + DICIONARIO
 │   └── material-brasil/              ← revisão da literatura nacional (Faganello) + dados/mapas
 ├── data/
-│   └── scisci_results.json           ← resultados consolidados (execução maio 2026)
+│   └── scisci_results.json           ← resultados consolidados (execução jun/2026; corpus 6.340, 60 sementes)
 ├── tests/                            ← suite pytest (build, dados, anglicismos, integridade)
 └── .claude/skills/run-scisci-ipea/   ← skill: build, serve e dirige o site headless
 ```
@@ -112,7 +117,7 @@ jupyter notebook colab/scisci_cibernetica_regulacao_PI_v2.ipynb
 
 ---
 
-## Obras-semente canônicas (IDs OpenAlex verificados em maio 2026)
+## Obras-semente canônicas (núcleo clássico; conjunto completo de 60 em `src/minirun.py`)
 
 | Eixo | ID | Referência |
 |------|----|-----------|
@@ -202,4 +207,4 @@ em `docs/material-brasil/` resumem a revisão da literatura nacional conduzida p
 Claucia Faganello (busca em SciSpace/Google Scholar, abril/2026; 220 trabalhos),
 complementando o mapeamento bibliométrico global (OpenAlex) das demais seções.
 
-Execução de referência (corpus OpenAlex): 2026-05-25 17:33.
+Execução de referência (corpus OpenAlex): 2026-06-08 (corpus 6.340, 60 sementes 20/20/20).
