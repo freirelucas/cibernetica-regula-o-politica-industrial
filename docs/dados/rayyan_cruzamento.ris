@@ -197,6 +197,7 @@ UR  - https://openalex.org/W3124879925
 KW  - eixo: Política industrial
 KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
+KW  - papel: ponte de ordem superior
 KW  - papel: ponte global×Brasil
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: higher_order_bridge, obra-semente, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: higher_order_bridge, obra-semente, ponte de ordem superior, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte de ordem superior=HO centrality=0.318 (B.4 random walks)
 ER  - 
