@@ -52,7 +52,7 @@ def test_csv_rows(results, tmp_path):
     build_site.write_csvs(results, str(tmp_path))
     counts = {
         "02_mais_citados.csv": 20, "03_obras_ponte.csv": 15,
-        "05_rajadas_kleinberg.csv": 20, "06_belas_adormecidas.csv": 15,
+        "05_rajadas_kleinberg.csv": len(results["top_bursts"]), "06_belas_adormecidas.csv": 15,
         "08_obras_semente.csv": len(results["seeds"]),
         "09_serie_temporal.csv": len(results["temporal"]),
     }

@@ -1,20 +1,20 @@
 {
  "n_citers": 1915,
- "n_edges": 1385,
- "n_cross_axis_edges": 537,
- "mean_size": 4.6,
+ "n_edges": 1383,
+ "n_cross_axis_edges": 518,
+ "mean_size": 4.58,
  "null_model": {
-  "obs": 0.3877,
-  "null_mean": 0.8103,
-  "null_sd": 0.0086,
-  "z": -49.3,
+  "obs": 0.3745,
+  "null_mean": 0.8065,
+  "null_sd": 0.0093,
+  "z": -46.2,
   "n_iter": 60
  },
  "null_model_chung_lu": {
-  "obs": 0.3877,
-  "null_mean": 0.8511,
-  "null_sd": 0.0105,
-  "z": -44.23,
+  "obs": 0.3745,
+  "null_mean": 0.8506,
+  "null_sd": 0.0119,
+  "z": -39.9,
   "n_iter": 30,
   "model": "chung_lu"
  },
@@ -35,31 +35,31 @@
    "oa_id": "W1553746973",
    "label": "Mazzucato · Entrepreneurial State",
    "axis": "política industrial",
-   "cross_axis_hyperedges": 73
+   "cross_axis_hyperedges": 69
   },
   {
    "oa_id": "W3130930004",
    "label": "Lange · Economic Theory of Socialism",
    "axis": "política industrial",
-   "cross_axis_hyperedges": 65
-  },
-  {
-   "oa_id": "W3124879925",
-   "label": "Rodrik · Industrial Policy 21C",
-   "axis": "política industrial",
-   "cross_axis_hyperedges": 53
-  },
-  {
-   "oa_id": "W1566478880",
-   "label": "Beer · Heart of Enterprise",
-   "axis": "cibernética",
-   "cross_axis_hyperedges": 52
+   "cross_axis_hyperedges": 62
   },
   {
    "oa_id": "W1520641906",
    "label": "The Tools of government: a guide to the new governance",
    "axis": "cibernética",
    "cross_axis_hyperedges": 52
+  },
+  {
+   "oa_id": "W3124879925",
+   "label": "Rodrik · Industrial Policy 21C",
+   "axis": "política industrial",
+   "cross_axis_hyperedges": 51
+  },
+  {
+   "oa_id": "W1566478880",
+   "label": "Beer · Heart of Enterprise",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 48
   },
   {
    "oa_id": "W2048086870",
@@ -83,13 +83,7 @@
    "oa_id": "W2048894562",
    "label": "On the Economic Theory of Socialism.",
    "axis": "política industrial",
-   "cross_axis_hyperedges": 37
-  },
-  {
-   "oa_id": "W2111030512",
-   "label": "An introduction to cybernetics",
-   "axis": "cibernética",
-   "cross_axis_hyperedges": 32
+   "cross_axis_hyperedges": 34
   },
   {
    "oa_id": "W3121147769",
@@ -98,16 +92,22 @@
    "cross_axis_hyperedges": 32
   },
   {
-   "oa_id": "W2154683088",
-   "label": "Beer · Diagnosing the System",
-   "axis": "cibernética",
-   "cross_axis_hyperedges": 32
-  },
-  {
    "oa_id": "W2037927976",
    "label": "Agendas, alternatives, and public policies",
    "axis": "regulação econômica",
    "cross_axis_hyperedges": 32
+  },
+  {
+   "oa_id": "W2015930340",
+   "label": "The Nature of the Firm",
+   "axis": "política industrial",
+   "cross_axis_hyperedges": 31
+  },
+  {
+   "oa_id": "W2154683088",
+   "label": "Beer · Diagnosing the System",
+   "axis": "cibernética",
+   "cross_axis_hyperedges": 30
   }
  ],
  "top_citers_for_sr": [
@@ -350,24 +350,6 @@
    "n_communities": 5
   },
   {
-   "oa_id": "W2118889754",
-   "seed_via": "W3130930004",
-   "n_refs_in_corpus": 17,
-   "axes": [
-    "Cplx",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    1,
-    2,
-    5
-   ],
-   "n_communities": 4
-  },
-  {
    "oa_id": "W2893813884",
    "seed_via": "W1553746973",
    "n_refs_in_corpus": 16,
@@ -387,6 +369,24 @@
   },
   {
    "oa_id": "W4240229210",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2,
+    5
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W2118889754",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 16,
    "axes": [
@@ -601,7 +601,7 @@
   {
    "oa_id": "W2026873133",
    "seed_via": "W3130930004",
-   "n_refs_in_corpus": 13,
+   "n_refs_in_corpus": 12,
    "axes": [
     "Cplx",
     "PolInd",
@@ -612,23 +612,6 @@
     0,
     2,
     5
-   ],
-   "n_communities": 3
-  },
-  {
-   "oa_id": "W3165496502",
-   "seed_via": "W2048086870",
-   "n_refs_in_corpus": 12,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    2,
-    3,
-    4
    ],
    "n_communities": 3
   },
@@ -646,6 +629,23 @@
     1,
     2,
     5
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3197889407",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    4
    ],
    "n_communities": 3
   }
@@ -890,24 +890,6 @@
    "n_communities": 5
   },
   {
-   "oa_id": "W2118889754",
-   "seed_via": "W3130930004",
-   "n_refs_in_corpus": 17,
-   "axes": [
-    "Cplx",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    1,
-    2,
-    5
-   ],
-   "n_communities": 4
-  },
-  {
    "oa_id": "W2893813884",
    "seed_via": "W1553746973",
    "n_refs_in_corpus": 16,
@@ -927,6 +909,24 @@
   },
   {
    "oa_id": "W4240229210",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 16,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2,
+    5
+   ],
+   "n_communities": 4
+  },
+  {
+   "oa_id": "W2118889754",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 16,
    "axes": [
@@ -1141,7 +1141,7 @@
   {
    "oa_id": "W2026873133",
    "seed_via": "W3130930004",
-   "n_refs_in_corpus": 13,
+   "n_refs_in_corpus": 12,
    "axes": [
     "Cplx",
     "PolInd",
@@ -1152,23 +1152,6 @@
     0,
     2,
     5
-   ],
-   "n_communities": 3
-  },
-  {
-   "oa_id": "W3165496502",
-   "seed_via": "W2048086870",
-   "n_refs_in_corpus": 12,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    2,
-    3,
-    4
    ],
    "n_communities": 3
   },
@@ -1186,6 +1169,23 @@
     1,
     2,
     5
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W3197889407",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "Cplx",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    1,
+    2,
+    4
    ],
    "n_communities": 3
   },
@@ -1258,23 +1258,6 @@
    "n_communities": 3
   },
   {
-   "oa_id": "W2909235974",
-   "seed_via": "W2126563689",
-   "n_refs_in_corpus": 9,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    1,
-    2
-   ],
-   "n_communities": 3
-  },
-  {
    "oa_id": "W4210667362",
    "seed_via": "W4230710385",
    "n_refs_in_corpus": 9,
@@ -1339,6 +1322,23 @@
     0,
     2,
     3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2909235974",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    1,
+    2
    ],
    "n_communities": 3
   },
@@ -1479,42 +1479,8 @@
    "n_communities": 3
   },
   {
-   "oa_id": "W2003556809",
-   "seed_via": "W2154683088",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    2,
-    3
-   ],
-   "n_communities": 3
-  },
-  {
    "oa_id": "W1942618137",
    "seed_via": "W2154683088",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    2,
-    3
-   ],
-   "n_communities": 3
-  },
-  {
-   "oa_id": "W1969869785",
-   "seed_via": "W1601629960",
    "n_refs_in_corpus": 5,
    "axes": [
     "Cyb",
@@ -1564,46 +1530,12 @@
    "n_communities": 3
   },
   {
-   "oa_id": "W3128196005",
-   "seed_via": "W1553746973",
-   "n_refs_in_corpus": 4,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    1,
-    2
-   ],
-   "n_communities": 3
-  },
-  {
    "oa_id": "W2063383122",
    "seed_via": "W2063282131",
    "n_refs_in_corpus": 4,
    "axes": [
     "Cplx",
     "Cyb",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    2,
-    3
-   ],
-   "n_communities": 3
-  },
-  {
-   "oa_id": "W2096718335",
-   "seed_via": "W1566478880",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "Cyb",
-    "PolInd",
     "Reg"
    ],
    "n_axes": 3,
@@ -1693,22 +1625,6 @@
    "communities": [
     0,
     1
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W3197889407",
-   "seed_via": "W3124879925",
-   "n_refs_in_corpus": 10,
-   "axes": [
-    "Cplx",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    1,
-    2
    ],
    "n_communities": 2
   },
@@ -1825,22 +1741,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2016880658",
-   "seed_via": "W1601629960",
-   "n_refs_in_corpus": 7,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    2
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2480765239",
    "seed_via": "W2325487953",
    "n_refs_in_corpus": 6,
@@ -1852,6 +1752,22 @@
    "n_axes": 3,
    "communities": [
     2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2123807871",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
     3
    ],
    "n_communities": 2
@@ -2001,6 +1917,22 @@
    "n_communities": 2
   },
   {
+   "oa_id": "W2403375936",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
    "oa_id": "W2076248782",
    "seed_via": "W1601629960",
    "n_refs_in_corpus": 5,
@@ -2045,22 +1977,6 @@
    "communities": [
     0,
     4
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W1779067388",
-   "seed_via": "W3130930004",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cplx",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    2,
-    5
    ],
    "n_communities": 2
   },
@@ -2115,6 +2031,22 @@
   {
    "oa_id": "W2018959883",
    "seed_via": "W1601629960",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2094085690",
+   "seed_via": "W2126563689",
    "n_refs_in_corpus": 4,
    "axes": [
     "Cyb",
@@ -2241,22 +2173,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2590514166",
-   "seed_via": "W2126563689",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "Cyb",
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 3,
-   "communities": [
-    0,
-    2
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2791533104",
    "seed_via": "W2126563689",
    "n_refs_in_corpus": 3,
@@ -2304,6 +2220,21 @@
   },
   {
    "oa_id": "W2006670069",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 3,
+   "communities": [
+    0
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2092245211",
    "seed_via": "W1601629960",
    "n_refs_in_corpus": 3,
    "axes": [
@@ -2499,8 +2430,8 @@
    "n_communities": 3
   },
   {
-   "oa_id": "W2010106765",
-   "seed_via": "W3124879925",
+   "oa_id": "W2606879194",
+   "seed_via": "W1553746973",
    "n_refs_in_corpus": 11,
    "axes": [
     "PolInd",
@@ -2515,18 +2446,18 @@
    "n_communities": 3
   },
   {
-   "oa_id": "W2606879194",
-   "seed_via": "W1553746973",
-   "n_refs_in_corpus": 11,
+   "oa_id": "W3165496502",
+   "seed_via": "W2048086870",
+   "n_refs_in_corpus": 10,
    "axes": [
-    "PolInd",
-    "Reg"
+    "Cyb",
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
-    0,
-    1,
-    2
+    2,
+    3,
+    4
    ],
    "n_communities": 3
   },
@@ -2686,6 +2617,22 @@
    "communities": [
     0,
     3,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2973097001",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1,
     4
    ],
    "n_communities": 3
@@ -2851,23 +2798,39 @@
    "n_communities": 3
   },
   {
-   "oa_id": "W2133519256",
-   "seed_via": "W3124879925",
+   "oa_id": "W2003556809",
+   "seed_via": "W2154683088",
    "n_refs_in_corpus": 5,
    "axes": [
-    "PolInd",
-    "Reg"
+    "Cyb",
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
     0,
-    1,
-    2
+    2,
+    3
    ],
    "n_communities": 3
   },
   {
-   "oa_id": "W2100874993",
+   "oa_id": "W1969869785",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2133519256",
    "seed_via": "W3124879925",
    "n_refs_in_corpus": 5,
    "axes": [
@@ -3027,6 +2990,22 @@
    "n_communities": 3
   },
   {
+   "oa_id": "W3128196005",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
    "oa_id": "W4200455808",
    "seed_via": "W1553746973",
    "n_refs_in_corpus": 4,
@@ -3076,22 +3055,6 @@
   },
   {
    "oa_id": "W2156535382",
-   "seed_via": "W3130930004",
-   "n_refs_in_corpus": 4,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    2,
-    5
-   ],
-   "n_communities": 3
-  },
-  {
-   "oa_id": "W2140551234",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 4,
    "axes": [
@@ -3187,6 +3150,22 @@
    "n_communities": 3
   },
   {
+   "oa_id": "W2096718335",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2,
+    3
+   ],
+   "n_communities": 3
+  },
+  {
    "oa_id": "W1988926407",
    "seed_via": "W1601629960",
    "n_refs_in_corpus": 3,
@@ -3247,22 +3226,6 @@
     0,
     1,
     4
-   ],
-   "n_communities": 3
-  },
-  {
-   "oa_id": "W2921150777",
-   "seed_via": "W1553746973",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    1,
-    2
    ],
    "n_communities": 3
   },
@@ -3373,22 +3336,6 @@
    "n_axes": 2,
    "communities": [
     1,
-    2,
-    5
-   ],
-   "n_communities": 3
-  },
-  {
-   "oa_id": "W4403150711",
-   "seed_via": "W3130930004",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
     2,
     5
    ],
@@ -3695,6 +3642,21 @@
    "n_communities": 2
   },
   {
+   "oa_id": "W2010106765",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 10,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
    "oa_id": "W2883962203",
    "seed_via": "W2048086870",
    "n_refs_in_corpus": 9,
@@ -3756,21 +3718,6 @@
   },
   {
    "oa_id": "W1977228499",
-   "seed_via": "W2154683088",
-   "n_refs_in_corpus": 9,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2136789556",
    "seed_via": "W2154683088",
    "n_refs_in_corpus": 9,
    "axes": [
@@ -4025,21 +3972,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W1979566786",
-   "seed_via": "W1566478880",
-   "n_refs_in_corpus": 7,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2148632636",
    "seed_via": "W1566478880",
    "n_refs_in_corpus": 7,
@@ -4160,6 +4092,21 @@
    "n_communities": 2
   },
   {
+   "oa_id": "W2016880658",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 7,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
    "oa_id": "W2089751363",
    "seed_via": "W3124879925",
    "n_refs_in_corpus": 7,
@@ -4177,21 +4124,6 @@
   {
    "oa_id": "W112351853",
    "seed_via": "W3124879925",
-   "n_refs_in_corpus": 7,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    1
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2973097001",
-   "seed_via": "W1553746973",
    "n_refs_in_corpus": 7,
    "axes": [
     "PolInd",
@@ -4445,21 +4377,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2123807871",
-   "seed_via": "W1601629960",
-   "n_refs_in_corpus": 6,
-   "axes": [
-    "Cyb",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2108815721",
    "seed_via": "W3124879925",
    "n_refs_in_corpus": 6,
@@ -4565,36 +4482,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2027886198",
-   "seed_via": "W1566478880",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2568029919",
-   "seed_via": "W1566478880",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2091420782",
    "seed_via": "W2154683088",
    "n_refs_in_corpus": 5,
@@ -4655,21 +4542,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W4408781060",
-   "seed_via": "W2325487953",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2886482722",
    "seed_via": "W4244612406",
    "n_refs_in_corpus": 5,
@@ -4686,21 +4558,6 @@
   },
   {
    "oa_id": "W1979025727",
-   "seed_via": "W4244612406",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W4285290975",
    "seed_via": "W4244612406",
    "n_refs_in_corpus": 5,
    "axes": [
@@ -4740,21 +4597,6 @@
    "n_axes": 2,
    "communities": [
     2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2403375936",
-   "seed_via": "W1601629960",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "Cyb",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
     3
    ],
    "n_communities": 2
@@ -4835,21 +4677,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2984011556",
-   "seed_via": "W3124879925",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    1,
-    2
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2912950621",
    "seed_via": "W3124879925",
    "n_refs_in_corpus": 5,
@@ -4886,21 +4713,6 @@
    "axes": [
     "Cplx",
     "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    1,
-    2
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2895014065",
-   "seed_via": "W1553746973",
-   "n_refs_in_corpus": 5,
-   "axes": [
-    "PolInd",
-    "Reg"
    ],
    "n_axes": 2,
    "communities": [
@@ -5120,6 +4932,21 @@
    "n_communities": 2
   },
   {
+   "oa_id": "W4408781060",
+   "seed_via": "W2325487953",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
    "oa_id": "W1481165447",
    "seed_via": "W4244612406",
    "n_refs_in_corpus": 4,
@@ -5145,21 +4972,6 @@
    "n_axes": 2,
    "communities": [
     0,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2787384474",
-   "seed_via": "W4244612406",
-   "n_refs_in_corpus": 4,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
     3
    ],
    "n_communities": 2
@@ -5240,21 +5052,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2381083845",
-   "seed_via": "W1601629960",
-   "n_refs_in_corpus": 4,
-   "axes": [
-    "Cyb",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    2
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2563860877",
    "seed_via": "W1601629960",
    "n_refs_in_corpus": 4,
@@ -5291,21 +5088,6 @@
    "axes": [
     "Cyb",
     "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    2
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2094085690",
-   "seed_via": "W2126563689",
-   "n_refs_in_corpus": 4,
-   "axes": [
-    "Cyb",
-    "Reg"
    ],
    "n_axes": 2,
    "communities": [
@@ -5495,21 +5277,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2921191947",
-   "seed_via": "W1553746973",
-   "n_refs_in_corpus": 4,
-   "axes": [
-    "Cplx",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    1,
-    2
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2002470573",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 4,
@@ -5530,6 +5297,21 @@
    "n_refs_in_corpus": 4,
    "axes": [
     "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    2,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W1779067388",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cplx",
     "PolInd"
    ],
    "n_axes": 2,
@@ -5720,21 +5502,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2064383020",
-   "seed_via": "W2154683088",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2017579459",
    "seed_via": "W2154683088",
    "n_refs_in_corpus": 3,
@@ -5871,21 +5638,6 @@
   },
   {
    "oa_id": "W3093531680",
-   "seed_via": "W4244612406",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W3183579189",
    "seed_via": "W4244612406",
    "n_refs_in_corpus": 3,
    "axes": [
@@ -6055,7 +5807,7 @@
    "n_refs_in_corpus": 3,
    "axes": [
     "Cyb",
-    "Reg"
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
@@ -6141,6 +5893,21 @@
   },
   {
    "oa_id": "W2514736423",
+   "seed_via": "W2126563689",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
+    2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2590514166",
    "seed_via": "W2126563689",
    "n_refs_in_corpus": 3,
    "axes": [
@@ -6320,21 +6087,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2030083724",
-   "seed_via": "W3130930004",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    5
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2904089172",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 3,
@@ -6360,21 +6112,6 @@
    "n_axes": 2,
    "communities": [
     0,
-    5
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2035170135",
-   "seed_via": "W3130930004",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
     5
    ],
    "n_communities": 2
@@ -6485,21 +6222,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2116616625",
-   "seed_via": "W1566478880",
-   "n_refs_in_corpus": 2,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    3
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W2028652971",
    "seed_via": "W1566478880",
    "n_refs_in_corpus": 2,
@@ -6535,7 +6257,7 @@
    "n_refs_in_corpus": 2,
    "axes": [
     "Cyb",
-    "Reg"
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
@@ -6905,21 +6627,6 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W4396946771",
-   "seed_via": "W4386803846",
-   "n_refs_in_corpus": 2,
-   "axes": [
-    "Cyb",
-    "PolInd"
-   ],
-   "n_axes": 2,
-   "communities": [
-    2,
-    6
-   ],
-   "n_communities": 2
-  },
-  {
    "oa_id": "W7115170880",
    "seed_via": "W4386803846",
    "n_refs_in_corpus": 2,
@@ -6996,36 +6703,6 @@
   },
   {
    "oa_id": "W4220858099",
-   "seed_via": "W1553746973",
-   "n_refs_in_corpus": 2,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    1
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W3010786997",
-   "seed_via": "W1553746973",
-   "n_refs_in_corpus": 2,
-   "axes": [
-    "PolInd",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0,
-    1
-   ],
-   "n_communities": 2
-  },
-  {
-   "oa_id": "W2767806026",
    "seed_via": "W1553746973",
    "n_refs_in_corpus": 2,
    "axes": [
@@ -7275,6 +6952,21 @@
    "n_axes": 2,
    "communities": [
     3,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W4403150711",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0,
     5
    ],
    "n_communities": 2
@@ -7910,20 +7602,6 @@
    "n_communities": 1
   },
   {
-   "oa_id": "W2092245211",
-   "seed_via": "W1601629960",
-   "n_refs_in_corpus": 3,
-   "axes": [
-    "Cyb",
-    "Reg"
-   ],
-   "n_axes": 2,
-   "communities": [
-    0
-   ],
-   "n_communities": 1
-  },
-  {
    "oa_id": "W2616295248",
    "seed_via": "W1601629960",
    "n_refs_in_corpus": 3,
@@ -7981,6 +7659,20 @@
   },
   {
    "oa_id": "W2009916185",
+   "seed_via": "W1601629960",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb",
+    "Reg"
+   ],
+   "n_axes": 2,
+   "communities": [
+    0
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2381083845",
    "seed_via": "W1601629960",
    "n_refs_in_corpus": 3,
    "axes": [
@@ -8302,12 +7994,26 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W2921191947",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cplx",
+    "PolInd"
+   ],
+   "n_axes": 2,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W2066674205",
    "seed_via": "W1601629960",
    "n_refs_in_corpus": 2,
    "axes": [
     "Cyb",
-    "Reg"
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
@@ -8349,7 +8055,7 @@
    "n_refs_in_corpus": 2,
    "axes": [
     "Cyb",
-    "Reg"
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
@@ -8377,7 +8083,7 @@
    "n_refs_in_corpus": 2,
    "axes": [
     "Cyb",
-    "Reg"
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
@@ -8657,7 +8363,7 @@
    "n_refs_in_corpus": 2,
    "axes": [
     "Cyb",
-    "Reg"
+    "PolInd"
    ],
    "n_axes": 2,
    "communities": [
@@ -8938,6 +8644,36 @@
    "n_communities": 3
   },
   {
+   "oa_id": "W2100874993",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2943504315",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 5,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1,
+    2,
+    4
+   ],
+   "n_communities": 3
+  },
+  {
    "oa_id": "W1967245772",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 4,
@@ -8999,6 +8735,21 @@
   },
   {
    "oa_id": "W3205777819",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    0,
+    1,
+    2
+   ],
+   "n_communities": 3
+  },
+  {
+   "oa_id": "W2921150777",
    "seed_via": "W1553746973",
    "n_refs_in_corpus": 3,
    "axes": [
@@ -9588,6 +9339,20 @@
    "n_communities": 2
   },
   {
+   "oa_id": "W1979566786",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 6,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    2,
+    3
+   ],
+   "n_communities": 2
+  },
+  {
    "oa_id": "W2040386010",
    "seed_via": "W1566478880",
    "n_refs_in_corpus": 6,
@@ -9658,7 +9423,7 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2965409745",
+   "oa_id": "W3026199557",
    "seed_via": "W1553746973",
    "n_refs_in_corpus": 6,
    "axes": [
@@ -9667,7 +9432,7 @@
    "n_axes": 1,
    "communities": [
     1,
-    2
+    4
    ],
    "n_communities": 2
   },
@@ -9812,7 +9577,7 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2943504315",
+   "oa_id": "W2978481910",
    "seed_via": "W3124879925",
    "n_refs_in_corpus": 5,
    "axes": [
@@ -9826,8 +9591,8 @@
    "n_communities": 2
   },
   {
-   "oa_id": "W2978481910",
-   "seed_via": "W3124879925",
+   "oa_id": "W2965409745",
+   "seed_via": "W1553746973",
    "n_refs_in_corpus": 5,
    "axes": [
     "PolInd"
@@ -10568,6 +10333,20 @@
    "n_communities": 2
   },
   {
+   "oa_id": "W2140551234",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    0,
+    5
+   ],
+   "n_communities": 2
+  },
+  {
    "oa_id": "W1995459385",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 3,
@@ -11236,6 +11015,34 @@
    "communities": [
     1,
     2
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W3010786997",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    0,
+    1
+   ],
+   "n_communities": 2
+  },
+  {
+   "oa_id": "W2767806026",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    0,
+    1
    ],
    "n_communities": 2
   },
@@ -12204,6 +12011,19 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W2136789556",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 8,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W2747921425",
    "seed_via": "W2154683088",
    "n_refs_in_corpus": 8,
@@ -13116,19 +12936,6 @@
   {
    "oa_id": "W2181434547",
    "seed_via": "W3124879925",
-   "n_refs_in_corpus": 6,
-   "axes": [
-    "PolInd"
-   ],
-   "n_axes": 1,
-   "communities": [
-    1
-   ],
-   "n_communities": 1
-  },
-  {
-   "oa_id": "W3026199557",
-   "seed_via": "W1553746973",
    "n_refs_in_corpus": 6,
    "axes": [
     "PolInd"
@@ -14232,6 +14039,19 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W2027886198",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W2073984034",
    "seed_via": "W1566478880",
    "n_refs_in_corpus": 4,
@@ -14246,6 +14066,19 @@
   },
   {
    "oa_id": "W2013143195",
+   "seed_via": "W1566478880",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2568029919",
    "seed_via": "W1566478880",
    "n_refs_in_corpus": 4,
    "axes": [
@@ -14778,6 +14611,19 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W4285290975",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W1980227433",
    "seed_via": "W4244612406",
    "n_refs_in_corpus": 4,
@@ -14908,6 +14754,19 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W2984011556",
+   "seed_via": "W3124879925",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W2992797507",
    "seed_via": "W3124879925",
    "n_refs_in_corpus": 4,
@@ -14961,6 +14820,19 @@
   },
   {
    "oa_id": "W2625888171",
+   "seed_via": "W1553746973",
+   "n_refs_in_corpus": 4,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    1
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2895014065",
    "seed_via": "W1553746973",
    "n_refs_in_corpus": 4,
    "axes": [
@@ -16066,6 +15938,19 @@
   },
   {
    "oa_id": "W4304788978",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 3,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W2787384474",
    "seed_via": "W4244612406",
    "n_refs_in_corpus": 3,
    "axes": [
@@ -17456,6 +17341,19 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W2064383020",
+   "seed_via": "W2154683088",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W2234927670",
    "seed_via": "W2154683088",
    "n_refs_in_corpus": 2,
@@ -17951,6 +17849,19 @@
   },
   {
    "oa_id": "W2265337851",
+   "seed_via": "W4244612406",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "Cyb"
+   ],
+   "n_axes": 1,
+   "communities": [
+    3
+   ],
+   "n_communities": 1
+  },
+  {
+   "oa_id": "W3183579189",
    "seed_via": "W4244612406",
    "n_refs_in_corpus": 2,
    "axes": [
@@ -19874,6 +19785,19 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W2030083724",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    5
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W2003143670",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 2,
@@ -20004,6 +19928,19 @@
    "n_communities": 1
   },
   {
+   "oa_id": "W2035170135",
+   "seed_via": "W3130930004",
+   "n_refs_in_corpus": 2,
+   "axes": [
+    "PolInd"
+   ],
+   "n_axes": 1,
+   "communities": [
+    5
+   ],
+   "n_communities": 1
+  },
+  {
    "oa_id": "W2477150330",
    "seed_via": "W3130930004",
    "n_refs_in_corpus": 2,
@@ -20070,48 +20007,46 @@
   }
  ],
  "cross_axis_degree": {
-  "W1227306373": 6,
-  "W1492856410": 18,
+  "W1227306373": 5,
+  "W1492856410": 17,
   "W1495961791": 6,
   "W1500910854": 5,
   "W1506732837": 3,
-  "W1524464890": 5,
-  "W1527571715": 9,
-  "W1566478880": 52,
+  "W1524464890": 4,
+  "W1527571715": 8,
+  "W1566478880": 48,
   "W1601944394": 5,
   "W1916207017": 14,
-  "W1970428482": 5,
+  "W1970428482": 4,
   "W2010793828": 15,
-  "W2026948646": 8,
+  "W2026948646": 7,
   "W2037306909": 6,
   "W2048086870": 45,
-  "W2072863585": 3,
+  "W2072863585": 2,
   "W2101157755": 19,
-  "W2111030512": 32,
+  "W2111030512": 29,
   "W2129261459": 13,
   "W225706379": 5,
   "W2988934653": 12,
-  "W4205188686": 12,
+  "W4205188686": 10,
   "W597091629": 1,
   "W92085004": 7,
   "W1515810707": 8,
   "W158727920": 9,
   "W1855283887": 11,
-  "W1498488428": 16,
+  "W1498488428": 15,
   "W1541456364": 7,
   "W2083449279": 13,
-  "W2108795964": 19,
+  "W2108795964": 18,
   "W1566172004": 14,
-  "W2013386523": 15,
+  "W2013386523": 14,
   "W2009202666": 7,
   "W2062663664": 13,
   "W2141042444": 4,
-  "W1513281941": 12,
-  "W1517701247": 14,
   "W1558962107": 1,
   "W1995875735": 8,
   "W2164284962": 16,
-  "W2493894436": 12,
+  "W2493894436": 11,
   "W4301066124": 23,
   "W566586761": 9,
   "W1495419098": 14,
@@ -20121,14 +20056,14 @@
   "W2753533763": 17,
   "W3124140110": 8,
   "W1527311855": 28,
-  "W2025177555": 18,
-  "W233775549": 10,
-  "W52678905": 25,
+  "W2025177555": 15,
+  "W233775549": 9,
+  "W52678905": 22,
   "W1535803599": 7,
   "W2068155429": 15,
-  "W2123755784": 28,
+  "W2123755784": 26,
   "W3022339544": 15,
-  "W1553746973": 73,
+  "W1553746973": 69,
   "W2099330597": 8,
   "W1979505044": 4,
   "W2095561982": 5,
@@ -20139,12 +20074,12 @@
   "W1993023795": 6,
   "W1965278510": 14,
   "W1970326724": 10,
-  "W1993663609": 28,
+  "W1993663609": 24,
   "W2061977616": 18,
   "W2101946146": 6,
   "W2123709218": 22,
   "W2140956556": 13,
-  "W4244612406": 27,
+  "W4244612406": 23,
   "W1524264467": 4,
   "W2143943407": 5,
   "W1566344170": 14,
@@ -20154,7 +20089,7 @@
   "W1990360714": 7,
   "W1999997471": 13,
   "W2005888056": 6,
-  "W2099069868": 7,
+  "W2099069868": 6,
   "W2120106358": 20,
   "W1588942736": 7,
   "W201578715": 20,
@@ -20180,9 +20115,9 @@
   "W2007180942": 18,
   "W67809301": 5,
   "W90769783": 4,
-  "W2154683088": 32,
+  "W2154683088": 30,
   "W1895366050": 9,
-  "W1973459906": 8,
+  "W1973459906": 7,
   "W1989864366": 9,
   "W2070631858": 14,
   "W1550684686": 11,
@@ -20201,11 +20136,11 @@
   "W1535129021": 13,
   "W1999130476": 3,
   "W2142257426": 4,
-  "W2131740028": 20,
+  "W2131740028": 19,
   "W1566447476": 26,
   "W1495886451": 7,
   "W2325487953": 15,
-  "W2007287880": 5,
+  "W2007287880": 4,
   "W2109469951": 9,
   "W2334918364": 17,
   "W2129385606": 8,
@@ -20256,30 +20191,30 @@
   "W1597798001": 3,
   "W2082597100": 9,
   "W172274565": 7,
-  "W2012275303": 17,
+  "W2012275303": 16,
   "W1978213954": 4,
   "W1490995146": 8,
-  "W4386803846": 2,
+  "W4386803846": 1,
   "W148464764": 5,
   "W1486212401": 14,
   "W1492359653": 13,
   "W1979968159": 13,
-  "W1999800658": 10,
-  "W200208739": 7,
+  "W1999800658": 9,
+  "W200208739": 6,
   "W2023509749": 5,
   "W2066374751": 7,
   "W2066979365": 3,
   "W2105717288": 9,
-  "W3124879925": 53,
+  "W3124879925": 51,
   "W1479827809": 3,
   "W1498201492": 1,
   "W1600823763": 3,
   "W2017802748": 20,
   "W3023721815": 18,
   "W2080485486": 3,
-  "W2912536286": 15,
-  "W74794663": 5,
-  "W1510137183": 4,
+  "W2912536286": 14,
+  "W74794663": 4,
+  "W1510137183": 3,
   "W2157774440": 8,
   "W4302604455": 9,
   "W2096611253": 8,
@@ -20301,9 +20236,9 @@
   "W1491554624": 3,
   "W4230710385": 8,
   "W2063282131": 3,
-  "W3130930004": 65,
+  "W3130930004": 62,
   "W1495882109": 4,
-  "W2048894562": 37,
+  "W2048894562": 34,
   "W1577156806": 1,
   "W1511343964": 2,
   "W1970915980": 2,
@@ -20317,7 +20252,7 @@
   "W1506732837": 29,
   "W1524464890": 21,
   "W1527571715": 54,
-  "W1566478880": 268,
+  "W1566478880": 267,
   "W1601944394": 46,
   "W1916207017": 36,
   "W1970428482": 65,
@@ -20349,8 +20284,6 @@
   "W2141042444": 4,
   "W1995875735": 30,
   "W2099069868": 30,
-  "W1513281941": 12,
-  "W1517701247": 15,
   "W1558962107": 1,
   "W2164284962": 22,
   "W2493894436": 44,
@@ -20499,7 +20432,7 @@
   "W2012275303": 37,
   "W1978213954": 4,
   "W1490995146": 21,
-  "W4386803846": 3,
+  "W4386803846": 2,
   "W3124879925": 152,
   "W2096611253": 16,
   "W148464764": 12,
@@ -20624,8 +20557,6 @@
   ],
   [
    "W1498488428",
-   "W1513281941",
-   "W1517701247",
    "W1558962107",
    "W1995875735",
    "W2048086870",
@@ -21599,7 +21530,6 @@
   ],
   [
    "W1498488428",
-   "W1517701247",
    "W1566478880",
    "W2025177555",
    "W2111030512",
@@ -22310,7 +22240,6 @@
    "W52678905"
   ],
   [
-   "W1517701247",
    "W1527571715",
    "W1566478880",
    "W2099069868",
@@ -22585,10 +22514,6 @@
    "W92085004"
   ],
   [
-   "W1517701247",
-   "W1566478880"
-  ],
-  [
    "W1500910854",
    "W1566478880",
    "W1916207017",
@@ -22604,7 +22529,6 @@
    "W2089402107"
   ],
   [
-   "W1517701247",
    "W1566478880",
    "W2025177555",
    "W2493894436",
@@ -23337,7 +23261,6 @@
   [
    "W1227306373",
    "W1492856410",
-   "W1517701247",
    "W1970428482",
    "W2025177555",
    "W2026948646",
@@ -23686,7 +23609,6 @@
    "W4244612406"
   ],
   [
-   "W1517701247",
    "W2123755784",
    "W2154683088"
   ],
@@ -24275,7 +24197,6 @@
    "W2325487953"
   ],
   [
-   "W1517701247",
    "W1981733426",
    "W2108795964",
    "W2164284962",
@@ -24524,7 +24445,6 @@
    "W4244612406"
   ],
   [
-   "W1517701247",
    "W4244612406",
    "W52678905"
   ],
@@ -24675,7 +24595,6 @@
    "W52678905"
   ],
   [
-   "W1517701247",
    "W1524464890",
    "W233775549",
    "W4205188686",
@@ -24928,7 +24847,6 @@
    "W52678905"
   ],
   [
-   "W1517701247",
    "W2111030512",
    "W4244612406",
    "W52678905"
@@ -25855,7 +25773,6 @@
    "W232611682"
   ],
   [
-   "W1513281941",
    "W1520386898",
    "W1601629960",
    "W4293229472"
@@ -26589,7 +26506,6 @@
   ],
   [
    "W1490995146",
-   "W1513281941",
    "W1527311855",
    "W1977825494",
    "W2037927976",
@@ -26622,10 +26538,6 @@
   [
    "W1601629960",
    "W2126563689"
-  ],
-  [
-   "W1517701247",
-   "W4386803846"
   ],
   [
    "W1520641906",
@@ -27147,7 +27059,6 @@
   ],
   [
    "W1510137183",
-   "W1513281941",
    "W1999800658",
    "W3124879925",
    "W74794663"
@@ -27482,7 +27393,6 @@
    "W3124879925"
   ],
   [
-   "W1513281941",
    "W1529223067",
    "W1979968159",
    "W200208739",
@@ -28155,7 +28065,6 @@
    "W1993663609"
   ],
   [
-   "W1517701247",
    "W1553746973",
    "W1989864366",
    "W2108795964",
@@ -28206,7 +28115,6 @@
    "W2524218442"
   ],
   [
-   "W1513281941",
    "W1553746973",
    "W200208739",
    "W2012275303",
@@ -28594,7 +28502,6 @@
    "W2137358449"
   ],
   [
-   "W1517701247",
    "W1553746973",
    "W2162484441",
    "W2168605160"
@@ -28828,7 +28735,6 @@
    "W4302604455"
   ],
   [
-   "W1517701247",
    "W1973308529",
    "W2007180942",
    "W2013386523",
@@ -28873,7 +28779,6 @@
    "W3130930004"
   ],
   [
-   "W1513281941",
    "W1684540946",
    "W1895366050",
    "W2015930340",
@@ -28920,7 +28825,6 @@
    "W3130930004"
   ],
   [
-   "W1513281941",
    "W2007180942",
    "W2048894562",
    "W2141042444",
@@ -29244,7 +29148,6 @@
    "W3130930004"
   ],
   [
-   "W1513281941",
    "W2048894562",
    "W2131740028",
    "W3130930004"
@@ -29408,7 +29311,6 @@
    "W4298413470"
   ],
   [
-   "W1513281941",
    "W2048894562",
    "W3130930004"
   ],
@@ -29593,7 +29495,6 @@
    "W3130930004"
   ],
   [
-   "W1513281941",
    "W3130930004",
    "W4293229472"
   ],
@@ -29602,7 +29503,6 @@
    "W4301066124"
   ],
   [
-   "W1513281941",
    "W2048894562",
    "W3130930004"
   ],
@@ -29965,7 +29865,6 @@
   "W2046636328",
   "W1970868294",
   "W2509177990",
-  "W2116616625",
   "W2083712072",
   "W2028652971",
   "W2568029919",
@@ -30625,7 +30524,6 @@
   "W1563976565",
   "W166930608",
   "W2253438489",
-  "W4396946771",
   "W4409771962",
   "W7115170880",
   "W3124744803",
@@ -31081,7 +30979,6 @@
   "W3170187706": "Reg",
   "W2066823663": "PolInd",
   "W2097592255": "PolInd",
-  "W1517701247": "PolInd",
   "W2070631858": "PolInd",
   "W1588942736": "Cyb",
   "W2039191423": "PolInd",
@@ -31129,7 +31026,7 @@
   "W1524464890": "Cyb",
   "W2154683088": "Cyb",
   "W1498201492": "PolInd",
-  "W1993663609": "Reg",
+  "W1993663609": "PolInd",
   "W2107431528": "Reg",
   "W2140409505": "PolInd",
   "W1524264467": "PolInd",
@@ -31148,7 +31045,6 @@
   "W1598833883": "PolInd",
   "W1575626990": "Reg",
   "W1535129021": "PolInd",
-  "W1513281941": "Reg",
   "W1535803599": "PolInd",
   "W4302604455": "PolInd",
   "W1981314212": "Reg",
@@ -31252,7 +31148,7 @@
   "W2129261459": "Cplx",
   "W2796849763": "PolInd",
   "W2159914272": "Reg",
-  "W2028436159": "Reg",
+  "W2028436159": "PolInd",
   "W1566478880": "Cyb",
   "W2048894562": "PolInd",
   "W1558962107": "PolInd",
@@ -31335,245 +31231,245 @@
   "top_h_eigenvector": [
    {
     "oa_id": "W1566478880",
-    "score": 0.005355
+    "score": 0.005406
    },
    {
     "oa_id": "W2123755784",
-    "score": 0.005303
+    "score": 0.005355
    },
    {
     "oa_id": "W2111030512",
-    "score": 0.005298
+    "score": 0.00535
    },
    {
     "oa_id": "W2154683088",
-    "score": 0.005281
+    "score": 0.005332
    },
    {
     "oa_id": "W52678905",
-    "score": 0.00527
+    "score": 0.005323
    },
    {
     "oa_id": "W4244612406",
-    "score": 0.005231
+    "score": 0.005285
    },
    {
     "oa_id": "W2048086870",
-    "score": 0.005193
-   },
-   {
-    "oa_id": "W1492856410",
-    "score": 0.005191
+    "score": 0.005241
    },
    {
     "oa_id": "W2025177555",
-    "score": 0.005189
+    "score": 0.00524
+   },
+   {
+    "oa_id": "W1492856410",
+    "score": 0.005239
    },
    {
     "oa_id": "W4205188686",
-    "score": 0.005104
+    "score": 0.005152
    },
    {
     "oa_id": "W2026948646",
-    "score": 0.005064
-   },
-   {
-    "oa_id": "W1970428482",
-    "score": 0.005036
+    "score": 0.005112
    },
    {
     "oa_id": "W233775549",
-    "score": 0.005036
+    "score": 0.005084
+   },
+   {
+    "oa_id": "W1970428482",
+    "score": 0.005083
    },
    {
     "oa_id": "W90769783",
-    "score": 0.004997
+    "score": 0.005043
    },
    {
     "oa_id": "W2325487953",
-    "score": 0.004995
+    "score": 0.005042
    },
    {
     "oa_id": "W1527571715",
-    "score": 0.004979
+    "score": 0.005027
    },
    {
     "oa_id": "W1968044930",
-    "score": 0.00497
+    "score": 0.005016
    },
    {
     "oa_id": "W2072863585",
-    "score": 0.00496
+    "score": 0.005007
    },
    {
     "oa_id": "W2101157755",
-    "score": 0.004954
+    "score": 0.005
    },
    {
     "oa_id": "W92085004",
-    "score": 0.004949
+    "score": 0.004995
    },
    {
     "oa_id": "W1601944394",
-    "score": 0.004945
+    "score": 0.004991
    },
    {
     "oa_id": "W2037306909",
-    "score": 0.004944
+    "score": 0.00499
    },
    {
     "oa_id": "W2988934653",
-    "score": 0.00493
-   },
-   {
-    "oa_id": "W2083449279",
-    "score": 0.004904
+    "score": 0.004976
    },
    {
     "oa_id": "W2493894436",
-    "score": 0.004903
+    "score": 0.004954
+   },
+   {
+    "oa_id": "W2083449279",
+    "score": 0.004951
    },
    {
     "oa_id": "W1541456364",
-    "score": 0.004889
+    "score": 0.004935
    },
    {
     "oa_id": "W1500910854",
-    "score": 0.004871
+    "score": 0.004916
    },
    {
     "oa_id": "W67809301",
-    "score": 0.00487
+    "score": 0.004914
    },
    {
     "oa_id": "W1506732837",
-    "score": 0.004865
+    "score": 0.00491
    },
    {
     "oa_id": "W2010793828",
-    "score": 0.004865
+    "score": 0.00491
    }
   ],
   "top_clique_eigenvector": [
    {
     "oa_id": "W1566478880",
-    "score": 0.068381
+    "score": 0.068581
    },
    {
     "oa_id": "W2123755784",
-    "score": 0.059184
+    "score": 0.059363
    },
    {
     "oa_id": "W1492856410",
-    "score": 0.054141
+    "score": 0.05431
    },
    {
     "oa_id": "W2111030512",
-    "score": 0.050482
+    "score": 0.050623
    },
    {
     "oa_id": "W2154683088",
-    "score": 0.044313
+    "score": 0.044447
    },
    {
     "oa_id": "W52678905",
-    "score": 0.042225
+    "score": 0.042344
    },
    {
     "oa_id": "W4205188686",
-    "score": 0.036819
+    "score": 0.036929
    },
    {
     "oa_id": "W2026948646",
-    "score": 0.03395
+    "score": 0.034055
    },
    {
     "oa_id": "W2025177555",
-    "score": 0.032168
+    "score": 0.032256
    },
    {
     "oa_id": "W1970428482",
-    "score": 0.029036
+    "score": 0.029126
    },
    {
     "oa_id": "W4244612406",
-    "score": 0.027747
+    "score": 0.027816
    },
    {
     "oa_id": "W90769783",
-    "score": 0.026346
+    "score": 0.026432
    },
    {
     "oa_id": "W233775549",
-    "score": 0.026214
+    "score": 0.026293
    },
    {
     "oa_id": "W2048086870",
-    "score": 0.022898
+    "score": 0.022964
    },
    {
     "oa_id": "W2072863585",
-    "score": 0.022613
+    "score": 0.022682
    },
    {
     "oa_id": "W1601944394",
-    "score": 0.022084
+    "score": 0.022156
    },
    {
     "oa_id": "W92085004",
-    "score": 0.020121
+    "score": 0.020186
    },
    {
     "oa_id": "W1968044930",
-    "score": 0.019386
+    "score": 0.019448
    },
    {
     "oa_id": "W2101157755",
-    "score": 0.018465
+    "score": 0.018524
    },
    {
     "oa_id": "W2037306909",
-    "score": 0.018064
+    "score": 0.018122
    },
    {
     "oa_id": "W67809301",
-    "score": 0.016045
+    "score": 0.016097
    },
    {
     "oa_id": "W1506732837",
-    "score": 0.015809
+    "score": 0.015861
    },
    {
     "oa_id": "W1227306373",
-    "score": 0.015034
+    "score": 0.015078
    },
    {
     "oa_id": "W1495961791",
-    "score": 0.013758
+    "score": 0.013802
    },
    {
     "oa_id": "W1527571715",
-    "score": 0.013568
+    "score": 0.013606
    },
    {
     "oa_id": "W2988934653",
-    "score": 0.013565
+    "score": 0.013603
    },
    {
     "oa_id": "W2083449279",
-    "score": 0.011019
+    "score": 0.011054
    },
    {
     "oa_id": "W1541456364",
-    "score": 0.011017
+    "score": 0.011051
    },
    {
     "oa_id": "W1500910854",
-    "score": 0.009881
+    "score": 0.009912
    },
    {
     "oa_id": "W2010793828",
-    "score": 0.009539
+    "score": 0.009569
    }
   ]
  },
@@ -31620,8 +31516,6 @@
   "W2141042444": 1,
   "W1995875735": 1,
   "W2099069868": 1,
-  "W1513281941": 0,
-  "W1517701247": 1,
   "W1558962107": 1,
   "W2164284962": 0,
   "W2493894436": 1,
@@ -31744,7 +31638,7 @@
   "W2035713188": 0,
   "W1561018600": 1,
   "W2102461236": 1,
-  "W1520386898": 0,
+  "W1520386898": 1,
   "W1982375873": 0,
   "W1993233559": 1,
   "W2046284555": 1,
@@ -31824,8 +31718,8 @@
  },
  "xgi_communities_error": null,
  "nmi_eixos_vs_xgi_communities": {
-  "nmi": 0.2146,
-  "n_common": 240,
+  "nmi": 0.2162,
+  "n_common": 238,
   "n_groups_p1": 4,
   "n_groups_p2": 3
  }

@@ -135,8 +135,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6458,
-   "ho": 15,
+   "score": 0.6427,
+   "ho": 14,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -236,8 +236,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.6088,
-   "ho": 52,
+   "score": 0.5966,
+   "ho": 48,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -393,31 +393,14 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.505,
-   "ho": 18,
+   "score": 0.5019,
+   "ho": 17,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente",
-    "ponte a construir"
-   ]
-  },
-  {
-   "oa_id": "W2012275303",
-   "title": "Embedded autonomy: states and industrial transformation",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.5019,
-   "ho": 17,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
     "obra-semente",
     "ponte a construir"
    ]
@@ -430,6 +413,22 @@
    ],
    "score": 0.5019,
    "ho": 17,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W2012275303",
+   "title": "Embedded autonomy: states and industrial transformation",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4989,
+   "ho": 16,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 0.0,
@@ -462,8 +461,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.4866,
-   "ho": 12,
+   "score": 0.4836,
+   "ho": 11,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -486,7 +485,8 @@
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -497,16 +497,15 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.4775,
-   "ho": 9,
+   "score": 0.4744,
+   "ho": 8,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente",
-    "ponte a construir"
+    "obra-semente"
    ]
   },
   {
@@ -587,24 +586,6 @@
    ]
   },
   {
-   "oa_id": "W3124879925",
-   "title": "Industrial Policy for the Twenty-First Century",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.4618,
-   "ho": 53,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "higher_order_bridge",
-    "obra-semente",
-    "ponte de ordem superior",
-    "ponte global×Brasil"
-   ]
-  },
-  {
    "oa_id": "W1491554624",
    "title": "Abernathy & Utterback · Patterns of Industrial Innovation",
    "axes": [
@@ -620,13 +601,31 @@
    ]
   },
   {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4557,
+   "ho": 51,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior",
+    "ponte global×Brasil"
+   ]
+  },
+  {
    "oa_id": "W1553746973",
    "title": "The entrepreneurial state: debunking public vs. private sector myths",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.4479,
-   "ho": 73,
+   "score": 0.4357,
+   "ho": 69,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
@@ -705,8 +704,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3964,
-   "ho": 7,
+   "score": 0.3933,
+   "ho": 6,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 0.0,
@@ -767,24 +766,6 @@
    ]
   },
   {
-   "oa_id": "W3130930004",
-   "title": "Lange · Economic Theory of Socialism",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.3485,
-   "ho": 65,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "higher_order_bridge",
-    "obra de autor-ponte",
-    "obra-semente",
-    "ponte de ordem superior"
-   ]
-  },
-  {
    "oa_id": "W1916207017",
    "title": "Autopoiesis and Cognition: The Realization of the Living",
    "axes": [
@@ -801,37 +782,37 @@
    ]
   },
   {
+   "oa_id": "W3130930004",
+   "title": "Lange · Economic Theory of Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.3393,
+   "ho": 62,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra de autor-ponte",
+    "obra-semente",
+    "ponte de ordem superior"
+   ]
+  },
+  {
    "oa_id": "W2048894562",
    "title": "On the Economic Theory of Socialism.",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.338,
-   "ho": 37,
+   "score": 0.3288,
+   "ho": 34,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
     "bela adormecida",
     "higher_order_bridge"
-   ]
-  },
-  {
-   "oa_id": "W2154683088",
-   "title": "Diagnosing the System for Organizations",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.3227,
-   "ho": 32,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-semente",
-    "ponte de ordem superior"
    ]
   },
   {
@@ -845,6 +826,24 @@
    "role": 0.0,
    "roles": [
     "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2154683088",
+   "title": "Diagnosing the System for Organizations",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3166,
+   "ho": 30,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior"
    ]
   },
   {
@@ -863,23 +862,6 @@
    ]
   },
   {
-   "oa_id": "W2123755784",
-   "title": "Brain of the firm",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.3105,
-   "ho": 28,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra de autor-semente"
-   ]
-  },
-  {
    "oa_id": "W2063282131",
    "title": "Wholes and Parts: A General Theory of System Behavior",
    "axes": [
@@ -895,13 +877,30 @@
    ]
   },
   {
+   "oa_id": "W2123755784",
+   "title": "Brain of the firm",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3044,
+   "ho": 26,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra de autor-semente"
+   ]
+  },
+  {
    "oa_id": "W4244612406",
    "title": "Espejo & Reyes · Org. Systems",
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3074,
-   "ho": 27,
+   "score": 0.2952,
+   "ho": 23,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -935,14 +934,13 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.28,
-   "ho": 18,
+   "score": 0.2708,
+   "ho": 15,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "higher_order_bridge",
     "obra de autor-semente"
    ]
   },
@@ -1069,22 +1067,6 @@
    ]
   },
   {
-   "oa_id": "W4386803846",
-   "title": "How rediscovering nodality can improve democratic governance in a digital world",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.1561,
-   "ho": 2,
-   "reach": 0,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-semente"
-   ]
-  },
-  {
    "oa_id": "W3121405033",
    "title": "New Structural Economics: A Framework for Rethinking Development",
    "axes": [
@@ -1127,6 +1109,22 @@
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)"
+   ]
+  },
+  {
+   "oa_id": "W4386803846",
+   "title": "How rediscovering nodality can improve democratic governance in a digital world",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.1531,
+   "ho": 1,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-semente"
    ]
   },
   {
@@ -3514,8 +3512,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6458,
-   "ho": 15,
+   "score": 0.6427,
+   "ho": 14,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3615,8 +3613,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.6088,
-   "ho": 52,
+   "score": 0.5966,
+   "ho": 48,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3772,31 +3770,14 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.505,
-   "ho": 18,
+   "score": 0.5019,
+   "ho": 17,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente",
-    "ponte a construir"
-   ]
-  },
-  "W2012275303": {
-   "oa_id": "W2012275303",
-   "title": "Embedded autonomy: states and industrial transformation",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.5019,
-   "ho": 17,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
     "obra-semente",
     "ponte a construir"
    ]
@@ -3809,6 +3790,22 @@
    ],
    "score": 0.5019,
    "ho": 17,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  "W2012275303": {
+   "oa_id": "W2012275303",
+   "title": "Embedded autonomy: states and industrial transformation",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4989,
+   "ho": 16,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 0.0,
@@ -3841,8 +3838,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.4866,
-   "ho": 12,
+   "score": 0.4836,
+   "ho": 11,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3865,7 +3862,8 @@
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   "W1527571715": {
@@ -3876,16 +3874,15 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.4775,
-   "ho": 9,
+   "score": 0.4744,
+   "ho": 8,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente",
-    "ponte a construir"
+    "obra-semente"
    ]
   },
   "W2009202666": {
@@ -3965,24 +3962,6 @@
     "complexidade (4º eixo)"
    ]
   },
-  "W3124879925": {
-   "oa_id": "W3124879925",
-   "title": "Industrial Policy for the Twenty-First Century",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.4618,
-   "ho": 53,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "higher_order_bridge",
-    "obra-semente",
-    "ponte de ordem superior",
-    "ponte global×Brasil"
-   ]
-  },
   "W1491554624": {
    "oa_id": "W1491554624",
    "title": "Abernathy & Utterback · Patterns of Industrial Innovation",
@@ -3998,14 +3977,32 @@
     "obra-semente"
    ]
   },
+  "W3124879925": {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4557,
+   "ho": 51,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior",
+    "ponte global×Brasil"
+   ]
+  },
   "W1553746973": {
    "oa_id": "W1553746973",
    "title": "The entrepreneurial state: debunking public vs. private sector myths",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.4479,
-   "ho": 73,
+   "score": 0.4357,
+   "ho": 69,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
@@ -4084,8 +4081,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3964,
-   "ho": 7,
+   "score": 0.3933,
+   "ho": 6,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 0.0,
@@ -4145,24 +4142,6 @@
     "obra-semente"
    ]
   },
-  "W3130930004": {
-   "oa_id": "W3130930004",
-   "title": "Lange · Economic Theory of Socialism",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.3485,
-   "ho": 65,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "higher_order_bridge",
-    "obra de autor-ponte",
-    "obra-semente",
-    "ponte de ordem superior"
-   ]
-  },
   "W1916207017": {
    "oa_id": "W1916207017",
    "title": "Autopoiesis and Cognition: The Realization of the Living",
@@ -4179,38 +4158,38 @@
     "obra de autor-semente"
    ]
   },
+  "W3130930004": {
+   "oa_id": "W3130930004",
+   "title": "Lange · Economic Theory of Socialism",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.3393,
+   "ho": 62,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 0.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra de autor-ponte",
+    "obra-semente",
+    "ponte de ordem superior"
+   ]
+  },
   "W2048894562": {
    "oa_id": "W2048894562",
    "title": "On the Economic Theory of Socialism.",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.338,
-   "ho": 37,
+   "score": 0.3288,
+   "ho": 34,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
     "bela adormecida",
     "higher_order_bridge"
-   ]
-  },
-  "W2154683088": {
-   "oa_id": "W2154683088",
-   "title": "Diagnosing the System for Organizations",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.3227,
-   "ho": 32,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-semente",
-    "ponte de ordem superior"
    ]
   },
   "W92085004": {
@@ -4224,6 +4203,24 @@
    "role": 0.0,
    "roles": [
     "rajada de citação"
+   ]
+  },
+  "W2154683088": {
+   "oa_id": "W2154683088",
+   "title": "Diagnosing the System for Organizations",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3166,
+   "ho": 30,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior"
    ]
   },
   "W2569986058": {
@@ -4241,23 +4238,6 @@
     "obra-semente"
    ]
   },
-  "W2123755784": {
-   "oa_id": "W2123755784",
-   "title": "Brain of the firm",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.3105,
-   "ho": 28,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra de autor-semente"
-   ]
-  },
   "W2063282131": {
    "oa_id": "W2063282131",
    "title": "Wholes and Parts: A General Theory of System Behavior",
@@ -4273,14 +4253,31 @@
     "obra-semente"
    ]
   },
+  "W2123755784": {
+   "oa_id": "W2123755784",
+   "title": "Brain of the firm",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3044,
+   "ho": 26,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra de autor-semente"
+   ]
+  },
   "W4244612406": {
    "oa_id": "W4244612406",
    "title": "Espejo & Reyes · Org. Systems",
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3074,
-   "ho": 27,
+   "score": 0.2952,
+   "ho": 23,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -4314,14 +4311,13 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.28,
-   "ho": 18,
+   "score": 0.2708,
+   "ho": 15,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "higher_order_bridge",
     "obra de autor-semente"
    ]
   },
@@ -4447,22 +4443,6 @@
     "rajada de citação"
    ]
   },
-  "W4386803846": {
-   "oa_id": "W4386803846",
-   "title": "How rediscovering nodality can improve democratic governance in a digital world",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.1561,
-   "ho": 2,
-   "reach": 0,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-semente"
-   ]
-  },
   "W3121405033": {
    "oa_id": "W3121405033",
    "title": "New Structural Economics: A Framework for Rethinking Development",
@@ -4506,6 +4486,22 @@
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)"
+   ]
+  },
+  "W4386803846": {
+   "oa_id": "W4386803846",
+   "title": "How rediscovering nodality can improve democratic governance in a digital world",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.1531,
+   "ho": 1,
+   "reach": 0,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-semente"
    ]
   },
   "W2483843983": {

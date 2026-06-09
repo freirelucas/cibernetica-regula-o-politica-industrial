@@ -9,7 +9,7 @@ Reexecutável: tira nós + arestas incidentes das redes e limpa cross_brasil.
 import json
 import os
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA = os.path.join(ROOT, "data")
 
 # 13 ids que retornam 404 no OpenAlex (verificados por lote). 11 são "thin"

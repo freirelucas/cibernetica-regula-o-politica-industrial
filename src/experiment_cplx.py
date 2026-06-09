@@ -101,8 +101,9 @@ def main():
     # descarta obras-fantasma: nós (não-semente) sem metadados resolvíveis no
     # OpenAlex (registros 404/merge — sem título). Poluíam a rede e a agenda de
     # pontes (um deles cocitado com ~95% dos nós sem ser obra real).
+    _NON_WORK = {"W1513281941", "W1517701247", "W4297081765"}  # agregados de periódico (hubs falsos)
     def _real(n):
-        return n in SEEDS or bool((meta.get(n, ("",))[0] or "").strip())
+        return n not in _NON_WORK and (n in SEEDS or bool((meta.get(n, ("",))[0] or "").strip()))
     ghosts = [n for n in nodeset if not _real(n)]
     if ghosts:
         nodeset = {n for n in nodeset if _real(n)}
