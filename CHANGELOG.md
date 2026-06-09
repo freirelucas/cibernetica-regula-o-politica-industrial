@@ -1,15 +1,21 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (166 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
+- Estabilização: higiene de integridade completa (404 + agregados de periódico) · `5e01191` · 2026-06-09
 - Higiene x10: funde nós duplicados das redes (mesma obra sob vários ids) · `360cbd2` · 2026-05-27
 - Higiene de integridade: remove 13 ids OpenAlex que não resolvem (404) · `ce29b86` · 2026-05-27
 - Limpa a síntese do Rayyan: dedup por id, metadados ricos, zip de formato único · `2d08753` · 2026-05-27
 
 ## Triagem e exportação (Rayyan)
 
+- Topo "Comece por aqui": curadoria de método + achados + mapa em 5 atos · `5a8401e` · 2026-06-09
+- Triagem: duas etapas (achar → decidir), com o "fruto" em foco · `95b6ce4` · 2026-06-09
+- Navegação global consistente nas 3 telas (Estudo · Explorador · Triagem) · `1bea26e` · 2026-06-09
+- Modelagem M7: pontes de ordem superior no site + gancho da triagem preenchido · `1bcc338` · 2026-05-29
+- PR-7: reforma de UX da triagem — limiares ao vivo, composição, solidez, sem navegador · `47e7e1a` · 2026-05-29
 - Endurece cache, surfaceia silos no Resumo e arquitetura de tagging do Rayyan · `455c2b1` · 2026-05-28
 - Recorte "pontes a construir": as 25 obras de maior prioridade de ponte · `2cd4747` · 2026-05-28
 - Cache OpenAlex: gzip por arquivo (consolidação antes de explodir a rede) · `3384468` · 2026-05-28
@@ -33,6 +39,9 @@ Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho).
 
 ## Explorador e visualizações
 
+- Explorador: modo "Só as pontes (47 alvos)" + silos limpos · `08b2f91` · 2026-06-09
+- Rigor: bootstrap de robustez do achado dos silos (drop-20%, B=300) · `7bb5c37` · 2026-06-08
+- Rigor: verificação reprodutível do achado dos silos (§00) + ressalva H1 · `7c6ffcc` · 2026-06-08
 - Fase C — Longue-durée temporal: silos cristalizaram-se nos 1980s · `8d529bf` · 2026-05-28
 - Explorador: resolve os 'sem eixo' por inferência e revela pontes de 2ª ordem · `fd5c2f7` · 2026-05-27
 - Explorador: realça a estrutura — recua os 'sem eixo', destaca as pontes · `493dfc5` · 2026-05-27
@@ -49,6 +58,13 @@ Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho).
 
 ## Análise (cienciometria / Science of Science)
 
+- Remove obras-fantasma do funil de pontes + corrige validação temporal (H5) · `8ff02a7` · 2026-06-09
+- Dicionário de dados: descreve as colunas H5/solidez e pontes semânticas · `276991d` · 2026-06-09
+- Rigor H5: integração = condutância real (ΔKf), rebatizada de "DESIGN" · `a3b7511` · 2026-06-08
+- Rigor H2: a HO-BC passa a USAR o peso 1/(s-1) (antes era descartado) · `bd05535` · 2026-06-08
+- Explica melhor o modelo nulo + a solidez tripla; corrige callout social estagnado · `4718541` · 2026-06-08
+- Regenera analise de pontes a partir da nova rede (hypergraph/HO-BC/prioridade) · `7a61566` · 2026-06-06
+- Modelagem M1-M6: camada de pontes de ordem superior (solidez tripla) · `30fc02d` · 2026-05-29
 - Fase D snapshot 2: snowball top-15 + adjacent probes · `0291844` · 2026-05-28
 - Snowball por autor-semente (estratégia mais ousada, via cache) · `bb1a0b1` · 2026-05-28
 - 4º eixo: estrutura a literatura da complexidade por subtradição · `0a17659` · 2026-05-27
@@ -71,6 +87,15 @@ Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho).
 
 ## Funil, dados e reprodutibilidade
 
+- README: documenta funil-em-Actions + atualiza datas/números (jun/2026, 60 sementes) · `ee657a4` · 2026-06-08
+- Hardening do funil-em-Actions + tarja honesta nos slides · `0a61f74` · 2026-06-08
+- Funil re-run: relatório reflete o reframe 20/20/20 (corpus 6340) · `7d38f19` · 2026-06-08
+- funnel.yml: run_all --offline (evita duplo-crawl) + remove inputs decorativos · `a7bbf4b` · 2026-06-08
+- Reconstrói a montagem do sumário (scisci_results.json) no notebook · `d95411d` · 2026-06-06
+- Funil-em-Actions (WIP): notebook puxa sementes/vocab do minirun + workflow · `5714310` · 2026-06-06
+- Re-crawl 64 sementes (20/20/20 + 4 Cplx): network_4axis dos 4 eixos · `19e4dd5` · 2026-06-05
+- cache: consultas OpenAlex da resolucao de sementes Cyb/PolInd · `160bcf8` · 2026-06-05
+- cache: consultas /topics do OpenAlex (taxonomia das 3 areas) · `8305050` · 2026-06-04
 - P5+P2: split de build_site (token_injection) + classifier estendido com OpenAlex topics · `bc0ba7d` · 2026-05-28
 - Reconcilia n_seeds 10→13 (alinha badge §03 ao §07 e ao crawl XGI) · `414d2ba` · 2026-05-28
 - run-scisci-ipea: atualiza a skill (219 nós, 203 cartões, 26 testes, cache + crawls) · `12ef075` · 2026-05-28
@@ -88,7 +113,6 @@ Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho).
 - Normaliza autorias canônicas das obras-semente (correção de metadados OpenAlex) · `03607de` · 2026-05-26
 - Deixa o notebook Colab camera-ready em PT-BR e integra a geração do site · `fe0da92` · 2026-05-26
 - Traduz exportáveis para PT e aposenta os relatórios HTML redundantes · `0e94fcf` · 2026-05-26
-- Descompacta o pacote no repo e adiciona regeneração offline do report · `2c9c680` · 2026-05-26
 
 ## Conteúdo acadêmico e autoria
 
@@ -103,8 +127,6 @@ Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho).
 - Corrige a grafia do nome da coautora: Claucia Faganello · `de342cc` · 2026-05-27
 - Integra a revisão brasileira na íntegra, unifica referências e reordena autoria · `fa1b1bc` · 2026-05-27
 - Integra a revisão brasileira (Faganello), 3 coautores e tarja preliminar · `d127f1a` · 2026-05-26
-- Acrescenta substância acadêmica e unifica a fonte de dados do site · `e16b37c` · 2026-05-26
-- Adiciona site acadêmico do GitHub Pages (docs/) em PT-BR sem anglicismos · `1e7bba2` · 2026-05-26
 
 ## Site e publicação (GitHub Pages)
 
@@ -113,10 +135,14 @@ Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho).
 - Torna o site responsivo (mobile/tablet) — corrige navegação e overflow · `a7f4bc2` · 2026-05-26
 - Adiciona fallback sem JavaScript e CI (pytest) ao site · `6ce543f` · 2026-05-26
 - Adiciona skill run-scisci-ipea (build, serve e dirige o site headless) · `9889f80` · 2026-05-26
-- Torna o site autossuficiente (sem CDN) e corrige bugs de UX no render · `a8fe2c6` · 2026-05-26
 
 ## Infraestrutura, testes e ferramentas
 
+- CI: instala numpy/scipy/networkx p/ os testes da integração H5 (ΔKf) · `f607127` · 2026-06-08
+- Reframe da prosa: eixo Reg -> "Regulacao economica" (relatorio, slides, README) · `a0829af` · 2026-06-06
+- Regenera solidity + bridge_candidates (embeddings) p/ a nova rede — 71 testes verdes · `84a92f2` · 2026-06-06
+- Modelagem M8: fase solidity no DAG + deps + skill bridges atualizada · `a061558` · 2026-05-29
+- PR-8: skills (oa-budget, bridges) + CI com smoke offline · `cbba3c9` · 2026-05-29
 - Prioridade de ponte: métrica única que adapta Emma/XGI ao objetivo · `fcdacc2` · 2026-05-28
 - CHANGELOG: regenera após a skill (inclui o próprio commit) · `a021925` · 2026-05-27
 - Adiciona a skill /changelog e gera o CHANGELOG por tema · `b84f0b7` · 2026-05-27
@@ -126,6 +152,27 @@ Registro de mudanças desta branch, agrupado por tema (119 commits de trabalho).
 
 ## Outros
 
+- Fase 4: 29 seções agrupadas em 5 atos colapsáveis (<details>) · `b3d59fd` · 2026-06-09
+- Clareza: reescreve os callouts densos do silo social e do hipergrafo (§05) · `e626ed4` · 2026-06-09
+- Clareza editorial: glossário dos termos-chave + "em miúdos" nos densos · `c53ae53` · 2026-06-09
+- Explica as vantagens científicas das hiperarestas + a seleção de conectores · `5a1c7f5` · 2026-06-08
+- Re-run coerente: todo o corpo de análises numa única janela (jun/2026) · `b5a6b94` · 2026-06-08
+- tests: coerência cruzada entre artefatos (anti-Frankenstein) · `8222b60` · 2026-06-08
+- Nota metodológica: crítica H1–H7 das heurísticas + achado de robustez · `dc88e1c` · 2026-06-08
+- tests: trava o reframe 20/20/20 + Reg = regulação econômica na fonte · `fe166a2` · 2026-06-08
+- Renomeia rotulo do eixo Reg -> "Regulacao economica" (codigo + templates) · `4303833` · 2026-06-06
+- Expande Cyb e PolInd para 20 sementes cada (balanco 20/20/20) · `38e6f5c` · 2026-06-05
+- Adiciona 20 sementes Reg (regulacao economica) ao minirun.SEEDS · `b3ed4eb` · 2026-06-05
+- Reframe Reg -> regulacao economica (WIP): vocab + sementes · `1c20340` · 2026-06-03
+- Item 2: leads de leitura por ponte semântica (semântica propõe, estrutura filtra) · `b9f0d6a` · 2026-05-30
+- Modelagem: conserto anti-circularidade (v2) — propositor + falsificadores independentes · `6e7693d` · 2026-05-29
+- PR-6: separa núcleo vivo de pivôs consumidos (8 -> src/legacy/) · `e95308d` · 2026-05-29
+- PR-5: orquestrador run_all.py — DAG topológico + sentinelas + guarda-corpos · `ddaa39f` · 2026-05-29
+- PR-4: instrumentação de custo da API + teto diário (guarda-corpo do autônomo) · `ec32df7` · 2026-05-29
+- PR-3: tira derivado volumoso (author_network.json, 8,3 MB) do versionamento · `ac55ad0` · 2026-05-29
+- PR-2: camada de I/O tolerante (src/data_io.py) p/ os derivados em data/ · `5b16ce9` · 2026-05-29
+- PR-1: HO-BC lê hiperarestas canônicas (remove varredura enviesada do cache) · `c982d0f` · 2026-05-29
+- Aprendizados consolidados da sessão 2026-05-28/29 · `f84a1b6` · 2026-05-29
 - M8 abstracts + trim author_network — n_cross_axis_loose 103 → 397 (3.8×) · `b0827c3` · 2026-05-28
 - Tier 1 M14+M17+M8: 7 sementes faltantes + depth-2 sem cap + abstracts no classificador · `0997adc` · 2026-05-28
 - Tier 1 M1+M2+M3+M4+M27: usar XGI de verdade — biblioteca central + 4 análises nativas · `7bfaa03` · 2026-05-28
