@@ -363,6 +363,12 @@ pre.code{max-width:100%}
 .startmap a:hover,.starttools a:hover{color:var(--ink);border-bottom-color:var(--ink);text-decoration:none}
 .startmap b,.starttools b{font-weight:500;color:var(--ink)}
 .starttools a{color:var(--cyb)}
+details.act{margin:0}
+details.act>summary{cursor:pointer;list-style:none;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:1.5rem 0 .5rem;display:flex;align-items:baseline;gap:.6rem;border-top:1px solid var(--border-s)}
+details.act>summary::-webkit-details-marker{display:none}
+details.act>summary::after{content:'▾';margin-left:auto}
+details.act:not([open])>summary::after{content:'▸'}
+details.act>summary .act-n{color:var(--cyb);font-weight:600}
 </style>
 <section id="resumo" class="section"><div class="container">
   <aside class="startbox" aria-label="Comece por aqui">
@@ -403,6 +409,7 @@ pre.code{max-width:100%}
 </div></section>
 
 <!-- 01 · FUNDAMENTAÇÃO TEÓRICA -->
+<details open class="act"><summary><span class="act-n">Ato 1</span> Como medimos — teoria, método e funil</summary>
 <section id="teoria" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">01</span><h2 class="sec-title">Fundamentação teórica</h2><span class="sec-method">os três eixos e as obras-semente</span></div>
   <div class="prose">
@@ -480,6 +487,8 @@ pre.code{max-width:100%}
 </div></section>
 
 <!-- 04 · PANORAMA TEMPORAL -->
+</details>
+<details open class="act"><summary><span class="act-n">Ato 2</span> A estrutura do campo — os silos</summary>
 <section id="temporal" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">04</span><h2 class="sec-title">Panorama temporal por eixo</h2><span class="sec-method">1960–2025 · trabalhos por ano</span></div>
   <div class="prose"><p>A cibernética domina a produção desde os anos 1970. A regulação econômica e a política industrial convergem a partir de 2007 — no rastro da expansão do estado regulador e das agências independentes — e crescem fortemente entre 2013 e 2019, junto ao debate sobre o Estado empreendedor e as missões. A aproximação simultânea dos três eixos torna-se visível a partir de 2013.</p></div>
@@ -615,6 +624,8 @@ pre.code{max-width:100%}
 </div></section>
 
 <!-- 10·5 · A CONSTRUÇÃO DO CANDIDATO-SET PARA O RAYYAN -->
+</details>
+<details open class="act"><summary><span class="act-n">Ato 3</span> Candidatos, caso brasileiro e síntese</summary>
 <section id="candidatos" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">10·5</span><h2 class="sec-title">A construção do candidato-set para o Rayyan</h2><span class="sec-method">cadeia de curadoria multinível</span></div>
   <div class="prose">
@@ -877,6 +888,8 @@ pre.code{max-width:100%}
 </div></section>
 
 <!-- 16 · OBRAS-SEMENTE -->
+</details>
+<details open class="act"><summary><span class="act-n">Ato 4</span> Pontes a construir e reprodutibilidade</summary>
 <section id="sementes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">16</span><h2 class="sec-title">Obras-semente canônicas</h2><span class="sec-method">OpenAlex · identificadores verificados</span></div>
   <div class="prose"><p>As sessenta obras (vinte por eixo) que ancoram a coleta, cada uma com seu identificador na base OpenAlex (clicável). A escolha privilegia obras de referência inequívoca em cada tradição.</p></div>
@@ -981,6 +994,8 @@ python src/build_site.py                # este site (docs/)</pre>
 </div></section>
 
 <!-- 19 · LIMITAÇÕES -->
+</details>
+<details class="act"><summary><span class="act-n">Apêndices</span> Limitações, glossário e referências</summary>
 <section id="limitacoes" class="section"><div class="container">
   <div class="sec-header"><span class="sec-num">19</span><h2 class="sec-title">Limitações</h2><span class="sec-method">leitura cautelosa dos resultados</span></div>
   <div class="prose">
@@ -1078,6 +1093,10 @@ python src/build_site.py                # este site (docs/)</pre>
   </ul>
 </div></section>
 
+</details>
+<script>
+(function(){function openTo(h){if(!h)return;var el=document.getElementById(h.slice(1));if(!el)return;var d=el.closest('details.act');if(d&&!d.open)d.open=true;}addEventListener('hashchange',function(){openTo(location.hash);});document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(){openTo(a.getAttribute('href'));});});if(location.hash)openTo(location.hash);})();
+</script>
 <footer class="footer">
   <span>IPEA · DIEST-COGIT · Queiroz · Freire · Faganello · 2026</span>
   <span id="footer-stats"></span>
