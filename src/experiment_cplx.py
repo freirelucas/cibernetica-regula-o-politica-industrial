@@ -98,6 +98,17 @@ def main():
             meta[wid] = (w.get("title") or "", w.get("publication_year"), w.get("cited_by_count") or 0, cnames)
         time.sleep(0.2)
 
+    # descarta obras-fantasma: nós (não-semente) sem metadados resolvíveis no
+    # OpenAlex (registros 404/merge — sem título). Poluíam a rede e a agenda de
+    # pontes (um deles cocitado com ~95% dos nós sem ser obra real).
+    def _real(n):
+        return n in SEEDS or bool((meta.get(n, ("",))[0] or "").strip())
+    ghosts = [n for n in nodeset if not _real(n)]
+    if ghosts:
+        nodeset = {n for n in nodeset if _real(n)}
+        edges = [(a, b, w) for (a, b, w) in edges if a in nodeset and b in nodeset]
+        print(f"descartadas {len(ghosts)} obras-fantasma sem metadados (rede limpa)")
+
     nodes = []
     for n in nodeset:
         title, year, cit, cnames = meta.get(n, ("", None, 0, ""))

@@ -126,12 +126,13 @@ PY  - 2003
 DO  - 10.1016/s0304-3878(03)00124-x
 UR  - https://openalex.org/W2120106358
 KW  - eixo: Política industrial
+KW  - papel: higher_order_bridge
 KW  - papel: obra de autor-semente
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: obra de autor-semente, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.5514)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: higher_order_bridge, obra de autor-semente, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 20 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5861)
 ER  - 
 
 TY  - JOUR
@@ -166,7 +167,7 @@ KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.6198)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.6458)
 ER  - 
 
 TY  - JOUR
@@ -185,7 +186,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: mais citada
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Economia da complexidade, Política industrial · papel: complexidade (4º eixo), higher_order_bridge, mais citada, ponte a construir, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6554)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Economia da complexidade, Política industrial · papel: complexidade (4º eixo), higher_order_bridge, mais citada, ponte a construir, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.7282)
 ER  - 
 
 TY  - JOUR
@@ -199,5 +200,5 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte de ordem superior
 KW  - papel: ponte global×Brasil
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: higher_order_bridge, obra-semente, ponte de ordem superior, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte de ordem superior=HO centrality=0.318 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: higher_order_bridge, obra-semente, ponte de ordem superior, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 53 (XGI); ponte de ordem superior=HO centrality=0.292 (B.4 random walks)
 ER  - 

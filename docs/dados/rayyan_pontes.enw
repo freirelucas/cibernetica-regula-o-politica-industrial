@@ -1,19 +1,3 @@
-%0 Book
-%T Cybernetics or Control and Communication in the Animal and the Machine
-%A Norbert Wiener
-%D 2019
-%R 10.7551/mitpress/11810.001.0001
-%U https://openalex.org/W1527571715
-%X A classic and influential work that laid the theoretical foundations for information theory and a timely text for contemporary informations theorists and practitioners. With the influential book Cybernetics, first published in 1948, Norbert Wiener laid the theoretical foundations for the multidisciplinary field of cybernetics, the study of controlling the flow of information in systems with feedback loops, be they biological, mechanical, cognitive, or social. At the core of Wiener's theory is the message (information), sent and responded to (feedback); the functionality of a machine, organism, or society depends on the quality of messages. Information corrupted by noise prevents homeostasis, or equilibrium. And yet Cybernetics is as philosophical as it is technical, with the first chapter devoted to Newtonian and Bergsonian time and the philosophical mixed with the technical throughout. This book brings the 1961 second edition back into print, with new forewords by Doug Hill and Sanjoy Mitter. Contemporary readers of Cybernetics will marvel at Wiener's prescience—his warnings against “noise,” his disdain for “hucksters” and “gadget worshipers,” and his view of the mass media as the single greatest anti-homeostatic force in society. This edition of Cybernetics gives a new generation access to a classic text.
-%K eixo: Cibernética
-%K eixo: Política industrial
-%K eixo: Regulação econômica
-%K papel: cibernética organizacional
-%K papel: higher_order_bridge
-%K papel: obra-ponte
-%K papel: obra-semente
-%K papel: ponte a construir
-
 %0 Journal Article
 %T Hausmann & Rodrik · Economic Development as Self-Discovery
 %A Hausmann
@@ -22,6 +6,7 @@
 %R 10.1016/s0304-3878(03)00124-x
 %U https://openalex.org/W2120106358
 %K eixo: Política industrial
+%K papel: higher_order_bridge
 %K papel: obra de autor-semente
 %K papel: obra-semente
 %K papel: ponte a construir
@@ -69,6 +54,7 @@
 %K eixo: Política industrial
 %K eixo: Regulação econômica
 %K papel: cibernética organizacional
+%K papel: higher_order_bridge
 %K papel: obra-ponte
 %K papel: obra-semente
 %K papel: ponte a construir
@@ -147,6 +133,7 @@
 %K eixo: Política industrial
 %K eixo: Regulação econômica
 %K papel: cibernética organizacional
+%K papel: higher_order_bridge
 %K papel: obra-ponte
 %K papel: obra-semente
 %K papel: ponte a construir
@@ -287,6 +274,7 @@
 %K papel: obra-ponte
 %K papel: obra-semente
 %K papel: ponte a construir
+%K papel: ponte de ordem superior
 
 %0 Book
 %T Beer · Heart of Enterprise
@@ -349,6 +337,17 @@
 %U https://openalex.org/W2012275303
 %X From the Publisher: In recent years, debate on the state's economic role has too often devolved into diatribes against intervention. Peter Evans questions such simplistic views, offering a new vision of why state involvement works in some cases and produces disasters in others. To illustrate, he looks at how state agencies, local entrepreneurs, and transnational corporations shaped the emergence of computer industries in Brazil, India, and Korea during the seventies and eighties. Evans starts with the idea that states vary in the way they are organized and tied to society. In some nations, like Zaire, the state is predatory, ruthlessly extracting and providing nothing of value in return. In others, like Korea, it is developmental, promoting industrial transformation. In still others, like Brazil and India, it is in-between, sometimes helping, sometimes hindering. Evans's years of comparative research on the successes and failures of state involvement in the process of industrialization have here been crafted into a persuasive and entertaining work, which demonstrates that successful state action requires an understanding of its own limits, a realistic relationship to the global economy, and the combination of coherent internal organization and close links to society that Evans calls embedded autonomy.
 %K eixo: Política industrial
+%K papel: obra-semente
+%K papel: ponte a construir
+
+%0 Journal Article
+%T The rise of the regulatory state in Europe
+%A Giandomenico Majone
+%D 1994
+%R 10.1080/01402389408425031
+%U https://openalex.org/W2171753429
+%X Privatization and deregulation have created the conditions for the rise of the regulatory state to replace the dirigiste state of the past. Reliance on regulation ‐ rather than public ownership, planning or centralised administration — characterises the methods of the regulatory state. This study examines the growth of regulation in Europe, at the national and Community levels. It stresses the advantages of this mode of policy making, but also recognises its problems. It is suggested that political accountability can be ensured by a variety of substantive and procedural controls, among which judicial review is especially important. Executive oversight and co‐ordination may be improved by using new tools of public management like the regulatory budget or the regulatory clearing house.
+%K eixo: Regulação econômica
 %K papel: obra-semente
 %K papel: ponte a construir
 

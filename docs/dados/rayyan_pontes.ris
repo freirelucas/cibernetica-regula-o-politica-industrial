@@ -1,21 +1,3 @@
-TY  - BOOK
-T1  - Cybernetics or Control and Communication in the Animal and the Machine
-AU  - Norbert Wiener
-PY  - 2019
-DO  - 10.7551/mitpress/11810.001.0001
-UR  - https://openalex.org/W1527571715
-AB  - A classic and influential work that laid the theoretical foundations for information theory and a timely text for contemporary informations theorists and practitioners. With the influential book Cybernetics, first published in 1948, Norbert Wiener laid the theoretical foundations for the multidisciplinary field of cybernetics, the study of controlling the flow of information in systems with feedback loops, be they biological, mechanical, cognitive, or social. At the core of Wiener's theory is the message (information), sent and responded to (feedback); the functionality of a machine, organism, or society depends on the quality of messages. Information corrupted by noise prevents homeostasis, or equilibrium. And yet Cybernetics is as philosophical as it is technical, with the first chapter devoted to Newtonian and Bergsonian time and the philosophical mixed with the technical throughout. This book brings the 1961 second edition back into print, with new forewords by Doug Hill and Sanjoy Mitter. Contemporary readers of Cybernetics will marvel at Wiener's prescience—his warnings against “noise,” his disdain for “hucksters” and “gadget worshipers,” and his view of the mass media as the single greatest anti-homeostatic force in society. This edition of Cybernetics gives a new generation access to a classic text.
-KW  - eixo: Cibernética
-KW  - eixo: Política industrial
-KW  - eixo: Regulação econômica
-KW  - papel: cibernética organizacional
-KW  - papel: higher_order_bridge
-KW  - papel: obra-ponte
-KW  - papel: obra-semente
-KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 23 (XGI); ponte a construir=top-25 de bridge_priority (score=0.4804)
-ER  - 
-
 TY  - JOUR
 T1  - Hausmann & Rodrik · Economic Development as Self-Discovery
 AU  - Hausmann
@@ -24,12 +6,13 @@ PY  - 2003
 DO  - 10.1016/s0304-3878(03)00124-x
 UR  - https://openalex.org/W2120106358
 KW  - eixo: Política industrial
+KW  - papel: higher_order_bridge
 KW  - papel: obra de autor-semente
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: obra de autor-semente, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.5514)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Política industrial · papel: higher_order_bridge, obra de autor-semente, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 20 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5861)
 ER  - 
 
 TY  - BOOK
@@ -45,7 +28,7 @@ KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5488)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5616)
 ER  - 
 
 TY  - JOUR
@@ -62,7 +45,7 @@ KW  - eixo: Política industrial
 KW  - papel: higher_order_bridge
 KW  - papel: mais citada
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: higher_order_bridge, mais citada, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 22 (XGI); ponte a construir=top-25 de bridge_priority (score=0.479)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: higher_order_bridge, mais citada, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 22 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5172)
 ER  - 
 
 TY  - JOUR
@@ -77,10 +60,11 @@ KW  - eixo: Cibernética
 KW  - eixo: Política industrial
 KW  - eixo: Regulação econômica
 KW  - papel: cibernética organizacional
+KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6264)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 20 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6611)
 ER  - 
 
 TY  - JOUR
@@ -96,7 +80,7 @@ KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: mais citada
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, mais citada, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5329)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, mais citada, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5433)
 ER  - 
 
 TY  - BOOK
@@ -112,7 +96,7 @@ KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6145)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6336)
 ER  - 
 
 TY  - JOUR
@@ -131,7 +115,7 @@ KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 28 (XGI); ponte a construir=top-25 de bridge_priority (score=0.562)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 19 (XGI); ponte a construir=top-25 de bridge_priority (score=0.583)
 ER  - 
 
 TY  - JOUR
@@ -151,7 +135,7 @@ KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.6198)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir, ponte global×Brasil, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.6458)
 ER  - 
 
 TY  - BOOK
@@ -165,10 +149,11 @@ KW  - eixo: Cibernética
 KW  - eixo: Política industrial
 KW  - eixo: Regulação econômica
 KW  - papel: cibernética organizacional
+KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6264)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 20 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6611)
 ER  - 
 
 TY  - JOUR
@@ -181,7 +166,7 @@ AB  - This paper examines the dynamics of allocation under increasing returns wi
 KW  - eixo: Economia da complexidade
 KW  - papel: complexidade (4º eixo)
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4672)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Economia da complexidade · papel: complexidade (4º eixo), ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4897)
 ER  - 
 
 TY  - JOUR
@@ -200,7 +185,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: mais citada
 KW  - papel: ponte a construir
 KW  - papel: ponte global×Brasil
-N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Economia da complexidade, Política industrial · papel: complexidade (4º eixo), higher_order_bridge, mais citada, ponte a construir, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6554)
+N1  - Síntese cienciométrica IPEA · fonte: Brasil · eixos: Economia da complexidade, Política industrial · papel: complexidade (4º eixo), higher_order_bridge, mais citada, ponte a construir, ponte global×Brasil · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 42 (XGI); ponte a construir=top-25 de bridge_priority (score=0.7282)
 ER  - 
 
 TY  - JOUR
@@ -216,7 +201,7 @@ KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6172)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6397)
 ER  - 
 
 TY  - BOOK
@@ -233,7 +218,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 54 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5213)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, higher_order_bridge, obra-ponte, obra-semente, ponte a construir · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 18 (XGI); ponte a construir=top-25 de bridge_priority (score=0.505)
 ER  - 
 
 TY  - BOOK
@@ -250,7 +235,7 @@ KW  - papel: cibernética (geral)
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética (geral), obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4764)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética (geral), obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4866)
 ER  - 
 
 TY  - JOUR
@@ -268,7 +253,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte de ordem superior
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 80 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6306); ponte de ordem superior=HO centrality=0.101 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: bela adormecida, cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 45 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6624); ponte de ordem superior=HO centrality=0.219 (B.4 random walks)
 ER  - 
 
 TY  - CHAP
@@ -285,7 +270,7 @@ KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: ponte a construir
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, ponte a construir, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.6145)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: cibernética organizacional, obra-ponte, ponte a construir, rajada de citação · razão: ponte a construir=top-25 de bridge_priority (score=0.6336)
 ER  - 
 
 TY  - JOUR
@@ -303,7 +288,7 @@ KW  - papel: cibernética organizacional
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6172)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética organizacional, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.6397)
 ER  - 
 
 TY  - JOUR
@@ -323,7 +308,8 @@ KW  - papel: mais citada
 KW  - papel: obra-ponte
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética (geral), mais citada, obra-ponte, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5422)
+KW  - papel: ponte de ordem superior
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética, Política industrial, Regulação econômica · papel: bela adormecida, cibernética (geral), mais citada, obra-ponte, obra-semente, ponte a construir, ponte de ordem superior · razão: ponte a construir=top-25 de bridge_priority (score=0.5494); ponte de ordem superior=HO centrality=0.055 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -339,7 +325,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte de ordem superior
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 100 (XGI); ponte a construir=top-25 de bridge_priority (score=0.582); ponte de ordem superior=HO centrality=0.168 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 52 (XGI); ponte a construir=top-25 de bridge_priority (score=0.6088); ponte de ordem superior=HO centrality=0.135 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -355,7 +341,7 @@ KW  - papel: higher_order_bridge
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte de ordem superior
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 153 (XGI); ponte a construir=top-25 de bridge_priority (score=0.727); ponte de ordem superior=HO centrality=0.191 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 131 (XGI); ponte a construir=top-25 de bridge_priority (score=0.925); ponte de ordem superior=HO centrality=0.263 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -373,7 +359,7 @@ KW  - papel: obra-semente
 KW  - papel: ponte a construir
 KW  - papel: ponte de ordem superior
 KW  - papel: rajada de citação
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 111 (XGI); ponte a construir=top-25 de bridge_priority (score=0.5965); ponte de ordem superior=HO centrality=0.103 (B.4 random walks)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, higher_order_bridge, obra-semente, ponte a construir, ponte de ordem superior, rajada de citação · razão: higher_order_bridge=top-40 em hiperarestas trans-eixo: 93 (XGI); ponte a construir=top-25 de bridge_priority (score=0.734); ponte de ordem superior=HO centrality=0.195 (B.4 random walks)
 ER  - 
 
 TY  - BOOK
@@ -385,7 +371,7 @@ KW  - eixo: Cibernética
 KW  - papel: cibernética organizacional
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5303)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Cibernética · papel: cibernética organizacional, obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5281)
 ER  - 
 
 TY  - JOUR
@@ -397,7 +383,20 @@ AB  - From the Publisher: In recent years, debate on the state's economic role h
 KW  - eixo: Política industrial
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4724)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Política industrial · papel: obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5019)
+ER  - 
+
+TY  - JOUR
+T1  - The rise of the regulatory state in Europe
+AU  - Giandomenico Majone
+PY  - 1994
+DO  - 10.1080/01402389408425031
+UR  - https://openalex.org/W2171753429
+AB  - Privatization and deregulation have created the conditions for the rise of the regulatory state to replace the dirigiste state of the past. Reliance on regulation ‐ rather than public ownership, planning or centralised administration — characterises the methods of the regulatory state. This study examines the growth of regulation in Europe, at the national and Community levels. It stresses the advantages of this mode of policy making, but also recognises its problems. It is suggested that political accountability can be ensured by a variety of substantive and procedural controls, among which judicial review is especially important. Executive oversight and co‐ordination may be improved by using new tools of public management like the regulatory budget or the regulatory clearing house.
+KW  - eixo: Regulação econômica
+KW  - papel: obra-semente
+KW  - papel: ponte a construir
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4836)
 ER  - 
 
 TY  - BOOK
@@ -410,5 +409,5 @@ AB  - This chapter discusses the political sources of regulation should provide 
 KW  - eixo: Regulação econômica
 KW  - papel: obra-semente
 KW  - papel: ponte a construir
-N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.4724)
+N1  - Síntese cienciométrica IPEA · fonte: núcleo global · eixos: Regulação econômica · papel: obra-semente, ponte a construir · razão: ponte a construir=top-25 de bridge_priority (score=0.5019)
 ER  - 

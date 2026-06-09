@@ -12,8 +12,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.727,
-   "ho": 153,
+   "score": 0.925,
+   "ho": 131,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -21,7 +21,28 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte a construir",
+    "ponte de ordem superior"
+   ]
+  },
+  {
+   "oa_id": "W2126563689",
+   "title": "The Tools of Government in the Digital Age",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.734,
+   "ho": 93,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte a construir",
+    "ponte de ordem superior",
+    "rajada de citação"
    ]
   },
   {
@@ -31,7 +52,7 @@
     "Economia da complexidade",
     "Política industrial"
    ],
-   "score": 0.6554,
+   "score": 0.7282,
    "ho": 42,
    "reach": 4,
    "cyb_link": 1.0,
@@ -50,8 +71,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.6306,
-   "ho": 80,
+   "score": 0.6624,
+   "ho": 45,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -60,7 +81,8 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte a construir",
+    "ponte de ordem superior"
    ]
   },
   {
@@ -71,15 +93,17 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6264,
+   "score": 0.6611,
    "ho": 20,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -90,15 +114,17 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6264,
+   "score": 0.6611,
    "ho": 20,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -109,7 +135,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6198,
+   "score": 0.6458,
    "ho": 15,
    "reach": 4,
    "cyb_link": 1.0,
@@ -118,6 +144,7 @@
     "cibernética organizacional",
     "obra-ponte",
     "obra-semente",
+    "ponte a construir",
     "ponte global×Brasil",
     "rajada de citação"
    ]
@@ -130,7 +157,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6172,
+   "score": 0.6397,
    "ho": 13,
    "reach": 4,
    "cyb_link": 1.0,
@@ -138,7 +165,8 @@
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -149,7 +177,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6172,
+   "score": 0.6397,
    "ho": 13,
    "reach": 4,
    "cyb_link": 1.0,
@@ -158,7 +186,8 @@
     "bela adormecida",
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -169,7 +198,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6145,
+   "score": 0.6336,
    "ho": 11,
    "reach": 4,
    "cyb_link": 1.0,
@@ -177,7 +206,8 @@
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -188,7 +218,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6145,
+   "score": 0.6336,
    "ho": 11,
    "reach": 4,
    "cyb_link": 1.0,
@@ -196,24 +226,6 @@
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2126563689",
-   "title": "The Tools of Government in the Digital Age",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.5965,
-   "ho": 111,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-semente",
     "ponte a construir",
     "rajada de citação"
    ]
@@ -224,8 +236,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.582,
-   "ho": 100,
+   "score": 0.6088,
+   "ho": 52,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -233,7 +245,28 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte a construir",
+    "ponte de ordem superior"
+   ]
+  },
+  {
+   "oa_id": "W2120106358",
+   "title": "Hausmann & Rodrik · Economic Development as Self-Discovery",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.5861,
+   "ho": 20,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra de autor-semente",
+    "obra-semente",
+    "ponte a construir",
+    "ponte global×Brasil",
+    "rajada de citação"
    ]
   },
   {
@@ -244,8 +277,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.562,
-   "ho": 28,
+   "score": 0.583,
+   "ho": 19,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -254,25 +287,7 @@
     "higher_order_bridge",
     "obra-ponte",
     "obra-semente",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W2120106358",
-   "title": "Hausmann & Rodrik · Economic Development as Self-Discovery",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.5514,
-   "ho": 20,
-   "reach": 3,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "obra de autor-semente",
-    "obra-semente",
     "ponte a construir",
-    "ponte global×Brasil",
     "rajada de citação"
    ]
   },
@@ -284,15 +299,16 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.5488,
-   "ho": 18,
+   "score": 0.5616,
+   "ho": 12,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   {
@@ -303,8 +319,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.5422,
-   "ho": 13,
+   "score": 0.5494,
+   "ho": 8,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -313,7 +329,9 @@
     "cibernética (geral)",
     "mais citada",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir",
+    "ponte de ordem superior"
    ]
   },
   {
@@ -322,14 +340,15 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.5329,
+   "score": 0.5433,
    "ho": 6,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "mais citada"
+    "mais citada",
+    "ponte a construir"
    ]
   },
   {
@@ -338,54 +357,13 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.5303,
-   "ho": 4,
+   "score": 0.5281,
+   "ho": 1,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "obra-semente"
-   ]
-  },
-  {
-   "oa_id": "W1492856410",
-   "title": "Checkland · Systems Thinking, Systems Practice",
-   "axes": [
-    "Cibernética",
-    "Política industrial",
-    "Regulação econômica"
-   ],
-   "score": 0.5213,
-   "ho": 54,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-ponte",
-    "obra-semente",
-    "ponte a construir"
-   ]
-  },
-  {
-   "oa_id": "W1527571715",
-   "title": "Cybernetics or Control and Communication in the Animal and the Machine",
-   "axes": [
-    "Cibernética",
-    "Política industrial",
-    "Regulação econômica"
-   ],
-   "score": 0.4804,
-   "ho": 23,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-ponte",
     "obra-semente",
     "ponte a construir"
    ]
@@ -396,14 +374,84 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.479,
+   "score": 0.5172,
    "ho": 22,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
     "higher_order_bridge",
-    "mais citada"
+    "mais citada",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W1492856410",
+   "title": "Checkland · Systems Thinking, Systems Practice",
+   "axes": [
+    "Cibernética",
+    "Política industrial",
+    "Regulação econômica"
+   ],
+   "score": 0.505,
+   "ho": 18,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W2012275303",
+   "title": "Embedded autonomy: states and industrial transformation",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.5019,
+   "ho": 17,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W2054422547",
+   "title": "Wilson · Politics of Regulation",
+   "axes": [
+    "Regulação econômica"
+   ],
+   "score": 0.5019,
+   "ho": 17,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  {
+   "oa_id": "W2129261459",
+   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4897,
+   "ho": 13,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "ponte a construir"
    ]
   },
   {
@@ -414,77 +462,16 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.4764,
-   "ho": 20,
+   "score": 0.4866,
+   "ho": 12,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética (geral)",
     "obra-ponte",
-    "obra-semente"
-   ]
-  },
-  {
-   "oa_id": "W2012275303",
-   "title": "Embedded autonomy: states and industrial transformation",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.4724,
-   "ho": 17,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "obra-semente"
-   ]
-  },
-  {
-   "oa_id": "W2054422547",
-   "title": "Wilson · Politics of Regulation",
-   "axes": [
-    "Regulação econômica"
-   ],
-   "score": 0.4724,
-   "ho": 17,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "obra-semente"
-   ]
-  },
-  {
-   "oa_id": "W2129261459",
-   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.4672,
-   "ho": 13,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
+    "obra-semente",
     "ponte a construir"
-   ]
-  },
-  {
-   "oa_id": "W1601944394",
-   "title": "Churchman · The Systems Approach",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.4672,
-   "ho": 13,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-semente"
    ]
   },
   {
@@ -493,7 +480,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.4645,
+   "score": 0.4836,
    "ho": 11,
    "reach": 4,
    "cyb_link": 1.0,
@@ -503,19 +490,38 @@
    ]
   },
   {
+   "oa_id": "W1527571715",
+   "title": "Cybernetics or Control and Communication in the Animal and the Machine",
+   "axes": [
+    "Cibernética",
+    "Política industrial",
+    "Regulação econômica"
+   ],
+   "score": 0.4775,
+   "ho": 9,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  {
    "oa_id": "W2009202666",
    "title": "Increasing Returns and Path Dependence in the Economy",
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.4592,
+   "score": 0.4714,
    "ho": 7,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "complexidade (4º eixo)",
-    "ponte a construir"
+    "complexidade (4º eixo)"
    ]
   },
   {
@@ -524,7 +530,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.4579,
+   "score": 0.4683,
    "ho": 6,
    "reach": 4,
    "cyb_link": 1.0,
@@ -539,7 +545,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.4579,
+   "score": 0.4683,
    "ho": 6,
    "reach": 4,
    "cyb_link": 1.0,
@@ -550,12 +556,28 @@
    ]
   },
   {
+   "oa_id": "W1601944394",
+   "title": "Churchman · The Systems Approach",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.4653,
+   "ho": 5,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-semente"
+   ]
+  },
+  {
    "oa_id": "W2141042444",
    "title": "The Economy as an Evolving Complex System II",
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.4553,
+   "score": 0.4622,
    "ho": 4,
    "reach": 4,
    "cyb_link": 1.0,
@@ -565,12 +587,30 @@
    ]
   },
   {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4618,
+   "ho": 53,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior",
+    "ponte global×Brasil"
+   ]
+  },
+  {
    "oa_id": "W1491554624",
    "title": "Abernathy & Utterback · Patterns of Industrial Innovation",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.454,
+   "score": 0.4592,
    "ho": 3,
    "reach": 4,
    "cyb_link": 1.0,
@@ -580,19 +620,21 @@
    ]
   },
   {
-   "oa_id": "W2099069868",
-   "title": "General System Theory: Foundations, Development, Applications",
+   "oa_id": "W1553746973",
+   "title": "The entrepreneurial state: debunking public vs. private sector myths",
    "axes": [
-    "Cibernética"
+    "Política industrial"
    ],
-   "score": 0.3974,
-   "ho": 17,
+   "score": 0.4479,
+   "ho": 73,
    "reach": 3,
-   "cyb_link": 1.0,
+   "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "cibernética (geral)",
-    "obra-semente"
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior",
+    "rajada de citação"
    ]
   },
   {
@@ -601,7 +643,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.3922,
+   "score": 0.4147,
    "ho": 13,
    "reach": 3,
    "cyb_link": 1.0,
@@ -617,7 +659,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.3908,
+   "score": 0.4116,
    "ho": 12,
    "reach": 3,
    "cyb_link": 1.0,
@@ -633,7 +675,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.3908,
+   "score": 0.4116,
    "ho": 12,
    "reach": 3,
    "cyb_link": 1.0,
@@ -648,13 +690,29 @@
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.3895,
+   "score": 0.4086,
    "ho": 11,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)"
+   ]
+  },
+  {
+   "oa_id": "W2099069868",
+   "title": "General System Theory: Foundations, Development, Applications",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3964,
+   "ho": 7,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra-semente"
    ]
   },
   {
@@ -665,7 +723,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.379,
+   "score": 0.3842,
    "ho": 3,
    "reach": 3,
    "cyb_link": 0.0,
@@ -683,7 +741,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.379,
+   "score": 0.3842,
    "ho": 3,
    "reach": 3,
    "cyb_link": 1.0,
@@ -709,21 +767,21 @@
    ]
   },
   {
-   "oa_id": "W3124879925",
-   "title": "Industrial Policy for the Twenty-First Century",
+   "oa_id": "W3130930004",
+   "title": "Lange · Economic Theory of Socialism",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.37,
-   "ho": 53,
+   "score": 0.3485,
+   "ho": 65,
    "reach": 2,
    "cyb_link": 0.0,
-   "role": 1.0,
+   "role": 0.0,
    "roles": [
     "higher_order_bridge",
+    "obra de autor-ponte",
     "obra-semente",
-    "ponte a construir",
-    "ponte global×Brasil"
+    "ponte de ordem superior"
    ]
   },
   {
@@ -732,47 +790,30 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3277,
-   "ho": 21,
+   "score": 0.3427,
+   "ho": 14,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
     "cibernética (geral)",
-    "higher_order_bridge",
-    "obra de autor-semente",
-    "ponte a construir"
+    "obra de autor-semente"
    ]
   },
   {
-   "oa_id": "W1553746973",
-   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+   "oa_id": "W2048894562",
+   "title": "On the Economic Theory of Socialism.",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.3227,
-   "ho": 74,
+   "score": 0.338,
+   "ho": 37,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "higher_order_bridge",
-    "obra-semente",
-    "ponte a construir",
-    "rajada de citação"
-   ]
-  },
-  {
-   "oa_id": "W92085004",
-   "title": "Systems Thinking: Creative Holism for Managers",
-   "axes": [],
-   "score": 0.3211,
-   "ho": 16,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
+    "bela adormecida",
+    "higher_order_bridge"
    ]
   },
   {
@@ -781,8 +822,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3148,
-   "ho": 68,
+   "score": 0.3227,
+   "ho": 32,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -790,23 +831,35 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte de ordem superior"
    ]
   },
   {
-   "oa_id": "W2063282131",
-   "title": "Wholes and Parts: A General Theory of System Behavior",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.3132,
-   "ho": 10,
+   "oa_id": "W92085004",
+   "title": "Systems Thinking: Creative Holism for Managers",
+   "axes": [],
+   "score": 0.3214,
+   "ho": 7,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "obra-semente",
-    "ponte a construir"
+    "rajada de citação"
+   ]
+  },
+  {
+   "oa_id": "W2569986058",
+   "title": "Going by the Book, the Problem of Regulatory Unreasonableness",
+   "axes": [
+    "Regulação econômica"
+   ],
+   "score": 0.3122,
+   "ho": 4,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
    ]
   },
   {
@@ -815,8 +868,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3121,
-   "ho": 66,
+   "score": 0.3105,
+   "ho": 28,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -827,13 +880,13 @@
    ]
   },
   {
-   "oa_id": "W2569986058",
-   "title": "Going by the Book, the Problem of Regulatory Unreasonableness",
+   "oa_id": "W2063282131",
+   "title": "Wholes and Parts: A General Theory of System Behavior",
    "axes": [
-    "Regulação econômica"
+    "Política industrial"
    ],
-   "score": 0.3053,
-   "ho": 4,
+   "score": 0.3092,
+   "ho": 3,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
@@ -847,8 +900,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.2884,
-   "ho": 48,
+   "score": 0.3074,
+   "ho": 27,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -856,23 +909,23 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir",
+    "ponte de ordem superior",
     "rajada de citação"
    ]
   },
   {
-   "oa_id": "W2048894562",
-   "title": "On the Economic Theory of Socialism.",
+   "oa_id": "W2168605160",
+   "title": "Increasing Returns and Long-Run Growth",
    "axes": [
-    "Política industrial"
+    "Economia da complexidade"
    ],
-   "score": 0.2752,
-   "ho": 38,
+   "score": 0.2891,
+   "ho": 21,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "bela adormecida",
+    "complexidade (4º eixo)",
     "higher_order_bridge"
    ]
   },
@@ -882,65 +935,15 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.2725,
-   "ho": 36,
+   "score": 0.28,
+   "ho": 18,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
     "higher_order_bridge",
-    "obra de autor-semente",
-    "ponte a construir"
-   ]
-  },
-  {
-   "oa_id": "W2168605160",
-   "title": "Increasing Returns and Long-Run Growth",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.2527,
-   "ho": 21,
-   "reach": 3,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)"
-   ]
-  },
-  {
-   "oa_id": "W2037306909",
-   "title": "Systems Thinking – Creative Holism for Managers",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.2448,
-   "ho": 15,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-semente"
-   ]
-  },
-  {
-   "oa_id": "W3130930004",
-   "title": "Lange · Economic Theory of Socialism",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.2371,
-   "ho": 66,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "higher_order_bridge",
-    "obra de autor-ponte",
-    "obra-semente",
-    "ponte a construir"
+    "obra de autor-semente"
    ]
   },
   {
@@ -949,12 +952,28 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.2369,
+   "score": 0.2525,
    "ho": 9,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra-semente"
+   ]
+  },
+  {
+   "oa_id": "W2037306909",
+   "title": "Systems Thinking – Creative Holism for Managers",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.2433,
+   "ho": 6,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
     "obra-semente"
    ]
   },
@@ -980,7 +999,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1645,
+   "score": 0.1836,
    "ho": 11,
    "reach": 2,
    "cyb_link": 0.0,
@@ -993,7 +1012,7 @@
    "oa_id": "W2082597100",
    "title": "Analyzing the functional dynamics of technological innovation systems: A scheme of analysis",
    "axes": [],
-   "score": 0.1619,
+   "score": 0.1775,
    "ho": 9,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1008,7 +1027,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1606,
+   "score": 0.1744,
    "ho": 8,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1024,7 +1043,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1592,
+   "score": 0.1714,
    "ho": 7,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1039,7 +1058,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1592,
+   "score": 0.1714,
    "ho": 7,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1055,7 +1074,7 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.1526,
+   "score": 0.1561,
    "ho": 2,
    "reach": 0,
    "cyb_link": 0.0,
@@ -1071,7 +1090,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1526,
+   "score": 0.1561,
    "ho": 2,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1086,7 +1105,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1526,
+   "score": 0.1561,
    "ho": 2,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1101,14 +1120,13 @@
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.1513,
+   "score": 0.1531,
    "ho": 1,
    "reach": 2,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "complexidade (4º eixo)",
-    "ponte a construir"
+    "complexidade (4º eixo)"
    ]
   },
   {
@@ -1117,7 +1135,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1513,
+   "score": 0.1531,
    "ho": 1,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1132,7 +1150,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1513,
+   "score": 0.1531,
    "ho": 1,
    "reach": 2,
    "cyb_link": 0.0,
@@ -1154,7 +1172,6 @@
    "role": 1.0,
    "roles": [
     "corpus Brasil (Faganello)",
-    "ponte a construir",
     "ponte global×Brasil"
    ]
   },
@@ -1773,14 +1790,13 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.1106,
-   "ho": 27,
+   "score": 0.1208,
+   "ho": 15,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
     "cibernética (geral)",
-    "higher_order_bridge",
     "obra-semente"
    ]
   },
@@ -1790,8 +1806,8 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.0935,
-   "ho": 14,
+   "score": 0.0994,
+   "ho": 8,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
@@ -1806,7 +1822,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.0803,
+   "score": 0.0872,
    "ho": 4,
    "reach": 1,
    "cyb_link": 0.0,
@@ -1821,7 +1837,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.0776,
+   "score": 0.0811,
    "ho": 2,
    "reach": 1,
    "cyb_link": 0.0,
@@ -1836,7 +1852,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.0763,
+   "score": 0.0781,
    "ho": 1,
    "reach": 1,
    "cyb_link": 0.0,
@@ -3375,8 +3391,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.727,
-   "ho": 153,
+   "score": 0.925,
+   "ho": 131,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3384,7 +3400,28 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte a construir",
+    "ponte de ordem superior"
+   ]
+  },
+  "W2126563689": {
+   "oa_id": "W2126563689",
+   "title": "The Tools of Government in the Digital Age",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.734,
+   "ho": 93,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte a construir",
+    "ponte de ordem superior",
+    "rajada de citação"
    ]
   },
   "W2137358449": {
@@ -3394,7 +3431,7 @@
     "Economia da complexidade",
     "Política industrial"
    ],
-   "score": 0.6554,
+   "score": 0.7282,
    "ho": 42,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3413,8 +3450,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.6306,
-   "ho": 80,
+   "score": 0.6624,
+   "ho": 45,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3423,7 +3460,8 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte a construir",
+    "ponte de ordem superior"
    ]
   },
   "W2140409505": {
@@ -3434,15 +3472,17 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6264,
+   "score": 0.6611,
    "ho": 20,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   "W2017802748": {
@@ -3453,15 +3493,17 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6264,
+   "score": 0.6611,
    "ho": 20,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
+    "higher_order_bridge",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   "W2013386523": {
@@ -3472,7 +3514,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6198,
+   "score": 0.6458,
    "ho": 15,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3481,6 +3523,7 @@
     "cibernética organizacional",
     "obra-ponte",
     "obra-semente",
+    "ponte a construir",
     "ponte global×Brasil",
     "rajada de citação"
    ]
@@ -3493,7 +3536,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6172,
+   "score": 0.6397,
    "ho": 13,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3501,7 +3544,8 @@
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   "W1979968159": {
@@ -3512,7 +3556,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6172,
+   "score": 0.6397,
    "ho": 13,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3521,7 +3565,8 @@
     "bela adormecida",
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   "W1576605329": {
@@ -3532,7 +3577,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6145,
+   "score": 0.6336,
    "ho": 11,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3540,7 +3585,8 @@
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   "W1520386898": {
@@ -3551,7 +3597,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.6145,
+   "score": 0.6336,
    "ho": 11,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3559,24 +3605,6 @@
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "rajada de citação"
-   ]
-  },
-  "W2126563689": {
-   "oa_id": "W2126563689",
-   "title": "The Tools of Government in the Digital Age",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.5965,
-   "ho": 111,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-semente",
     "ponte a construir",
     "rajada de citação"
    ]
@@ -3587,8 +3615,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.582,
-   "ho": 100,
+   "score": 0.6088,
+   "ho": 52,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3596,7 +3624,28 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte a construir",
+    "ponte de ordem superior"
+   ]
+  },
+  "W2120106358": {
+   "oa_id": "W2120106358",
+   "title": "Hausmann & Rodrik · Economic Development as Self-Discovery",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.5861,
+   "ho": 20,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra de autor-semente",
+    "obra-semente",
+    "ponte a construir",
+    "ponte global×Brasil",
+    "rajada de citação"
    ]
   },
   "W2101157755": {
@@ -3607,8 +3656,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.562,
-   "ho": 28,
+   "score": 0.583,
+   "ho": 19,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3617,25 +3666,7 @@
     "higher_order_bridge",
     "obra-ponte",
     "obra-semente",
-    "rajada de citação"
-   ]
-  },
-  "W2120106358": {
-   "oa_id": "W2120106358",
-   "title": "Hausmann & Rodrik · Economic Development as Self-Discovery",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.5514,
-   "ho": 20,
-   "reach": 3,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "obra de autor-semente",
-    "obra-semente",
     "ponte a construir",
-    "ponte global×Brasil",
     "rajada de citação"
    ]
   },
@@ -3647,15 +3678,16 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.5488,
-   "ho": 18,
+   "score": 0.5616,
+   "ho": 12,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir"
    ]
   },
   "W1995875735": {
@@ -3666,8 +3698,8 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.5422,
-   "ho": 13,
+   "score": 0.5494,
+   "ho": 8,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
@@ -3676,7 +3708,9 @@
     "cibernética (geral)",
     "mais citada",
     "obra-ponte",
-    "obra-semente"
+    "obra-semente",
+    "ponte a construir",
+    "ponte de ordem superior"
    ]
   },
   "W1993023795": {
@@ -3685,14 +3719,15 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.5329,
+   "score": 0.5433,
    "ho": 6,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "mais citada"
+    "mais citada",
+    "ponte a construir"
    ]
   },
   "W597091629": {
@@ -3701,54 +3736,13 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.5303,
-   "ho": 4,
+   "score": 0.5281,
+   "ho": 1,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
-    "obra-semente"
-   ]
-  },
-  "W1492856410": {
-   "oa_id": "W1492856410",
-   "title": "Checkland · Systems Thinking, Systems Practice",
-   "axes": [
-    "Cibernética",
-    "Política industrial",
-    "Regulação econômica"
-   ],
-   "score": 0.5213,
-   "ho": 54,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-ponte",
-    "obra-semente",
-    "ponte a construir"
-   ]
-  },
-  "W1527571715": {
-   "oa_id": "W1527571715",
-   "title": "Cybernetics or Control and Communication in the Animal and the Machine",
-   "axes": [
-    "Cibernética",
-    "Política industrial",
-    "Regulação econômica"
-   ],
-   "score": 0.4804,
-   "ho": 23,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "higher_order_bridge",
-    "obra-ponte",
     "obra-semente",
     "ponte a construir"
    ]
@@ -3759,14 +3753,84 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.479,
+   "score": 0.5172,
    "ho": 22,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
     "higher_order_bridge",
-    "mais citada"
+    "mais citada",
+    "ponte a construir"
+   ]
+  },
+  "W1492856410": {
+   "oa_id": "W1492856410",
+   "title": "Checkland · Systems Thinking, Systems Practice",
+   "axes": [
+    "Cibernética",
+    "Política industrial",
+    "Regulação econômica"
+   ],
+   "score": 0.505,
+   "ho": 18,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "higher_order_bridge",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  "W2012275303": {
+   "oa_id": "W2012275303",
+   "title": "Embedded autonomy: states and industrial transformation",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.5019,
+   "ho": 17,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  "W2054422547": {
+   "oa_id": "W2054422547",
+   "title": "Wilson · Politics of Regulation",
+   "axes": [
+    "Regulação econômica"
+   ],
+   "score": 0.5019,
+   "ho": 17,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
+  "W2129261459": {
+   "oa_id": "W2129261459",
+   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+   "axes": [
+    "Economia da complexidade"
+   ],
+   "score": 0.4897,
+   "ho": 13,
+   "reach": 4,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "complexidade (4º eixo)",
+    "ponte a construir"
    ]
   },
   "W2493894436": {
@@ -3777,77 +3841,16 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.4764,
-   "ho": 20,
+   "score": 0.4866,
+   "ho": 12,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 1.0,
    "roles": [
     "cibernética (geral)",
     "obra-ponte",
-    "obra-semente"
-   ]
-  },
-  "W2012275303": {
-   "oa_id": "W2012275303",
-   "title": "Embedded autonomy: states and industrial transformation",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.4724,
-   "ho": 17,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "obra-semente"
-   ]
-  },
-  "W2054422547": {
-   "oa_id": "W2054422547",
-   "title": "Wilson · Politics of Regulation",
-   "axes": [
-    "Regulação econômica"
-   ],
-   "score": 0.4724,
-   "ho": 17,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "obra-semente"
-   ]
-  },
-  "W2129261459": {
-   "oa_id": "W2129261459",
-   "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.4672,
-   "ho": 13,
-   "reach": 4,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)",
+    "obra-semente",
     "ponte a construir"
-   ]
-  },
-  "W1601944394": {
-   "oa_id": "W1601944394",
-   "title": "Churchman · The Systems Approach",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.4672,
-   "ho": 13,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-semente"
    ]
   },
   "W2171753429": {
@@ -3856,7 +3859,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.4645,
+   "score": 0.4836,
    "ho": 11,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3865,20 +3868,39 @@
     "obra-semente"
    ]
   },
+  "W1527571715": {
+   "oa_id": "W1527571715",
+   "title": "Cybernetics or Control and Communication in the Animal and the Machine",
+   "axes": [
+    "Cibernética",
+    "Política industrial",
+    "Regulação econômica"
+   ],
+   "score": 0.4775,
+   "ho": 9,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-ponte",
+    "obra-semente",
+    "ponte a construir"
+   ]
+  },
   "W2009202666": {
    "oa_id": "W2009202666",
    "title": "Increasing Returns and Path Dependence in the Economy",
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.4592,
+   "score": 0.4714,
    "ho": 7,
    "reach": 4,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "complexidade (4º eixo)",
-    "ponte a construir"
+    "complexidade (4º eixo)"
    ]
   },
   "W2107431528": {
@@ -3887,7 +3909,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.4579,
+   "score": 0.4683,
    "ho": 6,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3902,7 +3924,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.4579,
+   "score": 0.4683,
    "ho": 6,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3912,13 +3934,29 @@
     "rajada de citação"
    ]
   },
+  "W1601944394": {
+   "oa_id": "W1601944394",
+   "title": "Churchman · The Systems Approach",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.4653,
+   "ho": 5,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
+    "obra-semente"
+   ]
+  },
   "W2141042444": {
    "oa_id": "W2141042444",
    "title": "The Economy as an Evolving Complex System II",
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.4553,
+   "score": 0.4622,
    "ho": 4,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3927,13 +3965,31 @@
     "complexidade (4º eixo)"
    ]
   },
+  "W3124879925": {
+   "oa_id": "W3124879925",
+   "title": "Industrial Policy for the Twenty-First Century",
+   "axes": [
+    "Política industrial"
+   ],
+   "score": 0.4618,
+   "ho": 53,
+   "reach": 2,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior",
+    "ponte global×Brasil"
+   ]
+  },
   "W1491554624": {
    "oa_id": "W1491554624",
    "title": "Abernathy & Utterback · Patterns of Industrial Innovation",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.454,
+   "score": 0.4592,
    "ho": 3,
    "reach": 4,
    "cyb_link": 1.0,
@@ -3942,20 +3998,22 @@
     "obra-semente"
    ]
   },
-  "W2099069868": {
-   "oa_id": "W2099069868",
-   "title": "General System Theory: Foundations, Development, Applications",
+  "W1553746973": {
+   "oa_id": "W1553746973",
+   "title": "The entrepreneurial state: debunking public vs. private sector myths",
    "axes": [
-    "Cibernética"
+    "Política industrial"
    ],
-   "score": 0.3974,
-   "ho": 17,
+   "score": 0.4479,
+   "ho": 73,
    "reach": 3,
-   "cyb_link": 1.0,
+   "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "cibernética (geral)",
-    "obra-semente"
+    "higher_order_bridge",
+    "obra-semente",
+    "ponte de ordem superior",
+    "rajada de citação"
    ]
   },
   "W1999997471": {
@@ -3964,7 +4022,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.3922,
+   "score": 0.4147,
    "ho": 13,
    "reach": 3,
    "cyb_link": 1.0,
@@ -3980,7 +4038,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.3908,
+   "score": 0.4116,
    "ho": 12,
    "reach": 3,
    "cyb_link": 1.0,
@@ -3996,7 +4054,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.3908,
+   "score": 0.4116,
    "ho": 12,
    "reach": 3,
    "cyb_link": 1.0,
@@ -4011,13 +4069,29 @@
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.3895,
+   "score": 0.4086,
    "ho": 11,
    "reach": 3,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
     "complexidade (4º eixo)"
+   ]
+  },
+  "W2099069868": {
+   "oa_id": "W2099069868",
+   "title": "General System Theory: Foundations, Development, Applications",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.3964,
+   "ho": 7,
+   "reach": 3,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "cibernética (geral)",
+    "obra-semente"
    ]
   },
   "W2080485486": {
@@ -4028,7 +4102,7 @@
     "Política industrial",
     "Regulação econômica"
    ],
-   "score": 0.379,
+   "score": 0.3842,
    "ho": 3,
    "reach": 3,
    "cyb_link": 0.0,
@@ -4046,7 +4120,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.379,
+   "score": 0.3842,
    "ho": 3,
    "reach": 3,
    "cyb_link": 1.0,
@@ -4071,22 +4145,22 @@
     "obra-semente"
    ]
   },
-  "W3124879925": {
-   "oa_id": "W3124879925",
-   "title": "Industrial Policy for the Twenty-First Century",
+  "W3130930004": {
+   "oa_id": "W3130930004",
+   "title": "Lange · Economic Theory of Socialism",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.37,
-   "ho": 53,
+   "score": 0.3485,
+   "ho": 65,
    "reach": 2,
    "cyb_link": 0.0,
-   "role": 1.0,
+   "role": 0.0,
    "roles": [
     "higher_order_bridge",
+    "obra de autor-ponte",
     "obra-semente",
-    "ponte a construir",
-    "ponte global×Brasil"
+    "ponte de ordem superior"
    ]
   },
   "W1916207017": {
@@ -4095,47 +4169,30 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3277,
-   "ho": 21,
+   "score": 0.3427,
+   "ho": 14,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
     "cibernética (geral)",
-    "higher_order_bridge",
-    "obra de autor-semente",
-    "ponte a construir"
+    "obra de autor-semente"
    ]
   },
-  "W1553746973": {
-   "oa_id": "W1553746973",
-   "title": "The entrepreneurial state: debunking public vs. private sector myths",
+  "W2048894562": {
+   "oa_id": "W2048894562",
+   "title": "On the Economic Theory of Socialism.",
    "axes": [
     "Política industrial"
    ],
-   "score": 0.3227,
-   "ho": 74,
+   "score": 0.338,
+   "ho": 37,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "higher_order_bridge",
-    "obra-semente",
-    "ponte a construir",
-    "rajada de citação"
-   ]
-  },
-  "W92085004": {
-   "oa_id": "W92085004",
-   "title": "Systems Thinking: Creative Holism for Managers",
-   "axes": [],
-   "score": 0.3211,
-   "ho": 16,
-   "reach": 2,
-   "cyb_link": 1.0,
-   "role": 0.0,
-   "roles": [
-    "rajada de citação"
+    "bela adormecida",
+    "higher_order_bridge"
    ]
   },
   "W2154683088": {
@@ -4144,8 +4201,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3148,
-   "ho": 68,
+   "score": 0.3227,
+   "ho": 32,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -4153,23 +4210,35 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir"
+    "ponte de ordem superior"
    ]
   },
-  "W2063282131": {
-   "oa_id": "W2063282131",
-   "title": "Wholes and Parts: A General Theory of System Behavior",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.3132,
-   "ho": 10,
+  "W92085004": {
+   "oa_id": "W92085004",
+   "title": "Systems Thinking: Creative Holism for Managers",
+   "axes": [],
+   "score": 0.3214,
+   "ho": 7,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
    "roles": [
-    "obra-semente",
-    "ponte a construir"
+    "rajada de citação"
+   ]
+  },
+  "W2569986058": {
+   "oa_id": "W2569986058",
+   "title": "Going by the Book, the Problem of Regulatory Unreasonableness",
+   "axes": [
+    "Regulação econômica"
+   ],
+   "score": 0.3122,
+   "ho": 4,
+   "reach": 2,
+   "cyb_link": 1.0,
+   "role": 0.0,
+   "roles": [
+    "obra-semente"
    ]
   },
   "W2123755784": {
@@ -4178,8 +4247,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.3121,
-   "ho": 66,
+   "score": 0.3105,
+   "ho": 28,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -4189,14 +4258,14 @@
     "obra de autor-semente"
    ]
   },
-  "W2569986058": {
-   "oa_id": "W2569986058",
-   "title": "Going by the Book, the Problem of Regulatory Unreasonableness",
+  "W2063282131": {
+   "oa_id": "W2063282131",
+   "title": "Wholes and Parts: A General Theory of System Behavior",
    "axes": [
-    "Regulação econômica"
+    "Política industrial"
    ],
-   "score": 0.3053,
-   "ho": 4,
+   "score": 0.3092,
+   "ho": 3,
    "reach": 2,
    "cyb_link": 1.0,
    "role": 0.0,
@@ -4210,8 +4279,8 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.2884,
-   "ho": 48,
+   "score": 0.3074,
+   "ho": 27,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
@@ -4219,23 +4288,23 @@
     "cibernética organizacional",
     "higher_order_bridge",
     "obra-semente",
-    "ponte a construir",
+    "ponte de ordem superior",
     "rajada de citação"
    ]
   },
-  "W2048894562": {
-   "oa_id": "W2048894562",
-   "title": "On the Economic Theory of Socialism.",
+  "W2168605160": {
+   "oa_id": "W2168605160",
+   "title": "Increasing Returns and Long-Run Growth",
    "axes": [
-    "Política industrial"
+    "Economia da complexidade"
    ],
-   "score": 0.2752,
-   "ho": 38,
+   "score": 0.2891,
+   "ho": 21,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "bela adormecida",
+    "complexidade (4º eixo)",
     "higher_order_bridge"
    ]
   },
@@ -4245,65 +4314,15 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.2725,
-   "ho": 36,
+   "score": 0.28,
+   "ho": 18,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 1.0,
    "roles": [
     "cibernética organizacional",
     "higher_order_bridge",
-    "obra de autor-semente",
-    "ponte a construir"
-   ]
-  },
-  "W2168605160": {
-   "oa_id": "W2168605160",
-   "title": "Increasing Returns and Long-Run Growth",
-   "axes": [
-    "Economia da complexidade"
-   ],
-   "score": 0.2527,
-   "ho": 21,
-   "reach": 3,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "complexidade (4º eixo)"
-   ]
-  },
-  "W2037306909": {
-   "oa_id": "W2037306909",
-   "title": "Systems Thinking – Creative Holism for Managers",
-   "axes": [
-    "Cibernética"
-   ],
-   "score": 0.2448,
-   "ho": 15,
-   "reach": 1,
-   "cyb_link": 0.0,
-   "role": 1.0,
-   "roles": [
-    "cibernética organizacional",
-    "obra-semente"
-   ]
-  },
-  "W3130930004": {
-   "oa_id": "W3130930004",
-   "title": "Lange · Economic Theory of Socialism",
-   "axes": [
-    "Política industrial"
-   ],
-   "score": 0.2371,
-   "ho": 66,
-   "reach": 2,
-   "cyb_link": 0.0,
-   "role": 0.0,
-   "roles": [
-    "higher_order_bridge",
-    "obra de autor-ponte",
-    "obra-semente",
-    "ponte a construir"
+    "obra de autor-semente"
    ]
   },
   "W4302604455": {
@@ -4312,12 +4331,28 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.2369,
+   "score": 0.2525,
    "ho": 9,
    "reach": 3,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
+    "obra-semente"
+   ]
+  },
+  "W2037306909": {
+   "oa_id": "W2037306909",
+   "title": "Systems Thinking – Creative Holism for Managers",
+   "axes": [
+    "Cibernética"
+   ],
+   "score": 0.2433,
+   "ho": 6,
+   "reach": 1,
+   "cyb_link": 0.0,
+   "role": 1.0,
+   "roles": [
+    "cibernética organizacional",
     "obra-semente"
    ]
   },
@@ -4343,7 +4378,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1645,
+   "score": 0.1836,
    "ho": 11,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4356,7 +4391,7 @@
    "oa_id": "W2082597100",
    "title": "Analyzing the functional dynamics of technological innovation systems: A scheme of analysis",
    "axes": [],
-   "score": 0.1619,
+   "score": 0.1775,
    "ho": 9,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4371,7 +4406,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1606,
+   "score": 0.1744,
    "ho": 8,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4387,7 +4422,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1592,
+   "score": 0.1714,
    "ho": 7,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4402,7 +4437,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1592,
+   "score": 0.1714,
    "ho": 7,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4418,7 +4453,7 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.1526,
+   "score": 0.1561,
    "ho": 2,
    "reach": 0,
    "cyb_link": 0.0,
@@ -4434,7 +4469,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1526,
+   "score": 0.1561,
    "ho": 2,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4449,7 +4484,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1526,
+   "score": 0.1561,
    "ho": 2,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4464,14 +4499,13 @@
    "axes": [
     "Economia da complexidade"
    ],
-   "score": 0.1513,
+   "score": 0.1531,
    "ho": 1,
    "reach": 2,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
-    "complexidade (4º eixo)",
-    "ponte a construir"
+    "complexidade (4º eixo)"
    ]
   },
   "W2483843983": {
@@ -4480,7 +4514,7 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.1513,
+   "score": 0.1531,
    "ho": 1,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4495,7 +4529,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.1513,
+   "score": 0.1531,
    "ho": 1,
    "reach": 2,
    "cyb_link": 0.0,
@@ -4517,7 +4551,6 @@
    "role": 1.0,
    "roles": [
     "corpus Brasil (Faganello)",
-    "ponte a construir",
     "ponte global×Brasil"
    ]
   },
@@ -5136,14 +5169,13 @@
    "axes": [
     "Cibernética"
    ],
-   "score": 0.1106,
-   "ho": 27,
+   "score": 0.1208,
+   "ho": 15,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
    "roles": [
     "cibernética (geral)",
-    "higher_order_bridge",
     "obra-semente"
    ]
   },
@@ -5153,8 +5185,8 @@
    "axes": [
     "Política industrial"
    ],
-   "score": 0.0935,
-   "ho": 14,
+   "score": 0.0994,
+   "ho": 8,
    "reach": 1,
    "cyb_link": 0.0,
    "role": 0.0,
@@ -5169,7 +5201,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.0803,
+   "score": 0.0872,
    "ho": 4,
    "reach": 1,
    "cyb_link": 0.0,
@@ -5184,7 +5216,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.0776,
+   "score": 0.0811,
    "ho": 2,
    "reach": 1,
    "cyb_link": 0.0,
@@ -5199,7 +5231,7 @@
    "axes": [
     "Regulação econômica"
    ],
-   "score": 0.0763,
+   "score": 0.0781,
    "ho": 1,
    "reach": 1,
    "cyb_link": 0.0,

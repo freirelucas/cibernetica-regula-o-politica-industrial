@@ -355,7 +355,7 @@ def temporal_validation(edges, citers, axis_of, cfg):
         y, s = np.array(labels), np.array(feats)
         prev = float(y.mean())
         ap = float(average_precision_score(y, s))
-        rng = np.random.default_rng(cfg["design"]["seed"])
+        rng = np.random.default_rng(cfg["integracao"]["seed"])
         aps = []
         for _ in range(cfg["latente"]["bootstrap"]):
             bi = rng.integers(0, n, n)
