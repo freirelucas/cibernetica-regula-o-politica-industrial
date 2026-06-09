@@ -54,22 +54,23 @@ hiperarestas varrendo TODO o `data/oa_cache/` — incluía citantes de consultas
 enviesado; o ranking HO-BC mudou de propósito (faz emergir Mazzucato, Beer, Kuhn,
 North, Dosi). **Não reintroduza a varredura do cache aqui.**
 
-## Camada de solidez tripla — v1 IMPLEMENTADA (`src/solidity.py`, fase `solidity`)
+## Camada de integração por condutância real — H5 (`src/solidity.py`, fase `solidity`)
 
-Prediz hiperarestas AUSENTES que costurariam os silos e reporta só as SÓLIDAS
-(passam nos 3 testes independentes), gravando `data/solidity_bridges.json` (+ CSVs
-12/13 em `docs/dados/` + seção `#pontes-ordem-superior` no site + os 3 escores no
-cartão da triagem, atalho "Passa nos três"). Limiares calibráveis em
-`data/solidity_config.json`.
+Prediz hiperarestas AUSENTES que costurariam os silos e as RANQUEIA por INTEGRAÇÃO
+(condutância real), gravando `data/solidity_bridges.json` (+ CSVs 12/13 em `docs/dados/`
++ seção `#pontes-ordem-superior` no site + os 3 escores no cartão da triagem, atalho
+"Alvo de agenda"). Limiares calibráveis em `data/solidity_config.json`.
 
-  - **DESIGN** — ganho de integração candidata-específico (raridade do cruzamento ×
-    centralidade cross-silo dos membros) z vs modelo nulo (`seed=42`).
+  - **INTEGRAÇÃO** (ex-DESIGN, H5) — CONDUTÂNCIA REAL: ΔKf (redução do índice de Kirchhoff/
+    resistência efetiva ao realizar a face), POSICIONAL não-grau (um hub tem ΔKf≈0). Nulo
+    casado em grau (H4): nada supera o acaso (min p≈0,004 até N=10k) → AGENDA, não certificação.
   - **LATENTE** — fechamento simplicial (harmônica das 3 subfaces) + **holdout
     temporal** (`data/citer_years.json`, recrawl barato; treina ≤T, testa >T).
   - **SEMÂNTICO** — Jaccard de tópicos + embeddings fortes (sentence-transformers,
     enriquecendo só os membros das candidatas); **faixa intermediária** por percentis.
-  - Quadrantes: `costura_ouro` / `agenda_pesquisa` / `fechamento_trivial` / `ruido_quimera`.
-    **Resultado NEGATIVO é válido** (lista vazia, sem erro). Confiança modal exposta.
+  - Tiers: `costura_ouro` (alto ΔKf + plausível = alvo) / `agenda_pesquisa` (alto ΔKf, fora
+    da faixa) / `fechamento_trivial` (plausível, integra pouco) / `ruido_quimera`. **O achado
+    NEGATIVO é o resultado** (0 além do acaso). Confiança modal exposta.
 
 Decisões honradas: silos = `axis_of` (não Leiden novo); v1 = tríades obra-só; saída em
 derivado próprio (scisci_results.json intocada); embeddings com **escores versionados**
@@ -78,7 +79,7 @@ derivado próprio (scisci_results.json intocada); embeddings com **escores versi
 **Falta para v2 (semi-assistida — Lucas calibra):** candidatas MULTIMODAIS
 (`{autor, conceito, obra}` — a tabela de incidência + `confianca_modal` já preparam);
 **cesta ótima** submodular (greedy 1−1/e, cobertura dos 3 pares de eixos + orçamento de
-leitura + custo) empilhada SOBRE o conjunto sólido; calibração fina da faixa/limiares
+leitura + custo) empilhada SOBRE o conjunto de agenda; calibração fina da faixa/limiares
 contra o holdout.
 
 ## Gotchas

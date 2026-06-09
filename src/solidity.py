@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Camada de pontes de ordem superior — solidez tripla (handoff da modelagem).
+"""Camada de pontes de ordem superior — integração por condutância real (H5; ex-"solidez tripla").
 
-Prediz HIPERARESTAS AUSENTES que costurariam os silos (Cyb/Reg/PolInd[/Cplx]) e
-reporta só as SÓLIDAS — as que passam nos TRÊS testes independentes (fontes de
-sinal não-correlacionadas, para não confirmar a hipótese de forma circular):
+Prediz HIPERARESTAS AUSENTES que costurariam os silos (Cyb/Reg/PolInd[/Cplx]) e as
+RANQUEIA por INTEGRAÇÃO (condutância real). H5 rebatiza o antigo 'DESIGN' (proxy
+raridade×centralidade, que era artefato de GRAU) e H4 mostra — com nulo casado em grau —
+que NENHUMA tríade supera o acaso: não há ponte latente; é uma AGENDA de construção, não
+uma certificação. Os três sinais não-correlacionados que descrevem cada candidata:
 
-  DESIGN  (estrutural) — adicionar a tríade integra os silos? (vs modelo nulo)
+  INTEGRAÇÃO (estrutural) — quanto realizar a face REDUZ a resistência efetiva entre os
+                          silos (ΔKf, índice de Kirchhoff)? POSICIONAL, não de grau
   LATENTE (temporal)   — a estrutura tende a fechá-la? fechamento simplicial +
                           HOLDOUT temporal (treina ≤T, testa >T) anti-circularidade
   SEMÂNTICO (freio)    — há argumento comum? FAIXA INTERMEDIÁRIA de similaridade
@@ -40,9 +43,10 @@ EIXOS = ("Cyb", "Reg", "PolInd")          # os três silos canônicos (Cplx é 4
 
 # ── config versionada (calibração explícita; calibrável vs nulo/percentis) ───────
 DEFAULT_CONFIG = {
-    "_doc": "limiares e parâmetros da solidez tripla — versionado e reprodutível",
+    "_doc": "limiares e parâmetros da integração (condutância real, ΔKf) — versionado e reprodutível",
     "poda": {"min_cited_by": 5, "max_candidatos": 3000, "min_par_peso": 1},
-    "design": {"null_iter": 200, "seed": 42, "fdr_alpha": 0.05},   # nulo CASADO por eixos + BH-FDR
+    "integracao": {"null_iter": 200, "seed": 42, "fdr_alpha": 0.05, "null_degree_bins": 4,
+                   "agenda_top_pct": 10},   # H5: condutância real (ΔKf) ranqueada + nulo casado em grau (nota honesta, H4)
     "latente": {"holdout_year": 2015, "tau_baixo_pct": 20, "min_positivos": 5,
                 "bootstrap": 500, "max_eval": 4000},
     "semantico": {"faixa_low_pct": 40, "faixa_high_pct": 75, "metodo": "auto"},
@@ -139,74 +143,100 @@ def gen_candidates(edges, axis_of, pair_w, cfg):
     return ordered[: cfg["poda"]["max_candidatos"]]
 
 
-# ── M-3 · DESIGN: ganho de integração vs modelo nulo ─────────────────────────────
-def _cross_pair_counts(edges, axis_of):
-    """Quantas co-ocorrências existem HOJE entre cada par de eixos (separação atual)."""
-    cc = collections.Counter()
-    for e in edges:
-        for a, b in itertools.combinations(sorted(e), 2):
-            ea, eb = axis_of.get(a), axis_of.get(b)
-            if ea in EIXOS and eb in EIXOS and ea != eb:
-                cc[frozenset((ea, eb))] += 1
-    return cc
+# ── M-3 · INTEGRAÇÃO (H5): condutância real — redução do índice de Kirchhoff ──────
+def _silo_graph(pair_w, axis_of):
+    """Grafo ponderado de cocitação entre obras dos 3 silos canônicos (componente
+    gigante). Base POSICIONAL do escore de integração (resistência efetiva)."""
+    import networkx as nx
+    G = nx.Graph()
+    for pair, w in pair_w.items():
+        a, b = tuple(pair)
+        if axis_of.get(a) in EIXOS and axis_of.get(b) in EIXOS:
+            G.add_edge(a, b, weight=w)
+    if G.number_of_nodes() == 0:
+        return None, {}, []
+    H = G.subgraph(max(nx.connected_components(G), key=len)).copy()
+    return H, {x: i for i, x in enumerate(H.nodes())}, list(H.nodes())
 
 
-def design_scores(cands, edges, axis_of, central, cfg):
-    """DESIGN é o PROPOSITOR (sempre acha integração) — medido por raridade do cruzamento
-    de eixos × centralidade cross-silo dos membros. Significância contra NULO CASADO pelo
-    multiset de eixos dos MEMBROS (remove a inflação de "eu selecionei cross-silo"), p
-    EMPÍRICO, e correção de multiplicidade Benjamini-Hochberg (FDR) sobre as 3000 candidatas.
-    Marca c["design_sig"] = sobreviveu ao FDR. NÃO é teste independente do latente — é a
-    hipótese; quem falsifica é o eixo temporal (out-of-sample) e o semântico."""
-    cc = _cross_pair_counts(edges, axis_of)
-    maxc = max(cc.values()) if cc else 1
-    maxd = max(central.values()) if central else 1
+def integration_scores(cands, axis_of, pair_w, cfg):
+    """H5 — rebatiza o antigo 'DESIGN' (proxy raridade×centralidade = artefato de GRAU) pela
+    CONDUTÂNCIA REAL: a integração de uma tríade ausente é o quanto realizar seus pares
+    cross-silo REDUZ o índice de Kirchhoff (resistência efetiva global) do grafo de cocitação.
+    POSICIONAL, não de grau — um hub tem resistência ~0 a tudo, logo fechar sua aresta não
+    costura gap nenhum (ΔKf≈0). Marca c['integracao'] = ΔKf.
 
-    def raw(members):
-        e = {m: axis_of.get(m) for m in members}
-        cross = [(a, b) for a, b in itertools.combinations(members, 2)
-                 if e[a] in EIXOS and e[b] in EIXOS and e[a] != e[b]]
-        if not cross:
-            return 0.0
-        g = 0.0
-        for a, b in cross:
-            rarity = 1.0 - cc.get(frozenset((e[a], e[b])), 0) / maxc
-            cent = (central.get(a, 0) + central.get(b, 0)) / (2 * maxd)
-            g += rarity * (0.5 + cent)
-        n_eixos = len({e[m] for m in members if e[m] in EIXOS})
-        return g * (1 + 0.5 * (n_eixos - 1))
+    Honestidade (H4): contra o NULO CASADO EM GRAU, NENHUMA tríade supera o acaso (min p≈0,004
+    mesmo com N=10000) — uma tríade aleatória de mesmo grau integra tanto quanto uma 'candidata'.
+    Não há ponte latente; ranqueia-se uma AGENDA (onde construir), não se certifica significância.
+    Marca c['integracao_z'], c['integracao_p'], c['alem_do_acaso'] e devolve a nota."""
+    import numpy as np
+    H, idx, nodes = _silo_graph(pair_w, axis_of)
+    if H is None or len(nodes) < 3:
+        for c in cands:
+            c["integracao"], c["integracao_z"], c["integracao_p"], c["alem_do_acaso"] = 0.0, 0.0, 1.0, False
+        return {"metodo": "condutância real (ΔKf)", "n_nos_grafo": 0, "n_alem_do_acaso": 0,
+                "nota": "grafo de silos vazio — sem integração computável"}
+    import networkx as nx
+    n = len(nodes)
+    L = nx.laplacian_matrix(H, nodelist=nodes, weight="weight").toarray().astype(float)
+    Lp = np.linalg.pinv(L)
+    Lsq = Lp @ Lp
+    dR, dM = np.diag(Lp), np.diag(Lsq)
 
+    def dkf(i, j):                            # |ΔKf| ao realizar a aresta (i,j) com peso 1
+        return float(n * (dM[i] + dM[j] - 2 * Lsq[i, j]) / (1.0 + (dR[i] + dR[j] - 2 * Lp[i, j])))
+
+    def cpairs(ms):                           # pares cross-silo com ambos os pontos no GC
+        return [(x, y) for x, y in itertools.combinations(ms, 2)
+                if axis_of.get(x) in EIXOS and axis_of.get(y) in EIXOS
+                and axis_of.get(x) != axis_of.get(y) and x in idx and y in idx]
+
+    def raw(ms):
+        return sum(dkf(idx[x], idx[y]) for x, y in cpairs(ms))
+
+    # nulo CASADO EM GRAU (H4) — só para a NOTA honesta "nenhuma além do acaso"
+    deg = dict(H.degree(weight="weight"))
     pools = collections.defaultdict(list)
-    for n, a in axis_of.items():
-        pools[a].append(n)
-    rng = random.Random(cfg["design"]["seed"])
-    N = cfg["design"]["null_iter"]
-    null_cache = {}
+    for nd in nodes:
+        pools[axis_of[nd]].append(nd)
+    B = max(1, int(cfg["integracao"].get("null_degree_bins", 4) or 1))
+    node_bin, binpool = {}, collections.defaultdict(list)
+    for a, ns in pools.items():
+        nb = max(1, min(B, len(ns)))
+        for rk, nd in enumerate(sorted(ns, key=lambda x: (deg.get(x, 0), x))):
+            node_bin[nd] = rk * nb // len(ns)
+            binpool[(a, node_bin[nd])].append(nd)
+    rng = random.Random(cfg["integracao"]["seed"])
+    N = cfg["integracao"]["null_iter"]
+    cache = {}
 
-    def null_for(key):                       # key = multiset de eixos dos membros (ex.: ('Cyb','PolInd','Reg'))
-        if key not in null_cache:
+    def nulo(key):
+        if key not in cache:
             rs = []
             for _ in range(N):
-                tri = [rng.choice(pools[a]) for a in key if pools.get(a)]
+                tri = [rng.choice(binpool[k]) for k in key if binpool.get(k)]
                 if len(tri) == len(key):
                     rs.append(raw(tri))
-            null_cache[key] = rs
-        return null_cache[key]
+            cache[key] = rs
+        return cache[key]
 
     pvals = []
     for c in cands:
-        key = tuple(sorted(axis_of.get(m, "") for m in c["membros"]))
-        rs = null_for(key)
         r = raw(c["membros"])
-        mean = sum(rs) / len(rs) if rs else 0.0
-        sd = (sum((x - mean) ** 2 for x in rs) / max(len(rs) - 1, 1)) ** 0.5 or 1e-9
-        p = (sum(1 for x in rs if x >= r) + 1) / (len(rs) + 1) if rs else 1.0   # p empírico
-        c["design_raw"] = round(r, 4)
-        c["design_z"] = round((r - mean) / sd, 3)
-        c["design_p"] = round(p, 5)
-        pvals.append(p)
-    # Benjamini-Hochberg FDR sobre todas as candidatas (controla multiplicidade)
-    alpha = cfg["design"]["fdr_alpha"]
+        c["integracao"] = round(r, 4)
+        ms = [m for m in c["membros"] if m in idx]
+        if cpairs(c["membros"]):
+            key = tuple(sorted((axis_of.get(m, ""), node_bin.get(m, 0)) for m in ms))
+            rs = nulo(key)
+            mean = sum(rs) / len(rs) if rs else 0.0
+            sd = (sum((x - mean) ** 2 for x in rs) / max(len(rs) - 1, 1)) ** 0.5 or 1e-9
+            c["integracao_z"] = round((r - mean) / sd, 3)
+            c["integracao_p"] = round((sum(1 for x in rs if x >= r) + 1) / (len(rs) + 1), 5) if rs else 1.0
+        else:
+            c["integracao_z"], c["integracao_p"] = 0.0, 1.0
+        pvals.append(c["integracao_p"])
+    alpha = cfg["integracao"]["fdr_alpha"]
     m = max(len(pvals), 1)
     order = sorted(range(len(pvals)), key=lambda i: pvals[i])
     kmax = 0
@@ -215,9 +245,14 @@ def design_scores(cands, edges, axis_of, central, cfg):
             kmax = rank
     sig = set(order[:kmax])
     for j, c in enumerate(cands):
-        c["design_sig"] = bool(j in sig)
-    return {"nulo": "casado por multiset de eixos dos membros", "n_iter": N,
-            "seed": cfg["design"]["seed"], "fdr_alpha": alpha, "n_design_sig": len(sig)}
+        c["alem_do_acaso"] = bool(j in sig)
+    return {"metodo": "condutância real — redução do índice de Kirchhoff (ΔKf) ao realizar a face ausente",
+            "posicional": "resistência efetiva (Laplaciano pseudo-inverso); hub→ΔKf≈0 (não costura gap)",
+            "nulo": "casado em grau (bins de grau cross-axis) — H4", "null_degree_bins": B,
+            "n_iter": N, "seed": cfg["integracao"]["seed"], "fdr_alpha": alpha,
+            "n_nos_grafo": n, "n_alem_do_acaso": kmax,
+            "nota": ("nenhuma tríade supera o nulo casado em grau (verificado até N=10000, min p≈0,004) — "
+                     "não há ponte latente; é AGENDA de construção, não certificação de significância")}
 
 
 # ── M-4 · LATENTE: fechamento simplicial + holdout temporal ──────────────────────
@@ -443,91 +478,94 @@ def semantic_scores(cands, topics, absts, axis_of, cfg):
 
 
 # ── M-6 · quadrante + solidez + confiança modal + entregável ─────────────────────
-def classify(cands, cfg, temporal_validated):
-    """DESIGN propõe (significativo no FDR); SEMÂNTICO e TEMPORAL falsificam. A tríade
-    só é "sólida (3 de 3)" se o eixo temporal tiver poder (temporal_validated) E a
-    candidata passar nos três. Sem validação temporal, NÃO se certifica a tripla —
-    reporta-se "2 de 3" (design+semântico) à espera de validação. Devolve (n_solidas, n_2de3)."""
+def rank_agenda(cands, cfg):
+    """Rebatizado (H5): SEM 'sólida/significativa' — o nulo casado em grau não certifica
+    nenhuma (ver integration_scores). Ranqueia por INTEGRAÇÃO (condutância real, ΔKf) e usa
+    a plausibilidade SEMÂNTICA (faixa) e a tendência LATENTE como anotações não-certificadoras.
+    AGENDA = integra muito (top percentil de ΔKf) E é semanticamente plausível: os melhores
+    ALVOS DE CONSTRUÇÃO. Devolve (n_agenda, n_alta_integracao)."""
+    integ_vals = sorted((c["integracao"] for c in cands), reverse=True)
     lat_vals = sorted(c["latente"] for c in cands)
 
-    def pct(vals, p):
+    def top_pct(vals, p):                    # limiar do top-p% (vals em ordem desc)
         if not vals:
             return 0.0
         k = min(len(vals) - 1, max(0, int(round(p / 100 * (len(vals) - 1)))))
         return vals[k]
+
+    def pct(vals, p):                        # percentil p (vals em ordem asc)
+        if not vals:
+            return 0.0
+        k = min(len(vals) - 1, max(0, int(round(p / 100 * (len(vals) - 1)))))
+        return vals[k]
+    integ_hi = top_pct(integ_vals, cfg["integracao"].get("agenda_top_pct", 10))
     lat_hi = pct(lat_vals, 60)
-    lat_lo = pct(lat_vals, cfg["latente"]["tau_baixo_pct"])
-    n_solidas, n_2de3 = 0, 0
+    n_agenda, n_alto = 0, 0
     for c in cands:
-        design_pass = bool(c.get("design_sig"))      # significativo após FDR (propositor)
-        sem_pass = bool(c["sem_na_faixa"])
-        two = design_pass and sem_pass
-        n_2de3 += two
-        c["design_pass"] = design_pass
-        c["sem_pass"] = sem_pass
-        if temporal_validated:
-            latent_pass = c["latente"] >= lat_lo      # não-repelida (eixo temporal tem poder)
-            c["latente_pass"] = latent_pass
-            c["solida"] = bool(design_pass and latent_pass and sem_pass)
-        else:
-            c["latente_pass"] = None                  # eixo temporal sem poder -> não certifica
-            c["solida"] = False
-        n_solidas += c["solida"]
+        integra_alto = c["integracao"] >= integ_hi and c["integracao"] > 0
+        sem_pass = bool(c.get("sem_na_faixa"))
         hi_lat = c["latente"] >= lat_hi
-        if not sem_pass or (not design_pass and not hi_lat):
-            c["quadrante"] = "ruido_quimera"
-        elif hi_lat and design_pass:
-            c["quadrante"] = "costura_ouro"
-        elif design_pass and not hi_lat:
-            c["quadrante"] = "agenda_pesquisa"
+        c["integra_alto"] = integra_alto
+        c["sem_pass"] = sem_pass
+        c["latente_pass"] = hi_lat
+        c["agenda"] = bool(integra_alto and sem_pass)   # ALVO de construção: integra muito E plausível
+        n_alto += integra_alto
+        n_agenda += c["agenda"]
+        if integra_alto and sem_pass:
+            c["quadrante"] = "costura_ouro"              # gap estrutural grande + plausível = melhor alvo
+        elif integra_alto:
+            c["quadrante"] = "agenda_pesquisa"           # gap estrutural grande, semântica fora da faixa
+        elif sem_pass:
+            c["quadrante"] = "fechamento_trivial"        # plausível mas integra pouco (já perto)
         else:
-            c["quadrante"] = "fechamento_trivial"
-        c["confianca_modal"] = "obra"      # v1 = obra-só (maior confiança)
-    return n_solidas, n_2de3
+            c["quadrante"] = "ruido_quimera"             # integra pouco e sem argumento comum
+        c["confianca_modal"] = "obra"
+    return n_agenda, n_alto
 
 
 def build(out_dados=None):
-    """Pipeline completo → data/solidity_bridges.json + CSVs em docs/dados/."""
+    """Pipeline completo → data/solidity_bridges.json + CSVs em docs/dados/. H5: integração =
+    condutância real (ΔKf); rebatizado de 'sólida/significativa' p/ AGENDA ranqueada — nada
+    supera o nulo casado em grau (não há ponte latente; convergência a CONSTRUIR)."""
     out_dados = out_dados or os.path.join(ROOT, "docs", "dados")
     cfg = load_config()
     edges, citers, axis_of, pair_w, _, central = load_hobra()
     cands = gen_candidates(edges, axis_of, pair_w, cfg)
-    null = design_scores(cands, edges, axis_of, central, cfg)   # propositor + nulo casado + FDR
-    latent_scores(cands, pair_w)                                # feature (validade vem do holdout)
+    integ = integration_scores(cands, axis_of, pair_w, cfg)     # condutância real (ΔKf) + nota honesta
+    latent_scores(cands, pair_w)                                # anotação (tendência de fechamento)
     fetch_citer_years(citers)                                   # recrawl barato (no-op se offline/cacheado)
-    tv = temporal_validation(edges, citers, axis_of, cfg)       # eixo independente out-of-sample
+    tv = temporal_validation(edges, citers, axis_of, cfg)       # anotação independente out-of-sample
     members = sorted({m for c in cands for m in c["membros"]})
     topics, absts = enrich_members(members)
     sem_meta = semantic_scores(cands, topics, absts, axis_of, cfg)
-    n_solidas, n_2de3 = classify(cands, cfg, tv.get("validated", False))
-    cands.sort(key=lambda c: (-int(c["solida"]), -int(c.get("design_sig", False)),
-                              -(c.get("design_z") or 0), -c["latente"]))
+    n_agenda, n_alto = rank_agenda(cands, cfg)
+    cands.sort(key=lambda c: (-c["integracao"], -int(c.get("sem_na_faixa", False)), -c["latente"]))
 
-    solidas = [c for c in cands if c["solida"]]
-    if tv.get("validated"):
-        status = "sem ponte sólida" if n_solidas == 0 else f"{n_solidas} pontes sólidas (3 de 3)"
-    else:
-        status = (f"0 sólidas — eixo temporal sem poder (ver validacao_temporal); "
-                  f"{n_2de3} candidatas em 2 de 3 (design+semântico), à espera de validação temporal")
+    agenda = [c for c in cands if c["agenda"]]
+    status = (f"{n_agenda} alvos de construção (alto ΔKf + plausíveis) entre {n_alto} de alta "
+              f"integração; {integ['n_alem_do_acaso']} além do nulo casado em grau — "
+              f"convergência a CONSTRUIR, não latente")
     out = {
-        "_generated": "camada de pontes de ordem superior — solidez tripla",
-        "metodo": "v2 — DESIGN propõe (nulo casado por eixos + BH-FDR); falsificadores "
-                  "INDEPENDENTES: holdout temporal out-of-sample (AUC-PR vs prevalência) e semântico",
-        "config": cfg, "modelo_nulo": null, "validacao_temporal": tv, "semantico": sem_meta,
-        "n_candidatas": len(cands), "n_solidas": n_solidas, "n_2de3": n_2de3,
-        "tripla_certificavel": bool(tv.get("validated")),
+        "_generated": "camada de pontes de ordem superior — integração por condutância real (H5)",
+        "metodo": ("integração = CONDUTÂNCIA REAL (redução do índice de Kirchhoff ao realizar a face "
+                   "ausente); rebatiza o antigo proxy raridade×centralidade. Anotações NÃO-certificadoras: "
+                   "holdout temporal (out-of-sample) e semântica (faixa). Sem certificação: nada supera o "
+                   "nulo casado em grau (H4)."),
+        "config": cfg, "integracao": integ, "validacao_temporal": tv, "semantico": sem_meta,
+        "n_candidatas": len(cands), "n_agenda": n_agenda, "n_alta_integracao": n_alto,
+        "alem_do_acaso": integ["n_alem_do_acaso"],
         "status": status,
         "por_quadrante": dict(collections.Counter(c["quadrante"] for c in cands)),
-        "solidas": solidas[:200],
+        "agenda": agenda[:200],
         "candidatas": cands[:500],
     }
     data_io.save_data("solidity_bridges.json", out)
     data_io.save_data("solidity_config.json", cfg)   # materializa a config versionada
     os.makedirs(out_dados, exist_ok=True)
     _write_csvs(cands, out_dados)
-    print(f"solidity: {len(cands)} candidatas | {n_solidas} sólidas (3de3) | {n_2de3} em 2de3 | "
-          f"temporal_validado={tv.get('validated')} (AP={tv.get('average_precision')}, "
-          f"prev={tv.get('prevalencia')}, pos={tv.get('n_positivos')}) | semântico={sem_meta['metodo']}")
+    print(f"solidity/H5: {len(cands)} candidatas | {n_agenda} agenda (alto ΔKf+plausível) | "
+          f"{n_alto} alta integração | além-do-acaso={integ['n_alem_do_acaso']} | "
+          f"temporal={tv.get('validated')} | semântico={sem_meta['metodo']}")
     return out
 
 
@@ -541,15 +579,15 @@ def _csv(path, header, rows):
 
 def _write_csvs(cands, out):
     _csv(os.path.join(out, "12_pontes_candidatas.csv"),
-         ["membros", "eixos", "escore_latente", "escore_design_z", "similaridade_semantica",
-          "na_faixa", "quadrante", "solida", "confianca_modal"],
-         [["|".join(c["membros"]), "|".join(c["eixos"]), c["latente"], c.get("design_z"),
-           c["semantico"], int(c["sem_na_faixa"]), c["quadrante"], int(c["solida"]),
-           c["confianca_modal"]] for c in cands])
+         ["membros", "eixos", "integracao_kf", "integracao_z", "escore_latente",
+          "similaridade_semantica", "na_faixa", "quadrante", "agenda", "confianca_modal"],
+         [["|".join(c["membros"]), "|".join(c["eixos"]), c.get("integracao"), c.get("integracao_z"),
+           c["latente"], c["semantico"], int(c.get("sem_na_faixa", False)), c["quadrante"],
+           int(c["agenda"]), c["confianca_modal"]] for c in cands])
     _csv(os.path.join(out, "13_diagrama_solidez.csv"),
-         ["membros", "x_latente", "y_design_z", "semantico", "na_faixa", "quadrante"],
-         [["|".join(c["membros"]), c["latente"], c.get("design_z"), c["semantico"],
-           int(c["sem_na_faixa"]), c["quadrante"]] for c in cands])
+         ["membros", "x_latente", "y_integracao_kf", "semantico", "na_faixa", "quadrante"],
+         [["|".join(c["membros"]), c["latente"], c.get("integracao"), c["semantico"],
+           int(c.get("sem_na_faixa", False)), c["quadrante"]] for c in cands])
 
 
 if __name__ == "__main__":

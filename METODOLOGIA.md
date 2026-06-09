@@ -39,8 +39,8 @@ partição (não viram uma "comunidade", o que distorceria Q para baixo).
 | **H1** | Rótulo de eixo | "a obra pertence a 1 dos 3 eixos" | vocabulário sobre título+tópicos, **sem abstract** numa fração relevante; faltando, o eixo é herdado da **vizinhança** de cocitação | rótulo derivado da vizinhança torna a afirmação trans-eixo **parcialmente circular** | marcar nós **inferidos**; reportar *observado × inferido* |
 | **H2** | Ponte trans-eixo | "a obra articula tradições" | hiperaresta que toca ≥2 eixos; hoje com **peso uniforme** | herda a circularidade de H1; uma ponte que toca 2 eixos conta igual a uma que toca 8 | ponderar **1/(s−1)**; reportar % dependente de inferido |
 | **H3** | Brokerage / HO-BC (autores) | "humanos que atravessam silos" | mesmos rótulos de H1 sobre o grafo de coautoria | mesma dependência de H1 | idem H1 |
-| **H4** | Solidez tripla | "a ponte é real" | nulo casado em **eixos** + FDR; *holdout* temporal; faixa semântica | o nulo **não casa grau**; a faixa semântica é **auto-referente** | casar **grau** no nulo; faixa vs **população de referência** |
-| **H5** | "DESIGN" | o nome sugere **intenção/contrafactual** | proxy de raridade × centralidade | **não** é um contrafactual de modularidade | medir **Δmodularidade/condutância real** ou rebatizar |
+| **H4** | Solidez tripla | "a ponte é real" | nulo casado em **eixo+grau** (H4 ✓) + FDR; *holdout* temporal; faixa semântica | resta: a faixa semântica é **auto-referente** (percentis da própria amostra) | grau **casado** no nulo (feito); falta faixa vs **população de referência** |
+| **H5** | Integração (ex-"DESIGN") | "a tríade integra os silos" | **condutância real** — ΔKf (redução da resistência efetiva ao realizar a face), POSICIONAL não-grau (H5 ✓) | — | **rebatizado** + Δ índice de Kirchhoff; achado: nada supera o nulo casado em grau (não há ponte latente) |
 | **H6** | Rajadas · belas adormecidas · *longue-durée* | "quando/por que os silos se formaram" | cocitação transversal no tempo | soa **causal**; é **descritivo** | rotular explicitamente **descritivo, não causal** |
 | **H7** | Reg = "instrumentos de governo" | "regulação" | AXMAP / vocabulário antigo | toda afirmação sobre "Regulação" era, na verdade, sobre *instrumentos* | **corrigido** no reenquadramento (Reg = regulação econômica) |
 
@@ -59,10 +59,10 @@ partição (não viram uma "comunidade", o que distorceria Q para baixo).
 
 - **Feito:** reenquadramento de Reg (H7); auditoria de VAZIO/inferência; nulo anti-circular
   e BH-FDR no pairwise; **corpo de análises coerente** (re-run completo numa única janela,
-  autores reprocessados).
-- **Pendente (backlog de rigor):** peso **1/(s−1)** (H2); nulo casado em **grau** (H4);
-  faixa semântica vs **população de referência** (H4); **DESIGN como Δmodularidade real**
-  (H5); **sensibilidade às sementes** (drop-20% ×5) — robustez da tese dos silos à seleção;
+  autores reprocessados); **peso 1/(s−1) na HO-BC** (H2 ✓); **nulo da solidez casado em grau** (H4 ✓);
+  **integração = condutância real (ΔKf), rebatizada de "DESIGN"** (H5 ✓ — achado: nada supera o nulo casado em grau).
+- **Pendente (backlog de rigor):** faixa semântica vs **população de referência** (resto do H4);
+  **sensibilidade às sementes** (drop-20% ×5) — robustez da tese dos silos à seleção;
   recompute da **modularidade Q** no corpus novo; *disclosure* dos inferidos **no ponto da
   afirmação** no relatório.
 

@@ -131,38 +131,38 @@ def inject_brokerage_numbers(html, root=ROOT):
 
 
 def inject_solidity_numbers(html, root=ROOT):
-    """SOLIDEZ_* tokens + tabela das pontes sólidas ← data/solidity_bridges.json (modelagem)."""
+    """SOLIDEZ_* tokens + tabela da AGENDA de integração ← data/solidity_bridges.json (H5)."""
     p = os.path.join(root, "data", "solidity_bridges.json")
     if not os.path.exists(p):
         return html
     S = json.load(open(p, encoding="utf-8"))
-    q = S.get("por_quadrante", {})
-    solidas = S.get("solidas", [])
-    QN = {"costura_ouro": "costura de ouro", "agenda_pesquisa": "agenda de pesquisa",
+    QN = {"costura_ouro": "costura (alvo)", "agenda_pesquisa": "gap estrutural",
           "fechamento_trivial": "fechamento trivial", "ruido_quimera": "ruído/quimera"}
+    agenda = S.get("agenda", [])
     rows = ['<table class="tbl"><thead><tr><th>Membros (OpenAlex)</th><th>Eixos</th>'
-            '<th>design z</th><th>latente</th><th>semântico</th><th>quadrante</th></tr></thead><tbody>']
-    for c in solidas[:20]:
+            '<th>integração (ΔKf)</th><th>latente</th><th>semântico</th><th>tier</th></tr></thead><tbody>']
+    for c in agenda[:20]:
         mem = " · ".join(f'<a href="https://openalex.org/{m}">{m}</a>' for m in c.get("membros", []))
         rows.append(f'<tr><td>{mem}</td><td>{", ".join(c.get("eixos", []))}</td>'
-                    f'<td>{c.get("design_z", "")}</td><td>{c.get("latente", "")}</td>'
+                    f'<td>{c.get("integracao", "")}</td><td>{c.get("latente", "")}</td>'
                     f'<td>{c.get("semantico", "")}</td><td>{QN.get(c.get("quadrante"), c.get("quadrante", ""))}</td></tr>')
-    if not solidas:
-        rows.append('<tr><td colspan="6">Nenhuma ponte sólida no recorte atual — resultado válido por desenho.</td></tr>')
+    if not agenda:
+        rows.append('<tr><td colspan="6">Nenhum alvo de agenda no recorte atual — resultado válido por desenho.</td></tr>')
     rows.append("</tbody></table>")
     tv = S.get("validacao_temporal", {})
     if tv.get("average_precision") is not None:
-        temporal = (f"Validação temporal (fora da amostra): precisão média AP={tv['average_precision']} "
+        temporal = (f"Anotação temporal (fora da amostra): precisão média AP={tv['average_precision']} "
                     f"vs prevalência={tv.get('prevalencia')} (IC95 {tv.get('ap_ci95')}); "
                     f"{tv.get('n_positivos')} fechamentos no teste — "
-                    f"{'eixo com poder' if tv.get('validated') else 'não distinguível do acaso'}.")
+                    f"{'tendência com sinal' if tv.get('validated') else 'não distinguível do acaso'}.")
     else:
-        temporal = f"Validação temporal indisponível: {tv.get('motivo', '')}."
+        temporal = f"Anotação temporal indisponível: {tv.get('motivo', '')}."
     subs = {
         "SOLIDEZ_STATUS": str(S.get("status", "?")),
         "SOLIDEZ_N_CAND": str(S.get("n_candidatas", "?")),
-        "SOLIDEZ_N_SOLIDAS": str(S.get("n_solidas", "?")),
-        "SOLIDEZ_N_2DE3": str(S.get("n_2de3", "?")),
+        "SOLIDEZ_N_AGENDA": str(S.get("n_agenda", "?")),
+        "SOLIDEZ_N_ALTA": str(S.get("n_alta_integracao", "?")),
+        "SOLIDEZ_N_ALEM": str(S.get("alem_do_acaso", "?")),
         "SOLIDEZ_TEMPORAL": temporal,
         "SOLIDEZ_TABLE": "\n".join(rows),
     }

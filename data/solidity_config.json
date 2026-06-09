@@ -1,15 +1,16 @@
 {
- "_doc": "limiares e parâmetros da solidez tripla — versionado e reprodutível",
+ "_doc": "limiares e parâmetros da integração (condutância real, ΔKf) — versionado e reprodutível",
  "poda": {
   "min_cited_by": 5,
   "max_candidatos": 3000,
   "min_par_peso": 1
  },
- "design": {
+ "integracao": {
   "null_iter": 200,
   "seed": 42,
   "fdr_alpha": 0.05,
-  "tau_z": 2.0
+  "null_degree_bins": 4,
+  "agenda_top_pct": 10
  },
  "latente": {
   "holdout_year": 2015,
