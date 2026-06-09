@@ -1,3 +1,4 @@
 # Ferramentas de desenvolvimento/verificação (não exigidas pelo site nem pelo funil)
 pytest>=8
 playwright>=1.40
+python-pptx  # gera o deck de status (src/build_deck.py)
