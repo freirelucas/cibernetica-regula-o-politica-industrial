@@ -87,7 +87,7 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
 }
 </style>
 </head>
-<body>
+<body class="s-achar">
 <nav class="topbar">
   <span class="brand">Triagem · inclusão / exclusão</span>
   __GLOBAL_NAV__
@@ -109,7 +109,7 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
   <input id="impFile" type="file" accept=".json,application/json" hidden>
   <button class="btn" id="reset">Limpar</button>
 </nav>
-<div class="bar2">
+<div class="bar2 decide">
   <span class="prog" id="prog"></span>
   <span class="pbar" id="pbar" title="progresso"><i id="seg-inc"></i><i id="seg-may"></i><i id="seg-exc"></i><i id="seg-und"></i></span>
   <span class="chips" id="axisChips"></span>
@@ -136,15 +136,50 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
   </span>
 </div>
 <main class="wrap">
+  <style>
+  .steps{display:flex;gap:4px;margin:.2rem 0 1.1rem;flex-wrap:wrap}
+  .stepbtn{font-family:var(--mono);font-size:12px;font-weight:500;padding:.55rem .9rem;border:1px solid var(--border-s);background:var(--paper);color:var(--muted);border-radius:6px;cursor:pointer}
+  .stepbtn[aria-selected="true"]{background:var(--cyb);color:#fff;border-color:var(--cyb)}
+  .achar{display:none}
+  body.s-achar .achar{display:block}
+  body.s-achar .intro,body.s-achar .how,body.s-achar .thpanel,body.s-achar #curBanner,body.s-achar #list,body.s-achar #emptyMsg,body.s-achar .bar2.decide,body.s-achar .declegend{display:none}
+  body.s-decidir .achar{display:none}
+  .achar h2{font-family:var(--serif);font-weight:500;font-size:1.35rem;margin:.2rem 0 .5rem}
+  .achar .lead{color:var(--muted);max-width:72ch;margin:0 0 1.1rem;line-height:1.6}
+  .afruit{display:grid;grid-template-columns:1fr;gap:.55rem;margin:.6rem 0 1.2rem}
+  .afcard{border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:6px;padding:.6rem .8rem;background:var(--paper)}
+  .afcard h4{font-size:.95rem;font-weight:500;margin:0 0 .35rem;line-height:1.4}
+  .afcard .why{font-size:.8rem;color:var(--muted);line-height:1.5;margin-top:.3rem}
+  .afcard .asig{font-family:var(--mono);font-size:11px;color:var(--ink);margin-top:.4rem;display:flex;gap:.9rem;flex-wrap:wrap}
+  .declegend{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.82rem;color:var(--muted);border:1px solid var(--border);border-radius:6px;padding:.55rem .8rem;margin:.2rem 0 .9rem}
+  .declegend b{color:var(--ink)}
+  </style>
+  <div class="steps" role="tablist" aria-label="Etapas da triagem">
+    <button class="stepbtn" id="stAchar" role="tab" aria-selected="true">1 · O que o algoritmo achou</button>
+    <button class="stepbtn" id="stDecidir" role="tab" aria-selected="false">2 · Decidir &amp; exportar</button>
+  </div>
+  <section id="achar" class="achar"></section>
   <p class="intro">Triagem das <b id="nTotal"></b> obras da síntese cienciométrica (núcleo global + corpus brasileiro). Antes de comprometer a leitura, ajuste os <b>limiares de rigor</b> abaixo e veja <b>ao vivo</b> quantas obras entrariam — o equilíbrio entre rigor e volume de leitura, visível. Depois decida <b style="color:var(--ok)">incluir</b>, <b style="color:var(--pi)">talvez</b> ou <b style="color:var(--accent)">excluir</b>. A seleção (decisões + limiares) fica num arquivo <b>versionado</b> (<code>data/rayyan_selection.json</code>), reprodutível e independente do navegador — use <b>Salvar seleção</b> para baixar a versão nova e guardá-la no repositório. Exporte os incluídos em <b>RIS</b> para o Rayyan (<i>Add references → Upload</i>). <span class="hint">Atalhos: <b>i</b> incluir · <b>m</b> talvez · <b>e</b> excluir · <b>n</b> próxima indecisa · <b>j/k</b> navegar.</span></p>
   <details class="how">
     <summary>Como funciona — limiares, composição e o raciocínio da curadoria</summary>
     <div>
       <p><b>Limiares de rigor × volume.</b> Os controles do painel filtram por <b>prioridade de ponte</b>, <b>intermediação de ordem superior (HO-BC)</b>, <b>nº de eixos tocados</b> e <b>é-Brasil</b>. A contagem ao vivo mostra quantas obras sobrevivem aos limiares — para calibrar o esforço de leitura dos três revisores antes de exportar.</p>
-      <p><b>Composição.</b> O painel mostra a cobertura por eixo, o nº de pontes e a divisão Brasil × global do conjunto que passou — a missão pede solidez para as <b>três</b> comunidades, não para a média; aqui dá para ver se alguma ficou de fora.</p>
+      <p><b>Composição.</b> O painel mostra a cobertura por eixo, o nº de pontes e a divisão Brasil × global do conjunto que passou — a estrutura atual <b>não</b> fecha as três comunidades; a agenda aponta <em>onde a costura renderia mais integração</em>. Aqui dá para ver se algum eixo ficou de fora.</p>
       <p><b>Integração por condutância real.</b> Cada obra que entra num <i>alvo de construção</i> exibe três escores — <b>estrutural</b> (ΔKf: quanto realizar o elo reduz a resistência efetiva entre os silos), <b>latente</b> (tendência de fechamento) e <b>semântico</b> (proximidade na faixa intermediária). O atalho <i>Alvo de agenda</i> filtra esses alvos. Achado honesto: contra um nulo casado em grau, nenhum elo supera o acaso — a agenda diz <i>onde construir</i>, não certifica ponte latente.</p>
       <p><b>De onde vêm as obras.</b> A síntese reúne o <b>núcleo global</b> (mapeamento no OpenAlex: obras-semente, mais citadas, obras-ponte, rajadas, belas adormecidas e a sondagem do 4º eixo) e o <b>corpus brasileiro</b> (revisão de Claucia Faganello). Cada obra traz seus <b>eixos</b> e seu <b>papel</b>.</p>
       <p><b>Curadoria por tamanho (30 / 60 / 90 / 120).</b> Mostram as <b>N obras de maior prioridade do filtro atual</b> (ranqueadas) para revisar e exportar — ponto de partida transparente, não veredito; a triagem completa segue no Rayyan.</p>
+    </div>
+  </details>
+  <div class="declegend">
+    <span><b>O que cada decisão faz:</b></span>
+    <span><b style="color:var(--ok)">Incluir</b> → entra na leitura/triagem do Rayyan</span>
+    <span><b style="color:var(--pi)">Talvez</b> → revisar com o trio antes de decidir</span>
+    <span><b style="color:var(--accent)">Excluir</b> → fora de escopo</span>
+  </div>
+  <details class="how">
+    <summary>Como levar para o Rayyan (a triagem dos 3 revisores)</summary>
+    <div>
+      <p>1. Marque <b>Incluir</b> nas obras que vão para leitura. 2. Clique <b>Incluídos (RIS)</b> (ou <b>Bloco filtrado</b>) para baixar o <code>.ris</code>. 3. Em <a href="https://rayyan.ai" target="_blank" rel="noopener">rayyan.ai</a> → <i>New review → Add references → Upload</i>, suba o arquivo. 4. Os três revisores triam de forma independente (incluir/excluir/talvez); o κ mede a concordância. Cada referência chega <b>pré-anotada</b> com eixo e papel (nas palavras-chave do RIS), para o revisor ver por que o algoritmo a trouxe.</p>
     </div>
   </details>
   <section class="thpanel">
@@ -248,7 +283,7 @@ __JS_DATA__
     else if(p==='indec') fStatus='undec';
     syncChips(); render();
   }
-  document.querySelectorAll('#presets .chip').forEach(c=>c.onclick=()=>applyPreset(c.dataset.preset));
+  document.querySelectorAll('#presets .chip').forEach(c=>c.onclick=()=>{applyPreset(c.dataset.preset); setStep('decidir');});
 
   function passThresholds(w){
     if((+w.prioridade||0) < TH.prioridade) return false;
@@ -494,6 +529,36 @@ __JS_DATA__
   };
 
   thLabels(); syncThBrasil();
+
+  // ── duas etapas: "achar" (o fruto do algoritmo) → "decidir" (incluir/excluir) ──
+  function setStep(s){
+    document.body.classList.toggle('s-achar', s==='achar');
+    document.body.classList.toggle('s-decidir', s==='decidir');
+    document.getElementById('stAchar').setAttribute('aria-selected', s==='achar');
+    document.getElementById('stDecidir').setAttribute('aria-selected', s==='decidir');
+    if(s==='decidir') render();
+    window.scrollTo(0,0);
+  }
+  function renderAchar(){
+    const fruit = works.filter(w=>{const s=w.solidez||{}; return s.estrutural!=null && s.latente!=null && s.semantico!=null;});
+    const cards = fruit.map(w=>{
+      const tags=(w.axes||[]).map(a=>`<span class="tag" style="background:${AXC[a]||'#9a948c'}">${esc(a)}</span>`).join(' ');
+      const role=(w.roles||[]).find(r=>/ponte/i.test(r))||(w.roles||[])[0]||'';
+      return `<div class="afcard"><h4>${esc(w.title)}</h4><div class="tags">${tags}</div>`
+        + `<div class="why">Por que entrou: ${role?`papel <b>${esc(role)}</b> · `:''}integra um <b>alvo de agenda</b> — uma tríade de alta integração real (ΔKf) e plausível na faixa semântica.</div>`
+        + `<div class="asig"><span>estrutural ΔKf <b>${sol(w,'estrutural')}</b></span><span>latente <b>${sol(w,'latente')}</b></span><span>semântico <b>${sol(w,'semantico')}</b></span><span>prioridade <b>${(+w.prioridade||0).toFixed(2)}</b></span></div></div>`;
+    }).join('');
+    document.getElementById('achar').innerHTML =
+      `<h2>O que o algoritmo achou</h2>`
+      + `<p class="lead">Das <b>${works.length}</b> obras da síntese, o funil destacou <b>${fruit.length}</b> como <b>alvos de agenda</b> — as <b>pontes a construir</b>: tríades que, se realizadas, mais costurariam os silos (alta integração por condutância real, ΔKf) e são semanticamente plausíveis. Não são pontes que já existem — são <em>onde construir</em>. Veja-as abaixo; quando quiser decidir o que entra na leitura, vá para <b>Decidir</b>.</p>`
+      + (fruit.length?`<div class="afruit">${cards}</div>`:`<p class="lead">Nenhum alvo de agenda na modelagem atual.</p>`)
+      + `<button class="btn primary" id="goDecidir">Decidir estes ${fruit.length} &rarr;</button>`
+      + `<span class="hint" style="margin-left:.6rem">ou use as <b>lentes</b> (“Comece por:”) acima para outros recortes.</span>`;
+    const g=document.getElementById('goDecidir'); if(g) g.onclick=()=>{ applyPreset('solidez'); setStep('decidir'); };
+  }
+  document.getElementById('stAchar').onclick=()=>setStep('achar');
+  document.getElementById('stDecidir').onclick=()=>setStep('decidir');
+  renderAchar();
   render();
 })();
 </script>
