@@ -50,26 +50,26 @@ arquivo,coluna,descricao
 11_rede_arestas.csv,tipo,tipo de ligação (cocita)
 11_rede_arestas.csv,cocitacoes,número de vezes citadas em conjunto (peso da cocitação)
 11_rede_arestas.csv,forca_associacao,cocitação normalizada: peso / raiz(grau_origem · grau_destino)
-12_pontes_candidatas.csv,membros,
+12_pontes_candidatas.csv,membros,obras-membro da tríade candidata (rótulos/ids OpenAlex)
 12_pontes_candidatas.csv,eixos,eixos temáticos tocados (Cyb/Reg/PolInd)
-12_pontes_candidatas.csv,integracao_kf,
-12_pontes_candidatas.csv,integracao_z,
-12_pontes_candidatas.csv,escore_latente,
-12_pontes_candidatas.csv,similaridade_semantica,
-12_pontes_candidatas.csv,na_faixa,
-12_pontes_candidatas.csv,quadrante,
-12_pontes_candidatas.csv,agenda,
-12_pontes_candidatas.csv,confianca_modal,
-13_diagrama_solidez.csv,membros,
-13_diagrama_solidez.csv,x_latente,
-13_diagrama_solidez.csv,y_integracao_kf,
-13_diagrama_solidez.csv,semantico,
-13_diagrama_solidez.csv,na_faixa,
-13_diagrama_solidez.csv,quadrante,
-14_pontes_semanticas.csv,obra_a,
-14_pontes_semanticas.csv,eixo_a,
-14_pontes_semanticas.csv,obra_b,
-14_pontes_semanticas.csv,eixo_b,
-14_pontes_semanticas.csv,frente,
-14_pontes_semanticas.csv,cosseno,
-14_pontes_semanticas.csv,centralidade,
+12_pontes_candidatas.csv,integracao_kf,"integração real: redução da resistência efetiva entre os silos ao realizar a tríade (ΔKf, índice de Kirchhoff)"
+12_pontes_candidatas.csv,integracao_z,escore z da integração (ΔKf) contra o modelo nulo casado em grau
+12_pontes_candidatas.csv,escore_latente,"tendência latente de fechamento simplicial (treina no passado, testa no futuro)"
+12_pontes_candidatas.csv,similaridade_semantica,proximidade de conteúdo entre os membros (cosseno de título + resumo)
+12_pontes_candidatas.csv,na_faixa,"se a similaridade cai na faixa intermediária plausível — nem trivial, nem quimera (True/False)"
+12_pontes_candidatas.csv,quadrante,quadrante do diagrama de solidez (integração × plausibilidade semântica)
+12_pontes_candidatas.csv,agenda,se a tríade é alvo de construção da agenda (alta integração e semanticamente plausível)
+12_pontes_candidatas.csv,confianca_modal,confiança exposta por membro segundo a modalidade (obra > autor > conceito)
+13_diagrama_solidez.csv,membros,obras-membro da tríade candidata (rótulos/ids OpenAlex)
+13_diagrama_solidez.csv,x_latente,coordenada X do diagrama de solidez: escore latente
+13_diagrama_solidez.csv,y_integracao_kf,coordenada Y do diagrama de solidez: integração real (ΔKf)
+13_diagrama_solidez.csv,semantico,similaridade semântica (cosseno) da tríade
+13_diagrama_solidez.csv,na_faixa,"se a similaridade cai na faixa intermediária plausível — nem trivial, nem quimera (True/False)"
+13_diagrama_solidez.csv,quadrante,quadrante do diagrama de solidez (integração × plausibilidade semântica)
+14_pontes_semanticas.csv,obra_a,primeira obra do par (de um silo)
+14_pontes_semanticas.csv,eixo_a,eixo temático da obra A
+14_pontes_semanticas.csv,obra_b,segunda obra do par (de um silo distinto)
+14_pontes_semanticas.csv,eixo_b,eixo temático da obra B
+14_pontes_semanticas.csv,frente,par de tradições que o candidato a leitura cobre
+14_pontes_semanticas.csv,cosseno,similaridade de cosseno (título + resumo) entre as duas obras
+14_pontes_semanticas.csv,centralidade,posição do par no ranking de pontes semânticas

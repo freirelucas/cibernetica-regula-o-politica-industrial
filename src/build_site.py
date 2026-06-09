@@ -159,6 +159,25 @@ COLDOC = {
     "destino": "nó de destino da aresta (id OpenAlex)", "tipo": "tipo de ligação (cocita)",
     "cocitacoes": "número de vezes citadas em conjunto (peso da cocitação)",
     "forca_associacao": "cocitação normalizada: peso / raiz(grau_origem · grau_destino)",
+    # pontes de ordem superior — integração por condutância real (solidity.py / H5)
+    "membros": "obras-membro da tríade candidata (rótulos/ids OpenAlex)",
+    "integracao_kf": "integração real: redução da resistência efetiva entre os silos ao realizar a tríade (ΔKf, índice de Kirchhoff)",
+    "integracao_z": "escore z da integração (ΔKf) contra o modelo nulo casado em grau",
+    "escore_latente": "tendência latente de fechamento simplicial (treina no passado, testa no futuro)",
+    "similaridade_semantica": "proximidade de conteúdo entre os membros (cosseno de título + resumo)",
+    "na_faixa": "se a similaridade cai na faixa intermediária plausível — nem trivial, nem quimera (True/False)",
+    "quadrante": "quadrante do diagrama de solidez (integração × plausibilidade semântica)",
+    "agenda": "se a tríade é alvo de construção da agenda (alta integração e semanticamente plausível)",
+    "confianca_modal": "confiança exposta por membro segundo a modalidade (obra > autor > conceito)",
+    "x_latente": "coordenada X do diagrama de solidez: escore latente",
+    "y_integracao_kf": "coordenada Y do diagrama de solidez: integração real (ΔKf)",
+    "semantico": "similaridade semântica (cosseno) da tríade",
+    # pontes semânticas — buraco estrutural + proximidade de conteúdo (item 14)
+    "obra_a": "primeira obra do par (de um silo)", "eixo_a": "eixo temático da obra A",
+    "obra_b": "segunda obra do par (de um silo distinto)", "eixo_b": "eixo temático da obra B",
+    "frente": "par de tradições que o candidato a leitura cobre",
+    "cosseno": "similaridade de cosseno (título + resumo) entre as duas obras",
+    "centralidade": "posição do par no ranking de pontes semânticas",
 }
 
 
