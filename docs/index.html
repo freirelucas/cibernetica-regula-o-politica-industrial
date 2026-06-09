@@ -354,8 +354,35 @@ pre.code{max-width:100%}
 .leadin{color:var(--ink);font-weight:500}
 .termo{position:relative;border-bottom:1px dotted var(--accent);cursor:help}
 .termo:hover::after,.termo:focus::after{content:attr(data-def);position:absolute;left:0;top:1.4em;z-index:50;width:min(320px,78vw);background:var(--ink);color:var(--paper);font-family:var(--sans);font-weight:300;font-size:.78rem;line-height:1.45;padding:.5rem .65rem;border-radius:6px;box-shadow:0 6px 20px rgba(14,14,14,.25);pointer-events:none}
+.startbox{background:var(--surface);border:1px solid var(--border-s);border-left:3px solid var(--cyb);border-radius:8px;padding:1.2rem 1.4rem;margin:0 0 2rem}
+.startbox-h{font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:0 0 .6rem}
+.startbox p{margin:.5rem 0;line-height:1.6}
+.startbox-find{background:var(--paper);border-radius:6px;padding:.7rem .85rem;font-size:.95rem}
+.startmap,.starttools{display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:baseline;margin-top:.9rem;font-size:.85rem}
+.startmap a,.starttools a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent}
+.startmap a:hover,.starttools a:hover{color:var(--ink);border-bottom-color:var(--ink);text-decoration:none}
+.startmap b,.starttools b{font-weight:500;color:var(--ink)}
+.starttools a{color:var(--cyb)}
 </style>
 <section id="resumo" class="section"><div class="container">
+  <aside class="startbox" aria-label="Comece por aqui">
+    <h2 class="startbox-h">Comece por aqui</h2>
+    <p>Queríamos saber se três tradições que quase não conversam — <strong>cibernética organizacional</strong>, <strong>regulação econômica</strong> e <strong>política industrial</strong> — formam um campo só ou ilhas separadas. Para isso, testamos <strong>vários modelos</strong> sobre a base OpenAlex (redes de cocitação par-a-par e de <em>ordem superior</em>/hipergrafo, detecção de comunidades, intermediação, e medidas de <em>integração</em> como a condutância real ΔKf), sempre contra <em>modelos nulos</em> — tudo com o propósito de achar as <strong>pontes</strong> entre os campos e testar se elas de fato existem.</p>
+    <p class="startbox-find"><strong>O que achamos, em três frases:</strong> são <strong>silos reais</strong> (modularidade Q ≈ 0,5–0,6 contra ~0 no acaso) — e o isolamento vai até quem cita e quem colabora. <strong>Nenhuma ponte está latente</strong> à espera de ser descoberta: contra um nulo casado em grau, nada supera o acaso. Logo, a convergência <strong>não emerge sozinha — tem de ser construída</strong>, e o estudo entrega uma <em>agenda</em> de onde costurar.</p>
+    <div class="startmap">
+      <span class="hint">o estudo em 5 atos:</span>
+      <a href="#pontes"><b>1. O achado</b> — os silos, e por que não há ponte</a>
+      <a href="#metodo"><b>2. Como medimos</b> — funil, hipergrafo, nulos</a>
+      <a href="#pontes-ordem-superior"><b>3. As pontes a construir</b> — a agenda (ΔKf)</a>
+      <a href="#brasil"><b>4. O caso brasileiro</b></a>
+      <a href="#repro"><b>5. Reprodutibilidade &amp; dados</b></a>
+    </div>
+    <div class="starttools">
+      <span class="hint">ferramentas:</span>
+      <a href="explorador.html">Explorador — modo “só as pontes” &nearr;</a>
+      <a href="triagem.html">Triagem (Rayyan) — o que o algoritmo achou &nearr;</a>
+    </div>
+  </aside>
   <div class="sec-header"><span class="sec-num">00</span><h2 class="sec-title">Resumo</h2><span class="sec-method">corpus extraído da base OpenAlex</span></div>
   <div class="prose">
     <p class="lead">Este estudo mapeia a estrutura intelectual da interseção entre três tradições intelectuais que raramente dialogam de forma explícita: a <strong>cibernética organizacional</strong> (o controle e a viabilidade de sistemas complexos), a <strong>regulação econômica</strong> (a disciplina da atividade econômica pelo Estado — captura regulatória, monopólio natural, agências reguladoras, o estado regulador) e a <strong>política industrial</strong> (a ação deliberada do Estado sobre a estrutura produtiva).</p>
