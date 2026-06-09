@@ -73,7 +73,12 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 <div class="layout">
   <aside class="panel">
     <h1>Explorador interativo</h1>
-    <p class="lead">Rede de <strong>cocitação ampliada</strong> dos <strong>quatro eixos</strong> (inclui a sondagem da economia da complexidade; 219 obras; OpenAlex). Cada nó é uma obra (<strong>tamanho ∝ citações</strong>); cada linha, uma cocitação (espessura ∝ frequência; <span style="color:var(--accent)">vermelho</span> = entre eixos). Obras sem eixo de vocabulário aparecem no <strong>eixo inferido</strong> pela vizinhança (tom mais leve). Em <em>Destaque</em>, veja as <strong>pontes de 2ª ordem</strong> — as que mais ligam comunidades. <a href="index.html#pontes">Como foi construída &rarr;</a></p>
+    <p class="lead">Rede de <strong>cocitação ampliada</strong> dos <strong>quatro eixos</strong> (inclui a sondagem da economia da complexidade; 219 obras; OpenAlex). Cada nó é uma obra (<strong>tamanho ∝ citações</strong>); cada linha, uma cocitação (espessura ∝ frequência; <span style="color:var(--accent)">vermelho</span> = entre eixos). Obras sem eixo de vocabulário aparecem no <strong>eixo inferido</strong> pela vizinhança (tom mais leve). Use <strong>◆ Só as pontes</strong> (abaixo) para ver apenas os <strong>alvos de agenda</strong> — as pontes a construir — e o que elas conectam; ou <em>Destaque</em> para realçá-las sobre a rede inteira. <a href="index.html#pontes">Como foi construída &rarr;</a></p>
+
+    <div class="ctl ponte-ctl">
+      <button class="btn ponte-btn" id="pontesBtn" aria-pressed="false" style="width:100%;font-weight:600;border:1px solid var(--accent);color:var(--accent);background:var(--paper)">◆ Só as pontes</button>
+      <p class="ponte-hint" id="pontesHint" style="font-size:.78rem;color:var(--muted);margin:.45rem 0 0;line-height:1.45">Mostra só as <strong>obras-alvo da agenda</strong> (as pontes a construir) e as cocitações entre elas — sem o ruído da rede inteira.</p>
+    </div>
 
     <div class="ctl">
       <label class="h">Eixos temáticos</label>
@@ -82,7 +87,7 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 
     <div class="ctl">
       <label class="h" for="wmin">Limiar de cocitação (peso ≥ <span id="wval" class="rngval"></span>)</label>
-      <input type="range" id="wmin" min="3" max="20" step="1" value="6">
+      <input type="range" id="wmin" min="3" max="20" step="1" value="8">
     </div>
 
     <div class="ctl">
@@ -101,7 +106,8 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
       <select id="destaque" style="width:100%;font-family:var(--sans);font-size:.84rem;padding:.4rem .5rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper)">
         <option value="none">— nenhum</option>
         <option value="conn">conectores (participação)</option>
-        <option value="bridge">pontes de 2ª ordem (vizinhança entre eixos)</option>
+        <option value="agenda">alvos de agenda (pontes a construir)</option>
+        <option value="bridge">conectores de 2ª ordem (≥2 eixos na vizinhança)</option>
         <option value="orgcib">cibernética organizacional</option>
         <option value="encr">encruzilhada (toca os 4 eixos)</option>
       </select>
@@ -239,7 +245,7 @@ __JS_DATA__
 
   // estado dos filtros
   const axisOn = {Cyb:true, Reg:true, PolInd:true, Cplx:true, '':true};
-  let wmin=6, showLabels=true, query='', selected=null, crossOnly=false;
+  let wmin=8, showLabels=true, query='', selected=null, crossOnly=false, pontesOnly=false;
 
   // disposição: "por eixo" ancora cada eixo numa região (silos visíveis) × força única
   const AX_POS = {Cyb:[0.22,0.50], Reg:[0.77,0.27], PolInd:[0.77,0.75], Cplx:[0.27,0.80], '':[0.50,0.50]};
@@ -258,7 +264,10 @@ __JS_DATA__
   }
 
   function visibleData(){
-    const ns0 = allNodes.filter(n=>axisOn[n.axis||'']);
+    let ns0 = allNodes.filter(n=>axisOn[n.axis||'']);
+    if (pontesOnly){                              // "Só as pontes": apenas os alvos de agenda (o fruto)
+      ns0 = ns0.filter(n=>n.agenda);              // a rede é densa demais p/ "alvo + vizinhos" filtrar algo
+    }
     const ok = new Set(ns0.map(n=>n.id));
     let ls = allLinks.filter(l=>l.peso>=wmin && ok.has(l.source.id||l.source) && ok.has(l.target.id||l.target));
     let ns = ns0;
@@ -286,8 +295,9 @@ __JS_DATA__
     node = node.data(ns, d=>d.id);
     node.exit().remove();
     const nEnter = node.enter().append('circle')
-      .attr('class', d=>'nd'+(d.seed?' seed':''))
+      .attr('class', d=>'nd'+(d.seed?' seed':'')+(d.agenda?' agenda':''))
       .attr('r', rad).attr('fill', fillOf).attr('fill-opacity', fillOpacityOf)
+      .attr('stroke', d=>d.agenda?'#c23f3f':null).attr('stroke-width', d=>d.agenda?2.5:null)
       .on('mouseover', hoverOn).on('mousemove', moveTip).on('mouseout', hoverOff)
       .on('click', (ev,d)=>{ev.stopPropagation(); select(d);})
       .call(d3.drag().on('start',dStart).on('drag',dDrag).on('end',dEnd));
@@ -340,7 +350,8 @@ __JS_DATA__
       `<span class="pill" style="background:${AXC[d.axis||d.axis_inf||'']||AXC['']}">${d.axis?AXN[d.axis]:(d.axis_inf?AXN[d.axis_inf]+' (inferido)':'sem eixo')}</span>`
       + `${d.year||'s.d.'} · ${fmt(d.cited_by)} citações · grau ${deg[d.id]} · força ${fmt(str[d.id])}`
       + (d.role!==undefined ? `<br><span style="color:var(--muted)">papel: <strong>${d.role}</strong> · participação P=${d.part} · comunidade ${d.comm}${d.sub?` · cibernética <strong>${d.sub}</strong>`:''}</span>` : '')
-      + ((axreach[d.id]||0) ? `<br><span style="color:var(--muted)">vizinhança alcança <strong>${axreach[d.id]}</strong> eixo(s)${axreach[d.id]>=2?' — <strong>ponte de 2ª ordem</strong>':''}</span>` : '');
+      + ((axreach[d.id]||0) ? `<br><span style="color:var(--muted)">vizinhança alcança <strong>${axreach[d.id]}</strong> eixo(s)${axreach[d.id]>=2?' — <strong>ponte de 2ª ordem</strong>':''}</span>` : '')
+      + (d.agenda ? `<br><span style="color:var(--accent)">★ <strong>alvo de agenda</strong> — ponte a construir (alta integração, ΔKf)</span>` : '');
     const top = nbrs[d.id].slice(0,8)
       .map(o=>`<b>${(byId[o.id]||{}).label||o.id}</b> <span style="color:var(--muted)">(${o.w})</span>`).join(' · ');
     document.getElementById('detNb').innerHTML = top ? ('Mais cocitada com: '+top) : 'Sem cocitações no limiar atual.';
@@ -357,6 +368,7 @@ __JS_DATA__
     label.style('display', d=>{
       if (query) return matches(d) ? null : 'none';
       if (!showLabels) return 'none';
+      if (pontesOnly) return null;               // no modo "só pontes" há poucos nós: rotula todos
       return labelable(d) ? null : 'none';
     });
   }
@@ -364,6 +376,7 @@ __JS_DATA__
     node.style('opacity', n => {
       if (query) return matches(n) ? 1 : .12;
       if (hlmode === 'conn') return 0.12 + 0.88 * (n.part || 0);            // participação
+      if (hlmode === 'agenda') return n.agenda ? 1 : .12;                   // alvos de agenda (pontes a construir)
       if (hlmode === 'bridge') return (axreach[n.id] >= 2) ? 1 : .12;       // vizinhança liga ≥2 eixos
       if (hlmode === 'orgcib') return (n.sub === 'organizacional') ? 1 : .12;  // cibernética organizacional
       if (hlmode === 'encr') return (axreach[n.id] >= 4) ? 1 : .12;         // vizinhança toca os 4 eixos
@@ -403,6 +416,17 @@ __JS_DATA__
   });
   document.getElementById('search').addEventListener('input',e=>{query=e.target.value.trim(); applyQuery();});
   document.getElementById('reset').addEventListener('click',()=>restart(true));
+  const pBtn=document.getElementById('pontesBtn'), pHint=document.getElementById('pontesHint');
+  const nAgenda=allNodes.filter(n=>n.agenda).length;
+  function syncPontes(){
+    pBtn.textContent = pontesOnly ? '↩ Ver rede inteira' : ('◆ Só as pontes ('+nAgenda+' alvos)');
+    pBtn.setAttribute('aria-pressed', pontesOnly?'true':'false');
+    pBtn.style.background = pontesOnly ? 'var(--accent)' : 'var(--paper)';
+    pBtn.style.color = pontesOnly ? '#fff' : 'var(--accent)';
+    if (pHint) pHint.style.display = pontesOnly ? 'none' : '';
+  }
+  if (pBtn && nAgenda){ syncPontes(); pBtn.addEventListener('click',()=>{ pontesOnly=!pontesOnly; syncPontes(); restart(true); }); }
+  else if (pBtn){ const c=pBtn.closest('.ponte-ctl'); if(c) c.style.display='none'; }
   document.getElementById('expSub').addEventListener('click',()=>{
     const {ns, ls} = visibleData();
     const data = {nodes: ns.map(n=>({id:n.id, label:n.label, axis:n.axis, cited_by:n.cited_by, year:n.year, seed:n.seed})),

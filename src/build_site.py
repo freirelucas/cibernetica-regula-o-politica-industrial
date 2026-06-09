@@ -354,6 +354,17 @@ def explorer_network():
         n["bridge"] = len(d) >= 2                 # liga ≥2 eixos → conector de 2ª ordem
         if not n.get("axis") and d:               # "sem eixo": eixo estruturalmente inferido
             n["axis_inf"] = max(d, key=lambda k: d[k])
+
+    # alvos de agenda (pontes a CONSTRUIR): nós que entram em alguma tríade da
+    # agenda de integração (solidity_bridges.json) — o "fruto" do funil; é o
+    # conjunto do modo "Só as pontes" do explorador.
+    sol = data_io.load_data("solidity_bridges.json", required=False, default={})
+    agenda_ids = set()
+    for c in (sol.get("agenda") if isinstance(sol, dict) else None) or []:
+        for m in c.get("membros", []):
+            agenda_ids.add(m)
+    for n in nodes:
+        n["agenda"] = n["id"] in agenda_ids
     return {"nodes": nodes, "links": links}
 
 
