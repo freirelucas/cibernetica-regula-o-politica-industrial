@@ -48,6 +48,32 @@ SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupa
             "limitacoes", "glossario", "referencias"]
 
 
+def global_nav(active):
+    """Navegação consistente entre as três telas (Estudo · Explorador · Triagem),
+    injetada via token ``__GLOBAL_NAV__``. Auto-contida (estilo embutido) para
+    ficar idêntica nas três páginas sem duplicar CSS à mão."""
+    tabs = [("estudo", "index.html", "Estudo"),
+            ("explorador", "explorador.html", "Explorador"),
+            ("triagem", "triagem.html", "Triagem")]
+    links = []
+    for key, href, label in tabs:
+        cls = "gnav-tab is-active" if key == active else "gnav-tab"
+        cur = ' aria-current="page"' if key == active else ""
+        links.append(f'<a href="{href}" class="{cls}"{cur}>{label}</a>')
+    style = (
+        "<style>"
+        ".gnav{display:inline-flex;gap:3px;align-items:center}"
+        ".gnav-tab{font-family:var(--mono,'JetBrains Mono',ui-monospace,monospace);font-size:11px;"
+        "font-weight:500;color:#6b6560;text-decoration:none;padding:.34rem .62rem;border-radius:5px;"
+        "border:1px solid transparent;white-space:nowrap}"
+        ".gnav-tab:hover{color:#0e0e0e;background:rgba(14,14,14,.06);text-decoration:none}"
+        ".gnav-tab.is-active{color:#fff;background:#4b3fc2;border-color:#4b3fc2}"
+        "</style>"
+    )
+    return (style + '<span class="gnav" role="navigation" aria-label="Telas do estudo">'
+            + "".join(links) + "</span>")
+
+
 def write_csvs(R, out):
     """Gera os 8 CSVs canônicos do funil a partir do JSON (fonte única)."""
     def w(name, header, rows):
@@ -348,6 +374,7 @@ def main():
     js = base + f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
     js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
+    html = html.replace("__GLOBAL_NAV__", global_nav("estudo"))   # nav consistente entre as 3 telas
     html = inject_hypergraph_numbers(html)           # XGI_* tokens ← data/cocitation_hyperedges.json
     html = inject_author_network_numbers(html)       # AUTHORNET_* tokens ← data/author_network.json
     html = inject_brazil_numbers(html)               # BRASIL_* tokens ← data/brazil_expanded.json
@@ -364,7 +391,8 @@ def main():
         expl_js = base + f"const NETWORK={json.dumps(expl_net, ensure_ascii=False)};\n"
         expl_js += f"const NETMETA={json.dumps(net_stats(expl_net), ensure_ascii=False)};\n"
         with open(EXPLORER_TPL, encoding="utf-8") as f:
-            expl = f.read().replace("__JS_DATA__", expl_js)
+            expl = (f.read().replace("__JS_DATA__", expl_js)
+                    .replace("__GLOBAL_NAV__", global_nav("explorador")))
         explorer = os.path.join(DOCS, "explorador.html")
         with open(explorer, "w", encoding="utf-8") as f:
             f.write(expl)
@@ -377,7 +405,8 @@ def main():
         works_js = (f"const RAYYAN_WORKS={json.dumps(rayyan_works_js(rayyan), ensure_ascii=False)};\n"
                     f"const RAYYAN_SELECTION={json.dumps(sel, ensure_ascii=False)};")
         with open(TRIAGEM_TPL, encoding="utf-8") as f:
-            tri = f.read().replace("__JS_DATA__", works_js)
+            tri = (f.read().replace("__JS_DATA__", works_js)
+                   .replace("__GLOBAL_NAV__", global_nav("triagem")))
         triagem = os.path.join(DOCS, "triagem.html")
         with open(triagem, "w", encoding="utf-8") as f:
             f.write(tri)
