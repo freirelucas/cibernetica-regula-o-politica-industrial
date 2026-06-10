@@ -23,14 +23,14 @@ ou seja, coexistir no tempo **não** é citar-se.
 **Verificação reprodutível** (`src/modularity_check.py` → `data/modularity_check.json`).
 Recomputa o achado dos silos com o **mesmo modelo nulo** do relatório (configuração,
 preserva o grau): na rede do explorador, a partição por eixo tem **Q = 0,51** contra ≈0
-no acaso (**z ≈ 47**) e **0 obras conectoras** significativas — os eixos são silos reais,
+no acaso (**z ≈ 48**) e **0 obras conectoras** significativas — os eixos são silos reais,
 não artefato de amostragem. *(O §00 cita Q≈0,59 da rede interna de 600 nós do funil, que
 não é exportada; 0,51 é o número **reprodutível a partir do repositório** — mesma
-conclusão.)* **Ressalva H1, agora quantificada:** **48,5% dos nós cocitados ficam sem
+conclusão.)* **Ressalva H1, agora quantificada:** **46,8% dos nós cocitados ficam sem
 eixo** — referências que o vocabulário não classifica — e são deixados **fora** da
 partição (não viram uma "comunidade", o que distorceria Q para baixo).
-**Robusto à reamostragem:** derrubar 20% dos nós (bootstrap, B=300) mantém **Q = 0,50 ±
-0,02** (IC95 [0,46, 0,54]) — os silos não são artefato de quais obras entraram na rede.
+**Robusto à reamostragem:** derrubar 20% dos nós (bootstrap, B=300) mantém **Q = 0,51 ±
+0,02** (IC95 [0,47, 0,55]) — os silos não são artefato de quais obras entraram na rede.
 
 ## 1. Crítica das heurísticas (o que cada uma esconde)
 
@@ -60,11 +60,13 @@ partição (não viram uma "comunidade", o que distorceria Q para baixo).
 - **Feito:** reenquadramento de Reg (H7); auditoria de VAZIO/inferência; nulo anti-circular
   e BH-FDR no pairwise; **corpo de análises coerente** (re-run completo numa única janela,
   autores reprocessados); **peso 1/(s−1) na HO-BC** (H2 ✓); **nulo da solidez casado em grau** (H4 ✓);
-  **integração = condutância real (ΔKf), rebatizada de "DESIGN"** (H5 ✓ — achado: nada supera o nulo casado em grau).
+  **integração = condutância real (ΔKf), rebatizada de "DESIGN"** (H5 ✓ — achado: nada supera o nulo casado em grau);
+  **higiene de integridade** (8 obras-fantasma 404 + 2 agregados de periódico removidos — o ex-"principal
+  conector" W4285719527 era um registro vazio ligado a 95% dos nós) e **Q reconfirmado na rede limpa**
+  (Q = 0,52, z = 48, bootstrap 0,51 ± 0,02 — os silos sobrevivem, ligeiramente mais limpos).
 - **Pendente (backlog de rigor):** faixa semântica vs **população de referência** (resto do H4);
-  **sensibilidade às sementes** (drop-20% ×5) — robustez da tese dos silos à seleção;
-  recompute da **modularidade Q** no corpus novo; *disclosure* dos inferidos **no ponto da
-  afirmação** no relatório.
+  **sensibilidade às sementes** (drop-20% ×5) — robustez da tese dos silos à seleção das sementes;
+  *disclosure* dos inferidos **no ponto da afirmação** no relatório (observado × inferido por afirmação).
 
 > Em uma frase: **o achado dos silos é forte e robusto; as afirmações sobre *pontes*
 > (quem conecta os silos) são as que mais dependem de rótulos inferidos — leia-as como

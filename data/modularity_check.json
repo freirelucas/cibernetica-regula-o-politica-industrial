@@ -1,38 +1,38 @@
 {
   "_doc": "verificação reprodutível do achado central (§00): modularidade da partição por eixo vs. modelo nulo de configuração; + bootstrap de robustez. Só nós classificados.",
   "rede": "network_4axis.json",
-  "n_nos_total": 260,
-  "n_nos_sem_eixo": 126,
-  "pct_sem_eixo": 48.5,
+  "n_nos_total": 250,
+  "n_nos_sem_eixo": 117,
+  "pct_sem_eixo": 46.8,
   "nota_H1": "nós sem eixo são referências cocitadas que o vocabulário não classifica (título sem abstract etc.); ficam de fora da partição, não viram comunidade.",
   "tres_eixos": {
-    "n_nos": 127,
-    "n_arestas": 1553,
-    "Q_obs": 0.509,
-    "Q_rand": -0.006,
-    "Q_sd": 0.01,
-    "Q_z": 49.6,
+    "n_nos": 126,
+    "n_arestas": 1530,
+    "Q_obs": 0.515,
+    "Q_rand": -0.005,
+    "Q_sd": 0.011,
+    "Q_z": 48.5,
     "n_iter": 100,
     "n_conectores_significativos": 0
   },
   "quatro_eixos_com_Cplx": {
-    "n_nos": 134,
-    "n_arestas": 1761,
-    "Q_obs": 0.452,
-    "Q_rand": -0.004,
+    "n_nos": 133,
+    "n_arestas": 1734,
+    "Q_obs": 0.457,
+    "Q_rand": -0.006,
     "Q_sd": 0.009,
-    "Q_z": 51.9,
+    "Q_z": 49.9,
     "n_iter": 100,
-    "n_conectores_significativos": 1
+    "n_conectores_significativos": 0
   },
   "robustez_bootstrap_3eixos": {
     "B": 300,
     "frac_mantida": 0.8,
-    "Q_medio": 0.504,
-    "Q_sd": 0.02,
+    "Q_medio": 0.511,
+    "Q_sd": 0.018,
     "Q_ic95": [
-      0.455,
-      0.542
+      0.473,
+      0.548
     ]
   }
 }
