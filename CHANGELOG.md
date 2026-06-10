@@ -1,9 +1,10 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (166 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (169 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
+- CHANGELOG: regenera (cobre a sessão jun/09 — reforma de UX, clareza, integridade) · `7af48b6` · 2026-06-09
 - Estabilização: higiene de integridade completa (404 + agregados de periódico) · `5e01191` · 2026-06-09
 - Higiene x10: funde nós duplicados das redes (mesma obra sob vários ids) · `360cbd2` · 2026-05-27
 - Higiene de integridade: remove 13 ids OpenAlex que não resolvem (404) · `ce29b86` · 2026-05-27
@@ -39,6 +40,7 @@ Registro de mudanças desta branch, agrupado por tema (166 commits de trabalho).
 
 ## Explorador e visualizações
 
+- Rigor: reconfirma Q dos silos na rede limpa + sincroniza METODOLOGIA · `a689584` · 2026-06-10
 - Explorador: modo "Só as pontes (47 alvos)" + silos limpos · `08b2f91` · 2026-06-09
 - Rigor: bootstrap de robustez do achado dos silos (drop-20%, B=300) · `7bb5c37` · 2026-06-08
 - Rigor: verificação reprodutível do achado dos silos (§00) + ressalva H1 · `7c6ffcc` · 2026-06-08
@@ -152,6 +154,7 @@ Registro de mudanças desta branch, agrupado por tema (166 commits de trabalho).
 
 ## Outros
 
+- Deck de status (.pptx reprodutível) + build_deck.py · `2082b5e` · 2026-06-09
 - Fase 4: 29 seções agrupadas em 5 atos colapsáveis (<details>) · `b3d59fd` · 2026-06-09
 - Clareza: reescreve os callouts densos do silo social e do hipergrafo (§05) · `e626ed4` · 2026-06-09
 - Clareza editorial: glossário dos termos-chave + "em miúdos" nos densos · `c53ae53` · 2026-06-09
