@@ -3,7 +3,8 @@ resolve (HTTP 404) — verificado por lote contra a API. São referências pendu
 do grafo de cocitação (ids citados nunca enriquecidos, depois deletados/fundidos
 pelo OpenAlex) e alguns ids corrompidos/sintéticos. Mantém apenas dados reais.
 
-Lista DEAD obtida em src/clean_dead_ids.py (verificação por lote, maio/2026).
+Lista DEAD obtida em src/clean_dead_ids.py (verificação por lote, maio/2026;
+reverificada AO VIVO em jun/2026 — 451 IDs de nó de todas as redes, 0 novos mortos).
 Reexecutável: tira nós + arestas incidentes das redes e limpa cross_brasil.
 """
 import json

@@ -63,6 +63,26 @@ def _bootstrap(nodes, links, frac=0.8, B=300, seed=1):
             "Q_sd": round(statistics.pstdev(qs), 3), "Q_ic95": [round(lo, 3), round(hi, 3)]}
 
 
+def _seed_sensitivity(nodes, links, k=5, drop=0.2, seed=7):
+    """Robustez à SELEÇÃO de sementes (item 2 do backlog de rigor): a cada rodada
+    remove uma fração `drop` das obras-semente e recompõe Q. Se Q se mantém, os
+    silos não dependem de sementes específicas. CAVEAT: é um proxy de REDE — remove
+    as sementes do grafo final; não re-roda a bola de neve (que exigiria recrawl)."""
+    rnd = random.Random(seed)
+    seeds = [n for n in nodes if n.get("seed")]
+    others = [n for n in nodes if not n.get("seed")]
+    n_drop = int(round(drop * len(seeds)))
+    runs = []
+    for _ in range(k):
+        ns = seeds[:]
+        rnd.shuffle(ns)
+        runs.append(round(_Q(ns[n_drop:] + others, links), 3))
+    return {"k": k, "drop": drop, "n_sementes": len(seeds), "n_dropadas": n_drop,
+            "metodo": "drop de nós-semente da rede final (proxy; não re-snowball)",
+            "Q_runs": runs, "Q_medio": round(statistics.mean(runs), 3),
+            "Q_min": min(runs), "Q_max": max(runs)}
+
+
 def _modularidade(nodes, links):
     keep = {n["id"] for n in nodes}
     el = [l for l in links if l["source"] in keep and l["target"] in keep]
@@ -96,6 +116,7 @@ def main():
         "tres_eixos": _modularidade(nucleo, links),
         "quatro_eixos_com_Cplx": _modularidade(classificados, links),
         "robustez_bootstrap_3eixos": _bootstrap(nucleo, links, frac=0.8, B=300, seed=1),
+        "sensibilidade_sementes_3eixos": _seed_sensitivity(nucleo, links, k=5, drop=0.2),
     }
     json.dump(out, open(os.path.join(ROOT, "data", "modularity_check.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)
@@ -105,6 +126,9 @@ def main():
           f"{t['n_conectores_significativos']} conectores · {out['pct_sem_eixo']}% sem eixo (H1)")
     print(f"→ robustez (drop-20%, B={b['B']}): Q={b['Q_medio']} ± {b['Q_sd']}, "
           f"IC95 [{b['Q_ic95'][0]}, {b['Q_ic95'][1]}]")
+    ss = out["sensibilidade_sementes_3eixos"]
+    print(f"→ sensibilidade às sementes (drop-20% ×{ss['k']}, {ss['n_dropadas']}/{ss['n_sementes']} fora): "
+          f"Q∈[{ss['Q_min']}, {ss['Q_max']}], média {ss['Q_medio']}")
 
 
 if __name__ == "__main__":

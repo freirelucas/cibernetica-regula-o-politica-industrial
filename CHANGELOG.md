@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (169 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (170 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -60,6 +60,7 @@ Registro de mudanças desta branch, agrupado por tema (169 commits de trabalho).
 
 ## Análise (cienciometria / Science of Science)
 
+- CHANGELOG: registra refresh de rigor (Q na rede limpa) · `f2c3469` · 2026-06-10
 - Remove obras-fantasma do funil de pontes + corrige validação temporal (H5) · `8ff02a7` · 2026-06-09
 - Dicionário de dados: descreve as colunas H5/solidez e pontes semânticas · `276991d` · 2026-06-09
 - Rigor H5: integração = condutância real (ΔKf), rebatizada de "DESIGN" · `a3b7511` · 2026-06-08
