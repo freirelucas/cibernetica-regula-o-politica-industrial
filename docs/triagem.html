@@ -103,8 +103,6 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
   <span id="saveHint" title="há mudanças não guardadas — use Salvar seleção">• não guardado</span>
   <button class="btn primary" id="expRis">Incluídos (RIS)</button>
   <button class="btn" id="expBlock">Bloco filtrado (RIS)</button>
-  <button class="btn" id="expCsv">Decisões (CSV)</button>
-  <button class="btn" id="expJson">Decisões (JSON)</button>
   <label class="btn" for="impFile" title="combinar com decisões de outro pesquisador">Importar</label>
   <input id="impFile" type="file" accept=".json,application/json" hidden>
   <button class="btn" id="reset">Limpar</button>
@@ -498,15 +496,6 @@ const RAYYAN_SELECTION={"_generated": "PR-7 — seleção de triagem (decisão r
   document.getElementById('blkInc').onclick=()=>bulkDecide('inc');
   document.getElementById('blkExc').onclick=()=>bulkDecide('exc');
   document.getElementById('blkClr').onclick=()=>bulkDecide('');
-  document.getElementById('expCsv').onclick=()=>{
-    const qq=s=>'"'+String(s==null?'':s).replace(/"/g,'""')+'"';
-    const rows=[['uid','titulo','ano','eixos','prioridade','ho_bc','decisao']];
-    works.forEach(w=>rows.push([w.uid,w.title,w.year||'',w.axes.join('|'),w.prioridade||0,w.ho_bc||0,DEC[w.uid]||'indeciso']));
-    download('triagem_decisoes.csv', rows.map(r=>r.map(qq).join(',')).join('\n'), 'text/csv');
-  };
-  document.getElementById('expJson').onclick=()=>{
-    download('triagem_decisoes.json', JSON.stringify(DEC, null, 1), 'application/json');
-  };
   // importar decisões de outro pesquisador e COMBINAR (aceita {uid:dec} ou {decisions:{...}})
   document.getElementById('impFile').addEventListener('change', ev=>{
     const f=ev.target.files[0]; if(!f) return;
