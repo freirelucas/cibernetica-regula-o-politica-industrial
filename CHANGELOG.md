@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Registro de mudanças desta branch, agrupado por tema (171 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
+Registro de mudanças desta branch, agrupado por tema (173 commits de trabalho). **Gerado** por `.claude/skills/changelog/changelog.py` — para atualizar após um novo commit, rode o script (ou use a skill `/changelog`).
 
 ## Integridade de dados
 
@@ -12,6 +12,7 @@ Registro de mudanças desta branch, agrupado por tema (171 commits de trabalho).
 
 ## Triagem e exportação (Rayyan)
 
+- Triagem: exportação só RIS — remove os botões Decisões (CSV/JSON) · `3de4792` · 2026-06-12
 - Topo "Comece por aqui": curadoria de método + achados + mapa em 5 atos · `5a8401e` · 2026-06-09
 - Triagem: duas etapas (achar → decidir), com o "fruto" em foco · `95b6ce4` · 2026-06-09
 - Navegação global consistente nas 3 telas (Estudo · Explorador · Triagem) · `1bea26e` · 2026-06-09
@@ -60,6 +61,7 @@ Registro de mudanças desta branch, agrupado por tema (171 commits de trabalho).
 
 ## Análise (cienciometria / Science of Science)
 
+- CHANGELOG: registra rigor #2 (sensibilidade às sementes) + higiene ao vivo · `e448eee` · 2026-06-10
 - Rigor #2 (sensibilidade às sementes) + higiene reverificada ao vivo · `d03529e` · 2026-06-10
 - CHANGELOG: registra refresh de rigor (Q na rede limpa) · `f2c3469` · 2026-06-10
 - Remove obras-fantasma do funil de pontes + corrige validação temporal (H5) · `8ff02a7` · 2026-06-09
