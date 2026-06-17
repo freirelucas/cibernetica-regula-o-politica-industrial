@@ -85,8 +85,10 @@ def test_triagem_built():
     assert "__JS_DATA__" not in html
     assert "const RAYYAN_WORKS=" in html
     assert "vendor/fonts.css" in html and "cdnjs" not in html
-    for ctl in ['id="expRis"', 'id="expCsv"', 'id="statusChips"', 'id="list"']:
+    for ctl in ['id="expRis"', 'id="statusChips"', 'id="list"']:
         assert ctl in html, f"controle ausente na triagem: {ctl}"
+    # exportação só-RIS: os botões Decisões (CSV/JSON) foram removidos de propósito
+    assert 'id="expCsv"' not in html, "expCsv reapareceu — a triagem exporta só RIS"
     # cada obra tem uid estável e ao menos um eixo ou papel
     assert all(w["uid"] for w in build_site.rayyan_works_js(works))
 

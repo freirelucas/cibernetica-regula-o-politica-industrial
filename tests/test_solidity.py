@@ -10,6 +10,8 @@ import itertools
 import json
 import os
 
+import pytest
+
 import data_io
 import solidity
 
@@ -45,6 +47,7 @@ def test_integracao_posicional_hub_vs_ponte():
     """H5 — condutância real é POSICIONAL, não de grau: realizar a aresta de um HUB (já
     de baixa resistência) integra ~0; realizar uma aresta entre duas obras PERIFÉRICAS e
     distantes (gap real entre silos) integra muito mais."""
+    pytest.importorskip("numpy")  # integration_scores usa numpy (ausente no build mínimo)
     pw = collections.Counter()
     for x in ("c1", "c2", "c3"):
         pw[frozenset(("HC", x))] = 5          # hub Cyb denso
@@ -66,6 +69,7 @@ def test_integracao_posicional_hub_vs_ponte():
 
 def test_integracao_deterministica():
     """Mesma seed → mesmos integracao e integracao_z (nulo casado em grau reprodutível)."""
+    pytest.importorskip("numpy")  # integration_scores usa numpy (ausente no build mínimo)
     edges = [{"A", "B"}, {"A", "C"}, {"B", "C"}, {"A", "D"}, {"B", "D"}]
     axis_of = {"A": "Cyb", "B": "Reg", "C": "PolInd", "D": "Reg"}
     c1 = solidity.gen_candidates(edges, axis_of, _pair_w(edges), CFG)

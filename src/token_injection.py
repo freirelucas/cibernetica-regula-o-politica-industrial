@@ -14,6 +14,7 @@ Tokens cobertos:
 """
 import json
 import os
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -48,6 +49,14 @@ def inject_author_network_numbers(html, root=ROOT):
     a_path = os.path.join(root, "data", "author_network.json")
     s_path = os.path.join(root, "data", "author_snowball_expansion.json")
     if not os.path.exists(a_path):
+        # author_network.json é derivado e versionado fora do repo (.gitignore, ~15 MB).
+        # Sem ele, NÃO emitir silenciosamente uma página com tokens crus: avisar quem
+        # constrói para que regenere antes de publicar (OA_OFFLINE=1, zero fetches).
+        if "AUTHORNET_" in html:
+            sys.stderr.write(
+                "AVISO: data/author_network.json ausente — a seção §10·6 (autores-ponte) "
+                "ficaria com tokens AUTHORNET_* crus. Regenere com "
+                "'OA_OFFLINE=1 python src/author_network.py' antes de publicar.\n")
         return html
     A = json.load(open(a_path, encoding="utf-8"))
     snow = {}
