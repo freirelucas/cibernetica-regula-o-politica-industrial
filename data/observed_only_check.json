@@ -1,0 +1,290 @@
+{
+ "_doc": "réplica só-observados (H1): a camada estrutural das pontes rodada duas vezes sobre as MESMAS hiperarestas, mudando só o mapa de eixos. Mede quanto do resultado sobrevive sem rótulo inferido da vizinhança.",
+ "proveniencia": {
+  "n_nos": 250,
+  "contagem": {
+   "semente": 64,
+   "vizinhanca": 117,
+   "vocabulario": 69
+  },
+  "pct_observado": 53.2,
+  "pct_inferido": 46.8
+ },
+ "braco_todos": {
+  "_doc": "observado ∪ inferido — o comportamento publicado",
+  "n_candidatas": 3000,
+  "alem_do_acaso": 0,
+  "top10_integracao": [
+   {
+    "membros": [
+     "W1566478880",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.1786
+   },
+   {
+    "membros": [
+     "W2123755784",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.1758
+   },
+   {
+    "membros": [
+     "W2111030512",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.1754
+   },
+   {
+    "membros": [
+     "W3170187706",
+     "W4244612406",
+     "W52678905"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.1671
+   },
+   {
+    "membros": [
+     "W2025177555",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.1614
+   },
+   {
+    "membros": [
+     "W1601629960",
+     "W2102461236",
+     "W2126563689"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.0863
+   },
+   {
+    "membros": [
+     "W1520641906",
+     "W1601629960",
+     "W2102461236"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.0643
+   },
+   {
+    "membros": [
+     "W1601629960",
+     "W2037927976",
+     "W2102461236"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 19.551
+   },
+   {
+    "membros": [
+     "W1575626990",
+     "W2120106358",
+     "W3124879925"
+    ],
+    "eixos": [
+     "PolInd",
+     "Reg"
+    ],
+    "integracao": 16.2635
+   },
+   {
+    "membros": [
+     "W1575626990",
+     "W2012275303",
+     "W3124879925"
+    ],
+    "eixos": [
+     "PolInd",
+     "Reg"
+    ],
+    "integracao": 16.2523
+   }
+  ]
+ },
+ "braco_observado": {
+  "_doc": "só rótulo observado (semente ou vocabulário) — sem inferência",
+  "n_candidatas": 3000,
+  "alem_do_acaso": 0,
+  "top10_integracao": [
+   {
+    "membros": [
+     "W1566478880",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2309
+   },
+   {
+    "membros": [
+     "W2111030512",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2289
+   },
+   {
+    "membros": [
+     "W2123755784",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2278
+   },
+   {
+    "membros": [
+     "W3170187706",
+     "W4205188686",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2214
+   },
+   {
+    "membros": [
+     "W3170187706",
+     "W4244612406",
+     "W52678905"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2196
+   },
+   {
+    "membros": [
+     "W2025177555",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2147
+   },
+   {
+    "membros": [
+     "W233775549",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2121
+   },
+   {
+    "membros": [
+     "W2037306909",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.2034
+   },
+   {
+    "membros": [
+     "W1968044930",
+     "W3170187706",
+     "W4244612406"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 40.202
+   },
+   {
+    "membros": [
+     "W1601629960",
+     "W2102461236",
+     "W2126563689"
+    ],
+    "eixos": [
+     "Cyb",
+     "Reg"
+    ],
+    "integracao": 39.6051
+   }
+  ]
+ },
+ "espaco_completo": {
+  "_doc": "tríades elegíveis SEM o teto de max_candidatos — é aqui que a comparação é honesta; as listas capadas mediriam o truncamento",
+  "n_todos": 143740,
+  "n_observado": 54372,
+  "n_interseccao": 54372,
+  "jaccard": 0.378,
+  "teto_atingido_no_braco_capado": true,
+  "max_candidatos_cfg": 3000
+ },
+ "sobrevivencia": {
+  "n_interseccao": 54372,
+  "jaccard": 0.378,
+  "pct_do_publicado_que_sobrevive": 37.8,
+  "n_candidatas_expostas_a_inferencia": 2079,
+  "pct_candidatas_expostas": 69.3
+ },
+ "agenda_publicada": {
+  "n": 84,
+  "n_expostas_a_inferencia": 58,
+  "pct_expostas": 69.0,
+  "n_sobrevivem_so_observado": 33,
+  "pct_sobrevivem": 39.3
+ }
+}

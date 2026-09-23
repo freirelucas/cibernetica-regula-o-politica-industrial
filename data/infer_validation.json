@@ -1,0 +1,70 @@
+{
+ "_doc": "validação cruzada do inferidor de eixo por vizinhança de cocitação (H1): mesma regra de build_site.py aplicada ao conjunto de rótulo conhecido.",
+ "conjunto_ouro": {
+  "n": 133,
+  "sementes": 64,
+  "vocabulario": 69,
+  "sem_evidencia_de_vizinhanca": 1
+ },
+ "acuracia_global": 0.887,
+ "acuracia_por_eixo": {
+  "Cplx": {
+   "n": 7,
+   "acuracia": 0.143
+  },
+  "Cyb": {
+   "n": 41,
+   "acuracia": 0.854
+  },
+  "PolInd": {
+   "n": 47,
+   "acuracia": 0.979
+  },
+  "Reg": {
+   "n": 38,
+   "acuracia": 0.947
+  }
+ },
+ "acuracia_por_evidencia": {
+  "0": {
+   "n": 1,
+   "acuracia": 0.0
+  },
+  "1-2": {
+   "n": 1,
+   "acuracia": 1.0
+  },
+  "11+": {
+   "n": 120,
+   "acuracia": 0.908
+  },
+  "3-5": {
+   "n": 3,
+   "acuracia": 1.0
+  },
+  "6-10": {
+   "n": 8,
+   "acuracia": 0.625
+  }
+ },
+ "matriz_confusao": {
+  "Cplx->Cplx": 1,
+  "Cplx->PolInd": 6,
+  "Cyb->Cyb": 35,
+  "Cyb->PolInd": 2,
+  "Cyb->Reg": 3,
+  "Cyb->sem_predicao": 1,
+  "PolInd->PolInd": 46,
+  "PolInd->Reg": 1,
+  "Reg->PolInd": 2,
+  "Reg->Reg": 36
+ },
+ "evidencia_comparada": {
+  "_doc": "se os nós realmente inferidos têm MENOS vizinhos rotulados que o conjunto-ouro, a acurácia acima é um LIMITE SUPERIOR",
+  "ouro_mediana": 25,
+  "inferidos_mediana": 28,
+  "ouro_media": 26.1,
+  "inferidos_media": 27.8,
+  "n_inferidos": 117
+ }
+}

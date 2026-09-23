@@ -70,7 +70,23 @@ def null_trans_axis_z(edges, axis_of, n_iter=60, seed=42):
 
 def main():
     net = bs.explorer_network()
-    axis_of = {n["id"]: (n.get("axis") or n.get("axis_inf") or "") for n in net["nodes"]}
+    # Proveniência do rótulo (H1): manter SEPARADO o que foi observado do que foi
+    # inferido da vizinhança de cocitação (build_site.py grava a inferência em
+    # `axis_inf`, sem sobrescrever `axis`). `axis_of` segue sendo o mapa achatado,
+    # por compatibilidade com solidity.py e higher_order_betweenness.py; o JSON passa
+    # a carregar também o mapa só-observado e a origem de cada rótulo, para que as
+    # afirmações sobre pontes possam ser replicadas SEM inferência.
+    axis_obs = {n["id"]: (n.get("axis") or "") for n in net["nodes"]}
+    axis_all = {n["id"]: (n.get("axis") or n.get("axis_inf") or "") for n in net["nodes"]}
+    axis_src = {}
+    for n in net["nodes"]:
+        if n.get("axis"):
+            axis_src[n["id"]] = "semente" if n.get("seed") else "vocabulario"
+        elif n.get("axis_inf"):
+            axis_src[n["id"]] = "vizinhanca"
+        else:
+            axis_src[n["id"]] = "sem_eixo"
+    axis_of = axis_all
     label_of = {n["id"]: n.get("label") or n["id"] for n in net["nodes"]}
     corpus = set(axis_of)                       # obras do núcleo = "vértices" do hipergrafo
     comm_of = {n["id"]: n.get("comm", -1) for n in net["nodes"]}   # comunidade CNM (sub-eixo Leiden)
@@ -184,7 +200,10 @@ def main():
         # análise futura sem rerodar o crawler.
         "hyperedges": edges,
         "edge_to_citer": edge_to_citer,
-        "axis_of": axis_of,
+        "axis_of": axis_of,        # = axis_all (achatado) — compatibilidade
+        "axis_obs": axis_obs,      # só rótulo OBSERVADO (semente/vocabulário)
+        "axis_all": axis_all,      # observado ∪ inferido da vizinhança
+        "axis_src": axis_src,      # id -> semente | vocabulario | vizinhanca | sem_eixo
         # M2 — centralidades XGI nativas (eigen no hipergrafo + clique expansion)
         "node_centralities": {
             "top_h_eigenvector": node_cent.get("top_h_eigenvector", [])[:30],
