@@ -30,7 +30,7 @@ from report_template import inject_template  # noqa: E402
 from token_injection import (  # noqa: E402
     inject_hypergraph_numbers, inject_author_network_numbers,
     inject_brazil_numbers, inject_brokerage_numbers, inject_solidity_numbers,
-    inject_bridge_numbers,
+    inject_bridge_numbers, inject_provenance_numbers,
 )
 import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
 import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
@@ -411,6 +411,7 @@ def main():
     html = inject_brokerage_numbers(html)            # BROK_* tokens ← data/brokerage_roles.json
     html = inject_solidity_numbers(html)             # SOLIDEZ_* tokens ← data/solidity_bridges.json (modelagem)
     html = inject_bridge_numbers(html)               # SEMBR_* tokens ← data/bridge_candidates.json (item 2)
+    html = inject_provenance_numbers(html)           # PROV_* tokens ← infer_validation + observed_only_check (H1)
     index = os.path.join(DOCS, "index.html")
     with open(index, "w", encoding="utf-8") as f:
         f.write(html)

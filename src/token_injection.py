@@ -9,6 +9,7 @@ Tokens cobertos:
   AUTHORNET_* — data/author_network.json + author_snowball_expansion.json
   BRASIL_*    — data/brazil_expanded.json
   BROK_*      — data/brokerage_roles.json
+  PROV_*      — data/infer_validation.json + observed_only_check.json (H1)
 
 `inject_all(html, root)` aplica tudo na ordem certa.
 """
@@ -209,11 +210,71 @@ def inject_bridge_numbers(html, root=ROOT):
     return html
 
 
+def _virgula(v):
+    """Decimal em português: 46.8 -> 46,8 (o resto do relatório usa vírgula)."""
+    return str(v).replace(".", ",")
+
+
+def inject_provenance_numbers(html, root=ROOT):
+    """PROV_* — proveniência do rótulo de eixo (H1) no PONTO DA AFIRMAÇÃO.
+
+    Lê data/infer_validation.json (acurácia do inferidor contra o conjunto de
+    rótulo conhecido) e data/observed_only_check.json (quanto da agenda sobrevive
+    sem inferência). Sem esses derivados, avisa em vez de emitir tokens crus.
+    """
+    vp = os.path.join(root, "data", "infer_validation.json")
+    op = os.path.join(root, "data", "observed_only_check.json")
+    if not (os.path.exists(vp) and os.path.exists(op)):
+        if "PROV_" in html:
+            sys.stderr.write(
+                "AVISO: data/infer_validation.json e/ou observed_only_check.json ausentes — "
+                "a ressalva de proveniência (§18b) ficaria com tokens PROV_* crus. Rode "
+                "'python src/infer_validation.py' e 'python src/observed_only_check.py'.\n")
+        return html
+    V = json.load(open(vp, encoding="utf-8"))
+    O = json.load(open(op, encoding="utf-8"))
+    prov, ag, esp = O["proveniencia"], O["agenda_publicada"], O["espaco_completo"]
+
+    ordem = ["Cyb", "Reg", "PolInd", "Cplx"]
+    NOME = {"Cyb": "cibernética", "Reg": "regulação", "PolInd": "política industrial",
+            "Cplx": "complexidade"}
+    partes = []
+    for k in ordem:
+        v = V["acuracia_por_eixo"].get(k)
+        if v:
+            partes.append(f"{NOME[k]} {v['acuracia']:.2f}")
+    por_eixo = "; ".join(partes)
+
+    pior = min(((k, v) for k, v in V["acuracia_por_eixo"].items()), key=lambda kv: kv[1]["acuracia"])
+    ev = V["evidencia_comparada"]
+    subs = {
+        "PROV_PCT_INFERIDO": f"{prov['pct_inferido']:.1f}",
+        "PROV_PCT_OBSERVADO": f"{prov['pct_observado']:.1f}",
+        "PROV_N_OURO": str(V["conjunto_ouro"]["n"]),
+        "PROV_ACURACIA": f"{V['acuracia_global'] * 100:.1f}",
+        "PROV_ACC_POR_EIXO": por_eixo,
+        "PROV_PIOR_EIXO": NOME.get(pior[0], pior[0]),
+        "PROV_PIOR_ACC": f"{pior[1]['acuracia']:.2f}",
+        "PROV_PIOR_N": str(pior[1]["n"]),
+        "PROV_N_AGENDA": str(ag["n"]),
+        "PROV_PCT_EXPOSTA": f"{ag['pct_expostas']:.0f}",
+        "PROV_N_NUCLEO": str(ag["n_sobrevivem_so_observado"]),
+        "PROV_PCT_NUCLEO": f"{ag['pct_sobrevivem']:.0f}",
+        "PROV_PCT_ESPACO_INF": f"{100 - 100 * esp['n_observado'] / max(esp['n_todos'], 1):.1f}",
+        "PROV_EVID_OURO": str(ev["ouro_mediana"]),
+        "PROV_EVID_INF": str(ev["inferidos_mediana"]),
+    }
+    for tok, val in subs.items():
+        html = html.replace(tok, _virgula(val))
+    return html
+
+
 def inject_all(html, root=ROOT):
     """Aplica todos os injetores na ordem certa.
     Idempotente: chamadas múltiplas dão o mesmo resultado."""
     html = inject_hypergraph_numbers(html, root)
     html = inject_author_network_numbers(html, root)
+    html = inject_provenance_numbers(html, root)
     html = inject_brazil_numbers(html, root)
     html = inject_brokerage_numbers(html, root)
     html = inject_solidity_numbers(html, root)
