@@ -37,7 +37,7 @@ sementes:** tirar 20% das 60 sementes (×5, proxy de rede) mantém **Q ∈ [0,50
 
 | # | Heurística | O que sugere | Como é construída | Onde a leitura ingênua falha | Tratamento |
 |---|---|---|---|---|---|
-| **H1** | Rótulo de eixo | "a obra pertence a 1 dos 3 eixos" | vocabulário sobre título+tópicos, **sem abstract** numa fração relevante; faltando, o eixo é herdado da **vizinhança** de cocitação | rótulo derivado da vizinhança torna a afirmação trans-eixo **parcialmente circular** | marcar nós **inferidos**; reportar *observado × inferido* |
+| **H1** | Rótulo de eixo | "a obra pertence a 1 dos 3 eixos" | vocabulário sobre título+tópicos, **sem abstract** numa fração relevante; faltando, o eixo é herdado da **vizinhança** de cocitação | rótulo derivado da vizinhança torna a afirmação trans-eixo **parcialmente circular** | **MEDIDO** (H1 ✓): proveniência separada (`axis_obs`/`axis_all`/`axis_src`); inferidor validado (**acurácia 0,887**); réplica só-observados; ressalva no ponto da afirmação (§18b) |
 | **H2** | Ponte trans-eixo | "a obra articula tradições" | hiperaresta que toca ≥2 eixos; hoje com **peso uniforme** | herda a circularidade de H1; uma ponte que toca 2 eixos conta igual a uma que toca 8 | ponderar **1/(s−1)**; reportar % dependente de inferido |
 | **H3** | Brokerage / HO-BC (autores) | "humanos que atravessam silos" | mesmos rótulos de H1 sobre o grafo de coautoria | mesma dependência de H1 | idem H1 |
 | **H4** | Solidez tripla | "a ponte é real" | nulo casado em **eixo+grau** (H4 ✓) + FDR; *holdout* temporal; faixa semântica | resta: a faixa semântica é **auto-referente** (percentis da própria amostra) | grau **casado** no nulo (feito); falta faixa vs **população de referência** |
@@ -65,11 +65,55 @@ sementes:** tirar 20% das 60 sementes (×5, proxy de rede) mantém **Q ∈ [0,50
   **higiene de integridade** (8 obras-fantasma 404 + 2 agregados de periódico removidos; **reverificada ao
   vivo** — 451 IDs de nó resolvem no OpenAlex, 0 mortos, jun/2026); **Q reconfirmado na rede limpa**
   (Q ≈ 0,51, z ≈ 50, bootstrap 0,51 ± 0,02); **sensibilidade às sementes** (drop-20% das 60 ×5):
-  **Q ∈ [0,50, 0,52]**, média 0,51 — robusta (proxy de rede).
+  **Q ∈ [0,50, 0,52]**, média 0,51 — robusta (proxy de rede); **H1 medido e divulgado no ponto da
+  afirmação** (§4 desta nota; tokens `PROV_*` no §18b do relatório).
 - **Pendente (backlog de rigor):** faixa semântica vs **população de referência** (resto do H4);
-  *disclosure* dos inferidos **no ponto da afirmação** no relatório (observado × inferido por afirmação).
+  vocabulário validado para a codificação por função (§5); §10·6 sobre o corpus re-semeado.
   *(Reforço opcional: re-snowball completo com 80% das sementes — a sensibilidade acima é proxy de rede.)*
 
 > Em uma frase: **o achado dos silos é forte e robusto; as afirmações sobre *pontes*
 > (quem conecta os silos) são as que mais dependem de rótulos inferidos — leia-as como
 > limite inferior, não como medida final.**
+
+## 4. Quanto custa a inferência de eixo (H1, medido)
+
+Duas verificações reprodutíveis, ambas versionadas:
+
+**`src/infer_validation.py`** → `data/infer_validation.json`. Aplica ao conjunto de rótulo
+conhecido (133 nós: 64 sementes + 69 vocabulário) a MESMA regra que resolve os sem-eixo —
+eixo dominante da vizinhança de cocitação. **Acurácia global 0,887**; por eixo: política
+industrial 0,979 · regulação 0,947 · cibernética 0,854 · **complexidade 0,143 (n=7)**. O 4º
+eixo é praticamente invisível à inferência — qualquer afirmação de ponte que o envolva é a
+mais frágil do conjunto. *Controle:* os nós de fato inferidos têm evidência mediana 28
+vizinhos rotulados contra 25 do conjunto-ouro, isto é, **não** são mais pobres — logo a
+acurácia não é um teto otimista por escassez.
+
+**`src/observed_only_check.py`** → `data/observed_only_check.json`. Roda a camada estrutural
+das pontes duas vezes sobre as mesmas hiperarestas, trocando só o mapa de eixos. No espaço
+elegível **sem o teto** de `max_candidatos` (com o teto, a comparação mediria o truncamento:
+Jaccard 0,203 contra 0,378): 143.740 tríades com inferência contra **54.372** só-observado —
+**62,2% do espaço depende de rótulo inferido**. Dos **84** alvos de agenda publicados, 69%
+têm ao menos um membro inferido e **33 (39,3%) sobrevivem** sem inferência alguma: é o
+**núcleo duro** da agenda, e é por ele que se deve começar a ler.
+
+## 5. Codificação por função do MSV — exploratório, com veredito negativo parcial
+
+`src/vsm_coding.py` → `data/vsm_coding.json`. Classifica o corpus pelas cinco funções do
+Modelo de Sistema Viável (proxy **léxico** sobre título+resumo, multirrótulo). Não usa o
+rótulo de eixo, portanto **não herda o H1**.
+
+Sobre 159 obras com resumo (54 não acionam função alguma): S5 política 42,1% · S2 coordenação
+27,0% · S3 controle 21,4% · S1 operações 18,9% · S4 inteligência 5,7%.
+
+**O teste de sensibilidade derruba parte do achado.** Removido o termo mais frequente de cada
+função, a ordenação **muda**: S2 e S3 trocam de posição e S1 desaba de 30 para 7 (o termo
+`implement` sozinho o sustentava). Sobrevivem aos dois cortes apenas as pontas: **S5 sempre
+em primeiro e S4 sempre em último** (9 → 5), com listas de vocabulário de tamanho comparável
+(14–17 termos), o que afasta artefato de lista.
+
+**Leitura honesta:** sustenta-se que a literatura é rica em *propósito* e pobre em
+*antecipação* (S4). **Não** se sustenta a leitura de que a coordenação (S2) esteja
+desassistida — com vocabulário adequado ela aparece em 27% das obras. O meio da distribuição
+não é separável com este instrumento. Enquanto não houver vocabulário validado externamente e
+conferência manual de amostra, **isto não entra no relatório como achado** — fica como
+derivado exploratório.

@@ -1,0 +1,75 @@
+{
+ "_doc": "codificação do corpus pelas cinco funções do Modelo de Sistema Viável. Proxy LÉXICO sobre título+resumo, multirrótulo. NÃO usa o rótulo de eixo, logo não herda a circularidade do H1.",
+ "_limite": "não distingue obra que TRATA da função daquela que a MENCIONA; vocabulário do projeto, sem validação externa; ver teste de sensibilidade.",
+ "n_obras_com_resumo": 159,
+ "n_sem_nenhuma_funcao": 54,
+ "n_multirrotulo": 55,
+ "contagem": {
+  "S1 · operações": 30,
+  "S2 · coordenação": 43,
+  "S3 · controle": 34,
+  "S4 · inteligência": 9,
+  "S5 · política/identidade": 67
+ },
+ "percentual": {
+  "S1 · operações": 18.9,
+  "S2 · coordenação": 27.0,
+  "S3 · controle": 21.4,
+  "S4 · inteligência": 5.7,
+  "S5 · política/identidade": 42.1
+ },
+ "ordem": [
+  "S5 · política/identidade",
+  "S2 · coordenação",
+  "S3 · controle",
+  "S1 · operações",
+  "S4 · inteligência"
+ ],
+ "termo_dominante_por_funcao": {
+  "S1 · operações": {
+   "termo": "implement",
+   "n": 24
+  },
+  "S2 · coordenação": {
+   "termo": "articula",
+   "n": 29
+  },
+  "S3 · controle": {
+   "termo": "performance",
+   "n": 13
+  },
+  "S4 · inteligência": {
+   "termo": "emerging",
+   "n": 4
+  },
+  "S5 · política/identidade": {
+   "termo": "strateg",
+   "n": 33
+  }
+ },
+ "sensibilidade_sem_termo_dominante": {
+  "_doc": "derruba o termo mais frequente de cada função e recompõe a ordenação",
+  "termos_removidos": [
+   "articula",
+   "emerging",
+   "implement",
+   "performance",
+   "strateg"
+  ],
+  "contagem": {
+   "S1 · operações": 7,
+   "S2 · coordenação": 16,
+   "S3 · controle": 25,
+   "S4 · inteligência": 5,
+   "S5 · política/identidade": 46
+  },
+  "ordem": [
+   "S5 · política/identidade",
+   "S3 · controle",
+   "S2 · coordenação",
+   "S1 · operações",
+   "S4 · inteligência"
+  ],
+  "ordem_preservada": false
+ }
+}
