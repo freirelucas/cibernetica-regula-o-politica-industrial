@@ -4,7 +4,7 @@
   "A5032192522": {
    "display_name": "Jan vom Brocke",
    "cross_axis_score": 0.9464,
-   "h_index": 0,
+   "h_index": 65,
    "n_new_works_found": 0,
    "n_in_corpus_overlap": 50,
    "new_works": [],
@@ -830,7 +830,7 @@
   "A5111505527": {
    "display_name": "Domenico Mario Nuti",
    "cross_axis_score": 0.8869,
-   "h_index": 0,
+   "h_index": 17,
    "n_new_works_found": 0,
    "n_in_corpus_overlap": 50,
    "new_works": [],
@@ -3420,10 +3420,422 @@
     }
    ]
   },
+  "A5110834966": {
+   "display_name": "Michael A. Hitt",
+   "cross_axis_score": 0.6309,
+   "h_index": 0,
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 50,
+   "new_works": [],
+   "in_corpus": [
+    {
+     "oa_id": "W2141226948",
+     "title": "Managing Firm Resources in Dynamic Environments to Create Value: Looking Inside the Black Box",
+     "year": 2007,
+     "cited_by": 3477,
+     "doi": "https://doi.org/10.5465/amr.2007.23466005",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2000910214",
+     "title": "INTERNATIONAL EXPANSION BY NEW VENTURE FIRMS: INTERNATIONAL DIVERSITY, MODE OF MARKET ENTRY, TECHNOLOGICAL LEARNING, AND PERFORMANCE.",
+     "year": 2000,
+     "cited_by": 2747,
+     "doi": "https://doi.org/10.2307/1556420",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1995434879",
+     "title": "INTERNATIONAL DIVERSIFICATION: EFFECTS ON INNOVATION AND FIRM PERFORMANCE IN PRODUCT-DIVERSIFIED FIRMS.",
+     "year": 1997,
+     "cited_by": 2734,
+     "doi": "https://doi.org/10.2307/256948",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2120260080",
+     "title": "DIRECT AND MODERATING EFFECTS OF HUMAN CAPITAL ON STRATEGY AND PERFORMANCE IN PROFESSIONAL SERVICE FIRMS: A RESOURCE-BASED PERSPECTIVE.",
+     "year": 2001,
+     "cited_by": 2190,
+     "doi": "https://doi.org/10.2307/3069334",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1989976993",
+     "title": "A Model of Strategic Entrepreneurship: The Construct and its Dimensions",
+     "year": 2003,
+     "cited_by": 1837,
+     "doi": "https://doi.org/10.1016/s0149-2063(03)00086-2",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2042463003",
+     "title": "Resource Orchestration to Create Competitive Advantage",
+     "year": 2010,
+     "cited_by": 1789,
+     "doi": "https://doi.org/10.1177/0149206310385695",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2130601722",
+     "title": "The Development of Organizational Social Capital: Attributes of Family Firms*",
+     "year": 2007,
+     "cited_by": 1751,
+     "doi": "https://doi.org/10.1111/j.1467-6486.2007.00665.x",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2098446799",
+     "title": "Strategic entrepreneurship: entrepreneurial strategies for wealth creation",
+     "year": 2001,
+     "cited_by": 1569,
+     "doi": "https://doi.org/10.1002/smj.196",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2045150322",
+     "title": "PARTNER SELECTION IN EMERGING AND DEVELOPED MARKET CONTEXTS: RESOURCE-BASED AND ORGANIZATIONAL LEARNING PERSPECTIVES.",
+     "year": 2000,
+     "cited_by": 1357,
+     "doi": "https://doi.org/10.2307/1556404",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2107881457",
+     "title": "Alliance Management as a Source of Competitive Advantage",
+     "year": 2002,
+     "cited_by": 1356,
+     "doi": "https://doi.org/10.1177/014920630202800308",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1999551228",
+     "title": "Theory and research in strategic management: Swings of a pendulum",
+     "year": 1999,
+     "cited_by": 1289,
+     "doi": "https://doi.org/10.1177/014920639902500307",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2109749706",
+     "title": "Corporate Political Strategy Formulation: A Model of Approach, Participation, and Strategy Decisions",
+     "year": 1999,
+     "cited_by": 1253,
+     "doi": "https://doi.org/10.5465/amr.1999.2553256",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1574562613",
+     "title": "Strategic Management Competitiveness & Globalization",
+     "year": 2017,
+     "cited_by": 1156,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2066729912",
+     "title": "Navigating in the new competitive landscape: Building strategic flexibility and competitive advantage in the 21st century",
+     "year": 1998,
+     "cited_by": 1131,
+     "doi": "https://doi.org/10.5465/ame.1998.1333922",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2048385611",
+     "title": "Building Theoretical and Empirical Bridges Across Levels: Multilevel Research in Management",
+     "year": 2007,
+     "cited_by": 1120,
+     "doi": "https://doi.org/10.5465/amj.2007.28166219",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2010842384",
+     "title": "The new competitive landscape",
+     "year": 1995,
+     "cited_by": 1115,
+     "doi": "https://doi.org/10.1002/smj.4250160915",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2055189494",
+     "title": "THE MARKET FOR CORPORATE CONTROL AND FIRM INNOVATION.",
+     "year": 1996,
+     "cited_by": 1070,
+     "doi": "https://doi.org/10.2307/256993",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2096613055",
+     "title": "Strategic decision models: Integrating different perspectives",
+     "year": 1991,
+     "cited_by": 1053,
+     "doi": "https://doi.org/10.1002/smj.4250120502",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2064396124",
+     "title": "A Causal Model of Linkages Among Environmental Dimensions, Macro Organizational Characteristics, and Performance",
+     "year": 1988,
+     "cited_by": 1043,
+     "doi": "https://doi.org/10.5465/256460",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4251472089",
+     "title": "A CAUSAL MODEL OF LINKAGES AMONG ENVIRONMENTAL DIMENSIONS, MACRO ORGANIZATIONAL CHARACTERISTICS, AND PERFORMANCE.",
+     "year": 1988,
+     "cited_by": 999,
+     "doi": "https://doi.org/10.2307/256460",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2053898698",
+     "title": "CONFLICTING VOICES: THE EFFECTS OF INSTITUTIONAL OWNERSHIP HETEROGENEITY AND INTERNAL GOVERNANCE ON CORPORATE INNOVATION STRATEGIES.",
+     "year": 2002,
+     "cited_by": 922,
+     "doi": "https://doi.org/10.2307/3069305",
+     "axes_hit": [
+      "Reg"
+     ]
+    },
+    {
+     "oa_id": "W3124829139",
+     "title": "Complementary technologies, knowledge relatedness, and invention outcomes in high technology mergers and acquisitions",
+     "year": 2009,
+     "cited_by": 803,
+     "doi": "https://doi.org/10.1002/smj.829",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2170492480",
+     "title": "Integrating entrepreneurship and strategic management actions to create firm wealth",
+     "year": 2001,
+     "cited_by": 787,
+     "doi": "https://doi.org/10.5465/ame.2001.4251393",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2036470724",
+     "title": "Theoretical foundations of cross-border mergers and acquisitions: A review of current research and recommendations for the future",
+     "year": 2004,
+     "cited_by": 760,
+     "doi": "https://doi.org/10.1016/j.intman.2004.05.005",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1980091374",
+     "title": "The Importance of Resources in the Internationalization of Professional Service Firms: The Good, the Bad, and The Ugly",
+     "year": 2006,
+     "cited_by": 748,
+     "doi": "https://doi.org/10.5465/amj.2006.23478217",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2066268398",
+     "title": "Resource complementarity in business combinations: Extending the logic to organizational alliances",
+     "year": 2001,
+     "cited_by": 729,
+     "doi": "https://doi.org/10.1177/014920630102700605",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2087092179",
+     "title": "Strategic Entrepreneurship: Creating a New Mindset",
+     "year": 2002,
+     "cited_by": 728,
+     "doi": "",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2124791327",
+     "title": "Achieving and maintaining strategic competitiveness in the 21<sup>st</sup> century: The role of strategic leadership",
+     "year": 1999,
+     "cited_by": 713,
+     "doi": "https://doi.org/10.5465/ame.1999.1567311",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4235776857",
+     "title": "Corporate Political Strategy Formulation: A Model of Approach, Participation, and Strategy Decisions",
+     "year": 1999,
+     "cited_by": 672,
+     "doi": "https://doi.org/10.2307/259357",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2147281917",
+     "title": "The Institutional Effects on Strategic Alliance Partner Selection in Transition Economies: China vs. Russia",
+     "year": 2004,
+     "cited_by": 646,
+     "doi": "https://doi.org/10.1287/orsc.1030.0045",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2141896290",
+     "title": "International Diversification: Antecedents, Outcomes, and Moderators",
+     "year": 2006,
+     "cited_by": 644,
+     "doi": "https://doi.org/10.1177/0149206306293575",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1977617746",
+     "title": "Dynamic Core Competences through Meta-Learning and Strategic Context",
+     "year": 1996,
+     "cited_by": 643,
+     "doi": "https://doi.org/10.1177/014920639602200402",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2135183477",
+     "title": "EFFECTS OF ACQUISITIONS ON R&amp;D INPUTS AND OUTPUTS.",
+     "year": 1991,
+     "cited_by": 626,
+     "doi": "https://doi.org/10.2307/256412",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1974924514",
+     "title": "Construct validity of an objective (entropy) categorical measure of diversification strategy",
+     "year": 1993,
+     "cited_by": 588,
+     "doi": "https://doi.org/10.1002/smj.4250140305",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1996724804",
+     "title": "Antecedents and Performance Outcomes of Diversification: A Review and Critique of Theoretical Perspectives",
+     "year": 1990,
+     "cited_by": 583,
+     "doi": "https://doi.org/10.1177/014920639001600210",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2131218931",
+     "title": "Industry Effects and Strategic Management Research",
+     "year": 1990,
+     "cited_by": 583,
+     "doi": "https://doi.org/10.1177/014920639001600102",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W3123649880",
+     "title": "Why Can’t a Family Business Be More Like a Nonfamily Business?",
+     "year": 2011,
+     "cited_by": 580,
+     "doi": "https://doi.org/10.1177/0894486511421665",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2017897800",
+     "title": "Board of director involvement in restructuring: The effects of board versus managerial controls and characteristics",
+     "year": 1993,
+     "cited_by": 554,
+     "doi": "https://doi.org/10.1002/smj.4250140905",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2085933455",
+     "title": "Strategic Entrepreneurship: Creating Value for Individuals, Organizations, and Society",
+     "year": 2011,
+     "cited_by": 546,
+     "doi": "https://doi.org/10.5465/amp.25.2.57",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2033756586",
+     "title": "Corporate distinctive competence, strategy, industry and performance",
+     "year": 1985,
+     "cited_by": 544,
+     "doi": "https://doi.org/10.1002/smj.4250060307",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2166311523",
+     "title": "Strategic control systems and relative r&amp;d investment in large multiproduct firms",
+     "year": 1988,
+     "cited_by": 540,
+     "doi": "https://doi.org/10.1002/smj.4250090607",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2206344299",
+     "title": "Resource based theory in operations management research",
+     "year": 2015,
+     "cited_by": 532,
+     "doi": "https://doi.org/10.1016/j.jom.2015.11.002",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2067675606",
+     "title": "Cooperative Versus Competitive Structures in Related and Unrelated Diversified Firms",
+     "year": 1992,
+     "cited_by": 529,
+     "doi": "https://doi.org/10.1287/orsc.3.4.501",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2144868012",
+     "title": "Synergies and Post-Acquisition Performance: Differences versus Similarities in Resource Allocations",
+     "year": 1991,
+     "cited_by": 523,
+     "doi": "https://doi.org/10.1177/014920639101700111",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W4206222289",
+     "title": "1 The Fundamental Agency Problem and Its Mitigation",
+     "year": 2007,
+     "cited_by": 517,
+     "doi": "https://doi.org/10.5465/078559806",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2136302687",
+     "title": "The Interrelationships Among Informal Institutions, Formal Institutions, and Inward Foreign Direct Investment",
+     "year": 2011,
+     "cited_by": 513,
+     "doi": "https://doi.org/10.1177/0149206310393503",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W37038585",
+     "title": "MERGERS AND ACQUISITIONS AND MANAGERIAL COMMITMENT TO INNOVATION IN M-FORM FIRMS",
+     "year": 1990,
+     "cited_by": 510,
+     "doi": "https://doi.org/10.7759/cureus.35954",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1975095643",
+     "title": "THE INFLUENCE OF ACTIVISM BY INSTITUTIONAL INVESTORS ON R&amp;D.",
+     "year": 2001,
+     "cited_by": 507,
+     "doi": "https://doi.org/10.2307/3069342",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W1848214773",
+     "title": "1 The Fundamental Agency Problem and Its Mitigation",
+     "year": 2007,
+     "cited_by": 484,
+     "doi": "https://doi.org/10.1080/078559806",
+     "axes_hit": []
+    },
+    {
+     "oa_id": "W2107362225",
+     "title": "Institutional Polycentrism, Entrepreneurs' Social Networks, and New Venture Growth",
+     "year": 2012,
+     "cited_by": 477,
+     "doi": "https://doi.org/10.5465/amj.2010.0095",
+     "axes_hit": []
+    }
+   ]
+  },
   "A5042463542": {
    "display_name": "Johan Schot",
    "cross_axis_score": 0.6309,
-   "h_index": 0,
+   "h_index": 48,
    "n_new_works_found": 0,
    "n_in_corpus_overlap": 50,
    "new_works": [],
@@ -4258,7 +4670,7 @@
   "A5109805031": {
    "display_name": "Fred M. Taylor",
    "cross_axis_score": 0.6309,
-   "h_index": 0,
+   "h_index": 8,
    "n_new_works_found": 0,
    "n_in_corpus_overlap": 45,
    "new_works": [],
@@ -4632,7 +5044,7 @@
   "A5077721284": {
    "display_name": "Stacey Frederick",
    "cross_axis_score": 0.6309,
-   "h_index": 0,
+   "h_index": 12,
    "n_new_works_found": 0,
    "n_in_corpus_overlap": 43,
    "new_works": [],
@@ -4985,1258 +5397,27 @@
     }
    ]
   },
-  "A5038166946": {
-   "display_name": "Andrés Rodríguez‐Pose",
+  "A5109907907": {
+   "display_name": "Simon Gächter",
    "cross_axis_score": 0.6309,
    "h_index": 0,
-   "n_new_works_found": 37,
-   "n_in_corpus_overlap": 13,
-   "new_works": [
-    {
-     "oa_id": "W2772436042",
-     "title": "The revenge of the places that don’t matter (and what to do about it)",
-     "year": 2017,
-     "cited_by": 2010,
-     "doi": "https://doi.org/10.1093/cjres/rsx024",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2797277926",
-     "title": "Regional inequality in Europe: evidence, theory and policy implications",
-     "year": 2018,
-     "cited_by": 891,
-     "doi": "https://doi.org/10.1093/jeg/lby021",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2130785027",
-     "title": "Local and Regional Development",
-     "year": 2006,
-     "cited_by": 618,
-     "doi": "https://doi.org/10.4324/9780203003060",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2972149063",
-     "title": "The geography of EU discontent",
-     "year": 2019,
-     "cited_by": 594,
-     "doi": "https://doi.org/10.1080/00343404.2019.1654603",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2031302545",
-     "title": "Firm collaboration and modes of innovation in Norway",
-     "year": 2012,
-     "cited_by": 455,
-     "doi": "https://doi.org/10.1016/j.respol.2012.05.009",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2046292872",
-     "title": "What Kind of Local and Regional Development and for Whom?",
-     "year": 2007,
-     "cited_by": 424,
-     "doi": "https://doi.org/10.1080/00343400701543355",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2108351141",
-     "title": "From R&amp;D to Innovation and Economic Growth in the EU",
-     "year": 2004,
-     "cited_by": 410,
-     "doi": "https://doi.org/10.1111/j.1468-2257.2004.00256.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2071162216",
-     "title": "Quality of Government and the Returns of Investment: Examining the Impact of Cohesion Expenditure in European Regions",
-     "year": 2015,
-     "cited_by": 390,
-     "doi": "https://doi.org/10.1080/00343404.2015.1007933",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3170985760",
-     "title": "Critical Commentary: Cities in a post-COVID world",
-     "year": 2021,
-     "cited_by": 375,
-     "doi": "https://doi.org/10.1177/00420980211018072",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2142051621",
-     "title": "The Global Trend towards Devolution and its Implications",
-     "year": 2003,
-     "cited_by": 347,
-     "doi": "https://doi.org/10.1068/c0235",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2134616068",
-     "title": "Is fiscal decentralization harmful for economic growth? Evidence from the OECD countries",
-     "year": 2010,
-     "cited_by": 320,
-     "doi": "https://doi.org/10.1093/jeg/lbq025",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4307237613",
-     "title": "Local and Regional Development",
-     "year": 2016,
-     "cited_by": 280,
-     "doi": "https://doi.org/10.4324/9781315767673",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1984786231",
-     "title": "Innovation Prone and Innovation Averse Societies: Economic Performance in Europe",
-     "year": 1999,
-     "cited_by": 264,
-     "doi": "https://doi.org/10.1111/0017-4815.00105",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2131707073",
-     "title": "Do inventors talk to strangers? On proximity and collaborative knowledge creation",
-     "year": 2015,
-     "cited_by": 261,
-     "doi": "https://doi.org/10.1016/j.respol.2015.07.003",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2947346607",
-     "title": "Housing, urban growth and inequalities: The limits to deregulation and upzoning in reducing economic and spatial inequality",
-     "year": 2019,
-     "cited_by": 236,
-     "doi": "https://doi.org/10.1177/0042098019859458",
-     "axes_hit": [
-      "Reg"
-     ]
-    },
-    {
-     "oa_id": "W2001528454",
-     "title": "When Local Interaction Does Not Suffice: Sources of Firm Innovation in Urban Norway",
-     "year": 2011,
-     "cited_by": 228,
-     "doi": "https://doi.org/10.1068/a43516",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3123282002",
-     "title": "Does Institutional Quality Matter for Trade? Institutional Conditions in a Sectoral Trade Framework",
-     "year": 2017,
-     "cited_by": 220,
-     "doi": "https://doi.org/10.1016/j.worlddev.2017.10.010",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2078241121",
-     "title": "The Rise of the “City-region” Concept and its Development Policy Implications",
-     "year": 2008,
-     "cited_by": 218,
-     "doi": "https://doi.org/10.1080/09654310802315567",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1971353563",
-     "title": "Innovating in the Periphery: Firms, Values and Innovation in Southwest Norway",
-     "year": 2011,
-     "cited_by": 209,
-     "doi": "https://doi.org/10.1080/09654313.2011.548467",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2944846545",
-     "title": "Institutional change and the development of lagging regions in Europe",
-     "year": 2019,
-     "cited_by": 208,
-     "doi": "https://doi.org/10.1080/00343404.2019.1608356",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2140920204",
-     "title": "Fiscal Decentralization and Economic Growth in Central and Eastern Europe",
-     "year": 2009,
-     "cited_by": 199,
-     "doi": "https://doi.org/10.1111/j.1468-2257.2009.00488.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2072594872",
-     "title": "On the ‘economic dividend’ of devolution",
-     "year": 2005,
-     "cited_by": 198,
-     "doi": "https://doi.org/10.1080/00343400500128390",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1548911838",
-     "title": "Family Types and the Persistence of Regional Disparities in Europe",
-     "year": 2008,
-     "cited_by": 190,
-     "doi": "https://doi.org/10.1111/j.1944-8287.2008.01002.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2090317620",
-     "title": "Is There a Global Link between Regional Disparities and Devolution?",
-     "year": 2004,
-     "cited_by": 188,
-     "doi": "https://doi.org/10.1068/a362",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2135645992",
-     "title": "The territorial dynamics of innovation in China and India",
-     "year": 2012,
-     "cited_by": 182,
-     "doi": "https://doi.org/10.1093/jeg/lbs020",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2286814080",
-     "title": "The crisis and regional employment in Europe: what role for sheltered economies?",
-     "year": 2016,
-     "cited_by": 181,
-     "doi": "https://doi.org/10.1093/cjres/rsv032",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2144040329",
-     "title": "Mountains in a flat world: why proximity still matters for the location of economic activity",
-     "year": 2008,
-     "cited_by": 180,
-     "doi": "https://doi.org/10.1093/cjres/rsn011",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3013027299",
-     "title": "Institutions and the fortunes of territories",
-     "year": 2020,
-     "cited_by": 179,
-     "doi": "https://doi.org/10.1111/rsp3.12277",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2005141920",
-     "title": "Human geography and the institutions that underlie economic growth",
-     "year": 2010,
-     "cited_by": 173,
-     "doi": "https://doi.org/10.1177/0309132510372005",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4388793619",
-     "title": "The green transition and its potential territorial discontents",
-     "year": 2023,
-     "cited_by": 171,
-     "doi": "https://doi.org/10.1093/cjres/rsad039",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1967076530",
-     "title": "Education, migration, and job satisfaction: the regional returns of human capital in the EU",
-     "year": 2005,
-     "cited_by": 164,
-     "doi": "https://doi.org/10.1093/jeg/lbh067",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1983059603",
-     "title": "Addressing poverty and inequality in the rural economy from a global perspective",
-     "year": 2015,
-     "cited_by": 163,
-     "doi": "https://doi.org/10.1016/j.apgeog.2015.02.005",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2760197712",
-     "title": "Big or Small Cities? On city size and economic growth",
-     "year": 2017,
-     "cited_by": 159,
-     "doi": "https://doi.org/10.1111/grow.12232",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W134169302",
-     "title": "Innovation and Regional Growth in the European Union",
-     "year": 2011,
-     "cited_by": 150,
-     "doi": "https://doi.org/10.1007/978-3-642-17761-3",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2114324846",
-     "title": "DO LOCAL AMENITIES AFFECT THE APPEAL OF REGIONS IN EUROPE FOR MIGRANTS?*",
-     "year": 2012,
-     "cited_by": 150,
-     "doi": "https://doi.org/10.1111/j.1467-9787.2012.00779.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4366085173",
-     "title": "Left-behind versus unequal places: interpersonal inequality, economic decline and the rise of populism in the USA and Europe",
-     "year": 2023,
-     "cited_by": 150,
-     "doi": "https://doi.org/10.1093/jeg/lbad005",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2093424292",
-     "title": "From Identity to the Economy: Analysing the Evolution of the Decentralisation Discourse",
-     "year": 2008,
-     "cited_by": 149,
-     "doi": "https://doi.org/10.1068/cav2",
-     "axes_hit": []
-    }
-   ],
-   "in_corpus": [
-    {
-     "oa_id": "W2108547887",
-     "title": "THE CASE FOR REGIONAL DEVELOPMENT INTERVENTION: PLACE‐BASED VERSUS PLACE‐NEUTRAL APPROACHES*",
-     "year": 2012,
-     "cited_by": 1497,
-     "doi": "https://doi.org/10.1111/j.1467-9787.2011.00756.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2113596540",
-     "title": "Do Institutions Matter for Regional Development?",
-     "year": 2013,
-     "cited_by": 1143,
-     "doi": "https://doi.org/10.1080/00343404.2012.748978",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2085236276",
-     "title": "Research and Development, Spillovers, Innovation Systems, and the Genesis of Regional Growth in Europe",
-     "year": 2008,
-     "cited_by": 778,
-     "doi": "https://doi.org/10.1080/00343400701654186",
-     "axes_hit": [
-      "PolInd"
-     ]
-    },
-    {
-     "oa_id": "W2163178310",
-     "title": "Between Development and Social Policies: The Impact of European Structural Funds in Objective 1 Regions",
-     "year": 2004,
-     "cited_by": 567,
-     "doi": "https://doi.org/10.1080/00343400310001632226",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1966814007",
-     "title": "Quality of government and innovative performance in the regions of Europe",
-     "year": 2014,
-     "cited_by": 434,
-     "doi": "https://doi.org/10.1093/jeg/lbu023",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1976021723",
-     "title": "The territorial dynamics of innovation: a Europe United States comparative analysis",
-     "year": 2007,
-     "cited_by": 376,
-     "doi": "https://doi.org/10.1093/jeg/lbm030",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2165032659",
-     "title": "Cohesion Policy in the European Union: Growth, Geography, Institutions",
-     "year": 2011,
-     "cited_by": 311,
-     "doi": "https://doi.org/10.1111/j.1468-5965.2010.02161.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2203059644",
-     "title": "GOVERNMENT QUALITY AND THE ECONOMIC RETURNS OF TRANSPORT INFRASTRUCTURE INVESTMENT IN EUROPEAN REGIONS",
-     "year": 2016,
-     "cited_by": 301,
-     "doi": "https://doi.org/10.1111/jors.12264",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3175588714",
-     "title": "The drivers of SME innovation in the regions of the EU",
-     "year": 2021,
-     "cited_by": 294,
-     "doi": "https://doi.org/10.1016/j.respol.2021.104316",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2045668739",
-     "title": "Better Rules or Stronger Communities? On the Social Foundations of Institutional Change and Its Economic Effects",
-     "year": 2006,
-     "cited_by": 292,
-     "doi": "https://doi.org/10.1111/j.1944-8287.2006.tb00286.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4285390006",
-     "title": "The Regional Development Trap in Europe",
-     "year": 2022,
-     "cited_by": 210,
-     "doi": "https://doi.org/10.1080/00130095.2022.2080655",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2340208761",
-     "title": "Shifting horizons in local and regional development",
-     "year": 2016,
-     "cited_by": 189,
-     "doi": "https://doi.org/10.1080/00343404.2016.1158802",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2113415693",
-     "title": "Growth, Integration, and Regional Disparities in the European Union",
-     "year": 2005,
-     "cited_by": 187,
-     "doi": "https://doi.org/10.1068/a37348",
-     "axes_hit": []
-    }
-   ]
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 0,
+   "new_works": [],
+   "in_corpus": []
   },
-  "A5110834966": {
-   "display_name": "Michael A. Hitt",
+  "A5091500375": {
+   "display_name": "Seyedali Mirjalili",
    "cross_axis_score": 0.6309,
    "h_index": 0,
-   "n_new_works_found": 35,
-   "n_in_corpus_overlap": 15,
-   "new_works": [
-    {
-     "oa_id": "W2042463003",
-     "title": "Resource Orchestration to Create Competitive Advantage",
-     "year": 2010,
-     "cited_by": 1789,
-     "doi": "https://doi.org/10.1177/0149206310385695",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2130601722",
-     "title": "The Development of Organizational Social Capital: Attributes of Family Firms*",
-     "year": 2007,
-     "cited_by": 1751,
-     "doi": "https://doi.org/10.1111/j.1467-6486.2007.00665.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2045150322",
-     "title": "PARTNER SELECTION IN EMERGING AND DEVELOPED MARKET CONTEXTS: RESOURCE-BASED AND ORGANIZATIONAL LEARNING PERSPECTIVES.",
-     "year": 2000,
-     "cited_by": 1357,
-     "doi": "https://doi.org/10.2307/1556404",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2107881457",
-     "title": "Alliance Management as a Source of Competitive Advantage",
-     "year": 2002,
-     "cited_by": 1356,
-     "doi": "https://doi.org/10.1177/014920630202800308",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2109749706",
-     "title": "Corporate Political Strategy Formulation: A Model of Approach, Participation, and Strategy Decisions",
-     "year": 1999,
-     "cited_by": 1253,
-     "doi": "https://doi.org/10.5465/amr.1999.2553256",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1574562613",
-     "title": "Strategic Management Competitiveness & Globalization",
-     "year": 2017,
-     "cited_by": 1156,
-     "doi": "",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2066729912",
-     "title": "Navigating in the new competitive landscape: Building strategic flexibility and competitive advantage in the 21st century",
-     "year": 1998,
-     "cited_by": 1131,
-     "doi": "https://doi.org/10.5465/ame.1998.1333922",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2048385611",
-     "title": "Building Theoretical and Empirical Bridges Across Levels: Multilevel Research in Management",
-     "year": 2007,
-     "cited_by": 1120,
-     "doi": "https://doi.org/10.5465/amj.2007.28166219",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2055189494",
-     "title": "THE MARKET FOR CORPORATE CONTROL AND FIRM INNOVATION.",
-     "year": 1996,
-     "cited_by": 1070,
-     "doi": "https://doi.org/10.2307/256993",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2096613055",
-     "title": "Strategic decision models: Integrating different perspectives",
-     "year": 1991,
-     "cited_by": 1053,
-     "doi": "https://doi.org/10.1002/smj.4250120502",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2064396124",
-     "title": "A Causal Model of Linkages Among Environmental Dimensions, Macro Organizational Characteristics, and Performance",
-     "year": 1988,
-     "cited_by": 1043,
-     "doi": "https://doi.org/10.5465/256460",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3124829139",
-     "title": "Complementary technologies, knowledge relatedness, and invention outcomes in high technology mergers and acquisitions",
-     "year": 2009,
-     "cited_by": 803,
-     "doi": "https://doi.org/10.1002/smj.829",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2170492480",
-     "title": "Integrating entrepreneurship and strategic management actions to create firm wealth",
-     "year": 2001,
-     "cited_by": 787,
-     "doi": "https://doi.org/10.5465/ame.2001.4251393",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1980091374",
-     "title": "The Importance of Resources in the Internationalization of Professional Service Firms: The Good, the Bad, and The Ugly",
-     "year": 2006,
-     "cited_by": 748,
-     "doi": "https://doi.org/10.5465/amj.2006.23478217",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2066268398",
-     "title": "Resource complementarity in business combinations: Extending the logic to organizational alliances",
-     "year": 2001,
-     "cited_by": 729,
-     "doi": "https://doi.org/10.1177/014920630102700605",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2087092179",
-     "title": "Strategic Entrepreneurship: Creating a New Mindset",
-     "year": 2002,
-     "cited_by": 728,
-     "doi": "",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2124791327",
-     "title": "Achieving and maintaining strategic competitiveness in the 21<sup>st</sup> century: The role of strategic leadership",
-     "year": 1999,
-     "cited_by": 713,
-     "doi": "https://doi.org/10.5465/ame.1999.1567311",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4235776857",
-     "title": "Corporate Political Strategy Formulation: A Model of Approach, Participation, and Strategy Decisions",
-     "year": 1999,
-     "cited_by": 672,
-     "doi": "https://doi.org/10.2307/259357",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2147281917",
-     "title": "The Institutional Effects on Strategic Alliance Partner Selection in Transition Economies: China vs. Russia",
-     "year": 2004,
-     "cited_by": 646,
-     "doi": "https://doi.org/10.1287/orsc.1030.0045",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2141896290",
-     "title": "International Diversification: Antecedents, Outcomes, and Moderators",
-     "year": 2006,
-     "cited_by": 644,
-     "doi": "https://doi.org/10.1177/0149206306293575",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2135183477",
-     "title": "EFFECTS OF ACQUISITIONS ON R&amp;D INPUTS AND OUTPUTS.",
-     "year": 1991,
-     "cited_by": 626,
-     "doi": "https://doi.org/10.2307/256412",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1974924514",
-     "title": "Construct validity of an objective (entropy) categorical measure of diversification strategy",
-     "year": 1993,
-     "cited_by": 588,
-     "doi": "https://doi.org/10.1002/smj.4250140305",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1996724804",
-     "title": "Antecedents and Performance Outcomes of Diversification: A Review and Critique of Theoretical Perspectives",
-     "year": 1990,
-     "cited_by": 583,
-     "doi": "https://doi.org/10.1177/014920639001600210",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2131218931",
-     "title": "Industry Effects and Strategic Management Research",
-     "year": 1990,
-     "cited_by": 583,
-     "doi": "https://doi.org/10.1177/014920639001600102",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3123649880",
-     "title": "Why Can’t a Family Business Be More Like a Nonfamily Business?",
-     "year": 2011,
-     "cited_by": 580,
-     "doi": "https://doi.org/10.1177/0894486511421665",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2085933455",
-     "title": "Strategic Entrepreneurship: Creating Value for Individuals, Organizations, and Society",
-     "year": 2011,
-     "cited_by": 546,
-     "doi": "https://doi.org/10.5465/amp.25.2.57",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2033756586",
-     "title": "Corporate distinctive competence, strategy, industry and performance",
-     "year": 1985,
-     "cited_by": 544,
-     "doi": "https://doi.org/10.1002/smj.4250060307",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2166311523",
-     "title": "Strategic control systems and relative r&amp;d investment in large multiproduct firms",
-     "year": 1988,
-     "cited_by": 540,
-     "doi": "https://doi.org/10.1002/smj.4250090607",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2067675606",
-     "title": "Cooperative Versus Competitive Structures in Related and Unrelated Diversified Firms",
-     "year": 1992,
-     "cited_by": 529,
-     "doi": "https://doi.org/10.1287/orsc.3.4.501",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2144868012",
-     "title": "Synergies and Post-Acquisition Performance: Differences versus Similarities in Resource Allocations",
-     "year": 1991,
-     "cited_by": 523,
-     "doi": "https://doi.org/10.1177/014920639101700111",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4206222289",
-     "title": "1 The Fundamental Agency Problem and Its Mitigation",
-     "year": 2007,
-     "cited_by": 517,
-     "doi": "https://doi.org/10.5465/078559806",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2136302687",
-     "title": "The Interrelationships Among Informal Institutions, Formal Institutions, and Inward Foreign Direct Investment",
-     "year": 2011,
-     "cited_by": 513,
-     "doi": "https://doi.org/10.1177/0149206310393503",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W37038585",
-     "title": "MERGERS AND ACQUISITIONS AND MANAGERIAL COMMITMENT TO INNOVATION IN M-FORM FIRMS",
-     "year": 1990,
-     "cited_by": 510,
-     "doi": "https://doi.org/10.7759/cureus.35954",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1975095643",
-     "title": "THE INFLUENCE OF ACTIVISM BY INSTITUTIONAL INVESTORS ON R&amp;D.",
-     "year": 2001,
-     "cited_by": 507,
-     "doi": "https://doi.org/10.2307/3069342",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1848214773",
-     "title": "1 The Fundamental Agency Problem and Its Mitigation",
-     "year": 2007,
-     "cited_by": 484,
-     "doi": "https://doi.org/10.1080/078559806",
-     "axes_hit": []
-    }
-   ],
-   "in_corpus": [
-    {
-     "oa_id": "W2141226948",
-     "title": "Managing Firm Resources in Dynamic Environments to Create Value: Looking Inside the Black Box",
-     "year": 2007,
-     "cited_by": 3477,
-     "doi": "https://doi.org/10.5465/amr.2007.23466005",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2000910214",
-     "title": "INTERNATIONAL EXPANSION BY NEW VENTURE FIRMS: INTERNATIONAL DIVERSITY, MODE OF MARKET ENTRY, TECHNOLOGICAL LEARNING, AND PERFORMANCE.",
-     "year": 2000,
-     "cited_by": 2747,
-     "doi": "https://doi.org/10.2307/1556420",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1995434879",
-     "title": "INTERNATIONAL DIVERSIFICATION: EFFECTS ON INNOVATION AND FIRM PERFORMANCE IN PRODUCT-DIVERSIFIED FIRMS.",
-     "year": 1997,
-     "cited_by": 2734,
-     "doi": "https://doi.org/10.2307/256948",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2120260080",
-     "title": "DIRECT AND MODERATING EFFECTS OF HUMAN CAPITAL ON STRATEGY AND PERFORMANCE IN PROFESSIONAL SERVICE FIRMS: A RESOURCE-BASED PERSPECTIVE.",
-     "year": 2001,
-     "cited_by": 2190,
-     "doi": "https://doi.org/10.2307/3069334",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1989976993",
-     "title": "A Model of Strategic Entrepreneurship: The Construct and its Dimensions",
-     "year": 2003,
-     "cited_by": 1837,
-     "doi": "https://doi.org/10.1016/s0149-2063(03)00086-2",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2098446799",
-     "title": "Strategic entrepreneurship: entrepreneurial strategies for wealth creation",
-     "year": 2001,
-     "cited_by": 1569,
-     "doi": "https://doi.org/10.1002/smj.196",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1999551228",
-     "title": "Theory and research in strategic management: Swings of a pendulum",
-     "year": 1999,
-     "cited_by": 1289,
-     "doi": "https://doi.org/10.1177/014920639902500307",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2010842384",
-     "title": "The new competitive landscape",
-     "year": 1995,
-     "cited_by": 1115,
-     "doi": "https://doi.org/10.1002/smj.4250160915",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4251472089",
-     "title": "A CAUSAL MODEL OF LINKAGES AMONG ENVIRONMENTAL DIMENSIONS, MACRO ORGANIZATIONAL CHARACTERISTICS, AND PERFORMANCE.",
-     "year": 1988,
-     "cited_by": 999,
-     "doi": "https://doi.org/10.2307/256460",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2053898698",
-     "title": "CONFLICTING VOICES: THE EFFECTS OF INSTITUTIONAL OWNERSHIP HETEROGENEITY AND INTERNAL GOVERNANCE ON CORPORATE INNOVATION STRATEGIES.",
-     "year": 2002,
-     "cited_by": 922,
-     "doi": "https://doi.org/10.2307/3069305",
-     "axes_hit": [
-      "Reg"
-     ]
-    },
-    {
-     "oa_id": "W2036470724",
-     "title": "Theoretical foundations of cross-border mergers and acquisitions: A review of current research and recommendations for the future",
-     "year": 2004,
-     "cited_by": 760,
-     "doi": "https://doi.org/10.1016/j.intman.2004.05.005",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1977617746",
-     "title": "Dynamic Core Competences through Meta-Learning and Strategic Context",
-     "year": 1996,
-     "cited_by": 643,
-     "doi": "https://doi.org/10.1177/014920639602200402",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2017897800",
-     "title": "Board of director involvement in restructuring: The effects of board versus managerial controls and characteristics",
-     "year": 1993,
-     "cited_by": 554,
-     "doi": "https://doi.org/10.1002/smj.4250140905",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2206344299",
-     "title": "Resource based theory in operations management research",
-     "year": 2015,
-     "cited_by": 532,
-     "doi": "https://doi.org/10.1016/j.jom.2015.11.002",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2107362225",
-     "title": "Institutional Polycentrism, Entrepreneurs' Social Networks, and New Venture Growth",
-     "year": 2012,
-     "cited_by": 477,
-     "doi": "https://doi.org/10.5465/amj.2010.0095",
-     "axes_hit": []
-    }
-   ]
-  },
-  "A5002081198": {
-   "display_name": "Aldo Musacchio",
-   "cross_axis_score": 0.6309,
-   "h_index": 0,
-   "n_new_works_found": 34,
-   "n_in_corpus_overlap": 16,
-   "new_works": [
-    {
-     "oa_id": "W3215678288",
-     "title": "Reinventing State Capitalism",
-     "year": 2014,
-     "cited_by": 507,
-     "doi": "https://doi.org/10.4159/harvard.9780674419582",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2101692665",
-     "title": "PATTERNS OF REPRODUCTIVE ISOLATION IN MEDITERRANEAN DECEPTIVE ORCHIDS",
-     "year": 2007,
-     "cited_by": 249,
-     "doi": "https://doi.org/10.1111/j.1558-5646.2007.00231.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2036351173",
-     "title": "Revision of Cyanidium caldarium. Three species of acidophilic algae",
-     "year": 1981,
-     "cited_by": 140,
-     "doi": "https://doi.org/10.1080/11263508109428026",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2588387570",
-     "title": "Mapping frontier economies. (cover story)",
-     "year": 2016,
-     "cited_by": 103,
-     "doi": "",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4231122286",
-     "title": "Experiments in financial democracy corporate governance and financial development in Brazil, 1882-1950",
-     "year": 2009,
-     "cited_by": 101,
-     "doi": "https://doi.org/10.1017/cbo9780511635427",
-     "axes_hit": [
-      "Reg"
-     ]
-    },
-    {
-     "oa_id": "W3123919024",
-     "title": "Big BRICs, weak foundations: The beginning of public elementary education in Brazil, Russia, India, and China",
-     "year": 2012,
-     "cited_by": 88,
-     "doi": "https://doi.org/10.1016/j.eeh.2012.02.001",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3121338216",
-     "title": "Can Civil Law Countries Get Good Institutions? Lessons from the History of Creditor Rights and Bond Markets in Brazil",
-     "year": 2008,
-     "cited_by": 82,
-     "doi": "https://doi.org/10.1017/s002205070800003x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2007741070",
-     "title": "Fine‐scale phylogeographical analysis of Mediterranean <i>Anacamptis palustris</i> (Orchidaceae) populations based on chloroplast minisatellite and microsatellite variation",
-     "year": 2003,
-     "cited_by": 81,
-     "doi": "https://doi.org/10.1046/j.1365-294x.2003.01958.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3123508105",
-     "title": "Colonial Institutions, Trade Shocks, and the Diffusion of Elementary Education in Brazil, 1889–1930",
-     "year": 2014,
-     "cited_by": 75,
-     "doi": "https://doi.org/10.1017/s0022050714000588",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2027243556",
-     "title": "Decomposition dynamics of litters of various pine species in a Corsican pine forest",
-     "year": 1998,
-     "cited_by": 64,
-     "doi": "https://doi.org/10.1016/s0038-0717(97)00182-x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1969434916",
-     "title": "Does the law and finance hypothesis pass the test of history?",
-     "year": 2013,
-     "cited_by": 63,
-     "doi": "https://doi.org/10.1080/00076791.2012.741976",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3014412261",
-     "title": "The Brazilian Bombshell? The Long-Term Impact of the 1918 Influenza Pandemic the South American Way",
-     "year": 2020,
-     "cited_by": 61,
-     "doi": "https://doi.org/10.3386/w26929",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2338834398",
-     "title": "Experiments in Financial Democracy: Corporate Governance and Financial Development in Brazil, 1882–1950",
-     "year": 2009,
-     "cited_by": 54,
-     "doi": "",
-     "axes_hit": [
-      "Reg"
-     ]
-    },
-    {
-     "oa_id": "W2040564265",
-     "title": "Molecular Evolution of a Plastid Tandem Repeat Locus in an Orchid Lineage",
-     "year": 2003,
-     "cited_by": 52,
-     "doi": "https://doi.org/10.1007/s00239-003-0006-3",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W116761472",
-     "title": "Foreign Banks and the Mexican Economy, 1997-2004",
-     "year": 2004,
-     "cited_by": 50,
-     "doi": "",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2005484149",
-     "title": "Effects of local density and flower colour polymorphism on pollination and reproduction in the rewardless orchid Dactylorhiza sambucina (L.) So�",
-     "year": 2005,
-     "cited_by": 49,
-     "doi": "https://doi.org/10.1007/s00606-004-0248-6",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2044754582",
-     "title": "Variation at a chloroplast minisatellite locus reveals the signature of habitat fragmentation and genetic bottlenecks in the rare orchid <i>Anacamptis palustris</i> (Orchidaceae)",
-     "year": 2003,
-     "cited_by": 47,
-     "doi": "https://doi.org/10.3732/ajb.90.12.1681",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2135471699",
-     "title": "The Great Leap Forward: The Political Economy of Education in Brazil, 1889-1930",
-     "year": 2010,
-     "cited_by": 46,
-     "doi": "https://doi.org/10.2139/ssrn.1566887",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2083280237",
-     "title": "Genetic variation in time and space: the use of herbarium specimens to reconstruct patterns of genetic variation in the endangered orchid Anacamptis palustris",
-     "year": 2006,
-     "cited_by": 40,
-     "doi": "https://doi.org/10.1007/s10592-006-9209-7",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2061592535",
-     "title": "Phylogenetic relationships in the orchid genus Serapias L. based on noncoding regions of the chloroplast genome",
-     "year": 2008,
-     "cited_by": 36,
-     "doi": "https://doi.org/10.1016/j.ympev.2008.03.019",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1978798052",
-     "title": "Different levels of inbreeding depression between outcrossing and selfing &lt;sub&gt;Serapias&lt;/sub&gt; species",
-     "year": 2009,
-     "cited_by": 35,
-     "doi": "https://doi.org/10.1007/s10535-009-0029-8",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1628641417",
-     "title": "Un nuevo índice de precios para México, 1886-1929",
-     "year": 2000,
-     "cited_by": 33,
-     "doi": "",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2022308096",
-     "title": "Reproductive biology and pollinator limitation in a deceptive orchid, <i>Serapias vomeracea</i> (Orchidaceae)",
-     "year": 2005,
-     "cited_by": 32,
-     "doi": "https://doi.org/10.1111/j.1442-1984.2005.00121.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W4233711843",
-     "title": "Bankers, Industrialists, and their Cliques: Elite Networks in Mexico and Brazil during Early Industrialization",
-     "year": 2007,
-     "cited_by": 32,
-     "doi": "https://doi.org/10.1093/es/khm079",
-     "axes_hit": [
-      "PolInd"
-     ]
-    },
-    {
-     "oa_id": "W2092392378",
-     "title": "Differences in pollen viability in relation to different deceptive pollination strategies in Mediterranean orchids",
-     "year": 2010,
-     "cited_by": 31,
-     "doi": "https://doi.org/10.1093/aob/mcq164",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2047558674",
-     "title": "Can Civil Law Countries Get Good Institutions? Lessons from the History of Creditor Rights and Bond Markets in Brazil",
-     "year": 2007,
-     "cited_by": 30,
-     "doi": "https://doi.org/10.2139/ssrn.1080051",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2188846965",
-     "title": "DNA Sequence Analysis of Microsatellite Markers Enhances Their Efficiency for Germplasm Management in an Italian Olive Collection",
-     "year": 2006,
-     "cited_by": 28,
-     "doi": "https://doi.org/10.21273/jashs.131.3.352",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2108697645",
-     "title": "Laws versus Contracts: Shareholder Protections and Ownership Concentration in Brazil, 1890–1950",
-     "year": 2008,
-     "cited_by": 27,
-     "doi": "https://doi.org/10.1017/s0007680500000143",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2162973752",
-     "title": "These Are the Good Old Days: Foreign Entry and the Mexican Banking System",
-     "year": 2013,
-     "cited_by": 27,
-     "doi": "https://doi.org/10.3386/w18713",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1508358556",
-     "title": "Comparative floral micromorphology in four sympatric species of Serapias (Orchidaceae)",
-     "year": 2012,
-     "cited_by": 27,
-     "doi": "https://doi.org/10.1111/j.1095-8339.2012.01253.x",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W43921090",
-     "title": "The Return of State-Owned Enterprises: Should We Be Afraid?",
-     "year": 2009,
-     "cited_by": 26,
-     "doi": "",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2056622342",
-     "title": "Confirmation of hybridization among sympatric insular populations of Orchis mascula and O. provincialis",
-     "year": 2005,
-     "cited_by": 25,
-     "doi": "https://doi.org/10.1007/s00606-004-0235-y",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1554410448",
-     "title": "Law and Finance c. 1900",
-     "year": 2010,
-     "cited_by": 24,
-     "doi": "https://doi.org/10.3386/w16216",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2020236775",
-     "title": "Genetic integrity of sympatric hybridising plant species: the case of<i>Orchis italica</i>and<i>O. anthropophora</i>",
-     "year": 2008,
-     "cited_by": 23,
-     "doi": "https://doi.org/10.1111/j.1438-8677.2008.00135.x",
-     "axes_hit": []
-    }
-   ],
-   "in_corpus": [
-    {
-     "oa_id": "W2091626777",
-     "title": "Governments as owners: State-owned multinational companies",
-     "year": 2014,
-     "cited_by": 629,
-     "doi": "https://doi.org/10.1057/jibs.2014.43",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2144413950",
-     "title": "New Varieties of State Capitalism: Strategic and Governance Implications",
-     "year": 2014,
-     "cited_by": 493,
-     "doi": "https://doi.org/10.5465/amp.2013.0094",
-     "axes_hit": [
-      "Reg"
-     ]
-    },
-    {
-     "oa_id": "W2026197177",
-     "title": "Leviathan as a Minority Shareholder: Firm-Level Implications of State Equity Purchases",
-     "year": 2013,
-     "cited_by": 340,
-     "doi": "https://doi.org/10.5465/amj.2012.0406",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1987177424",
-     "title": "What Do State-Owned Development Banks Do? Evidence from BNDES, 2002–09",
-     "year": 2014,
-     "cited_by": 243,
-     "doi": "https://doi.org/10.1016/j.worlddev.2014.08.016",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2794658688",
-     "title": "State ownership reinvented? Explaining performance differences between state‐owned and private firms",
-     "year": 2018,
-     "cited_by": 168,
-     "doi": "https://doi.org/10.1111/corg.12239",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3108923915",
-     "title": "State capitalism in international context: Varieties and variations",
-     "year": 2020,
-     "cited_by": 165,
-     "doi": "https://doi.org/10.1016/j.jwb.2020.101160",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2119879855",
-     "title": "Leviathan in Business: Varieties of State Capitalism and Their Implications for Economic Performance",
-     "year": 2012,
-     "cited_by": 162,
-     "doi": "https://doi.org/10.2139/ssrn.2070942",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1776056749",
-     "title": "In Strange Company: The Puzzle of Private Investment in State-Controlled Firms",
-     "year": 2013,
-     "cited_by": 101,
-     "doi": "https://doi.org/10.2139/ssrn.2217627",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W3017677080",
-     "title": "Leviathan as an inventor: An extended agency model of state-owned versus private firm invention in emerging and developed economies",
-     "year": 2020,
-     "cited_by": 97,
-     "doi": "https://doi.org/10.1057/s41267-020-00327-9",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1524091941",
-     "title": "What Do Development Banks Do? Evidence from Brazil, 2002-2009",
-     "year": 2012,
-     "cited_by": 94,
-     "doi": "https://doi.org/10.2139/ssrn.1969843",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2791308251",
-     "title": "A Principals-Principals Perspective of Hybrid Leviathans: Cross-Border Acquisitions by State-Owned MNEs",
-     "year": 2018,
-     "cited_by": 55,
-     "doi": "https://doi.org/10.1177/0149206318764293",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2098840022",
-     "title": "Bankers, Industrialists, and their Cliques: Elite Networks in Mexico and Brazil during Early Industrialization",
-     "year": 2007,
-     "cited_by": 42,
-     "doi": "https://doi.org/10.1017/s1467222700006479",
-     "axes_hit": [
-      "PolInd"
-     ]
-    },
-    {
-     "oa_id": "W2766775772",
-     "title": "State-Owned Enterprises as Multinationals: Theory and Research Directions",
-     "year": 2017,
-     "cited_by": 31,
-     "doi": "https://doi.org/10.1007/978-3-319-51715-5_10",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W655921315",
-     "title": "Leviathan as a Minority Shareholder: Firm-Level Implications of Equity Purchases by the State",
-     "year": 2012,
-     "cited_by": 30,
-     "doi": "",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W1572478091",
-     "title": "Leviathan as a Minority Shareholder: A Study of Equity Purchases by the Brazilian National Development Bank (BNDES), 1995-2003",
-     "year": 2011,
-     "cited_by": 24,
-     "doi": "https://doi.org/10.2139/ssrn.1745081",
-     "axes_hit": []
-    },
-    {
-     "oa_id": "W2486941995",
-     "title": "The Reinvention of State Capitalism in Brazil, 1970–2012",
-     "year": 2016,
-     "cited_by": 24,
-     "doi": "https://doi.org/10.1093/acprof:oso/9780190462888.003.0005",
-     "axes_hit": []
-    }
-   ]
+   "n_new_works_found": 0,
+   "n_in_corpus_overlap": 0,
+   "new_works": [],
+   "in_corpus": []
   }
  },
  "summary": {
-  "n_new_works": 106,
-  "n_overlap": 632
+  "n_new_works": 0,
+  "n_overlap": 638
  }
 }

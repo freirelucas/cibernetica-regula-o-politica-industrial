@@ -35,6 +35,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://api.openalex.org"
 CACHE_DIR = os.path.join(ROOT, "data", "oa_cache")
 OUTPUT_JSON = os.path.join(ROOT, "data", "author_network.json")
+LEIDEN_SEED = 42        # Leiden é estocástico: sem semente os community_id não reproduzem
 SNOWBALL_JSON = os.path.join(ROOT, "data", "author_snowball_expansion.json")
 ADJACENT_JSON = os.path.join(ROOT, "data", "adjacent_tradition_probes.json")
 BUDGET_FILE = os.path.join(ROOT, "data", "_budget_used.txt")
@@ -401,40 +402,43 @@ def build_coauthor_graph(works, min_score=0.0, authors=None):
 
 
 def leiden_communities(edges):
-    """Detecção de comunidades. Usa python-igraph + leidenalg se disponível;
-    senão, cai num algoritmo de connected-components como fallback."""
+    """Detecção de comunidades na rede de coautoria.
+
+    Usa python-igraph + leidenalg quando disponíveis, **com semente fixa**: o
+    Leiden é estocástico e, sem `seed`, processos distintos devolvem partições
+    distintas — os `community_id` publicados não seriam reproduzíveis (verificado:
+    três execuções sem semente dão duas partições diferentes; com semente, uma só).
+
+    Sem essas bibliotecas, cai em Clauset-Newman-Moore (`sfi_methods.cnm_communities`,
+    biblioteca padrão pura, determinístico) — que é detecção de comunidade de
+    verdade, ao contrário do antigo recurso a componentes conexos, que punha
+    quase toda a rede numa comunidade só.
+    """
+    nodes = sorted(edges.keys())
     try:
         import igraph as ig
         import leidenalg
-        nodes = sorted(edges.keys())
         idx = {n: i for i, n in enumerate(nodes)}
         es = set()
         for a, neighbors in edges.items():
             for b in neighbors:
                 if a < b:
                     es.add((idx[a], idx[b]))
-        g = ig.Graph(n=len(nodes), edges=list(es), directed=False)
-        part = leidenalg.find_partition(g, leidenalg.ModularityVertexPartition)
+        g = ig.Graph(n=len(nodes), edges=sorted(es), directed=False)
+        part = leidenalg.find_partition(g, leidenalg.ModularityVertexPartition,
+                                        seed=LEIDEN_SEED)
         return {nodes[i]: comm_id for comm_id, comm in enumerate(part) for i in comm}
     except ImportError:
-        # fallback: connected components
-        comm = {}
-        cid = 0
-        for start in edges:
-            if start in comm:
-                continue
-            stack = [start]
-            while stack:
-                n = stack.pop()
-                if n in comm:
-                    continue
-                comm[n] = cid
-                stack.extend(edges[n])
-            cid += 1
+        import sfi_methods
+        links = [{"source": a, "target": b, "peso": 1}
+                 for a in edges for b in edges[a] if a < b]
+        comm, _q, _k = sfi_methods.cnm_communities(nodes, links, weight="peso")
+        sys.stderr.write("AVISO: leidenalg/igraph ausentes — comunidades por "
+                         "Clauset-Newman-Moore (determinístico), não por Leiden; "
+                         "os community_id NÃO coincidirão com os publicados.\n")
         return comm
 
 
-# ───────── snowball: top-N authors → their works ─────────
 def snowball_top_authors(authors_sorted, n_authors=15, per_author=50, corpus_ids=None):
     """Para cada um dos top-N autores por cross_axis_score, fetch /works
     filter=author.id:Aid&per-page=per_author&sort=cited_by_count:desc.
