@@ -1,0 +1,1268 @@
+{
+ "parametros": {
+  "MIN_WORKS": 3,
+  "MIN_LIFT": 3.0,
+  "MIN_CO": 3,
+  "MIN_PUREZA_LB": 0.25,
+  "MAX_P": 0.01,
+  "MAX_DOC_SHARE": 0.03,
+  "MIN_LEN_TEXTO": 5,
+  "n_corpus": 16509,
+  "n_obras_semente": 220
+ },
+ "n_lexico": 41,
+ "modos": {
+  "estrito": {
+   "n_obras": 232,
+   "n_obras_desde_2010": 201,
+   "por_ano": {
+    "2010": 9,
+    "2011": 9,
+    "2012": 5,
+    "2013": 7,
+    "2015": 3,
+    "2016": 8,
+    "2017": 7,
+    "2018": 19,
+    "2019": 11,
+    "2020": 11,
+    "2021": 17,
+    "2022": 19,
+    "2023": 12,
+    "2024": 35,
+    "2025": 15,
+    "2026": 14
+   },
+   "por_tipo": {
+    "Journal article": 70,
+    "Working paper": 66,
+    "Book part": 29,
+    "Book": 13,
+    "Journal Article": 11,
+    "?": 10,
+    "Report": 1,
+    "Preliminary Publication": 1
+   },
+   "composicao_editorial": {
+    "<sem rotulo>": 140,
+    "DISET": 48,
+    "DIEST": 13
+   },
+   "composicao_autoria": {
+    "<sem membro>": 126,
+    "DISET": 66,
+    "DIEST": 9
+   },
+   "n_mistas_autoria": 0,
+   "n_mistas_editorial": 0,
+   "mistas_autoria": [],
+   "n_autores_no_campo": {
+    "DISET": 35,
+    "DIEST": 10
+   },
+   "caracteristico_DIEST": [
+    {
+     "term": "pandemia",
+     "z": 1.49,
+     "n": 2
+    },
+    {
+     "term": "administracao publica",
+     "z": 1.47,
+     "n": 2
+    },
+    {
+     "term": "politicas publicas",
+     "z": 0.99,
+     "n": 3
+    },
+    {
+     "term": "covid-19",
+     "z": 0.96,
+     "n": 2
+    },
+    {
+     "term": "governo. administracao publica",
+     "z": 0.51,
+     "n": 1
+    },
+    {
+     "term": "desenvolvimento economico",
+     "z": 0.28,
+     "n": 1
+    },
+    {
+     "term": "mercado de trabalho",
+     "z": -0.42,
+     "n": 0
+    },
+    {
+     "term": "inovacao",
+     "z": -0.62,
+     "n": 0
+    },
+    {
+     "term": "propriedade intelectual",
+     "z": -0.74,
+     "n": 0
+    },
+    {
+     "term": "economia – geral",
+     "z": -0.74,
+     "n": 0
+    },
+    {
+     "term": "emprego",
+     "z": -0.74,
+     "n": 0
+    },
+    {
+     "term": "tecnologia e inovacao",
+     "z": -0.74,
+     "n": 0
+    },
+    {
+     "term": "energia",
+     "z": -0.74,
+     "n": 0
+    },
+    {
+     "term": "tecnologia",
+     "z": -0.75,
+     "n": 0
+    },
+    {
+     "term": "ciencia e tecnologia",
+     "z": -0.86,
+     "n": 1
+    }
+   ],
+   "caracteristico_DISET": [
+    {
+     "term": "industria",
+     "z": 1.26,
+     "n": 9
+    },
+    {
+     "term": "energia eletrica",
+     "z": 1.21,
+     "n": 8
+    },
+    {
+     "term": "pesquisa e desenvolvimento",
+     "z": 1.11,
+     "n": 8
+    },
+    {
+     "term": "economia",
+     "z": 0.95,
+     "n": 5
+    },
+    {
+     "term": "ciencia e tecnologia",
+     "z": 0.86,
+     "n": 11
+    },
+    {
+     "term": "tecnologia",
+     "z": 0.75,
+     "n": 4
+    },
+    {
+     "term": "energia",
+     "z": 0.74,
+     "n": 3
+    },
+    {
+     "term": "tecnologia e inovacao",
+     "z": 0.74,
+     "n": 3
+    },
+    {
+     "term": "emprego",
+     "z": 0.74,
+     "n": 3
+    },
+    {
+     "term": "economia – geral",
+     "z": 0.74,
+     "n": 3
+    },
+    {
+     "term": "propriedade intelectual",
+     "z": 0.74,
+     "n": 3
+    },
+    {
+     "term": "inovacao",
+     "z": 0.62,
+     "n": 3
+    },
+    {
+     "term": "mercado de trabalho",
+     "z": 0.42,
+     "n": 6
+    },
+    {
+     "term": "desenvolvimento economico",
+     "z": -0.28,
+     "n": 3
+    },
+    {
+     "term": "governo. administracao publica",
+     "z": -0.51,
+     "n": 2
+    }
+   ],
+   "autores": {
+    "DISET": [
+     {
+      "name": "Aguinaldo Nogueira Maciente",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Albuquerque, Pedro Henrique Melo",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Almeida, Marcio Wohlers de",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Alves, Patrick Franco",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Araújo, Bruno César Pino Oliveira de",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Bernardo Alves Furtado",
+      "n_obras_campo": 1,
+      "confianca": "explicita",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Bragança, Gabriel Godofredo Fiuza de",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Caldas, Cristina",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Cavalcante, Luiz Ricardo",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Cláudia Regina Baddini Curralero",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Cortez, Igor Siqueira",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Cruz Júnior, Samuel César da",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Fabiano Mezadre Pompermayer",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Fernanda De Negri",
+      "n_obras_campo": 4,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Figueiredo, Calebe de Oliveira",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Freitas, Luciano Charlita de",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Graziela Ferrero Zucoloto",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Luis Claudio Kubota",
+      "n_obras_campo": 22,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Marinho, Vitor da Silva",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Mation, Lucas Ferreira",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Mauro Oddo Nogueira",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Mauro Santos Silva",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Pedro Miranda",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Pereira, Larissa de Souza",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Rauen, André Tortato",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Ribeiro, Leonardo Costa",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Rocha, Katia Maria Carlos",
+      "n_obras_campo": 2,
+      "confianca": "explicita",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Rosa, Mauricio Benedeti",
+      "n_obras_campo": 12,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Saavedra, Cayan Atreio Portela Bárcena",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Silva, Rogério Diogne de Souza e",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Silva, Victo",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Sousa, Rodrigo Abdalla Filgueiras de",
+      "n_obras_campo": 6,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Spadinger, Robert",
+      "n_obras_campo": 4,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Szigethy, Leonardo",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Tulio Chiarini",
+      "n_obras_campo": 8,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     }
+    ],
+    "DIEST": [
+     {
+      "name": "Allegretti, Giovanni",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Daniel Pitangueira de Avelino",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Danilo Santa Cruz Coelho",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Escudero, Camila",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Fonseca, Igor Ferraz da",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Joao Claudio Basso Pompeu",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Nascimento, Maricilene Isaira Baia do",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Pedro Lucas de Moura Palotti",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Schmidt, Flávia de Holanda",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Silva, Sivaldo Pereira da",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     }
+    ]
+   }
+  },
+  "amplo": {
+   "n_obras": 481,
+   "n_obras_desde_2010": 403,
+   "por_ano": {
+    "2010": 13,
+    "2011": 17,
+    "2012": 14,
+    "2013": 19,
+    "2014": 9,
+    "2015": 10,
+    "2016": 9,
+    "2017": 12,
+    "2018": 27,
+    "2019": 19,
+    "2020": 12,
+    "2021": 28,
+    "2022": 32,
+    "2023": 38,
+    "2024": 72,
+    "2025": 40,
+    "2026": 32
+   },
+   "por_tipo": {
+    "Working paper": 127,
+    "Journal article": 108,
+    "Book part": 64,
+    "Journal Article": 48,
+    "Book": 34,
+    "?": 17,
+    "Report": 3,
+    "Preliminary Publication": 2
+   },
+   "composicao_editorial": {
+    "<sem rotulo>": 314,
+    "DISET": 63,
+    "DIEST": 26
+   },
+   "composicao_autoria": {
+    "<sem membro>": 267,
+    "DISET": 111,
+    "DIEST": 22,
+    "DIEST + DISET": 3
+   },
+   "n_mistas_autoria": 3,
+   "n_mistas_editorial": 0,
+   "mistas_autoria": [
+    {
+     "title": "Introdução : Indicadores quantitativos da OCDE e o Brasil : governança pública",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/16642",
+     "n_autores": 6,
+     "autores": [
+      "Moraes, Rodrigo Fracalossi de",
+      "Peci, Alketa",
+      "Fabiano Mezadre Pompermayer",
+      "Couto, Leandro Freitas",
+      "Rech, Lucas Trentin",
+      "Marinho, Sarah"
+     ],
+     "termos": [
+      "<texto>"
+     ],
+     "via": "texto"
+    },
+    {
+     "title": "Indicadores quantitativos da OCDE e o Brasil : volume III : governança pública",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/16174",
+     "n_autores": 7,
+     "autores": [
+      "Peci, Alketa",
+      "Fabiano Mezadre Pompermayer",
+      "Couto, Leandro Freitas",
+      "Rech, Lucas Trentin",
+      "Moraes, Rodrigo Fracalossi de",
+      "Marinho, Sarah",
+      "Baumann, Renato "
+     ],
+     "termos": [
+      "<texto>"
+     ],
+     "via": "texto"
+    },
+    {
+     "title": "Brasil 2035 : cenários para o desenvolvimento",
+     "year": 2017,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/7910",
+     "n_autores": 5,
+     "autores": [
+      "Marcial, Elaine Coutinho",
+      "Curado, Maurício Pinheiro Fleury",
+      "Oliveira, Márcio Gimene de ",
+      "Cruz Júnior, Samuel César da",
+      "Couto, Leandro Freitas"
+     ],
+     "termos": [
+      "<texto>"
+     ],
+     "via": "texto"
+    }
+   ],
+   "n_autores_no_campo": {
+    "DISET": 46,
+    "DIEST": 20
+   },
+   "caracteristico_DIEST": [
+    {
+     "term": "administracao publica",
+     "z": 2.41,
+     "n": 5
+    },
+    {
+     "term": "politicas publicas",
+     "z": 2.19,
+     "n": 9
+    },
+    {
+     "term": "desenvolvimento economico",
+     "z": 1.98,
+     "n": 5
+    },
+    {
+     "term": "participacao social",
+     "z": 1.9,
+     "n": 3
+    },
+    {
+     "term": "politica social",
+     "z": 1.79,
+     "n": 4
+    },
+    {
+     "term": "democracia digital",
+     "z": 1.55,
+     "n": 3
+    },
+    {
+     "term": "estudos de casos",
+     "z": 1.55,
+     "n": 3
+    },
+    {
+     "term": "pandemia",
+     "z": 1.47,
+     "n": 2
+    },
+    {
+     "term": "covid-19",
+     "z": 1.38,
+     "n": 3
+    },
+    {
+     "term": "trabalho",
+     "z": 0.87,
+     "n": 2
+    },
+    {
+     "term": "mercado de trabalho",
+     "z": 0.19,
+     "n": 2
+    },
+    {
+     "term": "governo. administracao publica",
+     "z": 0.15,
+     "n": 1
+    },
+    {
+     "term": "bases de dados",
+     "z": 0.07,
+     "n": 1
+    },
+    {
+     "term": "inovacao",
+     "z": -0.73,
+     "n": 0
+    },
+    {
+     "term": "tecnologias de informacao e comunicacao (tics)",
+     "z": -0.75,
+     "n": 0
+    }
+   ],
+   "caracteristico_DISET": [
+    {
+     "term": "ciencia e tecnologia",
+     "z": 1.43,
+     "n": 15
+    },
+    {
+     "term": "industria",
+     "z": 1.42,
+     "n": 10
+    },
+    {
+     "term": "energia eletrica",
+     "z": 1.35,
+     "n": 9
+    },
+    {
+     "term": "pesquisa e desenvolvimento",
+     "z": 1.25,
+     "n": 8
+    },
+    {
+     "term": "economia",
+     "z": 1.19,
+     "n": 7
+    },
+    {
+     "term": "emprego",
+     "z": 1.1,
+     "n": 6
+    },
+    {
+     "term": "inovacoes tecnologicas",
+     "z": 1.0,
+     "n": 6
+    },
+    {
+     "term": "tecnologia",
+     "z": 0.94,
+     "n": 5
+    },
+    {
+     "term": "desenvolvimento sustentavel",
+     "z": 0.9,
+     "n": 5
+    },
+    {
+     "term": "economia – geral",
+     "z": 0.9,
+     "n": 4
+    },
+    {
+     "term": "tecnologia e inovacao",
+     "z": 0.89,
+     "n": 4
+    },
+    {
+     "term": "produtividade",
+     "z": 0.88,
+     "n": 4
+    },
+    {
+     "term": "infraestrutura",
+     "z": 0.84,
+     "n": 4
+    },
+    {
+     "term": "energia",
+     "z": 0.77,
+     "n": 3
+    },
+    {
+     "term": "educacao",
+     "z": 0.77,
+     "n": 3
+    }
+   ],
+   "autores": {
+    "DISET": [
+     {
+      "name": "Aguinaldo Nogueira Maciente",
+      "n_obras_campo": 6,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Albuquerque, Pedro Henrique Melo",
+      "n_obras_campo": 3,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Almeida Júnior, Mansueto Facundo de",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Almeida, Marcio Wohlers de",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Alves, Patrick Franco",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Araújo, Bruno César Pino Oliveira de",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Araújo, Thiago Costa",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Bahia, Luiz Dias",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Bernardo Alves Furtado",
+      "n_obras_campo": 1,
+      "confianca": "explicita",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Bragança, Gabriel Godofredo Fiuza de",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Caldas, Cristina",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Cavalcante, Luiz Ricardo",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Cláudia Regina Baddini Curralero",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Cortez, Igor Siqueira",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Cruz Júnior, Samuel César da",
+      "n_obras_campo": 4,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Daniel Gama e Colombo",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Fabiano Mezadre Pompermayer",
+      "n_obras_campo": 4,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Fernanda De Negri",
+      "n_obras_campo": 5,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Figueiredo, Calebe de Oliveira",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Fonseca, Ricardo Sampaio",
+      "n_obras_campo": 1,
+      "confianca": "explicita",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Freitas, Luciano Charlita de",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Graziela Ferrero Zucoloto",
+      "n_obras_campo": 4,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Koeller, Priscila",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Lenita Maria Turchi",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Luis Claudio Kubota",
+      "n_obras_campo": 31,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Marinho, Vitor da Silva",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Mation, Lucas Ferreira",
+      "n_obras_campo": 3,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Matteo, Miguel",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Mauro Oddo Nogueira",
+      "n_obras_campo": 8,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Mauro Santos Silva",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Pedro Miranda",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Pereira, Larissa de Souza",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Rauen, André Tortato",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Rauen, Cristiane Vianna",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Ribeiro, Leonardo Costa",
+      "n_obras_campo": 3,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Rocha, Katia Maria Carlos",
+      "n_obras_campo": 2,
+      "confianca": "explicita",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Rosa, Mauricio Benedeti",
+      "n_obras_campo": 15,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Saavedra, Cayan Atreio Portela Bárcena",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Silva, Rodrigo Peixoto da",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Silva, Rogério Diogne de Souza e",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Silva, Victo",
+      "n_obras_campo": 4,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Sousa, Rodrigo Abdalla Filgueiras de",
+      "n_obras_campo": 11,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Spadinger, Robert",
+      "n_obras_campo": 4,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Szigethy, Leonardo",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Tulio Chiarini",
+      "n_obras_campo": 13,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Vasquez, Cezar Rogelio",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     }
+    ],
+    "DIEST": [
+     {
+      "name": "Allegretti, Giovanni",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Azevedo, Daniel A. de",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Brito, Elohá Cabreira",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Bruno Queiroz Cunha",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Couto, Leandro Freitas",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Daniel Pitangueira de Avelino",
+      "n_obras_campo": 4,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Danilo Santa Cruz Coelho",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Djonathan Gomes Ribeiro",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Escudero, Camila",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Fonseca, Igor Ferraz da",
+      "n_obras_campo": 5,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Joao Claudio Basso Pompeu",
+      "n_obras_campo": 4,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Jéssica Vasconcelos de Abreu",
+      "n_obras_campo": 1,
+      "confianca": "explicita",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Marcella Simoes Penello Meirelles",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Nascimento, Maricilene Isaira Baia do",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Peci, Alketa",
+      "n_obras_campo": 2,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Pedro Lucas de Moura Palotti",
+      "n_obras_campo": 2,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Pereira, Ana Karine",
+      "n_obras_campo": 1,
+      "confianca": "moderada",
+      "validacao": null,
+      "ativo": true
+     },
+     {
+      "name": "Schmidt, Flávia de Holanda",
+      "n_obras_campo": 1,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Silva, Sivaldo Pereira da",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": false
+     },
+     {
+      "name": "Viana, André Rego",
+      "n_obras_campo": 3,
+      "confianca": "forte",
+      "validacao": null,
+      "ativo": true
+     }
+    ]
+   }
+  }
+ }
+}

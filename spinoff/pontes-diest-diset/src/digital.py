@@ -39,8 +39,9 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from analysis import split_terms  # noqa: E402
-from common import load_items, norm, save_json, year_of  # noqa: E402
+from analysis import log_odds, split_terms  # noqa: E402
+from common import FOCUS as FOCUS_DIRS  # noqa: E402
+from common import load_items, load_json, norm, save_json, year_of  # noqa: E402
 
 # ── 1. sementes: digitais por definição, preferindo vocabulário controlado ──
 SEED_PATTERNS = [
@@ -240,6 +241,114 @@ def subcorpus(docs, lex_terms, mode="estrito"):
     return out
 
 
+def hits_by_uuid(lex_terms, tagged, mode):
+    """Obras do campo em items_tagged.json (que já tem autores resolvidos e rótulo).
+
+    `estrito` casa nos campos de indexação; `amplo` também em título e resumo, sempre com
+    fronteira de palavra e comprimento mínimo (ver MIN_LEN_TEXTO).
+    """
+    tset = set(lex_terms)
+    longos = [t for t in tset if len(t) >= MIN_LEN_TEXTO]
+    pat = re.compile(r"\b(?:" + "|".join(re.escape(t) for t in
+                                         sorted(longos, key=len, reverse=True)) + r")\b")
+    out = {}
+    for it in tagged:
+        ts = {norm(t) for t in split_terms(it.get("vcipea", []) + it.get("keywords", [])
+                                          + it.get("classification", []))}
+        hit = sorted(ts & tset)
+        via = "indexacao" if hit else None
+        if not hit and mode == "amplo":
+            if pat.search(norm((it.get("title") or "") + " " + (it.get("abstract") or ""))):
+                hit, via = ["<texto>"], "texto"
+        if hit:
+            out[it["uuid"]] = {"terms": hit, "via": via}
+    return out
+
+
+def characterize(save=True):
+    """Caracteriza o campo nas duas definições, com a composição por diretoria.
+
+    Duas composições DIFERENTES e declaradas (o pressuposto A31 as confunde numa só):
+      `editorial`  — a obra traz sinal editorial da diretoria (independe das pessoas);
+      `autoria`    — a obra tem assinante atribuído à diretoria (herda a circularidade).
+    """
+    lex = load_json("digital_lexicon.json")
+    terms = [x["term"] for x in lex["lexico"]]
+    tagged = load_json("items_tagged.json")
+    authors = load_json("authors.json")
+    dir_of = {a: v["diretoria"] for a, v in authors.items() if v["diretoria"]}
+    res = {"parametros": lex["parametros"], "n_lexico": len(terms), "modos": {}}
+
+    for mode in ("estrito", "amplo"):
+        hits = hits_by_uuid(terms, tagged, mode)
+        sub = [it for it in tagged if it["uuid"] in hits]
+        win = [it for it in sub if it["year"] and it["year"] >= 2010]
+        comp_ed, comp_au = collections.Counter(), collections.Counter()
+        mixed_au, mixed_ed = [], []
+        for it in win:
+            ed = tuple(sorted(d for d in FOCUS_DIRS if d in it["dirs"]))
+            au = tuple(sorted({dir_of.get(a) for a in it["authors"]} & set(FOCUS_DIRS)))
+            comp_ed[ed or ("<sem rotulo>",)] += 1
+            comp_au[au or ("<sem membro>",)] += 1
+            if len(au) == 2:
+                mixed_au.append(it)
+            if len(ed) == 2:
+                mixed_ed.append(it)
+        # perfil de vocabulário de cada lado DENTRO do campo (obras exclusivas de um lado)
+        prof = {d: collections.Counter() for d in FOCUS_DIRS}
+        prior = collections.Counter()
+        for it in win:
+            tc = collections.Counter(norm(t) for t in split_terms(
+                it.get("vcipea", []) + it.get("keywords", [])))
+            tc = collections.Counter({k: v for k, v in tc.items() if k and k not in terms})
+            prior.update(tc)
+            sides = {d for d in FOCUS_DIRS
+                     if d in it["dirs"] or any(dir_of.get(a) == d for a in it["authors"])}
+            if len(sides) == 1:
+                prof[next(iter(sides))].update(tc)
+        zs = log_odds(prof["DIEST"], prof["DISET"], prior)
+        rank = sorted((w for w in zs if prof["DIEST"][w] + prof["DISET"][w] >= 3),
+                      key=lambda w: zs[w])
+        # quem assina no campo, em ordem alfabética (não é ranking de produtividade)
+        who = collections.defaultdict(list)
+        n_by_author = collections.Counter()
+        for it in win:
+            for a in it["authors"]:
+                if dir_of.get(a) in FOCUS_DIRS:
+                    n_by_author[a] += 1
+        for a, n in n_by_author.items():
+            v = authors[a]
+            who[dir_of[a]].append({"name": v["name"], "n_obras_campo": n,
+                                   "confianca": v["confidence"],
+                                   "validacao": v.get("validation"),
+                                   "ativo": v["active"]})
+        for d in who:
+            who[d].sort(key=lambda x: x["name"])
+        res["modos"][mode] = {
+            "n_obras": len(sub), "n_obras_desde_2010": len(win),
+            "por_ano": dict(sorted(collections.Counter(it["year"] for it in win).items())),
+            "por_tipo": dict(collections.Counter(it["type"] or "?" for it in win).most_common(8)),
+            "composicao_editorial": {" + ".join(k): v for k, v in comp_ed.most_common()},
+            "composicao_autoria": {" + ".join(k): v for k, v in comp_au.most_common()},
+            "n_mistas_autoria": len(mixed_au), "n_mistas_editorial": len(mixed_ed),
+            "mistas_autoria": [{"title": it["title"], "year": it["year"], "uri": it["uri"],
+                                "n_autores": len(it["authors"]),
+                                "autores": [authors[a]["name"] for a in it["authors"]][:10],
+                                "termos": hits[it["uuid"]]["terms"],
+                                "via": hits[it["uuid"]]["via"]}
+                               for it in sorted(mixed_au, key=lambda x: -x["year"])],
+            "n_autores_no_campo": {d: len(v) for d, v in who.items()},
+            "caracteristico_DIEST": [{"term": w, "z": round(zs[w], 2), "n": prof["DIEST"][w]}
+                                     for w in reversed(rank[-15:])],
+            "caracteristico_DISET": [{"term": w, "z": round(-zs[w], 2), "n": prof["DISET"][w]}
+                                     for w in rank[:15]],
+            "autores": {d: v for d, v in who.items()},
+        }
+    if save:
+        save_json("digital_subcorpus.json", res)
+    return res
+
+
 def main(argv=None):
     argv = argv if argv is not None else sys.argv[1:]
     if "--lexico" in argv:
@@ -256,6 +365,15 @@ def main(argv=None):
             sub = subcorpus(docs, [x["term"] for x in out["lexico"]], mode)
             w = [s for s in sub if s["year"] and s["year"] >= 2010]
             print(f"subcorpus {mode}: {len(sub)} obras ({len(w)} desde 2010)", file=sys.stderr)
+    elif "--caracterizar" in argv:
+        r = characterize()
+        for m, v in r["modos"].items():
+            print(f"[{m}] {v['n_obras']} obras ({v['n_obras_desde_2010']} desde 2010) · "
+                  f"editorial {v['composicao_editorial']} · autoria {v['composicao_autoria']}",
+                  file=sys.stderr)
+            print(f"    mistas: {v['n_mistas_autoria']} por autoria, "
+                  f"{v['n_mistas_editorial']} por rótulo editorial · "
+                  f"autores no campo {v['n_autores_no_campo']}", file=sys.stderr)
     else:
         print(__doc__, file=sys.stderr)
 

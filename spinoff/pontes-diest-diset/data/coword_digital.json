@@ -1,0 +1,893 @@
+{
+ "recorte": "amplo",
+ "n_obras": 403,
+ "parametros": {
+  "MIN_DF": 4,
+  "MIN_CO": 2,
+  "MIN_EQUIV": 0.05
+ },
+ "n_nos": 77,
+ "n_lacos": 127,
+ "grupos": [
+  {
+   "grupo": 1,
+   "n_termos": 15,
+   "usos_DIEST": 11,
+   "usos_DISET": 34,
+   "equilibrio": 0.489,
+   "termos": [
+    "inteligencia artificial",
+    "internet",
+    "desenvolvimento economico",
+    "banda larga",
+    "brics",
+    "acesso a internet",
+    "crescimento economico",
+    "tecnologias da informacao e comunicacao",
+    "organizacao para a cooperacao e o desenvolvimento economico (ocde)",
+    "comercio internacional",
+    "going digital",
+    "desenvolvimento regional",
+    "regressao logistica",
+    "comercio digital",
+    "ensino assistido por computadores"
+   ]
+  },
+  {
+   "grupo": 2,
+   "n_termos": 13,
+   "usos_DIEST": 17,
+   "usos_DISET": 45,
+   "equilibrio": 0.548,
+   "termos": [
+    "mercado de trabalho",
+    "administracao publica",
+    "covid-19",
+    "plataformas digitais",
+    "automacao",
+    "trabalho",
+    "pandemia",
+    "emprego",
+    "tecnologia audiovisual",
+    "doencas endemicas",
+    "analise de dados",
+    "bases de dados",
+    "economia de plataformas"
+   ]
+  },
+  {
+   "grupo": 3,
+   "n_termos": 11,
+   "usos_DIEST": 3,
+   "usos_DISET": 88,
+   "equilibrio": 0.066,
+   "termos": [
+    "telecomunicacoes",
+    "ciencia e tecnologia",
+    "pesquisa e desenvolvimento",
+    "industria",
+    "energia eletrica",
+    "compartilhamento de infraestrutura",
+    "economia",
+    "telefonia movel",
+    "industria de telecomunicacoes",
+    "economia – geral",
+    "redes de telecomunicacoes"
+   ]
+  },
+  {
+   "grupo": 4,
+   "n_termos": 10,
+   "usos_DIEST": 7,
+   "usos_DISET": 19,
+   "equilibrio": 0.538,
+   "termos": [
+    "tecnologia da informacao",
+    "indice de custo da tecnologia da informacao (icti)",
+    "indices amplos de precos",
+    "atividade economica",
+    "condicoes economicas. pesquisa economica. sistemas economicos",
+    "acesso a informacao",
+    "bibliotecarios",
+    "gastos publicos",
+    "inflacao",
+    "condicoes economicas"
+   ]
+  },
+  {
+   "grupo": 5,
+   "n_termos": 7,
+   "usos_DIEST": 0,
+   "usos_DISET": 1,
+   "equilibrio": 0.0,
+   "termos": [
+    "trabalhadores",
+    "residuos solidos",
+    "aspectos sociais",
+    "inclusao social",
+    "indicadores sociais",
+    "catadores de material reciclavel",
+    "reciclagem de materiais"
+   ]
+  },
+  {
+   "grupo": 6,
+   "n_termos": 6,
+   "usos_DIEST": 2,
+   "usos_DISET": 32,
+   "equilibrio": 0.118,
+   "termos": [
+    "tecnologia das comunicacoes",
+    "transformacao digital",
+    "internet das coisas",
+    "industria 4.0",
+    "tecnologia 5g",
+    "regulacao"
+   ]
+  },
+  {
+   "grupo": 7,
+   "n_termos": 4,
+   "usos_DIEST": 1,
+   "usos_DISET": 17,
+   "equilibrio": 0.111,
+   "termos": [
+    "desenvolvimento sustentavel",
+    "tecnologia",
+    "infraestrutura",
+    "produtividade"
+   ]
+  },
+  {
+   "grupo": 8,
+   "n_termos": 3,
+   "usos_DIEST": 3,
+   "usos_DISET": 4,
+   "equilibrio": 0.857,
+   "termos": [
+    "cooperacao internacional",
+    "ocde",
+    "economia digital"
+   ]
+  },
+  {
+   "grupo": 9,
+   "n_termos": 2,
+   "usos_DIEST": 0,
+   "usos_DISET": 0,
+   "equilibrio": 0.0,
+   "termos": [
+    "social protection",
+    "digitalisation"
+   ]
+  },
+  {
+   "grupo": 10,
+   "n_termos": 2,
+   "usos_DIEST": 13,
+   "usos_DISET": 13,
+   "equilibrio": 1.0,
+   "termos": [
+    "politicas publicas",
+    "participacao social"
+   ]
+  },
+  {
+   "grupo": 11,
+   "n_termos": 2,
+   "usos_DIEST": 3,
+   "usos_DISET": 0,
+   "equilibrio": 0.0,
+   "termos": [
+    "dados abertos",
+    "governo"
+   ]
+  },
+  {
+   "grupo": 12,
+   "n_termos": 2,
+   "usos_DIEST": 0,
+   "usos_DISET": 2,
+   "equilibrio": 0.0,
+   "termos": [
+    "politica de inovacao",
+    "inovacoes"
+   ]
+  }
+ ],
+ "termos": [
+  {
+   "termo": "inteligencia artificial",
+   "grupo": 1,
+   "obras": 23,
+   "DIEST": 3,
+   "DISET": 10,
+   "sem_membro": 10,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "internet",
+   "grupo": 1,
+   "obras": 20,
+   "DIEST": 2,
+   "DISET": 8,
+   "sem_membro": 10,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "desenvolvimento economico",
+   "grupo": 1,
+   "obras": 17,
+   "DIEST": 5,
+   "DISET": 4,
+   "sem_membro": 8,
+   "dominante": "DIEST"
+  },
+  {
+   "termo": "banda larga",
+   "grupo": 1,
+   "obras": 13,
+   "DIEST": 0,
+   "DISET": 2,
+   "sem_membro": 11,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "brics",
+   "grupo": 1,
+   "obras": 9,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 9,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "acesso a internet",
+   "grupo": 1,
+   "obras": 7,
+   "DIEST": 0,
+   "DISET": 3,
+   "sem_membro": 4,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "crescimento economico",
+   "grupo": 1,
+   "obras": 7,
+   "DIEST": 0,
+   "DISET": 2,
+   "sem_membro": 5,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "tecnologias da informacao e comunicacao",
+   "grupo": 1,
+   "obras": 6,
+   "DIEST": 1,
+   "DISET": 3,
+   "sem_membro": 2,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "organizacao para a cooperacao e o desenvolvimento economico (ocde)",
+   "grupo": 1,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 6,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "comercio internacional",
+   "grupo": 1,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 5,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "going digital",
+   "grupo": 1,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 4,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "desenvolvimento regional",
+   "grupo": 1,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 1,
+   "sem_membro": 3,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "regressao logistica",
+   "grupo": 1,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 4,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "comercio digital",
+   "grupo": 1,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 4,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "ensino assistido por computadores",
+   "grupo": 1,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 1,
+   "sem_membro": 3,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "mercado de trabalho",
+   "grupo": 2,
+   "obras": 22,
+   "DIEST": 2,
+   "DISET": 6,
+   "sem_membro": 14,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "administracao publica",
+   "grupo": 2,
+   "obras": 16,
+   "DIEST": 5,
+   "DISET": 2,
+   "sem_membro": 9,
+   "dominante": "DIEST"
+  },
+  {
+   "termo": "covid-19",
+   "grupo": 2,
+   "obras": 14,
+   "DIEST": 3,
+   "DISET": 3,
+   "sem_membro": 8,
+   "dominante": "empate"
+  },
+  {
+   "termo": "plataformas digitais",
+   "grupo": 2,
+   "obras": 12,
+   "DIEST": 0,
+   "DISET": 6,
+   "sem_membro": 6,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "automacao",
+   "grupo": 2,
+   "obras": 12,
+   "DIEST": 0,
+   "DISET": 8,
+   "sem_membro": 4,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "trabalho",
+   "grupo": 2,
+   "obras": 12,
+   "DIEST": 2,
+   "DISET": 3,
+   "sem_membro": 7,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "pandemia",
+   "grupo": 2,
+   "obras": 9,
+   "DIEST": 2,
+   "DISET": 1,
+   "sem_membro": 6,
+   "dominante": "DIEST"
+  },
+  {
+   "termo": "emprego",
+   "grupo": 2,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 5,
+   "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "tecnologia audiovisual",
+   "grupo": 2,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 3,
+   "sem_membro": 2,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "doencas endemicas",
+   "grupo": 2,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 2,
+   "sem_membro": 3,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "analise de dados",
+   "grupo": 2,
+   "obras": 5,
+   "DIEST": 1,
+   "DISET": 1,
+   "sem_membro": 3,
+   "dominante": "empate"
+  },
+  {
+   "termo": "bases de dados",
+   "grupo": 2,
+   "obras": 4,
+   "DIEST": 1,
+   "DISET": 2,
+   "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "economia de plataformas",
+   "grupo": 2,
+   "obras": 4,
+   "DIEST": 1,
+   "DISET": 3,
+   "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "telecomunicacoes",
+   "grupo": 3,
+   "obras": 36,
+   "DIEST": 1,
+   "DISET": 21,
+   "sem_membro": 14,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "ciencia e tecnologia",
+   "grupo": 3,
+   "obras": 20,
+   "DIEST": 1,
+   "DISET": 14,
+   "sem_membro": 5,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "pesquisa e desenvolvimento",
+   "grupo": 3,
+   "obras": 10,
+   "DIEST": 1,
+   "DISET": 7,
+   "sem_membro": 3,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "industria",
+   "grupo": 3,
+   "obras": 9,
+   "DIEST": 0,
+   "DISET": 8,
+   "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "energia eletrica",
+   "grupo": 3,
+   "obras": 8,
+   "DIEST": 0,
+   "DISET": 8,
+   "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "compartilhamento de infraestrutura",
+   "grupo": 3,
+   "obras": 7,
+   "DIEST": 0,
+   "DISET": 7,
+   "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "economia",
+   "grupo": 3,
+   "obras": 7,
+   "DIEST": 0,
+   "DISET": 7,
+   "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "telefonia movel",
+   "grupo": 3,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 5,
+   "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "industria de telecomunicacoes",
+   "grupo": 3,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 4,
+   "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "economia – geral",
+   "grupo": 3,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 4,
+   "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "redes de telecomunicacoes",
+   "grupo": 3,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 3,
+   "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "tecnologia da informacao",
+   "grupo": 4,
+   "obras": 50,
+   "DIEST": 6,
+   "DISET": 17,
+   "sem_membro": 28,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "indice de custo da tecnologia da informacao (icti)",
+   "grupo": 4,
+   "obras": 21,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 21,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "indices amplos de precos",
+   "grupo": 4,
+   "obras": 18,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 18,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "atividade economica",
+   "grupo": 4,
+   "obras": 11,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 11,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "condicoes economicas. pesquisa economica. sistemas economicos",
+   "grupo": 4,
+   "obras": 8,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 8,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "acesso a informacao",
+   "grupo": 4,
+   "obras": 7,
+   "DIEST": 1,
+   "DISET": 1,
+   "sem_membro": 5,
+   "dominante": "empate"
+  },
+  {
+   "termo": "bibliotecarios",
+   "grupo": 4,
+   "obras": 7,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 7,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "gastos publicos",
+   "grupo": 4,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 6,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "inflacao",
+   "grupo": 4,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 6,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "condicoes economicas",
+   "grupo": 4,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 1,
+   "sem_membro": 4,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "trabalhadores",
+   "grupo": 5,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 1,
+   "sem_membro": 5,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "residuos solidos",
+   "grupo": 5,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 5,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "aspectos sociais",
+   "grupo": 5,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 5,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "inclusao social",
+   "grupo": 5,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 5,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "indicadores sociais",
+   "grupo": 5,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 5,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "catadores de material reciclavel",
+   "grupo": 5,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 5,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "reciclagem de materiais",
+   "grupo": 5,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 5,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "tecnologia das comunicacoes",
+   "grupo": 6,
+   "obras": 18,
+   "DIEST": 2,
+   "DISET": 10,
+   "sem_membro": 6,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "transformacao digital",
+   "grupo": 6,
+   "obras": 11,
+   "DIEST": 0,
+   "DISET": 4,
+   "sem_membro": 7,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "internet das coisas",
+   "grupo": 6,
+   "obras": 7,
+   "DIEST": 0,
+   "DISET": 7,
+   "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "industria 4.0",
+   "grupo": 6,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 5,
+   "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "tecnologia 5g",
+   "grupo": 6,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 4,
+   "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "regulacao",
+   "grupo": 6,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 2,
+   "sem_membro": 3,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "desenvolvimento sustentavel",
+   "grupo": 7,
+   "obras": 10,
+   "DIEST": 1,
+   "DISET": 5,
+   "sem_membro": 5,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "tecnologia",
+   "grupo": 7,
+   "obras": 10,
+   "DIEST": 0,
+   "DISET": 5,
+   "sem_membro": 5,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "infraestrutura",
+   "grupo": 7,
+   "obras": 8,
+   "DIEST": 0,
+   "DISET": 4,
+   "sem_membro": 4,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "produtividade",
+   "grupo": 7,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 3,
+   "sem_membro": 2,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "cooperacao internacional",
+   "grupo": 8,
+   "obras": 9,
+   "DIEST": 1,
+   "DISET": 1,
+   "sem_membro": 8,
+   "dominante": "empate"
+  },
+  {
+   "termo": "ocde",
+   "grupo": 8,
+   "obras": 8,
+   "DIEST": 2,
+   "DISET": 2,
+   "sem_membro": 6,
+   "dominante": "empate"
+  },
+  {
+   "termo": "economia digital",
+   "grupo": 8,
+   "obras": 5,
+   "DIEST": 0,
+   "DISET": 1,
+   "sem_membro": 4,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "social protection",
+   "grupo": 9,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 6,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "digitalisation",
+   "grupo": 9,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 6,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "politicas publicas",
+   "grupo": 10,
+   "obras": 48,
+   "DIEST": 11,
+   "DISET": 13,
+   "sem_membro": 27,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "participacao social",
+   "grupo": 10,
+   "obras": 6,
+   "DIEST": 2,
+   "DISET": 0,
+   "sem_membro": 4,
+   "dominante": "DIEST"
+  },
+  {
+   "termo": "dados abertos",
+   "grupo": 11,
+   "obras": 4,
+   "DIEST": 2,
+   "DISET": 0,
+   "sem_membro": 2,
+   "dominante": "DIEST"
+  },
+  {
+   "termo": "governo",
+   "grupo": 11,
+   "obras": 4,
+   "DIEST": 1,
+   "DISET": 0,
+   "sem_membro": 3,
+   "dominante": "DIEST"
+  },
+  {
+   "termo": "politica de inovacao",
+   "grupo": 12,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 2,
+   "sem_membro": 2,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "inovacoes",
+   "grupo": 12,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 4,
+   "dominante": "nenhuma"
+  }
+ ]
+}
