@@ -1,0 +1,7963 @@
+{
+ "params": {
+  "start": 2010,
+  "perm": 1000,
+  "seed": 7
+ },
+ "counts": {
+  "items_window": 9521,
+  "authors_total": 9851,
+  "members": {
+   "DIEST": 132,
+   "DISET": 129
+  },
+  "active_staff": {
+   "DIEST": 65,
+   "DISET": 56
+  },
+  "items_by_side": {
+   "DIEST": 1092,
+   "DISET": 1195
+  },
+  "hyperedge_sizes": {
+   "1": 3898,
+   "2": 2707,
+   "3": 1549,
+   "4": 690,
+   "5": 317,
+   "6": 149,
+   "7": 86,
+   "8": 43,
+   "9": 28,
+   "10": 54
+  },
+  "share_size_ge3": 0.306
+ },
+ "people": {
+  "DIEST": [
+   {
+    "name": "José Celso Pereira Cardoso Junior",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.963,
+    "n_items": 73,
+    "n_tagged": 20,
+    "last_year": 2023,
+    "top_terms": [
+     "Planejamento governamental",
+     "Planejamento econômico",
+     "Orçamento Nacional",
+     "Planejamento Estadual",
+     "Desenvolvimento nacional",
+     "Gestão pública"
+    ],
+    "areas": [],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/609-jose-celso-pereira-cardoso-junior"
+   },
+   {
+    "name": "Daniel Ricardo de Castro Cerqueira",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.993,
+    "n_items": 65,
+    "n_tagged": 14,
+    "last_year": 2026,
+    "top_terms": [
+     "Segurança pública",
+     "Homicídio",
+     "Estupro",
+     "Violência sexual",
+     "Violência",
+     "Homicídios"
+    ],
+    "areas": [
+     "Economia do Crime",
+     "Políticas se segurança pública efetivas",
+     "Criminologia quantitativa aplicada com métodos econométricos",
+     "Avaliação de impacto de programas sociais"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/573-daniel-ricardo-de-castro-cerqueira"
+   },
+   {
+    "name": "Castro, Jorge Abrahão de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.611,
+    "n_items": 61,
+    "n_tagged": 8,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Roberto Rocha Coelho Pires",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 53,
+    "n_tagged": 18,
+    "last_year": 2026,
+    "top_terms": [
+     "Inspeção do trabalho",
+     "Avaliação de Desempenho",
+     "Capacidades estatais",
+     "Administração do Trabalho",
+     "Monitoramento do empregado",
+     "Relações Estado-sociedade"
+    ],
+    "areas": [
+     "Implementação de Políticas Públicas",
+     "Burocracia",
+     "relações estado-sociedade",
+     "capacidades estatais",
+     "desigualdades sociais"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/650-roberto-rocha-coelho-pires"
+   },
+   {
+    "name": "Danilo Santa Cruz Coelho",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.976,
+    "n_items": 51,
+    "n_tagged": 14,
+    "last_year": 2026,
+    "top_terms": [
+     "Estupro",
+     "Violência sexual",
+     "Violência",
+     "Segurança pública",
+     "Abuso Sexual",
+     "Homicídio"
+    ],
+    "areas": [
+     "Escolha Social",
+     "Segurança Pública",
+     "Teoria dos Jogos",
+     "Econometria Aplicada"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15650-danilo-santa-cruz-coelho-2"
+   },
+   {
+    "name": "Maurício Mota Saboya Pinheiro",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.909,
+    "n_items": 49,
+    "n_tagged": 10,
+    "last_year": 2026,
+    "top_terms": [
+     "Avaliação de impacto",
+     "Causalidade",
+     "Evidências em políticas públicas",
+     "Direitos humanos",
+     "Desenvolvimento como liberdade",
+     "Institucionalização"
+    ],
+    "areas": [
+     "Estado",
+     "Desenvolvimento",
+     "Direitos Humanos"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/636-mauricio-mota-saboya-pinheiro"
+   },
+   {
+    "name": "Felix Garcia Lopez Júnior",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.994,
+    "n_items": 45,
+    "n_tagged": 23,
+    "last_year": 2026,
+    "top_terms": [
+     "Cargos de confiança",
+     "Direção e Assessoramento Superior (DAS)",
+     "Nomeações políticas",
+     "Poder Executivo federal",
+     "Presidencialismo de coalizão",
+     "Representação política"
+    ],
+    "areas": [
+     "(percepções sobre) desigualdade social",
+     "clientelismo e patronagem",
+     "burocracia pública",
+     "coesão social",
+     "confiança",
+     "ONGs"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/584-felix-garcia-lopez-junior"
+   },
+   {
+    "name": "Alexandre de Ávila Gomide",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.945,
+    "n_items": 44,
+    "n_tagged": 13,
+    "last_year": 2026,
+    "top_terms": [
+     "Capacidades estatais",
+     "Transporte público",
+     "Tarifas",
+     "Estrutura e transformações do Estado",
+     "Capacidades estatais para o desenvolvimento",
+     "Arranjos institucionais de políticas públicas"
+    ],
+    "areas": [
+     "Estrutura e transformações do Estado",
+     "Capacidades estatais para o desenvolvimento",
+     "Arranjos institucionais de políticas públicas",
+     "Governança de programas de infraestrutura",
+     "Regulação de transportes urbanos"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/551-alexandre-de-avila-gomide"
+   },
+   {
+    "name": "Maria Paula Gomes dos Santos",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.928,
+    "n_items": 40,
+    "n_tagged": 11,
+    "last_year": 2026,
+    "top_terms": [
+     "Comunidades terapêuticas",
+     "Usuários de drogas",
+     "Drogas de Uso Indevido",
+     "Atendimento Médico",
+     "Substâncias psicoativas",
+     "Gastos com Saúde"
+    ],
+    "areas": [
+     "Segurança Pública",
+     "Políticas de Drogas",
+     "Políticas Sociais"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15760-maria-paula-gomes-dos-santos"
+   },
+   {
+    "name": "Daniel Pitangueira de Avelino",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.955,
+    "n_items": 39,
+    "n_tagged": 27,
+    "last_year": 2026,
+    "top_terms": [
+     "Participação social",
+     "Orçamento participativo",
+     "Conferências nacionais",
+     "Política urbana",
+     "Planejamento Participativo",
+     "Democracia"
+    ],
+    "areas": [
+     "Democracia",
+     "Participação política",
+     "Conselhos nacionais",
+     "Conferências nacionais",
+     "Planejamento participativo",
+     "Orçamento participativo"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15804-daniel-pitangueira-de-avelino"
+   },
+   {
+    "name": "Alexandre dos Santos Cunha",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 38,
+    "n_tagged": 11,
+    "last_year": 2026,
+    "top_terms": [
+     "Tribunais do Trabalho",
+     "Concurso público",
+     "Políticas sobre drogas",
+     "Fronteiras",
+     "Seleção de Pessoal",
+     "Combate às Drogas"
+    ],
+    "areas": [
+     "Direito e Políticas Públicas",
+     "Organizações do Sistema de Justiça",
+     "Políticas sobre Drogas",
+     "Estudos Fronteiriços"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/542-alexandre-dos-santos-cunha"
+   },
+   {
+    "name": "Pedro Lucas de Moura Palotti",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 37,
+    "n_tagged": 18,
+    "last_year": 2026,
+    "top_terms": [
+     "Evidências em políticas públicas",
+     "Burocracia",
+     "Avaliação de impacto",
+     "Policy Design",
+     "Governos estaduais",
+     "Federalismo e relações intergovernamentais"
+    ],
+    "areas": [
+     "Federalismo e relações intergovernamentais",
+     "Uso de evidências em políticas públicas",
+     "Burocracia"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15721-pedro-lucas-de-moura-palotti"
+   },
+   {
+    "name": "Koga, Natália Massaco",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.946,
+    "n_items": 37,
+    "n_tagged": 17,
+    "last_year": 2026,
+    "top_terms": [
+     "Evidências em políticas públicas",
+     "Políticas públicas baseadas em evidências (PPBEs)",
+     "Avaliação de impacto",
+     "Single Registry",
+     "tool",
+     "coordination"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Garcia, Ronaldo Coutinho",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.846,
+    "n_items": 36,
+    "n_tagged": 5,
+    "last_year": 2023,
+    "top_terms": [
+     "Programa Nacional de Acesso ao Ensino Técnico e Emprego (PRONATEC)",
+     "Educação Profissional",
+     "Planejamento econômico",
+     "Orçamento Nacional",
+     "Planejamento governamental",
+     "Plano Plurianual (PPA)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cavalcante, Pedro Luiz Costa",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 36,
+    "n_tagged": 9,
+    "last_year": 2023,
+    "top_terms": [
+     "Governo central",
+     "Inovações",
+     "Inovação no setor público",
+     "Desproporcionalidade representativa",
+     "Gestão",
+     "Design thinking"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Fonseca, Igor Ferraz da",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.987,
+    "n_items": 35,
+    "n_tagged": 18,
+    "last_year": 2024,
+    "top_terms": [
+     "Estudos de Casos",
+     "Participação social",
+     "Discriminação",
+     "Política Florestal",
+     "Acesso à Informação",
+     "Audiências públicas"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Peliano, Anna Maria T. Medeiros",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.964,
+    "n_items": 35,
+    "n_tagged": 2,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Magalhães, Luís Carlos Garcia de",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.936,
+    "n_items": 32,
+    "n_tagged": 4,
+    "last_year": 2025,
+    "top_terms": [
+     "Dívida pública",
+     "Classe Social",
+     "Gastos com medicamentos",
+     "Medicamentos",
+     "Sociedade brasileira",
+     "Tipologia de classe"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Joana Luiza Oliveira Alencar",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.919,
+    "n_items": 30,
+    "n_tagged": 17,
+    "last_year": 2025,
+    "top_terms": [
+     "Conferências",
+     "Lei Maria da Penha",
+     "Participação social",
+     "Conselho Nacional de Economia Solidária (CNES)",
+     "Estado e sociedade",
+     "Turismo"
+    ],
+    "areas": [
+     "Gênero",
+     "Democracia",
+     "Participação Social",
+     "Metodologias de diálogo",
+     "Segurança Pública",
+     "Instituições Participativas"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/604-joana-luiza-oliveira-alencar"
+   },
+   {
+    "name": "Helder Rogério Sant'Ana Ferreira",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.972,
+    "n_items": 30,
+    "n_tagged": 9,
+    "last_year": 2026,
+    "top_terms": [
+     "Cenários prospectivos",
+     "Segurança pública",
+     "Monitoramento",
+     "Violência",
+     "Violência contra as Mulheres",
+     "Homicídios"
+    ],
+    "areas": [
+     "Segurança Pública",
+     "Justiça Criminal",
+     "Execução Penal",
+     "Direitos Humanos",
+     "Planejamento",
+     "Monitoramento"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/599-helder-rogerio-sant-ana-ferreira"
+   },
+   {
+    "name": "Nogueira, Roberto Passos",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.914,
+    "n_items": 27,
+    "n_tagged": 14,
+    "last_year": 2023,
+    "top_terms": [
+     "Condições de Saúde",
+     "Deficientes",
+     "Saúde",
+     "Gastos públicos",
+     "Movimento sanitário",
+     "Carga global da doença"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Luseni Maria Cordeiro de Aquino",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.941,
+    "n_items": 26,
+    "n_tagged": 11,
+    "last_year": 2026,
+    "top_terms": [
+     "Lei Maria da Penha",
+     "Direitos da infância e da adolescência",
+     "Organização do sistema de justiça",
+     "Acesso à Justiça no Brasil",
+     "Desenvolvimento da mídia",
+     "Poder Judiciário"
+    ],
+    "areas": [
+     "Gasto Social",
+     "Proteção Social",
+     "Direitos Humanos",
+     "Direitos da infância e da adolescência",
+     "Juventude",
+     "Segurança Pública"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/625-luseni-maria-cordeiro-de-aquino"
+   },
+   {
+    "name": "Rute Imanishi Rodrigues",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.559,
+    "n_items": 25,
+    "n_tagged": 12,
+    "last_year": 2025,
+    "top_terms": [
+     "Favelas",
+     "Complexo do Alemão",
+     "Direito à cidade",
+     "Habitação de interesse social",
+     "Abastecimento de Água",
+     "Movimentos sociais"
+    ],
+    "areas": [
+     "Habitação de interesse social",
+     "Urbanização e regularização fundiária de favelas",
+     "Segregação espacial urbana",
+     "Direito à moradia",
+     "Direito à cidade"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/654-rute-imanishi-rodrigues"
+   },
+   {
+    "name": "Joao Claudio Basso Pompeu",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 25,
+    "n_tagged": 11,
+    "last_year": 2026,
+    "top_terms": [
+     "Classe Social",
+     "Estudos presidenciais",
+     "Estrutura Organizacional",
+     "Estratificação social",
+     "Mudança organizacional",
+     "Governo federal"
+    ],
+    "areas": [
+     "Estratificação social",
+     "Participação social",
+     "Estudos presidenciais",
+     "Administração pública"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15765-joao-claudio-basso-pompeu"
+   },
+   {
+    "name": "Mello, Janine",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 24,
+    "n_tagged": 7,
+    "last_year": 2024,
+    "top_terms": [
+     "Mulheres",
+     "Terceiro setor",
+     "Combate à pobreza",
+     "Evidências em políticas públicas",
+     "Avaliação de impacto",
+     "Produção Estatal"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Couto, Leandro Freitas",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 23,
+    "n_tagged": 12,
+    "last_year": 2024,
+    "top_terms": [
+     "Governança orçamentária",
+     "Orçamento Nacional",
+     "Orçamento",
+     "Elaboração do Orçamento",
+     "Regras orçamentárias",
+     "Orçamento público"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Tatiana Dias Silva",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.8,
+    "n_items": 23,
+    "n_tagged": 11,
+    "last_year": 2024,
+    "top_terms": [
+     "População negra",
+     "Igualdade racial",
+     "Reserva de vagas para negros",
+     "Pessoas negras",
+     "Políticas públicas, políticas sociais, relações raciais, ação afirmativa",
+     "Negros"
+    ],
+    "areas": [
+     "Políticas públicas, políticas sociais, relações raciais, ação afirmativa"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/13341-tatiana-dias-silva"
+   },
+   {
+    "name": "Almir de Oliveira Junior",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 23,
+    "n_tagged": 9,
+    "last_year": 2023,
+    "top_terms": [
+     "Policiamento comunitário",
+     "Sistema de Justiça Criminal",
+     "Segurança pública",
+     "Polícia",
+     "Inteligência policial",
+     "Reintegração social"
+    ],
+    "areas": [
+     "Segurança pública; burocracia, governança e gestão pública"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/13430-almir-de-oliveira-junior"
+   },
+   {
+    "name": "Bruno Queiroz Cunha",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.872,
+    "n_items": 23,
+    "n_tagged": 11,
+    "last_year": 2026,
+    "top_terms": [
+     "Regulação estatal",
+     "Estado regulador",
+     "Agências reguladoras",
+     "Reforma do Estado",
+     "Estrutura e funcionamento do Estado",
+     "Regulação"
+    ],
+    "areas": [
+     "Estrutura e funcionamento do Estado",
+     "Instituições",
+     "Governança",
+     "Regulação",
+     "Capacidades Estatais",
+     "Inovação no Setor Público"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15646-bruno-queiroz-cunha"
+   },
+   {
+    "name": "Armstrong, Karolina Chacon",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 20,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [
+     "Violência",
+     "Mortalidade",
+     "Segurança pública",
+     "Homicídio",
+     "Homicídios",
+     "Sistema de Informações sobre Mortalidade (SIM)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Viana, André Rego",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.982,
+    "n_items": 19,
+    "n_tagged": 9,
+    "last_year": 2026,
+    "top_terms": [
+     "Refugiados",
+     "Classe Social",
+     "Setor de serviços",
+     "Neoliberalismo",
+     "Classes Sociais",
+     "Mercado de trabalho"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Acir Almeida",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.826,
+    "n_items": 19,
+    "n_tagged": 12,
+    "last_year": 2026,
+    "top_terms": [
+     "Produção legislativa",
+     "Poder Legislativo",
+     "Representação política",
+     "Comportamento político",
+     "Medida Provisória (MP)",
+     "Dominância legislativa"
+    ],
+    "areas": [
+     "Estudos legislativos",
+     "Relações Executivo-Legislativo e instituições políticas"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15674-acir-almeida"
+   },
+   {
+    "name": "Vianna, Salvador Teixeira Werneck",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.771,
+    "n_items": 17,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Schmidt, Flávia de Holanda",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.814,
+    "n_items": 17,
+    "n_tagged": 8,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Bueno, Samira",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 17,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Pereira, Ana Karine",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.624,
+    "n_items": 17,
+    "n_tagged": 8,
+    "last_year": 2026,
+    "top_terms": [
+     "Hidrelétricas",
+     "Audiências públicas",
+     "Plano Nacional de Resíduos Sólidos (PNRS)",
+     "Políticas de infraestrutura",
+     "Obras Públicas",
+     "Programa de Aceleração do Crescimento (PAC)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Melo, Valdir",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 17,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lima, Renato Sergio de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 17,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Fabio de Sá e",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 16,
+    "n_tagged": 4,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Bernardo Abreu de Medeiros",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.89,
+    "n_items": 16,
+    "n_tagged": 10,
+    "last_year": 2026,
+    "top_terms": [
+     "Análise de políticas públicas",
+     "Métodos e Técnicas de Pesquisa Empírica em Direito",
+     "Sistema de Justiça e Segurança Pública",
+     "Controle externo",
+     "Processo de execução fiscal",
+     "Justiça Federal"
+    ],
+    "areas": [
+     "Análise de Políticas Públicas",
+     "Métodos e Técnicas de Pesquisa Empírica em Direito",
+     "Sistema de Justiça e Segurança Pública"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/560-bernardo-abreu-de-medeiros"
+   },
+   {
+    "name": "Linhares, Paulo de Tarso Frazão Soares",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 16,
+    "n_tagged": 8,
+    "last_year": 2026,
+    "top_terms": [
+     "Federalismo",
+     "Cooperação federativa",
+     "Governo Local",
+     "Coordenação federativa",
+     "Infraestrutura urbana",
+     "Federalismo brasileiro"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lins, Gabriel de Oliveira Accioly",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 16,
+    "n_tagged": 5,
+    "last_year": 2026,
+    "top_terms": [
+     "Homicídio",
+     "Segurança pública",
+     "Violência",
+     "Homicídios",
+     "Mortalidade",
+     "Sistema de Informações sobre Mortalidade (SIM)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Roberto Pires Messenberg",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.612,
+    "n_items": 15,
+    "n_tagged": 9,
+    "last_year": 2026,
+    "top_terms": [
+     "Cooperação federativa",
+     "Federalismo",
+     "Ciências sociais",
+     "Políticas Públicas e Estudos Comparados",
+     "Teoria Econômica",
+     "Macroeconomia Aplicada"
+    ],
+    "areas": [
+     "Ciências Sociais",
+     "Políticas Públicas e Estudos Comparados",
+     "Teoria Econômica",
+     "Macroeconomia",
+     "Macroeconomia Aplicada",
+     "Econometria"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/649-roberto-pires-messenberg"
+   },
+   {
+    "name": "Gutierrez, Maria Bernadete Gomes Pereira Sarmiento",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.755,
+    "n_items": 15,
+    "n_tagged": 5,
+    "last_year": 2025,
+    "top_terms": [
+     "Energia. Fontes de Energia. Combustíveis",
+     "Energia",
+     "Sustentabilidade",
+     "Desenvolvimento sustentável",
+     "Emissão de gases",
+     "Protocolo de Quioto"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Couto, Bruno Gontyjo do",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 15,
+    "n_tagged": 10,
+    "last_year": 2024,
+    "top_terms": [
+     "Evidências",
+     "Políticas públicas baseadas em evidências (PPBEs)",
+     "Capacidade analítica",
+     "Burocracia",
+     "Legislação Covid-19",
+     "Políticas públicas baseadas em evidências"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Sheila Cristina Tolentino Barbosa",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 13,
+    "n_tagged": 8,
+    "last_year": 2025,
+    "top_terms": [
+     "Estrutura Organizacional",
+     "Programas públicos federais",
+     "Coordenação interorganizacional",
+     "Organização da Administração Pública e Coordenação interorganizacional",
+     "Implementação de políticas públicas e planejaemtno governamental",
+     "Mudança organizacional"
+    ],
+    "areas": [
+     "Gestão pública",
+     "Governança",
+     "Organização da Administração Pública e Coordenação interorganizacional",
+     "Implementação de políticas públicas e planejaemtno governamental"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15697-sheila-cristina-tolentino-barbosa"
+   },
+   {
+    "name": "Cassiolato, Maria Martha de Menezes Costa",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.513,
+    "n_items": 12,
+    "n_tagged": 3,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Soares, Milena Karla",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 12,
+    "n_tagged": 4,
+    "last_year": 2024,
+    "top_terms": [
+     "Cannabis",
+     "Drogas de Uso Indevido",
+     "Maconha",
+     "Transtornos relacionados ao uso de substâncias",
+     "Fronteiras",
+     "Regulamentação governamental"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lunelli, Isabella Cristina",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.5,
+    "n_items": 12,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Oliveira, Raissa Menezes de",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 0.543,
+    "n_items": 11,
+    "n_tagged": 6,
+    "last_year": 2026,
+    "top_terms": [
+     "Trabalho decente",
+     "Trabalhadores Jovens",
+     "Institucionalização",
+     "Assistência social",
+     "Juventude",
+     "Políticas públicas informadas por evidências"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cacciamali, Maria Cristina",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 9,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Andrade, Carla Coelho de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.704,
+    "n_items": 9,
+    "n_tagged": 2,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Paulo Eduardo Alves da",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 9,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Peci, Alketa",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.761,
+    "n_items": 9,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Agências reguladoras independentes (ARIs)",
+     "Agências reguladoras",
+     "Organização para a Cooperação e o Desenvolvimento Econômico (OCDE)",
+     "OCDE",
+     "Desempenho econômico",
+     "Governança pública"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Souza, Clóvis Henrique Leite de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 4,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cruxên, Isadora Araújo",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 7,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Kliass, Paulo",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 5,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Nascimento, Maricilene Isaira Baia do",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 4,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Goellner, Isabella de Araujo",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 5,
+    "last_year": 2026,
+    "top_terms": [
+     "Tribunal de Contas da União",
+     "Legislação Covid-19",
+     "Poder Executivo",
+     "Processo inovador",
+     "Auditoria operacional",
+     "Controle externo"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Andrade, Pedro Gomes",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 6,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Parreiras, Angelina",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 7,
+    "n_tagged": 4,
+    "last_year": 2026,
+    "top_terms": [
+     "Violência",
+     "Criminalidade",
+     "Homicídio",
+     "Indicadores quantitativos",
+     "Indicadores de violência",
+     "Conflitos no campo"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ribeiro, Uriella Coelho",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 7,
+    "n_tagged": 6,
+    "last_year": 2014,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Sivaldo Pereira da",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 7,
+    "n_tagged": 6,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Pereira, Ana Camila Ribeiro",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 7,
+    "n_tagged": 4,
+    "last_year": 2023,
+    "top_terms": [
+     "Organizações Sem Fins Lucrativos",
+     "Coleta de Dados",
+     "Escolaridade",
+     "Terceiro setor",
+     "Organizações da Sociedade Civil (OSCs)",
+     "Setor de saúde"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cunha, Victória Hoff da",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 7,
+    "n_tagged": 4,
+    "last_year": 2026,
+    "top_terms": [
+     "Violência",
+     "Conflitos fundiários",
+     "Cidade",
+     "Espaço urbano",
+     "Regiões administrativas",
+     "Área metropolitana de Brasília"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Mancuso, Wagner Pralon",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 3,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Rosa, Luiza Gomes Luz",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.648,
+    "n_items": 6,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Políticas públicas informadas por evidências",
+     "Políticas em direitos humanos",
+     "Institucionalização",
+     "Direitos humanos",
+     "Substâncias Tóxicas",
+     "Uso Indevido de Drogas"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Resende, Ciro Antônio da Silva",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 3,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lima, Paula Pompeu Fiuza",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 4,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Bertogna, João Pedro Sussel",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.648,
+    "n_items": 6,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Metodologia Q",
+     "Políticas públicas informadas por evidências",
+     "Políticas em direitos humanos",
+     "Institucionalização",
+     "Paradigmas econômicos",
+     "Comunidades epistêmicas"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Pontes, Pedro Arthur de Miranda Marques",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 2,
+    "last_year": 2024,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Itaquê Santana Barbosa",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 0.826,
+    "n_items": 5,
+    "n_tagged": 5,
+    "last_year": 2026,
+    "top_terms": [
+     "Trabalhadores associados",
+     "Trabalhadores não associados",
+     "Conferência nacional de saúde indígena",
+     "Participação social",
+     "Política social",
+     "Indústria da Comunicação"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Dias, Camila Caldeira Nunes",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 5,
+    "n_tagged": 4,
+    "last_year": 2026,
+    "top_terms": [
+     "Fronteira",
+     "Crime Organizado",
+     "Violência",
+     "Facções de base prisionais",
+     "Processo de faccionalização",
+     "Facções prisionais/criminais"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Soares Filho, Marcos Luiz Vieira",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 5,
+    "n_tagged": 5,
+    "last_year": 2024,
+    "top_terms": [
+     "Evidências",
+     "Gestão de pessoas",
+     "Knowledge brokering",
+     "Escola Nacional de Administração Pública",
+     "Redução de homicídios",
+     "Ministério da Justiça"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Colares, Elisa Sardão",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Barboza, Danilo Praxedes",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Escudero, Camila",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 3,
+    "last_year": 2024,
+    "top_terms": [
+     "Organizações sociais",
+     "Organizações da Sociedade Civil (OSCs)",
+     "Desenvolvimento de Sistemas",
+     "Tecnologias de comunicação",
+     "Informação",
+     "Comunicação"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Figueiredo, Ana",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Teste de pesquisador",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Matos, Mariana Vieira Martins",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Rezende, Raimer Rodrigues",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 3,
+    "last_year": 2013,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Oliveira, Marília Silva de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 3,
+    "last_year": 2013,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Papi, Luciana Pazini",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2023,
+    "top_terms": [
+     "Empresas públicas",
+     "Plano plurianual",
+     "Planos Plurianuais",
+     "Planejamento municipal",
+     "Região metropolitana de Porto Alegre",
+     "Cultura de planejamento"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Maria Estela Capuano Villar",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Conferência Nacional de Gestão do Trabalho e da Educação na Saúde",
+     "Trabalho no SUS",
+     "Conferência Nacional de Assistência Social",
+     "Sistema Único de Assistência Social",
+     "Conferência Nacional dos Direitos das Pessoas com Deficiência",
+     "Política social"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Azevedo, Daniel A. de",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Conferência Nacional de Migrações, Refúgio e Apatridia",
+     "Conferência Nacional de Cultura",
+     "Software de inteligência artificial",
+     "Cultura",
+     "Política social",
+     "Conferência Nacional dos Direitos da Criança e do Adolescente"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Santos, Eduardo Gomor dos",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Eiró, Flávio",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.771,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Gaetani, Francisco",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Garcia, Luciana Silva",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2024,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Santos, Alisson Gomes dos",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Dinâmica de violência",
+     "Conflitos",
+     "Homicídios",
+     "Homicídio",
+     "Violência",
+     "Conflitos fundiários"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Martins, Ana Paula Antunes",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lotta, Gabriela",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Brito, Elohá Cabreira",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Servitização",
+     "Subdesenvolvimento",
+     "Indústria extrativa",
+     "Desenvolvimento econômico",
+     "Setor de serviços",
+     "Desigualdade de renda"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Marcella Simoes Penello Meirelles",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Conferência Nacional de Segurança Alimentar e Nutricional",
+     "Fome",
+     "Participação social",
+     "Política social",
+     "Conferência Nacional dos Direitos da Criança e do Adolescente",
+     "Políticas de Direitos das crianças e adolescentes"
+    ],
+    "areas": [
+     "Participação social",
+     "Políticas públicas"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15773-marcella-simoes-penello-meirelles"
+   },
+   {
+    "name": "Karam, Ricardo Antônio de Souza",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Reis, Bruno Pinheiro Wanderley",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Virginia Rocha da",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.728,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Praça, Sérgio",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Alves, Paula Pereira Gonçalves",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Conflitos socioambientais",
+     "Povos indígenas",
+     "Criminalidade",
+     "Violência",
+     "Conflitos fundiários"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Djonathan Gomes Ribeiro",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.586,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [
+     "Transição para sustentabilidade",
+     "Pontos Cardeais",
+     "Estudos de transição para sustentabilidade",
+     "Transição tecnológica",
+     "Financiamento sustentável",
+     "Desigualdades territoriais"
+    ],
+    "areas": [
+     "Sustentabilidade",
+     "Inovação",
+     "Transição para sustentabilidade"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15816-djonathan-gomes-ribeiro"
+   },
+   {
+    "name": "Figueiredo, Ana Clara",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Jéssica Vasconcelos de Abreu",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Conferência Nacional de Gestão do Trabalho e da Educação na Saúde",
+     "Trabalho no SUS",
+     "Conferência Nacional de Juventude",
+     "Digitalização democratizante",
+     "Políticas de juventude",
+     "Saúde e Doenças - Geral"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Abreu, Welles Matias de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.543,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Souza, Thiago Silva e",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.543,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Medeiros, Débora",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "João Victor Lisbôa de Vasconcelos",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Furtado, Calvin da Cas",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 1,
+    "last_year": 2026,
+    "top_terms": [
+     "Inclua",
+     "Pró-equidade",
+     "Quadro Institucional::Governo. Administração Pública",
+     "Interações Estado-sociedade",
+     "Desigualdades",
+     "Emoções"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Souza, Cíntia Pinheiro Ribeiro de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Zilli, Luís Felipe",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Telles, Ana Clara",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Arouca, Luna",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Boullosa, Rosana de Freitas",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 1,
+    "last_year": 2026,
+    "top_terms": [
+     "Sistemas de monitoramento",
+     "Abordagem axiológica",
+     "Epistemologia gerencialista-cibernética",
+     "Requisitos dialógicos",
+     "Modelo MO-VA",
+     "Quadro Institucional::Governo. Administração Pública"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Duarte, Bárbara Sofia Félix",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Faria, Roseli",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Angotti, Bruna",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Padilha, Pablo Ziolkowski",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Santos, Cecília Amália Cunha",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Santiago, Raull",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Dutra, Roberto",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Tófoli, Luís Fernando",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ciasca, Bruna Stein",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2012,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Horstmann, Guilherme",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ferreira, Ana Paula Lima",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Wanda Claudia Galluzzi Nunes",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Rosa, Bruno Truzzi",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 1,
+    "last_year": 2026,
+    "top_terms": [
+     "Educação Informal",
+     "Trabalhadores Jovens",
+     "Transferência de renda",
+     "Demografia. População::Grupos Étnicos::Raças::Negros",
+     "Quadro Institucional::Diretos Humanos::Relações Raciais::Discriminação Racial",
+     "Bairro"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Marques, Sabrina Durigon",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lima, Verônica Couto de Araújo",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Vieira, André",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2020,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Magalhães, Álvaro",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Allegretti, Giovanni",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.586,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ramon José Gusso",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 1,
+    "n_tagged": 1,
+    "last_year": 2026,
+    "top_terms": [
+     "Educação. Treinamento",
+     "Conferência Nacional de Educação",
+     "Políticas de educação",
+     "Instituições participativas",
+     "Educação"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Priscila de Alantino Braz Silva",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 1,
+    "n_tagged": 1,
+    "last_year": 2026,
+    "top_terms": [
+     "Quadro Institucional::Governo. Administração Pública",
+     "Interações Estado-sociedade",
+     "Desigualdades",
+     "Emoções",
+     "Experiência vivida",
+     "Políticas públicas"
+    ],
+    "areas": [],
+    "profile_url": null
+   }
+  ],
+  "DISET": [
+   {
+    "name": "Fernanda De Negri",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.996,
+    "n_items": 93,
+    "n_tagged": 40,
+    "last_year": 2026,
+    "top_terms": [
+     "Produtividade Total dos Fatores (PTF)",
+     "Pesquisa e desenvolvimento",
+     "Produtividade do trabalho",
+     "Sistemas de inovação",
+     "Crescimento econômico",
+     "Inovações"
+    ],
+    "areas": [
+     "Cargos de confiança",
+     "Burocracia",
+     "Patronagem",
+     "Clientelismo político",
+     "ONGs",
+     "Instituições participativas"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/585-fernanda-de-negri"
+   },
+   {
+    "name": "Bahia, Luiz Dias",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.996,
+    "n_items": 82,
+    "n_tagged": 50,
+    "last_year": 2026,
+    "top_terms": [
+     "Desempenho produtivo",
+     "Produção industrial",
+     "Comportamento produtivo",
+     "Indústria brasileira",
+     "Indicadores de Desempenho",
+     "Complexos industriais"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Bonelli, Regis",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.754,
+    "n_items": 77,
+    "n_tagged": 4,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Bernardo Alves Furtado",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "explicita",
+    "share": 0.683,
+    "n_items": 69,
+    "n_tagged": 27,
+    "last_year": 2026,
+    "top_terms": [
+     "Mercado imobiliário",
+     "Sistemas complexos",
+     "Modelagem baseada em agentes",
+     "Regiões metropolitanas",
+     "Modelos baseados em agentes",
+     "Teoria da Informação"
+    ],
+    "areas": [
+     "Economia regional e urbana",
+     "Mercado imobiliário",
+     "Modelagem baseada em agentes",
+     "Simulação de políticas públicas"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/561-bernardo-alves-furtado-2"
+   },
+   {
+    "name": "Fabiano Mezadre Pompermayer",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.84,
+    "n_items": 68,
+    "n_tagged": 25,
+    "last_year": 2026,
+    "top_terms": [
+     "Plano Nacional de Logística Integrada (PNLI)",
+     "Matriz origem-destino",
+     "Mercadorias e Passageiros",
+     "Planejamento do transporte",
+     "Transporte de cargas inter-regional",
+     "Infraestrutura do Transporte"
+    ],
+    "areas": [
+     "Planejamento e regulação de transportes de carga e passageiros, de energia e de saneamento",
+     "Matrizes Origem/Destino",
+     "Competição e oligopólio",
+     "Desenho de concessões e PPPs"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/580-fabiano-mezadre-pompermayer"
+   },
+   {
+    "name": "Rocha, Katia Maria Carlos",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 0.968,
+    "n_items": 62,
+    "n_tagged": 12,
+    "last_year": 2026,
+    "top_terms": [
+     "Economias emergentes",
+     "Fluxo de capital",
+     "Investimentos privados",
+     "Países em desenvolvimento",
+     "Hidrogênio verde",
+     "Hidrogênio"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "De Negri, João Alberto",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.986,
+    "n_items": 62,
+    "n_tagged": 10,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Luis Claudio Kubota",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.919,
+    "n_items": 58,
+    "n_tagged": 22,
+    "last_year": 2025,
+    "top_terms": [
+     "Bullying",
+     "Telecomunicações",
+     "Internet",
+     "Inteligência Artificial",
+     "BRICS",
+     "Pesquisa Nacional de Saúde do Escolar (PeNSE)"
+    ],
+    "areas": [
+     "Economia da Saúde",
+     "Tecnologias da Informação e Comunicação",
+     "BRICS"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/621-luis-claudio-kubota"
+   },
+   {
+    "name": "Mauro Oddo Nogueira",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.965,
+    "n_items": 56,
+    "n_tagged": 24,
+    "last_year": 2026,
+    "top_terms": [
+     "Pequenas Empresas",
+     "Semiformalidade",
+     "Micro e pequenas empresas",
+     "Empreendedorismo",
+     "Setor informal",
+     "Desigualdade socioeconômica"
+    ],
+    "areas": [
+     "Produtividade do trabalho",
+     "Micro e Pequenas Empresas",
+     "Informalidade",
+     "Precariedade Laboral"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/13441-mauro-oddo-nogueira"
+   },
+   {
+    "name": "Graziela Ferrero Zucoloto",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 46,
+    "n_tagged": 23,
+    "last_year": 2025,
+    "top_terms": [
+     "Patentes",
+     "Propriedade intelectual",
+     "Empresas multinacionais",
+     "Propriedade industrial",
+     "Exportações",
+     "Biotecnologia"
+    ],
+    "areas": [
+     "Propriedade Intelectual",
+     "Empresas multinacionais",
+     "Desenvolvimento tecnológico"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/595-graziela-ferrero-zucoloto"
+   },
+   {
+    "name": "Eduardo Pedral Sampaio Fiuza",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.606,
+    "n_items": 44,
+    "n_tagged": 15,
+    "last_year": 2026,
+    "top_terms": [
+     "Teste do Monopolista Hipotético (TMH)",
+     "Mercado relevante",
+     "Fusões horizontais",
+     "Planos de saúde",
+     "Compras públicas",
+     "Defesa da concorrência"
+    ],
+    "areas": [
+     "Compras Públicas",
+     "Regulações Setoriais",
+     "Modelos Microeconométricos e Defesa da Concorrência"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/576-eduardo-pedral-sampaio-fiuza"
+   },
+   {
+    "name": "Aguinaldo Nogueira Maciente",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 42,
+    "n_tagged": 20,
+    "last_year": 2026,
+    "top_terms": [
+     "Mão de obra",
+     "Automação",
+     "Mercado de trabalho",
+     "Qualificações Ocupacionais",
+     "Mão de obra qualificada",
+     "Qualificação profissional"
+    ],
+    "areas": [
+     "Mercado de Trabalho",
+     "Produtividade e Crescimento Econômicos",
+     "Economia Regional"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/548-aguinaldo-nogueira-maciente"
+   },
+   {
+    "name": "Cavalcante, Luiz Ricardo",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 41,
+    "n_tagged": 12,
+    "last_year": 2026,
+    "top_terms": [
+     "Marcopolo",
+     "Carrocerias de ônibus",
+     "Liderança de mercado",
+     "Produtividade do trabalho",
+     "Indústria automobilística",
+     "Ciência, Tecnologia e Inovação (CT&I)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Rauen, André Tortato",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 41,
+    "n_tagged": 26,
+    "last_year": 2024,
+    "top_terms": [
+     "Compras do Governo",
+     "Pesquisa e desenvolvimento",
+     "Encomendas tecnológicas",
+     "Licitação",
+     "Compras públicas",
+     "Contratos Públicos"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Campos Neto, Carlos Alvares da Silva",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 40,
+    "n_tagged": 10,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Gusso, Divonzir Arthur",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 37,
+    "n_tagged": 9,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Araújo, Bruno César Pino Oliveira de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 37,
+    "n_tagged": 11,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Koeller, Priscila",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.976,
+    "n_items": 37,
+    "n_tagged": 22,
+    "last_year": 2026,
+    "top_terms": [
+     "Ecoinovação",
+     "Inovação ambiental",
+     "Pesquisa e desenvolvimento",
+     "Empresas farmacêuticas",
+     "Política de Saúde",
+     "Fundo Nacional de Desenvolvimento Científico e Tecnológico (FNDCT)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Pedro Miranda",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.985,
+    "n_items": 35,
+    "n_tagged": 14,
+    "last_year": 2026,
+    "top_terms": [
+     "Ecoinovação",
+     "Inovação ambiental",
+     "Tarifas Alfandegárias",
+     "Proteção Comercial",
+     "Reforma tarifária",
+     "Política Industrial e Tecnológica"
+    ],
+    "areas": [
+     "Inovação",
+     "Política Industrial e Tecnológica"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15642-pedro-miranda"
+   },
+   {
+    "name": "Tulio Chiarini",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.965,
+    "n_items": 32,
+    "n_tagged": 19,
+    "last_year": 2026,
+    "top_terms": [
+     "Plataformas digitais",
+     "Grupos de pesquisa",
+     "Economia digital",
+     "Redes de Pesquisa",
+     "Economia de plataformas",
+     "Plataforma digital"
+    ],
+    "areas": [
+     "Política de Ciência e Tecnologia",
+     "Economia da Inovação",
+     "Economia Industrial",
+     "Capitalismo de Plataformas",
+     "Economia Digital",
+     "Desenvolvimento Econômico"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15645-tulio-chiarini"
+   },
+   {
+    "name": "Neri, Marcelo Côrtes",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.856,
+    "n_items": 31,
+    "n_tagged": 4,
+    "last_year": 2014,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Salgado, Lucia Helena",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.628,
+    "n_items": 29,
+    "n_tagged": 7,
+    "last_year": 2024,
+    "top_terms": [
+     "Agências reguladoras",
+     "Supervisão regulatória",
+     "Leilões",
+     "Análise de Impacto Regulatório (AIR)",
+     "Processo regulatório brasileiro",
+     "Economia-Desenvolvimento econômico"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Corbucci, Paulo Roberto",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.801,
+    "n_items": 26,
+    "n_tagged": 5,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Alves, Patrick Franco",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 26,
+    "n_tagged": 4,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "José Mauro de Morais",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 25,
+    "n_tagged": 10,
+    "last_year": 2025,
+    "top_terms": [
+     "PETROBRAS",
+     "Petróleo",
+     "Pré-sal",
+     "Indústria Petrolífera",
+     "Tecnologias aplicadas na exploração e na produção de petróleo",
+     "História das explorações de petróleo"
+    ],
+    "areas": [
+     "Tecnologias aplicadas na exploração e na produção de petróleo",
+     "História das explorações de petróleo",
+     "Estudo das inovações tecnológicas e dos programas de financiamento públicos às empresas"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/612-jose-mauro-de-morais"
+   },
+   {
+    "name": "Mauro Santos Silva",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.565,
+    "n_items": 25,
+    "n_tagged": 9,
+    "last_year": 2026,
+    "top_terms": [
+     "Governança corporativa",
+     "Empresas públicas",
+     "Governança fiscal",
+     "Política Financeira",
+     "Finanças climáticas",
+     "Administração de Empresas"
+    ],
+    "areas": [
+     "Financiamento do desenvolvimento",
+     "Finanças climáticas",
+     "Infraestrutura",
+     "Regulação econômica"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15657-mauro-santos-silva"
+   },
+   {
+    "name": "Lenita Maria Turchi",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 24,
+    "n_tagged": 4,
+    "last_year": 2025,
+    "top_terms": [
+     "Ciência tecnologia e inovação",
+     "PETROBRAS",
+     "Petróleo",
+     "Instituições",
+     "Pesquisa e desenvolvimento",
+     "Desenvolvimento tecnológico"
+    ],
+    "areas": [
+     "Instituições",
+     "Ciência tecnologia e inovação"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/616-lenita-maria-turchi"
+   },
+   {
+    "name": "Feres, José Gustavo",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.758,
+    "n_items": 22,
+    "n_tagged": 10,
+    "last_year": 2026,
+    "top_terms": [
+     "Adaptação",
+     "Matemática. Análise Estatística",
+     "Política de Concorrência",
+     "Cartel",
+     "Bid-rigging",
+     "Sistema Brasileiro de Defesa da Concorrência (SBDC)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Jean Marlo Pepino de Paula",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.608,
+    "n_items": 21,
+    "n_tagged": 6,
+    "last_year": 2020,
+    "top_terms": [
+     "Obras Públicas",
+     "Gerenciamento de Projetos",
+     "Infraestrutura de transportes",
+     "Concessões",
+     "Construção Civil",
+     "Obra pública"
+    ],
+    "areas": [],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/603-jean-marlo-pepino-de-paula"
+   },
+   {
+    "name": "Mation, Lucas Ferreira",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.707,
+    "n_items": 21,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Desmatamento",
+     "Relação Anual de Informações Sociais (RAIS)",
+     "Bases de dados",
+     "Degradação ambiental",
+     "Doenças",
+     "Malária"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Gabriel Coelho Squeff",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.819,
+    "n_items": 21,
+    "n_tagged": 6,
+    "last_year": 2017,
+    "top_terms": [
+     "Contas nacionais",
+     "Setor informal",
+     "Taxa de câmbio",
+     "Formação bruta de capital fixo",
+     "Contas externas",
+     "Modelos Insumo-Produto"
+    ],
+    "areas": [
+     "Desenvolvimento Econômico",
+     "Modelos Insumo-Produto",
+     "Instituições e Crescimento",
+     "Processo Político"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/592-gabriel-coelho-squeff"
+   },
+   {
+    "name": "Albuquerque, Pedro Henrique Melo",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.931,
+    "n_items": 20,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Leão, Rafael",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 0.948,
+    "n_items": 19,
+    "n_tagged": 17,
+    "last_year": 2026,
+    "top_terms": [
+     "Minerais críticos e estratégicos",
+     "Transição energética",
+     "Ajuda emergencial",
+     "Economia dos Recursos Minerais",
+     "Políticas de inovação",
+     "Vírus"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Alexandre Messa Peixoto da",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.943,
+    "n_items": 19,
+    "n_tagged": 8,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Napoleão Luiz Costa da",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.792,
+    "n_items": 18,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "PIB per capita",
+     "Agentes heterogêneos",
+     "Escolha ocupacional",
+     "Fricções financeiras",
+     "Produtividade total dos fatores",
+     "Sistemas de Crédito"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Giesteira, Luís Felipe",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.573,
+    "n_items": 18,
+    "n_tagged": 9,
+    "last_year": 2023,
+    "top_terms": [
+     "Indústria da Defesa",
+     "Política de defesa",
+     "Defesa",
+     "Base industrial de defesa",
+     "global trade",
+     "Trade policy"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Stivali, Matheus",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.758,
+    "n_items": 17,
+    "n_tagged": 3,
+    "last_year": 2024,
+    "top_terms": [
+     "Análise custo-benefício",
+     "Aposentadoria rural",
+     "Reforma previdenciária",
+     "Enchentes",
+     "Desastres ambientais",
+     "Desmatamento"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Pereira, Larissa de Souza",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 17,
+    "n_tagged": 9,
+    "last_year": 2025,
+    "top_terms": [
+     "Fundação Banco do Brasil",
+     "Necessidades de Pesquisa",
+     "Horizon 2020",
+     "Parcerias para o Desenvolvimento Produtivo",
+     "Pequenas Empresas",
+     "Legislação Trabalhista"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Bragança, Gabriel Godofredo Fiuza de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.543,
+    "n_items": 17,
+    "n_tagged": 3,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Squeff, Flávia de Holanda Schmidt",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.877,
+    "n_items": 16,
+    "n_tagged": 12,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Araújo, Bruno César",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 16,
+    "n_tagged": 7,
+    "last_year": 2024,
+    "top_terms": [
+     "Metanálise",
+     "Metarregressão",
+     "Engenheiros",
+     "Bancos de desenvolvimento",
+     "Banco Nacional de Desenvolvimento Econômico e Social (BNDES)",
+     "Exportação"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Rosa, Mauricio Benedeti",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 15,
+    "n_tagged": 5,
+    "last_year": 2025,
+    "top_terms": [
+     "Compartilhamento de infraestrutura",
+     "Telecomunicações",
+     "Internet",
+     "Internet das coisas",
+     "Direitos de passagem",
+     "Energia elétrica"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Sousa, Rodrigo Abdalla Filgueiras de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 13,
+    "n_tagged": 7,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ricardo Ginicolo Bacelette",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "forte",
+    "share": 0.759,
+    "n_items": 13,
+    "n_tagged": 6,
+    "last_year": 2022,
+    "top_terms": [
+     "Bancos de desenvolvimento",
+     "Regionalismo",
+     "Comércio, financiamento e desenvolvimento internacionais",
+     "Economia política internacional",
+     "Integração asiática",
+     "Governança e instituições da China"
+    ],
+    "areas": [
+     "Comércio, financiamento e desenvolvimento internacionais",
+     "Economia política internacional",
+     "Integração asiática",
+     "Governança e instituições da China"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/647-ricardo-ginicolo-bacelette"
+   },
+   {
+    "name": "Young, Carlos Eduardo Frickmann",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.704,
+    "n_items": 13,
+    "n_tagged": 3,
+    "last_year": 2025,
+    "top_terms": [
+     "IBS ecológico",
+     "Reforma tributária",
+     "Política ambiental",
+     "Green New Deal",
+     "Desenvolvimento econômico sustentável",
+     "Coalizões políticas"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Almeida Júnior, Mansueto Facundo de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.852,
+    "n_items": 12,
+    "n_tagged": 4,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Moura, Rodrigo Leandro de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.704,
+    "n_items": 12,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Rodrigo Peixoto da",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.586,
+    "n_items": 11,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ferreira, Iansã Melo",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 10,
+    "n_tagged": 2,
+    "last_year": 2011,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Messa, Alexandre",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 10,
+    "n_tagged": 4,
+    "last_year": 2020,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Santos, Manoel Leonardo",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.529,
+    "n_items": 10,
+    "n_tagged": 4,
+    "last_year": 2026,
+    "top_terms": [
+     "Lobbying",
+     "Grupos de Interesse",
+     "Poder Legislativo",
+     "Câmara dos Deputados",
+     "Lobby",
+     "Financiamento de campanha"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Costa, Carlos Eduardo Lampert",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.826,
+    "n_items": 9,
+    "n_tagged": 4,
+    "last_year": 2024,
+    "top_terms": [
+     "Financiamento ao desenvolvimento",
+     "Bancos multilaterais",
+     "Financiamento ao desenvolvimento sustentável",
+     "Green bonds",
+     "Operações Bancárias. Crédito",
+     "Desenvolvimento sustentável"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Sandra Silva Paulsen",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.739,
+    "n_items": 9,
+    "n_tagged": 2,
+    "last_year": 2024,
+    "top_terms": [
+     "Economia Ambiental e de Recursos Naturais",
+     "Gestão de resíduos sólidos",
+     "Política ambiental",
+     "Meio ambiente",
+     "Estudos sobre o Meio Ambiente",
+     "Biodiversidade"
+    ],
+    "areas": [
+     "Economia Internacional",
+     "Economia Ambiental e de Recursos Naturais",
+     "Política Ambiental",
+     "Meio Ambiente",
+     "Gestão de resíduos sólidos",
+     "Gênero"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/655-sandra-silva-paulsen"
+   },
+   {
+    "name": "Vasconcelos, Leonardo Fernandes Soares",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 2,
+    "last_year": 2012,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Matteo, Miguel",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.586,
+    "n_items": 8,
+    "n_tagged": 2,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Assis, Lucas Rocha Soares de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 6,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Almeida, Marcio Wohlers de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 2,
+    "last_year": 2012,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Romminger, Alfredo Eric",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 8,
+    "n_tagged": 2,
+    "last_year": 2011,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Szigethy, Leonardo de Mello",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 7,
+    "n_tagged": 4,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Daniel Gama e Colombo",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 7,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Pós-Graduação",
+     "Doutorado",
+     "Sobre-educação",
+     "Economia Aplicada",
+     "Emprego de doutores",
+     "Economia da Inovação"
+    ],
+    "areas": [
+     "Economia da inovação",
+     "Economia industrial",
+     "Economia Aplicada",
+     "Pós-graduação"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15640-daniel-gama-e-colombo"
+   },
+   {
+    "name": "Fonseca, Ricardo Sampaio",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Sandbox regulatório",
+     "Infraestrutura sustentável",
+     "Transporte",
+     "Rodovias",
+     "Estudos de Viabilidade Técnica, Econômica e Ambiental (EVTEAs)",
+     "Procedimento de Manifestação de Interesse (PMI)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Eberhardt, Isaque Daniel Rocha",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 3,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cavalcante, Eric Jardim",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 3,
+    "last_year": 2024,
+    "top_terms": [
+     "Investimento em máquina",
+     "Sistemas Bancários",
+     "Banco do Brasil",
+     "Open banking",
+     "Custo de crédito",
+     "Application programming interfaces (APIs)"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Fioravante, Dea Guerra",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 4,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Souza, João Gabriel de Moraes",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cláudia Regina Baddini Curralero",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "moderada",
+    "share": 0.543,
+    "n_items": 6,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [
+     "Política de assistência social",
+     "Pobreza",
+     "Proteção Social e Assistência Social",
+     "Proteção social",
+     "Seguridade social",
+     "Desigualdade"
+    ],
+    "areas": [
+     "Pobreza",
+     "Desigualdade",
+     "Proteção Social e Assistência Social"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/15764-claudia-regina-baddini-curralero"
+   },
+   {
+    "name": "Vieira, Adriana Carvalho Pinto",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.5,
+    "n_items": 6,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Araújo, Thiago Costa",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 4,
+    "last_year": 2012,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Alvarenga, Gustavo Varela",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 4,
+    "last_year": 2013,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Rogério Diogne de Souza e",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 6,
+    "n_tagged": 5,
+    "last_year": 2022,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Rabello, Gabriel Gouvêa",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 5,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ferreira, Paulo César Pêgas",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 5,
+    "n_tagged": 3,
+    "last_year": 2024,
+    "top_terms": [
+     "Acidentes de Trânsito",
+     "Segurança nas Estradas",
+     "Segurança no trânsito",
+     "Veículos",
+     "Trânsito",
+     "Segurança veicular"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Meira, Ana Paula Barbosa",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.667,
+    "n_items": 5,
+    "n_tagged": 3,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lopes, Daniel A. Feitosa",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.75,
+    "n_items": 5,
+    "n_tagged": 2,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silveira Sobrinho, Edson",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.641,
+    "n_items": 5,
+    "n_tagged": 5,
+    "last_year": 2024,
+    "top_terms": [
+     "Rodovias",
+     "Concessões rodoviárias",
+     "Infraestrutura de transportes",
+     "Critério de licitação",
+     "Saneamento",
+     "Acesso universal aos serviços de saúde"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Vale, Eduardo",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 0.822,
+    "n_items": 5,
+    "n_tagged": 5,
+    "last_year": 2023,
+    "top_terms": [
+     "Economia mineral",
+     "Produção Mineral",
+     "Poluição Térmica",
+     "Aquecimento global",
+     "Eletrificação",
+     "Mineração"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Siffert, Nelson",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 5,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Spadinger, Robert",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2024,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Teixeira, Felipe Orsolin",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2024,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Souza, Frederico Hartmann de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2012,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Goes, George Vasconcelos",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 3,
+    "last_year": 2023,
+    "top_terms": [
+     "Transporte urbano",
+     "Licitação",
+     "Meios de Transporte",
+     "Mobilidade de passageiros",
+     "Teleatividade",
+     "Transporte de cargas"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cruz Júnior, Samuel César da",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lustosa, Maria Cecília",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lima, Gustavo L. Rocha",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 0.564,
+    "n_items": 4,
+    "n_tagged": 4,
+    "last_year": 2026,
+    "top_terms": [
+     "Modelagem baseada em agentes",
+     "Planejamento regional",
+     "Emissões das firmas",
+     "Simulação",
+     "Taxação de emissões",
+     "Política Econômica. Política Social. Planejamento::Política Social"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Saavedra, Cayan Atreio Portela Bárcena",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Pereira, Larissa",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 3,
+    "last_year": 2025,
+    "top_terms": [
+     "Pesquisas Sociais",
+     "Liderança",
+     "Negros",
+     "Pesquisas Sócio-Econômicas",
+     "Liderança negra",
+     "Redes de Pesquisa"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cunha, Danúbia Rodrigues da",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Minerais críticos e estratégicos",
+     "Economia dos Recursos Minerais",
+     "Transição energética",
+     "Finanças públicas municipais",
+     "Royalties do petróleo",
+     "Royalties de recursos hídricos"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Marinho, Vitor",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 3,
+    "last_year": 2025,
+    "top_terms": [
+     "Pesquisas Sociais",
+     "Liderança",
+     "Negros",
+     "Pesquisas Sócio-Econômicas",
+     "Liderança negra",
+     "Redes de Pesquisa"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Victo",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "forte",
+    "share": 1.0,
+    "n_items": 4,
+    "n_tagged": 4,
+    "last_year": 2026,
+    "top_terms": [
+     "Economia de plataformas",
+     "Plataformas digitais",
+     "Políticas de inovação baseadas em evidências",
+     "Receita de Capital",
+     "Sistemas Econômicos",
+     "Economia digital"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Vian, Carlos Eduardo de Freitas",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.627,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Sad, Bruno Nunes",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2024,
+    "top_terms": [
+     "Rodovias",
+     "Concessões rodoviárias",
+     "Infraestrutura de transportes",
+     "Critério de licitação",
+     "Diferenciação  tarifária de pista simples e pista dupla",
+     "Estoque de obras adicionais"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Marco Antônio Boareto da",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2024,
+    "top_terms": [
+     "Rodovias",
+     "Concessões rodoviárias",
+     "Infraestrutura de transportes",
+     "Critério de licitação",
+     "Diferenciação  tarifária de pista simples e pista dupla",
+     "Estoque de obras adicionais"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Ribeiro, Leonardo Costa",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2024,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Carla Pereira",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Gabriel Pompeo Pistelli Ferreira",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 0.5,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [
+     "Segregação ocupacional",
+     "Pessoas com deficiência",
+     "Setores econômicos",
+     "Inserção setorial",
+     "Trabalho",
+     "Conferência Nacional dos Direitos das Pessoas com Deficiência"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Barbosa, Caio Márcio Melo",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Passos, Maria Cristina",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2010,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Carolina Andrade",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2015,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Paranhos, Julia",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cardoso, Daniel Monte",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.5,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2021,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Szigethy, Leonardo",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Rauen, Cristiane Vianna",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2019,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Castro, Biancca Scarpeline de",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.704,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2025,
+    "top_terms": [
+     "IBS ecológico",
+     "Reforma tributária",
+     "Política ambiental",
+     "ICMS",
+     "ICMS ecológico",
+     "Coordenação de políticas públicas"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Respondovesk, William",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Porto, Patrícia Carvalho da Rocha",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2020,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lopes, Olandia Ferreira",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Planejamento regional",
+     "Empresas poluidoras",
+     "Avaliação ex post",
+     "Cadastro técnico",
+     "Transparência ambiental",
+     "Firmas"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Oliveira, Mariano Laio de",
+    "active": true,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 3,
+    "last_year": 2026,
+    "top_terms": [
+     "Economia dos Recursos Minerais",
+     "Transição energética",
+     "Minerais",
+     "Matriz de relacionamentos",
+     "Classificações nacionais e internacionais",
+     "Setor mineral"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Barreto, Mylena da Silva Gomes",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 3,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Abrantes, Emanuel",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Spanholi, Maira Luiza",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.543,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Silva, Marcello Muniz da",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2014,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Martins, Flavio Augusto Arantes Andrade Hansen",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lorrany, Ludmilla",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2020,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Chapman, Bruce",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2018,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Marinho, Vitor da Silva",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.586,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Longo, Gustavo Frederico",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2016,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Vasquez, Cezar Rogelio",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Caldas, Cristina",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2016,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Sant’Anna, André Albuquerque",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.543,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Machado, Weverthon",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2023,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Lourenço, Lucas dos Santos",
+    "active": true,
+    "staff": true,
+    "source": "cargo",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 1,
+    "last_year": 2026,
+    "top_terms": [
+     "Empresas Comerciais",
+     "Antidumping",
+     "de Lerner",
+     "Poder de mercado",
+     "Indústria::Economia Industrial::Setor Industrial::Economia Industrial",
+     "Choques do petróleo"
+    ],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Freitas, Luciano Charlita de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2017,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Jardim, Eric",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2020,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Figueiredo, Calebe de Oliveira",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2013,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Cortez, Igor Siqueira",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2011,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Oliveira, Marcello Sartore de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 0.543,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2025,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Moreira, Thiago Silva",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2026,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Barbosa, Denis Borges de",
+    "active": false,
+    "staff": false,
+    "source": "produção",
+    "confidence": "moderada",
+    "share": 1.0,
+    "n_items": 2,
+    "n_tagged": 2,
+    "last_year": 2013,
+    "top_terms": [],
+    "areas": [],
+    "profile_url": null
+   },
+   {
+    "name": "Matheus Rocha Fernandes",
+    "active": true,
+    "staff": true,
+    "source": "diretório",
+    "confidence": "explicita",
+    "share": 1.0,
+    "n_items": 1,
+    "n_tagged": 1,
+    "last_year": 2026,
+    "top_terms": [
+     "Setor elétrico",
+     "Matriz Energética",
+     "Energias renováveis",
+     "Indústria::Energia",
+     "Eficiência energética",
+     "Odyssee Energy Efficiency Index (ODEX)"
+    ],
+    "areas": [
+     "Setor elétrico",
+     "matriz energética",
+     "energias renováveis",
+     "infraestrutura",
+     "regulação",
+     "sustentabilidade"
+    ],
+    "profile_url": "https://www.ipea.gov.br/portal/pesquisadores-ipea/16478-matheus-rocha-fernandes"
+   }
+  ]
+ },
+ "unassigned_with_signal": [
+  {
+   "name": "Marcos Hecksher",
+   "dir_weights": {
+    "DISET": 6.484,
+    "DIMAC": 6.058,
+    "DISOC": 4.742,
+    "DINTE": 0.841
+   },
+   "n_items": 52
+  },
+  {
+   "name": "Luciana Mendes Santos Servo",
+   "dir_weights": {
+    "DIEST": 3.02,
+    "DISOC": 1.67,
+    "DISET": 1.274,
+    "DIRUR": 1.02,
+    "DINTE": 0.667
+   },
+   "n_items": 53
+  },
+  {
+   "name": "Erivelton Pires Guedes",
+   "dir_weights": {
+    "DIRUR": 2.541,
+    "DISET": 1.944,
+    "DIEST": 0.597
+   },
+   "n_items": 20
+  },
+  {
+   "name": "Antônio de Pádua de Lima Brito",
+   "dir_weights": {
+    "DISET": 1.0,
+    "DIEST": 1.0,
+    "DIRUR": 0.0
+   },
+   "n_items": 7
+  },
+  {
+   "name": "Denise do Carmo Direito",
+   "dir_weights": {
+    "DIEST": 1.374,
+    "DINTE": 0.667,
+    "DIRUR": 0.667,
+    "DISOC": 0.595
+   },
+   "n_items": 16
+  },
+  {
+   "name": "Igor Santos Tupy",
+   "dir_weights": {
+    "DISET": 1.0
+   },
+   "n_items": 2
+  },
+  {
+   "name": "Ana Carolina Lessa Dantas",
+   "dir_weights": {
+    "DIEST": 1.0
+   },
+   "n_items": 1
+  },
+  {
+   "name": "Leandro Marques da Silva",
+   "dir_weights": {
+    "DISET": 0.841
+   },
+   "n_items": 2
+  },
+  {
+   "name": "Matheus Boni Bittencourt",
+   "dir_weights": {
+    "DIEST": 0.841
+   },
+   "n_items": 1
+  },
+  {
+   "name": "Marcell Machado dos Santos",
+   "dir_weights": {
+    "DISET": 0.707,
+    "DINTE": 0.5,
+    "DISOC": 0.5
+   },
+   "n_items": 4
+  },
+  {
+   "name": "Fábia Avila Guimarães",
+   "dir_weights": {
+    "DISET": 0.707
+   },
+   "n_items": 1
+  },
+  {
+   "name": "Lucas Freire Silva",
+   "dir_weights": {
+    "DIEST": 0.5
+   },
+   "n_items": 2
+  },
+  {
+   "name": "Carla de Paiva Bezerra",
+   "dir_weights": {
+    "DIEST": 0.42
+   },
+   "n_items": 1
+  },
+  {
+   "name": "Vitor Matheus Oliveira de Menezes",
+   "dir_weights": {
+    "DIEST": 0.354
+   },
+   "n_items": 4
+  },
+  {
+   "name": "Roberta da Silva Vieira",
+   "dir_weights": {
+    "DISOC": 0.459,
+    "DISET": 0.274,
+    "DIMAC": 0.21
+   },
+   "n_items": 19
+  }
+ ],
+ "production": {
+  "DIEST": {
+   "by_year": {
+    "2010": 38,
+    "2011": 40,
+    "2012": 73,
+    "2013": 57,
+    "2014": 55,
+    "2015": 50,
+    "2016": 39,
+    "2017": 63,
+    "2018": 112,
+    "2019": 46,
+    "2020": 101,
+    "2021": 112,
+    "2022": 60,
+    "2023": 60,
+    "2024": 68,
+    "2025": 38,
+    "2026": 80
+   },
+   "by_type": {
+    "Journal article": 438,
+    "Working paper": 282,
+    "Book part": 173,
+    "Book": 113,
+    "Report": 45,
+    "Journal Article": 20,
+    "Preliminary Publication": 13,
+    "?": 4,
+    "Joint Publications": 3,
+    "Conference output": 1
+   }
+  },
+  "DISET": {
+   "by_year": {
+    "2010": 47,
+    "2011": 82,
+    "2012": 68,
+    "2013": 88,
+    "2014": 96,
+    "2015": 95,
+    "2016": 66,
+    "2017": 74,
+    "2018": 72,
+    "2019": 59,
+    "2020": 61,
+    "2021": 57,
+    "2022": 82,
+    "2023": 66,
+    "2024": 78,
+    "2025": 51,
+    "2026": 53
+   },
+   "by_type": {
+    "Working paper": 472,
+    "Journal article": 441,
+    "Book part": 136,
+    "Book": 84,
+    "Journal Article": 37,
+    "Report": 21,
+    "?": 2,
+    "Preliminary Publication": 2
+   }
+  }
+ },
+ "characteristic": {
+  "DIEST": [
+   {
+    "term": "Administração Pública. Governo. Estado",
+    "z": 14.05,
+    "n": 553
+   },
+   {
+    "term": "Desenvolvimento Social",
+    "z": 11.73,
+    "n": 260
+   },
+   {
+    "term": "Administração pública",
+    "z": 8.69,
+    "n": 138
+   },
+   {
+    "term": "Políticas públicas",
+    "z": 8.48,
+    "n": 284
+   },
+   {
+    "term": "Sociedade. Participação Social. Controle Social",
+    "z": 8.34,
+    "n": 131
+   },
+   {
+    "term": "Segurança pública",
+    "z": 6.25,
+    "n": 96
+   },
+   {
+    "term": "Direito. Legislação",
+    "z": 6.08,
+    "n": 80
+   },
+   {
+    "term": "Desigualdade social",
+    "z": 6.02,
+    "n": 67
+   },
+   {
+    "term": "Participação social",
+    "z": 5.52,
+    "n": 97
+   },
+   {
+    "term": "Violência",
+    "z": 5.37,
+    "n": 82
+   },
+   {
+    "term": "Governo. Administração Pública",
+    "z": 5.3,
+    "n": 52
+   },
+   {
+    "term": "Indicadores sociais",
+    "z": 4.74,
+    "n": 46
+   },
+   {
+    "term": "Política social",
+    "z": 4.29,
+    "n": 40
+   },
+   {
+    "term": "Homicídio",
+    "z": 3.99,
+    "n": 31
+   },
+   {
+    "term": "Governabilidade",
+    "z": 3.99,
+    "n": 41
+   },
+   {
+    "term": "Saúde",
+    "z": 3.98,
+    "n": 103
+   },
+   {
+    "term": "Planos Plurianuais",
+    "z": 3.76,
+    "n": 32
+   },
+   {
+    "term": "Agências reguladoras",
+    "z": 3.58,
+    "n": 24
+   },
+   {
+    "term": "Orçamento Nacional",
+    "z": 3.5,
+    "n": 25
+   },
+   {
+    "term": "Setor público",
+    "z": 3.45,
+    "n": 22
+   },
+   {
+    "term": "Federalismo",
+    "z": 3.41,
+    "n": 21
+   },
+   {
+    "term": "Planejamento governamental",
+    "z": 3.36,
+    "n": 21
+   },
+   {
+    "term": "Condições Sociais",
+    "z": 3.26,
+    "n": 47
+   },
+   {
+    "term": "Plano Plurianual (PPA)",
+    "z": 3.19,
+    "n": 21
+   },
+   {
+    "term": "Servidores públicos",
+    "z": 3.04,
+    "n": 18
+   },
+   {
+    "term": "Homicídios",
+    "z": 3.01,
+    "n": 18
+   },
+   {
+    "term": "Governo federal",
+    "z": 2.97,
+    "n": 17
+   },
+   {
+    "term": "Planejamento",
+    "z": 2.93,
+    "n": 17
+   },
+   {
+    "term": "Drogas de Uso Indevido",
+    "z": 2.88,
+    "n": 31
+   },
+   {
+    "term": "Burocracia",
+    "z": 2.85,
+    "n": 31
+   }
+  ],
+  "DISET": [
+   {
+    "term": "Tecnologia. Inovação. Informação. Conhecimento",
+    "z": 11.09,
+    "n": 271
+   },
+   {
+    "term": "Indústria",
+    "z": 9.23,
+    "n": 213
+   },
+   {
+    "term": "Economia. Desenvolvimento Econômico",
+    "z": 8.15,
+    "n": 221
+   },
+   {
+    "term": "Inovações tecnológicas",
+    "z": 5.79,
+    "n": 75
+   },
+   {
+    "term": "Transportes",
+    "z": 5.77,
+    "n": 73
+   },
+   {
+    "term": "Pesquisa e desenvolvimento",
+    "z": 5.48,
+    "n": 81
+   },
+   {
+    "term": "Ciência e tecnologia",
+    "z": 5.4,
+    "n": 66
+   },
+   {
+    "term": "Produtividade",
+    "z": 4.74,
+    "n": 50
+   },
+   {
+    "term": "Energia",
+    "z": 4.71,
+    "n": 67
+   },
+   {
+    "term": "Comércio Internacional",
+    "z": 4.54,
+    "n": 48
+   },
+   {
+    "term": "Agricultura, Pecuária e Pesca",
+    "z": 4.44,
+    "n": 45
+   },
+   {
+    "term": "Emprego. Trabalho",
+    "z": 4.14,
+    "n": 97
+   },
+   {
+    "term": "Sistema Monetário. Finanças. Bancos",
+    "z": 4.12,
+    "n": 66
+   },
+   {
+    "term": "Infraestrutura",
+    "z": 4.11,
+    "n": 39
+   },
+   {
+    "term": "Pequenas, Médias e Grandes Empresas",
+    "z": 4.11,
+    "n": 59
+   },
+   {
+    "term": "Indústria de transformação",
+    "z": 4.05,
+    "n": 44
+   },
+   {
+    "term": "Tecnologia",
+    "z": 4.02,
+    "n": 43
+   },
+   {
+    "term": "Produção industrial",
+    "z": 3.74,
+    "n": 46
+   },
+   {
+    "term": "Educação",
+    "z": 3.69,
+    "n": 84
+   },
+   {
+    "term": "Emprego",
+    "z": 3.6,
+    "n": 29
+   },
+   {
+    "term": "Economia",
+    "z": 3.57,
+    "n": 31
+   },
+   {
+    "term": "Ensino superior",
+    "z": 3.45,
+    "n": 27
+   },
+   {
+    "term": "Mercado de trabalho",
+    "z": 3.45,
+    "n": 64
+   },
+   {
+    "term": "Agricultura",
+    "z": 3.39,
+    "n": 25
+   },
+   {
+    "term": "Investimentos",
+    "z": 3.38,
+    "n": 26
+   },
+   {
+    "term": "Indicadores de Desempenho",
+    "z": 3.31,
+    "n": 25
+   },
+   {
+    "term": "Telecomunicações",
+    "z": 3.28,
+    "n": 26
+   },
+   {
+    "term": "Infraestrutura de transportes",
+    "z": 3.21,
+    "n": 24
+   },
+   {
+    "term": "Produtividade do trabalho",
+    "z": 3.2,
+    "n": 41
+   },
+   {
+    "term": "Crescimento econômico",
+    "z": 3.09,
+    "n": 35
+   }
+  ]
+ },
+ "shared_high_volume_terms": [
+  {
+   "term": "Desenvolvimento Regional",
+   "n_DIEST": 43,
+   "n_DISET": 43
+  },
+  {
+   "term": "Desenvolvimento econômico",
+   "n_DIEST": 38,
+   "n_DISET": 44
+  },
+  {
+   "term": "Sistema Tributário",
+   "n_DIEST": 13,
+   "n_DISET": 23
+  },
+  {
+   "term": "Programas governamentais",
+   "n_DIEST": 17,
+   "n_DISET": 12
+  },
+  {
+   "term": "Regulamentações",
+   "n_DIEST": 17,
+   "n_DISET": 12
+  },
+  {
+   "term": "Política fiscal",
+   "n_DIEST": 12,
+   "n_DISET": 11
+  },
+  {
+   "term": "Relações Internacionais",
+   "n_DIEST": 14,
+   "n_DISET": 9
+  },
+  {
+   "term": "Investimentos públicos",
+   "n_DIEST": 7,
+   "n_DISET": 15
+  },
+  {
+   "term": "Desenvolvimento econômico e social",
+   "n_DIEST": 7,
+   "n_DISET": 13
+  },
+  {
+   "term": "Regulação",
+   "n_DIEST": 9,
+   "n_DISET": 9
+  },
+  {
+   "term": "Cooperação internacional",
+   "n_DIEST": 11,
+   "n_DISET": 7
+  },
+  {
+   "term": "Finanças públicas",
+   "n_DIEST": 9,
+   "n_DISET": 8
+  },
+  {
+   "term": "Legislação",
+   "n_DIEST": 9,
+   "n_DISET": 6
+  },
+  {
+   "term": "Saneamento",
+   "n_DIEST": 6,
+   "n_DISET": 9
+  },
+  {
+   "term": "Serviços de saúde",
+   "n_DIEST": 9,
+   "n_DISET": 5
+  },
+  {
+   "term": "Mudanças climáticas",
+   "n_DIEST": 6,
+   "n_DISET": 7
+  },
+  {
+   "term": "Política ambiental",
+   "n_DIEST": 5,
+   "n_DISET": 8
+  },
+  {
+   "term": "Doenças Endêmicas",
+   "n_DIEST": 5,
+   "n_DISET": 8
+  },
+  {
+   "term": "Estado. Administração Publica. Governo",
+   "n_DIEST": 6,
+   "n_DISET": 6
+  },
+  {
+   "term": "Renda",
+   "n_DIEST": 7,
+   "n_DISET": 5
+  },
+  {
+   "term": "Análise comparativa",
+   "n_DIEST": 5,
+   "n_DISET": 6
+  }
+ ],
+ "structural": {
+  "focus_hyperedges": 1935,
+  "mixed_hyperedges": 45,
+  "null_mean": 391.4,
+  "null_sd": 23.0,
+  "z": -15.09,
+  "p_le_obs": 0.0,
+  "cross_pairs": 45,
+  "cross_pairs_only_via_size_ge4": 27,
+  "s_line": {
+   "1": {
+    "components": 24,
+    "bridging_components": 1,
+    "largest_bridging_size": 1857
+   },
+   "2": {
+    "components": 1109,
+    "bridging_components": 4,
+    "largest_bridging_size": 449
+   },
+   "3": {
+    "components": 1635,
+    "bridging_components": 1,
+    "largest_bridging_size": 16
+   }
+  },
+  "mixed_by_year": {
+   "2010": 1,
+   "2011": 5,
+   "2012": 2,
+   "2013": 4,
+   "2014": 1,
+   "2015": 1,
+   "2017": 4,
+   "2018": 2,
+   "2019": 7,
+   "2020": 5,
+   "2021": 1,
+   "2022": 3,
+   "2024": 4,
+   "2026": 5
+  },
+  "mixed_examples": [
+   {
+    "title": "V Conferência Nacional dos Direitos das Pessoas com Deficiência : a retomada do processo conferencial após quase uma década de interrupção",
+    "year": 2026,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/20358",
+    "authors": [
+     "Maria Estela Capuano Villar",
+     "Itaquê Santana Barbosa",
+     "Gabriel Pompeo Pistelli Ferreira"
+    ]
+   },
+   {
+    "title": "Demografia e homicídios no Brasil",
+    "year": 2026,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/20637",
+    "authors": [
+     "Daniel Ricardo de Castro Cerqueira",
+     "Moura, Rodrigo Leandro de"
+    ]
+   },
+   {
+    "title": "O Legislativo na alocação do orçamento : entre regras formais e práticas informais",
+    "year": 2026,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/20786",
+    "authors": [
+     "Santos, Manoel Leonardo",
+     "Acir Almeida"
+    ]
+   },
+   {
+    "title": "PolicySpace3 : uma plataforma aberta para simulação ex ante de políticas públicas",
+    "year": 2026,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/21085",
+    "authors": [
+     "Bernardo Alves Furtado",
+     "Lima, Gustavo L. Rocha",
+     "João Victor Lisbôa de Vasconcelos"
+    ]
+   },
+   {
+    "title": "Facilitando a análise de simulações urbanas : um painel interativo para o PolicySpace3",
+    "year": 2026,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/21086",
+    "authors": [
+     "João Victor Lisbôa de Vasconcelos",
+     "Bernardo Alves Furtado",
+     "Lima, Gustavo L. Rocha"
+    ]
+   },
+   {
+    "title": "Uma Estimativa de empresas e postos de trabalho diretamente atingidos pelas enchentes do Rio Grande do Sul em 2024",
+    "year": 2024,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/14186",
+    "authors": [
+     "Rafael H. M. Pereira",
+     "Herszenhut, Daniel",
+     "Ferreira, Pedro Cavalcanti Gonçalves",
+     "Mation, Lucas",
+     "Stivali, Matheus",
+     "Alexandre dos Santos Cunha"
+    ]
+   },
+   {
+    "title": "Uma Estimativa da população atingida pelas enchentes do Rio Grande do Sul em 2024",
+    "year": 2024,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/14337",
+    "authors": [
+     "Rafael H. M. Pereira",
+     "Herszenhut, Daniel",
+     "Ferreira, Pedro Cavalcanti Gonçalves",
+     "Mation, Lucas Ferreira",
+     "Alexandre dos Santos Cunha",
+     "Stivali, Matheus"
+    ]
+   },
+   {
+    "title": "Introdução : Indicadores quantitativos da OCDE e o Brasil : governança pública",
+    "year": 2024,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/16642",
+    "authors": [
+     "Moraes, Rodrigo Fracalossi de",
+     "Peci, Alketa",
+     "Fabiano Mezadre Pompermayer",
+     "Couto, Leandro Freitas",
+     "Rech, Lucas Trentin",
+     "Marinho, Sarah"
+    ]
+   },
+   {
+    "title": "Indicadores quantitativos da OCDE e o Brasil : volume III : governança pública",
+    "year": 2024,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/16174",
+    "authors": [
+     "Peci, Alketa",
+     "Fabiano Mezadre Pompermayer",
+     "Couto, Leandro Freitas",
+     "Rech, Lucas Trentin",
+     "Moraes, Rodrigo Fracalossi de",
+     "Marinho, Sarah",
+     "Baumann, Renato "
+    ]
+   },
+   {
+    "title": "Quo Vadis? As trajetórias profissionais de reguladores brasileiros",
+    "year": 2022,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/11144",
+    "authors": [
+     "Peci, Alketa",
+     "Santos, Aline Mendonça dos",
+     "Araújo, Bruno César"
+    ]
+   },
+   {
+    "title": "O Uso das evidências nas políticas brasileiras de ciência, tecnologia e inovação",
+    "year": 2022,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/11394",
+    "authors": [
+     "Schmidt, Flávia de Holanda",
+     "Bin, Adriana",
+     "Pinheiro, Lissa Vasconcellos",
+     "Fernanda De Negri"
+    ]
+   },
+   {
+    "title": "Regras orçamentárias e programas estratégicos : decifrando a lógica do orçamento do Ministério da Defesa",
+    "year": 2022,
+    "uri": "https://repositorio.ipea.gov.br/handle/11058/12171",
+    "authors": [
+     "Borne, Thiago",
+     "Giesteira, Luís Felipe",
+     "Couto, Leandro Freitas"
+    ]
+   },
+   {
+    "title": "Financiamento de campanha e lobbying empresarial nas comissões permanentes da Câmara dos Deputados",
+    "year": 2021,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/10432",
+    "authors": [
+     "Santos, Manoel Leonardo",
+     "Mancuso, Wagner Pralon",
+     "Resende, Ciro Antônio da Silva",
+     "Barboza, Danilo Praxedes"
+    ]
+   },
+   {
+    "title": "Medidas de enfrentamento dos efeitos econômicos da pandemia Covid-19 : panorama internacional e análise dos casos dos Estados Unidos, do Reino Unido e da Espanha",
+    "year": 2020,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9978",
+    "authors": [
+     "Claudio Roberto Amitrano",
+     "Magalhães, Luís Carlos Garcia de",
+     "Mauro Santos Silva"
+    ]
+   },
+   {
+    "title": "Revisão do arranjo das compras públicas a partir de um contexto de crise",
+    "year": 2020,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/10088",
+    "authors": [
+     "Eduardo Pedral Sampaio Fiuza",
+     "Santos, Felippe Vilaça Loureiro",
+     "Lopes, Virginia Bracarense",
+     "Bernardo Abreu de Medeiros",
+     "Santos, Franklin Brasil"
+    ]
+   },
+   {
+    "title": "Financiamento eleitoral e comportamento parlamentar : a relação entre doações da indústria e proposição de leis",
+    "year": 2020,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/10156",
+    "authors": [
+     "Mancuso, Wagner Pralon",
+     "Santos, Manoel Leonardo",
+     "Resende, Ciro Antônio da Silva",
+     "Barboza, Danilo Praxedes"
+    ]
+   },
+   {
+    "title": "Compras públicas centralizadas em situações de emergência e calamidade pública",
+    "year": 2020,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/10203",
+    "authors": [
+     "Eduardo Pedral Sampaio Fiuza",
+     "Santos, Felippe Vilaça Loureiro",
+     "Lopes, Virginia Bracarense",
+     "Bernardo Abreu de Medeiros",
+     "Santos, Franklin Brasil"
+    ]
+   },
+   {
+    "title": "Reformas do estado no Brasil : trajetórias, inovações e desafios",
+    "year": 2020,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/10364",
+    "authors": [
+     "Cavalcante, Pedro Luiz Costa",
+     "Mauro Santos Silva"
+    ]
+   },
+   {
+    "title": "Participação no mercado de trabalho e violência doméstica contra as mulheres no Brasil",
+    "year": 2019,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9358",
+    "authors": [
+     "Daniel Ricardo de Castro Cerqueira",
+     "Moura, Rodrigo Leandro de",
+     "Pasinato, Wânia"
+    ]
+   },
+   {
+    "title": "Oportunidades laborais, educacionais e homicídios no Brasil",
+    "year": 2019,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9427",
+    "authors": [
+     "Daniel Ricardo de Castro Cerqueira",
+     "Moura, Rodrigo Leandro de"
+    ]
+   },
+   {
+    "title": "Lobbying na Câmara dos Deputados : evolução, estratégias e influência",
+    "year": 2019,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9879",
+    "authors": [
+     "Santos, Manoel Leonardo",
+     "Mancuso, Wagner Pralon",
+     "Baird, Marcello Fragano",
+     "Resende, Ciro Antônio da Silva"
+    ]
+   },
+   {
+    "title": "Financiamento e lobbying empresarial na Comissão de Indústria e Comércio e de Agricultura",
+    "year": 2019,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9880",
+    "authors": [
+     "Santos, Manoel Leonardo",
+     "Mancuso, Wagner Pralon",
+     "Resende, Ciro Antônio da Silva",
+     "Barboza, Danilo Praxedes"
+    ]
+   },
+   {
+    "title": "Financiamento eleitoral e comportamento parlamentar : a relação entre doações da indústria e proposição de leis",
+    "year": 2019,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9881",
+    "authors": [
+     "Mancuso, Wagner Pralon",
+     "Santos, Manoel Leonardo",
+     "Resende, Ciro Antônio da Silva",
+     "Barboza, Danilo Praxedes"
+    ]
+   },
+   {
+    "title": "O Efeito de limites a doações de campanha sobre a concentração das fontes : um modelo computacional",
+    "year": 2019,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9902",
+    "authors": [
+     "Bernardo Alves Furtado",
+     "Reis, Bruno Pinheiro Wanderley"
+    ]
+   },
+   {
+    "title": "Empresas estatais : políticas públicas, governança e desempenho",
+    "year": 2019,
+    "uri": "http://repositorio.ipea.gov.br/handle/11058/9505",
+    "authors": [
+     "Mauro Santos Silva",
+     "Schmidt, Flávia de Holanda",
+     "Kliass, Paulo"
+    ]
+   }
+  ],
+  "strongest_cross_pairs": [
+   {
+    "DIEST": "Daniel Ricardo de Castro Cerqueira",
+    "DISET": "Moura, Rodrigo Leandro de",
+    "newman_w": 3.5
+   },
+   {
+    "DIEST": "Schmidt, Flávia de Holanda",
+    "DISET": "Assis, Lucas Rocha Soares de",
+    "newman_w": 2.5
+   },
+   {
+    "DIEST": "Bernardo Abreu de Medeiros",
+    "DISET": "Eduardo Pedral Sampaio Fiuza",
+    "newman_w": 2.5
+   },
+   {
+    "DIEST": "Mancuso, Wagner Pralon",
+    "DISET": "Santos, Manoel Leonardo",
+    "newman_w": 2.0
+   },
+   {
+    "DIEST": "Resende, Ciro Antônio da Silva",
+    "DISET": "Santos, Manoel Leonardo",
+    "newman_w": 2.0
+   },
+   {
+    "DIEST": "Barboza, Danilo Praxedes",
+    "DISET": "Santos, Manoel Leonardo",
+    "newman_w": 1.33
+   },
+   {
+    "DIEST": "Danilo Santa Cruz Coelho",
+    "DISET": "Gusso, Divonzir Arthur",
+    "newman_w": 1.2
+   },
+   {
+    "DIEST": "Reis, Bruno Pinheiro Wanderley",
+    "DISET": "Bernardo Alves Furtado",
+    "newman_w": 1.0
+   },
+   {
+    "DIEST": "Acir Almeida",
+    "DISET": "Santos, Manoel Leonardo",
+    "newman_w": 1.0
+   },
+   {
+    "DIEST": "João Victor Lisbôa de Vasconcelos",
+    "DISET": "Bernardo Alves Furtado",
+    "newman_w": 1.0
+   },
+   {
+    "DIEST": "João Victor Lisbôa de Vasconcelos",
+    "DISET": "Lima, Gustavo L. Rocha",
+    "newman_w": 1.0
+   },
+   {
+    "DIEST": "Cavalcante, Pedro Luiz Costa",
+    "DISET": "Mauro Santos Silva",
+    "newman_w": 1.0
+   },
+   {
+    "DIEST": "Danilo Santa Cruz Coelho",
+    "DISET": "Bahia, Luiz Dias",
+    "newman_w": 0.58
+   },
+   {
+    "DIEST": "Lima, Renato Sergio de",
+    "DISET": "Bragança, Gabriel Godofredo Fiuza de",
+    "newman_w": 0.5
+   },
+   {
+    "DIEST": "Daniel Ricardo de Castro Cerqueira",
+    "DISET": "Bragança, Gabriel Godofredo Fiuza de",
+    "newman_w": 0.5
+   }
+  ]
+ },
+ "brokers": [
+  {
+   "id": "ipea:15650",
+   "name": "Danilo Santa Cruz Coelho",
+   "diretoria": "DIEST",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 23,
+   "n_coaut_DISET": 8,
+   "score": 13.56,
+   "balance": 0.52
+  },
+  {
+   "id": "ipea:580",
+   "name": "Fabiano Mezadre Pompermayer",
+   "diretoria": "DISET",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 5,
+   "n_coaut_DISET": 30,
+   "score": 12.25,
+   "balance": 0.29
+  },
+  {
+   "id": "ipea:15657",
+   "name": "Mauro Santos Silva",
+   "diretoria": "DISET",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 5,
+   "n_coaut_DISET": 9,
+   "score": 6.71,
+   "balance": 0.71
+  },
+  {
+   "id": "ipea:561",
+   "name": "Bernardo Alves Furtado",
+   "diretoria": "DISET",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 2,
+   "n_coaut_DISET": 20,
+   "score": 6.32,
+   "balance": 0.18
+  },
+  {
+   "id": "ipea:578",
+   "name": "Erivelton Pires Guedes",
+   "diretoria": null,
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 10,
+   "n_coaut_DISET": 4,
+   "score": 6.32,
+   "balance": 0.57
+  },
+  {
+   "id": "ipea:551",
+   "name": "Alexandre de Ávila Gomide",
+   "diretoria": "DIEST",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 18,
+   "n_coaut_DISET": 2,
+   "score": 6.0,
+   "balance": 0.2
+  },
+  {
+   "id": "ipea:573",
+   "name": "Daniel Ricardo de Castro Cerqueira",
+   "diretoria": "DIEST",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 17,
+   "n_coaut_DISET": 2,
+   "score": 5.83,
+   "balance": 0.21
+  },
+  {
+   "id": "ext:couto|leandro freitas",
+   "name": "Couto, Leandro Freitas",
+   "diretoria": "DIEST",
+   "staff": false,
+   "active": true,
+   "n_coaut_DIEST": 11,
+   "n_coaut_DISET": 3,
+   "score": 5.74,
+   "balance": 0.43
+  },
+  {
+   "id": "ipea:15641",
+   "name": "Carlos Henrique Ribeiro de Carvalho",
+   "diretoria": "DIRUR",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 8,
+   "n_coaut_DISET": 4,
+   "score": 5.66,
+   "balance": 0.67
+  },
+  {
+   "id": "ipea:585",
+   "name": "Fernanda De Negri",
+   "diretoria": "DISET",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 1,
+   "n_coaut_DISET": 29,
+   "score": 5.39,
+   "balance": 0.07
+  },
+  {
+   "id": "ipea:542",
+   "name": "Alexandre dos Santos Cunha",
+   "diretoria": "DIEST",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 14,
+   "n_coaut_DISET": 2,
+   "score": 5.29,
+   "balance": 0.25
+  },
+  {
+   "id": "ipea:15663",
+   "name": "Vanessa Gapriotti Nadalin",
+   "diretoria": "DIRUR",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 4,
+   "n_coaut_DISET": 7,
+   "score": 5.29,
+   "balance": 0.73
+  },
+  {
+   "id": "ext:cavalcante|pedro luiz costa",
+   "name": "Cavalcante, Pedro Luiz Costa",
+   "diretoria": "DIEST",
+   "staff": false,
+   "active": true,
+   "n_coaut_DIEST": 13,
+   "n_coaut_DISET": 2,
+   "score": 5.1,
+   "balance": 0.27
+  },
+  {
+   "id": "ipea:13964",
+   "name": "Sandro Pereira Silva",
+   "diretoria": "DISOC",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 6,
+   "n_coaut_DISET": 4,
+   "score": 4.9,
+   "balance": 0.8
+  },
+  {
+   "id": "ext:peci|alketa",
+   "name": "Peci, Alketa",
+   "diretoria": "DIEST",
+   "staff": false,
+   "active": true,
+   "n_coaut_DIEST": 6,
+   "n_coaut_DISET": 4,
+   "score": 4.9,
+   "balance": 0.8
+  },
+  {
+   "id": "ipea:589",
+   "name": "Flávio Lyrio Carneiro",
+   "diretoria": "DINTE",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 5,
+   "n_coaut_DISET": 4,
+   "score": 4.47,
+   "balance": 0.89
+  },
+  {
+   "id": "ipea:15721",
+   "name": "Pedro Lucas de Moura Palotti",
+   "diretoria": "DIEST",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 20,
+   "n_coaut_DISET": 1,
+   "score": 4.47,
+   "balance": 0.1
+  },
+  {
+   "id": "ipea:14847",
+   "name": "Rafael H. M. Pereira",
+   "diretoria": "DIRUR",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 2,
+   "n_coaut_DISET": 9,
+   "score": 4.24,
+   "balance": 0.36
+  },
+  {
+   "id": "ext:toledo|demetrio gaspari cirne de",
+   "name": "Toledo, Demétrio Gaspari Cirne de",
+   "diretoria": null,
+   "staff": false,
+   "active": true,
+   "n_coaut_DIEST": 3,
+   "n_coaut_DISET": 6,
+   "score": 4.24,
+   "balance": 0.67
+  },
+  {
+   "id": "ext:araujo|bruno cesar pino oliveira de",
+   "name": "Araújo, Bruno César Pino Oliveira de",
+   "diretoria": "DISET",
+   "staff": false,
+   "active": false,
+   "n_coaut_DIEST": 1,
+   "n_coaut_DISET": 16,
+   "score": 4.0,
+   "balance": 0.12
+  },
+  {
+   "id": "ipea:605",
+   "name": "Joana Simões de Melo Costa",
+   "diretoria": "DISOC",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 4,
+   "n_coaut_DISET": 4,
+   "score": 4.0,
+   "balance": 1.0
+  },
+  {
+   "id": "ext:de negri|joao alberto",
+   "name": "De Negri, João Alberto",
+   "diretoria": "DISET",
+   "staff": false,
+   "active": false,
+   "n_coaut_DIEST": 1,
+   "n_coaut_DISET": 15,
+   "score": 3.87,
+   "balance": 0.12
+  },
+  {
+   "id": "ipea:548",
+   "name": "Aguinaldo Nogueira Maciente",
+   "diretoria": "DISET",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 1,
+   "n_coaut_DISET": 14,
+   "score": 3.74,
+   "balance": 0.13
+  },
+  {
+   "id": "ipea:575",
+   "name": "Edison Benedito da Silva Filho",
+   "diretoria": "DINTE",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 2,
+   "n_coaut_DISET": 7,
+   "score": 3.74,
+   "balance": 0.44
+  },
+  {
+   "id": "ext:ipea|",
+   "name": "Ipea",
+   "diretoria": "DINTE",
+   "staff": false,
+   "active": true,
+   "n_coaut_DIEST": 1,
+   "n_coaut_DISET": 14,
+   "score": 3.74,
+   "balance": 0.13
+  },
+  {
+   "id": "ipea:560",
+   "name": "Bernardo Abreu de Medeiros",
+   "diretoria": "DIEST",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 13,
+   "n_coaut_DISET": 1,
+   "score": 3.61,
+   "balance": 0.14
+  },
+  {
+   "id": "ext:campos neto|carlos alvares da silva",
+   "name": "Campos Neto, Carlos Alvares da Silva",
+   "diretoria": "DISET",
+   "staff": false,
+   "active": false,
+   "n_coaut_DIEST": 1,
+   "n_coaut_DISET": 13,
+   "score": 3.61,
+   "balance": 0.14
+  },
+  {
+   "id": "ipea:568",
+   "name": "Carlos Octávio Ocké-Reis",
+   "diretoria": "DISOC",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 12,
+   "n_coaut_DISET": 1,
+   "score": 3.46,
+   "balance": 0.15
+  },
+  {
+   "id": "ipea:545",
+   "name": "Antonio Lassance",
+   "diretoria": "DINTE",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 12,
+   "n_coaut_DISET": 1,
+   "score": 3.46,
+   "balance": 0.15
+  },
+  {
+   "id": "ipea:15646",
+   "name": "Bruno Queiroz Cunha",
+   "diretoria": "DIEST",
+   "staff": true,
+   "active": true,
+   "n_coaut_DIEST": 6,
+   "n_coaut_DISET": 2,
+   "score": 3.46,
+   "balance": 0.5
+  }
+ ],
+ "trajectory_bridges": [
+  {
+   "id": "ipea:15870",
+   "name": "Antônio de Pádua de Lima Brito",
+   "diretoria": null,
+   "share_DIEST": 0.5,
+   "share_DISET": 0.5,
+   "active": true
+  },
+  {
+   "id": "repo:46507669-a3b2-4d77-8ad3-728d847c8add",
+   "name": "Gabriel Pompeo Pistelli Ferreira",
+   "diretoria": "DISET",
+   "share_DIEST": 0.5,
+   "share_DISET": 0.5,
+   "active": true
+  },
+  {
+   "id": "repo:3bf65e0e-198a-4d61-9575-84127db19c38",
+   "name": "Lima, Gustavo L. Rocha",
+   "diretoria": "DISET",
+   "share_DIEST": 0.56,
+   "share_DISET": 0.44,
+   "active": true
+  },
+  {
+   "id": "ipea:655",
+   "name": "Sandra Silva Paulsen",
+   "diretoria": "DISET",
+   "share_DIEST": 0.26,
+   "share_DISET": 0.74,
+   "active": true
+  },
+  {
+   "id": "ipea:561",
+   "name": "Bernardo Alves Furtado",
+   "diretoria": "DISET",
+   "share_DIEST": 0.24,
+   "share_DISET": 0.68,
+   "active": true
+  },
+  {
+   "id": "ipea:15657",
+   "name": "Mauro Santos Silva",
+   "diretoria": "DISET",
+   "share_DIEST": 0.23,
+   "share_DISET": 0.57,
+   "active": true
+  },
+  {
+   "id": "ipea:576",
+   "name": "Eduardo Pedral Sampaio Fiuza",
+   "diretoria": "DISET",
+   "share_DIEST": 0.21,
+   "share_DISET": 0.61,
+   "active": true
+  }
+ ],
+ "convergence_terms": [
+  {
+   "term": "Desenvolvimento econômico",
+   "n_DIEST": 15,
+   "n_DISET": 15,
+   "score": 3.43
+  },
+  {
+   "term": "Regulamentações",
+   "n_DIEST": 9,
+   "n_DISET": 9,
+   "score": 2.94
+  },
+  {
+   "term": "Mercado de trabalho",
+   "n_DIEST": 12,
+   "n_DISET": 16,
+   "score": 2.89
+  },
+  {
+   "term": "Pandemia",
+   "n_DIEST": 17,
+   "n_DISET": 12,
+   "score": 2.81
+  },
+  {
+   "term": "Investimentos públicos",
+   "n_DIEST": 7,
+   "n_DISET": 7,
+   "score": 2.71
+  },
+  {
+   "term": "Educação",
+   "n_DIEST": 6,
+   "n_DISET": 6,
+   "score": 2.56
+  },
+  {
+   "term": "Trabalho",
+   "n_DIEST": 8,
+   "n_DISET": 11,
+   "score": 2.52
+  },
+  {
+   "term": "Análise comparativa",
+   "n_DIEST": 7,
+   "n_DISET": 6,
+   "score": 2.44
+  },
+  {
+   "term": "Epidemias",
+   "n_DIEST": 19,
+   "n_DISET": 10,
+   "score": 2.35
+  },
+  {
+   "term": "Meio Ambiente e Ecossistemas",
+   "n_DIEST": 6,
+   "n_DISET": 5,
+   "score": 2.26
+  },
+  {
+   "term": "Regulação",
+   "n_DIEST": 5,
+   "n_DISET": 6,
+   "score": 2.26
+  },
+  {
+   "term": "Cooperação internacional",
+   "n_DIEST": 6,
+   "n_DISET": 5,
+   "score": 2.26
+  },
+  {
+   "term": "Coronavírus",
+   "n_DIEST": 6,
+   "n_DISET": 9,
+   "score": 2.22
+  },
+  {
+   "term": "Programas governamentais",
+   "n_DIEST": 9,
+   "n_DISET": 6,
+   "score": 2.22
+  },
+  {
+   "term": "Administração da Saúde",
+   "n_DIEST": 15,
+   "n_DISET": 8,
+   "score": 2.21
+  },
+  {
+   "term": "Cadastro único",
+   "n_DIEST": 4,
+   "n_DISET": 4,
+   "score": 2.2
+  },
+  {
+   "term": "Transição energética",
+   "n_DIEST": 4,
+   "n_DISET": 4,
+   "score": 2.2
+  },
+  {
+   "term": "Infra-Estrutura Física",
+   "n_DIEST": 4,
+   "n_DISET": 4,
+   "score": 2.2
+  },
+  {
+   "term": "Recursos financeiros",
+   "n_DIEST": 4,
+   "n_DISET": 4,
+   "score": 2.2
+  },
+  {
+   "term": "Taxa de Mortalidade",
+   "n_DIEST": 4,
+   "n_DISET": 4,
+   "score": 2.2
+  },
+  {
+   "term": "Desenvolvimento sustentável",
+   "n_DIEST": 9,
+   "n_DISET": 19,
+   "score": 2.16
+  },
+  {
+   "term": "Doenças Endêmicas",
+   "n_DIEST": 5,
+   "n_DISET": 7,
+   "score": 2.14
+  },
+  {
+   "term": "Infra-Estrutura Econômica",
+   "n_DIEST": 5,
+   "n_DISET": 7,
+   "score": 2.14
+  },
+  {
+   "term": "Negros",
+   "n_DIEST": 7,
+   "n_DISET": 5,
+   "score": 2.14
+  },
+  {
+   "term": "Análise de Impacto Regulatório (AIR)",
+   "n_DIEST": 4,
+   "n_DISET": 5,
+   "score": 2.05
+  },
+  {
+   "term": "Governança regulatória",
+   "n_DIEST": 5,
+   "n_DISET": 4,
+   "score": 2.05
+  },
+  {
+   "term": "Agenda 2030",
+   "n_DIEST": 4,
+   "n_DISET": 5,
+   "score": 2.05
+  },
+  {
+   "term": "Desenvolvimento econômico e social",
+   "n_DIEST": 5,
+   "n_DISET": 8,
+   "score": 2.03
+  },
+  {
+   "term": "Política fiscal",
+   "n_DIEST": 8,
+   "n_DISET": 5,
+   "score": 2.03
+  },
+  {
+   "term": "Inovação",
+   "n_DIEST": 7,
+   "n_DISET": 15,
+   "score": 2.0
+  },
+  {
+   "term": "Política de desenvolvimento",
+   "n_DIEST": 3,
+   "n_DISET": 3,
+   "score": 1.95
+  },
+  {
+   "term": "Informalidade",
+   "n_DIEST": 3,
+   "n_DISET": 3,
+   "score": 1.95
+  },
+  {
+   "term": "Racismo",
+   "n_DIEST": 3,
+   "n_DISET": 3,
+   "score": 1.95
+  },
+  {
+   "term": "Projeto de lei",
+   "n_DIEST": 3,
+   "n_DISET": 3,
+   "score": 1.95
+  },
+  {
+   "term": "Crise",
+   "n_DIEST": 3,
+   "n_DISET": 3,
+   "score": 1.95
+  },
+  {
+   "term": "Tecnologia da Informação",
+   "n_DIEST": 5,
+   "n_DISET": 9,
+   "score": 1.93
+  },
+  {
+   "term": "Mortalidade",
+   "n_DIEST": 9,
+   "n_DISET": 5,
+   "score": 1.93
+  },
+  {
+   "term": "Desenvolvimento Regional",
+   "n_DIEST": 6,
+   "n_DISET": 4,
+   "score": 1.92
+  },
+  {
+   "term": "Ação governamental",
+   "n_DIEST": 6,
+   "n_DISET": 4,
+   "score": 1.92
+  },
+  {
+   "term": "Gastos públicos",
+   "n_DIEST": 4,
+   "n_DISET": 6,
+   "score": 1.92
+  }
+ ],
+ "zones": [
+  {
+   "label": "Pandemia · Epidemias · Coronavírus",
+   "terms": [
+    "Pandemia",
+    "Epidemias",
+    "Coronavírus",
+    "Administração da Saúde",
+    "Taxa de Mortalidade",
+    "Doenças Endêmicas",
+    "Desenvolvimento econômico e social",
+    "Inovação",
+    "Tecnologia da Informação",
+    "Mortalidade",
+    "Ação governamental",
+    "Inovações",
+    "Produção científica",
+    "Aspectos Sociais",
+    "Saúde pública"
+   ],
+   "score": 30.86,
+   "DIEST": [
+    "Cavalcante, Pedro Luiz Costa",
+    "Daniel Pitangueira de Avelino",
+    "Pedro Lucas de Moura Palotti",
+    "Joao Claudio Basso Pompeu"
+   ],
+   "DISET": [
+    "Fernanda De Negri",
+    "Graziela Ferrero Zucoloto",
+    "Koeller, Priscila",
+    "Pedro Miranda"
+   ],
+   "mixed_items_existing": 3,
+   "examples": [
+    {
+     "title": "Vidas perdidas e racismo no Brasil",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/5977"
+    },
+    {
+     "title": "Medidas de enfrentamento dos efeitos econômicos da pandemia Covid-19 : panorama internacional e análise dos casos dos Estados Unidos, do Reino Unido e da Espanha",
+     "year": 2020,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/9978"
+    },
+    {
+     "title": "Compras públicas centralizadas em situações de emergência e calamidade pública",
+     "year": 2020,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/10203"
+    }
+   ],
+   "potential_hyperedge": [
+    "Cavalcante, Pedro Luiz Costa",
+    "Daniel Pitangueira de Avelino",
+    "Fernanda De Negri",
+    "Graziela Ferrero Zucoloto",
+    "Mauro Santos Silva"
+   ],
+   "broker": "Mauro Santos Silva"
+  },
+  {
+   "label": "Desenvolvimento econômico · Investimentos públicos · Infra-Estrutura Econômica",
+   "terms": [
+    "Desenvolvimento econômico",
+    "Investimentos públicos",
+    "Infra-Estrutura Econômica",
+    "Política fiscal",
+    "Infraestrutura",
+    "Investimentos em infraestrutura",
+    "Instituições",
+    "Governança",
+    "Investimento público"
+   ],
+   "score": 19.06,
+   "DIEST": [
+    "Alexandre de Ávila Gomide",
+    "Bruno Queiroz Cunha",
+    "Pereira, Ana Karine",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "DISET": [
+    "Rocha, Katia Maria Carlos",
+    "Mauro Santos Silva",
+    "Fabiano Mezadre Pompermayer",
+    "Araújo, Bruno César"
+   ],
+   "mixed_items_existing": 6,
+   "examples": [
+    {
+     "title": "Arranjos institucionais e a burocracia de infraestrutura : notas para uma história sobre a construção das capacidades estatais no Brasil",
+     "year": 2017,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/7728"
+    },
+    {
+     "title": "Condicionantes institucionais à execução do investimento em infraestrutura : achados e recomendações",
+     "year": 2018,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/8562"
+    },
+    {
+     "title": "Medidas de enfrentamento dos efeitos econômicos da pandemia Covid-19 : panorama internacional e análise dos casos dos Estados Unidos, do Reino Unido e da Espanha",
+     "year": 2020,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/9978"
+    }
+   ],
+   "potential_hyperedge": [
+    "Alexandre de Ávila Gomide",
+    "Bruno Queiroz Cunha",
+    "Rocha, Katia Maria Carlos",
+    "Mauro Santos Silva",
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "broker": "Fabiano Mezadre Pompermayer"
+  },
+  {
+   "label": "Regulamentações · Regulação · Projeto de lei",
+   "terms": [
+    "Regulamentações",
+    "Regulação",
+    "Projeto de lei",
+    "Gastos públicos"
+   ],
+   "score": 9.07,
+   "DIEST": [
+    "Bruno Queiroz Cunha",
+    "Magalhães, Luís Carlos Garcia de",
+    "Alexandre de Ávila Gomide",
+    "Soares, Milena Karla"
+   ],
+   "DISET": [
+    "Rauen, André Tortato",
+    "Eduardo Pedral Sampaio Fiuza",
+    "Rocha, Katia Maria Carlos",
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "mixed_items_existing": 2,
+   "examples": [
+    {
+     "title": "Medidas de enfrentamento dos efeitos econômicos da pandemia Covid-19 : panorama internacional e análise dos casos dos Estados Unidos, do Reino Unido e da Espanha",
+     "year": 2020,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/9978"
+    },
+    {
+     "title": "Regras orçamentárias e programas estratégicos : decifrando a lógica do orçamento do Ministério da Defesa",
+     "year": 2022,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/12171"
+    }
+   ],
+   "potential_hyperedge": [
+    "Bruno Queiroz Cunha",
+    "Magalhães, Luís Carlos Garcia de",
+    "Rauen, André Tortato",
+    "Eduardo Pedral Sampaio Fiuza",
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "broker": "Fabiano Mezadre Pompermayer"
+  },
+  {
+   "label": "Mercado de trabalho · Trabalho · Indústria de transformação",
+   "terms": [
+    "Mercado de trabalho",
+    "Trabalho",
+    "Indústria de transformação",
+    "Crescimento econômico"
+   ],
+   "score": 8.68,
+   "DIEST": [
+    "Viana, André Rego",
+    "José Celso Pereira Cardoso Junior",
+    "Magalhães, Luís Carlos Garcia de",
+    "Joao Claudio Basso Pompeu"
+   ],
+   "DISET": [
+    "Bahia, Luiz Dias",
+    "Fernanda De Negri",
+    "Gabriel Coelho Squeff",
+    "Aguinaldo Nogueira Maciente"
+   ],
+   "mixed_items_existing": 3,
+   "examples": [
+    {
+     "title": "Participação no mercado de trabalho e violência doméstica contra as mulheres no Brasil",
+     "year": 2019,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/9358"
+    },
+    {
+     "title": "Oportunidades laborais, educacionais e homicídios no Brasil",
+     "year": 2019,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/9427"
+    },
+    {
+     "title": "Uma Estimativa de empresas e postos de trabalho diretamente atingidos pelas enchentes do Rio Grande do Sul em 2024",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/14186"
+    }
+   ],
+   "potential_hyperedge": [
+    "Viana, André Rego",
+    "José Celso Pereira Cardoso Junior",
+    "Bahia, Luiz Dias",
+    "Fernanda De Negri",
+    "Mauro Santos Silva"
+   ],
+   "broker": "Mauro Santos Silva"
+  },
+  {
+   "label": "Análise de Impacto Regulatório (AIR) · Governança regulatória",
+   "terms": [
+    "Análise de Impacto Regulatório (AIR)",
+    "Governança regulatória"
+   ],
+   "score": 4.09,
+   "DIEST": [
+    "Peci, Alketa",
+    "Bruno Queiroz Cunha",
+    "Pedro Lucas de Moura Palotti",
+    "Maurício Mota Saboya Pinheiro"
+   ],
+   "DISET": [
+    "Salgado, Lucia Helena",
+    "Cavalcante, Luiz Ricardo",
+    "Fernanda De Negri",
+    "Pedro Miranda"
+   ],
+   "mixed_items_existing": 0,
+   "examples": [],
+   "potential_hyperedge": [
+    "Peci, Alketa",
+    "Bruno Queiroz Cunha",
+    "Salgado, Lucia Helena",
+    "Cavalcante, Luiz Ricardo",
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "broker": "Fabiano Mezadre Pompermayer"
+  },
+  {
+   "label": "Negros · Racismo",
+   "terms": [
+    "Negros",
+    "Racismo"
+   ],
+   "score": 4.08,
+   "DIEST": [
+    "Daniel Ricardo de Castro Cerqueira",
+    "Danilo Santa Cruz Coelho",
+    "Tatiana Dias Silva",
+    "Helder Rogério Sant'Ana Ferreira"
+   ],
+   "DISET": [
+    "Tulio Chiarini",
+    "Marinho, Vitor",
+    "Pereira, Larissa",
+    "Pereira, Larissa de Souza"
+   ],
+   "mixed_items_existing": 1,
+   "examples": [
+    {
+     "title": "Vidas perdidas e racismo no Brasil",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/5977"
+    }
+   ],
+   "potential_hyperedge": [
+    "Daniel Ricardo de Castro Cerqueira",
+    "Danilo Santa Cruz Coelho",
+    "Tulio Chiarini",
+    "Marinho, Vitor",
+    "Arbix, Glauco"
+   ],
+   "broker": "Arbix, Glauco"
+  },
+  {
+   "label": "Agenda 2030 · Objetivos de Desenvolvimento Sustentável (ODS)",
+   "terms": [
+    "Agenda 2030",
+    "Objetivos de Desenvolvimento Sustentável (ODS)"
+   ],
+   "score": 3.83,
+   "DIEST": [
+    "Helder Rogério Sant'Ana Ferreira",
+    "Daniel Pitangueira de Avelino",
+    "Alexandre dos Santos Cunha",
+    "Fonseca, Igor Ferraz da"
+   ],
+   "DISET": [
+    "Aguinaldo Nogueira Maciente",
+    "Koeller, Priscila",
+    "José Mauro de Morais",
+    "Sandra Silva Paulsen"
+   ],
+   "mixed_items_existing": 0,
+   "examples": [],
+   "potential_hyperedge": [
+    "Helder Rogério Sant'Ana Ferreira",
+    "Daniel Pitangueira de Avelino",
+    "Aguinaldo Nogueira Maciente",
+    "Koeller, Priscila",
+    "Danilo Santa Cruz Coelho"
+   ],
+   "broker": "Danilo Santa Cruz Coelho"
+  },
+  {
+   "label": "Educação",
+   "terms": [
+    "Educação"
+   ],
+   "score": 2.56,
+   "DIEST": [
+    "Daniel Ricardo de Castro Cerqueira",
+    "Danilo Santa Cruz Coelho",
+    "Jéssica Vasconcelos de Abreu",
+    "Rosa, Bruno Truzzi"
+   ],
+   "DISET": [
+    "Aguinaldo Nogueira Maciente",
+    "Lenita Maria Turchi",
+    "Fernanda De Negri",
+    "Rosa, Mauricio Benedeti"
+   ],
+   "mixed_items_existing": 0,
+   "examples": [],
+   "potential_hyperedge": [
+    "Daniel Ricardo de Castro Cerqueira",
+    "Danilo Santa Cruz Coelho",
+    "Aguinaldo Nogueira Maciente",
+    "Lenita Maria Turchi"
+   ],
+   "broker": "Danilo Santa Cruz Coelho"
+  },
+  {
+   "label": "Análise comparativa",
+   "terms": [
+    "Análise comparativa"
+   ],
+   "score": 2.44,
+   "DIEST": [
+    "Danilo Santa Cruz Coelho",
+    "Helder Rogério Sant'Ana Ferreira",
+    "Alexandre dos Santos Cunha",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "DISET": [
+    "Santos, Manoel Leonardo",
+    "Daniel Gama e Colombo",
+    "Jean Marlo Pepino de Paula",
+    "Bahia, Luiz Dias"
+   ],
+   "mixed_items_existing": 1,
+   "examples": [
+    {
+     "title": "O Legislativo na alocação do orçamento : entre regras formais e práticas informais",
+     "year": 2026,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20786"
+    }
+   ],
+   "potential_hyperedge": [
+    "Danilo Santa Cruz Coelho",
+    "Helder Rogério Sant'Ana Ferreira",
+    "Santos, Manoel Leonardo",
+    "Daniel Gama e Colombo"
+   ],
+   "broker": "Danilo Santa Cruz Coelho"
+  },
+  {
+   "label": "Meio Ambiente e Ecossistemas",
+   "terms": [
+    "Meio Ambiente e Ecossistemas"
+   ],
+   "score": 2.26,
+   "DIEST": [
+    "Gutierrez, Maria Bernadete Gomes Pereira Sarmiento",
+    "Pedro Lucas de Moura Palotti",
+    "Soares Filho, Marcos Luiz Vieira",
+    "Fonseca, Igor Ferraz da"
+   ],
+   "DISET": [
+    "Pedro Miranda",
+    "Koeller, Priscila",
+    "Vale, Eduardo",
+    "Feres, José Gustavo"
+   ],
+   "mixed_items_existing": 0,
+   "examples": [],
+   "potential_hyperedge": [
+    "Gutierrez, Maria Bernadete Gomes Pereira Sarmiento",
+    "Pedro Lucas de Moura Palotti",
+    "Pedro Miranda",
+    "Koeller, Priscila"
+   ],
+   "broker": null
+  },
+  {
+   "label": "Cooperação internacional",
+   "terms": [
+    "Cooperação internacional"
+   ],
+   "score": 2.26,
+   "DIEST": [
+    "Couto, Leandro Freitas",
+    "Viana, André Rego",
+    "Peci, Alketa",
+    "Gutierrez, Maria Bernadete Gomes Pereira Sarmiento"
+   ],
+   "DISET": [
+    "Fabiano Mezadre Pompermayer",
+    "Sandra Silva Paulsen",
+    "Pedro Miranda",
+    "Luis Claudio Kubota"
+   ],
+   "mixed_items_existing": 1,
+   "examples": [
+    {
+     "title": "Indicadores quantitativos da OCDE e o Brasil : volume III : governança pública",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/16174"
+    }
+   ],
+   "potential_hyperedge": [
+    "Couto, Leandro Freitas",
+    "Viana, André Rego",
+    "Fabiano Mezadre Pompermayer",
+    "Sandra Silva Paulsen",
+    "Baumann, Renato "
+   ],
+   "broker": "Baumann, Renato "
+  },
+  {
+   "label": "Programas governamentais",
+   "terms": [
+    "Programas governamentais"
+   ],
+   "score": 2.22,
+   "DIEST": [
+    "Sheila Cristina Tolentino Barbosa",
+    "Alexandre de Ávila Gomide",
+    "Mello, Janine",
+    "José Celso Pereira Cardoso Junior"
+   ],
+   "DISET": [
+    "Mation, Lucas Ferreira",
+    "Stivali, Matheus",
+    "José Mauro de Morais",
+    "Silva, Napoleão Luiz Costa da"
+   ],
+   "mixed_items_existing": 1,
+   "examples": [
+    {
+     "title": "Uma Estimativa de empresas e postos de trabalho diretamente atingidos pelas enchentes do Rio Grande do Sul em 2024",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/14186"
+    }
+   ],
+   "potential_hyperedge": [
+    "Sheila Cristina Tolentino Barbosa",
+    "Alexandre de Ávila Gomide",
+    "Mation, Lucas Ferreira",
+    "Stivali, Matheus"
+   ],
+   "broker": "Alexandre de Ávila Gomide"
+  }
+ ],
+ "potential_collaborators": [
+  {
+   "DIEST": "Alexandre de Ávila Gomide",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.152,
+   "score": 0.265,
+   "already": false,
+   "common_coauthors": [
+    "Bruno Queiroz Cunha",
+    "Fabiano Mezadre Pompermayer",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Política econômica",
+    "Governança corporativa",
+    "Empresas estatais",
+    "Capacidade estatal",
+    "Desenvolvimento econômico e social"
+   ]
+  },
+  {
+   "DIEST": "Pereira, Ana Karine",
+   "DISET": "Jean Marlo Pepino de Paula",
+   "cosine": 0.12,
+   "score": 0.18,
+   "already": false,
+   "common_coauthors": [
+    "Fabiano Mezadre Pompermayer",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Obras Públicas",
+    "Criação de Infra-Estruturas",
+    "Políticas de infraestrutura",
+    "Programa de Aceleração do Crescimento (PAC)",
+    "Parcerias público-privadas"
+   ]
+  },
+  {
+   "DIEST": "Peci, Alketa",
+   "DISET": "Salgado, Lucia Helena",
+   "cosine": 0.144,
+   "score": 0.18,
+   "already": false,
+   "common_coauthors": [
+    "Bragança, Gabriel Godofredo Fiuza de"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Agências reguladoras",
+    "Governança regulatória",
+    "Análise de Impacto Regulatório (AIR)",
+    "Desenvolvimento econômico",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Oliveira, Raissa Menezes de",
+   "DISET": "Cláudia Regina Baddini Curralero",
+   "cosine": 0.14,
+   "score": 0.175,
+   "already": false,
+   "common_coauthors": [
+    "Denise do Carmo Direito"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Assistência social",
+    "Programas sociais",
+    "Proteção social",
+    "Políticas sociais",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Alexandre de Ávila Gomide",
+   "DISET": "Jean Marlo Pepino de Paula",
+   "cosine": 0.115,
+   "score": 0.173,
+   "already": false,
+   "common_coauthors": [
+    "Fabiano Mezadre Pompermayer",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Criação de Infra-Estruturas",
+    "Elaboração de Políticas",
+    "Políticas de infraestrutura",
+    "Arranjos institucionais",
+    "Infraestrutura"
+   ]
+  },
+  {
+   "DIEST": "Pereira, Ana Karine",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.092,
+   "score": 0.161,
+   "already": false,
+   "common_coauthors": [
+    "Bruno Queiroz Cunha",
+    "Fabiano Mezadre Pompermayer",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Governança corporativa",
+    "Infra-Estrutura Econômica",
+    "Governabilidade",
+    "Política fiscal",
+    "Capacidade estatal"
+   ]
+  },
+  {
+   "DIEST": "Peci, Alketa",
+   "DISET": "Sandra Silva Paulsen",
+   "cosine": 0.127,
+   "score": 0.159,
+   "already": false,
+   "common_coauthors": [
+    "Baumann, Renato "
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Organização para a Cooperação e o Desenvolvimento Econômico (OCDE)",
+    "Desempenho econômico",
+    "Cooperação internacional",
+    "Desenvolvimento sustentável",
+    "Desenvolvimento econômico"
+   ]
+  },
+  {
+   "DIEST": "Cavalcante, Pedro Luiz Costa",
+   "DISET": "Fernanda De Negri",
+   "cosine": 0.101,
+   "score": 0.152,
+   "already": false,
+   "common_coauthors": [
+    "Mauro Santos Silva",
+    "Schmidt, Flávia de Holanda"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Inovações",
+    "Inovação",
+    "Inovações tecnológicas",
+    "Burocracia",
+    "Produção científica"
+   ]
+  },
+  {
+   "DIEST": "Magalhães, Luís Carlos Garcia de",
+   "DISET": "Fernanda De Negri",
+   "cosine": 0.085,
+   "score": 0.149,
+   "already": false,
+   "common_coauthors": [
+    "Lucas Ferraz Vasconcelos",
+    "Santos, Carolina Fernandes dos",
+    "Mauro Santos Silva"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Medicamentos",
+    "Crescimento econômico",
+    "Saúde",
+    "Desenvolvimento econômico",
+    "Produtividade"
+   ]
+  },
+  {
+   "DIEST": "Rute Imanishi Rodrigues",
+   "DISET": "Mation, Lucas Ferreira",
+   "cosine": 0.084,
+   "score": 0.146,
+   "already": false,
+   "common_coauthors": [
+    "Cleandro Henrique Krause",
+    "Renato Balbim",
+    "Vanessa Gapriotti Nadalin"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Favelas",
+    "Regiões metropolitanas",
+    "Habitação",
+    "Programas sociais",
+    "Saúde pública"
+   ]
+  },
+  {
+   "DIEST": "Pedro Lucas de Moura Palotti",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.091,
+   "score": 0.136,
+   "already": false,
+   "common_coauthors": [
+    "Cavalcante, Pedro Luiz Costa",
+    "Alves, Pedro Assumpção"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Burocracia",
+    "Capacidade estatal",
+    "Administração pública",
+    "Infra-Estrutura Econômica",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Rute Imanishi Rodrigues",
+   "DISET": "Bernardo Alves Furtado",
+   "cosine": 0.091,
+   "score": 0.136,
+   "already": false,
+   "common_coauthors": [
+    "Cleandro Henrique Krause",
+    "Vanessa Gapriotti Nadalin"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Habitação Urbana",
+    "Habitação",
+    "Política habitacional",
+    "Regiões metropolitanas",
+    "Déficit habitacional"
+   ]
+  },
+  {
+   "DIEST": "Fonseca, Igor Ferraz da",
+   "DISET": "Sandra Silva Paulsen",
+   "cosine": 0.109,
+   "score": 0.136,
+   "already": false,
+   "common_coauthors": [
+    "Sandro Pereira Silva"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Política ambiental",
+    "Desenvolvimento sustentável",
+    "Estudos sobre o Meio Ambiente",
+    "Meio ambiente",
+    "Mudanças climáticas"
+   ]
+  },
+  {
+   "DIEST": "Couto, Leandro Freitas",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.075,
+   "score": 0.132,
+   "already": false,
+   "common_coauthors": [
+    "Magalhães, Luís Carlos Garcia de",
+    "Fabiano Mezadre Pompermayer",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Política fiscal",
+    "Governabilidade",
+    "Desempenho econômico",
+    "Gastos públicos",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Roberto Rocha Coelho Pires",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.105,
+   "score": 0.131,
+   "already": false,
+   "common_coauthors": [
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Burocracia",
+    "Empresas estatais",
+    "Capacidade estatal",
+    "Governabilidade",
+    "Arranjos institucionais"
+   ]
+  },
+  {
+   "DIEST": "Cavalcante, Pedro Luiz Costa",
+   "DISET": "Koeller, Priscila",
+   "cosine": 0.102,
+   "score": 0.128,
+   "already": false,
+   "common_coauthors": [
+    "Mauro Santos Silva"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Inovações",
+    "Governo central",
+    "Inovação",
+    "Inovações tecnológicas",
+    "Pandemia"
+   ]
+  },
+  {
+   "DIEST": "Maria Paula Gomes dos Santos",
+   "DISET": "Eduardo Pedral Sampaio Fiuza",
+   "cosine": 0.063,
+   "score": 0.126,
+   "already": false,
+   "common_coauthors": [
+    "Carlos Octávio Ocké-Reis",
+    "Luciana Mendes Santos Servo",
+    "Alexandre Marinho",
+    "Fabiola Sulpino Vieira"
+   ],
+   "n_common": 4,
+   "shared_terms": [
+    "Indústria farmacêutica",
+    "Gastos com Saúde",
+    "Acesso aos Serviços de Saúde",
+    "Pessoal de Saúde",
+    "Eficiência"
+   ]
+  },
+  {
+   "DIEST": "Peci, Alketa",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.101,
+   "score": 0.126,
+   "already": false,
+   "common_coauthors": [
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Desempenho econômico",
+    "Infra-Estrutura Econômica",
+    "Infraestrutura",
+    "Desenvolvimento sustentável",
+    "Desenvolvimento econômico"
+   ]
+  },
+  {
+   "DIEST": "Alexandre de Ávila Gomide",
+   "DISET": "Rocha, Katia Maria Carlos",
+   "cosine": 0.1,
+   "score": 0.124,
+   "already": false,
+   "common_coauthors": [
+    "Peci, Alketa"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Projetos de Investimento",
+    "Investimentos em infraestrutura",
+    "Investimentos",
+    "Regulação",
+    "Desenvolvimento econômico e social"
+   ]
+  },
+  {
+   "DIEST": "Djonathan Gomes Ribeiro",
+   "DISET": "Matheus Rocha Fernandes",
+   "cosine": 0.12,
+   "score": 0.12,
+   "already": false,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Sustentabilidade",
+    "Descarbonização"
+   ]
+  },
+  {
+   "DIEST": "Roberto Rocha Coelho Pires",
+   "DISET": "Jean Marlo Pepino de Paula",
+   "cosine": 0.079,
+   "score": 0.118,
+   "already": false,
+   "common_coauthors": [
+    "Pedro Lucas de Moura Palotti",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Criação de Infra-Estruturas",
+    "Burocracia",
+    "Arranjos institucionais",
+    "Elaboração de Políticas",
+    "Trabalho"
+   ]
+  },
+  {
+   "DIEST": "Bruno Queiroz Cunha",
+   "DISET": "Salgado, Lucia Helena",
+   "cosine": 0.118,
+   "score": 0.118,
+   "already": false,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Agências reguladoras",
+    "Regulamentações",
+    "Governança regulatória",
+    "Governo. Administração Pública",
+    "Desenvolvimento econômico"
+   ]
+  },
+  {
+   "DIEST": "Brito, Elohá Cabreira",
+   "DISET": "Bahia, Luiz Dias",
+   "cosine": 0.112,
+   "score": 0.112,
+   "already": false,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Indústria extrativa",
+    "Setor de serviços",
+    "Desenvolvimento industrial",
+    "Desenvolvimento econômico"
+   ]
+  },
+  {
+   "DIEST": "Maurício Mota Saboya Pinheiro",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.075,
+   "score": 0.112,
+   "already": false,
+   "common_coauthors": [
+    "Claudio Roberto Amitrano",
+    "Magalhães, Luís Carlos Garcia de"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Desenvolvimento econômico",
+    "Instituições",
+    "Política fiscal",
+    "Infraestrutura",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Cavalcante, Pedro Luiz Costa",
+   "DISET": "Pedro Miranda",
+   "cosine": 0.086,
+   "score": 0.107,
+   "already": false,
+   "common_coauthors": [
+    "Mauro Santos Silva"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Inovações",
+    "Inovação",
+    "Inovações tecnológicas",
+    "Pandemia",
+    "Covid-19"
+   ]
+  },
+  {
+   "DIEST": "Bruno Queiroz Cunha",
+   "DISET": "Rocha, Katia Maria Carlos",
+   "cosine": 0.084,
+   "score": 0.105,
+   "already": false,
+   "common_coauthors": [
+    "Sarmiento Gutierrez, Maria Bernadete Gomes Pereira"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Regulamentações",
+    "Regulação",
+    "Infraestrutura",
+    "Projetos de Investimento",
+    "Investimentos em infraestrutura"
+   ]
+  },
+  {
+   "DIEST": "Bruno Queiroz Cunha",
+   "DISET": "Matheus Rocha Fernandes",
+   "cosine": 0.104,
+   "score": 0.104,
+   "already": false,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Regulação",
+    "Matriz Energética",
+    "Infraestrutura"
+   ]
+  },
+  {
+   "DIEST": "Goellner, Isabella de Araujo",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.069,
+   "score": 0.103,
+   "already": false,
+   "common_coauthors": [
+    "Bruno Queiroz Cunha",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Capacidade estatal",
+    "Administração pública",
+    "Políticas públicas",
+    "Governabilidade",
+    "Epidemias"
+   ]
+  },
+  {
+   "DIEST": "Bruno Queiroz Cunha",
+   "DISET": "Fernanda De Negri",
+   "cosine": 0.069,
+   "score": 0.103,
+   "already": false,
+   "common_coauthors": [
+    "Fabiano Mezadre Pompermayer",
+    "Mauro Santos Silva"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Inovações",
+    "Burocracia",
+    "Inovação",
+    "Produção científica",
+    "Desenvolvimento econômico"
+   ]
+  },
+  {
+   "DIEST": "Viana, André Rego",
+   "DISET": "Gabriel Coelho Squeff",
+   "cosine": 0.081,
+   "score": 0.102,
+   "already": false,
+   "common_coauthors": [
+    "Cintra, Marcos Antonio Macedo"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Crescimento econômico",
+    "Mercado de trabalho",
+    "Trabalho",
+    "Desenvolvimento econômico",
+    "Indústria de transformação"
+   ]
+  },
+  {
+   "DIEST": "Koga, Natália Massaco",
+   "DISET": "Cláudia Regina Baddini Curralero",
+   "cosine": 0.066,
+   "score": 0.099,
+   "already": false,
+   "common_coauthors": [
+    "Licio, Elaine Cristina",
+    "Denise do Carmo Direito"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Programas sociais",
+    "Cadastro único",
+    "Assistência social",
+    "Políticas públicas",
+    "Política social"
+   ]
+  },
+  {
+   "DIEST": "Magalhães, Luís Carlos Garcia de",
+   "DISET": "Gabriel Coelho Squeff",
+   "cosine": 0.066,
+   "score": 0.098,
+   "already": false,
+   "common_coauthors": [
+    "Lucas Ferraz Vasconcelos",
+    "Claudio Roberto Amitrano"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Crescimento econômico",
+    "Desenvolvimento econômico",
+    "Produtividade",
+    "Indústria de transformação",
+    "Mercado de trabalho"
+   ]
+  },
+  {
+   "DIEST": "Bernardo Abreu de Medeiros",
+   "DISET": "Rauen, André Tortato",
+   "cosine": 0.078,
+   "score": 0.097,
+   "already": false,
+   "common_coauthors": [
+    "Eduardo Pedral Sampaio Fiuza"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Compras do Governo",
+    "Compras públicas",
+    "Legislação",
+    "Administração pública",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Bruno Queiroz Cunha",
+   "DISET": "Rauen, André Tortato",
+   "cosine": 0.077,
+   "score": 0.096,
+   "already": false,
+   "common_coauthors": [
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Inovações",
+    "Regulação",
+    "Inovação",
+    "Políticas de inovação",
+    "Regulamentações"
+   ]
+  },
+  {
+   "DIEST": "Brito, Elohá Cabreira",
+   "DISET": "Gabriel Coelho Squeff",
+   "cosine": 0.095,
+   "score": 0.095,
+   "already": false,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Desenvolvimento econômico",
+    "Mercado de trabalho",
+    "Distribuição de renda",
+    "Informalidade"
+   ]
+  },
+  {
+   "DIEST": "Gutierrez, Maria Bernadete Gomes Pereira Sarmiento",
+   "DISET": "Sandra Silva Paulsen",
+   "cosine": 0.076,
+   "score": 0.094,
+   "already": false,
+   "common_coauthors": [
+    "Hargrave, Jorge"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Desenvolvimento sustentável",
+    "Política ambiental",
+    "Mudanças climáticas",
+    "Cooperação internacional"
+   ]
+  },
+  {
+   "DIEST": "Gutierrez, Maria Bernadete Gomes Pereira Sarmiento",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.075,
+   "score": 0.093,
+   "already": false,
+   "common_coauthors": [
+    "Gustavo Luedemann"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Desenvolvimento sustentável",
+    "Efeito estufa",
+    "Sustentabilidade",
+    "Governabilidade",
+    "Mudanças climáticas"
+   ]
+  },
+  {
+   "DIEST": "Goellner, Isabella de Araujo",
+   "DISET": "Koeller, Priscila",
+   "cosine": 0.093,
+   "score": 0.093,
+   "already": false,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Política de Saúde",
+    "Inovações",
+    "Inovações tecnológicas",
+    "Inovação",
+    "Política de inovação"
+   ]
+  },
+  {
+   "DIEST": "José Celso Pereira Cardoso Junior",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.092,
+   "score": 0.092,
+   "already": false,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Política econômica",
+    "Burocracia",
+    "Gastos públicos",
+    "Gestão pública",
+    "Infraestrutura econômica"
+   ]
+  },
+  {
+   "DIEST": "Bruno Queiroz Cunha",
+   "DISET": "Eduardo Pedral Sampaio Fiuza",
+   "cosine": 0.073,
+   "score": 0.091,
+   "already": false,
+   "common_coauthors": [
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Agências reguladoras",
+    "Regulamentações",
+    "Regulação",
+    "Governança regulatória",
+    "Projeto de lei"
+   ]
+  }
+ ],
+ "existing_collaborations": [
+  {
+   "DIEST": "Maria Estela Capuano Villar",
+   "DISET": "Gabriel Pompeo Pistelli Ferreira",
+   "cosine": 0.338,
+   "score": 0.422,
+   "already": true,
+   "common_coauthors": [
+    "Itaquê Santana Barbosa"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Pessoas com deficiência",
+    "Conferência Nacional dos Direitos das Pessoas com Deficiência",
+    "Trabalho",
+    "Política social",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Bernardo Abreu de Medeiros",
+   "DISET": "Eduardo Pedral Sampaio Fiuza",
+   "cosine": 0.199,
+   "score": 0.348,
+   "already": true,
+   "common_coauthors": [
+    "Lopes, Virginia Bracarense",
+    "Santos, Franklin Brasil",
+    "Santos, Felippe Vilaça Loureiro"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Compras públicas",
+    "Compras do Governo",
+    "Contratações públicas",
+    "Gastos com Saúde",
+    "Acordos-quadro"
+   ]
+  },
+  {
+   "DIEST": "Itaquê Santana Barbosa",
+   "DISET": "Gabriel Pompeo Pistelli Ferreira",
+   "cosine": 0.264,
+   "score": 0.33,
+   "already": true,
+   "common_coauthors": [
+    "Maria Estela Capuano Villar"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Pessoas com deficiência",
+    "Conferência Nacional dos Direitos das Pessoas com Deficiência",
+    "Trabalho",
+    "Política social",
+    "Políticas públicas"
+   ]
+  },
+  {
+   "DIEST": "Cavalcante, Pedro Luiz Costa",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.149,
+   "score": 0.261,
+   "already": true,
+   "common_coauthors": [
+    "Bruno Queiroz Cunha",
+    "Schmidt, Flávia de Holanda",
+    "Alves, Pedro Assumpção"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Capacidade estatal",
+    "Governabilidade",
+    "Política fiscal",
+    "Burocracia",
+    "Administração pública"
+   ]
+  },
+  {
+   "DIEST": "Bruno Queiroz Cunha",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.127,
+   "score": 0.254,
+   "already": true,
+   "common_coauthors": [
+    "Alves, Pedro Assumpção",
+    "Fernandes, Ciro Campos Christo",
+    "Fabiano Mezadre Pompermayer",
+    "Cavalcante, Pedro Luiz Costa"
+   ],
+   "n_common": 4,
+   "shared_terms": [
+    "Burocracia",
+    "Instituições",
+    "Capacidade estatal",
+    "Infraestrutura",
+    "Desenvolvimento econômico"
+   ]
+  },
+  {
+   "DIEST": "Alexandre de Ávila Gomide",
+   "DISET": "Fabiano Mezadre Pompermayer",
+   "cosine": 0.119,
+   "score": 0.238,
+   "already": true,
+   "common_coauthors": [
+    "Pereira, Ana Karine",
+    "Bruno Queiroz Cunha",
+    "Carlos Henrique Ribeiro de Carvalho",
+    "Erivelton Pires Guedes"
+   ],
+   "n_common": 6,
+   "shared_terms": [
+    "Transporte público",
+    "Mobilidade urbana",
+    "Projetos de Investimento",
+    "Indústria naval",
+    "Transporte urbano"
+   ]
+  },
+  {
+   "DIEST": "Peci, Alketa",
+   "DISET": "Fabiano Mezadre Pompermayer",
+   "cosine": 0.118,
+   "score": 0.237,
+   "already": true,
+   "common_coauthors": [
+    "Rech, Lucas Trentin",
+    "Couto, Leandro Freitas",
+    "Marinho, Sarah",
+    "Baumann, Renato "
+   ],
+   "n_common": 8,
+   "shared_terms": [
+    "OCDE",
+    "Governança pública",
+    "Cooperação internacional",
+    "Desempenho econômico",
+    "Organização para a Cooperação e o Desenvolvimento Econômico (OCDE)"
+   ]
+  },
+  {
+   "DIEST": "Couto, Leandro Freitas",
+   "DISET": "Giesteira, Luís Felipe",
+   "cosine": 0.13,
+   "score": 0.228,
+   "already": true,
+   "common_coauthors": [
+    "Moraes, Rodrigo Fracalossi de",
+    "Baumann, Renato ",
+    "Borne, Thiago"
+   ],
+   "n_common": 3,
+   "shared_terms": [
+    "Regras orçamentárias",
+    "Política de defesa",
+    "Plano plurianual",
+    "Estratégia de desenvolvimento",
+    "Plano Plurianual (PPA)"
+   ]
+  },
+  {
+   "DIEST": "Peci, Alketa",
+   "DISET": "Araújo, Bruno César",
+   "cosine": 0.12,
+   "score": 0.18,
+   "already": true,
+   "common_coauthors": [
+    "Santos, Aline Mendonça dos",
+    "Fabiano Mezadre Pompermayer"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Agências reguladoras",
+    "Porta giratória",
+    "Infra-Estrutura Econômica",
+    "Qualificação para o Emprego",
+    "Infraestrutura"
+   ]
+  },
+  {
+   "DIEST": "Magalhães, Luís Carlos Garcia de",
+   "DISET": "Stivali, Matheus",
+   "cosine": 0.086,
+   "score": 0.172,
+   "already": true,
+   "common_coauthors": [
+    "Aurea, Adriana Pacheco",
+    "Garcia, Leila Posenato",
+    "Almeida, Raquel Filgueiras de",
+    "Santos, Carolina Fernandes dos"
+   ],
+   "n_common": 5,
+   "shared_terms": [
+    "Medicamentos",
+    "Compras governamentais",
+    "Taxa de juros",
+    "Estrutura ocupacional",
+    "Gastos com Saúde"
+   ]
+  },
+  {
+   "DIEST": "Couto, Leandro Freitas",
+   "DISET": "Fabiano Mezadre Pompermayer",
+   "cosine": 0.08,
+   "score": 0.16,
+   "already": true,
+   "common_coauthors": [
+    "Rech, Lucas Trentin",
+    "Marinho, Sarah",
+    "Baumann, Renato ",
+    "Moraes, Rodrigo Fracalossi de"
+   ],
+   "n_common": 5,
+   "shared_terms": [
+    "OCDE",
+    "Governança pública",
+    "Cooperação internacional",
+    "Desempenho econômico",
+    "Finanças públicas"
+   ]
+  },
+  {
+   "DIEST": "Acir Almeida",
+   "DISET": "Santos, Manoel Leonardo",
+   "cosine": 0.157,
+   "score": 0.157,
+   "already": true,
+   "common_coauthors": [],
+   "n_common": 0,
+   "shared_terms": [
+    "Poder Legislativo",
+    "Câmara dos Deputados",
+    "Eleições",
+    "Poderes orçamentários do Legislativo",
+    "Instituições informais"
+   ]
+  },
+  {
+   "DIEST": "Magalhães, Luís Carlos Garcia de",
+   "DISET": "Mauro Santos Silva",
+   "cosine": 0.122,
+   "score": 0.152,
+   "already": true,
+   "common_coauthors": [
+    "Claudio Roberto Amitrano"
+   ],
+   "n_common": 1,
+   "shared_terms": [
+    "Política econômica",
+    "Instituições",
+    "Gasto público",
+    "Desenvolvimento econômico",
+    "Garantias governamentais"
+   ]
+  },
+  {
+   "DIEST": "Alexandre dos Santos Cunha",
+   "DISET": "Stivali, Matheus",
+   "cosine": 0.075,
+   "score": 0.151,
+   "already": true,
+   "common_coauthors": [
+    "Ferreira, Pedro Cavalcanti Gonçalves",
+    "Mation, Lucas",
+    "Mation, Lucas Ferreira",
+    "Rafael H. M. Pereira"
+   ],
+   "n_common": 5,
+   "shared_terms": [
+    "Enchentes",
+    "Desastres ambientais",
+    "eSocial",
+    "Censo demográfico 2022",
+    "Desastres. Poluição"
+   ]
+  },
+  {
+   "DIEST": "Cavalcante, Pedro Luiz Costa",
+   "DISET": "Jean Marlo Pepino de Paula",
+   "cosine": 0.085,
+   "score": 0.127,
+   "already": true,
+   "common_coauthors": [
+    "Pedro Lucas de Moura Palotti",
+    "Alves, Pedro Assumpção"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Infraestrutura institucional",
+    "Elaboração de Políticas",
+    "Capacidade estatal",
+    "Criação de Infra-Estruturas",
+    "Alta administração pública"
+   ]
+  },
+  {
+   "DIEST": "Danilo Santa Cruz Coelho",
+   "DISET": "Lenita Maria Turchi",
+   "cosine": 0.058,
+   "score": 0.116,
+   "already": true,
+   "common_coauthors": [
+    "López-Ruiz, Osvaldo",
+    "Carlotto, Maria Caramez",
+    "Nunes, Christiane Girard Ferreira",
+    "Hipólito, Rita de Cássia"
+   ],
+   "n_common": 20,
+   "shared_terms": [
+    "Educação",
+    "Liderança empresarial",
+    "Estrutura produtiva industrial",
+    "Pesquisa sobre Atitudes Empresariais para Desenvolvimento e Inovação (Paedi)",
+    "Pesquisa e desenvolvimento"
+   ]
+  },
+  {
+   "DIEST": "Danilo Santa Cruz Coelho",
+   "DISET": "Bahia, Luiz Dias",
+   "cosine": 0.056,
+   "score": 0.112,
+   "already": true,
+   "common_coauthors": [
+    "López-Ruiz, Osvaldo",
+    "Carlotto, Maria Caramez",
+    "Nunes, Christiane Girard Ferreira",
+    "Hipólito, Rita de Cássia"
+   ],
+   "n_common": 24,
+   "shared_terms": [
+    "Modelo Equilíbrio Geral Computável (EGC)",
+    "Produtividade do trabalho",
+    "Cadeia do petróleo",
+    "Investimento em petróleo",
+    "Indicadores de Desenvolvimento"
+   ]
+  },
+  {
+   "DIEST": "Alexandre dos Santos Cunha",
+   "DISET": "Mation, Lucas Ferreira",
+   "cosine": 0.054,
+   "score": 0.108,
+   "already": true,
+   "common_coauthors": [
+    "Ferreira, Pedro Cavalcanti Gonçalves",
+    "Stivali, Matheus",
+    "Erivelton Pires Guedes",
+    "Rafael H. M. Pereira"
+   ],
+   "n_common": 5,
+   "shared_terms": [
+    "Enchentes",
+    "Desastres ambientais",
+    "Estatísticas do Trabalho",
+    "Cadastro único",
+    "Censo demográfico 2022"
+   ]
+  },
+  {
+   "DIEST": "Pereira, Ana Karine",
+   "DISET": "Fabiano Mezadre Pompermayer",
+   "cosine": 0.071,
+   "score": 0.106,
+   "already": true,
+   "common_coauthors": [
+    "Bruno Queiroz Cunha",
+    "Alexandre de Ávila Gomide"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Programa de Aceleração do Crescimento (PAC)",
+    "Investimentos públicos",
+    "Projetos de Investimento",
+    "Inovações institucionais",
+    "Governança"
+   ]
+  },
+  {
+   "DIEST": "Peci, Alketa",
+   "DISET": "Rocha, Katia Maria Carlos",
+   "cosine": 0.07,
+   "score": 0.105,
+   "already": true,
+   "common_coauthors": [
+    "Bragança, Gabriel Godofredo Fiuza de",
+    "Ragazzo, Carlos"
+   ],
+   "n_common": 2,
+   "shared_terms": [
+    "Risco regulatório",
+    "Investimentos em infraestrutura",
+    "Governança regulatória",
+    "Infraestrutura",
+    "Governança"
+   ]
+  }
+ ]
+}

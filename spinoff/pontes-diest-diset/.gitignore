@@ -1,0 +1,5 @@
+__pycache__/
+# páginas HTML/JSON cruas (regeneráveis; o insumo compacto versionado é repo_items.jsonl.gz + roster.json)
+data/cache/
+# derivados regeneráveis offline por src/attribute.py (python src/run_all.py --from attribute)
+data/items_tagged.json
