@@ -24,6 +24,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import (FOCUS, NOW_YEAR, item_directorates, item_people, load_items,  # noqa: E402
                     load_json, loose_key, name_key, norm, save_json, year_of)
+from membership import (apply_override, audit, load_overrides,  # noqa: E402
+                        resolve_override)
 
 HALF_LIFE = 4.0
 MIN_SHARE = 0.5
@@ -87,6 +89,7 @@ def main():
     persons = load_json("repo_persons.json")
     resolve, jobs = build_resolver(roster, persons)
     by_id = {"ipea:" + r["id"]: r for r in roster}
+    overrides = load_overrides()
 
     authors = collections.defaultdict(lambda: {
         "names": collections.Counter(), "items": 0, "tagged": 0, "years": [],
@@ -138,12 +141,21 @@ def main():
             d, conf = None, ("fraca" if top else "sem_sinal")
         r = by_id.get(aid)
         ys = a["years"]
+        name = r["name"] if r else a["names"].most_common(1)[0][0]
+        sigs = [n for n, _ in a["names"].most_common(5)]
+        # palavra das chefias (data/membership_overrides.json) vence a inferência
+        inf_d, inf_conf = d, conf
+        rec = resolve_override(overrides, aid, name, sigs)
+        d, conf = apply_override(rec, d, conf)
         out[aid] = {
-            "name": r["name"] if r else a["names"].most_common(1)[0][0],
-            "signatures": [n for n, _ in a["names"].most_common(5)],
+            "name": name,
+            "signatures": sigs,
             "roster": bool(r), "staff": aid.startswith(("ipea:", "repo:")),
             "active": bool(r) or (bool(ys) and max(ys) >= NOW_YEAR - 3),
             "diretoria": d, "confidence": conf, "share": round(share, 3),
+            "inferred_diretoria": inf_d, "inferred_confidence": inf_conf,
+            "validation": rec["status"] if rec else None,
+            "validated_by": rec["validado_por"] if rec else None,
             "dir_weights": {k: round(v, 3) for k, v in a["w"].most_common()},
             "n_by_dir": dict(a["n_by_dir"]), "n_items": a["items"], "n_tagged": a["tagged"],
             "first_year": min(ys) if ys else None, "last_year": max(ys) if ys else None,
@@ -160,6 +172,9 @@ def main():
           file=sys.stderr)
     for k, v in sorted(c.items()):
         print(f"  {k}: {v}", file=sys.stderr)
+    au = audit(out)
+    print(f"validação com as chefias: {au['status']} — {au['n_decididos']} decididos, "
+          f"precisão {au['precisao'] if au['precisao'] is not None else '—'}", file=sys.stderr)
 
 
 if __name__ == "__main__":

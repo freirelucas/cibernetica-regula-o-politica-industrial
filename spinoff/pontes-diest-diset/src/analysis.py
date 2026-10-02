@@ -31,6 +31,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import FOCUS, load_json, norm, save_json  # noqa: E402
+import membership  # noqa: E402
 
 D, S = FOCUS
 STOP_TERMS = {"brasil", "brazil", "ipea", "", "-", "outros"}
@@ -344,7 +345,8 @@ def main():
             v = authors[a]
             rows.append({"name": v["name"], "active": a in active[d], "staff": v["staff"],
                          "source": "diretório" if v["roster"] else ("cargo" if v["staff"] else "produção"),
-                         "confidence": v["confidence"], "share": v["share"], "n_items": v["n_items"],
+                         "confidence": v["confidence"], "validation": v.get("validation"),
+                         "share": v["share"], "n_items": v["n_items"],
                          "n_tagged": v["n_tagged"], "last_year": v["last_year"],
                          "top_terms": [display.get(t, t) for t, _ in sorted(
                              vec.get(a, {}).items(), key=lambda kv: -kv[1])[:6]],
@@ -361,6 +363,7 @@ def main():
             "hyperedge_sizes": {str(k): v for k, v in sorted(sizes.items())},
             "share_size_ge3": round(sum(v for k, v in sizes.items() if k >= 3) / max(1, sum(sizes.values())), 3),
         },
+        "validation": membership.audit(authors, save=False),
         "people": {d: roster_view(d) for d in FOCUS},
         "unassigned_with_signal": sorted(
             ({"name": v["name"], "dir_weights": v["dir_weights"], "n_items": v["n_items"]}

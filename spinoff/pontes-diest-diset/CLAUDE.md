@@ -24,6 +24,8 @@ src/net.py            GET com cache gzip (data/cache/), NET_OFFLINE=1 = só cach
 src/roster.py         1. diretório de pesquisadores ativos  → data/roster.json
 src/harvest_repo.py   2. Repositório Ipea (DSpace REST)     → data/repo_items.jsonl.gz, data/repo_persons.json
 src/attribute.py      3. identidade + diretoria pela produção → data/authors.json, data/items_tagged.json
+src/membership.py     3b. validação com as chefias: overrides (vencem a inferência), planilha, precisão
+                          --export → data/membership_validation.csv | --ingest <csv> | --audit
 src/analysis.py       4. hipergrafos, nulo, zonas, pares/equipes → data/results.json
 src/report.py         5. RELATORIO.md
 src/openalex_enrich.py 6. (opcional, OPENALEX_API_KEY) referências → acoplamento bibliográfico

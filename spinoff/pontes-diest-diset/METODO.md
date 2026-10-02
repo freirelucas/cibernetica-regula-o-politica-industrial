@@ -78,7 +78,7 @@ basta — e é mais fácil de explicar. O relatório traz os três números.
 - **Circularidade parcial**: a diretoria da pessoa vem das obras rotuladas, e a obra mista é
   definida pela diretoria das pessoas. Obras de uma diretoria com coautor da outra *contam a
   favor* da diretoria dominante. Mitigação: o nulo permuta rótulos; a confiança é exposta;
-  validar a lista de membros com as chefias (é barato e decisivo).
+  validar a lista de membros com as chefias (é barato e decisivo) — ver §6.
 - **Cobertura**: o repositório cobre a produção *editada pelo Ipea*; artigos em periódicos
   externos entram só parcialmente → camada OpenAlex.
 - **Vocabulário**: VCIpea é controlado, mas palavras-chave são livres (sinonímia).
@@ -87,3 +87,42 @@ basta — e é mais fácil de explicar. O relatório traz os três números.
   contra o quadro do Ipea, onde (sobrenome, 1º prenome) é único.
 - **Lotação muda**: DISET hoje é "Setoriais, de Inovação, **Regulação** e Infraestrutura";
   pessoas migram. A meia-vida de 4 anos privilegia a lotação recente.
+
+## 6. Validação da lista de membros com as chefias (`src/membership.py`)
+
+**Mudança de 2026-10-02 (item 1 da fila).** A atribuição por produção passou a ter uma via
+de correção externa, porque é o alicerce de todo o resto e a §5 mostra por que não basta.
+
+- `data/membership_overrides.json` guarda a palavra das chefias. Lido por `attribute.py`,
+  **vence** a inferência: a pessoa fica com `confidence = "validada"` (ou `validada_fora`,
+  quando a chefia diz que não é membro de diretoria de pesquisa). A inferência original fica
+  preservada em `inferred_diretoria` / `inferred_confidence`, que é o que permite medir o erro.
+  Arquivo ausente ou sem registros → o núcleo roda exatamente como antes. Registro com status
+  fora da lista, ou `corrigido` sem diretoria, é **erro duro**: atribuir errado em silêncio é
+  pior do que quebrar.
+- `data/membership_validation.csv` (`python src/membership.py --export`) é a planilha que vai
+  para as chefias: 280 linhas — 261 membros atribuídos (166 ativos) e 19 pessoas **com**
+  produção DIEST/DISET que o método **não** conseguiu atribuir e podem ser membros perdidos.
+  Cada linha traz a evidência que gerou a atribuição (obras rotuladas, peso dominante, pesos
+  por diretoria, assinaturas) e três colunas em branco: `situacao`, `diretoria_correta`,
+  `observacao`. Ordem: atribuídos ativos → atribuídos inativos → sem atribuição, por volume
+  de obras rotuladas, para que as primeiras linhas sejam as que mais afetam o resultado.
+  O grupo `sem_atribuicao` é filtrado por plausibilidade de quadro (diretório, cargo, ou
+  ativo com ≥3 obras rotuladas); sem o filtro entram ~556 coautores externos de um único
+  boletim e a revisão fica inviável. Instruções: `docs/VALIDACAO_MEMBROS.md`.
+- `python src/membership.py --ingest <csv>` converte a planilha preenchida em overrides e
+  revalida o que escreveu; `--audit` recalcula a precisão.
+- **Precisão** (`data/membership_audit.json`, e `results.json` → `validation`): confirmados
+  sobre decididos, por estrato de confiança inferida. `desconhecido` não entra no
+  denominador; `fora` conta como erro (o método atribuiu quem não é membro). O §2 do
+  relatório declara **Pendente** enquanto não houver nenhuma resposta — hoje é o caso:
+  `validation.status = "pendente"`, `n_membros_focus = 261`, precisão **desconhecida**.
+
+Sem efeito sobre os números atuais (nenhum override gravado): obras mistas 45, nulo
+391,4 ± 23,0, z = −15,09, ativos 65/56 — idênticos aos de antes da mudança.
+
+**Correção de verificação, mesma data.** `tests/test_core.py` não tinha executor: `python
+tests/test_core.py` importava o módulo, não rodava teste nenhum e devolvia 0. O comando do
+`CLAUDE.md` dava, portanto, uma falsa garantia. Agora há um executor de stdlib no fim do
+arquivo; a suíte roda 8 testes (4 novos: override vence inferência, casamento por nome,
+registro malformado quebra, precisão por estrato).

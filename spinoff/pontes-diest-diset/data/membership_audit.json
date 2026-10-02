@@ -1,0 +1,11 @@
+{
+ "status": "pendente",
+ "n_decididos": 0,
+ "n_confirmados": 0,
+ "precisao": null,
+ "por_confianca": {},
+ "corrigidos": [],
+ "fora": [],
+ "n_membros_focus": 261,
+ "n_desconhecido": 0
+}

@@ -1,0 +1,28 @@
+{
+ "_doc": "Palavra das chefias da DIEST e da DISET sobre a lotação de cada pessoa. Vence a inferência por produção de src/attribute.py. Preencher a partir de data/membership_validation.csv (ver docs/VALIDACAO_MEMBROS.md).",
+ "_esquema": {
+  "author_id": "chave de data/authors.json (ipea:…, repo:…, ext:…). Preferir a esta.",
+  "name": "alternativa ao author_id, casada por (sobrenome, prenomes)",
+  "status": [
+   "confirmado",
+   "corrigido",
+   "fora",
+   "desconhecido"
+  ],
+  "diretoria": [
+   "DIEST",
+   "DISET",
+   "DISOC",
+   "DIRUR",
+   "DIMAC",
+   "DINTE",
+   null
+  ],
+  "validado_por": "quem respondeu (ex.: 'chefia DIEST')",
+  "data": "AAAA-MM-DD",
+  "nota": "texto livre (ex.: 'migrou da Diset para a Diest em 2023')"
+ },
+ "_fonte": "preencher",
+ "_atualizado": null,
+ "records": []
+}
