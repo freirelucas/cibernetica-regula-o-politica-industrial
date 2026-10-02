@@ -13,12 +13,14 @@ Parte 1 — inventário. Cada pressuposto embutido no código aparece aqui com:
 Uso:
     python src/audit.py --inventario     → data/audit_assumptions.json
 """
+import itertools
 import json
+import math
 import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import ROOT, save_json  # noqa: E402
+from common import FOCUS, ROOT, load_json, norm, save_json  # noqa: E402
 
 SRC = os.path.join(ROOT, "src")
 
@@ -244,12 +246,163 @@ def inventory(save=True):
     return out
 
 
+def zone_gate(min_side=2, jacc=0.3, generic=0.25, merge=None, start=2010):
+    """Reproduz o portão que `analysis.py` usa para constituir zona de convergência.
+
+    Serve para responder por que o campo digital não vira zona. `merge` é uma lista de
+    termos a fundir num único termo sintético — a operação que a sinonímia (A24) impede
+    o pipeline de fazer sozinho.
+    """
+    import collections
+
+    from analysis import item_terms
+    authors = load_json("authors.json")
+    items = [i for i in load_json("items_tagged.json") if i["year"] and i["year"] >= start]
+    dir_of = {a: v["diretoria"] for a, v in authors.items() if v["diretoria"]}
+    members = {d: {a for a, x in dir_of.items() if x == d} for d in FOCUS}
+    active = {d: {a for a in members[d] if authors[a]["active"]
+                  and (authors[a]["staff"] or authors[a]["n_tagged"] >= 3)} for d in FOCUS}
+    act = active[FOCUS[0]] | active[FOCUS[1]]
+    mset = set(merge or [])
+    MERGED = "__campo_digital__"
+    aprof = {a: collections.Counter() for a in act}
+    for it in items:
+        tc = item_terms(it, with_classes=False)
+        if mset:
+            hit = sum(v for t, v in tc.items() if t in mset)
+            if hit:
+                tc = collections.Counter({t: v for t, v in tc.items() if t not in mset})
+                tc[MERGED] = hit
+        for a in it["authors"]:
+            if a in aprof:
+                aprof[a].update(tc)
+    for a in act:
+        for ar in authors[a]["areas"]:
+            aprof[a][norm(ar)] += 2
+    users = collections.defaultdict(set)
+    for a, c in aprof.items():
+        for t in c:
+            users[t].add(a)
+    n_act = len(act) or 1
+    conv = []
+    for t, u in users.items():
+        if len(u) > generic * n_act:
+            continue
+        nd = sum(1 for a in u if a in active[FOCUS[0]])
+        ns = sum(1 for a in u if a in active[FOCUS[1]])
+        if nd >= min_side and ns >= min_side:
+            bal = 2 * min(nd, ns) / (nd + ns)
+            conv.append((t, nd, ns, bal * math.log(1 + nd + ns)))
+    conv.sort(key=lambda x: -x[3])
+    conv = conv[:60]
+    parent = {t: t for t, *_ in conv}
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+    for (t1, *_), (t2, *_) in itertools.combinations(conv, 2):
+        u1, u2 = users[t1], users[t2]
+        if len(u1 & u2) / len(u1 | u2) >= jacc:
+            parent[find(t1)] = find(t2)
+    groups = collections.defaultdict(list)
+    for t, nd, ns, sc in conv:
+        groups[find(t)].append((t, nd, ns, sc))
+    gl = sorted(groups.values(), key=lambda g: -sum(x[3] for x in g))
+    return {"n_ativos": n_act, "n_termos_convergentes": len(conv), "n_zonas": len(gl),
+            "maior_zona": len(gl[0]) if gl else 0,
+            "zonas": [{"termos": [x[0] for x in g], "score": round(sum(x[3] for x in g), 2)}
+                      for g in gl],
+            "users": users, "active": active, "conv": conv}
+
+
+def zone_diagnosis(save=True):
+    """Por que o campo digital não aparece entre as zonas do RELATORIO.md."""
+    lex = load_json("digital_lexicon.json")
+    dterms = [x["term"] for x in lex["lexico"]]
+    base = zone_gate()
+    users, active = base["users"], base["active"]
+    # 1. cada termo digital, isolado, contra o piso de 2 ativos de cada lado
+    per_term = []
+    for t in dterms:
+        u = users.get(t, set())
+        nd = sum(1 for a in u if a in active[FOCUS[0]])
+        ns = sum(1 for a in u if a in active[FOCUS[1]])
+        per_term.append({"termo": t, "usuarios_ativos": len(u), "DIEST": nd, "DISET": ns,
+                         "passa_piso_2": nd >= 2 and ns >= 2})
+    per_term.sort(key=lambda r: (-min(r["DIEST"], r["DISET"]), -r["usuarios_ativos"]))
+    passam = [r for r in per_term if r["passa_piso_2"]]
+    # 2. Fundindo o léxico num termo só — a operação que a sinonímia (A24) impede o
+    #    pipeline de fazer. Sem teto de genericidade, para separar os três mecanismos
+    #    de exclusão: piso de 2+2, teto de 25% dos ativos e corte do top-60.
+    MG = "__campo_digital__"
+    merged = zone_gate(merge=dterms, generic=1.0)
+    users_m, act_m = merged["users"], merged["active"]
+    full = []
+    for t, u in users_m.items():
+        d_ = sum(1 for a in u if a in act_m[FOCUS[0]])
+        s_ = sum(1 for a in u if a in act_m[FOCUS[1]])
+        if d_ >= 2 and s_ >= 2:
+            full.append((t, d_, s_, (2 * min(d_, s_) / (d_ + s_)) * math.log(1 + d_ + s_)))
+    full.sort(key=lambda x: -x[3])
+    rank = next((i + 1 for i, x in enumerate(full) if x[0] == MG), None)
+    mu = next((x for x in full if x[0] == MG), None)
+    u_m = users_m.get(MG, set())
+    fundido = {
+        "usuarios_ativos": len(u_m),
+        "share_dos_ativos": round(len(u_m) / merged["n_ativos"], 3),
+        "DIEST": mu[1] if mu else 0, "DISET": mu[2] if mu else 0,
+        "equilibrio": round(2 * min(mu[1], mu[2]) / (mu[1] + mu[2]), 3) if mu else None,
+        "score": round(mu[3], 3) if mu else None,
+        "posicao_entre_convergentes": rank, "n_convergentes_total": len(full),
+        "score_do_60o": round(full[59][3], 3) if len(full) >= 60 else None,
+        "passa_piso_2x2": bool(mu),
+        "passa_teto_genericidade": len(u_m) <= 0.25 * merged["n_ativos"],
+        "entra_no_top60": bool(rank and rank <= 60),
+    }
+    # 3. sensibilidade do piso e do Jaccard
+    sens = []
+    for ms in (2, 3, 4):
+        for jc in (0.2, 0.3, 0.4):
+            g = zone_gate(min_side=ms, jacc=jc)
+            sens.append({"piso": ms, "jaccard": jc, "n_termos": g["n_termos_convergentes"],
+                         "n_zonas": g["n_zonas"], "maior_zona": g["maior_zona"]})
+    out = {
+        "base": {"n_ativos": base["n_ativos"], "n_termos_convergentes": base["n_termos_convergentes"],
+                 "n_zonas": base["n_zonas"], "maior_zona": base["maior_zona"]},
+        "termos_digitais_no_portao": per_term[:20],
+        "n_termos_digitais_que_passam": len(passam),
+        "termos_que_passam": passam,
+        "fundido": fundido,
+        "sensibilidade_piso_jaccard": sens,
+    }
+    if save:
+        save_json("audit_zone_diagnosis.json", out)
+    return out
+
+
 def main(argv=None):
     argv = argv if argv is not None else sys.argv[1:]
     if "--inventario" in argv:
         out = inventory()
         print(f"{out['n']} pressupostos: {out['por_risco']}", file=sys.stderr)
         print(" ".join(a["id"] for a in ASSUMPTIONS if a["risco"] == "alto"), file=sys.stderr)
+    elif "--zonas" in argv:
+        o = zone_diagnosis()
+        b = o["base"]
+        print(f"base: {b['n_ativos']} ativos · {b['n_termos_convergentes']} termos convergentes · "
+              f"{b['n_zonas']} zonas (maior com {b['maior_zona']} termos)", file=sys.stderr)
+        print(f"termos digitais que passam o piso de 2+2: {o['n_termos_digitais_que_passam']} "
+              f"de {len(load_json('digital_lexicon.json')['lexico'])}", file=sys.stderr)
+        f = o["fundido"]
+        print(f"fundido num termo só: {f['usuarios_ativos']} ativos ({f['share_dos_ativos']:.1%}), "
+              f"DIEST {f['DIEST']} / DISET {f['DISET']}, equilíbrio {f['equilibrio']}, "
+              f"escore {f['score']} → posição {f['posicao_entre_convergentes']} de "
+              f"{f['n_convergentes_total']} (60º = {f['score_do_60o']})", file=sys.stderr)
+        print(f"  piso 2+2: {'passa' if f['passa_piso_2x2'] else 'nao passa'} · "
+              f"teto 25%: {'passa' if f['passa_teto_genericidade'] else 'nao passa'} · "
+              f"top-60: {'entra' if f['entra_no_top60'] else 'NAO ENTRA'}", file=sys.stderr)
     else:
         print(__doc__, file=sys.stderr)
 
