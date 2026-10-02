@@ -1,4 +1,6 @@
 {
+ "eixo": "digital",
+ "nome_do_eixo": "Transformação digital",
  "parametros": {
   "MIN_WORKS": 3,
   "MIN_LIFT": 3.0,

@@ -1,4 +1,4 @@
-"""Mapa de co-palavra do campo digital — MÓDULO OPCIONAL (networkx + matplotlib).
+"""Mapa de co-palavra de um eixo de transformação — MÓDULO OPCIONAL (networkx).
 
 O núcleo (`src/run_all.py --from attribute`) não depende deste arquivo. Ele existe porque
 a estrutura temática de um campo é a pergunta que **não** passa pela atribuição de
@@ -15,7 +15,7 @@ Método (análise de co-palavra, instrumento corrente em bibliometria):
   cor    = lado que mais usa o termo (DIEST, DISET ou nenhum dos dois).
 
 Uso:
-    python src/coword.py --mapa     → docs/fig_coword_digital.png, data/coword_digital.json
+    python src/coword.py --eixo digital --mapa   → data/coword_digital.json
 """
 import collections
 import itertools
@@ -24,7 +24,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import FOCUS, load_json, norm, save_json  # noqa: E402
-from digital import hits_by_uuid, split_terms  # noqa: E402
+from axis import hits_by_uuid, split_terms  # noqa: E402
 
 MIN_DF = 4          # termo com menos de 4 obras não entra no mapa
 MIN_CO = 2          # laço precisa de ao menos 2 obras em comum
@@ -33,8 +33,8 @@ MODE = "amplo"      # recorte: no estrito a DIEST tem 9 obras e o mapa fica unil
 STOP = {"brasil", "ipea", ""}
 
 
-def build(mode=MODE):
-    lex = load_json("digital_lexicon.json")
+def build(eixo="digital", mode=MODE):
+    lex = load_json(f"{eixo}_lexicon.json")
     terms = [x["term"] for x in lex["lexico"]]
     tagged = load_json("items_tagged.json")
     authors = load_json("authors.json")
@@ -70,7 +70,7 @@ def build(mode=MODE):
             if not s:
                 use[t]["nenhuma"] += 1
     return {"df": df, "keep": keep, "edges": edges, "use": use,
-            "n_obras": len(docs), "mode": mode}
+            "n_obras": len(docs), "mode": mode, "eixo": eixo}
 
 
 def graph(b):
@@ -109,11 +109,11 @@ def export(b, G, comms):
                        "usos_DIEST": nd, "usos_DISET": ns,
                        "equilibrio": round(2 * min(nd, ns) / (nd + ns), 3) if nd + ns else 0.0,
                        "termos": sorted(c, key=lambda t: -b["df"][t])})
-    out = {"recorte": b["mode"], "n_obras": b["n_obras"], "parametros":
+    out = {"eixo": b["eixo"], "recorte": b["mode"], "n_obras": b["n_obras"], "parametros":
            {"MIN_DF": MIN_DF, "MIN_CO": MIN_CO, "MIN_EQUIV": MIN_EQUIV},
            "n_nos": G.number_of_nodes(), "n_lacos": G.number_of_edges(),
            "grupos": grupos, "termos": sorted(rows, key=lambda r: (r["grupo"], -r["obras"]))}
-    save_json("coword_digital.json", out)
+    save_json(f"coword_{b['eixo']}.json", out)
     return out
 
 
@@ -122,10 +122,11 @@ def main(argv=None):
     if "--mapa" not in argv:
         print(__doc__, file=sys.stderr)
         return
-    b = build()
+    eixo = argv[argv.index("--eixo") + 1] if "--eixo" in argv else "digital"
+    b = build(eixo)
     G, comms = graph(b)
     out = export(b, G, comms)
-    print(f"[{b['mode']}] {b['n_obras']} obras · {out['n_nos']} nós · {out['n_lacos']} laços · "
+    print(f"[{eixo}/{b['mode']}] {b['n_obras']} obras · {out['n_nos']} nós · {out['n_lacos']} laços · "
           f"{len(comms)} grupos", file=sys.stderr)
     for gp in out["grupos"][:8]:
         print(f"  G{gp['grupo']}: {gp['n_termos']} termos, DIEST {gp['usos_DIEST']} / "

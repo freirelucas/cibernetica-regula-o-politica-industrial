@@ -1,4 +1,8 @@
-"""Caso de uso — o campo da transformação digital no corpus do Ipea (só stdlib).
+"""Delimitação de um EIXO de transformação no corpus do Ipea (só stdlib).
+
+Genérico: o eixo entra por `--eixo <nome>`, e as sementes vêm de `data/axes.json`.
+Hoje há três eixos previstos — digital, ecológica e demográfica — e só o digital
+está com sementes revisadas. Rodar um eixo sem sementes é erro, não resultado vazio.
 
 Por que um módulo próprio: o campo digital **não aparece** entre as 12 zonas de
 convergência do RELATORIO.md, e a razão é metodológica, não substantiva. No corpus, 176
@@ -29,7 +33,8 @@ A escolha muda o tamanho do campo (303 contra 583 obras desde 2010), então nenh
 afirmação deste caso vale sem dizer em qual recorte ela foi medida.
 
 Uso:
-    python src/digital.py --lexico       → data/digital_lexicon.json
+    python src/axis.py --eixo digital --lexico        → data/digital_lexicon.json
+    python src/axis.py --eixo digital --caracterizar  → data/digital_subcorpus.json
 """
 import collections
 import json
@@ -43,8 +48,8 @@ from analysis import log_odds, split_terms  # noqa: E402
 from common import FOCUS as FOCUS_DIRS  # noqa: E402
 from common import load_items, load_json, norm, save_json, year_of  # noqa: E402
 
-# ── 1. sementes: digitais por definição, preferindo vocabulário controlado ──
-SEED_PATTERNS = [
+# ── 1. sementes: vêm de data/axes.json (ver load_axis) ──
+_SEED_PATTERNS_DIGITAL_HISTORICO = [
     r"^transformacao digital$", r"^digitalizacao$", r"^digitalisation$",
     r"^tecnologia da informacao$", r"^tecnologias? da informacao e comunicacao",
     r"^tic(s)?$", r"^internet$", r"^inteligencia artificial$",
@@ -63,9 +68,7 @@ MIN_PUREZA_LB = 0.25   # limite inferior de Wilson (95%) da pureza, e não a pur
 MAX_P = 0.01           # cauda superior hipergeométrica
 MIN_LEN_TEXTO = 5      # termo curto ("tic", "ia") só casa em campo de indexação, nunca em texto
 
-# Termos semanticamente digitais que a regra rejeita por contagem baixa. NÃO entram no
-# léxico: servem ao teste de sensibilidade (o campo muda se eles entrarem?).
-SENSIBILIDADE_PATTERNS = [r"teletrabalho", r"desinformacao", r"gestao da informacao",
+_SENSIBILIDADE_HISTORICO = [r"teletrabalho", r"desinformacao", r"gestao da informacao",
                           r"governanca digital", r"seguranca cibernetica", r"blockchain",
                           r"comercio eletronico", r"industria de software", r"aplicativos?$",
                           r"midias sociais", r"redes sociais", r"protecao de dados"]
@@ -74,6 +77,20 @@ def _log_comb(n, k):
     if k < 0 or k > n:
         return float("-inf")
     return math.lgamma(n + 1) - math.lgamma(k + 1) - math.lgamma(n - k + 1)
+
+
+def load_axis(eixo):
+    """Sementes e metadados do eixo. Eixo sem sementes revisadas é erro explícito."""
+    axes = load_json("axes.json")
+    if eixo not in axes or eixo.startswith("_"):
+        validos = [k for k in axes if not k.startswith("_")]
+        raise SystemExit(f"eixo {eixo!r} não existe em data/axes.json. Válidos: {validos}")
+    ax = axes[eixo]
+    if not ax.get("sementes"):
+        raise SystemExit(
+            f"eixo {eixo!r} ({ax.get('nome')}) ainda não tem sementes revisadas em "
+            f"data/axes.json. Nota do arquivo: {ax.get('nota', '—')}")
+    return ax
 
 
 def _wilson_lower(k, n, z=1.96):
@@ -123,7 +140,10 @@ def corpus_terms():
     return docs, origin, display
 
 
-def build_lexicon(save=True):
+def build_lexicon(eixo="digital", save=True):
+    ax = load_axis(eixo)
+    SEED_PATTERNS = ax["sementes"]
+    SENSIBILIDADE_PATTERNS = ax.get("sensibilidade", [])
     docs, origin, display = corpus_terms()
     N = len(docs)
     df = collections.Counter()
@@ -181,6 +201,7 @@ def build_lexicon(save=True):
     lex.sort(key=lambda x: -x["n_works"])
 
     out = {
+        "eixo": eixo, "nome_do_eixo": ax["nome"],
         "parametros": {"MIN_WORKS": MIN_WORKS, "MIN_LIFT": MIN_LIFT, "MIN_CO": MIN_CO, "MIN_PUREZA_LB": MIN_PUREZA_LB,
                        "MAX_P": MAX_P, "MAX_DOC_SHARE": MAX_DOC_SHARE,
                        "MIN_LEN_TEXTO": MIN_LEN_TEXTO, "n_corpus": N,
@@ -196,7 +217,7 @@ def build_lexicon(save=True):
                                      if any(re.search(pp, c["term"]) for pp in SENSIBILIDADE_PATTERNS)],
     }
     if save:
-        save_json("digital_lexicon.json", out)
+        save_json(f"{eixo}_lexicon.json", out)
     return out, docs
 
 
@@ -265,19 +286,19 @@ def hits_by_uuid(lex_terms, tagged, mode):
     return out
 
 
-def characterize(save=True):
+def characterize(eixo="digital", save=True):
     """Caracteriza o campo nas duas definições, com a composição por diretoria.
 
     Duas composições DIFERENTES e declaradas (o pressuposto A31 as confunde numa só):
       `editorial`  — a obra traz sinal editorial da diretoria (independe das pessoas);
       `autoria`    — a obra tem assinante atribuído à diretoria (herda a circularidade).
     """
-    lex = load_json("digital_lexicon.json")
+    lex = load_json(f"{eixo}_lexicon.json")
     terms = [x["term"] for x in lex["lexico"]]
     tagged = load_json("items_tagged.json")
     authors = load_json("authors.json")
     dir_of = {a: v["diretoria"] for a, v in authors.items() if v["diretoria"]}
-    res = {"parametros": lex["parametros"], "n_lexico": len(terms), "modos": {}}
+    res = {"eixo": eixo, "parametros": lex["parametros"], "n_lexico": len(terms), "modos": {}}
 
     for mode in ("estrito", "amplo"):
         hits = hits_by_uuid(terms, tagged, mode)
@@ -345,16 +366,17 @@ def characterize(save=True):
             "autores": {d: v for d, v in who.items()},
         }
     if save:
-        save_json("digital_subcorpus.json", res)
+        save_json(f"{eixo}_subcorpus.json", res)
     return res
 
 
 def main(argv=None):
     argv = argv if argv is not None else sys.argv[1:]
+    eixo = argv[argv.index("--eixo") + 1] if "--eixo" in argv else "digital"
     if "--lexico" in argv:
-        out, docs = build_lexicon()
+        out, docs = build_lexicon(eixo)
         f = out["fragmentacao"]
-        print(f"léxico: {out['n_lexico']} termos ({out['n_sementes']} sementes + "
+        print(f"[{eixo}] léxico: {out['n_lexico']} termos ({out['n_sementes']} sementes + "
               f"{out['n_expandidos']} expandidos), {out['n_candidatos_rejeitados']} rejeitados",
               file=sys.stderr)
         print(f"fragmentação: maior termo = {f['maior_termo']!r} com {f['obras_do_maior_termo']} obras; "
@@ -366,7 +388,7 @@ def main(argv=None):
             w = [s for s in sub if s["year"] and s["year"] >= 2010]
             print(f"subcorpus {mode}: {len(sub)} obras ({len(w)} desde 2010)", file=sys.stderr)
     elif "--caracterizar" in argv:
-        r = characterize()
+        r = characterize(eixo)
         for m, v in r["modos"].items():
             print(f"[{m}] {v['n_obras']} obras ({v['n_obras_desde_2010']} desde 2010) · "
                   f"editorial {v['composicao_editorial']} · autoria {v['composicao_autoria']}",

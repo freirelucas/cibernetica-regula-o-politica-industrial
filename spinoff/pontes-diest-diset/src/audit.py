@@ -246,7 +246,8 @@ def inventory(save=True):
     return out
 
 
-def zone_gate(min_side=2, jacc=0.3, generic=0.25, merge=None, start=2010):
+def zone_gate(min_side=2, jacc=0.3, generic=0.25, merge=None, start=2010,
+              merged_key="__campo_digital__"):
     """Reproduz o portão que `analysis.py` usa para constituir zona de convergência.
 
     Serve para responder por que o campo digital não vira zona. `merge` é uma lista de
@@ -264,7 +265,7 @@ def zone_gate(min_side=2, jacc=0.3, generic=0.25, merge=None, start=2010):
                   and (authors[a]["staff"] or authors[a]["n_tagged"] >= 3)} for d in FOCUS}
     act = active[FOCUS[0]] | active[FOCUS[1]]
     mset = set(merge or [])
-    MERGED = "__campo_digital__"
+    MERGED = merged_key
     aprof = {a: collections.Counter() for a in act}
     for it in items:
         tc = item_terms(it, with_classes=False)
@@ -317,9 +318,9 @@ def zone_gate(min_side=2, jacc=0.3, generic=0.25, merge=None, start=2010):
             "users": users, "active": active, "conv": conv}
 
 
-def zone_diagnosis(save=True):
-    """Por que o campo digital não aparece entre as zonas do RELATORIO.md."""
-    lex = load_json("digital_lexicon.json")
+def zone_diagnosis(eixo="digital", save=True):
+    """Por que o campo do eixo não aparece entre as zonas do RELATORIO.md."""
+    lex = load_json(f"{eixo}_lexicon.json")
     dterms = [x["term"] for x in lex["lexico"]]
     base = zone_gate()
     users, active = base["users"], base["active"]
@@ -336,8 +337,8 @@ def zone_diagnosis(save=True):
     # 2. Fundindo o léxico num termo só — a operação que a sinonímia (A24) impede o
     #    pipeline de fazer. Sem teto de genericidade, para separar os três mecanismos
     #    de exclusão: piso de 2+2, teto de 25% dos ativos e corte do top-60.
-    MG = "__campo_digital__"
-    merged = zone_gate(merge=dterms, generic=1.0)
+    MG = f"__campo_{eixo}__"
+    merged = zone_gate(merge=dterms, generic=1.0, merged_key=MG)
     users_m, act_m = merged["users"], merged["active"]
     full = []
     for t, u in users_m.items():
@@ -369,6 +370,7 @@ def zone_diagnosis(save=True):
             sens.append({"piso": ms, "jaccard": jc, "n_termos": g["n_termos_convergentes"],
                          "n_zonas": g["n_zonas"], "maior_zona": g["maior_zona"]})
     out = {
+        "eixo": eixo,
         "base": {"n_ativos": base["n_ativos"], "n_termos_convergentes": base["n_termos_convergentes"],
                  "n_zonas": base["n_zonas"], "maior_zona": base["maior_zona"]},
         "termos_digitais_no_portao": per_term[:20],
@@ -378,7 +380,7 @@ def zone_diagnosis(save=True):
         "sensibilidade_piso_jaccard": sens,
     }
     if save:
-        save_json("audit_zone_diagnosis.json", out)
+        save_json(f"audit_zone_{eixo}.json", out)
     return out
 
 
@@ -389,12 +391,13 @@ def main(argv=None):
         print(f"{out['n']} pressupostos: {out['por_risco']}", file=sys.stderr)
         print(" ".join(a["id"] for a in ASSUMPTIONS if a["risco"] == "alto"), file=sys.stderr)
     elif "--zonas" in argv:
-        o = zone_diagnosis()
+        eixo = argv[argv.index("--eixo") + 1] if "--eixo" in argv else "digital"
+        o = zone_diagnosis(eixo)
         b = o["base"]
         print(f"base: {b['n_ativos']} ativos · {b['n_termos_convergentes']} termos convergentes · "
               f"{b['n_zonas']} zonas (maior com {b['maior_zona']} termos)", file=sys.stderr)
         print(f"termos digitais que passam o piso de 2+2: {o['n_termos_digitais_que_passam']} "
-              f"de {len(load_json('digital_lexicon.json')['lexico'])}", file=sys.stderr)
+              f"de {len(load_json(f'{eixo}_lexicon.json')['lexico'])}", file=sys.stderr)
         f = o["fundido"]
         print(f"fundido num termo só: {f['usuarios_ativos']} ativos ({f['share_dos_ativos']:.1%}), "
               f"DIEST {f['DIEST']} / DISET {f['DISET']}, equilíbrio {f['equilibrio']}, "

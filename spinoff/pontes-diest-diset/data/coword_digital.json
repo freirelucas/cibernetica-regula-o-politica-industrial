@@ -1,4 +1,5 @@
 {
+ "eixo": "digital",
  "recorte": "amplo",
  "n_obras": 403,
  "parametros": {
@@ -23,13 +24,13 @@
     "brics",
     "acesso a internet",
     "crescimento economico",
-    "tecnologias da informacao e comunicacao",
     "organizacao para a cooperacao e o desenvolvimento economico (ocde)",
+    "tecnologias da informacao e comunicacao",
     "comercio internacional",
-    "going digital",
-    "desenvolvimento regional",
     "regressao logistica",
     "comercio digital",
+    "desenvolvimento regional",
+    "going digital",
     "ensino assistido por computadores"
    ]
   },
@@ -44,15 +45,15 @@
     "administracao publica",
     "covid-19",
     "plataformas digitais",
-    "automacao",
     "trabalho",
+    "automacao",
     "pandemia",
     "emprego",
     "tecnologia audiovisual",
     "doencas endemicas",
     "analise de dados",
-    "bases de dados",
-    "economia de plataformas"
+    "economia de plataformas",
+    "bases de dados"
    ]
   },
   {
@@ -67,12 +68,12 @@
     "pesquisa e desenvolvimento",
     "industria",
     "energia eletrica",
-    "compartilhamento de infraestrutura",
     "economia",
+    "compartilhamento de infraestrutura",
     "telefonia movel",
     "industria de telecomunicacoes",
-    "economia – geral",
-    "redes de telecomunicacoes"
+    "redes de telecomunicacoes",
+    "economia – geral"
    ]
   },
   {
@@ -87,10 +88,10 @@
     "indices amplos de precos",
     "atividade economica",
     "condicoes economicas. pesquisa economica. sistemas economicos",
-    "acesso a informacao",
     "bibliotecarios",
-    "gastos publicos",
+    "acesso a informacao",
     "inflacao",
+    "gastos publicos",
     "condicoes economicas"
    ]
   },
@@ -103,11 +104,11 @@
    "termos": [
     "trabalhadores",
     "residuos solidos",
-    "aspectos sociais",
     "inclusao social",
+    "aspectos sociais",
     "indicadores sociais",
-    "catadores de material reciclavel",
-    "reciclagem de materiais"
+    "reciclagem de materiais",
+    "catadores de material reciclavel"
    ]
   },
   {
@@ -153,17 +154,6 @@
   {
    "grupo": 9,
    "n_termos": 2,
-   "usos_DIEST": 0,
-   "usos_DISET": 0,
-   "equilibrio": 0.0,
-   "termos": [
-    "social protection",
-    "digitalisation"
-   ]
-  },
-  {
-   "grupo": 10,
-   "n_termos": 2,
    "usos_DIEST": 13,
    "usos_DISET": 13,
    "equilibrio": 1.0,
@@ -173,7 +163,7 @@
    ]
   },
   {
-   "grupo": 11,
+   "grupo": 10,
    "n_termos": 2,
    "usos_DIEST": 3,
    "usos_DISET": 0,
@@ -184,14 +174,25 @@
    ]
   },
   {
+   "grupo": 11,
+   "n_termos": 2,
+   "usos_DIEST": 0,
+   "usos_DISET": 0,
+   "equilibrio": 0.0,
+   "termos": [
+    "social protection",
+    "digitalisation"
+   ]
+  },
+  {
    "grupo": 12,
    "n_termos": 2,
    "usos_DIEST": 0,
    "usos_DISET": 2,
    "equilibrio": 0.0,
    "termos": [
-    "politica de inovacao",
-    "inovacoes"
+    "inovacoes",
+    "politica de inovacao"
    ]
   }
  ],
@@ -260,15 +261,6 @@
    "dominante": "DISET"
   },
   {
-   "termo": "tecnologias da informacao e comunicacao",
-   "grupo": 1,
-   "obras": 6,
-   "DIEST": 1,
-   "DISET": 3,
-   "sem_membro": 2,
-   "dominante": "DISET"
-  },
-  {
    "termo": "organizacao para a cooperacao e o desenvolvimento economico (ocde)",
    "grupo": 1,
    "obras": 6,
@@ -276,6 +268,15 @@
    "DISET": 0,
    "sem_membro": 6,
    "dominante": "nenhuma"
+  },
+  {
+   "termo": "tecnologias da informacao e comunicacao",
+   "grupo": 1,
+   "obras": 6,
+   "DIEST": 1,
+   "DISET": 3,
+   "sem_membro": 2,
+   "dominante": "DISET"
   },
   {
    "termo": "comercio internacional",
@@ -287,7 +288,16 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "going digital",
+   "termo": "regressao logistica",
+   "grupo": 1,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 4,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "comercio digital",
    "grupo": 1,
    "obras": 4,
    "DIEST": 0,
@@ -305,16 +315,7 @@
    "dominante": "DISET"
   },
   {
-   "termo": "regressao logistica",
-   "grupo": 1,
-   "obras": 4,
-   "DIEST": 0,
-   "DISET": 0,
-   "sem_membro": 4,
-   "dominante": "nenhuma"
-  },
-  {
-   "termo": "comercio digital",
+   "termo": "going digital",
    "grupo": 1,
    "obras": 4,
    "DIEST": 0,
@@ -368,21 +369,21 @@
    "dominante": "DISET"
   },
   {
-   "termo": "automacao",
-   "grupo": 2,
-   "obras": 12,
-   "DIEST": 0,
-   "DISET": 8,
-   "sem_membro": 4,
-   "dominante": "DISET"
-  },
-  {
    "termo": "trabalho",
    "grupo": 2,
    "obras": 12,
    "DIEST": 2,
    "DISET": 3,
    "sem_membro": 7,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "automacao",
+   "grupo": 2,
+   "obras": 12,
+   "DIEST": 0,
+   "DISET": 8,
+   "sem_membro": 4,
    "dominante": "DISET"
   },
   {
@@ -431,21 +432,21 @@
    "dominante": "empate"
   },
   {
-   "termo": "bases de dados",
-   "grupo": 2,
-   "obras": 4,
-   "DIEST": 1,
-   "DISET": 2,
-   "sem_membro": 1,
-   "dominante": "DISET"
-  },
-  {
    "termo": "economia de plataformas",
    "grupo": 2,
    "obras": 4,
    "DIEST": 1,
    "DISET": 3,
    "sem_membro": 0,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "bases de dados",
+   "grupo": 2,
+   "obras": 4,
+   "DIEST": 1,
+   "DISET": 2,
+   "sem_membro": 1,
    "dominante": "DISET"
   },
   {
@@ -494,7 +495,7 @@
    "dominante": "DISET"
   },
   {
-   "termo": "compartilhamento de infraestrutura",
+   "termo": "economia",
    "grupo": 3,
    "obras": 7,
    "DIEST": 0,
@@ -503,7 +504,7 @@
    "dominante": "DISET"
   },
   {
-   "termo": "economia",
+   "termo": "compartilhamento de infraestrutura",
    "grupo": 3,
    "obras": 7,
    "DIEST": 0,
@@ -530,21 +531,21 @@
    "dominante": "DISET"
   },
   {
-   "termo": "economia – geral",
-   "grupo": 3,
-   "obras": 4,
-   "DIEST": 0,
-   "DISET": 4,
-   "sem_membro": 0,
-   "dominante": "DISET"
-  },
-  {
    "termo": "redes de telecomunicacoes",
    "grupo": 3,
    "obras": 4,
    "DIEST": 0,
    "DISET": 3,
    "sem_membro": 1,
+   "dominante": "DISET"
+  },
+  {
+   "termo": "economia – geral",
+   "grupo": 3,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 4,
+   "sem_membro": 0,
    "dominante": "DISET"
   },
   {
@@ -593,15 +594,6 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "acesso a informacao",
-   "grupo": 4,
-   "obras": 7,
-   "DIEST": 1,
-   "DISET": 1,
-   "sem_membro": 5,
-   "dominante": "empate"
-  },
-  {
    "termo": "bibliotecarios",
    "grupo": 4,
    "obras": 7,
@@ -611,7 +603,16 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "gastos publicos",
+   "termo": "acesso a informacao",
+   "grupo": 4,
+   "obras": 7,
+   "DIEST": 1,
+   "DISET": 1,
+   "sem_membro": 5,
+   "dominante": "empate"
+  },
+  {
+   "termo": "inflacao",
    "grupo": 4,
    "obras": 6,
    "DIEST": 0,
@@ -620,7 +621,7 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "inflacao",
+   "termo": "gastos publicos",
    "grupo": 4,
    "obras": 6,
    "DIEST": 0,
@@ -656,7 +657,7 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "aspectos sociais",
+   "termo": "inclusao social",
    "grupo": 5,
    "obras": 5,
    "DIEST": 0,
@@ -665,7 +666,7 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "inclusao social",
+   "termo": "aspectos sociais",
    "grupo": 5,
    "obras": 5,
    "DIEST": 0,
@@ -683,7 +684,7 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "catadores de material reciclavel",
+   "termo": "reciclagem de materiais",
    "grupo": 5,
    "obras": 5,
    "DIEST": 0,
@@ -692,7 +693,7 @@
    "dominante": "nenhuma"
   },
   {
-   "termo": "reciclagem de materiais",
+   "termo": "catadores de material reciclavel",
    "grupo": 5,
    "obras": 5,
    "DIEST": 0,
@@ -818,26 +819,8 @@
    "dominante": "DISET"
   },
   {
-   "termo": "social protection",
-   "grupo": 9,
-   "obras": 6,
-   "DIEST": 0,
-   "DISET": 0,
-   "sem_membro": 6,
-   "dominante": "nenhuma"
-  },
-  {
-   "termo": "digitalisation",
-   "grupo": 9,
-   "obras": 6,
-   "DIEST": 0,
-   "DISET": 0,
-   "sem_membro": 6,
-   "dominante": "nenhuma"
-  },
-  {
    "termo": "politicas publicas",
-   "grupo": 10,
+   "grupo": 9,
    "obras": 48,
    "DIEST": 11,
    "DISET": 13,
@@ -846,7 +829,7 @@
   },
   {
    "termo": "participacao social",
-   "grupo": 10,
+   "grupo": 9,
    "obras": 6,
    "DIEST": 2,
    "DISET": 0,
@@ -855,7 +838,7 @@
   },
   {
    "termo": "dados abertos",
-   "grupo": 11,
+   "grupo": 10,
    "obras": 4,
    "DIEST": 2,
    "DISET": 0,
@@ -864,7 +847,7 @@
   },
   {
    "termo": "governo",
-   "grupo": 11,
+   "grupo": 10,
    "obras": 4,
    "DIEST": 1,
    "DISET": 0,
@@ -872,13 +855,22 @@
    "dominante": "DIEST"
   },
   {
-   "termo": "politica de inovacao",
-   "grupo": 12,
-   "obras": 4,
+   "termo": "social protection",
+   "grupo": 11,
+   "obras": 6,
    "DIEST": 0,
-   "DISET": 2,
-   "sem_membro": 2,
-   "dominante": "DISET"
+   "DISET": 0,
+   "sem_membro": 6,
+   "dominante": "nenhuma"
+  },
+  {
+   "termo": "digitalisation",
+   "grupo": 11,
+   "obras": 6,
+   "DIEST": 0,
+   "DISET": 0,
+   "sem_membro": 6,
+   "dominante": "nenhuma"
   },
   {
    "termo": "inovacoes",
@@ -888,6 +880,15 @@
    "DISET": 0,
    "sem_membro": 4,
    "dominante": "nenhuma"
+  },
+  {
+   "termo": "politica de inovacao",
+   "grupo": 12,
+   "obras": 4,
+   "DIEST": 0,
+   "DISET": 2,
+   "sem_membro": 2,
+   "dominante": "DISET"
   }
  ]
 }

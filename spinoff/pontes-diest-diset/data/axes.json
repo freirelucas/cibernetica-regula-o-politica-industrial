@@ -1,0 +1,59 @@
+{
+ "_doc": "Eixos de transformação. Cada eixo é uma lista de SEMENTES — expressões regulares sobre o termo normalizado — que ancoram o campo no vocabulário controlado. A expansão por co-ocorrência (src/axis.py) faz o resto. `sensibilidade` guarda termos semanticamente do eixo que a regra de inclusão rejeita por contagem baixa: não entram no léxico, servem para testar se o campo muda quando entram.",
+ "_como_adicionar_eixo": "Escrever 15 a 30 sementes que sejam do eixo POR DEFINIÇÃO, preferindo termos do VCIpea (vocabulário controlado do Ipea). Rodar `python src/axis.py --eixo <nome> --lexico` e revisar os expandidos aceitos e os rejeitados de maior co-ocorrência antes de usar o léxico em qualquer análise.",
+ "digital": {
+  "nome": "Transformação digital",
+  "sementes": [
+   "^transformacao digital$",
+   "^digitalizacao$",
+   "^digitalisation$",
+   "^tecnologia da informacao$",
+   "^tecnologias? da informacao e comunicacao",
+   "^tic(s)?$",
+   "^internet$",
+   "^inteligencia artificial$",
+   "^governo (digital|eletronico)$",
+   "^plataformas? digitais?$",
+   "^economia digital$",
+   "^tecnologia digital$",
+   "^inclusao digital$",
+   "^telecomunicacoes$",
+   "^banda larga$",
+   "^industria 4\\.0$",
+   "^big data$",
+   "^dados abertos$",
+   "^automacao$",
+   "^software$"
+  ],
+  "sensibilidade": [
+   "teletrabalho",
+   "desinformacao",
+   "gestao da informacao",
+   "governanca digital",
+   "seguranca cibernetica",
+   "blockchain",
+   "comercio eletronico",
+   "industria de software",
+   "aplicativos?$",
+   "midias sociais",
+   "redes sociais",
+   "protecao de dados"
+  ],
+  "revisado_em": "2026-10-02",
+  "nota": "Sementes ancoradas no VCIpea; 16 termos entraram por expansão."
+ },
+ "ecologica": {
+  "nome": "Transformação ecológica",
+  "sementes": [],
+  "sensibilidade": [],
+  "revisado_em": null,
+  "nota": "A preencher. Candidatos óbvios no VCIpea: mudança climática, transição energética, energias renováveis, desmatamento, bioeconomia, resíduos sólidos, adaptação climática. NÃO usar sem revisão: o corpus tem forte produção em energia elétrica que é de infraestrutura, não de transição."
+ },
+ "demografica": {
+  "nome": "Transformação demográfica",
+  "sementes": [],
+  "sensibilidade": [],
+  "revisado_em": null,
+  "nota": "A preencher. Candidatos: envelhecimento populacional, transição demográfica, fecundidade, migração, cuidado, previdência. Atenção: 'previdência' é majoritariamente fiscal no corpus e pode sequestrar o campo."
+ }
+}
