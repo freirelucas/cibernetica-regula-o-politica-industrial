@@ -6,6 +6,9 @@ cada diretoria, as **pontes epistêmicas** entre elas, as **zonas de convergênc
 **colaborações (pares e equipes) em potencial** — usando hipergrafos.
 
 ## Regras inegociáveis
+0. **Quatro camadas sempre separadas** — factual, estatística descritiva, enriquecimento
+   analítico autônomo, rede com conexões verificáveis. Ver `docs/ARQUITETURA_EDITORIAL.md`.
+   Vale para o sítio, para as fichas de tema, para o RELATORIO.md e para resposta em texto.
 1. **Só dado real.** Todo nome, número e obra vem de `data/` (gerado pelos scripts). Nunca
    invente autor, lotação, obra ou id. Se faltar dado, diga que falta.
 2. **Ressalva no ponto da afirmação.** Atribuição de diretoria é *inferida* pela produção —
@@ -24,6 +27,7 @@ src/net.py            GET com cache gzip (data/cache/), NET_OFFLINE=1 = só cach
 src/roster.py         1. diretório de pesquisadores ativos  → data/roster.json
 src/harvest_repo.py   2. Repositório Ipea (DSpace REST)     → data/repo_items.jsonl.gz, data/repo_persons.json
 src/attribute.py      3. identidade + diretoria pela produção → data/authors.json, data/items_tagged.json
+src/metasystem.py     3c. instrumentos de planejamento federal: instrumento × tema × diretoria
 src/membership.py     3b. validação com as chefias: overrides (vencem a inferência), planilha, precisão
                           --export → data/membership_validation.csv | --ingest <csv> | --audit
 src/analysis.py       4. hipergrafos, nulo, zonas, pares/equipes → data/results.json

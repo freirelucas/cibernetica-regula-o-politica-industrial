@@ -1,0 +1,1117 @@
+{
+ "n_corpus": 16509,
+ "janela": 2010,
+ "instrumentos": [
+  {
+   "sigla": "Agenda2030",
+   "nome": "Agenda 2030 e Objetivos de Desenvolvimento Sustentável",
+   "orgao": "ONU/CNODS",
+   "horizonte": "2015-2030",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica",
+    "demografica"
+   ],
+   "obras_instrumento": 148,
+   "instrumento_desde_2010": 148,
+   "obras_tema": 472,
+   "tema_desde_2010": 414,
+   "tema_por_diretoria": {
+    "DISET": 42,
+    "DIEST": 16
+   },
+   "tema_mistas_diest_diset": 1,
+   "por_ano": {
+    "2014": 4,
+    "2015": 4,
+    "2016": 6,
+    "2017": 2,
+    "2018": 12,
+    "2019": 28,
+    "2020": 13,
+    "2021": 5,
+    "2022": 8,
+    "2023": 16,
+    "2024": 35,
+    "2025": 9,
+    "2026": 6
+   },
+   "por_diretoria": {
+    "DISET": 14,
+    "DIEST": 4
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "A agenda de desenvolvimento pós-2015 : a questão ambiental no contexto do desenvolvimento sustentável",
+     "year": 2014,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/3603",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "O Acesso universal à água é uma questão de democracia",
+     "year": 2016,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/7112",
+     "diretorias": []
+    },
+    {
+     "title": "O Objetivo do desenvolvimento sustentável 6 - água e saneamento : desafios da gestão e a busca de convergências",
+     "year": 2018,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/8484",
+     "diretorias": []
+    },
+    {
+     "title": "Panorama internacional das políticas sobre drogas",
+     "year": 2018,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/8885",
+     "diretorias": []
+    },
+    {
+     "title": "Coordenação do Bolsa Família nos sistemas de políticas públicas",
+     "year": 2019,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/9054",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "PNDU",
+   "nome": "Política Nacional de Desenvolvimento Urbano",
+   "orgao": "MCid",
+   "horizonte": "2024-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica"
+   ],
+   "obras_instrumento": 55,
+   "instrumento_desde_2010": 49,
+   "obras_tema": 362,
+   "tema_desde_2010": 239,
+   "tema_por_diretoria": {
+    "DIEST": 5,
+    "DISET": 4
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2010": 1,
+    "2016": 1,
+    "2018": 1,
+    "2020": 3,
+    "2021": 11,
+    "2022": 1,
+    "2023": 2,
+    "2024": 24,
+    "2025": 3,
+    "2026": 2
+   },
+   "por_diretoria": {
+    "DISET": 1
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Situação atual e perspectivas do programa federal de apoio à gestão urbana municipal",
+     "year": 2010,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/3810",
+     "diretorias": []
+    },
+    {
+     "title": "O Impasse metropolitano no Brasil : entre centralidade e incertezas",
+     "year": 2016,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/9179",
+     "diretorias": []
+    },
+    {
+     "title": "Contribuição das conferências da cidade para a construção da Política Nacional de Desenvolvimento Urbano",
+     "year": 2020,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/10348",
+     "diretorias": []
+    },
+    {
+     "title": "Identificação e caracterização das relações interfederativas na região metropolitana da Grande Vitória : interfaces com ",
+     "year": 2021,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/10425",
+     "diretorias": []
+    },
+    {
+     "title": "Identificação e caracterização das relações interfederativas na RIDE-DF : interfaces com a construção da PNDU : componen",
+     "year": 2021,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/10428",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "PlanoClima",
+   "nome": "Plano Nacional sobre Mudança do Clima",
+   "orgao": "MMA",
+   "horizonte": "2024-2035",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica"
+   ],
+   "obras_instrumento": 9,
+   "instrumento_desde_2010": 9,
+   "obras_tema": 201,
+   "tema_desde_2010": 195,
+   "tema_por_diretoria": {
+    "DISET": 16,
+    "DIEST": 10
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2010": 2,
+    "2016": 1,
+    "2021": 1,
+    "2024": 3,
+    "2026": 2
+   },
+   "por_diretoria": {},
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "A regulação das emissões de gases de efeito estufa no Brasil",
+     "year": 2010,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/1894",
+     "diretorias": []
+    },
+    {
+     "title": "Aspectos regulatórios das mudanças climáticas no Brasil",
+     "year": 2010,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/5572",
+     "diretorias": []
+    },
+    {
+     "title": "Desenvolvimento da agricultura de baixo carbono no Brasil",
+     "year": 2021,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/10531",
+     "diretorias": []
+    },
+    {
+     "title": "Governança territorial e climática para o desenvolvimento rural sustentável : estudo de caso no semiárido sergipano",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/16013",
+     "diretorias": []
+    },
+    {
+     "title": "Experiências participativas na definição de metas climáticas no Brasil",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/19550",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "PPA",
+   "nome": "Plano Plurianual 2024-2027",
+   "orgao": "MPO",
+   "horizonte": "2024-2027",
+   "verificado": false,
+   "eixos": null,
+   "neg": [
+    "power purchase"
+   ],
+   "eixo_hipotese": [
+    "digital",
+    "ecologica",
+    "demografica"
+   ],
+   "obras_instrumento": 88,
+   "instrumento_desde_2010": 65,
+   "obras_tema": 213,
+   "tema_desde_2010": 148,
+   "tema_por_diretoria": {
+    "DIEST": 57,
+    "DISET": 8
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2011": 4,
+    "2012": 1,
+    "2013": 1,
+    "2014": 4,
+    "2015": 5,
+    "2016": 1,
+    "2017": 2,
+    "2018": 6,
+    "2019": 1,
+    "2020": 5,
+    "2021": 16,
+    "2022": 2,
+    "2023": 8,
+    "2024": 7,
+    "2025": 1,
+    "2026": 1
+   },
+   "por_diretoria": {
+    "DIEST": 30,
+    "DISET": 4
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Política e planejamento no Brasil: balanço histórico e propostas ao Plano Plurianual 2016-2019",
+     "year": 2014,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/3456",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "Monitoramento estratégico de políticas públicas : requisitos tecnopolíticos, proposta metodológica e implicações prática",
+     "year": 2015,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/3536",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "Subsídios para repensar o sistema federal de planejamento",
+     "year": 2015,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/3827",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "Educação",
+     "year": 2014,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/4242",
+     "diretorias": []
+    },
+    {
+     "title": "Educação",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/4250",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "PNE",
+   "nome": "Plano Nacional de Educação",
+   "orgao": "MEC",
+   "horizonte": "2014-2024",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "demografica"
+   ],
+   "obras_instrumento": 36,
+   "instrumento_desde_2010": 35,
+   "obras_tema": 209,
+   "tema_desde_2010": 125,
+   "tema_por_diretoria": {
+    "DISET": 14,
+    "DIEST": 7
+   },
+   "tema_mistas_diest_diset": 1,
+   "por_ano": {
+    "2011": 1,
+    "2012": 4,
+    "2013": 2,
+    "2014": 4,
+    "2015": 1,
+    "2016": 3,
+    "2017": 3,
+    "2018": 3,
+    "2019": 3,
+    "2020": 3,
+    "2021": 1,
+    "2022": 1,
+    "2024": 3,
+    "2025": 2,
+    "2026": 1
+   },
+   "por_diretoria": {
+    "DISET": 10,
+    "DIEST": 1
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Evolução do acesso de jovens à educação superior no Brasil",
+     "year": 2014,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/3021",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "O desafio de assegurar a educação básica de qualidade para todos no Brasil",
+     "year": 2012,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/3859",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "Educação",
+     "year": 2015,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/4228",
+     "diretorias": []
+    },
+    {
+     "title": "Educação",
+     "year": 2014,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/4242",
+     "diretorias": []
+    },
+    {
+     "title": "Educação",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/4250",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "ENCTI",
+   "nome": "Estratégia Nacional de Ciência, Tecnologia e Inovação",
+   "orgao": "MCTI",
+   "horizonte": "2024-2030",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "digital",
+    "ecologica"
+   ],
+   "obras_instrumento": 2,
+   "instrumento_desde_2010": 2,
+   "obras_tema": 124,
+   "tema_desde_2010": 104,
+   "tema_por_diretoria": {
+    "DISET": 47,
+    "DIEST": 8
+   },
+   "tema_mistas_diest_diset": 1,
+   "por_ano": {
+    "2022": 2
+   },
+   "por_diretoria": {
+    "DISET": 1
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Subvenção econômica : estatísticas dos períodos recentes",
+     "year": 2022,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/11145",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "Desafios para a ampliação da competitividade da economia brasileira : uma abordagem a partir da estratégia nacional de c",
+     "year": 2022,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/13064",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "PLANTE",
+   "nome": "Plano Nacional de Transição Energética",
+   "orgao": "MME",
+   "horizonte": "2024-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica"
+   ],
+   "obras_instrumento": 0,
+   "instrumento_desde_2010": 0,
+   "obras_tema": 95,
+   "tema_desde_2010": 93,
+   "tema_por_diretoria": {
+    "DISET": 20,
+    "DIEST": 6
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {},
+   "por_diretoria": {},
+   "mistas_diest_diset": 0,
+   "exemplos": []
+  },
+  {
+   "sigla": "PNRS",
+   "nome": "Política Nacional de Resíduos Sólidos / Plano Nacional",
+   "orgao": "MMA",
+   "horizonte": "2010-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica"
+   ],
+   "obras_instrumento": 26,
+   "instrumento_desde_2010": 26,
+   "obras_tema": 104,
+   "tema_desde_2010": 89,
+   "tema_por_diretoria": {
+    "DIEST": 6,
+    "DISET": 1
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2012": 9,
+    "2013": 3,
+    "2014": 2,
+    "2016": 2,
+    "2018": 1,
+    "2019": 1,
+    "2020": 1,
+    "2021": 1,
+    "2023": 1,
+    "2024": 2,
+    "2025": 3
+   },
+   "por_diretoria": {
+    "DIEST": 2
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Sensibilização e mobilização dentro da Política Nacional de Resíduos Sólidos: desafios e oportunidades da educação ambie",
+     "year": 2012,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/1108",
+     "diretorias": []
+    },
+    {
+     "title": "Audiências públicas do Poder Executivo federal: fatores de efetividade",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/2035",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "A Gestão integrada de resíduos sólidos urbanos nos grandes eventos esportivos : o desafio da inclusão social dos catador",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/5580",
+     "diretorias": []
+    },
+    {
+     "title": "Política nacional de resíduos sólidos e a logística reversa",
+     "year": 2014,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/5581",
+     "diretorias": []
+    },
+    {
+     "title": "Audiências públicas : fatores que influenciam seu potencial de efetividade",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/5918",
+     "diretorias": [
+      "DIEST"
+     ]
+    }
+   ]
+  },
+  {
+   "sigla": "NIB",
+   "nome": "Nova Indústria Brasil",
+   "orgao": "MDIC/CNDI",
+   "horizonte": "2024-2033",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "digital",
+    "ecologica",
+    "demografica"
+   ],
+   "obras_instrumento": 10,
+   "instrumento_desde_2010": 10,
+   "obras_tema": 199,
+   "tema_desde_2010": 84,
+   "tema_por_diretoria": {
+    "DISET": 9,
+    "DIEST": 3
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2024": 8,
+    "2025": 2
+   },
+   "por_diretoria": {
+    "DISET": 1,
+    "DIEST": 1
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Plataformas digitais e a nova indústria Brasil : questões para reflexão",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/13511",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "Apresentação : o tempo da política industrial no mundo",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/18605",
+     "diretorias": []
+    },
+    {
+     "title": "A Nova política industrial brasileira e seu alinhamento às tendências globais",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/18606",
+     "diretorias": []
+    },
+    {
+     "title": "O Processo de formulação da Nova Indústria Brasil (NIB) : política orientada por missões e participação social no desenh",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/18607",
+     "diretorias": []
+    },
+    {
+     "title": "Transformação produtiva e Nova Indústria Brasil (NIB)",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/18608",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "E-Digital",
+   "nome": "Estratégia Brasileira de Transformação Digital",
+   "orgao": "MCTI",
+   "horizonte": "2018-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "digital"
+   ],
+   "obras_instrumento": 23,
+   "instrumento_desde_2010": 23,
+   "obras_tema": 68,
+   "tema_desde_2010": 68,
+   "tema_por_diretoria": {
+    "DISET": 20,
+    "DIEST": 5
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2012": 2,
+    "2017": 1,
+    "2018": 1,
+    "2021": 1,
+    "2022": 1,
+    "2023": 1,
+    "2024": 4,
+    "2025": 7,
+    "2026": 5
+   },
+   "por_diretoria": {
+    "DISET": 4
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Conduta da guerra na era digital e suas implicações para o Brasil: uma análise de conceitos, políticas e práticas de def",
+     "year": 2012,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/1088",
+     "diretorias": []
+    },
+    {
+     "title": "A Digitalização do mercado de capitais no Brasil : tendências recentes",
+     "year": 2017,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/8208",
+     "diretorias": []
+    },
+    {
+     "title": "A digitalização do mercado de capitais no Brasil : tendências recentes",
+     "year": 2018,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/8280",
+     "diretorias": []
+    },
+    {
+     "title": "Internet das coisas no Brasil : análise e recomendação de políticas com ênfase no agronegócio",
+     "year": 2023,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/11731",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "A Metrópole digital : para a crítica da economia política das tecnologias de informação e comunicação",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/13472",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "PBIA",
+   "nome": "Plano Brasileiro de Inteligência Artificial / EBIA",
+   "orgao": "MCTI",
+   "horizonte": "2024-2028",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "digital"
+   ],
+   "obras_instrumento": 0,
+   "instrumento_desde_2010": 0,
+   "obras_tema": 79,
+   "tema_desde_2010": 68,
+   "tema_por_diretoria": {
+    "DISET": 20,
+    "DIEST": 6
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {},
+   "por_diretoria": {},
+   "mistas_diest_diset": 0,
+   "exemplos": []
+  },
+  {
+   "sigla": "PTE",
+   "nome": "Plano de Transformação Ecológica",
+   "orgao": "Ministério da Fazenda",
+   "horizonte": "2023-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica"
+   ],
+   "obras_instrumento": 6,
+   "instrumento_desde_2010": 6,
+   "obras_tema": 53,
+   "tema_desde_2010": 52,
+   "tema_por_diretoria": {
+    "DISET": 5,
+    "DIEST": 2
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2025": 1,
+    "2026": 5
+   },
+   "por_diretoria": {},
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Novo Brasil - Plano de Transformação Ecológica : ações e políticas vinculadas",
+     "year": 2025,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/19711",
+     "diretorias": []
+    },
+    {
+     "title": "Prefácio : Transição justa nas finanças no Brasil",
+     "year": 2026,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20843",
+     "diretorias": []
+    },
+    {
+     "title": "Introdução : Transição justa nas finanças no Brasil",
+     "year": 2026,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20844",
+     "diretorias": []
+    },
+    {
+     "title": "Transformação ecológica justa: pensar o global e impactar o regional",
+     "year": 2026,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20853",
+     "diretorias": []
+    },
+    {
+     "title": "Transição econômica justa e cidades : impactos e desafios da inclusão dos entes subnacionais.",
+     "year": 2026,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20856",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "EFD",
+   "nome": "Estratégia Federal de Desenvolvimento",
+   "orgao": "MPO/SPI",
+   "horizonte": "2020-2031",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "digital",
+    "ecologica",
+    "demografica"
+   ],
+   "obras_instrumento": 0,
+   "instrumento_desde_2010": 0,
+   "obras_tema": 98,
+   "tema_desde_2010": 50,
+   "tema_por_diretoria": {
+    "DISET": 11,
+    "DIEST": 4
+   },
+   "tema_mistas_diest_diset": 1,
+   "por_ano": {},
+   "por_diretoria": {},
+   "mistas_diest_diset": 0,
+   "exemplos": []
+  },
+  {
+   "sigla": "EstratSaude",
+   "nome": "Complexo Econômico-Industrial da Saúde",
+   "orgao": "MS/MDIC",
+   "horizonte": "2023-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "demografica"
+   ],
+   "obras_instrumento": 4,
+   "instrumento_desde_2010": 4,
+   "obras_tema": 32,
+   "tema_desde_2010": 25,
+   "tema_por_diretoria": {
+    "DISET": 11,
+    "DIEST": 1
+   },
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2013": 1,
+    "2023": 1,
+    "2024": 1,
+    "2026": 1
+   },
+   "por_diretoria": {
+    "DISET": 1
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Modelos de fomento e P&D em farmacêuticos e benchmarking internacional",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/962",
+     "diretorias": []
+    },
+    {
+     "title": "Productive development partnerships : rationale of its four phases",
+     "year": 2023,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/12379",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "Os Desafios da implementação das contratações públicas de inovação no Ministério da Saúde",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/18635",
+     "diretorias": []
+    },
+    {
+     "title": "Matrizes de contabilidade social : metodologia e elaboração para o Brasil (2000–2021)",
+     "year": 2026,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20840",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "EGD",
+   "nome": "Estratégia de Governo Digital",
+   "orgao": "MGI",
+   "horizonte": "2024-2027",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "digital"
+   ],
+   "obras_instrumento": 4,
+   "instrumento_desde_2010": 4,
+   "obras_tema": 24,
+   "tema_desde_2010": 21,
+   "tema_por_diretoria": {
+    "DIEST": 5,
+    "DISET": 4
+   },
+   "tema_mistas_diest_diset": 2,
+   "por_ano": {
+    "2021": 1,
+    "2022": 1,
+    "2024": 1,
+    "2026": 1
+   },
+   "por_diretoria": {
+    "DIEST": 1,
+    "DISET": 1
+   },
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Policy design e uso de evidências : o caso da plataforma gov.br",
+     "year": 2022,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/11366",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "Transformação digital : análise da implantação da plataforma gov.br e da evolução da maturidade da política de governo d",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/13147",
+     "diretorias": []
+    },
+    {
+     "title": "Aspectos da governança digital da Administração Pública Federal do Brasil sob a luz das orientações da OCDE",
+     "year": 2021,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/13372",
+     "diretorias": []
+    },
+    {
+     "title": "Diagnóstico e recomendações para o fortalecimento do Cadastro Técnico Federal de Atividades Potencialmente Poluidoras",
+     "year": 2026,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20690",
+     "diretorias": [
+      "DISET"
+     ]
+    }
+   ]
+  },
+  {
+   "sigla": "PNA",
+   "nome": "Plano Nacional de Adaptação à Mudança do Clima",
+   "orgao": "MMA",
+   "horizonte": "2016-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica"
+   ],
+   "obras_instrumento": 1,
+   "instrumento_desde_2010": 1,
+   "obras_tema": 10,
+   "tema_desde_2010": 10,
+   "tema_por_diretoria": {},
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2024": 1
+   },
+   "por_diretoria": {},
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Governança territorial e climática para o desenvolvimento rural sustentável : estudo de caso no semiárido sergipano",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/16013",
+     "diretorias": []
+    }
+   ]
+  },
+  {
+   "sigla": "NovoPAC",
+   "nome": "Novo Programa de Aceleração do Crescimento",
+   "orgao": "Casa Civil",
+   "horizonte": "2023-2026",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "ecologica"
+   ],
+   "obras_instrumento": 45,
+   "instrumento_desde_2010": 35,
+   "obras_tema": 5,
+   "tema_desde_2010": 4,
+   "tema_por_diretoria": {},
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2010": 4,
+    "2011": 1,
+    "2012": 3,
+    "2013": 3,
+    "2014": 1,
+    "2015": 2,
+    "2016": 6,
+    "2017": 1,
+    "2018": 7,
+    "2019": 2,
+    "2022": 2,
+    "2023": 1,
+    "2024": 2
+   },
+   "por_diretoria": {
+    "DIEST": 12,
+    "DISET": 9
+   },
+   "mistas_diest_diset": 1,
+   "exemplos": [
+    {
+     "title": "Meta-avaliação: estudos e proposições metodológicas a partir da avaliação de políticas de urbanização de assentamentos p",
+     "year": 2012,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/1265",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "Gargalos e demandas da infraestrutura rodoviária e os investimentos do PAC: mapeamento Ipea de obras rodoviárias",
+     "year": 2011,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/1637",
+     "diretorias": [
+      "DISET"
+     ]
+    },
+    {
+     "title": "Desenvolvimentismo, conflito e conciliação de interesses na política de construção de hidrelétricas na Amazônia brasilei",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/2001",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "A Ver navios?: a revitalização da indústria naval no Brasil democrático",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/2019",
+     "diretorias": [
+      "DIEST"
+     ]
+    },
+    {
+     "title": "Metodologia de avaliação de resultados: o caso das intervenções do Pac Urbanização de Favelas",
+     "year": 2013,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/2342",
+     "diretorias": [
+      "DIEST"
+     ]
+    }
+   ]
+  },
+  {
+   "sigla": "PNC",
+   "nome": "Política Nacional de Cuidados",
+   "orgao": "MDS/MMulheres",
+   "horizonte": "2024-",
+   "verificado": false,
+   "eixos": null,
+   "eixo_hipotese": [
+    "demografica"
+   ],
+   "obras_instrumento": 4,
+   "instrumento_desde_2010": 4,
+   "obras_tema": 4,
+   "tema_desde_2010": 3,
+   "tema_por_diretoria": {},
+   "tema_mistas_diest_diset": 0,
+   "por_ano": {
+    "2018": 1,
+    "2024": 2,
+    "2025": 1
+   },
+   "por_diretoria": {},
+   "mistas_diest_diset": 0,
+   "exemplos": [
+    {
+     "title": "Participação feminina no mercado de trabalho e a crise de cuidados da modernidade : conexões diversas",
+     "year": 2018,
+     "uri": "http://repositorio.ipea.gov.br/handle/11058/8502",
+     "diretorias": []
+    },
+    {
+     "title": "Igualdade de gênero",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/16876",
+     "diretorias": []
+    },
+    {
+     "title": "Nova Indústria Brasil, Política Nacional do Cuidado e envelhecimento da população : uma análise à luz da economia da lon",
+     "year": 2024,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/18631",
+     "diretorias": []
+    },
+    {
+     "title": "Cuidado em casa : proposta de programa público para pessoas idosas com dependência no âmbito da Política Nacional de Cui",
+     "year": 2025,
+     "uri": "https://repositorio.ipea.gov.br/handle/11058/20331",
+     "diretorias": []
+    }
+   ]
+  }
+ ],
+ "co_ocorrencia_entre_instrumentos": [
+  {
+   "a": "Agenda2030",
+   "b": "PPA",
+   "obras": 10
+  },
+  {
+   "a": "Agenda2030",
+   "b": "PNE",
+   "obras": 5
+  },
+  {
+   "a": "PNE",
+   "b": "PPA",
+   "obras": 4
+  },
+  {
+   "a": "NovoPAC",
+   "b": "PPA",
+   "obras": 3
+  },
+  {
+   "a": "Agenda2030",
+   "b": "PNRS",
+   "obras": 2
+  },
+  {
+   "a": "NovoPAC",
+   "b": "PNE",
+   "obras": 1
+  },
+  {
+   "a": "Agenda2030",
+   "b": "PNDU",
+   "obras": 1
+  },
+  {
+   "a": "Agenda2030",
+   "b": "NovoPAC",
+   "obras": 1
+  },
+  {
+   "a": "PNA",
+   "b": "PlanoClima",
+   "obras": 1
+  },
+  {
+   "a": "PNC",
+   "b": "PPA",
+   "obras": 1
+  },
+  {
+   "a": "E-Digital",
+   "b": "NIB",
+   "obras": 1
+  },
+  {
+   "a": "NIB",
+   "b": "PNC",
+   "obras": 1
+  },
+  {
+   "a": "EstratSaude",
+   "b": "NIB",
+   "obras": 1
+  },
+  {
+   "a": "EstratSaude",
+   "b": "NovoPAC",
+   "obras": 1
+  },
+  {
+   "a": "NIB",
+   "b": "NovoPAC",
+   "obras": 1
+  },
+  {
+   "a": "Agenda2030",
+   "b": "PTE",
+   "obras": 1
+  }
+ ]
+}
