@@ -14,7 +14,7 @@ NUNCA aceita candidato sem afiliação Ipea na trajetória (last_known_instituti
 affiliations). Casos ambíguos vão para data/openalex_review.json para revisão humana.
 
 Saída: data/openalex_authors.json, data/openalex_works.json, data/openalex_review.json
-Uso:   OPENALEX_API_KEY=... python src/openalex_enrich.py [--max 400]
+Uso:   python src/openalex_enrich.py [--max 400]     (OPENALEX_API_KEY opcional, recomendada)
 """
 import argparse
 import os
@@ -74,8 +74,8 @@ def main():
     ap.add_argument("--works-per-author", type=int, default=200)
     args = ap.parse_args()
     if not KEY:
-        sys.exit("OPENALEX_API_KEY ausente: o pool grátis por IP costuma estar esgotado em nuvem. "
-                 "Crie uma chave grátis em https://help.openalex.org/api/authentication/")
+        print("aviso: sem OPENALEX_API_KEY — usa o pool grátis por IP, compartilhado e com teto diário; "
+              "uma chave gratuita (help.openalex.org/api/authentication) evita a dependência.", file=sys.stderr)
     authors = load_json("authors.json")
     targets = [(k, v) for k, v in authors.items()
                if v["diretoria"] in FOCUS and v["staff"] and v["active"]][: args.max]
