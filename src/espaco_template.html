@@ -562,15 +562,20 @@ __ESPACO_DATA__
   $('#btLink').addEventListener('click', function () {
     gravaEndereco(false);
     var u = location.href, feito = function () { aviso('Endereço desta vista copiado'); };
-    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(u).then(feito, function () { aviso('Copie o endereço da barra do navegador'); });
-    else aviso('Copie o endereço da barra do navegador');
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(u).then(feito, function () { aviso('Copie o endereço da barra do navegador'); });
+      else aviso('Copie o endereço da barra do navegador');
+    } catch (e) { aviso('Copie o endereço da barra do navegador'); }
   });
   largo.addEventListener && largo.addEventListener('change', function () { cena.margemDireita(!det.hidden && largo.matches ? 356 : 0); });
 
   // ── o estado mora no endereço: toda vista pode ser citada e reaberta ──
   function leEndereco() {
     var o = {};
-    location.hash.replace(/^#/, '').split('&').forEach(function (p) { var i = p.indexOf('='); if (i > 0) o[decodeURIComponent(p.slice(0, i))] = decodeURIComponent(p.slice(i + 1)); });
+    location.hash.replace(/^#/, '').split('&').forEach(function (p) {
+      var i = p.indexOf('=');
+      if (i > 0) { try { o[decodeURIComponent(p.slice(0, i))] = decodeURIComponent(p.slice(i + 1)); } catch (e) { /* trecho malformado do endereço: ignora só ele */ } }
+    });
     return o;
   }
   function gravaEndereco(empurra) {
@@ -583,7 +588,8 @@ __ESPACO_DATA__
     if (+rng.value > 3) p.push('peso=' + rng.value);
     var h = '#' + p.join('&');
     if (h === location.hash) return;
-    if (empurra) history.pushState(null, '', h); else history.replaceState(null, '', h);
+    // página embutida sem acesso ao histórico: a vista segue valendo, só não vai para o endereço
+    try { if (empurra) history.pushState(null, '', h); else history.replaceState(null, '', h); } catch (e) { /* sem histórico */ }
   }
   function aplicaEndereco(inicial) {
     var o = leEndereco(), k;

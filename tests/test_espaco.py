@@ -329,3 +329,28 @@ def test_cena_abre_por_endereco_e_declara_empate_headless(pagina, root, cena):
     assert "Empate na vizinhança" in painel
     assert not vazios, f"números sem valor na página: {vazios}"
     assert "lente=agenda" in endereco
+
+
+def test_endereco_malformado_nao_quebra_headless(pagina, root):
+    """Um link estragado (codificação inválida, lente ou obra que não existem) abre a cena no
+    estado inicial em vez de derrubar a página."""
+    pytest.importorskip("playwright", reason="Playwright não instalado")
+    from playwright.sync_api import sync_playwright
+    erros = []
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        try:
+            pg = b.new_page(viewport={"width": 1280, "height": 800})
+            pg.on("pageerror", lambda e: erros.append(str(e)))
+            pg.goto(_uri(root, "espaco.html") + "#lente=nao-existe&obra=%E0%A4%A&peso=abc&sem=Foo,,&triade=-5&linhas=zzz&=x&solto")
+            pg.wait_for_timeout(700)
+            estado = pg.evaluate("() => ({lente: window.__espaco && window.__espaco.lente(), sel: window.__espaco && window.__espaco.cena.selecao().t,"
+                                 " pintada: document.getElementById('cena').width > 0})")
+            pg.click('#lentes button[data-lente="tempo"]')
+            pg.wait_for_timeout(300)
+            depois = pg.evaluate("() => window.__espaco.lente()")
+        finally:
+            b.close()
+    assert not erros, erros
+    assert estado == {"lente": "silos", "sel": "", "pintada": True}
+    assert depois == "tempo"
