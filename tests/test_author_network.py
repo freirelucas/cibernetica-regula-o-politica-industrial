@@ -57,3 +57,61 @@ def test_snowball_and_adjacent_files(root):
     for key in ["polanyi", "schumpeter", "hirschman",
                 "complexity_economics", "governmentality"]:
         assert key in A["probes"], f"probe ausente: {key}"
+
+
+# ── comunidades: o caminho sem igraph/leidenalg (é o da integração contínua) ──
+
+def _dois_grupos():
+    """Dois grupos de cinco autores, todos ligados entre si, unidos por uma única coautoria."""
+    a = [f"A{i}" for i in range(5)]
+    b = [f"B{i}" for i in range(5)]
+    viz = {n: set() for n in a + b + ["SOZINHO"]}
+    for g in (a, b):
+        for x in g:
+            viz[x] |= set(g) - {x}
+    viz["A0"].add("B0")
+    viz["B0"].add("A0")
+    return a, b, viz
+
+
+def test_reserva_separa_grupos_e_e_deterministica():
+    """A reserva tem de ser detecção de comunidade de verdade e dar sempre a mesma resposta."""
+    import author_network as an
+    a, b, viz = _dois_grupos()
+    nos = sorted(viz)
+    c1 = an._louvain(nos, viz)
+    assert len({c1[x] for x in a}) == 1 and len({c1[x] for x in b}) == 1
+    assert c1[a[0]] != c1[b[0]], "dois grupos unidos por uma só coautoria não podem virar um"
+    assert sorted(set(c1.values())) == [0, 1, 2]                 # numeração contígua
+    assert (c1["A0"], c1["B0"], c1["SOZINHO"]) == (0, 1, 2)      # maior primeiro; empate pelo nome
+    # a ordem em que as vizinhas chegam não pode mudar o resultado
+    assert c1 == an._louvain(nos, {k: sorted(v, reverse=True) for k, v in viz.items()})
+    assert c1 == an._louvain(nos, {k: sorted(v) for k, v in viz.items()})
+
+
+def test_reserva_termina_em_escala():
+    """A integração contínua roda sem leidenalg: a reserva não pode ser superlinear.
+
+    Uma versão anterior (Clauset-Newman-Moore em Python puro) estourava os 30 minutos do
+    run_all com ~147 mil autores. Aqui, 60 mil autores em grupos de seis, encadeados por uma
+    coautoria, têm de fechar com muita folga; o teto de tempo é largo de propósito, só para
+    acusar regressão de ordem. Não se exige um grupo por comunidade: a modularidade tem
+    limite de resolução e junta grupos vizinhos numa cadeia longa (o Leiden faz o mesmo).
+    Exige-se que nenhum grupo seja partido e que a cadeia não vire uma comunidade só.
+    """
+    import time
+    import author_network as an
+    viz, grupos = {}, []
+    for g in range(10_000):
+        grupo = [f"G{g:05d}_{i}" for i in range(6)]
+        grupos.append(grupo)
+        for x in grupo:
+            viz[x] = set(grupo) - {x}
+        if g:                                                    # uma ponte para o grupo anterior
+            viz[grupo[0]].add(f"G{g - 1:05d}_0")
+            viz[f"G{g - 1:05d}_0"].add(grupo[0])
+    t0 = time.time()
+    c = an._louvain(sorted(viz), viz)
+    assert time.time() - t0 < 120
+    assert all(len({c[x] for x in grupo}) == 1 for grupo in grupos), "um grupo coeso foi partido"
+    assert 50 <= len(set(c.values())) <= 10_000

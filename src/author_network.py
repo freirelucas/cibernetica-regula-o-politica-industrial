@@ -401,6 +401,96 @@ def build_coauthor_graph(works, min_score=0.0, authors=None):
     return edges
 
 
+def _louvain(nodes, edges, max_niveis=30, max_voltas=100, eps=1e-12):
+    """Comunidades por otimização de modularidade (Blondel et al., 2008), em versão
+    determinística e só com a biblioteca padrão.
+
+    É o recurso para quando igraph/leidenalg não estão instalados — o caso da integração
+    contínua. Persegue o MESMO objetivo do Leiden (modularidade), de modo que a partição
+    de reserva é comparável à canônica, ainda que os identificadores não coincidam.
+    Determinismo: nós em ordem fixa, vizinhas em ordem fixa, e empate de ganho resolvido
+    a favor de ficar onde está e, depois, da comunidade de menor índice.
+
+    Custo: cada varredura é linear no número de arestas, o que o mantém viável em Python
+    puro para a rede de coautoria inteira (~150 mil autores, ~450 mil coautorias). Dois
+    recursos anteriores falharam justamente aqui: Clauset-Newman-Moore em Python puro não
+    terminava nessa escala, e a propagação de rótulos com empate pelo menor rótulo fundia
+    num só grupo comunidades ligadas por uma única coautoria.
+    """
+    idx = {n: i for i, n in enumerate(nodes)}
+    adj = [dict() for _ in nodes]                  # i -> {j: peso}, sem autolaço
+    for a in nodes:
+        ia = idx[a]
+        for b in sorted(edges.get(a, ())):
+            ib = idx.get(b)
+            if ib is not None and ib != ia:
+                adj[ia][ib] = 1.0
+                adj[ib][ia] = 1.0
+    laco = [0.0] * len(nodes)                      # peso interno de cada supernó
+    membro = list(range(len(nodes)))               # supernó de cada autor
+    for _nivel in range(max_niveis):
+        n = len(adj)
+        grau = [sum(adj[i].values()) + 2.0 * laco[i] for i in range(n)]
+        m2 = sum(grau)                             # 2m
+        if m2 <= 0:
+            break
+        com = list(range(n))
+        tot = grau[:]                              # soma dos graus por comunidade
+        houve = False
+        for _volta in range(max_voltas):           # movimento local
+            moveu = 0
+            for i in range(n):
+                viz = adj[i]
+                if not viz:
+                    continue
+                ki, ci = grau[i], com[i]
+                pesos = {}
+                for j, w in viz.items():
+                    cj = com[j]
+                    pesos[cj] = pesos.get(cj, 0.0) + w
+                tot[ci] -= ki
+                melhor, g_melhor = ci, pesos.get(ci, 0.0) - tot[ci] * ki / m2
+                for c, w in pesos.items():
+                    if c == ci:
+                        continue
+                    g = w - tot[c] * ki / m2
+                    if g > g_melhor + eps or (melhor != ci and abs(g - g_melhor) <= eps and c < melhor):
+                        melhor, g_melhor = c, g
+                tot[melhor] += ki
+                if melhor != ci:
+                    com[i] = melhor
+                    moveu += 1
+            if not moveu:
+                break
+            houve = True
+        if not houve:
+            break
+        novo = {}                                  # agregação: uma comunidade vira um supernó
+        for i in range(n):
+            if com[i] not in novo:
+                novo[com[i]] = len(novo)
+        if len(novo) == n:
+            break
+        adj2 = [dict() for _ in range(len(novo))]
+        laco2 = [0.0] * len(novo)
+        for i in range(n):
+            a = novo[com[i]]
+            laco2[a] += laco[i]
+            for j, w in adj[i].items():
+                b = novo[com[j]]
+                if a == b:
+                    laco2[a] += w / 2.0            # cada aresta interna aparece duas vezes
+                else:
+                    adj2[a][b] = adj2[a].get(b, 0.0) + w
+        membro = [novo[com[x]] for x in membro]
+        adj, laco = adj2, laco2
+    grupos = {}
+    for x, nome in enumerate(nodes):
+        grupos.setdefault(membro[x], []).append(nome)
+    ordem = sorted(grupos.values(), key=lambda g: (-len(g), g[0]))   # numeração estável: maior primeiro
+    return {nome: k for k, g in enumerate(ordem) for nome in g}
+
+
 def leiden_communities(edges):
     """Detecção de comunidades na rede de coautoria.
 
@@ -409,34 +499,29 @@ def leiden_communities(edges):
     distintas — os `community_id` publicados não seriam reproduzíveis (verificado:
     três execuções sem semente dão duas partições diferentes; com semente, uma só).
 
-    Sem essas bibliotecas, cai em Clauset-Newman-Moore (`sfi_methods.cnm_communities`,
-    biblioteca padrão pura, determinístico) — que é detecção de comunidade de
-    verdade, ao contrário do antigo recurso a componentes conexos, que punha
-    quase toda a rede numa comunidade só.
+    Sem essas bibliotecas, cai em Louvain determinístico em Python puro (`_louvain`,
+    mesmo objetivo: modularidade) e avisa: os identificadores não coincidem com os do
+    Leiden, e a versão publicada do sítio deve ser construída com as bibliotecas.
     """
     nodes = sorted(edges.keys())
     try:
         import igraph as ig
         import leidenalg
-        idx = {n: i for i, n in enumerate(nodes)}
-        es = set()
-        for a, neighbors in edges.items():
-            for b in neighbors:
-                if a < b:
-                    es.add((idx[a], idx[b]))
-        g = ig.Graph(n=len(nodes), edges=sorted(es), directed=False)
-        part = leidenalg.find_partition(g, leidenalg.ModularityVertexPartition,
-                                        seed=LEIDEN_SEED)
-        return {nodes[i]: comm_id for comm_id, comm in enumerate(part) for i in comm}
     except ImportError:
-        import sfi_methods
-        links = [{"source": a, "target": b, "peso": 1}
-                 for a in edges for b in edges[a] if a < b]
-        comm, _q, _k = sfi_methods.cnm_communities(nodes, links, weight="peso")
-        sys.stderr.write("AVISO: leidenalg/igraph ausentes — comunidades por "
-                         "Clauset-Newman-Moore (determinístico), não por Leiden; "
-                         "os community_id NÃO coincidirão com os publicados.\n")
-        return comm
+        sys.stderr.write("AVISO: leidenalg/igraph ausentes — comunidades por Louvain em Python "
+                         "puro (determinístico), não por Leiden; os community_id NÃO "
+                         "coincidirão com os publicados. Instale com "
+                         "'python -m pip install python-igraph leidenalg'.\n")
+        return _louvain(nodes, edges)
+    idx = {n: i for i, n in enumerate(nodes)}
+    es = set()
+    for a, neighbors in edges.items():
+        for b in neighbors:
+            if a < b:
+                es.add((idx[a], idx[b]))
+    g = ig.Graph(n=len(nodes), edges=sorted(es), directed=False)
+    part = leidenalg.find_partition(g, leidenalg.ModularityVertexPartition, seed=LEIDEN_SEED)
+    return {nodes[i]: comm_id for comm_id, comm in enumerate(part) for i in comm}
 
 
 def snowball_top_authors(authors_sorted, n_authors=15, per_author=50, corpus_ids=None):
