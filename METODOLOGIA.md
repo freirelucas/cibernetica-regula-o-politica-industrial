@@ -117,3 +117,49 @@ desassistida — com vocabulário adequado ela aparece em 27% das obras. O meio 
 não é separável com este instrumento. Enquanto não houver vocabulário validado externamente e
 conferência manual de amostra, **isto não entra no relatório como achado** — fica como
 derivado exploratório.
+
+## 6. O espaço 3D — posição por regra, não por física
+
+`docs/espaco.html` desenha as 250 obras do núcleo cocitado num tetraedro cujos vértices são
+as quatro tradições. A posição de cada obra é a **composição da sua vizinhança de
+cocitação**: a contagem de vizinhas de rótulo observado em cada tradição, dividida pelo
+total (`src/espaco.py`, função `composicao`). É a mesma contagem da regra de inferência do
+§4; por isso o rótulo inferido de uma obra é sempre um vértice mais próximo dela, e a cena
+é o retrato geométrico do que `infer_validation.py` mede: as 14 obras de rótulo observado
+que ficam longe do vértice da sua cor são exatamente os erros da validação (118 acertos em
+133, mais uma obra sem vizinha rotulada).
+
+**Por que não um layout de forças.** Com 250 nós e 7.171 arestas (densidade 0,23), a física
+produz um novelo em que nenhum eixo quer dizer coisa alguma, e o desenho muda a cada
+semente. Aqui a posição é o dado e é a mesma em qualquer execução. O único ajuste é um
+afastamento determinístico, de no máximo 5% da aresta, para que as obras não se sobreponham.
+
+**O que a cena codifica, e o que não.** Forma e cor dizem a tradição, de propósito
+redundantes, para a leitura sobreviver à escala de cinza; sólido cheio ou vazado diz se o
+rótulo é observado ou inferido; o tamanho acompanha as citações recebidas. A distância entre
+duas obras **não** mede a cocitação entre elas: mede a diferença de mistura. A lente do tempo
+troca a regra (ano no eixo horizontal, uma raia por tradição, altura igual à parcela da
+vizinhança que está fora da própria tradição); a lente da origem separa observados e
+inferidos em dois andares, na mesma posição horizontal.
+
+**Empates — achado ao construir a cena.** Em 4 das 117 obras de rótulo inferido, duas
+tradições empatam na contagem. A regra de origem (`max` sobre um dicionário, em
+`build_site.explorer_network`) decide então pela ordem em que as arestas são lidas:
+reprodutível, porque a rede é versionada, mas sem base de medida. Nenhuma das quatro entra
+na agenda. Desempatar pelo peso somado de cocitação trocaria o rótulo de duas delas, de
+cibernética para política industrial; como nenhum dos dois critérios é mais defensável do
+que declarar o empate, a página declara — no painel da obra e na lente da origem — e o
+rótulo publicado não foi alterado. O conjunto de validação não tem empates, de modo que a
+acurácia do §4 não depende do critério.
+
+**Lente da nota.** `data/td_referencias.json` é a transcrição curada da bibliografia do texto
+para discussão — 74 referências, sendo 58 obras e 16 atos normativos —, com o identificador
+OpenAlex das obras que estão no núcleo. Só entram identificadores que existem na rede (há
+teste automatizado); 20 das 58 obras estão no núcleo, 13 com rótulo observado e 7 com rótulo
+inferido. Remover o arquivo desliga a lente. A mesma lente mostra as listas de referências
+do corpus sem projeção, que é o dado de origem da cocitação: das 1.383 listas, 13 (0,9%)
+tocam as três tradições canônicas.
+
+**Autocontenção.** O motor da cena (`src/espaco3d.js`) é próprio, em canvas 2D, com os cinco
+sólidos de Platão construídos e conferidos numericamente (vértices, arestas, faces e relação
+de Euler). Não há WebGL, não há biblioteca nova e a página não faz carga externa.

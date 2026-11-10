@@ -35,10 +35,13 @@ from token_injection import (  # noqa: E402
 import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
 import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
 import data_io  # noqa: E402  (PR-2 — leitura tolerante dos derivados em data/)
+import espaco  # noqa: E402  (cena 3D: cada obra no ponto da mistura da sua cocitação)
 
 TEMPLATE = os.path.join(HERE, "site_template.html")
 EXPLORER_TPL = os.path.join(HERE, "explorador_template.html")
 TRIAGEM_TPL = os.path.join(HERE, "triagem_template.html")
+ESPACO_TPL = os.path.join(HERE, "espaco_template.html")
+ESPACO_JS = os.path.join(HERE, "espaco3d.js")
 JSON_SRC = data_io.data_path("scisci_results.json")
 DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
@@ -48,13 +51,24 @@ SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupa
             "limitacoes", "glossario", "referencias"]
 
 
+_TEM_ESPACO = None    # main() define: a aba do Espaço 3D só existe se a página for mesmo gerada
+
+
 def global_nav(active):
-    """Navegação consistente entre as três telas (Estudo · Explorador · Triagem),
+    """Navegação consistente entre as telas (Estudo · Explorador · Espaço 3D · Triagem),
     injetada via token ``__GLOBAL_NAV__``. Auto-contida (estilo embutido) para
-    ficar idêntica nas três páginas sem duplicar CSS à mão."""
+    ficar idêntica em todas as páginas sem duplicar CSS à mão. A aba do Espaço 3D
+    só existe se a página for gerada (modelo presente e rede não vazia) — sem isso,
+    não se cria link morto.
+
+    Tela estreita (até 560 px): as abas ficam compactas (cabem em 320 px), a marca
+    da barra sai — a aba ativa já diz onde se está — e, se ainda assim faltar
+    espaço, as abas quebram linha em vez de empurrar a página para o lado."""
     tabs = [("estudo", "index.html", "Estudo"),
-            ("explorador", "explorador.html", "Explorador"),
-            ("triagem", "triagem.html", "Triagem")]
+            ("explorador", "explorador.html", "Explorador")]
+    if os.path.exists(ESPACO_TPL) if _TEM_ESPACO is None else _TEM_ESPACO:
+        tabs.append(("espaco", "espaco.html", "Espaço 3D"))
+    tabs.append(("triagem", "triagem.html", "Triagem"))
     links = []
     for key, href, label in tabs:
         cls = "gnav-tab is-active" if key == active else "gnav-tab"
@@ -62,12 +76,17 @@ def global_nav(active):
         links.append(f'<a href="{href}" class="{cls}"{cur}>{label}</a>')
     style = (
         "<style>"
-        ".gnav{display:inline-flex;gap:3px;align-items:center}"
+        ".gnav{display:inline-flex;flex-wrap:wrap;gap:3px;align-items:center;flex:0 1 auto;min-width:0}"
         ".gnav-tab{font-family:var(--mono,'JetBrains Mono',ui-monospace,monospace);font-size:11px;"
         "font-weight:500;color:#6b6560;text-decoration:none;padding:.34rem .62rem;border-radius:5px;"
         "border:1px solid transparent;white-space:nowrap}"
         ".gnav-tab:hover{color:#0e0e0e;background:rgba(14,14,14,.06);text-decoration:none}"
         ".gnav-tab.is-active{color:#fff;background:#4b3fc2;border-color:#4b3fc2}"
+        "@media (pointer:coarse){.gnav-tab{display:inline-flex;align-items:center;min-height:44px;"
+        "padding:.3rem .7rem;font-size:12px}}"
+        "@media (max-width:560px){.gnav{gap:2px}.gnav-tab{display:inline-flex;align-items:center;"
+        "justify-content:center;min-height:44px;padding:0 4px;font-size:11px}"
+        ".topbar .brand{display:none}}"
         "</style>"
     )
     return (style + '<span class="gnav" role="navigation" aria-label="Telas do estudo">'
@@ -401,10 +420,17 @@ def main():
     base = build_js(R) + f"const META={json.dumps(meta, ensure_ascii=False)};\n"
     net_src = data_io.data_path("network.json")
     net = data_io.load_data("network.json", required=False, default={"nodes": [], "links": []})
+    # rede do explorador: calculada uma vez e reaproveitada pelo explorador e pelo espaço 3D
+    expl_net = explorer_network() if (os.path.exists(EXPLORER_TPL) or os.path.exists(ESPACO_TPL)) else None
+    cena = (espaco.dados(expl_net)
+            if expl_net and expl_net["nodes"] and os.path.exists(ESPACO_TPL) else None)
+    global _TEM_ESPACO
+    _TEM_ESPACO = bool(cena)
     js = base + f"const NETWORK={json.dumps(net, ensure_ascii=False)};\n"
     js += f"const NETMETA={json.dumps(net_stats(net), ensure_ascii=False)};\n"
+    js += f"const HERO3D={json.dumps(espaco.heroi(cena) if cena else [], separators=(',', ':'))};\n"
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
-    html = html.replace("__GLOBAL_NAV__", global_nav("estudo"))   # nav consistente entre as 3 telas
+    html = html.replace("__GLOBAL_NAV__", global_nav("estudo"))   # nav consistente entre as telas
     html = inject_hypergraph_numbers(html)           # XGI_* tokens ← data/cocitation_hyperedges.json
     html = inject_author_network_numbers(html)       # AUTHORNET_* tokens ← data/author_network.json
     html = inject_brazil_numbers(html)               # BRASIL_* tokens ← data/brazil_expanded.json
@@ -418,16 +444,29 @@ def main():
     print(f"site:  {index}  ({os.path.getsize(index)//1024} KB)")
 
     if os.path.exists(EXPLORER_TPL):                 # explorador: rede ampliada com papéis P/z
-        expl_net = explorer_network()
         expl_js = base + f"const NETWORK={json.dumps(expl_net, ensure_ascii=False)};\n"
         expl_js += f"const NETMETA={json.dumps(net_stats(expl_net), ensure_ascii=False)};\n"
         with open(EXPLORER_TPL, encoding="utf-8") as f:
             expl = (f.read().replace("__JS_DATA__", expl_js)
+                    .replace("__N_OBRAS__", str(len(expl_net["nodes"])))   # contagem lida da rede
                     .replace("__GLOBAL_NAV__", global_nav("explorador")))
         explorer = os.path.join(DOCS, "explorador.html")
         with open(explorer, "w", encoding="utf-8") as f:
             f.write(expl)
         print(f"expl:  {explorer}  ({os.path.getsize(explorer)//1024} KB, {len(expl_net['nodes'])} nós)")
+
+    if cena:                                         # espaço 3D: posição = mistura da cocitação (regra, não física)
+        bloco = json.dumps(cena, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+        with open(ESPACO_TPL, encoding="utf-8") as f:
+            esp = (f.read().replace("__ESPACO_DATA__", f"const ESPACO={bloco};")
+                   .replace("__GLOBAL_NAV__", global_nav("espaco")))
+        espaco_html = os.path.join(DOCS, "espaco.html")
+        with open(espaco_html, "w", encoding="utf-8") as f:
+            f.write(esp)
+        shutil.copy(ESPACO_JS, os.path.join(DOCS, "espaco3d.js"))
+        print(f"espaço: {espaco_html}  ({os.path.getsize(espaco_html)//1024} KB, "
+              f"{len(cena['nos'])} obras, {len(cena['triades'])} tríades, "
+              f"lente da nota: {'sim' if cena['nota'] else 'não'})")
 
     if os.path.exists(TRIAGEM_TPL):
         # PR-7 — estado da triagem vem do arquivo VERSIONADO (não do navegador):

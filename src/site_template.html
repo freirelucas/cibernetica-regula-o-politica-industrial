@@ -53,11 +53,32 @@ em{font-style:italic}
 .triagem-link:hover{background:var(--ink);border-color:var(--ink);color:var(--paper);text-decoration:none}
 .explore-link:hover{background:var(--cyb);color:var(--paper);text-decoration:none}
 .navmenu>summary:focus-visible,.navlist a:focus-visible,.dl-btn:focus-visible{outline:2px solid var(--cyb);outline-offset:2px}
+@media(max-width:560px){
+  .topbar{flex-wrap:wrap;gap:4px 8px;padding:.3rem .75rem}
+  .topbar .navmenu{margin-left:auto}
+  .navmenu>summary{display:flex;align-items:center;min-height:44px;padding:0 .55rem}
+  .navmenu[open]>.navlist{left:auto;right:0;max-width:calc(100vw - 1.5rem)}
+  .navlist a{white-space:normal;padding:.75rem .7rem}
+}
 @media(min-width:901px){
   .navmenu>summary{display:none}
   .navmenu>.navlist{display:flex!important;flex-wrap:wrap;align-items:center;gap:1px;position:static;border:none;box-shadow:none;padding:0;min-width:0;max-height:none;overflow:visible;background:none}
 }
 .masthead{border-bottom:1px solid var(--border-s);padding:3.25rem 2.5rem 2.5rem;position:relative;overflow:hidden}
+.hero3d{display:none}
+@media (min-width:1120px){
+  .masthead{display:grid;grid-template-columns:minmax(0,900px) minmax(0,1fr);gap:1.5rem;align-items:center}
+  .hero3d{display:block;min-width:0;justify-self:end;width:100%;max-width:470px;text-decoration:none;color:var(--ink)}
+}
+@media (min-width:560px) and (max-width:1119.98px){
+  .hero3d{display:block;margin-top:1.6rem;max-width:480px;text-decoration:none;color:var(--ink)}
+}
+.hero3d:hover{text-decoration:none}
+.hero3d canvas{display:block;width:100%;aspect-ratio:1.16/1;cursor:grab;touch-action:pan-y}
+.hero3d.sem-cena canvas{display:none}
+.hero3d-leg{display:block;font-size:.84rem;line-height:1.45;color:var(--muted);margin-top:.15rem}
+.hero3d-leg strong{font-weight:500;color:var(--cyb);text-decoration:underline;text-underline-offset:2px}
+.hero3d:focus-visible{outline:3px solid var(--cyb);outline-offset:4px}
 .masthead::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cyb) 0%,var(--reg) 50%,var(--pi) 100%)}
 .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:.85rem;display:flex;align-items:center;gap:12px}
 .kicker::after{content:'';display:inline-block;width:32px;height:1px;background:var(--border-s)}
@@ -170,13 +191,14 @@ h1 em{font-style:italic;color:var(--muted)}
 .funnel-step .ft{font-size:.9rem}
 .funnel-step .fd{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:3px}
 /* Central de downloads */
-.dl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;margin:.75rem 0 1rem}
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:8px;margin:.75rem 0 1rem}
 .dl-group{grid-column:1/-1;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:.7rem 0 0;padding-top:.3rem;border-top:1px solid var(--border)}
 .dl-group:first-child{margin-top:0;border-top:none;padding-top:0}
 .dl-btn{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.7rem .9rem;color:var(--ink);transition:border-color .15s}
 .dl-btn:hover{border-color:var(--cyb);text-decoration:none}
 .dl-btn svg{flex-shrink:0;color:var(--cyb)}
-.dl-name{font-family:var(--mono);font-size:11.5px;font-weight:500;display:block}
+.dl-btn>div{min-width:0}
+.dl-name{font-family:var(--mono);font-size:11.5px;font-weight:500;display:block;overflow-wrap:anywhere}
 .dl-desc{font-size:11px;color:var(--muted);display:block;margin-top:1px}
 /* Glossário e referências */
 .gloss{font-size:.9rem}
@@ -185,14 +207,14 @@ h1 em{font-style:italic;color:var(--muted)}
 .gloss .src{font-style:italic}
 .refs{font-family:var(--serif);font-size:.88rem;line-height:1.6}
 .refs li{margin-bottom:.55rem;list-style:none;padding-left:1.4em;text-indent:-1.4em}
-.callout{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem;margin:1rem 0;font-size:.9rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
+.callout{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:1rem 1.1rem;margin:1rem 0;font-size:.9rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto;overflow-wrap:break-word}
 .rtabs{display:flex;gap:6px;flex-wrap:wrap;margin:.7rem 0 .2rem;text-align:left}
 .rtab{font-family:var(--mono);font-size:11px;padding:.4rem .75rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper);color:var(--ink);cursor:pointer}
 .rtab:hover{border-color:var(--cyb)}.rtab.on{background:var(--cyb);color:var(--paper);border-color:var(--cyb)}
 #rdesc{text-align:left}
 a.fmt{display:inline-block;font-family:var(--mono);font-size:11px;padding:.3rem .6rem;border:1px solid var(--border-s);border-radius:4px;margin:2px 4px 2px 0;color:var(--cyb)}
 a.fmt:hover{background:var(--cyb);color:var(--paper);text-decoration:none}
-.callout code{font-family:var(--mono);font-size:.82rem;background:var(--paper);padding:1px 5px;border-radius:3px}
+.callout code{font-family:var(--mono);font-size:.82rem;background:var(--paper);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
 pre.code{background:var(--ink);color:#e8e6f8;font-family:var(--mono);font-size:11.5px;line-height:1.7;padding:1rem 1.1rem;border-radius:6px;overflow-x:auto;margin:.75rem 0}
 .sidenav{position:fixed;right:1.5rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:7px;z-index:100}
 .sidenav a{width:6px;height:6px;border-radius:50%;background:var(--border-s);display:block;transition:transform .15s,background .15s}
@@ -335,7 +357,7 @@ pre.code{max-width:100%}
 <div class="preliminar" role="note"><strong>Material preliminar</strong> — versão de trabalho, sujeita a revisão. Não citar como versão final. <strong>Reframe aplicada:</strong> o eixo <em>Regulação econômica</em> foi re-semeado (vinte sementes por eixo, sessenta no total) e o corpus reprocessado pelo funil (6.340 trabalhos); o explorador e as seções quantitativas já refletem a rede nova. Resíduo: a rede de coautoria (§10·6) ainda deriva do recorte anterior.</div>
 
 <header class="masthead">
-  <div style="max-width:900px">
+  <div class="mast-texto" style="max-width:900px">
     <div class="kicker">IPEA · DIEST-COGIT · Cienciometria</div>
     <h1>Cibernética Organizacional, Regulação<br>e <em>Política Industrial</em></h1>
     <p class="subtitle">Mapeamento da estrutura intelectual de um campo em formação: uma análise cienciométrica das tradições que conectam o controle de sistemas, a regulação econômica e a estratégia de desenvolvimento produtivo.</p>
@@ -347,6 +369,10 @@ pre.code{max-width:100%}
       <span id="gen-date" style="margin-left:auto"></span>
     </div>
   </div>
+  <a class="hero3d" id="hero3d-link" href="espaco.html" aria-label="Abrir o espaço 3D das tradições">
+    <canvas id="hero3d" aria-hidden="true"></canvas>
+    <span class="hero3d-leg"><span id="hero3d-n">As obras</span> do núcleo cocitado, cada uma no ponto que corresponde à mistura da sua cocitação entre quatro tradições. Arraste para girar. <strong>Abrir o espaço 3D</strong></span>
+  </a>
 </header>
 
 <!-- 00 · RESUMO -->
@@ -392,6 +418,7 @@ details.act>summary .act-n{color:var(--cyb);font-weight:600}
     <div class="starttools">
       <span class="hint">ferramentas:</span>
       <a href="explorador.html">Explorador — modo “só as pontes” &nearr;</a>
+      <a href="espaco.html">Espaço 3D — cada obra pela mistura da sua cocitação &nearr;</a>
       <a href="triagem.html">Triagem (Rayyan) — o que o algoritmo achou &nearr;</a>
     </div>
   </aside>
@@ -764,7 +791,9 @@ details.act>summary .act-n{color:var(--cyb);font-weight:600}
     construção PROV_PCT_EXPOSTA% têm um membro inferido. Descartando <em>toda</em> inferência,
     <strong>PROV_N_NUCLEO alvos (PROV_PCT_NUCLEO%) permanecem</strong> — é o <strong>núcleo
     duro</strong> da agenda, e é por ele que se deve começar. Verificação reprodutível:
-    <code>src/infer_validation.py</code> e <code>src/observed_only_check.py</code>.</div>
+    <code>src/infer_validation.py</code> e <code>src/observed_only_check.py</code>. As tríades e a
+    origem de cada rótulo podem ser percorridas no espaço 3D: <a href="espaco.html#lente=agenda">lente
+    da agenda</a> e <a href="espaco.html#lente=prov">lente da origem</a>.</div>
     SOLIDEZ_TABLE
     <p class="fig-cap">Cada <em>alvo de construção</em> é, literalmente, uma hipótese de trabalho a escrever — a obra (ou par) que citaria as tradições juntas onde hoje há mais resistência. A confiança modal é exposta por membro (obra &gt; autor &gt; conceito), nunca homogeneizada. Limiares e parâmetros versionados em <code>data/solidity_config.json</code>; dados completos em <a href="dados/12_pontes_candidatas.csv"><code>12_pontes_candidatas.csv</code></a> e <a href="dados/13_diagrama_solidez.csv"><code>13_diagrama_solidez.csv</code></a>. Método em <code>src/solidity.py</code> — integração = redução do índice de Kirchhoff (resistência efetiva; Laplaciano pseudo-inverso); fechamento simplicial: Benson, Abebe, Schaub, Jadbabaie &amp; Kleinberg, 2018.</p>
   </div>
@@ -1015,6 +1044,19 @@ python src/build_site.py                # este site (docs/)</pre>
   <span>Small (1973) · van Eck &amp; Waltman (2009) · Traag et al. (2019) · Kleinberg (2003) · Ke et al. (2015)</span>
 </footer>
 
+<script src="espaco3d.js" defer></script>
+<script>
+window.addEventListener('DOMContentLoaded', function () {
+  var elo = document.getElementById('hero3d-link'), tela = document.getElementById('hero3d');
+  if (!elo || !tela) return;
+  try {
+    if (!window.Espaco3D || typeof HERO3D === 'undefined' || !HERO3D.length || getComputedStyle(elo).display === 'none') throw new Error('sem cena');
+    var cena = Espaco3D.heroi(tela, HERO3D);
+    document.getElementById('hero3d-n').textContent = 'As ' + HERO3D.length + ' obras';
+    elo.addEventListener('click', function (e) { var girou = cena.arrastou(); cena.limpaArrasto(); if (girou) e.preventDefault(); });
+  } catch (err) { elo.classList.add('sem-cena'); }
+});
+</script>
 <script>
 __JS_DATA__
 

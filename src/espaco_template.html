@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Espaço 3D das tradições · Cibernética × Regulação × Política industrial</title>
+<meta name="description" content="As 250 obras do núcleo cocitado, cada uma no ponto que corresponde à mistura da sua cocitação entre quatro tradições. Cinco lentes: silos, tempo, origem do rótulo, agenda e a bibliografia da nota.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Cpath d=%22M8 1.5 15 14H1z%22 fill=%22%234b3fc2%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vendor/fonts.css">
+<style>
+:root{--ink:#0e0e0e;--paper:#f5f2ed;--surface:#ede9e2;--border:rgba(14,14,14,.14);--border-s:rgba(14,14,14,.28);--cyb:#4b3fc2;--reg:#1a7a5e;--pi:#b85c10;--cplx:#2a9d8f;--muted:#6b6560;--mono:'JetBrains Mono',monospace;--serif:'Spectral',serif;--sans:'DM Sans',system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15.5px;line-height:1.55;display:flex;flex-direction:column;height:100dvh;overflow:hidden}
+a{color:var(--cyb);text-decoration:underline;text-underline-offset:2px}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--cyb);outline-offset:2px}
+.so-leitor{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.pular{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--ink);color:var(--paper);padding:.7rem 1rem;border-radius:6px}
+.pular:focus{left:8px}
+.topbar{flex:none;min-height:46px;display:flex;align-items:center;gap:14px;padding:0 1.1rem;border-bottom:1px solid var(--border-s);background:rgba(245,242,237,.96);font-family:var(--mono);font-size:11px;overflow-x:auto}
+.topbar .brand{font-weight:500;white-space:nowrap}
+
+.palco{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(320px,390px) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
+.lentes-nav{grid-column:1;grid-row:1;background:var(--surface);border-right:1px solid var(--border-s);padding:.85rem 1.1rem .7rem}
+.trilho{grid-column:1;grid-row:2;min-height:0;overflow-y:auto;background:var(--surface);border-right:1px solid var(--border-s);padding:.2rem 1.1rem 2rem}
+.cena{grid-column:2;grid-row:1 / span 2;position:relative;min-width:0;min-height:0;overflow:hidden}
+#cena{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+#cena:active{cursor:grabbing}
+#cena:focus-visible{outline-offset:-4px}
+#dt:focus{outline:none}
+
+.lentes{display:grid;grid-template-columns:repeat(var(--n-lentes,5),minmax(0,1fr));gap:5px;margin:0;padding:0;list-style:none}
+.lentes button{width:100%;min-height:48px;border:1px solid var(--border-s);background:var(--paper);border-radius:7px;font-size:13px;font-weight:500;line-height:1.15;padding:.3rem .15rem;cursor:pointer}
+.lentes button .n{display:block;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.lentes button:hover{border-color:var(--ink)}
+.lentes button[aria-current="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.lentes button[aria-current="true"] .n{color:#d8d3cb}
+
+.busca{margin:.75rem 0 0;position:relative}
+.busca label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.2rem}
+.busca input{width:100%;min-height:44px;padding:.5rem .7rem;border:1px solid var(--border-s);border-radius:7px;background:var(--paper)}
+.res{list-style:none;margin:.3rem 0 0;padding:0}
+.res li{margin:0}
+.res button,.lista-obras button,.lista-tri button{display:block;width:100%;text-align:left;min-height:44px;padding:.45rem .6rem;border:0;border-bottom:1px solid var(--border);background:transparent;cursor:pointer;font-size:.86rem;line-height:1.3;overflow-wrap:anywhere}
+.res button:hover,.lista-obras button:hover,.lista-tri button:hover{background:rgba(14,14,14,.06)}
+.res .vazio{font-size:.86rem;color:var(--muted);padding:.4rem .1rem}
+
+.lente h2{font-family:var(--serif);font-weight:600;font-size:1.6rem;line-height:1.18;margin:1rem 0 .55rem;text-wrap:balance}
+.lente .resposta{font-size:1rem;line-height:1.5;margin:0 0 1rem}
+.lente h3{font-size:.92rem;font-weight:700;margin:1.15rem 0 .25rem}
+.lente p{margin:0 0 .7rem;font-size:.9rem}
+.elo{display:inline-flex;align-items:center;min-height:44px}
+.lente cite{font-style:italic}
+.numeros{margin:0 0 1rem;border-top:1px solid var(--border-s)}
+.numeros>div{padding:.55rem 0 .5rem;border-bottom:1px solid var(--border)}
+.numeros dt{font-size:.84rem;color:var(--muted)}
+.numeros dd{margin:0;font-size:.9rem}
+.numeros dd b{font-family:var(--serif);font-size:1.5rem;font-weight:600;font-variant-numeric:lining-nums tabular-nums;line-height:1.2}
+table.mini{border-collapse:collapse;width:100%;font-size:.82rem;font-variant-numeric:tabular-nums;margin:.2rem 0 1rem}
+table.mini caption{caption-side:top;text-align:left;font-size:.84rem;color:var(--muted);padding-bottom:.3rem}
+table.mini th,table.mini td{padding:.32rem .35rem;text-align:right;border-bottom:1px solid var(--border);font-weight:400}
+table.mini thead th{font-weight:600;border-bottom-color:var(--border-s)}
+table.mini th:first-child,table.mini td:first-child{text-align:left}
+table.mini td.diag{font-weight:700}
+.proxima,.acao{min-height:44px;padding:.5rem .9rem;border:1px solid var(--ink);background:var(--paper);border-radius:7px;font-weight:500;cursor:pointer}
+.proxima:hover,.acao:hover{background:var(--ink);color:var(--paper)}
+.lista-tri,.lista-obras{list-style:none;margin:.2rem 0 .8rem;padding:0;border-top:1px solid var(--border)}
+.lista-tri .et{display:inline-block;font-size:.78rem;color:var(--muted);margin-left:.3rem}
+.refs{list-style:none;margin:.2rem 0 .9rem;padding:0;font-size:.84rem}
+.refs li{padding:.4rem 0;border-bottom:1px solid var(--border);overflow-wrap:anywhere}
+details.dobra{margin:.4rem 0 .9rem}
+details.dobra>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:600;font-size:.9rem}
+.ajuda ul{margin:.2rem 0 0;padding-left:1.1rem;font-size:.86rem}
+.ajuda li{margin:.25rem 0}
+kbd{font-family:var(--mono);font-size:.8em;border:1px solid var(--border-s);border-radius:4px;padding:.05em .35em;background:var(--paper)}
+
+.legenda{position:absolute;left:12px;top:12px;max-width:min(760px,calc(100% - 24px));max-height:calc(100% - 84px);overflow-y:auto;background:rgba(245,242,237,.95);border:1px solid var(--border-s);border-radius:11px;padding:.5rem .6rem;font-size:.84rem}
+@media (min-width:861px){.cena.com-detalhe .legenda{max-width:calc(100% - 392px)}}
+.legenda>summary{display:none}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:0 .75rem;border:1px solid var(--border-s);border-radius:22px;background:var(--paper);font-size:.86rem;font-weight:500;cursor:pointer}
+.chip .ct{color:var(--muted);font-variant-numeric:tabular-nums;font-size:.8rem;font-weight:400}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="false"]{opacity:.6;text-decoration:line-through;background:transparent}
+.chave{display:flex;flex-wrap:wrap;align-items:center;gap:.15rem .95rem;margin:.4rem .25rem 0;line-height:1.35}
+.chave span{display:inline-flex;align-items:center;gap:.35rem}
+.ajustes>summary{cursor:pointer;min-height:44px;display:inline-flex;align-items:center;font-weight:600;padding:0 .3rem}
+.linha-topo{display:flex;flex-wrap:wrap;align-items:flex-start;gap:6px 10px}
+.refs a{display:inline-flex;align-items:center;min-height:44px}
+.ctl{max-width:310px;padding:.1rem .3rem .3rem}
+.ctl label{display:block;font-size:.84rem;color:var(--muted)}
+.ctl select{width:100%;min-height:44px;border:1px solid var(--border-s);border-radius:7px;background:var(--paper);padding:.3rem .4rem;margin:.15rem 0 .5rem}
+.ctl input[type=range]{width:100%;accent-color:var(--ink);min-height:44px}
+.ctl p{margin:0 0 .3rem}
+.ctl label.marca{display:flex;align-items:center;gap:.55rem;min-height:44px;color:var(--ink);font-size:.86rem;cursor:pointer}
+.ctl input[type=checkbox]{width:20px;height:20px;accent-color:var(--ink);flex:none}
+.g{width:15px;height:15px;flex:none}
+.controles{position:absolute;right:12px;bottom:12px;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100% - 24px)}
+.controles button{min-width:46px;min-height:46px;padding:0 .8rem;border:1px solid var(--border-s);background:rgba(245,242,237,.95);border-radius:9px;font-weight:500;font-size:.9rem;cursor:pointer}
+.controles button:hover{border-color:var(--ink)}
+.breve{display:none}
+.controles .sinal{font-size:1.35rem;line-height:1;padding:0}
+
+.detalhe{position:absolute;right:12px;top:12px;width:344px;max-width:calc(100% - 24px);max-height:calc(100% - 86px);overflow-y:auto;background:var(--paper);border:1px solid var(--border-s);border-radius:11px;padding:.9rem 1.05rem 1rem;box-shadow:0 14px 34px rgba(14,14,14,.15)}
+.detalhe[hidden]{display:none}
+.detalhe h2{font-family:var(--serif);font-size:1.12rem;font-weight:600;line-height:1.3;margin:0 2.4rem .25rem 0;overflow-wrap:anywhere}
+.detalhe .meta{font-size:.84rem;color:var(--muted);margin:0 0 .6rem}
+.detalhe p{font-size:.88rem;margin:0 0 .6rem}
+.detalhe h3{font-size:.86rem;font-weight:700;margin:.8rem 0 .2rem}
+.detalhe .fechar{position:absolute;top:6px;right:6px;width:44px;height:44px;border:0;background:transparent;font-size:1.5rem;line-height:1;cursor:pointer;border-radius:8px}
+.detalhe .fechar:hover{background:rgba(14,14,14,.07)}
+.selo{display:inline-flex;align-items:center;gap:.35rem;font-weight:700}
+.barra{display:block;height:8px;border-radius:2px;min-width:1px}
+table.mix{border-collapse:collapse;width:100%;font-size:.84rem;font-variant-numeric:tabular-nums;margin:.1rem 0 .5rem}
+table.mix td{padding:.22rem .3rem .22rem 0;vertical-align:middle}
+table.mix td.num{text-align:right;white-space:nowrap}
+table.mix td.b{width:42%}
+.acoes{display:flex;flex-wrap:wrap;gap:8px;margin-top:.8rem}
+.acoes a,.acoes button{display:inline-flex;align-items:center;min-height:44px;padding:.4rem .8rem;border:1px solid var(--border-s);border-radius:7px;background:var(--paper);font-size:.86rem;font-weight:500;cursor:pointer;text-decoration:none;color:var(--ink)}
+.acoes a:hover,.acoes button:hover{border-color:var(--ink)}
+.aviso{position:absolute;left:50%;top:14px;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:.55rem 1rem;border-radius:7px;font-size:.88rem;z-index:40;max-width:calc(100% - 24px)}
+.aviso[hidden]{display:none}
+.semjs{padding:2rem 1.25rem;max-width:60ch}
+
+@media (max-width:860px){
+  .palco{display:flex;flex-direction:column}
+  .lentes-nav{order:0;border-right:0;border-bottom:1px solid var(--border-s);padding:.55rem .7rem}
+  .cena{order:1;flex:0 0 50dvh}
+  .trilho{order:2;flex:1 1 auto;border-right:0;border-top:1px solid var(--border-s);padding:.1rem .95rem 1.6rem}
+  .busca{display:none}
+  .topbar{padding:0 .6rem;gap:8px}
+  .topbar .brand{display:none}
+  .lente h2{font-size:1.35rem;margin-top:.8rem}
+  .legenda{left:8px;top:8px;max-width:calc(100% - 16px);max-height:calc(100% - 74px);padding:0 .65rem}
+  .legenda[open]{padding-bottom:.5rem}
+  .legenda>summary{display:flex;align-items:center;min-height:44px;font-weight:700;cursor:pointer}
+  .controles{right:8px;bottom:8px;gap:6px}
+  .controles button{padding:0 .6rem}
+  .longo{display:none}.breve{display:inline}
+  .detalhe{position:fixed;left:0;right:0;top:auto;bottom:0;width:auto;max-width:none;max-height:60dvh;border-radius:16px 16px 0 0;border-bottom:0;z-index:30;padding-bottom:1.4rem}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media print{.topbar,.lentes-nav,.legenda,.controles,.busca,.ajuda,.proxima{display:none}body{height:auto;overflow:visible}.palco{display:block}.cena{height:70vh}.trilho{overflow:visible}}
+</style>
+</head>
+<body>
+<a class="pular" href="#trilho">Ir para a explicação da lente</a>
+<div class="topbar">
+  <span class="brand">Espaço das tradições</span>
+  __GLOBAL_NAV__
+</div>
+<noscript><p class="semjs">Esta vista precisa de JavaScript para desenhar a cena. A mesma rede está no <a href="explorador.html">Explorador</a> e, em tabela, nos <a href="index.html#dados">arquivos de dados</a>.</p></noscript>
+
+<main class="palco">
+  <nav class="lentes-nav" aria-label="Lentes da cena">
+    <ol class="lentes" id="lentes">
+      <li><button type="button" data-lente="silos" aria-current="true"><span class="n">1</span>Silos</button></li>
+      <li><button type="button" data-lente="tempo"><span class="n">2</span>Tempo</button></li>
+      <li><button type="button" data-lente="prov"><span class="n">3</span>Origem</button></li>
+      <li><button type="button" data-lente="agenda"><span class="n">4</span>Agenda</button></li>
+      <li data-so-nota><button type="button" data-lente="nota"><span class="n">5</span>A nota</button></li>
+    </ol>
+    <div class="busca">
+      <label for="q">Buscar obra pelo título ou autor</label>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Beer, Majone, Rodrik">
+      <ul class="res" id="res" aria-live="polite"></ul>
+    </div>
+  </nav>
+
+  <div class="trilho" id="trilho" tabindex="-1">
+
+    <section class="lente" data-lente="silos" aria-labelledby="t-silos">
+      <h2 id="t-silos">As tradições se misturam?</h2>
+      <p class="resposta">Quase não. Cada obra ocupa o ponto do tetraedro que corresponde à mistura das tradições com que é cocitada: no vértice, só aparece ao lado de obras da própria tradição; no centro, ao lado de todas.</p>
+      <dl class="numeros">
+        <div><dt>Modularidade da divisão por tradição</dt><dd><b data-n="silos.Q" data-c="3"></b> contra <span data-n="silos.Q_acaso" data-c="3"></span> ao acaso (z = <span data-n="silos.z" data-c="1"></span>)</dd></div>
+        <div><dt>Obras conectoras significativas</dt><dd><b data-n="silos.n_conectores"></b> de <span data-n="silos.n_nos"></span> testadas</dd></div>
+        <div><dt>Cocitação entre tradições diferentes</dt><dd><b data-n="blocos.pct_inter" data-c="1" data-s="%"></b> do peso entre obras de rótulo observado; <span data-n="blocos.pct_inter_canonico" data-c="1" data-s="%"></span> entre as três canônicas</dd></div>
+        <div><dt>Obras com menos da metade da vizinhança na própria tradição</dt><dd><b data-n="silos.obs_minoria_propria"></b> de <span data-n="silos.n_observadas"></span> de rótulo observado</dd></div>
+      </dl>
+      <table class="mini" id="tab-blocos"><caption>Peso de cocitação entre tradições, em % do total entre obras de rótulo observado</caption></table>
+      <h3>Como ler</h3>
+      <p>Forma e cor dizem a tradição. Sólido cheio: tradição atribuída pelo vocabulário ou por ser obra-semente. Sólido vazado: tradição inferida da vizinhança. O tamanho acompanha as citações recebidas. A posição vem da contagem de vizinhas de cada tradição; depois, as obras são afastadas no máximo <span data-n="regra.teto"></span>% da aresta para não se sobreporem.</p>
+      <h3>Limite</h3>
+      <p>A linha entre duas obras é cocitação: algum trabalho citou as duas. É uma projeção das listas de referências, e uma lista com k obras do núcleo gera k(k−1)/2 linhas de uma vez. Com <span data-n="rede.m"></span> linhas entre <span data-n="rede.n"></span> obras (densidade <span data-n="rede.densidade" data-c="2"></span>), a rede inteira não é legível; por isso a cena mostra, de início, só as linhas que cruzam tradições.</p>
+      <p><a class="elo" href="index.html#pontes">Ver a medida no relatório</a></p>
+      <button type="button" class="proxima" data-prox></button>
+    </section>
+
+    <section class="lente" data-lente="tempo" aria-labelledby="t-tempo" hidden>
+      <h2 id="t-tempo">Desde quando convivem sem se citar?</h2>
+      <p class="resposta">As três tradições canônicas já tinham obras no núcleo em <span data-n="tempo.copresenca" data-ano></span>. Conviver não aproximou: a parcela de cocitação dentro da própria tradição passou de <span data-n="tempo.decadas.1.f" data-c="2"></span> nos anos 1970 para <span data-n="tempo.decadas.4.f" data-c="2"></span> nos anos 2000.</p>
+      <table class="mini" id="tab-decadas"><caption>Cocitação acumulada por década do trabalho que cita</caption></table>
+      <h3>Como ler</h3>
+      <p>Da esquerda para a direita, o ano de publicação. Cada tradição tem uma raia. A altura é a parcela da vizinhança de cocitação que está fora da própria tradição: no chão, a obra só aparece com as suas; no alto, com as das outras.</p>
+      <h3>Limite</h3>
+      <p>A série por década vem do ano dos trabalhos que citam; a cena mostra o ano das obras citadas. São recortes diferentes do mesmo fenômeno. O ano é o do registro na base, de modo que reedições aparecem com a data da edição. É descrição, não explicação causal.</p>
+      <p><a class="elo" href="index.html#longue-duree">Ver a medida no relatório</a></p>
+      <button type="button" class="proxima" data-prox></button>
+    </section>
+
+    <section class="lente" data-lente="prov" aria-labelledby="t-prov" hidden>
+      <h2 id="t-prov">O que foi observado e o que foi inferido?</h2>
+      <p class="resposta">Das <span data-n="rede.n"></span> obras, <span data-n="prov.n_ouro"></span> têm tradição atribuída pelo vocabulário ou por serem sementes. As outras <span data-n="prov.vizinhanca"></span> recebem a tradição mais frequente na vizinhança de cocitação, que é o vértice mais próximo. A cena separa os dois grupos em andares.</p>
+      <dl class="numeros">
+        <div><dt>Rótulo observado</dt><dd><b data-n="prov.pct_obs" data-c="1" data-s="%"></b> das obras: <span data-n="prov.semente"></span> sementes e <span data-n="prov.vocabulario"></span> pelo vocabulário</dd></div>
+        <div><dt>Rótulo inferido</dt><dd><b data-n="prov.pct_inf" data-c="1" data-s="%"></b> das obras</dd></div>
+        <div><dt>Acerto da inferência onde o rótulo é conhecido</dt><dd><b data-n="prov.acuracia" data-x="100" data-c="1" data-s="%"></b> (<span data-n="prov.acertos"></span> de <span data-n="prov.n_ouro"></span>)</dd></div>
+        <div><dt>Obras em que o vocabulário diz uma tradição e a vizinhança aponta outra</dt><dd><b data-n="prov.fora"></b></dd></div>
+        <div><dt>Obras de rótulo inferido com duas tradições empatadas na vizinhança</dt><dd><b data-n="prov.empates"></b>, das quais <span data-n="prov.empates_na_agenda"></span> na agenda</dd></div>
+      </dl>
+      <table class="mini" id="tab-acerto"><caption>Acerto da inferência por tradição, medido nas obras de rótulo conhecido</caption></table>
+      <h3>Como ler</h3>
+      <p>No andar de cima, as obras de rótulo observado; no de baixo, as de rótulo inferido, na mesma posição horizontal. Uma obra cheia longe do vértice da sua cor é uma das <span data-n="prov.fora"></span> em que vocabulário e vizinhança discordam.</p>
+      <h3>Limite</h3>
+      <p>A inferência quase não reconhece a economia da complexidade: acerto de <span data-n="prov.por_eixo.Cplx.acuracia" data-c="2"></span> em <span data-n="prov.por_eixo.Cplx.n"></span> obras. O que envolve essa tradição é o ponto mais frágil. As obras inferidas não têm menos vizinhas rotuladas do que as de rótulo conhecido (mediana <span data-n="prov.evid_inf"></span> contra <span data-n="prov.evid_ouro"></span>), de modo que o acerto medido não é um teto otimista. Onde há empate, a obra fica à mesma distância de dois vértices e o rótulo publicado segue a ordem em que as arestas são lidas, não uma medida.</p>
+      <p><a class="elo" href="index.html#pontes-ordem-superior">Ver a medida no relatório</a></p>
+      <button type="button" class="proxima" data-prox></button>
+    </section>
+
+    <section class="lente" data-lente="agenda" aria-labelledby="t-agenda" hidden>
+      <h2 id="t-agenda">Onde construir pontes?</h2>
+      <p class="resposta">Nenhuma tríade de obras supera o acaso: não há ponte latente à espera de ser descoberta. O que existe é uma ordem de onde construir renderia mais integração.</p>
+      <dl class="numeros">
+        <div><dt>Tríades além do acaso</dt><dd><b data-n="agenda.alem_do_acaso"></b> de <span data-n="agenda.n_candidatas"></span> avaliadas</dd></div>
+        <div><dt>Alvos de construção</dt><dd><b data-n="agenda.n_agenda"></b> tríades, que envolvem <span data-n="agenda.n_obras"></span> obras</dd></div>
+        <div><dt>Sem nenhum rótulo inferido</dt><dd><b data-n="agenda.n_nucleo"></b> de <span data-n="agenda.n_agenda"></span> (<span data-n="agenda.pct_nucleo" data-c="1" data-s="%"></span>)</dd></div>
+        <div><dt>Tríades elegíveis no espaço inteiro</dt><dd><b data-n="agenda.elegiveis"></b>; <span data-n="agenda.elegiveis_obs"></span> sem inferência</dd></div>
+      </dl>
+      <h3>Como ler</h3>
+      <p>Cada triângulo é uma tríade: três obras de ao menos duas tradições, cocitadas em pelo menos dois dos três pares, que nunca apareceram as três na mesma lista de referências. Triângulo cheio, de contorno contínuo: nenhuma das três obras tem rótulo inferido. Triângulo tracejado: ao menos uma tem. O anel marca as obras que entram em alguma tríade.</p>
+      <h3>As tríades, da maior para a menor integração</h3>
+      <ol class="lista-tri" id="lista-tri"></ol>
+      <button type="button" class="acao" id="mais-tri" hidden></button>
+      <h3>Limite</h3>
+      <p>As <span data-n="agenda.n_candidatas"></span> avaliadas são as de maior suporte entre as elegíveis: é o teto do procedimento, não o universo. A integração (ΔKf) mede quanto a tríade encurtaria os caminhos entre as tradições se fosse realizada; não mede a qualidade do argumento que a realizaria.</p>
+      <p><a class="elo" href="index.html#pontes-ordem-superior">Ver a medida no relatório</a></p>
+      <button type="button" class="proxima" data-prox></button>
+    </section>
+
+    <section class="lente" data-lente="nota" aria-labelledby="t-nota" hidden>
+      <h2 id="t-nota">Onde a bibliografia da nota cai neste espaço?</h2>
+      <p class="resposta">O texto para discussão <cite data-t="nota.titulo"></cite> cita <span data-n="nota.n_obras"></span> obras; <span data-n="nota.n_obras_na_rede"></span> estão no núcleo cocitado, espalhadas pelas três tradições canônicas. Só <span data-n="listas.tocam_3"></span> das <span data-n="listas.n_listas"></span> listas de referências do corpus fazem o mesmo.</p>
+      <dl class="numeros">
+        <div><dt>Referências da nota</dt><dd><b data-n="nota.n_refs"></b>: <span data-n="nota.n_obras"></span> obras e <span data-n="nota.n_atos"></span> atos normativos</dd></div>
+        <div><dt>Obras da nota no núcleo cocitado</dt><dd><b data-n="nota.n_obras_na_rede"></b>, em <span data-n="nota.n_registros"></span> registros</dd></div>
+        <div><dt>Dessas, com rótulo observado</dt><dd><b data-n="nota.n_rotulo_observado"></b>: <span data-n="nota.k.0"></span> de cibernética, <span data-n="nota.k.1"></span> de regulação, <span data-n="nota.k.2"></span> de política industrial</dd></div>
+        <div><dt>Listas do corpus que tocam as três tradições</dt><dd><b data-n="listas.tocam_3"></b> de <span data-n="listas.n_listas"></span> (<span data-n="listas.pct_tocam_3" data-c="1" data-s="%"></span>); <span data-n="listas.tocam_1"></span> ficam numa só</dd></div>
+      </dl>
+      <h3>Como ler</h3>
+      <p>Cada ponto cinza reúne as listas de referências do corpus que têm a mesma mistura de tradições; quanto maior, mais listas. O dodecaedro escuro é a lista da nota, colocada pela mesma regra: a mistura das tradições nas suas referências de rótulo observado. As linhas ligam a nota às obras que ela cita.</p>
+      <h3>No núcleo cocitado</h3>
+      <ul class="lista-obras" id="refs-rede"></ul>
+      <details class="dobra"><summary>Obras fora do núcleo cocitado (<span id="n-fora"></span>)</summary><ul class="refs" id="refs-fora"></ul></details>
+      <details class="dobra"><summary>Atos normativos (<span data-n="nota.n_atos"></span>)</summary><ul class="refs" id="refs-atos"></ul></details>
+      <h3>Limite</h3>
+      <p>Só entram na conta as obras do núcleo de <span data-n="rede.n"></span>: uma referência ausente daqui não está ausente da literatura. O casamento entre referência e registro foi feito pelo título e conferido à mão; edições diferentes da mesma obra contam como a mesma, e <span data-n="nota.n_duplicadas"></span> obras aparecem em dois registros da base.</p>
+      <p>Versão usada: <span data-t="nota.versao"></span>.</p>
+      <button type="button" class="proxima" data-prox></button>
+    </section>
+
+    <details class="dobra" id="todas"><summary>Todas as obras da cena (<span data-n="rede.n"></span>)</summary><div id="todas-lista"></div></details>
+
+    <details class="dobra ajuda"><summary>Como navegar</summary>
+      <ul>
+        <li>Arraste para girar; role ou afaste dois dedos para aproximar.</li>
+        <li>Com <kbd>Shift</kbd> ou dois dedos, arraste para deslocar a cena.</li>
+        <li>Toque ou clique numa obra para ver com quem ela é cocitada; duas vezes, para centralizá-la.</li>
+        <li>No teclado, com a cena em foco: setas giram, <kbd>+</kbd> e <kbd>−</kbd> aproximam e afastam, <kbd>PageDown</kbd> e <kbd>PageUp</kbd> percorrem as obras, <kbd>0</kbd> recentra, <kbd>Esc</kbd> limpa a seleção.</li>
+        <li>As teclas <kbd>1</kbd> a <kbd>5</kbd> trocam de lente.</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="cena">
+    <canvas id="cena" tabindex="0" role="img" aria-label="Cena 3D das tradições" aria-describedby="cena-desc"></canvas>
+    <p id="cena-desc" class="so-leitor">Cena tridimensional interativa. O mesmo conteúdo está nas tabelas da lente, na busca e na lista de todas as obras, que funcionam sem o mouse.</p>
+
+    <details class="legenda" id="legenda" open>
+      <summary>Legenda e filtros</summary>
+      <div class="linha-topo">
+      <div class="chips" role="group" aria-label="Tradições na cena: mostrar ou ocultar">
+        <button type="button" class="chip" data-eixo="0" aria-pressed="true"><svg class="g" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="#4b3fc2"/></svg>Cibernética</button>
+        <button type="button" class="chip" data-eixo="1" aria-pressed="true"><svg class="g" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" fill="#1a7a5e"/></svg>Regulação</button>
+        <button type="button" class="chip" data-eixo="2" aria-pressed="true"><svg class="g" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 15 14H1z" fill="#b85c10"/></svg>Política industrial</button>
+        <button type="button" class="chip" data-eixo="3" aria-pressed="true"><svg class="g" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1 14.5 8 8 15 1.5 8z" fill="#2a9d8f"/></svg>Complexidade</button>
+      </div>
+      <details class="ajustes">
+        <summary>Linhas e nomes</summary>
+        <div class="ctl">
+          <label for="linhas">Linhas de cocitação</label>
+          <select id="linhas">
+            <option value="cruz">entre tradições, só obras de rótulo observado</option>
+            <option value="cruz-todas">entre tradições, todas as obras</option>
+            <option value="nenhuma">nenhuma</option>
+          </select>
+          <label for="peso">Mínimo de trabalhos que citam as duas: <output id="pesoV" for="peso">3</output></label>
+          <input type="range" id="peso" min="3" max="40" step="1" value="3">
+          <p id="contaLinhas" aria-live="polite"></p>
+          <label class="marca"><input type="checkbox" id="rotulos">nomes das obras mais citadas</label>
+        </div>
+      </details>
+      </div>
+      <p class="chave">
+        <span><svg class="g" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" fill="#3a3632"/></svg>cheio: rótulo observado</span>
+        <span><svg class="g" viewBox="0 0 16 16" aria-hidden="true"><rect x="2.6" y="2.6" width="10.8" height="10.8" fill="#f5f2ed" stroke="#3a3632" stroke-width="1.4"/></svg>vazado: rótulo inferido</span>
+        <span><svg class="g" viewBox="0 0 16 16" aria-hidden="true"><rect x="2.6" y="2.6" width="10.8" height="10.8" fill="#8d8780" stroke="#0e0e0e" stroke-width="1.6"/></svg>contorno a tinta: obra-semente</span>
+      </p>
+    </details>
+
+    <div class="controles" role="group" aria-label="Controles da cena">
+      <button type="button" id="btGirar">Girar</button>
+      <button type="button" id="btCentro">Recentrar</button>
+      <button type="button" id="btLink" aria-label="Copiar o endereço desta vista"><span class="longo">Copiar endereço</span><span class="breve">Copiar</span></button>
+      <button type="button" id="btMais" class="sinal" aria-label="Aproximar">+</button>
+      <button type="button" id="btMenos" class="sinal" aria-label="Afastar">−</button>
+    </div>
+
+    <aside class="detalhe" id="detalhe" aria-labelledby="dt" tabindex="-1" hidden></aside>
+    <div class="aviso" id="aviso" role="status" aria-live="polite" hidden></div>
+    <div class="so-leitor" id="voz" aria-live="polite"></div>
+  </div>
+</main>
+
+<script>
+__ESPACO_DATA__
+</script>
+<script src="espaco3d.js"></script>
+<script>
+(function () {
+  'use strict';
+  var D = ESPACO, E3 = window.Espaco3D;
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var NOME = E3.NOME, CORES = ['#4b3fc2', '#1a7a5e', '#b85c10', '#2a9d8f'];
+  var temNota = !!(D.nota && D.nota.refs && D.nota.refs.length);
+  var ORDEM = ['silos', 'tempo', 'prov', 'agenda'].concat(temNota ? ['nota'] : []);
+  var ROTULO = { silos: 'Silos', tempo: 'Tempo', prov: 'Origem', agenda: 'Agenda', nota: 'A nota' };
+  var R = { regra: { teto: E3.TETO_AFASTA }, nota: D.nota || {} };
+  Object.keys(D.num).forEach(function (k) { R[k] = D.num[k] || {}; });
+  if (temNota) R.nota.n_duplicadas = D.nota.refs.filter(function (r) { return r.n.length > 1; }).length;
+
+  function fmt(v, casas) {
+    if (v == null || v === '' || isNaN(v)) return '—';
+    return Number(v).toLocaleString('pt-BR', { minimumFractionDigits: casas || 0, maximumFractionDigits: casas || 0 }).replace('-', '−');
+  }
+  function pega(c) { return c.split('.').reduce(function (o, k) { return o == null ? o : o[k]; }, R); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function sem(s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+
+  // números vivos: todo valor do texto vem do bloco de dados
+  $$('[data-n]').forEach(function (el) {
+    var v = pega(el.getAttribute('data-n'));
+    if (el.hasAttribute('data-ano')) { el.textContent = v == null ? '—' : String(v); return; }
+    if (v != null && el.hasAttribute('data-x')) v = v * (+el.getAttribute('data-x'));
+    el.textContent = fmt(v, +(el.getAttribute('data-c') || 0)) + (el.getAttribute('data-s') || '');
+  });
+  $$('[data-t]').forEach(function (el) { var v = pega(el.getAttribute('data-t')); el.textContent = v == null ? '' : String(v); });
+  if (!temNota) $$('[data-so-nota], .lente[data-lente="nota"]').forEach(function (el) { el.remove(); });
+  $('#lentes').style.setProperty('--n-lentes', ORDEM.length);
+
+  // tabelas
+  (function () {
+    var b = R.blocos, t = $('#tab-blocos'), curto = ['Cibern.', 'Regul.', 'Pol. ind.', 'Complex.'], h, i, j;
+    if (b && b.matriz) {
+      h = '<thead><tr><th scope="col">Tradição</th>' + curto.map(function (c) { return '<th scope="col">' + c + '</th>'; }).join('') + '</tr></thead><tbody>';
+      for (i = 0; i < 4; i++) {
+        h += '<tr><th scope="row">' + NOME[i] + '</th>';
+        for (j = 0; j < 4; j++) h += j < i ? '<td aria-hidden="true"></td>' : '<td' + (i === j ? ' class="diag"' : '') + '>' + fmt(100 * b.matriz[i][j] / b.peso_total, 1) + '</td>';
+        h += '</tr>';
+      }
+      t.insertAdjacentHTML('beforeend', h + '</tbody>');
+    }
+    var d = (R.tempo && R.tempo.decadas) || [];
+    $('#tab-decadas').insertAdjacentHTML('beforeend', '<thead><tr><th scope="col">Década</th><th scope="col">Dentro da própria tradição</th><th scope="col">Linhas entre tradições</th><th scope="col">Linhas no total</th></tr></thead><tbody>' +
+      d.map(function (x) { return '<tr><th scope="row">' + esc(String(x.d).replace('s', '')) + '</th><td>' + fmt(x.f, 2) + '</td><td>' + fmt(x.x) + '</td><td>' + fmt(x.e) + '</td></tr>'; }).join('') + '</tbody>');
+    var pe = (R.prov && R.prov.por_eixo) || {};
+    $('#tab-acerto').insertAdjacentHTML('beforeend', '<thead><tr><th scope="col">Tradição</th><th scope="col">Obras</th><th scope="col">Acerto</th></tr></thead><tbody>' +
+      D.eixos.map(function (e, k) { return pe[e] ? '<tr><th scope="row">' + NOME[k] + '</th><td>' + fmt(pe[e].n) + '</td><td>' + fmt(pe[e].acuracia, 2) + '</td></tr>' : ''; }).join('') + '</tbody>');
+  })();
+
+  var voz = $('#voz'), avisoEl = $('#aviso'), avisoT = 0;
+  function anuncia(m) { voz.textContent = ''; setTimeout(function () { voz.textContent = m; }, 30); }
+  function aviso(m) { avisoEl.textContent = m; avisoEl.hidden = false; clearTimeout(avisoT); avisoT = setTimeout(function () { avisoEl.hidden = true; }, 3200); }
+
+  var cv = $('#cena'), det = $('#detalhe'), largo = window.matchMedia('(min-width: 1180px)');
+  if (!cv.getContext) { cv.insertAdjacentHTML('afterend', '<p class="semjs">Este navegador não desenha a cena. A mesma rede está no <a href="explorador.html">Explorador</a>.</p>'); return; }
+  var estreito = window.matchMedia('(max-width: 860px)');
+  function ajustaLegenda() { $('#legenda').open = !estreito.matches; }
+  ajustaLegenda();
+  if (estreito.addEventListener) estreito.addEventListener('change', ajustaLegenda);
+
+  var aplicando = false, lenteAtual = 'silos', ocultos = [false, false, false, false];
+  var cena = E3.criarCena(cv, D, {
+    aoSelecionar: aoSelecionar,
+    aoGiro: function (g) { $('#btGirar').textContent = g ? 'Pausar' : 'Girar'; },
+    aoLinhas: function (n, tot) { $('#contaLinhas').textContent = fmt(n) + ' de ' + fmt(tot) + ' linhas desenhadas'; }
+  });
+
+  // ── lentes ──
+  function mostraLente(nome, o) {
+    o = o || {};
+    if (ORDEM.indexOf(nome) < 0) nome = 'silos';
+    var mudou = nome !== lenteAtual;
+    lenteAtual = nome;
+    $$('.lente').forEach(function (s) { s.hidden = s.getAttribute('data-lente') !== nome; });
+    $$('#lentes button').forEach(function (b) { b.setAttribute('aria-current', b.getAttribute('data-lente') === nome ? 'true' : 'false'); });
+    if (mudou || o.forca) cena.definirLente(nome, o.imediato);
+    var t = $('.lente[data-lente="' + nome + '"] h2');
+    cv.setAttribute('aria-label', 'Cena 3D, lente ' + ROTULO[nome] + '. ' + (t ? t.textContent : ''));
+    var s = cena.selecao();
+    if ((s.t === 'tri' && nome !== 'agenda') || ((s.t === 'lista' || s.t === 'nota') && nome !== 'nota')) cena.selecionar({ t: '', i: -1 }, { origem: 'lente' });
+    if (mudou) { $('#trilho').scrollTop = 0; if (!o.silencio) anuncia('Lente ' + ROTULO[nome] + '. ' + (t ? t.textContent : '')); }
+    if (!aplicando && mudou) gravaEndereco(true);
+  }
+  $$('#lentes button').forEach(function (b) { b.addEventListener('click', function () { mostraLente(b.getAttribute('data-lente')); }); });
+  $$('[data-prox]').forEach(function (b) {
+    var de = b.closest('.lente').getAttribute('data-lente'), prox = ORDEM[(ORDEM.indexOf(de) + 1) % ORDEM.length];
+    b.textContent = (ORDEM.indexOf(de) === ORDEM.length - 1 ? 'Voltar à primeira lente: ' : 'Próxima lente: ') + ROTULO[prox];
+    b.addEventListener('click', function () { mostraLente(prox); $('#lentes button[data-lente="' + prox + '"]').focus(); });
+  });
+
+  // ── painel de detalhe ──
+  function glifoSVG(a, cheio) {
+    var c = a >= 0 ? CORES[a] : '#6b6560', at = cheio ? 'fill="' + c + '"' : 'fill="#f5f2ed" stroke="' + c + '" stroke-width="1.6"';
+    var f = a === 0 ? '<circle cx="8" cy="8" r="6" ' + at + '/>' : a === 1 ? '<rect x="2.5" y="2.5" width="11" height="11" ' + at + '/>' : a === 2 ? '<path d="M8 2 14.5 13.5H1.5z" ' + at + '/>' : '<path d="M8 1.5 14 8 8 14.5 2 8z" ' + at + '/>';
+    return '<svg class="g" viewBox="0 0 16 16" aria-hidden="true">' + f + '</svg>';
+  }
+  function triadesDe(n) { var r = []; D.triades.forEach(function (t, k) { if (t.m.indexOf(n) >= 0) r.push(k); }); return r; }
+  function nomeTri(k, lim) { return D.triades[k].m.map(function (m) { var l = D.nos[m].l; return esc(l.length > lim ? l.slice(0, lim - 1) + '…' : l); }).join('; '); }
+  function htmlNo(n) {
+    var d = D.nos[n], k = d.k, tot = k[0] + k[1] + k[2] + k[3], v = cena.vizinhas(n).length / 2, h, a, mx;
+    h = '<h2 id="dt" tabindex="-1">' + esc(d.l) + '</h2>';
+    h += '<p class="meta">' + (d.y ? 'Registro de ' + d.y : 'Sem ano') + ', ' + fmt(d.c) + ' citações recebidas' + (d.s ? ', obra-semente' : '') + '</p>';
+    h += '<p><span class="selo">' + glifoSVG(d.a, d.o) + (d.a >= 0 ? NOME[d.a] : 'Sem tradição') + '</span>. ' +
+      (d.o ? (d.s ? 'Rótulo observado: é obra-semente desta tradição.' : 'Rótulo observado: atribuído pelo vocabulário.') : d.e ? 'Rótulo inferido, com duas tradições empatadas na vizinhança.' : 'Rótulo inferido: é a tradição mais frequente na vizinhança.') + '</p>';
+    h += '<h3>Com quem é cocitada</h3>';
+    if (tot) {
+      h += '<table class="mix"><tbody>';
+      for (a = 0; a < 4; a++) h += '<tr><td>' + NOME[a] + '</td><td class="num">' + k[a] + '</td><td class="num">' + fmt(100 * k[a] / tot, 0) + '%</td><td class="b"><span class="barra" style="width:' + (100 * k[a] / tot).toFixed(1) + '%;background:' + CORES[a] + '"></span></td></tr>';
+      h += '</tbody></table><p>' + fmt(v) + ' vizinhas no núcleo; ' + fmt(tot) + ' têm rótulo observado e definem a posição.</p>';
+      mx = k.indexOf(Math.max.apply(null, k));
+      if (d.o && d.a >= 0 && k[d.a] < k[mx]) h += '<p><strong>Vocabulário e vizinhança discordam:</strong> o rótulo é ' + NOME[d.a].toLowerCase() + ', mas a maior parte da vizinhança é de ' + NOME[mx].toLowerCase() + '.</p>';
+      if (d.e) h += '<p><strong>Empate na vizinhança:</strong> ' + d.e.map(function (e) { return NOME[e].toLowerCase(); }).join(' e ') + ' têm ' + k[d.e[0]] + ' vizinhas cada. A obra fica à mesma distância dos dois vértices' + (d.o ? '.' : '; o rótulo publicado segue a ordem em que as arestas são lidas.') + '</p>';
+    } else h += '<p>Nenhuma vizinha com rótulo observado: a obra fica no centro por falta de informação, não por mistura.</p>';
+    var ts = triadesDe(n);
+    if (ts.length) {
+      h += '<h3>Na agenda</h3><p>Entra em ' + ts.length + (ts.length === 1 ? ' tríade' : ' tríades') + ' a construir.</p><ol class="lista-tri">' +
+        ts.slice(0, 5).map(function (t) { return '<li><button type="button" data-tri="' + t + '">ΔKf ' + fmt(D.triades[t].d, 2) + '<span class="et">' + (D.triades[t].n ? 'sem inferência' : 'com rótulo inferido') + '</span><br>' + nomeTri(t, 26) + '</button></li>'; }).join('') + '</ol>';
+    }
+    if (d.t) h += '<p>Citada na nota.</p>';
+    h += '<div class="acoes"><a href="https://openalex.org/' + encodeURIComponent(d.i) + '" target="_blank" rel="noopener">Abrir no OpenAlex (nova aba)</a><button type="button" data-acao="centro">Centralizar</button></div>';
+    return h;
+  }
+  function htmlTri(k) {
+    var t = D.triades[k], h = '<h2 id="dt" tabindex="-1">Tríade a construir</h2>';
+    h += '<p class="meta">Integração (ΔKf) ' + fmt(t.d, 2) + (t.p != null ? ', p = ' + fmt(t.p, 2) + ' contra o acaso' : '') + '</p>';
+    h += '<p>' + (t.n ? '<strong>Sem inferência:</strong> nenhuma das três obras tem rótulo inferido.' : '<strong>Depende de rótulo inferido</strong> em ' + t.inf.length + (t.inf.length === 1 ? ' obra.' : ' obras.')) + '</p>';
+    h += '<h3>As três obras</h3><ul class="lista-obras">' + t.m.map(function (m) { var d = D.nos[m]; return '<li><button type="button" data-no="' + m + '">' + glifoSVG(d.a, d.o) + ' ' + esc(d.l) + (d.o ? '' : ' <span class="et">(rótulo inferido)</span>') + '</button></li>'; }).join('') + '</ul>';
+    h += '<p>Nunca apareceram as três na mesma lista de referências. O valor de p não é significativo: é ordem de prioridade, não ponte comprovada.</p>';
+    return h;
+  }
+  function htmlLista(k) {
+    var c = D.num.listas.comps[k], tot = c[0] + c[1] + c[2] + c[3], a, h = '<h2 id="dt" tabindex="-1">' + fmt(c[4]) + (c[4] === 1 ? ' lista de referências' : ' listas de referências') + '</h2>';
+    h += '<p class="meta">com esta mistura de tradições entre as obras de rótulo observado</p><table class="mix"><tbody>';
+    for (a = 0; a < 4; a++) if (c[a]) h += '<tr><td>' + NOME[a] + '</td><td class="num">' + c[a] + '</td><td class="num">' + fmt(100 * c[a] / tot, 0) + '%</td><td class="b"><span class="barra" style="width:' + (100 * c[a] / tot).toFixed(1) + '%;background:' + CORES[a] + '"></span></td></tr>';
+    return h + '</tbody></table><p>Cada lista é o conjunto de obras do núcleo citadas por um mesmo trabalho.</p>';
+  }
+  function htmlNota() {
+    var n = D.nota;
+    return '<h2 id="dt" tabindex="-1">A nota</h2><p class="meta">' + esc(n.autores.join(', ')) + '</p><p><cite>' + esc(n.titulo) + '</cite></p>' +
+      '<p>' + fmt(n.n_obras_na_rede) + ' das suas ' + fmt(n.n_obras) + ' obras estão no núcleo. A posição é a mistura das ' + fmt(n.n_rotulo_observado) + ' de rótulo observado: ' + n.k[0] + ' de cibernética, ' + n.k[1] + ' de regulação, ' + n.k[2] + ' de política industrial.</p>';
+  }
+  function aoSelecionar(s, o) {
+    o = o || {};
+    cv.parentNode.classList.toggle('com-detalhe', !!s.t);
+    if (!s.t) { det.hidden = true; det.innerHTML = ''; cena.margemDireita(0); if (!aplicando && o.origem !== 'lente') gravaEndereco(true); return; }
+    det.innerHTML = '<button type="button" class="fechar" aria-label="Fechar o painel">×</button>' +
+      (s.t === 'no' ? htmlNo(s.i) : s.t === 'tri' ? htmlTri(s.i) : s.t === 'lista' ? htmlLista(s.i) : htmlNota());
+    det.hidden = false; det.scrollTop = 0;
+    cena.margemDireita(largo.matches ? 356 : 0);
+    var d = s.t === 'no' ? D.nos[s.i] : null;
+    anuncia(s.t === 'no' ? 'Selecionada: ' + d.l + ', ' + (d.a >= 0 ? NOME[d.a] : 'sem tradição') + ', rótulo ' + (d.o ? 'observado' : 'inferido') + '.' : s.t === 'tri' ? 'Tríade selecionada.' : s.t === 'lista' ? 'Grupo de listas selecionado.' : 'A nota selecionada.');
+    // o foco só vai ao painel quando a pessoa escolheu a obra numa lista ou na busca;
+    // restaurar a vista pelo endereço (abrir o link, voltar no histórico) não tira o foco de onde está
+    if (o.origem && o.origem !== 'cena' && o.origem !== 'endereco') { var hd = $('#dt', det); if (hd) hd.focus({ preventScroll: true }); }
+    if (!aplicando) gravaEndereco(true);
+  }
+  det.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    if (b.classList.contains('fechar')) { cena.selecionar({ t: '', i: -1 }); cv.focus({ preventScroll: true }); return; }
+    if (b.hasAttribute('data-tri')) { if (lenteAtual !== 'agenda') mostraLente('agenda'); cena.selecionar({ t: 'tri', i: +b.getAttribute('data-tri') }, { focar: true, origem: 'painel' }); return; }
+    if (b.hasAttribute('data-no')) { cena.selecionar({ t: 'no', i: +b.getAttribute('data-no') }, { focar: true, origem: 'painel' }); return; }
+    if (b.getAttribute('data-acao') === 'centro') { var s = cena.selecao(); cena.selecionar(s, { focar: true, silencio: true }); }
+  });
+  document.addEventListener('keydown', function (e) {
+    var el = document.activeElement, campo = el && /^(INPUT|SELECT|TEXTAREA)$/.test(el.tagName);
+    if (e.key === 'Escape' && !det.hidden) { cena.selecionar({ t: '', i: -1 }); cv.focus({ preventScroll: true }); return; }
+    if (!campo && !e.ctrlKey && !e.metaKey && !e.altKey && /^[1-9]$/.test(e.key) && ORDEM[+e.key - 1]) mostraLente(ORDEM[+e.key - 1]);
+  });
+
+  // ── listas ──
+  function botaoObra(n) { var d = D.nos[n]; return '<li><button type="button" data-no="' + n + '">' + glifoSVG(d.a, d.o) + ' ' + esc(d.l) + '</button></li>'; }
+  function aoClicarObra(e) { var b = e.target.closest('button[data-no]'); if (b) cena.selecionar({ t: 'no', i: +b.getAttribute('data-no') }, { focar: true, origem: 'lista' }); }
+  var q = $('#q'), res = $('#res'), indice = D.nos.map(function (d, n) { return [sem(d.l), n]; });
+  q.addEventListener('input', function () {
+    var t = sem(q.value.trim());
+    if (t.length < 2) { res.innerHTML = ''; return; }
+    var ach = indice.filter(function (x) { return x[0].indexOf(t) >= 0; }).sort(function (a, b) { return D.nos[b[1]].c - D.nos[a[1]].c; }).slice(0, 7);
+    res.innerHTML = ach.length ? ach.map(function (x) { return botaoObra(x[1]); }).join('') : '<li class="vazio">Nenhuma obra com esse termo. Tente o sobrenome do autor ou uma palavra do título.</li>';
+  });
+  res.addEventListener('click', aoClicarObra);
+  $('#todas').addEventListener('toggle', function () {
+    var c = $('#todas-lista'); if (c.childElementCount || !this.open) return;
+    var h = '', a;
+    for (a = 0; a < 4; a++) {
+      var g = D.nos.map(function (d, n) { return n; }).filter(function (n) { return D.nos[n].a === a; }).sort(function (x, y) { return D.nos[y].c - D.nos[x].c; });
+      var nObs = g.filter(function (n) { return D.nos[n].o; }).length;
+      if (g.length) h += '<h3>' + NOME[a] + ': ' + g.length + ' obras (' + nObs + ' de rótulo observado, ' + (g.length - nObs) + ' de rótulo inferido)</h3><ul class="lista-obras">' + g.map(botaoObra).join('') + '</ul>';
+    }
+    c.innerHTML = h;
+  });
+  $('#todas-lista').addEventListener('click', aoClicarObra);
+
+  var ordTri = D.triades.map(function (t, k) { return k; }).sort(function (a, b) { return D.triades[b].d - D.triades[a].d; });
+  function pintaTri(tudo) {
+    $('#lista-tri').innerHTML = ordTri.slice(0, tudo ? ordTri.length : 8).map(function (k) {
+      return '<li><button type="button" data-tri="' + k + '">ΔKf ' + fmt(D.triades[k].d, 2) + '<span class="et">' + (D.triades[k].n ? 'sem inferência' : 'com rótulo inferido') + '</span><br>' + nomeTri(k, 30) + '</button></li>';
+    }).join('');
+    var b = $('#mais-tri'); b.hidden = tudo || ordTri.length <= 8; b.textContent = 'Mostrar as ' + ordTri.length + ' tríades';
+  }
+  if (D.triades.length) { pintaTri(false); $('#mais-tri').addEventListener('click', function () { pintaTri(true); }); }
+  $('#lista-tri').addEventListener('click', function (e) { var b = e.target.closest('button[data-tri]'); if (b) cena.selecionar({ t: 'tri', i: +b.getAttribute('data-tri') }, { focar: true, origem: 'lista' }); });
+
+  if (temNota) {
+    var naRede = D.nota.refs.filter(function (r) { return r.t === 'obra' && r.n.length; }), fora = D.nota.refs.filter(function (r) { return r.t === 'obra' && !r.n.length; }), atos = D.nota.refs.filter(function (r) { return r.t === 'ato'; });
+    $('#refs-rede').innerHTML = naRede.map(function (r) { var d = D.nos[r.n[0]]; return '<li><button type="button" data-no="' + r.n[0] + '">' + glifoSVG(d.a, d.o) + ' ' + esc(r.r) + (r.obs ? ' <span class="et">(' + esc(r.obs) + ')</span>' : '') + '</button></li>'; }).join('');
+    $('#refs-rede').addEventListener('click', aoClicarObra);
+    $('#n-fora').textContent = fmt(fora.length);
+    $('#refs-fora').innerHTML = fora.map(function (r) { return '<li>' + esc(r.r) + (r.doi ? ' <a href="https://doi.org/' + encodeURI(r.doi) + '" target="_blank" rel="noopener">abrir pelo DOI (nova aba)</a>' : '') + '</li>'; }).join('');
+    $('#refs-atos').innerHTML = atos.map(function (r) { return '<li>' + esc(r.r) + '</li>'; }).join('');
+  }
+
+  // ── legenda e controles ──
+  $$('.chip[data-eixo]').forEach(function (c) {
+    c.addEventListener('click', function () {
+      var k = +c.getAttribute('data-eixo'); ocultos[k] = !ocultos[k];
+      c.setAttribute('aria-pressed', ocultos[k] ? 'false' : 'true');
+      cena.filtrar({ oculto: ocultos }); if (!aplicando) gravaEndereco(false);
+    });
+  });
+  var selLin = $('#linhas'), rng = $('#peso');
+  selLin.addEventListener('change', function () { cena.filtrar({ linhas: selLin.value }); if (!aplicando) gravaEndereco(false); });
+  rng.addEventListener('input', function () { $('#pesoV').textContent = rng.value; cena.filtrar({ peso: +rng.value }); });
+  rng.addEventListener('change', function () { if (!aplicando) gravaEndereco(false); });
+  $('#rotulos').addEventListener('change', function () { cena.filtrar({ rotulos: this.checked }); });
+  $('#btMais').addEventListener('click', function () { cena.girar(false); cena.zoom(0.82); });
+  $('#btMenos').addEventListener('click', function () { cena.girar(false); cena.zoom(1.22); });
+  $('#btCentro').addEventListener('click', function () { cena.girar(false); cena.recentrar(); });
+  $('#btGirar').addEventListener('click', function () { cena.girar(!cena.girando()); });
+  $('#btLink').addEventListener('click', function () {
+    gravaEndereco(false);
+    var u = location.href, feito = function () { aviso('Endereço desta vista copiado'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(u).then(feito, function () { aviso('Copie o endereço da barra do navegador'); });
+    else aviso('Copie o endereço da barra do navegador');
+  });
+  largo.addEventListener && largo.addEventListener('change', function () { cena.margemDireita(!det.hidden && largo.matches ? 356 : 0); });
+
+  // ── o estado mora no endereço: toda vista pode ser citada e reaberta ──
+  function leEndereco() {
+    var o = {};
+    location.hash.replace(/^#/, '').split('&').forEach(function (p) { var i = p.indexOf('='); if (i > 0) o[decodeURIComponent(p.slice(0, i))] = decodeURIComponent(p.slice(i + 1)); });
+    return o;
+  }
+  function gravaEndereco(empurra) {
+    var p = ['lente=' + lenteAtual], s = cena.selecao(), oc = [];
+    if (s.t === 'no') p.push('obra=' + D.nos[s.i].i);
+    if (s.t === 'tri') p.push('triade=' + (s.i + 1));
+    ocultos.forEach(function (v, k) { if (v) oc.push(D.eixos[k]); });
+    if (oc.length) p.push('sem=' + oc.join(','));
+    if (selLin.value !== 'cruz') p.push('linhas=' + selLin.value);
+    if (+rng.value > 3) p.push('peso=' + rng.value);
+    var h = '#' + p.join('&');
+    if (h === location.hash) return;
+    if (empurra) history.pushState(null, '', h); else history.replaceState(null, '', h);
+  }
+  function aplicaEndereco(inicial) {
+    var o = leEndereco(), k;
+    aplicando = true;
+    var oc = (o.sem || '').split(',');
+    ocultos = D.eixos.map(function (e) { return oc.indexOf(e) >= 0; });
+    $$('.chip[data-eixo]').forEach(function (c) { c.setAttribute('aria-pressed', ocultos[+c.getAttribute('data-eixo')] ? 'false' : 'true'); });
+    selLin.value = /^(cruz|cruz-todas|nenhuma)$/.test(o.linhas || '') ? o.linhas : 'cruz';
+    rng.value = Math.max(3, Math.min(40, parseInt(o.peso, 10) || 3)); $('#pesoV').textContent = rng.value;
+    cena.filtrar({ oculto: ocultos, linhas: selLin.value, peso: +rng.value });
+    mostraLente(o.lente || 'silos', { imediato: !!inicial, silencio: true });
+    var alvo = { t: '', i: -1 };
+    if (o.obra) { for (k = 0; k < D.nos.length; k++) if (D.nos[k].i === o.obra) { alvo = { t: 'no', i: k }; break; } }
+    else if (o.triade && D.triades[+o.triade - 1]) alvo = { t: 'tri', i: +o.triade - 1 };
+    var at = cena.selecao();
+    if (alvo.t !== at.t || alvo.i !== at.i) cena.selecionar(alvo, { focar: !!alvo.t, origem: 'endereco' });
+    aplicando = false;
+  }
+  window.addEventListener('popstate', function () { aplicaEndereco(false); });
+  aplicaEndereco(true);
+  window.__espaco = { cena: cena, dados: D, lente: function () { return lenteAtual; } };
+})();
+</script>
+</body>
+</html>

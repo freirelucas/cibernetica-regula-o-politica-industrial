@@ -11,10 +11,13 @@ by stdlib-only Python (`src/build_site.py`) from a single data source
 Playwright/Chromium via `.claude/skills/run-scisci-ipea/driver.py`. There is no
 server runtime — HTML + vendored Chart.js/d3/fonts in `docs/vendor/` (no CDN).
 
-The build emits **three pages** and the data exports:
+The build emits **four pages** and the data exports:
 - `docs/index.html` — the 22-section report (3 Chart.js charts + a canvas co-citation network).
 - `docs/explorador.html` — interactive **d3 SVG** co-citation network (filters, search, communities).
 - `docs/triagem.html` — **triage** tool: include/exclude/maybe over the synthesis, exports RIS.
+- `docs/espaco.html` — **3D space** of the traditions (dependency-free Canvas 2D engine, `docs/espaco3d.js`):
+  each work sits at the point of a tetrahedron given by the mix of its co-citation among the four
+  traditions; five lenses (silos, tempo, origem, agenda, a nota); view state lives in the URL hash.
 - `docs/dados/` — 10 CSVs, the network JSON, and the **Rayyan** synthesis (`rayyan_sintese.{ris,csv,enw,bib,zip}`).
 
 All paths below are relative to the repository root.
@@ -53,9 +56,10 @@ Verified output ends with:
 
 ```
 [index]       charts: 3 (esperado 3) · sections: 22/22 · spans vazios: nenhum · page errors: NENHUM -> OK
-[explorador]  nós (círculos d3): 219 · page errors: NENHUM -> OK
-[triagem]     cartões: 203 · page errors: NENHUM -> OK
-screenshots: /tmp/scisci_site.png, /tmp/scisci_explorador.png, /tmp/scisci_triagem.png
+[explorador]  nós (círculos d3): 250 · page errors: NENHUM -> OK
+[triagem]     cartões: 212 · page errors: NENHUM -> OK
+[espaco]      obras na cena: 250 · cena pintada: sim · lentes: 5 · números vazios: nenhum · page errors: NENHUM -> OK
+screenshots: /tmp/scisci_site.png, /tmp/scisci_explorador.png, /tmp/scisci_triagem.png, /tmp/scisci_espaco.png
 STATUS: OK
 ```
 
@@ -95,7 +99,7 @@ python src/cocitation_hypergraph.py  # ordem superior (hipergrafo) -> data/cocit
 Serve and open in a browser (useless headless; for a human at a screen):
 
 ```bash
-python3 -m http.server -d docs 8000   # http://127.0.0.1:8000/ · /explorador.html · /triagem.html · Ctrl-C
+python3 -m http.server -d docs 8000   # http://127.0.0.1:8000/ · /explorador.html · /espaco.html · /triagem.html · Ctrl-C
 ```
 
 To publish: GitHub repo → **Settings → Pages → Source: branch + `/docs`**.

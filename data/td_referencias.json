@@ -1,0 +1,648 @@
+{
+ "_doc": "Lista de referências do texto para discussão dos autores do projeto, com o casamento curado entre cada referência e os registros da rede do explorador. Casamento por título, conferido à mão; edições distintas da mesma obra contam como a mesma. Remover este arquivo desliga a lente 'A nota' do Espaço 3D.",
+ "titulo": "Do organograma ao sistema viável: em busca de uma descrição cibernética do arranjo institucional da Nova Indústria Brasil",
+ "autores": [
+  "Lucas Freire Silva",
+  "Cláucia Piccoli Faganello",
+  "Bruno Queiroz Cunha"
+ ],
+ "versao": "versão para seminário, novembro de 2026 (manuscrito dos autores)",
+ "referencias": [
+  {
+   "ref": "ARROW, K. J. The limits of organization. New York: W. W. Norton, 1974.",
+   "tipo": "obra",
+   "ano": 1974,
+   "doi": "",
+   "oa": [
+    "W1511343964"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "ASHBY, W. R. An introduction to cybernetics. London: Chapman & Hall, 1956.",
+   "tipo": "obra",
+   "ano": 1956,
+   "doi": "",
+   "oa": [
+    "W2325487953",
+    "W2111030512"
+   ],
+   "nota": "dois registros da mesma obra na rede"
+  },
+  {
+   "ref": "BARZELAY, M. Public management as a design-oriented professional discipline. Cheltenham: Edward Elgar, 2019. DOI: 10.4337/9781788119108.",
+   "tipo": "obra",
+   "ano": 2019,
+   "doi": "10.4337/9781788119108",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BEACH, D., PEDERSEN, R. B. Process-tracing methods: foundations and guidelines. 2. ed. Ann Arbor: University of Michigan Press, 2019. DOI: 10.3998/mpub.10072208.",
+   "tipo": "obra",
+   "ano": 2019,
+   "doi": "10.3998/mpub.10072208",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BEER, S. Cybernetics and management. London: English Universities Press, 1959.",
+   "tipo": "obra",
+   "ano": 1959,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BEER, S. The heart of enterprise. Chichester: John Wiley & Sons, 1979.",
+   "tipo": "obra",
+   "ano": 1979,
+   "doi": "",
+   "oa": [
+    "W1566478880"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "BEER, S. Diagnosing the system for organizations. Chichester: John Wiley & Sons, 1985. ISBN 0-471-90675-1.",
+   "tipo": "obra",
+   "ano": 1985,
+   "doi": "",
+   "oa": [
+    "W2154683088",
+    "W52678905"
+   ],
+   "nota": "dois registros da mesma obra na rede"
+  },
+  {
+   "ref": "BOUCKAERT, G., PETERS, B. G., VERHOEST, K. The coordination of public sector organizations: shifting patterns of public management. Basingstoke: Palgrave Macmillan, 2010.BRASIL. Lei nº 11.080, de 30 de dezembro de 2004. Autoriza o Poder Executivo a instituir Serviço Social Autônomo denominado Agência Brasileira de Desenvolvimento Industrial, ABDI, e dá outras providências. Diário Oficial da União, Brasília, DF, 31 dez. 2004.",
+   "tipo": "obra",
+   "ano": 2004,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Lei nº 13.848, de 25 de junho de 2019. Dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras. Diário Oficial da União, Brasília, DF, 2019. Disponível em: https://www2.camara.leg.br/legin/fed/lei/2019/lei-13848-25-junho-2019- 788523-normaatualizada-pl.pdf. Acesso em: 8 nov. 2026.",
+   "tipo": "ato",
+   "ano": 2026,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Decreto nº 9.203, de 22 de novembro de 2017. Dispõe sobre a política de governança da administração pública federal direta, autárquica e fundacional. Diário Oficial da União, Brasília, DF, 2017.",
+   "tipo": "ato",
+   "ano": 2017,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Decreto nº 9.739, de 28 de março de 2019. Estabelece medidas de eficiência organizacional e dispõe sobre o Sistema de Organização e Inovação Institucional do Governo Federal, Siorg. Diário Oficial da União, Brasília, DF, 2019.",
+   "tipo": "ato",
+   "ano": 2019,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Decreto nº 11.427, de 2 de março de 2023. Aprova a Estrutura Regimental e o Quadro Demonstrativo dos Cargos em Comissão e das Funções de Confiança do Ministério do Desenvolvimento, Indústria, Comércio e Serviços. Diário Oficial da União, Brasília, DF, 2023.",
+   "tipo": "ato",
+   "ano": 2023,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Decreto nº 11.482, de 6 de abril de 2023. Dispõe sobre o Conselho Nacional de Desenvolvimento Industrial, CNDI. Diário Oficial da União, Brasília, DF, 2023.",
+   "tipo": "ato",
+   "ano": 2023,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Decreto nº 12.401, de 13 de março de 2025. Altera o Decreto nº 11.482, de 6 de abril de 2023, que dispõe sobre o Conselho Nacional de Desenvolvimento Industrial, CNDI. Diário Oficial da União, Brasília, DF, 2025.",
+   "tipo": "ato",
+   "ano": 2025,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Resolução CNDI/MDIC nº 2, de 6 de julho de 2023. Aprova o Regimento Interno do Conselho Nacional de Desenvolvimento Industrial. Diário Oficial da União, Brasília, DF, seção 1, p. 16, 19 jul. 2023.",
+   "tipo": "ato",
+   "ano": 2023,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Comitê Executivo. Resolução CE/CNDI/MDIC nº 2, de 9 de agosto de 2023. Institui o Grupo de Trabalho para Coordenação das Ações de Financiamento ao Desenvolvimento Industrial. Diário Oficial da União, Brasília, DF, seção 1, p. 149, 20 set. 2023.",
+   "tipo": "ato",
+   "ano": 2023,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Comitê Executivo. Resolução CE/CNDI/MDIC nº 3, de 9 de agosto de 2023. Institui o Grupo de Trabalho para Redução do Custo-Brasil, visando o aumento de competitividade do setor produtivo. Diário Oficial da União, Brasília, DF, seção 1, p. 150, 20 set. 2023.",
+   "tipo": "ato",
+   "ano": 2023,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Ministério do Desenvolvimento, Indústria, Comércio e Serviços. Resolução CGE/MDIC nº 5, de 11 de janeiro de 2024. Aprova a Cadeia de Valor do Ministério do Desenvolvimento, Indústria, Comércio e Serviços. Boletim de Serviço Eletrônico, Brasília, DF, 16 jan. 2024a.",
+   "tipo": "ato",
+   "ano": 2024,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Resolução CNDI/MDIC nº 4, de 22 de janeiro de 2024. Aprova o plano de ação da política de desenvolvimento industrial Nova Indústria Brasil para o período 2024 a 2026. Diário Oficial da União, Brasília, DF, 22 fev. 2024b.",
+   "tipo": "ato",
+   "ano": 2026,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Comitê Executivo. Resolução CE/CNDI/MDIC nº 5, de 24 de julho de 2024. Institui o Grupo de Trabalho sobre Formação, Qualificação e Fixação de Pessoal de Nível Superior para o Desenvolvimento Tecnológico e Atuação na Indústria. Diário Oficial da União, Brasília, DF, seção 1, p. 24, 14 ago. 2024.",
+   "tipo": "ato",
+   "ano": 2024,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Comitê Executivo. Resolução CE/CNDI/MDIC nº 6, de 29 de outubro de 2024. Institui o Grupo de Trabalho sobre Desafios de Adensamento das Cadeias Produtivas Prioritárias das Missões da NIB. Diário Oficial da União, Brasília, DF, seção 1, p. 28, 6 nov. 2024.",
+   "tipo": "ato",
+   "ano": 2024,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Comitê Executivo. Resolução CE/CNDI/MDIC nº 7, de 10 de dezembro de 2024. Institui o Grupo de Trabalho para Coordenação das Ações do Plano Mais Produção para a Nova Indústria Brasil. Diário Oficial da União, Brasília, DF, seção 1, p. 31, 18 dez. 2024.",
+   "tipo": "ato",
+   "ano": 2024,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Conselho Nacional de Desenvolvimento Industrial. Resolução CNDI/MDIC nº 10, de 11 de dezembro de 2024. Dispõe sobre o Plano Mais Produção (P+P). Diário Oficial da União, Brasília, DF, seção 1, p. 30, 18 dez. 2024.",
+   "tipo": "ato",
+   "ano": 2024,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "BRASIL. Ministério do Desenvolvimento, Indústria, Comércio e Serviços. Nova Indústria Brasil: forte, transformadora e sustentável: plano de ação para a neoindustrialização 2024-2026. Brasília: CNDI, MDIC, 2024c.",
+   "tipo": "ato",
+   "ano": 2026,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "CAIRNEY, P. Complexity theory in political science and public policy. Political Studies Review, v. 10, n. 3, p. 346-358, 2012.",
+   "tipo": "obra",
+   "ano": 2012,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "CHRISTENSEN, T., LÆGREID, P. The new regulatory orthodoxy: a critical assessment. In: LEVI-FAUR, D. (Ed.). Handbook on the politics of regulation. Cheltenham: Edward Elgar, 2011. p. 361-372.",
+   "tipo": "obra",
+   "ano": null,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "CINGOLANI, L. The role of state capacity in development studies. Journal of Development Perspectives, v. 2, n. 1-2, p. 88-114, 2018. DOI: 10.5325/jdevepers.2.1-2.0088.",
+   "tipo": "obra",
+   "ano": 2018,
+   "doi": "10.5325/jdevepers.2.1-2.0088",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "COASE, R. H. The nature of the firm. Economica, v. 4, n. 16, p. 386-405, 1937. DOI: 10.1111/j.1468-0335.1937.tb00002.x.",
+   "tipo": "obra",
+   "ano": 1937,
+   "doi": "10.1111/j.1468-0335.1937.tb00002.x",
+   "oa": [
+    "W2015930340"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "COUTINHO, D. R. O direito nas políticas públicas. In: MARQUES, E., FARIA, C. A. P. de (Org.). A política pública como campo multidisciplinar. São Paulo: Editora Unesp; Rio de Janeiro: Editora Fiocruz, 2013. p. 181-200.",
+   "tipo": "obra",
+   "ano": 2013,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "CUNHA, B. Q., LODGE, M. Contesting regulatory capacity: exploring doctrines in the regulatory state. Public Administration and Development, 2025. DOI: 10.1002/pad.2108.",
+   "tipo": "obra",
+   "ano": 2025,
+   "doi": "10.1002/pad.2108",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "ESPEJO, R., BOWLING, D., HOVERSTADT, P. The viable system model and the Viplan software. Kybernetes, v. 28, n. 6/7, p. 661-678, 1999. DOI: 10.1108/03684929910282944.",
+   "tipo": "obra",
+   "ano": 1999,
+   "doi": "10.1108/03684929910282944",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "ESPINOSA, A. Revisiting the Viable System Model as an emancipatory systems approach. Systems Research and Behavioral Science, 2024. DOI: 10.1002/sres.3090.",
+   "tipo": "obra",
+   "ano": 2024,
+   "doi": "10.1002/sres.3090",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "ESPEJO, R., REYES, A. Organizational systems: managing complexity with the Viable System Model. Heidelberg: Springer, 2011.",
+   "tipo": "obra",
+   "ano": 2011,
+   "doi": "",
+   "oa": [
+    "W4244612406"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "EVANS, P. Embedded autonomy: states and industrial transformation. Princeton: Princeton University Press, 1995.",
+   "tipo": "obra",
+   "ano": 1995,
+   "doi": "",
+   "oa": [
+    "W2912536286",
+    "W2012275303"
+   ],
+   "nota": "dois registros da mesma obra na rede"
+  },
+  {
+   "ref": "GALBRAITH, J. R. Organization design: an information processing view. Interfaces, v. 4, n. 3, p. 28-36, 1974.",
+   "tipo": "obra",
+   "ano": 1974,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "GOMIDE, A. A., PIRES, R. R. C. (Org.). Capacidades estatais e democracia: arranjos institucionais de políticas públicas. Brasília: Ipea, 2014.",
+   "tipo": "obra",
+   "ano": 2014,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "GRAICUNAS, V. A. Relationship in organization. In: GULICK, L., URWICK, L. (Ed.). Papers on the science of administration. New York: Institute of Public Administration, 1937. p. 181-187.",
+   "tipo": "obra",
+   "ano": 1937,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "GULICK, L. Notes on the theory of organization. In: GULICK, L., URWICK, L. (Ed.). Papers on the science of administration. New York: Institute of Public Administration, 1937. p. 1-45.",
+   "tipo": "obra",
+   "ano": 1937,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "HALL, P. A. Policy paradigms, social learning, and the state: the case of economic policymaking in Britain. Comparative Politics, v. 25, n. 3, p. 275-296, 1993. DOI: 10.2307/421954.",
+   "tipo": "obra",
+   "ano": 1993,
+   "doi": "10.2307/421954",
+   "oa": [
+    "W4371184"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "JUSTEN FILHO, M. O direito das agências reguladoras independentes. São Paulo: Dialética, 2002.",
+   "tipo": "obra",
+   "ano": 2002,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "KATTEL, R., MAZZUCATO, M. Mission-oriented innovation policy and dynamic capabilities in the public sector. Industrial and Corporate Change, v. 27, n. 5, p. 787-801, 2018.",
+   "tipo": "obra",
+   "ano": 2018,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "LASCOUMES, P., LE GALÈS, P. Introduction: understanding public policy through its instruments. Governance, v. 20, n. 1, p. 1-21, 2007.",
+   "tipo": "obra",
+   "ano": 2007,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "LEVY, B., SPILLER, P. T. The institutional foundations of regulatory commitment: a comparative analysis of telecommunications regulation. Journal of Law, Economics and Organization, v. 10, n. 2, p. 201-246, 1994.",
+   "tipo": "obra",
+   "ano": 1994,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "LINDBLOM, Charles E. The science of “muddling through”. Public Administration Review, v. 19, n. 2, p. 79-88, 1959.",
+   "tipo": "obra",
+   "ano": 1959,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "LODGE, M. Regulatory capacity. In: LODGE, M., WEGRICH, K. (Ed.). The problem-solving capacity of the modern state. Oxford: Oxford University Press, 2014. p. 63-85.",
+   "tipo": "obra",
+   "ano": 2014,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "MAJONE, G. From the positive to the regulatory state: causes and consequences of changes in the mode of governance. Journal of Public Policy, v. 17, n. 2, p. 139-167, 1997. DOI: 10.1017/S0143814X00003524.",
+   "tipo": "obra",
+   "ano": 1997,
+   "doi": "10.1017/S0143814X00003524",
+   "oa": [
+    "W2143590178"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "MARQUES NETO, F. A. Agências reguladoras independentes: fundamentos e seu regime jurídico. Belo Horizonte: Fórum, 2005.",
+   "tipo": "obra",
+   "ano": 2005,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "MAZZUCATO, M. Mission-oriented innovation policies: challenges and opportunities. Industrial and Corporate Change, v. 27, n. 5, p. 803-815, 2018. DOI: 10.1093/icc/dty034.",
+   "tipo": "obra",
+   "ano": 2018,
+   "doi": "10.1093/icc/dty034",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "MINTZBERG, H. The structuring of organizations. Englewood Cliffs: Prentice-Hall, 1979.",
+   "tipo": "obra",
+   "ano": 1979,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "OCDE, Organização para a Cooperação e Desenvolvimento Econômico. Systems approaches to public sector challenges: working with change. Paris: OECD Publishing, 2017. DOI: 10.1787/9789264279865-en.",
+   "tipo": "obra",
+   "ano": 2017,
+   "doi": "10.1787/9789264279865-en",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "OSTROM, Elinor. Governing the commons: the evolution of institutions for collective action. Cambridge: Cambridge University Press, 1990.",
+   "tipo": "obra",
+   "ano": 1990,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "PACHECO, R. S. Regulação no Brasil: desenho das agências e formas de controle. Revista de Administração Pública, v. 40, n. 4, p. 523-543, 2006.",
+   "tipo": "obra",
+   "ano": 2006,
+   "doi": "",
+   "oa": [
+    "W2154631061"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "PETERS, B. G. Managing horizontal government: the politics of coordination. Public Administration, v. 76, n. 2, p. 295-311, 1998.",
+   "tipo": "obra",
+   "ano": 1998,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "PIRES, R. R. C., GOMIDE, A. A. Governança e capacidades estatais: uma análise comparativa de programas federais. Revista de Sociologia e Política, v. 24, n. 58, p. 121-143, 2016. DOI: 10.1590/1678-987316245807.",
+   "tipo": "obra",
+   "ano": 2016,
+   "doi": "10.1590/1678-987316245807",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "POLANYI, Michael. The tacit dimension. Chicago: University of Chicago Press, 1966.",
+   "tipo": "obra",
+   "ano": 1966,
+   "doi": "",
+   "oa": [
+    "W1606540910"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "PORTER, M. E. Competitive advantage: creating and sustaining superior performance. New York: Free Press, 1985.",
+   "tipo": "obra",
+   "ano": 1985,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "PRADO, M. M. Implementing independent regulatory agencies in Brazil: the contrasting experiences in the electricity and telecommunications sectors. Regulation & Governance, v. 6, n. 3, p. 300-326, 2012. DOI: 10.1111/j.1748-5991.2012.01142.x.",
+   "tipo": "obra",
+   "ano": 2012,
+   "doi": "10.1111/j.1748-5991.2012.01142.x",
+   "oa": [
+    "W2125441319"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "PRESSMAN, J. L., WILDAVSKY, A. Implementation. Berkeley: University of California Press, 1973.",
+   "tipo": "obra",
+   "ano": 1973,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "QUEIROZ-STEIN, G., GUGLIANO, A. A. Government political-relational capacities and industrial policy profile: Brazil's experience at the beginning of the 21st century. Economia e Sociedade, v. 31, n. 3, p. 579-600, 2022. DOI: 10.1590/1982-3533.2022v31n3art02.",
+   "tipo": "obra",
+   "ano": 1982,
+   "doi": "10.1590/1982-3533.2022v31n3art02",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "RITTEL, H. W. J., WEBBER, M. M. Dilemmas in a general theory of planning. Policy Sciences, v. 4, n. 2, p. 155-169, 1973.",
+   "tipo": "obra",
+   "ano": 1973,
+   "doi": "",
+   "oa": [
+    "W2010793828"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "RODRIK, D. Industrial policy for the twenty-first century. Cambridge: Harvard University, 2004. (CEPR Discussion Paper Series, n. 4767.)",
+   "tipo": "obra",
+   "ano": 2004,
+   "doi": "",
+   "oa": [
+    "W3124879925"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "SCHARPF, F. W. Games real actors could play: positive and negative coordination in embedded negotiations. Journal of Theoretical Politics, v. 6, n. 1, p. 27-53, 1994.",
+   "tipo": "obra",
+   "ano": 1994,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "SEAWRIGHT, J., GERRING, J. Case selection techniques in case study research: a menu of qualitative and quantitative options. Political Research Quarterly, v. 61, n. 2, p. 294-308, 2008.",
+   "tipo": "obra",
+   "ano": 2008,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "SHANNON, C. E. A mathematical theory of communication. Bell System Technical Journal, v. 27, n. 3, p. 379-423, 1948.",
+   "tipo": "obra",
+   "ano": 1948,
+   "doi": "",
+   "oa": [
+    "W1995875735"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "SIMON, H. A. The architecture of complexity. Proceedings of the American Philosophical Society, v. 106, n. 6, p. 467-482, 1962.",
+   "tipo": "obra",
+   "ano": 1962,
+   "doi": "",
+   "oa": [
+    "W1588942736"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "SUZIGAN, W., FURTADO, J. Instituições e políticas industriais e tecnológicas: reflexões a partir da experiência brasileira. Estudos Econômicos, São Paulo, v. 40, n. 1, p. 7-41, 2010.",
+   "tipo": "obra",
+   "ano": 2010,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "THOMPSON, J. D. Organizations in action: social science bases of administrative theory. New York: McGraw-Hill, 1967.",
+   "tipo": "obra",
+   "ano": 1967,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "TROCHIM, W. M. K. Outcome pattern matching and program theory. Evaluation and Program Planning, v. 12, n. 4, p. 355-366, 1989. DOI: 10.1016/0149-7189(89)90052-9.",
+   "tipo": "obra",
+   "ano": 1989,
+   "doi": "10.1016/0149-7189(89)90052-9",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "VAN DE VEN, A. H., DELBECQ, A. L., KOENIG JR., R. Determinants of coordination modes within organizations. American Sociological Review, v. 41, n. 2, p. 322-338, 1976.",
+   "tipo": "obra",
+   "ano": 1976,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "WIENER, N. Cybernetics: or control and communication in the animal and the machine. Cambridge: MIT Press, 1948.",
+   "tipo": "obra",
+   "ano": 1948,
+   "doi": "",
+   "oa": [
+    "W1527571715"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "WILLIAMSON, O. E. Markets and hierarchies: analysis and antitrust implications. New York: Free Press, 1975.",
+   "tipo": "obra",
+   "ano": 1975,
+   "doi": "",
+   "oa": [
+    "W1973308529"
+   ],
+   "nota": ""
+  },
+  {
+   "ref": "WILLIAMSON, O. E. The economic institutions of capitalism: firms, markets, relational contracting. New York: Free Press, 1985.",
+   "tipo": "obra",
+   "ano": 1985,
+   "doi": "",
+   "oa": [
+    "W2566856888",
+    "W1684540946"
+   ],
+   "nota": "dois registros da mesma obra na rede"
+  },
+  {
+   "ref": "WU, X., RAMESH, M., HOWLETT, M. Policy capacity: a conceptual framework for understanding policy competences and capabilities. Policy and Society, v. 34, n. 3-4, p. 165-171, 2015.",
+   "tipo": "obra",
+   "ano": 2015,
+   "doi": "",
+   "oa": [],
+   "nota": ""
+  },
+  {
+   "ref": "YIN, R. K. Case study research and applications: design and methods. 6. ed. Thousand Oaks: SAGE, 2018.",
+   "tipo": "obra",
+   "ano": null,
+   "doi": "",
+   "oa": [
+    "W1527311855"
+   ],
+   "nota": "a rede traz a 1ª edição (1984); a nota cita a 6ª (2018)"
+  }
+ ]
+}

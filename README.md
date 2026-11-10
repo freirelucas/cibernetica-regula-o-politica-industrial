@@ -9,7 +9,7 @@ construído a partir de uma fonte única de dados, `data/scisci_results.json`.
 **▶ Rodar o funil completo (OpenAlex → dados → site) em 1 clique:**
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/freirelucas/cibernetica-regula-o-politica-industrial/blob/main/colab/scisci_cibernetica_regulacao_PI_v2.ipynb)
 — execute as células em ordem; ao final, a **Célula 13** regenera `docs/` com tudo
-(relatório, explorador, triagem e exportações Rayyan). O notebook produz
+(relatório, explorador, espaço 3D, triagem e exportações Rayyan). O notebook produz
 `data/scisci_results.json` + `data/network.json` (a "fonte" que o site consome aqui).
 
 **▶ Ou re-rodar sozinho via GitHub Actions** (sem Colab): *Actions → "funil-rerun" →
@@ -39,7 +39,7 @@ converter esse mapa em instrumento de pesquisa e de política. Três frentes:
    missões (Mazzucato/Rodrik).
 
 **Critérios de pronto:** funil reprodutível em um clique (Colab) sobre corpus real; site
-`docs/` camera-ready (relatório + explorador + triagem); zero dado inventado ou não-resolvível;
+`docs/` camera-ready (relatório + explorador + espaço 3D + triagem); zero dado inventado ou não-resolvível;
 suíte de testes verde; prosa sem anglicismo.
 
 ---
@@ -55,16 +55,23 @@ suíte de testes verde; prosa sem anglicismo.
 ├── src/
 │   ├── build_site.py                 ← gera o site docs/ a partir do JSON (fonte única)
 │   ├── site_template.html            ← modelo do site (prosa + gráficos + downloads)
+│   ├── espaco.py                     ← dados do espaço 3D (posição = mistura da cocitação por tradição)
+│   ├── espaco_template.html          ← modelo da tela "Espaço 3D" (cinco lentes)
+│   ├── espaco3d.js                   ← motor da cena em canvas 2D, sem biblioteca
 │   ├── report_from_json.py           ← reconstrói os consts de gráfico a partir do JSON
 │   ├── report_template.py            ← injeção do modelo (sem dependências)
 │   └── enrich_openalex.py            ← enriquecimento pontual via OpenAlex (uso único)
 ├── docs/                             ← SITE (GitHub Pages)
-│   ├── index.html
+│   ├── index.html                    ← relatório
+│   ├── explorador.html               ← rede de cocitação em duas dimensões
+│   ├── espaco.html                   ← espaço 3D das tradições
+│   ├── triagem.html                  ← triagem de inclusão e exclusão
 │   ├── vendor/                       ← Chart.js, d3 + fontes (sem CDN)
 │   ├── dados/                        ← 8 CSV do funil (PT) + scisci_results.json + DICIONARIO
 │   └── material-brasil/              ← revisão da literatura nacional (Faganello) + dados/mapas
 ├── data/
-│   └── scisci_results.json           ← resultados consolidados (execução jun/2026; corpus 6.340, 60 sementes)
+│   ├── scisci_results.json           ← resultados consolidados (execução jun/2026; corpus 6.340, 60 sementes)
+│   └── td_referencias.json           ← bibliografia do texto para discussão, casada com a rede (lente "A nota")
 ├── tests/                            ← suite pytest (build, dados, anglicismos, integridade)
 └── .claude/skills/run-scisci-ipea/   ← skill: build, serve e dirige o site headless
 ```
@@ -90,6 +97,21 @@ Construir + servir + dirigir headless + screenshot (verifica gráficos e seçõe
 ```bash
 python .claude/skills/run-scisci-ipea/driver.py --build --shot /tmp/site.png
 ```
+
+**As quatro telas**, todas geradas por `build_site.py` e sem nenhuma carga externa:
+
+- `index.html` — o relatório, em seis atos.
+- `explorador.html` — a rede de cocitação em duas dimensões (d3), com filtros e busca.
+- `espaco.html` — o espaço 3D das tradições. Cada obra ocupa o ponto de um tetraedro que
+  corresponde à mistura da sua cocitação entre as quatro tradições: a posição é uma regra,
+  não um layout de forças, e é a mesma em qualquer execução. Cinco lentes reorganizam a
+  mesma cena — silos, tempo, origem do rótulo (observado ou inferido), agenda de tríades
+  ausentes e a bibliografia do texto para discussão. O endereço guarda a vista (lente,
+  obra, filtros), de modo que qualquer estado pode ser citado por link. O motor é próprio,
+  em canvas 2D (`src/espaco3d.js`): não há WebGL nem biblioteca nova.
+- `triagem.html` — triagem de inclusão e exclusão, com exportação para o Rayyan.
+
+Detalhes da regra da cena e dos seus limites em `METODOLOGIA.md` §6.
 
 **Publicar:** no GitHub, *Settings → Pages → Source: branch + pasta `/docs`*.
 
@@ -179,7 +201,8 @@ pip install pytest
 pytest -q          # build, integridade do JSON, cabeçalhos dos CSV, varredura de anglicismo
 ```
 
-O smoke headless do site fica em `.claude/skills/run-scisci-ipea/driver.py`.
+O smoke headless do site (as quatro telas) fica em `.claude/skills/run-scisci-ipea/driver.py`.
+Os testes que abrem navegador pulam sozinhos onde o Playwright não está instalado.
 
 ---
 
