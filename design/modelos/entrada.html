@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protótipo — entrada do relatório</title>
+<link rel="stylesheet" href="../../docs/vendor/fonts.css">
+<link rel="stylesheet" href="../sistema.css">
+<style>
+/* ── leiaute desta tela (vai para src/site_template.html; os componentes sd- vêm de sistema.css) ── */
+body{margin:0;background:var(--sd-papel)}
+.entrada{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--sd-e5);max-width:78rem;margin:0 auto;padding:var(--sd-e7) var(--sd-e5) var(--sd-e6)}
+.entrada-texto{display:grid;gap:var(--sd-e4);align-content:start}
+.entrada-texto .sd-h1 em{font-style:italic;color:var(--sd-apagado)}
+.entrada-autores{font-size:var(--sd-t0);color:var(--sd-apagado);max-width:var(--sd-medida);margin:0}
+.entrada-cena{display:block;color:var(--sd-tinta);text-decoration:none;min-width:0}
+.entrada-cena canvas{display:block;width:100%;aspect-ratio:1.16/1;max-height:min(62vw,26rem);cursor:grab;touch-action:pan-y}
+.entrada-cena span{display:block;font-size:var(--sd-t0);color:var(--sd-apagado);line-height:1.45}
+.entrada-cena b{font-weight:500;color:var(--sd-cib-texto);text-decoration:underline;text-underline-offset:2px}
+.entrada-faixa{max-width:78rem;margin:0 auto;padding:0 var(--sd-e5) var(--sd-e7);display:grid;gap:var(--sd-e4)}
+.entrada-faixa .sd-numeros{grid-template-columns:minmax(0,1fr)}
+.entrada-ferramentas{font-size:var(--sd-t0);color:var(--sd-apagado);margin:0}
+.entrada-ferramentas a{display:inline-flex;align-items:center;min-height:var(--sd-alvo);margin-right:var(--sd-e3)}
+@media (min-width:600px){.entrada-faixa .sd-numeros{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1040px){
+  .entrada-faixa .sd-numeros{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .entrada{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:var(--sd-e7)}
+  .entrada-cena canvas{max-height:none}
+}
+</style>
+</head>
+<body class="sd">
+{{svg:solidos}}
+
+<header class="sd-barra">
+  <a class="sd-marca" href="#">Ipea/Diest</a>
+  <nav class="sd-telas" aria-label="Telas do estudo">
+    <a class="sd-tela" href="#" aria-current="page">Estudo</a>
+    <a class="sd-tela" href="nota.html">A nota</a>
+    <a class="sd-tela" href="#">Espaço 3D</a>
+    <a class="sd-tela" href="#">Explorador</a>
+    <a class="sd-tela" href="#">Triagem</a>
+  </nav>
+  <div class="sd-barra-fim">
+    <details class="sd-secoes">
+      <summary>Seções</summary>
+      <div>
+        <b>Ato 1: como medimos</b><a href="#">Fundamentação teórica</a><a href="#">Método</a><a href="#">Funil de coleta</a>
+        <b>Ato 2: os silos</b><a href="#">Panorama temporal</a><a href="#">Zonas de intercâmbio</a><a href="#">Agrupamentos</a>
+        <b>Ato 5: do diagnóstico ao desenho</b><a href="#">Discussão</a><a href="#">Pontes de ordem superior</a><a href="#">Síntese</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main>
+<section class="entrada" aria-labelledby="titulo">
+  <div class="entrada-texto">
+    <p class="sd-sobre">Estudo cienciométrico do Ipea/Diest</p>
+    <h1 class="sd-h1" id="titulo">Cibernética organizacional, regulação e <em>política industrial</em></h1>
+    <p class="sd-abre">Três tradições tratam do mesmo problema, o de como o Estado coordena a atividade produtiva, e quase não se citam. Só {{num.blocos.pct_inter_canonico|1}}% do peso de cocitação cruza as três, e nenhuma obra as conecta além do acaso.</p>
+    <p class="entrada-autores">Bruno Queiroz, Lucas Freire e Claucia Faganello. Instituto de Pesquisa Econômica Aplicada, Diretoria de Estudos e Políticas do Estado, das Instituições e da Democracia. Brasília.</p>
+    <details class="sd-estado">
+      <summary>Versão de trabalho</summary>
+      <p>Material preliminar, sujeito a revisão: não citar como versão final. O eixo de regulação econômica foi ressemeado ({{corpus.sementes}} sementes no total) e o corpus reprocessado ({{corpus.n}} trabalhos); as seções quantitativas já refletem a rede nova. A rede de coautoria ainda deriva do recorte anterior.</p>
+    </details>
+  </div>
+  <a class="entrada-cena" id="cena-elo" href="#" aria-label="Abrir o espaço 3D das tradições">
+    <canvas id="cena" aria-hidden="true"></canvas>
+    <span>As {{num.rede.n}} obras do núcleo cocitado, cada uma no ponto que corresponde à mistura da sua cocitação entre quatro tradições. Arraste para girar. <b>Abrir o espaço 3D</b></span>
+  </a>
+</section>
+
+<section class="entrada-faixa" aria-labelledby="portas">
+  <h2 class="sd-sobre" id="portas">Por onde entrar</h2>
+  <ul class="sd-portas">
+    <li><a class="sd-porta" href="nota.html">
+      <span class="sd-porta-marca"><svg class="sd-sol sd-gg sd-eixo-nota sd-cheio" aria-hidden="true"><use href="#sd-sol-dodeca"/></svg></span>
+      <b>A bibliografia da nota</b>
+      <span class="sd-porta-texto">As {{nota.n_obras}} obras citadas em <i>Do organograma ao sistema viável</i>, situadas no mapa das tradições: {{nota.n_no_nucleo}} estão no núcleo cocitado.</span>
+      <em>Abrir a nota</em>
+    </a></li>
+    <li><a class="sd-porta" href="#">
+      <span class="sd-porta-marca" aria-hidden="true">
+        <svg class="sd-sol sd-g sd-eixo-cib sd-cheio"><use href="#sd-sol-icosa"/></svg>
+        <svg class="sd-sol sd-g sd-eixo-reg sd-cheio"><use href="#sd-sol-cubo"/></svg>
+        <svg class="sd-sol sd-g sd-eixo-pi sd-cheio"><use href="#sd-sol-tetra"/></svg>
+      </span>
+      <b>O achado: três silos</b>
+      <span class="sd-porta-texto">Modularidade de {{num.silos.Q|3}}, contra {{num.silos.Q_acaso|3}} ao acaso. {{num.silos.n_conectores}} de {{num.silos.n_nos}} obras testadas conectam as tradições.</span>
+      <em>Ler o Ato 2</em>
+    </a></li>
+    <li><a class="sd-porta" href="#">
+      <span class="sd-porta-marca"><svg class="sd-sol sd-gg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21.5 20h-19z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2.4" stroke-linejoin="round"/><circle cx="12" cy="3" r="1.7"/><circle cx="21.5" cy="20" r="1.7"/><circle cx="2.5" cy="20" r="1.7"/></svg></span>
+      <b>A agenda: onde construir</b>
+      <span class="sd-porta-texto">{{num.agenda.n_agenda}} tríades de obras que nunca foram citadas juntas, em ordem de quanto integrariam o campo. {{nota.n_triades}} envolvem obra citada na nota.</span>
+      <em>Ler o Ato 5</em>
+    </a></li>
+  </ul>
+  <p class="entrada-ferramentas">Ferramentas: <a href="#">Espaço 3D</a><a href="#">Explorador da rede</a><a href="#">Triagem de leituras</a></p>
+</section>
+
+<section class="entrada-faixa" aria-labelledby="numeros">
+  <h2 class="sd-sobre" id="numeros">O achado em números, cada um com o seu denominador</h2>
+  <dl class="sd-numeros">
+    <div class="sd-numero"><dt>Corpus</dt><dd><b>{{corpus.n}}</b> trabalhos, a partir de {{corpus.sementes}} obras-semente</dd></div>
+    <div class="sd-numero"><dt>Núcleo cocitado</dt><dd><b>{{num.rede.n}}</b> obras e {{num.rede.m}} cocitações</dd></div>
+    <div class="sd-numero"><dt>Cocitação que cruza as três tradições</dt><dd><b>{{num.blocos.pct_inter_canonico|1}}%</b> do peso entre obras de rótulo observado</dd></div>
+    <div class="sd-numero"><dt>Obras conectoras significativas</dt><dd><b>{{num.silos.n_conectores}}</b> de {{num.silos.n_nos}} testadas</dd></div>
+    <div class="sd-numero"><dt>Tríades além do acaso</dt><dd><b>{{num.agenda.alem_do_acaso}}</b> de {{num.agenda.n_candidatas}} avaliadas</dd></div>
+    <div class="sd-numero"><dt>Agenda que não depende de rótulo inferido</dt><dd><b>{{num.agenda.n_nucleo}}</b> de {{num.agenda.n_agenda}} tríades</dd></div>
+  </dl>
+</section>
+</main>
+
+<script src="../../docs/espaco3d.js"></script>
+<script>
+(function () {
+  var HERO = {{bloco:heroi_json}};
+  var tela = document.getElementById('cena'), elo = document.getElementById('cena-elo');
+  try {
+    var cena = Espaco3D.heroi(tela, HERO);
+    elo.addEventListener('click', function (e) { var girou = cena.arrastou(); cena.limpaArrasto(); if (girou) e.preventDefault(); });
+  } catch (err) { tela.style.display = 'none'; }
+  // o menu de seções fecha ao escolher um destino ou ao tocar fora
+  var menu = document.querySelector('.sd-secoes');
+  document.addEventListener('click', function (e) { if (menu.open && (!menu.contains(e.target) || e.target.closest('a'))) menu.open = false; });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); } });
+})();
+</script>
+</body>
+</html>
