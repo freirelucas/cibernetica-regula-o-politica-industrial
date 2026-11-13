@@ -70,8 +70,12 @@ def mudancas(base):
 
 def testes():
     saida = os.path.join(git("rev-parse", "--absolute-git-dir"), "aceite-junit.xml")
-    r = roda(sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider", f"--junitxml={saida}")
     res = {}
+    if os.path.exists(saida):
+        os.remove(saida)
+    r = roda(sys.executable, "-m", "pytest", "-q", "-p", "no:cacheprovider", f"--junitxml={saida}")
+    if not os.path.exists(saida):                     # o pytest morreu antes de relatar: é falha, não exceção
+        return {"pytest": ("falhou", "o pytest não chegou a rodar")}, [(r.stderr or r.stdout).strip()[-300:]]
     for caso in ET.parse(saida).getroot().iter("testcase"):
         nid = caso.get("classname", "").replace(".", "/") + ".py::" + caso.get("name", "")
         filhos = {f.tag: (f.get("message") or "") for f in caso}
@@ -121,7 +125,8 @@ def main():
 
     # 1. arquivos
     commitados, soltos = mudancas(base)
-    permitido = lambda f: any(fnmatch.fnmatch(f, g) for g in o["arquivos"])          # noqa: E731
+    # o '*' de um padrão não atravessa pasta: src/*_template.html não cobre src/outra/x_template.html
+    permitido = lambda f: any(fnmatch.fnmatch(f, g) and f.count("/") == g.count("/") for g in o["arquivos"])   # noqa: E731
     fora = sorted({f for f in commitados + soltos if not f.startswith("docs/") and not permitido(f)})
     docs_no_commit = sorted(f for f in commitados if f.startswith("docs/"))
     det = ""

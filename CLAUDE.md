@@ -6,13 +6,20 @@ Python de biblioteca padrão a partir de dados versionados em `data/`.
 
 ## Tarefa em curso
 
-**Construir o redesenho, seguindo `design/PLANO.md` etapa por etapa.** O desenho está pronto
-em `design/` (leia `design/README.md` primeiro). Não redesenhe: construa o que está lá. Se
-algo do plano parecer errado ou impossível, pare e relate em vez de improvisar.
+**Construir o redesenho por ordens de serviço.** O quadro está em `design/PLANO.md`
+(`python scripts/aceite.py --lista` mostra o que está feito e o que está liberado); cada ordem
+é um arquivo em `design/ordens/`. Você executa **uma** ordem: faz exatamente o que ela manda,
+só nos arquivos que ela lista, e termina quando `python scripts/aceite.py ORDEM` disser
+APROVADA. Não redesenhe. Se a ordem não bater com o que está no arquivo, pare e relate em vez
+de improvisar.
 
 ## Comandos
 
 ```bash
+python scripts/preparar.py                            # ambiente: tem de terminar em AMBIENTE PRONTO
+python scripts/aceite.py --lista                      # o quadro das ordens
+python scripts/aceite.py ORDEM --iniciar              # começa uma ordem
+python scripts/aceite.py ORDEM                        # veredito da ordem: APROVADA ou REPROVADA
 python src/build_site.py                              # gera docs/ (segundos)
 pytest -q                                             # suíte inteira
 python .claude/skills/run-scisci-ipea/driver.py       # abre as telas num navegador; STATUS: OK
@@ -39,7 +46,10 @@ pacote que combina com ele em vez de baixar outro navegador.
 7. **Alvo de toque de 44 px** e nenhuma rolagem lateral, de 320 px para cima.
 8. **Só os pesos de fonte vendorizados**: Spectral 300, 400, 400 itálico, 600; DM Sans 300,
    400, 500; JetBrains Mono 400, 500.
-9. **Não apague nem afrouxe teste para passar.** Teste vermelho é informação.
+9. **Não apague nem afrouxe teste para passar.** Teste vermelho é informação. O mesmo vale
+   para `scripts/aceite.py`, `scripts/preparar.py` e `design/ordens/quadro.json`.
+10. **Não reescreva prosa nem troque número do relatório.** "Q ≈ 0,59" e "z ≈ 80" são da rede
+    interna do funil (ver `METODOLOGIA.md`) e ficam como estão.
 
 ## Antes de commitar
 
@@ -51,7 +61,8 @@ pacote que combina com ele em vez de baixar outro navegador.
   `OA_OFFLINE=1 python src/author_network.py` e reconstrua. Não commite `docs/` divergente.
 - `pytest` reconstrói `docs/` como efeito colateral: rode `python src/build_site.py` por
   último, antes do `git add`.
-- Um commit por etapa do plano, com mensagem que diga o que mudou e o que foi verificado.
+- Um commit por ordem, só com os arquivos que o aceite listar. `docs/` só entra em commit
+  das ordens de integração (I1 e F1): nas outras, nunca use `git add -A`.
 - Não crie pull request nem faça push para outra branch sem que peçam.
 
 ## Onde as coisas estão
@@ -64,7 +75,9 @@ pacote que combina com ele em vez de baixar outro navegador.
 | `src/token_injection.py` | injetores de números (`PROV_*`, `SOLIDEZ_*`, `XGI_*`...) |
 | `data/` | derivados versionados; `data/oa_cache/` é o cache do OpenAlex |
 | `design/` | sistema de desenho, protótipos e o plano de construção |
-| `tests/test_redesenho.py` | critérios do redesenho; cada etapa acorda os seus testes |
+| `design/ordens/` | uma ordem de serviço por arquivo, e o quadro (`quadro.json`) |
+| `scripts/preparar.py`, `scripts/aceite.py` | ambiente pronto e veredito de cada ordem |
+| `tests/test_redesenho.py` | critérios do redesenho; cada ordem acorda os seus testes |
 | `scripts/conferir_telas.py` | conferência em navegador: transbordo, alvos, abas, erros |
 | `METODOLOGIA.md` | como ler os achados e onde não confiar |
 | `.claude/skills/` | rotinas do projeto (pontes, orçamento da API, cache, changelog, driver) |

@@ -97,6 +97,9 @@
 .sd-chip[aria-pressed="false"]{background:transparent;color:var(--sd-apagado);text-decoration:line-through}
 .sd-chip .sd-num{color:var(--sd-apagado)}
 .sd-chip:disabled{opacity:.55;cursor:default;border-style:dashed}
+/* variante com caixa de seleção dentro: <label class="sd-chip"><input type="checkbox" checked>…</label> */
+.sd-chip input[type=checkbox]{width:18px;height:18px;margin:0;accent-color:var(--sd-tinta);flex:none}
+.sd-chip:has(input:not(:checked)){background:transparent;color:var(--sd-apagado);text-decoration:line-through}
 .sd-campo{width:100%;min-height:var(--sd-alvo);padding:0 .8rem;border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio);background:var(--sd-papel);color:var(--sd-tinta);font:400 var(--sd-t1)/1.2 var(--sd-sem-serifa)}
 .sd-rotulo{display:block;font-size:var(--sd-t0);color:var(--sd-apagado);margin-bottom:var(--sd-e1)}
 

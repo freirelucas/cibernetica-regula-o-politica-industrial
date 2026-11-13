@@ -6,7 +6,7 @@ Para cada página e cada tamanho de tela (celular 390, tablet 820, computador 14
   - requisição que falhou ou devolveu 400 ou mais;
   - página mais larga que a tela (rolagem lateral);
   - aba da barra de telas cortada ou fora da tela;
-  - alvo de toque menor que 44 px (só nos tamanhos de toque);
+  - alvo de toque menor que 44 px (só nos tamanhos de toque; link no meio de frase é isento);
   - número sem valor: elemento [data-n] vazio.
 Sai com código 1 se houver qualquer problema. Opcionalmente salva capturas.
 
@@ -41,6 +41,9 @@ MEDE = """() => {
     const r = e.getBoundingClientRect();
     if (r.width >= 44 && r.height >= 44) continue;
     const rot = e.closest('label');
+    // link no meio de uma frase: o critério de tamanho de alvo o isenta; engordá-lo quebraria a entrelinha
+    if (e.tagName === 'A' && getComputedStyle(e).display === 'inline' && e.parentElement
+        && e.parentElement.textContent.trim().length > e.textContent.trim().length + 20) continue;
     if (e.tagName === 'INPUT' && rot && rot.getBoundingClientRect().height >= 44) continue;   // caixa dentro de rótulo alto
     const k = (e.textContent || e.getAttribute('aria-label') || e.id || e.tagName).trim().slice(0, 28) + ' ' + Math.round(r.width) + 'x' + Math.round(r.height);
     pequenos[k] = (pequenos[k] || 0) + 1;

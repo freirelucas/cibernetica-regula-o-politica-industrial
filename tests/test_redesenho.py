@@ -244,8 +244,9 @@ def test_e1_explorador(root):
     assert "obras da agenda" in modelo
     assert "text-transform:uppercase" not in modelo, "rótulo em caixa-alta"
     assert "espaco.html#lente=silos&obra=" in modelo or "espaco.html#lente=silos&amp;obra=" in modelo
-    for peca in ("sd-chip", "sd-campo", "sd-botao", "sd-sobre"):
+    for peca in ("sd-chip", "sd-campo", "sd-botao", "sd-sol"):
         assert peca in pagina, peca
+    assert 'id="det3d"' in pagina and 'class="panel sd"' in pagina
     assert 'id="graph"' in pagina and "{{" not in pagina
 
 
@@ -256,12 +257,13 @@ def test_t1_triagem(root):
         pytest.skip("ordem T1 ainda não feita (triagem com sd-cartao)")
     _constroi()
     pagina = _le(root, "docs", "triagem.html")
-    for peca in ("sd-cartao", "sd-selo", "sd-medidas", "sd-botao", "sd-chip"):
+    for peca in ("sd-cartao", "sd-selo", "sd-medidas", "sd-sol"):
         assert peca in modelo, peca
     assert "text-transform:uppercase" not in modelo, "rótulo em caixa-alta"
     assert "function fmtBR" in modelo, "falta a função única de número com vírgula decimal"
     assert not re.search(r"toFixed\(\d\)\s*}</b>", modelo), "número exibido com ponto decimal"
-    assert "alvos de agenda" not in modelo and "alvo de agenda" not in modelo, "vocabulário antigo"
+    assert not re.search(r"alvos? de agenda", modelo, flags=re.I), "vocabulário antigo ('alvo de agenda')"
+    assert "min-height:44px" in modelo, "botões e filtros sem a altura mínima de toque"
     assert "class=\"card" in modelo or "'card" in modelo or '"card' in modelo
     assert "{{" not in pagina
 

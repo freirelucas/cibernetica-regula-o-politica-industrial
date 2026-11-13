@@ -1,5 +1,9 @@
 # Ordem O0 — Encaixes
 
+> **Feita** (commit a4c4fb4, aprovada na primeira execução). Fica aqui como registro e modelo de formato.
+> O executor apontou: o gancho do passo 3.6 chama `nota.pagina`, que só passa a existir na ordem N1 (é
+> inerte até lá); e sobraram no driver duas menções a "4" telas, corrigidas na ordem F1.
+
 **Objetivo.** Deixar o tronco pronto para quatro ordens rodarem em paralelo sem tocar no mesmo
 arquivo. Duas coisas: (1) qualquer modelo passa a poder usar marcadores `{{caminho.do.dado}}`,
 os mesmos dos protótipos; (2) o gancho da tela A nota fica instalado, à espera do modelo.
