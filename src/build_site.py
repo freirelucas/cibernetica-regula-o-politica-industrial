@@ -36,6 +36,8 @@ import build_rayyan  # noqa: E402  (material de triagem para o Rayyan)
 import sfi_methods  # noqa: E402  (lei de potência + CNM — métodos Clauset/Santa Fe)
 import data_io  # noqa: E402  (PR-2 — leitura tolerante dos derivados em data/)
 import espaco  # noqa: E402  (cena 3D: cada obra no ponto da mistura da sua cocitação)
+import marcadores  # noqa: E402  (marcadores {{caminho}} dos modelos de tela)
+import nota  # noqa: E402  (dados da página A nota)
 
 TEMPLATE = os.path.join(HERE, "site_template.html")
 EXPLORER_TPL = os.path.join(HERE, "explorador_template.html")
@@ -47,6 +49,7 @@ DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
 SISTEMA_CSS = os.path.join(HERE, "sistema.css")   # fichas e componentes do desenho (design/sistema.css)
 SOLIDOS_SVG = os.path.join(HERE, "solidos.svg")   # os cinco sólidos das tradições (símbolos sd-sol-*)
+NOTA_TPL = os.path.join(HERE, "nota_template.html")
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
             "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "brasil", "brasil-expandido", "analise-brasil", "discussao", "sintese", "leitura", "pontes-ordem-superior", "pontes-semanticas", "sementes", "repro", "dados",
@@ -64,6 +67,24 @@ def comum(html):
     return html.replace("__SOLIDOS__", solidos)
 
 
+_CONTEXTO = None
+
+
+def contexto():
+    """Contexto dos marcadores {{...}}, calculado uma vez por execução."""
+    global _CONTEXTO
+    if _CONTEXTO is None:
+        cena = espaco.dados(explorer_network())
+        corpus = data_io.load_data("scisci_results.json", required=True)
+        _CONTEXTO = marcadores.contexto(cena, corpus, nota.dados(cena) if cena["nota"] else {})
+    return _CONTEXTO
+
+
+def resolver(html, blocos=None):
+    """Troca os marcadores {{caminho}} de um modelo pelos valores. Marcador sem dado é erro."""
+    return marcadores.monta(html, contexto(), blocos or {})
+
+
 def global_nav(active):
     """Navegação consistente entre as telas (Estudo · Explorador · Espaço 3D · Triagem),
     injetada via token ``__GLOBAL_NAV__`` dentro da barra de cada modelo. Só as telas
@@ -71,6 +92,8 @@ def global_nav(active):
     (classes sd-telas e sd-tela). A aba do Espaço 3D só existe se a página for gerada
     (modelo presente e rede não vazia) — sem isso, não se cria link morto."""
     tabs = [("estudo", "index.html", "Estudo")]
+    if os.path.exists(NOTA_TPL) and data_io.exists("td_referencias.json"):
+        tabs.append(("nota", "nota.html", "A nota"))
     if os.path.exists(ESPACO_TPL) if _TEM_ESPACO is None else _TEM_ESPACO:
         tabs.append(("espaco", "espaco.html", "Espaço 3D"))
     tabs += [("explorador", "explorador.html", "Explorador"),
@@ -421,7 +444,7 @@ def main():
     js += f"const HERO3D={json.dumps(espaco.heroi(cena) if cena else [], separators=(',', ':'))};\n"
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
     html = html.replace("__GLOBAL_NAV__", global_nav("estudo"))   # nav consistente entre as telas
-    html = comum(html)                               # sistema de desenho + sólidos (etapa 1)
+    html = comum(resolver(html))                     # sistema de desenho + sólidos; marcadores {{...}}
     html = inject_hypergraph_numbers(html)           # XGI_* tokens ← data/cocitation_hyperedges.json
     html = inject_author_network_numbers(html)       # AUTHORNET_* tokens ← data/author_network.json
     html = inject_brazil_numbers(html)               # BRASIL_* tokens ← data/brazil_expanded.json
@@ -441,7 +464,7 @@ def main():
             expl = (f.read().replace("__JS_DATA__", expl_js)
                     .replace("__N_OBRAS__", str(len(expl_net["nodes"])))   # contagem lida da rede
                     .replace("__GLOBAL_NAV__", global_nav("explorador")))
-            expl = comum(expl)
+            expl = comum(resolver(expl))
         explorer = os.path.join(DOCS, "explorador.html")
         with open(explorer, "w", encoding="utf-8") as f:
             f.write(expl)
@@ -452,7 +475,7 @@ def main():
         with open(ESPACO_TPL, encoding="utf-8") as f:
             esp = (f.read().replace("__ESPACO_DATA__", f"const ESPACO={bloco};")
                    .replace("__GLOBAL_NAV__", global_nav("espaco")))
-            esp = comum(esp)
+            esp = comum(resolver(esp))
         espaco_html = os.path.join(DOCS, "espaco.html")
         with open(espaco_html, "w", encoding="utf-8") as f:
             f.write(esp)
@@ -460,6 +483,16 @@ def main():
         print(f"espaço: {espaco_html}  ({os.path.getsize(espaco_html)//1024} KB, "
               f"{len(cena['nos'])} obras, {len(cena['triades'])} tríades, "
               f"lente da nota: {'sim' if cena['nota'] else 'não'})")
+
+    if os.path.exists(NOTA_TPL) and contexto()["nota"]:      # tela A nota (ordem N1 traz o modelo)
+        with open(NOTA_TPL, encoding="utf-8") as f:
+            pag = nota.pagina(f.read(), contexto())
+        pag = comum(pag.replace("__GLOBAL_NAV__", global_nav("nota")))
+        nota_html = os.path.join(DOCS, "nota.html")
+        with open(nota_html, "w", encoding="utf-8") as f:
+            f.write(pag)
+        print(f"nota:  {nota_html}  ({os.path.getsize(nota_html)//1024} KB, "
+              f"{contexto()['nota']['n_no_nucleo']} obras no núcleo)")
 
     if os.path.exists(TRIAGEM_TPL):
         # PR-7 — estado da triagem vem do arquivo VERSIONADO (não do navegador):
@@ -470,7 +503,7 @@ def main():
         with open(TRIAGEM_TPL, encoding="utf-8") as f:
             tri = (f.read().replace("__JS_DATA__", works_js)
                    .replace("__GLOBAL_NAV__", global_nav("triagem")))
-            tri = comum(tri)
+            tri = comum(resolver(tri))
         triagem = os.path.join(DOCS, "triagem.html")
         with open(triagem, "w", encoding="utf-8") as f:
             f.write(tri)

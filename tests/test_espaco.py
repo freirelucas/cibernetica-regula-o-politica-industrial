@@ -28,6 +28,12 @@ def _json(root, nome):
         return json.load(f)
 
 
+def _telas(root):
+    """As telas que existem em docs/, na ordem da barra."""
+    return [n for n in ("index.html", "nota.html", "espaco.html", "explorador.html", "triagem.html")
+            if os.path.exists(os.path.join(root, "docs", n))]
+
+
 # ── a regra ──
 
 def test_eixo_inferido_e_um_vertice_mais_proximo(cena):
@@ -185,7 +191,7 @@ def test_lentes_e_ligacoes(pagina):
 
 
 def test_navegacao_tem_a_aba_em_todas_as_telas(pagina, root):
-    for nome in ("index.html", "explorador.html", "triagem.html", "espaco.html"):
+    for nome in _telas(root):
         h = open(os.path.join(root, "docs", nome), encoding="utf-8").read()
         assert 'href="espaco.html"' in h, nome
     assert 'href="espaco.html" aria-current="page">Espaço 3D<' in pagina
@@ -275,7 +281,7 @@ def test_navegacao_cabe_no_celular_headless(pagina, root):
         b = p.chromium.launch()
         try:
             for largura in (320, 360, 390):
-                for nome in ("index.html", "explorador.html", "triagem.html", "espaco.html"):
+                for nome in _telas(root):
                     ctx = b.new_context(viewport={"width": largura, "height": 800}, has_touch=True, is_mobile=True)
                     pg = ctx.new_page()
                     pg.goto(_uri(root, nome))
@@ -287,7 +293,7 @@ def test_navegacao_cabe_no_celular_headless(pagina, root):
                     ctx.close()
                     if m["pagina"] > largura:
                         ruins.append(f"{nome}: página com {m['pagina']} px em tela de {largura} px")
-                    if len(m["abas"]) != 4:
+                    if len(m["abas"]) != len(_telas(root)):
                         ruins.append(f"{nome}: {len(m['abas'])} abas em {largura} px")
                     for rotulo, esq, dire, alt in m["abas"]:
                         if esq < 0 or dire > largura + 0.5:

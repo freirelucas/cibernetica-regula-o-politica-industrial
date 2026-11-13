@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Driver do site cienciométrico (GitHub Pages estático em docs/).
 
-Constrói (opcional), serve docs/ num servidor HTTP efêmero e dirige as QUATRO
+Constrói (opcional), serve docs/ num servidor HTTP efêmero e dirige as CINCO
 páginas renderizadas com Chromium headless (Playwright):
 
   • index.html      — relatório: conta os gráficos Chart.js, confere as 22 seções
@@ -10,6 +10,7 @@ páginas renderizadas com Chromium headless (Playwright):
   • triagem.html    — triagem inclusão/exclusão: confere que os cartões renderizaram.
   • espaco.html     — espaço 3D (canvas 2D, sem biblioteca): confere que a cena pintou,
                       que nenhum número do texto ficou vazio e que cada lente responde.
+  • nota.html       — a nota: confere que as obras da bibliografia renderizaram (.sd-obra).
 
 Cada página captura erros de página/console e salva um screenshot.
 
@@ -101,6 +102,9 @@ def drive(browser, url, shot, kind):
         info["lentes"], info["lentes_mudas"] = lentes, mudas
         ok = (ok and info["obras"] > 0 and info["pintada"] > 0 and not info["vazios"]
               and len(lentes) >= 4 and not mudas)
+    elif kind == "nota":
+        info["obras"] = pg.evaluate("() => document.querySelectorAll('.sd-obra').length")
+        ok = ok and info["obras"] > 0
     pg.screenshot(path=shot, full_page=(kind == "index"))
     pg.close()
     return ok, info
@@ -122,6 +126,8 @@ def report(kind, ok, info):
         print(f"  lentes: {len(info['lentes'])} ({', '.join(info['lentes'])})"
               + (f"  NÃO RESPONDEM: {info['lentes_mudas']}" if info["lentes_mudas"] else ""))
         print(f"  números vazios: {info['vazios'] if info['vazios'] else 'nenhum'}")
+    elif kind == "nota":
+        print(f"  obras da nota: {info['obras']}")
     print(f"  page errors: {info['errs'] if info['errs'] else 'NENHUM'}")
     if info["cerr"]:
         print(f"  console errors (aviso): {info['cerr']}")
@@ -156,6 +162,8 @@ def main():
         pages.append(("triagem", "/triagem.html", "/tmp/scisci_triagem.png"))
     if os.path.exists(os.path.join(DOCS, "espaco.html")):
         pages.append(("espaco", "/espaco.html", "/tmp/scisci_espaco.png"))
+    if os.path.exists(os.path.join(DOCS, "nota.html")):
+        pages.append(("nota", "/nota.html", "/tmp/scisci_nota.png"))
 
     httpd, port = serve(DOCS)
     results = []
