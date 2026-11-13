@@ -3,3 +3,5 @@ __pycache__/
 data/cache/
 # derivados regeneráveis offline por src/attribute.py (python src/run_all.py --from attribute)
 data/items_tagged.json
+# derivado da animação (python src/animacao_rede_prep.py)
+data/animacao_rede.json
