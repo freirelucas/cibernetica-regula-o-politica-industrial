@@ -14,7 +14,8 @@ Uso (a partir da raiz do repositório):
     python scripts/conferir_telas.py                                  # as páginas de docs/ que existirem
     python scripts/conferir_telas.py docs/nota.html docs/index.html   # páginas escolhidas
     python scripts/conferir_telas.py design/prototipos/nota.html      # um protótipo de desenho
-    python scripts/conferir_telas.py --capturas /tmp/telas            # também salva as imagens
+    python scripts/conferir_telas.py --capturas PASTA                 # também salva as imagens
+    python scripts/conferir_telas.py --so-estrutura                   # sem cobrar alvo de toque (telas ainda não refeitas)
 
 Precisa do Playwright com um Chromium (o mesmo requisito do driver do run-scisci-ipea).
 """
@@ -59,6 +60,8 @@ def main():
     ap.add_argument("paginas", nargs="*", help="caminhos relativos à raiz (padrão: as telas de docs/ que existirem)")
     ap.add_argument("--capturas", help="pasta onde salvar uma imagem por página e tamanho")
     ap.add_argument("--toque-estrito", action="store_true", help="também reprova alvo menor que 44 px no computador")
+    ap.add_argument("--so-estrutura", action="store_true",
+                    help="não reprova alvo de toque pequeno: só erro, requisição falha, rolagem lateral, aba cortada e número vazio")
     args = ap.parse_args()
     paginas = args.paginas or [p for p in PADRAO if os.path.exists(os.path.join(RAIZ, p))]
     faltam = [p for p in paginas if not os.path.exists(os.path.join(RAIZ, p.split("#")[0]))]
@@ -105,7 +108,7 @@ def main():
                         problemas.append("abas cortadas: " + ", ".join(m["cortadas"]))
                     if m["vazios"]:
                         problemas.append("números sem valor: " + ", ".join(m["vazios"]))
-                    if m["pequenos"] and (toque or args.toque_estrito):
+                    if m["pequenos"] and (toque or args.toque_estrito) and not args.so_estrutura:
                         problemas.append("alvos menores que 44 px: " + json.dumps(m["pequenos"], ensure_ascii=False)[:400])
                     ruins += bool(problemas)
                     print(f"{'PROBLEMA' if problemas else 'ok      '}  {pagina:34} {nome:10}" + ("" if not problemas else "\n          - " + "\n          - ".join(problemas)))

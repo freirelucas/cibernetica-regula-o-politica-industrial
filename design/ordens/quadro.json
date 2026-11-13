@@ -1,0 +1,55 @@
+{
+  "_doc": "Quadro das ordens de construção do redesenho. Lido por scripts/aceite.py. 'prova' diz se a ordem já está feita; 'arquivos' é a lista FECHADA do que a ordem pode mudar; 'docs' diz se a ordem commita docs/ (só as de integração); 'paginas' são as telas que têm de sair limpas da conferência completa.",
+  "ordens": [
+    {"id": "B1", "titulo": "Sistema de desenho publicado em todas as telas", "onda": "base", "depende": [],
+     "prova": [{"arquivo": "src/sistema.css"}],
+     "arquivos": ["src/sistema.css", "src/solidos.svg", "src/build_site.py", "src/*_template.html"], "docs": true,
+     "testes": ["tests/test_redesenho.py::test_b1_sistema_publicado"], "paginas": []},
+
+    {"id": "B2", "titulo": "Uma barra do sistema, igual em todas as telas", "onda": "base", "depende": ["B1"],
+     "prova": [{"contem": ["src/build_site.py", "sd-telas"]}],
+     "arquivos": ["src/build_site.py", "src/*_template.html", "tests/test_espaco.py"], "docs": true,
+     "testes": ["tests/test_redesenho.py::test_b2_barra_nova_em_todas_as_telas"], "paginas": []},
+
+    {"id": "O0", "titulo": "Encaixes: marcadores {{caminho}} em todas as telas e gancho da tela A nota", "onda": "0", "depende": ["B2"],
+     "prova": [{"arquivo": "src/marcadores.py"}, {"arquivo": "src/nota.py"}],
+     "arquivos": ["src/marcadores.py", "src/nota.py", "src/build_site.py", "tests/test_espaco.py", ".claude/skills/run-scisci-ipea/driver.py"], "docs": false,
+     "testes": ["tests/test_redesenho.py::test_o0_marcadores", "tests/test_redesenho.py::test_o0_dados_da_nota_iguais_a_referencia"], "paginas": []},
+
+    {"id": "N1", "titulo": "Tela nova: A nota", "onda": "1", "depende": ["O0"],
+     "prova": [{"arquivo": "src/nota_template.html"}],
+     "arquivos": ["src/nota.py", "src/nota_template.html", "src/espaco_template.html"], "docs": false,
+     "testes": ["tests/test_redesenho.py::test_n1_pagina_da_nota"], "paginas": ["docs/nota.html", "docs/espaco.html"]},
+
+    {"id": "R1", "titulo": "Relatório: a entrada (achado, cena, três portas, números)", "onda": "1", "depende": ["O0"],
+     "prova": [{"contem": ["src/site_template.html", "sd-portas"]}],
+     "arquivos": ["src/site_template.html"], "docs": false,
+     "testes": ["tests/test_redesenho.py::test_r1_entrada"], "paginas": []},
+
+    {"id": "E1", "titulo": "Explorador com as peças e o vocabulário do sistema", "onda": "1", "depende": ["O0"],
+     "prova": [{"contem": ["src/explorador_template.html", "sd-chip"]}],
+     "arquivos": ["src/explorador_template.html"], "docs": false,
+     "testes": ["tests/test_redesenho.py::test_e1_explorador"], "paginas": ["docs/explorador.html"]},
+
+    {"id": "T1", "titulo": "Triagem com as peças e o vocabulário do sistema", "onda": "1", "depende": ["O0"],
+     "prova": [{"contem": ["src/triagem_template.html", "sd-cartao"]}],
+     "arquivos": ["src/triagem_template.html"], "docs": false,
+     "testes": ["tests/test_redesenho.py::test_t1_triagem"], "paginas": ["docs/triagem.html"]},
+
+    {"id": "I1", "titulo": "Integração da onda 1: juntar, reconstruir docs/ e conferir as cinco telas", "onda": "integração", "depende": ["N1", "R1", "E1", "T1"],
+     "prova": [{"arquivo": "docs/nota.html"}, {"contem": ["docs/index.html", "sd-portas"]}, {"contem": ["docs/explorador.html", "sd-chip"]}, {"contem": ["docs/triagem.html", "sd-cartao"]}],
+     "arquivos": [], "docs": true,
+     "testes": ["tests/test_redesenho.py::test_i1_cinco_telas_na_barra"], "paginas": ["docs/nota.html", "docs/espaco.html", "docs/explorador.html", "docs/triagem.html"]},
+
+    {"id": "R2", "titulo": "Relatório: o corpo (capas de ato, argumento e aparato, destaques, alvos de toque)", "onda": "2", "depende": ["I1"],
+     "prova": [{"contem": ["src/site_template.html", "sd-ato"]}],
+     "arquivos": ["src/site_template.html"], "docs": false,
+     "testes": ["tests/test_redesenho.py::test_r2_corpo"], "paginas": ["docs/index.html"]},
+
+    {"id": "F1", "titulo": "Fechamento: documentação, impressão e docs/ final", "onda": "3", "depende": ["R2"],
+     "prova": [{"contem": ["README.md", "nota.html"]}, {"contem": ["docs/index.html", "sd-ato"]}],
+     "arquivos": ["README.md", "METODOLOGIA.md", ".claude/skills/run-scisci-ipea/SKILL.md", "CLAUDE.md", "design/PLANO.md"], "docs": true,
+     "testes": ["tests/test_redesenho.py::test_f1_documentacao"],
+     "paginas": ["docs/index.html", "docs/nota.html", "docs/espaco.html", "docs/explorador.html", "docs/triagem.html"]}
+  ]
+}
