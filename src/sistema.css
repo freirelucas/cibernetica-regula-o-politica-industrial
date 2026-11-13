@@ -1,0 +1,219 @@
+/* ════════════════════════════════════════════════════════════════════════════════
+   Sistema de desenho do sítio — fichas e componentes.
+   Prefixo sd- em tudo, para conviver com o CSS que já existe em cada tela.
+   Só usa as fontes e os pesos vendorizados em docs/vendor/fonts.css:
+     Spectral 300 · 400 · 400 itálico · 600   |   DM Sans 300 · 400 · 500   |   JetBrains Mono 400 · 500
+   (não pedir peso 600/700 em DM Sans: o navegador falsifica o negrito).
+   Regras do sistema, em uma linha cada:
+     1. a posição e a forma são dado — nada é enfeite;
+     2. cada tradição tem um sólido e uma cor, sempre os dois juntos;
+     3. rótulo observado é cheio, rótulo inferido é vazado;
+     4. zero e número pequeno vêm sempre com o denominador ("0 de 126");
+     5. argumento e aparato têm tratamentos diferentes;
+     6. monoespaçada é para número e código, não para rótulo de interface.
+   ════════════════════════════════════════════════════════════════════════════════ */
+
+:root{
+  /* papel e tinta */
+  --sd-papel:#f5f2ed; --sd-superficie:#ede9e2; --sd-tinta:#0e0e0e; --sd-apagado:#5c5650;
+  --sd-fio:rgba(14,14,14,.14); --sd-fio-forte:rgba(14,14,14,.28);
+  /* tradições — cor de marca (preenchimento) e cor de texto (contraste ≥ 5,7:1 em papel e superfície) */
+  --sd-cib:#4b3fc2;  --sd-cib-texto:#4b3fc2;  --sd-cib-fundo:#e8e6f8;
+  --sd-reg:#1a7a5e;  --sd-reg-texto:#14634b;  --sd-reg-fundo:#e0f2ec;
+  --sd-pi:#b85c10;   --sd-pi-texto:#8f4405;   --sd-pi-fundo:#faeada;
+  --sd-cplx:#2a9d8f; --sd-cplx-texto:#17635b; --sd-cplx-fundo:#dff1ee;
+  --sd-nota:#3a3632;                                  /* a nota (dodecaedro) */
+  --sd-alerta:#a83232;                                /* limite, ressalva */
+  /* tipografia */
+  --sd-serifa:'Spectral',Georgia,serif;
+  --sd-sem-serifa:'DM Sans',system-ui,sans-serif;
+  --sd-mono:'JetBrains Mono',ui-monospace,monospace;
+  /* escala clássica: 12,5 · 14 · 16 · 18 · 21 · 27 · 36 · 48 px */
+  --sd-t-1:.78125rem; --sd-t0:.875rem; --sd-t1:1rem; --sd-t2:1.125rem; --sd-t3:1.3125rem; --sd-t4:1.6875rem; --sd-t5:2.25rem; --sd-t6:3rem;
+  /* espaço, base 4 px */
+  --sd-e1:.25rem; --sd-e2:.5rem; --sd-e3:.75rem; --sd-e4:1rem; --sd-e5:1.5rem; --sd-e6:2rem; --sd-e7:3rem; --sd-e8:4.5rem;
+  --sd-raio:6px; --sd-raio-g:10px;
+  --sd-alvo:44px;                                     /* menor alvo de toque */
+  --sd-medida:68ch;                                   /* largura de leitura */
+}
+
+/* ── base dos blocos do sistema ── */
+.sd{font-family:var(--sd-sem-serifa);font-weight:400;font-size:var(--sd-t1);line-height:1.55;color:var(--sd-tinta);-webkit-font-smoothing:antialiased}
+.sd *,.sd *::before,.sd *::after{box-sizing:border-box}
+/* :where() zera a especificidade: qualquer componente sd- vence estas regras de base sem precisar de !important */
+:where(.sd) a{color:var(--sd-cib-texto);text-underline-offset:2px}
+:where(.sd) :focus-visible,.sd-foco:focus-visible{outline:3px solid var(--sd-cib);outline-offset:2px;border-radius:2px}
+.sd-so-leitor{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.sd-num{font-family:var(--sd-mono);font-variant-numeric:tabular-nums;font-size:.92em}
+
+/* ── títulos e texto ── */
+.sd-h1{font-family:var(--sd-serifa);font-weight:400;font-size:clamp(var(--sd-t5),5.4vw,var(--sd-t6));line-height:1.08;letter-spacing:-.01em;margin:0}
+.sd-h2{font-family:var(--sd-serifa);font-weight:600;font-size:var(--sd-t4);line-height:1.2;margin:0}
+.sd-h3{font-family:var(--sd-sem-serifa);font-weight:500;font-size:var(--sd-t2);line-height:1.3;margin:0}
+.sd-abre{font-family:var(--sd-serifa);font-weight:300;font-size:var(--sd-t3);line-height:1.45;max-width:var(--sd-medida);margin:0}
+.sd-texto{max-width:var(--sd-medida);margin:0}
+.sd-legenda{font-size:var(--sd-t0);color:var(--sd-apagado);line-height:1.45}
+.sd-sobre{font-size:var(--sd-t0);color:var(--sd-apagado);font-weight:500;margin:0}     /* rótulo acima de um bloco: frase curta, sem caixa-alta */
+
+/* ── sólidos: um por tradição ──
+   <svg class="sd-sol sd-cheio"><use href="#sd-sol-cubo"/></svg>  (o bloco de símbolos de design/solidos.svg vai embutido na página) */
+.sd-sol{width:1.15em;height:1.15em;flex:none;vertical-align:-.2em;overflow:visible}
+.sd-sol.sd-g{width:1.6rem;height:1.6rem}
+.sd-sol.sd-gg{width:2.6rem;height:2.6rem;--sol-traco:1.2;--sol-traco-dentro:.9}
+.sd-cheio{--sol-fundo:currentColor;--sol-linha:var(--sd-papel)}                         /* rótulo observado */
+.sd-vazado{--sol-fundo:var(--sd-papel)}                                                 /* rótulo inferido */
+.sd-eixo-cib{color:var(--sd-cib)} .sd-eixo-reg{color:var(--sd-reg)} .sd-eixo-pi{color:var(--sd-pi)} .sd-eixo-cplx{color:var(--sd-cplx)} .sd-eixo-nota{color:var(--sd-nota)}
+
+/* ── selo de tradição: sólido + nome por extenso (+ origem do rótulo) — substitui as pílulas só de cor ── */
+.sd-selo{display:inline-flex;align-items:center;gap:.4em;font-size:var(--sd-t0);font-weight:500;line-height:1.2;white-space:nowrap}
+.sd-selo.sd-eixo-cib{color:var(--sd-cib-texto)} .sd-selo.sd-eixo-reg{color:var(--sd-reg-texto)} .sd-selo.sd-eixo-pi{color:var(--sd-pi-texto)} .sd-selo.sd-eixo-cplx{color:var(--sd-cplx-texto)} .sd-selo.sd-eixo-nota{color:var(--sd-nota)}
+.sd-selo small{font-weight:400;font-size:var(--sd-t-1);color:var(--sd-apagado)}
+
+/* ── barra do topo: marca + cinco telas + ações da tela ── */
+.sd-barra{position:sticky;top:0;z-index:200;display:flex;align-items:center;gap:var(--sd-e3);min-height:52px;padding:0 var(--sd-e5);background:rgba(245,242,237,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--sd-fio-forte);font-family:var(--sd-sem-serifa)}
+.sd-marca{display:inline-flex;align-items:center;gap:.5em;min-height:var(--sd-alvo);font-size:var(--sd-t0);font-weight:500;color:var(--sd-tinta);text-decoration:none;white-space:nowrap}
+.sd-telas{display:flex;align-items:stretch;gap:2px;min-width:0}
+.sd-tela{display:inline-flex;align-items:center;min-height:var(--sd-alvo);padding:0 .7rem;font-size:var(--sd-t0);font-weight:500;color:var(--sd-apagado);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-1px}
+.sd-tela:hover{color:var(--sd-tinta)}
+.sd-tela[aria-current="page"]{color:var(--sd-tinta);border-bottom-color:var(--sd-cib)}
+.sd-barra-fim{margin-left:auto;display:flex;align-items:center;gap:var(--sd-e2)}
+@media (max-width:640px){
+  /* sem desfoque no celular: backdrop-filter prende dentro da barra qualquer filho de posição fixa (o botão de seções) */
+  .sd-barra{padding:0 var(--sd-e2);gap:var(--sd-e1);backdrop-filter:none;background:var(--sd-papel)}
+  .sd-marca{display:none}                               /* a aba ativa já diz onde se está */
+  .sd-telas{flex:1 1 auto;justify-content:space-between}
+  .sd-tela{padding:0 .28rem;font-size:.8125rem;min-width:var(--sd-alvo);justify-content:center}
+}
+@media (max-width:340px){.sd-tela{padding:0 .1rem;font-size:.78rem}}      /* 320 px: as cinco abas ainda cabem numa linha */
+
+/* ── botão, chip, campo ── */
+.sd-botao{display:inline-flex;align-items:center;justify-content:center;gap:.45em;min-height:var(--sd-alvo);padding:0 1rem;border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio);background:var(--sd-papel);color:var(--sd-tinta);font:500 var(--sd-t0)/1.2 var(--sd-sem-serifa);text-decoration:none;cursor:pointer}
+.sd-botao:hover{border-color:var(--sd-tinta)}
+.sd-botao.sd-primario{background:var(--sd-tinta);border-color:var(--sd-tinta);color:var(--sd-papel)}
+.sd-botao.sd-primario:hover{background:var(--sd-cib);border-color:var(--sd-cib)}
+.sd-botao.sd-discreto{border-color:transparent;background:transparent;color:var(--sd-cib-texto);padding:0 .4rem}
+.sd-chip{display:inline-flex;align-items:center;gap:.4em;min-height:var(--sd-alvo);padding:0 .8rem;border:1px solid var(--sd-fio-forte);border-radius:22px;background:var(--sd-papel);color:var(--sd-tinta);font:500 var(--sd-t0)/1 var(--sd-sem-serifa);cursor:pointer}
+.sd-chip:hover{border-color:var(--sd-tinta)}
+.sd-chip[aria-pressed="false"]{background:transparent;color:var(--sd-apagado);text-decoration:line-through}
+.sd-chip .sd-num{color:var(--sd-apagado)}
+.sd-chip:disabled{opacity:.55;cursor:default;border-style:dashed}
+.sd-campo{width:100%;min-height:var(--sd-alvo);padding:0 .8rem;border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio);background:var(--sd-papel);color:var(--sd-tinta);font:400 var(--sd-t1)/1.2 var(--sd-sem-serifa)}
+.sd-rotulo{display:block;font-size:var(--sd-t0);color:var(--sd-apagado);margin-bottom:var(--sd-e1)}
+
+/* ── número com denominador: o número nunca aparece sozinho ── */
+.sd-numeros{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(15rem,100%),1fr));gap:0 var(--sd-e6);margin:0;padding:0;border-top:1px solid var(--sd-fio-forte)}
+.sd-numero{padding:var(--sd-e3) 0;border-bottom:1px solid var(--sd-fio)}
+.sd-numero dt{font-size:var(--sd-t0);color:var(--sd-apagado);margin:0}
+.sd-numero dd{margin:0;font-size:var(--sd-t1);line-height:1.35}
+.sd-numero dd b{font-family:var(--sd-serifa);font-weight:600;font-size:var(--sd-t4);line-height:1.1;font-variant-numeric:lining-nums tabular-nums;margin-right:.15em}
+
+/* ── faixa de mistura: a composição da vizinhança de cocitação entre as quatro tradições ──
+   <div class="sd-mistura" role="img" aria-label="…"><span class="sd-eixo-cib" style="--p:8"></span>…</div> */
+.sd-mistura{display:flex;height:10px;border-radius:2px;overflow:hidden;background:var(--sd-fio)}
+.sd-mistura>span{flex:0 0 calc(var(--p)*1%);background:currentColor;min-width:0}
+.sd-mistura>span+span{box-shadow:-1px 0 0 var(--sd-papel)}
+.sd-mistura-chave{display:flex;flex-wrap:wrap;gap:.1rem var(--sd-e4);margin-top:var(--sd-e1);font-size:var(--sd-t-1);color:var(--sd-apagado)}
+.sd-mistura-chave b{font-weight:500;color:var(--sd-tinta)}
+
+/* ── destaque: três papéis, três marcas (a marca é a palavra, não só a cor) ── */
+.sd-destaque{max-width:var(--sd-medida);margin:var(--sd-e5) 0;padding:var(--sd-e4) var(--sd-e5);border:1px solid var(--sd-fio-forte);border-left-width:3px;border-radius:var(--sd-raio);background:var(--sd-papel);overflow-wrap:break-word}
+.sd-destaque>strong:first-child{display:block;font-size:var(--sd-t0);font-weight:500;margin-bottom:var(--sd-e1)}
+.sd-destaque.sd-achado{border-left-color:var(--sd-tinta)}
+.sd-destaque.sd-limite{border-left-color:var(--sd-alerta)} .sd-destaque.sd-limite>strong:first-child{color:var(--sd-alerta)}
+.sd-destaque.sd-como-ler{border-left-color:var(--sd-fio-forte);background:var(--sd-superficie)}
+
+/* ── tabela de dados ── */
+.sd-tabela{width:100%;border-collapse:collapse;font-size:var(--sd-t0);line-height:1.35}
+.sd-tabela caption{text-align:left;font-size:var(--sd-t0);color:var(--sd-apagado);padding-bottom:var(--sd-e2)}
+.sd-tabela th{text-align:left;font-weight:500;padding:var(--sd-e2) var(--sd-e2);border-bottom:1px solid var(--sd-fio-forte);vertical-align:bottom}
+.sd-tabela td{padding:var(--sd-e2) var(--sd-e2);border-bottom:1px solid var(--sd-fio);vertical-align:top}
+.sd-tabela .sd-n{text-align:right}
+.sd-tabela td.sd-n{font-family:var(--sd-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.sd-rolagem{overflow-x:auto;-webkit-overflow-scrolling:touch}                           /* envolve tabela larga: a página nunca rola para o lado */
+
+/* ── moldura de figura: título em cima, fonte embaixo, como pede a norma do Ipea ── */
+.sd-figura{margin:var(--sd-e6) 0}
+.sd-figura figcaption{font-size:var(--sd-t0);margin-bottom:var(--sd-e2)}
+.sd-figura figcaption b{font-weight:500}
+.sd-figura .sd-fonte{font-size:var(--sd-t-1);color:var(--sd-apagado);margin-top:var(--sd-e2)}
+
+/* ── obra: item de lista com tradição, origem do rótulo e mistura ── */
+.sd-obras{list-style:none;margin:0;padding:0;border-top:1px solid var(--sd-fio-forte)}
+.sd-obra{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--sd-e1) var(--sd-e4);padding:var(--sd-e4) 0;border-bottom:1px solid var(--sd-fio)}
+.sd-obra>.sd-sol{grid-row:1/span 4;margin-top:.15rem}
+.sd-obra-ref{font-size:var(--sd-t1);line-height:1.4;margin:0;overflow-wrap:anywhere}
+.sd-obra-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem var(--sd-e4);font-size:var(--sd-t0);color:var(--sd-apagado);margin:0}
+.sd-obra-acoes{display:flex;flex-wrap:wrap;gap:0 var(--sd-e4);margin:0}
+.sd-obra-acoes a{display:inline-flex;align-items:center;min-height:var(--sd-alvo);font-size:var(--sd-t0)}
+.sd-vizinhas{margin:var(--sd-e1) 0 0;padding:0;list-style:none;font-size:var(--sd-t0)}
+.sd-vizinhas li{display:flex;align-items:baseline;gap:.5em;padding:.2rem 0}
+.sd-vizinhas .sd-num{margin-left:auto;color:var(--sd-apagado);white-space:nowrap;padding-left:var(--sd-e3)}
+
+/* ── cartão de triagem: a obra, por que entrou, as medidas com nome, e a decisão ── */
+.sd-cartao{display:grid;gap:var(--sd-e2);padding:var(--sd-e4) var(--sd-e5);border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio-g);background:var(--sd-papel)}
+.sd-cartao-t{font-family:var(--sd-sem-serifa);font-weight:500;font-size:var(--sd-t2);line-height:1.3;margin:0;overflow-wrap:anywhere}
+.sd-medidas{display:flex;flex-wrap:wrap;gap:var(--sd-e1) var(--sd-e5);margin:0}
+.sd-medidas div{display:flex;align-items:baseline;gap:.4em}
+.sd-medidas dt{font-size:var(--sd-t-1);color:var(--sd-apagado)}
+.sd-medidas dd{margin:0;font-family:var(--sd-mono);font-variant-numeric:tabular-nums;font-size:var(--sd-t0)}
+.sd-cartao-acoes{display:flex;flex-wrap:wrap;gap:var(--sd-e2)}
+
+/* ── porta de entrada: três caminhos para três leitores ── */
+.sd-portas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(17rem,100%),1fr));gap:var(--sd-e4);margin:0;padding:0;list-style:none}
+.sd-porta{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--sd-e1) var(--sd-e4);align-content:start;height:100%;padding:var(--sd-e5);border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio-g);background:var(--sd-papel);color:var(--sd-tinta);text-decoration:none}
+.sd-porta:hover{border-color:var(--sd-tinta)}
+.sd-porta-marca{grid-column:1;grid-row:1/span 3;display:flex;align-items:center;gap:2px;align-self:start;min-height:2.6rem}
+.sd-porta b{grid-column:2;font-family:var(--sd-serifa);font-weight:600;font-size:var(--sd-t3);line-height:1.2}
+.sd-porta-texto{grid-column:2;font-size:var(--sd-t0);color:var(--sd-apagado);line-height:1.45}
+.sd-porta em{grid-column:2;font-style:normal;font-size:var(--sd-t0);font-weight:500;color:var(--sd-cib-texto);text-decoration:underline;text-underline-offset:2px}
+
+/* ── estado da versão: discreto, com o detalhe a um toque ── */
+.sd-estado{font-size:var(--sd-t0);max-width:var(--sd-medida)}
+.sd-estado>summary{display:inline-flex;align-items:center;gap:.5em;min-height:var(--sd-alvo);cursor:pointer;list-style:none;color:var(--sd-pi-texto);font-weight:500}
+.sd-estado>summary::-webkit-details-marker{display:none}
+.sd-estado>summary::before{content:"";width:.6em;height:.6em;border-radius:50%;border:2px solid currentColor}
+.sd-estado>summary::after{content:"o que ainda muda";font-weight:400;color:var(--sd-apagado);text-decoration:underline;text-underline-offset:2px}
+.sd-estado[open]>summary::after{content:"fechar"}
+.sd-estado>p{margin:var(--sd-e1) 0 0;color:var(--sd-apagado)}
+
+/* ── ato: capa com número, pergunta e a resposta medida ── */
+.sd-ato{border-top:1px solid var(--sd-fio-forte)}
+.sd-ato>summary{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:var(--sd-e1) var(--sd-e4);padding:var(--sd-e5) 0 var(--sd-e4);cursor:pointer;list-style:none}
+.sd-ato>summary::-webkit-details-marker{display:none}
+.sd-ato-n{font-size:var(--sd-t0);font-weight:500;color:var(--sd-cib-texto);white-space:nowrap}
+.sd-ato-t{font-family:var(--sd-serifa);font-weight:600;font-size:var(--sd-t4);line-height:1.2}
+.sd-ato-r{grid-column:2;font-size:var(--sd-t0);color:var(--sd-apagado)}
+.sd-ato>summary::after{content:"abrir";grid-row:1;grid-column:3;font-size:var(--sd-t0);color:var(--sd-apagado);text-decoration:underline;text-underline-offset:2px}
+.sd-ato[open]>summary::after{content:"recolher"}
+
+/* ── dois registros: o que defende a tese e o que sustenta a verificação ── */
+.sd-argumento{font-size:var(--sd-t2);line-height:1.6}
+.sd-aparato{font-size:var(--sd-t0);line-height:1.5;background:var(--sd-superficie);border-radius:var(--sd-raio-g);padding:var(--sd-e5)}
+.sd-aparato .sd-h2{font-family:var(--sd-sem-serifa);font-weight:500;font-size:var(--sd-t2)}
+
+/* ── painel de detalhe (obra, tríade) ── */
+.sd-painel{background:var(--sd-papel);border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio-g);padding:var(--sd-e5);box-shadow:0 10px 30px rgba(14,14,14,.10)}
+
+/* ── menu de seções: botão em qualquer largura; no celular, flutua ao alcance do polegar ── */
+.sd-secoes{position:relative}
+.sd-secoes>summary{display:inline-flex;align-items:center;min-height:var(--sd-alvo);padding:0 .9rem;border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio);background:var(--sd-papel);font:500 var(--sd-t0)/1 var(--sd-sem-serifa);cursor:pointer;list-style:none}
+.sd-secoes>summary::-webkit-details-marker{display:none}
+.sd-secoes>div{position:absolute;right:0;top:calc(100% + 6px);z-index:300;display:flex;flex-direction:column;width:min(21rem,calc(100vw - 1.5rem));max-height:70vh;overflow-y:auto;padding:var(--sd-e2);background:var(--sd-papel);border:1px solid var(--sd-fio-forte);border-radius:var(--sd-raio-g);box-shadow:0 10px 30px rgba(14,14,14,.14)}
+.sd-secoes a{display:flex;align-items:center;min-height:var(--sd-alvo);padding:0 var(--sd-e3);border-radius:var(--sd-raio);color:var(--sd-tinta);text-decoration:none;font-size:var(--sd-t0)}
+.sd-secoes a:hover{background:var(--sd-superficie)}
+.sd-secoes b{font-weight:500;font-size:var(--sd-t-1);color:var(--sd-apagado);padding:var(--sd-e3) var(--sd-e3) var(--sd-e1)}
+@media (max-width:640px){
+  .sd-secoes{position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:250}
+  .sd-secoes>summary{box-shadow:0 6px 18px rgba(14,14,14,.18);background:var(--sd-tinta);color:var(--sd-papel);border-color:var(--sd-tinta);border-radius:22px}
+  .sd-secoes>div{top:auto;bottom:calc(100% + 8px)}
+}
+
+/* ── movimento e impressão ── */
+@media (prefers-reduced-motion:reduce){.sd *{transition:none!important;animation:none!important}}
+@media print{
+  .sd-barra,.sd-secoes,.sd-obra-acoes,.sd-botao,.sd-chip{display:none!important}
+  .sd-ato>summary::after{content:""}
+  .sd-aparato{background:none;border:1px solid #999}
+  .sd-cheio{--sol-linha:#fff}
+  .sd-destaque,.sd-obra,.sd-figura,.sd-numero{break-inside:avoid}
+}

@@ -45,6 +45,8 @@ ESPACO_JS = os.path.join(HERE, "espaco3d.js")
 JSON_SRC = data_io.data_path("scisci_results.json")
 DOCS = os.path.join(ROOT, "docs")
 DADOS = os.path.join(DOCS, "dados")
+SISTEMA_CSS = os.path.join(HERE, "sistema.css")   # fichas e componentes do desenho (design/sistema.css)
+SOLIDOS_SVG = os.path.join(HERE, "solidos.svg")   # os cinco sólidos das tradições (símbolos sd-sol-*)
 
 SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupamentos", "rede",
             "rajadas", "longue-duree", "adormecidas", "citadas", "candidatos", "autor-ponte", "brasil", "brasil-expandido", "analise-brasil", "discussao", "sintese", "leitura", "pontes-ordem-superior", "pontes-semanticas", "sementes", "repro", "dados",
@@ -52,6 +54,14 @@ SECTIONS = ["resumo", "teoria", "metodo", "funil", "temporal", "pontes", "agrupa
 
 
 _TEM_ESPACO = None    # main() define: a aba do Espaço 3D só existe se a página for mesmo gerada
+
+
+def comum(html):
+    """Marcas comuns a todas as telas: o sistema de desenho e o bloco de sólidos."""
+    with open(SOLIDOS_SVG, encoding="utf-8") as f:
+        solidos = f.read()
+    html = html.replace("__SISTEMA__", '<link rel="stylesheet" href="sistema.css">')
+    return html.replace("__SOLIDOS__", solidos)
 
 
 def global_nav(active):
@@ -431,6 +441,7 @@ def main():
     js += f"const HERO3D={json.dumps(espaco.heroi(cena) if cena else [], separators=(',', ':'))};\n"
     html = inject_template(js, TEMPLATE)             # index/#rede: núcleo limpo de 69 nós
     html = html.replace("__GLOBAL_NAV__", global_nav("estudo"))   # nav consistente entre as telas
+    html = comum(html)                               # sistema de desenho + sólidos (etapa 1)
     html = inject_hypergraph_numbers(html)           # XGI_* tokens ← data/cocitation_hyperedges.json
     html = inject_author_network_numbers(html)       # AUTHORNET_* tokens ← data/author_network.json
     html = inject_brazil_numbers(html)               # BRASIL_* tokens ← data/brazil_expanded.json
@@ -450,6 +461,7 @@ def main():
             expl = (f.read().replace("__JS_DATA__", expl_js)
                     .replace("__N_OBRAS__", str(len(expl_net["nodes"])))   # contagem lida da rede
                     .replace("__GLOBAL_NAV__", global_nav("explorador")))
+            expl = comum(expl)
         explorer = os.path.join(DOCS, "explorador.html")
         with open(explorer, "w", encoding="utf-8") as f:
             f.write(expl)
@@ -460,6 +472,7 @@ def main():
         with open(ESPACO_TPL, encoding="utf-8") as f:
             esp = (f.read().replace("__ESPACO_DATA__", f"const ESPACO={bloco};")
                    .replace("__GLOBAL_NAV__", global_nav("espaco")))
+            esp = comum(esp)
         espaco_html = os.path.join(DOCS, "espaco.html")
         with open(espaco_html, "w", encoding="utf-8") as f:
             f.write(esp)
@@ -477,6 +490,7 @@ def main():
         with open(TRIAGEM_TPL, encoding="utf-8") as f:
             tri = (f.read().replace("__JS_DATA__", works_js)
                    .replace("__GLOBAL_NAV__", global_nav("triagem")))
+            tri = comum(tri)
         triagem = os.path.join(DOCS, "triagem.html")
         with open(triagem, "w", encoding="utf-8") as f:
             f.write(tri)
@@ -488,6 +502,7 @@ def main():
     print(f"dados: {n} CSVs gerados a partir do JSON/rede em {DADOS}")
     print(f"rayyan: {len(rayyan)} obras em rayyan_sintese.ris/.csv")
     shutil.copy(JSON_SRC, os.path.join(DADOS, "scisci_results.json"))
+    shutil.copy(SISTEMA_CSS, os.path.join(DOCS, "sistema.css"))
     if os.path.exists(net_src):
         shutil.copy(net_src, os.path.join(DADOS, "rede_cocitacao.json"))
     expl_src = os.path.join(ROOT, "data", "network_exploded.json")
