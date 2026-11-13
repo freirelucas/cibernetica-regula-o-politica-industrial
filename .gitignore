@@ -40,3 +40,6 @@ data/.done_*
 data/run_all_report.csv
 scisci_output/
 _local_run.ipynb
+
+# cópias isoladas de agentes executores (uma por ordem de construção)
+.claude/worktrees/

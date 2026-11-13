@@ -65,7 +65,12 @@ def mudancas(base):
     soltos = []
     for linha in roda("git", "status", "--porcelain").stdout.splitlines():
         soltos.append(linha[3:].split(" -> ")[-1].strip('"'))
-    return commitados, soltos
+    return [f for f in commitados if not alheio(f)], [f for f in soltos if not alheio(f)]
+
+
+def alheio(caminho):
+    """Cópias isoladas de outros executores moram em .claude/worktrees/: não são mudança desta ordem."""
+    return caminho.startswith(".claude/worktrees/")
 
 
 def testes():
@@ -102,7 +107,8 @@ def main():
         if faltam:
             print(f"NÃO INICIE: a ordem {o['id']} depende de {', '.join(faltam)}, que ainda não está feita.")
             return 1
-        sujo = [l for l in roda("git", "status", "--porcelain").stdout.splitlines() if not l[3:].startswith("docs/")]
+        sujo = [l for l in roda("git", "status", "--porcelain").stdout.splitlines()
+                if not l[3:].startswith("docs/") and not alheio(l[3:])]
         if sujo:
             print("NÃO INICIE: há mudanças soltas fora de docs/. Commite ou desfaça antes:\n  " + "\n  ".join(sujo[:8]))
             return 1
