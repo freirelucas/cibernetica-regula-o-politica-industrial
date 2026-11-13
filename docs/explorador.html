@@ -13,9 +13,6 @@
 html,body{margin:0;height:100%}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;overflow:hidden}
 a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
-.topbar{height:46px;display:flex;align-items:center;gap:14px;padding:0 1.1rem;border-bottom:1px solid var(--border-s);background:rgba(245,242,237,.96);font-family:var(--mono);font-size:11px}
-.topbar .brand{font-weight:500}
-.topbar .sp{flex:1}
 .layout{display:flex;height:calc(100% - 46px)}
 .panel{width:288px;flex:none;border-right:1px solid var(--border);padding:1rem 1.1rem;overflow-y:auto;background:var(--surface)}
 .panel h1{font-family:var(--serif);font-size:1.15rem;font-weight:600;margin:.1rem 0 .2rem}
@@ -76,10 +73,10 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
   <symbol id="sd-sol-dodeca" viewBox="0 0 24 24"><title>A nota — dodecaedro</title><path d="M2.49 8.91L6.12 3.91L12 2L17.88 3.91L21.51 8.91L21.51 15.09L17.88 20.09L12 22L6.12 20.09L2.49 15.09Z" fill="var(--sol-fundo,none)" stroke="currentColor" stroke-width="var(--sol-traco,1.5)" stroke-linejoin="round"/><path d="M6.12 10.09L12 5.82M8.37 17L6.12 10.09M15.63 17L8.37 17M17.88 10.09L15.63 17M12 5.82L17.88 10.09M6.12 10.09L2.49 8.91M12 2L12 5.82M21.51 8.91L17.88 10.09M8.37 17L6.12 20.09M15.63 17L17.88 20.09" fill="none" stroke="var(--sol-linha,currentColor)" stroke-width="var(--sol-traco-dentro,1.1)" stroke-linecap="round"/></symbol>
 </svg>
 
-<div class="topbar">
-  <span class="brand">Explorador · rede de cocitação</span>
-  <style>.gnav{display:inline-flex;flex-wrap:wrap;gap:3px;align-items:center;flex:0 1 auto;min-width:0}.gnav-tab{font-family:var(--mono,'JetBrains Mono',ui-monospace,monospace);font-size:11px;font-weight:500;color:#6b6560;text-decoration:none;padding:.34rem .62rem;border-radius:5px;border:1px solid transparent;white-space:nowrap}.gnav-tab:hover{color:#0e0e0e;background:rgba(14,14,14,.06);text-decoration:none}.gnav-tab.is-active{color:#fff;background:#4b3fc2;border-color:#4b3fc2}@media (pointer:coarse){.gnav-tab{display:inline-flex;align-items:center;min-height:44px;padding:.3rem .7rem;font-size:12px}}@media (max-width:560px){.gnav{gap:2px}.gnav-tab{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 4px;font-size:11px}.topbar .brand{display:none}}</style><span class="gnav" role="navigation" aria-label="Telas do estudo"><a href="index.html" class="gnav-tab">Estudo</a><a href="explorador.html" class="gnav-tab is-active" aria-current="page">Explorador</a><a href="espaco.html" class="gnav-tab">Espaço 3D</a><a href="triagem.html" class="gnav-tab">Triagem</a></span>
-</div>
+<header class="topbar sd sd-barra">
+  <a class="sd-marca" href="index.html">Ipea/Diest</a>
+  <nav class="sd-telas" aria-label="Telas do estudo"><a class="sd-tela" href="index.html">Estudo</a><a class="sd-tela" href="espaco.html">Espaço 3D</a><a class="sd-tela" href="explorador.html" aria-current="page">Explorador</a><a class="sd-tela" href="triagem.html">Triagem</a></nav>
+</header>
 <div class="layout">
   <aside class="panel">
     <h1>Explorador interativo</h1>

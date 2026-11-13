@@ -19,8 +19,6 @@ button,input,select{font:inherit;color:inherit}
 .so-leitor{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .pular{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--ink);color:var(--paper);padding:.7rem 1rem;border-radius:6px}
 .pular:focus{left:8px}
-.topbar{flex:none;min-height:46px;display:flex;align-items:center;gap:14px;padding:0 1.1rem;border-bottom:1px solid var(--border-s);background:rgba(245,242,237,.96);font-family:var(--mono);font-size:11px;overflow-x:auto}
-.topbar .brand{font-weight:500;white-space:nowrap}
 
 .palco{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(320px,390px) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
 .lentes-nav{grid-column:1;grid-row:1;background:var(--surface);border-right:1px solid var(--border-s);padding:.85rem 1.1rem .7rem}
@@ -130,8 +128,6 @@ table.mix td.b{width:42%}
   .cena{order:1;flex:0 0 50dvh}
   .trilho{order:2;flex:1 1 auto;border-right:0;border-top:1px solid var(--border-s);padding:.1rem .95rem 1.6rem}
   .busca{display:none}
-  .topbar{padding:0 .6rem;gap:8px}
-  .topbar .brand{display:none}
   .lente h2{font-size:1.35rem;margin-top:.8rem}
   .legenda{left:8px;top:8px;max-width:calc(100% - 16px);max-height:calc(100% - 74px);padding:0 .65rem}
   .legenda[open]{padding-bottom:.5rem}
@@ -156,10 +152,10 @@ table.mix td.b{width:42%}
 </svg>
 
 <a class="pular" href="#trilho">Ir para a explicação da lente</a>
-<div class="topbar">
-  <span class="brand">Espaço das tradições</span>
-  <style>.gnav{display:inline-flex;flex-wrap:wrap;gap:3px;align-items:center;flex:0 1 auto;min-width:0}.gnav-tab{font-family:var(--mono,'JetBrains Mono',ui-monospace,monospace);font-size:11px;font-weight:500;color:#6b6560;text-decoration:none;padding:.34rem .62rem;border-radius:5px;border:1px solid transparent;white-space:nowrap}.gnav-tab:hover{color:#0e0e0e;background:rgba(14,14,14,.06);text-decoration:none}.gnav-tab.is-active{color:#fff;background:#4b3fc2;border-color:#4b3fc2}@media (pointer:coarse){.gnav-tab{display:inline-flex;align-items:center;min-height:44px;padding:.3rem .7rem;font-size:12px}}@media (max-width:560px){.gnav{gap:2px}.gnav-tab{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 4px;font-size:11px}.topbar .brand{display:none}}</style><span class="gnav" role="navigation" aria-label="Telas do estudo"><a href="index.html" class="gnav-tab">Estudo</a><a href="explorador.html" class="gnav-tab">Explorador</a><a href="espaco.html" class="gnav-tab is-active" aria-current="page">Espaço 3D</a><a href="triagem.html" class="gnav-tab">Triagem</a></span>
-</div>
+<header class="topbar sd sd-barra">
+  <a class="sd-marca" href="index.html">Ipea/Diest</a>
+  <nav class="sd-telas" aria-label="Telas do estudo"><a class="sd-tela" href="index.html">Estudo</a><a class="sd-tela" href="espaco.html" aria-current="page">Espaço 3D</a><a class="sd-tela" href="explorador.html">Explorador</a><a class="sd-tela" href="triagem.html">Triagem</a></nav>
+</header>
 <noscript><p class="semjs">Esta vista precisa de JavaScript para desenhar a cena. A mesma rede está no <a href="explorador.html">Explorador</a> e, em tabela, nos <a href="index.html#dados">arquivos de dados</a>.</p></noscript>
 
 <main class="palco">

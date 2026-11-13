@@ -19,8 +19,6 @@ button,input,select{font:inherit;color:inherit}
 .so-leitor{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .pular{position:absolute;left:-9999px;top:8px;z-index:100;background:var(--ink);color:var(--paper);padding:.7rem 1rem;border-radius:6px}
 .pular:focus{left:8px}
-.topbar{flex:none;min-height:46px;display:flex;align-items:center;gap:14px;padding:0 1.1rem;border-bottom:1px solid var(--border-s);background:rgba(245,242,237,.96);font-family:var(--mono);font-size:11px;overflow-x:auto}
-.topbar .brand{font-weight:500;white-space:nowrap}
 
 .palco{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:minmax(320px,390px) minmax(0,1fr);grid-template-rows:auto minmax(0,1fr)}
 .lentes-nav{grid-column:1;grid-row:1;background:var(--surface);border-right:1px solid var(--border-s);padding:.85rem 1.1rem .7rem}
@@ -130,8 +128,6 @@ table.mix td.b{width:42%}
   .cena{order:1;flex:0 0 50dvh}
   .trilho{order:2;flex:1 1 auto;border-right:0;border-top:1px solid var(--border-s);padding:.1rem .95rem 1.6rem}
   .busca{display:none}
-  .topbar{padding:0 .6rem;gap:8px}
-  .topbar .brand{display:none}
   .lente h2{font-size:1.35rem;margin-top:.8rem}
   .legenda{left:8px;top:8px;max-width:calc(100% - 16px);max-height:calc(100% - 74px);padding:0 .65rem}
   .legenda[open]{padding-bottom:.5rem}
@@ -148,10 +144,10 @@ table.mix td.b{width:42%}
 <body>
 __SOLIDOS__
 <a class="pular" href="#trilho">Ir para a explicação da lente</a>
-<div class="topbar">
-  <span class="brand">Espaço das tradições</span>
+<header class="topbar sd sd-barra">
+  <a class="sd-marca" href="index.html">Ipea/Diest</a>
   __GLOBAL_NAV__
-</div>
+</header>
 <noscript><p class="semjs">Esta vista precisa de JavaScript para desenhar a cena. A mesma rede está no <a href="explorador.html">Explorador</a> e, em tabela, nos <a href="index.html#dados">arquivos de dados</a>.</p></noscript>
 
 <main class="palco">

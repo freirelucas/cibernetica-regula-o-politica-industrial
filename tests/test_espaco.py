@@ -188,7 +188,7 @@ def test_navegacao_tem_a_aba_em_todas_as_telas(pagina, root):
     for nome in ("index.html", "explorador.html", "triagem.html", "espaco.html"):
         h = open(os.path.join(root, "docs", nome), encoding="utf-8").read()
         assert 'href="espaco.html"' in h, nome
-    assert 'class="gnav-tab is-active" aria-current="page">Espaço 3D<' in pagina
+    assert 'href="espaco.html" aria-current="page">Espaço 3D<' in pagina
 
 
 def test_prosa_sem_anglicismo(pagina):
@@ -274,7 +274,7 @@ def test_navegacao_cabe_no_celular_headless(pagina, root):
     with sync_playwright() as p:
         b = p.chromium.launch()
         try:
-            for largura in (360, 390):
+            for largura in (320, 360, 390):
                 for nome in ("index.html", "explorador.html", "triagem.html", "espaco.html"):
                     ctx = b.new_context(viewport={"width": largura, "height": 800}, has_touch=True, is_mobile=True)
                     pg = ctx.new_page()
@@ -282,7 +282,7 @@ def test_navegacao_cabe_no_celular_headless(pagina, root):
                     pg.wait_for_timeout(400)
                     m = pg.evaluate(
                         "() => ({pagina: document.documentElement.scrollWidth,"
-                        " abas: [...document.querySelectorAll('.gnav-tab')].map(a => {"
+                        " abas: [...document.querySelectorAll('.sd-tela')].map(a => {"
                         " const r = a.getBoundingClientRect(); return [a.textContent.trim(), r.left, r.right, r.height]; })})")
                     ctx.close()
                     if m["pagina"] > largura:

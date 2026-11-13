@@ -66,41 +66,21 @@ def comum(html):
 
 def global_nav(active):
     """Navegação consistente entre as telas (Estudo · Explorador · Espaço 3D · Triagem),
-    injetada via token ``__GLOBAL_NAV__``. Auto-contida (estilo embutido) para
-    ficar idêntica em todas as páginas sem duplicar CSS à mão. A aba do Espaço 3D
-    só existe se a página for gerada (modelo presente e rede não vazia) — sem isso,
-    não se cria link morto.
-
-    Tela estreita (até 560 px): as abas ficam compactas (cabem em 320 px), a marca
-    da barra sai — a aba ativa já diz onde se está — e, se ainda assim faltar
-    espaço, as abas quebram linha em vez de empurrar a página para o lado."""
-    tabs = [("estudo", "index.html", "Estudo"),
-            ("explorador", "explorador.html", "Explorador")]
+    injetada via token ``__GLOBAL_NAV__`` dentro da barra de cada modelo. Só as telas
+    que existem entram, na mesma ordem em todas as páginas; o estilo vem de sistema.css
+    (classes sd-telas e sd-tela). A aba do Espaço 3D só existe se a página for gerada
+    (modelo presente e rede não vazia) — sem isso, não se cria link morto."""
+    tabs = [("estudo", "index.html", "Estudo")]
     if os.path.exists(ESPACO_TPL) if _TEM_ESPACO is None else _TEM_ESPACO:
         tabs.append(("espaco", "espaco.html", "Espaço 3D"))
-    tabs.append(("triagem", "triagem.html", "Triagem"))
+    tabs += [("explorador", "explorador.html", "Explorador"),
+             ("triagem", "triagem.html", "Triagem")]
     links = []
     for key, href, label in tabs:
-        cls = "gnav-tab is-active" if key == active else "gnav-tab"
         cur = ' aria-current="page"' if key == active else ""
-        links.append(f'<a href="{href}" class="{cls}"{cur}>{label}</a>')
-    style = (
-        "<style>"
-        ".gnav{display:inline-flex;flex-wrap:wrap;gap:3px;align-items:center;flex:0 1 auto;min-width:0}"
-        ".gnav-tab{font-family:var(--mono,'JetBrains Mono',ui-monospace,monospace);font-size:11px;"
-        "font-weight:500;color:#6b6560;text-decoration:none;padding:.34rem .62rem;border-radius:5px;"
-        "border:1px solid transparent;white-space:nowrap}"
-        ".gnav-tab:hover{color:#0e0e0e;background:rgba(14,14,14,.06);text-decoration:none}"
-        ".gnav-tab.is-active{color:#fff;background:#4b3fc2;border-color:#4b3fc2}"
-        "@media (pointer:coarse){.gnav-tab{display:inline-flex;align-items:center;min-height:44px;"
-        "padding:.3rem .7rem;font-size:12px}}"
-        "@media (max-width:560px){.gnav{gap:2px}.gnav-tab{display:inline-flex;align-items:center;"
-        "justify-content:center;min-height:44px;padding:0 4px;font-size:11px}"
-        ".topbar .brand{display:none}}"
-        "</style>"
-    )
-    return (style + '<span class="gnav" role="navigation" aria-label="Telas do estudo">'
-            + "".join(links) + "</span>")
+        links.append(f'<a class="sd-tela" href="{href}"{cur}>{label}</a>')
+    return ('<nav class="sd-telas" aria-label="Telas do estudo">'
+            + "".join(links) + "</nav>")
 
 
 def write_csvs(R, out):

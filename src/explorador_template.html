@@ -13,9 +13,6 @@ __SISTEMA__
 html,body{margin:0;height:100%}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;overflow:hidden}
 a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
-.topbar{height:46px;display:flex;align-items:center;gap:14px;padding:0 1.1rem;border-bottom:1px solid var(--border-s);background:rgba(245,242,237,.96);font-family:var(--mono);font-size:11px}
-.topbar .brand{font-weight:500}
-.topbar .sp{flex:1}
 .layout{display:flex;height:calc(100% - 46px)}
 .panel{width:288px;flex:none;border-right:1px solid var(--border);padding:1rem 1.1rem;overflow-y:auto;background:var(--surface)}
 .panel h1{font-family:var(--serif);font-size:1.15rem;font-weight:600;margin:.1rem 0 .2rem}
@@ -68,10 +65,10 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 </head>
 <body>
 __SOLIDOS__
-<div class="topbar">
-  <span class="brand">Explorador · rede de cocitação</span>
+<header class="topbar sd sd-barra">
+  <a class="sd-marca" href="index.html">Ipea/Diest</a>
   __GLOBAL_NAV__
-</div>
+</header>
 <div class="layout">
   <aside class="panel">
     <h1>Explorador interativo</h1>
