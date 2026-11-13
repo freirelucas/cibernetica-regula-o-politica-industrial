@@ -5,3 +5,5 @@ data/cache/
 data/items_tagged.json
 # derivado da animação (python src/animacao_rede_prep.py)
 data/animacao_rede.json
+# formulário gerado com nomes de servidores: não versionar, publicar só atrás de login (python src/feedback_form.py)
+docs/formulario_membros.html

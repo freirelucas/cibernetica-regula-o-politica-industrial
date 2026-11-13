@@ -14,8 +14,9 @@ cada diretoria, as **pontes epistêmicas** entre elas, as **zonas de convergênc
 2. **Ressalva no ponto da afirmação.** Atribuição de diretoria é *inferida* pela produção —
    sempre mostre a coluna de confiança. Ver `METODO.md §5`.
 3. **Pessoas reais.** São servidores públicos identificáveis. Trate o resultado como insumo
-   para *convite à colaboração*, nunca como avaliação de desempenho individual. Não publique
-   rankings de "produtividade" de pessoas.
+   para conferência de lotação e feedback estruturado, nunca como avaliação de desempenho
+   individual. Não publique rankings de "produtividade" de pessoas. Não há convite à
+   colaboração nem edição ao vivo: o feedback chega por formulário e passa por revisão.
 4. **Prosa em português**, sem anglicismo quando houver termo corrente (corretor, não broker,
    no texto final).
 5. Só stdlib no núcleo (`src/`). Bibliotecas pesadas (xgi, networkx, sentence-transformers)
@@ -33,6 +34,8 @@ src/membership.py     3b. validação com as chefias: overrides (vencem a infer�
 src/analysis.py       4. hipergrafos, nulo, zonas, pares/equipes → data/results.json
 src/report.py         5. RELATORIO.md
 src/openalex_enrich.py 6. (opcional, OPENALEX_API_KEY) referências → acoplamento bibliográfico
+src/feedback_form.py  formulário de feedback por pessoa → docs/formulario_membros.html (NÃO versionado:
+                          tem nomes; publicar só atrás de login institucional)
 src/run_all.py        orquestrador (--from attribute = só offline)
 tests/test_core.py    testes offline
 ```
