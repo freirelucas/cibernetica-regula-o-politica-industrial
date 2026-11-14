@@ -71,10 +71,10 @@ muda de nome. Trocas literais:
 
 | de | para |
 |---|---|
-| o parágrafo `<p class="lead">Das <b>${works.length}</b> obras da síntese, o funil destacou ... vá para <b>Decidir</b>.</p>` | `<p class="lead">Das <b>${works.length}</b> obras da síntese, <b>${fruit.length}</b> entram em tríades a construir: três obras que nunca foram citadas juntas e que, se passassem a ser, mais aproximariam as tradições (alta integração por condutância real, ΔKf, e plausíveis na faixa semântica). Não são pontes que já existem: são <em>onde construir</em>. Veja-as abaixo; para decidir o que entra na leitura, vá para <b>Decidir</b>.</p>` |
+| o parágrafo `<p class="lead">Das <b>${works.length}</b> obras da síntese, o funil destacou ... vá para <b>Decidir</b>.</p>` | `<p class="lead">Das <b>${works.length}</b> obras da síntese, <b>${fruit.length}</b> entram em tríades a construir: três obras que nunca aparecem juntas numa mesma lista de referências e que, se passassem a ser, mais aproximariam as tradições (alta integração por condutância real, ΔKf, e plausíveis na faixa semântica). Não são pontes que já existem: são <em>onde construir</em>. Veja-as abaixo; para decidir o que entra na leitura, vá para <b>Decidir</b>.</p>` |
 | `Nenhum alvo de agenda na modelagem atual.` | `Nenhuma obra da síntese entra em tríade a construir na modelagem atual.` |
 | `nenhum alvo de agenda no filtro atual` | `nenhuma obra da agenda no filtro atual` |
-| `alvo de construção` (no texto de ajuda) | `tríade a construir` |
+| `num <i>alvo de construção</i>` (no texto de ajuda) | `numa <i>tríade a construir</i>` |
 | `>Alvo de agenda<` (aparece **duas** vezes: troque nas duas) | `>Obras da agenda<` |
 | no `title` desse mesmo botão, `obras em alvos de construção da agenda` | `obras que entram em tríades a construir` |
 

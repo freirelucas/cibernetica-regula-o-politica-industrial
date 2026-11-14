@@ -53,7 +53,7 @@ Nessa mesma linha, `row.className='axis-row'` vira `row.className='sd-chip'`. E 
 ```js
     row.innerHTML=`<input type="checkbox" checked data-ax="${a}">${glifo}${AXN[a]} <span class="sd-num">${counts[a]||0}</span>`;
 ```
-O elemento que recebe essas linhas (o pai de `row`) ganha no CSS `display:flex;flex-wrap:wrap;gap:6px`.
+O container `#axisFilters` (linha 84 do modelo; é o pai de `row`) ganha, no CSS, `display:flex;flex-wrap:wrap;gap:6px`.
 
 **7. Busca, limiar e opções.**
 - `<input type="text" id="search" ...>` ganha `class="sd-campo"`.
@@ -69,7 +69,9 @@ Apague as regras CSS `.btn{...}` e `.btn:hover{...}`.
 ```html
 <a class="sd-botao" id="det3d">Ver no espaço 3D</a>
 ```
-No script, logo depois da linha que contém `link.href='https://openalex.org/'+d.id;`, acrescente:
+No script, logo depois da linha `else link.style.display='none';` (a que vem logo depois da linha que contém
+`link.href='https://openalex.org/'+d.id;`). **Não** insira entre o `if` e o `else`: isso quebra a sintaxe do script.
+Acrescente:
 ```js
     const l3=document.getElementById('det3d');
     if (/^W\d+$/.test(d.id)){ l3.style.display=''; l3.href='espaco.html#lente=silos&obra='+d.id; } else { l3.style.display='none'; }
