@@ -6,12 +6,7 @@ Python de biblioteca padrão a partir de dados versionados em `data/`.
 
 ## Tarefa em curso
 
-**Construir o redesenho por ordens de serviço.** O quadro está em `design/PLANO.md`
-(`python scripts/aceite.py --lista` mostra o que está feito e o que está liberado); cada ordem
-é um arquivo em `design/ordens/`. Você executa **uma** ordem: faz exatamente o que ela manda,
-só nos arquivos que ela lista, e termina quando `python scripts/aceite.py ORDEM` disser
-APROVADA. Não redesenhe. Se a ordem não bater com o que está no arquivo, pare e relate em vez
-de improvisar.
+**Redesenho construído.** As ordens de design/ordens/ estão todas feitas (python scripts/aceite.py --lista). Mudança nova de desenho começa por design/README.md.
 
 ## Comandos
 

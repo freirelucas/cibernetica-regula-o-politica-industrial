@@ -63,6 +63,7 @@ suíte de testes verde; prosa sem anglicismo.
 │   └── enrich_openalex.py            ← enriquecimento pontual via OpenAlex (uso único)
 ├── docs/                             ← SITE (GitHub Pages)
 │   ├── index.html                    ← relatório
+│   ├── nota.html                     ← bibliografia do texto para discussão no mapa das tradições
 │   ├── explorador.html               ← rede de cocitação em duas dimensões
 │   ├── espaco.html                   ← espaço 3D das tradições
 │   ├── triagem.html                  ← triagem de inclusão e exclusão
@@ -98,9 +99,10 @@ Construir + servir + dirigir headless + screenshot (verifica gráficos e seçõe
 python .claude/skills/run-scisci-ipea/driver.py --build --shot /tmp/site.png
 ```
 
-**As quatro telas**, todas geradas por `build_site.py` e sem nenhuma carga externa:
+**As cinco telas**, todas geradas por `build_site.py` e sem nenhuma carga externa:
 
 - `index.html` — o relatório, em seis atos.
+- `nota.html` — a bibliografia do texto para discussão situada no mapa das tradições: cada obra com a tradição, com quem é cocitada e o que ler ao lado.
 - `explorador.html` — a rede de cocitação em duas dimensões (d3), com filtros e busca.
 - `espaco.html` — o espaço 3D das tradições. Cada obra ocupa o ponto de um tetraedro que
   corresponde à mistura da sua cocitação entre as quatro tradições: a posição é uma regra,
@@ -201,7 +203,7 @@ pip install pytest
 pytest -q          # build, integridade do JSON, cabeçalhos dos CSV, varredura de anglicismo
 ```
 
-O smoke headless do site (as quatro telas) fica em `.claude/skills/run-scisci-ipea/driver.py`.
+O smoke headless do site (as cinco telas) fica em `.claude/skills/run-scisci-ipea/driver.py`.
 Os testes que abrem navegador pulam sozinhos onde o Playwright não está instalado.
 
 ---

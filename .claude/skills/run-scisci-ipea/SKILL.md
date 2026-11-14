@@ -11,13 +11,14 @@ by stdlib-only Python (`src/build_site.py`) from a single data source
 Playwright/Chromium via `.claude/skills/run-scisci-ipea/driver.py`. There is no
 server runtime — HTML + vendored Chart.js/d3/fonts in `docs/vendor/` (no CDN).
 
-The build emits **four pages** and the data exports:
+The build emits **five pages** and the data exports:
 - `docs/index.html` — the 22-section report (3 Chart.js charts + a canvas co-citation network).
 - `docs/explorador.html` — interactive **d3 SVG** co-citation network (filters, search, communities).
 - `docs/triagem.html` — **triage** tool: include/exclude/maybe over the synthesis, exports RIS.
 - `docs/espaco.html` — **3D space** of the traditions (dependency-free Canvas 2D engine, `docs/espaco3d.js`):
   each work sits at the point of a tetrahedron given by the mix of its co-citation among the four
   traditions; five lenses (silos, tempo, origem, agenda, a nota); view state lives in the URL hash.
+- `docs/nota.html` — **the nota**: the bibliography of the text for discussion, each work placed on the traditions map, with the works most co-cited with it ("Leia ao lado").
 - `docs/dados/` — 10 CSVs, the network JSON, and the **Rayyan** synthesis (`rayyan_sintese.{ris,csv,enw,bib,zip}`).
 
 All paths below are relative to the repository root.
@@ -59,6 +60,7 @@ Verified output ends with:
 [explorador]  nós (círculos d3): 250 · page errors: NENHUM -> OK
 [triagem]     cartões: 212 · page errors: NENHUM -> OK
 [espaco]      obras na cena: 250 · cena pintada: sim · lentes: 5 · números vazios: nenhum · page errors: NENHUM -> OK
+[nota]        obras da nota: 20 · page errors: NENHUM -> OK
 screenshots: /tmp/scisci_site.png, /tmp/scisci_explorador.png, /tmp/scisci_triagem.png, /tmp/scisci_espaco.png
 STATUS: OK
 ```

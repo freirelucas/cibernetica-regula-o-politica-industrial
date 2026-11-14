@@ -163,3 +163,5 @@ tocam as três tradições canônicas.
 **Autocontenção.** O motor da cena (`src/espaco3d.js`) é próprio, em canvas 2D, com os cinco
 sólidos de Platão construídos e conferidos numericamente (vértices, arestas, faces e relação
 de Euler). Não há WebGL, não há biblioteca nova e a página não faz carga externa.
+
+**Tela A nota.** `docs/nota.html` lista a bibliografia do texto para discussão com a posição de cada obra neste mapa. "Leia ao lado" traz as obras mais cocitadas com ela: o número é quantos trabalhos do corpus citam as duas. Registros duplicados da mesma obra são somados (`src/nota.py`).
