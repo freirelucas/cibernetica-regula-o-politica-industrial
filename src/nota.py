@@ -1,4 +1,5 @@
 """Dados da página A nota: a bibliografia do texto para discussão, situada no espaço das tradições."""
+from marcadores import br, esc, monta
 
 EIXO = ["cib", "reg", "pi", "cplx"]                       # mesma ordem de espaco.AX
 NOME = ["Cibernética", "Regulação", "Política industrial", "Complexidade"]
@@ -64,3 +65,76 @@ def dados(cena):
         "por_eixo": [sum(1 for o in obras if o["eixo"] == a) for a in range(4)],
         "obras": obras, "fora": fora, "atos": atos,
     }
+
+
+def solido(eixo, observado=True, extra=""):
+    if eixo < 0:
+        return ""
+    return (f'<svg class="sd-sol {extra} sd-eixo-{EIXO[eixo]} {"sd-cheio" if observado else "sd-vazado"}" '
+            f'aria-hidden="true"><use href="#sd-sol-{SOLIDO[eixo]}"/></svg>')
+
+
+def selo(eixo, observado, empate=False):
+    origem = "rótulo observado" if observado else ("rótulo inferido, com empate" if empate else "rótulo inferido")
+    return (f'<span class="sd-selo sd-eixo-{EIXO[eixo]}">{solido(eixo, observado)}{NOME[eixo]} '
+            f'<small>{origem}</small></span>')
+
+
+def mistura(k):
+    tot = sum(k) or 1
+    partes = "".join(f'<span class="sd-eixo-{EIXO[a]}" style="--p:{100 * k[a] / tot:.1f}"></span>' for a in range(4) if k[a])
+    texto = "; ".join(f"{NOME[a].lower()} {k[a]}" for a in range(4) if k[a])
+    chave = "".join(f'<span><b>{k[a]}</b> {NOME[a].lower()}</span>' for a in range(4) if k[a])
+    return (f'<div class="sd-mistura" role="img" aria-label="Vizinhas de rótulo observado: {texto}">{partes}</div>'
+            f'<div class="sd-mistura-chave">{chave}</div>')
+
+
+def item_obra(o):
+    def marcas(v):
+        m = (["outra tradição"] if v["outra"] else []) + (["também na nota"] if v["na_nota"] else [])
+        return f' <small class="sd-legenda">{", ".join(m)}</small>' if m else ""
+    viz = "".join(
+        f'<li>{solido(v["eixo"], v["observado"])}<span>{esc(v["rotulo"])}{marcas(v)}</span>'
+        f'<span class="sd-num">{v["peso"]} trabalhos</span></li>' for v in o["viz"])
+    acoes = [f'<a href="espaco.html#lente=nota&amp;obra={o["id"]}">Ver no espaço 3D</a>']
+    if o["doi"]:
+        acoes.append(f'<a href="https://doi.org/{esc(o["doi"])}" target="_blank" rel="noopener">Abrir pelo DOI (nova aba)</a>')
+    acoes.append(f'<a href="https://openalex.org/{o["id"]}" target="_blank" rel="noopener">Registro no OpenAlex (nova aba)</a>')
+    extra = []
+    if o["triades"]:
+        extra.append(f'entra em {o["triades"]} {"tríade" if o["triades"] == 1 else "tríades"} a construir')
+    if o["obs"]:
+        extra.append(esc(o["obs"]))
+    if o["aponta"] >= 0:
+        extra.append(f'o vocabulário diz {NOME[o["eixo"]].lower()}, a vizinhança aponta {NOME[o["aponta"]].lower()}')
+    return (
+        f'<li class="sd-obra" data-eixo="{EIXO[o["eixo"]]}" data-origem="{"observado" if o["observado"] else "inferido"}">'
+        f'{solido(o["eixo"], o["observado"], "sd-g")}'
+        f'<p class="sd-obra-ref">{esc(o["ref"])}</p>'
+        f'<p class="sd-obra-meta">{selo(o["eixo"], o["observado"], o["empate"])}'
+        + (f'<span>{"; ".join(extra)}</span>' if extra else "") + '</p>'
+        f'<div><p class="sd-sobre">Com quem é cocitada: {br(sum(o["k"]))} vizinhas de rótulo observado</p>{mistura(o["k"])}</div>'
+        f'<div><p class="sd-sobre">Leia ao lado: as mais cocitadas com ela</p><ul class="sd-vizinhas">{viz}</ul>'
+        f'<p class="sd-obra-acoes">{"".join(acoes)}</p></div></li>')
+
+
+def item_fora(f):
+    elo = f' <a href="https://doi.org/{esc(f["doi"])}" target="_blank" rel="noopener">DOI (nova aba)</a>' if f["doi"] else ""
+    obs = f' <span class="sd-legenda">{esc(f["obs"])}</span>' if f["obs"] else ""
+    return f'<li>{esc(f["ref"])}{elo}{obs}</li>'
+
+
+def pagina(modelo, ctx):
+    """Monta docs/nota.html: resolve os marcadores do modelo com o contexto e os blocos desta tela."""
+    n = ctx["nota"]
+    blocos = {
+        "obras_no_nucleo": "\n".join(item_obra(o) for o in n["obras"]),
+        "obras_fora": "\n".join(item_fora(f) for f in n["fora"]),
+        "atos": "\n".join(f"<li>{esc(a['ref'])}</li>" for a in n["atos"]),
+        "autores": esc(", ".join(n["autores"])),
+        "chips_eixo": "".join(
+            f'<button type="button" class="sd-chip" data-eixo="{EIXO[a]}" aria-pressed="true"'
+            + (" disabled" if not n["por_eixo"][a] else "")
+            + f'>{solido(a)}{NOME[a]} <span class="sd-num">{n["por_eixo"][a]}</span></button>' for a in range(4)),
+    }
+    return monta(modelo, ctx, blocos)

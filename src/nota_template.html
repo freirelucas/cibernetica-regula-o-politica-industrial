@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A nota: a bibliografia no mapa das tradições</title>
+<link rel="stylesheet" href="vendor/fonts.css">
+__SISTEMA__
+<style>
+/* ── leiaute desta tela (vai para src/nota_template.html; os componentes sd- vêm de sistema.css) ── */
+body{margin:0;background:var(--sd-papel)}
+.nota{max-width:60rem;margin:0 auto;padding:var(--sd-e7) var(--sd-e5) var(--sd-e8);display:grid;grid-template-columns:minmax(0,1fr);gap:var(--sd-e7)}
+.nota-topo{display:grid;gap:var(--sd-e4)}
+.nota-acoes{display:flex;flex-wrap:wrap;gap:var(--sd-e2);margin:0}
+.nota section{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--sd-e4)}
+.nota .sd-numeros{grid-template-columns:minmax(0,1fr)}
+.nota-filtros{display:flex;flex-wrap:wrap;gap:var(--sd-e2)}
+.nota-vazio{color:var(--sd-apagado);margin:0}
+.nota-lista{margin:0;padding-left:1.2rem;display:grid;gap:var(--sd-e3);font-size:var(--sd-t0);line-height:1.45;max-width:var(--sd-medida)}
+.nota-lista li{overflow-wrap:anywhere}
+.nota-lista a{display:inline-flex;align-items:center;min-height:var(--sd-alvo)}
+.sd-obra>div{min-width:0}
+@media (min-width:600px){.nota .sd-numeros{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+  .nota{padding:var(--sd-e6) var(--sd-e4) var(--sd-e8)}
+  .sd-obra{grid-template-columns:minmax(0,1fr)}            /* o sólido grande sai da margem; o selo já traz a forma */
+  .sd-obra>.sd-sol{display:none}
+}
+</style>
+</head>
+<body class="sd">
+__SOLIDOS__
+
+<header class="topbar sd sd-barra">
+  <a class="sd-marca" href="index.html">Ipea/Diest</a>
+  __GLOBAL_NAV__
+</header>
+
+<main class="nota">
+  <header class="nota-topo">
+    <p class="sd-sobre">Material de apoio ao texto para discussão</p>
+    <h1 class="sd-h1">A bibliografia da nota no mapa das tradições</h1>
+    <p class="sd-abre"><i>{{nota.titulo}}</i> cita {{nota.n_obras}} obras e {{nota.n_atos}} atos normativos. {{nota.n_no_nucleo}} dessas obras estão no núcleo cocitado deste estudo. Para cada uma, a página mostra em que tradição ela cai, com quem costuma ser citada e o que ler ao lado.</p>
+    <p class="sd-legenda">{{bloco:autores}}. {{nota.versao}}.</p>
+    <p class="nota-acoes">
+      <a class="sd-botao sd-primario" href="espaco.html#lente=nota">Ver a nota no espaço 3D</a>
+      <a class="sd-botao" href="#no-nucleo">Ir para as obras</a>
+    </p>
+  </header>
+
+  <dl class="sd-numeros" aria-label="A nota em números">
+    <div class="sd-numero"><dt>Obras da nota no núcleo cocitado</dt><dd><b>{{nota.n_no_nucleo}}</b> de {{nota.n_obras}}</dd></div>
+    <div class="sd-numero"><dt>Com rótulo de tradição observado</dt><dd><b>{{nota.n_observado}}</b> de {{nota.n_no_nucleo}}, sendo {{nota.k.0}} de cibernética, {{nota.k.1}} de regulação e {{nota.k.2}} de política industrial</dd></div>
+    <div class="sd-numero"><dt>Listas de referências do corpus que tocam as três tradições</dt><dd><b>{{num.listas.tocam_3}}</b> de {{num.listas.n_listas}} ({{num.listas.pct_tocam_3|1}}%)</dd></div>
+    <div class="sd-numero"><dt>Tríades a construir que envolvem obra da nota</dt><dd><b>{{nota.n_triades}}</b> de {{num.agenda.n_agenda}}</dd></div>
+  </dl>
+
+  <section id="no-nucleo" aria-labelledby="t-nucleo">
+    <h2 class="sd-h2" id="t-nucleo">No núcleo cocitado</h2>
+    <p class="sd-texto">O sólido e a cor dizem a tradição; cheio quando ela foi atribuída pelo vocabulário ou por ser obra-semente, vazado quando foi inferida da vizinhança. A faixa mostra com quais tradições a obra é citada junto. Em “leia ao lado” estão as obras mais cocitadas com ela: o número é quantos trabalhos do corpus citam as duas.</p>
+    <div class="nota-filtros" role="group" aria-label="Mostrar ou ocultar por tradição">
+      {{bloco:chips_eixo}}
+    </div>
+    <p class="nota-vazio" id="vazio" hidden>Nenhuma tradição selecionada. Ative ao menos uma para ver as obras.</p>
+    <ul class="sd-obras" id="obras">
+{{bloco:obras_no_nucleo}}
+    </ul>
+  </section>
+
+  <section id="fora" aria-labelledby="t-fora">
+    <h2 class="sd-h2" id="t-fora">Fora do núcleo cocitado</h2>
+    <p class="sd-texto">As outras {{nota.n_fora}} obras não estão entre as {{num.rede.n}} mais cocitadas do corpus. Isso descreve o corpus, não a obra: livros recentes, relatórios e estudos sobre o Brasil raramente chegam ao núcleo de uma rede de cocitação internacional. {{nota.n_com_doi_fora}} delas têm DOI.</p>
+    <ol class="nota-lista">
+{{bloco:obras_fora}}
+    </ol>
+  </section>
+
+  <section id="atos" aria-labelledby="t-atos">
+    <h2 class="sd-h2" id="t-atos">Atos normativos</h2>
+    <p class="sd-texto">Leis, decretos, resoluções e documentos oficiais citados na nota. Não entram na rede de cocitação.</p>
+    <ol class="nota-lista">
+{{bloco:atos}}
+    </ol>
+  </section>
+
+  <aside class="sd-destaque sd-limite">
+    <strong>Limite desta página</strong>
+    A posição de cada obra vem da cocitação no corpus deste estudo, não do uso que a nota faz dela. Onde o rótulo é inferido, ele é a tradição mais frequente na vizinhança: a regra acerta {{num.prov.acertos}} de {{num.prov.n_ouro}} casos em que a resposta é conhecida, e erra quase sempre na economia da complexidade.
+  </aside>
+</main>
+
+<script>
+(function () {
+  // filtro por tradição: referência de comportamento para a construção
+  var chips = document.querySelectorAll('.nota-filtros .sd-chip'), itens = document.querySelectorAll('#obras .sd-obra'), vazio = document.getElementById('vazio');
+  function aplica() {
+    var ligados = {}, algum = false;
+    chips.forEach(function (c) { ligados[c.getAttribute('data-eixo')] = c.getAttribute('aria-pressed') === 'true'; });
+    itens.forEach(function (li) { var v = !!ligados[li.getAttribute('data-eixo')]; li.hidden = !v; if (v) algum = true; });
+    vazio.hidden = algum;
+  }
+  chips.forEach(function (c) { c.addEventListener('click', function () { c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); aplica(); }); });
+})();
+</script>
+</body>
+</html>
