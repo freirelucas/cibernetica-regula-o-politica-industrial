@@ -241,6 +241,26 @@ pre.code{max-width:100%}
   .cover-abstract p{font-size:10.5pt;line-height:1.5;margin-bottom:8pt;max-width:none}
   .cover-cite{font-size:9.5pt;color:#333;border-top:1px solid #ccc;padding-top:8pt;margin-top:18pt}
 }
+/* ── leiaute desta tela (vai para src/site_template.html; os componentes sd- vêm de sistema.css) ── */
+.entrada{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--sd-e5);max-width:78rem;margin:0 auto;padding:var(--sd-e7) var(--sd-e5) var(--sd-e6)}
+.entrada-texto{display:grid;gap:var(--sd-e4);align-content:start}
+.entrada-texto .sd-h1 em{font-style:italic;color:var(--sd-apagado)}
+.entrada-autores{font-size:var(--sd-t0);color:var(--sd-apagado);max-width:var(--sd-medida);margin:0}
+.entrada-cena{display:block;color:var(--sd-tinta);text-decoration:none;min-width:0}
+.entrada-cena canvas{display:block;width:100%;aspect-ratio:1.16/1;max-height:min(62vw,26rem);cursor:grab;touch-action:pan-y}
+.entrada-cena>span{display:block;font-size:var(--sd-t0);color:var(--sd-apagado);line-height:1.45}
+.entrada-cena b{font-weight:500;color:var(--sd-cib-texto);text-decoration:underline;text-underline-offset:2px}
+.entrada-faixa{max-width:78rem;margin:0 auto;padding:0 var(--sd-e5) var(--sd-e7);display:grid;gap:var(--sd-e4)}
+.entrada-faixa .sd-numeros{grid-template-columns:minmax(0,1fr)}
+.entrada-ferramentas{font-size:var(--sd-t0);color:var(--sd-apagado);margin:0}
+.entrada-ferramentas a{display:inline-flex;align-items:center;min-height:var(--sd-alvo);margin-right:var(--sd-e3)}
+@media (min-width:600px){.entrada-faixa .sd-numeros{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1040px){
+  .entrada-faixa .sd-numeros{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .entrada{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:center;gap:var(--sd-e7)}
+  .entrada-cena canvas{max-height:none}
+}
+.entrada-cena.sem-cena canvas{display:none}
 </style>
 </head>
 <body>
@@ -284,7 +304,7 @@ pre.code{max-width:100%}
 </section>
 <header class="topbar sd sd-barra">
   <a class="sd-marca" href="index.html">Ipea/Diest</a>
-  <nav class="sd-telas" aria-label="Telas do estudo"><a class="sd-tela" href="index.html" aria-current="page">Estudo</a><a class="sd-tela" href="espaco.html">Espaço 3D</a><a class="sd-tela" href="explorador.html">Explorador</a><a class="sd-tela" href="triagem.html">Triagem</a></nav>
+  <nav class="sd-telas" aria-label="Telas do estudo"><a class="sd-tela" href="index.html" aria-current="page">Estudo</a><a class="sd-tela" href="nota.html">A nota</a><a class="sd-tela" href="espaco.html">Espaço 3D</a><a class="sd-tela" href="explorador.html">Explorador</a><a class="sd-tela" href="triagem.html">Triagem</a></nav>
   <div class="sd-barra-fim">
     <details class="sd-secoes">
       <summary>Seções</summary>
@@ -344,36 +364,72 @@ pre.code{max-width:100%}
   <a href="#referencias" title="Referências"></a>
 </nav>
 
-<div class="preliminar" role="note"><strong>Material preliminar</strong> — versão de trabalho, sujeita a revisão. Não citar como versão final. <strong>Reframe aplicada:</strong> o eixo <em>Regulação econômica</em> foi re-semeado (vinte sementes por eixo, sessenta no total) e o corpus reprocessado pelo funil (6.340 trabalhos); o explorador e as seções quantitativas já refletem a rede nova. Resíduo: a rede de coautoria (§10·6) ainda deriva do recorte anterior.</div>
-
-<header class="masthead">
-  <div class="mast-texto" style="max-width:900px">
-    <div class="kicker">IPEA · DIEST-COGIT · Cienciometria</div>
-    <h1>Cibernética Organizacional, Regulação<br>e <em>Política Industrial</em></h1>
-    <p class="subtitle">Mapeamento da estrutura intelectual de um campo em formação: uma análise cienciométrica das tradições que conectam o controle de sistemas, a regulação econômica e a estratégia de desenvolvimento produtivo.</p>
-    <p class="authorline"><b>Bruno Queiroz · Lucas Freire · Claucia Faganello</b> · Instituto de Pesquisa Econômica Aplicada (IPEA) · Diretoria de Estudos e Políticas do Estado, das Instituições e da Democracia (DIEST-COGIT) · Brasília · Documento de trabalho</p>
-    <div class="byline">
-      <span><span class="dot dot-c"></span>Cibernética · Beer · Ashby · Espejo</span>
-      <span><span class="dot dot-r"></span>Regulação · Stigler · Majone · Levi-Faur</span>
-      <span><span class="dot dot-p"></span>Política Industrial · Rodrik · Mazzucato</span>
-      <span id="gen-date" style="margin-left:auto"></span>
-    </div>
+<div class="sd entrada-bloco">
+<section class="entrada" aria-labelledby="titulo">
+  <div class="entrada-texto">
+    <p class="sd-sobre">Estudo cienciométrico do Ipea/Diest</p>
+    <h1 class="sd-h1" id="titulo">Cibernética organizacional, regulação e <em>política industrial</em></h1>
+    <p class="sd-abre">Três tradições tratam do mesmo problema, o de como o Estado coordena a atividade produtiva, e quase não se citam. Só 5,9% do peso de cocitação cruza as três, e nenhuma obra as conecta além do acaso.</p>
+    <p class="entrada-autores">Bruno Queiroz, Lucas Freire e Claucia Faganello. Instituto de Pesquisa Econômica Aplicada, Diretoria de Estudos e Políticas do Estado, das Instituições e da Democracia. Brasília.</p>
+    <details class="sd-estado">
+      <summary>Versão de trabalho</summary>
+      <p>Material preliminar, sujeito a revisão: não citar como versão final. O eixo de regulação econômica foi ressemeado (60 sementes no total) e o corpus reprocessado (6.340 trabalhos); as seções quantitativas já refletem a rede nova. A rede de coautoria ainda deriva do recorte anterior.</p>
+      <p><span id="gen-date"></span></p>
+    </details>
   </div>
-  <a class="hero3d" id="hero3d-link" href="espaco.html" aria-label="Abrir o espaço 3D das tradições">
+  <a class="entrada-cena" id="hero3d-link" href="espaco.html" aria-label="Abrir o espaço 3D das tradições">
     <canvas id="hero3d" aria-hidden="true"></canvas>
-    <span class="hero3d-leg"><span id="hero3d-n">As obras</span> do núcleo cocitado, cada uma no ponto que corresponde à mistura da sua cocitação entre quatro tradições. Arraste para girar. <strong>Abrir o espaço 3D</strong></span>
+    <span><span id="hero3d-n">As 250 obras</span> do núcleo cocitado, cada uma no ponto que corresponde à mistura da sua cocitação entre quatro tradições. Arraste para girar. <b>Abrir o espaço 3D</b></span>
   </a>
-</header>
+</section>
+
+<section class="entrada-faixa" aria-labelledby="portas">
+  <h2 class="sd-sobre" id="portas">Por onde entrar</h2>
+  <ul class="sd-portas">
+    <li><a class="sd-porta" href="nota.html">
+      <span class="sd-porta-marca"><svg class="sd-sol sd-gg sd-eixo-nota sd-cheio" aria-hidden="true"><use href="#sd-sol-dodeca"/></svg></span>
+      <b>A bibliografia da nota</b>
+      <span class="sd-porta-texto">As 58 obras citadas em <i>Do organograma ao sistema viável</i>, situadas no mapa das tradições: 20 estão no núcleo cocitado.</span>
+      <em>Abrir a nota</em>
+    </a></li>
+    <li><a class="sd-porta" href="#pontes">
+      <span class="sd-porta-marca" aria-hidden="true">
+        <svg class="sd-sol sd-g sd-eixo-cib sd-cheio"><use href="#sd-sol-icosa"/></svg>
+        <svg class="sd-sol sd-g sd-eixo-reg sd-cheio"><use href="#sd-sol-cubo"/></svg>
+        <svg class="sd-sol sd-g sd-eixo-pi sd-cheio"><use href="#sd-sol-tetra"/></svg>
+      </span>
+      <b>O achado: três silos</b>
+      <span class="sd-porta-texto">Modularidade de 0,515, contra -0,005 ao acaso. 0 de 126 obras testadas conectam as tradições.</span>
+      <em>Ler o Ato 2</em>
+    </a></li>
+    <li><a class="sd-porta" href="#discussao">
+      <span class="sd-porta-marca"><svg class="sd-sol sd-gg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21.5 20h-19z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 2.4" stroke-linejoin="round"/><circle cx="12" cy="3" r="1.7"/><circle cx="21.5" cy="20" r="1.7"/><circle cx="2.5" cy="20" r="1.7"/></svg></span>
+      <b>A agenda: onde construir</b>
+      <span class="sd-porta-texto">84 tríades de obras que nunca foram citadas juntas, em ordem de quanto integrariam o campo. 57 envolvem obra citada na nota.</span>
+      <em>Ler o Ato 5</em>
+    </a></li>
+  </ul>
+  <p class="entrada-ferramentas">Ferramentas: <a href="espaco.html">Espaço 3D</a><a href="explorador.html">Explorador da rede</a><a href="triagem.html">Triagem de leituras</a></p>
+</section>
+
+<section class="entrada-faixa" aria-labelledby="numeros">
+  <h2 class="sd-sobre" id="numeros">O achado em números, cada um com o seu denominador</h2>
+  <dl class="sd-numeros">
+    <div class="sd-numero"><dt>Corpus</dt><dd><b>6.340</b> trabalhos, a partir de 60 obras-semente</dd></div>
+    <div class="sd-numero"><dt>Núcleo cocitado</dt><dd><b>250</b> obras e 7.171 cocitações</dd></div>
+    <div class="sd-numero"><dt>Cocitação que cruza as três tradições</dt><dd><b>5,9%</b> do peso entre obras de rótulo observado</dd></div>
+    <div class="sd-numero"><dt>Obras conectoras significativas</dt><dd><b>0</b> de 126 testadas</dd></div>
+    <div class="sd-numero"><dt>Tríades além do acaso</dt><dd><b>0</b> de 3.000 avaliadas</dd></div>
+    <div class="sd-numero"><dt>Agenda que não depende de rótulo inferido</dt><dd><b>33</b> de 84 tríades</dd></div>
+  </dl>
+</section>
+</div>
 
 <!-- 00 · RESUMO -->
 <style>
 .leadin{color:var(--ink);font-weight:500}
 .termo{position:relative;border-bottom:1px dotted var(--accent);cursor:help}
 .termo:hover::after,.termo:focus::after{content:attr(data-def);position:absolute;left:0;top:1.4em;z-index:50;width:min(320px,78vw);background:var(--ink);color:var(--paper);font-family:var(--sans);font-weight:300;font-size:.78rem;line-height:1.45;padding:.5rem .65rem;border-radius:6px;box-shadow:0 6px 20px rgba(14,14,14,.25);pointer-events:none}
-.startbox{background:var(--surface);border:1px solid var(--border-s);border-left:3px solid var(--cyb);border-radius:8px;padding:1.2rem 1.4rem;margin:0 0 2rem}
-.startbox-h{font-family:var(--serif);font-weight:600;font-size:1.25rem;margin:0 0 .6rem}
-.startbox p{margin:.5rem 0;line-height:1.6}
-.startbox-find{background:var(--paper);border-radius:6px;padding:.7rem .85rem;font-size:.95rem}
 .startmap,.starttools{display:flex;flex-wrap:wrap;gap:.5rem .9rem;align-items:baseline;margin-top:.9rem;font-size:.85rem}
 .startmap a,.starttools a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent}
 .startmap a:hover,.starttools a:hover{color:var(--ink);border-bottom-color:var(--ink);text-decoration:none}
@@ -387,31 +443,6 @@ details.act:not([open])>summary::after{content:'▸'}
 details.act>summary .act-n{color:var(--cyb);font-weight:600}
 </style>
 <section id="resumo" class="section"><div class="container">
-  <aside class="startbox" aria-label="Comece por aqui">
-    <h2 class="startbox-h">Comece por aqui</h2>
-    <p>Queríamos saber se três tradições que quase não conversam — <strong>cibernética organizacional</strong>, <strong>regulação econômica</strong> e <strong>política industrial</strong> — formam um campo só ou ilhas separadas. Para isso, testamos <strong>vários modelos</strong> sobre a base OpenAlex (redes de cocitação par-a-par e de <em>ordem superior</em>/hipergrafo, detecção de comunidades, intermediação, e medidas de <em>integração</em> como a condutância real ΔKf), sempre contra <em>modelos nulos</em> — tudo com o propósito de achar as <strong>pontes</strong> entre os campos e testar se elas de fato existem.</p>
-    <p class="startbox-find"><strong>O que achamos, em três frases:</strong> são <strong>silos reais</strong> (modularidade Q ≈ 0,5–0,6 contra ~0 no acaso) — e o isolamento vai até quem cita e quem colabora. <strong>Nenhuma ponte está latente</strong> à espera de ser descoberta: contra um nulo casado em grau, nada supera o acaso. Logo, a convergência <strong>não emerge sozinha — tem de ser construída</strong>, e o estudo entrega uma <em>agenda</em> de onde costurar.</p>
-    <div class="startmap">
-      <span class="hint">com pressa? entre por:</span>
-      <a href="#pontes"><b>o achado</b> — os silos, e por que não há ponte</a>
-      <a href="#sintese"><b>a proposta</b> — o que fazer com isso</a>
-    </div>
-    <div class="startmap">
-      <span class="hint">o estudo em 5 atos, mais o aparato:</span>
-      <a href="#teoria"><b>1. Como medimos</b> — teoria, método e funil</a>
-      <a href="#temporal"><b>2. A estrutura do campo</b> — os silos</a>
-      <a href="#candidatos"><b>3. O que emerge</b> — obras e autores</a>
-      <a href="#brasil"><b>4. O caso brasileiro</b></a>
-      <a href="#discussao"><b>5. Do diagnóstico ao desenho</b> — a agenda (ΔKf) e a síntese</a>
-      <a href="#repro"><b>Aparato</b> — verificar e reusar</a>
-    </div>
-    <div class="starttools">
-      <span class="hint">ferramentas:</span>
-      <a href="explorador.html">Explorador — modo “só as pontes” &nearr;</a>
-      <a href="espaco.html">Espaço 3D — cada obra pela mistura da sua cocitação &nearr;</a>
-      <a href="triagem.html">Triagem (Rayyan) — o que o algoritmo achou &nearr;</a>
-    </div>
-  </aside>
   <div class="sec-header"><span class="sec-num">00</span><h2 class="sec-title">Resumo</h2><span class="sec-method">corpus extraído da base OpenAlex</span></div>
   <div class="prose">
     <p class="lead">Este estudo mapeia a estrutura intelectual da interseção entre três tradições intelectuais que raramente dialogam de forma explícita: a <strong>cibernética organizacional</strong> (o controle e a viabilidade de sistemas complexos), a <strong>regulação econômica</strong> (a disciplina da atividade econômica pelo Estado — captura regulatória, monopólio natural, agências reguladoras, o estado regulador) e a <strong>política industrial</strong> (a ação deliberada do Estado sobre a estrutura produtiva).</p>
