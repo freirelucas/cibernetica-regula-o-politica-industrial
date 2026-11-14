@@ -61,6 +61,25 @@ A regra CSS `.callout{...}` do modelo vira (o sistema passa a dar fundo, borda e
 .callout.sd-destaque{max-width:none}
 ```
 
+## Passo 3a — alvos de toque, por categoria (medidos no tronco 4d5e9df)
+
+A medição do relatório atual dá 134 alvos pequenos no celular e 146 no tablet, em oito categorias.
+Aplique este bloco, nesta ordem, no fim do primeiro `<style>` do modelo:
+
+```css
+@media (max-width:900px){
+  td a, .seed-id a, a.fmt, li strong a{display:inline-block;min-height:44px;line-height:44px;vertical-align:middle}
+  .chip,.rtab{min-height:44px;display:inline-flex;align-items:center}
+  .controls input.search{min-height:44px}
+  .rtabs button{min-height:44px}
+}
+```
+
+Este bloco cobre as categorias: links de IDs em células de tabela (105), IDs das sementes (8), links em
+destaques (`a.fmt`, 5), botões de filtro (`.chip`, 8), botões de abas (`.rtab`, 4), campo de busca (2) e
+links em negrito dentro de item de lista (2). **Custo declarado:** as linhas de tabela com ID ficam com
+44 px de altura no celular e no tablet. É o que a regra de alvo de toque pede; não reduza.
+
 ## Passo 3 — alvos de toque
 ```bash
 python src/build_site.py
