@@ -26,7 +26,8 @@ python scripts/aceite.py F1 --iniciar
    copiada da saída real do driver.
 4. `driver.py`: no docstring, a linha de uso que diz "verifica as 4" passa a "verifica as 5";
    o texto de ajuda do `argparse` passa a citar também a nota.
-5. `CLAUDE.md`: a seção "Tarefa em curso" vira:
+5. `CLAUDE.md`, seção "Comandos": troque `pytest -q` por `python -m pytest -q` (o `pytest` solto pode apontar para um Python sem as dependências).
+6. `CLAUDE.md`: a seção "Tarefa em curso" vira:
    `**Redesenho construído.** As ordens de design/ordens/ estão todas feitas (python scripts/aceite.py --lista). Mudança nova de desenho começa por design/README.md.`
 
 ## Passo 2 — CSS morto do relatório

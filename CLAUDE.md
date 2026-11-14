@@ -21,7 +21,7 @@ python scripts/aceite.py --lista                      # o quadro das ordens
 python scripts/aceite.py ORDEM --iniciar              # começa uma ordem
 python scripts/aceite.py ORDEM                        # veredito da ordem: APROVADA ou REPROVADA
 python src/build_site.py                              # gera docs/ (segundos)
-pytest -q                                             # suíte inteira
+python -m pytest -q                                    # suíte inteira
 python .claude/skills/run-scisci-ipea/driver.py       # abre as telas num navegador; STATUS: OK
 python scripts/conferir_telas.py                      # mede as telas em três tamanhos
 python design/ferramentas/gera_prototipos.py          # regera os protótipos de desenho
