@@ -18,7 +18,7 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 .panel h1{font-family:var(--serif);font-size:1.15rem;font-weight:600;margin:.1rem 0 .2rem}
 .panel .lead{font-size:.82rem;color:var(--muted);line-height:1.5;margin:0 0 1rem}
 .ctl{margin-bottom:1.15rem}
-.ctl>label.h{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:.5rem}
+.ctl>label.h{display:block;font:500 var(--sd-t0)/1.3 var(--sd-sem-serifa);color:var(--sd-apagado);margin-bottom:.5rem}
 .axis-row{display:flex;align-items:center;gap:8px;font-size:.84rem;padding:.18rem 0;cursor:pointer;user-select:none}
 .axis-row input{accent-color:var(--ink);cursor:pointer}
 .sw{width:12px;height:12px;border-radius:50%;display:inline-block;flex:none}
@@ -27,8 +27,6 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 .rngval{font-family:var(--mono);font-size:11px;color:var(--muted)}
 #search{width:100%;padding:.45rem .55rem;border:1px solid var(--border-s);border-radius:5px;font-family:var(--sans);font-size:.84rem;background:var(--paper)}
 .toggle{display:flex;align-items:center;gap:8px;font-size:.84rem;cursor:pointer;user-select:none}
-.btn{font-family:var(--mono);font-size:11px;padding:.4rem .7rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper);color:var(--ink);cursor:pointer}
-.btn:hover{background:var(--ink);color:var(--paper)}
 .live{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:.2rem}
 .stage{flex:1;position:relative;overflow:hidden}
 #graph{width:100%;height:100%;display:block;cursor:grab}
@@ -51,8 +49,8 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
 #detail .pill{display:inline-block;padding:.08rem .45rem;border-radius:20px;font-size:10px;color:#fff;margin-right:6px}
 #detail .nb{font-size:.8rem;color:var(--muted);line-height:1.55;max-height:150px;overflow-y:auto}
 #detail .nb b{color:var(--ink);font-weight:500}
-#detail .row{display:flex;gap:8px;margin-top:.7rem;align-items:center}
-#detail .close{position:absolute;top:8px;right:10px;cursor:pointer;color:var(--muted);font-size:16px;line-height:1}
+#detail .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:.7rem;align-items:center}
+#detail .close{position:absolute;top:0;right:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:0;cursor:pointer;color:var(--muted);font-size:18px;line-height:1}
 .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-family:var(--mono);font-size:11px;padding:.3rem .5rem;border-radius:4px;display:none;z-index:50;max-width:260px}
 @media (max-width:760px){
   body{overflow:auto}
@@ -61,6 +59,10 @@ input[type=range]{width:100%;accent-color:var(--cyb)}
   .stage{height:72vh}
   #detail{width:calc(100% - 28px)}
 }
+#axisFilters{display:flex;flex-wrap:wrap;gap:6px}
+#wmin{width:100%;min-height:44px}
+.toggle{min-height:44px}
+.toggle input{width:20px;height:20px;flex:none}
 </style>
 </head>
 <body>
@@ -70,13 +72,13 @@ __SOLIDOS__
   __GLOBAL_NAV__
 </header>
 <div class="layout">
-  <aside class="panel">
+  <aside class="panel sd">
     <h1>Explorador interativo</h1>
-    <p class="lead">Rede de <strong>cocitação ampliada</strong> dos <strong>quatro eixos</strong> (inclui a sondagem da economia da complexidade; __N_OBRAS__ obras; OpenAlex). Cada nó é uma obra (<strong>tamanho ∝ citações</strong>); cada linha, uma cocitação (espessura ∝ frequência; <span style="color:var(--accent)">vermelho</span> = entre eixos). Obras sem eixo de vocabulário aparecem no <strong>eixo inferido</strong> pela vizinhança (tom mais leve). Use <strong>◆ Só as pontes</strong> (abaixo) para ver apenas os <strong>alvos de agenda</strong> — as pontes a construir — e o que elas conectam; ou <em>Destaque</em> para realçá-las sobre a rede inteira. <a href="index.html#pontes">Como foi construída &rarr;</a></p>
+    <p class="lead">Rede de cocitação ampliada das quatro tradições, com __N_OBRAS__ obras (inclui a sondagem da economia da complexidade). Cada círculo é uma obra, maior quanto mais citada; cada linha é uma cocitação, mais grossa quanto mais frequente e vermelha quando liga tradições diferentes. Obras sem tradição atribuída pelo vocabulário aparecem na tradição inferida pela vizinhança, em tom mais leve. O botão abaixo mostra só as obras da agenda, as que entram em alguma tríade a construir. <a class="sd-botao sd-discreto" href="index.html#pontes">Como a rede foi construída</a></p>
 
     <div class="ctl ponte-ctl">
-      <button class="btn ponte-btn" id="pontesBtn" aria-pressed="false" style="width:100%;font-weight:600;border:1px solid var(--accent);color:var(--accent);background:var(--paper)">◆ Só as pontes</button>
-      <p class="ponte-hint" id="pontesHint" style="font-size:.78rem;color:var(--muted);margin:.45rem 0 0;line-height:1.45">Mostra só as <strong>obras-alvo da agenda</strong> (as pontes a construir) e as cocitações entre elas — sem o ruído da rede inteira.</p>
+      <button type="button" class="sd-botao" id="pontesBtn" aria-pressed="false" style="width:100%">Só as obras da agenda</button>
+      <p class="ponte-hint" id="pontesHint" style="font-size:.78rem;color:var(--muted);margin:.45rem 0 0;line-height:1.45">Mostra só as obras que entram em alguma tríade a construir e as cocitações entre elas.</p>
     </div>
 
     <div class="ctl">
@@ -91,7 +93,7 @@ __SOLIDOS__
 
     <div class="ctl">
       <label class="h" for="search">Buscar obra</label>
-      <input type="text" id="search" placeholder="título, autor, eixo…" autocomplete="off">
+      <input type="text" id="search" class="sd-campo" placeholder="título, autor, eixo…" autocomplete="off">
     </div>
 
     <div class="ctl">
@@ -102,10 +104,10 @@ __SOLIDOS__
     </div>
     <div class="ctl">
       <label class="h" for="destaque">Destaque</label>
-      <select id="destaque" style="width:100%;font-family:var(--sans);font-size:.84rem;padding:.4rem .5rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper)">
+      <select id="destaque" class="sd-campo">
         <option value="none">— nenhum</option>
         <option value="conn">conectores (participação)</option>
-        <option value="agenda">alvos de agenda (pontes a construir)</option>
+        <option value="agenda">obras da agenda (tríades a construir)</option>
         <option value="bridge">conectores de 2ª ordem (≥2 eixos na vizinhança)</option>
         <option value="orgcib">cibernética organizacional</option>
         <option value="encr">encruzilhada (toca os 4 eixos)</option>
@@ -113,8 +115,8 @@ __SOLIDOS__
     </div>
 
     <div class="ctl">
-      <button class="btn" id="reset">Reorganizar</button>
-      <button class="btn" id="expSub" title="baixar os nós e arestas visíveis">Baixar subrede (JSON)</button>
+      <button class="sd-botao" id="reset">Reorganizar</button>
+      <button class="sd-botao" id="expSub" title="baixar os nós e arestas visíveis">Baixar subrede (JSON)</button>
     </div>
 
     <div class="live" id="live"></div>
@@ -127,11 +129,11 @@ __SOLIDOS__
     <div class="legend" id="legend"></div>
     <div class="tip" id="tip"></div>
     <div id="detail">
-      <span class="close" id="detClose" title="fechar">&times;</span>
+      <button type="button" class="close" id="detClose" aria-label="Fechar">&times;</button>
       <h3 id="detTitle"></h3>
       <div class="meta" id="detMeta"></div>
       <div class="nb" id="detNb"></div>
-      <div class="row"><a class="btn" id="detLink" target="_blank" rel="noopener">Abrir no OpenAlex &nearr;</a></div>
+      <div class="row"><a class="sd-botao" id="detLink" target="_blank" rel="noopener">Abrir no OpenAlex (nova aba)</a><a class="sd-botao" id="det3d">Ver no espaço 3D</a></div>
     </div>
   </div>
 </div>
@@ -264,7 +266,7 @@ __JS_DATA__
 
   function visibleData(){
     let ns0 = allNodes.filter(n=>axisOn[n.axis||'']);
-    if (pontesOnly){                              // "Só as pontes": apenas os alvos de agenda (o fruto)
+    if (pontesOnly){                              // "só a agenda": apenas os alvos de agenda (o fruto)
       ns0 = ns0.filter(n=>n.agenda);              // a rede é densa demais p/ "alvo + vizinhos" filtrar algo
     }
     const ok = new Set(ns0.map(n=>n.id));
@@ -350,13 +352,15 @@ __JS_DATA__
       + `${d.year||'s.d.'} · ${fmt(d.cited_by)} citações · grau ${deg[d.id]} · força ${fmt(str[d.id])}`
       + (d.role!==undefined ? `<br><span style="color:var(--muted)">papel: <strong>${d.role}</strong> · participação P=${d.part} · comunidade ${d.comm}${d.sub?` · cibernética <strong>${d.sub}</strong>`:''}</span>` : '')
       + ((axreach[d.id]||0) ? `<br><span style="color:var(--muted)">vizinhança alcança <strong>${axreach[d.id]}</strong> eixo(s)${axreach[d.id]>=2?' — <strong>ponte de 2ª ordem</strong>':''}</span>` : '')
-      + (d.agenda ? `<br><span style="color:var(--accent)">★ <strong>alvo de agenda</strong> — ponte a construir (alta integração, ΔKf)</span>` : '');
+      + (d.agenda ? `<br><span style="color:var(--accent)">★ <strong>obra da agenda</strong> — tríade a construir (alta integração, ΔKf)</span>` : '');
     const top = nbrs[d.id].slice(0,8)
       .map(o=>`<b>${(byId[o.id]||{}).label||o.id}</b> <span style="color:var(--muted)">(${o.w})</span>`).join(' · ');
     document.getElementById('detNb').innerHTML = top ? ('Mais cocitada com: '+top) : 'Sem cocitações no limiar atual.';
     const link = document.getElementById('detLink');
     if (/^W\d+$/.test(d.id)){ link.style.display=''; link.href='https://openalex.org/'+d.id; }
     else link.style.display='none';
+    const l3=document.getElementById('det3d');
+    if (/^W\d+$/.test(d.id)){ l3.style.display=''; l3.href='espaco.html#lente=silos&obra='+d.id; } else { l3.style.display='none'; }
     document.getElementById('detail').style.display='block';
   }
   document.getElementById('detClose').onclick=()=>{document.getElementById('detail').style.display='none';};
@@ -367,7 +371,7 @@ __JS_DATA__
     label.style('display', d=>{
       if (query) return matches(d) ? null : 'none';
       if (!showLabels) return 'none';
-      if (pontesOnly) return null;               // no modo "só pontes" há poucos nós: rotula todos
+      if (pontesOnly) return null;               // no modo "só a agenda" há poucos nós: rotula todos
       return labelable(d) ? null : 'none';
     });
   }
@@ -375,7 +379,7 @@ __JS_DATA__
     node.style('opacity', n => {
       if (query) return matches(n) ? 1 : .12;
       if (hlmode === 'conn') return 0.12 + 0.88 * (n.part || 0);            // participação
-      if (hlmode === 'agenda') return n.agenda ? 1 : .12;                   // alvos de agenda (pontes a construir)
+      if (hlmode === 'agenda') return n.agenda ? 1 : .12;                   // obras da agenda (tríades a construir)
       if (hlmode === 'bridge') return (axreach[n.id] >= 2) ? 1 : .12;       // vizinhança liga ≥2 eixos
       if (hlmode === 'orgcib') return (n.sub === 'organizacional') ? 1 : .12;  // cibernética organizacional
       if (hlmode === 'encr') return (axreach[n.id] >= 4) ? 1 : .12;         // vizinhança toca os 4 eixos
@@ -392,8 +396,12 @@ __JS_DATA__
   const af = document.getElementById('axisFilters');
   const counts = {}; allNodes.forEach(n=>counts[n.axis||'']=(counts[n.axis||'']||0)+1);
   ['Cyb','Reg','PolInd','Cplx',''].forEach(a=>{
-    const row=document.createElement('label'); row.className='axis-row';
-    row.innerHTML=`<input type="checkbox" checked data-ax="${a}"><span class="sw" style="background:${AXC[a]}"></span>${AXN[a]}<span class="ct">${counts[a]||0}</span>`;
+    const SOL = {Cyb:['cib','icosa'], Reg:['reg','cubo'], PolInd:['pi','tetra'], Cplx:['cplx','octa']};
+    const glifo = SOL[a]
+      ? `<svg class="sd-sol sd-eixo-${SOL[a][0]} sd-cheio" aria-hidden="true"><use href="#sd-sol-${SOL[a][1]}"/></svg>`
+      : `<svg class="sd-sol" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2.5"/></svg>`;
+    const row=document.createElement('label'); row.className='sd-chip';
+    row.innerHTML=`<input type="checkbox" checked data-ax="${a}">${glifo}${AXN[a]} <span class="sd-num">${counts[a]||0}</span>`;
     row.querySelector('input').addEventListener('change',e=>{axisOn[a]=e.target.checked; restart(false);});
     af.appendChild(row);
   });
@@ -418,10 +426,9 @@ __JS_DATA__
   const pBtn=document.getElementById('pontesBtn'), pHint=document.getElementById('pontesHint');
   const nAgenda=allNodes.filter(n=>n.agenda).length;
   function syncPontes(){
-    pBtn.textContent = pontesOnly ? '↩ Ver rede inteira' : ('◆ Só as pontes ('+nAgenda+' alvos)');
+    pBtn.textContent = pontesOnly ? 'Ver a rede inteira' : ('Só as obras da agenda (' + nAgenda + ')');
     pBtn.setAttribute('aria-pressed', pontesOnly?'true':'false');
-    pBtn.style.background = pontesOnly ? 'var(--accent)' : 'var(--paper)';
-    pBtn.style.color = pontesOnly ? '#fff' : 'var(--accent)';
+    pBtn.classList.toggle('sd-primario', pontesOnly);
     if (pHint) pHint.style.display = pontesOnly ? 'none' : '';
   }
   if (pBtn && nAgenda){ syncPontes(); pBtn.addEventListener('click',()=>{ pontesOnly=!pontesOnly; syncPontes(); restart(true); }); }
