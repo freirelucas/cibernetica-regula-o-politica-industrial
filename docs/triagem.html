@@ -12,10 +12,10 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.6}
 a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
-.triagem-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:.6rem 1.1rem;border-bottom:1px solid var(--border-s);font-family:var(--mono);font-size:11px}
-.btn{font-family:var(--mono);font-size:11px;padding:.42rem .7rem;border:1px solid var(--border-s);border-radius:5px;background:var(--paper);color:var(--ink);cursor:pointer;white-space:nowrap}
-.btn:hover{background:var(--ink);color:var(--paper)}
-.btn.primary{border-color:var(--cyb);color:var(--cyb)}.btn.primary:hover{background:var(--cyb);color:#fff}
+.triagem-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:.6rem 1.1rem;border-bottom:1px solid var(--border-s);font-family:var(--sans);font-size:.875rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 .9rem;border:1px solid var(--border-s);border-radius:6px;background:var(--paper);color:var(--ink);font:500 .875rem/1.2 var(--sans);cursor:pointer;white-space:nowrap}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}.btn.primary:hover{background:var(--cyb);border-color:var(--cyb)}
 #saveHint{display:none;font-family:var(--mono);font-size:10px;color:var(--accent)}
 .bar2{position:sticky;top:52px;z-index:20;background:var(--surface);border-bottom:1px solid var(--border);padding:.6rem 1.1rem;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:.82rem}
 .prog{font-family:var(--mono);font-size:11px;color:var(--muted)}
@@ -26,14 +26,14 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 #seg-inc{background:var(--ok)}#seg-may{background:var(--pi)}#seg-exc{background:var(--accent)}#seg-und{background:var(--border-s)}
 .card.cur{outline:2px solid var(--cyb);outline-offset:2px}
 .chips{display:flex;gap:5px;flex-wrap:wrap}
-.chip{font-family:var(--mono);font-size:10px;padding:.25rem .55rem;border:1px solid var(--border-s);border-radius:20px;cursor:pointer;user-select:none;background:var(--paper);color:var(--muted)}
+.chip{display:inline-flex;align-items:center;min-height:44px;padding:0 .8rem;border:1px solid var(--border-s);border-radius:22px;background:var(--paper);font:500 .875rem/1 var(--sans);cursor:pointer;user-select:none}
 .chip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 #q{flex:1;min-width:160px;padding:.42rem .6rem;border:1px solid var(--border-s);border-radius:5px;font-family:var(--sans);font-size:.85rem;background:var(--paper)}
 .wrap{max-width:980px;margin:0 auto;padding:1.2rem 1.1rem 4rem}
 .intro{font-size:.9rem;color:var(--muted);margin:.2rem 0 1.2rem;text-align:justify;-webkit-hyphens:auto;hyphens:auto}
 /* PR-7 — painel de limiares (rigor × volume) + composição */
 .thpanel{border:1px solid var(--border);border-radius:8px;background:#fbf9f5;padding:.8rem 1rem;margin:0 0 1.2rem}
-.thpanel h2{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--cyb);margin:0 0 .6rem;text-transform:uppercase;letter-spacing:.04em}
+.thpanel h2{font:500 .875rem/1.3 var(--sans);color:var(--cyb);margin:0 0 .6rem}
 .thgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.7rem 1.2rem;align-items:center}
 .thgrid label{font-family:var(--mono);font-size:11px;color:#2a2722;display:flex;flex-direction:column;gap:.25rem}
 .thgrid label b{color:var(--cyb)}
@@ -49,7 +49,7 @@ a{color:var(--cyb);text-decoration:none}a:hover{text-decoration:underline}
 .card.may{border-left-color:var(--pi);background:#fbf4ec}
 .card h3{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin:0 0 .25rem;line-height:1.35}
 .meta{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:.5rem}
-.tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.5rem}
+.tags{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .9rem}
 .tag{font-family:var(--mono);font-size:9.5px;padding:.12rem .45rem;border-radius:20px;color:#fff}
 .tag.role{background:none;color:var(--muted);border:1px solid var(--border-s);padding:.1rem .45rem}
 /* PR-7 — faixa de sinais por obra (prioridade, HO-BC, e os 3 escores de integração) */
@@ -98,7 +98,7 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
 
 <header class="topbar sd sd-barra">
   <a class="sd-marca" href="index.html">Ipea/Diest</a>
-  <nav class="sd-telas" aria-label="Telas do estudo"><a class="sd-tela" href="index.html">Estudo</a><a class="sd-tela" href="espaco.html">Espaço 3D</a><a class="sd-tela" href="explorador.html">Explorador</a><a class="sd-tela" href="triagem.html" aria-current="page">Triagem</a></nav>
+  <nav class="sd-telas" aria-label="Telas do estudo"><a class="sd-tela" href="index.html">Estudo</a><a class="sd-tela" href="nota.html">A nota</a><a class="sd-tela" href="espaco.html">Espaço 3D</a><a class="sd-tela" href="explorador.html">Explorador</a><a class="sd-tela" href="triagem.html" aria-current="page">Triagem</a></nav>
 </header>
 <div class="triagem-acoes">
   <span title="mostra as N obras de maior prioridade do filtro (papel + resumo + recência) para revisar e exportar" style="display:inline-flex;align-items:center;gap:4px">
@@ -138,14 +138,14 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
     <button class="chip" data-preset="orgcib">Cibernética organizacional</button>
     <button class="chip" data-preset="cplx">4º eixo · complexidade</button>
     <button class="chip" data-preset="autores">Obra dos autores-semente</button>
-    <button class="chip" data-preset="solidez" title="obras em alvos de construção da agenda — alta integração (condutância real, ΔKf) e semanticamente plausíveis">Alvo de agenda</button>
+    <button class="chip" data-preset="solidez" title="obras que entram em tríades a construir — alta integração (condutância real, ΔKf) e semanticamente plausíveis">Obras da agenda</button>
     <button class="chip" data-preset="indec">Indecisas</button>
   </span>
 </div>
 <main class="wrap">
   <style>
   .steps{display:flex;gap:4px;margin:.2rem 0 1.1rem;flex-wrap:wrap}
-  .stepbtn{font-family:var(--mono);font-size:12px;font-weight:500;padding:.55rem .9rem;border:1px solid var(--border-s);background:var(--paper);color:var(--muted);border-radius:6px;cursor:pointer}
+  .stepbtn{display:inline-flex;align-items:center;min-height:44px;font-family:var(--mono);font-size:12px;font-weight:500;padding:.55rem .9rem;border:1px solid var(--border-s);background:var(--paper);color:var(--muted);border-radius:6px;cursor:pointer}
   .stepbtn[aria-selected="true"]{background:var(--cyb);color:#fff;border-color:var(--cyb)}
   .achar{display:none}
   body.s-achar .achar{display:block}
@@ -172,7 +172,7 @@ details.how p{font-size:.86rem;color:#2a2722;line-height:1.55;margin:.55rem 0;te
     <div>
       <p><b>Limiares de rigor × volume.</b> Os controles do painel filtram por <b>prioridade de ponte</b>, <b>intermediação de ordem superior (HO-BC)</b>, <b>nº de eixos tocados</b> e <b>é-Brasil</b>. A contagem ao vivo mostra quantas obras sobrevivem aos limiares — para calibrar o esforço de leitura dos três revisores antes de exportar.</p>
       <p><b>Composição.</b> O painel mostra a cobertura por eixo, o nº de pontes e a divisão Brasil × global do conjunto que passou — a estrutura atual <b>não</b> fecha as três comunidades; a agenda aponta <em>onde a costura renderia mais integração</em>. Aqui dá para ver se algum eixo ficou de fora.</p>
-      <p><b>Integração por condutância real.</b> Cada obra que entra num <i>alvo de construção</i> exibe três escores — <b>estrutural</b> (ΔKf: quanto realizar o elo reduz a resistência efetiva entre os silos), <b>latente</b> (tendência de fechamento) e <b>semântico</b> (proximidade na faixa intermediária). O atalho <i>Alvo de agenda</i> filtra esses alvos. Achado honesto: contra um nulo casado em grau, nenhum elo supera o acaso — a agenda diz <i>onde construir</i>, não certifica ponte latente.</p>
+      <p><b>Integração por condutância real.</b> Cada obra que entra numa <i>tríade a construir</i> exibe três escores — <b>estrutural</b> (ΔKf: quanto realizar o elo reduz a resistência efetiva entre os silos), <b>latente</b> (tendência de fechamento) e <b>semântico</b> (proximidade na faixa intermediária). O atalho <i>Obras da agenda</i> filtra esses alvos. Achado honesto: contra um nulo casado em grau, nenhum elo supera o acaso — a agenda diz <i>onde construir</i>, não certifica ponte latente.</p>
       <p><b>De onde vêm as obras.</b> A síntese reúne o <b>núcleo global</b> (mapeamento no OpenAlex: obras-semente, mais citadas, obras-ponte, rajadas, belas adormecidas e a sondagem do 4º eixo) e o <b>corpus brasileiro</b> (revisão de Claucia Faganello). Cada obra traz seus <b>eixos</b> e seu <b>papel</b>.</p>
       <p><b>Curadoria por tamanho (30 / 60 / 90 / 120).</b> Mostram as <b>N obras de maior prioridade do filtro atual</b> (ranqueadas) para revisar e exportar — ponto de partida transparente, não veredito; a triagem completa segue no Rayyan.</p>
     </div>
@@ -218,6 +218,9 @@ const RAYYAN_SELECTION={"_generated": "PR-7 — seleção de triagem (decisão r
 <script>
 (function(){
   const AXC = {Cibernética:'#4b3fc2','Regulação econômica':'#1a7a5e','Política industrial':'#b85c10','Economia da complexidade':'#2a9d8f'};
+  const SOLT = {'Cibernética':['cib','icosa'], 'Regulação econômica':['reg','cubo'], 'Política industrial':['pi','tetra'], 'Economia da complexidade':['cplx','octa']};
+  function selo(a){ const s=SOLT[a]; return s ? `<span class="sd-selo sd-eixo-${s[0]}"><svg class="sd-sol sd-eixo-${s[0]} sd-cheio" aria-hidden="true"><use href="#sd-sol-${s[1]}"/></svg>${esc(a)}</span>` : `<span class="sd-selo">${esc(a)}</span>`; }
+  function fmtBR(v, casas){ return (+v || 0).toFixed(casas).replace('.', ','); }
   // PR-7 — estado vem do arquivo VERSIONADO injetado (data/rayyan_selection.json); SEM estado de navegador.
   const SEL = (typeof RAYYAN_SELECTION !== 'undefined' ? RAYYAN_SELECTION : {});
   const DEC = Object.assign({}, SEL.decisions || {});
@@ -261,8 +264,8 @@ const RAYYAN_SELECTION={"_generated": "PR-7 — seleção de triagem (decisão r
   initSlider('thHo', maxHo.toFixed(4), (maxHo/100).toFixed(5), TH.ho_bc);
   document.getElementById('thEixos').value = TH.eixos;
   function thLabels(){
-    document.getElementById('thPrioV').textContent = (+TH.prioridade).toFixed(2);
-    document.getElementById('thHoV').textContent = (+TH.ho_bc).toFixed(3);
+    document.getElementById('thPrioV').textContent = fmtBR(TH.prioridade,2);
+    document.getElementById('thHoV').textContent = fmtBR(TH.ho_bc,3);
     document.getElementById('thEixosV').textContent = TH.eixos;
   }
   document.getElementById('thPrio').addEventListener('input', e=>{TH.prioridade=+e.target.value; save(); thLabels(); render();});
@@ -318,7 +321,7 @@ const RAYYAN_SELECTION={"_generated": "PR-7 — seleção de triagem (decisão r
     const und=works.length-inc-exc-may, n=works.length||1;
     document.getElementById('prog').innerHTML =
       `<b>${works.length}</b> obras · <span class="pi-ok">${inc} incluídas</span> · <span class="pi-mb">${may} talvez</span> · <span class="pi-no">${exc} excluídas</span> · ${und} indecisas`;
-    const pct=x=>(100*x/n).toFixed(1)+'%';
+    const pct=x=>fmtBR(100*x/n,1)+'%';
     document.getElementById('seg-inc').style.width=pct(inc);
     document.getElementById('seg-may').style.width=pct(may);
     document.getElementById('seg-exc').style.width=pct(exc);
@@ -329,7 +332,7 @@ const RAYYAN_SELECTION={"_generated": "PR-7 — seleção de triagem (decisão r
     const c=document.getElementById('thCount');
     c.innerHTML = `<b>${base.length}</b> obras entrariam na leitura/exportação `
       + `(limiares + filtros) · de <b>${works.length}</b> no total`
-      + (fSolidez && !base.length ? ` — <span class="hint">nenhum alvo de agenda no filtro atual</span>` : ``);
+      + (fSolidez && !base.length ? ` — <span class="hint">nenhuma obra da agenda no filtro atual</span>` : ``);
     const comp=document.getElementById('comp');
     const byAxis={}; axes.forEach(a=>byAxis[a]=0);
     let pontes=0, br=0, gl=0;
@@ -342,18 +345,18 @@ const RAYYAN_SELECTION={"_generated": "PR-7 — seleção de triagem (decisão r
     const bars=axes.map(a=>`<span class="cbar" title="${esc(a)}"><i style="width:${Math.round(46*byAxis[a]/mx)+4}px;background:${AXC[a]||'#9a948c'}"></i>${esc(a.split(' ')[0])} ${byAxis[a]}</span>`).join('');
     comp.innerHTML = `<span class="hint">cobertura:</span>${bars}<span class="cbar">pontes ${pontes}</span><span class="cbar">Brasil ${br} · global ${gl}</span>`;
   }
-  function sol(w,k){ const v=(w.solidez||{})[k]; return v==null?'—':(+v).toFixed(2); }
+  function sol(w,k){ const v=(w.solidez||{})[k]; return v==null?'—':fmtBR(v,2); }
   function card(w, rank){
     const d=DEC[w.uid]||'';
-    const tags = w.axes.map(a=>`<span class="tag" style="background:${AXC[a]||'#9a948c'}">${esc(a)}</span>`).join('')
+    const tags = w.axes.map(selo).join(' ')
       + w.roles.map(r=>`<span class="tag role">${esc(r)}</span>`).join('');
-    const sig = `<div class="sig">`
-      + `<span title="prioridade de ponte">P <b>${(+w.prioridade||0).toFixed(2)}</b></span>`
-      + `<span title="intermediação de ordem superior (HO-BC)">HO <b>${(+w.ho_bc||0).toFixed(3)}</b></span>`
-      + `<span class="sol" title="solidez estrutural (sessão de modelagem)">estr ${sol(w,'estrutural')}</span>`
-      + `<span class="sol" title="solidez latente">lat ${sol(w,'latente')}</span>`
-      + `<span class="sol" title="solidez semântica">sem ${sol(w,'semantico')}</span>`
-      + `</div>`;
+    const sig = `<dl class="sd-medidas">`
+      + `<div><dt>Prioridade</dt><dd>${fmtBR(w.prioridade,2)}</dd></div>`
+      + `<div><dt>Intermediação de ordem superior</dt><dd>${fmtBR(w.ho_bc,3)}</dd></div>`
+      + `<div><dt>Integração (ΔKf)</dt><dd>${sol(w,'estrutural')}</dd></div>`
+      + `<div><dt>Latente</dt><dd>${sol(w,'latente')}</dd></div>`
+      + `<div><dt>Semântico</dt><dd>${sol(w,'semantico')}</dd></div>`
+      + `</dl>`;
     const meta = [ (w.authors||[]).slice(0,4).join('; ')||'—', w.year||'s.d.', w.venue ].filter(Boolean).join(' · ');
     const absHtml = w.abstract
       ? `<div class="abs clamp" id="abs-${w.uid}">${esc(w.abstract)}</div><button class="more" data-more="${w.uid}">ver resumo completo</button>`
@@ -541,16 +544,16 @@ const RAYYAN_SELECTION={"_generated": "PR-7 — seleção de triagem (decisão r
   function renderAchar(){
     const fruit = works.filter(w=>{const s=w.solidez||{}; return s.estrutural!=null && s.latente!=null && s.semantico!=null;});
     const cards = fruit.map(w=>{
-      const tags=(w.axes||[]).map(a=>`<span class="tag" style="background:${AXC[a]||'#9a948c'}">${esc(a)}</span>`).join(' ');
+      const tags=(w.axes||[]).map(selo).join(' ');
       const role=(w.roles||[]).find(r=>/ponte/i.test(r))||(w.roles||[])[0]||'';
-      return `<div class="afcard"><h4>${esc(w.title)}</h4><div class="tags">${tags}</div>`
-        + `<div class="why">Por que entrou: ${role?`papel <b>${esc(role)}</b> · `:''}integra um <b>alvo de agenda</b> — uma tríade de alta integração real (ΔKf) e plausível na faixa semântica.</div>`
-        + `<div class="asig"><span>estrutural ΔKf <b>${sol(w,'estrutural')}</b></span><span>latente <b>${sol(w,'latente')}</b></span><span>semântico <b>${sol(w,'semantico')}</b></span><span>prioridade <b>${(+w.prioridade||0).toFixed(2)}</b></span></div></div>`;
+      return `<div class="afcard sd-cartao"><h4 class="sd-cartao-t">${esc(w.title)}</h4><div class="tags">${tags}</div>`
+        + `<div class="why">Por que entrou: ${role?`papel <b>${esc(role)}</b>; `:''}integra uma <b>tríade a construir</b>, de alta integração real (ΔKf) e plausível na faixa semântica.</div>`
+        + `<dl class="sd-medidas"><div><dt>Integração (ΔKf)</dt><dd>${sol(w,'estrutural')}</dd></div><div><dt>Latente</dt><dd>${sol(w,'latente')}</dd></div><div><dt>Semântico</dt><dd>${sol(w,'semantico')}</dd></div><div><dt>Prioridade</dt><dd>${fmtBR(w.prioridade,2)}</dd></div></dl></div>`;
     }).join('');
     document.getElementById('achar').innerHTML =
       `<h2>O que o algoritmo achou</h2>`
-      + `<p class="lead">Das <b>${works.length}</b> obras da síntese, o funil destacou <b>${fruit.length}</b> como <b>alvos de agenda</b> — as <b>pontes a construir</b>: tríades que, se realizadas, mais costurariam os silos (alta integração por condutância real, ΔKf) e são semanticamente plausíveis. Não são pontes que já existem — são <em>onde construir</em>. Veja-as abaixo; quando quiser decidir o que entra na leitura, vá para <b>Decidir</b>.</p>`
-      + (fruit.length?`<div class="afruit">${cards}</div>`:`<p class="lead">Nenhum alvo de agenda na modelagem atual.</p>`)
+      + `<p class="lead">Das <b>${works.length}</b> obras da síntese, <b>${fruit.length}</b> entram em tríades a construir: três obras que nunca aparecem juntas numa mesma lista de referências e que, se passassem a aparecer, mais aproximariam as tradições (alta integração por condutância real, ΔKf, e plausíveis na faixa semântica). Não são pontes que já existem: são <em>onde construir</em>. Veja-as abaixo; para decidir o que entra na leitura, vá para <b>Decidir</b>.</p>`
+      + (fruit.length?`<div class="afruit">${cards}</div>`:`<p class="lead">Nenhuma obra da síntese entra em tríade a construir na modelagem atual.</p>`)
       + `<button class="btn primary" id="goDecidir">Decidir estes ${fruit.length} &rarr;</button>`
       + `<span class="hint" style="margin-left:.6rem">ou use as <b>lentes</b> (“Comece por:”) acima para outros recortes.</span>`;
     const g=document.getElementById('goDecidir'); if(g) g.onclick=()=>{ applyPreset('solidez'); setStep('decidir'); };
