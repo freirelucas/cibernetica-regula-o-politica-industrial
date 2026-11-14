@@ -37,6 +37,9 @@
   --sd-medida:68ch;                                   /* largura de leitura */
 }
 
+/* atributo hidden esconde sempre, mesmo quando uma classe define display (ex.: .sd-obra{display:grid}) */
+[hidden]{display:none!important}
+
 /* ── base dos blocos do sistema ── */
 .sd{font-family:var(--sd-sem-serifa);font-weight:400;font-size:var(--sd-t1);line-height:1.55;color:var(--sd-tinta);-webkit-font-smoothing:antialiased}
 .sd *,.sd *::before,.sd *::after{box-sizing:border-box}

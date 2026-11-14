@@ -170,10 +170,10 @@ def main():
     # 6. estrutura de todas as telas; 7. telas da ordem, conferência completa
     existentes = [p for p in PAGINAS if os.path.exists(os.path.join(RAIZ, p))]
     r = roda(sys.executable, os.path.join("scripts", "conferir_telas.py"), "--so-estrutura", *existentes)
-    registra("6. estrutura", r.returncode == 0, "" if r.returncode == 0 else "\n".join(l for l in r.stdout.splitlines() if "PROBLEMA" in l or l.strip().startswith("-"))[:500])
+    registra("6. estrutura", r.returncode == 0, "" if r.returncode == 0 else "\n".join(l for l in r.stdout.splitlines() if "PROBLEMA" in l or l.strip().startswith("-"))[:4000])
     if o["paginas"]:
         r = roda(sys.executable, os.path.join("scripts", "conferir_telas.py"), *o["paginas"])
-        registra("7. telas", r.returncode == 0, "" if r.returncode == 0 else "\n".join(l for l in r.stdout.splitlines() if "PROBLEMA" in l or l.strip().startswith("-"))[:700])
+        registra("7. telas", r.returncode == 0, "" if r.returncode == 0 else "\n".join(l for l in r.stdout.splitlines() if "PROBLEMA" in l or l.strip().startswith("-"))[:4000])
     else:
         linhas.append(("7. telas", "—", "esta ordem não fecha nenhuma tela inteira"))
 

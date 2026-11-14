@@ -113,7 +113,7 @@ def main():
                     if m["vazios"]:
                         problemas.append("números sem valor: " + ", ".join(m["vazios"]))
                     if m["pequenos"] and (toque or args.toque_estrito) and not args.so_estrutura:
-                        problemas.append("alvos menores que 44 px: " + json.dumps(m["pequenos"], ensure_ascii=False)[:400])
+                        problemas.append("alvos menores que 44 px: " + json.dumps(m["pequenos"], ensure_ascii=False))
                     ruins += bool(problemas)
                     print(f"{'PROBLEMA' if problemas else 'ok      '}  {pagina:34} {nome:10}" + ("" if not problemas else "\n          - " + "\n          - ".join(problemas)))
             nav.close()
