@@ -29,7 +29,7 @@ import sys
 import threading
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TAMANHOS = {"celular": (390, 844, True), "tablet": (820, 1180, True), "computador": (1440, 900, False)}
+TAMANHOS = {"pequeno": (320, 640, True), "celular": (390, 844, True), "tablet": (820, 1180, True), "computador": (1440, 900, False)}
 PADRAO = ["docs/index.html", "docs/nota.html", "docs/espaco.html", "docs/explorador.html", "docs/triagem.html"]
 
 MEDE = """() => {

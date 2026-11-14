@@ -20,6 +20,11 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+
+def _milhar(v):
+    """Contador inteiro com ponto de milhar (regra do projeto); o resto passa como está."""
+    return f"{v:,}".replace(",", ".") if isinstance(v, int) else str(v)
+
 def inject_hypergraph_numbers(html, root=ROOT):
     """XGI_* tokens ← data/cocitation_hyperedges.json.
 
@@ -85,12 +90,12 @@ def inject_author_network_numbers(html, root=ROOT):
     rows.append('</tbody></table>')
     top_table = "\n".join(rows)
     subs = {
-        "AUTHORNET_N_AUTHORS": str(A.get("n_authors", "?")),
-        "AUTHORNET_N_CROSS_STRICT": str(A.get("n_cross_axis_strict", "?")),
-        "AUTHORNET_N_CROSS_LOOSE": str(A.get("n_cross_axis_loose", "?")),
-        "AUTHORNET_N_COMMUNITIES": str(A.get("n_communities", "?")),
-        "AUTHORNET_N_SNOWBALL_NEW": str(snow.get("n_new_works", "?")),
-        "AUTHORNET_N_SNOWBALL_OVERLAP": str(snow.get("n_overlap", "?")),
+        "AUTHORNET_N_AUTHORS": _milhar(A.get("n_authors", "?")),
+        "AUTHORNET_N_CROSS_STRICT": _milhar(A.get("n_cross_axis_strict", "?")),
+        "AUTHORNET_N_CROSS_LOOSE": _milhar(A.get("n_cross_axis_loose", "?")),
+        "AUTHORNET_N_COMMUNITIES": _milhar(A.get("n_communities", "?")),
+        "AUTHORNET_N_SNOWBALL_NEW": _milhar(snow.get("n_new_works", "?")),
+        "AUTHORNET_N_SNOWBALL_OVERLAP": _milhar(snow.get("n_overlap", "?")),
         "AUTHORNET_TOP_TABLE": top_table,
     }
     for tok, val in subs.items():

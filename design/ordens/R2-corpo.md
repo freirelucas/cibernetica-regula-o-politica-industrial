@@ -25,7 +25,7 @@ o `open` onde ele existe hoje. Os marcadores `{{...}}` e `AUTHORNET_*` ficam com
 | Ato 4 | `<details open class="act sd-ato"><summary><span class="sd-ato-n">Ato 4</span><span class="sd-ato-t">O caso brasileiro</span><span class="sd-ato-r">A literatura nacional e onde ela toca as três tradições.</span></summary>` |
 | Ato 5 | `<details open class="act sd-ato"><summary><span class="sd-ato-n">Ato 5</span><span class="sd-ato-t">Do diagnóstico ao desenho</span><span class="sd-ato-r">{{num.agenda.n_agenda}} tríades a construir; {{num.agenda.alem_do_acaso}} de {{num.agenda.n_candidatas}} avaliadas superam o acaso.</span></summary>` |
 | Aparato | `<details class="act sd-ato sd-aparato-ato"><summary><span class="sd-ato-n">Aparato</span><span class="sd-ato-t">Como verificar e reusar</span><span class="sd-ato-r">Leitura, sementes, reprodutibilidade e dados.</span></summary>` |
-| Apêndices | `<details class="act sd-ato sd-aparato-ato"><summary><span class="sd-ato-n">Apêndices</span><span class="sd-ato-t">Limitações, glossário e referências</span><span class="sd-ato-r"></span></summary>` |
+| Apêndices | `<details class="act sd-ato sd-aparato-ato"><summary><span class="sd-ato-n">Apêndices</span><span class="sd-ato-t">Limitações, glossário e referências</span><span class="sd-ato-r">Limitações conhecidas, glossário e a lista de referências citadas.</span></summary>` |
 
 No CSS do modelo, **apague** estas cinco regras (elas brigam com as do sistema) e mantenha
 `details.act{margin:0}`:
@@ -68,14 +68,14 @@ Aplique este bloco, nesta ordem, no fim do primeiro `<style>` do modelo:
 
 ```css
 @media (max-width:900px){
-  td a, .seed-id a, a.fmt, li strong a{display:inline-block;min-height:44px;line-height:44px;vertical-align:middle}
+  td a, .seed-id a, a.fmt, li strong a{display:inline-block;min-width:44px;min-height:44px;line-height:44px;vertical-align:middle;text-align:center}
   .chip,.rtab{min-height:44px;display:inline-flex;align-items:center}
   .controls input.search{min-height:44px}
   .rtabs button{min-height:44px}
 }
 ```
 
-Este bloco cobre as categorias: links de IDs em células de tabela (105), IDs das sementes (8), links em
+Os links de formato (`a.fmt`) medem 41 px de largura: a regra de 44 px vale nas duas dimensões, por isso `min-width` também. Este bloco cobre as categorias: links de IDs em células de tabela (105), IDs das sementes (8), links em
 destaques (`a.fmt`, 5), botões de filtro (`.chip`, 8), botões de abas (`.rtab`, 4), campo de busca (2) e
 links em negrito dentro de item de lista (2). **Custo declarado:** as linhas de tabela com ID ficam com
 44 px de altura no celular e no tablet. É o que a regra de alvo de toque pede; não reduza.
