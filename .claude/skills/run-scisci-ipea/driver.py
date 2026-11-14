@@ -15,7 +15,7 @@ páginas renderizadas com Chromium headless (Playwright):
 Cada página captura erros de página/console e salva um screenshot.
 
 Uso (caminhos relativos à RAIZ do repositório):
-    python .claude/skills/run-scisci-ipea/driver.py                 # serve + verifica as 4 + screenshots
+    python .claude/skills/run-scisci-ipea/driver.py                 # serve + verifica as 5 + screenshots
     python .claude/skills/run-scisci-ipea/driver.py --build         # regenera docs/ antes (build_site.py)
     python .claude/skills/run-scisci-ipea/driver.py --path /#sintese # mira uma seção do index
     python .claude/skills/run-scisci-ipea/driver.py --shot /tmp/s.png
@@ -135,7 +135,7 @@ def report(kind, ok, info):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Build/serve/drive o site estático (index + explorador + triagem + espaço 3D).")
+    ap = argparse.ArgumentParser(description="Build/serve/drive o site estático (index + nota + explorador + triagem + espaço 3D).")
     ap.add_argument("--build", action="store_true", help="regenera docs/ via src/build_site.py antes de servir")
     ap.add_argument("--shot", default="/tmp/scisci_site.png", help="screenshot do index (página inteira)")
     ap.add_argument("--path", default="/", help="caminho do index a carregar (ex.: /#sintese)")
