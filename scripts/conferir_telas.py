@@ -39,6 +39,7 @@ MEDE = """() => {
   for (const e of document.querySelectorAll('button, a[href], input, select, summary')) {
     if (!vis(e)) continue;
     const r = e.getBoundingClientRect();
+    if (r.right <= 0 || r.left >= larg) continue;                        // fora da tela (ex.: link de pular conteúdo): não é alvo tocável
     if (r.width >= 44 && r.height >= 44) continue;
     const rot = e.closest('label');
     // link no meio de uma frase: o critério de tamanho de alvo o isenta; engordá-lo quebraria a entrelinha

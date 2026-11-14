@@ -46,15 +46,16 @@ Apague o bloco inteiro `<aside class="startbox" aria-label="Comece por aqui">` .
 A `<section id="resumo" ...>` em volta e o que vem depois ficam como estão.
 
 ## Passo 3 — o CSS da entrada
-No primeiro `<style>` do modelo, acrescente no fim as regras de leiaute do `<style>` de
-`design/modelos/entrada.html` (as que começam por `.entrada`, mais as duas `@media`), **sem** a
-regra `body{...}`. Acrescente também:
+No primeiro `<style>` do modelo, acrescente no fim **todo** o `<style>` de
+`design/modelos/entrada.html`, exceto a regra `body{...}`. Acrescente também:
 
 ```css
 .entrada-cena.sem-cena canvas{display:none}
 ```
 
-Não apague CSS antigo nesta ordem (a limpeza é da ordem F1).
+Apague também as quatro regras da caixa que saiu: `.startbox{...}`, `.startbox-h{...}`, `.startbox p{...}` e
+`.startbox-find{...}` (no modelo, logo antes do bloco `<!-- 00 · RESUMO -->`). O teste de R1 exige que a
+palavra `startbox` não reste na página. Fora essas quatro, não apague CSS antigo nesta ordem (a limpeza é da F1).
 
 ## O que NÃO é desta ordem
 No resumo e no corpo há "Q ≈ 0,59" e "z ≈ 80" escritos por extenso. **Não troque.** São da rede

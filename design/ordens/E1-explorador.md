@@ -83,6 +83,10 @@ No CSS, `#detail .row` ganha `flex-wrap:wrap`.
 #detail .close{position:absolute;top:0;right:0;width:44px;height:44px;display:flex;align-items:center;justify-content:center;background:none;border:0;cursor:pointer;color:var(--muted);font-size:18px;line-height:1}
 ```
 
+**11. Painel de detalhe.** A linha do painel que começa por `+ (d.agenda ? ` contém
+`★ <strong>alvo de agenda</strong> — ponte a construir (alta integração, ΔKf)`. Troque o trecho do texto por
+`★ <strong>obra da agenda</strong> — tríade a construir (alta integração, ΔKf)`. Não mude o resto da linha.
+
 ## Feito quando
 ```bash
 python scripts/aceite.py E1             # VEREDITO: APROVADA

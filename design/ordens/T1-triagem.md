@@ -23,8 +23,9 @@ python scripts/aceite.py T1 --iniciar
 .thpanel h2{font:500 .875rem/1.3 var(--sans);color:var(--cyb);margin:0 0 .6rem}
 ```
 (São as regras `.btn`, `.btn:hover`, `.btn.primary`, `.chip` e `.thpanel h2`. As demais, como
-`.chip.on` e `.btn.cur-on`, ficam.) Na regra `.triagem-acoes`, `font-family:var(--mono);font-size:11px`
-vira `font-family:var(--sans);font-size:.875rem`. Acrescente:
+`.chip.on` e `.btn.cur-on`, ficam.) Na regra `.triagem-acoes{...}` (linha 15 do modelo), troque `font-family:var(--mono);font-size:11px` por
+`font-family:var(--sans);font-size:.875rem`. A regra `.tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.5rem}`
+já existe (linha 52): **troque** a regra inteira por esta (não acrescente outra):
 ```css
 .tags{display:flex;flex-wrap:wrap;align-items:center;gap:.2rem .9rem}
 ```
