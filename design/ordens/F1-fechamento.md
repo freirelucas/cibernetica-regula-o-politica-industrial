@@ -21,22 +21,19 @@ python scripts/aceite.py F1 --iniciar
    acrescente a linha de `nota.html`.
 2. `METODOLOGIA.md`, no fim do §6, acrescente o parágrafo:
    `**Tela A nota.** `docs/nota.html` lista a bibliografia do texto para discussão com a posição de cada obra neste mapa. "Leia ao lado" traz as obras mais cocitadas com ela: o número é quantos trabalhos do corpus citam as duas. Registros duplicados da mesma obra são somados (`src/nota.py`).`
-3. `.claude/skills/run-scisci-ipea/SKILL.md`: "four pages" vira "five pages"; acrescente a
-   linha de `docs/nota.html` na lista; no bloco de saída de exemplo, acrescente a linha `[nota]`
-   copiada da saída real do driver.
-4. `driver.py`: no docstring, a linha de uso que diz "verifica as 4" passa a "verifica as 5";
-   o texto de ajuda do `argparse` passa a citar também a nota.
-5. `CLAUDE.md`, seção "Comandos": troque `pytest -q` por `python -m pytest -q` (o `pytest` solto pode apontar para um Python sem as dependências).
-6. `CLAUDE.md`: a seção "Tarefa em curso" vira:
+3. `.claude/skills/run-scisci-ipea/SKILL.md`: "four pages" vira "five pages"; acrescente a linha de `docs/nota.html` na lista, logo depois da linha de `docs/espaco.html`; no bloco de saída de exemplo, acrescente a linha `[nota]` copiada da saída real do driver.
+4. `driver.py`: no docstring, a linha de uso que diz "verifica as 4" passa a "verifica as 5", e a lista de páginas ganha a nota; o `description=` do `argparse` (linha 138) passa a dizer "(index + nota + explorador + triagem + espaço 3D)".
+5. `CLAUDE.md`: o `python -m pytest -q` da seção "Comandos" já está feito (commit 2321def): não o refaça. A seção "Tarefa em curso" vira:
    `**Redesenho construído.** As ordens de design/ordens/ estão todas feitas (python scripts/aceite.py --lista). Mudança nova de desenho começa por design/README.md.`
 
 ## Passo 2 — CSS morto do relatório
 Em `src/site_template.html`, apague as regras cujos seletores não existem mais na marcação.
 Para cada seletor da lista, confirme antes com uma busca que a classe **não aparece** fora do
 `<style>`; se aparecer, **deixe a regra**:
-`.masthead`, `.kicker`, `.subtitle`, `.authorline`, `.byline`, `.hero3d` (e variações
-`.hero3d-leg`, `.hero3d.sem-cena`), `.startbox` (e `.startbox-h`, `.startbox-find`),
-`.startmap`, `.starttools`, `.preliminar`.
+`.masthead`, `.kicker`, `.subtitle`, `.authorline`, `.byline`, `.startmap`, `.starttools`, `.preliminar`,
+e todas as regras cujo seletor é a classe `.hero3d` ou `.hero3d-leg` (inclusive `.hero3d.sem-cena`: nenhum elemento tem
+essa classe; o estado `sem-cena` agora fica em `.entrada-cena`, coberto pela regra `.entrada-cena.sem-cena canvas` da R1).
+`.startbox` já saiu com a caixa na R1: não há o que apagar.
 Dentro de `@media print`, tire esses nomes das listas de seletores, sem apagar a regra inteira.
 
 ## Passo 3 — reconstruir e conferir tudo
