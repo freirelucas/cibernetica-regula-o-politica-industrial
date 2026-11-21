@@ -8,6 +8,11 @@ Python de biblioteca padrão a partir de dados versionados em `data/`.
 
 **Redesenho construído.** As ordens de design/ordens/ estão todas feitas (python scripts/aceite.py --lista). Mudança nova de desenho começa por design/README.md.
 
+**Próximo trabalho: plano de melhorias de engenharia**, em
+`notes/2026-11-21-plano-de-melhorias.md`. Nada dele foi executado. Leia antes
+`notes/2026-11-21-sessao.md` (estado, aprendizados e pendências). Item marcado como "quem
+decide: responsável" não se executa sem autorização expressa.
+
 ## Comandos
 
 ```bash
@@ -18,7 +23,7 @@ python scripts/aceite.py ORDEM                        # veredito da ordem: APROV
 python src/build_site.py                              # gera docs/ (segundos)
 python -m pytest -q                                    # suíte inteira
 python .claude/skills/run-scisci-ipea/driver.py       # abre as telas num navegador; STATUS: OK
-python scripts/conferir_telas.py                      # mede as telas em três tamanhos
+python scripts/conferir_telas.py                      # mede as telas em quatro larguras
 python design/ferramentas/gera_prototipos.py          # regera os protótipos de desenho
 ```
 
@@ -75,6 +80,7 @@ pacote que combina com ele em vez de baixar outro navegador.
 | `tests/test_redesenho.py` | critérios do redesenho; cada ordem acorda os seus testes |
 | `scripts/conferir_telas.py` | conferência em navegador: transbordo, alvos, abas, erros |
 | `METODOLOGIA.md` | como ler os achados e onde não confiar |
+| `notes/` | notas datadas: planos, aprendizados de sessão e pendências; a mais recente é o ponto de partida |
 | `.claude/skills/` | rotinas do projeto (pontes, orçamento da API, cache, changelog, driver) |
 
 ## Custo e rede
