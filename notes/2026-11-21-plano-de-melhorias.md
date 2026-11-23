@@ -53,7 +53,7 @@ regenerar o `CHANGELOG.md`, disparar coleta ou qualquer chamada à API do OpenAl
 | RP1 | levar o redesenho à `main` | alta | responsável | aberto |
 | RP2 | cache de 116 MB versionado | média | responsável | aberto |
 | RP3 | gancho de pré-commit que adiciona arquivos sozinho | média | responsável | aberto |
-| RP4 | ramos acumulados | baixa | responsável | aberto |
+| RP4 | ramos acumulados | baixa | responsável | autorizado em 23/11; falta executar fora da sessão |
 | RP5 | versão citável (etiqueta) | baixa | responsável | aberto |
 
 ## 2. Privacidade
@@ -341,6 +341,11 @@ regenerar o `CHANGELOG.md`, disparar coleta ou qualquer chamada à API do OpenAl
   `claude/friendly-carson-41ska0`, de 13/11, não está contido e não foi examinado.
 - **Fazer:** apagar os contidos; examinar o outro antes de decidir.
 - **Quem decide:** responsável. Apagar ramo é destrutivo.
+- **Situação em 23/11:** o responsável autorizou apagar os oito contidos. A sessão não
+  conseguiu: o ambiente só aceita push no ramo de trabalho e devolveu erro 403. O comando e os
+  identificadores de cada ramo estão na seção 8 de `notes/2026-11-21-sessao.md`. O ramo
+  `claude/friendly-carson-41ska0` foi examinado: tem 11 commits fora da `main`, de outra frente
+  de trabalho, e não deve ser apagado.
 
 ### RP5 — Versão citável
 
@@ -402,5 +407,6 @@ quando não seguiram. O detalhe de cada falha está em `notes/2026-11-21-sessao.
 - O histórico do git quanto ao endereço pessoal (o valor não foi repetido em nenhum comando).
 - O notebook de `colab/`, linha a linha.
 - A configuração do Pages e as regras de proteção de ramo no GitHub.
-- O conteúdo do ramo `claude/friendly-carson-41ska0`.
+- O conteúdo do ramo `claude/friendly-carson-41ska0`: em 23/11 só os títulos dos 11 commits
+  foram lidos.
 - A complexidade é contagem aproximada, não a métrica oficial.
