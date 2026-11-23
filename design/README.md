@@ -69,7 +69,9 @@ só para texto, porque o laranja (4,1:1) e o verde-água (3,0:1) não passavam n
 ```
 design/
 ├── README.md                este arquivo
-├── PLANO.md                 a construção, em sete etapas com critério de "feito quando"
+├── PLANO.md                 a construção, por ordens de serviço com veredito por comando
+├── AVALIACAO.md             o piloto que levou do plano de sete etapas às ordens
+├── ordens/                  uma ordem de serviço por arquivo e o quadro (quadro.json)
 ├── sistema.css              fichas de cor, tipo e espaço; componentes com prefixo sd-
 ├── solidos.svg              os cinco sólidos (gerado; não editar à mão)
 ├── modelos/*.html           fonte dos protótipos, com marcadores {{caminho.do.dado}}

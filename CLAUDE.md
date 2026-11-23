@@ -70,7 +70,7 @@ pacote que combina com ele em vez de baixar outro navegador.
 | caminho | o que é |
 |---|---|
 | `src/build_site.py` | gera as telas; `global_nav()` monta a barra |
-| `src/*_template.html` | modelos das telas (relatório, explorador, espaço 3D, triagem) |
+| `src/*_template.html` | modelos das telas (relatório, a nota, espaço 3D, explorador, triagem) |
 | `src/espaco.py`, `src/espaco3d.js` | dados e motor da cena 3D |
 | `src/token_injection.py` | injetores de números (`PROV_*`, `SOLIDEZ_*`, `XGI_*`...) |
 | `data/` | derivados versionados; `data/oa_cache/` é o cache do OpenAlex |

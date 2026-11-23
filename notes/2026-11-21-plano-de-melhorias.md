@@ -4,6 +4,9 @@ Data: 21/11/2026. Base: commit `34694db` do ramo `claude/jolly-wright-t5ga5c`, 2
 frente de `origin/main`. Origem: auditoria geral de engenharia feita só por leitura, entre 14 e
 21/11. **Nada deste plano foi executado.** Ele existe para ser retomado por outro agente.
 
+Atualizado em 23/11/2026: entrou o item DT2, achado numa varredura de textos desatualizados. A
+arrumação daquele dia está na seção 8 de `notes/2026-11-21-sessao.md`.
+
 ## 0. Como usar este plano
 
 1. Leia `CLAUDE.md` (as regras que não se negociam) e `notes/2026-11-21-sessao.md` (estado,
@@ -29,6 +32,7 @@ regenerar o `CHANGELOG.md`, disparar coleta ou qualquer chamada à API do OpenAl
 | PV2 | endereço pessoal no histórico do git | alta | responsável | aberto |
 | PV3 | contatos de autores dentro de resumos publicados | média | agente | aberto |
 | DT1 | slides com carga externa e sem gerador | média | responsável | aberto |
+| DT2 | deck de status de junho, com fatos digitados e desatualizado | baixa | responsável | aberto |
 | CI1 | publicar no Pages só com testes verdes | média | agente prepara, responsável confirma | aberto |
 | CI2 | conferir o `docs/` canônico na CI | média | agente | aberto |
 | CI3 | testes de navegador e conferência de telas na CI | média | agente | aberto |
@@ -116,6 +120,19 @@ regenerar o `CHANGELOG.md`, disparar coleta ou qualquer chamada à API do OpenAl
   um teste que cubra todos os HTML de `docs/`. Hoje nenhum teste olha os slides.
 - **Quem decide:** responsável.
 
+### DT2 — Deck de status de junho, com fatos digitados e desatualizado
+
+- **Hoje:** `docs/apresentacao_status.pptx` é de 09/06 (`2082b5e`) e descreve o sítio de antes
+  do redesenho. Nenhuma tela aponta para ele, mas ele é publicado com `docs/`. O gerador,
+  `src/build_deck.py`, promete números lidos dos dados e traz fatos digitados: "17 estágios" e
+  "80 testes" (`:174`), "As três telas" (`:204`), "De 250 nós" e outros nas linhas vizinhas. A
+  suíte tem hoje 120 testes e o sítio tem cinco telas.
+- **Opções:** (a) aposentar o deck e tirar o `.pptx` de `docs/`; (b) refazer o gerador para ler
+  todo número dos derivados e descrever as cinco telas, e então regerar.
+- **Feito quando:** ou o arquivo e o gerador saíram, ou nenhum número aparece digitado em
+  `src/build_deck.py` e o `.pptx` foi regerado.
+- **Quem decide:** responsável.
+
 ## 4. Integração contínua e publicação
 
 ### CI1 — Publicar no Pages só com testes verdes
@@ -143,8 +160,7 @@ regenerar o `CHANGELOG.md`, disparar coleta ou qualquer chamada à API do OpenAl
 
 - **Hoje:** cinco testes pulam sem Playwright (`tests/test_espaco.py:277,311,343`,
   `tests/test_triagem_ux.py:65`, `tests/test_smoke.py:12`) e o job que roda a suíte não o
-  instala. `scripts/conferir_telas.py` não roda na CI. O texto de ajuda desse script ainda fala
-  em três tamanhos; são quatro.
+  instala. `scripts/conferir_telas.py` não roda na CI.
 - **Fazer:** instalar Playwright e Chromium no job da suíte e acrescentar
   `python scripts/conferir_telas.py`.
 - **Feito quando:** o registro da CI não mostra teste pulado por falta de Playwright e mostra as
@@ -341,13 +357,14 @@ regenerar o `CHANGELOG.md`, disparar coleta ou qualquer chamada à API do OpenAl
 3. **Fluxos de CI, nesta ordem:** CI4, depois CI2, depois CI3, e CI1 por último, com
    confirmação.
 4. **Depois de CI2:** FD3 e CD1, porque o job canônico acusa regressão de construção.
-5. **Esperam decisão:** PV2, DT1, FD4, CD3, CD5, CD6, RP1 a RP5.
+5. **Esperam decisão:** PV2, DT1, DT2, FD4, CD3, CD5, CD6, RP1 a RP5.
 
 ## 10. Decisões pedidas ao responsável
 
 1. Mesclar o ramo de trabalho na `main`, ou pedir um PR (RP1).
 2. Que contato institucional usar na coleta, e se o histórico será reescrito (PV1, PV2).
-3. Slides: vendorizar, retirar ou gerar pelo funil (DT1).
+3. Slides: vendorizar, retirar ou gerar pelo funil (DT1). Deck de status: aposentar ou refazer
+   (DT2).
 4. Política do cache e do gancho de pré-commit (RP2, RP3).
 5. Apagar `src/legacy/` e os ramos já contidos (CD3, RP4).
 6. Teto de custo: manter a falha aberta ou bloquear (FD4).

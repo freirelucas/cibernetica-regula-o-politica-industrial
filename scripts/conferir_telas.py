@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Confere telas em navegador real: o que ler o código-fonte não mostra.
 
-Para cada página e cada tamanho de tela (celular 390, tablet 820, computador 1440), mede:
+Para cada página e cada largura de tela (320, 390, 820 e 1440 px), mede:
   - erro de página ou de console;
   - requisição que falhou ou devolveu 400 ou mais;
   - página mais larga que a tela (rolagem lateral);
@@ -60,7 +60,7 @@ MEDE = """() => {
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Confere telas em navegador real, em três tamanhos.")
+    ap = argparse.ArgumentParser(description="Confere telas em navegador real, em quatro larguras.")
     ap.add_argument("paginas", nargs="*", help="caminhos relativos à raiz (padrão: as telas de docs/ que existirem)")
     ap.add_argument("--capturas", help="pasta onde salvar uma imagem por página e tamanho")
     ap.add_argument("--toque-estrito", action="store_true", help="também reprova alvo menor que 44 px no computador")

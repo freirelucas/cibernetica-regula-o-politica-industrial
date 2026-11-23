@@ -269,10 +269,11 @@ def _uri(root, nome):
 
 
 def test_navegacao_cabe_no_celular_headless(pagina, root):
-    """Quatro abas na barra do topo: nenhuma tela rola para o lado nem corta aba em 360 e 390 px.
+    """Barra do topo, uma aba por tela: nada rola para o lado nem corta aba em 320, 360 e 390 px.
 
     Com três abas a barra cabia; a quarta fez o relatório e o explorador passarem da largura
-    do celular. Este teste trava a correção (abas compactas, marca recolhida, quebra de linha).
+    do celular. Este teste trava a correção (abas compactas, marca recolhida, quebra de linha)
+    e vale para quantas telas houver.
     """
     pytest.importorskip("playwright", reason="Playwright não instalado")
     from playwright.sync_api import sync_playwright

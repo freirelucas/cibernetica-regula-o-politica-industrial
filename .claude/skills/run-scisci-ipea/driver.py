@@ -23,7 +23,7 @@ Uso (caminhos relativos à RAIZ do repositório):
 Saída: STATUS OK (código 0) quando, em TODAS as páginas presentes, não há erro de
 página e os marcadores batem (index: 3 gráficos + 22 seções + 5 spans preenchidos;
 explorador: nós > 0; triagem: cartões > 0; espaço 3D: cena pintada, obras > 0, nenhum
-número vazio e todas as lentes respondem). PROBLEMA (código 1) caso contrário.
+número vazio e todas as lentes respondem; nota: obras > 0). PROBLEMA (código 1) caso contrário.
 Pré-requisito do caminho do agente:
     pip install playwright && python -m playwright install --with-deps chromium
 """

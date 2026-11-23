@@ -1,6 +1,6 @@
 ---
 name: run-scisci-ipea
-description: Build, run, serve, screenshot and verify the SciSci/IPEA cienciometria static site (docs/, GitHub Pages) about cibernética · regulação · política industrial — the report (index), the d3 co-citation explorer, and the inclusion/exclusion triage. Use when asked to launch/build the site, rebuild docs/ from scisci_results.json, drive it headless, check the charts/network/triage render, regenerate the Rayyan export, or capture a screenshot.
+description: Build, run, serve, screenshot and verify the SciSci/IPEA cienciometria static site (docs/, GitHub Pages) about cibernética · regulação · política industrial — the report (index), the nota (bibliography of the text for discussion), the 3D space of the traditions, the d3 co-citation explorer, and the inclusion/exclusion triage. Use when asked to launch/build the site, rebuild docs/ from scisci_results.json, drive it headless, check the charts/network/triage render, regenerate the Rayyan export, or capture a screenshot.
 ---
 
 # Run: SciSci · Cibernética, Regulação e Política Industrial
@@ -40,14 +40,14 @@ Regenerate everything in `docs/` from the JSON (no network needed):
 python src/build_site.py
 ```
 
-Prints the three pages (`site:`, `expl:`, `triag:`), `dados:` (CSVs), `rayyan:`
+Prints the five pages (`site:`, `expl:`, `espaço:`, `nota:`, `triag:`), `dados:` (CSVs), `rayyan:`
 (N works), and each of the **22 sections** as `ok`. It calls `build_rayyan.build()`
 internally, so the Rayyan files are refreshed too.
 
 ## Run — agent path (use this)
 
 The driver builds (optional), serves `docs/` on an ephemeral port, drives **all
-three pages** with headless Chromium, and writes a screenshot of each:
+five pages** with headless Chromium, and writes a screenshot of each:
 
 ```bash
 python .claude/skills/run-scisci-ipea/driver.py --build
@@ -61,13 +61,14 @@ Verified output ends with:
 [triagem]     cartões: 212 · page errors: NENHUM -> OK
 [espaco]      obras na cena: 250 · cena pintada: sim · lentes: 5 · números vazios: nenhum · page errors: NENHUM -> OK
 [nota]        obras da nota: 20 · page errors: NENHUM -> OK
-screenshots: /tmp/scisci_site.png, /tmp/scisci_explorador.png, /tmp/scisci_triagem.png, /tmp/scisci_espaco.png
+screenshots: /tmp/scisci_site.png, /tmp/scisci_explorador.png, /tmp/scisci_triagem.png, /tmp/scisci_espaco.png, /tmp/scisci_nota.png
 STATUS: OK
 ```
 
 `STATUS: OK` (exit 0) requires, on every page present: 0 page errors; index = 3
 charts + 22 sections + 5 data spans filled; explorer = d3 nodes drawn; triage =
-cards rendered. Drop `--build` to check the already-built `docs/`. Target an index
+cards rendered; 3D space = scene painted, works present, no empty number and every
+lens answers; nota = works listed. Drop `--build` to check the already-built `docs/`. Target an index
 section with `--path '/#sintese'`. Open the screenshots to confirm they are not blank.
 
 ## Test
@@ -76,9 +77,11 @@ section with `--path '/#sintese'`. Open the screenshots to confirm they are not 
 python -m pytest -q
 ```
 
-26 tests: build/sections/placeholder, CSV headers (PT) + row counts, network
+The suite covers build/sections/placeholder, CSV headers (PT) + row counts, network
 metrics, Rayyan export (RIS well-formed, dedup by OpenAlex id, abstract coverage,
-single-file zip), and an anglicism scan of the site/explorer/triage/README/notebook.
+single-file zip), an anglicism scan of the site/explorer/triage/README/notebook, the
+3D scene, and the redesign criteria (`tests/test_redesenho.py`). Tests that open a
+browser skip where Playwright is missing.
 
 ## One-off data steps (network — cached, so re-runs are cheap/resumable)
 
@@ -101,7 +104,7 @@ python src/cocitation_hypergraph.py  # ordem superior (hipergrafo) -> data/cocit
 Serve and open in a browser (useless headless; for a human at a screen):
 
 ```bash
-python3 -m http.server -d docs 8000   # http://127.0.0.1:8000/ · /explorador.html · /espaco.html · /triagem.html · Ctrl-C
+python3 -m http.server -d docs 8000   # http://127.0.0.1:8000/ · /nota.html · /espaco.html · /explorador.html · /triagem.html · Ctrl-C
 ```
 
 To publish: GitHub repo → **Settings → Pages → Source: branch + `/docs`**.
